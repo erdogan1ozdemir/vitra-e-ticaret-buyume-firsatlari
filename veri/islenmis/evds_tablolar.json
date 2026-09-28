@@ -1,0 +1,3781 @@
+{
+ "kart_harcama_aylik_mnTL": {
+  "2019-01": {
+   "toplam": 61015.253000000004,
+   "mobilya_dekorasyon": 1850.6889999999999,
+   "yapi_malzemeleri": 1836.4909999999998,
+   "internet": 10805.971,
+   "elektronik": 2957.887,
+   "market_avm": 10890.279999999999,
+   "hafta": 4
+  },
+  "2019-02": {
+   "toplam": 66420.08600000001,
+   "mobilya_dekorasyon": 1920.998,
+   "yapi_malzemeleri": 2096.106,
+   "internet": 13363.512999999999,
+   "elektronik": 3131.2230000000004,
+   "market_avm": 11400.425,
+   "hafta": 4
+  },
+  "2019-03": {
+   "toplam": 87259.06499999999,
+   "mobilya_dekorasyon": 2846.391,
+   "yapi_malzemeleri": 3163.915,
+   "internet": 17385.393,
+   "elektronik": 4332.3189999999995,
+   "market_avm": 14989.433,
+   "hafta": 5
+  },
+  "2019-04": {
+   "toplam": 67995.522,
+   "mobilya_dekorasyon": 2123.268,
+   "yapi_malzemeleri": 2542.429,
+   "internet": 12970.783,
+   "elektronik": 3150.3729999999996,
+   "market_avm": 11990.964000000002,
+   "hafta": 4
+  },
+  "2019-05": {
+   "toplam": 89908.769,
+   "mobilya_dekorasyon": 2799.4090000000006,
+   "yapi_malzemeleri": 3409.879,
+   "internet": 18236.449,
+   "elektronik": 4165.221,
+   "market_avm": 14904.261,
+   "hafta": 5
+  },
+  "2019-06": {
+   "toplam": 73608.07800000001,
+   "mobilya_dekorasyon": 2356.6229999999996,
+   "yapi_malzemeleri": 2452.408,
+   "internet": 13598.581,
+   "elektronik": 3540.469,
+   "market_avm": 12866.076000000001,
+   "hafta": 4
+  },
+  "2019-07": {
+   "toplam": 77195.87299999999,
+   "mobilya_dekorasyon": 2469.944,
+   "yapi_malzemeleri": 2823.4249999999997,
+   "internet": 15553.639,
+   "elektronik": 3566.3099999999995,
+   "market_avm": 13010.024,
+   "hafta": 4
+  },
+  "2019-08": {
+   "toplam": 94209.616,
+   "mobilya_dekorasyon": 2730.746,
+   "yapi_malzemeleri": 3053.525,
+   "internet": 20510.33,
+   "elektronik": 4334.26,
+   "market_avm": 15363.543,
+   "hafta": 5
+  },
+  "2019-09": {
+   "toplam": 76522.71100000001,
+   "mobilya_dekorasyon": 2376.079,
+   "yapi_malzemeleri": 2814.873,
+   "internet": 16029.184,
+   "elektronik": 3783.735,
+   "market_avm": 12976.065,
+   "hafta": 4
+  },
+  "2019-10": {
+   "toplam": 71801.562,
+   "mobilya_dekorasyon": 2239.8269999999998,
+   "yapi_malzemeleri": 2879.986,
+   "internet": 14890.216,
+   "elektronik": 3734.817,
+   "market_avm": 11439.298,
+   "hafta": 4
+  },
+  "2019-11": {
+   "toplam": 96996.661,
+   "mobilya_dekorasyon": 3008.5939999999996,
+   "yapi_malzemeleri": 3590.2209999999995,
+   "internet": 21403.023999999998,
+   "elektronik": 6502.121000000001,
+   "market_avm": 15754.634000000002,
+   "hafta": 5
+  },
+  "2019-12": {
+   "toplam": 76549.073,
+   "mobilya_dekorasyon": 2347.964,
+   "yapi_malzemeleri": 2739.248,
+   "internet": 15525.46,
+   "elektronik": 4171.239,
+   "market_avm": 12778.771,
+   "hafta": 4
+  },
+  "2020-01": {
+   "toplam": 96609.241,
+   "mobilya_dekorasyon": 2757.4779999999996,
+   "yapi_malzemeleri": 2927.21,
+   "internet": 20631.677,
+   "elektronik": 5170.343,
+   "market_avm": 15846.838,
+   "hafta": 5
+  },
+  "2020-02": {
+   "toplam": 77277.94099999999,
+   "mobilya_dekorasyon": 2340.13,
+   "yapi_malzemeleri": 2614.692,
+   "internet": 16257.637999999999,
+   "elektronik": 4458.031000000001,
+   "market_avm": 13667.221,
+   "hafta": 4
+  },
+  "2020-03": {
+   "toplam": 74989.625,
+   "mobilya_dekorasyon": 2266.732,
+   "yapi_malzemeleri": 2937.541,
+   "internet": 14887.755000000001,
+   "elektronik": 4485.845,
+   "market_avm": 17361.662,
+   "hafta": 4
+  },
+  "2020-04": {
+   "toplam": 55814.465,
+   "mobilya_dekorasyon": 1463.17,
+   "yapi_malzemeleri": 2294.575,
+   "internet": 14742.236,
+   "elektronik": 4596.647,
+   "market_avm": 17563.32,
+   "hafta": 4
+  },
+  "2020-05": {
+   "toplam": 80155.346,
+   "mobilya_dekorasyon": 2691.38,
+   "yapi_malzemeleri": 3404.9300000000003,
+   "internet": 23686.392,
+   "elektronik": 7247.088,
+   "market_avm": 21083.614,
+   "hafta": 5
+  },
+  "2020-06": {
+   "toplam": 80761.661,
+   "mobilya_dekorasyon": 3432.764,
+   "yapi_malzemeleri": 3851.0830000000005,
+   "internet": 19687.940000000002,
+   "elektronik": 7262.402,
+   "market_avm": 17575.468,
+   "hafta": 4
+  },
+  "2020-07": {
+   "toplam": 112659.853,
+   "mobilya_dekorasyon": 4266.3820000000005,
+   "yapi_malzemeleri": 4875.739,
+   "internet": 27691.378000000004,
+   "elektronik": 8418.786,
+   "market_avm": 22265.586000000003,
+   "hafta": 5
+  },
+  "2020-08": {
+   "toplam": 87785.124,
+   "mobilya_dekorasyon": 3108.919,
+   "yapi_malzemeleri": 3862.174,
+   "internet": 21681.002999999997,
+   "elektronik": 6996.774,
+   "market_avm": 17219.974000000002,
+   "hafta": 4
+  },
+  "2020-09": {
+   "toplam": 93277.051,
+   "mobilya_dekorasyon": 3328.023,
+   "yapi_malzemeleri": 4272.1990000000005,
+   "internet": 24007.046000000002,
+   "elektronik": 8365.165,
+   "market_avm": 18536.359,
+   "hafta": 4
+  },
+  "2020-10": {
+   "toplam": 117012.074,
+   "mobilya_dekorasyon": 4366.431,
+   "yapi_malzemeleri": 5625.905,
+   "internet": 29578.498999999996,
+   "elektronik": 10247.786,
+   "market_avm": 23386.45,
+   "hafta": 5
+  },
+  "2020-11": {
+   "toplam": 97731.421,
+   "mobilya_dekorasyon": 3408.09,
+   "yapi_malzemeleri": 4400.094,
+   "internet": 27765.955,
+   "elektronik": 10476.499,
+   "market_avm": 19602.897,
+   "hafta": 4
+  },
+  "2020-12": {
+   "toplam": 87470.356,
+   "mobilya_dekorasyon": 2917.8,
+   "yapi_malzemeleri": 3932.117,
+   "internet": 24907.394000000004,
+   "elektronik": 8223.217,
+   "market_avm": 19922.53,
+   "hafta": 4
+  },
+  "2021-01": {
+   "toplam": 114950.09700000001,
+   "mobilya_dekorasyon": 3409.983,
+   "yapi_malzemeleri": 4903.3060000000005,
+   "internet": 31345.021,
+   "elektronik": 9325.451000000001,
+   "market_avm": 25284.283,
+   "hafta": 5
+  },
+  "2021-02": {
+   "toplam": 98963.16200000001,
+   "mobilya_dekorasyon": 2899.051,
+   "yapi_malzemeleri": 4253.818,
+   "internet": 27165.634,
+   "elektronik": 7699.513,
+   "market_avm": 21161.343,
+   "hafta": 4
+  },
+  "2021-03": {
+   "toplam": 106656.975,
+   "mobilya_dekorasyon": 3538.775,
+   "yapi_malzemeleri": 4847.638,
+   "internet": 29505.769000000004,
+   "elektronik": 8416.65,
+   "market_avm": 22109.157,
+   "hafta": 4
+  },
+  "2021-04": {
+   "toplam": 130660.16399999999,
+   "mobilya_dekorasyon": 4402.481,
+   "yapi_malzemeleri": 6296.896000000001,
+   "internet": 37723.884,
+   "elektronik": 10722.130000000001,
+   "market_avm": 29913.487,
+   "hafta": 5
+  },
+  "2021-05": {
+   "toplam": 99538.26800000001,
+   "mobilya_dekorasyon": 2877.068,
+   "yapi_malzemeleri": 4609.5830000000005,
+   "internet": 32199.822,
+   "elektronik": 8845.145,
+   "market_avm": 23309.801,
+   "hafta": 4
+  },
+  "2021-06": {
+   "toplam": 128287.82,
+   "mobilya_dekorasyon": 4449.376,
+   "yapi_malzemeleri": 6432.642,
+   "internet": 36768.816000000006,
+   "elektronik": 9437.957,
+   "market_avm": 25223.404,
+   "hafta": 4
+  },
+  "2021-07": {
+   "toplam": 169870.96300000002,
+   "mobilya_dekorasyon": 5365.522,
+   "yapi_malzemeleri": 7112.724,
+   "internet": 44914.670000000006,
+   "elektronik": 11600.729,
+   "market_avm": 31990.835000000003,
+   "hafta": 5
+  },
+  "2021-08": {
+   "toplam": 137474.136,
+   "mobilya_dekorasyon": 4361.032000000001,
+   "yapi_malzemeleri": 6007.26,
+   "internet": 36525.858,
+   "elektronik": 9816.856,
+   "market_avm": 26293.317,
+   "hafta": 4
+  },
+  "2021-09": {
+   "toplam": 140761.693,
+   "mobilya_dekorasyon": 4341.456999999999,
+   "yapi_malzemeleri": 6056.03,
+   "internet": 37596.604999999996,
+   "elektronik": 10742.704,
+   "market_avm": 27009.555,
+   "hafta": 4
+  },
+  "2021-10": {
+   "toplam": 184602.715,
+   "mobilya_dekorasyon": 5936.175,
+   "yapi_malzemeleri": 8721.663,
+   "internet": 52047.265,
+   "elektronik": 13976.765000000001,
+   "market_avm": 34504.567,
+   "hafta": 5
+  },
+  "2021-11": {
+   "toplam": 162516.414,
+   "mobilya_dekorasyon": 5162.83,
+   "yapi_malzemeleri": 7742.898000000001,
+   "internet": 50785.959,
+   "elektronik": 15932.567,
+   "market_avm": 29762.362999999998,
+   "hafta": 4
+  },
+  "2021-12": {
+   "toplam": 213603.85499999998,
+   "mobilya_dekorasyon": 7069.355,
+   "yapi_malzemeleri": 10224.817,
+   "internet": 60586.288,
+   "elektronik": 17125.287,
+   "market_avm": 41048.464,
+   "hafta": 5
+  },
+  "2022-01": {
+   "toplam": 154298.587,
+   "mobilya_dekorasyon": 4171.418,
+   "yapi_malzemeleri": 6011.1669999999995,
+   "internet": 42929.255000000005,
+   "elektronik": 11669.499,
+   "market_avm": 31047.891000000003,
+   "hafta": 4
+  },
+  "2022-02": {
+   "toplam": 184355.633,
+   "mobilya_dekorasyon": 5029.987999999999,
+   "yapi_malzemeleri": 7846.635,
+   "internet": 51951.629,
+   "elektronik": 13879.236,
+   "market_avm": 34809.585999999996,
+   "hafta": 4
+  },
+  "2022-03": {
+   "toplam": 204726.295,
+   "mobilya_dekorasyon": 5967.452,
+   "yapi_malzemeleri": 9970.862,
+   "internet": 56275.303,
+   "elektronik": 14594.970000000001,
+   "market_avm": 40287.058,
+   "hafta": 4
+  },
+  "2022-04": {
+   "toplam": 280216.82499999995,
+   "mobilya_dekorasyon": 8575.828,
+   "yapi_malzemeleri": 13575.404000000002,
+   "internet": 77203.858,
+   "elektronik": 19824.408000000003,
+   "market_avm": 54226.979999999996,
+   "hafta": 5
+  },
+  "2022-05": {
+   "toplam": 242519.272,
+   "mobilya_dekorasyon": 7381.496,
+   "yapi_malzemeleri": 10356.188,
+   "internet": 66806.288,
+   "elektronik": 16590.208,
+   "market_avm": 46224.668000000005,
+   "hafta": 4
+  },
+  "2022-06": {
+   "toplam": 276296.92,
+   "mobilya_dekorasyon": 7985.074,
+   "yapi_malzemeleri": 12790.757,
+   "internet": 79460.085,
+   "elektronik": 18185.988,
+   "market_avm": 51801.623999999996,
+   "hafta": 4
+  },
+  "2022-07": {
+   "toplam": 359091.675,
+   "mobilya_dekorasyon": 9800.207,
+   "yapi_malzemeleri": 14314.322,
+   "internet": 99812.22499999999,
+   "elektronik": 21764.788,
+   "market_avm": 67979.196,
+   "hafta": 5
+  },
+  "2022-08": {
+   "toplam": 310414.979,
+   "mobilya_dekorasyon": 8585.378,
+   "yapi_malzemeleri": 12918.351,
+   "internet": 86258.291,
+   "elektronik": 17848.905,
+   "market_avm": 59039.588,
+   "hafta": 4
+  },
+  "2022-09": {
+   "toplam": 410538.469,
+   "mobilya_dekorasyon": 12012.015,
+   "yapi_malzemeleri": 17321.367,
+   "internet": 114883.017,
+   "elektronik": 24112.184999999998,
+   "market_avm": 79351.182,
+   "hafta": 5
+  },
+  "2022-10": {
+   "toplam": 334192.56799999997,
+   "mobilya_dekorasyon": 10247.335,
+   "yapi_malzemeleri": 14134.824,
+   "internet": 94917.39899999999,
+   "elektronik": 24361.366,
+   "market_avm": 66513.66,
+   "hafta": 4
+  },
+  "2022-11": {
+   "toplam": 359376.728,
+   "mobilya_dekorasyon": 11667.493000000002,
+   "yapi_malzemeleri": 14535.504,
+   "internet": 108848.466,
+   "elektronik": 35041.688,
+   "market_avm": 69459.288,
+   "hafta": 4
+  },
+  "2022-12": {
+   "toplam": 491229.11,
+   "mobilya_dekorasyon": 18069.974000000002,
+   "yapi_malzemeleri": 21266.079,
+   "internet": 146743.834,
+   "elektronik": 45148.475,
+   "market_avm": 92611.59700000001,
+   "hafta": 5
+  },
+  "2023-01": {
+   "toplam": 383395.07499999995,
+   "mobilya_dekorasyon": 11236.970000000001,
+   "yapi_malzemeleri": 15184.288,
+   "internet": 113890.31899999999,
+   "elektronik": 30681.038,
+   "market_avm": 72943.478,
+   "hafta": 4
+  },
+  "2023-02": {
+   "toplam": 388245.61000000004,
+   "mobilya_dekorasyon": 10973.793,
+   "yapi_malzemeleri": 15415.874,
+   "internet": 109136.08799999999,
+   "elektronik": 29580.811999999998,
+   "market_avm": 78104.196,
+   "hafta": 4
+  },
+  "2023-03": {
+   "toplam": 578329.877,
+   "mobilya_dekorasyon": 16750.47,
+   "yapi_malzemeleri": 25647.557,
+   "internet": 176067.67299999998,
+   "elektronik": 47187.97,
+   "market_avm": 110425.07100000001,
+   "hafta": 5
+  },
+  "2023-04": {
+   "toplam": 506067.995,
+   "mobilya_dekorasyon": 15601.485,
+   "yapi_malzemeleri": 24224.094,
+   "internet": 145727.633,
+   "elektronik": 39521.551,
+   "market_avm": 93713.132,
+   "hafta": 4
+  },
+  "2023-05": {
+   "toplam": 549926.497,
+   "mobilya_dekorasyon": 19547.553,
+   "yapi_malzemeleri": 26708.542999999998,
+   "internet": 162366.743,
+   "elektronik": 44760.217000000004,
+   "market_avm": 99929.938,
+   "hafta": 4
+  },
+  "2023-06": {
+   "toplam": 732157.9880000001,
+   "mobilya_dekorasyon": 22914.393999999997,
+   "yapi_malzemeleri": 30901.028,
+   "internet": 208854.61599999998,
+   "elektronik": 53858.382,
+   "market_avm": 129444.905,
+   "hafta": 5
+  },
+  "2023-07": {
+   "toplam": 673838.983,
+   "mobilya_dekorasyon": 19819.425,
+   "yapi_malzemeleri": 26616.318,
+   "internet": 208622.48700000002,
+   "elektronik": 50998.077,
+   "market_avm": 116069.972,
+   "hafta": 4
+  },
+  "2023-08": {
+   "toplam": 699971.819,
+   "mobilya_dekorasyon": 19182.004,
+   "yapi_malzemeleri": 25603.178,
+   "internet": 205482.32499999998,
+   "elektronik": 48686.31,
+   "market_avm": 121500.546,
+   "hafta": 4
+  },
+  "2023-09": {
+   "toplam": 918913.4749999999,
+   "mobilya_dekorasyon": 26092.568,
+   "yapi_malzemeleri": 34723.449,
+   "internet": 268363.8,
+   "elektronik": 69891.55300000001,
+   "market_avm": 162158.41700000002,
+   "hafta": 5
+  },
+  "2023-10": {
+   "toplam": 725387.9039999999,
+   "mobilya_dekorasyon": 22126.828,
+   "yapi_malzemeleri": 29669.268,
+   "internet": 206173.059,
+   "elektronik": 61258.747,
+   "market_avm": 131757.934,
+   "hafta": 4
+  },
+  "2023-11": {
+   "toplam": 762640.497,
+   "mobilya_dekorasyon": 23691.792999999998,
+   "yapi_malzemeleri": 29723.661,
+   "internet": 236153.941,
+   "elektronik": 76709.601,
+   "market_avm": 134640.237,
+   "hafta": 4
+  },
+  "2023-12": {
+   "toplam": 1053156.571,
+   "mobilya_dekorasyon": 36664.958999999995,
+   "yapi_malzemeleri": 44429.219999999994,
+   "internet": 314493.386,
+   "elektronik": 94599.432,
+   "market_avm": 184039.24699999997,
+   "hafta": 5
+  },
+  "2024-01": {
+   "toplam": 801686.824,
+   "mobilya_dekorasyon": 24183.075,
+   "yapi_malzemeleri": 30573.748,
+   "internet": 230494.093,
+   "elektronik": 62828.13,
+   "market_avm": 146729.20500000002,
+   "hafta": 4
+  },
+  "2024-02": {
+   "toplam": 914272.6630000001,
+   "mobilya_dekorasyon": 26799.064000000002,
+   "yapi_malzemeleri": 35452.73,
+   "internet": 272963.276,
+   "elektronik": 71542.187,
+   "market_avm": 159432.348,
+   "hafta": 4
+  },
+  "2024-03": {
+   "toplam": 1284111.186,
+   "mobilya_dekorasyon": 40282.383,
+   "yapi_malzemeleri": 54638.746,
+   "internet": 402920.26300000004,
+   "elektronik": 102237.77100000001,
+   "market_avm": 220142.43099999998,
+   "hafta": 5
+  },
+  "2024-04": {
+   "toplam": 1012246.187,
+   "mobilya_dekorasyon": 28042.663999999997,
+   "yapi_malzemeleri": 35109.971999999994,
+   "internet": 281084.321,
+   "elektronik": 67281.462,
+   "market_avm": 180761.88,
+   "hafta": 4
+  },
+  "2024-05": {
+   "toplam": 1401892.6439999999,
+   "mobilya_dekorasyon": 39514.834,
+   "yapi_malzemeleri": 55156.869000000006,
+   "internet": 417945.85699999996,
+   "elektronik": 92641.28700000001,
+   "market_avm": 243181.12900000002,
+   "hafta": 5
+  },
+  "2024-06": {
+   "toplam": 1145874.906,
+   "mobilya_dekorasyon": 29628.496,
+   "yapi_malzemeleri": 41613.746,
+   "internet": 318574.052,
+   "elektronik": 77109.256,
+   "market_avm": 206029.682,
+   "hafta": 4
+  },
+  "2024-07": {
+   "toplam": 1218148.106,
+   "mobilya_dekorasyon": 33607.952,
+   "yapi_malzemeleri": 48206.328,
+   "internet": 352931.838,
+   "elektronik": 80187.089,
+   "market_avm": 215460.92799999999,
+   "hafta": 4
+  },
+  "2024-08": {
+   "toplam": 1565205.75,
+   "mobilya_dekorasyon": 41266.204,
+   "yapi_malzemeleri": 58633.222,
+   "internet": 450759.88899999997,
+   "elektronik": 85976.658,
+   "market_avm": 267515.756,
+   "hafta": 5
+  },
+  "2024-09": {
+   "toplam": 1283888.907,
+   "mobilya_dekorasyon": 33971.382,
+   "yapi_malzemeleri": 50449.655,
+   "internet": 364235.009,
+   "elektronik": 70774.507,
+   "market_avm": 223903.679,
+   "hafta": 4
+  },
+  "2024-10": {
+   "toplam": 1254972.282,
+   "mobilya_dekorasyon": 35101.079,
+   "yapi_malzemeleri": 52899.223,
+   "internet": 346361.463,
+   "elektronik": 65248.224,
+   "market_avm": 227566.153,
+   "hafta": 4
+  },
+  "2024-11": {
+   "toplam": 1626621.1430000002,
+   "mobilya_dekorasyon": 48480.272,
+   "yapi_malzemeleri": 66864.237,
+   "internet": 485672.386,
+   "elektronik": 90704.228,
+   "market_avm": 294764.836,
+   "hafta": 5
+  },
+  "2024-12": {
+   "toplam": 1358328.557,
+   "mobilya_dekorasyon": 40449.97,
+   "yapi_malzemeleri": 54841.560000000005,
+   "internet": 404958.475,
+   "elektronik": 80476.744,
+   "market_avm": 244417.76499999998,
+   "hafta": 4
+  },
+  "2025-01": {
+   "toplam": 1788459.1800000002,
+   "mobilya_dekorasyon": 47580.798,
+   "yapi_malzemeleri": 68922.91200000001,
+   "internet": 521523.85400000005,
+   "elektronik": 84449.64300000001,
+   "market_avm": 335124.521,
+   "hafta": 5
+  },
+  "2025-02": {
+   "toplam": 1474978.118,
+   "mobilya_dekorasyon": 39204.002,
+   "yapi_malzemeleri": 56420.665,
+   "internet": 421658.609,
+   "elektronik": 70895.213,
+   "market_avm": 293974.71499999997,
+   "hafta": 4
+  },
+  "2025-03": {
+   "toplam": 1553418.954,
+   "mobilya_dekorasyon": 41484.851,
+   "yapi_malzemeleri": 64185.026,
+   "internet": 463459.497,
+   "elektronik": 71657.409,
+   "market_avm": 305351.57200000004,
+   "hafta": 4
+  },
+  "2025-04": {
+   "toplam": 1536103.017,
+   "mobilya_dekorasyon": 44033.634,
+   "yapi_malzemeleri": 60537.512,
+   "internet": 433006.385,
+   "elektronik": 68563.067,
+   "market_avm": 304892.224,
+   "hafta": 4
+  },
+  "2025-05": {
+   "toplam": 2247662.204,
+   "mobilya_dekorasyon": 63861.314,
+   "yapi_malzemeleri": 91980.193,
+   "internet": 720376.8150000001,
+   "elektronik": 90680.174,
+   "market_avm": 412988.494,
+   "hafta": 5
+  },
+  "2025-06": {
+   "toplam": 1781412.897,
+   "mobilya_dekorasyon": 46248.53,
+   "yapi_malzemeleri": 68532.785,
+   "internet": 506612.97699999996,
+   "elektronik": 74254.54699999999,
+   "market_avm": 332645.44999999995,
+   "hafta": 4
+  },
+  "2025-07": {
+   "toplam": 1833971.723,
+   "mobilya_dekorasyon": 50178.047,
+   "yapi_malzemeleri": 74564.124,
+   "internet": 533641.2119999999,
+   "elektronik": 78380.21900000001,
+   "market_avm": 349819.159,
+   "hafta": 4
+  },
+  "2025-08": {
+   "toplam": 2354476.504,
+   "mobilya_dekorasyon": 61359.106,
+   "yapi_malzemeleri": 93719.509,
+   "internet": 712698.649,
+   "elektronik": 94558.03600000001,
+   "market_avm": 431486.55,
+   "hafta": 5
+  },
+  "2025-09": {
+   "toplam": 1960584.1900000002,
+   "mobilya_dekorasyon": 51487.585,
+   "yapi_malzemeleri": 78800.245,
+   "internet": 560227.403,
+   "elektronik": 88317.393,
+   "market_avm": 381699.753,
+   "hafta": 4
+  },
+  "2025-10": {
+   "toplam": 2445890.92,
+   "mobilya_dekorasyon": 68587.484,
+   "yapi_malzemeleri": 102410.327,
+   "internet": 702057.632,
+   "elektronik": 108081.874,
+   "market_avm": 478267.751,
+   "hafta": 5
+  },
+  "2025-11": {
+   "toplam": 2099142.358,
+   "mobilya_dekorasyon": 58495.183999999994,
+   "yapi_malzemeleri": 83566.505,
+   "internet": 670745.255,
+   "elektronik": 101120.654,
+   "market_avm": 409864.149,
+   "hafta": 4
+  },
+  "2025-12": {
+   "toplam": 2156709.75,
+   "mobilya_dekorasyon": 62389.709,
+   "yapi_malzemeleri": 88430.35200000001,
+   "internet": 644986.683,
+   "elektronik": 100698.07500000001,
+   "market_avm": 420036.07500000007,
+   "hafta": 4
+  },
+  "2026-01": {
+   "toplam": 2634703.034,
+   "mobilya_dekorasyon": 68030.016,
+   "yapi_malzemeleri": 92923.10399999999,
+   "internet": 762234.037,
+   "elektronik": 107486.12,
+   "market_avm": 522769.017,
+   "hafta": 5
+  },
+  "2026-02": {
+   "toplam": 2148314.761,
+   "mobilya_dekorasyon": 56180.486999999994,
+   "yapi_malzemeleri": 78565.784,
+   "internet": 621627.971,
+   "elektronik": 85147.54000000001,
+   "market_avm": 445445.83199999994,
+   "hafta": 4
+  },
+  "2026-03": {
+   "toplam": 2219578.326,
+   "mobilya_dekorasyon": 56257.396,
+   "yapi_malzemeleri": 86691.23199999999,
+   "internet": 641096.643,
+   "elektronik": 83892.73,
+   "market_avm": 459232.508,
+   "hafta": 4
+  },
+  "2026-04": {
+   "toplam": 2277521.219,
+   "mobilya_dekorasyon": 62561.201,
+   "yapi_malzemeleri": 95964.102,
+   "internet": 676370.48,
+   "elektronik": 86271.19099999999,
+   "market_avm": 466725.37799999997,
+   "hafta": 4
+  },
+  "2026-05": {
+   "toplam": 3147366.573,
+   "mobilya_dekorasyon": 79674.986,
+   "yapi_malzemeleri": 119683.51200000002,
+   "internet": 977401.342,
+   "elektronik": 109544.786,
+   "market_avm": 612937.466,
+   "hafta": 5
+  },
+  "2026-06": {
+   "toplam": 2633900.796,
+   "mobilya_dekorasyon": 62276.202,
+   "yapi_malzemeleri": 105076.43899999998,
+   "internet": 841656.362,
+   "elektronik": 92176.59999999999,
+   "market_avm": 515149.904,
+   "hafta": 4
+  },
+  "2026-07": {
+   "toplam": 3322623.0289999996,
+   "mobilya_dekorasyon": 80603.776,
+   "yapi_malzemeleri": 133255.465,
+   "internet": 1008888.3530000001,
+   "elektronik": 114120.08,
+   "market_avm": 662589.9899999999,
+   "hafta": 5
+  },
+  "2026-08": {
+   "toplam": 2679051.647,
+   "mobilya_dekorasyon": 61229.34299999999,
+   "yapi_malzemeleri": 105852.98200000002,
+   "internet": 784196.5110000002,
+   "elektronik": 90591.179,
+   "market_avm": 538107.598,
+   "hafta": 4
+  },
+  "2026-09": {
+   "toplam": 2032353.5040000002,
+   "mobilya_dekorasyon": 47223.163,
+   "yapi_malzemeleri": 82382.114,
+   "internet": 600086.834,
+   "elektronik": 80456.53899999999,
+   "market_avm": 415254.601,
+   "hafta": 3
+  }
+ },
+ "kartli_odeme_endeksi": {
+  "2019-1": {
+   "genel_nominal": 167.6,
+   "genel_reel": 109.21,
+   "hane_nominal": 153.18,
+   "hane_reel": 99.82
+  },
+  "2019-2": {
+   "genel_nominal": 156.1,
+   "genel_reel": 101.55,
+   "hane_nominal": 158.66,
+   "hane_reel": 103.22
+  },
+  "2019-3": {
+   "genel_nominal": 185.22,
+   "genel_reel": 119.27,
+   "hane_nominal": 173.47,
+   "hane_reel": 111.71
+  },
+  "2019-4": {
+   "genel_nominal": 179.89,
+   "genel_reel": 113.91,
+   "hane_nominal": 168.47,
+   "hane_reel": 106.68
+  },
+  "2019-5": {
+   "genel_nominal": 198.83,
+   "genel_reel": 124.72,
+   "hane_nominal": 181.64,
+   "hane_reel": 113.94
+  },
+  "2019-6": {
+   "genel_nominal": 189.11,
+   "genel_reel": 118.59,
+   "hane_nominal": 180.94,
+   "hane_reel": 113.47
+  },
+  "2019-7": {
+   "genel_nominal": 208.48,
+   "genel_reel": 128.99,
+   "hane_nominal": 187.85,
+   "hane_reel": 116.23
+  },
+  "2019-8": {
+   "genel_nominal": 197.63,
+   "genel_reel": 121.24,
+   "hane_nominal": 189.15,
+   "hane_reel": 116.03
+  },
+  "2019-9": {
+   "genel_nominal": 201.65,
+   "genel_reel": 122.48,
+   "hane_nominal": 189.27,
+   "hane_reel": 114.97
+  },
+  "2019-10": {
+   "genel_nominal": 204.49,
+   "genel_reel": 121.77,
+   "hane_nominal": 190.32,
+   "hane_reel": 113.33
+  },
+  "2019-11": {
+   "genel_nominal": 209.0,
+   "genel_reel": 123.99,
+   "hane_nominal": 194.03,
+   "hane_reel": 115.1
+  },
+  "2019-12": {
+   "genel_nominal": 215.06,
+   "genel_reel": 126.64,
+   "hane_nominal": 198.49,
+   "hane_reel": 116.88
+  },
+  "2020-1": {
+   "genel_nominal": 210.28,
+   "genel_reel": 122.17,
+   "hane_nominal": 188.86,
+   "hane_reel": 109.73
+  },
+  "2020-2": {
+   "genel_nominal": 200.86,
+   "genel_reel": 116.29,
+   "hane_nominal": 187.52,
+   "hane_reel": 108.57
+  },
+  "2020-3": {
+   "genel_nominal": 202.34,
+   "genel_reel": 116.48,
+   "hane_nominal": 188.04,
+   "hane_reel": 108.25
+  },
+  "2020-4": {
+   "genel_nominal": 160.29,
+   "genel_reel": 91.49,
+   "hane_nominal": 145.86,
+   "hane_reel": 83.26
+  },
+  "2020-5": {
+   "genel_nominal": 180.32,
+   "genel_reel": 101.54,
+   "hane_nominal": 165.04,
+   "hane_reel": 92.94
+  },
+  "2020-6": {
+   "genel_nominal": 227.44,
+   "genel_reel": 126.64,
+   "hane_nominal": 209.25,
+   "hane_reel": 116.52
+  },
+  "2020-7": {
+   "genel_nominal": 265.1,
+   "genel_reel": 146.76,
+   "hane_nominal": 240.99,
+   "hane_reel": 133.41
+  },
+  "2020-8": {
+   "genel_nominal": 240.27,
+   "genel_reel": 131.87,
+   "hane_nominal": 220.45,
+   "hane_reel": 120.99
+  },
+  "2020-9": {
+   "genel_nominal": 251.66,
+   "genel_reel": 136.79,
+   "hane_nominal": 230.33,
+   "hane_reel": 125.2
+  },
+  "2020-10": {
+   "genel_nominal": 260.87,
+   "genel_reel": 138.84,
+   "hane_nominal": 238.29,
+   "hane_reel": 126.82
+  },
+  "2020-11": {
+   "genel_nominal": 257.82,
+   "genel_reel": 134.13,
+   "hane_nominal": 232.02,
+   "hane_reel": 120.71
+  },
+  "2020-12": {
+   "genel_nominal": 254.98,
+   "genel_reel": 131.02,
+   "hane_nominal": 220.78,
+   "hane_reel": 113.44
+  },
+  "2021-1": {
+   "genel_nominal": 243.52,
+   "genel_reel": 123.06,
+   "hane_nominal": 209.45,
+   "hane_reel": 105.84
+  },
+  "2021-2": {
+   "genel_nominal": 242.76,
+   "genel_reel": 121.57,
+   "hane_nominal": 209.96,
+   "hane_reel": 105.15
+  },
+  "2021-3": {
+   "genel_nominal": 299.67,
+   "genel_reel": 148.48,
+   "hane_nominal": 255.22,
+   "hane_reel": 126.45
+  },
+  "2021-4": {
+   "genel_nominal": 275.57,
+   "genel_reel": 134.28,
+   "hane_nominal": 243.7,
+   "hane_reel": 118.75
+  },
+  "2021-5": {
+   "genel_nominal": 272.15,
+   "genel_reel": 131.45,
+   "hane_nominal": 237.04,
+   "hane_reel": 114.49
+  },
+  "2021-6": {
+   "genel_nominal": 344.08,
+   "genel_reel": 163.02,
+   "hane_nominal": 304.27,
+   "hane_reel": 144.16
+  },
+  "2021-7": {
+   "genel_nominal": 357.86,
+   "genel_reel": 166.54,
+   "hane_nominal": 319.1,
+   "hane_reel": 148.51
+  },
+  "2021-8": {
+   "genel_nominal": 363.28,
+   "genel_reel": 167.2,
+   "hane_nominal": 321.91,
+   "hane_reel": 148.16
+  },
+  "2021-9": {
+   "genel_nominal": 376.71,
+   "genel_reel": 171.23,
+   "hane_nominal": 329.43,
+   "hane_reel": 149.74
+  },
+  "2021-10": {
+   "genel_nominal": 390.27,
+   "genel_reel": 173.25,
+   "hane_nominal": 334.52,
+   "hane_reel": 148.5
+  },
+  "2021-11": {
+   "genel_nominal": 428.83,
+   "genel_reel": 183.91,
+   "hane_nominal": 353.34,
+   "hane_reel": 151.53
+  },
+  "2021-12": {
+   "genel_nominal": 454.52,
+   "genel_reel": 171.63,
+   "hane_nominal": 386.69,
+   "hane_reel": 146.01
+  },
+  "2022-1": {
+   "genel_nominal": 428.16,
+   "genel_reel": 145.51,
+   "hane_nominal": 361.21,
+   "hane_reel": 122.76
+  },
+  "2022-2": {
+   "genel_nominal": 448.04,
+   "genel_reel": 145.28,
+   "hane_nominal": 389.85,
+   "hane_reel": 126.42
+  },
+  "2022-3": {
+   "genel_nominal": 569.01,
+   "genel_reel": 174.95,
+   "hane_nominal": 472.14,
+   "hane_reel": 145.17
+  },
+  "2022-4": {
+   "genel_nominal": 586.43,
+   "genel_reel": 168.12,
+   "hane_nominal": 505.28,
+   "hane_reel": 144.86
+  },
+  "2022-5": {
+   "genel_nominal": 656.81,
+   "genel_reel": 182.85,
+   "hane_nominal": 556.55,
+   "hane_reel": 154.94
+  },
+  "2022-6": {
+   "genel_nominal": 721.56,
+   "genel_reel": 191.4,
+   "hane_nominal": 615.56,
+   "hane_reel": 163.28
+  },
+  "2022-7": {
+   "genel_nominal": 749.44,
+   "genel_reel": 194.2,
+   "hane_nominal": 651.68,
+   "hane_reel": 168.87
+  },
+  "2022-8": {
+   "genel_nominal": 818.5,
+   "genel_reel": 209.04,
+   "hane_nominal": 715.7,
+   "hane_reel": 182.78
+  },
+  "2022-9": {
+   "genel_nominal": 859.62,
+   "genel_reel": 212.99,
+   "hane_nominal": 748.52,
+   "hane_reel": 185.46
+  },
+  "2022-10": {
+   "genel_nominal": 892.5,
+   "genel_reel": 213.57,
+   "hane_nominal": 782.54,
+   "hane_reel": 187.25
+  },
+  "2022-11": {
+   "genel_nominal": 970.2,
+   "genel_reel": 225.65,
+   "hane_nominal": 834.26,
+   "hane_reel": 194.03
+  },
+  "2022-12": {
+   "genel_nominal": 1071.44,
+   "genel_reel": 246.29,
+   "hane_nominal": 920.05,
+   "hane_reel": 211.49
+  },
+  "2023-1": {
+   "genel_nominal": 1054.88,
+   "genel_reel": 227.36,
+   "hane_nominal": 898.04,
+   "hane_reel": 193.56
+  },
+  "2023-2": {
+   "genel_nominal": 949.36,
+   "genel_reel": 198.38,
+   "hane_nominal": 828.06,
+   "hane_reel": 173.03
+  },
+  "2023-3": {
+   "genel_nominal": 1237.41,
+   "genel_reel": 252.78,
+   "hane_nominal": 1074.42,
+   "hane_reel": 219.49
+  },
+  "2023-4": {
+   "genel_nominal": 1287.21,
+   "genel_reel": 256.83,
+   "hane_nominal": 1143.9,
+   "hane_reel": 228.24
+  },
+  "2023-5": {
+   "genel_nominal": 1480.75,
+   "genel_reel": 295.32,
+   "hane_nominal": 1252.78,
+   "hane_reel": 249.85
+  },
+  "2023-6": {
+   "genel_nominal": 1510.71,
+   "genel_reel": 289.93,
+   "hane_nominal": 1382.06,
+   "hane_reel": 265.24
+  },
+  "2023-7": {
+   "genel_nominal": 1780.02,
+   "genel_reel": 312.01,
+   "hane_nominal": 1536.21,
+   "hane_reel": 269.27
+  },
+  "2023-8": {
+   "genel_nominal": 1889.7,
+   "genel_reel": 303.64,
+   "hane_nominal": 1692.01,
+   "hane_reel": 271.87
+  },
+  "2023-9": {
+   "genel_nominal": 1910.5,
+   "genel_reel": 293.1,
+   "hane_nominal": 1731.4,
+   "hane_reel": 265.6
+  },
+  "2023-10": {
+   "genel_nominal": 1978.5,
+   "genel_reel": 293.4,
+   "hane_nominal": 1758.3,
+   "hane_reel": 260.8
+  },
+  "2023-11": {
+   "genel_nominal": 2100.3,
+   "genel_reel": 301.6,
+   "hane_nominal": 1827.4,
+   "hane_reel": 262.4
+  },
+  "2023-12": {
+   "genel_nominal": 2314.0,
+   "genel_reel": 322.8,
+   "hane_nominal": 2043.8,
+   "hane_reel": 285.1
+  },
+  "2024-1": {
+   "genel_nominal": 2294.9,
+   "genel_reel": 300.1,
+   "hane_nominal": 1985.0,
+   "hane_reel": 259.5
+  },
+  "2024-2": {
+   "genel_nominal": 2394.8,
+   "genel_reel": 299.5,
+   "hane_nominal": 2142.9,
+   "hane_reel": 268.0
+  },
+  "2024-3": {
+   "genel_nominal": 2794.4,
+   "genel_reel": 338.8,
+   "hane_nominal": 2496.2,
+   "hane_reel": 302.6
+  },
+  "2024-4": {
+   "genel_nominal": 2667.5,
+   "genel_reel": 313.5,
+   "hane_nominal": 2409.4,
+   "hane_reel": 283.1
+  },
+  "2024-5": {
+   "genel_nominal": 3011.0,
+   "genel_reel": 342.3,
+   "hane_nominal": 2627.2,
+   "hane_reel": 298.7
+  },
+  "2024-6": {
+   "genel_nominal": 2998.4,
+   "genel_reel": 335.3,
+   "hane_nominal": 2761.1,
+   "hane_reel": 308.8
+  },
+  "2024-7": {
+   "genel_nominal": 3362.1,
+   "genel_reel": 364.3,
+   "hane_nominal": 2974.4,
+   "hane_reel": 322.3
+  },
+  "2024-8": {
+   "genel_nominal": 3360.3,
+   "genel_reel": 355.0,
+   "hane_nominal": 3101.1,
+   "hane_reel": 327.9
+  },
+  "2024-9": {
+   "genel_nominal": 3428.5,
+   "genel_reel": 352.0,
+   "hane_nominal": 3080.7,
+   "hane_reel": 316.3
+  },
+  "2024-10": {
+   "genel_nominal": 3519.8,
+   "genel_reel": 351.3,
+   "hane_nominal": 3163.5,
+   "hane_reel": 315.7
+  },
+  "2024-11": {
+   "genel_nominal": 3626.7,
+   "genel_reel": 354.0,
+   "hane_nominal": 3204.0,
+   "hane_reel": 312.8
+  },
+  "2024-12": {
+   "genel_nominal": 4020.4,
+   "genel_reel": 388.5,
+   "hane_nominal": 3481.4,
+   "hane_reel": 336.4
+  },
+  "2025-1": {
+   "genel_nominal": 3800.4,
+   "genel_reel": 349.6,
+   "hane_nominal": 3323.6,
+   "hane_reel": 305.8
+  },
+  "2025-2": {
+   "genel_nominal": 3602.0,
+   "genel_reel": 324.0,
+   "hane_nominal": 3252.5,
+   "hane_reel": 292.6
+  },
+  "2025-3": {
+   "genel_nominal": 4146.4,
+   "genel_reel": 364.0,
+   "hane_nominal": 3736.2,
+   "hane_reel": 328.0
+  },
+  "2025-4": {
+   "genel_nominal": 4218.3,
+   "genel_reel": 359.5,
+   "hane_nominal": 3698.8,
+   "hane_reel": 315.3
+  },
+  "2025-5": {
+   "genel_nominal": 4732.4,
+   "genel_reel": 397.3,
+   "hane_nominal": 4142.8,
+   "hane_reel": 347.8
+  },
+  "2025-6": {
+   "genel_nominal": 4521.2,
+   "genel_reel": 374.42,
+   "hane_nominal": 4090.6,
+   "hane_reel": 338.76
+  },
+  "2025-7": {
+   "genel_nominal": 5117.66,
+   "genel_reel": 415.27,
+   "hane_nominal": 4508.17,
+   "hane_reel": 365.81
+  },
+  "2025-8": {
+   "genel_nominal": 5076.9,
+   "genel_reel": 403.7,
+   "hane_nominal": 4570.7,
+   "hane_reel": 363.5
+  },
+  "2025-9": {
+   "genel_nominal": 5178.3,
+   "genel_reel": 398.9,
+   "hane_nominal": 4629.9,
+   "hane_reel": 356.7
+  },
+  "2025-10": {
+   "genel_nominal": 5228.3,
+   "genel_reel": 392.7,
+   "hane_nominal": 4664.9,
+   "hane_reel": 350.4
+  },
+  "2025-11": {
+   "genel_nominal": 5360.07,
+   "genel_reel": 399.2,
+   "hane_nominal": 4676.3,
+   "hane_reel": 348.3
+  },
+  "2025-12": {
+   "genel_nominal": 5939.8,
+   "genel_reel": 438.5,
+   "hane_nominal": 5068.2,
+   "hane_reel": 374.1
+  },
+  "2026-1": {
+   "genel_nominal": 5501.3,
+   "genel_reel": 387.4,
+   "hane_nominal": 4845.5,
+   "hane_reel": 341.2
+  },
+  "2026-2": {
+   "genel_nominal": 5300.5,
+   "genel_reel": 362.5,
+   "hane_nominal": 4587.0,
+   "hane_reel": 313.7
+  },
+  "2026-3": {
+   "genel_nominal": 6169.6,
+   "genel_reel": 413.9,
+   "hane_nominal": 5347.6,
+   "hane_reel": 358.8
+  },
+  "2026-4": {
+   "genel_nominal": 6054.3,
+   "genel_reel": 389.9,
+   "hane_nominal": 5250.4,
+   "hane_reel": 338.1
+  },
+  "2026-5": {
+   "genel_nominal": 6229.4,
+   "genel_reel": 394.4,
+   "hane_nominal": 5600.5,
+   "hane_reel": 354.6
+  },
+  "2026-6": {
+   "genel_nominal": 6783.2,
+   "genel_reel": 425.2,
+   "hane_nominal": 5693.9,
+   "hane_reel": 356.9
+  },
+  "2026-7": {
+   "genel_nominal": 7036.8,
+   "genel_reel": 433.4,
+   "hane_nominal": 6018.6,
+   "hane_reel": 370.7
+  }
+ },
+ "tuketici_egilim": {
+  "2019-1": {
+   "guven_endeksi": 80.11330377,
+   "hane_maddi_son12": 69.80410175,
+   "hane_maddi_gelecek12": 77.11111946,
+   "genel_ekonomi_gelecek12": 76.51151175,
+   "dayanikli_mal_uygunluk": 55.31058667,
+   "dayanikli_harcama_gelecek12": 97.02648212,
+   "tasarruf_uygunluk": 58.83161208,
+   "tasarruf_ihtimali": 19.44076561,
+   "konut_tamirat_harcama_ihtimali": 21.37260678,
+   "konut_alma_ihtimali": 6.85342302
+  },
+  "2019-2": {
+   "guven_endeksi": 78.79038966,
+   "hane_maddi_son12": 68.7146917,
+   "hane_maddi_gelecek12": 75.22774584,
+   "genel_ekonomi_gelecek12": 74.96220638,
+   "dayanikli_mal_uygunluk": 50.56512955,
+   "dayanikli_harcama_gelecek12": 96.25691473,
+   "tasarruf_uygunluk": 58.2828647,
+   "tasarruf_ihtimali": 22.53314292,
+   "konut_tamirat_harcama_ihtimali": 26.2990192,
+   "konut_alma_ihtimali": 6.13003005
+  },
+  "2019-3": {
+   "guven_endeksi": 81.10049382,
+   "hane_maddi_son12": 69.27291206,
+   "hane_maddi_gelecek12": 78.25544797,
+   "genel_ekonomi_gelecek12": 78.647555,
+   "dayanikli_mal_uygunluk": 52.05219667,
+   "dayanikli_harcama_gelecek12": 98.22606027,
+   "tasarruf_uygunluk": 59.20138463,
+   "tasarruf_ihtimali": 22.15075715,
+   "konut_tamirat_harcama_ihtimali": 25.7666612,
+   "konut_alma_ihtimali": 6.12311451
+  },
+  "2019-4": {
+   "guven_endeksi": 83.61170614,
+   "hane_maddi_son12": 72.6269734,
+   "hane_maddi_gelecek12": 82.23605038,
+   "genel_ekonomi_gelecek12": 82.41633758,
+   "dayanikli_mal_uygunluk": 50.47019073,
+   "dayanikli_harcama_gelecek12": 97.16746319,
+   "tasarruf_uygunluk": 63.92306141,
+   "tasarruf_ihtimali": 29.69569986,
+   "konut_tamirat_harcama_ihtimali": 32.91230974,
+   "konut_alma_ihtimali": 8.84908636
+  },
+  "2019-5": {
+   "guven_endeksi": 77.04567514,
+   "hane_maddi_son12": 69.62793775,
+   "hane_maddi_gelecek12": 73.94633358,
+   "genel_ekonomi_gelecek12": 70.14607133,
+   "dayanikli_mal_uygunluk": 39.78620156,
+   "dayanikli_harcama_gelecek12": 94.46235789,
+   "tasarruf_uygunluk": 53.93447212,
+   "tasarruf_ihtimali": 21.64776955,
+   "konut_tamirat_harcama_ihtimali": 27.38951505,
+   "konut_alma_ihtimali": 7.07605316
+  },
+  "2019-6": {
+   "guven_endeksi": 80.09404011,
+   "hane_maddi_son12": 70.80933103,
+   "hane_maddi_gelecek12": 78.28559379,
+   "genel_ekonomi_gelecek12": 73.94113277,
+   "dayanikli_mal_uygunluk": 40.45583458,
+   "dayanikli_harcama_gelecek12": 97.34010288,
+   "tasarruf_uygunluk": 57.25300972,
+   "tasarruf_ihtimali": 22.44609057,
+   "konut_tamirat_harcama_ihtimali": 22.90803627,
+   "konut_alma_ihtimali": 5.94813742
+  },
+  "2019-7": {
+   "guven_endeksi": 78.93809794,
+   "hane_maddi_son12": 68.53592991,
+   "hane_maddi_gelecek12": 76.97168067,
+   "genel_ekonomi_gelecek12": 73.36953742,
+   "dayanikli_mal_uygunluk": 40.25657661,
+   "dayanikli_harcama_gelecek12": 96.87524374,
+   "tasarruf_uygunluk": 59.38672124,
+   "tasarruf_ihtimali": 20.98363802,
+   "konut_tamirat_harcama_ihtimali": 22.82076029,
+   "konut_alma_ihtimali": 6.59076973
+  },
+  "2019-8": {
+   "guven_endeksi": 79.60414532,
+   "hane_maddi_son12": 71.44581569,
+   "hane_maddi_gelecek12": 77.81439333,
+   "genel_ekonomi_gelecek12": 74.27280227,
+   "dayanikli_mal_uygunluk": 38.71592688,
+   "dayanikli_harcama_gelecek12": 94.88356998,
+   "tasarruf_uygunluk": 60.84349746,
+   "tasarruf_ihtimali": 23.6500155,
+   "konut_tamirat_harcama_ihtimali": 23.38284774,
+   "konut_alma_ihtimali": 6.97571932
+  },
+  "2019-9": {
+   "guven_endeksi": 77.63885503,
+   "hane_maddi_son12": 69.92669555,
+   "hane_maddi_gelecek12": 73.99778218,
+   "genel_ekonomi_gelecek12": 71.00569746,
+   "dayanikli_mal_uygunluk": 37.1150612,
+   "dayanikli_harcama_gelecek12": 95.62524495,
+   "tasarruf_uygunluk": 55.85186171,
+   "tasarruf_ihtimali": 20.24320872,
+   "konut_tamirat_harcama_ihtimali": 21.8920658,
+   "konut_alma_ihtimali": 6.66086402
+  },
+  "2019-10": {
+   "guven_endeksi": 78.17048933,
+   "hane_maddi_son12": 68.52026028,
+   "hane_maddi_gelecek12": 74.80939372,
+   "genel_ekonomi_gelecek12": 73.43087921,
+   "dayanikli_mal_uygunluk": 42.1459137,
+   "dayanikli_harcama_gelecek12": 95.9214241,
+   "tasarruf_uygunluk": 58.28381,
+   "tasarruf_ihtimali": 21.38141964,
+   "konut_tamirat_harcama_ihtimali": 22.4532425,
+   "konut_alma_ihtimali": 6.77538081
+  },
+  "2019-11": {
+   "guven_endeksi": 81.24018395,
+   "hane_maddi_son12": 71.60903672,
+   "hane_maddi_gelecek12": 79.33553168,
+   "genel_ekonomi_gelecek12": 78.51424134,
+   "dayanikli_mal_uygunluk": 46.53283057,
+   "dayanikli_harcama_gelecek12": 95.50192606,
+   "tasarruf_uygunluk": 56.53676627,
+   "tasarruf_ihtimali": 20.99823944,
+   "konut_tamirat_harcama_ihtimali": 19.8963703,
+   "konut_alma_ihtimali": 6.91218831
+  },
+  "2019-12": {
+   "guven_endeksi": 80.48867194,
+   "hane_maddi_son12": 72.92710161,
+   "hane_maddi_gelecek12": 77.68730878,
+   "genel_ekonomi_gelecek12": 76.52416743,
+   "dayanikli_mal_uygunluk": 48.29030524,
+   "dayanikli_harcama_gelecek12": 94.81610993,
+   "tasarruf_uygunluk": 56.48715718,
+   "tasarruf_ihtimali": 21.60185041,
+   "konut_tamirat_harcama_ihtimali": 20.17896065,
+   "konut_alma_ihtimali": 6.76037293
+  },
+  "2020-1": {
+   "guven_endeksi": 81.11781199,
+   "hane_maddi_son12": 71.78321173,
+   "hane_maddi_gelecek12": 79.49914532,
+   "genel_ekonomi_gelecek12": 77.38069268,
+   "dayanikli_mal_uygunluk": 43.96119988,
+   "dayanikli_harcama_gelecek12": 95.80819821,
+   "tasarruf_uygunluk": 55.9968731,
+   "tasarruf_ihtimali": 21.77298654,
+   "konut_tamirat_harcama_ihtimali": 21.63881209,
+   "konut_alma_ihtimali": 7.43116676
+  },
+  "2020-2": {
+   "guven_endeksi": 79.29114811,
+   "hane_maddi_son12": 70.84768791,
+   "hane_maddi_gelecek12": 76.80680803,
+   "genel_ekonomi_gelecek12": 75.93601732,
+   "dayanikli_mal_uygunluk": 43.99087716,
+   "dayanikli_harcama_gelecek12": 93.57407917,
+   "tasarruf_uygunluk": 55.64396375,
+   "tasarruf_ihtimali": 23.00296828,
+   "konut_tamirat_harcama_ihtimali": 24.08710246,
+   "konut_alma_ihtimali": 7.41899353
+  },
+  "2020-3": {
+   "guven_endeksi": 80.9837989,
+   "hane_maddi_son12": 74.92864349,
+   "hane_maddi_gelecek12": 78.58403041,
+   "genel_ekonomi_gelecek12": 75.57385485,
+   "dayanikli_mal_uygunluk": 40.47099151,
+   "dayanikli_harcama_gelecek12": 94.84866683,
+   "tasarruf_uygunluk": 54.6084315,
+   "tasarruf_ihtimali": 20.87424083,
+   "konut_tamirat_harcama_ihtimali": 23.36815189,
+   "konut_alma_ihtimali": 8.67124484
+  },
+  "2020-4": {
+   "guven_endeksi": 78.17727508,
+   "hane_maddi_son12": 74.22082146,
+   "hane_maddi_gelecek12": 72.48901342,
+   "genel_ekonomi_gelecek12": 74.75111803,
+   "dayanikli_mal_uygunluk": 35.26415815,
+   "dayanikli_harcama_gelecek12": 91.2481474,
+   "tasarruf_uygunluk": 56.68473766,
+   "tasarruf_ihtimali": 21.01011612,
+   "konut_tamirat_harcama_ihtimali": 18.72210069,
+   "konut_alma_ihtimali": 6.56825446
+  },
+  "2020-5": {
+   "guven_endeksi": 82.85047469,
+   "hane_maddi_son12": 77.44128828,
+   "hane_maddi_gelecek12": 79.24337877,
+   "genel_ekonomi_gelecek12": 81.83860424,
+   "dayanikli_mal_uygunluk": 39.10987681,
+   "dayanikli_harcama_gelecek12": 92.87862745,
+   "tasarruf_uygunluk": 57.43904642,
+   "tasarruf_ihtimali": 22.56887045,
+   "konut_tamirat_harcama_ihtimali": 21.85041743,
+   "konut_alma_ihtimali": 6.45900755
+  },
+  "2020-6": {
+   "guven_endeksi": 82.97922262,
+   "hane_maddi_son12": 73.33416487,
+   "hane_maddi_gelecek12": 79.87783244,
+   "genel_ekonomi_gelecek12": 85.49785914,
+   "dayanikli_mal_uygunluk": 44.16839282,
+   "dayanikli_harcama_gelecek12": 93.20703405,
+   "tasarruf_uygunluk": 57.99334162,
+   "tasarruf_ihtimali": 23.80187051,
+   "konut_tamirat_harcama_ihtimali": 23.86416925,
+   "konut_alma_ihtimali": 9.52515058
+  },
+  "2020-7": {
+   "guven_endeksi": 82.82247177,
+   "hane_maddi_son12": 74.89703216,
+   "hane_maddi_gelecek12": 80.60388725,
+   "genel_ekonomi_gelecek12": 82.18969202,
+   "dayanikli_mal_uygunluk": 42.41213586,
+   "dayanikli_harcama_gelecek12": 93.59927567,
+   "tasarruf_uygunluk": 56.24118753,
+   "tasarruf_ihtimali": 20.35065116,
+   "konut_tamirat_harcama_ihtimali": 21.76876539,
+   "konut_alma_ihtimali": 7.89438769
+  },
+  "2020-8": {
+   "guven_endeksi": 79.77182328,
+   "hane_maddi_son12": 69.21389559,
+   "hane_maddi_gelecek12": 77.76331446,
+   "genel_ekonomi_gelecek12": 79.50197035,
+   "dayanikli_mal_uygunluk": 40.39671295,
+   "dayanikli_harcama_gelecek12": 92.60811272,
+   "tasarruf_uygunluk": 60.46766393,
+   "tasarruf_ihtimali": 22.38429035,
+   "konut_tamirat_harcama_ihtimali": 20.27214263,
+   "konut_alma_ihtimali": 6.28251197
+  },
+  "2020-9": {
+   "guven_endeksi": 81.90815673,
+   "hane_maddi_son12": 71.4543186,
+   "hane_maddi_gelecek12": 79.05659448,
+   "genel_ekonomi_gelecek12": 83.34791863,
+   "dayanikli_mal_uygunluk": 39.94955348,
+   "dayanikli_harcama_gelecek12": 93.7737952,
+   "tasarruf_uygunluk": 64.51757115,
+   "tasarruf_ihtimali": 23.31410443,
+   "konut_tamirat_harcama_ihtimali": 21.47883874,
+   "konut_alma_ihtimali": 8.5125448
+  },
+  "2020-10": {
+   "guven_endeksi": 81.54335148,
+   "hane_maddi_son12": 67.83599738,
+   "hane_maddi_gelecek12": 79.50939276,
+   "genel_ekonomi_gelecek12": 81.43498478,
+   "dayanikli_mal_uygunluk": 40.39054976,
+   "dayanikli_harcama_gelecek12": 97.393031,
+   "tasarruf_uygunluk": 68.44487653,
+   "tasarruf_ihtimali": 30.64730031,
+   "konut_tamirat_harcama_ihtimali": 24.26896901,
+   "konut_alma_ihtimali": 8.39539154
+  },
+  "2020-11": {
+   "guven_endeksi": 79.9841112,
+   "hane_maddi_son12": 65.98663346,
+   "hane_maddi_gelecek12": 79.02185616,
+   "genel_ekonomi_gelecek12": 78.72886752,
+   "dayanikli_mal_uygunluk": 37.56312934,
+   "dayanikli_harcama_gelecek12": 96.19908768,
+   "tasarruf_uygunluk": 65.87716064,
+   "tasarruf_ihtimali": 27.84355725,
+   "konut_tamirat_harcama_ihtimali": 25.92477012,
+   "konut_alma_ihtimali": 8.80588347
+  },
+  "2020-12": {
+   "guven_endeksi": 79.79660143,
+   "hane_maddi_son12": 64.90300369,
+   "hane_maddi_gelecek12": 78.85528176,
+   "genel_ekonomi_gelecek12": 82.86002757,
+   "dayanikli_mal_uygunluk": 36.09418631,
+   "dayanikli_harcama_gelecek12": 92.56809269,
+   "tasarruf_uygunluk": 69.437375,
+   "tasarruf_ihtimali": 32.83092665,
+   "konut_tamirat_harcama_ihtimali": 26.36914535,
+   "konut_alma_ihtimali": 8.83645463
+  },
+  "2021-1": {
+   "guven_endeksi": 82.86952357,
+   "hane_maddi_son12": 62.1150971,
+   "hane_maddi_gelecek12": 83.80906762,
+   "genel_ekonomi_gelecek12": 88.23204679,
+   "dayanikli_mal_uygunluk": 39.00247403,
+   "dayanikli_harcama_gelecek12": 97.32188278,
+   "tasarruf_uygunluk": 69.92413114,
+   "tasarruf_ihtimali": 34.68382623,
+   "konut_tamirat_harcama_ihtimali": 30.87543126,
+   "konut_alma_ihtimali": 10.6658395
+  },
+  "2021-2": {
+   "guven_endeksi": 84.10742231,
+   "hane_maddi_son12": 64.69312311,
+   "hane_maddi_gelecek12": 84.51865093,
+   "genel_ekonomi_gelecek12": 91.74276145,
+   "dayanikli_mal_uygunluk": 41.01103979,
+   "dayanikli_harcama_gelecek12": 95.47515377,
+   "tasarruf_uygunluk": 71.22291302,
+   "tasarruf_ihtimali": 34.86737985,
+   "konut_tamirat_harcama_ihtimali": 33.08006776,
+   "konut_alma_ihtimali": 10.34659085
+  },
+  "2021-3": {
+   "guven_endeksi": 86.62952308,
+   "hane_maddi_son12": 67.16520977,
+   "hane_maddi_gelecek12": 87.92015809,
+   "genel_ekonomi_gelecek12": 94.06876641,
+   "dayanikli_mal_uygunluk": 43.34664371,
+   "dayanikli_harcama_gelecek12": 97.36395806,
+   "tasarruf_uygunluk": 76.12863342,
+   "tasarruf_ihtimali": 38.27076404,
+   "konut_tamirat_harcama_ihtimali": 32.31422953,
+   "konut_alma_ihtimali": 10.44702799
+  },
+  "2021-4": {
+   "guven_endeksi": 80.25356807,
+   "hane_maddi_son12": 64.29318497,
+   "hane_maddi_gelecek12": 81.00198246,
+   "genel_ekonomi_gelecek12": 82.90364318,
+   "dayanikli_mal_uygunluk": 37.99998564,
+   "dayanikli_harcama_gelecek12": 92.81546166,
+   "tasarruf_uygunluk": 68.50741973,
+   "tasarruf_ihtimali": 34.00004775,
+   "konut_tamirat_harcama_ihtimali": 29.09058018,
+   "konut_alma_ihtimali": 10.95357423
+  },
+  "2021-5": {
+   "guven_endeksi": 77.52774271,
+   "hane_maddi_son12": 62.5717803,
+   "hane_maddi_gelecek12": 76.56615531,
+   "genel_ekonomi_gelecek12": 78.8191345,
+   "dayanikli_mal_uygunluk": 35.08564479,
+   "dayanikli_harcama_gelecek12": 92.15390074,
+   "tasarruf_uygunluk": 65.50012758,
+   "tasarruf_ihtimali": 30.51252605,
+   "konut_tamirat_harcama_ihtimali": 28.96654319,
+   "konut_alma_ihtimali": 8.37485369
+  },
+  "2021-6": {
+   "guven_endeksi": 81.9708423,
+   "hane_maddi_son12": 62.0078234,
+   "hane_maddi_gelecek12": 82.8903445,
+   "genel_ekonomi_gelecek12": 86.04789023,
+   "dayanikli_mal_uygunluk": 35.41293971,
+   "dayanikli_harcama_gelecek12": 96.93731105,
+   "tasarruf_uygunluk": 64.56948304,
+   "tasarruf_ihtimali": 33.37685105,
+   "konut_tamirat_harcama_ihtimali": 27.83459292,
+   "konut_alma_ihtimali": 8.63867793
+  },
+  "2021-7": {
+   "guven_endeksi": 80.09376671,
+   "hane_maddi_son12": 60.37125342,
+   "hane_maddi_gelecek12": 79.75998824,
+   "genel_ekonomi_gelecek12": 83.24135508,
+   "dayanikli_mal_uygunluk": 36.94083957,
+   "dayanikli_harcama_gelecek12": 97.00247011,
+   "tasarruf_uygunluk": 65.50685398,
+   "tasarruf_ihtimali": 30.64144771,
+   "konut_tamirat_harcama_ihtimali": 30.19199761,
+   "konut_alma_ihtimali": 9.71898963
+  },
+  "2021-8": {
+   "guven_endeksi": 78.49322864,
+   "hane_maddi_son12": 62.35545962,
+   "hane_maddi_gelecek12": 78.62973075,
+   "genel_ekonomi_gelecek12": 75.27010332,
+   "dayanikli_mal_uygunluk": 38.4989711,
+   "dayanikli_harcama_gelecek12": 97.71762085,
+   "tasarruf_uygunluk": 64.95857531,
+   "tasarruf_ihtimali": 29.86318608,
+   "konut_tamirat_harcama_ihtimali": 24.63190029,
+   "konut_alma_ihtimali": 8.18330059
+  },
+  "2021-9": {
+   "guven_endeksi": 79.60433638,
+   "hane_maddi_son12": 62.41255463,
+   "hane_maddi_gelecek12": 79.00398206,
+   "genel_ekonomi_gelecek12": 79.29417011,
+   "dayanikli_mal_uygunluk": 41.20115882,
+   "dayanikli_harcama_gelecek12": 97.70663874,
+   "tasarruf_uygunluk": 71.18822083,
+   "tasarruf_ihtimali": 32.35450496,
+   "konut_tamirat_harcama_ihtimali": 27.71235303,
+   "konut_alma_ihtimali": 9.38964025
+  },
+  "2021-10": {
+   "guven_endeksi": 76.46037543,
+   "hane_maddi_son12": 59.42630142,
+   "hane_maddi_gelecek12": 75.56421934,
+   "genel_ekonomi_gelecek12": 74.2148332,
+   "dayanikli_mal_uygunluk": 38.14010441,
+   "dayanikli_harcama_gelecek12": 96.63614775,
+   "tasarruf_uygunluk": 67.49771188,
+   "tasarruf_ihtimali": 28.91468988,
+   "konut_tamirat_harcama_ihtimali": 26.00129347,
+   "konut_alma_ihtimali": 8.02106484
+  },
+  "2021-11": {
+   "guven_endeksi": 70.84798367,
+   "hane_maddi_son12": 54.92796947,
+   "hane_maddi_gelecek12": 68.92552805,
+   "genel_ekonomi_gelecek12": 68.1687118,
+   "dayanikli_mal_uygunluk": 38.55098385,
+   "dayanikli_harcama_gelecek12": 91.36972538,
+   "tasarruf_uygunluk": 61.58516172,
+   "tasarruf_ihtimali": 28.81958206,
+   "konut_tamirat_harcama_ihtimali": 22.97348932,
+   "konut_alma_ihtimali": 8.19180596
+  },
+  "2021-12": {
+   "guven_endeksi": 68.51105049,
+   "hane_maddi_son12": 52.51569153,
+   "hane_maddi_gelecek12": 65.2388231,
+   "genel_ekonomi_gelecek12": 66.65244973,
+   "dayanikli_mal_uygunluk": 28.17347036,
+   "dayanikli_harcama_gelecek12": 89.6372376,
+   "tasarruf_uygunluk": 58.76000699,
+   "tasarruf_ihtimali": 24.92257198,
+   "konut_tamirat_harcama_ihtimali": 21.7784796,
+   "konut_alma_ihtimali": 8.04491224
+  },
+  "2022-1": {
+   "guven_endeksi": 72.74467146,
+   "hane_maddi_son12": 54.20832489,
+   "hane_maddi_gelecek12": 71.3217357,
+   "genel_ekonomi_gelecek12": 74.53213215,
+   "dayanikli_mal_uygunluk": 26.64237066,
+   "dayanikli_harcama_gelecek12": 90.9164931,
+   "tasarruf_uygunluk": 56.57322165,
+   "tasarruf_ihtimali": 25.39061232,
+   "konut_tamirat_harcama_ihtimali": 21.43485493,
+   "konut_alma_ihtimali": 6.45272555
+  },
+  "2022-2": {
+   "guven_endeksi": 70.76649429,
+   "hane_maddi_son12": 53.64679464,
+   "hane_maddi_gelecek12": 68.30419622,
+   "genel_ekonomi_gelecek12": 71.73967775,
+   "dayanikli_mal_uygunluk": 27.32314191,
+   "dayanikli_harcama_gelecek12": 89.37530855,
+   "tasarruf_uygunluk": 58.99031729,
+   "tasarruf_ihtimali": 28.51410482,
+   "konut_tamirat_harcama_ihtimali": 26.53787442,
+   "konut_alma_ihtimali": 6.88141514
+  },
+  "2022-3": {
+   "guven_endeksi": 72.56592991,
+   "hane_maddi_son12": 54.52889028,
+   "hane_maddi_gelecek12": 69.85476796,
+   "genel_ekonomi_gelecek12": 72.56205765,
+   "dayanikli_mal_uygunluk": 29.86025582,
+   "dayanikli_harcama_gelecek12": 93.31800374,
+   "tasarruf_uygunluk": 60.98946211,
+   "tasarruf_ihtimali": 29.14942105,
+   "konut_tamirat_harcama_ihtimali": 26.27646565,
+   "konut_alma_ihtimali": 8.02673997
+  },
+  "2022-4": {
+   "guven_endeksi": 67.28,
+   "hane_maddi_son12": 49.09,
+   "hane_maddi_gelecek12": 63.91,
+   "genel_ekonomi_gelecek12": 67.33,
+   "dayanikli_mal_uygunluk": 29.69,
+   "dayanikli_harcama_gelecek12": 88.8,
+   "tasarruf_uygunluk": 58.9,
+   "tasarruf_ihtimali": 29.08,
+   "konut_tamirat_harcama_ihtimali": 26.33,
+   "konut_alma_ihtimali": 8.21
+  },
+  "2022-5": {
+   "guven_endeksi": 67.76,
+   "hane_maddi_son12": 49.21,
+   "hane_maddi_gelecek12": 66.48,
+   "genel_ekonomi_gelecek12": 66.31,
+   "dayanikli_mal_uygunluk": 28.72,
+   "dayanikli_harcama_gelecek12": 89.04,
+   "tasarruf_uygunluk": 59.95,
+   "tasarruf_ihtimali": 29.5,
+   "konut_tamirat_harcama_ihtimali": 24.73,
+   "konut_alma_ihtimali": 7.67
+  },
+  "2022-6": {
+   "guven_endeksi": 63.41,
+   "hane_maddi_son12": 44.76,
+   "hane_maddi_gelecek12": 59.87,
+   "genel_ekonomi_gelecek12": 61.58,
+   "dayanikli_mal_uygunluk": 29.63,
+   "dayanikli_harcama_gelecek12": 87.45,
+   "tasarruf_uygunluk": 58.69,
+   "tasarruf_ihtimali": 26.39,
+   "konut_tamirat_harcama_ihtimali": 20.71,
+   "konut_alma_ihtimali": 6.6
+  },
+  "2022-7": {
+   "guven_endeksi": 68.51,
+   "hane_maddi_son12": 48.31,
+   "hane_maddi_gelecek12": 67.15,
+   "genel_ekonomi_gelecek12": 70.92,
+   "dayanikli_mal_uygunluk": 28.29,
+   "dayanikli_harcama_gelecek12": 87.65,
+   "tasarruf_uygunluk": 56.68,
+   "tasarruf_ihtimali": 27.47,
+   "konut_tamirat_harcama_ihtimali": 23.13,
+   "konut_alma_ihtimali": 6.66
+  },
+  "2022-8": {
+   "guven_endeksi": 72.73,
+   "hane_maddi_son12": 56.12,
+   "hane_maddi_gelecek12": 72.19,
+   "genel_ekonomi_gelecek12": 72.82,
+   "dayanikli_mal_uygunluk": 31.02,
+   "dayanikli_harcama_gelecek12": 89.79,
+   "tasarruf_uygunluk": 60.8,
+   "tasarruf_ihtimali": 27.65,
+   "konut_tamirat_harcama_ihtimali": 20.89,
+   "konut_alma_ihtimali": 6.42
+  },
+  "2022-9": {
+   "guven_endeksi": 72.87,
+   "hane_maddi_son12": 55.1,
+   "hane_maddi_gelecek12": 71.43,
+   "genel_ekonomi_gelecek12": 73.97,
+   "dayanikli_mal_uygunluk": 36.17,
+   "dayanikli_harcama_gelecek12": 90.99,
+   "tasarruf_uygunluk": 62.25,
+   "tasarruf_ihtimali": 27.7,
+   "konut_tamirat_harcama_ihtimali": 21.64,
+   "konut_alma_ihtimali": 7.75
+  },
+  "2022-10": {
+   "guven_endeksi": 76.25,
+   "hane_maddi_son12": 57.82,
+   "hane_maddi_gelecek12": 76.21,
+   "genel_ekonomi_gelecek12": 77.9,
+   "dayanikli_mal_uygunluk": 40.47,
+   "dayanikli_harcama_gelecek12": 93.05,
+   "tasarruf_uygunluk": 64.07,
+   "tasarruf_ihtimali": 31.45,
+   "konut_tamirat_harcama_ihtimali": 23.97,
+   "konut_alma_ihtimali": 9.93
+  },
+  "2022-11": {
+   "guven_endeksi": 76.58,
+   "hane_maddi_son12": 58.08,
+   "hane_maddi_gelecek12": 75.82,
+   "genel_ekonomi_gelecek12": 80.51,
+   "dayanikli_mal_uygunluk": 42.65,
+   "dayanikli_harcama_gelecek12": 91.89,
+   "tasarruf_uygunluk": 66.73,
+   "tasarruf_ihtimali": 30.85,
+   "konut_tamirat_harcama_ihtimali": 23.7,
+   "konut_alma_ihtimali": 10.34
+  },
+  "2022-12": {
+   "guven_endeksi": 75.38,
+   "hane_maddi_son12": 56.35,
+   "hane_maddi_gelecek12": 75.35,
+   "genel_ekonomi_gelecek12": 77.27,
+   "dayanikli_mal_uygunluk": 48.4,
+   "dayanikli_harcama_gelecek12": 92.57,
+   "tasarruf_uygunluk": 67.69,
+   "tasarruf_ihtimali": 30.0,
+   "konut_tamirat_harcama_ihtimali": 23.26,
+   "konut_alma_ihtimali": 8.33
+  },
+  "2023-1": {
+   "guven_endeksi": 79.1,
+   "hane_maddi_son12": 61.64,
+   "hane_maddi_gelecek12": 79.85,
+   "genel_ekonomi_gelecek12": 82.67,
+   "dayanikli_mal_uygunluk": 38.54,
+   "dayanikli_harcama_gelecek12": 92.23,
+   "tasarruf_uygunluk": 66.24,
+   "tasarruf_ihtimali": 30.43,
+   "konut_tamirat_harcama_ihtimali": 23.59,
+   "konut_alma_ihtimali": 9.46
+  },
+  "2023-2": {
+   "guven_endeksi": 82.5,
+   "hane_maddi_son12": 65.5,
+   "hane_maddi_gelecek12": 84.19,
+   "genel_ekonomi_gelecek12": 85.83,
+   "dayanikli_mal_uygunluk": 43.08,
+   "dayanikli_harcama_gelecek12": 94.5,
+   "tasarruf_uygunluk": 67.96,
+   "tasarruf_ihtimali": 35.97,
+   "konut_tamirat_harcama_ihtimali": 27.45,
+   "konut_alma_ihtimali": 9.81
+  },
+  "2023-3": {
+   "guven_endeksi": 80.13,
+   "hane_maddi_son12": 66.02,
+   "hane_maddi_gelecek12": 79.55,
+   "genel_ekonomi_gelecek12": 82.97,
+   "dayanikli_mal_uygunluk": 40.78,
+   "dayanikli_harcama_gelecek12": 91.96,
+   "tasarruf_uygunluk": 64.98,
+   "tasarruf_ihtimali": 31.93,
+   "konut_tamirat_harcama_ihtimali": 27.27,
+   "konut_alma_ihtimali": 8.95
+  },
+  "2023-4": {
+   "guven_endeksi": 87.52,
+   "hane_maddi_son12": 69.09,
+   "hane_maddi_gelecek12": 89.76,
+   "genel_ekonomi_gelecek12": 95.16,
+   "dayanikli_mal_uygunluk": 47.95,
+   "dayanikli_harcama_gelecek12": 96.08,
+   "tasarruf_uygunluk": 72.06,
+   "tasarruf_ihtimali": 39.36,
+   "konut_tamirat_harcama_ihtimali": 34.93,
+   "konut_alma_ihtimali": 10.67
+  },
+  "2023-5": {
+   "guven_endeksi": 91.06,
+   "hane_maddi_son12": 70.62,
+   "hane_maddi_gelecek12": 93.99,
+   "genel_ekonomi_gelecek12": 100.54,
+   "dayanikli_mal_uygunluk": 48.38,
+   "dayanikli_harcama_gelecek12": 99.08,
+   "tasarruf_uygunluk": 72.48,
+   "tasarruf_ihtimali": 40.7,
+   "konut_tamirat_harcama_ihtimali": 33.38,
+   "konut_alma_ihtimali": 11.4
+  },
+  "2023-6": {
+   "guven_endeksi": 85.13,
+   "hane_maddi_son12": 69.07,
+   "hane_maddi_gelecek12": 85.77,
+   "genel_ekonomi_gelecek12": 92.68,
+   "dayanikli_mal_uygunluk": 49.64,
+   "dayanikli_harcama_gelecek12": 92.99,
+   "tasarruf_uygunluk": 70.87,
+   "tasarruf_ihtimali": 36.38,
+   "konut_tamirat_harcama_ihtimali": 31.07,
+   "konut_alma_ihtimali": 10.48
+  },
+  "2023-7": {
+   "guven_endeksi": 80.07,
+   "hane_maddi_son12": 64.53,
+   "hane_maddi_gelecek12": 79.17,
+   "genel_ekonomi_gelecek12": 82.19,
+   "dayanikli_mal_uygunluk": 45.5,
+   "dayanikli_harcama_gelecek12": 94.41,
+   "tasarruf_uygunluk": 69.58,
+   "tasarruf_ihtimali": 34.79,
+   "konut_tamirat_harcama_ihtimali": 28.14,
+   "konut_alma_ihtimali": 9.51
+  },
+  "2023-8": {
+   "guven_endeksi": 68.01,
+   "hane_maddi_son12": 56.21,
+   "hane_maddi_gelecek12": 63.69,
+   "genel_ekonomi_gelecek12": 63.12,
+   "dayanikli_mal_uygunluk": 39.75,
+   "dayanikli_harcama_gelecek12": 89.03,
+   "tasarruf_uygunluk": 66.03,
+   "tasarruf_ihtimali": 28.7,
+   "konut_tamirat_harcama_ihtimali": 23.56,
+   "konut_alma_ihtimali": 7.09
+  },
+  "2023-9": {
+   "guven_endeksi": 71.47,
+   "hane_maddi_son12": 56.24,
+   "hane_maddi_gelecek12": 68.88,
+   "genel_ekonomi_gelecek12": 68.03,
+   "dayanikli_mal_uygunluk": 40.32,
+   "dayanikli_harcama_gelecek12": 92.74,
+   "tasarruf_uygunluk": 64.86,
+   "tasarruf_ihtimali": 29.33,
+   "konut_tamirat_harcama_ihtimali": 25.33,
+   "konut_alma_ihtimali": 8.33
+  },
+  "2023-10": {
+   "guven_endeksi": 74.62,
+   "hane_maddi_son12": 59.69,
+   "hane_maddi_gelecek12": 72.62,
+   "genel_ekonomi_gelecek12": 72.94,
+   "dayanikli_mal_uygunluk": 46.26,
+   "dayanikli_harcama_gelecek12": 93.24,
+   "tasarruf_uygunluk": 68.66,
+   "tasarruf_ihtimali": 31.24,
+   "konut_tamirat_harcama_ihtimali": 25.81,
+   "konut_alma_ihtimali": 7.74
+  },
+  "2023-11": {
+   "guven_endeksi": 75.47,
+   "hane_maddi_son12": 61.3,
+   "hane_maddi_gelecek12": 74.52,
+   "genel_ekonomi_gelecek12": 73.41,
+   "dayanikli_mal_uygunluk": 49.2,
+   "dayanikli_harcama_gelecek12": 92.64,
+   "tasarruf_uygunluk": 68.83,
+   "tasarruf_ihtimali": 33.61,
+   "konut_tamirat_harcama_ihtimali": 28.67,
+   "konut_alma_ihtimali": 8.39
+  },
+  "2023-12": {
+   "guven_endeksi": 77.42,
+   "hane_maddi_son12": 63.35,
+   "hane_maddi_gelecek12": 76.09,
+   "genel_ekonomi_gelecek12": 75.79,
+   "dayanikli_mal_uygunluk": 53.69,
+   "dayanikli_harcama_gelecek12": 94.46,
+   "tasarruf_uygunluk": 73.38,
+   "tasarruf_ihtimali": 34.46,
+   "konut_tamirat_harcama_ihtimali": 28.16,
+   "konut_alma_ihtimali": 9.42
+  },
+  "2024-1": {
+   "guven_endeksi": 80.42310949,
+   "hane_maddi_son12": 67.16441689,
+   "hane_maddi_gelecek12": 79.47607992,
+   "genel_ekonomi_gelecek12": 77.18478884,
+   "dayanikli_mal_uygunluk": 48.96304515,
+   "dayanikli_harcama_gelecek12": 97.86715229,
+   "tasarruf_uygunluk": 71.81478573,
+   "tasarruf_ihtimali": 39.12723226,
+   "konut_tamirat_harcama_ihtimali": 31.19666175,
+   "konut_alma_ihtimali": 9.29424862
+  },
+  "2024-2": {
+   "guven_endeksi": 79.34287272,
+   "hane_maddi_son12": 67.0650862,
+   "hane_maddi_gelecek12": 78.20566504,
+   "genel_ekonomi_gelecek12": 74.5753976,
+   "dayanikli_mal_uygunluk": 50.47166457,
+   "dayanikli_harcama_gelecek12": 97.52534204,
+   "tasarruf_uygunluk": 73.02252032,
+   "tasarruf_ihtimali": 39.14820442,
+   "konut_tamirat_harcama_ihtimali": 31.87772964,
+   "konut_alma_ihtimali": 9.71170395
+  },
+  "2024-3": {
+   "guven_endeksi": 79.35478993,
+   "hane_maddi_son12": 66.57873263,
+   "hane_maddi_gelecek12": 78.94146695,
+   "genel_ekonomi_gelecek12": 74.87370901,
+   "dayanikli_mal_uygunluk": 55.65775279,
+   "dayanikli_harcama_gelecek12": 97.02525111,
+   "tasarruf_uygunluk": 74.8264081,
+   "tasarruf_ihtimali": 41.09823955,
+   "konut_tamirat_harcama_ihtimali": 34.24735197,
+   "konut_alma_ihtimali": 10.69978075
+  },
+  "2024-4": {
+   "guven_endeksi": 80.46085072,
+   "hane_maddi_son12": 65.01743625,
+   "hane_maddi_gelecek12": 82.85443371,
+   "genel_ekonomi_gelecek12": 78.13713873,
+   "dayanikli_mal_uygunluk": 47.10815074,
+   "dayanikli_harcama_gelecek12": 95.83439421,
+   "tasarruf_uygunluk": 74.41662748,
+   "tasarruf_ihtimali": 42.91881137,
+   "konut_tamirat_harcama_ihtimali": 34.284759,
+   "konut_alma_ihtimali": 11.30967398
+  },
+  "2024-5": {
+   "guven_endeksi": 80.50803678,
+   "hane_maddi_son12": 65.28530686,
+   "hane_maddi_gelecek12": 82.84879985,
+   "genel_ekonomi_gelecek12": 78.30400875,
+   "dayanikli_mal_uygunluk": 48.06504963,
+   "dayanikli_harcama_gelecek12": 95.59403166,
+   "tasarruf_uygunluk": 74.06243476,
+   "tasarruf_ihtimali": 39.86310244,
+   "konut_tamirat_harcama_ihtimali": 31.92338155,
+   "konut_alma_ihtimali": 10.01459893
+  },
+  "2024-6": {
+   "guven_endeksi": 78.30087847,
+   "hane_maddi_son12": 63.82039561,
+   "hane_maddi_gelecek12": 79.21402513,
+   "genel_ekonomi_gelecek12": 76.11923238,
+   "dayanikli_mal_uygunluk": 43.95437074,
+   "dayanikli_harcama_gelecek12": 94.04986077,
+   "tasarruf_uygunluk": 72.26020142,
+   "tasarruf_ihtimali": 39.43432642,
+   "konut_tamirat_harcama_ihtimali": 33.28243379,
+   "konut_alma_ihtimali": 10.78453991
+  },
+  "2024-7": {
+   "guven_endeksi": 75.87954525,
+   "hane_maddi_son12": 60.36314376,
+   "hane_maddi_gelecek12": 75.90010085,
+   "genel_ekonomi_gelecek12": 70.75692537,
+   "dayanikli_mal_uygunluk": 44.84226516,
+   "dayanikli_harcama_gelecek12": 96.49801102,
+   "tasarruf_uygunluk": 71.76160295,
+   "tasarruf_ihtimali": 42.01477201,
+   "konut_tamirat_harcama_ihtimali": 31.09234225,
+   "konut_alma_ihtimali": 10.42967885
+  },
+  "2024-8": {
+   "guven_endeksi": 76.36547339,
+   "hane_maddi_son12": 63.09603833,
+   "hane_maddi_gelecek12": 76.61461947,
+   "genel_ekonomi_gelecek12": 71.48213969,
+   "dayanikli_mal_uygunluk": 46.75397778,
+   "dayanikli_harcama_gelecek12": 94.26909605,
+   "tasarruf_uygunluk": 74.89428876,
+   "tasarruf_ihtimali": 39.72530684,
+   "konut_tamirat_harcama_ihtimali": 33.57176782,
+   "konut_alma_ihtimali": 11.01699611
+  },
+  "2024-9": {
+   "guven_endeksi": 78.22093197,
+   "hane_maddi_son12": 64.84596608,
+   "hane_maddi_gelecek12": 77.35895836,
+   "genel_ekonomi_gelecek12": 74.51096978,
+   "dayanikli_mal_uygunluk": 45.97075396,
+   "dayanikli_harcama_gelecek12": 96.16783364,
+   "tasarruf_uygunluk": 74.80700314,
+   "tasarruf_ihtimali": 37.4592853,
+   "konut_tamirat_harcama_ihtimali": 30.95195505,
+   "konut_alma_ihtimali": 10.52245699
+  },
+  "2024-10": {
+   "guven_endeksi": 80.55364561,
+   "hane_maddi_son12": 64.71929558,
+   "hane_maddi_gelecek12": 82.06768649,
+   "genel_ekonomi_gelecek12": 75.32453948,
+   "dayanikli_mal_uygunluk": 51.61692846,
+   "dayanikli_harcama_gelecek12": 100.10306088,
+   "tasarruf_uygunluk": 75.013043,
+   "tasarruf_ihtimali": 42.86276876,
+   "konut_tamirat_harcama_ihtimali": 36.69451246,
+   "konut_alma_ihtimali": 12.16339079
+  },
+  "2024-11": {
+   "guven_endeksi": 79.77236914,
+   "hane_maddi_son12": 66.10166209,
+   "hane_maddi_gelecek12": 80.62721037,
+   "genel_ekonomi_gelecek12": 73.80356814,
+   "dayanikli_mal_uygunluk": 56.20768251,
+   "dayanikli_harcama_gelecek12": 98.55703597,
+   "tasarruf_uygunluk": 75.84094062,
+   "tasarruf_ihtimali": 40.52539233,
+   "konut_tamirat_harcama_ihtimali": 33.9382598,
+   "konut_alma_ihtimali": 10.77541486
+  },
+  "2024-12": {
+   "guven_endeksi": 81.27129334,
+   "hane_maddi_son12": 63.77224777,
+   "hane_maddi_gelecek12": 81.92451085,
+   "genel_ekonomi_gelecek12": 76.77449517,
+   "dayanikli_mal_uygunluk": 60.8100663,
+   "dayanikli_harcama_gelecek12": 102.61391959,
+   "tasarruf_uygunluk": 76.39028911,
+   "tasarruf_ihtimali": 41.03595944,
+   "konut_tamirat_harcama_ihtimali": 33.55120701,
+   "konut_alma_ihtimali": 12.06795878
+  },
+  "2025-1": {
+   "guven_endeksi": 80.96201449,
+   "hane_maddi_son12": 64.83057489,
+   "hane_maddi_gelecek12": 80.5472106,
+   "genel_ekonomi_gelecek12": 79.08164775,
+   "dayanikli_mal_uygunluk": 46.97670266,
+   "dayanikli_harcama_gelecek12": 99.38862473,
+   "tasarruf_uygunluk": 64.79694937,
+   "tasarruf_ihtimali": 39.49573268,
+   "konut_tamirat_harcama_ihtimali": 37.13626486,
+   "konut_alma_ihtimali": 13.36507956
+  },
+  "2025-2": {
+   "guven_endeksi": 82.07125469,
+   "hane_maddi_son12": 65.56060328,
+   "hane_maddi_gelecek12": 83.07786511,
+   "genel_ekonomi_gelecek12": 79.30451658,
+   "dayanikli_mal_uygunluk": 47.0626146,
+   "dayanikli_harcama_gelecek12": 100.34203382,
+   "tasarruf_uygunluk": 62.27586103,
+   "tasarruf_ihtimali": 40.05650386,
+   "konut_tamirat_harcama_ihtimali": 40.07386568,
+   "konut_alma_ihtimali": 12.81124468
+  },
+  "2025-3": {
+   "guven_endeksi": 85.85941588,
+   "hane_maddi_son12": 70.90670757,
+   "hane_maddi_gelecek12": 84.72683201,
+   "genel_ekonomi_gelecek12": 84.64866925,
+   "dayanikli_mal_uygunluk": 52.26267952,
+   "dayanikli_harcama_gelecek12": 103.15545468,
+   "tasarruf_uygunluk": 63.04035126,
+   "tasarruf_ihtimali": 43.54956629,
+   "konut_tamirat_harcama_ihtimali": 39.02548961,
+   "konut_alma_ihtimali": 13.63481145
+  },
+  "2025-4": {
+   "guven_endeksi": 83.86290602,
+   "hane_maddi_son12": 69.12386413,
+   "hane_maddi_gelecek12": 84.28294138,
+   "genel_ekonomi_gelecek12": 82.77084845,
+   "dayanikli_mal_uygunluk": 49.47646776,
+   "dayanikli_harcama_gelecek12": 99.27397013,
+   "tasarruf_uygunluk": 67.71944646,
+   "tasarruf_ihtimali": 42.31360545,
+   "konut_tamirat_harcama_ihtimali": 39.63954701,
+   "konut_alma_ihtimali": 14.03289132
+  },
+  "2025-5": {
+   "guven_endeksi": 84.79218744,
+   "hane_maddi_son12": 69.09799483,
+   "hane_maddi_gelecek12": 85.33487864,
+   "genel_ekonomi_gelecek12": 82.23091782,
+   "dayanikli_mal_uygunluk": 52.6427578,
+   "dayanikli_harcama_gelecek12": 102.50495846,
+   "tasarruf_uygunluk": 66.73463871,
+   "tasarruf_ihtimali": 43.52460159,
+   "konut_tamirat_harcama_ihtimali": 37.55819474,
+   "konut_alma_ihtimali": 15.1309699
+  },
+  "2025-6": {
+   "guven_endeksi": 85.06417614,
+   "hane_maddi_son12": 69.3415696,
+   "hane_maddi_gelecek12": 85.8293417,
+   "genel_ekonomi_gelecek12": 82.44867985,
+   "dayanikli_mal_uygunluk": 51.26980894,
+   "dayanikli_harcama_gelecek12": 102.63711342,
+   "tasarruf_uygunluk": 64.62783572,
+   "tasarruf_ihtimali": 42.35079004,
+   "konut_tamirat_harcama_ihtimali": 39.55912033,
+   "konut_alma_ihtimali": 14.64210255
+  },
+  "2025-7": {
+   "guven_endeksi": 83.51878976,
+   "hane_maddi_son12": 68.24992101,
+   "hane_maddi_gelecek12": 84.59333541,
+   "genel_ekonomi_gelecek12": 78.95136162,
+   "dayanikli_mal_uygunluk": 49.42611112,
+   "dayanikli_harcama_gelecek12": 102.28054099,
+   "tasarruf_uygunluk": 62.52848129,
+   "tasarruf_ihtimali": 41.44982227,
+   "konut_tamirat_harcama_ihtimali": 36.738006,
+   "konut_alma_ihtimali": 14.51815151
+  },
+  "2025-8": {
+   "guven_endeksi": 84.2505225,
+   "hane_maddi_son12": 70.03074117,
+   "hane_maddi_gelecek12": 83.80212385,
+   "genel_ekonomi_gelecek12": 78.38280394,
+   "dayanikli_mal_uygunluk": 49.68841633,
+   "dayanikli_harcama_gelecek12": 104.78642104,
+   "tasarruf_uygunluk": 62.34050479,
+   "tasarruf_ihtimali": 40.90922382,
+   "konut_tamirat_harcama_ihtimali": 37.34882791,
+   "konut_alma_ihtimali": 13.42918192
+  },
+  "2025-9": {
+   "guven_endeksi": 83.87427161,
+   "hane_maddi_son12": 67.78689877,
+   "hane_maddi_gelecek12": 83.98592052,
+   "genel_ekonomi_gelecek12": 77.98402255,
+   "dayanikli_mal_uygunluk": 52.46331522,
+   "dayanikli_harcama_gelecek12": 105.74024461,
+   "tasarruf_uygunluk": 63.54990657,
+   "tasarruf_ihtimali": 39.84776435,
+   "konut_tamirat_harcama_ihtimali": 35.14427409,
+   "konut_alma_ihtimali": 14.35732102
+  },
+  "2025-10": {
+   "guven_endeksi": 83.62820392,
+   "hane_maddi_son12": 67.74662311,
+   "hane_maddi_gelecek12": 84.1528975,
+   "genel_ekonomi_gelecek12": 78.56876866,
+   "dayanikli_mal_uygunluk": 54.65987228,
+   "dayanikli_harcama_gelecek12": 104.0445264,
+   "tasarruf_uygunluk": 62.17938354,
+   "tasarruf_ihtimali": 40.79973165,
+   "konut_tamirat_harcama_ihtimali": 37.52065053,
+   "konut_alma_ihtimali": 14.13188023
+  },
+  "2025-11": {
+   "guven_endeksi": 84.98021374,
+   "hane_maddi_son12": 69.57358469,
+   "hane_maddi_gelecek12": 85.7258373,
+   "genel_ekonomi_gelecek12": 79.58999379,
+   "dayanikli_mal_uygunluk": 60.86060611,
+   "dayanikli_harcama_gelecek12": 105.03143918,
+   "tasarruf_uygunluk": 64.79220773,
+   "tasarruf_ihtimali": 40.70910054,
+   "konut_tamirat_harcama_ihtimali": 36.75827764,
+   "konut_alma_ihtimali": 14.89508898
+  },
+  "2025-12": {
+   "guven_endeksi": 83.48995007,
+   "hane_maddi_son12": 67.93009322,
+   "hane_maddi_gelecek12": 85.24809087,
+   "genel_ekonomi_gelecek12": 78.15958577,
+   "dayanikli_mal_uygunluk": 62.82571,
+   "dayanikli_harcama_gelecek12": 102.62203041,
+   "tasarruf_uygunluk": 64.51524511,
+   "tasarruf_ihtimali": 41.30841266,
+   "konut_tamirat_harcama_ihtimali": 36.69041366,
+   "konut_alma_ihtimali": 15.17650114
+  },
+  "2026-1": {
+   "guven_endeksi": 83.72307474,
+   "hane_maddi_son12": 68.20575978,
+   "hane_maddi_gelecek12": 83.29176063,
+   "genel_ekonomi_gelecek12": 81.4947522,
+   "dayanikli_mal_uygunluk": 49.98445172,
+   "dayanikli_harcama_gelecek12": 101.90002635,
+   "tasarruf_uygunluk": 61.64602985,
+   "tasarruf_ihtimali": 39.38190482,
+   "konut_tamirat_harcama_ihtimali": 36.79052496,
+   "konut_alma_ihtimali": 14.88705685
+  },
+  "2026-2": {
+   "guven_endeksi": 85.68983532,
+   "hane_maddi_son12": 71.34572757,
+   "hane_maddi_gelecek12": 86.77736752,
+   "genel_ekonomi_gelecek12": 81.39628042,
+   "dayanikli_mal_uygunluk": 53.77702923,
+   "dayanikli_harcama_gelecek12": 103.23996577,
+   "tasarruf_uygunluk": 63.18088362,
+   "tasarruf_ihtimali": 43.08959329,
+   "konut_tamirat_harcama_ihtimali": 38.93100147,
+   "konut_alma_ihtimali": 15.33629238
+  },
+  "2026-3": {
+   "guven_endeksi": 85.04365043,
+   "hane_maddi_son12": 72.79127072,
+   "hane_maddi_gelecek12": 85.64980501,
+   "genel_ekonomi_gelecek12": 79.05326141,
+   "dayanikli_mal_uygunluk": 55.29619271,
+   "dayanikli_harcama_gelecek12": 102.68026457,
+   "tasarruf_uygunluk": 65.64226115,
+   "tasarruf_ihtimali": 43.33779197,
+   "konut_tamirat_harcama_ihtimali": 40.67138399,
+   "konut_alma_ihtimali": 15.75381627
+  },
+  "2026-4": {
+   "guven_endeksi": 85.50276007,
+   "hane_maddi_son12": 71.7905883,
+   "hane_maddi_gelecek12": 87.45577297,
+   "genel_ekonomi_gelecek12": 78.32644368,
+   "dayanikli_mal_uygunluk": 55.26846318,
+   "dayanikli_harcama_gelecek12": 104.43823532,
+   "tasarruf_uygunluk": 66.81381027,
+   "tasarruf_ihtimali": 43.93820464,
+   "konut_tamirat_harcama_ihtimali": 42.82139311,
+   "konut_alma_ihtimali": 17.39098633
+  },
+  "2026-5": {
+   "guven_endeksi": 85.7554237,
+   "hane_maddi_son12": 69.24248475,
+   "hane_maddi_gelecek12": 87.89146744,
+   "genel_ekonomi_gelecek12": 81.40555685,
+   "dayanikli_mal_uygunluk": 55.55809722,
+   "dayanikli_harcama_gelecek12": 104.48218577,
+   "tasarruf_uygunluk": 64.50094984,
+   "tasarruf_ihtimali": 43.13998812,
+   "konut_tamirat_harcama_ihtimali": 41.94215139,
+   "konut_alma_ihtimali": 16.50102607
+  },
+  "2026-6": {
+   "guven_endeksi": 87.93244877,
+   "hane_maddi_son12": 72.33549915,
+   "hane_maddi_gelecek12": 89.54325155,
+   "genel_ekonomi_gelecek12": 83.93674587,
+   "dayanikli_mal_uygunluk": 58.69160407,
+   "dayanikli_harcama_gelecek12": 105.91429851,
+   "tasarruf_uygunluk": 67.61234563,
+   "tasarruf_ihtimali": 45.41592328,
+   "konut_tamirat_harcama_ihtimali": 42.54559426,
+   "konut_alma_ihtimali": 16.04579625
+  },
+  "2026-7": {
+   "guven_endeksi": 89.82971678,
+   "hane_maddi_son12": 74.51178682,
+   "hane_maddi_gelecek12": 91.37876971,
+   "genel_ekonomi_gelecek12": 88.33551664,
+   "dayanikli_mal_uygunluk": 61.56565525,
+   "dayanikli_harcama_gelecek12": 105.09279393,
+   "tasarruf_uygunluk": 70.19342916,
+   "tasarruf_ihtimali": 45.18678551,
+   "konut_tamirat_harcama_ihtimali": 40.89479818,
+   "konut_alma_ihtimali": 15.33626642
+  },
+  "2026-8": {
+   "guven_endeksi": 90.76532875,
+   "hane_maddi_son12": 75.41711456,
+   "hane_maddi_gelecek12": 93.14679737,
+   "genel_ekonomi_gelecek12": 89.40815695,
+   "dayanikli_mal_uygunluk": 59.2502025,
+   "dayanikli_harcama_gelecek12": 105.08924611,
+   "tasarruf_uygunluk": 68.229003,
+   "tasarruf_ihtimali": 45.1645061,
+   "konut_tamirat_harcama_ihtimali": 40.65558442,
+   "konut_alma_ihtimali": 14.88532211
+  },
+  "2026-9": {
+   "guven_endeksi": 91.92256544,
+   "hane_maddi_son12": 75.33459266,
+   "hane_maddi_gelecek12": 93.67639364,
+   "genel_ekonomi_gelecek12": 89.84541271,
+   "dayanikli_mal_uygunluk": 61.25232316,
+   "dayanikli_harcama_gelecek12": 108.83386277,
+   "tasarruf_uygunluk": 67.9200675,
+   "tasarruf_ihtimali": 46.35635284,
+   "konut_tamirat_harcama_ihtimali": 42.54154687,
+   "konut_alma_ihtimali": 15.93750518
+  }
+ },
+ "konut_satis": {
+  "2019-1": {
+   "toplam": 77161.0,
+   "ilk_el": 33457.0,
+   "ikinci_el": 43704.0,
+   "ipotekli": 7196.0
+  },
+  "2019-2": {
+   "toplam": 83504.0,
+   "ilk_el": 35523.0,
+   "ikinci_el": 47981.0,
+   "ipotekli": 10021.0
+  },
+  "2019-3": {
+   "toplam": 114693.0,
+   "ilk_el": 49251.0,
+   "ikinci_el": 65442.0,
+   "ipotekli": 27720.0
+  },
+  "2019-4": {
+   "toplam": 103869.0,
+   "ilk_el": 42757.0,
+   "ikinci_el": 61112.0,
+   "ipotekli": 23797.0
+  },
+  "2019-5": {
+   "toplam": 97424.0,
+   "ilk_el": 40404.0,
+   "ikinci_el": 57020.0,
+   "ipotekli": 15843.0
+  },
+  "2019-6": {
+   "toplam": 64807.0,
+   "ilk_el": 25202.0,
+   "ikinci_el": 39605.0,
+   "ipotekli": 7764.0
+  },
+  "2019-7": {
+   "toplam": 107730.0,
+   "ilk_el": 41813.0,
+   "ikinci_el": 65917.0,
+   "ipotekli": 13831.0
+  },
+  "2019-8": {
+   "toplam": 116390.0,
+   "ilk_el": 43687.0,
+   "ikinci_el": 72703.0,
+   "ipotekli": 35978.0
+  },
+  "2019-9": {
+   "toplam": 155387.0,
+   "ilk_el": 55811.0,
+   "ikinci_el": 99576.0,
+   "ipotekli": 60962.0
+  },
+  "2019-10": {
+   "toplam": 154353.0,
+   "ilk_el": 57702.0,
+   "ikinci_el": 96651.0,
+   "ipotekli": 53402.0
+  },
+  "2019-11": {
+   "toplam": 148187.0,
+   "ilk_el": 54526.0,
+   "ikinci_el": 93661.0,
+   "ipotekli": 46713.0
+  },
+  "2019-12": {
+   "toplam": 215558.0,
+   "ilk_el": 83286.0,
+   "ikinci_el": 132272.0,
+   "ipotekli": 53298.0
+  },
+  "2020-1": {
+   "toplam": 120066.0,
+   "ilk_el": 38888.0,
+   "ikinci_el": 81178.0,
+   "ipotekli": 44721.0
+  },
+  "2020-2": {
+   "toplam": 125409.0,
+   "ilk_el": 40309.0,
+   "ikinci_el": 85100.0,
+   "ipotekli": 46325.0
+  },
+  "2020-3": {
+   "toplam": 114796.0,
+   "ilk_el": 36901.0,
+   "ikinci_el": 77895.0,
+   "ipotekli": 45959.0
+  },
+  "2020-4": {
+   "toplam": 45218.0,
+   "ilk_el": 16007.0,
+   "ikinci_el": 29211.0,
+   "ipotekli": 18084.0
+  },
+  "2020-5": {
+   "toplam": 55205.0,
+   "ilk_el": 19497.0,
+   "ikinci_el": 35708.0,
+   "ipotekli": 19546.0
+  },
+  "2020-6": {
+   "toplam": 204034.0,
+   "ilk_el": 66860.0,
+   "ikinci_el": 137174.0,
+   "ipotekli": 106699.0
+  },
+  "2020-7": {
+   "toplam": 244133.0,
+   "ilk_el": 75130.0,
+   "ikinci_el": 169003.0,
+   "ipotekli": 137963.0
+  },
+  "2020-8": {
+   "toplam": 181464.0,
+   "ilk_el": 57594.0,
+   "ikinci_el": 123870.0,
+   "ipotekli": 80398.0
+  },
+  "2020-9": {
+   "toplam": 145448.0,
+   "ilk_el": 45778.0,
+   "ikinci_el": 99670.0,
+   "ipotekli": 37741.0
+  },
+  "2020-10": {
+   "toplam": 127809.0,
+   "ilk_el": 41729.0,
+   "ikinci_el": 86080.0,
+   "ipotekli": 27087.0
+  },
+  "2020-11": {
+   "toplam": 125196.0,
+   "ilk_el": 45117.0,
+   "ikinci_el": 80079.0,
+   "ipotekli": 26072.0
+  },
+  "2020-12": {
+   "toplam": 119522.0,
+   "ilk_el": 46227.0,
+   "ikinci_el": 73295.0,
+   "ipotekli": 16297.0
+  },
+  "2021-1": {
+   "toplam": 75603.0,
+   "ilk_el": 25035.0,
+   "ikinci_el": 50568.0,
+   "ipotekli": 11560.0
+  },
+  "2021-2": {
+   "toplam": 88020.0,
+   "ilk_el": 28780.0,
+   "ikinci_el": 59240.0,
+   "ipotekli": 15932.0
+  },
+  "2021-3": {
+   "toplam": 120415.0,
+   "ilk_el": 38739.0,
+   "ikinci_el": 81676.0,
+   "ipotekli": 23771.0
+  },
+  "2021-4": {
+   "toplam": 102219.0,
+   "ilk_el": 32451.0,
+   "ikinci_el": 69768.0,
+   "ipotekli": 18779.0
+  },
+  "2021-5": {
+   "toplam": 65497.0,
+   "ilk_el": 22057.0,
+   "ikinci_el": 43440.0,
+   "ipotekli": 11282.0
+  },
+  "2021-6": {
+   "toplam": 145247.0,
+   "ilk_el": 45743.0,
+   "ikinci_el": 99504.0,
+   "ipotekli": 30613.0
+  },
+  "2021-7": {
+   "toplam": 115264.0,
+   "ilk_el": 36157.0,
+   "ikinci_el": 79107.0,
+   "ipotekli": 21736.0
+  },
+  "2021-8": {
+   "toplam": 151033.0,
+   "ilk_el": 47843.0,
+   "ikinci_el": 103190.0,
+   "ipotekli": 29146.0
+  },
+  "2021-9": {
+   "toplam": 157819.0,
+   "ilk_el": 49589.0,
+   "ikinci_el": 108230.0,
+   "ipotekli": 31604.0
+  },
+  "2021-10": {
+   "toplam": 152228.0,
+   "ilk_el": 51461.0,
+   "ikinci_el": 100767.0,
+   "ipotekli": 30092.0
+  },
+  "2021-11": {
+   "toplam": 192820.0,
+   "ilk_el": 63478.0,
+   "ikinci_el": 129342.0,
+   "ipotekli": 41989.0
+  },
+  "2021-12": {
+   "toplam": 243396.0,
+   "ilk_el": 86140.0,
+   "ikinci_el": 157256.0,
+   "ipotekli": 48262.0
+  },
+  "2022-1": {
+   "toplam": 93118.0,
+   "ilk_el": 29233.0,
+   "ikinci_el": 63885.0,
+   "ipotekli": 19304.0
+  },
+  "2022-2": {
+   "toplam": 103437.0,
+   "ilk_el": 31731.0,
+   "ikinci_el": 71706.0,
+   "ipotekli": 21060.0
+  },
+  "2022-3": {
+   "toplam": 145698.0,
+   "ilk_el": 45282.0,
+   "ikinci_el": 100416.0,
+   "ipotekli": 32443.0
+  },
+  "2022-4": {
+   "toplam": 150843.0,
+   "ilk_el": 48394.0,
+   "ikinci_el": 102449.0,
+   "ipotekli": 35539.0
+  },
+  "2022-5": {
+   "toplam": 132420.0,
+   "ilk_el": 38070.0,
+   "ikinci_el": 94350.0,
+   "ipotekli": 31292.0
+  },
+  "2022-6": {
+   "toplam": 161684.0,
+   "ilk_el": 50830.0,
+   "ikinci_el": 110854.0,
+   "ipotekli": 43149.0
+  },
+  "2022-7": {
+   "toplam": 99646.0,
+   "ilk_el": 31745.0,
+   "ikinci_el": 67901.0,
+   "ipotekli": 20198.0
+  },
+  "2022-8": {
+   "toplam": 131713.0,
+   "ilk_el": 43553.0,
+   "ikinci_el": 88160.0,
+   "ipotekli": 23440.0
+  },
+  "2022-9": {
+   "toplam": 124030.0,
+   "ilk_el": 42615.0,
+   "ikinci_el": 81415.0,
+   "ipotekli": 18139.0
+  },
+  "2022-10": {
+   "toplam": 127049.0,
+   "ilk_el": 51311.0,
+   "ikinci_el": 75738.0,
+   "ipotekli": 16988.0
+  },
+  "2022-11": {
+   "toplam": 130513.0,
+   "ilk_el": 45694.0,
+   "ikinci_el": 84819.0,
+   "ipotekli": 18752.0
+  },
+  "2022-12": {
+   "toplam": 225623.0,
+   "ilk_el": 88600.0,
+   "ikinci_el": 137023.0,
+   "ipotekli": 24128.0
+  },
+  "2023-1": {
+   "toplam": 102927.0,
+   "ilk_el": 29924.0,
+   "ikinci_el": 73003.0,
+   "ipotekli": 17159.0
+  },
+  "2023-2": {
+   "toplam": 84396.0,
+   "ilk_el": 25348.0,
+   "ikinci_el": 59048.0,
+   "ipotekli": 18329.0
+  },
+  "2023-3": {
+   "toplam": 111322.0,
+   "ilk_el": 35737.0,
+   "ikinci_el": 75585.0,
+   "ipotekli": 26732.0
+  },
+  "2023-4": {
+   "toplam": 92607.0,
+   "ilk_el": 31102.0,
+   "ikinci_el": 61505.0,
+   "ipotekli": 22961.0
+  },
+  "2023-5": {
+   "toplam": 133287.0,
+   "ilk_el": 48810.0,
+   "ikinci_el": 84477.0,
+   "ipotekli": 31033.0
+  },
+  "2023-6": {
+   "toplam": 90118.0,
+   "ilk_el": 29656.0,
+   "ikinci_el": 60462.0,
+   "ipotekli": 14354.0
+  },
+  "2023-7": {
+   "toplam": 117058.0,
+   "ilk_el": 35763.0,
+   "ikinci_el": 81295.0,
+   "ipotekli": 15363.0
+  },
+  "2023-8": {
+   "toplam": 132124.0,
+   "ilk_el": 40713.0,
+   "ikinci_el": 91411.0,
+   "ipotekli": 17486.0
+  },
+  "2023-9": {
+   "toplam": 110810.0,
+   "ilk_el": 35186.0,
+   "ikinci_el": 75624.0,
+   "ipotekli": 9030.0
+  },
+  "2023-10": {
+   "toplam": 106183.0,
+   "ilk_el": 37799.0,
+   "ikinci_el": 68384.0,
+   "ipotekli": 6132.0
+  },
+  "2023-11": {
+   "toplam": 100579.0,
+   "ilk_el": 35047.0,
+   "ikinci_el": 65532.0,
+   "ipotekli": 5668.0
+  },
+  "2023-12": {
+   "toplam": 148724.0,
+   "ilk_el": 57399.0,
+   "ikinci_el": 91325.0,
+   "ipotekli": 6593.0
+  },
+  "2024-1": {
+   "toplam": 84801.0,
+   "ilk_el": 27350.0,
+   "ikinci_el": 57451.0,
+   "ipotekli": 6255.0
+  },
+  "2024-2": {
+   "toplam": 99558.0,
+   "ilk_el": 31549.0,
+   "ikinci_el": 68009.0,
+   "ipotekli": 9387.0
+  },
+  "2024-3": {
+   "toplam": 111345.0,
+   "ilk_el": 37308.0,
+   "ikinci_el": 74037.0,
+   "ipotekli": 13671.0
+  },
+  "2024-4": {
+   "toplam": 80276.0,
+   "ilk_el": 26237.0,
+   "ikinci_el": 54039.0,
+   "ipotekli": 7482.0
+  },
+  "2024-5": {
+   "toplam": 118926.0,
+   "ilk_el": 40024.0,
+   "ikinci_el": 78902.0,
+   "ipotekli": 10828.0
+  },
+  "2024-6": {
+   "toplam": 82924.0,
+   "ilk_el": 26958.0,
+   "ikinci_el": 55966.0,
+   "ipotekli": 7150.0
+  },
+  "2024-7": {
+   "toplam": 132426.0,
+   "ilk_el": 43049.0,
+   "ikinci_el": 89377.0,
+   "ipotekli": 11990.0
+  },
+  "2024-8": {
+   "toplam": 139411.0,
+   "ilk_el": 44080.0,
+   "ikinci_el": 95331.0,
+   "ipotekli": 14117.0
+  },
+  "2024-9": {
+   "toplam": 146557.0,
+   "ilk_el": 47145.0,
+   "ikinci_el": 99412.0,
+   "ipotekli": 16507.0
+  },
+  "2024-10": {
+   "toplam": 171619.0,
+   "ilk_el": 60513.0,
+   "ikinci_el": 111106.0,
+   "ipotekli": 21979.0
+  },
+  "2024-11": {
+   "toplam": 159805.0,
+   "ilk_el": 52168.0,
+   "ikinci_el": 107637.0,
+   "ipotekli": 22789.0
+  },
+  "2024-12": {
+   "toplam": 222112.0,
+   "ilk_el": 81219.0,
+   "ikinci_el": 140893.0,
+   "ipotekli": 24480.0
+  },
+  "2025-1": {
+   "toplam": 117025.0,
+   "ilk_el": 34783.0,
+   "ikinci_el": 82242.0,
+   "ipotekli": 17516.0
+  },
+  "2025-2": {
+   "toplam": 117586.0,
+   "ilk_el": 35695.0,
+   "ikinci_el": 81891.0,
+   "ipotekli": 17593.0
+  },
+  "2025-3": {
+   "toplam": 115788.0,
+   "ilk_el": 35281.0,
+   "ikinci_el": 80507.0,
+   "ipotekli": 19109.0
+  },
+  "2025-4": {
+   "toplam": 123569.0,
+   "ilk_el": 36775.0,
+   "ikinci_el": 86794.0,
+   "ipotekli": 18340.0
+  },
+  "2025-5": {
+   "toplam": 135664.0,
+   "ilk_el": 41860.0,
+   "ikinci_el": 93804.0,
+   "ipotekli": 20325.0
+  },
+  "2025-6": {
+   "toplam": 112196.0,
+   "ilk_el": 35267.0,
+   "ikinci_el": 76929.0,
+   "ipotekli": 15101.0
+  },
+  "2025-7": {
+   "toplam": 148939.0,
+   "ilk_el": 46514.0,
+   "ikinci_el": 102425.0,
+   "ipotekli": 19315.0
+  },
+  "2025-8": {
+   "toplam": 149440.0,
+   "ilk_el": 46459.0,
+   "ikinci_el": 102981.0,
+   "ipotekli": 20646.0
+  },
+  "2025-9": {
+   "toplam": 156918.0,
+   "ilk_el": 49608.0,
+   "ikinci_el": 107310.0,
+   "ipotekli": 22264.0
+  },
+  "2025-10": {
+   "toplam": 170955.0,
+   "ilk_el": 57675.0,
+   "ikinci_el": 113280.0,
+   "ipotekli": 24684.0
+  },
+  "2025-11": {
+   "toplam": 146989.0,
+   "ilk_el": 49174.0,
+   "ikinci_el": 97815.0,
+   "ipotekli": 22523.0
+  },
+  "2025-12": {
+   "toplam": 265223.0,
+   "ilk_el": 101721.0,
+   "ikinci_el": 163502.0,
+   "ipotekli": 30604.0
+  },
+  "2026-1": {
+   "toplam": 111480.0,
+   "ilk_el": 34069.0,
+   "ikinci_el": 77411.0,
+   "ipotekli": 20263.0
+  },
+  "2026-2": {
+   "toplam": 124549.0,
+   "ilk_el": 37785.0,
+   "ikinci_el": 86764.0,
+   "ipotekli": 25035.0
+  },
+  "2026-3": {
+   "toplam": 113367.0,
+   "ilk_el": 35725.0,
+   "ikinci_el": 77642.0,
+   "ipotekli": 25978.0
+  },
+  "2026-4": {
+   "toplam": 126808.0,
+   "ilk_el": 40306.0,
+   "ikinci_el": 86502.0,
+   "ipotekli": 25771.0
+  },
+  "2026-5": {
+   "toplam": 93333.0,
+   "ilk_el": 30196.0,
+   "ikinci_el": 63137.0,
+   "ipotekli": 19754.0
+  },
+  "2026-6": {
+   "toplam": 129979.0,
+   "ilk_el": 43406.0,
+   "ikinci_el": 86573.0,
+   "ipotekli": 25993.0
+  },
+  "2026-7": {
+   "toplam": 123603.0,
+   "ilk_el": 42529.0,
+   "ikinci_el": 81074.0,
+   "ipotekli": 23888.0
+  },
+  "2026-8": {
+   "toplam": 127410.0,
+   "ilk_el": 44378.0,
+   "ikinci_el": 83032.0,
+   "ipotekli": 22131.0
+  }
+ },
+ "konut_fiyat": {
+  "2019-1": {
+   "kfe": 11.18,
+   "yeni_konut_kfe": 10.81
+  },
+  "2019-2": {
+   "kfe": 11.19,
+   "yeni_konut_kfe": 10.64
+  },
+  "2019-3": {
+   "kfe": 11.24,
+   "yeni_konut_kfe": 10.57
+  },
+  "2019-4": {
+   "kfe": 11.31,
+   "yeni_konut_kfe": 10.71
+  },
+  "2019-5": {
+   "kfe": 11.46,
+   "yeni_konut_kfe": 10.81
+  },
+  "2019-6": {
+   "kfe": 11.4,
+   "yeni_konut_kfe": 10.75
+  },
+  "2019-7": {
+   "kfe": 11.47,
+   "yeni_konut_kfe": 10.88
+  },
+  "2019-8": {
+   "kfe": 11.78,
+   "yeni_konut_kfe": 11.24
+  },
+  "2019-9": {
+   "kfe": 11.88,
+   "yeni_konut_kfe": 11.34
+  },
+  "2019-10": {
+   "kfe": 12.01,
+   "yeni_konut_kfe": 11.5
+  },
+  "2019-11": {
+   "kfe": 12.14,
+   "yeni_konut_kfe": 11.7
+  },
+  "2019-12": {
+   "kfe": 12.29,
+   "yeni_konut_kfe": 11.87
+  },
+  "2020-1": {
+   "kfe": 12.61,
+   "yeni_konut_kfe": 12.29
+  },
+  "2020-2": {
+   "kfe": 12.89,
+   "yeni_konut_kfe": 12.53
+  },
+  "2020-3": {
+   "kfe": 13.13,
+   "yeni_konut_kfe": 12.84
+  },
+  "2020-4": {
+   "kfe": 13.15,
+   "yeni_konut_kfe": 12.58
+  },
+  "2020-5": {
+   "kfe": 13.4,
+   "yeni_konut_kfe": 13.02
+  },
+  "2020-6": {
+   "kfe": 14.32,
+   "yeni_konut_kfe": 13.95
+  },
+  "2020-7": {
+   "kfe": 14.85,
+   "yeni_konut_kfe": 14.47
+  },
+  "2020-8": {
+   "kfe": 15.06,
+   "yeni_konut_kfe": 14.53
+  },
+  "2020-9": {
+   "kfe": 15.23,
+   "yeni_konut_kfe": 14.73
+  },
+  "2020-10": {
+   "kfe": 15.57,
+   "yeni_konut_kfe": 15.15
+  },
+  "2020-11": {
+   "kfe": 16.06,
+   "yeni_konut_kfe": 15.68
+  },
+  "2020-12": {
+   "kfe": 16.23,
+   "yeni_konut_kfe": 15.8
+  },
+  "2021-1": {
+   "kfe": 16.49,
+   "yeni_konut_kfe": 15.87
+  },
+  "2021-2": {
+   "kfe": 16.98,
+   "yeni_konut_kfe": 16.6
+  },
+  "2021-3": {
+   "kfe": 17.32,
+   "yeni_konut_kfe": 17.24
+  },
+  "2021-4": {
+   "kfe": 17.86,
+   "yeni_konut_kfe": 17.76
+  },
+  "2021-5": {
+   "kfe": 18.27,
+   "yeni_konut_kfe": 18.13
+  },
+  "2021-6": {
+   "kfe": 18.76,
+   "yeni_konut_kfe": 18.88
+  },
+  "2021-7": {
+   "kfe": 19.41,
+   "yeni_konut_kfe": 19.53
+  },
+  "2021-8": {
+   "kfe": 19.99,
+   "yeni_konut_kfe": 20.36
+  },
+  "2021-9": {
+   "kfe": 20.77,
+   "yeni_konut_kfe": 20.99
+  },
+  "2021-10": {
+   "kfe": 21.65,
+   "yeni_konut_kfe": 21.94
+  },
+  "2021-11": {
+   "kfe": 23.22,
+   "yeni_konut_kfe": 23.44
+  },
+  "2021-12": {
+   "kfe": 26.54,
+   "yeni_konut_kfe": 26.94
+  },
+  "2022-1": {
+   "kfe": 29.95,
+   "yeni_konut_kfe": 30.01
+  },
+  "2022-2": {
+   "kfe": 32.3,
+   "yeni_konut_kfe": 32.24
+  },
+  "2022-3": {
+   "kfe": 35.39,
+   "yeni_konut_kfe": 35.05
+  },
+  "2022-4": {
+   "kfe": 39.44,
+   "yeni_konut_kfe": 38.92
+  },
+  "2022-5": {
+   "kfe": 44.56,
+   "yeni_konut_kfe": 44.83
+  },
+  "2022-6": {
+   "kfe": 49.53,
+   "yeni_konut_kfe": 48.78
+  },
+  "2022-7": {
+   "kfe": 53.04,
+   "yeni_konut_kfe": 51.84
+  },
+  "2022-8": {
+   "kfe": 56.26,
+   "yeni_konut_kfe": 54.59
+  },
+  "2022-9": {
+   "kfe": 59.48,
+   "yeni_konut_kfe": 57.57
+  },
+  "2022-10": {
+   "kfe": 62.09,
+   "yeni_konut_kfe": 59.92
+  },
+  "2022-11": {
+   "kfe": 64.2,
+   "yeni_konut_kfe": 62.61
+  },
+  "2022-12": {
+   "kfe": 66.85,
+   "yeni_konut_kfe": 64.86
+  },
+  "2023-1": {
+   "kfe": 73.88,
+   "yeni_konut_kfe": 73.28
+  },
+  "2023-2": {
+   "kfe": 78.4,
+   "yeni_konut_kfe": 76.52
+  },
+  "2023-3": {
+   "kfe": 84.68,
+   "yeni_konut_kfe": 84.58
+  },
+  "2023-4": {
+   "kfe": 87.55,
+   "yeni_konut_kfe": 87.98
+  },
+  "2023-5": {
+   "kfe": 91.12,
+   "yeni_konut_kfe": 90.68
+  },
+  "2023-6": {
+   "kfe": 95.66,
+   "yeni_konut_kfe": 94.76
+  },
+  "2023-7": {
+   "kfe": 101.87,
+   "yeni_konut_kfe": 101.15
+  },
+  "2023-8": {
+   "kfe": 108.97,
+   "yeni_konut_kfe": 109.21
+  },
+  "2023-9": {
+   "kfe": 116.18,
+   "yeni_konut_kfe": 116.93
+  },
+  "2023-10": {
+   "kfe": 119.18,
+   "yeni_konut_kfe": 120.16
+  },
+  "2023-11": {
+   "kfe": 120.07,
+   "yeni_konut_kfe": 120.66
+  },
+  "2023-12": {
+   "kfe": 122.43,
+   "yeni_konut_kfe": 124.09
+  },
+  "2024-1": {
+   "kfe": 125.71,
+   "yeni_konut_kfe": 125.32
+  },
+  "2024-2": {
+   "kfe": 129.87,
+   "yeni_konut_kfe": 127.77
+  },
+  "2024-3": {
+   "kfe": 131.49,
+   "yeni_konut_kfe": 131.21
+  },
+  "2024-4": {
+   "kfe": 132.7,
+   "yeni_konut_kfe": 133.47
+  },
+  "2024-5": {
+   "kfe": 137.9,
+   "yeni_konut_kfe": 138.43
+  },
+  "2024-6": {
+   "kfe": 140.03,
+   "yeni_konut_kfe": 140.41
+  },
+  "2024-7": {
+   "kfe": 141.33,
+   "yeni_konut_kfe": 139.86
+  },
+  "2024-8": {
+   "kfe": 146.5,
+   "yeni_konut_kfe": 148.32
+  },
+  "2024-9": {
+   "kfe": 148.01,
+   "yeni_konut_kfe": 147.44
+  },
+  "2024-10": {
+   "kfe": 151.08,
+   "yeni_konut_kfe": 151.9
+  },
+  "2024-11": {
+   "kfe": 155.38,
+   "yeni_konut_kfe": 157.99
+  },
+  "2024-12": {
+   "kfe": 158.46,
+   "yeni_konut_kfe": 159.52
+  },
+  "2025-1": {
+   "kfe": 165.88,
+   "yeni_konut_kfe": 167.39
+  },
+  "2025-2": {
+   "kfe": 170.55,
+   "yeni_konut_kfe": 170.56
+  },
+  "2025-3": {
+   "kfe": 173.88,
+   "yeni_konut_kfe": 175.08
+  },
+  "2025-4": {
+   "kfe": 176.41,
+   "yeni_konut_kfe": 176.55
+  },
+  "2025-5": {
+   "kfe": 182.33,
+   "yeni_konut_kfe": 183.18
+  },
+  "2025-6": {
+   "kfe": 185.96,
+   "yeni_konut_kfe": 186.0
+  },
+  "2025-7": {
+   "kfe": 187.78,
+   "yeni_konut_kfe": 188.07
+  },
+  "2025-8": {
+   "kfe": 192.44,
+   "yeni_konut_kfe": 194.12
+  },
+  "2025-9": {
+   "kfe": 195.66,
+   "yeni_konut_kfe": 198.29
+  },
+  "2025-10": {
+   "kfe": 198.87,
+   "yeni_konut_kfe": 202.61
+  },
+  "2025-11": {
+   "kfe": 204.04,
+   "yeni_konut_kfe": 207.62
+  },
+  "2025-12": {
+   "kfe": 204.36,
+   "yeni_konut_kfe": 210.55
+  },
+  "2026-1": {
+   "kfe": 211.73,
+   "yeni_konut_kfe": 215.54
+  },
+  "2026-2": {
+   "kfe": 215.4,
+   "yeni_konut_kfe": 221.05
+  },
+  "2026-3": {
+   "kfe": 219.52,
+   "yeni_konut_kfe": 224.71
+  },
+  "2026-4": {
+   "kfe": 223.32,
+   "yeni_konut_kfe": 229.47
+  },
+  "2026-5": {
+   "kfe": 226.99,
+   "yeni_konut_kfe": 231.34
+  },
+  "2026-6": {
+   "kfe": 231.34,
+   "yeni_konut_kfe": 236.08
+  },
+  "2026-7": {
+   "kfe": 234.55,
+   "yeni_konut_kfe": 238.68
+  },
+  "2026-8": {
+   "kfe": 236.76,
+   "yeni_konut_kfe": 242.37
+  }
+ },
+ "banka_kredi_egilim": {
+  "2019-Q1": {
+   "diger_bireysel_standart": 17.6,
+   "diger_bireysel_talep": -11.9,
+   "dayanikli_mal_etkisi": -13.3,
+   "tuketici_guveni_etkisi": -12.2,
+   "diger_bireysel_standart_beklenti": 0.0,
+   "diger_bireysel_talep_beklenti": 0.8,
+   "konut_kredi_standart": 0.0,
+   "konut_kredi_talep": -28.6
+  },
+  "2019-Q2": {
+   "diger_bireysel_standart": 0.0,
+   "diger_bireysel_talep": 16.5,
+   "dayanikli_mal_etkisi": -5.4,
+   "tuketici_guveni_etkisi": -16.8,
+   "diger_bireysel_standart_beklenti": 0.0,
+   "diger_bireysel_talep_beklenti": 12.2,
+   "konut_kredi_standart": 0.0,
+   "konut_kredi_talep": -12.5
+  },
+  "2019-Q3": {
+   "diger_bireysel_standart": 22.3,
+   "diger_bireysel_talep": 59.9,
+   "dayanikli_mal_etkisi": 18.3,
+   "tuketici_guveni_etkisi": 29.4,
+   "diger_bireysel_standart_beklenti": 17.1,
+   "diger_bireysel_talep_beklenti": 47.2,
+   "konut_kredi_standart": 0.0,
+   "konut_kredi_talep": 11.7
+  },
+  "2019-Q4": {
+   "diger_bireysel_standart": 38.7,
+   "diger_bireysel_talep": 59.5,
+   "dayanikli_mal_etkisi": 27.8,
+   "tuketici_guveni_etkisi": 51.3,
+   "diger_bireysel_standart_beklenti": 11.2,
+   "diger_bireysel_talep_beklenti": 47.2,
+   "konut_kredi_standart": 15.9,
+   "konut_kredi_talep": 44.5
+  },
+  "2020-Q1": {
+   "diger_bireysel_standart": 5.9,
+   "diger_bireysel_talep": 42.9,
+   "dayanikli_mal_etkisi": 34.9,
+   "tuketici_guveni_etkisi": 12.8,
+   "diger_bireysel_standart_beklenti": -12.2,
+   "diger_bireysel_talep_beklenti": 21.7,
+   "konut_kredi_standart": -0.3,
+   "konut_kredi_talep": 34.5
+  },
+  "2020-Q2": {
+   "diger_bireysel_standart": 46.1,
+   "diger_bireysel_talep": 0.7,
+   "dayanikli_mal_etkisi": 4.8,
+   "tuketici_guveni_etkisi": -2.9,
+   "diger_bireysel_standart_beklenti": 18.6,
+   "diger_bireysel_talep_beklenti": 79.6,
+   "konut_kredi_standart": 33.7,
+   "konut_kredi_talep": -6.7
+  },
+  "2020-Q3": {
+   "diger_bireysel_standart": 24.1,
+   "diger_bireysel_talep": 36.7,
+   "dayanikli_mal_etkisi": 77.8,
+   "tuketici_guveni_etkisi": 36.0,
+   "diger_bireysel_standart_beklenti": 0.0,
+   "diger_bireysel_talep_beklenti": -21.3,
+   "konut_kredi_standart": 0.0,
+   "konut_kredi_talep": 53.5
+  },
+  "2020-Q4": {
+   "diger_bireysel_standart": 5.0,
+   "diger_bireysel_talep": -18.1,
+   "dayanikli_mal_etkisi": -5.7,
+   "tuketici_guveni_etkisi": -18.6,
+   "diger_bireysel_standart_beklenti": -16.5,
+   "diger_bireysel_talep_beklenti": -11.6,
+   "konut_kredi_standart": -0.3,
+   "konut_kredi_talep": -28.4
+  },
+  "2021-Q1": {
+   "diger_bireysel_standart": 10.3,
+   "diger_bireysel_talep": -2.1,
+   "dayanikli_mal_etkisi": 0.3,
+   "tuketici_guveni_etkisi": -2.1,
+   "diger_bireysel_standart_beklenti": -16.3,
+   "diger_bireysel_talep_beklenti": 16.5,
+   "konut_kredi_standart": 0.0,
+   "konut_kredi_talep": -23.4
+  },
+  "2021-Q2": {
+   "diger_bireysel_standart": 0.0,
+   "diger_bireysel_talep": 15.0,
+   "dayanikli_mal_etkisi": 0.0,
+   "tuketici_guveni_etkisi": -2.5,
+   "diger_bireysel_standart_beklenti": 0.0,
+   "diger_bireysel_talep_beklenti": 18.9,
+   "konut_kredi_standart": 0.0,
+   "konut_kredi_talep": 6.6
+  },
+  "2021-Q3": {
+   "diger_bireysel_standart": 10.5,
+   "diger_bireysel_talep": 13.2,
+   "dayanikli_mal_etkisi": 0.0,
+   "tuketici_guveni_etkisi": 13.2,
+   "diger_bireysel_standart_beklenti": 0.0,
+   "diger_bireysel_talep_beklenti": 10.8,
+   "konut_kredi_standart": 0.0,
+   "konut_kredi_talep": -1.2
+  },
+  "2021-Q4": {
+   "diger_bireysel_standart": -4.8,
+   "diger_bireysel_talep": 43.0,
+   "dayanikli_mal_etkisi": 34.6,
+   "tuketici_guveni_etkisi": 1.7,
+   "diger_bireysel_standart_beklenti": 0.0,
+   "diger_bireysel_talep_beklenti": -15.2,
+   "konut_kredi_standart": 0.0,
+   "konut_kredi_talep": 8.7
+  },
+  "2022-Q1": {
+   "diger_bireysel_standart": -4.7,
+   "diger_bireysel_talep": 15.7,
+   "dayanikli_mal_etkisi": -4.7,
+   "tuketici_guveni_etkisi": -2.3,
+   "diger_bireysel_standart_beklenti": -4.7,
+   "diger_bireysel_talep_beklenti": -2.5,
+   "konut_kredi_standart": -4.7,
+   "konut_kredi_talep": -6.8
+  },
+  "2022-Q2": {
+   "diger_bireysel_standart": -4.7,
+   "diger_bireysel_talep": 47.8,
+   "dayanikli_mal_etkisi": 10.5,
+   "tuketici_guveni_etkisi": 12.8,
+   "diger_bireysel_standart_beklenti": -0.2,
+   "diger_bireysel_talep_beklenti": -7.4,
+   "konut_kredi_standart": -4.7,
+   "konut_kredi_talep": 41.9
+  },
+  "2022-Q3": {
+   "diger_bireysel_standart": -4.5,
+   "diger_bireysel_talep": -2.6,
+   "dayanikli_mal_etkisi": -4.8,
+   "tuketici_guveni_etkisi": -2.3,
+   "diger_bireysel_standart_beklenti": -4.5,
+   "diger_bireysel_talep_beklenti": -4.3,
+   "konut_kredi_standart": -4.6,
+   "konut_kredi_talep": -23.3
+  },
+  "2022-Q4": {
+   "diger_bireysel_standart": 0.0,
+   "diger_bireysel_talep": 8.8,
+   "dayanikli_mal_etkisi": 8.8,
+   "tuketici_guveni_etkisi": 6.4,
+   "diger_bireysel_standart_beklenti": 0.0,
+   "diger_bireysel_talep_beklenti": -18.3,
+   "konut_kredi_standart": -11.9,
+   "konut_kredi_talep": 13.5
+  },
+  "2023-Q1": {
+   "diger_bireysel_standart": -4.3,
+   "diger_bireysel_talep": -18.9,
+   "dayanikli_mal_etkisi": -4.3,
+   "tuketici_guveni_etkisi": -2.2,
+   "diger_bireysel_standart_beklenti": -4.2,
+   "diger_bireysel_talep_beklenti": -3.7,
+   "konut_kredi_standart": -4.3,
+   "konut_kredi_talep": 9.4
+  },
+  "2023-Q2": {
+   "diger_bireysel_standart": -37.3,
+   "diger_bireysel_talep": -38.0,
+   "dayanikli_mal_etkisi": -13.6,
+   "tuketici_guveni_etkisi": -7.9,
+   "diger_bireysel_standart_beklenti": -18.4,
+   "diger_bireysel_talep_beklenti": 3.7,
+   "konut_kredi_standart": -33.8,
+   "konut_kredi_talep": -18.4
+  },
+  "2023-Q3": {
+   "diger_bireysel_standart": -47.2,
+   "diger_bireysel_talep": -31.5,
+   "dayanikli_mal_etkisi": -33.3,
+   "tuketici_guveni_etkisi": -16.4,
+   "diger_bireysel_standart_beklenti": -18.1,
+   "diger_bireysel_talep_beklenti": -31.7,
+   "konut_kredi_standart": -33.5,
+   "konut_kredi_talep": -48.0
+  },
+  "2023-Q4": {
+   "diger_bireysel_standart": 0.0,
+   "diger_bireysel_talep": -9.6,
+   "dayanikli_mal_etkisi": 3.7,
+   "tuketici_guveni_etkisi": -3.6,
+   "diger_bireysel_standart_beklenti": -3.6,
+   "diger_bireysel_talep_beklenti": -17.1,
+   "konut_kredi_standart": -18.1,
+   "konut_kredi_talep": -41.6
+  },
+  "2024-Q1": {
+   "diger_bireysel_standart": -23.4,
+   "diger_bireysel_talep": -14.4,
+   "dayanikli_mal_etkisi": 12.0,
+   "tuketici_guveni_etkisi": -25.6,
+   "diger_bireysel_standart_beklenti": -25.5,
+   "diger_bireysel_talep_beklenti": -25.1,
+   "konut_kredi_standart": -15.1,
+   "konut_kredi_talep": -27.0
+  },
+  "2024-Q2": {
+   "diger_bireysel_standart": -11.0,
+   "diger_bireysel_talep": -0.6,
+   "dayanikli_mal_etkisi": 13.3,
+   "tuketici_guveni_etkisi": -25.4,
+   "diger_bireysel_standart_beklenti": 0.0,
+   "diger_bireysel_talep_beklenti": 24.6,
+   "konut_kredi_standart": -3.3,
+   "konut_kredi_talep": -13.1
+  },
+  "2024-Q3": {
+   "diger_bireysel_standart": -13.0,
+   "diger_bireysel_talep": 16.6,
+   "dayanikli_mal_etkisi": -6.3,
+   "tuketici_guveni_etkisi": 5.7,
+   "diger_bireysel_standart_beklenti": -9.0,
+   "diger_bireysel_talep_beklenti": 18.8,
+   "konut_kredi_standart": -4.0,
+   "konut_kredi_talep": 5.2
+  },
+  "2024-Q4": {
+   "diger_bireysel_standart": 0.4,
+   "diger_bireysel_talep": 2.8,
+   "dayanikli_mal_etkisi": 2.1,
+   "tuketici_guveni_etkisi": 2.8,
+   "diger_bireysel_standart_beklenti": -1.9,
+   "diger_bireysel_talep_beklenti": 25.3,
+   "konut_kredi_standart": 14.2,
+   "konut_kredi_talep": -4.3
+  },
+  "2025-Q1": {
+   "diger_bireysel_standart": 8.5,
+   "diger_bireysel_talep": 16.2,
+   "dayanikli_mal_etkisi": 10.8,
+   "tuketici_guveni_etkisi": 11.4,
+   "diger_bireysel_standart_beklenti": -3.1,
+   "diger_bireysel_talep_beklenti": 34.0,
+   "konut_kredi_standart": 1.2,
+   "konut_kredi_talep": 27.7
+  },
+  "2025-Q2": {
+   "diger_bireysel_standart": 18.8,
+   "diger_bireysel_talep": -8.6,
+   "dayanikli_mal_etkisi": -8.6,
+   "tuketici_guveni_etkisi": -7.9,
+   "diger_bireysel_standart_beklenti": -2.5,
+   "diger_bireysel_talep_beklenti": -2.5,
+   "konut_kredi_standart": 0.6,
+   "konut_kredi_talep": 11.9
+  },
+  "2025-Q3": {
+   "diger_bireysel_standart": -1.3,
+   "diger_bireysel_talep": 16.2,
+   "dayanikli_mal_etkisi": -1.3,
+   "tuketici_guveni_etkisi": 3.6,
+   "diger_bireysel_standart_beklenti": -1.3,
+   "diger_bireysel_talep_beklenti": 33.4,
+   "konut_kredi_standart": 1.2,
+   "konut_kredi_talep": 27.4
+  },
+  "2025-Q4": {
+   "diger_bireysel_standart": 0.0,
+   "diger_bireysel_talep": 9.2,
+   "dayanikli_mal_etkisi": -2.5,
+   "tuketici_guveni_etkisi": -2.5,
+   "diger_bireysel_standart_beklenti": -2.5,
+   "diger_bireysel_talep_beklenti": 27.8,
+   "konut_kredi_standart": 0.6,
+   "konut_kredi_talep": 17.3
+  },
+  "2026-Q1": {
+   "diger_bireysel_standart": -5.3,
+   "diger_bireysel_talep": 0.6,
+   "dayanikli_mal_etkisi": 0.6,
+   "tuketici_guveni_etkisi": 0.0,
+   "diger_bireysel_standart_beklenti": -17.1,
+   "diger_bireysel_talep_beklenti": 23.0,
+   "konut_kredi_standart": 18.3,
+   "konut_kredi_talep": 28.9
+  },
+  "2026-Q2": {
+   "diger_bireysel_standart": -18.2,
+   "diger_bireysel_talep": -2.4,
+   "dayanikli_mal_etkisi": -2.4,
+   "tuketici_guveni_etkisi": -2.4,
+   "diger_bireysel_standart_beklenti": -2.7,
+   "diger_bireysel_talep_beklenti": -10.2,
+   "konut_kredi_standart": -0.6,
+   "konut_kredi_talep": -3.9
+  }
+ },
+ "hanehalki_beklenti": {
+  "2026-1": {
+   "dayanikli_fiyat_artti_pay": 5.96,
+   "dayanikli_fiyat_artacak_pay": 7.92,
+   "enflasyon_beklenti_12ay": 48.81
+  },
+  "2026-2": {
+   "dayanikli_fiyat_artti_pay": 5.8,
+   "dayanikli_fiyat_artacak_pay": 8.73,
+   "enflasyon_beklenti_12ay": 48.81
+  },
+  "2026-3": {
+   "dayanikli_fiyat_artti_pay": 4.96,
+   "dayanikli_fiyat_artacak_pay": 6.97,
+   "enflasyon_beklenti_12ay": 49.89
+  },
+  "2026-4": {
+   "dayanikli_fiyat_artti_pay": 3.94,
+   "dayanikli_fiyat_artacak_pay": 6.17,
+   "enflasyon_beklenti_12ay": 51.56
+  },
+  "2026-5": {
+   "dayanikli_fiyat_artti_pay": 3.85,
+   "dayanikli_fiyat_artacak_pay": 6.37,
+   "enflasyon_beklenti_12ay": 49.51
+  },
+  "2026-6": {
+   "dayanikli_fiyat_artti_pay": 4.71,
+   "dayanikli_fiyat_artacak_pay": 6.93,
+   "enflasyon_beklenti_12ay": 46.13
+  },
+  "2026-7": {
+   "dayanikli_fiyat_artti_pay": 4.75,
+   "dayanikli_fiyat_artacak_pay": 6.12,
+   "enflasyon_beklenti_12ay": 44.94
+  },
+  "2026-8": {
+   "dayanikli_fiyat_artti_pay": 4.03,
+   "dayanikli_fiyat_artacak_pay": 5.69,
+   "enflasyon_beklenti_12ay": 45.58
+  },
+  "2026-9": {
+   "dayanikli_fiyat_artti_pay": 3.52,
+   "dayanikli_fiyat_artacak_pay": 5.14,
+   "enflasyon_beklenti_12ay": 45.6
+  }
+ },
+ "kaynak": "TCMB EVDS · 28.09.2026 · kart harcama BKM/TCMB haftalık akım, aylık toplam (milyon TL); tüketici eğilim TÜİK-TCMB; konut satış ve fiyat TÜİK/TCMB; banka kredileri eğilim anketi TCMB (üç aylık, net yüzde)"
+}

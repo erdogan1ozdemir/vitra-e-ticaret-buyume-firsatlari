@@ -1,0 +1,139 @@
+# -*- coding: utf-8 -*-
+"""VitrA e-ticaret buyume firsatlari · HTML rapor uretimi (TR + EN tek dosya)."""
+import os, sys, base64, zipfile, json
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import veri
+from rapor_parca1 import VITRA, INBOUND, GLOSSARY
+from rapor_css import CSS
+from css_ek import CSS_EK
+from rapor_js import JS, KAYNAKCA_CSS, TEMA, IKON
+import t2_ortak, kaynakca, ceviri, dil
+from t2_ortak import x, R
+import b_ozet, b_makro, b_talep, b_niyet, b_organik, b_marka, b_youtube, b_rakip, b_model, b_adimlar, b_yontem
+
+AD = "VitrA_E-Ticaret_Buyume_Firsatlari"
+XLS = os.path.join(veri.KOK, AD + ".xlsx")
+
+# ---------------------------------------------------------------- bolumler
+BOLUMLER = []
+def bolum(bid, tr, en, govde):
+    BOLUMLER.append((bid, tr))
+    return '<section id="%s"><h2><span class="no">%02d</span>%s</h2>%s</section>' % (bid, len(BOLUMLER), x(tr, en), govde)
+
+P = []
+P.append(bolum("ozet", "Özet", "Summary", b_ozet.HTML))
+P.append(bolum("makro", "Makro Ortam ve Ödeme Gücü", "Macro Environment and Purchasing Power", b_makro.HTML))
+P.append(bolum("talep", "Kategori Talebi ve Dönemsel Değişim", "Category Demand and Period Change", b_talep.HTML))
+P.append(bolum("ihtiyac", "İhtiyaç Dili: Kullanıcı Ne Arıyor?", "Need Language: What Is the User Searching For?", b_niyet.HTML))
+P.append(bolum("organik", "Organik Kanal Performansı", "Organic Channel Performance", b_organik.HTML))
+P.append(bolum("marka", "Marka Aramaları ve Autocomplete", "Brand Searches and Autocomplete", b_marka.HTML))
+P.append(bolum("youtube", "YouTube: Montaj, Tamir ve Karar Videoları", "YouTube: Installation, Repair and Decision Videos", b_youtube.HTML))
+P.append(bolum("rakip", "Rakip Görünürlüğü ve Kanal Ölçeği", "Competitor Visibility and Channel Scale", b_rakip.HTML))
+P.append(bolum("model", "Kanal Rolleri ve Etkileşim Modeli", "Channel Roles and Engagement Model", b_model.HTML))
+P.append(bolum("adimlar", "Sonraki Adımlar", "Next Steps", b_adimlar.HTML))
+P.append(bolum("yontem", "Yöntem ve Kapsam", "Method and Scope", b_yontem.HTML))
+
+govde = "\n".join(P)
+govde, sira = kaynakca.coz(govde)
+P.append(bolum("kaynakca", "Kaynakça", "References", kaynakca.bolum_html(sira, x)))
+GL_EN = {
+ "CTR": "Click-through rate; the share of impressions that turn into clicks.", "Impression": "The number of times the site appeared in search results.",
+ "Click": "A visit to the site from a search result.", "Position": "The site's average rank in search results.",
+ "DR": "Domain Rating; Ahrefs' link strength score for a domain, on a 0-100 scale.", "Organik trafik": "Ahrefs' estimate of monthly free search visits from ranking keywords.",
+ "Paid trafik": "Ahrefs' estimate of monthly visits from Google Ads.", "Long-tail": "Low-volume but clearly intended long search phrases.",
+ "Autocomplete": "Completion phrases suggested while typing in the Google search box; derived from real user searches.", "Bundle": "A set of several products sold together at a single price.",
+ "AOV": "Average Order Value; the average basket per order.", "Conversion rate": "The share of visits that turn into a purchase.",
+ "Pureplayer": "A retailer without physical stores that sells online only.", "Marketplace": "A platform that hosts third-party sellers.",
+ "Retargeting": "A reminder ad shown later to a user who visited the site.", "Kartlı Ödeme Endeksi": "An index the CBRT derives from bank and credit card spending; the real series is inflation-adjusted.",
+ "Net yüzde": "A survey indicator obtained by subtracting the share of negative answers from the share of positive answers.",
+}
+GL_TERM_EN = {"Organik trafik": "Organic traffic", "Paid trafik": "Paid traffic", "Kartlı Ödeme Endeksi": "Card Payment Index", "Net yüzde": "Net percentage"}
+sozluk = '<dl class="gl">%s</dl>' % "".join('<dt>%s</dt><dd>%s</dd>' % (x(t, GL_TERM_EN.get(t, t)), x(GLOSSARY[t], GL_EN[t])) for t in GLOSSARY)
+P.append(bolum("sozluk", "Terim Sözlüğü", "Glossary", sozluk))
+govde = "\n".join(P[:-2]) if False else govde + "\n" + "\n".join(P[-2:])
+
+# ---------------------------------------------------------------- icindekiler
+KISA = {"ihtiyac": ("İhtiyaç Dili", "Need Language"), "youtube": ("YouTube: Montaj ve Tamir", "YouTube: Installation and Repair"), "rakip": ("Rakip Görünürlüğü ve Ölçek", "Competitor Visibility and Scale"),
+        "model": ("Kanal Rolleri ve Model", "Channel Roles and Model"), "makro": ("Makro Ortam", "Macro Environment"), "talep": ("Kategori Talebi", "Category Demand"), "organik": ("Organik Kanal", "Organic Channel"),
+        "marka": ("Marka Aramaları", "Brand Searches")}
+KUMELER = [("DURUM", "STATUS", ["ozet", "makro"]), ("TALEP", "DEMAND", ["talep", "ihtiyac", "organik", "marka", "youtube"]), ("REKABET VE MODEL", "COMPETITION AND MODEL", ["rakip", "model"]),
+           ("PLAN", "PLAN", ["adimlar"]), ("EK", "APPENDIX", ["yontem", "kaynakca", "sozluk"])]
+_bas = dict(BOLUMLER); _sira = {b: i + 1 for i, (b, _) in enumerate(BOLUMLER)}
+_kumede = [b for _, _, ids in KUMELER for b in ids]
+if _kumede != [b for b, _ in BOLUMLER]:
+    raise SystemExit("Küme sırası belge sırasıyla uyuşmuyor: %s" % [b for b, _ in BOLUMLER if b not in _kumede])
+def _toc():
+    out = []
+    for tr, en, ids in KUMELER:
+        out.append('<p class="grp">%s</p><ul class="tocg">' % x(tr, en))
+        for b in ids:
+            kisa = x(*KISA[b]) if b in KISA else _bas[b]
+            out.append('<li><a href="#%s" title="%s"><span class="no">%02d</span><span class="tx">%s</span></a></li>' % (b, _bas[b], _sira[b], kisa))
+        out.append('</ul>')
+    return "".join(out)
+toc = _toc()
+target_css = "".join(
+    (':root:not(.js) body:has(#%s:target) .sidenav a[href="#%s"]{background:var(--coral-tint);color:var(--ink);font-weight:640}'
+     ':root:not(.js) body:has(#%s:target) .sidenav a[href="#%s"] .no{background:var(--teal);color:#fff}') % (b, b, b, b) for b, _ in BOLUMLER)
+
+# ---------------------------------------------------------------- excel dugmesi
+def dl_buton(sinif=""):
+    if not os.path.exists(XLS): return ""
+    b64 = base64.b64encode(open(XLS, "rb").read()).decode(); kb = round(os.path.getsize(XLS) / 1024)
+    with zipfile.ZipFile(XLS) as z: sekme = sum(1 for nm in z.namelist() if nm.startswith("xl/worksheets/sheet"))
+    x("Veri dosyasını indir · %d sekme · %s KB" % (sekme, kb), "Download the data file · %d sheets · %s KB" % (sekme, kb))
+    x("· Excel, %s KB" % kb, "· Excel, %s KB" % kb)
+    return ('<a class="dl %s" href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,%s" download="%s" title="Veri dosyasını indir · %d sekme · %s KB">%s<span class="t">%s</span> <span class="dl-alt">&middot; Excel, %s KB</span></a>'
+            % (sinif, b64, os.path.basename(XLS), sekme, kb, IKON, x("Veri dosyası", "Data file"), kb))
+
+# ---------------------------------------------------------------- hero
+HERO = """<div class="hero dark"><div class="ring"></div>
+  <p class="eyebrow">%s</p>
+  <h1>%s</h1>
+  <p class="sub">%s</p>
+  <div class="chips"><span class="chip f">%s</span><span class="chip">%s</span><span class="chip">%s</span><span class="chip">%s</span><span class="chip">%s</span></div>
+</div>""" % (x("VITRA TÜRKİYE · E-TİCARET BÜYÜME FIRSATLARI", "VITRA TURKEY · E-COMMERCE GROWTH OPPORTUNITIES"),
+             x("E-Ticaret Büyüme Fırsatları: Talep, Kullanıcı Davranışı ve Kanal Modeli", "E-Commerce Growth Opportunities: Demand, User Behaviour and Channel Model"),
+             x("Pazar talebi, ihtiyaç dili, organik kanal, YouTube, rekabet ve makro ortam verileriyle vitra.com.tr, Trendyol ve Hepsiburada için kanal rolleri ve etkileşim modeli önerisi. İlk sürüm; pazaryeri ve GA4 verisiyle genişletilecektir.",
+               "A proposal for channel roles and an engagement model for vitra.com.tr, Trendyol and Hepsiburada, built on market demand, need language, organic channel, YouTube, competition and macro data. First version; to be extended with marketplace and GA4 data."),
+             x("Sürüm 1 · %s" % veri.TARIH, "Version 1 · %s" % veri.TARIH), x("Talep: Eyl 2024 - Ağu 2026", "Demand: Sep 2024 - Aug 2026"), x("Search Console: Haz 2025 - Eyl 2026", "Search Console: Jun 2025 - Sep 2026"),
+             x("2.420 kelime · 8 kategori", "2,420 keywords · 8 categories"), x("Türkiye", "Turkey"))
+
+DOC = """<!doctype html>
+<html lang="tr" data-theme="light"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VitrA Türkiye | E-Ticaret Büyüme Fırsatları</title>
+<style>%s
+%s</style></head>
+<body>
+<header class="appbar"><div class="in">
+  <div class="brandbit"><span class="lbl">%s</span>
+    <span class="logo-card"><img src="%s" alt="VitrA"></span></div>
+  <div class="brandbit" style="gap:12px">%s%s<span class="lbl">%s</span>
+    <span class="ib"><img src="%s" alt="Inbound"></span></div>
+</div></header>
+<div class="wrap">
+<nav class="sidenav" aria-label="%s"><div class="tocbox">%s</div></nav>
+<main>
+%s
+%s
+<footer>%s<br>%s</footer>
+</main></div>
+<button class="tocfab" id="tocfab" type="button" aria-expanded="false" aria-controls="tocsheet" aria-label="%s">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg></button>
+<div class="tocsheet" id="tocsheet" role="dialog" aria-modal="true" aria-label="%s">
+  <div class="tocsheet__in"><div class="tocsheet__tut"></div>%s</div>
+</div>
+<script>%s</script>
+</body></html>""" % (CSS + CSS_EK + KAYNAKCA_CSS, target_css, x("Marka", "Brand"), VITRA, TEMA, dl_buton(), x("Hazırlayan", "Prepared by"), INBOUND, x("İçindekiler", "Contents"), toc, HERO, govde,
+                     dl_buton("dl-foot"), x("Hacimler Google Keyword Planner &middot; sayfa ve sorgu verisi Google Search Console &middot; rakip ölçümü Ahrefs &middot; makro seriler TCMB EVDS &middot; autocomplete ve YouTube Google",
+                                            "Volumes Google Keyword Planner &middot; page and query data Google Search Console &middot; competitor measurement Ahrefs &middot; macro series CBRT EVDS &middot; autocomplete and YouTube Google"),
+                     x("İçindekiler menüsünü aç", "Open the contents menu"), x("İçindekiler", "Contents"), toc, JS)
+x("VitrA Türkiye | E-Ticaret Büyüme Fırsatları", "VitrA Turkey | E-Commerce Growth Opportunities"); x("html", "html")
+x("Açık ve koyu tema arasında geçiş yap", "Switch between light and dark theme"); x("Tema değiştir", "Switch theme"); x("Erişim", "Accessed")
+ceviri.EN.update(t2_ortak.EK)
+if t2_ortak._CAKISMA: print("uyarı · farklı çeviri:", t2_ortak._CAKISMA[:5])
+DOC, _n, _de = dil.uygula(DOC, "VitrA Turkey | E-Commerce Growth Opportunities")
+yol = os.path.join(veri.KOK, AD + ".html")
+open(yol, "w", encoding="utf-8").write(DOC)
+print("kaydedildi:", yol, len(DOC), "karakter,", len(BOLUMLER), "bölüm,", _n, "ifade çevrildi")
