@@ -70,7 +70,7 @@ def kaynak(tr, en, *kodlar):
 
 def th(tr, en, ac_tr, ac_en, sayi=False):
     x(ac_tr, ac_en)
-    return '<th%s data-t="%s"><span class="q">%s</span></th>' % (
+    return '<th%s data-t="%s" tabindex="0"><span class="q">%s</span></th>' % (
         ' class="n"' if sayi else "", _h.escape(ac_tr, quote=True), x(tr, en))
 
 

@@ -26,4 +26,4 @@ python3 yeni_kategori.py && python3 ssg_bm.py && python3 katalog.py
 python3 rapor.py && python3 excel.py && python3 rapor.py
 ```
 
-`veri/islenmis/` türetilmiş tabloları içerir. Ham çekimler depoya alınmamıştır; yalnızca rapor üretimi için gereken derin araştırma özetleri `veri/ham/derin/` altındadır (Ahrefs pazaryeri ve marka talebi, YouTube analizleri).
+`veri/islenmis/` türetilmiş tabloları içerir. Büyük ham çekimler (Keyword Planner, GSC, EVDS, sitemap, Apify) depoya alınmamıştır; rapor modüllerinin doğrudan okuduğu küçük özet dosyaları `veri/ham/` altındadır (autocomplete ve YouTube ilk tarama, Ahrefs rakip özeti, VitrA hizmet sayfaları, `derin/` altında Ahrefs pazaryeri ve marka talebi ile YouTube analizleri). Bu dosyalarla `rapor.py → excel.py → rapor.py` zinciri depodan çalışır; ilk satırdaki işleme betikleri ham çekimleri gerektirir.

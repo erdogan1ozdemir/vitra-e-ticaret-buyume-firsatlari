@@ -1,0 +1,200 @@
+{
+ "Küçük Montaj Hizmeti ETIC_MTJ(KUCUK)": {
+  "url": "https://www.vitra.com.tr/montaj-hizmeti/kucuk-montaj-hizmeti-p-etic_mtj%28kucuk%29",
+  "fiyat": 1150.0,
+  "kapsam": [
+   "Küçük Montaj Hizmeti",
+   "VitrA – Artema Yetkili Servisleri",
+   "(0)",
+   "Ürün Kodu:",
+   "ETIC_MTJ(KUCUK)",
+   "VitrA - Artema tamamlayıcı ürünlerinin montajı için geçerlidir.",
+   "Montajın gerçekleştirilebilmesi için ürünün kurulacağı alanın ve gerekli altyapının montaja uygun şekilde hazırlanmış olması gerekir.",
+   "Montaj öncesinde kullanımda olan mevcut ürünlerin sökülmesi ve belediye mevzuatına uygun bir şekilde imha edilmesi hizmet kapsamında gerçekleştirilir.",
+   "Montaj yapılacak alandaki tesisat geçiş noktalarının müşteri tarafından önceden belirtilmesi gerekir. Bu noktaların belirtilmemesi nedeniyle montaj sırasında tesisatta oluşabilecek hasarlardan VitrA - Artema Yetkili Servisi sorumlu değildir.",
+   "Altyapı eksiklikleri veya montaj yüzeyindeki uygunsuzluklar nedeniyle ihtiyaç duyulan ilave sarf malzemeleri ve silikon ayrıca ücretlendirilir.",
+   "VitrA - Artema Yetkili Servisleri tarafından sunulan montaj hizmeti 1 yıl servis garantisi kapsamındadır.",
+   "Hizmet tamamlandığında servis formu kullanıcı onayı alınarak düzenlenir ve bir nüshası paylaşılır."
+  ]
+ },
+ "Diğer Banyo Mobilyaları Montaj Hizmeti ETIC_MTJ(DIGERBM)": {
+  "url": "https://www.vitra.com.tr/montaj-hizmeti/diger-banyo-mobilyalari-montaj-hizmeti-p-etic_mtj%28digerbm%29",
+  "fiyat": 2000.0,
+  "kapsam": [
+   "Diğer Banyo Mobilyaları Montaj Hizmeti",
+   "VitrA – Artema Yetkili Servisleri",
+   "(0)",
+   "Ürün Kodu:",
+   "ETIC_MTJ(DIGERBM)",
+   "VitrA ayna ve boy dolaplarının montajı için geçerlidir.",
+   "Aydınlatmalı aynaların montajında, mevcut elektrik bağlantısının yapılması hizmet kapsamına dahildir.",
+   "Elektrik bağlantısına sahip boy dolaplarının mevcut elektrik hattına bağlanması hizmet kapsamına dahildir.",
+   "Ürünün monte edileceği alana kadar yapılması gereken elektrik tesisatı, malzeme ve işçilik hizmet kapsamına dahil değildir.",
+   "Montaj öncesinde kullanımda olan mevcut ürünlerin sökülmesi ve belediye mevzuatına uygun bir şekilde imha edilmesi hizmet kapsamında gerçekleştirilir.",
+   "Montaj yapılacak alanda tesisat geçiş noktalarının belirtilmemesi veya altyapı planının paylaşılmaması durumunda, montaj sırasında mevcut tesisat hatlarının zarar görmesinden VitrA - Artema Yetkili Servisleri sorumlu değildir.",
+   "Montaj alanındaki altyapı eksikliklerinden veya duvar ve yüzeylerdeki ölçüsel uygunsuzluklardan kaynaklanan ilave sarf malzemesi ve silikon kullanımları ayrıca ücretlendirilir.",
+   "VitrA - Artema Yetkili Servisleri tarafından sunulan montaj hizmeti 1 yıl servis garantisi kapsamındadır.",
+   "Hizmet tamamlandığında servis formu kullanıcı onayı alınarak düzenlenir ve bir nüshası paylaşılır."
+  ]
+ },
+ "Armatür ve Duş Sistemleri Montaj Hizmeti ETIC_MTJ(ARMATUR)": {
+  "url": "https://www.vitra.com.tr/montaj-hizmeti/armatur-ve-dus-sistemleri-montaj-hizmeti-p-etic_mtj%28armatur%29",
+  "fiyat": 2350.0,
+  "kapsam": [
+   "Armatür ve Duş Sistemleri Montaj Hizmeti",
+   "(0)",
+   "Ürün Kodu:",
+   "ETIC_MTJ(ARMATUR)",
+   "VitrA - Artema batarya ve duş sistemlerinin montajı için geçerlidir.",
+   "Batarya montajında ara muslukların montajı hizmet fiyatına dahildir.",
+   "Duş sistemlerinin montaj hizmetine banyo bataryası montajı dahil değildir.",
+   "Tesisat altyapısına yönelik malzeme ve işçilikler, tesisat uzatması, ilave esnek hortum ve benzeri tamamlayıcı malzemeler montaj fiyatına dahil değildir.",
+   "Temassız batarya montajı için elektrik altyapısının uygun olması ve seçilen bataryanın kullanılacak lavabo ile uyumlu olması gerekmektedir. Bu koşullar sağlanmadığında temassız batarya satışı gerçekleştirilemeyebilir.",
+   "Montaj öncesinde kullanımda olan mevcut ürünlerin sökülmesi ve belediye mevzuatına uygun bir şekilde imha edilmesi hizmet kapsamında gerçekleştirilir.",
+   "Müşteri tarafından altyapı tesisat projesi veya tesisat geçiş yerleri gösterilmeyen mekanlarda, ürün montajı sırasında oluşacak tesisat borusunun delinmesi sorunlardan VitrA - Artema yetkili servisi sorumlu değildir.",
+   "Altyapı eksikliği veya mimari gönyesizlikten dolayı sarf malzeme ve silikon ücreti müşteriden alınır.",
+   "VitrA - Artema yetkili servislerinin verdikleri hizmetin garanti süresi 1 (bir) yıldır.",
+   "Yetkili servisler iş bitiminde müşteri imzasını alarak hizmet belgesinin bir kopyasını müşteriye vermekle yükümlüdür."
+  ]
+ },
+ "Lavabo Montaj Hizmeti ETIC_MTJ(LAVABO)": {
+  "url": "https://www.vitra.com.tr/montaj-hizmeti/lavabo-montaj-hizmeti-p-etic_mtj%28lavabo%29",
+  "fiyat": 2300.0,
+  "kapsam": [
+   "Lavabo Montaj Hizmeti",
+   "VitrA – Artema Yetkili Servisleri",
+   "(0)",
+   "Ürün Kodu:",
+   "ETIC_MTJ(LAVABO)",
+   "VitrA lavabo ürünlerinin montajı için geçerlidir.",
+   "Tezgâh üstü lavabo bataryası, lavabo sifonu, ara musluklar ve gerekli elektrik bağlantılarının montajı hizmet kapsamına dahildir.",
+   "Ürüne ulaşan mevcut su ve elektrik altyapısında yapılması gereken ilave işlemler, tesisat uzatmaları, ek hortumlar ve benzeri tamamlayıcı malzemeler hizmet kapsamına dahil değildir.",
+   "Montaj öncesinde kullanımda olan mevcut ürünlerin sökülmesi ve belediye mevzuatına uygun bir şekilde imha edilmesi hizmet kapsamında gerçekleştirilir.",
+   "Montaj yapılacak alanda tesisat geçiş noktalarının belirtilmemesi veya altyapı planının paylaşılmaması durumunda, montaj sırasında mevcut tesisat hatlarının zarar görmesinden VitrA - Artema Yetkili Servisleri sorumlu değildir.",
+   "Montaj alanındaki altyapı eksikliklerinden veya duvar ve yüzeylerdeki ölçüsel uygunsuzluklardan kaynaklanan ilave sarf malzemesi ve silikon kullanımları ayrıca ücretlendirilir.",
+   "VitrA - Artema Yetkili Servisleri tarafından sunulan montaj hizmeti 1 yıl servis garantisi kapsamındadır.",
+   "Hizmet tamamlandığında servis formu kullanıcı onayı alınarak düzenlenir ve bir nüshası paylaşılır."
+  ]
+ },
+ "Orta Montaj Hizmeti ETIC_MTJ(ORTA)": {
+  "url": "https://www.vitra.com.tr/montaj-hizmeti/orta-montaj-hizmeti-p-etic_mtj%28orta%29",
+  "fiyat": 2200.0,
+  "kapsam": [
+   "Orta Montaj Hizmeti",
+   "VitrA – Artema Yetkili Servisleri",
+   "(0)",
+   "Ürün Kodu:",
+   "ETIC_MTJ(ORTA)",
+   "VitrA - Artema iç takım ürünlerinin montajı için geçerlidir.",
+   "Rezervuarın su doldurma ve boşaltma mekanizmalarını içeren rezervuar iç takımı ile birlikte klozet kapağı ve ara musluk montajları hizmet kapsamına dahildir.",
+   "Ürüne ulaşan mevcut su ve elektrik altyapısında yapılması gereken ilave işlemler, tesisat uzatmaları, ek hortumlar ve benzeri tamamlayıcı malzemeler hizmet kapsamına dahil değildir.",
+   "Montaj öncesinde kullanımda olan mevcut ürünlerin sökülmesi ve belediye mevzuatına uygun bir şekilde imha edilmesi hizmet kapsamında gerçekleştirilir.Montaj yapılacak alanda tesisat geçiş noktalarının belirtilmemesi veya altyapı planının paylaşılmaması durumunda, montaj sırasında mevcut tesisat hatlarının zarar görmesinden VitrA - Artema Yetkili Servisleri sorumlu değildir.",
+   "Montaj alanındaki altyapı eksiklikleri veya yüzeylerdeki ölçüsel uygunsuzluklar nedeniyle ihtiyaç duyulan ilave sarf malzemeleri ve silikon kullanımı ayrıca ücretlendirilir.",
+   "VitrA - Artema Yetkili Servisleri tarafından sunulan montaj hizmeti 1 yıl servis garantisi kapsamındadır.",
+   "Hizmet tamamlandığında servis formu kullanıcı onayı alınarak düzenlenir ve bir nüshası paylaşılır"
+  ]
+ },
+ "Banyo Mobilyası Seti Montaj Hizmeti ETIC_MTJ(BMSET)": {
+  "url": "https://www.vitra.com.tr/montaj-hizmeti/banyo-mobilyasi-seti-montaj-hizmeti-p-etic_mtj%28bmset%29",
+  "fiyat": 4000.0,
+  "kapsam": [
+   "Banyo Mobilyası Seti Montaj Hizmeti",
+   "VitrA – Artema Yetkili Servisleri",
+   "(5,0)",
+   "Ürün Kodu:",
+   "ETIC_MTJ(BMSET)",
+   "VitrA banyo mobilyası setlerinin montajı için geçerlidir.",
+   "Lavabo dolabı ve ayna setlerinin kurulumu ile lavabo, tezgâh üstü lavabo bataryası, lavabo sifonu ve ara muslukların montajı hizmet kapsamına dahildir. Montaj sırasında kullanılan silikon da montaj fiyatına dahildir.",
+   "Ürüne ulaşan mevcut altyapıda yapılması gereken ilave işlemler, tesisat uzatmaları, ek esnek hortumlar ve benzeri tamamlayıcı malzemeler hizmet kapsamına dahil değildir.",
+   "Montaj öncesinde kullanımda olan mevcut ürünlerin sökülmesi ve belediye mevzuatına uygun bir şekilde imha edilmesi hizmet kapsamında gerçekleştirilir.",
+   "Montaj yapılacak alanda tesisat geçiş noktalarının belirtilmemesi veya altyapı planının paylaşılmaması durumunda, montaj sırasında mevcut tesisat hatlarının zarar görmesinden VitrA - Artema Yetkili Servisleri sorumlu değildir.",
+   "Montaj alanındaki altyapı eksikliklerinden veya duvar ve yüzeylerdeki ölçüsel uygunsuzluklardan kaynaklanan ilave sarf malzemesi ve silikon kullanımları ayrıca ücretlendirilir.",
+   "VitrA - Artema Yetkili Servisleri tarafından sunulan montaj hizmeti 1 yıl servis garantisi kapsamındadır.",
+   "Hizmet tamamlandığında servis formu kullanıcı onayı alınarak düzenlenir ve bir nüshası paylaşılır."
+  ]
+ },
+ "Gömme Rezervuar Montaj Hizmeti ETIC_MTJ(GOMMERZ)": {
+  "url": "https://www.vitra.com.tr/montaj-hizmeti/gomme-rezervuar-montaj-hizmeti-p-etic_mtj%28gommerz%29",
+  "fiyat": 3900.0,
+  "kapsam": [
+   "Gömme Rezervuar Montaj Hizmeti",
+   "VitrA – Artema Yetkili Servisleri",
+   "(0)",
+   "Ürün Kodu:",
+   "ETIC_MTJ(GOMMERZ)",
+   "VitrA gömme rezervuar ürünlerinin montajı için geçerlidir.",
+   "Gömme rezervuarın mevcut su gideri ve temiz su bağlantılarına bağlanması, sistemin test edilmesi ve kumanda panelinin montajı hizmet kapsamına dahildir.",
+   "Montajın gerçekleştirilebilmesi için ürünün mevcut tesisat ile aynı duvarda konumlandırılması gerekmektedir.",
+   "Temiz su, atık su ve elektrik altyapısına ilişkin malzeme ve işçilikler ile duvar veya zemin kırma işlemleri hizmet kapsamına dahil değildir.",
+   "V-Care kumanda paneli uygulamasına sahip ürünlerin montajı bu hizmet kapsamında yer almamaktadır.",
+   "Montaj öncesinde kullanımda olan mevcut ürünlerin sökülmesi ve belediye mevzuatına uygun bir şekilde imha edilmesi hizmet kapsamında gerçekleştirilir.",
+   "Montaj yapılacak alanda tesisat geçiş noktalarının belirtilmemesi veya altyapı planının paylaşılmaması durumunda, montaj sırasında mevcut tesisat hatlarının zarar görmesinden VitrA - Artema Yetkili Servisleri sorumlu değildir.",
+   "Montaj alanındaki altyapı eksikliklerinden veya duvar ve yüzeylerdeki ölçüsel uygunsuzluklardan kaynaklanan ilave sarf malzemesi ve silikon kullanımları ayrıca ücretlendirilir.",
+   "VitrA - Artema Yetkili Servisleri tarafından sunulan montaj hizmeti 1 yıl servis garantisi kapsamındadır.",
+   "Hizmet tamamlandığında servis formu kullanıcı onayı alınarak düzenlenir ve bir nüshası paylaşılır."
+  ]
+ },
+ "Klozet Montaj Hizmeti ETIC_MTJ(KLOZET)": {
+  "url": "https://www.vitra.com.tr/montaj-hizmeti/klozet-montaj-hizmeti-p-etic_mtj%28klozet%29",
+  "fiyat": 2750.0,
+  "kapsam": [
+   "Klozet Montaj Hizmeti",
+   "VitrA – Artema Yetkili Servisleri",
+   "(5,0)",
+   "Ürün Kodu:",
+   "ETIC_MTJ(KLOZET)",
+   "VitrA asma klozetler ile takım klozet ve rezervuar kombinasyonlarının montajı için geçerlidir.",
+   "Asma klozet montajında klozet kapağı, ara musluk, gömme rezervuar kumanda paneli, bide bataryası ve sifon montajı hizmet kapsamına dahildir.",
+   "Takım klozet ve rezervuar kombinasyonlarının montajında rezervuar iç takımı, klozet kapağı ve ara musluk montajları hizmete dahildir.",
+   "Rezervuarın doğru ve sorunsuz çalışmasını destekleyen önemli parçalardan biri olan kada setinin montajı da hizmet kapsamında gerçekleştirilir.",
+   "Ürüne ulaşan mevcut su ve elektrik altyapısında yapılması gereken ilave işlemler, tesisat uzatmaları, ek hortumlar ve benzeri tamamlayıcı malzemeler hizmet kapsamına dahil değildir.",
+   "Montaj öncesinde kullanımda olan mevcut ürünlerin sökülmesi ve belediye mevzuatına uygun bir şekilde imha edilmesi hizmet kapsamında gerçekleştirilir.",
+   "Montaj yapılacak alanda tesisat geçiş noktalarının belirtilmemesi veya altyapı planının paylaşılmaması durumunda, montaj sırasında mevcut tesisat hatlarının zarar görmesinden VitrA - Artema Yetkili Servisleri sorumlu değildir.",
+   "Montaj alanındaki altyapı eksikliklerinden veya duvar ve yüzeylerdeki ölçüsel uygunsuzluklardan kaynaklanan ilave sarf malzemesi ve silikon kullanımları ayrıca ücretlendirilir.",
+   "VitrA - Artema Yetkili Servisleri tarafından sunulan montaj hizmeti 1 yıl servis garantisi kapsamındadır.",
+   "Hizmet tamamlandığında servis formu kullanıcı onayı alınarak düzenlenir ve bir nüshası paylaşılır."
+  ]
+ },
+ "Büyük Montaj Hizmeti ETIC_MTJ(BUYUK)": {
+  "url": "https://www.vitra.com.tr/montaj-hizmeti/buyuk-montaj-hizmeti-p-etic_mtj%28buyuk%29",
+  "fiyat": 5300.0,
+  "kapsam": [
+   "Büyük Montaj Hizmeti",
+   "VitrA – Artema Yetkili Servisleri",
+   "(0)",
+   "Ürün Kodu:",
+   "ETIC_MTJ(BUYUK)",
+   "VitrA - Artema markalı ürünlerin montajı için geçerlidir.",
+   "Montaj öncesinde kullanımda olan mevcut ürünlerin sökülmesi ve belediye mevzuatına uygun bir şekilde imha edilmesi hizmet kapsamında gerçekleştirilir.",
+   "Montaj sırasında ihtiyaç duyulan kum, çimento ve sifon montajı hizmet kapsamına dahildir.",
+   "Kırma, sıva onarımı ve seramik uygulamaları gibi ek tadilat işlemleri hizmet kapsamına dahil değildir.",
+   "Montaj yapılacak alanda tesisat geçiş noktalarının belirtilmemesi veya altyapı planının paylaşılmaması durumunda, montaj sırasında mevcut tesisat hatlarının zarar görmesinden VitrA - Artema Yetkili Servisleri sorumlu değildir.",
+   "Montaj alanındaki altyapı eksiklikleri veya yüzeylerdeki ölçüsel uygunsuzluklar nedeniyle ihtiyaç duyulan ilave sarf malzemeleri ve silikon kullanımı ayrıca ücretlendirilir.",
+   "VitrA - Artema Yetkili Servisleri tarafından sunulan montaj hizmeti 1 yıl servis garantisi kapsamındadır.",
+   "Hizmet tamamlandığında servis formu kullanıcı onayı alınarak düzenlenir ve bir nüshası paylaşılır."
+  ]
+ },
+ "Keşif Hizmeti ETIC_KESIF": {
+  "url": "https://www.vitra.com.tr/kesif-hizmeti/kesif-hizmeti-p-etic_kesif",
+  "fiyat": 1400.0,
+  "kapsam": [
+   "<d"
+  ]
+ },
+ "Akıllı Panel Montaj Hizmeti ETIC_MTJ(APANEL)": {
+  "url": "https://www.vitra.com.tr/montaj-hizmeti/akilli-panel-montaj-hizmeti-p-etic_mtj%28apanel%29",
+  "fiyat": 937.5,
+  "kapsam": [
+   "Akıllı Panel Montaj Hizmeti",
+   "<im"
+  ]
+ },
+ "Akıllı Klozet Montaj Hizmeti ETIC_MTJ(AKLOZET)": {
+  "url": "https://www.vitra.com.tr/montaj-hizmeti/akilli-klozet-montaj-hizmeti-p-etic_mtj%28aklozet%29",
+  "fiyat": 2212.5,
+  "kapsam": [
+   "Akıllı Klozet Montaj Hizmeti",
+   "<img src=\"/_ui/responsive/common/images/empty_black_star.svg\" alt=\"empty_black_star\" class=\"w-4 h-4\" loading=\"lazy\""
+  ]
+ }
+}
