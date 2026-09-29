@@ -1,0 +1,520 @@
+{
+ "kaynak": "Trendyol arama sonuçları · Apify automation-lab/trendyol-scraper · 29.09.2026",
+ "sorgular": {
+  "banyo dolabı": {
+   "n": 45,
+   "fiyat_medyan": 3249,
+   "fiyat_bant": "1.000-7.000",
+   "vitra_urun": 1,
+   "vitra_sira": 9,
+   "vitra_fiyat": 14462,
+   "vitra_degerlendirme": 1,
+   "one_cikan": [
+    [
+     "Irmak",
+     1390,
+     3141
+    ],
+    [
+     "naturelove",
+     1475,
+     1875
+    ],
+    [
+     "Moonlife Mobilya",
+     4473,
+     1472
+    ],
+    [
+     "MOBİLİQUE",
+     2646,
+     1429
+    ],
+    [
+     "Rabi",
+     3129,
+     1206
+    ],
+    [
+     "MOBİLİQUE",
+     2424,
+     1154
+    ],
+    [
+     "Baroness",
+     2000,
+     952
+    ],
+    [
+     "Bofigo",
+     2167,
+     937
+    ]
+   ],
+   "not": "İlk 45 sonucun tamamına yakını düz paket mobilya markaları (MOBİLİQUE, Bofigo, KZY, Montenero, FURNICI); lavabolu set tek VitrA ürünü 14.462 TL"
+  },
+  "granit evye": {
+   "n": 45,
+   "fiyat_medyan": 6415,
+   "fiyat_bant": "4.100-7.900",
+   "vitra_urun": 0,
+   "one_cikan": [
+    [
+     "Asil Krom (çelik)",
+     2300,
+     429
+    ],
+    [
+     "Teka",
+     6525,
+     125
+    ],
+    [
+     "ROBO",
+     10501,
+     45
+    ],
+    [
+     "Vosh",
+     5600,
+     41
+    ],
+    [
+     "EVIER",
+     6499,
+     32
+    ]
+   ],
+   "not": "RealStone listelemelerin yaklaşık yarısı; değerlendirme sayıları düşük, kategori pazaryerinde henüz olgunlaşmamış"
+  },
+  "çocuk klozet adaptörü": {
+   "n": 45,
+   "fiyat_medyan": 456,
+   "fiyat_bant": "180-1.000 (BabyBjörn 2.999)",
+   "vitra_urun": 0,
+   "one_cikan": [
+    [
+     "Saban",
+     599,
+     2887
+    ],
+    [
+     "NKP",
+     689,
+     1495
+    ],
+    [
+     "Babylike",
+     990,
+     1479
+    ],
+    [
+     "Babylike",
+     530,
+     1138
+    ],
+    [
+     "Tuka Home",
+     510,
+     746
+    ],
+    [
+     "nextbuy",
+     849,
+     533
+    ]
+   ],
+   "not": "Bebek ürünü markaları ve jenerik satıcılar; klozet markası yok"
+  },
+  "rezervuar iç takımı": {
+   "n": 150,
+   "fiyat_medyan_jenerik": 400,
+   "vitra_urun": 33,
+   "vitra_fiyat_bant": "896-1.269 (komple iç takım)",
+   "one_cikan": [
+    [
+     "hakersan",
+     342,
+     681
+    ],
+    [
+     "hakersan",
+     348,
+     612
+    ],
+    [
+     "Visam",
+     485,
+     484
+    ],
+    [
+     "Genel Markalar",
+     275,
+     352
+    ],
+    [
+     "Aktürk",
+     281,
+     293
+    ],
+    [
+     "VitrA",
+     2200,
+     170
+    ],
+    [
+     "VitrA",
+     1269,
+     147
+    ],
+    [
+     "VitrA",
+     1131,
+     130
+    ],
+    [
+     "VitrA",
+     896,
+     108
+    ]
+   ],
+   "not": "VitrA listelemelerin yaklaşık %22'si ve ilk sırada; jenerik iç takımlar 280-480 TL bandında ve daha fazla değerlendirme alıyor"
+  },
+  "suya dayanıklı banyo dolabı": {
+   "n": 40,
+   "fiyat_medyan": 3500,
+   "fiyat_bant": "700-11.400",
+   "vitra_urun": 0,
+   "one_cikan": [
+    [
+     "ESMOPA MOBİLYA",
+     4799,
+     2495
+    ],
+    [
+     "Bofigo",
+     4143,
+     2446
+    ],
+    [
+     "ARS GRUP MOBİLYA",
+     1650,
+     1699
+    ],
+    [
+     "Alesta Life",
+     5199,
+     1184
+    ],
+    [
+     "MOBİLİQUE",
+     2424,
+     1154
+    ],
+    [
+     "MOBİLİQUE",
+     4501,
+     1043
+    ],
+    [
+     "MOBİLİQUE",
+     4017,
+     1022
+    ],
+    [
+     "BALNEOM",
+     9659,
+     639
+    ]
+   ],
+   "not": "40 sonucun 14'ü MOBİLİQUE, 7'si Bofigo; PVC ve suya dayanıklı gövde vurgusu"
+  },
+  "çamaşır makinesi dolabı": {
+   "n": 40,
+   "fiyat_medyan": 3300,
+   "fiyat_bant": "580-8.500",
+   "vitra_urun": 0,
+   "one_cikan": [
+    [
+     "Moonlife Mobilya",
+     4473,
+     1472
+    ],
+    [
+     "Remaks",
+     1199,
+     1357
+    ],
+    [
+     "Bofigo",
+     4679,
+     1097
+    ],
+    [
+     "FORA",
+     2500,
+     1075
+    ],
+    [
+     "Remaks",
+     1367,
+     1040
+    ],
+    [
+     "Kenzlife",
+     3250,
+     1020
+    ]
+   ],
+   "not": "VitrA sitede 29 çamaşır makinesi dolabı listeliyor, Trendyol ilk 40 sonuçta görünmüyor"
+  },
+  "ledli banyo aynası": {
+   "n": 40,
+   "fiyat_medyan": 1650,
+   "fiyat_bant": "490-5.250",
+   "vitra_urun": 1,
+   "vitra_fiyat": 12888,
+   "vitra_degerlendirme": 0,
+   "one_cikan": [
+    [
+     "SUEL HOUSE",
+     490,
+     2277
+    ],
+    [
+     "SEVİNÇ KONSEPT",
+     1350,
+     692
+    ],
+    [
+     "L' CAPO",
+     699,
+     548
+    ],
+    [
+     "BLUE HOUSE",
+     870,
+     535
+    ],
+    [
+     "MGS GROUP",
+     1149,
+     461
+    ],
+    [
+     "Lamra Dizayn",
+     1750,
+     415
+    ]
+   ],
+   "not": "Dekorasyon ve ayna atölyesi markaları; VitrA tek ürün, pazar medyanının yaklaşık 8 katı fiyatta"
+  },
+  "arıtmalı batarya": {
+   "n": 40,
+   "fiyat_medyan": 3200,
+   "fiyat_bant": "1.750-12.900",
+   "vitra_urun": 0,
+   "one_cikan": [
+    [
+     "Arya",
+     2420,
+     3359
+    ],
+    [
+     "FLEKO",
+     4427,
+     327
+    ],
+    [
+     "As Water",
+     2439,
+     277
+    ],
+    [
+     "Genel Markalar",
+     3180,
+     208
+    ],
+    [
+     "AquaTurkuaz",
+     2000,
+     173
+    ],
+    [
+     "RENA DESIGN",
+     2499,
+     161
+    ]
+   ],
+   "not": "Arıtma cihazı markaları ve jenerik satıcılar; armatür markası (VitrA, Artema, Eca, Grohe) ilk 40'ta yok"
+  },
+  "havlupan": {
+   "n": 40,
+   "fiyat_medyan_gercek_havlupan": 1700,
+   "vitra_urun": 1,
+   "vitra_fiyat": 854,
+   "vitra_degerlendirme": 33,
+   "one_cikan": [
+    [
+     "KUMTEL",
+     2129,
+     1289
+    ],
+    [
+     "TOPRAK HAVLUPAN",
+     939,
+     623
+    ],
+    [
+     "ANKARALL",
+     1099,
+     186
+    ],
+    [
+     "TOPRAK HAVLUPAN",
+     1699,
+     127
+    ],
+    [
+     "Eca",
+     3399,
+     89
+    ],
+    [
+     "Eca",
+     4170,
+     72
+    ]
+   ],
+   "not": "Sonuçların yaklaşık yarısı havlupan değil, düşük fiyatlı havluluk ve askı; ısıtıcılı havlupanda Eca, Toprak, DG Therm, Termofer"
+  },
+  "batarya kartuşu": {
+   "n": 40,
+   "fiyat_medyan": 199,
+   "fiyat_bant": "70-735",
+   "vitra_urun": 0,
+   "artema_urun": 4,
+   "artema_fiyat_bant": "465-689",
+   "one_cikan": [
+    [
+     "Seval Su Armatürleri",
+     120,
+     30
+    ],
+    [
+     "ASIR MUSLUK",
+     199,
+     18
+    ],
+    [
+     "ASIR ARMATÜR",
+     199,
+     16
+    ],
+    [
+     "Artema",
+     465,
+     13
+    ]
+   ],
+   "not": "Değerlendirme sayıları düşük (en yüksek 30); jenerik kartuşlar 120-350 TL, Artema ve Eca orijinal kartuşları 465-735 TL"
+  },
+  "klozet taharet aparatı": {
+   "n": 40,
+   "fiyat_medyan": 2500,
+   "vitra_urun": 0,
+   "one_cikan": [
+    [
+     "Genel Markalar",
+     819,
+     180
+    ],
+    [
+     "tuumex",
+     2570,
+     29
+    ],
+    [
+     "Ligorix",
+     927,
+     28
+    ]
+   ],
+   "not": "Sonuçların çoğu medikal tedarikçiler (MEDİKALCİM, Medikaltec, MEDİLABS); değerlendirme çok az, kategori pazaryerinde oturmamış"
+  },
+  "engelli tutunma barı": {
+   "n": 40,
+   "fiyat_medyan": 1100,
+   "fiyat_bant": "240-6.700",
+   "vitra_urun": 1,
+   "vitra_fiyat": 1829,
+   "vitra_degerlendirme": 6,
+   "one_cikan": [
+    [
+     "Genel Markalar",
+     1125,
+     252
+    ],
+    [
+     "Genel Markalar",
+     297,
+     189
+    ],
+    [
+     "Genel Markalar",
+     244,
+     125
+    ],
+    [
+     "VEGALINE",
+     715,
+     117
+    ],
+    [
+     "MEDONZA",
+     2460,
+     101
+    ]
+   ],
+   "not": "Paslanmaz çelik üreticileri ve jenerik satıcılar; banyo markası olarak yalnız VitrA tek ürünle var"
+  },
+  "klozet lavabo seti": {
+   "n": 40,
+   "vitra_urun": 5,
+   "vitra_fiyat_bant": "10.843-16.735",
+   "one_cikan": [
+    [
+     "VitrA Arkitekt asma klozet + gömme rezervuar seti",
+     11999,
+     86
+    ],
+    [
+     "ege gross mermer aksesuar seti",
+     6200,
+     85
+    ],
+    [
+     "Turkuaz Cerastyle City asma klozet seti",
+     6250,
+     55
+    ],
+    [
+     "Turkuaz Noura takım",
+     10100,
+     39
+    ],
+    [
+     "İDEVİT tam takım klozet (taharet musluğu, hortum, iç takım dahil)",
+     7370,
+     20
+    ],
+    [
+     "Creavit Terra asma klozet seti",
+     12300,
+     19
+    ]
+   ],
+   "not": "Aramada klozet + rezervuar + kapak setleri öne çıkıyor; klozet, lavabo ve dolabı birlikte sunan komple banyo seti ilk 40 sonuçta yok. İDEVİT seti montaj parçalarını (taharet musluğu, hortum, iç takım) pakete dahil ediyor"
+  }
+ }
+}

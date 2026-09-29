@@ -3,28 +3,26 @@
 VitrA'nın Türkiye e-ticaret kanalları (vitra.com.tr, Trendyol, Hepsiburada) için büyüme fırsatları çalışması. Rapor tek HTML dosyasıdır; Türkçe ve İngilizce sürüm aynı dosyada, üst bardaki EN / TR düğmesiyle değişir. Excel veri dosyası rapora gömülüdür ve üst bardan indirilebilir.
 
 - Rapor: `VitrA_E-Ticaret_Buyume_Firsatlari.html`
-- Veri dosyası: `VitrA_E-Ticaret_Buyume_Firsatlari.xlsx` (25 sekme)
+- Veri dosyası: `VitrA_E-Ticaret_Buyume_Firsatlari.xlsx` (37 sekme)
 
-## Kapsam (Sürüm 1 · 28.09.2026)
+## Kapsam (Sürüm 2 · 29.09.2026)
 
-| Bölüm | Kaynak |
+| Küme | Bölümler |
 |---|---|
-| Makro ortam ve ödeme gücü | TCMB EVDS: kart harcamaları, kartlı ödeme endeksi, tüketici eğilimi, konut, banka kredileri |
-| Kategori talebi ve dönemsel değişim | Google Keyword Planner, 2.420 kelime, 8 kategori, Eyl 2024 - Ağu 2026 |
-| İhtiyaç dili | Aynı kelime seti ihtiyaç sınıflarına ayrılmış; Search Console sorguları |
-| Organik kanal performansı | Google Search Console, sc-domain:vitra.com.tr, Haz 2025 - Eyl 2026 |
-| Marka aramaları ve autocomplete | Google Autocomplete, 49 tohum ifade |
-| YouTube: montaj, tamir ve karar | YouTube arama sonuçları, 30 ifade |
-| Rakip görünürlüğü ve kanal ölçeği | Ahrefs, Türkiye |
-| Kanal rolleri ve etkileşim modeli | Bölüm bulgularından türetilen öneri çerçevesi |
+| Durum | Özet · Makro ortam ve ödeme gücü (TCMB EVDS) |
+| Talep | Kategori talebi · SSG ve BM derin talep (48 ay, ürün tipi ve özellik) · İhtiyaç dili · Organik kanal (GSC) · Marka aramaları ve autocomplete · YouTube |
+| Fırsat | Katalog ve talep eşleşmesi (vitra.com.tr ürün sitemap'i, Trendyol) · Yeni kategori ve segment fırsatları (52.973 kelimelik evren, 58 tema) · Set, komple banyo ve ürün + hizmet |
+| Rekabet ve model | Rakip görünürlüğü (Ahrefs) · Benchmark: e-ticaret modelleri ve dijital deneyim · Kanal rolleri ve etkileşim modeli |
+| Plan ve ek | Sonraki adımlar · Yöntem · Kaynakça · Sözlük |
 
-Sonraki sürümde eklenecek: VitrA pazaryeri panel verisi, GA4 dönüşüm ve site içi arama, iade ve çağrı merkezi konuları, yapay zeka görünürlüğü.
+Sonraki sürümde eklenecek: VitrA pazaryeri panel verisi, GA4 (talep: `talepler/GA4_veri_talebi.md`), iade ve çağrı merkezi konuları, yapay zeka görünürlüğü.
 
 ## Üretim
 
 ```
 cd uretim
 python3 gsc_kategori.py && python3 kelime_niyet.py && python3 evds_isle.py && python3 analiz.py
+python3 yeni_kategori.py && python3 ssg_bm.py && python3 katalog.py
 python3 rapor.py && python3 excel.py && python3 rapor.py
 ```
 

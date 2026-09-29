@@ -9,7 +9,7 @@ from css_ek import CSS_EK
 from rapor_js import JS, KAYNAKCA_CSS, TEMA, IKON
 import t2_ortak, kaynakca, ceviri, dil
 from t2_ortak import x, R
-import b_ozet, b_makro, b_talep, b_niyet, b_organik, b_marka, b_youtube, b_rakip, b_model, b_adimlar, b_yontem
+import b_ozet, b_makro, b_talep, b_ssgbm, b_niyet, b_organik, b_marka, b_youtube, b_katalog, b_yeni, b_set, b_rakip, b_benchmark, b_model, b_adimlar, b_yontem
 
 AD = "VitrA_E-Ticaret_Buyume_Firsatlari"
 XLS = os.path.join(veri.KOK, AD + ".xlsx")
@@ -24,11 +24,16 @@ P = []
 P.append(bolum("ozet", "Özet", "Summary", b_ozet.HTML))
 P.append(bolum("makro", "Makro Ortam ve Ödeme Gücü", "Macro Environment and Purchasing Power", b_makro.HTML))
 P.append(bolum("talep", "Kategori Talebi ve Dönemsel Değişim", "Category Demand and Period Change", b_talep.HTML))
+P.append(bolum("ssgbm", "SSG ve BM: Derin Talep İncelemesi", "SSG and BM: In-Depth Demand Review", b_ssgbm.HTML))
 P.append(bolum("ihtiyac", "İhtiyaç Dili: Kullanıcı Ne Arıyor?", "Need Language: What Is the User Searching For?", b_niyet.HTML))
 P.append(bolum("organik", "Organik Kanal Performansı", "Organic Channel Performance", b_organik.HTML))
 P.append(bolum("marka", "Marka Aramaları ve Autocomplete", "Brand Searches and Autocomplete", b_marka.HTML))
 P.append(bolum("youtube", "YouTube: Montaj, Tamir ve Karar Videoları", "YouTube: Installation, Repair and Decision Videos", b_youtube.HTML))
+P.append(bolum("katalog", "Katalog ve Talep Eşleşmesi", "Catalogue and Demand Fit", b_katalog.HTML))
+P.append(bolum("yeni", "Yeni Kategori ve Segment Fırsatları", "New Category and Segment Opportunities", b_yeni.HTML))
+P.append(bolum("set", "Set, Komple Banyo ve Ürün + Hizmet", "Sets, Complete Bathrooms and Product + Service", b_set.HTML))
 P.append(bolum("rakip", "Rakip Görünürlüğü ve Kanal Ölçeği", "Competitor Visibility and Channel Scale", b_rakip.HTML))
+P.append(bolum("benchmark", "Benchmark: E-Ticaret Modelleri ve Dijital Deneyim", "Benchmark: E-Commerce Models and Digital Experience", b_benchmark.HTML))
 P.append(bolum("model", "Kanal Rolleri ve Etkileşim Modeli", "Channel Roles and Engagement Model", b_model.HTML))
 P.append(bolum("adimlar", "Sonraki Adımlar", "Next Steps", b_adimlar.HTML))
 P.append(bolum("yontem", "Yöntem ve Kapsam", "Method and Scope", b_yontem.HTML))
@@ -46,8 +51,11 @@ GL_EN = {
  "Pureplayer": "A retailer without physical stores that sells online only.", "Marketplace": "A platform that hosts third-party sellers.",
  "Retargeting": "A reminder ad shown later to a user who visited the site.", "Kartlı Ödeme Endeksi": "An index the CBRT derives from bank and credit card spending; the real series is inflation-adjusted.",
  "Net yüzde": "A survey indicator obtained by subtracting the share of negative answers from the share of positive answers.",
+ "SSG": "Sanitaryware; vitreous china products such as WCs, washbasins, bidets, urinals and cisterns.",
+ "BM": "Bathroom furniture; basin units, tall cabinets, mirror cabinets, mirrors, countertops and complements.",
+ "3P": "Third-party seller; a model where another seller's product is listed and sold on the brand site.",
 }
-GL_TERM_EN = {"Organik trafik": "Organic traffic", "Paid trafik": "Paid traffic", "Kartlı Ödeme Endeksi": "Card Payment Index", "Net yüzde": "Net percentage"}
+GL_TERM_EN = {"Organik trafik": "Organic traffic", "Paid trafik": "Paid traffic", "Kartlı Ödeme Endeksi": "Card Payment Index", "Net yüzde": "Net percentage", "SSG": "SSG", "BM": "BM", "3P": "3P"}
 sozluk = '<dl class="gl">%s</dl>' % "".join('<dt>%s</dt><dd>%s</dd>' % (x(t, GL_TERM_EN.get(t, t)), x(GLOSSARY[t], GL_EN[t])) for t in GLOSSARY)
 P.append(bolum("sozluk", "Terim Sözlüğü", "Glossary", sozluk))
 govde = "\n".join(P[:-2]) if False else govde + "\n" + "\n".join(P[-2:])
@@ -55,8 +63,8 @@ govde = "\n".join(P[:-2]) if False else govde + "\n" + "\n".join(P[-2:])
 # ---------------------------------------------------------------- icindekiler
 KISA = {"ihtiyac": ("İhtiyaç Dili", "Need Language"), "youtube": ("YouTube: Montaj ve Tamir", "YouTube: Installation and Repair"), "rakip": ("Rakip Görünürlüğü ve Ölçek", "Competitor Visibility and Scale"),
         "model": ("Kanal Rolleri ve Model", "Channel Roles and Model"), "makro": ("Makro Ortam", "Macro Environment"), "talep": ("Kategori Talebi", "Category Demand"), "organik": ("Organik Kanal", "Organic Channel"),
-        "marka": ("Marka Aramaları", "Brand Searches")}
-KUMELER = [("DURUM", "STATUS", ["ozet", "makro"]), ("TALEP", "DEMAND", ["talep", "ihtiyac", "organik", "marka", "youtube"]), ("REKABET VE MODEL", "COMPETITION AND MODEL", ["rakip", "model"]),
+        "marka": ("Marka Aramaları", "Brand Searches"), "ssgbm": ("SSG ve BM Derin Talep", "SSG and BM In Depth"), "katalog": ("Katalog ve Talep", "Catalogue and Demand"), "yeni": ("Yeni Kategori ve Segment", "New Categories and Segments"), "set": ("Set ve Ürün + Hizmet", "Sets and Product + Service"), "benchmark": ("Benchmark ve Dijital Deneyim", "Benchmark and Digital Experience")}
+KUMELER = [("DURUM", "STATUS", ["ozet", "makro"]), ("TALEP", "DEMAND", ["talep", "ssgbm", "ihtiyac", "organik", "marka", "youtube"]), ("FIRSAT", "OPPORTUNITY", ["katalog", "yeni", "set"]), ("REKABET VE MODEL", "COMPETITION AND MODEL", ["rakip", "benchmark", "model"]),
            ("PLAN", "PLAN", ["adimlar"]), ("EK", "APPENDIX", ["yontem", "kaynakca", "sozluk"])]
 _bas = dict(BOLUMLER); _sira = {b: i + 1 for i, (b, _) in enumerate(BOLUMLER)}
 _kumede = [b for _, _, ids in KUMELER for b in ids]
@@ -92,12 +100,12 @@ HERO = """<div class="hero dark"><div class="ring"></div>
   <h1>%s</h1>
   <p class="sub">%s</p>
   <div class="chips"><span class="chip f">%s</span><span class="chip">%s</span><span class="chip">%s</span><span class="chip">%s</span><span class="chip">%s</span></div>
-</div>""" % (x("VITRA TÜRKİYE · E-TİCARET BÜYÜME FIRSATLARI", "VITRA TURKEY · E-COMMERCE GROWTH OPPORTUNITIES"),
+</div>""" % (x("VitrA TÜRKİYE · E-TİCARET BÜYÜME FIRSATLARI", "VitrA TURKEY · E-COMMERCE GROWTH OPPORTUNITIES"),
              x("E-Ticaret Büyüme Fırsatları: Talep, Kullanıcı Davranışı ve Kanal Modeli", "E-Commerce Growth Opportunities: Demand, User Behaviour and Channel Model"),
-             x("Pazar talebi, ihtiyaç dili, organik kanal, YouTube, rekabet ve makro ortam verileriyle vitra.com.tr, Trendyol ve Hepsiburada için kanal rolleri ve etkileşim modeli önerisi. İlk sürüm; pazaryeri ve GA4 verisiyle genişletilecektir.",
-               "A proposal for channel roles and an engagement model for vitra.com.tr, Trendyol and Hepsiburada, built on market demand, need language, organic channel, YouTube, competition and macro data. First version; to be extended with marketplace and GA4 data."),
-             x("Sürüm 1 · %s" % veri.TARIH, "Version 1 · %s" % veri.TARIH), x("Talep: Eyl 2024 - Ağu 2026", "Demand: Sep 2024 - Aug 2026"), x("Search Console: Haz 2025 - Eyl 2026", "Search Console: Jun 2025 - Sep 2026"),
-             x("2.420 kelime · 8 kategori", "2,420 keywords · 8 categories"), x("Türkiye", "Turkey"))
+             x("Pazar talebi, SSG ve BM derin incelemesi, katalog boşlukları, yeni kategori ve segmentler, set ve ürün + hizmet modelleri, benchmark ve makro ortam verileriyle vitra.com.tr, Trendyol ve Hepsiburada için büyüme fırsatları. Pazaryeri ve GA4 verisiyle genişletilecektir.",
+               "Growth opportunities for vitra.com.tr, Trendyol and Hepsiburada built on market demand, an in-depth SSG and BM review, catalogue gaps, new categories and segments, set and product + service models, benchmarks and macro data. To be extended with marketplace and GA4 data."),
+             x("Sürüm 2 · %s" % "29.09.2026", "Version 2 · %s" % "29.09.2026"), x("Talep: Eyl 2022 - Ağu 2026", "Demand: Sep 2022 - Aug 2026"), x("Search Console: Haz 2025 - Eyl 2026", "Search Console: Jun 2025 - Sep 2026"),
+             x("53 bin kelime · 58 tema", "53K keywords · 58 themes"), x("Türkiye", "Turkey"))
 
 DOC = """<!doctype html>
 <html lang="tr" data-theme="light"><head><meta charset="utf-8">

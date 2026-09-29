@@ -26,6 +26,9 @@ GLOSSARY = {
  "Retargeting": "Siteyi ziyaret etmiş kullanıcıya sonradan gösterilen hatırlatıcı reklam.",
  "Kartlı Ödeme Endeksi": "TCMB'nin banka ve kredi kartı harcamalarından türettiği endeks; reel seri enflasyondan arındırılmıştır.",
  "Net yüzde": "Anketlerde olumlu yanıt payından olumsuz yanıt payının çıkarılmasıyla elde edilen gösterge.",
+ "SSG": "Seramik sağlık gereçleri; klozet, lavabo, bide, pisuvar ve rezervuar gibi vitrifiye ürünler.",
+ "BM": "Banyo mobilyası; lavabo dolabı, boy dolabı, aynalı dolap, ayna, tezgah ve tamamlayıcılar.",
+ "3P": "Üçüncü taraf satıcı; başka bir satıcının ürününün marka sitesinde listelenip satıldığı model.",
 }
 
 def T(t):

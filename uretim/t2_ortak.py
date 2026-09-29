@@ -44,7 +44,7 @@ def _kaydet(k, v):
 
 
 def x(tr, en):
-    k, v = _duz(tr), _duz(en)
+    k, v = _duz(tr), _sayi_en(_duz(en))
     _kaydet(k, v)
     # Satir ici etiket (<b>, <span class="up">) iceren metinlerde tarayici metni
     # parcalara boler; parcalar konumsal olarak eslenir ve ayrica kaydedilir.

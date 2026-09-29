@@ -66,3 +66,9 @@ def kw(s):
     return '<span class="kw">%s</span>' % s
 def veri_m(s):
     x(s, s); return s
+import json as _j, os as _o
+def _J(*p): return _j.load(open(_o.path.join(veri.V, *p), encoding="utf-8"))
+SB = _J("islenmis", "ssg_bm.json"); YK = _J("islenmis", "yeni_kategori.json"); KT = _J("islenmis", "katalog.json"); TY = _J("islenmis", "trendyol_ozet.json")["sorgular"]
+HZ = _J("ham", "hizmet", "vitra_hizmetler.json")
+def f1(v):
+    return ("%.1f" % v).replace(".", ",")

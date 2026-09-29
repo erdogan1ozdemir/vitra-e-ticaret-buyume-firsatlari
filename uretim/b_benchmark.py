@@ -1,0 +1,71 @@
+# -*- coding: utf-8 -*-
+"""Bolum: Benchmark - e-ticaret modelleri ve urun kesfi / dijital deneyim ornekleri."""
+from ortak import *
+def dr(d): return '<span class="badge %s">%s</span>' % ({"Var": "b-var", "Kısmi": "b-kis", "Yok": "b-yok"}[d], x(d, {"Var": "Available", "Kısmi": "Partial", "Yok": "Not available"}[d]))
+MOD = tablo([th("Oyuncu", "Player", "İncelenen site.", "Site examined."),
+             th("Tip", "Type", "İş modeli.", "Business model."),
+             th("E-ticaret modeli", "E-commerce model", "Ürün, kanal ve hizmetin nasıl bir araya getirildiği.", "How product, channel and service are brought together."),
+             th("VitrA'ya uyarlanabilir nokta", "Point adaptable to VitrA", "VitrA'nın mevcut yapısına eklenebilecek unsur.", "Element that could be added to VitrA's current structure.")],
+    [[u("https://www.koctas.com.tr/banyo-tadilati", "Koçtaş"), x("Yapı market · TR", "DIY retailer · TR"), x("Tüm banyo ve bitişik kategoriler tek tadilat sayfasında; montaj sepette ücretli; anahtar teslim tadilat mağazada; kampanyalar mağazaya özel", "All bathroom and adjacent categories on a single renovation page; paid installation in the basket; turnkey renovation in store; campaigns store-only"),
+      x("Banyo yenilemesini ürün kategorisi değil \"proje\" olarak kurgulama", "Framing bathroom renovation as a \"project\" rather than a product category")],
+     [u("https://www.ikea.com.tr/odalar/banyo", "IKEA"), x("Mobilya perakendecisi · TR", "Furniture retailer · TR"), x("Oda bazlı gezinme, hazır banyo setleri, ücretsiz planlayıcı, ücretli montaj, uzun vadeli alışveriş kredisi", "Room-based navigation, ready bathroom sets, free planner, paid installation, long-term shopping credit"),
+      x("Oda ve set üzerinden gezinme; set fiyatının tek satırda gösterilmesi", "Navigation by room and set; showing the set price in a single line")],
+     [u("https://www.banyomarka.com/batarya-musluk-kombinleri", "Banyomarka"), x("Banyo pureplayer · TR", "Bathroom pureplayer · TR"), x("Çok markalı katalog, kombin sayfaları, çocuk, engelli ve genel kullanım alanı kategorileri, WhatsApp destek", "Multi-brand catalogue, bundle pages, children's, accessible and public-space categories, WhatsApp support"),
+      x("Kombin sayfası ve özel ihtiyaç kategorileri", "Bundle pages and special-needs categories")],
+     [u("https://www.kale.com.tr/montaj-hizmetleri", "Kale"), x("Banyo markası · TR", "Bathroom brand · TR"), x("Marka sitesinde e-ticaret; montaj hizmetleri ve yedek parça sayfaları açılmış, 29.09.2026 itibarıyla ürün listelenmiyor; mutfak tezgahı ve yapı kimyasalı kategorileri", "E-commerce on the brand site; installation services and spare-parts pages opened, no products listed as of 29.09.2026; kitchen countertop and building chemical categories"),
+      x("Rakip marka da hizmet ve yedek parçayı e-ticarete taşımaya başlıyor", "A competitor brand is also starting to bring services and spare parts into e-commerce")],
+     [u("https://www.hepsiburada.com/staticPage/12413", "Hepsiburada"), x("Pazaryeri · TR", "Marketplace · TR"), x("Ürünle birlikte kurulum hizmeti sepete ekleniyor; iş ortağı firma randevu veriyor", "Installation service added to the basket with the product; the partner firm schedules the appointment"),
+      x("Pazaryeri mağazasında VitrA montaj hizmetinin ürünle birlikte listelenmesi", "Listing VitrA installation together with the product in the marketplace store")],
+     [u("https://www.victorianplumbing.co.uk/bathroom-suites", "Victorian Plumbing"), x("Banyo pureplayer · İngiltere", "Bathroom pureplayer · UK"), x("Komple banyo takımları (klozet + lavabo, genişletilmiş setlerde küvet, duşakabin ve dolap); 250 GBP üzeri siparişte %0 faizli finansman", "Complete bathroom suites (WC + basin, with bath, enclosure and vanity in extended sets); 0% finance on orders over GBP 250"),
+      x("Koleksiyon bazlı komple banyo takımı ve sepet tutarına bağlı finansman", "Collection-based complete bathroom suite and basket-linked financing")],
+     [u("https://www.bauhaus.info/service/leistungen/montageservice/komplettbad", "BAUHAUS"), x("Yapı market · Almanya", "DIY retailer · Germany"), x("Komple banyo sabit fiyatla: planlama, söküm, tesisat, seramik, montaj; proje koordinatörü", "Complete bathroom at a fixed price: planning, removal, plumbing, tiling, installation; project coordinator"),
+      x("Sabit fiyatlı yenileme paketi", "Fixed-price renovation package")],
+     [u("https://www.homedepot.com/services/c/bathroom-remodel/d9843b7cb", "Home Depot"), x("Yapı market · ABD", "DIY retailer · US"), x("Ücretsiz evde keşif, lisanslı yerel uygulayıcı, proje kredisi", "Free in-home survey, licensed local installer, project loan"),
+      x("Keşfin ürün alımına bağlı ücretsiz sunulması", "Offering the survey free when linked to a product purchase")],
+     [u("https://reveal.kohler.com/en", "Kohler"), x("Üretici marka · ABD", "Manufacturer brand · US"), x("\"Reveal by Kohler\": yetkili bayilerle duş ve küvet dönüşümü, bir günde kurulum, ömür boyu sınırlı garanti", "\"Reveal by Kohler\": shower and bath conversion with authorised dealers, installation in a day, lifetime limited warranty"),
+      x("Üretici markanın bayi ağıyla paket hizmet satması", "A manufacturer selling a packaged service through its dealer network")]], "uzun")
+DIJ = tablo([th("Araç", "Tool", "Ürün keşfi ya da dijital deneyim aracı.", "Product discovery or digital experience tool."),
+             th("Örnek", "Examples", "Aracı kullanan oyuncular.", "Players using the tool."),
+             th("Ne sağlıyor?", "What does it do?", "Kullanıcıya sağladığı fayda.", "Benefit to the user."),
+             th("VitrA'da", "At VitrA", "vitra.com.tr'deki karşılığı (29.09.2026).", "Counterpart on vitra.com.tr (29.09.2026)."),
+             th("Gözlem", "Observation", "Mevcut durum ve olası adım.", "Current state and possible step.")],
+    [[x("3D banyo planlayıcı", "3D bathroom planner"), veri_m("Villeroy & Boch, Duravit, IKEA"), x("Banyo ölçüsüne göre ürün yerleştirme, planın PDF olarak bayiye iletilmesi", "Placing products to the room's dimensions, sending the plan as a PDF to a dealer"), dr("Kısmi"),
+      x("V-Design (2018) 750 banyo ve 300 karo ürünüyle tanıtılmıştı; /banyonu-tasarla adresi bugün ana sayfaya yönleniyor", "V-Design (2018) was launched with 750 bathroom and 300 tile products; the /banyonu-tasarla address now redirects to the home page")],
+     [x("Yedek parça bulucu", "Spare-part finder"), veri_m("Hansgrohe, Grohe"), x("Patlatılmış çizim, parça numarası, montaj videosu; Grohe'de kamera ile ürün tanıma ve üretimden kalkan ürünlerde 10 yıl parça güvencesi", "Exploded drawing, part number, installation video; at Grohe camera-based product recognition and 10-year part availability after discontinuation"), dr("Yok"),
+      x("Eski yedek parça kategorisi yeni sitede karşılıksız; iç takım gibi parçalar ürün olarak satılıyor ama kategori yok", "The old spare-parts category has no counterpart on the new site; parts such as inner mechanisms are sold as products but there is no category")],
+     [x("Evde deneme", "Home trial"), veri_m("Geberit AquaClean (Almanya)"), x("Dusch-WC'nin 4 hafta ücretsiz evde denenmesi, kurulum videosu ile", "4-week free home trial of the shower toilet, with an installation video"), dr("Yok"),
+      x("Akıllı klozet setleri 3 yılda talebini ikiye katlamış; V-Care için mağaza ya da showroom deneyimi değerlendirilebilir", "Smart WC sets have doubled demand in three years; a store or showroom experience can be considered for V-Care")],
+     [x("Görüntülü danışmanlık", "Video consultation"), veri_m("Reuter, BAUHAUS (Almanya)"), x("Uzmanla görüntülü planlama görüşmesi", "Video planning call with an expert"), dr("Var"),
+      x("Banyo Asistanı'nda telefon, mağaza ve görüntülü görüşme seçeneği ve saat seçimi bulunuyor", "The Bathroom Assistant offers phone, store and video call options with time selection")],
+     [x("Set ve kombin sayfası", "Set and bundle pages"), veri_m("Victorian Plumbing, Banyomarka, IKEA"), x("Uyumlu ürünlerin tek sayfada, tek fiyatla sunulması", "Compatible products on one page at one price"), dr("Kısmi"),
+      x("Banyo set modülleri (29) ve akıllı klozet setleri (9) var; koleksiyon bazlı komple banyo takımı yok", "Bathroom set modules (29) and smart WC sets (9) exist; no collection-based complete bathroom suite")],
+     [x("Tadilat hub'ı", "Renovation hub"), veri_m("Koçtaş"), x("Tadilatta gereken tüm ürün gruplarını tek sayfada toplama", "Gathering all product groups needed for a renovation on one page"), dr("Yok"),
+      x("Banyo Asistanı hizmet girişi olarak var; ürün tarafında tadilat odaklı bir giriş sayfası yok", "The Bathroom Assistant exists as a service entry; there is no renovation-led entry page on the product side")],
+     [x("Uyumluluk bilgisi", "Compatibility information"), veri_m("Hansgrohe, Grohe"), x("Hangi parçanın hangi ürüne uyduğunun ürün sayfasında gösterilmesi", "Showing on the product page which part fits which product"), dr("Var"),
+      x("Klozet sayfasında uyumlu rezervuar kodu yazıyor; iç takım ve kapak için uyum listesi genişletilebilir", "The WC page states the compatible cistern code; the compatibility list can be extended to inner mechanisms and seats")],
+     [x("Finansman", "Financing"), veri_m("IKEA, Victorian Plumbing, Home Depot"), x("Uzun vadeli kredi, %0 faizli taksit, proje kredisi", "Long-term credit, 0% instalments, project loans"), dr("Kısmi"),
+      x("Vade farksız 6 ay taksit ve Banyo Asistanı'nda 9 taksit; tek bir taksit mesajında birleştirilebilir", "6 months interest-free and 9 instalments in the Bathroom Assistant; can be unified into a single instalment message")],
+     [x("Montaj rehberi ve video", "Installation guides and videos"), veri_m("Grohe, Hansgrohe, Koçtaş"), x("Ürün bazında montaj kılavuzu ve video", "Product-level installation guides and videos"), dr("Var"),
+      x("Montaj rehberi sayfası 16 ayda yaklaşık 4.100 tık almış; ürün sayfasında montaj kılavuzu PDF'i bulunuyor. Tamir videoları eksik (Bölüm 08)", "The installation guide page received about 4,100 clicks in 16 months; the product page carries an installation manual PDF. Repair videos are missing (Section 08)")]], "uzun")
+HTML = """
+<p class="lede">%s</p>
+<h3>%s</h3>
+%s
+%s
+<h3>%s</h3>
+%s
+%s
+%s
+""" % (
+ x("Türkiye'den yapı market, mobilya perakendecisi, pureplayer, marka ve pazaryeri; yurt dışından banyo pureplayer'ı, yapı market ve üretici marka modelleri incelenmiştir. İkinci tabloda ürün keşfi ve dijital deneyim araçları VitrA'daki karşılıklarıyla birlikte verilmiştir.",
+   "From Turkey, a DIY retailer, furniture retailer, pureplayer, brand and marketplace; from abroad, a bathroom pureplayer, DIY retailers and a manufacturer brand have been examined. The second table gives product discovery and digital experience tools together with their counterparts at VitrA."),
+ x("E-ticaret modelleri", "E-commerce models"),
+ MOD,
+ insight("İncelenen modellerde ortak eğilim, banyo alışverişinin tekil ürün satışından \"proje\" satışına kaymasıdır: Koçtaş tadilatı tek sayfada toplamakta, BAUHAUS komple banyoyu sabit fiyatla satmakta, Kohler bayi ağıyla bir günde kurulum paketi sunmaktadır. Kale de montaj ve yedek parça sayfalarını açarak aynı yöne ilerlemektedir. VitrA'nın farkı, bu modellerin çoğunun parçalarına (montaj, keşif, randevulu danışmanlık, set) zaten sahip olmasıdır; eksik olan bu parçaların tek bir teklif ve tek bir giriş kapısı altında birleştirilmesidir.",
+         "The common trend in the models examined is the shift of bathroom shopping from single-product sales to \"project\" sales: Koçtaş gathers renovation on one page, BAUHAUS sells the complete bathroom at a fixed price, Kohler offers a one-day installation package through its dealer network. Kale is moving in the same direction by opening installation and spare-parts pages. VitrA's difference is that it already has most of the pieces of these models (installation, survey, appointment-based consultation, sets); what is missing is combining them under a single offer and a single entry point.", "B1", "B5", "B6", "B7", "B8"),
+ x("Ürün keşfi ve dijital deneyim örnekleri", "Product discovery and digital experience examples"),
+ DIJ,
+ insight("VitrA'da görüntülü danışmanlık, uyumluluk bilgisi ve montaj rehberi gibi araçlar mevcuttur. Eksik kalan iki araç, talep verisiyle en güçlü şekilde desteklenenlerdir: yedek parça bulucu (tamir ve parça aramaları SSG'nin %s'i) ve banyo planlayıcı (\"banyo tasarım\" ve \"küçük banyo tasarımı\" aramaları büyüyor; V-Design adresi ana sayfaya yönleniyor). Her iki araç da VitrA'nın elindeki ürün verisiyle kurulabilir ve Banyo Asistanı'nın öncesinde kullanıcıyı ürüne bağlayan adım olarak çalışabilir." % yzd(next(z for z in SB["oz_ssg"]["ozellik"] if z["ad"] == "Tamir / parça")["pay"]),
+         "VitrA has tools such as video consultation, compatibility information and installation guides. The two missing tools are those most strongly supported by demand data: a spare-part finder (repair and parts searches are %s of SSG) and a bathroom planner (\"banyo tasarım\" and \"küçük banyo tasarımı\" searches are growing; the V-Design address redirects to the home page). Both can be built with the product data VitrA already holds and can work as the step that connects the user to products before the Bathroom Assistant." % (yzd(next(z for z in SB["oz_ssg"]["ozellik"] if z["ad"] == "Tamir / parça")["pay"]).replace("%", "") + "%"), "B9", "B10", "B11", "B12", "B13"),
+ kaynak("Rakip ve benzer oyuncuların web siteleri, hizmet ve kampanya sayfaları · %s" % veri.TARIH, "Websites, service and campaign pages of competitors and comparable players · %s" % veri.TARIH, "B1", "B2", "B3", "B4", "B5", "B6", "B7", "B8", "B9", "B10", "B11", "B12", "B13", "B14", "B15"),
+)
