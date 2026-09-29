@@ -1,0 +1,536 @@
+{
+ "erisim_tarihi": "2026-09-29",
+ "not": "Bu dosya kamuya açık sayfalardan elle ayıklanan bulguları içerir; 'guven' alanı ölçütü modül başlığında açıklanmıştır.",
+ "odeme": [
+  {
+   "site": "vitra.com.tr",
+   "tip": "marka e-ticaret",
+   "taksit_azami": "Ürün sayfası tablosunda 12 taksite kadar (duşakabin örneği); 8, 9 ve 12 taksit çoğu kartta vade farklı",
+   "vade_farksiz": "Site şeridinde 'tüm ürünlerde vade farksız 6 ay taksit'; ürün tablosunda 2-3-4-6 taksit eşit tutar",
+   "kart_kampanya": "21 Eylül - 30 Kasım 2026: seçili renkli ürünlerde %40 indirim, 9 aya varan taksit, 40.000 TL ve üzeri alışverişte ücretsiz montaj",
+   "alisveris_kredisi": "Bulunamadı",
+   "kapida_odeme": "Yok (ödeme rehberinde yalnızca kredi kartı, iyzico altyapısı, 3D Secure)",
+   "kurumsal_fatura": "Var (sepette adres adımında kurumsal fatura bilgisi eklenebiliyor)",
+   "diger": "Banyo ve Karo ürünleri taşıma koşulları nedeniyle ayrı sepette",
+   "kaynak": [
+    "https://www.vitra.com.tr/odeme-rehberi",
+    "https://www.vitra.com.tr/kampanyalar",
+    "https://www.vitra.com.tr/dusakabin/universal-surgulu-on-panel-mat-siyah-p-65650002270"
+   ],
+   "yontem": "curl",
+   "guven": "sayfa"
+  },
+  {
+   "site": "koctas.com.tr",
+   "tip": "yapı market",
+   "taksit_azami": "Online 5.000 TL üzeri peşin fiyatına 7 taksite kadar; vade farklı 9 taksite kadar",
+   "vade_farksiz": "Online 5.000 TL üzeri (mağazada 10.000 TL üzeri), anlaşmalı banka kartlarıyla, 2 ile 7 taksit (bankaya göre)",
+   "kart_kampanya": "Taksit kampanyası 30 Eylül 2026'ya kadar; 'Alışverişi Erteleme, Taksit Taksit Öde', '3 AL 2 ÖDE' ve 1.500 TL üzeri ek 250 TL indirim başlıkları ana sayfada",
+   "alisveris_kredisi": "Koçtaş Kart (kendi kartı) menüde; alışveriş kredisi bulunamadı",
+   "kapida_odeme": "Bulunamadı",
+   "kurumsal_fatura": "Bulunamadı",
+   "diger": "Aidatsız kredi kartları ve Flexi kartlar ile TEB Worldcard taksit kampanyası dışında; telefonla sipariş ve mobil uygulamada aynı taksit",
+   "kaynak": [
+    "https://www.koctas.com.tr/taksitler",
+    "https://www.koctas.com.tr/nakliye-ve-montaj-hizmetleri"
+   ],
+   "yontem": "Apify rag-web-browser (curl 403)",
+   "guven": "sayfa"
+  },
+  {
+   "site": "bauhaus.com.tr",
+   "tip": "yapı market",
+   "taksit_azami": "Bulunamadı (sayfada yalnızca vade farksız koşul yazıyor)",
+   "vade_farksiz": "Anlaşmalı banka kartlarına 2.500 TL ve üzeri alışverişte (online ve şubeler)",
+   "kart_kampanya": "Ana sayfada 'vade farksız taksit seçenekleri' ve internete özel kampanya etiketleri",
+   "alisveris_kredisi": "Bulunamadı",
+   "kapida_odeme": "Yok (SSS'te havale/EFT ve kart anlatılıyor)",
+   "kurumsal_fatura": "Kurumsal müşteri servisi ve Bauhaus Kurumsal Kart var",
+   "diger": "Havale/EFT ile ödeme mümkün (sipariş numarası açıklamada)",
+   "kaynak": [
+    "https://www.bauhaus.com.tr/taksit-secenekleri",
+    "https://www.bauhaus.com.tr/sss",
+    "https://www.bauhaus.com.tr/servisler"
+   ],
+   "yontem": "curl",
+   "guven": "sayfa"
+  },
+  {
+   "site": "ikea.com.tr",
+   "tip": "mobilya perakende",
+   "taksit_azami": "IKEA Aile üyelerine 20.000 TL ve üzeri mobilya/aksesuar alışverişinde vade farksız 9 taksit (Bonus, Shop&Fly, Maximiles, Maximum)",
+   "vade_farksiz": "1.500 TL ve üzeri vade farksız 3 taksit; IKEA Aile üyelerine 7.500 TL ve üzeri vade farksız 6 taksit (Bonus, Maximum, Axess, Bankkart, Paraf, QNB, Worldcard vb.)",
+   "kart_kampanya": "Vade farksız taksit kampanyaları 5 Ocak 2026 - 3 Ocak 2027 tarihleri arasında geçerli; diğer kartlarda tek çekim",
+   "alisveris_kredisi": "Bulunamadı",
+   "kapida_odeme": "Yok (internette Full 3D destekli kredi/banka kartı)",
+   "kurumsal_fatura": "IKEA Kurumsal Kart ve 'İş Yeriniz İçin' sayfası; firma adına faturada iade faturası koşulu",
+   "diger": "Full 3D desteklemeyen kartlarla alışveriş yapılamıyor",
+   "kaynak": [
+    "https://www.ikea.com.tr/odeme-secenekleri",
+    "https://www.ikea.com.tr/ikea-kurumsal"
+   ],
+   "yontem": "curl",
+   "guven": "sayfa"
+  },
+  {
+   "site": "kale.com.tr",
+   "tip": "marka sitesi (satış yok)",
+   "taksit_azami": "Uygulanamaz (sitede sepet ve online satış yok; bayilere özel B2B giriş)",
+   "vade_farksiz": "Uygulanamaz",
+   "kart_kampanya": "Uygulanamaz",
+   "alisveris_kredisi": "Uygulanamaz",
+   "kapida_odeme": "Uygulanamaz",
+   "kurumsal_fatura": "Uygulanamaz",
+   "diger": "Ürünler 'Mağazalar ve Satış Noktaları' sayfası üzerinden bayilere yönlendiriliyor",
+   "kaynak": [
+    "https://www.kale.com.tr",
+    "https://www.kale.com.tr/magazalar-ve-satis-noktalari"
+   ],
+   "yontem": "curl",
+   "guven": "sayfa"
+  },
+  {
+   "site": "shop.creavit.com.tr (Creavit e-mağaza)",
+   "tip": "marka e-ticaret (Shopify)",
+   "taksit_azami": "Banner'da 'peşin fiyatına 9 taksit', alt metinde '6 taksit' (iki ifade birlikte görünüyor)",
+   "vade_farksiz": "Peşin fiyatına 6-9 taksit (ifade tutarsız)",
+   "kart_kampanya": "30 gün ücretsiz iade ve değişim, 3.000 TL üzeri ücretsiz kargo",
+   "alisveris_kredisi": "Bulunamadı",
+   "kapida_odeme": "Bulunamadı",
+   "kurumsal_fatura": "Bulunamadı",
+   "diger": "3D Secure; www.creavit.com.tr üzerinden e-mağaza düğmesiyle yönlendirme",
+   "kaynak": [
+    "https://shop.creavit.com.tr",
+    "https://shop.creavit.com.tr/pages/teslimat-kosullari"
+   ],
+   "yontem": "curl",
+   "guven": "sayfa"
+  },
+  {
+   "site": "banyomarka.com",
+   "tip": "banyo e-ticaret",
+   "taksit_azami": "Ürün kartında 'kredi kartına 4 taksit'",
+   "vade_farksiz": "Belirtilmemiş",
+   "kart_kampanya": "Grohe kampanyalı batarya ve duş sistemleri, kampanyalı ankastre set sayfaları",
+   "alisveris_kredisi": "Bulunamadı",
+   "kapida_odeme": "İstanbul içi kapıda nakit ödeme (satış sözleşmesinde)",
+   "kurumsal_fatura": "Bulunamadı",
+   "diger": "Havale/EFT seçeneği; WhatsApp destek hattı; sayfalarda güncelliğini yitirmiş banner (Covid-19 mesajı) görülüyor",
+   "kaynak": [
+    "https://www.banyomarka.com",
+    "https://www.banyomarka.com/musteri-hizmetleri.xhtml",
+    "https://www.banyomarka.com/satis-sozlesmesi.shtm"
+   ],
+   "yontem": "curl",
+   "guven": "sayfa"
+  },
+  {
+   "site": "banyoline.com",
+   "tip": "banyo e-ticaret",
+   "taksit_azami": "Peşin fiyatına 12 ay taksit (ana sayfa şeridi)",
+   "vade_farksiz": "Peşin fiyatına 12 ay (şerit ifadesi)",
+   "kart_kampanya": "Kampanyalar sayfası mevcut",
+   "alisveris_kredisi": "Bulunamadı",
+   "kapida_odeme": "Bulunamadı",
+   "kurumsal_fatura": "Bulunamadı",
+   "diger": "Havale bildirim formu var; tüm alışverişlerde ücretsiz hızlı kargo şeridi",
+   "kaynak": [
+    "https://www.banyoline.com",
+    "https://www.banyoline.com/kampanyalar"
+   ],
+   "yontem": "curl",
+   "guven": "sayfa"
+  },
+  {
+   "site": "trendyol.com (kategori genel)",
+   "tip": "pazaryeri",
+   "taksit_azami": "Kategori, tutar ve kart tipine göre değişiyor; her üründe taksit yok",
+   "vade_farksiz": "Banka anlaşmalarına göre",
+   "kart_kampanya": "Bankalara özel kampanyalar (sayfa açılamadı)",
+   "alisveris_kredisi": "Trendyol Kredi Pazaryeri (kredipazaryeri.trendyol.com) var",
+   "kapida_odeme": "Doğrulanamadı",
+   "kurumsal_fatura": "Mümkün (satıcı panelinde kurumsal fatura etiketi)",
+   "diger": "Sayfalar bot koruması nedeniyle açılamadı",
+   "kaynak": [
+    "https://www.trendyol.com/yardim/sorular/3?grup=1",
+    "https://akademi.trendyol.com/satici-bilgi-merkezi/detay/275"
+   ],
+   "yontem": "arama özeti (curl 403, Apify boş sayfa)",
+   "guven": "arama_ozeti"
+  },
+  {
+   "site": "hepsiburada.com (kategori genel)",
+   "tip": "pazaryeri",
+   "taksit_azami": "12 aya varan taksit (Hepsiburada limiti ile); sepet tutarı ve yasal kısıtlara göre",
+   "vade_farksiz": "Belirtilmemiş",
+   "kart_kampanya": "Mobilya sayfasında 'alışveriş kredisi ve taksit avantajları' başlığı",
+   "alisveris_kredisi": "Var (mobilya sayfasında alışveriş kredisi bağlantısı)",
+   "kapida_odeme": "Uygun ürünlerde kapıda nakit ödeme, üst limit 7.000 TL (arama özeti)",
+   "kurumsal_fatura": "Mümkün (kurumsal bilgiyle fatura)",
+   "diger": "Mobilya/büyük ürün sayfası doğrudan okundu; ödeme sayfaları bot korumalı",
+   "kaynak": [
+    "https://www.hepsiburada.com/staticpage/397066447924442",
+    "https://www.hepsiburada.com/odeme-secenekleri",
+    "https://www.hepsiburada.com/staticpage/416030025820088"
+   ],
+   "yontem": "Apify (mobilya sayfası), diğer alanlar arama özeti",
+   "guven": "kismi"
+  },
+  {
+   "site": "n11.com (referans)",
+   "tip": "pazaryeri",
+   "taksit_azami": "Banka bazlı; alışveriş kredisi ile 48 aya kadar",
+   "vade_farksiz": "Belirtilmemiş",
+   "kart_kampanya": "Kredim (6 taksit) ve İş Bankası alışveriş kredisi kampanya sayfaları",
+   "alisveris_kredisi": "Var (Garanti Alışveriş Kredisi 750-15.000 TL, 48 aya kadar; Kredim 6 taksit)",
+   "kapida_odeme": "Yok (arama özeti)",
+   "kurumsal_fatura": "Doğrulanamadı",
+   "diger": "Cloudflare engeli nedeniyle destek merkezi açılamadı",
+   "kaynak": [
+    "https://www.n11.com/destek-merkezi/odeme/odeme-secenekleri",
+    "https://www.n11.com/kampanyalar/kredim-alisveris-kredisi-kampanyasi"
+   ],
+   "yontem": "arama özeti (curl 403)",
+   "guven": "arama_ozeti"
+  },
+  {
+   "site": "amazon.com.tr (referans)",
+   "tip": "pazaryeri",
+   "taksit_azami": "12 aya varan taksit (uygun kategorilerde)",
+   "vade_farksiz": "Belirtilmemiş",
+   "kart_kampanya": "Doğrulanamadı",
+   "alisveris_kredisi": "Bulunamadı",
+   "kapida_odeme": "Doğrulanamadı",
+   "kurumsal_fatura": "Var (ticari vergi mükellefi bilgisi alışveriş öncesinde girilir)",
+   "diger": "Yardım sayfaları bot korumalı",
+   "kaynak": [
+    "https://www.amazon.com.tr/gp/help/customer/display.html?nodeId=GRVPA5TTFNQXJ2GZ",
+    "https://www.amazon.com.tr/gp/help/customer/display.html?nodeId=TKE3ITKU0oMx19kIos"
+   ],
+   "yontem": "arama özeti (curl 403)",
+   "guven": "arama_ozeti"
+  }
+ ],
+ "kargo_teslimat_kurulum_iade": [
+  {
+   "site": "vitra.com.tr",
+   "ucretsiz_kargo_esigi": "Eşik yok: şeritte 'tüm ürünlerde ücretsiz kargo'",
+   "buyuk_urun_teslimat": "Sipariş en fazla 3 iş günü içinde paket boyutu ve adrese göre kargo veya lojistik firmasına teslim edilir; ürün sayfasında 'tahmini kargoya teslim tarihi' gösteriliyor",
+   "kat_teslimi": "'Kapınıza kadar teslim' ifadesi; kat/daire teslimi ayrıca belirtilmemiş",
+   "montaj": "Sitede montaj hizmeti satın alınabiliyor (duşakabin sayfasında +5.300 TL; klozet 2.750, gömme rezervuar 3.900, BM seti 4.000, lavabo 2.300, armatür 2.350, keşif 1.400 TL); 1 yıl hizmet garantisi; 40.000 TL ve üzeri kampanyada ücretsiz montaj; bazı ürünlerde 'Ücretsiz Montaj' rozeti (Metropole boy dolabı)",
+   "iade_suresi": "Ürün sayfasında '30 güne kadar ücretsiz iade'; iade rehberinde gün sayısı yazmıyor",
+   "buyuk_urun_iade": "Küçük paket kargo şubesinden, büyük paket adresten lojistik firmasıyla; para iadesi kredi kartında 5, debit kartta 15 iş gününe kadar",
+   "hasar": "Teslimde paket kontrolü ve kırık/hasarlı üründe kargo personeline tutanak tutturulması istenir",
+   "kaynak": [
+    "https://www.vitra.com.tr/teslimat-rehberi",
+    "https://www.vitra.com.tr/degisim-iade-rehberi",
+    "https://www.vitra.com.tr/dusakabin/universal-surgulu-on-panel-mat-siyah-p-65650002270",
+    "https://www.vitra.com.tr/kampanyalar"
+   ],
+   "yontem": "curl",
+   "guven": "sayfa"
+  },
+  {
+   "site": "koctas.com.tr",
+   "ucretsiz_kargo_esigi": "Arama özetinde 300 TL (altı 49,90 TL) ve başka sayfada 600 TL şeklinde iki değer; doğrulanamadı",
+   "buyuk_urun_teslimat": "Nakliye hizmeti: sipariş tarihinden itibaren 4 gün içinde 09:00-19:00 arası (arama özeti)",
+   "kat_teslimi": "Bulunamadı",
+   "montaj": "Ana sayfada 'İstanbul, Ankara, İzmir başta olmak üzere 20 ilde montaj hizmeti'; seçili aydınlatma ve mobilyada ücretsiz montaj kampanyası; hesap menüsünde 'Montaj & Keşif İadelerim'; Ustabilir hizmet bağlantısı",
+   "iade_suresi": "14 gün kolay iade (ana sayfa)",
+   "buyuk_urun_iade": "İade kodu 7 gün geçerli, ücretsiz kargo (arama özeti)",
+   "hasar": "Bulunamadı (yardım sayfası JS ile yükleniyor)",
+   "kaynak": [
+    "https://www.koctas.com.tr/nakliye-ve-montaj-hizmetleri",
+    "https://www.koctas.com.tr/myaccount/faq"
+   ],
+   "yontem": "Apify (ana sayfa) + arama özeti",
+   "guven": "kismi"
+  },
+  {
+   "site": "bauhaus.com.tr",
+   "ucretsiz_kargo_esigi": "1.000 TL ve üzeri (KDV dahil, belirlenen ürünlerde); şubelerden 40.000 TL ve üzeri alışverişte il sınırı içinde 30 km'ye kadar ücretsiz nakliye",
+   "buyuk_urun_teslimat": "30 desi altı Yurtiçi Kargo veya KolayGelsin, 30 desi üstü Horoz Lojistik veya Arvato; adalar ve uzak yerleşimlere teslimat yok",
+   "kat_teslimi": "Bulunamadı",
+   "montaj": "Usta temini müşteri hizmetleri standından; ayrı montaj fiyatı bulunamadı",
+   "iade_suresi": "14 gün; iade kodu ile 7 gün içinde kargoya teslim",
+   "buyuk_urun_iade": "Demonte ürünlerde kurulum yapıldıktan sonra iade kabul edilmiyor; klozet takımı ve kapağı gibi hijyen ürünlerinde koşulsuz iade yok (ambalajı açılmamış ve denenmemiş olma şartı); iade kargosu Bauhaus'ta; ödeme iadesi ürün depoya ulaştıktan sonra 14 gün içinde",
+   "hasar": "Kargo görevlisine hasar tespit tutanağı düzenletme zorunlu; tutanak yoksa sorunun kargo kaynaklı olduğu ispatlanamıyor",
+   "kaynak": [
+    "https://www.bauhaus.com.tr/ucretsiz-kargo",
+    "https://www.bauhaus.com.tr/iade",
+    "https://www.bauhaus.com.tr/sss",
+    "https://www.bauhaus.com.tr/servisler"
+   ],
+   "yontem": "curl",
+   "guven": "sayfa"
+  },
+  {
+   "site": "ikea.com.tr",
+   "ucretsiz_kargo_esigi": "Ücretsiz eşik yok; minimum sipariş 500 TL; kargo ücreti 1.500 TL'ye kadar 299 TL, 3.000 TL'ye kadar 399 TL, 4.000 TL'ye kadar 549 TL, 5.000 TL'ye kadar 649 TL, 7.500 TL'ye kadar 799 TL, üzerinde sipariş bedelinin %11'i",
+   "buyuk_urun_teslimat": "Sipariş büyüklüğüne göre Arvato, Horoz, HepsiJET, Yurtiçi, KolayGelsin; şehir içi ayrı nakliye hizmeti",
+   "kat_teslimi": "Kargo şirketi ürünleri daire kapısına kadar teslim ediyor",
+   "montaj": "Sepette veya sipariş numarasıyla montaj hizmeti eklenebiliyor; montaj tarihi teslimattan sonra 48 saat içinde bildiriliyor; fiyat bölgeye göre değişiyor; kurulum tarihinden itibaren 2 yıl garanti",
+   "iade_suresi": "İnternet mağazası 14 gün (ücretsiz, anlaşmalı kargo); mağazadan 30 gün",
+   "buyuk_urun_iade": "Ambalajı açılmamış orijinal kutu koşulu; özel kesim/tasarım ürünler ve bazı elektronik ürünler iade dışı",
+   "hasar": "Bulunamadı (SSS sayfası JS ile yükleniyor)",
+   "kaynak": [
+    "https://www.ikea.com.tr/nakliye-hizmeti",
+    "https://www.ikea.com.tr/montaj-hizmeti",
+    "https://www.ikea.com.tr/iade-politikasi"
+   ],
+   "yontem": "curl",
+   "guven": "sayfa"
+  },
+  {
+   "site": "kale.com.tr",
+   "ucretsiz_kargo_esigi": "Uygulanamaz (online satış yok)",
+   "buyuk_urun_teslimat": "Uygulanamaz",
+   "kat_teslimi": "Uygulanamaz",
+   "montaj": "Yetkili servisler üzerinden (0850 800 52 53); yetkili servis işçilik garantisi 1 yıl",
+   "iade_suresi": "Uygulanamaz",
+   "buyuk_urun_iade": "Uygulanamaz",
+   "hasar": "Uygulanamaz",
+   "kaynak": [
+    "https://www.kale.com.tr/sikca-sorulan-sorular"
+   ],
+   "yontem": "curl",
+   "guven": "sayfa"
+  },
+  {
+   "site": "shop.creavit.com.tr",
+   "ucretsiz_kargo_esigi": "3.000 TL üzeri (banner); teslimat sayfasında 'hızlı ve ücretsiz kargo'",
+   "buyuk_urun_teslimat": "Banka onayından sonra 5 iş günü içinde kargoya teslim, kargo 1-5 gün; özel üretimde süre ürün sayfasında",
+   "kat_teslimi": "Bulunamadı",
+   "montaj": "Sitede 11 kalem montaj hizmeti ürünü: asma/takım klozet 2.450, rezervuar/iç takım 1.750, armatür/duş 1.750, lavabo 2.450 (söküm hariç), banyo mobilyası alt modül 2.450, boy dolabı 1.400, demonte takım 3.900 TL; yetkili servis 1 yıl garantili",
+   "iade_suresi": "30 gün ücretsiz iade ve değişim",
+   "buyuk_urun_iade": "Bulunamadı",
+   "hasar": "Bulunamadı",
+   "kaynak": [
+    "https://shop.creavit.com.tr/pages/teslimat-kosullari",
+    "https://shop.creavit.com.tr/collections/montaj-hizmeti"
+   ],
+   "yontem": "curl",
+   "guven": "sayfa"
+  },
+  {
+   "site": "banyomarka.com",
+   "ucretsiz_kargo_esigi": "'Seçili ürünlerde ücretsiz kargo'; banner'da İstanbul içi kargo 250 TL (banner güncelliği belirsiz)",
+   "buyuk_urun_teslimat": "Banka onayından sonra 3 iş günü içinde kargoya, kargo şirketi 1-3 gün; stokta yoksa 4-30 gün bekleme",
+   "kat_teslimi": "Bulunamadı",
+   "montaj": "Ayrı montaj hizmeti bulunamadı",
+   "iade_suresi": "Ürün kartında '30 gün içinde iade'; sözleşmede hatalı üründe teslimattan itibaren 15 gün içinde bildirim",
+   "buyuk_urun_iade": "Kullanılmış ürünlerde iade ve değişim yapılmaz",
+   "hasar": "Hasar görülürse tutanak tutturup teslim almamak; garanti için teslimatta ürün kontrolü",
+   "kaynak": [
+    "https://www.banyomarka.com/teslimat-kosullari.shtm",
+    "https://www.banyomarka.com/garanti-ve-iade-kosullari.shtm"
+   ],
+   "yontem": "curl",
+   "guven": "sayfa"
+  },
+  {
+   "site": "banyoline.com",
+   "ucretsiz_kargo_esigi": "Ana sayfada 'tüm alışverişlerde ücretsiz hızlı kargo'; ürün kartlarında 'Kargo bedava'",
+   "buyuk_urun_teslimat": "Yasal 30 günü aşmayacak şekilde bölgeye göre süre (sözleşme)",
+   "kat_teslimi": "Bulunamadı",
+   "montaj": "Yalnızca İstanbul'da ücretsiz montaj: Orka seçili banyo dolapları ile VitrA Metropole Edge, Valarte, Nest Trendy, Sento ve Root modelleri; adalar ve köyler kapsam dışı; ölçü alma, batarya ve ara musluk montajı yok; ikinci montaj ücretli",
+   "iade_suresi": "İptal ve iade talebi formu; süre bilgisi sözleşmede",
+   "buyuk_urun_iade": "Ücretsiz montaj yapılan üründe ön hazırlık yönergelerine uyulmazsa iade ve ikinci montaj yok",
+   "hasar": "Hasarlı ve eksik siparişte teslim alırken kontrol sorumluluğu alıcıda",
+   "kaynak": [
+    "https://www.banyoline.com/montaj-hizmeti",
+    "https://www.banyoline.com/mesafeli-satis-sozlesmesi"
+   ],
+   "yontem": "curl",
+   "guven": "sayfa"
+  },
+  {
+   "site": "trendyol.com (kategori genel)",
+   "ucretsiz_kargo_esigi": "Satıcı tarafında barem 350 TL; alıcıya yansıyan eşik doğrulanamadı",
+   "buyuk_urun_teslimat": "Mobilya gibi büyük ürünlerde satıcının anlaşmalı taşıma şirketi; süre uzayabiliyor",
+   "kat_teslimi": "Arama özetinde 'kata teslim' ifadesi geçiyor, doğrulanamadı",
+   "montaj": "Ürün sayfasında ek hizmet olarak montaj (ör. Montajix); montaj hizmeti teslimden sonra 30 gün geçerli; tamamlanmış montaj iade edilemez",
+   "iade_suresi": "15 gün (mesafeli satış sözleşmesi)",
+   "buyuk_urun_iade": "Belirli boyut ve ağırlıktaki ürünlerde paket adresten alınıyor",
+   "hasar": "Kurulum gerektiren ürünlerde yetkili servis bilgisi olmadan açılan ürün iade dışı kalabiliyor",
+   "kaynak": [
+    "https://www.trendyol.com/s/montajix-montaj-hizmeti",
+    "https://akademi.trendyol.com/satici-bilgi-merkezi/detay/kargo-baremi-uygulamasi"
+   ],
+   "yontem": "arama özeti",
+   "guven": "arama_ozeti"
+  },
+  {
+   "site": "hepsiburada.com (mobilya/büyük ürün sayfası)",
+   "ucretsiz_kargo_esigi": "Bulunamadı",
+   "buyuk_urun_teslimat": "Mobilya birden fazla pakette ve farklı günlerde teslim edilebiliyor; HepsiJET XL",
+   "kat_teslimi": "Bulunamadı",
+   "montaj": "Türkiye'nin 69 ilinde montaj hizmeti; sepete ürünle birlikte eklenebiliyor; anlaşmalı montaj firması; klozet için Mr Usta Klozet Montaj Hizmeti 2.730 TL (önceki tur verisi)",
+   "iade_suresi": "14 gün; ürün demonte ve orijinal kutuyla; ücretsiz",
+   "buyuk_urun_iade": "Büyük hacimli ürünler önceden seçilen tarihte HepsiJET XL ile adresten alınıyor; iade kodu ürün başına ayrı",
+   "hasar": "Ürün kargo görevlisinin yanında kontrol edilir; hasarlı pakette teslim alınmadan iade edilebilir; garanti bazı satıcılarda 24 ay",
+   "kaynak": [
+    "https://www.hepsiburada.com/staticpage/397066447924442"
+   ],
+   "yontem": "Apify",
+   "guven": "sayfa"
+  },
+  {
+   "site": "n11.com (referans)",
+   "ucretsiz_kargo_esigi": "Mağaza bazlı 300 TL şartı (arama özeti)",
+   "buyuk_urun_teslimat": "Bulunamadı",
+   "kat_teslimi": "Bulunamadı",
+   "montaj": "Bulunamadı",
+   "iade_suresi": "14 gün cayma hakkı; mağaza 7 gün veya gönderi teslimi sonrası 2 iş günü içinde iade alır (arama özeti)",
+   "buyuk_urun_iade": "Bulunamadı",
+   "hasar": "Bulunamadı",
+   "kaynak": [
+    "https://www.n11.com/destek-merkezi/iptal-iade-degisim/iade",
+    "https://www.n11.com/destek-merkezi/kargo-teslimat/kargo-gonderim-sureci"
+   ],
+   "yontem": "arama özeti (curl 403)",
+   "guven": "arama_ozeti"
+  },
+  {
+   "site": "amazon.com.tr (referans)",
+   "ucretsiz_kargo_esigi": "500 TL ve üzeri ücretsiz standart kargo; altı için 49,90 TL (arama özeti)",
+   "buyuk_urun_teslimat": "Bulunamadı",
+   "kat_teslimi": "Bulunamadı",
+   "montaj": "Bulunamadı",
+   "iade_suresi": "14 veya 30 gün (kategoriye göre)",
+   "buyuk_urun_iade": "İade yöntemi ürün boyutuna, satıcıya ve adrese göre değişiyor",
+   "hasar": "Hasarlı, kusurlu veya bozuk ürün için değişim sayfası var",
+   "kaynak": [
+    "https://www.amazon.com.tr/gp/help/customer/display.html?nodeId=GKM69DUUYKQWKWX7",
+    "https://www.amazon.com.tr/gp/help/customer/display.html?nodeId=GE66DNRRQVDZAR5E"
+   ],
+   "yontem": "arama özeti (curl 403)",
+   "guven": "arama_ozeti"
+  }
+ ],
+ "garanti_yedek_parca_servis": [
+  {
+   "marka": "VitrA",
+   "garanti_suresi": "Ürün sayfalarında süre yazmıyor; V-Care akıllı klozetlerde 2 yıl, ek garanti paketiyle 4 yıl ve yıllık periyodik bakım; '+2 yıl ek garanti ve periyodik bakım paketi' sayfası var",
+   "yedek_parca_sayfasi": "Ayrı yedek parça sayfası bulunamadı; 'Gömme Rezervuar Montaj Aksesuarları' ve 'Vitrifiye Tamamlayıcı Ürünleri' kategorileri var",
+   "servis_randevu": "Online servis randevusu (Müşteri Hizmetleri sayfası); garanti talep formu (fatura kaydı, JPG/PDF 2 MB); Hesabım > Destek Taleplerim",
+   "whatsapp_canli_destek": "WhatsApp hattı bulunamadı; 0850 311 70 70 (Pzt-Cts 09:00-18:00) yanında 'Çevrim dışı' durum etiketi var, canlı sohbet doğrulanamadı",
+   "servis_agi": "Resmi noktada 161 satış ve 76 servis noktası",
+   "kaynak": [
+    "https://www.vitra.com.tr/garanti-hizmetleri",
+    "https://www.vitra.com.tr/musteri-hizmetleri",
+    "https://www.vitra.com.tr/garanti-talep-formu",
+    "https://www.vitra.com.tr/servisler-ve-satis-noktalari"
+   ],
+   "yontem": "curl",
+   "guven": "sayfa"
+  },
+  {
+   "marka": "Artema",
+   "garanti_suresi": "'Garanti Hizmetleri' sayfası var, içerik statik HTML'de görünmüyor",
+   "yedek_parca_sayfasi": "Bulunamadı",
+   "servis_randevu": "VitrA ile ortak müşteri hizmetleri ve servisler sayfası; '360 Mağazalar' sanal mağaza bağlantısı",
+   "whatsapp_canli_destek": "Bulunamadı",
+   "servis_agi": "VitrA ile ortak yetkili servis ağı (VitrA - Artema Yetkili Servisi)",
+   "kaynak": [
+    "https://www.artema.com.tr/garanti-hizmetleri/",
+    "https://www.artema.com.tr/servisler-ve-satis-noktalari"
+   ],
+   "yontem": "curl",
+   "guven": "kismi"
+  },
+  {
+   "marka": "Kale",
+   "garanti_suresi": "Seramik sağlık gereçleri 10 ve 5 yıl, armatürler 10 ve 5 yıl, musluk ve ara musluk 2 yıl, termostatik armatürler 5 yıl, duş sistemleri 5 yıl, gömme rezervuar 5 yıl (conta 2 yıl), iç takımlar 5 yıl; yetkili servis işçilik 1 yıl",
+   "yedek_parca_sayfasi": "Ayrı yedek parça satış sayfası bulunamadı; kullanım kılavuzları ve kalite belgeleri sayfası var",
+   "servis_randevu": "Yetkili Servisler ve Hizmetler sayfası ('hızlıca destek talep edin'); müşteri iletişim merkezi 0850 800 52 53",
+   "whatsapp_canli_destek": "WhatsApp Destek Hattı bağlantısı var",
+   "servis_agi": "Yetkili servis haritası",
+   "kaynak": [
+    "https://www.kale.com.tr/sikca-sorulan-sorular",
+    "https://www.kale.com.tr/yetkili-servisler-ve-hizmetler",
+    "https://wa.me/+9005323055253"
+   ],
+   "yontem": "curl",
+   "guven": "sayfa"
+  },
+  {
+   "marka": "Creavit",
+   "garanti_suresi": "Arama özetinde seramik 12 yıl, gömme rezervuar 10 yıl, armatür ve duş sistemleri 5 yıl; yetkili servis montaj hizmeti 1 yıl (sayfada doğrulanamadı)",
+   "yedek_parca_sayfasi": "Kataloglar altında 'Yedek Parça Listesi' (arama sonucu; sayfa adresi açılamadı)",
+   "servis_randevu": "Yetkili servisler sayfası; e-mağaza müşteri hizmetleri 0850 330 00 67 (Pzt-Cuma 08:30-17:30)",
+   "whatsapp_canli_destek": "Bulunamadı",
+   "servis_agi": "Yetkili servis sayfası",
+   "kaynak": [
+    "https://www.creavit.com.tr/tr/iletisim/servisler/yetkili-servisler-P27",
+    "https://shop.creavit.com.tr/pages/contact"
+   ],
+   "yontem": "curl + arama özeti",
+   "guven": "kismi"
+  },
+  {
+   "marka": "ECA",
+   "garanti_suresi": "Ürün sayfasında 'Garanti Süresi: 20 Yıl' (Life lavabo bataryası)",
+   "yedek_parca_sayfasi": "Ürün sayfasında 'Yedek Parça Resmi' bölümü var",
+   "servis_randevu": "Yetkili servis haritası (il ve ilçe seçimi); çağrı merkezi 444 0 322 ve 0850 800 0 322",
+   "whatsapp_canli_destek": "WhatsApp bağlantısı var (iletişim sayfasında)",
+   "servis_agi": "Yetkili servis haritası",
+   "kaynak": [
+    "https://eca.com.tr/urun/life-lavabo-bataryasi",
+    "https://eca.com.tr/iletisim-bilgileri",
+    "https://eca.com.tr/servisler"
+   ],
+   "yontem": "curl",
+   "guven": "sayfa"
+  },
+  {
+   "marka": "Geberit TR",
+   "garanti_suresi": "Arama özetinde vitrifiyelerde ömür boyu garanti, AquaClean için 10 yıl yedek parça bulunabilirliği, ankastre ürünlerde 25 yıl yedek parça (sayfada doğrulanamadı)",
+   "yedek_parca_sayfasi": "'Ürün bulunabilirliği ve yedek parça güvenilirliği' sayfası (arama sonucu)",
+   "servis_randevu": "Bayiler ve yetkili servisler sayfası; iletişim 0 850 811 62 63; yetkili servis hizmet garantisi 1 yıl (arama özeti)",
+   "whatsapp_canli_destek": "Bulunamadı",
+   "servis_agi": "Yetkili servis ve bayi listesi",
+   "kaynak": [
+    "https://www.geberit.com.tr/hizmet-ve-destek/iletisim/",
+    "https://www.geberit.com.tr/banyo-urunleri/ilham-alin/bayiler-yetkili-servisler/"
+   ],
+   "yontem": "curl + arama özeti",
+   "guven": "kismi"
+  },
+  {
+   "marka": "Grohe TR",
+   "garanti_suresi": "Seçili ürünlerde 10 yıla kadar; 2 yıl (çevrim içi kayıtla +1 yıl) ve 5 yıl üretici garantisi",
+   "yedek_parca_sayfasi": "Yedek parça bulma aracı bağlantısı; garanti kapsamında yedek parça 48 saat içinde teslim",
+   "servis_randevu": "Servis talebi formu ve bayi/montaj uzmanı bulucu",
+   "whatsapp_canli_destek": "Bulunamadı (iletişim sayfası JS ile yükleniyor)",
+   "servis_agi": "Showroom ve montaj uzmanı bulucu",
+   "kaynak": [
+    "https://www.grohe.com/tr-TR/servis-destek/garanti",
+    "https://www.grohe.com/tr-TR/servis-destek/bayi-bulucu"
+   ],
+   "yontem": "curl",
+   "guven": "sayfa"
+  },
+  {
+   "marka": "Duravit TR",
+   "garanti_suresi": "Bulunamadı",
+   "yedek_parca_sayfasi": "Bulunamadı",
+   "servis_randevu": "Teknik servisler sayfası (il bazlı yetkili servis listesi, arama sonucu); merkez +90 212 386 06 00",
+   "whatsapp_canli_destek": "Bulunamadı",
+   "servis_agi": "Teknik servisler (şehir listesi)",
+   "kaynak": [
+    "https://www.duravit.com.tr/servis_hizmeti/teknik_servisler.tr-tr.html"
+   ],
+   "yontem": "arama özeti (curl 403)",
+   "guven": "arama_ozeti"
+  }
+ ],
+ "alinamayanlar": [
+  "Koçtaş yardım, iade ve teslimat sayfaları (JS ile yükleniyor, Apify bu adreslerde boş döndü); yalnızca taksit sayfası ve ana sayfa okundu.",
+  "Trendyol, n11 ve Amazon TR yardım sayfaları: curl 403, Apify boş sayfa; bilgiler arama sonucu özetinden (doğrulanmadı).",
+  "Hepsiburada ödeme, teslimat ve kolay iade sayfaları (bot koruması); yalnızca mobilya/büyük ürün sayfası okundu.",
+  "Duravit TR (curl 403), Geberit TR garanti sayfası (adres 404/boş), Creavit yedek parça listesi ve garanti süresi, Artema garanti sayfası içeriği.",
+  "Kale sitesinde online satış olmadığı için ödeme, kargo ve iade başlıkları uygulanamıyor.",
+  "IKEA ve Koçtaş hasar politikası (SSS sayfaları JS ile yükleniyor)."
+ ]
+}

@@ -1,0 +1,1219 @@
+{
+ "tarih": "2026-09-29",
+ "kaynak": "DataForSEO serp/google/organic/live/advanced · Google TR · location_code 2792 · dil tr · derinlik 20",
+ "kategori": [
+  {
+   "kelime": "klozet takımı",
+   "tur": "kategori",
+   "mobil": {
+    "kelime": "klozet takımı",
+    "cihaz": "mobile",
+    "blok_tipleri": [
+     "organic",
+     "images",
+     "people_also_search",
+     "people_also_ask"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": false,
+    "images": true,
+    "ai_overview": false,
+    "video": false,
+    "paa": true,
+    "vitra_organik_sira_top10": 3,
+    "top10_domain": [
+     "www.trendyol.com",
+     "www.koctas.com.tr",
+     "www.vitra.com.tr",
+     "shop.creavit.com.tr",
+     "www.bauhaus.com.tr",
+     "www.hepsiburada.com",
+     "www.instagram.com",
+     "www.akakce.com",
+     "www.banyomoda.com.tr",
+     "www.amazon.com.tr"
+    ]
+   },
+   "masaustu": {
+    "kelime": "klozet takımı",
+    "cihaz": "desktop",
+    "blok_tipleri": [
+     "ai_overview",
+     "organic",
+     "images",
+     "people_also_ask"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": false,
+    "images": true,
+    "ai_overview": true,
+    "video": false,
+    "paa": true,
+    "vitra_organik_sira_top10": null,
+    "top10_domain": [
+     "www.trendyol.com",
+     "www.akakce.com",
+     "www.hepsiburada.com",
+     "www.trendyol.com",
+     "www.beymen.com",
+     "www.akakce.com",
+     "www.akakce.com"
+    ]
+   }
+  },
+  {
+   "kelime": "asma klozet",
+   "tur": "kategori",
+   "mobil": {
+    "kelime": "asma klozet",
+    "cihaz": "mobile",
+    "blok_tipleri": [
+     "images",
+     "organic",
+     "ai_overview",
+     "people_also_ask"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": false,
+    "images": true,
+    "ai_overview": true,
+    "video": false,
+    "paa": true,
+    "vitra_organik_sira_top10": null,
+    "top10_domain": [
+     "www.trendyol.com",
+     "www.yapimarka.com",
+     "www.akakce.com",
+     "www.amazon.com.tr",
+     "www.pazarama.com",
+     "www.koctas.com.tr"
+    ]
+   },
+   "masaustu": {
+    "kelime": "asma klozet",
+    "cihaz": "desktop",
+    "blok_tipleri": [
+     "ai_overview",
+     "images",
+     "organic",
+     "people_also_ask"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": false,
+    "images": true,
+    "ai_overview": true,
+    "video": false,
+    "paa": true,
+    "vitra_organik_sira_top10": null,
+    "top10_domain": [
+     "www.koctas.com.tr",
+     "www.yapimarka.com",
+     "www.trendyol.com",
+     "www.akakce.com",
+     "www.amazon.com.tr",
+     "www.pazarama.com"
+    ]
+   }
+  },
+  {
+   "kelime": "akıllı klozet",
+   "tur": "kategori",
+   "mobil": {
+    "kelime": "akıllı klozet",
+    "cihaz": "mobile",
+    "blok_tipleri": [
+     "organic",
+     "images",
+     "people_also_ask",
+     "video",
+     "people_also_search",
+     "ai_overview"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": false,
+    "images": true,
+    "ai_overview": true,
+    "video": true,
+    "paa": true,
+    "vitra_organik_sira_top10": 1,
+    "top10_domain": [
+     "www.vitra.com.tr",
+     "simart.me",
+     "www.trendyol.com",
+     "smart.koresan.com",
+     "www.geberit.com.tr",
+     "www.roca.com.tr",
+     "www.banyome.com",
+     "www.creavit.com.tr",
+     "www.banyomarka.com",
+     "www.akakce.com"
+    ]
+   },
+   "masaustu": {
+    "kelime": "akıllı klozet",
+    "cihaz": "desktop",
+    "blok_tipleri": [
+     "organic",
+     "images",
+     "people_also_ask",
+     "video",
+     "related_searches"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": false,
+    "images": true,
+    "ai_overview": false,
+    "video": true,
+    "paa": true,
+    "vitra_organik_sira_top10": 1,
+    "top10_domain": [
+     "www.vitra.com.tr",
+     "www.banyomarka.com",
+     "simart.me",
+     "smart.koresan.com",
+     "www.trendyol.com",
+     "www.roca.com.tr",
+     "www.banyome.com",
+     "www.geberit.com.tr",
+     "www.creavit.com.tr",
+     "www.akakce.com"
+    ]
+   }
+  },
+  {
+   "kelime": "klozet kapağı",
+   "tur": "kategori",
+   "mobil": {
+    "kelime": "klozet kapağı",
+    "cihaz": "mobile",
+    "blok_tipleri": [
+     "organic",
+     "images",
+     "people_also_search",
+     "people_also_ask"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": false,
+    "images": true,
+    "ai_overview": false,
+    "video": false,
+    "paa": true,
+    "vitra_organik_sira_top10": 6,
+    "top10_domain": [
+     "www.trendyol.com",
+     "www.koctas.com.tr",
+     "www.hepsiburada.com",
+     "www.roca.com.tr",
+     "shop.creavit.com.tr",
+     "www.vitra.com.tr",
+     "www.kale.com.tr",
+     "www.bauhaus.com.tr",
+     "www.yapimarka.com",
+     "www.yapimarka.com"
+    ]
+   },
+   "masaustu": {
+    "kelime": "klozet kapağı",
+    "cihaz": "desktop",
+    "blok_tipleri": [
+     "organic",
+     "images",
+     "people_also_ask",
+     "related_searches"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": false,
+    "images": true,
+    "ai_overview": false,
+    "video": false,
+    "paa": true,
+    "vitra_organik_sira_top10": 6,
+    "top10_domain": [
+     "www.trendyol.com",
+     "www.roca.com.tr",
+     "www.koctas.com.tr",
+     "www.hepsiburada.com",
+     "shop.creavit.com.tr",
+     "www.vitra.com.tr",
+     "www.kale.com.tr",
+     "www.youtube.com",
+     "www.akakce.com",
+     "www.yapimarka.com"
+    ]
+   }
+  },
+  {
+   "kelime": "gömme rezervuar",
+   "tur": "kategori",
+   "mobil": {
+    "kelime": "gömme rezervuar",
+    "cihaz": "mobile",
+    "blok_tipleri": [
+     "images",
+     "organic",
+     "local_pack",
+     "people_also_ask"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": true,
+    "images": true,
+    "ai_overview": false,
+    "video": false,
+    "paa": true,
+    "vitra_organik_sira_top10": 3,
+    "top10_domain": [
+     "www.trendyol.com",
+     "www.yapimarka.com",
+     "www.vitra.com.tr",
+     "www.cimri.com",
+     "www.trendyol.com",
+     "online.evdema.com",
+     "www.akakce.com",
+     "www.amazon.com.tr",
+     "www.koctas.com.tr",
+     "www.bauhaus.com.tr"
+    ]
+   },
+   "masaustu": {
+    "kelime": "gömme rezervuar",
+    "cihaz": "desktop",
+    "blok_tipleri": [
+     "images",
+     "organic",
+     "video",
+     "people_also_ask",
+     "related_searches"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": false,
+    "images": true,
+    "ai_overview": false,
+    "video": true,
+    "paa": true,
+    "vitra_organik_sira_top10": 4,
+    "top10_domain": [
+     "www.banyomarka.com",
+     "www.trendyol.com",
+     "www.geberit.com.tr",
+     "www.vitra.com.tr",
+     "eca.com.tr",
+     "www.creavit.com.tr",
+     "eksisozluk.com",
+     "www.kale.com.tr",
+     "www.yapimarka.com",
+     "www.banyome.com"
+    ]
+   }
+  },
+  {
+   "kelime": "lavabo",
+   "tur": "kategori",
+   "mobil": {
+    "kelime": "lavabo",
+    "cihaz": "mobile",
+    "blok_tipleri": [
+     "images",
+     "organic",
+     "local_pack",
+     "people_also_search",
+     "people_also_ask"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": true,
+    "images": true,
+    "ai_overview": false,
+    "video": false,
+    "paa": true,
+    "vitra_organik_sira_top10": null,
+    "top10_domain": [
+     "www.trendyol.com",
+     "pureconcept.com.tr",
+     "www.akakce.com",
+     "tr.pinterest.com",
+     "www.idealstandardturkey.com",
+     "www.trendyol.com",
+     "www.cimri.com",
+     "www.amazon.com.tr",
+     "www.trendyol.com",
+     "www.akakce.com"
+    ]
+   },
+   "masaustu": {
+    "kelime": "lavabo",
+    "cihaz": "desktop",
+    "blok_tipleri": [
+     "ai_overview",
+     "images",
+     "people_also_ask",
+     "organic",
+     "related_searches"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": false,
+    "images": true,
+    "ai_overview": true,
+    "video": false,
+    "paa": true,
+    "vitra_organik_sira_top10": null,
+    "top10_domain": [
+     "www.trendyol.com",
+     "pureconcept.com.tr",
+     "www.akakce.com",
+     "www.idealstandardturkey.com",
+     "www.trendyol.com",
+     "www.amazon.com.tr",
+     "www.trendyol.com",
+     "tr.pinterest.com",
+     "www.hepsiburada.com",
+     "www.trendyol.com"
+    ]
+   }
+  },
+  {
+   "kelime": "banyo dolabı",
+   "tur": "kategori",
+   "mobil": {
+    "kelime": "banyo dolabı",
+    "cihaz": "mobile",
+    "blok_tipleri": [
+     "organic",
+     "images",
+     "local_pack"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": true,
+    "images": true,
+    "ai_overview": false,
+    "video": false,
+    "paa": false,
+    "vitra_organik_sira_top10": null,
+    "top10_domain": [
+     "www.trendyol.com",
+     "www.ayhanpark.com.tr",
+     "www.akakce.com",
+     "banyocu.com.tr",
+     "www.trendyol.com",
+     "www.amazon.com.tr",
+     "www.biboya.com.tr",
+     "yandex.com.tr",
+     "diodor.com.tr",
+     "www.trendyol.com"
+    ]
+   },
+   "masaustu": {
+    "kelime": "banyo dolabı",
+    "cihaz": "desktop",
+    "blok_tipleri": [
+     "organic",
+     "images"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": false,
+    "images": true,
+    "ai_overview": false,
+    "video": false,
+    "paa": false,
+    "vitra_organik_sira_top10": null,
+    "top10_domain": [
+     "www.trendyol.com",
+     "www.ayhanpark.com.tr",
+     "www.akakce.com",
+     "banyocu.com.tr",
+     "www.trendyol.com",
+     "www.biboya.com.tr",
+     "yandex.com.tr",
+     "diodor.com.tr",
+     "www.sahibinden.com",
+     "www.cimri.com"
+    ]
+   }
+  },
+  {
+   "kelime": "lavabo bataryası",
+   "tur": "kategori",
+   "mobil": {
+    "kelime": "lavabo bataryası",
+    "cihaz": "mobile",
+    "blok_tipleri": [
+     "organic",
+     "ai_overview",
+     "images"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": false,
+    "images": true,
+    "ai_overview": true,
+    "video": false,
+    "paa": false,
+    "vitra_organik_sira_top10": 5,
+    "top10_domain": [
+     "www.trendyol.com",
+     "www.koctas.com.tr",
+     "online.evdema.com",
+     "enginyapi.com.tr",
+     "www.vitra.com.tr",
+     "www.akakce.com",
+     "shop.gencyapimarket.com",
+     "www.trendyol.com",
+     "www.trendyol.com",
+     "www.trendyol.com"
+    ]
+   },
+   "masaustu": {
+    "kelime": "lavabo bataryası",
+    "cihaz": "desktop",
+    "blok_tipleri": [
+     "ai_overview",
+     "images",
+     "organic"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": false,
+    "images": true,
+    "ai_overview": true,
+    "video": false,
+    "paa": false,
+    "vitra_organik_sira_top10": null,
+    "top10_domain": [
+     "www.trendyol.com",
+     "www.akakce.com",
+     "www.trendyol.com",
+     "www.trendyol.com",
+     "www.akakce.com",
+     "www.trendyol.com",
+     "www.trendyol.com",
+     "www.trendyol.com",
+     "www.trendyol.com",
+     "www.trendyol.com"
+    ]
+   }
+  },
+  {
+   "kelime": "banyo bataryası",
+   "tur": "kategori",
+   "mobil": {
+    "kelime": "banyo bataryası",
+    "cihaz": "mobile",
+    "blok_tipleri": [
+     "images",
+     "organic",
+     "local_pack"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": true,
+    "images": true,
+    "ai_overview": false,
+    "video": false,
+    "paa": false,
+    "vitra_organik_sira_top10": null,
+    "top10_domain": [
+     "www.trendyol.com",
+     "www.hepsiburada.com",
+     "www.akakce.com",
+     "www.trendyol.com",
+     "www.akakce.com",
+     "www.trendyol.com",
+     "www.akakce.com",
+     "www.koctas.com.tr",
+     "www.akakce.com",
+     "www.akakce.com"
+    ]
+   },
+   "masaustu": {
+    "kelime": "banyo bataryası",
+    "cihaz": "desktop",
+    "blok_tipleri": [
+     "organic",
+     "images",
+     "people_also_ask",
+     "related_searches"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": false,
+    "images": true,
+    "ai_overview": false,
+    "video": false,
+    "paa": true,
+    "vitra_organik_sira_top10": 1,
+    "top10_domain": [
+     "www.vitra.com.tr",
+     "www.koctas.com.tr",
+     "www.trendyol.com",
+     "www.hepsiburada.com",
+     "www.eca.web.tr",
+     "www.banyomarka.com",
+     "eca.com.tr",
+     "www.akakce.com",
+     "www.youtube.com",
+     "www.sahibinden.com"
+    ]
+   }
+  },
+  {
+   "kelime": "duş seti",
+   "tur": "kategori",
+   "mobil": {
+    "kelime": "duş seti",
+    "cihaz": "mobile",
+    "blok_tipleri": [
+     "images",
+     "organic",
+     "people_also_ask"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": false,
+    "images": true,
+    "ai_overview": false,
+    "video": false,
+    "paa": true,
+    "vitra_organik_sira_top10": null,
+    "top10_domain": [
+     "www.trendyol.com",
+     "www.amazon.com.tr",
+     "www.akakce.com",
+     "www.trendyol.com"
+    ]
+   },
+   "masaustu": {
+    "kelime": "duş seti",
+    "cihaz": "desktop",
+    "blok_tipleri": [
+     "ai_overview",
+     "organic",
+     "images",
+     "people_also_ask"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": false,
+    "images": true,
+    "ai_overview": true,
+    "video": false,
+    "paa": true,
+    "vitra_organik_sira_top10": null,
+    "top10_domain": [
+     "www.trendyol.com",
+     "www.amazon.com.tr",
+     "www.akakce.com",
+     "www.trendyol.com"
+    ]
+   }
+  },
+  {
+   "kelime": "duşakabin",
+   "tur": "kategori",
+   "mobil": {
+    "kelime": "duşakabin",
+    "cihaz": "mobile",
+    "blok_tipleri": [
+     "organic",
+     "images",
+     "people_also_search",
+     "people_also_ask",
+     "local_pack",
+     "compare_sites"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": true,
+    "images": true,
+    "ai_overview": false,
+    "video": false,
+    "paa": true,
+    "vitra_organik_sira_top10": 5,
+    "top10_domain": [
+     "www.trendyol.com",
+     "www.koctas.com.tr",
+     "www.dusakabincim.com",
+     "www.sahibinden.com",
+     "www.vitra.com.tr",
+     "tr.kabinet.com.tr",
+     "arminayapi.com",
+     "www.duskabin.com",
+     "armut.com",
+     "tr.pinterest.com"
+    ]
+   },
+   "masaustu": {
+    "kelime": "duşakabin",
+    "cihaz": "desktop",
+    "blok_tipleri": [
+     "organic",
+     "images",
+     "local_pack",
+     "people_also_ask",
+     "related_searches"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": true,
+    "images": true,
+    "ai_overview": false,
+    "video": false,
+    "paa": true,
+    "vitra_organik_sira_top10": 5,
+    "top10_domain": [
+     "www.trendyol.com",
+     "www.koctas.com.tr",
+     "www.dusakabincim.com",
+     "www.sahibinden.com",
+     "www.vitra.com.tr",
+     "tr.kabinet.com.tr",
+     "www.duskabin.com",
+     "noktadus.net",
+     "tr.pinterest.com",
+     "www.hepsiburada.com"
+    ]
+   }
+  },
+  {
+   "kelime": "banyo aynası",
+   "tur": "kategori",
+   "mobil": {
+    "kelime": "banyo aynası",
+    "cihaz": "mobile",
+    "blok_tipleri": [
+     "organic",
+     "images",
+     "local_pack"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": true,
+    "images": true,
+    "ai_overview": false,
+    "video": false,
+    "paa": false,
+    "vitra_organik_sira_top10": null,
+    "top10_domain": [
+     "www.trendyol.com",
+     "www.akakce.com",
+     "www.hepsiburada.com",
+     "www.trendyol.com",
+     "www.amazon.com.tr",
+     "www.trendyol.com",
+     "www.trendyol.com",
+     "www.trendyol.com",
+     "www.trendyol.com",
+     "www.trendyol.com"
+    ]
+   },
+   "masaustu": {
+    "kelime": "banyo aynası",
+    "cihaz": "desktop",
+    "blok_tipleri": [
+     "ai_overview",
+     "organic",
+     "images"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": false,
+    "images": true,
+    "ai_overview": true,
+    "video": false,
+    "paa": false,
+    "vitra_organik_sira_top10": null,
+    "top10_domain": [
+     "www.trendyol.com",
+     "www.akakce.com",
+     "www.hepsiburada.com",
+     "www.amazon.com.tr",
+     "www.trendyol.com",
+     "www.trendyol.com",
+     "www.trendyol.com",
+     "www.trendyol.com",
+     "www.trendyol.com",
+     "www.trendyol.com"
+    ]
+   }
+  },
+  {
+   "kelime": "havluluk",
+   "tur": "kategori",
+   "mobil": {
+    "kelime": "havluluk",
+    "cihaz": "mobile",
+    "blok_tipleri": [
+     "organic",
+     "images",
+     "people_also_search",
+     "ai_overview",
+     "video"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": false,
+    "images": true,
+    "ai_overview": true,
+    "video": true,
+    "paa": false,
+    "vitra_organik_sira_top10": 1,
+    "top10_domain": [
+     "www.vitra.com.tr",
+     "www.isaogluyapi.com",
+     "www.koctas.com.tr",
+     "www.hepsiburada.com",
+     "www.yapimanya.com",
+     "jysk.com.tr",
+     "www.sese.com.tr",
+     "p-nt-www-amazon-com-tr-kalias.amazon.com.tr",
+     "www.trendyol.com",
+     "www.bauhaus.com.tr"
+    ]
+   },
+   "masaustu": {
+    "kelime": "havluluk",
+    "cihaz": "desktop",
+    "blok_tipleri": [
+     "ai_overview",
+     "images",
+     "organic"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": false,
+    "images": true,
+    "ai_overview": true,
+    "video": false,
+    "paa": false,
+    "vitra_organik_sira_top10": null,
+    "top10_domain": [
+     "www.trendyol.com",
+     "www.akakce.com",
+     "www.trendyol.com",
+     "www.akakce.com",
+     "www.amazon.com.tr",
+     "www.trendyol.com",
+     "www.boyner.com.tr",
+     "www.trendyol.com",
+     "www.trendyol.com",
+     "www.trendyol.com"
+    ]
+   }
+  },
+  {
+   "kelime": "küvet",
+   "tur": "kategori",
+   "mobil": {
+    "kelime": "küvet",
+    "cihaz": "mobile",
+    "blok_tipleri": [
+     "images",
+     "organic",
+     "local_pack"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": true,
+    "images": true,
+    "ai_overview": false,
+    "video": false,
+    "paa": false,
+    "vitra_organik_sira_top10": null,
+    "top10_domain": [
+     "www.grohe.com",
+     "www.trendyol.com",
+     "tr.pinterest.com",
+     "www.cimri.com",
+     "www.akakce.com",
+     "www.koctas.com.tr",
+     "www.trendyol.com",
+     "www.yapiesbanyo.com",
+     "www.n11.com",
+     "www.amazon.com.tr"
+    ]
+   },
+   "masaustu": {
+    "kelime": "küvet",
+    "cihaz": "desktop",
+    "blok_tipleri": [
+     "organic",
+     "images",
+     "related_searches"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": false,
+    "images": true,
+    "ai_overview": false,
+    "video": false,
+    "paa": false,
+    "vitra_organik_sira_top10": 2,
+    "top10_domain": [
+     "www.jakuzicenter.com",
+     "www.vitra.com.tr",
+     "banyomega.com",
+     "www.trendyol.com",
+     "www.roca.com.tr",
+     "tr.wikipedia.org",
+     "www.artemis.com.tr",
+     "www.duravit.com.tr",
+     "www.noktadusakabin.com",
+     "www.turkmenleryapi.com.tr"
+    ]
+   }
+  },
+  {
+   "kelime": "banyo aksesuarları",
+   "tur": "kategori",
+   "mobil": {
+    "kelime": "banyo aksesuarları",
+    "cihaz": "mobile",
+    "blok_tipleri": [
+     "organic",
+     "images",
+     "local_pack"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": true,
+    "images": true,
+    "ai_overview": false,
+    "video": false,
+    "paa": false,
+    "vitra_organik_sira_top10": null,
+    "top10_domain": [
+     "www.trendyol.com",
+     "www.hepsiburada.com",
+     "ulkea.com",
+     "www.amazon.com.tr",
+     "www.vakko.com",
+     "www.cimri.com",
+     "www.koctas.com.tr",
+     "www.ozdilekteyim.com",
+     "www.boyner.com.tr",
+     "www.trendyol.com"
+    ]
+   },
+   "masaustu": {
+    "kelime": "banyo aksesuarları",
+    "cihaz": "desktop",
+    "blok_tipleri": [
+     "ai_overview",
+     "organic",
+     "images"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": false,
+    "images": true,
+    "ai_overview": true,
+    "video": false,
+    "paa": false,
+    "vitra_organik_sira_top10": null,
+    "top10_domain": [
+     "www.trendyol.com",
+     "www.hepsiburada.com",
+     "www.amazon.com.tr",
+     "www.vakko.com",
+     "www.koctas.com.tr",
+     "ulkea.com",
+     "www.ozdilekteyim.com",
+     "www.boyner.com.tr"
+    ]
+   }
+  },
+  {
+   "kelime": "vitra klozet",
+   "tur": "marka",
+   "mobil": {
+    "kelime": "vitra klozet",
+    "cihaz": "mobile",
+    "blok_tipleri": [
+     "organic",
+     "images",
+     "people_also_search",
+     "people_also_ask",
+     "local_pack"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": true,
+    "images": true,
+    "ai_overview": false,
+    "video": false,
+    "paa": true,
+    "vitra_organik_sira_top10": 1,
+    "top10_domain": [
+     "www.vitra.com.tr",
+     "www.trendyol.com",
+     "www.koctas.com.tr",
+     "www.vitra.com.tr",
+     "www.sikayetvar.com",
+     "www.hepsiburada.com",
+     "www.vitra.com.tr",
+     "www.vitra.com.tr",
+     "www.n11.com",
+     "www.banyomarka.com"
+    ]
+   },
+   "masaustu": {
+    "kelime": "vitra klozet",
+    "cihaz": "desktop",
+    "blok_tipleri": [
+     "organic",
+     "images",
+     "people_also_ask",
+     "related_searches"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": false,
+    "images": true,
+    "ai_overview": false,
+    "video": false,
+    "paa": true,
+    "vitra_organik_sira_top10": 1,
+    "top10_domain": [
+     "www.vitra.com.tr",
+     "www.trendyol.com",
+     "www.vitra.com.tr",
+     "www.koctas.com.tr",
+     "www.vitra.com.tr",
+     "www.sikayetvar.com",
+     "www.hepsiburada.com",
+     "www.vitra.com.tr",
+     "www.vitra.com.tr",
+     "www.banyomarka.com"
+    ]
+   }
+  },
+  {
+   "kelime": "vitra banyo dolabı",
+   "tur": "marka",
+   "mobil": {
+    "kelime": "vitra banyo dolabı",
+    "cihaz": "mobile",
+    "blok_tipleri": [
+     "organic",
+     "images",
+     "people_also_search",
+     "people_also_ask",
+     "local_pack"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": true,
+    "images": true,
+    "ai_overview": false,
+    "video": false,
+    "paa": true,
+    "vitra_organik_sira_top10": 1,
+    "top10_domain": [
+     "www.vitra.com.tr",
+     "www.vitra.com.tr",
+     "www.trendyol.com",
+     "www.koctas.com.tr",
+     "www.vitra.com.tr",
+     "www.cimri.com",
+     "www.trendyol.com",
+     "www.vitra.com.tr",
+     "www.amazon.com.tr",
+     "www.vitra.com.tr"
+    ]
+   },
+   "masaustu": {
+    "kelime": "vitra banyo dolabı",
+    "cihaz": "desktop",
+    "blok_tipleri": [
+     "organic",
+     "images",
+     "people_also_ask",
+     "related_searches"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": false,
+    "images": true,
+    "ai_overview": false,
+    "video": false,
+    "paa": true,
+    "vitra_organik_sira_top10": 1,
+    "top10_domain": [
+     "www.vitra.com.tr",
+     "www.vitra.com.tr",
+     "www.vitra.com.tr",
+     "www.koctas.com.tr",
+     "tr.pinterest.com",
+     "www.trendyol.com",
+     "www.cimri.com",
+     "www.youtube.com",
+     "www.vitra.com.tr",
+     "www.n11.com"
+    ]
+   }
+  },
+  {
+   "kelime": "vitra lavabo bataryası",
+   "tur": "marka",
+   "mobil": {
+    "kelime": "vitra lavabo bataryası",
+    "cihaz": "mobile",
+    "blok_tipleri": [
+     "organic",
+     "people_also_ask",
+     "images",
+     "ai_overview"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": false,
+    "images": true,
+    "ai_overview": true,
+    "video": false,
+    "paa": true,
+    "vitra_organik_sira_top10": null,
+    "top10_domain": [
+     "www.koctas.com.tr",
+     "www.trendyol.com",
+     "www.akakce.com",
+     "www.amazon.com.tr",
+     "www.beymen.com",
+     "www.hepsiburada.com",
+     "www.enarhome.com",
+     "www.cimri.com"
+    ]
+   },
+   "masaustu": {
+    "kelime": "vitra lavabo bataryası",
+    "cihaz": "desktop",
+    "blok_tipleri": [
+     "ai_overview",
+     "organic",
+     "images",
+     "people_also_ask"
+    ],
+    "shopping_urun_blogu": false,
+    "local_pack": false,
+    "images": true,
+    "ai_overview": true,
+    "video": false,
+    "paa": true,
+    "vitra_organik_sira_top10": null,
+    "top10_domain": [
+     "www.koctas.com.tr",
+     "www.trendyol.com",
+     "www.enarhome.com",
+     "www.akakce.com",
+     "www.amazon.com.tr",
+     "www.beymen.com",
+     "www.hepsiburada.com",
+     "www.cimri.com"
+    ]
+   }
+  }
+ ],
+ "kontrol": [
+  {
+   "kelime": "iphone 15",
+   "cihaz": "mobile",
+   "blok_tipleri": [
+    "organic",
+    "people_also_ask",
+    "images",
+    "ai_overview"
+   ],
+   "shopping_urun_blogu": false
+  },
+  {
+   "kelime": "iphone 15",
+   "cihaz": "desktop",
+   "blok_tipleri": [
+    "ai_overview",
+    "organic",
+    "people_also_ask",
+    "images"
+   ],
+   "shopping_urun_blogu": false
+  },
+  {
+   "kelime": "samsung televizyon 55 inç",
+   "cihaz": "mobile",
+   "blok_tipleri": [
+    "ai_overview",
+    "organic",
+    "people_also_ask",
+    "images"
+   ],
+   "shopping_urun_blogu": false
+  },
+  {
+   "kelime": "samsung televizyon 55 inç",
+   "cihaz": "desktop",
+   "blok_tipleri": [
+    "ai_overview",
+    "organic",
+    "people_also_ask",
+    "related_searches"
+   ],
+   "shopping_urun_blogu": false
+  },
+  {
+   "kelime": "kablosuz kulaklık",
+   "cihaz": "mobile",
+   "blok_tipleri": [
+    "images",
+    "organic",
+    "ai_overview",
+    "people_also_ask"
+   ],
+   "shopping_urun_blogu": false
+  },
+  {
+   "kelime": "kablosuz kulaklık",
+   "cihaz": "desktop",
+   "blok_tipleri": [
+    "ai_overview",
+    "organic",
+    "images",
+    "video",
+    "related_searches"
+   ],
+   "shopping_urun_blogu": false
+  },
+  {
+   "kelime": "nike air max",
+   "cihaz": "mobile",
+   "blok_tipleri": [
+    "organic",
+    "images",
+    "people_also_search"
+   ],
+   "shopping_urun_blogu": false
+  },
+  {
+   "kelime": "nike air max",
+   "cihaz": "desktop",
+   "blok_tipleri": [
+    "ai_overview",
+    "organic",
+    "images",
+    "people_also_ask"
+   ],
+   "shopping_urun_blogu": false
+  },
+  {
+   "kelime": "buzdolabı",
+   "cihaz": "mobile",
+   "blok_tipleri": [
+    "organic",
+    "images",
+    "local_pack",
+    "people_also_ask"
+   ],
+   "shopping_urun_blogu": false
+  },
+  {
+   "kelime": "buzdolabı",
+   "cihaz": "desktop",
+   "blok_tipleri": [
+    "ai_overview",
+    "organic",
+    "people_also_ask",
+    "images"
+   ],
+   "shopping_urun_blogu": false
+  }
+ ],
+ "ozet": {
+  "kategori_kelime_sayisi": 15,
+  "mobil_shopping_urun_blogu": 0,
+  "masaustu_shopping_urun_blogu": 0,
+  "mobil_local_pack": 8,
+  "masaustu_local_pack": 1,
+  "mobil_images": 15,
+  "mobil_ai_overview": 4,
+  "masaustu_ai_overview": 8,
+  "mobil_paa": 8,
+  "mobil_video": 2,
+  "mobil_vitra_top10": 7,
+  "kontrol_sorgu_sayisi": 10,
+  "kontrol_shopping_blogu": 0,
+  "maliyet_usd": 0.149
+ }
+}

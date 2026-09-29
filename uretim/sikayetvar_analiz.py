@@ -65,19 +65,33 @@ def alinti_adaylari(kayit, tema):
         if s: res.append((s, c))
     return res
 
-def alintilar(liste, tema, n=3):
+NEG = re.compile(r"yok|değil|rağmen|reddet|çözüm|bulunam|gelmedi|gelmiyor|karşılık|mağdur|ödeme|ücret|talep|iade|olmadı|verilmedi|sunulmadı|yapılmadı|ilgilen|pişman|kırıl|çatla|su ")
+
+def aday_listesi(liste, tema, k=12):
     aday = []
     for r in liste:
         if tema not in r["etiketler"] or not r["url"]: continue
         for s, c in alinti_adaylari(r, tema):
-            aday.append((s + (2 if r["ana_tema"] == tema else 0), r["goruntulenme"] or 0, c, r))
+            neg = len(NEG.findall(T.kucuk(c)))
+            aday.append((s + neg + (2 if r["ana_tema"] == tema else 0), r["goruntulenme"] or 0, c, r))
     aday.sort(key=lambda a: (-a[0], -a[1]))
     sec, kul = [], set()
     for s, g, c, r in aday:
         if r["url"] in kul: continue
-        kul.add(r["url"]); sec.append({"metin": c, "url": r["url"], "tarih": r["tarih"]})
-        if len(sec) == n: break
+        kul.add(r["url"]); sec.append({"metin": c, "url": r["url"], "tarih": r["tarih"], "puan": s})
+        if len(sec) == k: break
     return sec
+
+def alintilar(liste, tema, n=3):
+    adaylar = aday_listesi(liste, tema, 40)
+    secilen = yukle("alinti_secilen.json", {}).get(tema)
+    if secilen:
+        out = []
+        for m in secilen:
+            for a in adaylar:
+                if a["metin"] == m: out.append({"metin": a["metin"], "url": a["url"], "tarih": a["tarih"]}); break
+        if out: return out
+    return [{"metin": a["metin"], "url": a["url"], "tarih": a["tarih"]} for a in adaylar[:n]]
 
 # ---- alt kirilimlar ----
 def sayim(liste, sozluk):
@@ -159,6 +173,7 @@ if __name__ == "__main__":
                 "satis_sonrasi_birlesim_n": sum(1 for r in L if set(r["etiketler"]) & {"servis_garanti", "yedek_parca", "montaj", "iletisim"}),
                 "cozuldu_n": sum(r["cozuldu"] for r in L)}
     json.dump({"VitrA": alt(Vm), "Artema": alt(Am)}, open(os.path.join(D, "alt_kirilim.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    json.dump({t: aday_listesi(Vm, t, 12) for t in T.SIRA}, open(os.path.join(D, "alinti_adaylari.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print("VitrA pencere", len(Vp), "metinli", len(Vm), "detay", temalar["VitrA"]["detay_metinli"])
     for k, v in temalar["VitrA"]["temalar"].items(): print("  %-45s %4d %5.1f%%  ana %4d %5.1f%%" % (k, v["sayi"], 100 * v["pay"], v["ana_tema_sayi"], 100 * v["ana_tema_pay"]))
     print("Artema pencere", len(Ap), "metinli", len(Am))

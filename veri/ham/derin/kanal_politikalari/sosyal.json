@@ -1,0 +1,546 @@
+{
+ "tarih": "2026-09-29",
+ "kaynak": "YouTube ve Pinterest profil sayfaları (curl, herkese açık HTML); Instagram ve TikTok girişe kapalı olduğundan Google TR SERP snippet'i (DataForSEO organic); yaklaşık değerler 'SERP'ten' işaretlidir",
+ "markalar": [
+  {
+   "marka": "VitrA Türkiye",
+   "instagram": {
+    "hesap": "@vitraturkiye",
+    "takipci_yaklasik": 144000,
+    "takipci_metin": "144K",
+    "gonderi_metin": "1.8K+",
+    "kaynak": "Google SERP snippet (yaklaşık)",
+    "url": "https://www.instagram.com/vitraturkiye/"
+   },
+   "youtube": {
+    "kanal": "http://www.youtube.com/@VitrAT%C3%BCrkiye",
+    "abone": "1,58 Mn abone",
+    "video": "402 video",
+    "goruntuleme": "55.846.765 görüntüleme",
+    "katilma": "18 Ağu 2011 tarihinde katıldı",
+    "kaynak": "YouTube hakkında sayfası (curl)"
+   },
+   "pinterest": {
+    "kullanici": "vitrabathrooms",
+    "takipci": 1478,
+    "kaynak": "Pinterest profil sayfası (curl)"
+   },
+   "tiktok": null
+  },
+  {
+   "marka": "Artema",
+   "instagram": {
+    "hesap": "@artematurkiye",
+    "takipci_yaklasik": 20000,
+    "takipci_metin": "20K",
+    "gonderi_metin": "579",
+    "kaynak": "Google SERP snippet (yaklaşık)",
+    "url": "https://www.instagram.com/artematurkiye/"
+   },
+   "youtube": {
+    "kanal": "http://www.youtube.com/@artema",
+    "abone": "4,75 B abone",
+    "video": "33 video",
+    "goruntuleme": "19.702.538 görüntüleme",
+    "katilma": "3 Eki 2012 tarihinde katıldı",
+    "kaynak": "YouTube hakkında sayfası (curl)"
+   },
+   "pinterest": {
+    "kullanici": "DesignStudioVitrA",
+    "takipci": 3825,
+    "kaynak": "Pinterest profil sayfası (curl)"
+   },
+   "tiktok": null
+  },
+  {
+   "marka": "Kale (Çanakkale Seramik)",
+   "instagram": {
+    "hesap": "@canakkaleseramik",
+    "takipci_yaklasik": null,
+    "takipci_metin": null,
+    "gonderi_metin": null,
+    "kaynak": "alınamadı (girişe kapalı, SERP'te profil sayısı görünmedi)",
+    "url": "https://www.instagram.com/canakkaleseramik/"
+   },
+   "youtube": {
+    "kanal": "http://www.youtube.com/@CanakkaleSrmk",
+    "abone": "948 abone",
+    "video": "577 video",
+    "goruntuleme": "1.405.640 görüntüleme",
+    "katilma": "2 Mar 2012 tarihinde katıldı",
+    "kaynak": "YouTube hakkında sayfası (curl)"
+   },
+   "pinterest": {
+    "kullanici": "canakkalesrmk",
+    "takipci": 943,
+    "kaynak": "Pinterest profil sayfası (curl)"
+   },
+   "tiktok": null
+  },
+  {
+   "marka": "Creavit",
+   "instagram": {
+    "hesap": "@creavitturkiye",
+    "takipci_yaklasik": null,
+    "takipci_metin": null,
+    "gonderi_metin": null,
+    "kaynak": "alınamadı (girişe kapalı, SERP'te profil sayısı görünmedi)",
+    "url": "https://www.instagram.com/creavitturkiye/"
+   },
+   "youtube": {
+    "kanal": "http://www.youtube.com/@Creavit-j2s",
+    "abone": "2,17 B abone",
+    "video": "227 video",
+    "goruntuleme": "7.055.522 görüntüleme",
+    "katilma": "22 Mar 2013 tarihinde katıldı",
+    "kaynak": "YouTube hakkında sayfası (curl)"
+   },
+   "pinterest": {
+    "kullanici": "creavitturkiye",
+    "takipci": 187,
+    "kaynak": "Pinterest profil sayfası (curl)"
+   },
+   "tiktok": {
+    "hesap": "@banyobutarafta",
+    "takipci_yaklasik": 118,
+    "kaynak": "Google SERP snippet (yaklaşık)"
+   }
+  },
+  {
+   "marka": "ECA (Elginkan)",
+   "instagram": {
+    "hesap": "@elginkaneca",
+    "takipci_yaklasik": 24000,
+    "takipci_metin": "24K",
+    "gonderi_metin": "1694",
+    "kaynak": "Google SERP snippet (yaklaşık)",
+    "url": "https://www.instagram.com/elginkaneca/"
+   },
+   "youtube": null,
+   "pinterest": null,
+   "tiktok": null
+  },
+  {
+   "marka": "Geberit Türkiye",
+   "instagram": {
+    "hesap": "@geberit.tr",
+    "takipci_yaklasik": 39000,
+    "takipci_metin": "39K",
+    "gonderi_metin": "806",
+    "kaynak": "Google SERP snippet (yaklaşık)",
+    "url": "https://www.instagram.com/geberit.tr/"
+   },
+   "youtube": null,
+   "pinterest": null,
+   "tiktok": null
+  },
+  {
+   "marka": "Grohe Türkiye",
+   "instagram": {
+    "hesap": "@groheturkiye",
+    "takipci_yaklasik": null,
+    "takipci_metin": null,
+    "gonderi_metin": null,
+    "kaynak": "alınamadı (girişe kapalı, SERP'te profil sayısı görünmedi)",
+    "url": "https://www.instagram.com/groheturkiye/"
+   },
+   "youtube": {
+    "kanal": "http://www.youtube.com/@GROHE",
+    "abone": "75,1 B abone",
+    "video": "627 video",
+    "goruntuleme": "21.947.546 görüntüleme",
+    "katilma": "2 Mar 2007 tarihinde katıldı",
+    "kaynak": "YouTube hakkında sayfası (curl)"
+   },
+   "pinterest": {
+    "kullanici": "grohe",
+    "takipci": 10325,
+    "kaynak": "Pinterest profil sayfası (curl)"
+   },
+   "tiktok": null
+  }
+ ],
+ "pinterest_gorunurluk": {
+  "sorgular": [
+   {
+    "sorgu": "site:pinterest.com vitra banyo",
+    "marka_adli_sorgu": true,
+    "toplam_organik_sonuc": 30,
+    "pinterest_sonuc": 10,
+    "markalar": {
+     "VitrA": {
+      "sonuc": 10,
+      "en_iyi_sira": 1,
+      "ornek": [
+       {
+        "sira": 1,
+        "baslik": "Vitra Banyo Modelleri",
+        "url": "https://tr.pinterest.com/ideas/vitra-banyo-modelleri/907316450588/"
+       },
+       {
+        "sira": 2,
+        "baslik": "Vitra Banyo Dolabı",
+        "url": "https://tr.pinterest.com/ideas/vitra-banyo-dolab%C4%B1/936777130942/"
+       }
+      ]
+     }
+    }
+   },
+   {
+    "sorgu": "site:pinterest.com vitra klozet",
+    "marka_adli_sorgu": true,
+    "toplam_organik_sonuc": 29,
+    "pinterest_sonuc": 29,
+    "markalar": {
+     "VitrA": {
+      "sonuc": 7,
+      "en_iyi_sira": 1,
+      "ornek": [
+       {
+        "sira": 1,
+        "baslik": "Yeni banyo dekorum",
+        "url": "https://tr.pinterest.com/pin/yeni-banyo-dekorum--293859944456369607/"
+       },
+       {
+        "sira": 2,
+        "baslik": "Önderler VİTRA | Bodrum",
+        "url": "https://www.pinterest.com/pin/vitra--800866746211973482/"
+       }
+      ]
+     },
+     "Artema": {
+      "sonuc": 1,
+      "en_iyi_sira": 1,
+      "ornek": [
+       {
+        "sira": 1,
+        "baslik": "Yeni banyo dekorum",
+        "url": "https://tr.pinterest.com/pin/yeni-banyo-dekorum--293859944456369607/"
+       }
+      ]
+     },
+     "Ideal Standard": {
+      "sonuc": 1,
+      "en_iyi_sira": 7,
+      "ornek": [
+       {
+        "sira": 7,
+        "baslik": "İdeal Standard Aquablade Klozet Teknolojisi | Instagram",
+        "url": "https://tr.pinterest.com/pin/deal-standard-aquablade-klozet-teknolojisi--519884350734443033/"
+       }
+      ]
+     }
+    }
+   },
+   {
+    "sorgu": "site:pinterest.com vitra artema banyo",
+    "marka_adli_sorgu": true,
+    "toplam_organik_sonuc": 29,
+    "pinterest_sonuc": 9,
+    "markalar": {
+     "VitrA": {
+      "sonuc": 5,
+      "en_iyi_sira": 4,
+      "ornek": [
+       {
+        "sira": 4,
+        "baslik": "Her montajda iş bitimi ürünün karşısına geçip seyretmek. ...",
+        "url": "https://www.pinterest.com/pin/185069865934660584/"
+       },
+       {
+        "sira": 5,
+        "baslik": "Vitrin",
+        "url": "https://tr.pinterest.com/pin/banyomarka-artema-duravit-vitra-grohe-hansgrohe-ve-daha-fazlas--519884350736457898/"
+       }
+      ]
+     },
+     "Artema": {
+      "sonuc": 5,
+      "en_iyi_sira": 4,
+      "ornek": [
+       {
+        "sira": 4,
+        "baslik": "Her montajda iş bitimi ürünün karşısına geçip seyretmek. ...",
+        "url": "https://www.pinterest.com/pin/185069865934660584/"
+       },
+       {
+        "sira": 5,
+        "baslik": "Vitrin",
+        "url": "https://tr.pinterest.com/pin/banyomarka-artema-duravit-vitra-grohe-hansgrohe-ve-daha-fazlas--519884350736457898/"
+       }
+      ]
+     },
+     "ECA": {
+      "sonuc": 1,
+      "en_iyi_sira": 9,
+      "ornek": [
+       {
+        "sira": 9,
+        "baslik": "Tüm Ürünler - ISI TİCARET",
+        "url": "https://www.pinterest.com/pin/648307308836891021/"
+       }
+      ]
+     },
+     "Geberit": {
+      "sonuc": 1,
+      "en_iyi_sira": 9,
+      "ornek": [
+       {
+        "sira": 9,
+        "baslik": "Tüm Ürünler - ISI TİCARET",
+        "url": "https://www.pinterest.com/pin/648307308836891021/"
+       }
+      ]
+     },
+     "Grohe": {
+      "sonuc": 2,
+      "en_iyi_sira": 5,
+      "ornek": [
+       {
+        "sira": 5,
+        "baslik": "Vitrin",
+        "url": "https://tr.pinterest.com/pin/banyomarka-artema-duravit-vitra-grohe-hansgrohe-ve-daha-fazlas--519884350736457898/"
+       },
+       {
+        "sira": 9,
+        "baslik": "Tüm Ürünler - ISI TİCARET",
+        "url": "https://www.pinterest.com/pin/648307308836891021/"
+       }
+      ]
+     },
+     "Duravit": {
+      "sonuc": 1,
+      "en_iyi_sira": 5,
+      "ornek": [
+       {
+        "sira": 5,
+        "baslik": "Vitrin",
+        "url": "https://tr.pinterest.com/pin/banyomarka-artema-duravit-vitra-grohe-hansgrohe-ve-daha-fazlas--519884350736457898/"
+       }
+      ]
+     },
+     "Hansgrohe": {
+      "sonuc": 1,
+      "en_iyi_sira": 5,
+      "ornek": [
+       {
+        "sira": 5,
+        "baslik": "Vitrin",
+        "url": "https://tr.pinterest.com/pin/banyomarka-artema-duravit-vitra-grohe-hansgrohe-ve-daha-fazlas--519884350736457898/"
+       }
+      ]
+     }
+    }
+   },
+   {
+    "sorgu": "site:pinterest.com banyo dolabı modelleri",
+    "marka_adli_sorgu": false,
+    "toplam_organik_sonuc": 20,
+    "pinterest_sonuc": 10,
+    "markalar": {}
+   },
+   {
+    "sorgu": "site:pinterest.com modern banyo tasarımları",
+    "marka_adli_sorgu": false,
+    "toplam_organik_sonuc": 30,
+    "pinterest_sonuc": 10,
+    "markalar": {}
+   },
+   {
+    "sorgu": "site:pinterest.com banyo dekorasyon fikirleri",
+    "marka_adli_sorgu": false,
+    "toplam_organik_sonuc": 29,
+    "pinterest_sonuc": 9,
+    "markalar": {}
+   },
+   {
+    "sorgu": "site:pinterest.com küçük banyo dekorasyonu",
+    "marka_adli_sorgu": false,
+    "toplam_organik_sonuc": 30,
+    "pinterest_sonuc": 30,
+    "markalar": {}
+   },
+   {
+    "sorgu": "site:pinterest.com lavabo bataryası modelleri",
+    "marka_adli_sorgu": false,
+    "toplam_organik_sonuc": 29,
+    "pinterest_sonuc": 29,
+    "markalar": {
+     "Ideal Standard": {
+      "sonuc": 1,
+      "en_iyi_sira": 3,
+      "ornek": [
+       {
+        "sira": 3,
+        "baslik": "Lavabo Modelleri ile ilgili görsel sonucu",
+        "url": "https://tr.pinterest.com/pin/460915343108924728/"
+       }
+      ]
+     }
+    }
+   },
+   {
+    "sorgu": "vitra banyo pinterest",
+    "marka_adli_sorgu": true,
+    "toplam_organik_sonuc": 29,
+    "pinterest_sonuc": 16,
+    "markalar": {
+     "VitrA": {
+      "sonuc": 15,
+      "en_iyi_sira": 1,
+      "ornek": [
+       {
+        "sira": 1,
+        "baslik": "Vitra Banyo Modelleri",
+        "url": "https://tr.pinterest.com/ideas/vitra-banyo-modelleri/907316450588/"
+       },
+       {
+        "sira": 2,
+        "baslik": "Vitra banyo için 8 fikir",
+        "url": "https://tr.pinterest.com/simge_88/vitra-banyo/"
+       }
+      ]
+     }
+    }
+   }
+  ],
+  "marka_toplam": {},
+  "marka_toplam_tum_sorgular": {
+   "VitrA": {
+    "top10_sonuc": 30,
+    "top30_sonuc": 37,
+    "sorgu_sayisi": 4,
+    "en_iyi_sira": 1
+   },
+   "Artema": {
+    "top10_sonuc": 6,
+    "top30_sonuc": 6,
+    "sorgu_sayisi": 2,
+    "en_iyi_sira": 1
+   },
+   "Kale": {
+    "top10_sonuc": 0,
+    "top30_sonuc": 0,
+    "sorgu_sayisi": 0,
+    "en_iyi_sira": null
+   },
+   "Creavit": {
+    "top10_sonuc": 0,
+    "top30_sonuc": 0,
+    "sorgu_sayisi": 0,
+    "en_iyi_sira": null
+   },
+   "ECA": {
+    "top10_sonuc": 1,
+    "top30_sonuc": 1,
+    "sorgu_sayisi": 1,
+    "en_iyi_sira": 9
+   },
+   "Geberit": {
+    "top10_sonuc": 1,
+    "top30_sonuc": 1,
+    "sorgu_sayisi": 1,
+    "en_iyi_sira": 9
+   },
+   "Grohe": {
+    "top10_sonuc": 2,
+    "top30_sonuc": 2,
+    "sorgu_sayisi": 1,
+    "en_iyi_sira": 5
+   },
+   "Duravit": {
+    "top10_sonuc": 1,
+    "top30_sonuc": 1,
+    "sorgu_sayisi": 1,
+    "en_iyi_sira": 5
+   },
+   "Ideal Standard": {
+    "top10_sonuc": 2,
+    "top30_sonuc": 2,
+    "sorgu_sayisi": 2,
+    "en_iyi_sira": 3
+   },
+   "Hansgrohe": {
+    "top10_sonuc": 1,
+    "top30_sonuc": 1,
+    "sorgu_sayisi": 1,
+    "en_iyi_sira": 5
+   },
+   "Kütahya Seramik": {
+    "top10_sonuc": 0,
+    "top30_sonuc": 0,
+    "sorgu_sayisi": 0,
+    "en_iyi_sira": null
+   },
+   "Villeroy & Boch": {
+    "top10_sonuc": 0,
+    "top30_sonuc": 0,
+    "sorgu_sayisi": 0,
+    "en_iyi_sira": null
+   }
+  },
+  "marka_toplam_markasiz_sorgular": {
+   "VitrA": {
+    "top30_sonuc": 0,
+    "sorgu_sayisi": 0,
+    "en_iyi_sira": null
+   },
+   "Artema": {
+    "top30_sonuc": 0,
+    "sorgu_sayisi": 0,
+    "en_iyi_sira": null
+   },
+   "Kale": {
+    "top30_sonuc": 0,
+    "sorgu_sayisi": 0,
+    "en_iyi_sira": null
+   },
+   "Creavit": {
+    "top30_sonuc": 0,
+    "sorgu_sayisi": 0,
+    "en_iyi_sira": null
+   },
+   "ECA": {
+    "top30_sonuc": 0,
+    "sorgu_sayisi": 0,
+    "en_iyi_sira": null
+   },
+   "Geberit": {
+    "top30_sonuc": 0,
+    "sorgu_sayisi": 0,
+    "en_iyi_sira": null
+   },
+   "Grohe": {
+    "top30_sonuc": 0,
+    "sorgu_sayisi": 0,
+    "en_iyi_sira": null
+   },
+   "Duravit": {
+    "top30_sonuc": 0,
+    "sorgu_sayisi": 0,
+    "en_iyi_sira": null
+   },
+   "Ideal Standard": {
+    "top30_sonuc": 1,
+    "sorgu_sayisi": 1,
+    "en_iyi_sira": 3
+   },
+   "Hansgrohe": {
+    "top30_sonuc": 0,
+    "sorgu_sayisi": 0,
+    "en_iyi_sira": null
+   },
+   "Kütahya Seramik": {
+    "top30_sonuc": 0,
+    "sorgu_sayisi": 0,
+    "en_iyi_sira": null
+   },
+   "Villeroy & Boch": {
+    "top30_sonuc": 0,
+    "sorgu_sayisi": 0,
+    "en_iyi_sira": null
+   }
+  },
+  "not": "Yalnızca pinterest alan adındaki sonuçlar sayıldı; eşleşme sonuç başlığı, açıklaması veya adresinde marka adının geçmesine göredir (pinin içindeki görsel okunmadı). Marka adlı sorgular ayrı gösterildi."
+ }
+}

@@ -9,11 +9,11 @@ def kucuk(s):
 # tema -> (etiket, [regex])
 TEMALAR = {
  "kalite": ("Ürün kalitesi, sızıntı, kırılma", [
-    r"sızıntı|sızdır|su kaçır|kaçırıyor|su akıt|akıtıyor|damlat|kırıl|kırık|çatla|çatlak|leke|lekel|kararma|karar[ıd]|pas(?:lan|la)|paslan|soyul|kabar|kalkma|kalkıyor|deform|kaplama|kalitesiz|kalite|dayanıksız|menteşe|arıza|bozul|bozuk|defolu|kusur|ayıplı|hatalı ürün|üretim hatası|tasarım hata|çizik|çizil|sararma|sarı|hijyen|temizlen|sifon|kapak kayma|gevşi|patla|yavaş kapan|jilet|keskin"]),
+    r"sızıntı|sızdır|su kaçır|kaçırıyor|su akıt|akıtıyor|damlat|kırıl|kırık|çatla|çatlak|leke|lekel|kararma|karar[ıd]|pas(?:lan|la)|paslan|soyul|kabar|kalkma|kalkıyor|deform|kaplama|kalitesiz|kalite|dayanıksız|menteşe|arıza|bozul|bozuk|defolu|kusur|ayıplı|hatalı ürün|üretim hatası|tasarım hata|çizik|çizil|sararma|sarı leke|hijyen|kapak kayma|gevşi|patla|yavaş kapan|jilet|keskin"]),
  "montaj": ("Montaj ve usta", [
     r"montaj|usta|tesisatç|kurulum|taktır|takılma|monte|takan|takılırken|söküm|keşif"]),
  "servis_garanti": ("Yetkili servis ve garanti", [
-    r"servis|garanti|yetkili|teknik ekip|arıza kayd|kullanıcı hatası|usta hatası|ücretli|ücret talep|kontrol ücreti|randevu"]),
+    r"servis|garanti|yetkili|teknik ekip|arıza kayd|kullanıcı hatası|usta hatası|kontrol ücreti"]),
  "yedek_parca": ("Yedek parça bulunamaması", [
     r"yedek parça|yedek parca|parça temin|parça bulun|parçası bulun|parça(?:sı|yı|nın)? (?:sipariş|talep|gelmedi|stok|bekle|bekleme)|parça bekleme|stokta yok|üretimden kalk|üretimi dur|tek başına satış|komple set|parçası yok|parça yok|parçasını"]),
  "vitra_online": ("vitra.com.tr sipariş, teslimat ve iade", [
@@ -21,11 +21,11 @@ TEMALAR = {
  "pazaryeri": ("Pazaryeri ve üçüncü taraf satıcı", [
     r"trendyol|hepsiburada|\bn11\b|amazon|çiçeksepeti|pazarama|pttavm|ptt avm|idefix|akakçe|cimri|satıcı|satici|pazaryeri|marketplace|evdeniste|karo grup|banyomarka|banyoline|banyomega|evidea|ikea|hepsijet"]),
  "fiyat_kampanya": ("Fiyat ve kampanya", [
-    r"fiyat|pahalı|kampanya|indirim|taksit|kupon|zam\b|zamlı|fahiş|aşırı ücret|fark(?:ı)? öde|iade bedel|bedel|ücret|tl\b|₺"]),
+    r"fiyat|pahalı|kampanya|indirim|taksit|kupon|zam\b|zamlı|fahiş|aşırı ücret|haksız ücret|kontrol ücreti|servis ücreti|ek ücret|ücret talep|ücretli servis|iade bedel"]),
  "iletisim": ("İletişim ve çağrı merkezi", [
-    r"müşteri hizmet|çağrı merkezi|iletişim|dönüş yap|geri dönüş|cevap ver|yanıt|aranmad|arayan yok|ulaşılam|ulaşamı|0850|e-posta|mail|destek hatt|telefon|ilgisiz|ilgilen|kaba|saygısız|üslup|muhatap"]),
+    r"müşteri hizmet|çağrı merkezi|iletişim|dönüş yap|geri dönüş|cevap ver|cevap alama|yanıt ver|yanıt alama|aranmad|arayan yok|ulaşılam|ulaşamı|0850|destek hatt|muhatap|ilgisiz|ilgilenmi|ilgilenmedi|kaba|saygısız|üslup"]),
  "magaza_bayi": ("Mağaza ve bayi", [
-    r"bayi|mağaza|showroom|satış nokta|koçtaş|bauhaus|tekzen|yapı market|yapı merkezi|evdema|nova|hırdavat|inşaat malzeme|banyo mağaza|şube"]),
+    r"bayi|mağaza|showroom|satış nokta|koçtaş|bauhaus|tekzen|yapı market|yapı merkezi|evdema|nova\b|hırdavat|inşaat malzeme"]),
 }
 SIRA = ["yedek_parca", "vitra_online", "pazaryeri", "montaj", "servis_garanti", "fiyat_kampanya", "iletisim", "magaza_bayi", "kalite"]
 DERLI = {k: [re.compile(p) for p in v[1]] for k, v in TEMALAR.items()}
