@@ -108,3 +108,6 @@ HTML = """
                                    ("Puan ve değerlendirme alanı:", "Rating and review fields:", "Shopping ilanlarında çok az dolu geldiği için analize alınmamıştır.", "were filled in very few Shopping listings and were left out of the analysis.")])),
  kaynak("Google Shopping (DataForSEO merchant/google/products ve merchant/google/sellers) · 30 kelime × 120 ilan, 24 satıcı listesi · Türkiye, masaüstü · 29.09.2026 · Akakçe ve Cimri sınırlı okuma", "Google Shopping (DataForSEO merchant/google/products and merchant/google/sellers) · 30 keywords × 120 listings, 24 seller lists · Turkey, desktop · 29.09.2026 · Akakçe and Cimri limited reading", "D25"),
 )
+
+from b_fiyat2 import EK as _EK
+HTML = HTML + _EK

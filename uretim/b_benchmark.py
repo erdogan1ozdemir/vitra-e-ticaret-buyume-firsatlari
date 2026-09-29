@@ -46,7 +46,7 @@ DIJ = tablo([th("Araç", "Tool", "Ürün keşfi ya da dijital deneyim aracı.", 
      [x("Finansman", "Financing"), veri_m("IKEA, Victorian Plumbing, Home Depot"), x("Uzun vadeli kredi, %0 faizli taksit, proje kredisi", "Long-term credit, 0% instalments, project loans"), dr("Kısmi"),
       x("Vade farksız 6 ay taksit ve Banyo Asistanı'nda 9 taksit; tek bir taksit mesajında birleştirilebilir", "6 months interest-free and 9 instalments in the Bathroom Assistant; can be unified into a single instalment message")],
      [x("Montaj rehberi ve video", "Installation guides and videos"), veri_m("Grohe, Hansgrohe, Koçtaş"), x("Ürün bazında montaj kılavuzu ve video", "Product-level installation guides and videos"), dr("Var"),
-      x("Montaj rehberi sayfası 16 ayda yaklaşık 4.100 tık almış; ürün sayfasında montaj kılavuzu PDF'i bulunuyor. Tamir videoları eksik (Bölüm 09)", "The installation guide page received about 4,100 clicks in 16 months; the product page carries an installation manual PDF. Repair videos are missing (Section 09)")]], "uzun")
+      x("Montaj rehberi sayfası 16 ayda yaklaşık 4.100 tık almış; ürün sayfasında montaj kılavuzu PDF'i bulunuyor. Tamir videoları eksik (Bölüm [[b:youtube]])", "The installation guide page received about 4,100 clicks in 16 months; the product page carries an installation manual PDF. Repair videos are missing (Section [[b:youtube]])")]], "uzun")
 HTML = """
 <p class="lede">%s</p>
 <h3>%s</h3>

@@ -30,7 +30,7 @@ KATEGORILER = [
     ('banyo_aksesuar_seti', 'Banyo aksesuar seti', 'https://www.trendyol.com/sr?wc=104210&sst=BEST_SELLER', 'https://www.hepsiburada.com/banyo-aksesuar-setleri-c-18021935?siralama=coksatan'),
 ]
 
-ALIAS = {'turkuazseramik': 'Turkuaz', 'ecaserel': 'Eca', 'eca': 'Eca', 'genelmarkalar': 'Markasız (Genel Markalar)', 'kale': 'Kale', 'vitra': 'VitrA', 'artema': 'Artema',
+ALIAS = {'nkp': 'NKP', 'turkuazseramik': 'Turkuaz', 'ecaserel': 'Eca', 'eca': 'Eca', 'genelmarkalar': 'Markasız (Genel Markalar)', 'kale': 'Kale', 'vitra': 'VitrA', 'artema': 'Artema',
          'okyanushome': 'Okyanus Home', 'karenbanyo': 'Karen Banyo', 'sueLhouse': 'Suel House'}
 
 
@@ -41,12 +41,19 @@ def tr_norm(s):
     return re.sub(r'[^a-z0-9]', '', s)
 
 
+KANONIK = {}
+
+
 def marka_adi(m):
     n = tr_norm(m)
     for k, v in ALIAS.items():
         if n == k.lower():
             return v
-    return (m or '').strip() or 'Belirtilmemiş'
+    if n.endswith('armatur') and len(n) > 9:
+        n = n[:-7]
+    if n in ('belirtilmemis', ''):
+        return 'Belirtilmemiş'
+    return KANONIK.get(n, (m or '').strip())
 
 
 def slug(s):
@@ -58,6 +65,8 @@ def satici_tip(marka, satici, kanal):
     sm, ss = tr_norm(marka), tr_norm(satici)
     if kanal == 'hb' and ss == 'hepsiburada':
         return 'platform'
+    if ss == 'vitra' and sm in ('vitra', 'artema'):
+        return 'resmi'
     if len(sm) >= 4 and (sm in ss or (len(ss) >= 4 and ss in sm)) and sm not in ('genelmarkalar',):
         return 'resmi'
     return '3P'
@@ -69,7 +78,7 @@ def ty_satirlari():
     for anahtar, ad, tyurl, _ in KATEGORILER:
         rows = []
         for i, l in enumerate(open(DIZIN / f'ty/{anahtar}.txt', encoding='utf-8'), 1):
-            p = l.rstrip('\n').split('|')
+            p = [x.strip() for x in l.rstrip('\n').split('|')]
             if anahtar == 'klozet':
                 marka, urun, fiyat, eski, satici, puan, deg, promo, pid, mid = p[:10]
             else:
@@ -131,7 +140,28 @@ def ozet(rows):
     return o, marka
 
 
+def kanonik_kur():
+    """Aynı markanın farklı yazımlarını (Nkp/NKP, KAREN BANYO/Karen Banyo) tek biçime indirir: en sık geçen yazım kullanılır."""
+    sayac = defaultdict(Counter)
+    for anahtar, *_ in KATEGORILER:
+        for l in open(DIZIN / f'ty/{anahtar}.txt', encoding='utf-8'):
+            m = l.split('|')[0]
+            n = tr_norm(m)
+            n = n[:-7] if n.endswith('armatur') and len(n) > 9 else n
+            sayac[n][m] += 1
+        for r in json.load(open(DIZIN / f'hb/{anahtar}.json'))['rows']:
+            m = r['marka'] or ''
+            n = tr_norm(m)
+            n = n[:-7] if n.endswith('armatur') and len(n) > 9 else n
+            sayac[n][m] += 1
+    for n, c in sayac.items():
+        # tamamı büyük harf olmayan yazımı tercih et
+        adaylar = sorted(c.items(), key=lambda kv: (kv[0].isupper(), -kv[1]))
+        KANONIK[n] = adaylar[0][0].strip()
+
+
 def main():
+    kanonik_kur()
     ty = ty_satirlari()
     hb, hbmeta = hb_satirlari()
     cok = {'kaynak': {'ty': 'Trendyol · Apify automation-lab/trendyol-scraper · sst=BEST_SELLER · ilk 36 · 29.09.2026', 'hb': 'Hepsiburada · siralama=coksatan · ilk 36 (ilk sayfa) · 29.09.2026'},

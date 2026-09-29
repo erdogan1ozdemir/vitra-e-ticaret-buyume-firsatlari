@@ -1,0 +1,1882 @@
+{
+ "ty": {
+  "klozet": {
+   "n": 36,
+   "medyan_fiyat": 7035,
+   "min": 140.0,
+   "maks": 22500.0,
+   "marka_sayisi": 18,
+   "satici_sayisi": 21,
+   "en_buyuk_satici": [
+    "Hace Yapı Malzemeleri",
+    6
+   ],
+   "satici_tipi": {
+    "3P": 32,
+    "resmi": 4
+   },
+   "medyan_puan": 4.4,
+   "toplam_degerlendirme": 1060,
+   "indirimli_urun": 6,
+   "vitra_urun": 3,
+   "vitra_degerlendirme": 34,
+   "vitra_siralar": [
+    10,
+    22,
+    23
+   ],
+   "vitra_medyan_fiyat": 15534,
+   "vitra_resmi_magaza": 1,
+   "vitra_3p": 2,
+   "vitra_degerlendirme_payi": 3.2,
+   "marka_ilk": [
+    [
+     "Turavit",
+     6,
+     402,
+     37.9
+    ],
+    [
+     "MUFFMATİK",
+     1,
+     301,
+     28.4
+    ],
+    [
+     "Turkuaz",
+     6,
+     115,
+     10.8
+    ],
+    [
+     "Seramiksan",
+     3,
+     97,
+     9.2
+    ],
+    [
+     "Karen Banyo",
+     1,
+     43,
+     4.1
+    ],
+    [
+     "Creavit",
+     4,
+     35,
+     3.3
+    ]
+   ]
+  },
+  "klozet_kapagi": {
+   "n": 36,
+   "medyan_fiyat": 640,
+   "min": 14.5,
+   "maks": 1699.0,
+   "marka_sayisi": 23,
+   "satici_sayisi": 28,
+   "en_buyuk_satici": [
+    "BRT YAPI",
+    4
+   ],
+   "satici_tipi": {
+    "3P": 28,
+    "resmi": 8
+   },
+   "medyan_puan": 4.2,
+   "toplam_degerlendirme": 18399,
+   "indirimli_urun": 3,
+   "vitra_urun": 1,
+   "vitra_degerlendirme": 471,
+   "vitra_siralar": [
+    11
+   ],
+   "vitra_medyan_fiyat": 1699,
+   "vitra_resmi_magaza": 0,
+   "vitra_3p": 1,
+   "vitra_degerlendirme_payi": 2.6,
+   "marka_ilk": [
+    [
+     "Visam",
+     3,
+     3826,
+     20.8
+    ],
+    [
+     "ELİTRA",
+     1,
+     3631,
+     19.7
+    ],
+    [
+     "Saban",
+     1,
+     2887,
+     15.7
+    ],
+    [
+     "NKP",
+     5,
+     2386,
+     13.0
+    ],
+    [
+     "Markasız (Genel Markalar)",
+     5,
+     1640,
+     8.9
+    ],
+    [
+     "Akdeniz",
+     1,
+     859,
+     4.7
+    ]
+   ]
+  },
+  "lavabo": {
+   "n": 36,
+   "medyan_fiyat": 2844,
+   "min": 72.0,
+   "maks": 5469.0,
+   "marka_sayisi": 15,
+   "satici_sayisi": 19,
+   "en_buyuk_satici": [
+    "New Banyostyle",
+    12
+   ],
+   "satici_tipi": {
+    "3P": 28,
+    "resmi": 8
+   },
+   "medyan_puan": 4.6,
+   "toplam_degerlendirme": 3423,
+   "indirimli_urun": 1,
+   "vitra_urun": 0,
+   "vitra_degerlendirme": 0,
+   "vitra_siralar": [],
+   "vitra_medyan_fiyat": null,
+   "vitra_resmi_magaza": 0,
+   "vitra_3p": 0,
+   "vitra_degerlendirme_payi": 0.0,
+   "marka_ilk": [
+    [
+     "Turkuaz",
+     16,
+     2008,
+     58.7
+    ],
+    [
+     "Markasız (Genel Markalar)",
+     2,
+     902,
+     26.4
+    ],
+    [
+     "shop",
+     1,
+     191,
+     5.6
+    ],
+    [
+     "Karen Banyo",
+     2,
+     142,
+     4.1
+    ],
+    [
+     "SUROBOTİC",
+     1,
+     86,
+     2.5
+    ],
+    [
+     "MEDIKALONE",
+     1,
+     24,
+     0.7
+    ]
+   ]
+  },
+  "banyo_dolabi": {
+   "n": 36,
+   "medyan_fiyat": 6199,
+   "min": 50.0,
+   "maks": 13749.9,
+   "marka_sayisi": 15,
+   "satici_sayisi": 16,
+   "en_buyuk_satici": [
+    "KAREN BANYO",
+    7
+   ],
+   "satici_tipi": {
+    "3P": 8,
+    "resmi": 28
+   },
+   "medyan_puan": 4.4,
+   "toplam_degerlendirme": 8821,
+   "indirimli_urun": 1,
+   "vitra_urun": 0,
+   "vitra_degerlendirme": 0,
+   "vitra_siralar": [],
+   "vitra_medyan_fiyat": null,
+   "vitra_resmi_magaza": 0,
+   "vitra_3p": 0,
+   "vitra_degerlendirme_payi": 0.0,
+   "marka_ilk": [
+    [
+     "Karen Banyo",
+     7,
+     3145,
+     35.7
+    ],
+    [
+     "ÖZCEDEN",
+     5,
+     1974,
+     22.4
+    ],
+    [
+     "Markasız (Genel Markalar)",
+     2,
+     1370,
+     15.5
+    ],
+    [
+     "Alesta Life",
+     1,
+     443,
+     5.0
+    ],
+    [
+     "ROOMART",
+     6,
+     404,
+     4.6
+    ],
+    [
+     "BALNEOM",
+     2,
+     336,
+     3.8
+    ]
+   ]
+  },
+  "camasir_makinesi_dolabi": {
+   "n": 36,
+   "medyan_fiyat": 2749,
+   "min": 581.28,
+   "maks": 6900.0,
+   "marka_sayisi": 20,
+   "satici_sayisi": 20,
+   "en_buyuk_satici": [
+    "BofigoGrup",
+    8
+   ],
+   "satici_tipi": {
+    "resmi": 31,
+    "3P": 5
+   },
+   "medyan_puan": 4.1,
+   "toplam_degerlendirme": 15254,
+   "indirimli_urun": 2,
+   "vitra_urun": 0,
+   "vitra_degerlendirme": 0,
+   "vitra_siralar": [],
+   "vitra_medyan_fiyat": null,
+   "vitra_resmi_magaza": 0,
+   "vitra_3p": 0,
+   "vitra_degerlendirme_payi": 0.0,
+   "marka_ilk": [
+    [
+     "Remaks",
+     5,
+     4445,
+     29.1
+    ],
+    [
+     "Bofigo",
+     8,
+     3438,
+     22.5
+    ],
+    [
+     "Moonlife Mobilya",
+     2,
+     1619,
+     10.6
+    ],
+    [
+     "Kenzlife",
+     2,
+     1064,
+     7.0
+    ],
+    [
+     "Tolia Home",
+     3,
+     1007,
+     6.6
+    ],
+    [
+     "Aeka",
+     2,
+     923,
+     6.1
+    ]
+   ]
+  },
+  "dusakabin": {
+   "n": 36,
+   "medyan_fiyat": 6799,
+   "min": 5329.0,
+   "maks": 10560.0,
+   "marka_sayisi": 6,
+   "satici_sayisi": 6,
+   "en_buyuk_satici": [
+    "Durul",
+    18
+   ],
+   "satici_tipi": {
+    "resmi": 35,
+    "3P": 1
+   },
+   "medyan_puan": 4.2,
+   "toplam_degerlendirme": 4034,
+   "indirimli_urun": 6,
+   "vitra_urun": 0,
+   "vitra_degerlendirme": 0,
+   "vitra_siralar": [],
+   "vitra_medyan_fiyat": null,
+   "vitra_resmi_magaza": 0,
+   "vitra_3p": 0,
+   "vitra_degerlendirme_payi": 0.0,
+   "marka_ilk": [
+    [
+     "Durul",
+     18,
+     3747,
+     92.9
+    ],
+    [
+     "MONAQUA",
+     8,
+     189,
+     4.7
+    ],
+    [
+     "Docciabella Banyo",
+     7,
+     64,
+     1.6
+    ],
+    [
+     "OBERS",
+     1,
+     32,
+     0.8
+    ],
+    [
+     "Waterline Duşakabin",
+     1,
+     2,
+     0.0
+    ],
+    [
+     "Shower",
+     1,
+     0,
+     0.0
+    ]
+   ]
+  },
+  "banyo_bataryasi": {
+   "n": 36,
+   "medyan_fiyat": 1950,
+   "min": 199.98,
+   "maks": 7112.0,
+   "marka_sayisi": 16,
+   "satici_sayisi": 14,
+   "en_buyuk_satici": [
+    "VİOSA ELITE",
+    7
+   ],
+   "satici_tipi": {
+    "3P": 25,
+    "resmi": 11
+   },
+   "medyan_puan": 4.0,
+   "toplam_degerlendirme": 7877,
+   "indirimli_urun": 3,
+   "vitra_urun": 1,
+   "vitra_degerlendirme": 10,
+   "vitra_siralar": [
+    29
+   ],
+   "vitra_medyan_fiyat": 7112,
+   "vitra_resmi_magaza": 1,
+   "vitra_3p": 0,
+   "vitra_degerlendirme_payi": 0.1,
+   "marka_ilk": [
+    [
+     "Markasız (Genel Markalar)",
+     4,
+     3021,
+     38.4
+    ],
+    [
+     "armour armatür",
+     5,
+     1727,
+     21.9
+    ],
+    [
+     "USO",
+     1,
+     718,
+     9.1
+    ],
+    [
+     "Kustar",
+     3,
+     635,
+     8.1
+    ],
+    [
+     "Viosa",
+     6,
+     459,
+     5.8
+    ],
+    [
+     "VSA",
+     5,
+     458,
+     5.8
+    ]
+   ]
+  },
+  "lavabo_bataryasi": {
+   "n": 36,
+   "medyan_fiyat": 1004,
+   "min": 169.0,
+   "maks": 3499.0,
+   "marka_sayisi": 19,
+   "satici_sayisi": 15,
+   "en_buyuk_satici": [
+    "KUSTAR",
+    7
+   ],
+   "satici_tipi": {
+    "3P": 16,
+    "resmi": 20
+   },
+   "medyan_puan": 4.2,
+   "toplam_degerlendirme": 12876,
+   "indirimli_urun": 3,
+   "vitra_urun": 0,
+   "vitra_degerlendirme": 0,
+   "vitra_siralar": [],
+   "vitra_medyan_fiyat": null,
+   "vitra_resmi_magaza": 0,
+   "vitra_3p": 0,
+   "vitra_degerlendirme_payi": 0.0,
+   "marka_ilk": [
+    [
+     "Markasız (Genel Markalar)",
+     4,
+     3808,
+     29.6
+    ],
+    [
+     "Sardıcı",
+     4,
+     2081,
+     16.2
+    ],
+    [
+     "Kustar",
+     7,
+     1779,
+     13.8
+    ],
+    [
+     "Yuen",
+     2,
+     998,
+     7.8
+    ],
+    [
+     "VSA",
+     1,
+     810,
+     6.3
+    ],
+    [
+     "armour armatür",
+     1,
+     679,
+     5.3
+    ]
+   ]
+  },
+  "dus_seti": {
+   "n": 36,
+   "medyan_fiyat": 349,
+   "min": 49.9,
+   "maks": 4049.0,
+   "marka_sayisi": 17,
+   "satici_sayisi": 18,
+   "en_buyuk_satici": [
+    "NOY",
+    7
+   ],
+   "satici_tipi": {
+    "3P": 21,
+    "resmi": 15
+   },
+   "medyan_puan": 4.3,
+   "toplam_degerlendirme": 47675,
+   "indirimli_urun": 2,
+   "vitra_urun": 0,
+   "vitra_degerlendirme": 0,
+   "vitra_siralar": [],
+   "vitra_medyan_fiyat": null,
+   "vitra_resmi_magaza": 0,
+   "vitra_3p": 0,
+   "vitra_degerlendirme_payi": 0.0,
+   "marka_ilk": [
+    [
+     "NOY",
+     7,
+     9870,
+     20.7
+    ],
+    [
+     "Kaşbaşı Home",
+     1,
+     7440,
+     15.6
+    ],
+    [
+     "Kitchen Beauty",
+     2,
+     6893,
+     14.5
+    ],
+    [
+     "İndirimKap",
+     1,
+     5082,
+     10.7
+    ],
+    [
+     "Berev",
+     7,
+     4147,
+     8.7
+    ],
+    [
+     "Markasız (Genel Markalar)",
+     3,
+     3564,
+     7.5
+    ]
+   ]
+  },
+  "taharet_musluk": {
+   "n": 36,
+   "medyan_fiyat": 303,
+   "min": 48.99,
+   "maks": 1899.0,
+   "marka_sayisi": 21,
+   "satici_sayisi": 26,
+   "en_buyuk_satici": [
+    "VİOSA ELITE",
+    7
+   ],
+   "satici_tipi": {
+    "3P": 25,
+    "resmi": 11
+   },
+   "medyan_puan": 4.0,
+   "toplam_degerlendirme": 6728,
+   "indirimli_urun": 1,
+   "vitra_urun": 4,
+   "vitra_degerlendirme": 620,
+   "vitra_siralar": [
+    1,
+    5,
+    23,
+    30
+   ],
+   "vitra_medyan_fiyat": 528,
+   "vitra_resmi_magaza": 0,
+   "vitra_3p": 4,
+   "vitra_degerlendirme_payi": 9.2,
+   "marka_ilk": [
+    [
+     "Markasız (Genel Markalar)",
+     7,
+     3053,
+     45.4
+    ],
+    [
+     "Demiray",
+     1,
+     972,
+     14.4
+    ],
+    [
+     "Suvia",
+     4,
+     711,
+     10.6
+    ],
+    [
+     "Artema",
+     4,
+     620,
+     9.2
+    ],
+    [
+     "Viosa",
+     4,
+     385,
+     5.7
+    ],
+    [
+     "armour armatür",
+     1,
+     263,
+     3.9
+    ]
+   ]
+  },
+  "rezervuar_ic_takim": {
+   "n": 36,
+   "medyan_fiyat": 353,
+   "min": 61.0,
+   "maks": 5890.0,
+   "marka_sayisi": 16,
+   "satici_sayisi": 20,
+   "en_buyuk_satici": [
+    "Banyosepeti Prime",
+    8
+   ],
+   "satici_tipi": {
+    "3P": 32,
+    "resmi": 4
+   },
+   "medyan_puan": 4.5,
+   "toplam_degerlendirme": 3338,
+   "indirimli_urun": 11,
+   "vitra_urun": 8,
+   "vitra_degerlendirme": 507,
+   "vitra_siralar": [
+    2,
+    3,
+    12,
+    15,
+    21,
+    26,
+    32,
+    33
+   ],
+   "vitra_medyan_fiyat": 181,
+   "vitra_resmi_magaza": 1,
+   "vitra_3p": 7,
+   "vitra_degerlendirme_payi": 15.2,
+   "marka_ilk": [
+    [
+     "Visam",
+     3,
+     887,
+     26.6
+    ],
+    [
+     "Eca",
+     4,
+     595,
+     17.8
+    ],
+    [
+     "VitrA",
+     8,
+     507,
+     15.2
+    ],
+    [
+     "Markasız (Genel Markalar)",
+     5,
+     473,
+     14.2
+    ],
+    [
+     "Aktürk",
+     1,
+     293,
+     8.8
+    ],
+    [
+     "Hakersan",
+     1,
+     144,
+     4.3
+    ]
+   ]
+  },
+  "gomme_rezervuar": {
+   "n": 36,
+   "medyan_fiyat": 482,
+   "min": 63.0,
+   "maks": 5890.0,
+   "marka_sayisi": 15,
+   "satici_sayisi": 21,
+   "en_buyuk_satici": [
+    "Banyosepeti Prime",
+    7
+   ],
+   "satici_tipi": {
+    "3P": 32,
+    "resmi": 4
+   },
+   "medyan_puan": 4.5,
+   "toplam_degerlendirme": 3895,
+   "indirimli_urun": 9,
+   "vitra_urun": 6,
+   "vitra_degerlendirme": 564,
+   "vitra_siralar": [
+    3,
+    11,
+    15,
+    22,
+    25,
+    30
+   ],
+   "vitra_medyan_fiyat": 540,
+   "vitra_resmi_magaza": 2,
+   "vitra_3p": 4,
+   "vitra_degerlendirme_payi": 14.5,
+   "marka_ilk": [
+    [
+     "Visam",
+     5,
+     1153,
+     29.6
+    ],
+    [
+     "Markasız (Genel Markalar)",
+     7,
+     873,
+     22.4
+    ],
+    [
+     "Eca",
+     4,
+     595,
+     15.3
+    ],
+    [
+     "VitrA",
+     6,
+     564,
+     14.5
+    ],
+    [
+     "Aktürk",
+     1,
+     293,
+     7.5
+    ],
+    [
+     "Fluidmaster",
+     1,
+     82,
+     2.1
+    ]
+   ]
+  },
+  "banyo_aynasi": {
+   "n": 36,
+   "medyan_fiyat": 700,
+   "min": 75.0,
+   "maks": 2989.0,
+   "marka_sayisi": 24,
+   "satici_sayisi": 17,
+   "en_buyuk_satici": [
+    "meDDex",
+    6
+   ],
+   "satici_tipi": {
+    "3P": 19,
+    "resmi": 17
+   },
+   "medyan_puan": 4.5,
+   "toplam_degerlendirme": 9529,
+   "indirimli_urun": 2,
+   "vitra_urun": 0,
+   "vitra_degerlendirme": 0,
+   "vitra_siralar": [],
+   "vitra_medyan_fiyat": null,
+   "vitra_resmi_magaza": 0,
+   "vitra_3p": 0,
+   "vitra_degerlendirme_payi": 0.0,
+   "marka_ilk": [
+    [
+     "Suel House",
+     5,
+     4744,
+     49.8
+    ],
+    [
+     "nysamo",
+     3,
+     1429,
+     15.0
+    ],
+    [
+     "makbulce",
+     1,
+     619,
+     6.5
+    ],
+    [
+     "MGS GROUP",
+     1,
+     463,
+     4.9
+    ],
+    [
+     "woodstore",
+     1,
+     380,
+     4.0
+    ],
+    [
+     "Moemi",
+     5,
+     280,
+     2.9
+    ]
+   ]
+  },
+  "banyo_aksesuar_seti": {
+   "n": 36,
+   "medyan_fiyat": 480,
+   "min": 139.99,
+   "maks": 1554.44,
+   "marka_sayisi": 13,
+   "satici_sayisi": 14,
+   "en_buyuk_satici": [
+    "Okyanus Home",
+    13
+   ],
+   "satici_tipi": {
+    "3P": 9,
+    "resmi": 27
+   },
+   "medyan_puan": 4.4,
+   "toplam_degerlendirme": 40157,
+   "indirimli_urun": 3,
+   "vitra_urun": 0,
+   "vitra_degerlendirme": 0,
+   "vitra_siralar": [],
+   "vitra_medyan_fiyat": null,
+   "vitra_resmi_magaza": 0,
+   "vitra_3p": 0,
+   "vitra_degerlendirme_payi": 0.0,
+   "marka_ilk": [
+    [
+     "Okyanus Home",
+     13,
+     27906,
+     69.5
+    ],
+    [
+     "Tugomer",
+     2,
+     3324,
+     8.3
+    ],
+    [
+     "Homie",
+     7,
+     2722,
+     6.8
+    ],
+    [
+     "ORSA HOME",
+     2,
+     1778,
+     4.4
+    ],
+    [
+     "Primanova",
+     2,
+     1119,
+     2.8
+    ],
+    [
+     "KILINÇ STORE",
+     1,
+     975,
+     2.4
+    ]
+   ]
+  }
+ },
+ "hb": {
+  "klozet": {
+   "n": 36,
+   "medyan_fiyat": 6962,
+   "min": 154,
+   "maks": 17600,
+   "marka_sayisi": 10,
+   "satici_sayisi": 15,
+   "en_buyuk_satici": [
+    "Hepsiburada",
+    18
+   ],
+   "satici_tipi": {
+    "platform": 18,
+    "resmi": 4,
+    "3P": 14
+   },
+   "medyan_puan": 4.3,
+   "toplam_degerlendirme": 1654,
+   "indirimli_urun": 7,
+   "vitra_urun": 9,
+   "vitra_degerlendirme": 147,
+   "vitra_siralar": [
+    9,
+    12,
+    13,
+    19,
+    23,
+    25,
+    30,
+    32,
+    33
+   ],
+   "vitra_medyan_fiyat": 12027,
+   "vitra_resmi_magaza": 1,
+   "vitra_3p": 6,
+   "vitra_degerlendirme_payi": 8.9,
+   "marka_ilk": [
+    [
+     "Turkuaz",
+     3,
+     536,
+     32.4
+    ],
+    [
+     "Turavit",
+     5,
+     271,
+     16.4
+    ],
+    [
+     "Newarc",
+     2,
+     232,
+     14.0
+    ],
+    [
+     "Creavit",
+     7,
+     224,
+     13.5
+    ],
+    [
+     "VitrA",
+     9,
+     147,
+     8.9
+    ],
+    [
+     "Egemev",
+     2,
+     75,
+     4.5
+    ]
+   ]
+  },
+  "klozet_kapagi": {
+   "n": 36,
+   "medyan_fiyat": 670,
+   "min": 119,
+   "maks": 2600,
+   "marka_sayisi": 20,
+   "satici_sayisi": 26,
+   "en_buyuk_satici": [
+    "Hepsiburada",
+    4
+   ],
+   "satici_tipi": {
+    "3P": 28,
+    "platform": 4,
+    "resmi": 4
+   },
+   "medyan_puan": 4.5,
+   "toplam_degerlendirme": 11842,
+   "indirimli_urun": 6,
+   "vitra_urun": 8,
+   "vitra_degerlendirme": 1039,
+   "vitra_siralar": [
+    3,
+    5,
+    19,
+    22,
+    29,
+    30,
+    33,
+    36
+   ],
+   "vitra_medyan_fiyat": 1318,
+   "vitra_resmi_magaza": 0,
+   "vitra_3p": 5,
+   "vitra_degerlendirme_payi": 8.8,
+   "marka_ilk": [
+    [
+     "NKP",
+     4,
+     5354,
+     45.2
+    ],
+    [
+     "Visam",
+     5,
+     1495,
+     12.6
+    ],
+    [
+     "VitrA",
+     8,
+     1039,
+     8.8
+    ],
+    [
+     "Aqua Bagno",
+     1,
+     989,
+     8.4
+    ],
+    [
+     "Özbest",
+     1,
+     947,
+     8.0
+    ],
+    [
+     "Saban",
+     1,
+     884,
+     7.5
+    ]
+   ]
+  },
+  "lavabo": {
+   "n": 36,
+   "medyan_fiyat": 1635,
+   "min": 44,
+   "maks": 4810,
+   "marka_sayisi": 15,
+   "satici_sayisi": 15,
+   "en_buyuk_satici": [
+    "Hepsiburada",
+    19
+   ],
+   "satici_tipi": {
+    "3P": 10,
+    "resmi": 7,
+    "platform": 19
+   },
+   "medyan_puan": 4.6,
+   "toplam_degerlendirme": 1963,
+   "indirimli_urun": 2,
+   "vitra_urun": 0,
+   "vitra_degerlendirme": 0,
+   "vitra_siralar": [],
+   "vitra_medyan_fiyat": null,
+   "vitra_resmi_magaza": 0,
+   "vitra_3p": 0,
+   "vitra_degerlendirme_payi": 0.0,
+   "marka_ilk": [
+    [
+     "Turkuaz",
+     16,
+     1271,
+     64.7
+    ],
+    [
+     "İz Yapı",
+     3,
+     194,
+     9.9
+    ],
+    [
+     "Creavit",
+     1,
+     103,
+     5.2
+    ],
+    [
+     "Turavit",
+     4,
+     84,
+     4.3
+    ],
+    [
+     "Simay Marketim",
+     1,
+     58,
+     3.0
+    ],
+    [
+     "İTHAL",
+     1,
+     57,
+     2.9
+    ]
+   ]
+  },
+  "banyo_dolabi": {
+   "n": 36,
+   "medyan_fiyat": 924,
+   "min": 197,
+   "maks": 7353,
+   "marka_sayisi": 23,
+   "satici_sayisi": 23,
+   "en_buyuk_satici": [
+    "AEKA",
+    8
+   ],
+   "satici_tipi": {
+    "resmi": 33,
+    "3P": 3
+   },
+   "medyan_puan": 4.4,
+   "toplam_degerlendirme": 2777,
+   "indirimli_urun": 7,
+   "vitra_urun": 0,
+   "vitra_degerlendirme": 0,
+   "vitra_siralar": [],
+   "vitra_medyan_fiyat": null,
+   "vitra_resmi_magaza": 0,
+   "vitra_3p": 0,
+   "vitra_degerlendirme_payi": 0.0,
+   "marka_ilk": [
+    [
+     "Mowo Home",
+     6,
+     645,
+     23.2
+    ],
+    [
+     "Aeka",
+     8,
+     555,
+     20.0
+    ],
+    [
+     "ESMOPA MOBİLYA",
+     1,
+     260,
+     9.4
+    ],
+    [
+     "Tolia Home",
+     1,
+     185,
+     6.7
+    ],
+    [
+     "Tetto Elagante",
+     1,
+     151,
+     5.4
+    ],
+    [
+     "obido",
+     1,
+     147,
+     5.3
+    ]
+   ]
+  },
+  "camasir_makinesi_dolabi": {
+   "n": 36,
+   "medyan_fiyat": 2430,
+   "min": 234.64,
+   "maks": 21999,
+   "marka_sayisi": 21,
+   "satici_sayisi": 20,
+   "en_buyuk_satici": [
+    "Remaks",
+    5
+   ],
+   "satici_tipi": {
+    "resmi": 29,
+    "3P": 6,
+    "platform": 1
+   },
+   "medyan_puan": 4.1,
+   "toplam_degerlendirme": 3367,
+   "indirimli_urun": 3,
+   "vitra_urun": 0,
+   "vitra_degerlendirme": 0,
+   "vitra_siralar": [],
+   "vitra_medyan_fiyat": null,
+   "vitra_resmi_magaza": 0,
+   "vitra_3p": 0,
+   "vitra_degerlendirme_payi": 0.0,
+   "marka_ilk": [
+    [
+     "Evimde",
+     1,
+     910,
+     27.0
+    ],
+    [
+     "Wons",
+     1,
+     660,
+     19.6
+    ],
+    [
+     "Bofigo",
+     4,
+     531,
+     15.8
+    ],
+    [
+     "Tolia Home",
+     2,
+     226,
+     6.7
+    ],
+    [
+     "Remaks",
+     5,
+     188,
+     5.6
+    ],
+    [
+     "Aeka",
+     3,
+     187,
+     5.6
+    ]
+   ]
+  },
+  "dusakabin": {
+   "n": 36,
+   "medyan_fiyat": 6494,
+   "min": 249,
+   "maks": 9910,
+   "marka_sayisi": 5,
+   "satici_sayisi": 5,
+   "en_buyuk_satici": [
+    "DURUL",
+    27
+   ],
+   "satici_tipi": {
+    "resmi": 35,
+    "3P": 1
+   },
+   "medyan_puan": 4.1,
+   "toplam_degerlendirme": 2775,
+   "indirimli_urun": 0,
+   "vitra_urun": 0,
+   "vitra_degerlendirme": 0,
+   "vitra_siralar": [],
+   "vitra_medyan_fiyat": null,
+   "vitra_resmi_magaza": 0,
+   "vitra_3p": 0,
+   "vitra_degerlendirme_payi": 0.0,
+   "marka_ilk": [
+    [
+     "Durul",
+     27,
+     2662,
+     95.9
+    ],
+    [
+     "MONAQUA",
+     6,
+     63,
+     2.3
+    ],
+    [
+     "Raumark",
+     1,
+     48,
+     1.7
+    ],
+    [
+     "Docciabella Banyo",
+     1,
+     2,
+     0.1
+    ],
+    [
+     "Belirtilmemiş",
+     1,
+     0,
+     0.0
+    ]
+   ]
+  },
+  "banyo_bataryasi": {
+   "n": 36,
+   "medyan_fiyat": 3435,
+   "min": 149,
+   "maks": 14639,
+   "marka_sayisi": 16,
+   "satici_sayisi": 21,
+   "en_buyuk_satici": [
+    "Hepsiburada",
+    9
+   ],
+   "satici_tipi": {
+    "3P": 17,
+    "platform": 9,
+    "resmi": 10
+   },
+   "medyan_puan": 4.6,
+   "toplam_degerlendirme": 4191,
+   "indirimli_urun": 5,
+   "vitra_urun": 4,
+   "vitra_degerlendirme": 63,
+   "vitra_siralar": [
+    14,
+    15,
+    20,
+    21
+   ],
+   "vitra_medyan_fiyat": 8524,
+   "vitra_resmi_magaza": 1,
+   "vitra_3p": 2,
+   "vitra_degerlendirme_payi": 1.5,
+   "marka_ilk": [
+    [
+     "Eca",
+     7,
+     1397,
+     33.3
+    ],
+    [
+     "Prestij",
+     1,
+     1048,
+     25.0
+    ],
+    [
+     "armour armatür",
+     4,
+     520,
+     12.4
+    ],
+    [
+     "Creavit",
+     4,
+     422,
+     10.1
+    ],
+    [
+     "Ceyus",
+     2,
+     169,
+     4.0
+    ],
+    [
+     "Grohe",
+     2,
+     144,
+     3.4
+    ]
+   ]
+  },
+  "lavabo_bataryasi": {
+   "n": 36,
+   "medyan_fiyat": 1375,
+   "min": 155,
+   "maks": 8670,
+   "marka_sayisi": 18,
+   "satici_sayisi": 22,
+   "en_buyuk_satici": [
+    "Hepsiburada",
+    8
+   ],
+   "satici_tipi": {
+    "platform": 8,
+    "3P": 16,
+    "resmi": 12
+   },
+   "medyan_puan": 4.5,
+   "toplam_degerlendirme": 5806,
+   "indirimli_urun": 6,
+   "vitra_urun": 4,
+   "vitra_degerlendirme": 200,
+   "vitra_siralar": [
+    12,
+    23,
+    33,
+    35
+   ],
+   "vitra_medyan_fiyat": 2964,
+   "vitra_resmi_magaza": 0,
+   "vitra_3p": 3,
+   "vitra_degerlendirme_payi": 3.4,
+   "marka_ilk": [
+    [
+     "Eca",
+     4,
+     1510,
+     26.0
+    ],
+    [
+     "Prestij",
+     1,
+     904,
+     15.6
+    ],
+    [
+     "Creavit",
+     6,
+     891,
+     15.3
+    ],
+    [
+     "Sardıcı",
+     6,
+     835,
+     14.4
+    ],
+    [
+     "Peramics",
+     1,
+     725,
+     12.5
+    ],
+    [
+     "Artema",
+     4,
+     200,
+     3.4
+    ]
+   ]
+  },
+  "dus_seti": {
+   "n": 36,
+   "medyan_fiyat": 513,
+   "min": 115,
+   "maks": 5950,
+   "marka_sayisi": 18,
+   "satici_sayisi": 19,
+   "en_buyuk_satici": [
+    "BEREV",
+    7
+   ],
+   "satici_tipi": {
+    "resmi": 23,
+    "3P": 11,
+    "platform": 2
+   },
+   "medyan_puan": 4.3,
+   "toplam_degerlendirme": 7849,
+   "indirimli_urun": 4,
+   "vitra_urun": 0,
+   "vitra_degerlendirme": 0,
+   "vitra_siralar": [],
+   "vitra_medyan_fiyat": null,
+   "vitra_resmi_magaza": 0,
+   "vitra_3p": 0,
+   "vitra_degerlendirme_payi": 0.0,
+   "marka_ilk": [
+    [
+     "Berev",
+     7,
+     4351,
+     55.4
+    ],
+    [
+     "Tema",
+     2,
+     1103,
+     14.1
+    ],
+    [
+     "Creavit",
+     4,
+     657,
+     8.4
+    ],
+    [
+     "Ahlez",
+     4,
+     267,
+     3.4
+    ],
+    [
+     "Ni Deir",
+     1,
+     266,
+     3.4
+    ],
+    [
+     "Mayygo",
+     1,
+     211,
+     2.7
+    ]
+   ]
+  },
+  "taharet_musluk": {
+   "n": 36,
+   "medyan_fiyat": 467,
+   "min": 164.99,
+   "maks": 2408.72,
+   "marka_sayisi": 20,
+   "satici_sayisi": 21,
+   "en_buyuk_satici": [
+    "batarya market",
+    6
+   ],
+   "satici_tipi": {
+    "3P": 23,
+    "resmi": 12,
+    "platform": 1
+   },
+   "medyan_puan": 4.5,
+   "toplam_degerlendirme": 2616,
+   "indirimli_urun": 3,
+   "vitra_urun": 3,
+   "vitra_degerlendirme": 73,
+   "vitra_siralar": [
+    10,
+    13,
+    14
+   ],
+   "vitra_medyan_fiyat": 438,
+   "vitra_resmi_magaza": 0,
+   "vitra_3p": 2,
+   "vitra_degerlendirme_payi": 2.8,
+   "marka_ilk": [
+    [
+     "Tema",
+     8,
+     1274,
+     48.7
+    ],
+    [
+     "Sardıcı",
+     3,
+     657,
+     25.1
+    ],
+    [
+     "Fause",
+     2,
+     238,
+     9.1
+    ],
+    [
+     "GPD",
+     1,
+     67,
+     2.6
+    ],
+    [
+     "Emin",
+     1,
+     55,
+     2.1
+    ],
+    [
+     "Elmina Armatür",
+     2,
+     52,
+     2.0
+    ]
+   ]
+  },
+  "rezervuar_ic_takim": {
+   "n": 36,
+   "medyan_fiyat": 490,
+   "min": 74,
+   "maks": 4914,
+   "marka_sayisi": 11,
+   "satici_sayisi": 24,
+   "en_buyuk_satici": [
+    "BANYO PARÇA",
+    4
+   ],
+   "satici_tipi": {
+    "platform": 1,
+    "3P": 35
+   },
+   "medyan_puan": 4.5,
+   "toplam_degerlendirme": 6162,
+   "indirimli_urun": 14,
+   "vitra_urun": 8,
+   "vitra_degerlendirme": 2248,
+   "vitra_siralar": [
+    1,
+    2,
+    5,
+    9,
+    10,
+    13,
+    30,
+    36
+   ],
+   "vitra_medyan_fiyat": 836,
+   "vitra_resmi_magaza": 0,
+   "vitra_3p": 7,
+   "vitra_degerlendirme_payi": 36.5,
+   "marka_ilk": [
+    [
+     "VitrA",
+     8,
+     2248,
+     36.5
+    ],
+    [
+     "Visam",
+     8,
+     1962,
+     31.8
+    ],
+    [
+     "Hakersan",
+     2,
+     836,
+     13.6
+    ],
+    [
+     "Kale",
+     5,
+     282,
+     4.6
+    ],
+    [
+     "Creavit",
+     3,
+     248,
+     4.0
+    ],
+    [
+     "Eca",
+     4,
+     167,
+     2.7
+    ]
+   ]
+  },
+  "gomme_rezervuar": {
+   "n": 36,
+   "medyan_fiyat": 649,
+   "min": 69,
+   "maks": 5192.42,
+   "marka_sayisi": 11,
+   "satici_sayisi": 17,
+   "en_buyuk_satici": [
+    "AS BANYO",
+    6
+   ],
+   "satici_tipi": {
+    "platform": 1,
+    "3P": 35
+   },
+   "medyan_puan": 4.5,
+   "toplam_degerlendirme": 3443,
+   "indirimli_urun": 14,
+   "vitra_urun": 7,
+   "vitra_degerlendirme": 1521,
+   "vitra_siralar": [
+    1,
+    3,
+    7,
+    8,
+    27,
+    28,
+    33
+   ],
+   "vitra_medyan_fiyat": 1000,
+   "vitra_resmi_magaza": 0,
+   "vitra_3p": 6,
+   "vitra_degerlendirme_payi": 44.2,
+   "marka_ilk": [
+    [
+     "VitrA",
+     7,
+     1521,
+     44.2
+    ],
+    [
+     "Visam",
+     6,
+     722,
+     21.0
+    ],
+    [
+     "Kale",
+     6,
+     315,
+     9.1
+    ],
+    [
+     "Creavit",
+     3,
+     268,
+     7.8
+    ],
+    [
+     "Tema",
+     1,
+     152,
+     4.4
+    ],
+    [
+     "Eca",
+     5,
+     149,
+     4.3
+    ]
+   ]
+  },
+  "banyo_aynasi": {
+   "n": 36,
+   "medyan_fiyat": 1739,
+   "min": 249,
+   "maks": 6250,
+   "marka_sayisi": 26,
+   "satici_sayisi": 19,
+   "en_buyuk_satici": [
+    "MODERNOO",
+    6
+   ],
+   "satici_tipi": {
+    "resmi": 20,
+    "3P": 16
+   },
+   "medyan_puan": 4.6,
+   "toplam_degerlendirme": 453,
+   "indirimli_urun": 5,
+   "vitra_urun": 1,
+   "vitra_degerlendirme": 5,
+   "vitra_siralar": [
+    10
+   ],
+   "vitra_medyan_fiyat": 6250,
+   "vitra_resmi_magaza": 0,
+   "vitra_3p": 1,
+   "vitra_degerlendirme_payi": 1.1,
+   "marka_ilk": [
+    [
+     "Tetto Elagante",
+     2,
+     101,
+     22.3
+    ],
+    [
+     "Nuun Dekor",
+     2,
+     67,
+     14.8
+    ],
+    [
+     "Sezer Mobilya",
+     1,
+     63,
+     13.9
+    ],
+    [
+     "Bonus Home",
+     1,
+     35,
+     7.7
+    ],
+    [
+     "nysamo",
+     2,
+     33,
+     7.3
+    ],
+    [
+     "Moemi",
+     2,
+     19,
+     4.2
+    ]
+   ]
+  },
+  "banyo_aksesuar_seti": {
+   "n": 36,
+   "medyan_fiyat": 890,
+   "min": 56,
+   "maks": 2400,
+   "marka_sayisi": 20,
+   "satici_sayisi": 24,
+   "en_buyuk_satici": [
+    "Evotel",
+    8
+   ],
+   "satici_tipi": {
+    "resmi": 19,
+    "3P": 16,
+    "platform": 1
+   },
+   "medyan_puan": 4.5,
+   "toplam_degerlendirme": 3167,
+   "indirimli_urun": 3,
+   "vitra_urun": 0,
+   "vitra_degerlendirme": 0,
+   "vitra_siralar": [],
+   "vitra_medyan_fiyat": null,
+   "vitra_resmi_magaza": 0,
+   "vitra_3p": 0,
+   "vitra_degerlendirme_payi": 0.0,
+   "marka_ilk": [
+    [
+     "Primanova",
+     11,
+     1339,
+     42.3
+    ],
+    [
+     "Giorsi",
+     2,
+     437,
+     13.8
+    ],
+    [
+     "Alsi Home",
+     1,
+     311,
+     9.8
+    ],
+    [
+     "Toptan Bulurum",
+     1,
+     197,
+     6.2
+    ],
+    [
+     "Ata Home",
+     2,
+     152,
+     4.8
+    ],
+    [
+     "Okyanus Home",
+     4,
+     135,
+     4.3
+    ]
+   ]
+  }
+ }
+}

@@ -1,0 +1,229 @@
+{
+ "endeks": {
+  "klozet": {
+   "urun_sayisi": 4,
+   "vitra_com_tr_medyan": 10345,
+   "ty_medyan": 7035,
+   "hb_medyan": 6962,
+   "ty_kat": 1.5,
+   "hb_kat": 1.5
+  },
+  "lavabo": {
+   "urun_sayisi": 2,
+   "vitra_com_tr_medyan": 4852,
+   "ty_medyan": 2844,
+   "hb_medyan": 1635,
+   "ty_kat": 1.7,
+   "hb_kat": 3.0
+  },
+  "banyo_dolabi": {
+   "urun_sayisi": 6,
+   "vitra_com_tr_medyan": 20629,
+   "ty_medyan": 6199,
+   "hb_medyan": 924,
+   "ty_kat": 3.3,
+   "hb_kat": 22.3
+  },
+  "lavabo_bataryasi": {
+   "urun_sayisi": 3,
+   "vitra_com_tr_medyan": 4707,
+   "ty_medyan": 1004,
+   "hb_medyan": 1375,
+   "ty_kat": 4.7,
+   "hb_kat": 3.4
+  },
+  "banyo_bataryasi": {
+   "urun_sayisi": 2,
+   "vitra_com_tr_medyan": 6510,
+   "ty_medyan": 1950,
+   "hb_medyan": 3435,
+   "ty_kat": 3.3,
+   "hb_kat": 1.9
+  },
+  "klozet_kapagi": {
+   "urun_sayisi": 3,
+   "vitra_com_tr_medyan": 1720,
+   "ty_medyan": 640,
+   "hb_medyan": 670,
+   "ty_kat": 2.7,
+   "hb_kat": 2.6
+  },
+  "rezervuar_ic_takim": {
+   "urun_sayisi": 1,
+   "vitra_com_tr_medyan": 896,
+   "ty_medyan": 353,
+   "hb_medyan": 490,
+   "ty_kat": 2.5,
+   "hb_kat": 1.8
+  },
+  "taharet_musluk": {
+   "urun_sayisi": 2,
+   "vitra_com_tr_medyan": 427,
+   "ty_medyan": 303,
+   "hb_medyan": 467,
+   "ty_kat": 1.4,
+   "hb_kat": 0.9
+  },
+  "dus_seti": {
+   "urun_sayisi": 1,
+   "vitra_com_tr_medyan": 16578,
+   "ty_medyan": 349,
+   "hb_medyan": 513,
+   "ty_kat": 47.5,
+   "hb_kat": 32.3
+  }
+ },
+ "satici_yapisi": {
+  "ty": {
+   "3P": 281,
+   "resmi": 223
+  },
+  "hb": {
+   "platform": 65,
+   "resmi": 208,
+   "3P": 231
+  }
+ },
+ "kanal_fiyat": {
+  "urun": 29,
+  "ty_eslesen": 17,
+  "hb_eslesen": 24,
+  "kt_eslesen": 16,
+  "ty_vitra_magazasi_var": 7,
+  "ty_3p_var": 16,
+  "ty_hem_magaza_hem_3p": 6,
+  "ty_3p_magazadan_dusuk": 6,
+  "ty_3p_vitracom_dan_dusuk": 12,
+  "hb_vitracom_dan_dusuk": 16,
+  "kt_vitracom_dan_dusuk": 6,
+  "pazaryeri_herhangi_dusuk": 19,
+  "pazaryeri_fiyati_olan": 26,
+  "fark_medyan_tum": 17.8,
+  "fark_pozitif_n": 19,
+  "fark_pozitif_medyan": 24.7,
+  "fark_pozitif_min": 1.5,
+  "fark_pozitif_maks": 41.1,
+  "fark_pozitif_ceyrek": [
+   15.7,
+   32.4
+  ],
+  "efektif_fark_pozitif_n": 19,
+  "efektif_fark_pozitif_medyan": 15.4,
+  "efektif_fark_pozitif_min": 4.5,
+  "efektif_fark_pozitif_maks": 35.1,
+  "en_ucuz_kanal_dagilimi": {
+   "TY 3P": 7,
+   "vitra.com.tr": 7,
+   "HB buybox": 11,
+   "Koçtaş": 1
+  },
+  "en_ucuz_kanal_efektif_dagilimi": {
+   "TY VitrA mağazası": 3,
+   "vitra.com.tr": 7,
+   "HB buybox": 10,
+   "TY 3P": 5,
+   "Koçtaş": 1
+  },
+  "ty_magaza_3p_fark": [
+   1.5,
+   11.8,
+   30.8,
+   6
+  ],
+  "ty_3p_vitracom_fark": [
+   -18.6,
+   11.8,
+   41.1,
+   16
+  ],
+  "hb_vitracom_fark": [
+   -149.0,
+   18.0,
+   40.9,
+   24
+  ],
+  "ty_alti": [
+   12,
+   17.6,
+   1.5,
+   41.1
+  ],
+  "hb_alti": [
+   16,
+   24.3,
+   7.3,
+   40.9
+  ],
+  "kt_alti": [
+   6,
+   16.8,
+   1.5,
+   19.7
+  ],
+  "kt_vitracom_fark": [
+   -48.1,
+   -3.6,
+   19.7,
+   16
+  ],
+  "hb_buybox_satici": {
+   "VitrA mağazası": 3,
+   "3P": 14,
+   "Hepsiburada": 7
+  },
+  "koctas_satici": {
+   "Evdema": 4,
+   "Hace Yapı": 1,
+   "Banyoline": 2,
+   "Banyoatelier": 2,
+   "Serhat Yapı": 1,
+   "Evdeniste": 3,
+   "Newbanyo": 1,
+   "Banyome": 1,
+   "Bataryamarket": 1
+  },
+  "grup_fark_medyan": {
+   "Asma klozet": [
+    4,
+    0.0
+   ],
+   "Lavabo": [
+    2,
+    3.6
+   ],
+   "Banyo mobilyası": [
+    4,
+    0.0
+   ],
+   "Armatür": [
+    8,
+    29.8
+   ],
+   "Duş seti": [
+    1,
+    18.9
+   ],
+   "Gömme rezervuar seti": [
+    3,
+    18.5
+   ],
+   "Klozet kapağı": [
+    3,
+    27.2
+   ],
+   "İç takım": [
+    1,
+    24.7
+   ]
+  },
+  "vitra_stokta_yok": 15,
+  "vitra_ucretsiz_montaj_etiketi": 1,
+  "vitra_sepette_indirim_dagilimi": {
+   "10": 11,
+   "15": 16,
+   "null": 2
+  },
+  "ty_magaza_liste_esit": 7,
+  "hb_vitra_liste_esit": 3
+ }
+}
