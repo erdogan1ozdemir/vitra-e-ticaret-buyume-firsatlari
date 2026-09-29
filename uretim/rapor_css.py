@@ -90,6 +90,8 @@ ul.marks li .mk.at{color:var(--coral-deep)}
 
 b,strong{font-weight:650}
 .term{border-bottom:1px dotted var(--coral-deep);cursor:help}
+.term:focus-visible{outline:2px solid var(--coral);outline-offset:2px}
+a .term,th .term{border-bottom:0;cursor:inherit}
 .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(186px,1fr));gap:13px;margin:0 0 22px}
 .kpi{background:var(--card);border:1px solid var(--line);border-radius:9px;padding:15px 16px}
 .kpi .v{font-size:25px;font-weight:660;letter-spacing:-.02em;line-height:1.12}

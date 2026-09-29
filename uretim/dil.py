@@ -58,7 +58,7 @@ TIRNAK_DESEN = re.compile(r'(["“”«»])(' + _alt(_KELIME_SIRA) + r')\1', re.
 
 # Isaretlemenin yapilmadigi baglamlar: baslik, gezinme, bag metni, terim sozlugu
 ISARET_DISI_ETIKET = {"title", "h1", "h2", "h3", "h4", "th", "a", "button", "option"}
-ISARET_DISI_SINIF = {"sidenav", "tocsheet", "appbar", "eyebrow", "no", "sozluk"}
+ISARET_DISI_SINIF = {"sidenav", "tocsheet", "appbar", "eyebrow", "no", "sozluk", "v", "kn", "kb"}
 # Veri baglami: tablo, grafik gosterge kutusu, kelime rozeti listesi
 VERI_ETIKET = {"table", "figure"}
 VERI_SINIF = {"kwlist", "legend"}
@@ -154,6 +154,53 @@ def _baglam(dugum):
             return "veri"
     return "metin"
 
+
+
+# ------------------------------------------------------------------ terimler
+# rapor.py doldurur: {tr_terim: (tr_tanim, en_terim, en_tanim)}
+TERIMLER = {}
+# Buyuk harfli kisaltmalar ve GSC metrik adlari yalnizca yazildigi bicimiyle eslenir
+_TERIM_DUYARLI = {"Click", "Impression", "Position"}
+_terim_gorulen = set()
+
+def _terim_deseni(dil):
+    ad = [(k if dil == "tr" else v[1]) for k, v in TERIMLER.items()]
+    ad = sorted(set(ad), key=len, reverse=True)
+    if not ad:
+        return None
+    return re.compile(r"(?<![\w-])(" + "|".join(re.escape(a) for a in ad) + r")(?=$|[^\w-]|['’]\w)", re.I)
+
+def _terim_tanim(gorunen, dil):
+    for k, (tr_t, en_ad, en_t) in TERIMLER.items():
+        ad = k if dil == "tr" else en_ad
+        if gorunen == ad or (ad not in _TERIM_DUYARLI and not ad.isupper() and gorunen.lower() == ad.lower()):
+            return tr_t if dil == "tr" else en_t, ad
+    return None, None
+
+def terim_isaretle(g, dil, bolum):
+    """Bolum icinde ilk gecen sozluk terimini span.term yapar; mevcut span'lar atlanir."""
+    desen = _terim_deseni(dil)
+    if desen is None:
+        return g
+    parca = re.split(r"(<span[^>]*>.*?</span>)", g)
+    for i, p in enumerate(parca):
+        if p.startswith("<span"):
+            continue
+        def _y(m):
+            tanim, ad = _terim_tanim(m.group(1), dil)
+            if tanim is None:
+                return m.group(0)
+            if ad in _TERIM_DUYARLI or ad.isupper():
+                if m.group(1) != ad:
+                    return m.group(0)
+            anahtar = (bolum, dil, ad)
+            if anahtar in _terim_gorulen:
+                return m.group(0)
+            _terim_gorulen.add(anahtar)
+            return ('<span class="term" data-term="%s" tabindex="0">%s</span>'
+                    % (_h.escape(tanim, quote=True), m.group(1)))
+        parca[i] = desen.sub(_y, p)
+    return "".join(parca)
 
 # ------------------------------------------------------------------ ceviri
 def _cevrilir(t):
@@ -320,6 +367,12 @@ def _sar(corba):
 
         tr_html = isaretle_metin(duz, baglam, "tr")
         en_html = isaretle_metin(hedef, baglam, "en")
+        if baglam == "metin" and TERIMLER:
+            sec = dugum.find_parent("section")
+            bolum = sec.get("id") if sec is not None else ""
+            if bolum and not any(set(a.get("class") or []) & {"src", "lede"} for a in dugum.parents):
+                tr_html = terim_isaretle(tr_html, "tr", bolum)
+                en_html = terim_isaretle(en_html, "en", bolum)
         if tr_html == _h.escape(duz, quote=False) and en_html == _h.escape(hedef, quote=False) \
            and duz == hedef:
             continue                      # ceviri de isaret de yok

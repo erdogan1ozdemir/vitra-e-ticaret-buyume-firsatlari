@@ -90,19 +90,16 @@ document.documentElement.classList.add('js');
   }
   function gizle(){tt.classList.remove('on'); tt.hidden=true;}
 
-  /* govde metnindeki terimler */
-  [].forEach.call(document.querySelectorAll('.term[data-term]'),function(el){
-    function ac(){
-      var r=el.getBoundingClientRect();
-      goster('<span class="tt-b">'+kac(el.textContent.trim())+'</span>'+kac(el.getAttribute('data-term')),
-             r.left+r.width/2, r.top);
-    }
-    el.addEventListener('mouseenter',ac);
-    el.addEventListener('focus',ac);
-    el.addEventListener('mouseleave',gizle);
-    el.addEventListener('blur',gizle);
-    el.setAttribute('tabindex','0');
-  });
+  /* govde metnindeki terimler - dil degisince yeniden uretildiginden olay devri kullanilir */
+  function termAc(el){
+    var a=el.getAttribute('data-term'); if(!a) return;
+    var r=el.getBoundingClientRect();
+    goster('<span class="tt-b">'+kac(el.textContent.trim())+'</span>'+kac(a), r.left+r.width/2, r.top);
+  }
+  document.addEventListener('mouseover',function(e){ var el=e.target.closest?e.target.closest('span.term'):null; if(el) termAc(el); });
+  document.addEventListener('mouseout',function(e){ var el=e.target.closest?e.target.closest('span.term'):null; if(el) gizle(); });
+  document.addEventListener('focusin',function(e){ var el=e.target.closest?e.target.closest('span.term'):null; if(el) termAc(el); });
+  document.addEventListener('focusout',function(e){ var el=e.target.closest?e.target.closest('span.term'):null; if(el) gizle(); });
 
   /* Almanca ifadeler - dil degisince yeniden uretildiginden olay devri kullanilir */
   function deAc(el){
