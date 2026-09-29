@@ -54,7 +54,7 @@ def x(tr, en):
             for a, b in zip(pk, pv):
                 a, b = a.strip(), b.strip()
                 if a and not _SAYISAL.match(a):
-                    _kaydet(a, b)
+                    EK.setdefault(a, b)   # parca kaydi yalnizca yedektir; butun blok dil katmaninda tek parca cevrilir
         else:
             _CAKISMA.append((k[:60], "parça sayısı", "%d/%d" % (len(pk), len(pv))))
     return tr
@@ -88,8 +88,39 @@ def n(v):
     return "\x01" + sayi(v)
 
 
+_SAYI_TOK = _re.compile(r'(?<![\w>#"=/-])([+\-−]?(?:%\d[\d.,]*|\d[\d.,]*(?:\s?(?:K|M|x|TL|USD|bn|kat|\+))?%?|\d[\d.,]*-\d[\d.,]*(?:\s?(?:K|M|x|TL))?%?))(?![\w<%-])')
+_TARIH = _re.compile(r'^\d{1,2}\.\d{1,2}\.\d{4}$|^(?:19|20)\d{2}$|^\d{1,2}$')
+
+def _kalin(t):
+    """Etiket disindaki sayisal ifadeleri <b> icine alir; yil, tarih ve tek-iki haneli sayilar haric."""
+    parca = _ETIKET.split(t); etk = _ETIKET.findall(t)
+    def _b(m):
+        s = m.group(1)
+        if _TARIH.match(s) or s.strip() in ("-", "+"): return s
+        return "<b>%s</b>" % s
+    out = []
+    for i, p_ in enumerate(parca):
+        out.append(_SAYI_TOK.sub(_b, p_))
+        if i < len(etk): out.append(etk[i])
+    return "".join(out)
+
+def _kalin_cift(tr, en):
+    a, b = _kalin(tr), _kalin(en)
+    return (a, b) if a.count("<b>") == b.count("<b>") else (tr, en)
+
+_CUMLE = _re.compile(r'(?<=[.!?])\s+(?=[A-ZÇĞİÖŞÜ"“(\d])')
+
+def _cumleler(t):
+    return [c for c in _CUMLE.split(t) if c.strip()]
+
 def insight(tr, en, *kodlar):
-    return '<div class="insight"><p>%s%s</p></div>' % (x(tr, en), R(*kodlar) if kodlar else "")
+    ref = R(*kodlar) if kodlar else ""
+    ct, ce = _cumleler(tr), _cumleler(en)
+    if len(ct) >= 3 and len(ct) == len(ce):
+        bas = x(*_kalin_cift(ct[0], ce[0]))
+        maddeler = "".join("<li>%s</li>" % x(*_kalin_cift(a, b)) for a, b in zip(ct[1:], ce[1:]))
+        return '<div class="insight"><p>%s</p><ul class="ins-li">%s</ul><span class="ins-ref">%s</span></div>' % (bas, maddeler, ref)
+    return '<div class="insight"><p>%s%s</p></div>' % (x(*_kalin_cift(tr, en)), ref)
 
 
 def p(tr, en, *kodlar, sinif=None):

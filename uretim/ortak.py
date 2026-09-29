@@ -67,6 +67,31 @@ def kw(s):
 def veri_m(s):
     x(s, s); return s
 import json as _j, os as _o
+import base64 as _b64
+_LOGO_DIR = _o.path.join(veri.V, "ham", "logo")
+def logo_css():
+    """Her alan adi icin bir kez tanimlanan arka plan resmi (data URI)."""
+    from PIL import Image
+    import io
+    out = []
+    for f in sorted(_o.listdir(_LOGO_DIR)):
+        if not f.endswith(".png"): continue
+        d = f[:-4]
+        try:
+            im = Image.open(_o.path.join(_LOGO_DIR, f)).convert("RGBA")
+            if max(im.size) > 32: im = im.resize((32, 32), Image.LANCZOS)
+            buf = io.BytesIO(); im.save(buf, "PNG", optimize=True); b = buf.getvalue()
+        except Exception:
+            b = open(_o.path.join(_LOGO_DIR, f), "rb").read()
+        out.append('.lg-%s{background-image:url(data:image/png;base64,%s)}' % (d.replace(".", "_"), _b64.b64encode(b).decode()))
+    return "\n".join(out)
+def logo_alan_adlari():
+    return [f[:-4] for f in _o.listdir(_LOGO_DIR) if f.endswith(".png")]
+def lg(domain):
+    return '<i class="lg lg-%s" aria-hidden="true"></i>' % domain.replace("www.", "").replace(".", "_")
+def ul_b(maddeler):
+    """[(kalin_tr, kalin_en, tr, en)] -> madde listesi; kalin bolum basta."""
+    return '<ul class="nl">%s</ul>' % "".join('<li><b>%s</b> %s</li>' % (x(kt, ke), x(t, e)) for kt, ke, t, e in maddeler)
 def _J(*p): return _j.load(open(_o.path.join(veri.V, *p), encoding="utf-8"))
 SB = _J("islenmis", "ssg_bm.json"); YK = _J("islenmis", "yeni_kategori.json"); KT = _J("islenmis", "katalog.json"); TY = _J("islenmis", "trendyol_ozet.json")["sorgular"]
 HZ = _J("ham", "hizmet", "vitra_hizmetler.json")

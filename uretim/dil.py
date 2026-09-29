@@ -8,7 +8,7 @@
 Kullanim:  DOC = dil.uygula(DOC)
 """
 import re, json, html as _h
-from bs4 import BeautifulSoup, NavigableString, Comment
+from bs4 import BeautifulSoup, NavigableString, Comment, Tag
 
 import almanca
 import ceviri
@@ -177,7 +177,7 @@ def _terim_tanim(gorunen, dil):
             return tr_t if dil == "tr" else en_t, ad
     return None, None
 
-def terim_isaretle(g, dil, bolum):
+def terim_isaretle(g, dil, bolum, kimlik=None):
     """Bolum icinde ilk gecen sozluk terimini span.term yapar; mevcut span'lar atlanir."""
     desen = _terim_deseni(dil)
     if desen is None:
@@ -193,7 +193,8 @@ def terim_isaretle(g, dil, bolum):
             if ad in _TERIM_DUYARLI or ad.isupper():
                 if m.group(1) != ad:
                     return m.group(0)
-            anahtar = (bolum, dil, ad)
+            kisaltma = ad.isupper() or ad in _TERIM_DUYARLI or ad == "AI Overview"
+            anahtar = (bolum, dil, ad, kimlik if kisaltma else None)
             if anahtar in _terim_gorulen:
                 return m.group(0)
             _terim_gorulen.add(anahtar)
@@ -207,6 +208,42 @@ def _cevrilir(t):
     return bool(t.strip()) and not SAYISAL.match(t.strip())
 
 
+
+def _duz_html(t):
+    return " ".join(_h.unescape(t).split())
+
+_BLOK_ETIKET = ["p", "li", "td", "dd", "h4", "div", "span"]
+
+def _blok_sar(corba):
+    """Satir ici etiket (<b>, <span class="up">, <a>) iceren ve ceviri sozlugunde
+    butun olarak kayitli olan bloklari tek span.t icinde tasir; boylece parcalar
+    konumsal olarak degil, blok olarak cevrilir."""
+    n = 0
+    for el in list(corba.find_all(_BLOK_ETIKET)):
+        if el.find_parent("span", class_="t") or el.name == "span" and "t" in (el.get("class") or []):
+            continue
+        if not any(isinstance(c, Tag) for c in el.children):
+            continue
+        if el.find(["table", "div", "ul", "ol", "p", "figure", "svg", "h3", "h4", "li"]):
+            continue
+        inner = "".join(str(c) for c in el.children)
+        k = _duz_html(inner)
+        if "<" not in k or k not in ceviri.EN:
+            continue
+        en = ceviri.EN[k]
+        ilk = el.find(string=True)
+        baglam = _baglam(ilk) if ilk is not None else None
+        tr_html, en_html = inner, en
+        if baglam == "metin" and TERIMLER:
+            sec = el.find_parent("section"); bolum = sec.get("id") if sec is not None else ""
+            if bolum and not any(set(a.get("class") or []) & {"src", "lede"} for a in el.parents):
+                tr_html = terim_isaretle(tr_html, "tr", bolum, id(el))
+                en_html = terim_isaretle(en_html, "en", bolum, id(el))
+        el.clear()
+        el.append(BeautifulSoup('<span class="t" data-en="%s">%s</span>' % (_h.escape(en_html, quote=True), tr_html), "html.parser"))
+        n += 1
+    return n
+
 def _topla(corba):
     """Cevrilecek benzersiz metin ve nitelik degerlerini toplar."""
     metin, nitelik, sayisal = set(), set(), set()
@@ -215,6 +252,8 @@ def _topla(corba):
             continue
         ust = dugum.parent
         if ust is None or ust.name in ATLA_ETIKET:
+            continue
+        if dugum.find_parent("span", class_="t") is not None:
             continue
         if any(a.name == "span" and a.get("class") and "de" in (a.get("class") or [])
                for a in dugum.parents):
@@ -225,6 +264,8 @@ def _topla(corba):
         elif t:
             sayisal.add(t)
     for etiket in corba.find_all(True):
+        if etiket.find_parent("span", class_="t") is not None:
+            continue
         for ad in NITELIK:
             d = etiket.get(ad)
             if d and _cevrilir(d):
@@ -351,6 +392,8 @@ def _sar(corba):
             continue
         if dugum.parent.name in ATLA_ETIKET:
             continue
+        if dugum.find_parent("span", class_="t") is not None:
+            continue
         ham = str(dugum)
         duz = ham.strip()
         if not duz:
@@ -371,8 +414,8 @@ def _sar(corba):
             sec = dugum.find_parent("section")
             bolum = sec.get("id") if sec is not None else ""
             if bolum and not any(set(a.get("class") or []) & {"src", "lede"} for a in dugum.parents):
-                tr_html = terim_isaretle(tr_html, "tr", bolum)
-                en_html = terim_isaretle(en_html, "en", bolum)
+                tr_html = terim_isaretle(tr_html, "tr", bolum, id(dugum))
+                en_html = terim_isaretle(en_html, "en", bolum, id(dugum))
         if tr_html == _h.escape(duz, quote=False) and en_html == _h.escape(hedef, quote=False) \
            and duz == hedef:
             continue                      # ceviri de isaret de yok
@@ -390,6 +433,7 @@ def _sar(corba):
 
 def uygula(doc, baslik_en):
     corba = BeautifulSoup(doc, "html.parser")
+    _blok = _blok_sar(corba)
 
     # 1) Ceviri sozlugu isaretlemeden ONCE dogrulanir
     gerekli = sozluk(corba)
@@ -441,4 +485,4 @@ def uygula(doc, baslik_en):
     cikti = cikti.replace(
         "</body>",
         "<script>window.__DIL__=%s;</script>\n<script>%s</script>\n</body>" % (yuk, RUNTIME))
-    return cikti, sarilan, dict(_sayac)
+    return cikti, sarilan + _blok, dict(_sayac)

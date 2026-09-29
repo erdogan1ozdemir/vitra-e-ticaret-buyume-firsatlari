@@ -29,6 +29,21 @@ GLOSSARY = {
  "SSG": "Seramik sağlık gereçleri; klozet, lavabo, bide, pisuvar ve rezervuar gibi vitrifiye ürünler.",
  "BM": "Banyo mobilyası; lavabo dolabı, boy dolabı, aynalı dolap, ayna, tezgah ve tamamlayıcılar.",
  "3P": "Üçüncü taraf satıcı; başka bir satıcının ürününün marka sitesinde listelenip satıldığı model.",
+ "GA4": "Google Analytics 4; sitenin ziyaret, dönüşüm ve ürün performansını ölçen analitik aracı.",
+ "GSC": "Google Search Console; Google'ın siteye gönderdiği arama trafiğini gösterim, tık ve sıra düzeyinde raporlayan araç.",
+ "SERP": "Search Engine Results Page; bir arama için Google'ın döndürdüğü sonuç sayfası.",
+ "KD": "Keyword Difficulty; Ahrefs'in bir kelimede ilk 10'a girmenin zorluğunu 0-100 arası puanlayan göstergesi.",
+ "TP": "Traffic Potential; bir kelimede 1. sıradaki sayfanın tüm kelimelerinden aldığı tahmini aylık trafik (Ahrefs).",
+ "PAA": "People Also Ask; arama sonuç sayfasındaki \"Diğer sorular\" kutusu.",
+ "AI Overview": "Google'ın arama sonuçlarının üstünde gösterdiği yapay zeka üretimi özet; kaynak gösterdiği sitelere bağlantı verir.",
+ "YoY": "Year over year; bir dönemin bir önceki yılın aynı dönemine göre değişimi.",
+ "TCMB": "Türkiye Cumhuriyet Merkez Bankası.",
+ "EVDS": "TCMB Elektronik Veri Dağıtım Sistemi; makro ve finansal serilerin yayımlandığı veri tabanı.",
+ "BKM": "Bankalararası Kart Merkezi; kartlı ödeme istatistiklerinin kaynağı.",
+ "CPC": "Cost per click; Google Ads'te tıklama başına ortalama maliyet.",
+ "Buybox": "Pazaryerinde aynı ürünü satan satıcılar arasında \"sepete ekle\" düğmesini kazanan satıcı.",
+ "PVC": "Polivinil klorür; suya dayanıklı plastik gövde malzemesi.",
+ "MDF": "Orta yoğunluklu lif levha; banyo mobilyasında yaygın gövde malzemesi.",
 }
 
 def T(t):

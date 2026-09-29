@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """VitrA e-ticaret buyume firsatlari · HTML rapor uretimi (TR + EN tek dosya)."""
-import os, sys, base64, zipfile, json
+import os, sys, base64, zipfile, json, re
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import veri
 from rapor_parca1 import VITRA, INBOUND, GLOSSARY
@@ -9,6 +9,8 @@ from css_ek import CSS_EK
 from rapor_js import JS, KAYNAKCA_CSS, TEMA, IKON
 import t2_ortak, kaynakca, ceviri, dil
 from t2_ortak import x, R
+from ortak import logo_css, logo_alan_adlari, lg
+import h3_not
 import b_ozet, b_makro, b_talep, b_ssgbm, b_niyet, b_organik, b_marka, b_youtube, b_katalog, b_yeni, b_set, b_rakip, b_benchmark, b_model, b_adimlar, b_yontem, b_serp, b_kategori_trafik, b_pazaryeri
 
 AD = "VitrA_E-Ticaret_Buyume_Firsatlari"
@@ -42,6 +44,23 @@ P.append(bolum("adimlar", "Sonraki Adımlar", "Next Steps", b_adimlar.HTML))
 P.append(bolum("yontem", "Yöntem ve Kapsam", "Method and Scope", b_yontem.HTML))
 
 govde = "\n".join(P)
+# --- son islemler: alt baslik aciklamasi, uzun tablo, logo
+def _h3_not(m):
+    t = m.group(1)
+    if t in h3_not.N:
+        tr, en = h3_not.N[t]; return '<h3>%s</h3><p class="h3n">%s</p>' % (t, x(tr, en))
+    return m.group(0)
+govde = re.sub(r'<h3>([^<]+)</h3>', _h3_not, govde)
+_eksik_h3 = sorted({m for m in re.findall(r'(?<!</span>)<h3>([^<]+)</h3>', govde) if m not in h3_not.N and m != "Öne çıkan bulgular"})
+def _uzun(m):
+    blok = m.group(0)
+    if 'uzun' in m.group(1): return blok
+    n_ = blok.count('<tr>') - 1
+    return blok.replace('<div class="tw %s">' % m.group(1), '<div class="tw %s uzun">' % m.group(1), 1) if n_ > 9 else blok
+govde = re.sub(r'<div class="tw ([^"]*)">.*?</table></div>', _uzun, govde, flags=re.S)
+_LOGO = sorted(logo_alan_adlari(), key=len, reverse=True)
+_LG = re.compile(r'(<(?:td|span class="rl")>|<a class="(?:u|dis)"[^>]*>)((?:www\.)?(' + "|".join(re.escape(d) for d in _LOGO) + r'))(?=</)')
+govde = _LG.sub(lambda m: m.group(1) + lg(m.group(3)) + m.group(2), govde)
 govde, sira = kaynakca.coz(govde)
 P.append(bolum("kaynakca", "Kaynakça", "References", kaynakca.bolum_html(sira, x)))
 GL_EN = {
@@ -57,12 +76,40 @@ GL_EN = {
  "SSG": "Sanitaryware; vitreous china products such as WCs, washbasins, bidets, urinals and cisterns.",
  "BM": "Bathroom furniture; basin units, tall cabinets, mirror cabinets, mirrors, countertops and complements.",
  "3P": "Third-party seller; a model where another seller's product is listed and sold on the brand site.",
+ "GA4": "Google Analytics 4; the analytics tool measuring the site's visits, conversions and product performance.",
+ "GSC": "Google Search Console; the tool reporting the search traffic Google sends to the site at impression, click and position level.",
+ "SERP": "Search Engine Results Page; the results page Google returns for a search.",
+ "KD": "Keyword Difficulty; Ahrefs' 0-100 score for how hard it is to rank in the top 10 for a keyword.",
+ "TP": "Traffic Potential; the estimated monthly traffic the page ranking first receives from all its keywords (Ahrefs).",
+ "PAA": "People Also Ask; the \"related questions\" box on the search results page.",
+ "AI Overview": "The AI-generated summary Google shows above search results; it links to the sites it cites.",
+ "YoY": "Year over year; a period's change against the same period of the previous year.",
+ "TCMB": "Central Bank of the Republic of Türkiye (CBRT).",
+ "EVDS": "CBRT Electronic Data Delivery System; the database publishing macro and financial series.",
+ "BKM": "Interbank Card Center; the source of card payment statistics.",
+ "CPC": "Cost per click; the average cost per click in Google Ads.",
+ "Buybox": "The seller that wins the \"add to basket\" button among sellers offering the same product on a marketplace.",
+ "PVC": "Polyvinyl chloride; a water-resistant plastic body material.",
+ "MDF": "Medium-density fibreboard; a common body material in bathroom furniture.",
 }
-GL_TERM_EN = {"Organik trafik": "Organic traffic", "Paid trafik": "Paid traffic", "Kartlı Ödeme Endeksi": "Card Payment Index", "Net yüzde": "Net percentage", "SSG": "SSG", "BM": "BM", "3P": "3P"}
+GL_TERM_EN = {"Organik trafik": "Organic traffic", "Paid trafik": "Paid traffic", "Kartlı Ödeme Endeksi": "Card Payment Index", "Net yüzde": "Net percentage", "SSG": "SSG", "BM": "BM", "3P": "3P", "TCMB": "CBRT", "EVDS": "EVDS"}
 sozluk = '<dl class="gl">%s</dl>' % "".join('<dt>%s</dt><dd>%s</dd>' % (x(t, GL_TERM_EN.get(t, t)), x(GLOSSARY[t], GL_EN[t])) for t in GLOSSARY)
 P.append(bolum("sozluk", "Terim Sözlüğü", "Glossary", sozluk))
 govde = "\n".join(P[:-2]) if False else govde + "\n" + "\n".join(P[-2:])
 
+CSS_SON = """
+.lg{display:inline-block;width:16px;height:16px;vertical-align:-3px;margin-right:6px;border-radius:3px;background-size:cover;background-position:center;background-color:#fff;flex:0 0 auto}
+.rank li .rl .lg{margin-right:7px}
+.h3n{margin:-6px 0 12px;color:var(--ink-2);font-size:13px;line-height:1.55;max-width:78ch}
+.insight ul.ins-li{margin:8px 0 0;padding-left:18px}
+.insight ul.ins-li li{margin:0 0 5px}
+.insight .ins-ref{display:inline-block}
+.note ul.nl{margin:0;padding-left:18px}
+.note ul.nl li{margin:0 0 6px;color:var(--ink)}
+.note ul.nl li:last-child{margin-bottom:0}
+.tw.uzun{max-height:min(60vh, 560px);overflow:auto}
+.tw.uzun thead th{position:sticky;top:0;z-index:2}
+"""
 # ---------------------------------------------------------------- icindekiler
 KISA = {"ihtiyac": ("İhtiyaç Dili", "Need Language"), "youtube": ("YouTube: Montaj ve Tamir", "YouTube: Installation and Repair"), "rakip": ("Rakip Görünürlüğü ve Ölçek", "Competitor Visibility and Scale"),
         "model": ("Kanal Rolleri ve Model", "Channel Roles and Model"), "makro": ("Makro Ortam", "Macro Environment"), "talep": ("Kategori Talebi", "Category Demand"), "organik": ("Organik Kanal", "Organic Channel"),
@@ -136,7 +183,7 @@ DOC = """<!doctype html>
   <div class="tocsheet__in"><div class="tocsheet__tut"></div>%s</div>
 </div>
 <script>%s</script>
-</body></html>""" % (CSS + CSS_EK + KAYNAKCA_CSS, target_css, x("Marka", "Brand"), VITRA, TEMA, dl_buton(), x("Hazırlayan", "Prepared by"), INBOUND, x("İçindekiler", "Contents"), toc, HERO, govde,
+</body></html>""" % (CSS + CSS_EK + KAYNAKCA_CSS + CSS_SON + logo_css(), target_css, x("Marka", "Brand"), VITRA, TEMA, dl_buton(), x("Hazırlayan", "Prepared by"), INBOUND, x("İçindekiler", "Contents"), toc, HERO, govde,
                      dl_buton("dl-foot"), x("Hacimler Google Keyword Planner &middot; sayfa ve sorgu verisi Google Search Console &middot; rakip ölçümü Ahrefs &middot; makro seriler TCMB EVDS &middot; autocomplete ve YouTube Google",
                                             "Volumes Google Keyword Planner &middot; page and query data Google Search Console &middot; competitor measurement Ahrefs &middot; macro series CBRT EVDS &middot; autocomplete and YouTube Google"),
                      x("İçindekiler menüsünü aç", "Open the contents menu"), x("İçindekiler", "Contents"), toc, JS)
@@ -148,4 +195,5 @@ dil.TERIMLER = {t: (GLOSSARY[t], GL_TERM_EN.get(t, t), GL_EN[t]) for t in GLOSSA
 DOC, _n, _de = dil.uygula(DOC, "VitrA Turkey | E-Commerce Growth Opportunities")
 yol = os.path.join(veri.KOK, AD + ".html")
 open(yol, "w", encoding="utf-8").write(DOC)
+if _eksik_h3: print("uyarı · açıklaması olmayan alt başlık:", _eksik_h3)
 print("kaydedildi:", yol, len(DOC), "karakter,", len(BOLUMLER), "bölüm,", _n, "ifade çevrildi")

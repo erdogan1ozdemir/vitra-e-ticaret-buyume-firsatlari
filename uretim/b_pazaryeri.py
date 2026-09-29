@@ -4,12 +4,13 @@ from ortak import *
 import json, os
 D = os.path.join(veri.V, "ham", "derin")
 AP = json.load(open(os.path.join(D, "ahrefs_pazaryeri", "analiz_ozet_tablolar.json"), encoding="utf-8"))
+SITE_DOM = {"trendyol": "trendyol.com", "hepsiburada": "hepsiburada.com", "n11": "n11.com", "amazon": "amazon.com.tr", "koctas": "koctas.com.tr", "bauhaus": "bauhaus.com.tr", "ikea": "ikea.com.tr", "tekzen": "tekzen.com.tr", "akakce": "akakce.com", "cimri": "cimri.com"}
 SITE_AD = {"trendyol": "Trendyol", "hepsiburada": "Hepsiburada", "n11": "n11", "amazon": "Amazon TR", "koctas": "Koçtaş", "bauhaus": "Bauhaus", "ikea": "IKEA", "tekzen": "Tekzen", "akakce": "Akakçe", "cimri": "Cimri"}
 SB_ = AP["ssg_bm"]
 srows = []
 for r in sorted(AP["site_tablosu"], key=lambda r: -r["cekirdek"]):
     s = r["site"]; sb = SB_.get(s, {})
-    srows.append([veri_m(SITE_AD[s]), cell(r["cekirdek"]), cell(sb.get("ssg", 0)), cell(sb.get("bm", 0)), cell(r["bitisik"]), veri_m(r["top_url"][:60])])
+    srows.append([u("https://www." + SITE_DOM[s], SITE_AD[s]), cell(r["cekirdek"]), cell(sb.get("ssg", 0)), cell(sb.get("bm", 0)), cell(r["bitisik"]), u("https://www." + SITE_DOM[s] + r["top_url"], r["top_url"][:60])])
 T_SITE = tablo([th("Site", "Site", "Pazaryeri, perakendeci veya fiyat karşılaştırma sitesi.", "Marketplace, retailer or price comparison site."),
                 th("Banyo ana kategorileri", "Main bathroom categories", "Banyo, SSG, BM, armatür ve yıkanma sayfalarının Ahrefs tahmini aylık organik trafiği; sorgu satır sınırı nedeniyle alt sınırdır.", "Ahrefs estimated monthly organic traffic of bathroom, SSG, BM, tap and bathing pages; a lower bound due to the query row limit.", True),
                 th("SSG", "SSG", "Klozet, lavabo, bide, pisuvar, rezervuar, klozet kapağı ve iç takım sayfaları.", "WC, washbasin, bidet, urinal, cistern, seat and inner-mechanism pages.", True),
