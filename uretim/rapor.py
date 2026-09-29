@@ -111,6 +111,9 @@ CSS_SON = """
 .note ul.nl li{margin:0 0 6px;color:var(--ink)}
 .note ul.nl li:last-child{margin-bottom:0}
 .tw.uzun{max-height:min(60vh, 560px);overflow:auto}
+.two{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.two > div{min-width:0}
+@media(max-width:1180px){.two{grid-template-columns:minmax(0,1fr)}}
 .tw.uzun thead th{position:sticky;top:0;z-index:2}
 """
 # ---------------------------------------------------------------- icindekiler
