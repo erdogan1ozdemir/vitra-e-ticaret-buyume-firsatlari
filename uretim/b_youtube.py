@@ -61,3 +61,5 @@ HTML = """
                                        ("at", "\"en iyi klozet markası\" aramasında VitrA 1. sırada (%s izlenme); bu videonun satın alma sayfasına bağlanması değerlendirilebilir" % k(Y["en iyi klozet markası"]["top"][0][2]), "VitrA ranks 1st for \"en iyi klozet markası\" (%s views); linking this video to the purchase page can be considered" % k(Y["en iyi klozet markası"]["top"][0][2]))])),
  kaynak("YouTube arama sonuçları · 30 ifade · Türkiye · ilk sayfa · %s" % veri.TARIH, "YouTube search results · 30 phrases · Turkey · first page · %s" % veri.TARIH, "D4"),
 )
+from b_youtube_derin import EK as _EK
+HTML = HTML + _EK

@@ -38,7 +38,7 @@ ETK = tablo([th("Bileşen", "Component", "Hacimli ve ölçüye bağlı üründe 
      [x("Eksik ürün kontrolü", "Missing item check"), x("\"Birlikte Satın Alınanlar\" alanında iç takım, klozet kapağı, ara musluk; uyumlu rezervuar kodu ürün sayfasında", "\"Frequently bought together\" shows inner mechanism, WC seat, stop valve; compatible cistern code on the product page"), dr("Var"),
       x("Montaj parçalarının (esnek hortum, taharet musluğu, bağlantı borusu) tek pakette sunulması; Trendyol'da İDEVİT seti örneği", "Offering fitting parts (flexible hose, bidet valve, connection pipe) in a single pack; the İDEVİT set on Trendyol as an example")],
      [x("Yedek parça ve satış sonrası", "Spare parts and after-sales"), x("Parçalar tekil ürün olarak satılıyor; yedek parça kategorisi ve parça bulucu yok", "Parts are sold as single products; no spare-parts category or part finder"), dr("Yok"),
-      x("Ürün koduna göre parça bulucu ve yedek parça kategorisi (Bölüm 10 ve 13)", "A part finder by product code and a spare-parts category (Sections 10 and 13)")]], "uzun")
+      x("Ürün koduna göre parça bulucu ve yedek parça kategorisi (Bölüm 11 ve 16)", "A part finder by product code and a spare-parts category (Sections 11 and 16)")]], "uzun")
 tam = NI["Tamir ve bakım"]; mon = NI["Montaj"]
 TAMAMLAYICI = tablo([th("Ürün grubu", "Product group", "VitrA'nın üretmediği veya sınırlı ürettiği, kategori satın almasıyla birlikte ihtiyaç duyulan grup.", "Group VitrA does not make or makes in limited range, needed together with the category purchase."),
                      th("Talep sinyali", "Demand signal", "Kelime araştırması, autocomplete veya Search Console'daki ifade.", "Phrase in keyword research, autocomplete or Search Console."),

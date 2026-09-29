@@ -10,7 +10,7 @@
 | Para birimi | TRY (currency conversion uygulanmasın) |
 | Dosya biçimi | CSV ya da Google Sheets; her talep ayrı dosya, dosya adı talep kodu ile (ör. `R1_item_performance.csv`) |
 | Rapor aracı | Aksi belirtilmedikçe **Explore → Free form** |
-| Öncelik | **P1:** R1, R2, R3 · **P2:** R4 - R9 · **P3:** R10 - R13 |
+| Öncelik | **P1:** R1, R2, R3 · **P2:** R4, R5, R7, R8, R9 · **P3:** R10 - R13 (R6 kapsam dışı) |
 
 Kısaltmalar: *Explore* = GA4 Keşfet ekranı · *Key event* = eski adıyla Conversion.
 
@@ -74,14 +74,6 @@ Kullanıcının sitede ne aradığı ve aramanın dönüşüme etkisi.
 | Date range | Son 12 ay |
 | Kapsam | `Sessions` değerine göre ilk 1.000 satır |
 
-### R6 · Device and region
-
-| | |
-|---|---|
-| Tablo A | Dimensions: `Year month` · `Device category` → Metrics: `Sessions` · `Ecommerce purchases` · `Total revenue` · `Average purchase revenue` |
-| Tablo B | Dimensions: `Region` (son 12 ay) → Metrics: `Sessions` · `Ecommerce purchases` · `Total revenue` · `Average purchase revenue` |
-| Kullanım | Bayi yönlendirmesi, montaj ve keşif hizmetinin il bazında kapsamı |
-
 ### R7 · New vs returning users, repeat purchase
 
 | | |
@@ -96,7 +88,6 @@ Kullanıcının sitede ne aradığı ve aramanın dönüşüme etkisi.
 |---|---|
 | Tablo A | Event `add_payment_info` · Dimension: `Payment type` (parametre `payment_type`) · Metric: `Event count` · aylık |
 | Tablo B | Event `add_shipping_info` · Dimension: `Shipping tier` (parametre `shipping_tier`) · Metric: `Event count` · aylık |
-| Tablo C | Taksit sayısı ayrı bir parametre ya da event ile izleniyorsa: dimension olarak o parametre · Metrics: `Event count` · `Ecommerce purchases` |
 | Not | `payment_type` ve `shipping_tier` custom dimension olarak tanımlı değilse Explore'da görünmez. Bu durumda "tanımlı değil" bilgisi yeterli. |
 
 ### R9 · Lead and contact events

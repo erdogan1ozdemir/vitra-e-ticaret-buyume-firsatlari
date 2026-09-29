@@ -1,0 +1,3070 @@
+{
+ "site_tablosu": [
+  {
+   "site": "trendyol",
+   "satir": 300,
+   "limit_doldu": true,
+   "pencere_min": 848,
+   "cekirdek": 332155,
+   "bitisik": 155877,
+   "disi": 273259,
+   "cekirdek_sayfa": 121,
+   "sayfalama_payi": 97639,
+   "top_url": "/dusakabin-x-c109333?pi=2",
+   "top_trafik": 23025
+  },
+  {
+   "site": "hepsiburada",
+   "satir": 300,
+   "limit_doldu": true,
+   "pencere_min": 162,
+   "cekirdek": 106822,
+   "bitisik": 54435,
+   "disi": 27988,
+   "cekirdek_sayfa": 178,
+   "sayfalama_payi": 1126,
+   "top_url": "/banyo-mobilyalari-c-457065",
+   "top_trafik": 5295
+  },
+  {
+   "site": "n11",
+   "satir": 200,
+   "limit_doldu": true,
+   "pencere_min": 16,
+   "cekirdek": 10271,
+   "bitisik": 2300,
+   "disi": 1633,
+   "cekirdek_sayfa": 136,
+   "sayfalama_payi": 0,
+   "top_url": "/arama/q=lavabo+gider+boru",
+   "top_trafik": 806
+  },
+  {
+   "site": "amazon",
+   "satir": 150,
+   "limit_doldu": true,
+   "pencere_min": 49,
+   "cekirdek": 23802,
+   "bitisik": 8632,
+   "disi": 1638,
+   "cekirdek_sayfa": 102,
+   "sayfalama_payi": 974,
+   "top_url": "/k%C3%BC%C3%A7%C3%BCk-banyo-dolab%C4%B1/s?k=k%C3%BC%C3%A7%C3%BCk+banyo+dolab%C4%B1",
+   "top_trafik": 4447
+  },
+  {
+   "site": "koctas",
+   "satir": 150,
+   "limit_doldu": true,
+   "pencere_min": 177,
+   "cekirdek": 204086,
+   "bitisik": 83006,
+   "disi": 2232,
+   "cekirdek_sayfa": 110,
+   "sayfalama_payi": 41179,
+   "top_url": "/dus-sistemleri/dusakabin/c/103007002",
+   "top_trafik": 29107
+  },
+  {
+   "site": "bauhaus",
+   "satir": 150,
+   "limit_doldu": true,
+   "pencere_min": 2,
+   "cekirdek": 16720,
+   "bitisik": 2928,
+   "disi": 691,
+   "cekirdek_sayfa": 106,
+   "sayfalama_payi": 0,
+   "top_url": "/bauhaus-banyo-banyo-dolaplari",
+   "top_trafik": 3959
+  },
+  {
+   "site": "ikea",
+   "satir": 150,
+   "limit_doldu": true,
+   "pencere_min": 7,
+   "cekirdek": 41003,
+   "bitisik": 12944,
+   "disi": 1045,
+   "cekirdek_sayfa": 84,
+   "sayfalama_payi": 0,
+   "top_url": "/urun/enhet-beyaz-gri-80x17x75-cm-banyo-duvar-dolabi-59323692",
+   "top_trafik": 10448
+  },
+  {
+   "site": "tekzen",
+   "satir": 25,
+   "limit_doldu": false,
+   "pencere_min": 0,
+   "cekirdek": 491,
+   "bitisik": 15,
+   "disi": 157,
+   "cekirdek_sayfa": 20,
+   "sayfalama_payi": 0,
+   "top_url": "/klozet-kapaklari",
+   "top_trafik": 111
+  },
+  {
+   "site": "akakce",
+   "satir": 150,
+   "limit_doldu": true,
+   "pencere_min": 195,
+   "cekirdek": 72439,
+   "bitisik": 19002,
+   "disi": 4971,
+   "cekirdek_sayfa": 109,
+   "sayfalama_payi": 0,
+   "top_url": "/banyo-dolabi,13.html",
+   "top_trafik": 7310
+  },
+  {
+   "site": "cimri",
+   "satir": 150,
+   "limit_doldu": true,
+   "pencere_min": 87,
+   "cekirdek": 31886,
+   "bitisik": 5776,
+   "disi": 8368,
+   "cekirdek_sayfa": 100,
+   "sayfalama_payi": 12205,
+   "top_url": "/banyo-dolabi-mobilyasi/en-ucuz-alfa-banyo-dolabi-mobilyasi-fiyatlari",
+   "top_trafik": 1833
+  }
+ ],
+ "altkat_trendyol": {
+  "cekirdek_toplam": 332155,
+  "satirlar": [
+   {
+    "sinif": "Boy aynası & genel ayna",
+    "grup": "bitişik",
+    "trafik": 56462,
+    "sayfa": 25,
+    "pay_cekirdek": null,
+    "top_url": "/siyah-boy-aynasi-y-s276346?pi=3",
+    "top_kw": "boy aynası",
+    "top_hacim": 27000,
+    "top_sira": 1,
+    "top_trafik": 8520
+   },
+   {
+    "sinif": "Çamaşır makinesi dolabı",
+    "grup": "çekirdek",
+    "trafik": 41676,
+    "sayfa": 10,
+    "pay_cekirdek": 12.5,
+    "top_url": "/camasir-makinesi-dolabi-x-c166316?pi=2",
+    "top_kw": "çamaşır ve kurutma makinesi dolabı",
+    "top_hacim": 6800,
+    "top_sira": 1,
+    "top_trafik": 7831
+   },
+   {
+    "sinif": "Batarya & musluk (banyo)",
+    "grup": "çekirdek",
+    "trafik": 41268,
+    "sayfa": 14,
+    "pay_cekirdek": 12.4,
+    "top_url": "/batarya-musluk-x-c105719",
+    "top_kw": "mutfak musluğu",
+    "top_hacim": 8100,
+    "top_sira": 1,
+    "top_trafik": 12990
+   },
+   {
+    "sinif": "Duşakabin & duş teknesi",
+    "grup": "çekirdek",
+    "trafik": 40648,
+    "sayfa": 6,
+    "pay_cekirdek": 12.2,
+    "top_url": "/dusakabin-x-c109333?pi=2",
+    "top_kw": "duşakabin",
+    "top_hacim": 66000,
+    "top_sira": 1,
+    "top_trafik": 23025
+   },
+   {
+    "sinif": "Banyo dolabı",
+    "grup": "çekirdek",
+    "trafik": 35512,
+    "sayfa": 12,
+    "pay_cekirdek": 10.7,
+    "top_url": "/banyo-dolabi-seti-x-c166314?pi=118",
+    "top_kw": "banyo dolabı",
+    "top_hacim": 64000,
+    "top_sira": 1,
+    "top_trafik": 12015
+   },
+   {
+    "sinif": "Seramik & fayans",
+    "grup": "bitişik",
+    "trafik": 29981,
+    "sayfa": 16,
+    "pay_cekirdek": null,
+    "top_url": "/60x120-seramik-y-s43147",
+    "top_kw": "60 120 fayans",
+    "top_hacim": 1700,
+    "top_sira": 1,
+    "top_trafik": 4197
+   },
+   {
+    "sinif": "Banyo aksesuarı & düzenleyici",
+    "grup": "çekirdek",
+    "trafik": 28467,
+    "sayfa": 16,
+    "pay_cekirdek": 8.6,
+    "top_url": "/banyo-seti-x-c104210",
+    "top_kw": "banyo seti",
+    "top_hacim": 13000,
+    "top_sira": 1,
+    "top_trafik": 4203
+   },
+   {
+    "sinif": "Klozet & pisuvar",
+    "grup": "çekirdek",
+    "trafik": 27929,
+    "sayfa": 10,
+    "pay_cekirdek": 8.4,
+    "top_url": "/klozet-x-c109226",
+    "top_kw": "klozet",
+    "top_hacim": 41000,
+    "top_sira": 2,
+    "top_trafik": 9149
+   },
+   {
+    "sinif": "Evye & mutfak bataryası",
+    "grup": "bitişik",
+    "trafik": 23172,
+    "sayfa": 8,
+    "pay_cekirdek": null,
+    "top_url": "/eviye-bataryasi-x-c143560",
+    "top_kw": "mutfak bataryası",
+    "top_hacim": 24000,
+    "top_sira": 1,
+    "top_trafik": 8184
+   },
+   {
+    "sinif": "Lavabo",
+    "grup": "çekirdek",
+    "trafik": 22974,
+    "sayfa": 11,
+    "pay_cekirdek": 6.9,
+    "top_url": "/abdest-lavabosu-y-s82800",
+    "top_kw": "abdest lavabosu",
+    "top_hacim": 4800,
+    "top_sira": 1,
+    "top_trafik": 5295
+   },
+   {
+    "sinif": "Duş seti, başlığı & hortumu",
+    "grup": "çekirdek",
+    "trafik": 22158,
+    "sayfa": 8,
+    "pay_cekirdek": 6.7,
+    "top_url": "/dus-sistemi-x-c105724",
+    "top_kw": "duş başlığı",
+    "top_hacim": 45000,
+    "top_sira": 3,
+    "top_trafik": 10168
+   },
+   {
+    "sinif": "Sifon & gider",
+    "grup": "çekirdek",
+    "trafik": 15192,
+    "sayfa": 7,
+    "pay_cekirdek": 4.6,
+    "top_url": "/lavabo-gider-borusu-y-s9796",
+    "top_kw": "lavabo gider borusu",
+    "top_hacim": 7100,
+    "top_sira": 1,
+    "top_trafik": 5970
+   },
+   {
+    "sinif": "Termosifon & şofben",
+    "grup": "bitişik",
+    "trafik": 13335,
+    "sayfa": 3,
+    "pay_cekirdek": null,
+    "top_url": "/termosifon-x-c104085?pi=2",
+    "top_kw": "termosifon",
+    "top_hacim": 33000,
+    "top_sira": 2,
+    "top_trafik": 10077
+   },
+   {
+    "sinif": "Banyo tekstili",
+    "grup": "bitişik",
+    "trafik": 12074,
+    "sayfa": 4,
+    "pay_cekirdek": null,
+    "top_url": "/banyo-paspasi-x-c109003?pi=3",
+    "top_kw": "banyo paspası",
+    "top_hacim": 15000,
+    "top_sira": 1,
+    "top_trafik": 6678
+   },
+   {
+    "sinif": "Mutfak tezgahı",
+    "grup": "bitişik",
+    "trafik": 11337,
+    "sayfa": 7,
+    "pay_cekirdek": null,
+    "top_url": "/mutfak-tezgah-arasi-seramik-y-s44709",
+    "top_kw": "en kullanışlı tezgah arası",
+    "top_hacim": 2700,
+    "top_sira": 2,
+    "top_trafik": 2853
+   },
+   {
+    "sinif": "Klozet kapağı",
+    "grup": "çekirdek",
+    "trafik": 10461,
+    "sayfa": 4,
+    "pay_cekirdek": 3.1,
+    "top_url": "/klozet-kapagi-x-c109229",
+    "top_kw": "klozet kapağı",
+    "top_hacim": 29000,
+    "top_sira": 1,
+    "top_trafik": 6059
+   },
+   {
+    "sinif": "Havlupan & havluluk",
+    "grup": "çekirdek",
+    "trafik": 10456,
+    "sayfa": 5,
+    "pay_cekirdek": 3.1,
+    "top_url": "/havlupan-x-c144301?pi=2",
+    "top_kw": "havlupan",
+    "top_hacim": 12000,
+    "top_sira": 1,
+    "top_trafik": 3275
+   },
+   {
+    "sinif": "Banyo (genel/kök)",
+    "grup": "çekirdek",
+    "trafik": 9026,
+    "sayfa": 6,
+    "pay_cekirdek": 2.7,
+    "top_url": "/banyo-havalandirma-fani-y-s14438",
+    "top_kw": "banyo havalandırma fanı",
+    "top_hacim": 3300,
+    "top_sira": 1,
+    "top_trafik": 2210
+   },
+   {
+    "sinif": "Rezervuar & iç takım",
+    "grup": "çekirdek",
+    "trafik": 8519,
+    "sayfa": 3,
+    "pay_cekirdek": 2.6,
+    "top_url": "/klozet-ic-takimi-y-s4452",
+    "top_kw": "klozet şamandırası",
+    "top_hacim": 5000,
+    "top_sira": 2,
+    "top_trafik": 5002
+   },
+   {
+    "sinif": "Ara musluk & taharet",
+    "grup": "çekirdek",
+    "trafik": 7517,
+    "sayfa": 5,
+    "pay_cekirdek": 2.3,
+    "top_url": "/ara-musluk-x-c143556?pi=48",
+    "top_kw": "taharet musluğu",
+    "top_hacim": 34000,
+    "top_sira": 2,
+    "top_trafik": 2351
+   },
+   {
+    "sinif": "Küvet",
+    "grup": "çekirdek",
+    "trafik": 5693,
+    "sayfa": 2,
+    "pay_cekirdek": 1.7,
+    "top_url": "/bebek-kuveti-x-c103778",
+    "top_kw": "bebek küveti",
+    "top_hacim": 4300,
+    "top_sira": 2,
+    "top_trafik": 2951
+   },
+   {
+    "sinif": "Banyo temizlik & bakım",
+    "grup": "bitişik",
+    "trafik": 4838,
+    "sayfa": 2,
+    "pay_cekirdek": null,
+    "top_url": "/clonet-banyo-temizleyici-y-s89813",
+    "top_kw": "clonet",
+    "top_hacim": 2200,
+    "top_sira": 1,
+    "top_trafik": 3830
+   },
+   {
+    "sinif": "Aritmali batarya & su aritma",
+    "grup": "bitişik",
+    "trafik": 4678,
+    "sayfa": 3,
+    "pay_cekirdek": null,
+    "top_url": "/aritmali-dus-basligi-y-s81354",
+    "top_kw": "filtreli duş başlığı",
+    "top_hacim": 4700,
+    "top_sira": 1,
+    "top_trafik": 2197
+   },
+   {
+    "sinif": "Banyo aynası",
+    "grup": "çekirdek",
+    "trafik": 4659,
+    "sayfa": 2,
+    "pay_cekirdek": 1.4,
+    "top_url": "/banyo-aynasi-x-c105726",
+    "top_kw": "banyo aynası",
+    "top_hacim": 7800,
+    "top_sira": 1,
+    "top_trafik": 3673
+   }
+  ]
+ },
+ "altkat_hepsiburada": {
+  "cekirdek_toplam": 106822,
+  "satirlar": [
+   {
+    "sinif": "Batarya & musluk (banyo)",
+    "grup": "çekirdek",
+    "trafik": 18244,
+    "sayfa": 32,
+    "pay_cekirdek": 17.1,
+    "top_url": "/sardici-banyo-bataryalari-xc-18021947-b32736",
+    "top_kw": "banyo bataryası",
+    "top_hacim": 26000,
+    "top_sira": 3,
+    "top_trafik": 2183
+   },
+   {
+    "sinif": "Boy aynası & genel ayna",
+    "grup": "bitişik",
+    "trafik": 16365,
+    "sayfa": 24,
+    "pay_cekirdek": null,
+    "top_url": "/dekor-ask-boy-aynasi-xc-60006510-b116972",
+    "top_kw": "boy aynası",
+    "top_hacim": 27000,
+    "top_sira": 5,
+    "top_trafik": 3468
+   },
+   {
+    "sinif": "Banyo dolabı",
+    "grup": "çekirdek",
+    "trafik": 13076,
+    "sayfa": 15,
+    "pay_cekirdek": 12.2,
+    "top_url": "/banyo-mobilyalari-c-457065",
+    "top_kw": "banyo dolabi",
+    "top_hacim": 6000,
+    "top_sira": 5,
+    "top_trafik": 5295
+   },
+   {
+    "sinif": "Duş seti, başlığı & hortumu",
+    "grup": "çekirdek",
+    "trafik": 13046,
+    "sayfa": 15,
+    "pay_cekirdek": 12.2,
+    "top_url": "/dus-setleri-c-18021971",
+    "top_kw": "duş seti",
+    "top_hacim": 19000,
+    "top_sira": 2,
+    "top_trafik": 4136
+   },
+   {
+    "sinif": "Evye & mutfak bataryası",
+    "grup": "bitişik",
+    "trafik": 11513,
+    "sayfa": 12,
+    "pay_cekirdek": null,
+    "top_url": "/mutfak-evye-bataryalari-c-18021949",
+    "top_kw": "mutfak bataryası",
+    "top_hacim": 24000,
+    "top_sira": 4,
+    "top_trafik": 5049
+   },
+   {
+    "sinif": "Seramik & fayans",
+    "grup": "bitişik",
+    "trafik": 10804,
+    "sayfa": 16,
+    "pay_cekirdek": null,
+    "top_url": "/60x120-seramik-x-s67476",
+    "top_kw": "60x120 fayans fiyatları",
+    "top_hacim": 1300,
+    "top_sira": 2,
+    "top_trafik": 2549
+   },
+   {
+    "sinif": "Sifon & gider",
+    "grup": "çekirdek",
+    "trafik": 10059,
+    "sayfa": 15,
+    "pay_cekirdek": 9.4,
+    "top_url": "/lavabo-gider-borusu-x-s48849",
+    "top_kw": "lavabo gider borusu",
+    "top_hacim": 7100,
+    "top_sira": 2,
+    "top_trafik": 1887
+   },
+   {
+    "sinif": "Lavabo",
+    "grup": "çekirdek",
+    "trafik": 7917,
+    "sayfa": 8,
+    "pay_cekirdek": 7.4,
+    "top_url": "/Ev%20Dekorasyon/Banyolar/",
+    "top_kw": "küçük lavabo",
+    "top_hacim": 1900,
+    "top_sira": 1,
+    "top_trafik": 2524
+   },
+   {
+    "sinif": "Banyo aksesuarı & düzenleyici",
+    "grup": "çekirdek",
+    "trafik": 7891,
+    "sayfa": 14,
+    "pay_cekirdek": 7.4,
+    "top_url": "/ata-home-banyo-aksesuarlari-xc-18021925-b6295",
+    "top_kw": "banyo aksesuarları",
+    "top_hacim": 9300,
+    "top_sira": 3,
+    "top_trafik": 1651
+   },
+   {
+    "sinif": "Klozet kapağı",
+    "grup": "çekirdek",
+    "trafik": 5984,
+    "sayfa": 9,
+    "pay_cekirdek": 5.6,
+    "top_url": "/klozet-kapaklari-c-18021958",
+    "top_kw": "klozet kapağı",
+    "top_hacim": 29000,
+    "top_sira": 6,
+    "top_trafik": 1754
+   },
+   {
+    "sinif": "Banyo (genel/kök)",
+    "grup": "çekirdek",
+    "trafik": 5922,
+    "sayfa": 16,
+    "pay_cekirdek": 5.5,
+    "top_url": "/banyo-duvar-kaplama-x-s19574",
+    "top_kw": "banyo duvar kaplama",
+    "top_hacim": 1400,
+    "top_sira": 2,
+    "top_trafik": 556
+   },
+   {
+    "sinif": "Duşakabin & duş teknesi",
+    "grup": "çekirdek",
+    "trafik": 5760,
+    "sayfa": 11,
+    "pay_cekirdek": 5.4,
+    "top_url": "/dusakabinler-c-18021979",
+    "top_kw": "duşa kabin modelleri",
+    "top_hacim": 11000,
+    "top_sira": 9,
+    "top_trafik": 1913
+   },
+   {
+    "sinif": "Banyo tekstili",
+    "grup": "bitişik",
+    "trafik": 4860,
+    "sayfa": 8,
+    "pay_cekirdek": null,
+    "top_url": "/takim-banyo-paspaslari-c-9011674",
+    "top_kw": "banyo paspası",
+    "top_hacim": 15000,
+    "top_sira": 7,
+    "top_trafik": 2436
+   },
+   {
+    "sinif": "Rezervuar & iç takım",
+    "grup": "çekirdek",
+    "trafik": 4843,
+    "sayfa": 11,
+    "pay_cekirdek": 4.5,
+    "top_url": "/rezervuar-ic-takimlar-c-18021929",
+    "top_kw": "klozet şamandırası",
+    "top_hacim": 5000,
+    "top_sira": 4,
+    "top_trafik": 1267
+   },
+   {
+    "sinif": "Klozet & pisuvar",
+    "grup": "çekirdek",
+    "trafik": 4565,
+    "sayfa": 12,
+    "pay_cekirdek": 4.3,
+    "top_url": "/klozetler-c-18021930",
+    "top_kw": "alafranga tuvalet taşı fiyatı",
+    "top_hacim": 900,
+    "top_sira": 2,
+    "top_trafik": 1108
+   },
+   {
+    "sinif": "Mutfak tezgahı",
+    "grup": "bitişik",
+    "trafik": 4320,
+    "sayfa": 9,
+    "pay_cekirdek": null,
+    "top_url": "/tezgah-alti-aydinlatma-x-s54936",
+    "top_kw": "tezgah arası led ışıklı mutfak dolapları",
+    "top_hacim": 1700,
+    "top_sira": 2,
+    "top_trafik": 1285
+   },
+   {
+    "sinif": "Ara musluk & taharet",
+    "grup": "çekirdek",
+    "trafik": 4161,
+    "sayfa": 9,
+    "pay_cekirdek": 3.9,
+    "top_url": "/taharet-muslugu-x-s57129",
+    "top_kw": "klozet taharet musluğu",
+    "top_hacim": 5400,
+    "top_sira": 4,
+    "top_trafik": 1006
+   },
+   {
+    "sinif": "Aritmali batarya & su aritma",
+    "grup": "bitişik",
+    "trafik": 2917,
+    "sayfa": 5,
+    "pay_cekirdek": null,
+    "top_url": "/3-yollu-aritmali-musluk-pm-HBC00003W3AYS",
+    "top_kw": "arıtmalı musluk",
+    "top_hacim": 6000,
+    "top_sira": 2,
+    "top_trafik": 1123
+   },
+   {
+    "sinif": "Küvet",
+    "grup": "çekirdek",
+    "trafik": 2114,
+    "sayfa": 3,
+    "pay_cekirdek": 2.0,
+    "top_url": "/bebek-kuveti-c-80383033",
+    "top_kw": "bebek küveti",
+    "top_hacim": 4300,
+    "top_sira": 4,
+    "top_trafik": 1250
+   },
+   {
+    "sinif": "Termosifon & şofben",
+    "grup": "bitişik",
+    "trafik": 2043,
+    "sayfa": 4,
+    "pay_cekirdek": null,
+    "top_url": "/termosifonlar-c-17769",
+    "top_kw": "termosifon fiyatları",
+    "top_hacim": 8800,
+    "top_sira": 8,
+    "top_trafik": 1279
+   },
+   {
+    "sinif": "Havlupan & havluluk",
+    "grup": "çekirdek",
+    "trafik": 1982,
+    "sayfa": 4,
+    "pay_cekirdek": 1.9,
+    "top_url": "/havlupanlar-c-462096",
+    "top_kw": "havlupan",
+    "top_hacim": 12000,
+    "top_sira": 5,
+    "top_trafik": 804
+   },
+   {
+    "sinif": "Banyo temizlik & bakım",
+    "grup": "bitişik",
+    "trafik": 1613,
+    "sayfa": 3,
+    "pay_cekirdek": null,
+    "top_url": "/nilem-sihirli-muhtesem-sivi-dusakabin-ve-fayans-temizleyici-1-lt-pm-HB00000E6VXP",
+    "top_kw": "nilem sihirli muhteşem sıvı",
+    "top_hacim": 5200,
+    "top_sira": 5,
+    "top_trafik": 811
+   },
+   {
+    "sinif": "Banyo aynası",
+    "grup": "çekirdek",
+    "trafik": 1084,
+    "sayfa": 3,
+    "pay_cekirdek": 1.0,
+    "top_url": "/avend/banyo-aynalari-c-60000017",
+    "top_kw": "banyo aynası",
+    "top_hacim": 8400,
+    "top_sira": 4,
+    "top_trafik": 631
+   },
+   {
+    "sinif": "Çamaşır makinesi dolabı",
+    "grup": "çekirdek",
+    "trafik": 174,
+    "sayfa": 1,
+    "pay_cekirdek": 0.2,
+    "top_url": "/kenzlife-camasir-kurutma-makinesi-dolabi-kapakli-yaromira-sol-cvz-180-120-60-banyo-arkaliksiz-pm-HBC000046B697",
+    "top_kw": "çamaşır kurutma makinesi dolabı kapaklı",
+    "top_hacim": 500,
+    "top_sira": 1,
+    "top_trafik": 174
+   }
+  ]
+ },
+ "sayfa_tipi": {
+  "trendyol": {
+   "kategori": 203650,
+   "kategori+özellik filtresi": 30924,
+   "arama/koleksiyon": 82038,
+   "marka+kategori": 5150,
+   "ürün": 9447,
+   "diğer": 946
+  },
+  "hepsiburada": {
+   "kategori": 35753,
+   "diğer": 4656,
+   "marka+kategori": 6296,
+   "arama/koleksiyon": 43660,
+   "ürün": 16457
+  },
+  "n11": {
+   "arama": 1657,
+   "kategori+filtre": 4749,
+   "kategori": 1583,
+   "ürün": 2282
+  },
+  "amazon": {
+   "arama": 14219,
+   "kategori/marka filtresi": 7009,
+   "ürün": 1740,
+   "arama/diğer": 834
+  },
+  "koctas": {
+   "kategori": 167089,
+   "diğer": 17497,
+   "marka+kategori": 15918,
+   "ürün": 3582
+  },
+  "bauhaus": {
+   "kategori": 15603,
+   "ürün": 1117
+  },
+  "ikea": {
+   "ürün": 13977,
+   "kategori": 24581,
+   "diğer": 2445
+  },
+  "tekzen": {
+   "kategori": 300,
+   "ürün": 191
+  },
+  "akakce": {
+   "kategori/liste": 72439
+  },
+  "cimri": {
+   "ürün/liste": 8921,
+   "kategori/liste": 22965
+  }
+ },
+ "marka_gorunurlugu": [
+  {
+   "marka": "VitrA",
+   "trendyol": 9174,
+   "trendyol_sayfa": 38,
+   "trendyol_top": "/vitra-klozet-x-b109184-c109226",
+   "hepsiburada": 2154,
+   "hepsiburada_sayfa": 53,
+   "hepsiburada_top": "/vitra-klozetler-xc-18021930-b8646",
+   "n11": 135,
+   "n11_sayfa": 4,
+   "n11_top": "/banyo-ve-ev-gerecleri/banyo-ve-aksesuarlari/vitrifiye-urunl",
+   "amazon": 596,
+   "amazon_sayfa": 39,
+   "amazon_top": "Klozet-Kapaklari-VitrA (p=2)",
+   "koctas": 4255,
+   "koctas_sayfa": 45,
+   "koctas_top": "vitra/klozet/bc/103013",
+   "bauhaus": 48,
+   "bauhaus_sayfa": 6,
+   "bauhaus_top": "/vitra-gomme-rezervuar-seti-61400519",
+   "akakce": 996,
+   "akakce_sayfa": 4,
+   "akakce_top": "/rezervuar/vitra.html",
+   "cimri": 1882,
+   "cimri_sayfa": 10,
+   "cimri_top": "/klozet-kapagi/en-ucuz-vitra-klozet-kapagi-fiyatlari?page=3"
+  },
+  {
+   "marka": "Artema",
+   "trendyol": 3568,
+   "trendyol_sayfa": 15,
+   "trendyol_top": "/artema-dus-sistemi-x-b109152-c105724",
+   "hepsiburada": 459,
+   "hepsiburada_sayfa": 14,
+   "hepsiburada_top": "/artema-dus-bataryasi-xc-18021948-b27496",
+   "n11": 23,
+   "n11_sayfa": 1,
+   "n11_top": "/urun/artema-gizli-perlator-aparati-batarya-musluk-agiz-filt",
+   "amazon": 365,
+   "amazon_sayfa": 17,
+   "amazon_top": "artema arıtmalı mutfak batarya (arama)",
+   "koctas": 4072,
+   "koctas_sayfa": 10,
+   "koctas_top": "artema/banyo-bataryalari/bc/103010?page=6",
+   "bauhaus": 14,
+   "bauhaus_sayfa": 3,
+   "bauhaus_top": "/artema-maestro-pull-out-eviye-bataryasi-61316962",
+   "akakce": 862,
+   "akakce_sayfa": 2,
+   "akakce_top": "/lavabo-bataryasi/artema,12.html",
+   "cimri": 684,
+   "cimri_sayfa": 2,
+   "cimri_top": "/bataryalar/artema-banyo-bataryalari?page=3"
+  },
+  {
+   "marka": "Kale",
+   "trendyol": 1215,
+   "trendyol_sayfa": 5,
+   "trendyol_top": "/kale-klozet-x-b142687-c109226",
+   "hepsiburada": 249,
+   "hepsiburada_sayfa": 4,
+   "hepsiburada_top": "/kale-yeni-gomme-rezervuar-3-8-doldurma-grubu-orijinal-su-al",
+   "n11": 108,
+   "n11_sayfa": 3,
+   "n11_top": "/banyo-ve-ev-gerecleri/banyo-ve-aksesuarlari/ic-takim-ve-aks",
+   "amazon": 14,
+   "amazon_sayfa": 1,
+   "amazon_top": "kale-basics-klozet-kapagi",
+   "koctas": 107,
+   "koctas_sayfa": 4,
+   "koctas_top": "kale-banyo/lavabolar/bc/103019",
+   "bauhaus": 11,
+   "bauhaus_sayfa": 2,
+   "bauhaus_top": "/kale-t-100-filtreli-ara-musluk-61252640",
+   "akakce": null,
+   "cimri": null
+  },
+  {
+   "marka": "Creavit",
+   "trendyol": 1728,
+   "trendyol_sayfa": 8,
+   "trendyol_top": "/creavit-x-b109442?pi=12",
+   "hepsiburada": 123,
+   "hepsiburada_sayfa": 4,
+   "hepsiburada_top": "/creavit-gomme-rezervuar-seti-ve-dura-asma-klozet-zeugma-ve-",
+   "n11": 39,
+   "n11_sayfa": 1,
+   "n11_top": "/banyo-ve-ev-gerecleri/banyo-ve-aksesuarlari/klozet-kapaklar",
+   "amazon": 85,
+   "amazon_sayfa": 2,
+   "amazon_top": "Creavit Gömme Rezervuar Gr5001 (dp)",
+   "koctas": 395,
+   "koctas_sayfa": 7,
+   "koctas_top": "creavit/klozet-kapaklari/bc/103013005",
+   "bauhaus": null,
+   "akakce": null,
+   "cimri": 310,
+   "cimri_sayfa": 1,
+   "cimri_top": "/rezervuar/en-ucuz-creavit-rezervuar-fiyatlari?page=9"
+  },
+  {
+   "marka": "Serel",
+   "trendyol": 1168,
+   "trendyol_sayfa": 9,
+   "trendyol_top": "/eca-serel-klozet-y-s307669",
+   "hepsiburada": 610,
+   "hepsiburada_sayfa": 12,
+   "hepsiburada_top": "/serel-gomme-rezarvuar-helatasi-icin-pm-HBC00001PKX4S",
+   "n11": 93,
+   "n11_sayfa": 2,
+   "n11_top": "/banyo-ve-ev-gerecleri/banyo-ve-aksesuarlari/klozet-kapaklar",
+   "amazon": 32,
+   "amazon_sayfa": 2,
+   "amazon_top": "serel hygiene klozet kapağı",
+   "koctas": 928,
+   "koctas_sayfa": 11,
+   "koctas_top": "serel/klozet-kapaklari/bc/103013005",
+   "bauhaus": 24,
+   "bauhaus_sayfa": 5,
+   "bauhaus_top": "/serel-cocuk-yetiskin-klozet-kapagi-61187210",
+   "akakce": null,
+   "cimri": 181,
+   "cimri_sayfa": 1,
+   "cimri_top": "/serel-gomme-rezervuar-fiyatlari"
+  },
+  {
+   "marka": "Eca",
+   "trendyol": 7771,
+   "trendyol_sayfa": 18,
+   "trendyol_top": "/eca-mutfak-bataryasi-y-s80823",
+   "hepsiburada": 582,
+   "hepsiburada_sayfa": 11,
+   "hepsiburada_top": "/e-c-a-life-banyo-bataryasi-pm-HBC0000IXAKJ0",
+   "n11": 78,
+   "n11_sayfa": 2,
+   "n11_top": "/urun/eca-klozet-rezervuar-basma-butonu-5319508",
+   "amazon": 10,
+   "amazon_sayfa": 1,
+   "amazon_top": "eca serel klozet kapağı",
+   "koctas": null,
+   "bauhaus": 34,
+   "bauhaus_sayfa": 6,
+   "bauhaus_top": "/eca-niobe-eviye-bataryasi-61046694",
+   "akakce": 2946,
+   "akakce_sayfa": 7,
+   "akakce_top": "/lavabo-bataryasi/e-c-a.html",
+   "cimri": 233,
+   "cimri_sayfa": 2,
+   "cimri_top": "/ara-musluk/en-ucuz-e-c-a-ara-musluk-fiyatlari"
+  },
+  {
+   "marka": "Ece",
+   "trendyol": null,
+   "hepsiburada": 18,
+   "hepsiburada_sayfa": 1,
+   "hepsiburada_top": "/ece-banyo-klozetler-xc-18021930-b93958",
+   "n11": null,
+   "amazon": null,
+   "koctas": null,
+   "bauhaus": null,
+   "akakce": null,
+   "cimri": null
+  },
+  {
+   "marka": "Turkuaz",
+   "trendyol": 1325,
+   "trendyol_sayfa": 5,
+   "trendyol_top": "/turkuaz-klozet-x-b147140-c109226",
+   "hepsiburada": 181,
+   "hepsiburada_sayfa": 4,
+   "hepsiburada_top": "/turkuaz-serami-k-bella-duvara-sifir-klozet-bella-slim-yavas",
+   "n11": 87,
+   "n11_sayfa": 2,
+   "n11_top": "/urun/turkuaz-bella-duvara-sifir-klozetrezervuaric-takimgala",
+   "amazon": null,
+   "koctas": 436,
+   "koctas_sayfa": 4,
+   "koctas_top": "turkuaz/klozet/bc/103013",
+   "bauhaus": 5,
+   "bauhaus_sayfa": 1,
+   "bauhaus_top": "/ege-seramik-verano-turkuaz-k-9-duvar-seramigi-10x30-060-m2-",
+   "akakce": 412,
+   "akakce_sayfa": 2,
+   "akakce_top": "/klozet/turkuaz-seramik.html",
+   "cimri": null
+  },
+  {
+   "marka": "Bocchi",
+   "trendyol": 222,
+   "trendyol_sayfa": 2,
+   "trendyol_top": "/bocchi-lavabo-x-b111275-c109227",
+   "hepsiburada": 9,
+   "hepsiburada_sayfa": 1,
+   "hepsiburada_top": "/bocchi-lavabolar-xc-60004458-b4407",
+   "n11": null,
+   "amazon": 27,
+   "amazon_sayfa": 2,
+   "amazon_top": "Klozet-Kapaklari-BOCCHI",
+   "koctas": 116,
+   "koctas_sayfa": 2,
+   "koctas_top": "bocchi/lavabolar/bc/103019",
+   "bauhaus": null,
+   "akakce": null,
+   "cimri": null
+  },
+  {
+   "marka": "Geberit",
+   "trendyol": 983,
+   "trendyol_sayfa": 3,
+   "trendyol_top": "/geberit-rezervuar-x-b149885-c144458",
+   "hepsiburada": 32,
+   "hepsiburada_sayfa": 1,
+   "hepsiburada_top": "/geberit-rezervuar-ic-takimlar-xc-18021929-b92576",
+   "n11": null,
+   "amazon": 8,
+   "amazon_sayfa": 2,
+   "amazon_top": "geberit klozet",
+   "koctas": 228,
+   "koctas_sayfa": 4,
+   "koctas_top": "geberit/klozet/bc/103013",
+   "bauhaus": null,
+   "akakce": 280,
+   "akakce_sayfa": 1,
+   "akakce_top": "/rezervuar/geberit.html",
+   "cimri": 106,
+   "cimri_sayfa": 1,
+   "cimri_top": "/rezervuar/en-ucuz-geberit-3-alpha-gomme-rezervuar-seti-fiya"
+  },
+  {
+   "marka": "Grohe",
+   "trendyol": 452,
+   "trendyol_sayfa": 5,
+   "trendyol_top": "/grohe-dus-seti-y-s81390",
+   "hepsiburada": 58,
+   "hepsiburada_sayfa": 2,
+   "hepsiburada_top": "/grohe-banyo-lavabo-bataryalari-xc-18021983-b2307",
+   "n11": null,
+   "amazon": 195,
+   "amazon_sayfa": 7,
+   "amazon_top": "Cubuk-Bataryalar-Grohe-Mutfak",
+   "koctas": 334,
+   "koctas_sayfa": 5,
+   "koctas_top": "grohe/banyo-bataryalari/bc/103010",
+   "bauhaus": 21,
+   "bauhaus_sayfa": 2,
+   "bauhaus_top": "/grohe-spiral-dus-hortumu-175-cm-60155108",
+   "akakce": null,
+   "cimri": null
+  },
+  {
+   "marka": "Duravit",
+   "trendyol": 90,
+   "trendyol_sayfa": 1,
+   "trendyol_top": "/duravit-klozet-x-b152439-c109226",
+   "hepsiburada": 13,
+   "hepsiburada_sayfa": 1,
+   "hepsiburada_top": "/duravit-klozet-kapaklari-xc-18021958-b6846",
+   "n11": null,
+   "amazon": 10,
+   "amazon_sayfa": 1,
+   "amazon_top": "duravit uyumlu klozet kapağı",
+   "koctas": null,
+   "bauhaus": null,
+   "akakce": null,
+   "cimri": null
+  },
+  {
+   "marka": "Ideal Standard",
+   "trendyol": null,
+   "hepsiburada": null,
+   "n11": null,
+   "amazon": null,
+   "koctas": null,
+   "bauhaus": null,
+   "akakce": null,
+   "cimri": null
+  },
+  {
+   "marka": "Isvea",
+   "trendyol": null,
+   "hepsiburada": null,
+   "n11": null,
+   "amazon": null,
+   "koctas": null,
+   "bauhaus": null,
+   "akakce": null,
+   "cimri": null
+  },
+  {
+   "marka": "Bien",
+   "trendyol": null,
+   "hepsiburada": null,
+   "n11": null,
+   "amazon": null,
+   "koctas": null,
+   "bauhaus": null,
+   "akakce": null,
+   "cimri": null
+  },
+  {
+   "marka": "Visam",
+   "trendyol": 1423,
+   "trendyol_sayfa": 9,
+   "trendyol_top": "/visam-gomme-rezervuar-ic-takim-y-s83698",
+   "hepsiburada": 683,
+   "hepsiburada_sayfa": 11,
+   "hepsiburada_top": "/visam-gomme-rezervuar-iki-kademeli-slim-80-3-6-pm-HBC00003J",
+   "n11": 25,
+   "n11_sayfa": 1,
+   "n11_top": "/banyo-ve-ev-gerecleri/banyo-ve-aksesuarlari/ic-takim-ve-aks",
+   "amazon": 86,
+   "amazon_sayfa": 4,
+   "amazon_top": "visam rezervuar iç takımı",
+   "koctas": 309,
+   "koctas_sayfa": 3,
+   "koctas_top": "visam/rezervuarlar-ic-takimi/bc/103013004",
+   "bauhaus": 8,
+   "bauhaus_sayfa": 1,
+   "bauhaus_top": "/visam-lord-2000-asma-rezervuar-13600097",
+   "akakce": 648,
+   "akakce_sayfa": 2,
+   "akakce_top": "/rezervuar-aksesuari/en-ucuz-visam-slim-80-helatasi-gomme-re",
+   "cimri": 148,
+   "cimri_sayfa": 1,
+   "cimri_top": "/rezervuar/en-ucuz-visam-rezervuar-fiyatlari"
+  },
+  {
+   "marka": "Hakersan",
+   "trendyol": null,
+   "hepsiburada": null,
+   "n11": null,
+   "amazon": null,
+   "koctas": null,
+   "bauhaus": null,
+   "akakce": null,
+   "cimri": null
+  },
+  {
+   "marka": "NKP",
+   "trendyol": null,
+   "hepsiburada": null,
+   "n11": 18,
+   "n11_sayfa": 1,
+   "n11_top": "/banyo-ve-ev-gerecleri/banyo-ve-aksesuarlari?q=nkp+g%C3%B6mm",
+   "amazon": null,
+   "koctas": null,
+   "bauhaus": null,
+   "akakce": 661,
+   "akakce_sayfa": 1,
+   "akakce_top": "/klozet/nkp.html",
+   "cimri": null
+  },
+  {
+   "marka": "MOBİLİQUE",
+   "trendyol": 122,
+   "trendyol_sayfa": 1,
+   "trendyol_top": "/mobilique-x-b149622",
+   "hepsiburada": 88,
+   "hepsiburada_sayfa": 1,
+   "hepsiburada_top": "/mobilique",
+   "n11": null,
+   "amazon": null,
+   "koctas": 88,
+   "koctas_sayfa": 1,
+   "koctas_top": "mobilique/b/b-1007",
+   "bauhaus": null,
+   "akakce": null,
+   "cimri": null
+  },
+  {
+   "marka": "Bofigo",
+   "trendyol": 1548,
+   "trendyol_sayfa": 2,
+   "trendyol_top": "/bofigo-mobilya-x-b109018-c1119?pi=4",
+   "hepsiburada": null,
+   "n11": null,
+   "amazon": 4,
+   "amazon_sayfa": 1,
+   "amazon_top": "Bofigo kamp sandalyesi (dp)",
+   "koctas": 24,
+   "koctas_sayfa": 1,
+   "koctas_top": "bofigo/ayakkabilik/bc/109005",
+   "bauhaus": null,
+   "akakce": null,
+   "cimri": null
+  },
+  {
+   "marka": "Hansgrohe",
+   "trendyol": null,
+   "hepsiburada": null,
+   "n11": null,
+   "amazon": 4,
+   "amazon_sayfa": 1,
+   "amazon_top": "Dus-Basliklari-Hansgrohe",
+   "koctas": 275,
+   "koctas_sayfa": 3,
+   "koctas_top": "hansgrohe/dus-setleri/bc/103004",
+   "bauhaus": 3,
+   "bauhaus_sayfa": 1,
+   "bauhaus_top": "/hansgrohe-crometta-1-jet-dus-seti-beyazkrom-61418433",
+   "akakce": null,
+   "cimri": null
+  },
+  {
+   "marka": "Franke",
+   "trendyol": null,
+   "hepsiburada": null,
+   "n11": null,
+   "amazon": 1272,
+   "amazon_sayfa": 1,
+   "amazon_top": "/franke-evye/s?k=franke+evye&page=3",
+   "koctas": null,
+   "bauhaus": null,
+   "akakce": 611,
+   "akakce_sayfa": 1,
+   "akakce_top": "/eviye/paslanmaz-celik-eviye,6.html",
+   "cimri": null
+  },
+  {
+   "marka": "Blanco",
+   "trendyol": null,
+   "hepsiburada": null,
+   "n11": null,
+   "amazon": null,
+   "koctas": null,
+   "bauhaus": null,
+   "akakce": null,
+   "cimri": null
+  }
+ ],
+ "top40_kelime": [
+  {
+   "site": "trendyol",
+   "keyword": "çamaşır makinesi dolabı",
+   "hacim": 29000,
+   "sira": 1,
+   "trafik": 26598,
+   "url": "https://www.trendyol.com/suntalam-turkuaz-camasir-makinesi-dolabi-x-r15-c166316-a14-v3990",
+   "sinif": "Çamaşır makinesi dolabı",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "trendyol",
+   "keyword": "duşakabin",
+   "hacim": 66000,
+   "sira": 1,
+   "trafik": 15488,
+   "url": "https://www.trendyol.com/dusakabin-x-c109333?pi=2",
+   "sinif": "Duşakabin & duş teknesi",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "trendyol",
+   "keyword": "banyo dolabı",
+   "hacim": 64000,
+   "sira": 1,
+   "trafik": 15484,
+   "url": "https://www.trendyol.com/banyo-dolabi-seti-x-c166314?pi=118",
+   "sinif": "Banyo dolabı",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "trendyol",
+   "keyword": "klozet fiyatları",
+   "hacim": 27000,
+   "sira": 2,
+   "trafik": 8202,
+   "url": "https://www.trendyol.com/klozet-x-c109226?pi=18",
+   "sinif": "Klozet & pisuvar",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "trendyol",
+   "keyword": "duşakabin fiyatları",
+   "hacim": 25000,
+   "sira": 1,
+   "trafik": 6360,
+   "url": "https://www.trendyol.com/dusakabin-x-c109333?pi=2",
+   "sinif": "Duşakabin & duş teknesi",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "trendyol",
+   "keyword": "banyo dolabı modelleri",
+   "hacim": 16000,
+   "sira": 1,
+   "trafik": 5548,
+   "url": "https://www.trendyol.com/banyo-dolabi-seti-x-c166314?pi=90",
+   "sinif": "Banyo dolabı",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "trendyol",
+   "keyword": "klozet",
+   "hacim": 41000,
+   "sira": 2,
+   "trafik": 5435,
+   "url": "https://www.trendyol.com/klozet-x-c109226",
+   "sinif": "Klozet & pisuvar",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "hepsiburada",
+   "keyword": "duş başlığı",
+   "hacim": 45000,
+   "sira": 1,
+   "trafik": 4408,
+   "url": "https://www.hepsiburada.com/elites-luks-dus-robotu-tepe-dus-seti-dus-basligi-sistemi-seti-yagmurlama-dus-robotu-pm-HBC000063IBOA",
+   "sinif": "Duş seti, başlığı & hortumu",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "trendyol",
+   "keyword": "duş başlığı",
+   "hacim": 45000,
+   "sira": 1,
+   "trafik": 4312,
+   "url": "https://www.trendyol.com/kustar/nilufer-3-in-1-5-fonksiyonlu-banyo-dus-basligi-seti-l-mafsal-ve-1-5-metre-orgulu-hortum-seti-p-65628905",
+   "sinif": "Duş seti, başlığı & hortumu",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "trendyol",
+   "keyword": "musluk",
+   "hacim": 19000,
+   "sira": 1,
+   "trafik": 4099,
+   "url": "https://www.trendyol.com/batarya-musluk-x-c105719?pi=75",
+   "sinif": "Batarya & musluk (banyo)",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "trendyol",
+   "keyword": "duşakabin modelleri",
+   "hacim": 21000,
+   "sira": 1,
+   "trafik": 4096,
+   "url": "https://www.trendyol.com/dusakabin-x-c109333",
+   "sinif": "Duşakabin & duş teknesi",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "trendyol",
+   "keyword": "taharet musluğu",
+   "hacim": 34000,
+   "sira": 1,
+   "trafik": 4056,
+   "url": "https://www.trendyol.com/ara-musluk-x-c143556",
+   "sinif": "Ara musluk & taharet",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "trendyol",
+   "keyword": "banyo aksesuarları",
+   "hacim": 9300,
+   "sira": 1,
+   "trafik": 3637,
+   "url": "https://www.trendyol.com/banyo-aksesuarlari-x-c103777?pi=96",
+   "sinif": "Banyo aksesuarı & düzenleyici",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "trendyol",
+   "keyword": "banyo aynası",
+   "hacim": 7800,
+   "sira": 1,
+   "trafik": 3502,
+   "url": "https://www.trendyol.com/dekoratif-banyo-aynasi-y-s69162?pi=27",
+   "sinif": "Banyo aynası",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "trendyol",
+   "keyword": "banyo bataryası",
+   "hacim": 26000,
+   "sira": 2,
+   "trafik": 3444,
+   "url": "https://www.trendyol.com/banyo-bataryasi-x-c143557?pi=38",
+   "sinif": "Batarya & musluk (banyo)",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "trendyol",
+   "keyword": "banyo duş seti",
+   "hacim": 4100,
+   "sira": 1,
+   "trafik": 3417,
+   "url": "https://www.trendyol.com/dus-sistemi-x-c105724?pi=16",
+   "sinif": "Duş seti, başlığı & hortumu",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "trendyol",
+   "keyword": "banyo seti",
+   "hacim": 13000,
+   "sira": 1,
+   "trafik": 3407,
+   "url": "https://www.trendyol.com/banyo-seti-x-c104210",
+   "sinif": "Banyo aksesuarı & düzenleyici",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "trendyol",
+   "keyword": "çamaşır ve kurutma makinesi dolabı",
+   "hacim": 6800,
+   "sira": 1,
+   "trafik": 3387,
+   "url": "https://www.trendyol.com/camasir-makinesi-dolabi-x-c166316?pi=2",
+   "sinif": "Çamaşır makinesi dolabı",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "trendyol",
+   "keyword": "klozet kapağı",
+   "hacim": 29000,
+   "sira": 1,
+   "trafik": 3289,
+   "url": "https://www.trendyol.com/klozet-kapagi-x-c109229",
+   "sinif": "Klozet kapağı",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "trendyol",
+   "keyword": "duş başlığı seti",
+   "hacim": 13000,
+   "sira": 1,
+   "trafik": 3159,
+   "url": "https://www.trendyol.com/dus-sistemi-x-c105724?pi=159",
+   "sinif": "Duş seti, başlığı & hortumu",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "trendyol",
+   "keyword": "havlupan",
+   "hacim": 12000,
+   "sira": 1,
+   "trafik": 3139,
+   "url": "https://www.trendyol.com/havlupan-x-c144301?pi=2",
+   "sinif": "Havlupan & havluluk",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "trendyol",
+   "keyword": "plastik banyo dolabı",
+   "hacim": 4500,
+   "sira": 1,
+   "trafik": 3005,
+   "url": "https://www.trendyol.com/pvc-dolap-y-s44244",
+   "sinif": "Banyo dolabı",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "trendyol",
+   "keyword": "musluk başlığı",
+   "hacim": 12000,
+   "sira": 1,
+   "trafik": 2989,
+   "url": "https://www.trendyol.com/musluk-basligi-x-c143562",
+   "sinif": "Batarya & musluk (banyo)",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "trendyol",
+   "keyword": "banyo gider kapağı",
+   "hacim": 6300,
+   "sira": 1,
+   "trafik": 2760,
+   "url": "https://www.trendyol.com/renk-yapi-ruyasi/cam-banyo-gideri-kapaticisi-dekoratif-suzgec-kapagi-cam-suzgec-kapagi-10cmx10cm-p-1146174235",
+   "sinif": "Sifon & gider",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "trendyol",
+   "keyword": "duş seti",
+   "hacim": 19000,
+   "sira": 1,
+   "trafik": 2299,
+   "url": "https://www.trendyol.com/dus-sistemi-x-c105724",
+   "sinif": "Duş seti, başlığı & hortumu",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "hepsiburada",
+   "keyword": "banyo bataryası",
+   "hacim": 26000,
+   "sira": 3,
+   "trafik": 2183,
+   "url": "https://www.hepsiburada.com/sardici-banyo-bataryalari-xc-18021947-b32736",
+   "sinif": "Batarya & musluk (banyo)",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "trendyol",
+   "keyword": "banyo modelleri",
+   "hacim": 25000,
+   "sira": 3,
+   "trafik": 2153,
+   "url": "https://www.trendyol.com/12-banyo-x-c104166-a92-v10517916",
+   "sinif": "Banyo (genel/kök)",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "trendyol",
+   "keyword": "klozet üstü raf",
+   "hacim": 3900,
+   "sira": 1,
+   "trafik": 2046,
+   "url": "https://www.trendyol.com/saule/wc-arkasi-klozet-rafi-klozet-ustu-raf-ve-organizator-havluluk-banyo-duzenliyici-p-1134531575",
+   "sinif": "Havlupan & havluluk",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "trendyol",
+   "keyword": "kurutma makinesi dolabı",
+   "hacim": 3900,
+   "sira": 1,
+   "trafik": 2004,
+   "url": "https://www.trendyol.com/camasir-makinesi-dolabi-x-c166316?pi=21",
+   "sinif": "Çamaşır makinesi dolabı",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "trendyol",
+   "keyword": "duşa kabin",
+   "hacim": 9300,
+   "sira": 2,
+   "trafik": 1862,
+   "url": "https://www.trendyol.com/cercevesiz-dusakabin-y-s31349?pi=4",
+   "sinif": "Duşakabin & duş teknesi",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "hepsiburada",
+   "keyword": "duş seti",
+   "hacim": 19000,
+   "sira": 2,
+   "trafik": 1839,
+   "url": "https://www.hepsiburada.com/dus-setleri-c-18021971",
+   "sinif": "Duş seti, başlığı & hortumu",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "trendyol",
+   "keyword": "banyo rafı",
+   "hacim": 8400,
+   "sira": 1,
+   "trafik": 1826,
+   "url": "https://www.trendyol.com/banyo-rafi-y-s5263",
+   "sinif": "Banyo aksesuarı & düzenleyici",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "trendyol",
+   "keyword": "vitra klozet",
+   "hacim": 9500,
+   "sira": 2,
+   "trafik": 1806,
+   "url": "https://www.trendyol.com/vitra-klozet-x-b109184-c109226",
+   "sinif": "Klozet & pisuvar",
+   "grup": "çekirdek",
+   "marka": "VitrA"
+  },
+  {
+   "site": "trendyol",
+   "keyword": "lavabo musluğu",
+   "hacim": 3400,
+   "sira": 1,
+   "trafik": 1752,
+   "url": "https://www.trendyol.com/banyo-lavabo-bataryasi-y-s12210?pi=107",
+   "sinif": "Batarya & musluk (banyo)",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "trendyol",
+   "keyword": "banyo menfezi",
+   "hacim": 2500,
+   "sira": 1,
+   "trafik": 1669,
+   "url": "https://www.trendyol.com/menfez-x-c105645?pi=24",
+   "sinif": "Sifon & gider",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "trendyol",
+   "keyword": "abdest lavabosu",
+   "hacim": 4800,
+   "sira": 1,
+   "trafik": 1667,
+   "url": "https://www.trendyol.com/abdest-lavabosu-y-s82800",
+   "sinif": "Lavabo",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "hepsiburada",
+   "keyword": "banyo aksesuarları",
+   "hacim": 9300,
+   "sira": 3,
+   "trafik": 1651,
+   "url": "https://www.hepsiburada.com/ata-home-banyo-aksesuarlari-xc-18021925-b6295",
+   "sinif": "Banyo aksesuarı & düzenleyici",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "trendyol",
+   "keyword": "çamaşır kurutma makinesi dolabı",
+   "hacim": 4100,
+   "sira": 1,
+   "trafik": 1642,
+   "url": "https://www.trendyol.com/camasir-makinesi-dolabi-x-c166316?pi=2",
+   "sinif": "Çamaşır makinesi dolabı",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "hepsiburada",
+   "keyword": "plastik banyo dolabı",
+   "hacim": 4500,
+   "sira": 2,
+   "trafik": 1622,
+   "url": "https://www.hepsiburada.com/plastik-banyo-dolabi-x-s34048",
+   "sinif": "Banyo dolabı",
+   "grup": "çekirdek",
+   "marka": null
+  },
+  {
+   "site": "hepsiburada",
+   "keyword": "lavabo altı dolap",
+   "hacim": 8600,
+   "sira": 2,
+   "trafik": 1599,
+   "url": "https://www.hepsiburada.com/banyo-alt-dolap-x-s41720",
+   "sinif": "Banyo dolabı",
+   "grup": "çekirdek",
+   "marka": null
+  }
+ ],
+ "kw_ozet": {
+  "trendyol": {
+   "cekirdek_trafik": 276008,
+   "cekirdek_kelime": 192,
+   "pencere_min": 424,
+   "marka_kelimeleri": [
+    {
+     "site": "trendyol",
+     "keyword": "vitra klozet",
+     "hacim": 9500,
+     "sira": 2,
+     "trafik": 1806,
+     "url": "https://www.trendyol.com/vitra-klozet-x-b109184-c109226",
+     "sinif": "Klozet & pisuvar",
+     "grup": "çekirdek",
+     "marka": "VitrA"
+    },
+    {
+     "site": "trendyol",
+     "keyword": "eca mutfak bataryası",
+     "hacim": 6000,
+     "sira": 2,
+     "trafik": 1567,
+     "url": "https://www.trendyol.com/eca-mutfak-bataryasi-y-s80823",
+     "sinif": "Evye & mutfak bataryası",
+     "grup": "bitişik",
+     "marka": "Eca"
+    },
+    {
+     "site": "trendyol",
+     "keyword": "eca banyo bataryası",
+     "hacim": 3600,
+     "sira": 1,
+     "trafik": 1093,
+     "url": "https://www.trendyol.com/eca-x-b108201?pi=3",
+     "sinif": "Batarya & musluk (banyo)",
+     "grup": "çekirdek",
+     "marka": "Eca"
+    },
+    {
+     "site": "trendyol",
+     "keyword": "artema duş seti",
+     "hacim": 2000,
+     "sira": 1,
+     "trafik": 910,
+     "url": "https://www.trendyol.com/artema-dus-sistemi-x-b109152-c105724",
+     "sinif": "Duş seti, başlığı & hortumu",
+     "grup": "çekirdek",
+     "marka": "Artema"
+    },
+    {
+     "site": "trendyol",
+     "keyword": "vitra gömme rezervuar iç takımı",
+     "hacim": 2300,
+     "sira": 1,
+     "trafik": 905,
+     "url": "https://www.trendyol.com/vitra-gomme-rezervuar-y-s83699?pi=2",
+     "sinif": "Rezervuar & iç takım",
+     "grup": "çekirdek",
+     "marka": "VitrA"
+    },
+    {
+     "site": "trendyol",
+     "keyword": "creavit lavabo",
+     "hacim": 1000,
+     "sira": 1,
+     "trafik": 806,
+     "url": "https://www.trendyol.com/creavit-x-b109442?pi=12",
+     "sinif": "Lavabo",
+     "grup": "çekirdek",
+     "marka": "Creavit"
+    },
+    {
+     "site": "trendyol",
+     "keyword": "serel klozet kapağı",
+     "hacim": 1900,
+     "sira": 1,
+     "trafik": 800,
+     "url": "https://www.trendyol.com/eca-klozet-kapagi-x-b108201-c109229",
+     "sinif": "Klozet kapağı",
+     "grup": "çekirdek",
+     "marka": "Serel"
+    },
+    {
+     "site": "trendyol",
+     "keyword": "eca lavabo bataryası",
+     "hacim": 2100,
+     "sira": 1,
+     "trafik": 703,
+     "url": "https://www.trendyol.com/eca-lavabo-bataryasi-x-b108201-c143558",
+     "sinif": "Batarya & musluk (banyo)",
+     "grup": "çekirdek",
+     "marka": "Eca"
+    },
+    {
+     "site": "trendyol",
+     "keyword": "eca taharet musluğu",
+     "hacim": 1600,
+     "sira": 1,
+     "trafik": 582,
+     "url": "https://www.trendyol.com/eca-ara-musluk-x-b108201-c143556",
+     "sinif": "Ara musluk & taharet",
+     "grup": "çekirdek",
+     "marka": "Eca"
+    },
+    {
+     "site": "trendyol",
+     "keyword": "vitra klozet fiyatları",
+     "hacim": 2300,
+     "sira": 2,
+     "trafik": 536,
+     "url": "https://www.trendyol.com/vitra-klozet-x-b109184-c109226",
+     "sinif": "Klozet & pisuvar",
+     "grup": "çekirdek",
+     "marka": "VitrA"
+    },
+    {
+     "site": "trendyol",
+     "keyword": "vitra gömme rezervuar",
+     "hacim": 8700,
+     "sira": 4,
+     "trafik": 516,
+     "url": "https://www.trendyol.com/vitra-gomme-rezervuar-y-s83699",
+     "sinif": "Rezervuar & iç takım",
+     "grup": "çekirdek",
+     "marka": "VitrA"
+    },
+    {
+     "site": "trendyol",
+     "keyword": "kale klozet",
+     "hacim": 1800,
+     "sira": 2,
+     "trafik": 495,
+     "url": "https://www.trendyol.com/kale-klozet-x-b142687-c109226",
+     "sinif": "Klozet & pisuvar",
+     "grup": "çekirdek",
+     "marka": "Kale"
+    },
+    {
+     "site": "trendyol",
+     "keyword": "artema mutfak bataryası",
+     "hacim": 4900,
+     "sira": 3,
+     "trafik": 438,
+     "url": "https://www.trendyol.com/artema-eviye-bataryasi-x-b109152-c143560",
+     "sinif": "Evye & mutfak bataryası",
+     "grup": "bitişik",
+     "marka": "Artema"
+    },
+    {
+     "site": "trendyol",
+     "keyword": "visam gömme rezervuar iç takımı",
+     "hacim": 1800,
+     "sira": 1,
+     "trafik": 429,
+     "url": "https://www.trendyol.com/visam-gomme-rezervuar-ic-takim-y-s83698",
+     "sinif": "Rezervuar & iç takım",
+     "grup": "çekirdek",
+     "marka": "Visam"
+    }
+   ]
+  },
+  "hepsiburada": {
+   "cekirdek_trafik": 71595,
+   "cekirdek_kelime": 185,
+   "pencere_min": 126,
+   "marka_kelimeleri": [
+    {
+     "site": "hepsiburada",
+     "keyword": "serel gömme rezervuar iç takımı",
+     "hacim": 1500,
+     "sira": 1,
+     "trafik": 366,
+     "url": "https://www.hepsiburada.com/serel-gomme-rezarvuar-helatasi-icin-pm-HBC00001PKX4S",
+     "sinif": "Rezervuar & iç takım",
+     "grup": "çekirdek",
+     "marka": "Serel"
+    },
+    {
+     "site": "hepsiburada",
+     "keyword": "vitra klozet kapağı",
+     "hacim": 3400,
+     "sira": 3,
+     "trafik": 364,
+     "url": "https://www.hepsiburada.com/vitra-klozet-kapaklari-xc-18021958-b8646?sayfa=3",
+     "sinif": "Klozet kapağı",
+     "grup": "çekirdek",
+     "marka": "VitrA"
+    },
+    {
+     "site": "hepsiburada",
+     "keyword": "eca banyo bataryası",
+     "hacim": 3600,
+     "sira": 3,
+     "trafik": 293,
+     "url": "https://www.hepsiburada.com/e-c-a-life-banyo-bataryasi-pm-HBC0000IXAKJ0",
+     "sinif": "Batarya & musluk (banyo)",
+     "grup": "çekirdek",
+     "marka": "Eca"
+    },
+    {
+     "site": "hepsiburada",
+     "keyword": "visam gömme rezervuar",
+     "hacim": 2000,
+     "sira": 2,
+     "trafik": 283,
+     "url": "https://www.hepsiburada.com/visam-gomme-rezervuar-iki-kademeli-slim-80-3-6-pm-HBC00003J6G5R",
+     "sinif": "Rezervuar & iç takım",
+     "grup": "çekirdek",
+     "marka": "Visam"
+    },
+    {
+     "site": "hepsiburada",
+     "keyword": "kale gömme rezervuar iç takımı",
+     "hacim": 700,
+     "sira": 1,
+     "trafik": 197,
+     "url": "https://www.hepsiburada.com/kale-yeni-gomme-rezervuar-3-8-doldurma-grubu-orijinal-su-alma-grubu-410200903599-pm-HBC0000I2AIL8",
+     "sinif": "Rezervuar & iç takım",
+     "grup": "çekirdek",
+     "marka": "Kale"
+    }
+   ]
+  }
+ },
+ "miknatis": [
+  {
+   "kategori": "Taharet musluğu & ara musluk",
+   "trendyol": 7517,
+   "trendyol_top": [
+    "/ara-musluk-x-c143556?pi=48",
+    "taharet musluğu",
+    2351
+   ],
+   "hepsiburada": 4161,
+   "hepsiburada_top": [
+    "/taharet-muslugu-x-s57129",
+    "klozet taharet musluğu",
+    1006
+   ],
+   "n11": 658,
+   "n11_top": [
+    "/banyo-ve-ev-gerecleri/banyo-ve-aksesuarlari/ara-muslug",
+    "çift çıkışlı taharet musluğu",
+    291
+   ],
+   "amazon": 2137,
+   "amazon_top": [
+    "/%C3%A7iftlik-taharet-muslu%C4%9Fu/s?k=%C3%A7iftlik+tah",
+    "taharet musluğu",
+    1004
+   ],
+   "koctas": 2549,
+   "koctas_top": [
+    "/batarya-ve-musluklar/ara-musluk/c/103021006",
+    "klozet taharet musluğu",
+    1280
+   ],
+   "bauhaus": 895,
+   "bauhaus_top": [
+    "/admiral-daisy-taharet-muslugu-13030897",
+    "taharet musluğu",
+    411
+   ],
+   "ikea": 0,
+   "tekzen": 0,
+   "akakce": 1912,
+   "akakce_top": [
+    "/musluk/taharet,27.html",
+    "taharet musluğu",
+    1569
+   ],
+   "cimri": 342,
+   "cimri_top": [
+    "/ara-musluk/en-ucuz-e-c-a-ara-musluk-fiyatlari",
+    "eca taharet musluğu",
+    145
+   ]
+  },
+  {
+   "kategori": "Sifon, gider & süzgeç",
+   "trendyol": 15192,
+   "trendyol_top": [
+    "/lavabo-gider-borusu-y-s9796",
+    "lavabo gider borusu",
+    5970
+   ],
+   "hepsiburada": 10059,
+   "hepsiburada_top": [
+    "/lavabo-gider-borusu-x-s48849",
+    "lavabo gider borusu",
+    1887
+   ],
+   "n11": 1076,
+   "n11_top": [
+    "/arama/q=lavabo+gider+boru",
+    "mutfak lavabo gider borusu çeşitleri",
+    806
+   ],
+   "amazon": 2088,
+   "amazon_top": [
+    "/lavabo-gider-borusu/s?k=lavabo+gider+borusu",
+    "lavabo gider borusu",
+    322
+   ],
+   "koctas": 6939,
+   "koctas_top": [
+    "/sifon/lavabo-sifonu/c/103005003",
+    "lavabo sifonu",
+    3474
+   ],
+   "bauhaus": 400,
+   "bauhaus_top": [
+    "/bauhaus-banyo-sihhi-tesisat-sifonlar",
+    "lavabo gideri",
+    371
+   ],
+   "ikea": 190,
+   "ikea_top": [
+    "/urun/lillhavet-antrasit-48x18x10-cm-eviye-suzgeci-5050",
+    "lavabo koruyucu ikea",
+    79
+   ],
+   "tekzen": 0,
+   "akakce": 2747,
+   "akakce_top": [
+    "/arama/?q=lavabo+gider+borusu",
+    "lavabo gider borusu",
+    872
+   ],
+   "cimri": 2169,
+   "cimri_top": [
+    "/banyo-gider-kapagi?page=37",
+    "banyo gider kapağı",
+    849
+   ]
+  },
+  {
+   "kategori": "Klozet kapağı (menteşe, adaptör dahil)",
+   "trendyol": 10461,
+   "trendyol_top": [
+    "/klozet-kapagi-x-c109229",
+    "klozet kapağı",
+    6059
+   ],
+   "hepsiburada": 5984,
+   "hepsiburada_top": [
+    "/klozet-kapaklari-c-18021958",
+    "klozet kapağı",
+    1754
+   ],
+   "n11": 717,
+   "n11_top": [
+    "/banyo-ve-ev-gerecleri/banyo-ve-aksesuarlari/klozet-kap",
+    "klozet kapağı",
+    167
+   ],
+   "amazon": 2220,
+   "amazon_top": [
+    "/Klozet-Kapaklar%C4%B1/b?ie=UTF8&node=12708519031",
+    "klozet kapağı",
+    912
+   ],
+   "koctas": 6468,
+   "koctas_top": [
+    "/vitrifiyeler/klozet-kapaklari/c/103013005",
+    "klozet kapağı",
+    5524
+   ],
+   "bauhaus": 3156,
+   "bauhaus_top": [
+    "/bauhaus-banyo-klozet-ve-klozet-kapaklari-klozet-ve-tak",
+    "klozet takımı",
+    2197
+   ],
+   "ikea": 53,
+   "ikea_top": [
+    "/urun/kullarna-siyah-37x40-cm-klozet-kapagi-50338985",
+    "ikea ahşap klozet kapağı",
+    34
+   ],
+   "tekzen": 111,
+   "tekzen_top": [
+    "/klozet-kapaklari",
+    "klozet kapağı",
+    111
+   ],
+   "akakce": 499,
+   "akakce_top": [
+    "/klozet-kapagi.html",
+    "klozet kapağı",
+    499
+   ],
+   "cimri": 935,
+   "cimri_top": [
+    "/klozet-kapagi/en-ucuz-vitra-klozet-kapagi-fiyatlari?pa",
+    "vitra klozet kapağı",
+    455
+   ]
+  },
+  {
+   "kategori": "Duş seti, başlığı & hortumu",
+   "trendyol": 22158,
+   "trendyol_top": [
+    "/dus-sistemi-x-c105724",
+    "duş başlığı",
+    10168
+   ],
+   "hepsiburada": 13046,
+   "hepsiburada_top": [
+    "/dus-setleri-c-18021971",
+    "duş seti",
+    4136
+   ],
+   "n11": 918,
+   "n11_top": [
+    "/urun/masaj-tarakli-3-fonksiyonlu-ac-kapa-ozellikli-dus",
+    "duş başlığı",
+    458
+   ],
+   "amazon": 914,
+   "amazon_top": [
+    "/Banyo-ve-Du%C5%9F-Sistemleri/b?ie=UTF8&node=1270849803",
+    "duş seti",
+    647
+   ],
+   "koctas": 9896,
+   "koctas_top": [
+    "/dus-setleri/dus-basliklari/c/103004006",
+    "duş başlığı",
+    3425
+   ],
+   "bauhaus": 1440,
+   "bauhaus_top": [
+    "/bauhaus-banyo-dus-sistemleri-dus-setleri",
+    "robot duş seti",
+    944
+   ],
+   "ikea": 391,
+   "ikea_top": [
+    "/kategori/dus-basliklari-ve-hortumlari",
+    "duş başlığı",
+    203
+   ],
+   "tekzen": 5,
+   "tekzen_top": [
+    "/buislerboyleyapilir.tekzen.com.tr/dus-basligi-ve-seti-",
+    "duş başlığı nasıl sökülür",
+    5
+   ],
+   "akakce": 10031,
+   "akakce_top": [
+    "/dus-basligi.html",
+    "duş başlığı",
+    2865
+   ],
+   "cimri": 1701,
+   "cimri_top": [
+    "/dus-seti/en-ucuz-celik-banyo-dus-seti-fiyatlari",
+    "banyo duş seti",
+    497
+   ]
+  },
+  {
+   "kategori": "Havlupan & havluluk",
+   "trendyol": 10456,
+   "trendyol_top": [
+    "/havlupan-x-c144301?pi=2",
+    "havlupan",
+    3275
+   ],
+   "hepsiburada": 1982,
+   "hepsiburada_top": [
+    "/havlupanlar-c-462096",
+    "havlupan",
+    804
+   ],
+   "n11": 124,
+   "n11_top": [
+    "/yapi-market-ve-bahce/isitma-ve-sogutma-urunleri/havlup",
+    "havlupan ölçüleri",
+    124
+   ],
+   "amazon": 0,
+   "koctas": 1478,
+   "koctas_top": [
+    "/isitma-ve-sogutma/havlupanlar/c/108015",
+    "havlupan",
+    1478
+   ],
+   "bauhaus": 231,
+   "bauhaus_top": [
+    "/bauhaus-banyo-banyo-aksesuarlari-tuvalet-kagitlik-ve-h",
+    "banyo havluluk",
+    229
+   ],
+   "ikea": 0,
+   "tekzen": 0,
+   "akakce": 349,
+   "akakce_top": [
+    "/havlupan.html",
+    "havlupan 50x100",
+    349
+   ],
+   "cimri": 0
+  },
+  {
+   "kategori": "Rezervuar iç takımı & şamandıra",
+   "trendyol": 8519,
+   "trendyol_top": [
+    "/klozet-ic-takimi-y-s4452",
+    "klozet şamandırası",
+    5002
+   ],
+   "hepsiburada": 4843,
+   "hepsiburada_top": [
+    "/rezervuar-ic-takimlar-c-18021929",
+    "klozet şamandırası",
+    1267
+   ],
+   "n11": 375,
+   "n11_top": [
+    "/urun/turkuaz-bella-duvara-sifir-klozetrezervuaric-taki",
+    "turkuaz bella klozet",
+    56
+   ],
+   "amazon": 784,
+   "amazon_top": [
+    "/klozet-%C5%9Famand%C4%B1ras%C4%B1/s?k=klozet+%C5%9Fama",
+    "klozet şamandırası",
+    395
+   ],
+   "koctas": 2485,
+   "koctas_top": [
+    "/rezervuar-ve-aksesuarlari/rezervuar-ic-takimi/c/103013",
+    "gömme rezervuar iç takımı",
+    1155
+   ],
+   "bauhaus": 575,
+   "bauhaus_top": [
+    "/bauhaus-banyo-sihhi-tesisat-rezervuar-ic-takimlari",
+    "gömme rezervuar iç takımı",
+    527
+   ],
+   "ikea": 0,
+   "tekzen": 13,
+   "tekzen_top": [
+    "/asvit-klozet-rezervuar-set-2685",
+    "tekzen klozet fiyatları",
+    13
+   ],
+   "akakce": 4664,
+   "akakce_top": [
+    "/rezervuar-aksesuari,23.html",
+    "klozet iç takım",
+    1402
+   ],
+   "cimri": 3780,
+   "cimri_top": [
+    "/rezervuar-ic-takimi?page=30",
+    "rezervuar iç takımı",
+    812
+   ]
+  },
+  {
+   "kategori": "Musluk başlığı, perlatör & uzatma",
+   "trendyol": 5670,
+   "trendyol_top": [
+    "/musluk-basligi-x-c143562",
+    "musluk başlığı",
+    5670
+   ],
+   "hepsiburada": 3369,
+   "hepsiburada_top": [
+    "/musluk-basligi-x-s62607",
+    "musluk başlığı",
+    1763
+   ],
+   "n11": 1039,
+   "n11_top": [
+    "/banyo-ve-ev-gerecleri/banyo-ve-aksesuarlari/musluk-bas",
+    "musluk başlığı",
+    523
+   ],
+   "amazon": 1363,
+   "amazon_top": [
+    "/Lavabo-ve-K%C3%BCvet-Musluk-U%C3%A7lar%C4%B1/b?ie=UTF8",
+    "musluk başlığı",
+    1118
+   ],
+   "koctas": 1969,
+   "koctas_top": [
+    "/batarya-ve-musluklar/su-tasarruf-aparati/c/110005002",
+    "musluk başlığı",
+    1784
+   ],
+   "bauhaus": 0,
+   "ikea": 0,
+   "tekzen": 0,
+   "akakce": 1505,
+   "akakce_top": [
+    "/musluk-basligi.html",
+    "mutfak musluk başlığı",
+    630
+   ],
+   "cimri": 1349,
+   "cimri_top": [
+    "/ac-kapa-musluk-fiyatlari",
+    "aç kapa musluk",
+    1019
+   ]
+  },
+  {
+   "kategori": "Banyo aksesuarı, raf & düzenleyici",
+   "trendyol": 28467,
+   "trendyol_top": [
+    "/banyo-seti-x-c104210",
+    "banyo seti",
+    4203
+   ],
+   "hepsiburada": 7891,
+   "hepsiburada_top": [
+    "/ata-home-banyo-aksesuarlari-xc-18021925-b6295",
+    "banyo aksesuarları",
+    1651
+   ],
+   "n11": 1092,
+   "n11_top": [
+    "/urun/klozet-taburesi-klozete-oturma-aparati-113806691",
+    "klozet taburesi",
+    377
+   ],
+   "amazon": 1529,
+   "amazon_top": [
+    "/Klozet-%C3%9Cst%C3%BC-Dolaplar-ve-Raflar/s?rh=n%3A1302",
+    "klozet üstü dolap",
+    274
+   ],
+   "koctas": 10776,
+   "koctas_top": [
+    "/Banyo",
+    "koçtaş banyo aksesuarları",
+    5585
+   ],
+   "bauhaus": 1702,
+   "bauhaus_top": [
+    "/bauhaus-banyo-banyo-aksesuarlari-dus-raflari",
+    "banyo rafı",
+    903
+   ],
+   "ikea": 9812,
+   "ikea_top": [
+    "/kategori/banyo-raf-uniteleri",
+    "banyo rafı",
+    3271
+   ],
+   "tekzen": 21,
+   "tekzen_top": [
+    "/Banyo/Banyo",
+    "banyo köşe rafı",
+    15
+   ],
+   "akakce": 2377,
+   "akakce_top": [
+    "/banyo-taburesi.html",
+    "banyo taburesi",
+    844
+   ],
+   "cimri": 1329,
+   "cimri_top": [
+    "/klozet-ustu-raf",
+    "klozet üstü düzenleyici",
+    337
+   ]
+  },
+  {
+   "kategori": "Klozet fırçası & tuvalet kağıtlığı",
+   "trendyol": 0,
+   "hepsiburada": 827,
+   "hepsiburada_top": [
+    "/oem-siyah-klozet-ustu-raf-organizer-tuvalet-kagitlik-v",
+    "klozet üstü raf",
+    827
+   ],
+   "n11": 0,
+   "amazon": 0,
+   "koctas": 0,
+   "bauhaus": 229,
+   "bauhaus_top": [
+    "/bauhaus-banyo-banyo-aksesuarlari-tuvalet-kagitlik-ve-h",
+    "banyo havluluk",
+    229
+   ],
+   "ikea": 0,
+   "tekzen": 4,
+   "tekzen_top": [
+    "/klozet-fircalari",
+    "klozet fırçası",
+    4
+   ],
+   "akakce": 0,
+   "cimri": 0
+  },
+  {
+   "kategori": "Silikon",
+   "trendyol": 0,
+   "hepsiburada": 721,
+   "hepsiburada_top": [
+    "/1001-koku-onleyici-gider-kapagi-14x14-cm-banyo-dus-gid",
+    "banyo gider kapağı",
+    544
+   ],
+   "n11": 0,
+   "amazon": 0,
+   "koctas": 0,
+   "bauhaus": 0,
+   "ikea": 0,
+   "tekzen": 0,
+   "akakce": 196,
+   "akakce_top": [
+    "/silikon/dusakabin-silikonu.html",
+    "duşakabin silikonu",
+    196
+   ],
+   "cimri": 0
+  },
+  {
+   "kategori": "Banyo paspası, duş perdesi & tekstil",
+   "trendyol": 12074,
+   "trendyol_top": [
+    "/banyo-paspasi-x-c109003?pi=3",
+    "banyo paspası",
+    6678
+   ],
+   "hepsiburada": 4860,
+   "hepsiburada_top": [
+    "/takim-banyo-paspaslari-c-9011674",
+    "banyo paspası",
+    2436
+   ],
+   "n11": 481,
+   "n11_top": [
+    "/ev-tekstili/banyo-tekstili/banyo-halisi-ve-paspas?m=Ye",
+    "yeni nesil banyo modelleri",
+    176
+   ],
+   "amazon": 584,
+   "amazon_top": [
+    "/%C3%B6zdilek-banyo-havlusu/s?k=%C3%B6zdilek+banyo+havl",
+    "banyo havlusu",
+    352
+   ],
+   "koctas": 1119,
+   "koctas_top": [
+    "/banyo-tekstil/banyo-perdeleri/c/103012002",
+    "banyo perdesi",
+    916
+   ],
+   "bauhaus": 43,
+   "bauhaus_top": [
+    "/venus-dus-perde-borusu-beyaz-110-185cm-23135233",
+    "duş perdesi borusu",
+    37
+   ],
+   "ikea": 3955,
+   "ikea_top": [
+    "/kategori/dus-perdeleri",
+    "banyo perdesi",
+    2059
+   ],
+   "tekzen": 4,
+   "tekzen_top": [
+    "/banyo-perdeleri",
+    "raylı duş perdesi",
+    4
+   ],
+   "akakce": 854,
+   "akakce_top": [
+    "/dus-perdesi.html",
+    "duş perdesi",
+    653
+   ],
+   "cimri": 153,
+   "cimri_top": [
+    "/banyo-paspasi/en-ucuz-ozdilek-banyo-paspasi-fiyatlari",
+    "özdilek banyo paspası",
+    153
+   ]
+  }
+ ],
+ "vitra_yok": [
+  {
+   "kategori": "Evye (mutfak/gömme evye)",
+   "trendyol": 12272,
+   "trendyol_top": [
+    "/eviye-x-c109228?pi=2",
+    "mutfak evyesi",
+    4292
+   ],
+   "hepsiburada": 6074,
+   "hepsiburada_top": [
+    "/inhotech/evyeler-c-60004289",
+    "akıllı evye",
+    2870
+   ],
+   "n11": 462,
+   "n11_top": [
+    "/banyo-ve-ev-gerecleri/banyo-ve-aksesuarlari/lavabo-ve-",
+    "mutfak evye modelleri",
+    173
+   ],
+   "amazon": 3171,
+   "amazon_top": [
+    "/mutfak-evye-modelleri/s?k=mutfak+evye+modelleri",
+    "evye modelleri",
+    1749
+   ],
+   "koctas": 9601,
+   "koctas_top": [
+    "/mutfak/eviye/c/110003",
+    "mutfak evyesi",
+    7486
+   ],
+   "bauhaus": 410,
+   "bauhaus_top": [
+    "/bauhaus-mutfak-eviyeler",
+    "evye fiyatları",
+    318
+   ],
+   "ikea": 1848,
+   "ikea_top": [
+    "/kategori/mutfak-eviyeleri",
+    "ikea evye",
+    1641
+   ],
+   "tekzen": 0,
+   "akakce": 1457,
+   "akakce_top": [
+    "/eviye/paslanmaz-celik-eviye,6.html",
+    "franke mutfak evye modelleri",
+    611
+   ],
+   "cimri": 502,
+   "cimri_top": [
+    "/eviyeler/en-ucuz-teka-eviyeler-fiyatlari",
+    "teka evye",
+    132
+   ]
+  },
+  {
+   "kategori": "Mutfak bataryası & evye bataryası",
+   "trendyol": 10900,
+   "trendyol_top": [
+    "/eviye-bataryasi-x-c143560",
+    "mutfak bataryası",
+    8184
+   ],
+   "hepsiburada": 5439,
+   "hepsiburada_top": [
+    "/mutfak-evye-bataryalari-c-18021949",
+    "mutfak bataryası",
+    5049
+   ],
+   "n11": 48,
+   "n11_top": [
+    "/banyo-ve-ev-gerecleri/banyo-ve-aksesuarlari/mutfak-bat",
+    "mutfak musluk modelleri",
+    48
+   ],
+   "amazon": 212,
+   "amazon_top": [
+    "/Mutfak-Bataryalar%C4%B1/b?ie=UTF8&node=12707716031",
+    "evye bataryası",
+    96
+   ],
+   "koctas": 378,
+   "koctas_top": [
+    "/isaoglu-yapi-mat-siyah-mutfak-bataryasi-siyah-evye-mus",
+    "siyah musluk",
+    378
+   ],
+   "bauhaus": 36,
+   "bauhaus_top": [
+    "/bauhaus-banyo-bataryalar-eviye-bataryalari",
+    "spiralli evye bataryası",
+    11
+   ],
+   "ikea": 50,
+   "ikea_top": [
+    "/urun/glittran-siyah-28-cm-eviye-bataryasi-90519936",
+    "ikea musluk",
+    50
+   ],
+   "tekzen": 11,
+   "tekzen_top": [
+    "/Banyo/Bataryalar",
+    "tekzen evye",
+    10
+   ],
+   "akakce": 630,
+   "akakce_top": [
+    "/musluk-basligi.html",
+    "mutfak musluk başlığı",
+    630
+   ],
+   "cimri": 253,
+   "cimri_top": [
+    "/ucuz-batarya-musluk?page=9",
+    "mutfak musluk fiyatları",
+    161
+   ]
+  },
+  {
+   "kategori": "Arıtmalı batarya & su arıtma",
+   "trendyol": 4678,
+   "trendyol_top": [
+    "/aritmali-dus-basligi-y-s81354",
+    "filtreli duş başlığı",
+    2197
+   ],
+   "hepsiburada": 2917,
+   "hepsiburada_top": [
+    "/3-yollu-aritmali-musluk-pm-HBC00003W3AYS",
+    "arıtmalı musluk",
+    1123
+   ],
+   "n11": 162,
+   "n11_top": [
+    "/urun/3-yollu-musluk-su-aritma-muslugu-uc-yollu-coklu-m",
+    "üç yollu musluk",
+    102
+   ],
+   "amazon": 125,
+   "amazon_top": [
+    "/tezgah-%C3%BCst%C3%BC-su-ar%C4%B1tma-cihaz%C4%B1/s?k=t",
+    "tezgah üstü su arıtma cihazı",
+    67
+   ],
+   "koctas": 0,
+   "bauhaus": 0,
+   "ikea": 0,
+   "tekzen": 0,
+   "akakce": 719,
+   "akakce_top": [
+    "/mutfak-bataryasi/aritmali-mutfak-bataryasi,14.html",
+    "arıtmalı musluk",
+    719
+   ],
+   "cimri": 898,
+   "cimri_top": [
+    "/bataryalar/aritmali-mutfak-bataryasi?page=11",
+    "arıtmalı musluk",
+    898
+   ]
+  },
+  {
+   "kategori": "Havlupan",
+   "trendyol": 5578,
+   "trendyol_top": [
+    "/havlupan-x-c144301?pi=2",
+    "havlupan",
+    3275
+   ],
+   "hepsiburada": 1264,
+   "hepsiburada_top": [
+    "/havlupanlar-c-462096",
+    "havlupan",
+    804
+   ],
+   "n11": 124,
+   "n11_top": [
+    "/yapi-market-ve-bahce/isitma-ve-sogutma-urunleri/havlup",
+    "havlupan ölçüleri",
+    124
+   ],
+   "amazon": 0,
+   "koctas": 1478,
+   "koctas_top": [
+    "/isitma-ve-sogutma/havlupanlar/c/108015",
+    "havlupan",
+    1478
+   ],
+   "bauhaus": 2,
+   "bauhaus_top": [
+    "/eca-havlupan-krom-500x688mm-60719133",
+    "havlupan krom",
+    2
+   ],
+   "ikea": 0,
+   "tekzen": 0,
+   "akakce": 349,
+   "akakce_top": [
+    "/havlupan.html",
+    "havlupan 50x100",
+    349
+   ],
+   "cimri": 0
+  },
+  {
+   "kategori": "Banyo tekstili",
+   "trendyol": 12074,
+   "trendyol_top": [
+    "/banyo-paspasi-x-c109003?pi=3",
+    "banyo paspası",
+    6678
+   ],
+   "hepsiburada": 4860,
+   "hepsiburada_top": [
+    "/takim-banyo-paspaslari-c-9011674",
+    "banyo paspası",
+    2436
+   ],
+   "n11": 481,
+   "n11_top": [
+    "/ev-tekstili/banyo-tekstili/banyo-halisi-ve-paspas?m=Ye",
+    "yeni nesil banyo modelleri",
+    176
+   ],
+   "amazon": 584,
+   "amazon_top": [
+    "/%C3%B6zdilek-banyo-havlusu/s?k=%C3%B6zdilek+banyo+havl",
+    "banyo havlusu",
+    352
+   ],
+   "koctas": 1119,
+   "koctas_top": [
+    "/banyo-tekstil/banyo-perdeleri/c/103012002",
+    "banyo perdesi",
+    916
+   ],
+   "bauhaus": 43,
+   "bauhaus_top": [
+    "/venus-dus-perde-borusu-beyaz-110-185cm-23135233",
+    "duş perdesi borusu",
+    37
+   ],
+   "ikea": 3955,
+   "ikea_top": [
+    "/kategori/dus-perdeleri",
+    "banyo perdesi",
+    2059
+   ],
+   "tekzen": 4,
+   "tekzen_top": [
+    "/banyo-perdeleri",
+    "raylı duş perdesi",
+    4
+   ],
+   "akakce": 854,
+   "akakce_top": [
+    "/dus-perdesi.html",
+    "duş perdesi",
+    653
+   ],
+   "cimri": 153,
+   "cimri_top": [
+    "/banyo-paspasi/en-ucuz-ozdilek-banyo-paspasi-fiyatlari",
+    "özdilek banyo paspası",
+    153
+   ]
+  },
+  {
+   "kategori": "Şofben & termosifon",
+   "trendyol": 13335,
+   "trendyol_top": [
+    "/termosifon-x-c104085?pi=2",
+    "termosifon",
+    10077
+   ],
+   "hepsiburada": 2043,
+   "hepsiburada_top": [
+    "/termosifonlar-c-17769",
+    "termosifon fiyatları",
+    1279
+   ],
+   "n11": 117,
+   "n11_top": [
+    "/urun/arcelik-t-7380-b-termosifon-28941066",
+    "arçelik termosifon fiyatları",
+    40
+   ],
+   "amazon": 72,
+   "amazon_top": [
+    "/termosifon-65-lt/s?k=termosifon+65+lt&page=2",
+    "termosifon 65 lt",
+    72
+   ],
+   "koctas": 9747,
+   "koctas_top": [
+    "/isitma-ve-sogutma/termosifonlar/c/108011",
+    "termosifon",
+    9359
+   ],
+   "bauhaus": 6,
+   "bauhaus_top": [
+    "/bauhaus-isitma-ve-sogutma-sofbenler-ve-termosifonlar",
+    "termosifon fiyatları",
+    2
+   ],
+   "ikea": 0,
+   "tekzen": 0,
+   "akakce": 9048,
+   "akakce_top": [
+    "/termosifon.html",
+    "termosifon",
+    5065
+   ],
+   "cimri": 1050,
+   "cimri_top": [
+    "/termosifonlar/en-ucuz-baymak-aqua-konfor-65-lt-elektri",
+    "baymak 65 lt termosifon",
+    203
+   ]
+  },
+  {
+   "kategori": "Banyo düzenleyici, raf & organizer",
+   "trendyol": 7734,
+   "trendyol_top": [
+    "/banyo-rafi-y-s5263",
+    "banyo rafı",
+    2820
+   ],
+   "hepsiburada": 2568,
+   "hepsiburada_top": [
+    "/banyo-kirli-sepeti-x-s32851",
+    "kirli sepeti",
+    1059
+   ],
+   "n11": 334,
+   "n11_top": [
+    "/mobilya/banyo-mobilyasi?q=klozet",
+    "klozet üstü düzenleyici",
+    282
+   ],
+   "amazon": 596,
+   "amazon_top": [
+    "/Klozet-%C3%9Cst%C3%BC-Dolaplar-ve-Raflar/s?rh=n%3A1302",
+    "klozet üstü dolap",
+    274
+   ],
+   "koctas": 1237,
+   "koctas_top": [
+    "/banyo-aksesuarlari/dus-rafi/c/103002007",
+    "banyo şampuanlık",
+    1237
+   ],
+   "bauhaus": 903,
+   "bauhaus_top": [
+    "/bauhaus-banyo-banyo-aksesuarlari-dus-raflari",
+    "banyo rafı",
+    903
+   ],
+   "ikea": 5587,
+   "ikea_top": [
+    "/kategori/banyo-raf-uniteleri",
+    "banyo rafı",
+    3271
+   ],
+   "tekzen": 15,
+   "tekzen_top": [
+    "/Banyo/Banyo",
+    "banyo köşe rafı",
+    15
+   ],
+   "akakce": 694,
+   "akakce_top": [
+    "/klozet/en-ucuz-egemev-ustu-duzenleyici-raf-banyo-duzen",
+    "klozet üstü raf",
+    694
+   ],
+   "cimri": 560,
+   "cimri_top": [
+    "/klozet-ustu-raf",
+    "klozet üstü düzenleyici",
+    337
+   ]
+  },
+  {
+   "kategori": "Boy aynası & genel ayna",
+   "trendyol": 56462,
+   "trendyol_top": [
+    "/siyah-boy-aynasi-y-s276346?pi=3",
+    "boy aynası",
+    8520
+   ],
+   "hepsiburada": 16365,
+   "hepsiburada_top": [
+    "/dekor-ask-boy-aynasi-xc-60006510-b116972",
+    "boy aynası",
+    3468
+   ],
+   "n11": 0,
+   "amazon": 0,
+   "koctas": 0,
+   "bauhaus": 7,
+   "bauhaus_top": [
+    "/tesay-12-mm-ic-kose-paslanmaz-fayans-citasi-ayna-siyah",
+    "fayans iç köşe çıtası",
+    7
+   ],
+   "ikea": 0,
+   "tekzen": 0,
+   "akakce": 0,
+   "cimri": 0
+  },
+  {
+   "kategori": "Mutfak tezgahı & tezgah arası",
+   "trendyol": 11337,
+   "trendyol_top": [
+    "/mutfak-tezgah-arasi-seramik-y-s44709",
+    "en kullanışlı tezgah arası",
+    2853
+   ],
+   "hepsiburada": 4320,
+   "hepsiburada_top": [
+    "/tezgah-alti-aydinlatma-x-s54936",
+    "tezgah arası led ışıklı mutfak dolapları",
+    1285
+   ],
+   "n11": 155,
+   "n11_top": [
+    "/dekorasyon-ve-aydinlatma/aydinlatma/led-aydinlatmalar?",
+    "tezgah altı aydınlatma",
+    76
+   ],
+   "amazon": 1167,
+   "amazon_top": [
+    "/tezgah-raf-d%C3%BCzenleyici/s?k=tezgah+raf+d%C3%BCzenl",
+    "tezgah üstü raf",
+    318
+   ],
+   "koctas": 26769,
+   "koctas_top": [
+    "/ahsap-ve-insaat/mutfak-tezgahlari/c/110012",
+    "mutfak tezgahı",
+    13877
+   ],
+   "bauhaus": 99,
+   "bauhaus_top": [
+    "/bauhaus-aydinlatma-ve-elektro-ev-aydinlatmalari-tezgah",
+    "tezgah arası led ışıklı mutfak dolapları",
+    49
+   ],
+   "ikea": 6974,
+   "ikea_top": [
+    "/kategori/mutfak-tezgahlari",
+    "mutfak tezgahı",
+    5686
+   ],
+   "tekzen": 0,
+   "akakce": 868,
+   "akakce_top": [
+    "/calisma-tezgahi-pano/dorf.html",
+    "takım tezgahı",
+    584
+   ],
+   "cimri": 865,
+   "cimri_top": [
+    "/beyaz-granit-tezgah-fiyatlari",
+    "beyaz granit tezgah",
+    241
+   ]
+  },
+  {
+   "kategori": "Banyo temizlik & bakım",
+   "trendyol": 4838,
+   "trendyol_top": [
+    "/clonet-banyo-temizleyici-y-s89813",
+    "clonet",
+    3830
+   ],
+   "hepsiburada": 1613,
+   "hepsiburada_top": [
+    "/nilem-sihirli-muhtesem-sivi-dusakabin-ve-fayans-temizl",
+    "nilem sihirli muhteşem sıvı",
+    811
+   ],
+   "n11": 0,
+   "amazon": 72,
+   "amazon_top": [
+    "/Fayans-Temizleyiciler/b?ie=UTF8&node=12708859031",
+    "fayans temizleyici",
+    72
+   ],
+   "koctas": 1535,
+   "koctas_top": [
+    "/insaat-temizlik-urunleri/lavabo-cozucu/c/100004014",
+    "lavabo açıcı",
+    1008
+   ],
+   "bauhaus": 3,
+   "bauhaus_top": [
+    "/leifheit-fayans-temizleme-aparati-60884712",
+    "fayans temizleme aparatı",
+    3
+   ],
+   "ikea": 24,
+   "ikea_top": [
+    "/iyi-fikirler/aninda-banyo-yenileme-fikirleri",
+    "banyo yenileme modelleri",
+    24
+   ],
+   "tekzen": 0,
+   "akakce": 326,
+   "akakce_top": [
+    "/mutfak-banyo-temizleyici/cif.html",
+    "cif banyo",
+    326
+   ],
+   "cimri": 475,
+   "cimri_top": [
+    "/market/dusakabin-temizleyici?page=12",
+    "duşakabin temizleyici",
+    252
+   ]
+  },
+  {
+   "kategori": "Fayans boyası, yapıştırıcı & kesici",
+   "trendyol": 9180,
+   "trendyol_top": [
+    "/seramik-kesme-makinesi-x-c105697",
+    "fayans kesici",
+    2077
+   ],
+   "hepsiburada": 6007,
+   "hepsiburada_top": [
+    "/seramik-kaplama-x-s61916",
+    "seramik kaplama",
+    1641
+   ],
+   "n11": 808,
+   "n11_top": [
+    "/urun/vivaldi-fayans-boyasi-astar-ve-vernik-gerektirmey",
+    "fayans boyası",
+    581
+   ],
+   "amazon": 1685,
+   "amazon_top": [
+    "/Fayans-Boyas%C4%B1-Gerektirmeyen-S%C4%B1n%C4%B1rs%C4%B",
+    "fayans boyası",
+    1389
+   ],
+   "koctas": 2330,
+   "koctas_top": [
+    "/vivaldi-fayans-boyasi-astar-ve-vernik-gerektirmeyen-bo",
+    "fayans boyası",
+    987
+   ],
+   "bauhaus": 2073,
+   "bauhaus_top": [
+    "/bauhaus-boya-ve-insaat-seramik-yer-seramikleri",
+    "gri yer fayans modelleri",
+    1551
+   ],
+   "ikea": 0,
+   "tekzen": 0,
+   "akakce": 5100,
+   "akakce_top": [
+    "/fayans-boyasi,7.html",
+    "fayans boyası",
+    1255
+   ],
+   "cimri": 1096,
+   "cimri_top": [
+    "/boyalar/en-ucuz-dryfix-beyaz-2-kg-faience-paint-fayans",
+    "fayans boyası",
+    581
+   ]
+  }
+ ],
+ "ssg_bm": {
+  "trendyol": {
+   "ssg": 69883,
+   "bm": 81847,
+   "core": 332155
+  },
+  "hepsiburada": {
+   "ssg": 23309,
+   "bm": 14334,
+   "core": 106822
+  },
+  "n11": {
+   "ssg": 1916,
+   "bm": 1946,
+   "core": 10271
+  },
+  "amazon": {
+   "ssg": 4314,
+   "bm": 8116,
+   "core": 23802
+  },
+  "koctas": {
+   "ssg": 49675,
+   "bm": 53549,
+   "core": 204086
+  },
+  "bauhaus": {
+   "ssg": 5555,
+   "bm": 4541,
+   "core": 16720
+  },
+  "ikea": {
+   "ssg": 2255,
+   "bm": 24443,
+   "core": 41003
+  },
+  "tekzen": {
+   "ssg": 225,
+   "bm": 123,
+   "core": 491
+  },
+  "akakce": {
+   "ssg": 20994,
+   "bm": 14053,
+   "core": 72439
+  },
+  "cimri": {
+   "ssg": 11638,
+   "bm": 5896,
+   "core": 31886
+  }
+ }
+}

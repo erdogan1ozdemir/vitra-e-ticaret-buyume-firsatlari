@@ -1,0 +1,800 @@
+{
+ "video": 33,
+ "cekilen_yorum": 2240,
+ "sahip_yorumu": 16,
+ "reklam_iletisim": 6,
+ "gecerli": 2218,
+ "temali": 1458,
+ "temasiz": 760,
+ "temasiz_pay": 34.3,
+ "tur_yorum": {
+  "VitrA/Artema ürünlü tamir-montaj": 738,
+  "Rakip marka tamir-montaj": 525,
+  "Seçim, inceleme, satın alma": 102,
+  "Tadilat ve ilham": 283,
+  "Marka belirsiz tamir-montaj (yüksek izlenmeli)": 570
+ },
+ "temalar": {
+  "Parça bulma / yedek parça": {
+   "yorum": 35,
+   "pay_gecerli": 1.6,
+   "vitra_videolari_yorum": 11,
+   "tur_dagilim": {
+    "VitrA/Artema ürünlü tamir-montaj": 11,
+    "Rakip marka tamir-montaj": 10,
+    "Seçim, inceleme, satın alma": 1,
+    "Marka belirsiz tamir-montaj (yüksek izlenmeli)": 13
+   },
+   "alintilar": [
+    {
+     "metin": "parça numarasını da verebilirmisiniz o contanın aynısından şehir  dışındaki arkadaşların teminiiçin",
+     "video": "VİTRA GÖMME SİFON (REZERVUAR) SU KAÇIRIYOR TAMİRİ",
+     "url": "https://www.youtube.com/watch?v=8aSO7T-b650",
+     "begeni": 0,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "Ustam ellerine sağlık bir sorum olacaktı bu söktüğümüz bu parçanın yedek parçası var mı acaba nalburlarda bilginiz var mı",
+     "video": "TESİSATÇIDAN ŞAŞIRTICI YÖNTEM💯 AÇ KAPA MUSLUK KARTUŞUNU VAZELİN İLE TAMİR EDİN",
+     "url": "https://www.youtube.com/watch?v=KY3X17-wZz4",
+     "begeni": 1,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "Serel marka iç takımın şamandırasi bozuldu. Ancak serelin tek şamandırasi yok takım alman gerek. Başka marka tek satılan alsam uyar mı? Bilginizi rica ederim.",
+     "video": "Baştan Sona Rezervuarlı Klozet Montajı Nasıl Yapılır? TADİLAT 11.Bölüm | ",
+     "url": "https://www.youtube.com/watch?v=IKACq0lXBOQ",
+     "begeni": 0,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "iç takım ana gövdenin altı  kare ve oval-yuvarlak  farkı nedir hepsi birbirine olurmu ?",
+     "video": "Vitra duvara gömme rezervuar iç takım değişimi nasıl yapılır?",
+     "url": "https://www.youtube.com/watch?v=uiWwzjYYF0k",
+     "begeni": 0,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "Contayı değiştirsek bile kaçırmaya devam ediyor. İç takıml komple değiştirmeli miyiz",
+     "video": "Serel Gömme Rezervuar Su Kaçırıyor? Conta Değişimi!",
+     "url": "https://www.youtube.com/watch?v=eLA0UQvn-9U",
+     "begeni": 0,
+     "tema_kurali_uyumlu": true
+    }
+   ]
+  },
+  "Servis ve garanti": {
+   "yorum": 55,
+   "pay_gecerli": 2.5,
+   "vitra_videolari_yorum": 29,
+   "tur_dagilim": {
+    "VitrA/Artema ürünlü tamir-montaj": 29,
+    "Rakip marka tamir-montaj": 18,
+    "Seçim, inceleme, satın alma": 5,
+    "Tadilat ve ilham": 1,
+    "Marka belirsiz tamir-montaj (yüksek izlenmeli)": 2
+   },
+   "alintilar": [
+    {
+     "metin": "Arkadaşlar hiçbir şey söyledikleri gibi değil vitra dan ve servislerinden uzak durun fırsatı kaçırmıyorlar ve zorluk çıkarıyorlar.",
+     "video": "VİTRA GÖMME REZERVUAR KLOZETİN İÇİNE SU KAÇIRIYOR NEDEN?",
+     "url": "https://www.youtube.com/watch?v=a1i0pneZhdw",
+     "begeni": 6,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "Sayenizde 250 servis ücreti vermeden 40tl ye hallettim. Hazne çok dardı. biraz zorlandım ama sonrası başarmanın keyfi zahmetime değdi. Çok tşkler..",
+     "video": "VİTRA GÖMME REZERVUAR CONTA NASIL DEĞİŞTİRİLİR / VİTRA KLOZET REZERVUAR İÇ TAKIM TAMİRİ",
+     "url": "https://www.youtube.com/watch?v=6TgHlbFCsh8",
+     "begeni": 4,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "Sağolun en detaylı anlatan sizsiniz  1 yılda 3 kez servis çağırdım yüklücede para verdim artık kendim şu kaçağı sorununu çözeceğim sanırım",
+     "video": "Vitra Duvariçi Gömme Rezervuar Su Kaçırıyor",
+     "url": "https://www.youtube.com/watch?v=WLG7aInsqoY",
+     "begeni": 2,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "Sayın VİTRA üreticisi neden şu kapatma vanasını dıştan kumandalı yapmıyorsunuz.Sızma şu akıtma durumunda suyu kesebilelim ustası gelene kadar boşa akıtmamış oluruz çevreye saygı lütfen.!!!!!!!",
+     "video": "VİTRA GÖMME REZERVUAR CONTA NASIL DEĞİŞTİRİLİR / VİTRA KLOZET REZERVUAR İÇ TAKIM TAMİRİ",
+     "url": "https://www.youtube.com/watch?v=6TgHlbFCsh8",
+     "begeni": 2,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "Şirinevlerde servisiniz var mı ?",
+     "video": "Serel Gömme Rezervuar Su Kaçırıyor? Conta Değişimi!",
+     "url": "https://www.youtube.com/watch?v=eLA0UQvn-9U",
+     "begeni": 1,
+     "tema_kurali_uyumlu": true
+    }
+   ]
+  },
+  "Montaj zorluğu / uygulama soruları": {
+   "yorum": 90,
+   "pay_gecerli": 4.1,
+   "vitra_videolari_yorum": 28,
+   "tur_dagilim": {
+    "VitrA/Artema ürünlü tamir-montaj": 28,
+    "Rakip marka tamir-montaj": 29,
+    "Seçim, inceleme, satın alma": 11,
+    "Tadilat ve ilham": 1,
+    "Marka belirsiz tamir-montaj (yüksek izlenmeli)": 21
+   },
+   "alintilar": [
+    {
+     "metin": "2 yıldır Vitra kullanıyoruz ama o kadar pişmanız ki sürekli gevşiyor hareket ediyor kaç kere sıkıştırdım ama yine aynı hiç kimseye Bu markayı tavsiye etmiyorum",
+     "video": "KLOZET KAPAĞI MONTAJI",
+     "url": "https://www.youtube.com/watch?v=Rcvk_z95Zxc",
+     "begeni": 23,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "Montajı yaptım ama arka taraftaki ayaklar boşta kalıyor ne yaparsam yapayım sıfıra sıfır oturmuyor.",
+     "video": "VitrA Klozet Kapağı Montajı Nasıl Yapılır? | Hızlı Kurulum",
+     "url": "https://www.youtube.com/watch?v=3rnivNp9ix4",
+     "begeni": 4,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "Keşke tane tane detay vererek nasıl söküldüğünü göstererek anlatsaydınız.",
+     "video": "Vitra duvara gömme rezervuar iç takım değişimi nasıl yapılır?",
+     "url": "https://www.youtube.com/watch?v=uiWwzjYYF0k",
+     "begeni": 5,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "Hocam bunun sökme işlemini de bir göstersen sökemedim biz",
+     "video": "KLOZET KAPAĞI MONTAJI",
+     "url": "https://www.youtube.com/watch?v=Rcvk_z95Zxc",
+     "begeni": 12,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "Ustam su tangın üst kapağını nasıl bağlarım ufak kanca gibi bir şey var takamadım varmı püf noktası teşekürler",
+     "video": "Sincan -Etimesgut Klozet Tamiri Montajı Vitra 0553 267 21 91",
+     "url": "https://www.youtube.com/watch?v=3kOkkvkj_jo",
+     "begeni": 3,
+     "tema_kurali_uyumlu": true
+    }
+   ]
+  },
+  "Usta ücreti / usta bulma": {
+   "yorum": 68,
+   "pay_gecerli": 3.1,
+   "vitra_videolari_yorum": 27,
+   "tur_dagilim": {
+    "VitrA/Artema ürünlü tamir-montaj": 27,
+    "Rakip marka tamir-montaj": 15,
+    "Tadilat ve ilham": 17,
+    "Marka belirsiz tamir-montaj (yüksek izlenmeli)": 9
+   },
+   "alintilar": [
+    {
+     "metin": "Allah razı olsun hocam sayenizde ustaya gerek kalmadan tamir ettik. Usta parasıyla çocuklarıma çikolata aldım.❤",
+     "video": "VİTRA GÖMME REZERVUAR KLOZETİN İÇİNE SU KAÇIRIYOR NEDEN?",
+     "url": "https://www.youtube.com/watch?v=a1i0pneZhdw",
+     "begeni": 26,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "Usta çağırdım yapmaya cesaret edemedi.Altı aydir iptaldi. Kullanmıyordum. Senin tarifin üzere söktüm temizledim taktım. Allah senden razı olsun.",
+     "video": "Vitra duvara gömme rezervuar iç takım değişimi nasıl yapılır?",
+     "url": "https://www.youtube.com/watch?v=uiWwzjYYF0k",
+     "begeni": 16,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "Çok teşekkür ederim seni takip ederek yaptım ustanın 300 lira istediği şeye 4 liraya kapattım Allah senden razı olsun kardeşim",
+     "video": "Vitra Duvariçi Gömme Rezervuar Su Kaçırıyor",
+     "url": "https://www.youtube.com/watch?v=WLG7aInsqoY",
+     "begeni": 5,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "Ustam çok teşekkür ediyorum. Eve çağırdığım usta 2500 TL  istedi. Senin sayende kendim yaptım. Allah yolunu açık eylesin.",
+     "video": "VİTRA GÖMME REZERVUAR KLOZETİN İÇİNE SU KAÇIRIYOR NEDEN?",
+     "url": "https://www.youtube.com/watch?v=a1i0pneZhdw",
+     "begeni": 3,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "Göme reervuar saçmalıktan insanlara dertten başka bişey değil contası kaçırır değiştiremezsin tamirine usta bulunmaz elin içeri girmez eski tip en iyisi",
+     "video": "VitrA V-Fix Prime 8 cm Gömme Rezervuar montajı nasıl yapılır? – Tuğla duvar",
+     "url": "https://www.youtube.com/watch?v=2mzVnoBKXh4",
+     "begeni": 3,
+     "tema_kurali_uyumlu": true
+    }
+   ]
+  },
+  "Fiyat": {
+   "yorum": 162,
+   "pay_gecerli": 7.3,
+   "vitra_videolari_yorum": 64,
+   "tur_dagilim": {
+    "VitrA/Artema ürünlü tamir-montaj": 64,
+    "Rakip marka tamir-montaj": 22,
+    "Seçim, inceleme, satın alma": 9,
+    "Tadilat ve ilham": 33,
+    "Marka belirsiz tamir-montaj (yüksek izlenmeli)": 34
+   },
+   "alintilar": [
+    {
+     "metin": "Min 1500TL lik işi 90 TL ye çözdüm sayenizde. Allah razı olsun.",
+     "video": "Serel Gömme Rezervuar Su Kaçırıyor? Conta Değişimi!",
+     "url": "https://www.youtube.com/watch?v=eLA0UQvn-9U",
+     "begeni": 12,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "videoyu izleyerek contayı değiştirdim çok basitmiş yalnız contanın şu anki fiyatı 30 TL",
+     "video": "Vitra Duvariçi Gömme Rezervuar Su Kaçırıyor",
+     "url": "https://www.youtube.com/watch?v=WLG7aInsqoY",
+     "begeni": 5,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "Visam 275 tl zamanla conta eskiyor  oda 30tl",
+     "video": "Klozet Su Kaçırıyorsa Çok Basit Tamiri Kendin Yap - Klozet Su Kaçırıyor, Sifon Su Kaçırıyor Çözümü",
+     "url": "https://www.youtube.com/watch?v=U3uNRutqttg",
+     "begeni": 6,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "335bin TL değmez. evi satmaya kalksan 340bin TL değer katmaz eli yüzü toplanacak kadar yapılması mantıklı",
+     "video": "📽 KOMPLE EV TADİLAT MALİYETİ- YAPIM AŞAMALARI 2023",
+     "url": "https://www.youtube.com/watch?v=a-7tzWHL098",
+     "begeni": 34,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "Teşekkürler ustam sayende yediğim kazıkların farkına vardım",
+     "video": "CREAVİT GÖMME REZERVUAR İÇ TAKIM SU KAÇIRIYOR TAMİRİ",
+     "url": "https://www.youtube.com/watch?v=s9hiDfxw15s",
+     "begeni": 7,
+     "tema_kurali_uyumlu": true
+    }
+   ]
+  },
+  "Ürün kalitesi / kırılma / sızıntı": {
+   "yorum": 246,
+   "pay_gecerli": 11.1,
+   "vitra_videolari_yorum": 91,
+   "tur_dagilim": {
+    "VitrA/Artema ürünlü tamir-montaj": 91,
+    "Rakip marka tamir-montaj": 54,
+    "Seçim, inceleme, satın alma": 18,
+    "Tadilat ve ilham": 10,
+    "Marka belirsiz tamir-montaj (yüksek izlenmeli)": 73
+   },
+   "alintilar": [
+    {
+     "metin": "Video 357k izlenmiş. Vitra rezervuarı olan her şahıs izlemiş belliki. Kullanmaya başlayalı 8 ay oldu ve sızıntı başladı. Vitra için büyük başarı!",
+     "video": "VİTRA GÖMME REZERVUAR KLOZETİN İÇİNE SU KAÇIRIYOR NEDEN?",
+     "url": "https://www.youtube.com/watch?v=a1i0pneZhdw",
+     "begeni": 22,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "Vitra uzay üssü gibi ürün yapmış. Kısa zamanda su kaçırıyor sifon. Bu kadar zahmetli parçalar yapacağına daha kaliteli parçası az ürünler üretilmeli.",
+     "video": "VİTRA GÖMME REZERVUAR KLOZETİN İÇİNE SU KAÇIRIYOR NEDEN?",
+     "url": "https://www.youtube.com/watch?v=a1i0pneZhdw",
+     "begeni": 19,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "Usta Allah razı olsun 1 senedir su kaçırıyor suçu geliyor ertesi gün yine kaçırıyor\nSayende hallettim\nEyvallah",
+     "video": "Aslında Çok Basit Klozet Su Kaçırıyor, Sifon Su Kaçırıyor Sorunu, Çözümü",
+     "url": "https://www.youtube.com/watch?v=gZyDQFu01GY",
+     "begeni": 14,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "Bende kullanıyorum ama ust kapak bozuldu yavaş kapanmıyor sorun ne olabilir tamiri mümkün mü",
+     "video": "KLOZET KAPAĞI MONTAJI",
+     "url": "https://www.youtube.com/watch?v=Rcvk_z95Zxc",
+     "begeni": 10,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "Bizim klozetin su deposunu adamlar duvarın içerisine yapmış. Aman aman ne güzel. Su akıtıyor tek kişi yaşıyorum 961 tl su faturası gelmiş.",
+     "video": "Klozet Su Kaçırıyorsa Çok Basit Tamiri Kendin Yap - Klozet Su Kaçırıyor, Sifon Su Kaçırıyor Çözümü",
+     "url": "https://www.youtube.com/watch?v=U3uNRutqttg",
+     "begeni": 4,
+     "tema_kurali_uyumlu": true
+    }
+   ]
+  },
+  "Marka karşılaştırması": {
+   "yorum": 15,
+   "pay_gecerli": 0.7,
+   "vitra_videolari_yorum": 4,
+   "tur_dagilim": {
+    "VitrA/Artema ürünlü tamir-montaj": 4,
+    "Rakip marka tamir-montaj": 6,
+    "Seçim, inceleme, satın alma": 4,
+    "Marka belirsiz tamir-montaj (yüksek izlenmeli)": 1
+   },
+   "alintilar": [
+    {
+     "metin": "Bizim serel marka duvarın içindeki sifonumuz komple değişmesi lazım aynı markadan bulamadık başka markanın komple setini alsak değiştirebilirmiyiz",
+     "video": "VİTRA GÖMME SİFON (REZERVUAR) SU KAÇIRIYOR TAMİRİ",
+     "url": "https://www.youtube.com/watch?v=8aSO7T-b650",
+     "begeni": 1,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "Ustam banyo eviye lavabo bataryası olarak hangi  marka tavsiye edersin ? ar,punto,ECA ,artema ?",
+     "video": "ECA AÇ KAPA MUSLUK TAMİRİ Kartuş Değiştirme  Faucet Cartridge Replacement",
+     "url": "https://www.youtube.com/watch?v=lkfdmDjQZCc",
+     "begeni": 1,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "Geberit diyon Vitra çıkıyor 😂😂",
+     "video": "GÖMME REZERVUAR MONTAJI NASIL YAPILIR ? GEBERİT MONTAJI",
+     "url": "https://www.youtube.com/watch?v=y3F5pE9cXNE",
+     "begeni": 0,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "Ustam sana zahmet  başlığı  vitra yap  geberit  değil   buu",
+     "video": "GÖMME REZERVUAR MONTAJI NASIL YAPILIR ? GEBERİT MONTAJI",
+     "url": "https://www.youtube.com/watch?v=y3F5pE9cXNE",
+     "begeni": 0,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "Vitra uzay üssü gibi ürün yapmış. Kısa zamanda su kaçırıyor sifon. Bu kadar zahmetli parçalar yapacağına daha kaliteli parçası az ürünler üretilmeli.",
+     "video": "VİTRA GÖMME REZERVUAR KLOZETİN İÇİNE SU KAÇIRIYOR NEDEN?",
+     "url": "https://www.youtube.com/watch?v=a1i0pneZhdw",
+     "begeni": 19,
+     "tema_kurali_uyumlu": true
+    }
+   ]
+  },
+  "Satın alma kanalı": {
+   "yorum": 24,
+   "pay_gecerli": 1.1,
+   "vitra_videolari_yorum": 7,
+   "tur_dagilim": {
+    "VitrA/Artema ürünlü tamir-montaj": 7,
+    "Rakip marka tamir-montaj": 5,
+    "Seçim, inceleme, satın alma": 4,
+    "Tadilat ve ilham": 2,
+    "Marka belirsiz tamir-montaj (yüksek izlenmeli)": 6
+   },
+   "alintilar": [
+    {
+     "metin": "Koçtaşın sitesinde panel açıklamalarında ıslak alanlarda kullanılmaz yazıyor. Banyoda kullanmanız sorun olmadı mi acaba?",
+     "video": "Kırmadan Dökmeden Banyonuzu Yepyeni Hale Getirin! - Banyo Yenileme Nasıl Yapılır?",
+     "url": "https://www.youtube.com/watch?v=welQvPLothc",
+     "begeni": 19,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "S.a  vitra conta 5 6 nalbura gittim bulamadim. Nerden bulabilirim bilgi rica ederim",
+     "video": "VİTRA GÖMME SİFON (REZERVUAR) SU KAÇIRIYOR TAMİRİ",
+     "url": "https://www.youtube.com/watch?v=8aSO7T-b650",
+     "begeni": 0,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "Eve usta çağırdım işyeri evin arasındaydı yürüyerek deldi sadece conta değiştirdi 750 TL aldı internetten baktım com ta 8 TL imiş çok güzel kazık yedim",
+     "video": "Vitra duvara gömme rezervuar iç takım değişimi nasıl yapılır?",
+     "url": "https://www.youtube.com/watch?v=uiWwzjYYF0k",
+     "begeni": 0,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "Kullandığınız menteşeleri nereden alabiliriz acaba. Cevap verirseniz çok memnun olurum",
+     "video": "KLOZET KAPAĞI MONTAJI",
+     "url": "https://www.youtube.com/watch?v=Rcvk_z95Zxc",
+     "begeni": 1,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "Istanbuldaysaniz karakoyde hirdavatcilar carsinda var, 2 gun once aldim",
+     "video": "CREAVİT GÖMME REZERVUAR İÇ TAKIM SU KAÇIRIYOR TAMİRİ",
+     "url": "https://www.youtube.com/watch?v=s9hiDfxw15s",
+     "begeni": 0,
+     "tema_kurali_uyumlu": true
+    }
+   ]
+  },
+  "Teşekkür / genel": {
+   "yorum": 1147,
+   "pay_gecerli": 51.7,
+   "vitra_videolari_yorum": 426,
+   "tur_dagilim": {
+    "VitrA/Artema ürünlü tamir-montaj": 426,
+    "Rakip marka tamir-montaj": 261,
+    "Seçim, inceleme, satın alma": 13,
+    "Tadilat ve ilham": 70,
+    "Marka belirsiz tamir-montaj (yüksek izlenmeli)": 377
+   },
+   "alintilar": [
+    {
+     "metin": "Cok tesekkurler o kdr sacma sapan uzun videolar var ki 5dk da 2 olasiligi da anlatmissin dostum eline saglik : )",
+     "video": "Eyvah ! Klozet Su Kaçırıyor - Klozet Rezervuar İç Takımı Tamiri - Klozetten Su Neden Gelir - Tamirat",
+     "url": "https://www.youtube.com/watch?v=l7b5Eg_of9k",
+     "begeni": 36,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "Vatandaşın parasının cebinde kalmasına yardımcı olduğun için çok teşekkürler. Allah işini rast getirsin.",
+     "video": "Vitra Duvariçi Gömme Rezervuar Su Kaçırıyor",
+     "url": "https://www.youtube.com/watch?v=WLG7aInsqoY",
+     "begeni": 39,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "İnsanların en makbulü insanlara faydalı olandır   sende makbul  insansın. Hadis       sağ ol.",
+     "video": "Aslında Çok Basit Klozet Su Kaçırıyor, Sifon Su Kaçırıyor Sorunu, Çözümü",
+     "url": "https://www.youtube.com/watch?v=gZyDQFu01GY",
+     "begeni": 240,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "Değerli kardeşim ne güzel anlatmışsın bu yaptığın resmen sadaka-ı cariye … Allah razı olsun",
+     "video": "Serel Gömme Sifon Rezervuar Su Kaçırma Sorunu ve Tamiri - Su Faturası Yüksek Geldiyse...",
+     "url": "https://www.youtube.com/watch?v=DvhsVTEjPBk",
+     "begeni": 49,
+     "tema_kurali_uyumlu": true
+    },
+    {
+     "metin": "Sorunumu hemen halledebildim cok tesekkurler🌸😊",
+     "video": "VİTRA GÖMME REZERVUAR SİFON SU DOLMUYOR",
+     "url": "https://www.youtube.com/watch?v=o5fbPzVIEsI",
+     "begeni": 0,
+     "tema_kurali_uyumlu": true
+    }
+   ]
+  }
+ },
+ "marka_anilma": {
+  "VitrA": 49,
+  "Serel": 13,
+  "Kale": 14,
+  "Visam": 5,
+  "E.C.A.": 5,
+  "Bien": 4,
+  "Bocchi": 1,
+  "Geberit": 3,
+  "Creavit": 2
+ },
+ "videolar": [
+  {
+   "video_id": "a1i0pneZhdw",
+   "baslik": "VİTRA GÖMME REZERVUAR KLOZETİN İÇİNE SU KAÇIRIYOR NEDEN?",
+   "tur": "VitrA/Artema ürünlü tamir-montaj",
+   "toplam_yorum": 490,
+   "cekilen": 100,
+   "gecerli": 99,
+   "sahip": 1,
+   "reklam": 1
+  },
+  {
+   "video_id": "8aSO7T-b650",
+   "baslik": "VİTRA GÖMME SİFON (REZERVUAR) SU KAÇIRIYOR TAMİRİ",
+   "tur": "VitrA/Artema ürünlü tamir-montaj",
+   "toplam_yorum": 127,
+   "cekilen": 92,
+   "gecerli": 92,
+   "sahip": 0,
+   "reklam": 0
+  },
+  {
+   "video_id": "WLG7aInsqoY",
+   "baslik": "Vitra Duvariçi Gömme Rezervuar Su Kaçırıyor",
+   "tur": "VitrA/Artema ürünlü tamir-montaj",
+   "toplam_yorum": 407,
+   "cekilen": 100,
+   "gecerli": 100,
+   "sahip": 0,
+   "reklam": 0
+  },
+  {
+   "video_id": "3kOkkvkj_jo",
+   "baslik": "Sincan -Etimesgut Klozet Tamiri Montajı Vitra 0553 267 21 91",
+   "tur": "VitrA/Artema ürünlü tamir-montaj",
+   "toplam_yorum": 194,
+   "cekilen": 100,
+   "gecerli": 100,
+   "sahip": 0,
+   "reklam": 0
+  },
+  {
+   "video_id": "o5fbPzVIEsI",
+   "baslik": "VİTRA GÖMME REZERVUAR SİFON SU DOLMUYOR",
+   "tur": "VitrA/Artema ürünlü tamir-montaj",
+   "toplam_yorum": 110,
+   "cekilen": 86,
+   "gecerli": 86,
+   "sahip": 0,
+   "reklam": 0
+  },
+  {
+   "video_id": "6TgHlbFCsh8",
+   "baslik": "VİTRA GÖMME REZERVUAR CONTA NASIL DEĞİŞTİRİLİR / VİTRA KLOZET REZERVUAR İÇ TAKIM TAMİRİ",
+   "tur": "VitrA/Artema ürünlü tamir-montaj",
+   "toplam_yorum": 343,
+   "cekilen": 100,
+   "gecerli": 99,
+   "sahip": 1,
+   "reklam": 0
+  },
+  {
+   "video_id": "uiWwzjYYF0k",
+   "baslik": "Vitra duvara gömme rezervuar iç takım değişimi nasıl yapılır?",
+   "tur": "VitrA/Artema ürünlü tamir-montaj",
+   "toplam_yorum": 57,
+   "cekilen": 48,
+   "gecerli": 47,
+   "sahip": 1,
+   "reklam": 0
+  },
+  {
+   "video_id": "2mzVnoBKXh4",
+   "baslik": "VitrA V-Fix Prime 8 cm Gömme Rezervuar montajı nasıl yapılır? – Tuğla duvar",
+   "tur": "VitrA/Artema ürünlü tamir-montaj",
+   "toplam_yorum": 49,
+   "cekilen": 32,
+   "gecerli": 32,
+   "sahip": 0,
+   "reklam": 0
+  },
+  {
+   "video_id": "3rnivNp9ix4",
+   "baslik": "VitrA Klozet Kapağı Montajı Nasıl Yapılır? | Hızlı Kurulum",
+   "tur": "VitrA/Artema ürünlü tamir-montaj",
+   "toplam_yorum": 14,
+   "cekilen": 11,
+   "gecerli": 11,
+   "sahip": 0,
+   "reklam": 0
+  },
+  {
+   "video_id": "ZRQ78EpYv4s",
+   "baslik": "ARTEMA AÇ KAPA MUSLUK TAMİRİ KARTUŞ DEĞİŞTİRME",
+   "tur": "VitrA/Artema ürünlü tamir-montaj",
+   "toplam_yorum": 14,
+   "cekilen": 13,
+   "gecerli": 12,
+   "sahip": 1,
+   "reklam": 0
+  },
+  {
+   "video_id": "DvhsVTEjPBk",
+   "baslik": "Serel Gömme Sifon Rezervuar Su Kaçırma Sorunu ve Tamiri - Su Faturası Yüksek Geldiyse...",
+   "tur": "Rakip marka tamir-montaj",
+   "toplam_yorum": 280,
+   "cekilen": 100,
+   "gecerli": 100,
+   "sahip": 0,
+   "reklam": 0
+  },
+  {
+   "video_id": "eLA0UQvn-9U",
+   "baslik": "Serel Gömme Rezervuar Su Kaçırıyor? Conta Değişimi!",
+   "tur": "Rakip marka tamir-montaj",
+   "toplam_yorum": 165,
+   "cekilen": 100,
+   "gecerli": 99,
+   "sahip": 1,
+   "reklam": 1
+  },
+  {
+   "video_id": "IKACq0lXBOQ",
+   "baslik": "Baştan Sona Rezervuarlı Klozet Montajı Nasıl Yapılır? TADİLAT 11.Bölüm | ",
+   "tur": "Rakip marka tamir-montaj",
+   "toplam_yorum": 211,
+   "cekilen": 100,
+   "gecerli": 100,
+   "sahip": 0,
+   "reklam": 0
+  },
+  {
+   "video_id": "ECFUBnW-Cas",
+   "baslik": "Klozet montajı ( Kale Ida Klozet, Rezervuar, Taharet hortumu. Kapak )",
+   "tur": "Rakip marka tamir-montaj",
+   "toplam_yorum": 456,
+   "cekilen": 100,
+   "gecerli": 100,
+   "sahip": 0,
+   "reklam": 0
+  },
+  {
+   "video_id": "y3F5pE9cXNE",
+   "baslik": "GÖMME REZERVUAR MONTAJI NASIL YAPILIR ? GEBERİT MONTAJI",
+   "tur": "Rakip marka tamir-montaj",
+   "toplam_yorum": 85,
+   "cekilen": 60,
+   "gecerli": 59,
+   "sahip": 1,
+   "reklam": 0
+  },
+  {
+   "video_id": "s9hiDfxw15s",
+   "baslik": "CREAVİT GÖMME REZERVUAR İÇ TAKIM SU KAÇIRIYOR TAMİRİ",
+   "tur": "Rakip marka tamir-montaj",
+   "toplam_yorum": 31,
+   "cekilen": 24,
+   "gecerli": 23,
+   "sahip": 1,
+   "reklam": 0
+  },
+  {
+   "video_id": "VWU2Af0ZEms",
+   "baslik": "Gizli Montajlı Asma Klozet Montajı | Kale Smart Sistem",
+   "tur": "Seçim, inceleme, satın alma",
+   "toplam_yorum": 94,
+   "cekilen": 56,
+   "gecerli": 55,
+   "sahip": 1,
+   "reklam": 0
+  },
+  {
+   "video_id": "TzDTVuaZfoE",
+   "baslik": "Bien Asma Klozet Gizli Montajı",
+   "tur": "Seçim, inceleme, satın alma",
+   "toplam_yorum": 39,
+   "cekilen": 21,
+   "gecerli": 21,
+   "sahip": 0,
+   "reklam": 0
+  },
+  {
+   "video_id": "UWz-rBE98P0",
+   "baslik": "Koçtaş banyo dolap modelleri ve fiyatları",
+   "tur": "Seçim, inceleme, satın alma",
+   "toplam_yorum": 8,
+   "cekilen": 6,
+   "gecerli": 6,
+   "sahip": 0,
+   "reklam": 0
+  },
+  {
+   "video_id": "_ZRHeJrF1R4",
+   "baslik": "Taharet Musluğu Nasıl Takılır? | Koçtaş ile Kendin Yap",
+   "tur": "Seçim, inceleme, satın alma",
+   "toplam_yorum": 26,
+   "cekilen": 20,
+   "gecerli": 20,
+   "sahip": 0,
+   "reklam": 0
+  },
+  {
+   "video_id": "LbIRKipqe8M",
+   "baslik": "Banyo Tadilat - Cam mozaik ve büyük ebat porselen seramik döşeme ",
+   "tur": "Tadilat ve ilham",
+   "toplam_yorum": 653,
+   "cekilen": 100,
+   "gecerli": 98,
+   "sahip": 1,
+   "reklam": 1
+  },
+  {
+   "video_id": "tNvspmwo5wk",
+   "baslik": "Bir banyonun yeniden hayat buluşu",
+   "tur": "Tadilat ve ilham",
+   "toplam_yorum": 105,
+   "cekilen": 52,
+   "gecerli": 51,
+   "sahip": 1,
+   "reklam": 0
+  },
+  {
+   "video_id": "welQvPLothc",
+   "baslik": "Kırmadan Dökmeden Banyonuzu Yepyeni Hale Getirin! - Banyo Yenileme Nasıl Yapılır?",
+   "tur": "Tadilat ve ilham",
+   "toplam_yorum": 50,
+   "cekilen": 50,
+   "gecerli": 50,
+   "sahip": 0,
+   "reklam": 0
+  },
+  {
+   "video_id": "a-7tzWHL098",
+   "baslik": "📽 KOMPLE EV TADİLAT MALİYETİ- YAPIM AŞAMALARI 2023",
+   "tur": "Tadilat ve ilham",
+   "toplam_yorum": 159,
+   "cekilen": 88,
+   "gecerli": 84,
+   "sahip": 0,
+   "reklam": 4
+  },
+  {
+   "video_id": "agCk6BIyN7g",
+   "baslik": "VİTRA GÖMME REZERVUAR SU SEVİYE AYARI NASIL YAPILIR?",
+   "tur": "VitrA/Artema ürünlü tamir-montaj",
+   "toplam_yorum": 20,
+   "cekilen": 13,
+   "gecerli": 12,
+   "sahip": 1,
+   "reklam": 0
+  },
+  {
+   "video_id": "6495TGVQPR4",
+   "baslik": "VİTRA GÖMME REZERVUAR MONTAJI",
+   "tur": "VitrA/Artema ürünlü tamir-montaj",
+   "toplam_yorum": 91,
+   "cekilen": 50,
+   "gecerli": 48,
+   "sahip": 2,
+   "reklam": 0
+  },
+  {
+   "video_id": "lkfdmDjQZCc",
+   "baslik": "ECA AÇ KAPA MUSLUK TAMİRİ Kartuş Değiştirme  Faucet Cartridge Replacement",
+   "tur": "Rakip marka tamir-montaj",
+   "toplam_yorum": 57,
+   "cekilen": 45,
+   "gecerli": 44,
+   "sahip": 1,
+   "reklam": 0
+  },
+  {
+   "video_id": "U3uNRutqttg",
+   "baslik": "Klozet Su Kaçırıyorsa Çok Basit Tamiri Kendin Yap - Klozet Su Kaçırıyor, Sifon Su Kaçırıyor Çözümü",
+   "tur": "Marka belirsiz tamir-montaj (yüksek izlenmeli)",
+   "toplam_yorum": 404,
+   "cekilen": 100,
+   "gecerli": 100,
+   "sahip": 0,
+   "reklam": 0
+  },
+  {
+   "video_id": "l7b5Eg_of9k",
+   "baslik": "Eyvah ! Klozet Su Kaçırıyor - Klozet Rezervuar İç Takımı Tamiri - Klozetten Su Neden Gelir - Tamirat",
+   "tur": "Marka belirsiz tamir-montaj (yüksek izlenmeli)",
+   "toplam_yorum": 482,
+   "cekilen": 100,
+   "gecerli": 100,
+   "sahip": 0,
+   "reklam": 0
+  },
+  {
+   "video_id": "oQmwX9Y4or0",
+   "baslik": "Klozet iç takımı değiştirmek aslında çok kolay kendin yap",
+   "tur": "Marka belirsiz tamir-montaj (yüksek izlenmeli)",
+   "toplam_yorum": 366,
+   "cekilen": 100,
+   "gecerli": 99,
+   "sahip": 0,
+   "reklam": 1
+  },
+  {
+   "video_id": "gZyDQFu01GY",
+   "baslik": "Aslında Çok Basit Klozet Su Kaçırıyor, Sifon Su Kaçırıyor Sorunu, Çözümü",
+   "tur": "Marka belirsiz tamir-montaj (yüksek izlenmeli)",
+   "toplam_yorum": 1070,
+   "cekilen": 100,
+   "gecerli": 100,
+   "sahip": 0,
+   "reklam": 0
+  },
+  {
+   "video_id": "KY3X17-wZz4",
+   "baslik": "TESİSATÇIDAN ŞAŞIRTICI YÖNTEM💯 AÇ KAPA MUSLUK KARTUŞUNU VAZELİN İLE TAMİR EDİN",
+   "tur": "Marka belirsiz tamir-montaj (yüksek izlenmeli)",
+   "toplam_yorum": 158,
+   "cekilen": 100,
+   "gecerli": 100,
+   "sahip": 0,
+   "reklam": 0
+  },
+  {
+   "video_id": "Rcvk_z95Zxc",
+   "baslik": "KLOZET KAPAĞI MONTAJI",
+   "tur": "Marka belirsiz tamir-montaj (yüksek izlenmeli)",
+   "toplam_yorum": 110,
+   "cekilen": 73,
+   "gecerli": 71,
+   "sahip": 2,
+   "reklam": 0
+  }
+ ]
+}
