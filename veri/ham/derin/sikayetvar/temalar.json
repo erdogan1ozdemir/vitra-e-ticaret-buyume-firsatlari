@@ -1,0 +1,254 @@
+{
+ "Yedek parça bulunamaması": {
+  "kod": "yedek_parca",
+  "sayi": 59,
+  "pay": 0.1015,
+  "ana_tema_sayi": 21,
+  "ana_tema_pay": 0.0361,
+  "cozuldu_pay": 0.0847,
+  "medyan_goruntulenme": 514,
+  "alintilar": [
+   {
+    "metin": "Vitra Norm 7105L003 - 7200 Vitra rezervuar lazım, çözüm yok, yedek parça yok.",
+    "url": "https://www.sikayetvar.com/vitra/vitra-rezervuar-yedek-parca-sorunu",
+    "tarih": "2024-12-07"
+   },
+   {
+    "metin": "Sonra yedek parça teminatları yok, bir parçaya bir şey olursa klozeti komple çöpe at.",
+    "url": "https://www.sikayetvar.com/vitra/vitra-selena-klozet-takimi-yedek-parca-sorunu",
+    "tarih": "2025-03-12"
+   },
+   {
+    "metin": "Klozet takımının yıllar önce alınmış olmasına rağmen kurulumdan kısa süre sonra böyle bir kırılma yaşanması ve buna rağmen yedek parça temin edilememesi beni hayal kırıklığına uğrattı.",
+    "url": "https://www.sikayetvar.com/vitra/kirilan-vitra-klozet-kapagi-icin-yedek-parca-bulunamiyor",
+    "tarih": "2026-08-01"
+   }
+  ]
+ },
+ "vitra.com.tr sipariş, teslimat ve iade": {
+  "kod": "vitra_online",
+  "sayi": 22,
+  "pay": 0.0379,
+  "ana_tema_sayi": 4,
+  "ana_tema_pay": 0.0069,
+  "cozuldu_pay": 0.0909,
+  "medyan_goruntulenme": 678.0,
+  "alintilar": [
+   {
+    "metin": "Siparişimi Vitra'nın kendi sitesinden yapmış olmama rağmen, fatura bilgilerime ulaşamadığım ve tarafıma “fatura yok” denildiği için mağduriyet yaşıyorum.",
+    "url": "https://www.sikayetvar.com/vitra/vitra-online-alisveriste-fatura-sorunu-nedeniyle-garanti-magduriyeti",
+    "tarih": "2025-09-17"
+   },
+   {
+    "metin": "Vitra.com üzerinden satın aldığım lavabo armatürünü iade etmek istedim ancak iade sürecinde ciddi şekilde mağdur edildim.",
+    "url": "https://www.sikayetvar.com/vitra/vitranin-belirsiz-iade-adresi-ve-cozum-yoksunlugu",
+    "tarih": "2026-04-14"
+   },
+   {
+    "metin": "Vitra Online'dan aldığımız klozet yanlış geldi ve ilgisizliklerinden dolayı çok mağdur olduk.",
+    "url": "https://www.sikayetvar.com/vitra/yanlis-gelen-klozet-ve-ilgisizlik-magduriyeti",
+    "tarih": "2024-10-11"
+   }
+  ]
+ },
+ "Pazaryeri ve üçüncü taraf satıcı": {
+  "kod": "pazaryeri",
+  "sayi": 24,
+  "pay": 0.0413,
+  "ana_tema_sayi": 2,
+  "ana_tema_pay": 0.0034,
+  "cozuldu_pay": 0.125,
+  "medyan_goruntulenme": 514.0,
+  "alintilar": [
+   {
+    "metin": "Ancak ilk önce amazon.com.tr müşteri temsilcileri ile ürün değişimi için iletişime geçtim, aldığım cevap değişimin olmadığı, sadece iade imkânının olduğu oldu.",
+    "url": "https://www.sikayetvar.com/vitra/vitra-klozetlerde-seri-uretim-hatasi-ve-iletisim-sorunu",
+    "tarih": "2024-11-27"
+   },
+   {
+    "metin": "Trendyol üzerinden hatalı parça temini için iletişime geçtiğimde, lavabonun tek başına temin edilemeyeceği, sadece banyo dolabıyla birlikte komple iade yapılabileceği söylendi.",
+    "url": "https://www.sikayetvar.com/vitra/vitra-root-banyo-dolabi-lavabosundaki-catlak-icin-tek-parca-degisimi-talebi",
+    "tarih": "2026-04-19"
+   },
+   {
+    "metin": "Bu süreçte müşteri hizmetleri sürekli olarak bizi oyaladı, eksik parça talebimizi Hepsiburada üzerinden sildirdiler, “tedarik edeceğiz, işlem devam ediyor” diyerek net bir çözüm sunmadılar.",
+    "url": "https://www.sikayetvar.com/vitra/vitra-banyo-aksesuari-montaj-parcalari-eksik-musteri-hizmetleri-cozum-sunmuyor",
+    "tarih": "2026-07-30"
+   }
+  ]
+ },
+ "Montaj ve usta": {
+  "kod": "montaj",
+  "sayi": 213,
+  "pay": 0.3666,
+  "ana_tema_sayi": 47,
+  "ana_tema_pay": 0.0809,
+  "cozuldu_pay": 0.0423,
+  "medyan_goruntulenme": 635,
+  "alintilar": [
+   {
+    "metin": "Ben daha halen ücretsiz montaj olduğunu düşünüyorken montaj yapan kişi 1000 TL montaj ücreti istedi.",
+    "url": "https://www.sikayetvar.com/vitra/ucretsiz-montaj-iddiasiyla-magduriyet-vitra-ve-koctas-arasinda-sikistim",
+    "tarih": "2024-10-23"
+   },
+   {
+    "metin": "Buna rağmen servis, dolabın kurulacağı yerde süpürgelik bulunduğunu gerekçe göstererek montajı yapamayacağını bildirdi ve randevu verilmiş olmasına rağmen montaj için gelmedi.",
+    "url": "https://www.sikayetvar.com/vitra/vitradan-montaj-ucretinin-iadesi-ve-eksik-parca-sorunu",
+    "tarih": "2026-08-13"
+   },
+   {
+    "metin": "Ancak bu kez kampanyanın bittiği, artık montajın ücretli olduğu ve o dönemdeki ücretsiz montaj hakkımızın “kazanılmış bir hak” sayılmayacağı söylendi.",
+    "url": "https://www.sikayetvar.com/vitra/vitranin-ucretsiz-montaj-sozu-ihlali-ve-kirilan-banyo-aynasi",
+    "tarih": "2026-03-27"
+   }
+  ]
+ },
+ "Yetkili servis ve garanti": {
+  "kod": "servis_garanti",
+  "sayi": 318,
+  "pay": 0.5473,
+  "ana_tema_sayi": 182,
+  "ana_tema_pay": 0.3133,
+  "cozuldu_pay": 0.0597,
+  "medyan_goruntulenme": 671.0,
+  "alintilar": [
+   {
+    "metin": "Üretim hatası varsa garantiden değişir yoksa servis ücreti ödememiz gerekeceğini belirtip bu servis ücretini de belirtemeyeceklerini söylediler.",
+    "url": "https://www.sikayetvar.com/vitra/klozet-kapaklari-kisa-surede-kirildi-garanti-kapsaminda-destek-alamadim",
+    "tarih": "2025-05-15"
+   },
+   {
+    "metin": "Buna rağmen klozet kapağının garanti süresinin bittiğini, ekstra servis ücreti talep edeceklerini ve ayrıca parça değişimi olursa onun da ücretini almaları gerektiğini ilettiler.",
+    "url": "https://www.sikayetvar.com/vitra/garanti-kapsaminda-klozet-kapagi-sorunu-ve-servis-ucreti-talebi-reddedildi",
+    "tarih": "2026-03-26"
+   },
+   {
+    "metin": "Servis hiçbir işlem yapmadığı halde benden yaklaşık 1.500 TL servis ücreti aldı ve herhangi bir fatura veya servis fişi de verilmedi.",
+    "url": "https://www.sikayetvar.com/vitra/garanti-kapsaminda-klozetlerde-surekli-siyah-leke-ve-yetersiz-servis",
+    "tarih": "2025-08-21"
+   }
+  ]
+ },
+ "Fiyat ve kampanya": {
+  "kod": "fiyat_kampanya",
+  "sayi": 76,
+  "pay": 0.1308,
+  "ana_tema_sayi": 14,
+  "ana_tema_pay": 0.0241,
+  "cozuldu_pay": 0.0526,
+  "medyan_goruntulenme": 904.5,
+  "alintilar": [
+   {
+    "metin": "Piyasada 166-003-109 kodlu yeni model yaklaşık 3000 TL civarındayken, eski modelin stokları bazı bayilerde kaldığı için “piyasada yok” bahanesiyle 66-003-109 kodlu ürünü 7000 TL gibi fahiş fiyatlardan satıyorlar.",
+    "url": "https://www.sikayetvar.com/vitra/vitra-klozet-kapagi-stok-ve-fiyat-sorunu-magduriyeti",
+    "tarih": "2025-12-03"
+   },
+   {
+    "metin": "Kullanıcı hatası olmamasına rağmen bu kadar kısa sürede menteşenin kırılması, ayrıca yedek parça aradığımda menteşe fiyatının neredeyse yeni kapak fiyatına yakın olması beni ciddi anlamda mağdur etti.",
+    "url": "https://www.sikayetvar.com/vitra/vitra-klozet-kapagi-mentesesi-1-yilda-kirildi-parca-fiyati-tum-kapak-fiyatina-yakin",
+    "tarih": "2026-04-13"
+   },
+   {
+    "metin": "Ödememi kredi kartına 6 taksit olarak yaptım ve sipariş sırasında indirimden yararlanmıştım; şu an bu indirim de yok ve daha fazla mağdur ediliyorum.",
+    "url": "https://www.sikayetvar.com/vitra/yanlis-adrese-teslim-edilen-siparisim-icin-ne-urun-var-ne-para-iadesi",
+    "tarih": "2025-11-11"
+   }
+  ]
+ },
+ "İletişim ve çağrı merkezi": {
+  "kod": "iletisim",
+  "sayi": 173,
+  "pay": 0.2978,
+  "ana_tema_sayi": 45,
+  "ana_tema_pay": 0.0775,
+  "cozuldu_pay": 0.0694,
+  "medyan_goruntulenme": 734,
+  "alintilar": [
+   {
+    "metin": "Müşteri hattını aradım, hepsi çözeceğini söyledi ama 1 aydır dönüş yapan yok, ilgilenen yok ve imalata devam edemiyorum.",
+    "url": "https://www.sikayetvar.com/vitra/vitra-rezervuar-sorunu-ve-ilgisizlik",
+    "tarih": "2024-10-28"
+   },
+   {
+    "metin": "Müşteri hizmetlerini arayarak kayıt bıraktım, sonrasında da defalarca aramama rağmen tarafıma herhangi bir geri dönüş yapılmadı ve süreç 1 ayı geçmiş durumda.",
+    "url": "https://www.sikayetvar.com/vitra/tekrarlayan-su-kacirma-ve-yedek-parca-eksikligi-nedeniyle-musteri-hizmetlerinden-cevap-almama",
+    "tarih": "2026-06-30"
+   },
+   {
+    "metin": "Müşteri hizmetlerini defalarca aramama rağmen ilgilenmediler, hatta yanlış oturduğumuzu iddia ettiler.",
+    "url": "https://www.sikayetvar.com/vitra/vitra-asma-klozetlerde-yasanan-sorunlar",
+    "tarih": "2025-03-07"
+   }
+  ]
+ },
+ "Mağaza ve bayi": {
+  "kod": "magaza_bayi",
+  "sayi": 184,
+  "pay": 0.3167,
+  "ana_tema_sayi": 25,
+  "ana_tema_pay": 0.043,
+  "cozuldu_pay": 0.0543,
+  "medyan_goruntulenme": 637.0,
+  "alintilar": [
+   {
+    "metin": "Alışverişimizi Koçtaş'tan yaptığımız için bayi muhatabım da yok.",
+    "url": "https://www.sikayetvar.com/vitra/klozet-sorunu-kirli-su-tasmasi",
+    "tarih": "2025-02-17"
+   },
+   {
+    "metin": "Durumu Bauhaus mağazasına da ilettim ancak “malı bizden aldınız, hizmet değil” denilerek adeta sorumluluk alınmadı ve mağaza çözüm üretmek için herhangi bir çaba göstermedi.",
+    "url": "https://www.sikayetvar.com/vitra/ucretsiz-kurulum-sozune-aykiri-ek-ucret-talebi-ve-tazminat-istegi",
+    "tarih": "2026-04-22"
+   },
+   {
+    "metin": "Durumu mağaza üzerinden Koçtaş’a ilettik, onlar da firmadan onay gelmesi durumunda iade alabileceklerini söylüyorlar.",
+    "url": "https://www.sikayetvar.com/vitra/vitra-kanalsiz-klozet-pismanlik-video",
+    "tarih": "2026-07-21"
+   }
+  ]
+ },
+ "Ürün kalitesi, sızıntı, kırılma": {
+  "kod": "kalite",
+  "sayi": 380,
+  "pay": 0.654,
+  "ana_tema_sayi": 209,
+  "ana_tema_pay": 0.3597,
+  "cozuldu_pay": 0.0421,
+  "medyan_goruntulenme": 689.5,
+  "alintilar": [
+   {
+    "metin": "ürün üretim malzemesi o kadar kırılgan ki, kırılması imkansız olan parçalar yerine takarken kırılıp rezervuarın haznesine düştü.",
+    "url": "https://www.sikayetvar.com/vitra/kirilgan-vitra-rezervuar-montajinda-parca-kirilmasi-ve-ekstra-masraflar",
+    "tarih": "2026-04-14"
+   },
+   {
+    "metin": "Klozetleri kullanmaya başladıktan yaklaşık 2 ay sonra, 3 tanesinde aynı bölgede çatlak oluştuğunu ve bu çatlaklardan su sızmaya başladığını fark ettim.",
+    "url": "https://www.sikayetvar.com/vitra/vitra-sento-asma-klozetlerde-catlak-ve-su-sizintisi-sorunu-teknik-servisten-gecikmeli-hizmet",
+    "tarih": "2025-11-06"
+   },
+   {
+    "metin": "Klozet kapak kısmı yaklaşık 7 ay önce menteşe tarafından tek bir tarafı kırılmıştı, şimdi de diğer tarafı kırıldı ve şu anda hiç kullanılamamaktadır.",
+    "url": "https://www.sikayetvar.com/vitra/vitra-klozet-kapaklarinda-kalite-sorunu",
+    "tarih": "2024-12-15"
+   }
+  ]
+ },
+ "Diğer / sınıflandırılamayan": {
+  "kod": "diger",
+  "sayi": 32,
+  "pay": 0.0551,
+  "ana_tema_sayi": 32,
+  "ana_tema_pay": 0.0551,
+  "cozuldu_pay": 0.0,
+  "medyan_goruntulenme": 715.5,
+  "alintilar": []
+ },
+ "_meta": {
+  "kapsam": "Şikayetvar /vitra, 2024-10-01 - 2026-09-29",
+  "toplam_pencere": 600,
+  "metinli": 581,
+  "yayindan_kaldirilan": 19,
+  "detay_metinli": 551,
+  "not": "sayi/pay: temanin gectigi sikayet (coklu etiket, toplam %100'u asar); ana_tema_*: her sikayet tek ana temaya atanir (toplam %100). Pay paydasi: metinli sikayet sayisi."
+ }
+}

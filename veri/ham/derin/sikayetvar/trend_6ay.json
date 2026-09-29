@@ -1,0 +1,98 @@
+{
+ "VitrA": {
+  "2024-10/2025-03": {
+   "n": 148,
+   "kalite": 94,
+   "servis_garanti": 66,
+   "iletisim": 50,
+   "montaj": 40,
+   "magaza_bayi": 33,
+   "yedek_parca": 12,
+   "fiyat_kampanya": 16,
+   "vitra_online": 5,
+   "pazaryeri": 2
+  },
+  "2025-04/2025-09": {
+   "n": 144,
+   "kalite": 89,
+   "montaj": 46,
+   "servis_garanti": 81,
+   "magaza_bayi": 43,
+   "iletisim": 45,
+   "pazaryeri": 4,
+   "fiyat_kampanya": 18,
+   "yedek_parca": 8,
+   "vitra_online": 5
+  },
+  "2025-10/2026-03": {
+   "n": 126,
+   "iletisim": 39,
+   "kalite": 87,
+   "pazaryeri": 9,
+   "servis_garanti": 77,
+   "magaza_bayi": 52,
+   "montaj": 48,
+   "fiyat_kampanya": 19,
+   "yedek_parca": 10,
+   "vitra_online": 6
+  },
+  "2026-04/2026-09": {
+   "n": 163,
+   "kalite": 110,
+   "magaza_bayi": 56,
+   "montaj": 79,
+   "servis_garanti": 94,
+   "yedek_parca": 29,
+   "pazaryeri": 9,
+   "fiyat_kampanya": 23,
+   "iletisim": 39,
+   "vitra_online": 6
+  }
+ },
+ "Artema": {
+  "2024-10/2025-03": {
+   "n": 97,
+   "kalite": 60,
+   "magaza_bayi": 20,
+   "servis_garanti": 55,
+   "iletisim": 22,
+   "yedek_parca": 9,
+   "montaj": 23,
+   "fiyat_kampanya": 12,
+   "pazaryeri": 7
+  },
+  "2025-04/2025-09": {
+   "n": 69,
+   "iletisim": 18,
+   "kalite": 48,
+   "servis_garanti": 50,
+   "magaza_bayi": 17,
+   "montaj": 18,
+   "fiyat_kampanya": 14,
+   "pazaryeri": 7,
+   "yedek_parca": 5
+  },
+  "2025-10/2026-03": {
+   "n": 68,
+   "kalite": 50,
+   "montaj": 25,
+   "servis_garanti": 43,
+   "magaza_bayi": 24,
+   "pazaryeri": 13,
+   "iletisim": 23,
+   "yedek_parca": 12,
+   "fiyat_kampanya": 4
+  },
+  "2026-04/2026-09": {
+   "n": 57,
+   "iletisim": 17,
+   "servis_garanti": 42,
+   "yedek_parca": 7,
+   "kalite": 38,
+   "magaza_bayi": 21,
+   "montaj": 21,
+   "pazaryeri": 7,
+   "fiyat_kampanya": 11
+  }
+ }
+}

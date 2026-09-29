@@ -31,9 +31,9 @@ MARKALAR = ["VitrA","Artema","Kale","Creavit","Turkuaz","ECA","Grohe","Hansgrohe
 def marka_bul(baslik):
     b = baslik.lower()
     for m,anah in [("VitrA",["vitra","v-flush","integra","sento","s20 "]),("Artema",["artema"]),("Kale",["kale "]),("Creavit",["creavit"]),
-                   ("Turkuaz",["turkuaz"]),("ECA",["eca "]),("Grohe",["grohe"]),("Hansgrohe",["hansgrohe"]),("Duravit",["duravit"]),
+                   ("Turkuaz",["turkuaz"]),("ECA",["eca ","e.c.a"]),("Grohe",["grohe"]),("Hansgrohe",["hansgrohe"]),("Duravit",["duravit"]),
                    ("Serel",["serel"]),("Seramiksan",["seramiksan"]),("Bocchi",["bocchi"]),("Güral",["güral","gural"]),("Newarc",["newarc"]),
                    ("Geberit",["geberit"]),("Roca",["roca"]),("Villeroy & Boch",["villeroy"]),("Ideal Standard",["ideal standard"]),
-                   ("Franke",["franke"]),("Blanco",["blanco"]),("Teka",["teka "]),("Bien",["bien "]),("Baymak",["baymak"])]:
+                   ("Franke",["franke"]),("Blanco",["blanco"]),("Teka",["teka "]),("Bien",["bien "]),("Baymak",["baymak"]),("Shower",["shower "]),("Durul",["durul"]),("Fause",["fause"]),("Nkp",["nkp "]),("Visam",["visam"]),("Isvea",["isvea"]),("Roomart",["roomart"]),("Rani",["rani "]),("Kohler",["kohler"])]:
         if any(a in b+" " for a in anah): return m
-    return "Diğer/Bilinmeyen"
+    return "Diğer markalar"

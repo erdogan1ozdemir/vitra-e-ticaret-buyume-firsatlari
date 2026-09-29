@@ -12,6 +12,7 @@ def temizle(t):
     t = re.sub(r"(?:\+?90|0)?[\s-]?\(?5\d{2}\)?[\s-]?\d{3}[\s-]?\d{2}[\s-]?\d{2}", "[telefon]", t)
     t = re.sub(r"0?\s?\(?\d{3}\)?[\s-]?\d{3}[\s-]?\d{2}[\s-]?\d{2}\b", "[telefon]", t)
     t = re.sub(r"\b\d{9,}\b", "[no]", t)
+    t = re.sub(r"[A-ZÇĞİÖŞÜ][a-zçğıöşü]+ [A-ZÇĞİÖŞÜ]\*{2,}\w*", "[ad]", t)   # Sikayetvar'in kismen maskeledigi ad-soyad imzalari
     return t
 
 def govde(h):

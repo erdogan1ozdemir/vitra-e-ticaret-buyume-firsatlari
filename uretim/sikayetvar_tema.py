@@ -19,7 +19,7 @@ TEMALAR = {
  "vitra_online": ("vitra.com.tr sipariş, teslimat ve iade", [
     r"vitra online|vitra\.com|online\.vitra|vitra sitesi|vitra internet|vitra web|vitra e-ticaret|vitra türkiye'den|vitra türkiye’den|vitra'nın sitesi|vitra’nın sitesi|resmi site|arvato|vitra\.com\.tr|vitra (?:dolap )?sipariş|vitra'dan sipariş|vitra’dan sipariş|vitra'dan (?:bir )?(?:dolap|ürün|klozet)[^.]{0,30}sipariş|siparişimi vitra|resmi internet"]),
  "pazaryeri": ("Pazaryeri ve üçüncü taraf satıcı", [
-    r"trendyol|hepsiburada|\bn11\b|amazon|çiçeksepeti|pazarama|pttavm|ptt avm|idefix|akakçe|cimri|satıcı|satici|pazaryeri|marketplace|evdeniste|karo grup|banyomarka|banyoline|banyomega|evidea|ikea|hepsijet"]),
+    r"trendyol|hepsiburada|\bn11\b|amazon|çiçeksepeti|pazarama|pttavm|ptt avm|idefix|akakçe|cimri|pazaryeri|marketplace|evdeniste|karo grup|banyomarka|banyoline|banyomega|evidea|ikea|hepsijet"]),
  "fiyat_kampanya": ("Fiyat ve kampanya", [
     r"fiyat|pahalı|kampanya|indirim|taksit|kupon|zam\b|zamlı|fahiş|aşırı ücret|haksız ücret|kontrol ücreti|servis ücreti|ek ücret|ücret talep|ücretli servis|iade bedel"]),
  "iletisim": ("İletişim ve çağrı merkezi", [

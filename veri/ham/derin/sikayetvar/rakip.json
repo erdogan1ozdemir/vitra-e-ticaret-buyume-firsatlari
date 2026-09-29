@@ -1,0 +1,137 @@
+{
+ "Kale": {
+  "marka_sayfasi": "https://www.sikayetvar.com/kale",
+  "toplam_sikayet": 649,
+  "puan_100": 36,
+  "degerlendirme_sayisi": 140,
+  "cozum_orani_tum_pct": 47,
+  "cozum_orani_son1yil_pct": 36,
+  "sikayet_son1yil": 225,
+  "sikayet_son1ay": 5,
+  "ilk3sayfa_n": 71,
+  "ilk3sayfa_eticaret_n": 1,
+  "ilk3sayfa_eticaret_pay": 0.0141,
+  "ilk3sayfa_tarih_araligi": [
+   "2026-06-01",
+   "2026-09-28"
+  ],
+  "not": null
+ },
+ "Creavit": {
+  "marka_sayfasi": "https://www.sikayetvar.com/creavit",
+  "toplam_sikayet": 585,
+  "puan_100": 32,
+  "degerlendirme_sayisi": 91,
+  "cozum_orani_tum_pct": 63,
+  "cozum_orani_son1yil_pct": 32,
+  "sikayet_son1yil": 195,
+  "sikayet_son1ay": 13,
+  "ilk3sayfa_n": 72,
+  "ilk3sayfa_eticaret_n": 4,
+  "ilk3sayfa_eticaret_pay": 0.0556,
+  "ilk3sayfa_tarih_araligi": [
+   "2026-04-29",
+   "2026-09-25"
+  ],
+  "not": null
+ },
+ "E.C.A. (Serel dahil)": {
+  "marka_sayfasi": "https://www.sikayetvar.com/eca",
+  "toplam_sikayet": 3800,
+  "puan_100": 60,
+  "degerlendirme_sayisi": 680,
+  "cozum_orani_tum_pct": 66,
+  "cozum_orani_son1yil_pct": 60,
+  "sikayet_son1yil": 1096,
+  "sikayet_son1ay": 58,
+  "ilk3sayfa_n": 67,
+  "ilk3sayfa_eticaret_n": 2,
+  "ilk3sayfa_eticaret_pay": 0.0299,
+  "ilk3sayfa_tarih_araligi": [
+   "2026-08-20",
+   "2026-09-29"
+  ],
+  "not": "Sayfa banyo dışı ürünleri de içerir (kombi, ısıtma, ısı pompası, batarya, klozet)"
+ },
+ "Bocchi": {
+  "marka_sayfasi": "https://www.sikayetvar.com/bocchi",
+  "toplam_sikayet": 82,
+  "puan_100": 22,
+  "degerlendirme_sayisi": 9,
+  "cozum_orani_tum_pct": 30,
+  "cozum_orani_son1yil_pct": 22,
+  "sikayet_son1yil": 19,
+  "sikayet_son1ay": 0,
+  "ilk3sayfa_n": 68,
+  "ilk3sayfa_eticaret_n": 4,
+  "ilk3sayfa_eticaret_pay": 0.0588,
+  "ilk3sayfa_tarih_araligi": [
+   "2023-12-22",
+   "2026-07-04"
+  ],
+  "not": null
+ },
+ "Geberit": {
+  "marka_sayfasi": "https://www.sikayetvar.com/geberit",
+  "toplam_sikayet": 56,
+  "puan_100": 78,
+  "degerlendirme_sayisi": 18,
+  "cozum_orani_tum_pct": 79,
+  "cozum_orani_son1yil_pct": 78,
+  "sikayet_son1yil": 24,
+  "sikayet_son1ay": 3,
+  "ilk3sayfa_n": 44,
+  "ilk3sayfa_eticaret_n": 2,
+  "ilk3sayfa_eticaret_pay": 0.0455,
+  "ilk3sayfa_tarih_araligi": [
+   "2023-10-24",
+   "2026-09-14"
+  ],
+  "not": null
+ },
+ "VitrA": {
+  "marka_sayfasi": "https://www.sikayetvar.com/vitra",
+  "toplam_sikayet": 978,
+  "puan_100": 18,
+  "degerlendirme_sayisi": 154,
+  "cozum_orani_tum_pct": 31,
+  "cozum_orani_son1yil_pct": 18,
+  "sikayet_son1yil": 301,
+  "sikayet_son1ay": 22,
+  "ilk3sayfa_n": 70,
+  "ilk3sayfa_eticaret_n": 7,
+  "ilk3sayfa_eticaret_pay": 0.1,
+  "ilk3sayfa_tarih_araligi": [
+   "2026-07-06",
+   "2026-09-28"
+  ],
+  "not": null
+ },
+ "Artema": {
+  "marka_sayfasi": "https://www.sikayetvar.com/artema",
+  "toplam_sikayet": 544,
+  "puan_100": 15,
+  "degerlendirme_sayisi": 66,
+  "cozum_orani_tum_pct": 34,
+  "cozum_orani_son1yil_pct": 15,
+  "sikayet_son1yil": 127,
+  "sikayet_son1ay": 12,
+  "ilk3sayfa_n": 70,
+  "ilk3sayfa_eticaret_n": 10,
+  "ilk3sayfa_eticaret_pay": 0.1429,
+  "ilk3sayfa_tarih_araligi": [
+   "2026-02-03",
+   "2026-09-25"
+  ],
+  "not": null
+ },
+ "VitrA Karo (ayrı sayfa)": {
+  "marka_sayfasi": "https://www.sikayetvar.com/vitra-karo",
+  "toplam_sikayet": 38,
+  "cozum_orani_tum_pct": 12,
+  "sikayet_son1yil": 10
+ },
+ "Serel": {
+  "durum": "Ayrı marka sayfası bulunamadı (sikayetvar.com/serel ve varyantları 404); Serel klozet şikayetleri E.C.A. sayfasında 'ECA Serel' olarak toplanıyor"
+ }
+}

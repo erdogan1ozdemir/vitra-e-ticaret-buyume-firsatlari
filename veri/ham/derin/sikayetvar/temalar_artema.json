@@ -1,0 +1,237 @@
+{
+ "Yedek parça bulunamaması": {
+  "kod": "yedek_parca",
+  "sayi": 33,
+  "pay": 0.1134,
+  "ana_tema_sayi": 13,
+  "ana_tema_pay": 0.0447,
+  "cozuldu_pay": 0.0909,
+  "medyan_goruntulenme": 669,
+  "alintilar": [
+   {
+    "metin": "Artema’dan, bu evye bataryasının kuğu borusu için ücretsiz ya da makul ücretli yedek parça temin edilmesini ve yedek parça konusunda yaşadığım mağduriyetin giderilmesini talep ediyorum.",
+    "url": "https://www.sikayetvar.com/artema/artema-evye-bataryasi-kugu-borusu-yedek-parca-bulunamiyor",
+    "tarih": "2026-01-15"
+   },
+   {
+    "metin": "10 bin TL’den daha pahalı bir ürünün yedek parçasının bu kadar uzun süre bulunamaması kabul edilebilir değil.",
+    "url": "https://www.sikayetvar.com/artema/artema-dual-flow-mutfak-bataryasinda-suregelen-su-sizintisi-ve-yedek-parca-temin-sorunu",
+    "tarih": "2025-12-04"
+   },
+   {
+    "metin": "Bu nedenle, bekletilmeden, parça bekleme sürecine mahkûm edilmeden acil ve kalıcı bir çözüm üretilmesini, mağduriyetimin ivedilikle giderilmesini ve tarafıma net, yazılı bir bilgilendirme yapılmasını talep ediyorum.",
+    "url": "https://www.sikayetvar.com/artema/defolu-dus-kolonu-2-4-hafta-bekletilmesi-ve-cevapsiz-musteri-destegi",
+    "tarih": "2025-12-27"
+   }
+  ]
+ },
+ "vitra.com.tr sipariş, teslimat ve iade": {
+  "kod": "vitra_online",
+  "sayi": 0,
+  "pay": 0.0,
+  "ana_tema_sayi": 0,
+  "ana_tema_pay": 0.0,
+  "cozuldu_pay": null,
+  "medyan_goruntulenme": null,
+  "alintilar": []
+ },
+ "Pazaryeri ve üçüncü taraf satıcı": {
+  "kod": "pazaryeri",
+  "sayi": 34,
+  "pay": 0.1168,
+  "ana_tema_sayi": 5,
+  "ana_tema_pay": 0.0172,
+  "cozuldu_pay": 0.0882,
+  "medyan_goruntulenme": 624.5,
+  "alintilar": [
+   {
+    "metin": "Artema’nın kendi ürettiği orijinal bir ürünü, sadece satış kanalı Amazon olduğu için ücretsiz montaj kapsamı dışında bırakması, Tüketici Hakları açısından doğru bulmadığım bir uygulamadır.",
+    "url": "https://www.sikayetvar.com/artema/artema-amazon-aliminda-ucretsiz-montaji-reddetti",
+    "tarih": "2026-01-29"
+   },
+   {
+    "metin": "Üç hafta kadar önce Trendyol'da ürünlerinizi satan bir satıcıdan duş başlığı almıştım ancak garanti süresi iki yıl denmesine rağmen 15 gün içerisinde su akıtmaya ve çalışmamaya başladı.",
+    "url": "https://www.sikayetvar.com/artema/garanti-suresi-ve-musteri-hizmetleri-sorunu-8",
+    "tarih": "2025-04-05"
+   },
+   {
+    "metin": "Amazon'dan almış olduğum batarya bozuldu, servis tespit için 1000 TL ücret talep etti.",
+    "url": "https://www.sikayetvar.com/artema/arizali-batarya-ve-yuksek-servis-ucreti-sorunu",
+    "tarih": "2024-12-16"
+   }
+  ]
+ },
+ "Montaj ve usta": {
+  "kod": "montaj",
+  "sayi": 87,
+  "pay": 0.299,
+  "ana_tema_sayi": 12,
+  "ana_tema_pay": 0.0412,
+  "cozuldu_pay": 0.069,
+  "medyan_goruntulenme": 619,
+  "alintilar": [
+   {
+    "metin": "Satış sırasında montajın ücretsiz olacağı sözlü olarak belirtilmesine rağmen, bu yüksek miktardaki servis ücretini ödemek zorunda kaldım.",
+    "url": "https://www.sikayetvar.com/artema/ucretsiz-montaj-vaadi-yerine-yuksek-servis-ucreti-alindi",
+    "tarih": "2025-07-29"
+   },
+   {
+    "metin": "Trendyol Vitra Mağazası’ndan satın aldığım Artema Serenity A42914 lavabo bataryasının montajı sırasında musluk montaj aparatı ilk kurulumda kırıldı.",
+    "url": "https://www.sikayetvar.com/artema/yeni-alinan-bataryanin-montaj-aparatinin-kirilmasi-ve-garanti-disi-birakilmasi-magduriyeti",
+    "tarih": "2025-09-09"
+   },
+   {
+    "metin": "30 bin lira ödeme yaptığım bu ürünün montajı yapılmadığı için artık ürünü iade etmek istiyorum.",
+    "url": "https://www.sikayetvar.com/artema/satin-alinan-lavabonun-montaji-yapilmadi-iade-talebim-karsilanmiyor",
+    "tarih": "2025-10-15"
+   }
+  ]
+ },
+ "Yetkili servis ve garanti": {
+  "kod": "servis_garanti",
+  "sayi": 190,
+  "pay": 0.6529,
+  "ana_tema_sayi": 125,
+  "ana_tema_pay": 0.4296,
+  "cozuldu_pay": 0.0737,
+  "medyan_goruntulenme": 798.0,
+  "alintilar": [
+   {
+    "metin": "Ürün garantili olmasına rağmen, perlatör garanti kapsamında olmadığından servis 200 TL perlatör ücreti talep etti.",
+    "url": "https://www.sikayetvar.com/artema/artema-punto-batarya-sorunu-ve-garanti-kapsami",
+    "tarih": "2025-02-13"
+   },
+   {
+    "metin": "Sonrasında servis, size bilgi vereceğim dedi.Yaklaşık 2 ay oldu, hâlâ ne yetkili servisten ne de Artema genel merkezden bir çözüm yok.Yetkili servisi arıyorum, bana genel merkezi ara diyor.",
+    "url": "https://www.sikayetvar.com/artema/artema-dus-takimi-garanti-sorunu-ve-iletisim-eksikligi",
+    "tarih": "2025-03-06"
+   },
+   {
+    "metin": "Bu nedenle su damlatma sorunumun garanti kapsamında, benden servis ya da parça ücreti talep edilmeden giderilmesini ve reklamlarda belirtilen 10 yıl şartsız koşulsuz garanti sözünün yerine getirilmesini talep ediyorum.",
+    "url": "https://www.sikayetvar.com/artema/artema-bataryasinda-su-sizintisi-10-yillik-kosulsuz-garanti-ihlali",
+    "tarih": "2026-04-10"
+   }
+  ]
+ },
+ "Fiyat ve kampanya": {
+  "kod": "fiyat_kampanya",
+  "sayi": 41,
+  "pay": 0.1409,
+  "ana_tema_sayi": 3,
+  "ana_tema_pay": 0.0103,
+  "cozuldu_pay": 0.0976,
+  "medyan_goruntulenme": 911,
+  "alintilar": [
+   {
+    "metin": "“Ömür boyu garanti” ve “10 yıl garanti” gibi ifadelerle tercih ettiğim bu ürünler için, parça fiyatlandırmasının setten pahalı hale getirilmesini ve iki defa servis ücreti talep edilmesini adil bulmuyorum.",
+    "url": "https://www.sikayetvar.com/artema/renk-sizdiran-bataryada-cift-servis-ucreti-ve-asiri-parca-fiyati",
+    "tarih": "2026-08-09"
+   },
+   {
+    "metin": "Arızalanan parçanın ve gerekiyorsa işçiliğin garanti kapsamında değerlendirilerek ücretsiz parça değişimi ve onarımının yapılmasını, benden herhangi bir servis ücreti talep edilmemesini talep ediyorum.",
+    "url": "https://www.sikayetvar.com/artema/garanti-kapsamindaki-dus-bataryasi-arizasi-servis-ucretine-dusurulerek-kullanici-hatasi-sayildi",
+    "tarih": "2026-06-15"
+   },
+   {
+    "metin": "Artema markası diye tercih edip ihtiyaç yokken bile siparişini geçip, indirimli fiyatının bile diğer bataryalara göre pahalı olmasına rağmen kalitesinden dolayı tercih ettik.",
+    "url": "https://www.sikayetvar.com/artema/artema-marka-bataryalarda-dusuk-akis-kalitesi-ve-yetersiz-musteri-hizmeti",
+    "tarih": "2025-05-04"
+   }
+  ]
+ },
+ "İletişim ve çağrı merkezi": {
+  "kod": "iletisim",
+  "sayi": 80,
+  "pay": 0.2749,
+  "ana_tema_sayi": 22,
+  "ana_tema_pay": 0.0756,
+  "cozuldu_pay": 0.0375,
+  "medyan_goruntulenme": 709.0,
+  "alintilar": [
+   {
+    "metin": "Satıcıyla iletişime geçtim ve bana iade süresini geçtiği için iade olmayacağını ama üretici firmayla iletişime geçip durumu halledebileceğimi söylediler.",
+    "url": "https://www.sikayetvar.com/artema/garanti-suresi-ve-musteri-hizmetleri-sorunu-8",
+    "tarih": "2025-04-05"
+   },
+   {
+    "metin": "Konu ile ilgili Vitra müşteri hizmetleri ile görüştüm, talep oluşturdum ancak üzerinden zaman geçmesine rağmen herhangi bir ilerleme sağlanmadı ve eksik iade tamamlanmadı.",
+    "url": "https://www.sikayetvar.com/artema/vitra-artema-eksik-odeme-yapiyor",
+    "tarih": "2026-09-04"
+   },
+   {
+    "metin": "Bu konuyla ilgilenmediği için 4 Nisanda şikayet oluşturduğumda hemen geri dönüş sağlayarak 9 Nisan günü şantiyemize gelerek tamir yaptılar.",
+    "url": "https://www.sikayetvar.com/artema/servis-eksik-parca-ve-ariza-taleplerine-donus-yapmiyor",
+    "tarih": "2025-07-21"
+   }
+  ]
+ },
+ "Mağaza ve bayi": {
+  "kod": "magaza_bayi",
+  "sayi": 82,
+  "pay": 0.2818,
+  "ana_tema_sayi": 5,
+  "ana_tema_pay": 0.0172,
+  "cozuldu_pay": 0.061,
+  "medyan_goruntulenme": 626.0,
+  "alintilar": [
+   {
+    "metin": "Artema ve Bauhaus’tan, bu modelle ilgili sorunumun incelenmesini ve su sıçratma problemine kalıcı, ücretsiz ve makul bir çözüm üretilmesini, gerekirse ürünün değiştirilmesini veya iadesinin sağlanmasını talep ediyorum.",
+    "url": "https://www.sikayetvar.com/artema/bauhaus-beylikduzunden-alinan-artema-bataryasinda-su-sicratma-problemi",
+    "tarih": "2026-08-02"
+   },
+   {
+    "metin": "Bu sorunları yaşadığımda Sevil Yapı Market ile iletişime geçtim ancak yeterli bir çözüm sunulmadı.",
+    "url": "https://www.sikayetvar.com/artema/aldigim-seramik-klozet-ve-bataryada-ilk-gunden-itibaren-sorunlar-yasiyorum",
+    "tarih": "2025-10-12"
+   },
+   {
+    "metin": "Artema filtreli ara musluk aldım, 8 ayda su kaçırmaya başladı.27/01/2024 tarihinde Koçtaş mağazasından aldığım, sözde 10 yıl garantili musluk 8 ayda su kaçırmaya başladı.",
+    "url": "https://www.sikayetvar.com/artema/artema-musluk-garanti-sorunu",
+    "tarih": "2025-02-28"
+   }
+  ]
+ },
+ "Ürün kalitesi, sızıntı, kırılma": {
+  "kod": "kalite",
+  "sayi": 196,
+  "pay": 0.6735,
+  "ana_tema_sayi": 86,
+  "ana_tema_pay": 0.2955,
+  "cozuldu_pay": 0.0561,
+  "medyan_goruntulenme": 726.5,
+  "alintilar": [
+   {
+    "metin": "Defolu ve ayıplı gelen bu ürün için ambalaj şartı öne sürülmeden ücret iadesi yapılmasını ve bu süreçte yaşadığım mağduriyet için tarafıma özür dilenmesini talep ediyorum.",
+    "url": "https://www.sikayetvar.com/artema/yaniltici-marka-bilgisi-ve-defolu-dus-seti-icin-ambalaj-sarti-iadesi-talebi",
+    "tarih": "2026-04-10"
+   },
+   {
+    "metin": "Ürünün üzerinde oluşan kararma ve soyulmalar ile damlatma sorunu açıkça görülebilir olmasına rağmen, sadece fatura olmadığı için destek alamamak beni mağdur ediyor.",
+    "url": "https://www.sikayetvar.com/artema/fatura-olmadan-artema-lavabo-bataryasinda-cozulmeyen-damlatma-ve-kararma-sorunu",
+    "tarih": "2026-08-24"
+   },
+   {
+    "metin": "Başlığı da yine yerinde tutmayıp, kırılmasın diye korkarak az kullanılmasına rağmen aynı sıkıntıyı çıkararak kırılmıştır.",
+    "url": "https://www.sikayetvar.com/artema/artema-eviye-bataryasinda-suregelen-kusurlar-ve-cozulmeyen-sorunlar",
+    "tarih": "2025-07-11"
+   }
+  ]
+ },
+ "Diğer / sınıflandırılamayan": {
+  "kod": "diger",
+  "sayi": 20,
+  "pay": 0.0687,
+  "ana_tema_sayi": 20,
+  "ana_tema_pay": 0.0687,
+  "cozuldu_pay": 0.0,
+  "medyan_goruntulenme": 534.0,
+  "alintilar": []
+ },
+ "_meta": {
+  "kapsam": "Şikayetvar /artema, 2024-10-01 - 2026-09-29",
+  "toplam_pencere": 294,
+  "metinli": 291,
+  "yayindan_kaldirilan": 3,
+  "detay_metinli": 272
+ }
+}
