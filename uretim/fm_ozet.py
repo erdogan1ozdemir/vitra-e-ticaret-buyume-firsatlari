@@ -9,6 +9,7 @@ def tl(x): return "-" if x is None else f"{round(x):,}".replace(",",".")
 def yz(x,isaret=False): 
     if x is None: return "-"
     v=round(x); return (("+" if v>0 else "")+f"%{v}") if isaret and v>0 else (f"-%{abs(v)}" if v<0 else f"%{v}")
+def yz1(x): return f"%{x:.1f}"
 DEGER=("vitra klozet","vitra lavabo","vitra batarya")
 GEN=[s for s in SH["ilanlar"] if s["kelime"] not in DEGER]
 def pay(rows,alan,top=12):
@@ -32,11 +33,11 @@ w("Veri tarihi: 29 Eylül 2026. Kapsam: Türkiye, Türkçe. Kaynaklar: Google Sh
 w()
 w("## 1. Yöntem ve kapsam")
 w()
-w("- **Google Shopping kategori taraması:** 30 kelime (27 kategori kelimesi + 3 markalı kelime: vitra klozet, vitra lavabo, vitra batarya), her kelime için ilk 120 ürün listelemesi (DataForSEO `merchant/google/products`, location 2792, language tr). Toplam %d listeleme satırı; her satırda ürün, satıcı/mağaza, fiyat, (varsa) puan ve değerlendirme bulunuyor. Puan ve değerlendirme sayısı listelemelerin çok küçük bir bölümünde dolu geldiği için analize girmedi." % len(SH["ilanlar"]))
+w("- **Google Shopping kategori taraması:** 30 kelime (27 kategori kelimesi + 3 markalı kelime: vitra klozet, vitra lavabo, vitra batarya), her kelime için ilk 120 ürün listelemesi (DataForSEO `merchant/google/products`, location 2792, language tr). Toplam %s listeleme satırı; her satırda ürün, satıcı/mağaza, fiyat, (varsa) puan ve değerlendirme bulunuyor. Puan ve değerlendirme sayısı listelemelerin çok küçük bir bölümünde dolu geldiği için analize girmedi." % tl(len(SH["ilanlar"])))
 w("- **VitrA ürün bazında satıcı listeleri:** 12 ürün adı (VitrA S20, Integra, Sento, Metropole, Shift, Nest Trendy klozetleri; Integra klozet kapağı; Root ve Sento lavabo dolabı; Artema Solid S, Minimax S lavabo bataryası, Flo S banyo bataryası) aranmış, her arama için eşleşen ilk 2 ürün listesinin satıcı dökümü alınmıştır (DataForSEO `merchant/google/sellers`, listeleme başına en fazla 10 satıcı). Toplam %d ürün listesi." % len(VS))
 w("- **Cimri:** cimri.com doğrudan istekte (curl, tarayıcı User-Agent) ve Apify `rag-web-browser` üzerinden 403 (Cloudflare) döndü. Bu nedenle Cimri sonuçları Google arama sonuçlarının özetlerinden (DataForSEO SERP) okunmuştur: 30 kategori kelimesi için 2, 12 VitrA ürünü için 1 sorgu (72 sorgu). Bu yolla ürün ve kategori sayfası başlığı, başlangıç fiyatı ve (bazı sayfalarda) satıcı sayısı okunabilmiştir; satıcı listesi, en yüksek fiyat ve en ucuz satıcı adı Cimri için alınamamıştır.")
-w("- **Akakçe:** Akakçe için curl (tarayıcı User-Agent) ile ilk yaklaşık 15 istek 200 dönmüş (3 kategori sayfası ve 8 ürün sayfası, ek olarak bir VitrA S20 ürün sayfası), ardından site 429 ve Cloudflare doğrulama sayfası vermiştir. Doğrulama aşılmamış, denemeler durdurulmuş; Apify da aynı siteden 403 almıştır. Kalan veri Cimri'deki gibi Google arama özetlerinden (72 sorgu) okunmuştur.")
-w("- **Fiyat matrisi kuralları:** Aynı kelime için medyanın 0.2 katından düşük ve 5 katından yüksek fiyatlar (aksesuar, yedek parça, set/paket gürültüsü) çıkarılmıştır (%d listeleme); aynı ürün tipinde aynı satıcı, başlık ve fiyat tekrarı bir kez sayılmıştır. Kalan %d tekil ilan matrise girmiştir. Ürün tipi, kelimeden atanmıştır (örneğin lavabo dolabı, banyo dolabı, çamaşır makinesi dolabı ve boy dolabı = Banyo mobilyası)." % (O["aykiri"],O["ilan_tekil"]))
+w("- **Akakçe:** Akakçe için curl (tarayıcı User-Agent) ile ilk yaklaşık 15 istek 200 dönmüş (3 kategori sayfası ve 12 ürün sayfası istenmiş, 4 ürün sayfasında teklif verisi okunabilmiş; ek olarak bir VitrA S20 ürün sayfası alınmış), ardından site 429 ve Cloudflare doğrulama sayfası vermiştir. Doğrulama aşılmamış, denemeler durdurulmuş; Apify da aynı siteden 403 almıştır. Kalan veri Cimri'deki gibi Google arama özetlerinden (72 sorgu) okunmuştur.")
+w("- **Fiyat matrisi kuralları:** Aynı kelime için medyanın 0.2 katından düşük ve 5 katından yüksek fiyatlar (aksesuar, yedek parça, set/paket gürültüsü) çıkarılmıştır (%d listeleme); aynı ürün tipinde aynı satıcı, başlık ve fiyat tekrarı bir kez sayılmıştır. Kalan %s tekil ilan matrise girmiştir. Ürün tipi, kelimeden atanmıştır (örneğin lavabo dolabı, banyo dolabı, çamaşır makinesi dolabı ve boy dolabı = Banyo mobilyası)." % (O["aykiri"],tl(O["ilan_tekil"])))
 w("- **Mecra sınıflaması:** Satıcı adından atanmıştır: Trendyol, Hepsiburada, Amazon TR, Çiçeksepeti, Koçtaş, Bauhaus, IKEA, VitrA Online (vitra.com.tr), diğer resmi marka mağazaları (Creavit, E.C.A, Turkuaz vb.), Banyomarka, diğer pazaryeri/genel perakende (n11, PttAVM, Pazarama, A101 vb.) ve bağımsız banyo & yapı mağazaları (geri kalan tüm satıcılar). Sellers verisinde alan adı da kullanılmıştır; `VitrA Online` mağazasının alan adı www.vitra.com.tr olarak doğrulanmıştır.")
 w("- **Marka ataması:** Ürün başlığındaki marka/seri adından yapılmıştır (VitrA için VitrA ve yaygın seri adları; Artema ayrı). Başlığında marka geçmeyen veya listede tek tek yer almayan markalar `Diğer markalar` altında toplanmıştır.")
 w()
@@ -58,8 +59,8 @@ marka_gen,ng=pay(GEN,"marka",30); marka_gen10,ng10=pay([s for s in GEN if s["sir
 mg=dict((k,(n,p)) for k,n,p in marka_gen)
 w("## 3. Öne çıkan bulgular")
 w()
-w("1. **VitrA resmi mağazası Google Shopping'de sınırlı görünüyor.** VitrA Online (vitra.com.tr) genel kategori kelimelerinin %d'sinde (%d kelime içinden %d) toplam %d listelemeyle yer alıyor; genel kategori listelemelerinin %s'ünü oluşturuyor. Markalı üç kelimede (vitra klozet, vitra lavabo, vitra batarya) ise 27 listelemeyle ilk sıralarda görünüyor; yani mağaza marka aramalarında öne çıkıyor, kategori aramalarında ise belirgin biçimde geride kalıyor." % (round(len(vo_kw)/n_gen_kw*100),n_gen_kw,len(vo_kw),len(vo),yz(len(vo)/len(GEN)*100).replace("%","%")))
-w("2. **VitrA ve Artema ürünlerinin büyük bölümü üçüncü taraf mecralardan listeleniyor.** Genel kategori sonuçlarında %d VitrA/Artema listelemesinin %s'i bağımsız banyo & yapı mağazalarından, %s'i Trendyol'dan, %s'i VitrA Online'dan, %s'i Koçtaş'tan, %s'i Hepsiburada'dan geliyor." % (len(vg),yz(vg_kanal["Bağımsız banyo & yapı mağazası"][1]),yz(vg_kanal["Trendyol"][1]),yz(vg_kanal[OFIS][1]),yz(vg_kanal["Koçtaş"][1]),yz(vg_kanal["Hepsiburada"][1])))
+w("1. **VitrA resmi mağazası Google Shopping'de sınırlı görünüyor.** VitrA Online (vitra.com.tr) genel kategori kelimelerinin %s'inde (%d kelimenin %d'sinde) toplam %d listelemeyle yer alıyor; genel kategori listelemelerinin %s'ini oluşturuyor. Markalı üç kelimede (vitra klozet, vitra lavabo, vitra batarya) ise 27 listelemeyle ilk sıralarda görünüyor; yani mağaza marka aramalarında öne çıkıyor, kategori aramalarında ise belirgin biçimde geride kalıyor." % (yz(len(vo_kw)/n_gen_kw*100),n_gen_kw,len(vo_kw),len(vo),yz1(len(vo)/len(GEN)*100)))
+w("2. **VitrA ve Artema ürünlerinin büyük bölümü üçüncü taraf mecralardan listeleniyor.** Genel kategori sonuçlarında %d VitrA/Artema listelemesinin %s'i bağımsız banyo & yapı mağazalarından, %s'i Trendyol'dan, %s'i VitrA Online'dan, %s'i Koçtaş'tan, %s'i Hepsiburada'dan geliyor." % (len(vg),yz1(vg_kanal["Bağımsız banyo & yapı mağazası"][1]),yz1(vg_kanal["Trendyol"][1]),yz1(vg_kanal[OFIS][1]),yz1(vg_kanal["Koçtaş"][1]),yz1(vg_kanal["Hepsiburada"][1])))
 w("3. **Aynı üründe resmi mağaza fiyatı en düşük fiyatın üzerinde kalıyor.** Satıcı dökümü alınan %d ürün listesinin %d'sinde VitrA Online ilk 10 satıcı arasında yer alıyor; bu listelerde resmi mağaza fiyatı listedeki en düşük fiyattan medyan %s yüksek (aralık %s ile %s). VitrA Online'ın hiç görünmediği %d listede ise resmi mağaza ilk 10 satıcı içinde bulunmuyor." % (len(VS),len(vo_var),yz(st.median(fark)),yz(min(fark)),yz(max(fark)),len(VS)-len(vo_var)))
 w("4. **En düşük fiyat çoğunlukla küçük bağımsız mağazalarda.** 24 ürün listesinde en ucuz satıcı: bağımsız banyo & yapı mağazası %d, Trendyol %d, Banyomarka %d, Amazon TR %d, Çiçeksepeti %d, Koçtaş %d, diğer pazaryeri %d, Hepsiburada %d. Aynı ürün için en yüksek fiyat, en düşük fiyatın medyan %s üzerinde (en az 5 satıcılı %d listede)." % (ucuz_say.get("Bağımsız banyo & yapı mağazası",0),ucuz_say.get("Trendyol",0),ucuz_say.get("Banyomarka (uzman e-ticaret)",0),ucuz_say.get("Amazon TR",0),ucuz_say.get("Çiçeksepeti",0),ucuz_say.get("Koçtaş",0),ucuz_say.get("Diğer pazaryeri / genel perakende",0),ucuz_say.get("Hepsiburada",0),yz(st.median(yay)),len(yay)))
 tipv={}
@@ -67,17 +68,17 @@ for t in ("Klozet","Rezervuar","Banyo mobilyası","Lavabo","Batarya","Akıllı k
     r=[s for s in GEN if s["tip"]==t]; tipv[t]=(sum(1 for s in r if s["marka"] in("VitrA","Artema")),len(r))
 w("5. **VitrA payı klozet ve rezervuarda yüksek, bitişik tiplerde düşük.** VitrA + Artema listeleme payı: klozet %s, rezervuar %s, akıllı klozet %s, lavabo %s, banyo mobilyası %s, batarya %s; ayna %s, duşakabin & duş teknesi %s, küvet %s, aksesuar & havlupan %s, mutfak %s." % tuple(yz(tipv[t][0]/tipv[t][1]*100) for t in ("Klozet","Rezervuar","Akıllı klozet","Lavabo","Banyo mobilyası","Batarya","Ayna","Duşakabin & duş teknesi","Küvet","Aksesuar & havlupan","Mutfak (evye & batarya)")) if False else "")
 L.pop()
-w("5. **VitrA payı klozet ve rezervuarda yüksek, bitişik tiplerde düşük.** VitrA + Artema listeleme payı: " + ", ".join("%s %s"%(t.lower(),yz(tipv[t][0]/tipv[t][1]*100)) for t in ("Klozet","Rezervuar","Akıllı klozet","Lavabo","Banyo mobilyası","Batarya","Ayna","Duşakabin & duş teknesi","Küvet","Aksesuar & havlupan","Mutfak (evye & batarya)"))+".")
-w("6. **Marka payı sıralaması:** genel kategori listelemelerinde (ilk 120 sonuç) VitrA %s, Creavit %s, Kale %s, ECA %s, Turkuaz %s, Grohe %s, Serel %s, Artema %s; ilk 10 sonuçta VitrA %s, Creavit %s, Kale %s." % (yz(mg["VitrA"][1]),yz(mg["Creavit"][1]),yz(mg["Kale"][1]),yz(mg["ECA"][1]),yz(mg["Turkuaz"][1]),yz(mg["Grohe"][1]),yz(mg["Serel"][1]),yz(mg["Artema"][1]),yz(dict((k,(n,p)) for k,n,p in marka_gen10)["VitrA"][1]),yz(dict((k,(n,p)) for k,n,p in marka_gen10)["Creavit"][1]),yz(dict((k,(n,p)) for k,n,p in marka_gen10)["Kale"][1])))
+w("5. **VitrA payı klozet ve rezervuarda yüksek, bitişik tiplerde düşük.** VitrA + Artema listeleme payı: " + ", ".join("%s %s"%(t.lower(),yz1(tipv[t][0]/tipv[t][1]*100)) for t in ("Klozet","Rezervuar","Akıllı klozet","Lavabo","Banyo mobilyası","Batarya","Ayna","Duşakabin & duş teknesi","Küvet","Aksesuar & havlupan","Mutfak (evye & batarya)"))+".")
+w("6. **Marka payı sıralaması:** genel kategori listelemelerinde (ilk 120 sonuç) VitrA %s, Creavit %s, Kale %s, ECA %s, Turkuaz %s, Grohe %s, Serel %s, Artema %s; ilk 10 sonuçta VitrA %s, Creavit %s, Kale %s." % (yz1(mg["VitrA"][1]),yz1(mg["Creavit"][1]),yz1(mg["Kale"][1]),yz1(mg["ECA"][1]),yz1(mg["Turkuaz"][1]),yz1(mg["Grohe"][1]),yz1(mg["Serel"][1]),yz1(mg["Artema"][1]),yz1(dict((k,(n,p)) for k,n,p in marka_gen10)["VitrA"][1]),yz1(dict((k,(n,p)) for k,n,p in marka_gen10)["Creavit"][1]),yz1(dict((k,(n,p)) for k,n,p in marka_gen10)["Kale"][1])))
 w()
 w("Not: Bulguların hepsi Google Shopping'in 29 Eylül 2026 tarihli, masaüstü Türkiye görünümündeki listelemelerine dayanıyor; fiyatlar günlük değişebilir.")
 w()
 # ---------- matris ----------
 w("## 4. Ürün tipi × mecra fiyat bandı (Google Shopping)")
 w()
-w("Tüm markalar birlikte. Hücre: medyan fiyat (ilan adedi). Yalnızca en az 3 ilanı olan hücreler gösterilmiştir; min ve maks değerleri `fiyat_matrisi.csv` dosyasında tam listelenmiştir. Mecra medyanları marka ve model karışımından etkilenir; örneğin tek markalı resmi mağazalar premium seriler ağırlıklıdır. Aynı ürün üzerinden karşılaştırma için bölüm 6 kullanılabilir.")
+w("Tüm markalar birlikte. Hücre: medyan fiyat (ilan adedi). Yalnızca en az 3 ilanı olan hücreler gösterilmiştir; min ve maks değerleri `fiyat_matrisi.csv` dosyasında tam listelenmiştir. Mecra medyanları marka ve model karışımından etkilenir; örneğin tek markalı resmi mağazalar premium seriler ağırlıklıdır. Aynı ürün üzerinden karşılaştırma için bölüm 5 kullanılabilir.")
 w()
-MEC=["Trendyol","Hepsiburada","Amazon TR","Çiçeksepeti","Koçtaş","Bauhaus","IKEA",OFIS,"Banyomarka (uzman e-ticaret)","Bağımsız banyo & yapı mağazası"]
+MEC=["Trendyol","Hepsiburada","Amazon TR","Çiçeksepeti","Koçtaş","Bauhaus","IKEA",OFIS,"Bağımsız banyo & yapı mağazası"]
 short={OFIS:"VitrA Online","Banyomarka (uzman e-ticaret)":"Banyomarka","Bağımsız banyo & yapı mağazası":"Bağımsız mağaza"}
 mat={(r["urun_tipi"],r["mecra"]):r for r in O["matris"]}
 tipler=sorted(set(r["urun_tipi"] for r in O["matris"]))
@@ -149,29 +150,29 @@ w()
 # ---------- marka mağaza payı ----------
 w("## 6. Marka ve mağaza payı (Google Shopping listelemeleri)")
 w()
-w("Payda: 27 genel kategori kelimesinin ilk 120 listelemesi (%d satır; markalı üç kelime hariç, VitrA payını şişirmemek için). Bir ürün birden fazla kelimede geçebildiğinden pay, listeleme payıdır." % len(GEN))
+w("Payda: 27 genel kategori kelimesinin ilk 120 listelemesi (%s satır; markalı üç kelime hariç, VitrA payını şişirmemek için). Bir ürün birden fazla kelimede geçebildiğinden pay, listeleme payıdır." % tl(len(GEN)))
 w()
 w("| Marka | Listeleme | Pay (tüm ilk 120) | İlk 10'daki listeleme | Pay (ilk 10) |"); w("|---|---:|---:|---:|---:|")
 d10=dict((k,(n,p)) for k,n,p in marka_gen10)
 for m in ["VitrA","Artema","Kale","Creavit","Turkuaz","ECA","Grohe","Serel","Geberit","Seramiksan","Bocchi","Duravit","Hansgrohe","Teka","Franke","Blanco"]:
-    a=mg.get(m,(0,0)); b=d10.get(m,(0,0)); w("| %s | %d | %s | %d | %s |"%(m,a[0],yz(a[1]),b[0],yz(b[1])))
-dm=mg.get("Diğer markalar",(0,0)); w("| Diğer markalar (küçük veya başlığında marka geçmeyen) | %d | %s | %d | %s |"%(dm[0],yz(dm[1]),d10.get("Diğer markalar",(0,0))[0],yz(d10.get("Diğer markalar",(0,0))[1])))
+    a=mg.get(m,(0,0)); b=d10.get(m,(0,0)); w("| %s | %d | %s | %d | %s |"%(m,a[0],yz1(a[1]),b[0],yz1(b[1])))
+dm=mg.get("Diğer markalar",(0,0)); w("| Diğer markalar (küçük veya başlığında marka geçmeyen) | %d | %s | %d | %s |"%(dm[0],yz1(dm[1]),d10.get("Diğer markalar",(0,0))[0],yz1(d10.get("Diğer markalar",(0,0))[1])))
 w()
-w("VitrA + Artema toplamı (grup): %d listeleme, %s; ilk 10'da %d listeleme, %s." % (mg["VitrA"][0]+mg["Artema"][0],yz(mg["VitrA"][1]+mg["Artema"][1]),d10["VitrA"][0]+d10["Artema"][0],yz(d10["VitrA"][1]+d10["Artema"][1])))
+w("VitrA + Artema toplamı (grup): %d listeleme, %s; ilk 10'da %d listeleme, %s." % (mg["VitrA"][0]+mg["Artema"][0],yz1(mg["VitrA"][1]+mg["Artema"][1]),d10["VitrA"][0]+d10["Artema"][0],yz1(d10["VitrA"][1]+d10["Artema"][1])))
 w()
 w("Ürün tipine göre VitrA + Artema listeleme payı:")
 w()
 w("| Ürün tipi | VitrA + Artema listeleme | Toplam listeleme | Pay | Tipin en yüksek paylı ilk 3 markası |"); w("|---|---:|---:|---:|---|")
 for t in tipler:
     r=[s for s in GEN if s["tip"]==t]; c=collections.Counter(s["marka"] for s in r if s["marka"]!="Diğer markalar"); n=len(r)
-    top3=", ".join("%s %s"%(k,yz(v/n*100)) for k,v in c.most_common(3))
-    a=sum(1 for s in r if s["marka"] in("VitrA","Artema")); w("| %s | %d | %d | %s | %s |"%(t,a,n,yz(a/n*100),top3))
+    top3=", ".join("%s %s"%(k,yz1(v/n*100)) for k,v in c.most_common(3))
+    a=sum(1 for s in r if s["marka"] in("VitrA","Artema")); w("| %s | %d | %d | %s | %s |"%(t,a,n,yz1(a/n*100),top3))
 w()
 w("### 6.1. Mağaza / mecra payı")
 w()
 mec_gen,_=pay(GEN,"mecra",20); mec_10,_=pay([s for s in GEN if s["sira"]<=10],"mecra",20); m10=dict((k,(n,p)) for k,n,p in mec_10)
 w("| Mecra | Listeleme | Pay (ilk 120) | İlk 10'da listeleme | Pay (ilk 10) |"); w("|---|---:|---:|---:|---:|")
-for k,n,p in mec_gen: w("| %s | %d | %s | %d | %s |"%(short.get(k,k),n,yz(p),m10.get(k,(0,0))[0],yz(m10.get(k,(0,0))[1])))
+for k,n,p in mec_gen: w("| %s | %s | %s | %d | %s |"%(short.get(k,k),tl(n),yz1(p),m10.get(k,(0,0))[0],yz1(m10.get(k,(0,0))[1])))
 w()
 sat_gen,_=pay(GEN,"satici",15)
 w("En çok listelenen mağaza adları (Google Shopping'deki yazımıyla; Trendyol ve trendyol.com gibi yazım varyantları ayrı satırdır): "+", ".join("%s (%d)"%(k,n) for k,n,p in sat_gen)+".")
@@ -205,7 +206,7 @@ for k,v in ad_["kategori"].items():
     c=collections.Counter(u["marka"] for u in v["ilk_sayfa"]); fy=[u["en_dusuk_fiyat"] for u in v["ilk_sayfa"] if u["en_dusuk_fiyat"]]
     w("| %s (%s) | %s | %d | %s | %s |"%(k,v["sayfa_url"].replace("https://www.",""),f'{v["toplam_urun"]:,}'.replace(",","."),c.get("VitrA",0),", ".join("%s %d"%(a,b) for a,b in c.most_common(4)),tl(st.median(fy)) if fy else "-"))
 w()
-w("| Ürün (Akakçe ürün sayfası) | Teklif sayısı | En düşük | En yüksek | JSON-LD'de görünen satıcılar |"); w("|---|---:|---:|---:|---|")
+w("| Ürün (Akakçe ürün sayfası) | Teklif sayısı | En düşük | En yüksek | En düşük fiyatlı satıcı (görünenler arasında) | JSON-LD'de görünen satıcılar |"); w("|---|---:|---:|---:|---|---|")
 sat_akk=[]
 for k,v in ad_["kategori"].items():
     for d in v["urun_sayfalari"]:
@@ -213,7 +214,8 @@ for k,v in ad_["kategori"].items():
 s20=ad_["vitra"].get("vitra s20 asma klozet",{}).get("urun_sayfasi")
 if s20: sat_akk.append(s20)
 for p in sat_akk:
-    w("| %s | %d | %s | %s | %s |"%(p["ad"][:56],p["teklif_sayisi"],tl(p["en_dusuk"]),tl(p["en_yuksek"]),", ".join(sorted(set(s["satici"] for s in p["saticilar"])))[:80]))
+    lo=sorted(set(x["satici"] for x in p["saticilar"] if x["fiyat"]==p["en_dusuk"]))
+    w("| %s | %d | %s | %s | %s | %s |"%(p["ad"][:56],p["teklif_sayisi"],tl(p["en_dusuk"]),tl(p["en_yuksek"]),", ".join(lo) or "-",", ".join(sorted(set(x["satici"] for x in p["saticilar"])))[:80]))
 w()
 w("Not: Akakçe ürün sayfasındaki yapılandırılmış veri, teklif sayısı yüksek ürünlerde teklifin yalnızca bir bölümünü listeliyor; bu yüzden satıcı adları eksik olabilir ve en ucuz satıcı adı her satırda yazılamamıştır. Akakçe'de VitrA S20 7508L003-0850 için 4 teklif, 7.999 - 8.400 TL bandında ve satıcılar Hepsiburada ile PttAVM.")
 w()
@@ -232,6 +234,7 @@ w()
 w("| Kelime | Cimri sayfası | Cimri seçenek | Akakçe sayfası | Akakçe seçenek |"); w("|---|---|---:|---|---:|")
 for k,v in KP["kategori"].items():
     c=v["cimri"] if v["cimri"] and v["cimri"]["tam_eslesme"] else None; a=v["akakce_serp"] if v["akakce_serp"] and v["akakce_serp"]["tam_eslesme"] else None
+    if c and c["secenek"]<50: c=None
     if not c and not a: continue
     w("| %s | %s | %s | %s | %s |"%(k,c["url"].replace("https://www.","") if c else "-",f'{c["secenek"]:,}'.replace(",",".") if c else "-",a["url"].replace("https://www.","") if a else "-",f'{a["secenek"]:,}'.replace(",",".") if a else "-"))
 w()
@@ -247,7 +250,7 @@ w("Kaynak: Cimri ve Akakçe, Google arama sonuç özetleri (DataForSEO SERP) ve 
 w()
 w("## 8. Kısıtlar")
 w()
-w("- Cimri sayfaları curl ve Apify üzerinden Cloudflare tarafından engellendi (403); Akakçe yaklaşık 15 isteğin ardından 429 ve doğrulama sayfası verdi. Doğrulama çözülmemiş, engel aşılmamıştır. Bu nedenle iki karşılaştırma sitesi için satıcı listesi, en yüksek fiyat ve en ucuz satıcı adı 30 kelimenin çoğunda alınamamıştır; yalnızca Akakçe'de 3 kategori (klozet, asma klozet, klozet kapağı) ve 9 ürün sayfası doğrudan okunabilmiştir. Diğer veriler Google arama özetleridir ve sayfa başlığı ile açıklamasındaki sayılarla sınırlıdır.")
+w("- Cimri sayfaları curl ve Apify üzerinden Cloudflare tarafından engellendi (403); Akakçe yaklaşık 15 isteğin ardından 429 ve doğrulama sayfası verdi. Doğrulama çözülmemiş, engel aşılmamıştır. Bu nedenle iki karşılaştırma sitesi için satıcı listesi, en yüksek fiyat ve en ucuz satıcı adı 30 kelimenin çoğunda alınamamıştır; yalnızca Akakçe'de 3 kategori sayfası (klozet, asma klozet, klozet kapağı) ve 5 ürün sayfası doğrudan okunabilmiştir. Diğer veriler Google arama özetleridir ve sayfa başlığı ile açıklamasındaki sayılarla sınırlıdır.")
 w("- Google Shopping listelemesi yalnızca öne çıkan bir teklifi gösterir; satıcı dökümü listeleme başına ilk 10 satıcıdır. Sepet indirimi, kupon, taksit vadesi ve kargo ücreti fiyata dahil değildir. Fiyat tek bir gün (29 Eylül 2026) içindir.")
 w("- Ürün tipi × mecra medyanları model, seri ve marka karışımından etkilenir; tipler arası kıyas için dolaylı göstergedir. Aynı ürün üzerinden kıyas yalnızca bölüm 5'teki 24 listede yapılabilmiştir.")
 w("- Aykırı fiyat temizliği kelime medyanına göre otomatik yapılmıştır; akıllı klozet, küvet, batarya gibi geniş fiyat aralıklı tiplerde bazı aksesuar/parça ilanları kalmış olabilir.")
@@ -259,5 +262,6 @@ w("## Dosyalar")
 w()
 for f,a in [("shopping.json","Shopping listelemeleri (temizlenmemiş 3.600 satır), VitrA ürün listeleri, satıcı özetleri"),("cimri_akakce.json","Cimri/Akakçe verileri (doğrudan okunanlar, SERP özetleri, ayıklanan alanlar)"),("fiyat_matrisi.csv","ürün tipi × mecra: adet, min, p25, medyan, p75, maks (tüm markalar; VitrA+Artema kolonları dahil)"),("fiyat_matrisi_vitra_artema.csv","yalnızca VitrA + Artema ilanları"),("vitra_saticilar.csv","12 ürün için 24 liste, satıcı satırları"),("maliyet_dfs.jsonl","her DataForSEO çekiminin maliyeti")]:
     w("- `%s`: %s"%(f,a))
-open(KOK+"ozet.md","w",encoding="utf-8").write("\n".join(L)+"\n")
+metin=re.sub(r"\bVitra\b","VitrA","\n".join(L)+"\n"); metin=re.sub(r"\bVITRA\b","VitrA",metin)
+open(KOK+"ozet.md","w",encoding="utf-8").write(metin)
 print("ozet.md yazildi",len(L),"satir")
