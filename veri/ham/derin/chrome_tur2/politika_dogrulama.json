@@ -1,0 +1,309 @@
+{
+ "erisim": "2026-09-30",
+ "yontem": "Kullanıcının Chrome'unda open_url + execute_javascript; ilgili sayfa açıldı, aynı kökenli sayfalar senkron XHR ile 3 sn+ aralıkla okundu. Giriş yapılmadı, form doldurulmadı, captcha çözülmedi.",
+ "kayitlar": [
+  {
+   "site": "Koçtaş",
+   "konu": "Ücretsiz kargo eşiği",
+   "onceki_hucre": "300 TL ve 600 TL şeklinde iki farklı değer (arama özeti)",
+   "durum": "doğrulandı",
+   "bulgu_ifade": "300 TL ve üzeri siparişlerde kargo ücretsiz, 300 TL altı siparişlerde kargo ücreti 49,90 TL'dir.",
+   "url": "https://www.koctas.com.tr/myaccount/faq",
+   "erisim": "2026-09-30",
+   "not": "600 TL değeri sayfada geçmiyor; tek eşik 300 TL"
+  },
+  {
+   "site": "Koçtaş",
+   "konu": "Teslimat süresi ve nakliye",
+   "onceki_hucre": "Nakliye: sipariş tarihinden 4 gün içinde 09:00-19:00 (arama özeti)",
+   "durum": "çürütüldü (sayfada farklı değer)",
+   "bulgu_ifade": "Ürün detay sayfasında belirtilen teslimat tarih aralığında kargo firmalarına teslim edilir; hafta içi 09:00-18:00, Cumartesi 09:00-13:00.",
+   "url": "https://www.koctas.com.tr/myaccount/faq",
+   "erisim": "2026-09-30",
+   "not": "'4 gün' ve '09:00-19:00' ifadeleri sayfada yok. Otuz desi ve üzeri siparişler lojistik firmalarıyla kata teslim; altı kargoyla apartman kapısına kadar."
+  },
+  {
+   "site": "Koçtaş",
+   "konu": "İade süresi",
+   "onceki_hucre": "14 gün kolay iade",
+   "durum": "doğrulandı",
+   "bulgu_ifade": "İade süresi elinize ulaştığından itibaren 14 gündür.",
+   "url": "https://www.koctas.com.tr/myaccount/faq",
+   "erisim": "2026-09-30"
+  },
+  {
+   "site": "Koçtaş",
+   "konu": "Büyük ürün iadesi",
+   "onceki_hucre": "İade kodu 7 gün geçerli, ücretsiz (arama özeti)",
+   "durum": "doğrulandı",
+   "bulgu_ifade": "İade kodu 7 gün geçerli. Süre dolmadan paketinizi kargo firmasına vererek ücretsiz iade yapın.",
+   "url": "https://www.koctas.com.tr/myaccount/faq",
+   "erisim": "2026-09-30",
+   "not": "Büyük hacimli ürün adresten lojistik randevusuyla alınır, alım süresi 14 güne kadar uzayabilir. Demonte ürünün montajı yapılmışsa iade süreci başlatılmaz; klozet takımı ve kapağında ambalajı açılmamış, denenmemiş şartı var."
+  },
+  {
+   "site": "Koçtaş",
+   "konu": "Montaj hizmeti ve fiyat",
+   "onceki_hucre": "20 ilde montaj (İstanbul, Ankara, İzmir başta); seçili aydınlatma ve mobilyada ücretsiz montaj",
+   "durum": "kısmen doğrulandı",
+   "bulgu_ifade": "Koçtaş montaj hizmetleri ücretlidir. Montaj kaleminin sepete ayrıca eklenmesi gerekir.",
+   "url": "https://www.koctas.com.tr/hizmetlerimiz/montaj-hizmeti",
+   "erisim": "2026-09-30",
+   "not": "Sayfada fiyat ve il sayısı yok; kapsam 'Koçtaş ve Koçtaş Fix mağazalarının bulunduğu şehirler'. 2 yıl işçilik garantisi; tamamlanmış montajın iadesi yok; eski ürün sökümü ek ücretli."
+  },
+  {
+   "site": "Koçtaş",
+   "konu": "Hasar politikası",
+   "onceki_hucre": "Bulunamadı",
+   "durum": "yeni bilgi (önceki hücre boştu)",
+   "bulgu_ifade": "Kargo teslim fişini imzaladıktan sonra kargo görevlisine 'Durum Tespit Tutanağı' tutturun.",
+   "url": "https://www.koctas.com.tr/myaccount/faq",
+   "erisim": "2026-09-30"
+  },
+  {
+   "site": "Koçtaş",
+   "konu": "Kapıda ödeme",
+   "onceki_hucre": "Bulunamadı",
+   "durum": "yeni bilgi (önceki hücre boştu)",
+   "bulgu_ifade": "Kapıda ödeme seçeneği bulunmamaktadır.",
+   "url": "https://www.koctas.com.tr/myaccount/faq",
+   "erisim": "2026-09-30"
+  },
+  {
+   "site": "Koçtaş",
+   "konu": "Taksit eşiği",
+   "onceki_hucre": "Online 5.000 TL üzeri 7 taksite kadar vade farksız (mağazada 10.000 TL üzeri)",
+   "durum": "kısmen doğrulandı",
+   "bulgu_ifade": "10.000 TL ve üzeri alışverişlerde bankalara ait kredi kartlarıyla vade farksız taksit seçenekleri (World: 2-7 taksit).",
+   "url": "https://www.koctas.com.tr/myaccount/faq",
+   "erisim": "2026-09-30",
+   "not": "Yardım sayfasında vade farksız eşik 10.000 TL; önceki hücredeki 5.000 TL değeri /taksitler sayfasından alınmıştı, iki sayfa arasında tutarsızlık var. Kapıda ödeme yok."
+  },
+  {
+   "site": "Trendyol",
+   "konu": "İade süresi",
+   "onceki_hucre": "15 gün",
+   "durum": "doğrulandı",
+   "bulgu_ifade": "Ürünün iade süresi elinize ulaştıktan sonra 15 gündür.",
+   "url": "https://www.trendyol.com/yardim/iade",
+   "erisim": "2026-09-30"
+  },
+  {
+   "site": "Trendyol",
+   "konu": "Montajlı ürün iadesi",
+   "onceki_hucre": "Belirli boyutta ürün adresten alınır; montajı tamamlanmış ürün iade edilemez",
+   "durum": "kısmen doğrulandı",
+   "bulgu_ifade": "Aşağıdaki adımları takip ederek ürün iadeni, paketin adresinden alınmak üzere, kolayca ve hiçbir ücret ödemeden yapabilirsin.",
+   "url": "https://www.trendyol.com/s/mobilya-alisverisi-hakkinda-sik-sorulan-sorular",
+   "erisim": "2026-09-30",
+   "not": "'Montajı tamamlanmış ürün iade edilemez' ifadesi bu sayfada ve iade sayfasında geçmiyor. Yardım sayfasında kurulum gerektiren elektronik ürünler için 'yetkili servis bilgisi olmadan açılırsa iade kapsamı dışında' kuralı var; mobilya montajında 'Tekrar kurulum için gelinmesi istenirse servis bedeli talep edilir'. Mobilya montajı 73 ilde."
+  },
+  {
+   "site": "Trendyol",
+   "konu": "Kargo ücreti ve eşik",
+   "onceki_hucre": "Satıcı barem 350 TL; alıcı eşiği doğrulanamadı",
+   "durum": "kısmen doğrulandı",
+   "bulgu_ifade": "Standart kargo ücreti 59.99 TL'dir. 'Kargo bedava' kampanyası olan ürünlerde ise kargo ücretsiz.",
+   "url": "https://www.trendyol.com/yardim/kargo-ve-teslimat",
+   "erisim": "2026-09-30",
+   "not": "Alıcı için genel bir ücretsiz kargo eşiği yazılı değil, kampanya ve ürün bazlı; 350 TL değeri sayfada yok. Otuz desi ve üzeri kargoyla apartman kapısına, lojistik firmalarıyla (Horoz, Ceva) kata teslim."
+  },
+  {
+   "site": "Trendyol",
+   "konu": "Taksit genel kuralı",
+   "onceki_hucre": "Kategori, tutar ve kart tipine göre; her üründe taksit yok",
+   "durum": "doğrulandı",
+   "bulgu_ifade": "Taksit yapılabilen ürünlerse taksit seçeneklerinden birini seçip alışverişinizi tamamlayabilirsiniz.",
+   "url": "https://www.trendyol.com/yardim/iade",
+   "erisim": "2026-09-30",
+   "not": "Alışveriş kredisi: 500 TL ve üzeri sepette, 36 aya varan taksit (mobilya sayfası). Kapıda ödeme ve havale seçeneği yok (önceki hücre 'Doğrulanamadı' idi)."
+  },
+  {
+   "site": "Trendyol",
+   "konu": "Kapıda ödeme",
+   "onceki_hucre": "Doğrulanamadı",
+   "durum": "yeni bilgi (önceki hücre boştu)",
+   "bulgu_ifade": "Kapıda ödeme ve havale yoluyla ödeme seçenekleri bulunmamaktadır.",
+   "url": "https://www.trendyol.com/yardim/iade",
+   "erisim": "2026-09-30"
+  },
+  {
+   "site": "n11",
+   "konu": "Ücretsiz kargo",
+   "onceki_hucre": "Mağaza bazlı 300 TL şartı",
+   "durum": "kısmen doğrulandı",
+   "bulgu_ifade": "n11'de kargo ücreti için 3 seçenek bulunur. Alıcı Öder, Ücretsiz Kargo (mağaza öder) ve Şartlı Kargo.",
+   "url": "https://www.n11.com/destek-merkezi",
+   "erisim": "2026-09-30",
+   "not": "Şartlı kargo mağaza belirlediği tutarın üstünde geçerli; 300 TL değeri sayfada yok, genel bir eşik yok."
+  },
+  {
+   "site": "n11",
+   "konu": "İade süresi",
+   "onceki_hucre": "14 gün cayma hakkı",
+   "durum": "doğrulandı",
+   "bulgu_ifade": "Alıcının (müşterinin), teslimat tarihinden itibaren 14 gün içinde cayma hakkını kullanarak ürünü iade etmek istediğini satıcıya bildirmesi gerekir.",
+   "url": "https://www.n11.com/destek-merkezi",
+   "erisim": "2026-09-30",
+   "not": "Cayma hakkı kapsamında iade kargo ücreti mağazaya ait; kargo süresi ortalama 2 iş günü (kargo firmalarıyla). Sipariş sayfası /yardim adresi 404; /genel/urun-iadesi-2082300 sayfasında içerik yüklenmedi, veri destek merkezi sayfasına gömülü SSS'den okundu."
+  },
+  {
+   "site": "n11",
+   "konu": "Kapıda ödeme",
+   "onceki_hucre": "Yok",
+   "durum": "doğrulandı",
+   "bulgu_ifade": "Hayır, n11'de kapıda ödeme seçeneği yoktur.",
+   "url": "https://www.n11.com/destek-merkezi",
+   "erisim": "2026-09-30"
+  },
+  {
+   "site": "n11",
+   "konu": "Alışveriş kredisi",
+   "onceki_hucre": "Var (Garanti 750-15.000 TL)",
+   "durum": "doğrulandı",
+   "bulgu_ifade": "Garanti Alışveriş Kredisi ile 750 TL – 15.000 TL arasındaki alışverişlerinizi 48 aya varan vade seçenekleri ile ödeyebilirsiniz.",
+   "url": "https://www.n11.com/destek-merkezi",
+   "erisim": "2026-09-30",
+   "not": "İş Bankası Anında Alışveriş Kredisi de SSS başlıklarında var; 'Kredim 6 taksit' ifadesi doğrulanamadı."
+  },
+  {
+   "site": "n11",
+   "konu": "Garanti sorumluluğu",
+   "onceki_hucre": "(hücre yok)",
+   "durum": "yeni bilgi (önceki hücre boştu)",
+   "bulgu_ifade": "n11'de mağazalardan satın aldığınız ürünler, satıcı firmaların garantisi kapsamında ve sorumluluğundadır.",
+   "url": "https://www.n11.com/destek-merkezi",
+   "erisim": "2026-09-30"
+  },
+  {
+   "site": "Amazon TR",
+   "konu": "Ücretsiz kargo eşiği",
+   "onceki_hucre": "500 TL ve üzeri (altı 49,90 TL)",
+   "durum": "doğrulandı",
+   "bulgu_ifade": "Genel Standart Teslimat: 500 TL'nin altında teslimat başına 49,90 ₺; 500 TL ve üzerinde ücretsiz.",
+   "url": "https://www.amazon.com.tr/gp/help/customer/display.html?nodeId=GNWCU626A4NXEEGJ",
+   "erisim": "2026-09-30",
+   "not": "Yalnız Amazon.com.tr tarafından satılan ve gönderilen ürünler için; Pazaryeri satıcı ücretleri değişebilir. Standart teslimat 2-3 iş günü; Prime ücretsiz."
+  },
+  {
+   "site": "Amazon TR",
+   "konu": "İade süresi",
+   "onceki_hucre": "14 veya 30 gün",
+   "durum": "doğrulandı",
+   "bulgu_ifade": "İade süresi teslim tarihinden itibaren bazı kategorilerde 14 gün bazı kategorilerde 30 gündür.",
+   "url": "https://www.amazon.com.tr/gp/help/customer/display.html?nodeId=GKM69DUUYKQWKWX7",
+   "erisim": "2026-09-30",
+   "not": "Pazaryeri satıcıları kendi iade politikasına tabi."
+  },
+  {
+   "site": "Amazon TR",
+   "konu": "Büyük ürün iade yöntemi",
+   "onceki_hucre": "Yöntem ürün boyutuna göre değişiyor",
+   "durum": "doğrulandı",
+   "bulgu_ifade": "İade yöntemi değişiklik gösterebilir ve anlaşmalı kargo şirketlerimiz tarafından evden alım hizmeti sunulmuyor olabilir.",
+   "url": "https://www.amazon.com.tr/gp/help/customer/display.html?nodeId=GKM69DUUYKQWKWX7",
+   "erisim": "2026-09-30",
+   "not": "Kurulum ve montaj gerektiren, yetkili servis bilgisi dışında açılan ürünler iade ve garanti kapsamı dışında. İade kargosu anlaşmalı kodla ücretsiz; para iadesi en geç 14 gün."
+  },
+  {
+   "site": "Amazon TR",
+   "konu": "Taksit",
+   "onceki_hucre": "12 aya varan taksit (uygun kategorilerde)",
+   "durum": "doğrulandı",
+   "bulgu_ifade": "Kredi kartı ile ödeme yapacağınız ürünlerde 12 aya varan taksit seçeneklerini kullanabilirsiniz.",
+   "url": "https://www.amazon.com.tr/gp/help/customer/display.html?nodeId=GRVPA5TTFNQXJ2GZ",
+   "erisim": "2026-09-30",
+   "not": "Yasal taksit sınırlamalarına tabi ürünler hariç."
+  },
+  {
+   "site": "Hepsiburada",
+   "konu": "Ücretsiz kargo eşiği",
+   "onceki_hucre": "Bulunamadı",
+   "durum": "bulunamadı",
+   "bulgu_ifade": "Yarın Kapında: sepetin kargo bedavaya uygunsa ek bir ücret alınmamaktadır.",
+   "url": "https://www.hepsiburada.com/teslimat",
+   "erisim": "2026-09-30",
+   "not": "Eşik tutarı herkese açık sayfada yok. Yardım merkezi (/cozummerkezi) giriş istediği için açılmadı. Bugün Kapında 54,90 TL, Yarın Sabah Kapında ve Randevulu Teslimat 49,90 TL (Premium ücretsiz)."
+  },
+  {
+   "site": "Hepsiburada",
+   "konu": "İade süresi ve koşul",
+   "onceki_hucre": "14 gün, ücretsiz, demonte ve orijinal kutuyla",
+   "durum": "doğrulandı",
+   "bulgu_ifade": "Ürünü teslim aldıktan sonra 14 gün içinde iade edebilirsin. 14 gün geçtikten sonra ürün iadesi yapılamaz.",
+   "url": "https://www.hepsiburada.com/staticpage/397066447924442",
+   "erisim": "2026-09-30",
+   "not": "Mobilya iadesi ücretsiz, ürün demonte ve orijinal kutusuyla paketlenir; büyük desili üründe HepsiJET XL önceden seçilen tarihte adresten alır. Kapında İade ücretsiz hizmet (14 gün)."
+  },
+  {
+   "site": "Hepsiburada",
+   "konu": "Kurulum hizmeti",
+   "onceki_hucre": "69 ilde montaj; Mr Usta Klozet Montaj Hizmeti 2.730 TL (önceki tur verisi)",
+   "durum": "kısmen doğrulandı",
+   "bulgu_ifade": "Türkiye'nin 69 ilinde uzman ekiplerden mobilya montaj hizmeti alabilirsiniz.",
+   "url": "https://www.hepsiburada.com/staticpage/397066447924442",
+   "erisim": "2026-09-30",
+   "not": "Sayfada fiyat yok (2.730 TL önceki tur ürün sayfasından). Tekrar kurulum için servis bedeli talep edilir. Belirli satıcılar 24 ay garanti veriyor."
+  },
+  {
+   "site": "Creavit",
+   "konu": "Garanti süresi",
+   "onceki_hucre": "Seramik 12, gömme rezervuar 10, armatür ve duş 5 yıl (arama özeti)",
+   "durum": "kısmen doğrulandı",
+   "bulgu_ifade": "12 Yıllık Kullanma Kılavuzu ve Garanti Şartları; 2 Yıllık Kullanma Kılavuzu ve Garanti Şartları (PDF).",
+   "url": "https://www.creavit.com.tr/dokumanlar/",
+   "erisim": "2026-09-30",
+   "not": "12 yıl belge adıyla doğrulandı; 10 ve 5 yıl ifadesi sayfada yok, PDF içeriği okunmadı. PDF: /media/bqlbhjqk/12yil_ssggarantibelge-kullanimkilavuzu_tr_us_de_ru_aa.pdf"
+  },
+  {
+   "site": "Creavit",
+   "konu": "Yedek parça listesi",
+   "onceki_hucre": "Katalogda 'Yedek Parça Listesi' (arama sonucu)",
+   "durum": "bulunamadı",
+   "bulgu_ifade": "Kataloglar sayfasında 15 PDF listeleniyor; hiçbirinin adında yedek parça yok, sayfada 'yedek' ifadesi geçmiyor.",
+   "url": "https://www.creavit.com.tr/dokumanlar/kataloglar/",
+   "erisim": "2026-09-30",
+   "not": "Ana sayfa, /dokumanlar/ ve /iletisim/ sayfalarında da yedek parça girişi bulunamadı."
+  },
+  {
+   "site": "Geberit TR",
+   "konu": "Garanti",
+   "onceki_hucre": "Vitrifiyede ömür boyu, AquaClean için 10 yıl yedek parça bulunabilirliği (arama özeti)",
+   "durum": "kısmen doğrulandı",
+   "bulgu_ifade": "Geberit Banyo Ürünleri ve Serileri Garanti Koşulları (PDF, Medya Merkezi).",
+   "url": "https://www.geberit.com.tr/hizmet-ve-destek/medya-merkezi/",
+   "erisim": "2026-09-30",
+   "not": "Süre PDF içinde; okunmadı, 'ömür boyu' doğrulanamadı. Yetkili servis sayfası: 'Bu katalogta ürün garanti süreleri de bulunmaktadır' (2026 hizmet fiyat listesi PDF). /hizmet-ve-destek/garanti/ adresi 404."
+  },
+  {
+   "site": "Geberit TR",
+   "konu": "Yedek parça ve servis",
+   "onceki_hucre": "Ürün bulunabilirliği ve yedek parça sayfası (arama sonucu)",
+   "durum": "kısmen doğrulandı",
+   "bulgu_ifade": "Ürün, yedek parça, teknik destek konularında sizlere yardımcı olmaktan memnuniyet duyacak bayilerimiz ve yetkili servislerimizle iletişime geçin.",
+   "url": "https://www.geberit.com.tr/banyo-urunleri/ilham-alin/bayiler-yetkili-servisler/",
+   "erisim": "2026-09-30",
+   "not": "Ayrı bir yedek parça sayfası bulunamadı; kanal bayi ve yetkili servis sayfası."
+  },
+  {
+   "site": "Duravit TR",
+   "konu": "Garanti",
+   "onceki_hucre": "Bulunamadı",
+   "durum": "kısmen doğrulandı",
+   "bulgu_ifade": "Ürüne bağlı olarak tüketicilere gönüllü üretici garantisi sunuyoruz.",
+   "url": "https://www.duravit.com.tr/servis_hizmeti/faqs.tr-tr.html",
+   "erisim": "2026-09-30",
+   "not": "Süre yazmıyor; garanti sözü belgesine yönlendiriyor."
+  },
+  {
+   "site": "Duravit TR",
+   "konu": "Servis",
+   "onceki_hucre": "Teknik servisler sayfası (il bazlı, arama sonucu)",
+   "durum": "doğrulandı",
+   "bulgu_ifade": "Duravit Teknik Servisleri şimdi tüm Türkiye'ye yayılıyor.",
+   "url": "https://www.duravit.com.tr/servis_hizmeti/teknik_servisler.tr-tr.html",
+   "erisim": "2026-09-30",
+   "not": "İl bazlı servis listesi; servis hattı hafta içi 08:00-16:30. Seramik sağlık gereçleri için 'sonradan onarım mümkün değildir' ifadesi SSS'de."
+  }
+ ]
+}

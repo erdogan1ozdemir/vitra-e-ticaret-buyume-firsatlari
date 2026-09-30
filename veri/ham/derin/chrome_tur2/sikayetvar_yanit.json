@@ -1,0 +1,81 @@
+{
+ "erisim": "2026-09-30",
+ "yontem": "Kullanıcının Chrome'unda 6 şikayet sayfası ve VitrA, Artema, Geberit marka sayfaları açıldı; sayfa metni içinde marka yanıtı bloğu, 'yanıt oranı' ve 'ortalama yanıt süresi' göstergesi arandı. Giriş yapılmadı; şikayet metni, yazar adı ve kişisel veri kaydedilmedi.",
+ "sonuc": "VitrA için marka yanıtı bloğu görünmüyor",
+ "sayfalar": [
+  {
+   "url": "https://www.sikayetvar.com/vitra/3600-tl-odeyip-uc-ay-bekledigim-vitra-musluk-parcasi-gelmedi",
+   "tarih": "2026-08-04",
+   "cozuldu_etiketi": true,
+   "marka_yaniti_blogu": false,
+   "yorum_alani": "'İlk yorumu sen yap' (yorum yok)",
+   "yanit_suresi": null,
+   "ifade_kalibi": null
+  },
+  {
+   "url": "https://www.sikayetvar.com/vitra/vitra-taharet-muslugu-gicirdama-sorunu",
+   "tarih": "2024-12-05",
+   "cozuldu_etiketi": true,
+   "marka_yaniti_blogu": false,
+   "yorum_alani": "'İlk yorumu sen yap' (yorum yok)",
+   "yanit_suresi": null,
+   "ifade_kalibi": null
+  },
+  {
+   "url": "https://www.sikayetvar.com/vitra/vitra-dus-setinde-su-akmiyor-ve-paslaniyor-yetkili-servis-sorun-cozmuyor",
+   "tarih": "2026-08-25",
+   "cozuldu_etiketi": false,
+   "marka_yaniti_blogu": false,
+   "yorum_alani": "'İlk yorumu sen yap' (yorum yok)",
+   "yanit_suresi": null,
+   "ifade_kalibi": null
+  },
+  {
+   "url": "https://www.sikayetvar.com/vitra/vitra-ve-artema-dus-sistemlerinde-hizli-paslanma-ve-garanti-degisim-talebi",
+   "tarih": "2026-06-28",
+   "cozuldu_etiketi": false,
+   "marka_yaniti_blogu": false,
+   "yorum_alani": "'İlk yorumu sen yap' (yorum yok)",
+   "yanit_suresi": null,
+   "ifade_kalibi": null
+  },
+  {
+   "url": "https://www.sikayetvar.com/vitra/vitra-klozetin-arizasi-ve-garanti-kapsaminda-degisim-talebi",
+   "tarih": "2025-12-04",
+   "cozuldu_etiketi": false,
+   "marka_yaniti_blogu": false,
+   "yorum_alani": "'İlk yorumu sen yap' (yorum yok)",
+   "yanit_suresi": null,
+   "ifade_kalibi": null
+  },
+  {
+   "url": "https://www.sikayetvar.com/vitra/vitra-klozette-cikmayan-siyah-lekeler",
+   "tarih": "2025-01-14",
+   "cozuldu_etiketi": false,
+   "marka_yaniti_blogu": false,
+   "yorum_alani": "'İlk yorumu sen yap' (yorum yok)",
+   "yanit_suresi": null,
+   "ifade_kalibi": null
+  }
+ ],
+ "marka_sayfasi": {
+  "vitra": {
+   "url": "https://www.sikayetvar.com/vitra",
+   "yanit_orani_gostergesi": false,
+   "ortalama_yanit_suresi_gostergesi": false,
+   "not": "Sayfada yalnız puan (18/100), 154 değerlendirme, 976 şikayet ve AiVar marka karnesi var; 'Yanıt Oranı' ve 'Ortalama Yanıt Süresi' alanları yok"
+  },
+  "artema": {
+   "url": "https://www.sikayetvar.com/artema",
+   "yanit_orani_gostergesi": false,
+   "ortalama_yanit_suresi_gostergesi": false
+  },
+  "geberit_referans": {
+   "url": "https://www.sikayetvar.com/geberit",
+   "yanit_orani": "%13 (3/24)",
+   "ortalama_yanit_suresi": "63 saat",
+   "not": "Aynı yöntemle okunabilen karşılaştırma örneği; yanıt veren markalarda bu alanlar marka sayfasında görünüyor"
+  }
+ },
+ "yorum": "Altı sayfanın altısında marka yanıt bloğu yok; VitrA ve Artema marka sayfalarında yanıt oranı ve yanıt süresi göstergesi bulunmuyor. Aynı okuma yöntemi Geberit sayfasında yanıt oranını gösterdiği için göstergenin yokluğu okuma sınırından değil, sayfanın kendisinden kaynaklanıyor. Çözüldü etiketi ise 2 sayfada var (kullanıcının 'çözüldü' işareti); marka yanıtı ölçülemiyor, yanıt süresi ve ifade kalıbı verilemiyor."
+}
