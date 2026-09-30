@@ -51,3 +51,13 @@ def doldur():
     ekle("https://merchant.hepsiburada.com", "Hepsiburada satıcı paneli: ürün performansı (hak ediş), görüntülenme, iptal ve değerlendirme raporları",
          "Komisyon, kargo, hizmet bedeli ve kampanya indirimi oranları; 949 SKU görüntülenme ve dönüşüm; 369 iptal nedeni; 204 SKU değerlendirme",
          bolum=["panel"], yontem=Y2, tarih=D30, kod=["D31"], kodbolum=False)
+    Y3 = "web araştırması (sayfa okuma)"
+    for url_, amac_, bilgi_ in [
+        ("https://www.aa.com.tr/tr/gundem/turkiyede-ortalama-hane-halki-buyuklugu-2024te-3-11-oldu/3566979", "TÜİK ADNKS hane sayısı (banyo yenileme tahmini)", "2024 hane sayısı 26.599.261, ortalama hane büyüklüğü 3,11"),
+        ("https://www.aa.com.tr/tr/ekonomi/turkiyede-2025te-1-milyon-688-bin-910-konut-satildi/3804701", "TÜİK 2025 konut satışları", "1.688.910 konut; ilk el 540.786, ikinci el 1.148.124"),
+        ("https://www.serfed.com/uyelerimiz/sersa", "Seramik sağlık gereçleri üretim ve kapasite (SERSA)", "2021-2023 üretim 22-25-21 milyon adet, kapasite 35-37,8 milyon, ihracat adetleri"),
+        ("https://www.aa.com.tr/tr/ekonomi/seramik-sektorunun-2024-ihracat-hedefi-2-milyar-dolar/3139333", "Seramik sektörü 2023 ihracatı", "Seramik sağlık gereci ihracatı 7,7 milyon adet, 312 milyon dolar"),
+        ("https://www.newsfilecorp.com/release/130362/Leading-Ceramics-Producer-VitrA-Sets-Sights-on-Thriving-US-Market", "VitrA pazar payı beyanı", "Türkiye seramik sağlık gereçleri pazarında %30 pay (2022; tanım belirtilmemiş)"),
+        ("https://www.eczacibasi.com.tr/en/field-of-activity/building-products", "Eczacıbaşı Yapı Ürünleri kapasitesi", "Seramik sağlık gereci 6,7 milyon, armatür 2 milyon, banyo mobilyası 795 bin adet/yıl"),
+        ("https://www.sanitaerwirtschaft.de/markt-branche/die-deutschen-und-ihre-baeder", "Almanya banyo yenileme benchmark (VDS-Forsa)", "46,2 milyon banyo; yenilenmemiş banyoların ortalama yaşı 19,5 yıl")]:
+        ekle(url_, amac_, bilgi_, bolum=["makro"], yontem=Y3, tarih=D30, kod=["D32"], kodbolum=False)
