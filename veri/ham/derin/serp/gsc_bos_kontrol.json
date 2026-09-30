@@ -1,0 +1,425 @@
+{
+ "su arıtma cihazı": {
+  "gosterim": 0,
+  "tik": 0,
+  "ort_sira": null,
+  "sayfalar": []
+ },
+ "termosifon": {
+  "gosterim": 141,
+  "tik": 0,
+  "ort_sira": 10.056737588652481,
+  "sayfalar": [
+   [
+    "https://www.vitra.com.tr/",
+    141,
+    10.1
+   ]
+  ]
+ },
+ "banyo bataryası": {
+  "gosterim": 62246,
+  "tik": 1148,
+  "ort_sira": 4.267471002152749,
+  "sayfalar": [
+   [
+    "https://www.vitra.com.tr/c-banyo-bataryalari",
+    61958,
+    4.2
+   ],
+   [
+    "https://www.vitra.com.tr/",
+    113,
+    9.8
+   ],
+   [
+    "https://www.vitra.com.tr/c-armaturler",
+    43,
+    9.9
+   ]
+  ]
+ },
+ "taharet musluğu": {
+  "gosterim": 354,
+  "tik": 5,
+  "ort_sira": 20.782485875706215,
+  "sayfalar": [
+   [
+    "https://www.vitra.com.tr/c-musluk-ve-ara-musluklar",
+    253,
+    23.4
+   ],
+   [
+    "https://www.vitra.com.tr/c-taharet-el-duslari",
+    76,
+    17.9
+   ],
+   [
+    "https://www.vitra.com.tr/c-bide-bataryalari",
+    9,
+    3.9
+   ]
+  ]
+ },
+ "tesisatçı": {
+  "gosterim": 141,
+  "tik": 1,
+  "ort_sira": 3.50354609929078,
+  "sayfalar": [
+   [
+    "https://www.vitra.com.tr/servisler-ve-satis-noktalari/",
+    126,
+    3.6
+   ],
+   [
+    "https://www.vitra.com.tr/",
+    8,
+    4.1
+   ],
+   [
+    "https://www.vitra.com.tr/servisler-ve-satis-noktalari/vitra-artema-yetkili-servisi-serhat-tesisat",
+    1,
+    1
+   ]
+  ]
+ },
+ "şofben": {
+  "gosterim": 0,
+  "tik": 0,
+  "ort_sira": null,
+  "sayfalar": []
+ },
+ "jakuzi": {
+  "gosterim": 37604,
+  "tik": 313,
+  "ort_sira": 9.134187852356133,
+  "sayfalar": [
+   [
+    "https://www.vitra.com.tr/c-hidromasajli-standart-kuvetler",
+    37600,
+    9.1
+   ],
+   [
+    "https://www.vitra.com.tr/c-hidromasajli-standart-kuvetler?page=3",
+    3,
+    25.3
+   ],
+   [
+    "https://www.vitra.com.tr/c-hidromasajli-bagimsiz-kuvetler",
+    1,
+    10
+   ]
+  ]
+ },
+ "banyo paspası": {
+  "gosterim": 0,
+  "tik": 0,
+  "ort_sira": null,
+  "sayfalar": []
+ },
+ "dolap kulpu": {
+  "gosterim": 1,
+  "tik": 0,
+  "ort_sira": 36.0,
+  "sayfalar": [
+   [
+    "https://www.vitra.com.tr/c-banyo-dolabi-kulplari",
+    1,
+    36
+   ]
+  ]
+ },
+ "mutfak tezgahı": {
+  "gosterim": 10,
+  "tik": 0,
+  "ort_sira": 23.8,
+  "sayfalar": [
+   [
+    "https://www.vitra.com.tr/c-mutfak-karo-seramikleri",
+    9,
+    25.6
+   ],
+   [
+    "https://www.vitra.com.tr/ilham-veren-fikirler/mutfak-dekorasyonu-nasil-yapilir/",
+    1,
+    8
+   ]
+  ]
+ },
+ "lavabo bataryası": {
+  "gosterim": 35261,
+  "tik": 736,
+  "ort_sira": 4.250191429624798,
+  "sayfalar": [
+   [
+    "https://www.vitra.com.tr/c-lavabo-bataryalari",
+    35121,
+    4.2
+   ],
+   [
+    "https://www.vitra.com.tr/",
+    79,
+    17.3
+   ],
+   [
+    "https://www.vitra.com.tr/ilham-veren-fikirler/lavabo-bataryasi-montaji-nasil-yapilir/",
+    27,
+    7.0
+   ]
+  ]
+ },
+ "fayans fiyatları": {
+  "gosterim": 4052,
+  "tik": 90,
+  "ort_sira": 10.813178677196445,
+  "sayfalar": [
+   [
+    "https://www.vitra.com.tr/c-banyo-karo-seramikleri",
+    3882,
+    10.7
+   ],
+   [
+    "https://www.vitra.com.tr/c-karo-seramik-urunleri",
+    78,
+    19.0
+   ],
+   [
+    "https://www.vitra.com.tr/servisler-ve-satis-noktalari/",
+    46,
+    9.5
+   ]
+  ]
+ },
+ "banyo seti": {
+  "gosterim": 1767,
+  "tik": 121,
+  "ort_sira": 18.951895868704018,
+  "sayfalar": [
+   [
+    "https://www.vitra.com.tr/c-banyo-aksesuar-setleri",
+    1545,
+    16.7
+   ],
+   [
+    "https://www.vitra.com.tr/",
+    89,
+    52.5
+   ],
+   [
+    "https://www.vitra.com.tr/c-dus-setleri",
+    88,
+    19.8
+   ]
+  ]
+ },
+ "çamaşır sepeti": {
+  "gosterim": 0,
+  "tik": 0,
+  "ort_sira": null,
+  "sayfalar": []
+ },
+ "evye": {
+  "gosterim": 22277,
+  "tik": 238,
+  "ort_sira": 8.330295820801723,
+  "sayfalar": [
+   [
+    "https://www.vitra.com.tr/ilham-veren-fikirler/en-kullanisli-evye-hangisi/",
+    22241,
+    8.3
+   ],
+   [
+    "https://www.vitra.com.tr/c-eviyeler",
+    26,
+    56.3
+   ],
+   [
+    "https://www.vitra.com.tr/",
+    4,
+    1.2
+   ]
+  ]
+ },
+ "havlupan": {
+  "gosterim": 6552,
+  "tik": 181,
+  "ort_sira": 9.608363858363859,
+  "sayfalar": [
+   [
+    "https://www.vitra.com.tr/c-havlupanlar",
+    6548,
+    9.6
+   ],
+   [
+    "https://www.vitra.com.tr/havlupanlar/artepan-havlupan-krom-p-a44845",
+    3,
+    10.3
+   ],
+   [
+    "https://www.vitra.com.tr/",
+    1,
+    1
+   ]
+  ]
+ },
+ "derz dolgu": {
+  "gosterim": 0,
+  "tik": 0,
+  "ort_sira": null,
+  "sayfalar": []
+ },
+ "banyo rafı": {
+  "gosterim": 575,
+  "tik": 14,
+  "ort_sira": 13.756521739130434,
+  "sayfalar": [
+   [
+    "https://www.vitra.com.tr/c-banyo-raflari",
+    568,
+    13.4
+   ],
+   [
+    "https://www.vitra.com.tr/banyo-set-modulleri/mia-banyo-dolabi-seti-parlak-beyaz-p-75024",
+    2,
+    50
+   ],
+   [
+    "https://www.vitra.com.tr/",
+    1,
+    76
+   ]
+  ]
+ },
+ "gömme rezervuar iç takımı": {
+  "gosterim": 594,
+  "tik": 7,
+  "ort_sira": 13.392255892255893,
+  "sayfalar": [
+   [
+    "https://www.vitra.com.tr/c-rezervuar-ve-klozet-ic-takimlari",
+    465,
+    11.8
+   ],
+   [
+    "https://www.vitra.com.tr/c-gomme-rezervuarlar",
+    102,
+    21.1
+   ],
+   [
+    "https://www.vitra.com.tr/c-gomme-rezervuar-setleri",
+    7,
+    29.6
+   ]
+  ]
+ },
+ "granit evye": {
+  "gosterim": 22,
+  "tik": 1,
+  "ort_sira": 18.863636363636363,
+  "sayfalar": [
+   [
+    "https://www.vitra.com.tr/ilham-veren-fikirler/en-kullanisli-evye-hangisi/",
+    17,
+    7.1
+   ],
+   [
+    "https://www.vitra.com.tr/",
+    2,
+    70.5
+   ],
+   [
+    "https://www.vitra.com.tr/c-eviyeler",
+    2,
+    53
+   ]
+  ]
+ },
+ "klozet kapağı menteşesi": {
+  "gosterim": 113,
+  "tik": 0,
+  "ort_sira": 20.920353982300885,
+  "sayfalar": [
+   [
+    "https://www.vitra.com.tr/v/vitra-yavas-kapanir-i",
+    106,
+    21.4
+   ],
+   [
+    "https://www.vitra.com.tr/c-klozet-kapaklari",
+    3,
+    4
+   ],
+   [
+    "https://www.vitra.com.tr/ilham-veren-fikirler/klozet-kapagi-montaji-nasil-yapilir/",
+    2,
+    10
+   ]
+  ]
+ },
+ "geberit gömme rezervuar": {
+  "gosterim": 36,
+  "tik": 0,
+  "ort_sira": 24.22222222222222,
+  "sayfalar": [
+   [
+    "https://www.vitra.com.tr/c-gomme-rezervuarlar",
+    26,
+    29.7
+   ],
+   [
+    "https://www.vitra.com.tr/",
+    6,
+    8.2
+   ],
+   [
+    "https://www.vitra.com.tr/c-klozetler",
+    2,
+    19
+   ]
+  ]
+ },
+ "creavit klozet": {
+  "gosterim": 20,
+  "tik": 0,
+  "ort_sira": 6.55,
+  "sayfalar": [
+   [
+    "https://www.vitra.com.tr/c-klozetler",
+    9,
+    5.6
+   ],
+   [
+    "https://www.vitra.com.tr/hakkimizda/dunden-bugune-vitra",
+    3,
+    5.3
+   ],
+   [
+    "https://www.vitra.com.tr/c-rezervuar-ve-klozet-ic-takimlari",
+    1,
+    6
+   ]
+  ]
+ },
+ "kanalsız klozet": {
+  "gosterim": 4597,
+  "tik": 83,
+  "ort_sira": 6.003915597128562,
+  "sayfalar": [
+   [
+    "https://www.vitra.com.tr/ilham-veren-fikirler/kanalsiz-klozet-nedir-ve-nasil-calisir/",
+    3752,
+    6.0
+   ],
+   [
+    "https://www.vitra.com.tr/v/vitra-rim-ex-i",
+    807,
+    6.1
+   ],
+   [
+    "https://www.vitra.com.tr/ilham-veren-fikirler/klozet-secim-rehberi-ve-tavsiyeler/",
+    11,
+    2.7
+   ]
+  ]
+ }
+}

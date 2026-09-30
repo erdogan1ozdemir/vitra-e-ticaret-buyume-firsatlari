@@ -27,7 +27,7 @@ rows = []
 for tk, v in sorted(KTT.items(), key=lambda i: -i[1]["v12"]):
     if v["grup"] not in GR_EN: continue
     nt = NOT.get(tk)
-    rows.append([x(v["grup"], GR_EN[v["grup"]]), x(v["tr"], tema.META[tk]["en"]), cell(v["v12"]), n(yz(v["uc"])), cell(v["urun"]) if v["urun"] else n("-"), cell(v["model"]) if v["model"] else n("-"), durum(v["durum"]), x(*nt) if nt else "-"])
+    rows.append([x(v["grup"], GR_EN[v["grup"]]), x(v["tr"], tema.META[tk]["en"]), cellk(v["v12"]), n(yz(v["uc"])), cell(v["urun"]) if v["urun"] else n("-"), cell(v["model"]) if v["model"] else n("-"), durum(v["durum"]), x(*nt) if nt else "-"])
 tbl = tablo([th("Grup", "Group", "Tema grubu.", "Theme group."),
              th("Tema", "Theme", "Genişletilmiş kelime evreninde tanımlanan ürün teması.", "Product theme defined in the expanded keyword universe."),
              th("Aylık talep", "Monthly demand", "Eyl 2025 - Ağu 2026 aylık ortalama arama hacmi; yazım varyantları tek sayılmıştır.", "Sep 2025 - Aug 2026 average monthly search volume; spelling variants counted once.", True),

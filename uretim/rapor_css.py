@@ -134,6 +134,7 @@ td.n,th.n{text-align:center}
 .chart .ax{fill:var(--muted);font-size:10.5px;font-family:inherit}
 .chart .bl{fill:var(--ink);font-size:12px;font-family:inherit}
 .chart .bv{fill:var(--muted);font-size:11.5px;font-family:inherit}
+.chart .anl{font-size:10.5px;font-weight:700;font-family:inherit;paint-order:stroke;stroke:var(--card);stroke-width:3px;stroke-linejoin:round}
 .legend{display:flex;flex-wrap:wrap;gap:14px;font-size:11.5px;color:var(--muted);padding:4px 2px 2px}
 .legend i{display:inline-block;width:11px;height:3px;border-radius:2px;margin-right:6px;vertical-align:middle}
 .src{font-size:11.5px;color:var(--muted);margin:0 0 20px}

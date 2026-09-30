@@ -38,7 +38,7 @@ DUR_EN = {"Var": "Available", "Kısmi": "Partial", "Yok": "Not available"}
 rows = []; bar = []
 for tk, (rk, uy, md) in sorted(R.items(), key=lambda i: -TM[i[0]]["v12"]):
     t = TM[tk]
-    rows.append([x(t["tr"], tema.META[tk]["en"]), cell(t["v12"]), n(yz(t["yoy"])), n(yz(t["uc_yil"])), '<span class="badge %s">%s</span>' % ({"Var": "b-var", "Kısmi": "b-kis", "Yok": "b-yok"}[t["durum"]], x(t["durum"], DUR_EN[t["durum"]])),
+    rows.append([x(t["tr"], tema.META[tk]["en"]), cellk(t["v12"]), n(yz(t["yoy"])), n(yz(t["uc_yil"])), '<span class="badge %s">%s</span>' % ({"Var": "b-var", "Kısmi": "b-kis", "Yok": "b-yok"}[t["durum"]], x(t["durum"], DUR_EN[t["durum"]])),
                  x(*rk), '<span class="badge %s">%s</span>' % (UY_CL[uy], x(uy, UY_EN[uy])), x(*md), '<div class="kwlist">%s</div>' % "".join(kw(w[0]) for w in t["top"][:3])])
 tbl = tablo([th("Tema", "Theme", "VitrA kataloğunda bulunmayan ya da sınırlı derinlikte bulunan ürün teması.", "Product theme absent from, or thin in, the VitrA catalogue."),
              th("Aylık talep", "Monthly demand", "Eyl 2025 - Ağu 2026 aylık ortalama arama hacmi; yazım varyantları tek sayılmıştır.", "Sep 2025 - Aug 2026 average monthly search volume; spelling variants counted once.", True),

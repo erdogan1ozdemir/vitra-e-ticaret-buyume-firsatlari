@@ -11,7 +11,7 @@ K2_EN = {"Balkon, Teras & Bahçe Karo Seramikleri": "Balcony, Terrace & Garden T
          "Armatür Tamamlayıcı Ürünleri": "Tap Accessories", "Tuvalet Fırçaları": "Toilet Brushes", "Duvar Karoları": "Wall Tiles", "Lavabo Dolapları": "Washbasin Units", "Banyo Aksesuar Setleri": "Bathroom Accessory Sets",
          "Bideler": "Bidets", "Banyo Aynaları": "Bathroom Mirrors", "Banyo Aksesuarları": "Bathroom Accessories", "Banyo Set Modülleri": "Bathroom Set Modules", "Tuvalet Kağıtlıkları": "Toilet Roll Holders",
          "Banyo Mobilya Tamamlayıcıları": "Bathroom Furniture Add-ons", "Duş Başlıkları": "Shower Heads", "Duş Tamamlayıcı Ürünleri": "Shower Accessories", "Banyo Dolapları": "Bathroom Cabinets", "Duş Setleri": "Shower Sets",
-         "Lavabolar": "Washbasins", "Klozet Kapakları": "Toilet Seats", "Gömme Rezervuarlar": "Concealed Cisterns", "Duşakabin": "Shower Enclosures", "Küvetler": "Bathtubs", "Eviye Bataryaları": "Kitchen Taps",
+         "Lavabolar": "Washbasins", "Klozet Kapakları": "Toilet Seats", "Gömme Rezervuarlar": "Concealed Cisterns", "Duşakabin": "Shower enclosure", "Küvetler": "Bathtubs", "Eviye Bataryaları": "Kitchen Taps",
          "Lavabo Bataryaları": "Basin Taps", "Banyo Bataryaları": "Bath Taps", "Ev İçi Zemin Karo Seramikleri": "Indoor Floor Tiles", "Porselen Karolar": "Porcelain Tiles", "Yer Karoları": "Floor Tiles",
          "Musluk ve Ara Musluklar": "Taps and Stop Valves", "Rezervuar Kumanda Panelleri": "Flush Plates", "Akıllı Klozet": "Smart WC", "Havluluklar": "Towel Rails", "Sabunluklar": "Soap Dispensers",
          "El Duşu Takımları": "Hand Shower Sets", "Bataryalı Duş Sistemleri": "Shower Systems with Mixer", "Duş Kolonları": "Shower Columns", "Pisuvarlar": "Urinals", "Eviyeler": "Kitchen Sinks",
@@ -23,6 +23,24 @@ K2_EN = {"Balkon, Teras & Bahçe Karo Seramikleri": "Balcony, Terrace & Garden T
 K2_EN.update({'Akıllı Klozet Seti': 'Smart WC Sets', 'Akıllı Kumanda Panelleri': 'Smart Flush Plates', 'Ankastre Bataryalar': 'Concealed Mixers', 'Ankastre Lavabo Bataryaları': 'Concealed Basin Mixers', 'Ankastre Stop Valfler': 'Concealed Stop Valves', 'Asma Klozet Takımları': 'Wall-hung WC Sets', 'Asma Klozetler': 'Wall-hung WCs', 'Asma Klozetler için Gömme Rezervuarlar': 'Concealed Cisterns for Wall-hung WCs', 'Aynalı Banyo Dolabı': 'Mirror Cabinets', 'Banyo Batarya Çıkış Uçları': 'Bath Spouts', 'Banyo Dolabı Kulpları': 'Cabinet Handles', 'Banyo Dolap Ayakları': 'Cabinet Feet', 'Banyo Konsolları': 'Bathroom Consoles', 'Banyo Malzemelikleri': 'Bathroom Caddies', 'Banyo Rafları': 'Bathroom Shelves', 'Banyo Tutunma Barları': 'Grab Bars', 'Duvar Önü Rezervuarlar': 'Exposed Cisterns', 'Duvardan Banyo Bataryaları': 'Wall-mounted Bath Mixers', 'Duş Dirsekleri': 'Shower Elbows', 'Duş Teknesi Panelleri': 'Shower Tray Panels', 'Duş Teknesi ve Küvet Ayakları': 'Shower Tray and Bathtub Feet', 'Düz Aynalar': 'Flat Mirrors', 'Etajerli Lavabolar': 'Washbasins with Shelf', 'Hidromasajlı Bağımsız Küvetler': 'Freestanding Whirlpool Baths', 'Hidromasajlı Standart Küvetler': 'Standard Whirlpool Baths', 'Hidromasajsız Bağımsız Küvetler': 'Freestanding Baths', 'Küvet Bataryaları': 'Bath Mixers', 'Küvet Panelleri': 'Bath Panels', 'Lavabo Sifon ve Süzgeçleri': 'Basin Siphons and Wastes', 'Makyaj Aynaları ve Diğer Aksesuarlar': 'Make-up Mirrors and Other Accessories', 'Monoblok Lavabolar': 'Monoblock Washbasins', 'Pisuvar Ara Bölmeleri': 'Urinal Dividers', 'Pisuvar Yıkama Sistemleri': 'Urinal Flush Systems', 'Rezervuar ve Klozet İç Takımları': 'Cistern and WC Inner Mechanisms', 'Sifonlar': 'Siphons', 'Standart Lavabo ve Ayakları': 'Standard Washbasins and Pedestals', 'Standart ve Gömme Küvetler': 'Standard and Built-in Baths', 'Sıva Altı ve Diğer Tamamlayıcılar': 'Concealed Bodies and Other Accessories', 'Taharet El Duşları': 'Bidet Hand Sprays', 'Takım Klozetler': 'Close-coupled WCs', 'Tek Armatür Delikli Lavabo Bataryaları': 'Single-hole Basin Mixers', 'Temassız Lavabo Bataryaları': 'Touchless Basin Mixers', 'Termostatik Bataryalar': 'Thermostatic Mixers', 'Tezgahaltı Lavabolar': 'Under-counter Washbasins', 'Tezgahüstü Lavabolar': 'Countertop Washbasins', 'Tuvalet Taşları için Gömme Rezervuarlar': 'Concealed Cisterns for Squat Toilets', 'VitrA Kaydırmaz': 'VitrA Anti-slip', 'Yarım Tezgah Lavabolar': 'Semi-recessed Washbasins', 'Yerden Tek Klozetler': 'Floor-standing WCs', 'Çamaşır Makinesi Dolapları': 'Washing Machine Cabinets', 'Çanak Lavabo Bataryaları': 'Bowl Basin Mixers', 'Çanak Lavabolar': 'Bowl Washbasins', 'İki veya Üç Delikli Lavabo Bataryaları': 'Two or Three-hole Basin Mixers'})
 def kat(k): return x(k, KAT_EN.get(k, k))
 def kat2(k): return x(k, K2_EN.get(k, k))
+
+def _kw_pop(filt, baslik_tr, baslik_en, ek_sutun=("Alt kategori", "Sub-category", "k2")):
+    lst = sorted([r for r in veri.KELIME if filt(r)], key=lambda r: -(r["a26"] or 0))[:50]
+    rows_ = []
+    for r in lst:
+        yoy_ = ((r["a26"] / r["a25"] - 1) * 100) if r.get("a25") else None
+        ek = r.get(ek_sutun[2]) or "-"
+        rows_.append([kw(r["kw"]), x(ek, K2_EN.get(ek, KAT_EN.get(ek, ek))) if ek != "-" else n("-"), cellk(r["a25"] or 0), cellk(r["a26"] or 0), n(yz(yoy_)) if yoy_ is not None else n("-")])
+    t_ = tablo([th("Arama kelimesi", "Search keyword", "Kategorideki kelime; 2026 aylık ortalamaya göre ilk 50.", "Keyword in the category; top 50 by 2026 monthly average."),
+                th(ek_sutun[0], ek_sutun[1], "Kelimenin bağlı olduğu grup.", "Group the keyword belongs to."),
+                th("2025 aylık ort.", "2025 monthly avg.", "Ocak - Ağustos 2025 aylık ortalama arama hacmi.", "Average monthly search volume, January - August 2025.", True),
+                th("2026 aylık ort.", "2026 monthly avg.", "Ocak - Ağustos 2026 aylık ortalama arama hacmi.", "Average monthly search volume, January - August 2026.", True),
+                th("YoY", "YoY", "2026 / 2025 aynı aylar yüzde değişimi.", "Percentage change, 2026 / 2025 same months.", True)], rows_, "uzun")
+    return pop(baslik_tr, baslik_en, t_, ikon=True)
+_TDIA = []
+def katp(k_):
+    b_, d_ = _kw_pop(lambda r: r["k1"] == k_, "%s: en yüksek hacimli 50 kelime" % k_, "%s: top 50 keywords by volume" % KAT_EN.get(k_, k_))
+    _TDIA.append(d_); return kat(k_) + b_
 toplam_yoy = (TOP["a26"] / TOP["a25"] - 1) * 100
 sira = sorted(K1, key=lambda k: -K1[k]["a26"])
 RENK = {"Banyo Mobilyaları": "#E85F36", "Vitrifiyeler": "#10332F", "Armatürler": "#2E7D32", "Yıkanma Alanları": "#F5A623", "Karo Seramik Ürünleri": "#7A8C89", "Banyo Aksesuarları": "#B96BC2", "Duşlar": "#4A90D9", "Rezervuarlar": "#8B5A2B"}
@@ -41,6 +59,30 @@ def yil_grafik(kk, etiket_tr, etiket_en):
     d = TY_["kategori"][kk]
     return cizgi([(str(y), YRENK[str(y)], d[str(y)]) for y in TY_["yillar"]], y_etiket=x(etiket_tr, etiket_en),
                  aylar=[a for a, _ in AYA], x_etiket=[a for a, _ in AYA], kalin={3: 3.2})
+
+# --- aylik seri Oca 2023 - Ağu 2026, yillara gore renkli, peak/base notlu ---
+AY23 = ["%d-%02d" % (y_, m_) for y_ in TY_["yillar"] for m_ in range(1, 13)]
+def _uzun(kk):
+    d = TY_["kategori"][kk]; return [v for y_ in TY_["yillar"] for v in d[str(y_)]]
+_son = max(i for i, v in enumerate(_uzun("Toplam")) if v is not None)
+AY23 = AY23[:_son + 1]
+x("peak", "peak"); x("base", "base")
+def _kisa(v):
+    r = k(v); x(r, r.replace(",", ".")); return r
+_ys, _nt = [], []
+for _j, _y in enumerate(TY_["yillar"]):
+    _d = TY_["kategori"]["Toplam"][str(_y)]
+    _s = [None] * len(AY23)
+    for _m, _v in enumerate(_d):
+        _i = _j * 12 + _m
+        if _v is not None and _i < len(AY23): _s[_i] = _v
+    _ys.append((str(_y), YRENK[str(_y)], _s))
+    _ix = [i for i, v in enumerate(_s) if v is not None]
+    _p = max(_ix, key=lambda i: _s[i]); _b = min(_ix, key=lambda i: _s[i])
+    for _i2, _tur, _yer in ((_p, "peak", "ust"), (_b, "base", "alt")):
+        _r = k(_s[_i2]); _nt.append((_j, _i2, x("%s %s" % (_r, _tur), "%s %s" % (_r.replace(",", "."), _tur)), _yer))
+GRAFIK = cizgi(_ys, yukseklik=270, y_etiket=x("Aylık arama hacmi · 2.420 kelime toplamı · yıllara göre renkli (peak: yılın en yüksek ayı, base: en düşük ayı)", "Monthly search volume · total of 2,420 keywords · coloured by year (peak: highest month of the year, base: lowest month)"), aylar=AY23, notlar=_nt, bagla=True)
+GRAFIK_K = cizgi([(kat(k_), RENK[k_], [None if v is None else v for v in _uzun(k_)][:len(AY23)]) for k_ in sira[:5]], y_etiket=x("Aylık arama hacmi · en büyük 5 kategori", "Monthly search volume · five largest categories"), aylar=AY23)
 _SEKME_NO = [0]
 def sekmeler(parcalar, sinif=""):
     """parcalar: [(tr, en, html)] -> .tabs dugmeleri + paneller (ilk acik)."""
@@ -48,26 +90,28 @@ def sekmeler(parcalar, sinif=""):
     b = "".join('<button type="button" role="tab" id="tt%d-%d" aria-controls="tp%d-%d" aria-selected="%s">%s</button>' % (n_, i_, n_, i_, "true" if i_ == 0 else "false", x(tr, en)) for i_, (tr, en, _) in enumerate(parcalar))
     p_ = "".join('<div role="tabpanel" id="tp%d-%d" aria-labelledby="tt%d-%d"%s>%s</div>' % (n_, i_, n_, i_, "" if i_ == 0 else " hidden", h) for i_, (_, _, h) in enumerate(parcalar))
     return '<div class="tabs %s" role="tablist">%s</div>%s' % (sinif, b, p_)
-GRAFIK = sekmeler([("Aylık seri · Eyl 2024 - Ağu 2026", "Monthly series · Sep 2024 - Aug 2026", GRAFIK),
+GRAFIK = sekmeler([("Aylık seri · Oca 2023 - Ağu 2026", "Monthly series · Jan 2023 - Aug 2026", GRAFIK),
                    ("Yıl yıl · 2023 - 2026", "Year on year · 2023 - 2026", yil_grafik("Toplam", "Aylık arama hacmi · 2.420 kelime toplamı, yıllar üst üste (2026: Oca - Ağu)", "Monthly search volume · total of 2,420 keywords, years overlaid (2026: Jan - Aug)"))], "gtabs")
 _YK = sekmeler([(kk, KAT_EN.get(kk, kk), yil_grafik(kk, "Aylık arama hacmi · %s, yıllar üst üste" % kk, "Monthly search volume · %s, years overlaid" % KAT_EN.get(kk, kk))) for kk in sira], "gtabs ic")
 GRAFIK_K = sekmeler([("Aylık seri · en büyük 5 kategori", "Monthly series · five largest categories", GRAFIK_K),
                      ("Yıl yıl · kategori seçimi", "Year on year · choose a category", _YK)], "gtabs")
 BAR = barlar([(_q, K1[_q]["yoy"], "#2E7D32" if K1[_q]["yoy"] > 0 else "#D32F2F") for _q in sorted(K1, key=lambda q: -K1[q]["yoy"])])
 for _kk in K1: kat(_kk)
-tbl = tablo([th("Kategori", "Category", "VitrA kategori ağacındaki ana kategori; 2.420 kelime 8 ana kategoriye dağıtılmıştır.", "Main category in the VitrA category tree; 2,420 keywords are distributed across 8 main categories."),
+tbl = tablo([th("Kategori", "Category", "VitrA kategori ağacındaki ana kategori; 2.420 kelime 8 ana kategoriye dağıtılmıştır. Ok simgesi kategorideki en yüksek hacimli 50 kelimeyi açar.", "Main category in the VitrA category tree; 2,420 keywords are distributed across 8 main categories."),
              th("Kelime", "Keywords", "Kategoriye atanan kelime sayısı.", "Number of keywords assigned to the category.", True),
              th("2025 aylık ort.", "2025 monthly avg.", "Ocak - Ağustos 2025 aylık ortalama arama hacmi (kategorideki kelimelerin toplamı, aya bölünmüş), Google Keyword Planner, Türkiye.", "Average monthly search volume for January - August 2025 (sum of the category's keywords, divided by months), Google Keyword Planner, Turkey.", True),
              th("2026 aylık ort.", "2026 monthly avg.", "Ocak - Ağustos 2026 aylık ortalama arama hacmi; aynı takvim aylarını kapsar.", "Average monthly search volume for January - August 2026; covers the same calendar months.", True),
              th("YoY", "YoY", "İki pencere arasındaki yüzde değişim; mevsimsellikten arındırılmıştır.", "Percentage change between the two windows; seasonally aligned.", True),
              th("Pay", "Share", "Kategorinin 2026 penceresindeki toplam hacim içindeki payı.", "The category's share of total volume in the 2026 window.", True)],
-            [[kat(k), cell(K1[k]["n"]), cell(K1[k]["a25"]), cell(K1[k]["a26"]), n(yz(K1[k]["yoy"])), n(yzd(100 * K1[k]["a26"] / TOP["a26"]))] for k in sira] +
-            [["<b>%s</b>" % kat("Toplam"), n("<b>%s</b>" % bin(TOP["n"])), n("<b>%s</b>" % bin(TOP["a25"])), n("<b>%s</b>" % bin(TOP["a26"])), n(yz(toplam_yoy)), n("%100")]])
+            [[katp(k), cell(K1[k]["n"]), cellk(K1[k]["a25"]), cellk(K1[k]["a26"]), n(yz(K1[k]["yoy"])), n(yzd(100 * K1[k]["a26"] / TOP["a26"]))] for k in sira] +
+            [["<b>%s</b>" % kat("Toplam"), n("<b>%s</b>" % bin(TOP["n"])), cellk(TOP["a25"]), cellk(TOP["a26"]), n(yz(toplam_yoy)), n("%100")]])
 def k2rows(liste):
     out = []
     for key, a26, yoy in liste:
         k1, k2 = key.split("|"); v = K2[key]
-        out.append([kat(k1), kat2(k2), cell(v["n"]), cell(v["a25"]), cell(a26), n(yz(yoy))])
+        b_, d_ = _kw_pop(lambda r, k1=k1, k2=k2: r["k1"] == k1 and r["k2"] == k2, "%s: en yüksek hacimli kelimeler" % k2, "%s: top keywords by volume" % K2_EN.get(k2, k2), ("Alt-alt kategori", "Sub-sub-category", "k3"))
+        _TDIA.append(d_)
+        out.append([kat(k1), kat2(k2) + b_, cell(v["n"]), cellk(v["a25"]), cellk(a26), n(yz(yoy))])
     return out
 bas2 = [th("Ana kategori", "Main category", "Alt kategorinin bağlı olduğu ana kategori.", "Main category the sub-category belongs to."),
         th("Alt kategori", "Sub-category", "VitrA kategori ağacındaki alt kategori.", "Sub-category in the VitrA category tree."),
@@ -113,6 +157,7 @@ HTML = """
  x("Daralan alt kategoriler", "Contracting sub-categories"), tablo(bas2, k2rows(A["k2_dusen"]), "dar"),
  insight("Büyüyen alt kategoriler üç örüntü taşımaktadır: (1) zorunlu değişim ürünleri (Klozetler %s), (2) dış mekan ve banyo karosu gibi tadilatın görünür yüzeyleri (Balkon-Teras Karoları %s, Banyo Karoları %s), (3) tezgah ve duş kanalı gibi tamamlayıcı ürünler. Daralan tarafta ise Lavabo Dolapları (%s), Banyo Aynaları (%s) ve Aksesuar Setleri (%s) gibi \"mobilya ve estetik\" ürünler yer almaktadır. E-ticaret kanalı için bu ayrım, kampanya ve set kurgusunun hangi kategoride talebi yakalayacağını göstermektedir: klozet ve rezervuar tarafında talep hazırdır; mobilya tarafında talebin kampanya ve içerikle oluşturulması gerekmektedir." % (yz(kloz["yoy"]), yz(K2["Karo Seramik Ürünleri|Balkon, Teras & Bahçe Karo Seramikleri"]["yoy"]), yz(bk["yoy"]), yz(ld["yoy"]), yz(K2["Banyo Mobilyaları|Banyo Aynaları"]["yoy"]), yz(K2["Banyo Aksesuarları|Banyo Aksesuar Setleri"]["yoy"])),
          "The growing sub-categories carry three patterns: (1) mandatory replacement products (WCs %s), (2) the visible surfaces of a refit such as outdoor and bathroom tiles (Balcony-Terrace Tiles %s, Bathroom Tiles %s), (3) complementary products such as countertops and shower channels. On the contracting side sit \"furniture and aesthetics\" products such as Washbasin Units (%s), Bathroom Mirrors (%s) and Accessory Sets (%s). For the e-commerce channel this distinction shows where campaign and set design will capture demand: on the WC and cistern side demand is ready; on the furniture side demand needs to be created through campaigns and content." % (yz(kloz["yoy"]), yz(K2["Karo Seramik Ürünleri|Balkon, Teras & Bahçe Karo Seramikleri"]["yoy"]), yz(bk["yoy"]), yz(ld["yoy"]), yz(K2["Banyo Mobilyaları|Banyo Aynaları"]["yoy"]), yz(K2["Banyo Aksesuarları|Banyo Aksesuar Setleri"]["yoy"])), "D1"),
- kaynak("Google Ads Keyword Planner · Türkiye, Türkçe · 2.420 kelime · aylık hacim Eyl 2024 - Ağu 2026 · kategori eşlemesi Inbound kelime araştırması (2025)",
-        "Google Ads Keyword Planner · Turkey, Turkish · 2,420 keywords · monthly volume Sep 2024 - Aug 2026 · category mapping from Inbound keyword research (2025)", "D1", "D11"),
-)
+ kaynak("Google Ads Keyword Planner · Türkiye, Türkçe · 2.420 kelime · aylık hacim Oca 2023 - Ağu 2026 · kategori eşlemesi Inbound kelime araştırması (2025)",
+        "Google Ads Keyword Planner · Turkey, Turkish · 2,420 keywords · monthly volume Jan 2023 - Aug 2026 · category mapping from Inbound keyword research (2025)", "D1", "D11"),
+) + "".join(_TDIA)
+

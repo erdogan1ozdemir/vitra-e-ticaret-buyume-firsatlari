@@ -66,10 +66,14 @@ def metin(el):
     return " ".join(el.get_text(" ").split())
 # --- bolumler -> sekmeler ---
 say = 0
+def hucre(td):
+    dv = td.select_one("[data-v]")
+    if dv is not None and td.get_text(" ", strip=True) == dv.get_text(" ", strip=True): return dv["data-v"]
+    return metin(td)
 for sec in S.select("main section"):
     sid = sec.get("id"); h2 = sec.find("h2"); bas = metin(h2).split(" ", 1)[1] if h2 else sid
     if sid in ("kaynakca", "sozluk"): continue
-    tablolar = sec.select("div.tw table")
+    tablolar = [t_ for t_ in sec.select("div.tw table") if not t_.find_parent("dialog")]
     if not tablolar: continue
     src = sec.select_one("p.src"); kaynak = metin(src) if src else ""
     lede = sec.select_one("p.lede"); lede_t = metin(lede) if lede else ""
@@ -79,7 +83,7 @@ for sec in S.select("main section"):
         aciklama = ["%s: %s" % (metin(th), th.get("data-t", "")) for th in t.select("thead th") if th.get("data-t")]
         rows = []
         for tr in t.select("tbody tr"):
-            rows.append([metin(td) for td in tr.select("td")])
+            rows.append([hucre(td) for td in tr.select("td")])
         notlar = ["Bölüm: %s%s" % (bas, (" · " + alt) if alt else "")]
         if lede_t: notlar.append("Kapsam: " + lede_t)
         if kaynak: notlar.append(kaynak)

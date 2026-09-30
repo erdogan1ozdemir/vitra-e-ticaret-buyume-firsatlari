@@ -22,6 +22,20 @@ tbl = tablo([th("Grup", "Group", "Aramanın niyet grubu.", "Intent group of the 
              th("Toplam izlenme", "Total views", "İlk sayfadaki videoların toplam izlenmesi; kategorideki ilgiyi gösterir.", "Total views of the first-page videos; indicates interest in the category.", True),
              th("VitrA kanalı sırası", "VitrA channel positions", "VitrA Türkiye veya VitrA Bathrooms kanalına ait videoların sonuçtaki sıraları; \"-\" hiç yok demektir.", "Positions of videos belonging to the VitrA Türkiye or VitrA Bathrooms channel; \"-\" means none.", True),
              th("1. sıradaki video", "Video ranked 1st", "İlk sonuç, kanal ve izlenme.", "First result, channel and views.")], rows, "uzun")
+import json as _json, os as _os
+_AH = _json.load(open(_os.path.join(veri.V, "ham", "autocomplete_hacim.json"), encoding="utf-8"))["kelime"]
+prow = []
+for gtr, gen, qs in GRUP:
+    for q in qs:
+        v = Y[q]; vr = v["vitra"]; h = (_AH.get(q) or {}).get("ort2026"); tp = v["top"][0] if v.get("top") else None
+        prow.append([kw(q), x(gtr, gen), cell(round(h)) if h else n("-"), cell(v["n"]), cell(v["toplam_g"]), n(", ".join(str(i) for i in vr[:6]) if vr else "-"),
+                     veri_m(" ".join(tp[1].split()) if tp else "-"), cell(tp[2] or 0) if tp else n("-")])
+_PT = tablo([th("Arama ifadesi", "Search phrase", "YouTube'da aranan ifade.", "Phrase searched on YouTube."), th("Grup", "Group", "Aramanın niyet grubu.", "Intent group of the search."),
+             th("Google aylık hacim", "Google monthly volume", "Aynı ifadenin Google'daki Ocak - Ağustos 2026 aylık ortalama arama hacmi (Google Ads); \"-\" hacim dönmedi.", "Average monthly Google search volume for the same phrase, January - August 2026 (Google Ads); \"-\" no volume returned.", True),
+             th("YouTube sonuç", "YouTube results", "İlk sayfadaki video sayısı.", "Videos on the first page.", True), th("Toplam izlenme", "Total views", "İlk sayfadaki videoların toplam izlenmesi.", "Total views of first-page videos.", True),
+             th("VitrA kanalı sırası", "VitrA channel positions", "VitrA videolarının sonuçtaki sıraları; \"-\" yok.", "Positions of VitrA videos in the results; \"-\" none.", True),
+             th("1. sıradaki kanal", "Channel ranked 1st", "İlk sonucun kanalı.", "Channel of the first result."), th("1. video izlenme", "1st video views", "İlk sonucun izlenmesi.", "Views of the first result.", True)], prow, "uzun")
+_POP30, _DIA30 = pop("30 YouTube arama ifadesi: Google hacmi, izlenme ve VitrA'nın yeri", "30 YouTube search phrases: Google volume, views and VitrA's place", _PT, "30 arama ifadesini gör", "See the 30 search phrases")
 ktot_v = sum(v for _, _, v in YK)
 rows2 = [[veri_m(kanal), cell(n_), cell(v)] for kanal, n_, v in YK[:12]]
 tbl2 = tablo([th("Kanal", "Channel", "YouTube kanalı.", "YouTube channel."),
@@ -30,6 +44,7 @@ tbl2 = tablo([th("Kanal", "Channel", "YouTube kanalı.", "YouTube channel."),
 macit = Y["vitra gömme klozet su kaçırıyor"]["top"][0]
 HTML = """
 <p class="lede">%s</p>
+<p class="popl">%s</p>
 <div class="metrics">%s%s%s%s</div>
 %s
 <h3>%s</h3>
@@ -43,6 +58,7 @@ HTML = """
 """ % (
  x("YouTube, montaj ve tamir gibi \"nasıl yapılır\" ihtiyaçlarında Google aramasının önüne geçen bir kanaldır. 30 arama ifadesi için Türkiye sonuçlarının ilk sayfası alınmış; VitrA kanalının hangi aramalarda görünür olduğu ve kimlerin görünür olduğu incelenmiştir.",
    "YouTube is a channel that overtakes Google search for \"how to\" needs such as installation and repair. The first page of Turkey results was collected for 30 search phrases; which searches the VitrA channel is visible in, and who else is visible, were examined."),
+ _POP30,
  metric("VitrA Türkiye kanalı", "VitrA Türkiye channel", "%d" % YK[0][1], "30 aramanın ilk sayfalarında %d video, %s izlenme; kategoride en görünür kanal" % (YK[0][1], k(YK[0][2])), "%d videos on the first pages of 30 searches, %s views; the most visible channel in the category" % (YK[0][1], k(YK[0][2]))),
  metric("Tamir aramalarında VitrA", "VitrA in repair searches", "0", "\"rezervuar su kaçırıyor\", \"klozet su kaçırıyor\", \"gömme rezervuar tamiri\", \"klozet tıkanıklığı\": VitrA videosu yok", "\"cistern leaking\", \"WC leaking\", \"concealed cistern repair\", \"WC blockage\": no VitrA video"),
  metric("Tamir aramalarının toplam izlenmesi", "Total views of repair searches", k(sum(Y[q]["toplam_g"] for q in GRUP[3][2] + GRUP[1][2])), "Altı tamir aramasının ilk sayfalarındaki videoların toplam izlenmesi", "Total views of first-page videos across six repair searches"),
@@ -60,6 +76,7 @@ HTML = """
                                        ("at", "Mevcut 71 videonun açıklamalarında ürün, montaj hizmeti ve yedek parça bağlantısı bulunup bulunmadığı gözden geçirilebilir", "The descriptions of the existing 71 videos can be reviewed for product, installation service and spare-part links"),
                                        ("at", "\"en iyi klozet markası\" aramasında VitrA 1. sırada (%s izlenme); bu videonun satın alma sayfasına bağlanması değerlendirilebilir" % k(Y["en iyi klozet markası"]["top"][0][2]), "VitrA ranks 1st for \"en iyi klozet markası\" (%s views); linking this video to the purchase page can be considered" % k(Y["en iyi klozet markası"]["top"][0][2]))])),
  kaynak("YouTube arama sonuçları · 30 ifade · Türkiye · ilk sayfa · %s" % veri.TARIH, "YouTube search results · 30 phrases · Turkey · first page · %s" % veri.TARIH, "D4"),
-)
+) + _DIA30
+
 from b_youtube_derin import EK as _EK
 HTML = HTML + _EK

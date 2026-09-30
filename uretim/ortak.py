@@ -75,6 +75,12 @@ def _hacim(s):
         except Exception: _AH = {}
     v = _AH.get(s) or _AH.get(s.lower())
     return v.get("ort2026") if v else None
+def cellk(v):
+    """Hacim hucresi: ekranda yuvarlanmis (21,6K), kopyalama ve Excel'de tam sayi (data-v)."""
+    v = round(v or 0)
+    if v < 1000: return cell(v)
+    r = k(v); x(r, r.replace(",", "."))
+    return n('<span class="kh" data-v="%d">%s</span>' % (v, r))
 def kwv(s):
     """Arama kelimesi + 2026 aylik ortalama hacim rozeti (Oca-Agu 2026, Google Ads)."""
     x(s, s); h = _hacim(s)
@@ -114,3 +120,17 @@ SB = _J("islenmis", "ssg_bm.json"); YK = _J("islenmis", "yeni_kategori.json"); K
 HZ = _J("ham", "hizmet", "vitra_hizmetler.json")
 def f1(v):
     return ("%.1f" % v).replace(".", ",")
+
+# ---------------------------------------------------------------- acilir pencere (kelime listeleri vb.)
+_POP_NO = [0]
+x("×", "×"); x("↗", "↗")
+def pop(baslik_tr, baslik_en, icerik, etiket_tr=None, etiket_en=None, ikon=False):
+    """Dugme + <dialog>. etiket verilirse metinli dugme, ikon=True ise yalniz ok simgeli kucuk dugme."""
+    _POP_NO[0] += 1; pid = "pop%d" % _POP_NO[0]
+    if ikon:
+        dug = '<button type="button" class="popb ic" data-pop="%s" aria-label="%s" title="%s">↗</button>' % (pid, x(baslik_tr, baslik_en), baslik_tr)
+    else:
+        dug = '<button type="button" class="popb" data-pop="%s">%s <span aria-hidden="true">↗</span></button>' % (pid, x(etiket_tr, etiket_en))
+    dia = ('<dialog class="popd" id="%s"><div class="pophd"><b>%s</b><button type="button" class="popx" aria-label="%s">×</button></div>'
+           '<div class="popbd">%s</div></dialog>') % (pid, x(baslik_tr, baslik_en), x("Kapat", "Close"), icerik)
+    return dug, dia

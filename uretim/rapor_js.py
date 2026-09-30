@@ -159,7 +159,7 @@ document.documentElement.classList.add('js');
       function cevir(){
         var k=parseInt(l.getAttribute('data-k'),10); gizli[k]=!gizli[k];
         l.classList.toggle('off',!!gizli[k]); l.setAttribute('aria-pressed',gizli[k]?'false':'true');
-        var yol=svg.querySelector('path.sr[data-k="'+k+'"]'); if(yol) yol.style.display=gizli[k]?'none':'';
+        [].forEach.call(svg.querySelectorAll('.sr[data-k="'+k+'"], .an[data-k="'+k+'"]'),function(yol){yol.style.display=gizli[k]?'none':'';});
         if(hp[k]) hp[k].style.display='none';
       }
       l.addEventListener('click',cevir);
@@ -184,11 +184,13 @@ document.documentElement.classList.add('js');
           var rz=z.getBoundingClientRect();
           kx=rz.left+rz.width/2; ky=rz.top;
         } else {
-          icerik='<span class="tt-b">'+kac(d.aylar[i])+'</span>';
+          var ayy=String(d.aylar[i]), mm=ayy.match(/^(\d{4})-(\d{2})$/);
+          if(mm){var AT=['Oca','Şub','Mar','Nis','May','Haz','Tem','Ağu','Eyl','Eki','Kas','Ara'], AE=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']; ayy=(ingilizce()?AE:AT)[parseInt(mm[2],10)-1]+' '+mm[1];}
+          icerik='<span class="tt-b">'+kac(ayy)+'</span>';
           var enUst=null;
           for(var k=0;k<d.seriler.length;k++){
             var se=d.seriler[k], v=se.deger[i];
-            if(gizli[k]){ if(hp[k]) hp[k].style.display='none'; continue; }
+            if(gizli[k] || v===null || v===undefined){ if(hp[k]) hp[k].style.display='none'; continue; }
             icerik+='<span class="tt-r"><i style="background:'+se.renk+'"></i>'
                   + '<span>'+kac(se.ad)+'</span><span class="tt-n">'+say(v)+'</span></span>';
             if(se.py[i]!==null && (enUst===null || se.py[i]<enUst)) enUst=se.py[i];
@@ -303,6 +305,16 @@ document.documentElement.classList.add('js');
   if(location.hash){var h=location.hash.slice(1);setTimeout(function(){git(h);},80);}
 })();
 
+/* acilir pencereler */
+(function(){
+  [].forEach.call(document.querySelectorAll('.popb[data-pop]'),function(b){
+    b.addEventListener('click',function(){var d=document.getElementById(b.getAttribute('data-pop')); if(d&&d.showModal){d.showModal();}});
+  });
+  [].forEach.call(document.querySelectorAll('dialog.popd'),function(d){
+    var x=d.querySelector('.popx'); if(x) x.addEventListener('click',function(){d.close();});
+    d.addEventListener('click',function(e){ if(e.target===d) d.close(); });
+  });
+})();
 /* tablolar: sutun basligina tiklayinca siralama, tablo ustunde kopyalama dugmesi */
 (function(){
   function en(){return document.documentElement.getAttribute('data-dil')==='en';}
@@ -318,7 +330,7 @@ document.documentElement.classList.add('js');
     var k={K:1e3,M:1e6,B:1e9}[(m[2]||'').toUpperCase()]||1;
     return (neg?-v:v)*k;
   }
-  function metin(td){return (td.innerText||td.textContent||'').replace(/\s+/g,' ').trim();}
+  function metin(td){var dv=td.querySelector&&td.querySelector('[data-v]'); if(dv && td.querySelectorAll('[data-v]').length===1 && td.innerText.trim()===dv.innerText.trim()) return dv.getAttribute('data-v'); return (td.innerText||td.textContent||'').replace(/\s+/g,' ').trim();}
   function sirala(tbl,idx,yon){
     var tb=tbl.tBodies[0]; if(!tb)return;
     var rows=[].slice.call(tb.rows);

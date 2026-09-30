@@ -50,10 +50,10 @@ def T(t):
     """Glossary terimini span'a alir."""
     return '<span class="term" data-term="%s">%s</span>' % (GLOSSARY[t].replace('"', "&quot;"), t)
 
-def cizgi(seriler, yukseklik=250, genislik=880, y_etiket="Aylık arama hacmi", aylar=None, x_etiket=None, kalin=None):
+def cizgi(seriler, yukseklik=250, genislik=880, y_etiket="Aylık arama hacmi", aylar=None, x_etiket=None, kalin=None, notlar=None, bagla=False):
     """seriler: [(ad, renk, [degerler])] - aylar listesiyle hizali."""
     aylar = aylar if aylar is not None else veri.AYLAR
-    sol, sag, ust, alt = 58, 14, 16, 34
+    sol, sag, ust, alt = 58, 14, (30 if notlar else 16), 34
     iw = genislik - sol - sag; ih = yukseklik - ust - alt
     tum = [v for _, _, s in seriler for v in s if v is not None]
     ymax = max(tum) * 1.08; ymin = 0
@@ -81,6 +81,16 @@ def cizgi(seriler, yukseklik=250, genislik=880, y_etiket="Aylık arama hacmi", a
             if v is None: continue
             d.append(("M" if not d else "L") + "%.1f %.1f" % (X(i), Y(v)))
         p.append('<path class="sr" data-k="%d" d="%s" fill="none" stroke="%s" stroke-width="%s" stroke-linejoin="round"/>' % (sk, " ".join(d), renk, (kalin or {}).get(sk, 2.2)))
+        if bagla and sk > 0:
+            i0 = next((i for i, v in enumerate(s) if v is not None), None)
+            onc = seriler[sk - 1][2]
+            if i0 and onc[i0 - 1] is not None:
+                p.append('<path class="sr" data-k="%d" d="M%.1f %.1f L%.1f %.1f" fill="none" stroke="%s" stroke-width="%s" stroke-dasharray="3 3"/>' % (sk, X(i0 - 1), Y(onc[i0 - 1]), X(i0), Y(s[i0]), renk, (kalin or {}).get(sk, 2.2)))
+    # peak / base notlari: (seri, indeks, metin, 'ust'|'alt')
+    for sk, i, metin, yer in (notlar or []):
+        v = seriler[sk][2][i]; renk = seriler[sk][1]
+        yy = Y(v) - 9 if yer == "ust" else Y(v) + 17
+        p.append('<g class="an" data-k="%d"><circle cx="%.1f" cy="%.1f" r="3.2" fill="%s"/><text class="anl" x="%.1f" y="%.1f" text-anchor="%s" fill="%s">%s</text></g>' % (sk, X(i), Y(v), renk, X(i) + (-4 if i == 0 else (4 if i == n - 1 else 0)), yy, "start" if i == 0 else ("end" if i == n - 1 else "middle"), renk, metin))
     # imlec cizgisi ve nokta isaretleri (JS ile konumlanir)
     p.append('<line class="hx" x1="0" y1="%d" x2="0" y2="%.1f" style="display:none"/>' % (ust, ust + ih))
     for _ in seriler:

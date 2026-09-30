@@ -101,7 +101,7 @@ def _vurgu(t, en=False):
     parca = _ETIKET.split(t); etk = _ETIKET.findall(t); out = []
     ust = _UST_EN if en else _UST_TR
     for i, p_ in enumerate(parca):
-        p_ = _MARKA.sub(lambda m: '<b class="mk">%s</b>' % m.group(1), p_)
+        p_ = _MARKA.sub(lambda m: '<b class="mb">%s</b>' % m.group(1), p_)
         p_ = ust.sub(lambda m: '<span class="hl">%s</span>' % m.group(1), p_)
         out.append(p_)
         if i < len(etk): out.append(etk[i])

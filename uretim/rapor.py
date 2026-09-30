@@ -130,6 +130,15 @@ CSS_SON = """
 .tabs.gtabs.ic button{font-size:11.5px;padding:4px 10px}
 .fnote .fc{display:block;margin:0 0 4px}
 .fnote h3,.kpi h3,.step h3,.box h3{display:block;background:none;padding:0}
+.popb{font:inherit;font-size:12px;color:var(--coral-deep);background:var(--coral-tint);border:1px solid transparent;border-radius:14px;padding:2px 10px;cursor:pointer;margin-left:6px;white-space:nowrap}
+.popb:hover,.popb:focus-visible{border-color:var(--coral-deep)}
+.popb.ic{padding:0 6px;font-size:11px;line-height:1.5;margin-left:6px;vertical-align:1px}
+dialog.popd{width:min(1100px,94vw);max-height:86vh;padding:0;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink);box-shadow:0 20px 60px rgba(0,0,0,.25)}
+dialog.popd::backdrop{background:rgba(16,51,47,.45)}
+.pophd{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 16px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--card);z-index:3}
+.popx{font:inherit;font-size:20px;line-height:1;background:none;border:0;color:var(--muted);cursor:pointer;padding:0 4px}
+.popbd{padding:12px 16px 16px;overflow:auto;max-height:calc(86vh - 52px)}
+.popbd .tw.uzun{max-height:none}
 .legend .lg-t{cursor:pointer;user-select:none;border-radius:4px;padding:1px 4px}
 .legend .lg-t:hover{color:var(--ink)}
 .legend .lg-t:focus-visible{outline:2px solid var(--coral);outline-offset:1px}
@@ -147,10 +156,10 @@ h3{display:inline-block;padding:1px 10px 1px 0;border-radius:2px;background:line
 .two h3{display:inline-block}
 .h3n{max-width:none}
 /* vurgu */
-b.mk{font-weight:650;color:var(--ink)}
+b.mb{font-weight:650;color:var(--ink)}
 .hl{color:var(--coral-deep);font-weight:650}
 /* kelime hacim rozeti */
-.kwlist .kw .kv{font-style:normal;font-size:10.5px;margin-left:7px;padding:0 5px;border-radius:4px;background:var(--coral-tint);color:var(--coral-deep);font-weight:650;font-family:"Segoe UI",Arial,sans-serif}
+.kw .kv{display:inline-block;white-space:nowrap;font-style:normal;font-size:10.5px;margin-left:8px;padding:0 5px;border-radius:4px;background:var(--coral-tint);color:var(--coral-deep);font-weight:650;font-family:"Segoe UI",Arial,sans-serif}
 /* tablo araclari */
 .tbox{margin:0 0 14px}
 .tbox .tw{margin:0}

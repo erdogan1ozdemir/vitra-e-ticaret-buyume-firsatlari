@@ -18,7 +18,7 @@ sira = sorted(NI, key=lambda k: -NI[k]["a26"]); tot26 = sum(NI[k]["a26"] for k i
 rows = []
 for nm in sira:
     v = NI[nm]; ex = ", ".join(kw(kw_) for kw_, _ in OR[nm][:4])
-    rows.append([niy(nm), x(*N_AC[nm]), cell(v["n"]), cell(v["a26"]), n(yzd(100 * v["a26"] / tot26)), n(yz(v["yoy"])), '<div class="kwlist">%s</div>' % ex])
+    rows.append([niy(nm), x(*N_AC[nm]), cell(v["n"]), cellk(v["a26"]), n(yzd(100 * v["a26"] / tot26)), n(yz(v["yoy"])), '<div class="kwlist">%s</div>' % ex])
 tbl = tablo([th("İhtiyaç sınıfı", "Need class", "Kelimenin taşıdığı ihtiyaç; ifade kalıplarına göre sınıflandırılmıştır, markalı kelimeler dışarıda tutulmuştur.", "The need carried by the keyword; classified by phrase patterns, branded keywords excluded."),
              th("Tanım", "Definition", "Sınıfa giren ifade kalıpları.", "Phrase patterns included in the class."),
              th("Kelime", "Keywords", "Sınıftaki kelime sayısı.", "Number of keywords in the class.", True),
@@ -31,7 +31,7 @@ cols = ["Fiyat", "Tasarım ve fikir", "Seçim ve karşılaştırma", "Ölçü ve
 rows2 = []
 for kk in kats:
     tk = sum(v["a26"] for key, v in NK.items() if key.startswith(kk + "|"))
-    r = [kat(kk), cell(tk)]
+    r = [kat(kk), cellk(tk)]
     for c in cols:
         v = NK.get(kk + "|" + c, {"a26": 0})["a26"]
         r.append(n(yzd(100 * v / tk) if v else "-"))

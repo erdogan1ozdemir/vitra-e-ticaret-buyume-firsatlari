@@ -12,7 +12,7 @@ def k3rows(seg, lim):
     out = []
     for key, v in sorted([(k, v) for k, v in K3.items() if k.startswith(seg + "|")], key=lambda i: -i[1]["p3"])[:lim]:
         _, k2, k3 = key.split("|")
-        out.append([kat2(k2), kat2(k3) if k3 != k2 else x("Genel", "General"), cell(v["p0"]), cell(v["p3"]), n(yz(v["uc"])), n(yz(v["yoy"]))])
+        out.append([kat2(k2), kat2(k3) if k3 != k2 else x("Genel", "General"), cellk(v["p0"]), cellk(v["p3"]), n(yz(v["uc"])), n(yz(v["yoy"]))])
     return out
 BAS = [th("Alt kategori", "Sub-category", "VitrA kategori ağacındaki alt kategori.", "Sub-category in the VitrA category tree."),
        th("Ürün tipi", "Product type", "Alt kategorinin altındaki ürün tipi; \"Genel\" alt kategori adıyla yapılan aramalardır.", "Product type under the sub-category; \"General\" is searches made with the sub-category name."),
@@ -31,7 +31,7 @@ def ozrows(o, secim):
     out = []
     for z in o["ozellik"]:
         if z["ad"] not in secim or not z["v12"]: continue
-        out.append([x(z["grup"], OZ_EN[z["grup"]]), x(z["ad"], OZ_EN[z["ad"]]), cell(z["v12"]), n(yzd(z["pay"])), n(yz(z["yoy"])), '<div class="kwlist">%s</div>' % "".join(kw(k_) for k_ in z["ornek"][:3])])
+        out.append([x(z["grup"], OZ_EN[z["grup"]]), x(z["ad"], OZ_EN[z["ad"]]), cellk(z["v12"]), n(yzd(z["pay"])), n(yz(z["yoy"])), '<div class="kwlist">%s</div>' % "".join(kw(k_) for k_ in z["ornek"][:3])])
     return out
 OBAS = [th("Boyut", "Dimension", "Arama ifadesinde geçen özellik grubu.", "Attribute group appearing in the search phrase."),
         th("Arama özelliği", "Search attribute", "İfadede geçen özellik; bir kelime birden fazla özelliğe girebilir.", "Attribute in the phrase; a keyword can fall into more than one attribute."),
