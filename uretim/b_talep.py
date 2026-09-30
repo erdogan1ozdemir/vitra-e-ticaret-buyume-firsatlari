@@ -32,8 +32,8 @@ BAR = barlar([(_q, K1[_q]["yoy"], "#2E7D32" if K1[_q]["yoy"] > 0 else "#D32F2F")
 for _kk in K1: kat(_kk)
 tbl = tablo([th("Kategori", "Category", "VitrA kategori ağacındaki ana kategori; 2.420 kelime 8 ana kategoriye dağıtılmıştır.", "Main category in the VitrA category tree; 2,420 keywords are distributed across 8 main categories."),
              th("Kelime", "Keywords", "Kategoriye atanan kelime sayısı.", "Number of keywords assigned to the category.", True),
-             th("Oca-Ağu 2025", "Jan-Aug 2025", "Ocak - Ağustos 2025 aylık ortalama arama hacmi toplamı, Google Keyword Planner, Türkiye.", "Sum of average monthly search volume for January - August 2025, Google Keyword Planner, Turkey.", True),
-             th("Oca-Ağu 2026", "Jan-Aug 2026", "Ocak - Ağustos 2026 aylık ortalama arama hacmi toplamı; aynı takvim aylarını kapsar.", "Sum of average monthly search volume for January - August 2026; covers the same calendar months.", True),
+             th("2025 aylık ort.", "2025 monthly avg.", "Ocak - Ağustos 2025 aylık ortalama arama hacmi (kategorideki kelimelerin toplamı, aya bölünmüş), Google Keyword Planner, Türkiye.", "Average monthly search volume for January - August 2025 (sum of the category's keywords, divided by months), Google Keyword Planner, Turkey.", True),
+             th("2026 aylık ort.", "2026 monthly avg.", "Ocak - Ağustos 2026 aylık ortalama arama hacmi; aynı takvim aylarını kapsar.", "Average monthly search volume for January - August 2026; covers the same calendar months.", True),
              th("YoY", "YoY", "İki pencere arasındaki yüzde değişim; mevsimsellikten arındırılmıştır.", "Percentage change between the two windows; seasonally aligned.", True),
              th("Pay", "Share", "Kategorinin 2026 penceresindeki toplam hacim içindeki payı.", "The category's share of total volume in the 2026 window.", True)],
             [[kat(k), cell(K1[k]["n"]), cell(K1[k]["a25"]), cell(K1[k]["a26"]), n(yz(K1[k]["yoy"])), n(yzd(100 * K1[k]["a26"] / TOP["a26"]))] for k in sira] +
@@ -47,8 +47,8 @@ def k2rows(liste):
 bas2 = [th("Ana kategori", "Main category", "Alt kategorinin bağlı olduğu ana kategori.", "Main category the sub-category belongs to."),
         th("Alt kategori", "Sub-category", "VitrA kategori ağacındaki alt kategori.", "Sub-category in the VitrA category tree."),
         th("Kelime", "Keywords", "Alt kategoriye atanan kelime sayısı.", "Number of keywords assigned to the sub-category.", True),
-        th("Oca-Ağu 2025", "Jan-Aug 2025", "Ocak - Ağustos 2025 aylık ortalama hacim toplamı.", "Sum of average monthly volume, January - August 2025.", True),
-        th("Oca-Ağu 2026", "Jan-Aug 2026", "Ocak - Ağustos 2026 aylık ortalama hacim toplamı.", "Sum of average monthly volume, January - August 2026.", True),
+        th("2025 aylık ort.", "2025 monthly avg.", "Ocak - Ağustos 2025 aylık ortalama arama hacmi.", "Average monthly search volume, January - August 2025.", True),
+        th("2026 aylık ort.", "2026 monthly avg.", "Ocak - Ağustos 2026 aylık ortalama arama hacmi.", "Average monthly search volume, January - August 2026.", True),
         th("YoY", "YoY", "İki pencere arasındaki yüzde değişim. Tabloya aylık 3.000 ve üzeri hacimli alt kategoriler alınmıştır.", "Percentage change between the two windows. Sub-categories with monthly volume of 3,000 and above are listed.", True)]
 kloz = K2["Vitrifiyeler|Klozetler"]; bm = K1["Banyo Mobilyaları"]; ld = K2["Banyo Mobilyaları|Lavabo Dolapları"]; bk = K2["Karo Seramik Ürünleri|Banyo Karo Seramikleri"]
 HTML = """
@@ -71,7 +71,7 @@ HTML = """
 """ % (
  x("Talep tabanı, VitrA kategori ağacına eşlenmiş 2.420 arama kelimesidir; hacimler Google Keyword Planner'dan Eylül 2024 - Ağustos 2026 dönemi için aylık olarak alınmıştır. Karşılaştırma, aynı takvim aylarını kapsayan Ocak - Ağustos pencereleri üzerinden yapılmaktadır.",
    "The demand base is 2,420 search keywords mapped to the VitrA category tree; volumes were taken monthly from Google Keyword Planner for September 2024 - August 2026. The comparison uses January - August windows that cover the same calendar months."),
- kpi_kart(k(TOP["a26"]), "Aylık toplam arama · Oca-Ağu 2026 ortalaması", "Monthly total searches · Jan-Aug 2026 average"),
+ kpi_kart(k(TOP["a26"]), "Aylık ortalama arama · 2026 (Oca-Ağu), 2.420 kelime", "Average monthly searches · 2026 (Jan-Aug), 2,420 keywords"),
  kpi_kart(yz(toplam_yoy), "Toplam talep değişimi · 2026 / 2025, aynı aylar", "Total demand change · 2026 / 2025, same months", "dn"),
  kpi_kart(yz(kloz["yoy"]), "Klozetler · en büyük alt kategoride büyüme", "WCs · growth in the largest sub-category", "up"),
  kpi_kart(yz(bm["yoy"]), "Banyo Mobilyaları · en büyük kategoride daralma", "Bathroom Furniture · contraction in the largest category", "dn"),

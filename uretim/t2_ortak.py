@@ -91,6 +91,20 @@ def n(v):
 _SAYI_TOK = _re.compile(r'(?<![\w>#"=/-])([+\-−]?(?:%\d[\d.,]*|\d[\d.,]*(?:\s?(?:K|M|x|TL|USD|bn|kat|\+))?%?|\d[\d.,]*-\d[\d.,]*(?:\s?(?:K|M|x|TL))?%?))(?![\w<%-])')
 _TARIH = _re.compile(r'^\d{1,2}\.\d{1,2}\.\d{4}$|^(?:19|20)\d{2}$|^\d{1,2}$')
 
+_MARKA = _re.compile(r"(?<![\w>])(VitrA|Artema|Trendyol|Hepsiburada|Koçtaş|Creavit|Kalekim|Kale|Turkuaz|Turavit|Geberit|Grohe|Hansgrohe|Duravit|Bauhaus|IKEA|Banyomarka|Banyoline|Banyomega|Akakçe|Cimri|Serel|Visam|NKP|Durul|KUSTAR|Amazon TR|Amazon|n11|YouTube|Şikayetvar|Google Shopping|Google|Tekzen|Evidea|Roca|Kohler|Eca|E\.C\.A\.|Tekzen|Vivense|Şok|Aras Kargo|Ceva)(?![\w])")
+_UST_TR = _re.compile(r"\b(en (?:yüksek|düşük|çok|az|büyük|küçük|geniş|dar|dirençli|sınırlı|hızlı|yavaş|ucuz|pahalı|derin|güçlü|yoğun|kalabalık|belirgin) [\wçğıöşüÇĞİÖŞÜ'’-]+)")
+_UST_EN = _re.compile(r"\b((?:the )?(?:highest|lowest|largest|smallest|biggest|most|least|widest|narrowest|fastest|slowest|cheapest|strongest|weakest|deepest|densest|busiest|clearest) [\w'’-]+)")
+def _vurgu(t, en=False):
+    """Etiket disindaki marka adlari <b class=mk>, ustunluk ifadeleri <span class=hl>."""
+    parca = _ETIKET.split(t); etk = _ETIKET.findall(t); out = []
+    ust = _UST_EN if en else _UST_TR
+    for i, p_ in enumerate(parca):
+        p_ = _MARKA.sub(lambda m: '<b class="mk">%s</b>' % m.group(1), p_)
+        p_ = ust.sub(lambda m: '<span class="hl">%s</span>' % m.group(1), p_)
+        out.append(p_)
+        if i < len(etk): out.append(etk[i])
+    return "".join(out)
+
 def _kalin(t):
     """Etiket disindaki sayisal ifadeleri <b> icine alir; yil, tarih ve tek-iki haneli sayilar haric."""
     parca = _ETIKET.split(t); etk = _ETIKET.findall(t)
@@ -105,8 +119,10 @@ def _kalin(t):
     return "".join(out)
 
 def _kalin_cift(tr, en):
-    a, b = _kalin(tr), _kalin(en)
-    return (a, b) if a.count("<b>") == b.count("<b>") else (tr, en)
+    a, b = _kalin(_vurgu(tr)), _kalin(_vurgu(en, True))
+    if a.count("<b") != b.count("<b") or a.count("<span") != b.count("<span"):
+        a, b = _kalin(tr), _kalin(en)
+    return (a, b) if a.count("<b") == b.count("<b") else (tr, en)
 
 _CUMLE = _re.compile(r'(?<=[.!?])\s+(?=[A-ZÇĞİÖŞÜ"“(\d])')
 

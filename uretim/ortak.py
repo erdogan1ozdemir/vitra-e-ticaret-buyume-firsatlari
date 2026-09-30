@@ -64,6 +64,20 @@ def u(url, metin=None):
 def kw(s):
     x(s, s)   # arama kelimesi veridir; cevrilmez
     return '<span class="kw">%s</span>' % s
+_AH = None
+def _hacim(s):
+    global _AH
+    if _AH is None:
+        try: _AH = _j.load(open(_o.path.join(veri.V, "ham", "autocomplete_hacim.json"), encoding="utf-8"))["kelime"]
+        except Exception: _AH = {}
+    v = _AH.get(s) or _AH.get(s.lower())
+    return v.get("ort2026") if v else None
+def kwv(s):
+    """Arama kelimesi + 2026 aylik ortalama hacim rozeti (Oca-Agu 2026, Google Ads)."""
+    x(s, s); h = _hacim(s)
+    if h is None: return '<span class="kw">%s</span>' % s
+    r = k(round(h)) if h >= 1000 else bin(round(h)); x(r, r.replace(".", "").replace(",", "."))
+    return '<span class="kw">%s<i class="kv">%s</i></span>' % (s, r)
 def veri_m(s):
     x(s, s); return s
 import json as _j, os as _o

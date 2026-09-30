@@ -4,17 +4,17 @@ from ortak import *
 from rapor_parca1 import T
 AU = A["auto"]; AT = A["auto_tema"]; TQ = A["gsc_top_sorgu"]
 def satir(tohum, en):
-    return [veri_m(tohum), '<div class="kwlist">%s</div>' % "".join(kw(s) for s in AU.get(tohum, [])[:10])]
+    return [kwv(tohum), '<div class="kwlist">%s</div>' % "".join(kwv(s) for s in AU.get(tohum, [])[:10])]
 TOHUM = [("vitra", "vitra"), ("vitra klozet", "vitra klozet"), ("vitra gömme rezervuar", "vitra gömme rezervuar"), ("vitra banyo dolabı", "vitra banyo dolabı"), ("vitra batarya", "vitra batarya"),
          ("vitra duşakabin", "vitra duşakabin"), ("vitra akıllı klozet", "vitra akıllı klozet"), ("vitra klozet kapağı", "vitra klozet kapağı"), ("vitra servis", "vitra servis"), ("vitra yedek parça", "vitra yedek parça"),
          ("vitra bayi", "vitra bayi"), ("vitra taksit", "vitra taksit"), ("vitra indirim", "vitra indirim"), ("vitra outlet", "vitra outlet")]
 tbl = tablo([th("Kök ifade", "Seed phrase", "Google arama kutusuna yazılan ifade; öneriler bu ifadenin devamı olarak gelmektedir.", "Phrase typed into the Google search box; suggestions come as continuations of it."),
-             th("Autocomplete önerileri", "Autocomplete suggestions", "Google'ın Türkiye, Türkçe, masaüstü Chrome için döndürdüğü ilk 10 tamamlama önerisi; sırası Google'ın sırasıdır.", "First 10 completion suggestions Google returns for Turkey, Turkish, desktop Chrome; the order is Google's.")],
+             th("Autocomplete önerileri · 2026 aylık ort. hacim", "Autocomplete suggestions · 2026 monthly avg. volume", "Google'ın Türkiye, Türkçe, masaüstü Chrome için döndürdüğü ilk 10 tamamlama önerisi; sırası Google'ın sırasıdır. Rozet: Ocak - Ağustos 2026 aylık ortalama arama hacmi (Google Ads); rozeti olmayan kelime için hacim dönmemiştir.", "First 10 completion suggestions Google returns for Turkey, Turkish, desktop Chrome; the order is Google's.")],
             [satir(t, e) for t, e in TOHUM], "uzun")
 TOHUM2 = [("klozet", "klozet"), ("banyo dolabı", "banyo dolabı"), ("gömme rezervuar", "gömme rezervuar"), ("duşakabin", "duşakabin"), ("akıllı klozet", "akıllı klozet"), ("klozet montaj", "klozet montaj"), ("klozet tamir", "klozet tamir"),
           ("banyo dolabı montaj", "banyo dolabı montaj"), ("klozet taksit", "klozet taksit"), ("banyo yenileme", "banyo yenileme"), ("artema", "artema"), ("creavit klozet", "creavit klozet"), ("kale klozet", "kale klozet")]
 tbl2 = tablo([th("Kök ifade", "Seed phrase", "Kategori veya rakip marka ile başlayan ifade.", "Phrase starting with a category or competitor brand."),
-              th("Autocomplete önerileri", "Autocomplete suggestions", "Google'ın döndürdüğü ilk 10 tamamlama önerisi.", "First 10 completion suggestions Google returns.")],
+              th("Autocomplete önerileri · 2026 aylık ort. hacim", "Autocomplete suggestions · 2026 monthly avg. volume", "Google'ın döndürdüğü ilk 10 tamamlama önerisi; rozet Ocak - Ağustos 2026 aylık ortalama arama hacmidir (Google Ads).", "First 10 completion suggestions Google returns.")],
              [satir(t, e) for t, e in TOHUM2], "uzun")
 T_EN = {"Ürün": "Product", "Fiyat": "Price", "Tamir ve bakım": "Repair and maintenance", "Tasarım": "Design", "Montaj": "Installation", "Ölçü ve teknik": "Dimensions and technical", "Bayi ve mağaza": "Dealer and store", "Seçim": "Selection"}
 attot = sum(AT.values())

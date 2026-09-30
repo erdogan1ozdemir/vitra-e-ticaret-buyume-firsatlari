@@ -288,6 +288,71 @@ document.documentElement.classList.add('js');
   isaretle();
   if(location.hash){var h=location.hash.slice(1);setTimeout(function(){git(h);},80);}
 })();
+
+/* tablolar: sutun basligina tiklayinca siralama, tablo ustunde kopyalama dugmesi */
+(function(){
+  function en(){return document.documentElement.getAttribute('data-dil')==='en';}
+  function sayi(t){
+    t=String(t).trim();
+    if(!t||t==='-'||t==='–')return null;
+    var neg=/^[-−]/.test(t)||/^-%/.test(t);
+    var m=t.replace(/[+\-−%\s₺TL]/g,'').match(/^(\d[\d.,]*)([KMB])?\+?/i);
+    if(!m)return null;
+    var s=m[1];
+    if(en()){s=s.replace(/,/g,'');}else{s=s.replace(/\./g,'').replace(',','.');}
+    var v=parseFloat(s); if(isNaN(v))return null;
+    var k={K:1e3,M:1e6,B:1e9}[(m[2]||'').toUpperCase()]||1;
+    return (neg?-v:v)*k;
+  }
+  function metin(td){return (td.innerText||td.textContent||'').replace(/\s+/g,' ').trim();}
+  function sirala(tbl,idx,yon){
+    var tb=tbl.tBodies[0]; if(!tb)return;
+    var rows=[].slice.call(tb.rows);
+    var vals=rows.map(function(r,i){var td=r.cells[idx];var t=td?metin(td):'';return {r:r,i:i,t:t,n:sayi(t)};});
+    var num=vals.filter(function(v){return v.t&&v.t!=='-';}).every(function(v){return v.n!==null;});
+    vals.sort(function(a,b){
+      var c;
+      if(num){var x=a.n===null?-Infinity:a.n,y=b.n===null?-Infinity:b.n;c=x-y;}
+      else{c=a.t.localeCompare(b.t,en()?'en':'tr',{numeric:true,sensitivity:'base'});}
+      if(c===0)c=a.i-b.i;
+      return yon==='d'?-c:c;
+    });
+    vals.forEach(function(v){tb.appendChild(v.r);});
+  }
+  [].forEach.call(document.querySelectorAll('.tw table'),function(tbl){
+    var ths=tbl.tHead?tbl.tHead.rows[0].cells:[];
+    [].forEach.call(ths,function(th,idx){
+      th.classList.add('srt');
+      function tik(){
+        var yon=th.classList.contains('sa')?'d':'a';
+        [].forEach.call(ths,function(o){o.classList.remove('sa','sd');o.removeAttribute('aria-sort');});
+        th.classList.add(yon==='a'?'sa':'sd'); th.setAttribute('aria-sort',yon==='a'?'ascending':'descending');
+        sirala(tbl,idx,yon);
+      }
+      th.addEventListener('click',tik);
+      th.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();tik();}});
+    });
+  });
+  var IK='<svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="5.5" y="5.5" width="8" height="8" rx="1.5"/><path d="M10.5 5.5V3.5a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2"/></svg>';
+  [].forEach.call(document.querySelectorAll('.tw'),function(tw){
+    var box=document.createElement('div'); box.className='tbox';
+    var bar=document.createElement('div'); bar.className='tbar';
+    var b=document.createElement('button'); b.type='button'; b.className='tcopy';
+    function etiket(){b.innerHTML=IK+'<span>'+(en()?'Copy table':'Tabloyu kopyala')+'</span>'; b.title=en()?'Copy the table with its columns (paste into Excel or Sheets)':'Tabloyu sütunlarıyla kopyala (Excel veya Sheets\'e yapıştırılır)';}
+    etiket(); document.addEventListener('dilchange',etiket);
+    b.addEventListener('click',function(){
+      var tbl=tw.querySelector('table'); if(!tbl)return;
+      var satirlar=[].slice.call(tbl.rows).map(function(r){return [].slice.call(r.cells).map(function(c){return metin(c).replace(/\t/g,' ');});});
+      var tsv=satirlar.map(function(r){return r.join('\t');}).join('\n');
+      var html='<table>'+satirlar.map(function(r,i){var tag=i===0?'th':'td';return '<tr>'+r.map(function(c){return '<'+tag+'>'+c.replace(/&/g,'&amp;').replace(/</g,'&lt;')+'</'+tag+'>';}).join('')+'</tr>';}).join('')+'</table>';
+      function ok(){b.classList.add('ok');b.querySelector('span').textContent=en()?'Copied':'Kopyalandı';setTimeout(function(){b.classList.remove('ok');etiket();},1600);}
+      if(navigator.clipboard&&window.ClipboardItem){
+        navigator.clipboard.write([new ClipboardItem({'text/plain':new Blob([tsv],{type:'text/plain'}),'text/html':new Blob([html],{type:'text/html'})})]).then(ok,function(){navigator.clipboard.writeText(tsv).then(ok);});
+      }else if(navigator.clipboard){navigator.clipboard.writeText(tsv).then(ok);}
+    });
+    bar.appendChild(b); tw.parentNode.insertBefore(box,tw); box.appendChild(bar); box.appendChild(tw);
+  });
+})();
 """
 
 KAYNAKCA_CSS = """

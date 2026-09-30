@@ -52,24 +52,40 @@ T_KY = tablo([th("Kategori", "Category", "Pazaryerindeki kategori.", "Category o
               th("VitrA Hepsiburada", "VitrA on Hepsiburada", "Marka filtreli sonuç sayısı; \"-\" okunmadı.", "Brand-filtered result count; \"-\" not read.", True),
               th("Hepsiburada payı", "Hepsiburada share", "VitrA listelemesinin kategori içindeki payı.", "VitrA's share of listings in the category.", True)],
              [[x(a, b), n(c), n(d), n(e), n(f), n(g), n(h)] for a, b, c, d, e, f, g, h in KY])
-CS = [("Klozet", "WC", "Turavit %38, Turkuaz %11, Seramiksan %9", "Turavit 38%, Turkuaz 11%, Seramiksan 9%", "3 ürün · %3", "3 products · 3%", "Turkuaz 536, Creavit 224 değ.", "Turkuaz 536, Creavit 224 reviews", "9 ürün · 147 değ.", "9 products · 147 reviews"),
-      ("Klozet kapağı", "Toilet seat", "Visam %21, ELİTRA %20, Saban %16", "Visam 21%, ELİTRA 20%, Saban 16%", "1 ürün · %2,6", "1 product · 2.6%", "NKP 5.354, Visam 1.495 değ.", "NKP 5,354, Visam 1,495 reviews", "8 ürün · 1.038 değ.", "8 products · 1,038 reviews"),
-      ("Lavabo", "Washbasin", "Turkuaz %56 (13 ürün)", "Turkuaz 56% (13 products)", "1 ürün · %0,5", "1 product · 0.5%", "Turkuaz 14 ürün, 1.221 değ.", "Turkuaz 14 products, 1,221 reviews", "ilk 36'da yok", "not in top 36"),
-      ("Rezervuar ve iç takım", "Cistern and inner mechanism", "Visam %27", "Visam 27%", "9 ürün · %16", "9 products · 16%", "Visam 8 ürün, 1.962 değ.", "Visam 8 products, 1,962 reviews", "8 ürün · 2.248 değ.", "8 products · 2,248 reviews"),
-      ("Banyo dolabı", "Bathroom cabinet", "KAREN BANYO %47, ÖZCEDEN %26", "KAREN BANYO 47%, ÖZCEDEN 26%", "ilk 24'te yok", "not in top 24", "Aeka, Mowo Home (arama)", "Aeka, Mowo Home (search)", "ilk 36'da yok", "not in top 36"),
-      ("Lavabo dolabı", "Washbasin unit", "-", "-", "-", "-", "Dmz Home Concept 8 ürün", "Dmz Home Concept 8 products", "Mia 3 ürün · 402 değ.", "Mia 3 products · 402 reviews"),
-      ("Çamaşır makinesi dolabı", "Washing machine cabinet", "sepet ve organizer ağırlıklı (Bofigo)", "mostly baskets and organisers (Bofigo)", "yok", "none", "Remaks, Bofigo", "Remaks, Bofigo", "yok", "none"),
-      ("Banyo aynası", "Bathroom mirror", "SUEL HOUSE %48", "SUEL HOUSE 48%", "yok", "none", "ER-KA DİZAYN", "ER-KA DİZAYN", "1 ürün · 5 değ.", "1 product · 5 reviews"),
-      ("Lavabo bataryası", "Basin tap", "Genel Markalar %30, Sardıcı %16", "Generic brands 30%, Sardıcı 16%", "Artema ilk 10'da yok", "Artema not in top 10", "Creavit 6, Sardıcı 6, ECA 4 ürün", "Creavit 6, Sardıcı 6, ECA 4 products", "Artema 4 ürün · 200 değ.", "Artema 4 products · 200 reviews"),
-      ("Eviye bataryası", "Kitchen tap", "KUSTAR %48", "KUSTAR 48%", "Artema ilk 10'da yok", "Artema not in top 10", "Artema 6, Sardıcı 4 ürün", "Artema 6, Sardıcı 4 products", "Artema 6 ürün · 1.269 değ.", "Artema 6 products · 1,269 reviews"),
-      ("Duşakabin", "Shower enclosure", "Durul %93", "Durul 93%", "yok", "none", "Durul 27/36 ürün", "Durul 27/36 products", "yok", "none"),
-      ("Duş sistemi / başlığı", "Shower system / head", "NOY %21, Kaşbaşı Home %16", "NOY 21%, Kaşbaşı Home 16%", "yok", "none", "Berev 13 ürün", "Berev 13 products", "yok", "none")]
+CS = [
+ # kategori, TY lider marka, TY lider degerlendirme payi, VitrA TY urun (ilk 36), VitrA TY deg. payi, HB lider marka, HB lider deg./urun, VitrA HB urun, VitrA HB deg.
+ (("Klozet", "WC"), "Turavit", "%38", "3", "%3", "Turkuaz", "536", "9", "147"),
+ (("Klozet kapağı", "Toilet seat"), "Visam", "%21", "1", "%2,6", "NKP", "5.354", "8", "1.038"),
+ (("Lavabo", "Washbasin"), "Turkuaz", "%56", "1", "%0,5", "Turkuaz", "1.221", "0", "-"),
+ (("Rezervuar ve iç takım", "Cistern and inner mechanism"), "Visam", "%27", "9", "%16", "Visam", "1.962", "8", "2.248"),
+ (("Banyo dolabı", "Bathroom cabinet"), "KAREN BANYO", "%47", "0", "-", "Aeka", "-", "0", "-"),
+ (("Lavabo dolabı", "Washbasin unit"), "-", "-", "-", "-", "Dmz Home Concept", "-", "3", "402"),
+ (("Çamaşır makinesi dolabı", "Washing machine cabinet"), "Bofigo", "-", "0", "-", "Remaks", "-", "0", "-"),
+ (("Banyo aynası", "Bathroom mirror"), "SUEL HOUSE", "%48", "0", "-", "ER-KA DİZAYN", "-", "1", "5"),
+ (("Lavabo bataryası", "Basin tap"), "Genel Markalar", "%30", "0", "-", "Creavit", "-", "4", "200"),
+ (("Eviye bataryası", "Kitchen tap"), "KUSTAR", "%48", "0", "-", "Artema", "-", "6", "1.269"),
+ (("Duşakabin", "Shower enclosure"), "Durul", "%93", "0", "-", "Durul", "-", "0", "-"),
+ (("Duş sistemi / başlığı", "Shower system / head"), "NOY", "%21", "0", "-", "Berev", "-", "0", "-")]
+CS_NOT = {"Klozet": ("2. Turkuaz %11, 3. Seramiksan %9", "2nd Turkuaz 11%, 3rd Seramiksan 9%"), "Klozet kapağı": ("ELİTRA %20, Saban %16; HB'de Visam 1.495", "ELİTRA 20%, Saban 16%; Visam 1,495 on HB"),
+          "Lavabo": ("Turkuaz 13 ürün; HB'de 14 ürün", "Turkuaz 13 products; 14 products on HB"), "Rezervuar ve iç takım": ("HB'de Visam 8 ürün", "Visam 8 products on HB"),
+          "Banyo dolabı": ("ÖZCEDEN %26; HB listesi arama sonucudur (Aeka, Mowo Home)", "ÖZCEDEN 26%; HB list is a search result (Aeka, Mowo Home)"), "Lavabo dolabı": ("HB'de Dmz Home Concept 8 ürün; VitrA Mia", "Dmz Home Concept 8 products on HB; VitrA Mia"),
+          "Çamaşır makinesi dolabı": ("Liste sepet ve düzenleyici ağırlıklı; HB'de Bofigo da var", "List dominated by baskets and organisers; Bofigo also on HB"), "Banyo aynası": ("-", "-"),
+          "Lavabo bataryası": ("Sardıcı %16; HB'de Creavit 6, Sardıcı 6, ECA 4 ürün; Artema Trendyol ilk 10'da yok", "Sardıcı 16%; Creavit 6, Sardıcı 6, ECA 4 products on HB; Artema not in Trendyol top 10"),
+          "Eviye bataryası": ("HB'de Artema 6, Sardıcı 4 ürün; Artema Trendyol ilk 10'da yok", "Artema 6, Sardıcı 4 products on HB; Artema not in Trendyol top 10"), "Duşakabin": ("HB'de Durul 27/36 ürün", "Durul 27/36 products on HB"),
+          "Duş sistemi / başlığı": ("Kaşbaşı Home %16; HB'de Berev 13 ürün", "Kaşbaşı Home 16%; Berev 13 products on HB")}
+def _cs(v): return n(v) if v not in ("-", "") else n("-")
 T_CS = tablo([th("Kategori", "Category", "Çok satan sıralamasının okunduğu kategori veya arama.", "Category or search whose bestseller ranking was read."),
-              th("Trendyol: çok satanlarda öne çıkan", "Trendyol: leading bestsellers", "\"En Çok Satan\" sıralamasının ilk 36 ürününde değerlendirme payı en yüksek markalar.", "Brands with the highest review share among the top 36 products in the \"Best Selling\" ranking."),
-              th("VitrA Trendyol", "VitrA on Trendyol", "İlk 36 içindeki VitrA ürün sayısı ve değerlendirme payı.", "Number of VitrA products in the top 36 and review share."),
-              th("Hepsiburada: çok satanlarda öne çıkan", "Hepsiburada: leading bestsellers", "\"Çok satanlar\" sıralamasının ilk 36 ürününde öne çıkan markalar.", "Leading brands among the top 36 products in the \"Best selling\" ranking."),
-              th("VitrA Hepsiburada", "VitrA on Hepsiburada", "İlk 36 içindeki VitrA (Artema) ürün sayısı ve değerlendirme toplamı.", "Number of VitrA (Artema) products in the top 36 and total reviews.")],
-             [[x(a, b), x(c, d), x(e, f), x(g, h), x(i, j)] for a, b, c, d, e, f, g, h, i, j in CS], "uzun")
+              th("Trendyol lider marka", "Trendyol leading brand", "\"En Çok Satan\" sıralamasının ilk 36 ürününde değerlendirme payı en yüksek marka.", "Brand with the highest review share among the top 36 products in the \"Best Seller\" ranking."),
+              th("Lider payı (TY)", "Leader share (TY)", "Lider markanın ilk 36'daki değerlendirme payı.", "The leading brand's share of reviews in the top 36.", True),
+              th("VitrA ürün (TY ilk 36)", "VitrA products (TY top 36)", "İlk 36 içindeki VitrA (Artema) ürün sayısı; 0 = listede yok.", "Number of VitrA (Artema) products in the top 36; 0 = not listed.", True),
+              th("VitrA değ. payı (TY)", "VitrA review share (TY)", "VitrA ürünlerinin ilk 36'daki değerlendirme payı.", "Review share of VitrA products in the top 36.", True),
+              th("Hepsiburada lider marka", "Hepsiburada leading brand", "\"Çok satanlar\" sıralamasının ilk 36 ürününde öne çıkan marka.", "Leading brand among the top 36 products in the \"Best selling\" ranking."),
+              th("Lider değ. (HB)", "Leader reviews (HB)", "Lider markanın ilk 36'daki toplam değerlendirme sayısı; \"-\" okunmadı.", "Total reviews of the leading brand in the top 36; \"-\" not read.", True),
+              th("VitrA ürün (HB ilk 36)", "VitrA products (HB top 36)", "İlk 36 içindeki VitrA (Artema) ürün sayısı; 0 = listede yok.", "Number of VitrA (Artema) products in the top 36; 0 = not listed.", True),
+              th("VitrA değ. (HB)", "VitrA reviews (HB)", "VitrA ürünlerinin ilk 36'daki toplam değerlendirme sayısı.", "Total reviews of VitrA products in the top 36.", True),
+              th("Not", "Note", "İkinci ve üçüncü markalar, okuma yöntemi.", "Second and third brands, reading method.")],
+             [[x(*kat_), veri_m(ty_m) if ty_m != "-" else n("-"), _cs(ty_p), _cs(vt_n), _cs(vt_p), veri_m(hb_m) if hb_m != "-" else n("-"), _cs(hb_d), _cs(vh_n), _cs(vh_d), x(*CS_NOT[kat_[0]])]
+              for kat_, ty_m, ty_p, vt_n, vt_p, hb_m, hb_d, vh_n, vh_d in CS], "uzun")
 FB = [("Klozet", "WC", "7.500", "15.848", "6.962", "13.910", "2,0-2,1x"), ("Klozet kapağı", "Toilet seat", "619", "1.670 (Integra)", "670", "2.190", "2,7-3,3x"),
       ("Lavabo", "Washbasin", "2.930", "8.134", "1.635", "6.948", "2,8-4,2x"), ("Banyo dolabı / mobilya", "Bathroom cabinet / furniture", "6.400", "15.887", "2.148", "13.100", "2,5-6,1x"),
       ("Rezervuar iç takım", "Inner mechanism", "281", "896-1.131", "490", "837", "1,7-3,2x"), ("Klozet takımı (set)", "WC set", "-", "11.999-16.735", "8.000-12.000", "13.200-17.600", "1,4-1,5x")]

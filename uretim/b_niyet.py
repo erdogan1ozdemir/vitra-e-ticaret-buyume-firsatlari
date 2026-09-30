@@ -22,7 +22,7 @@ for nm in sira:
 tbl = tablo([th("İhtiyaç sınıfı", "Need class", "Kelimenin taşıdığı ihtiyaç; ifade kalıplarına göre sınıflandırılmıştır, markalı kelimeler dışarıda tutulmuştur.", "The need carried by the keyword; classified by phrase patterns, branded keywords excluded."),
              th("Tanım", "Definition", "Sınıfa giren ifade kalıpları.", "Phrase patterns included in the class."),
              th("Kelime", "Keywords", "Sınıftaki kelime sayısı.", "Number of keywords in the class.", True),
-             th("Oca-Ağu 2026", "Jan-Aug 2026", "Ocak - Ağustos 2026 aylık ortalama hacim toplamı.", "Sum of average monthly volume, January - August 2026.", True),
+             th("2026 aylık ort.", "2026 monthly avg.", "Ocak - Ağustos 2026 aylık ortalama arama hacmi (sınıftaki kelimelerin toplamı).", "Average monthly search volume, January - August 2026 (sum of the class's keywords).", True),
              th("Pay", "Share", "Sınıfın toplam markasız hacim içindeki payı.", "The class's share of total non-brand volume.", True),
              th("YoY", "YoY", "Oca-Ağu 2026 / Oca-Ağu 2025 yüzde değişimi.", "Percentage change, Jan-Aug 2026 / Jan-Aug 2025.", True),
              th("Örnek", "Examples", "Sınıfın en yüksek hacimli kelimeleri.", "Highest-volume keywords in the class.")], rows)
@@ -37,7 +37,7 @@ for kk in kats:
         r.append(n(yzd(100 * v / tk) if v else "-"))
     rows2.append(r)
 tbl2 = tablo([th("Kategori", "Category", "Ana kategori.", "Main category."),
-              th("Markasız hacim", "Non-brand volume", "Oca-Ağu 2026 aylık ortalama, markalı kelimeler hariç.", "Jan-Aug 2026 monthly average, branded keywords excluded.", True)] +
+              th("Markasız hacim · 2026 aylık ort.", "Non-brand volume · 2026 monthly avg.", "Ocak - Ağustos 2026 aylık ortalama, markalı kelimeler hariç.", "January - August 2026 monthly average, branded keywords excluded.", True)] +
              [th(c, N_EN[c], "Sınıfın kategori hacmi içindeki payı, Oca-Ağu 2026.", "The class's share of the category's volume, Jan-Aug 2026.", True) for c in cols], rows2, "dar")
 GS = A["gsc_sorgu_niyet"]; GE = A["gsc_sorgu_ornek"]
 G_EN = {"Ürün": "Product", "Fiyat": "Price", "Tasarım": "Design", "Tamir ve bakım": "Repair and maintenance", "Ölçü ve teknik": "Dimensions and technical", "Seçim": "Selection", "Montaj": "Installation", "Bayi ve mağaza": "Dealer and store"}

@@ -122,6 +122,34 @@ CSS_SON = """
 .two > div{min-width:0}
 @media(max-width:1180px){.two{grid-template-columns:minmax(0,1fr)}}
 .tw.uzun thead th{position:sticky;top:0;z-index:2}
+
+/* duzen: icindekiler sola bitisik, icerik alani genis */
+.appbar .in{max-width:none;padding:12px max(24px,3vw) 12px 16px}
+.wrap{max-width:none;margin:0;padding:0 max(24px,3vw) 0 14px;gap:30px}
+main{max-width:1280px}
+@media(max-width:940px){.wrap{padding:0 16px}.appbar .in{padding:10px 16px}}
+/* basliklar */
+h2{position:relative;padding-bottom:9px;border-bottom:1px solid var(--line)}
+h2::after{content:"";position:absolute;left:0;bottom:-1px;width:72px;height:3px;border-radius:2px;background:linear-gradient(90deg,var(--coral) 0%,var(--coral-deep) 100%)}
+h3{display:inline-block;padding:1px 10px 1px 0;border-radius:2px;background:linear-gradient(to top,var(--coral-tint) 0 34%,transparent 34%)}
+.two h3{display:inline-block}
+.h3n{max-width:none}
+/* vurgu */
+b.mk{font-weight:650;color:var(--ink)}
+.hl{color:var(--coral-deep);font-weight:650}
+/* kelime hacim rozeti */
+.kwlist .kw .kv{font-style:normal;font-size:10.5px;margin-left:7px;padding:0 5px;border-radius:4px;background:var(--coral-tint);color:var(--coral-deep);font-weight:650;font-family:"Segoe UI",Arial,sans-serif}
+/* tablo araclari */
+.tbox{margin:0 0 14px}
+.tbox .tw{margin:0}
+.tbar{display:flex;justify-content:flex-end;margin:0 0 4px}
+.tcopy{display:inline-flex;align-items:center;gap:5px;font:inherit;font-size:11px;color:var(--muted);background:transparent;border:1px solid var(--line);border-radius:5px;padding:2px 8px;cursor:pointer;line-height:1.4}
+.tcopy:hover,.tcopy:focus-visible{color:var(--ink);border-color:var(--ink-2)}
+.tcopy.ok{color:var(--green);border-color:var(--green)}
+th.srt{cursor:pointer;user-select:none}
+th.srt .q::after{content:"";display:inline-block;width:0;height:0;margin-left:5px;vertical-align:middle;border-left:4px solid transparent;border-right:4px solid transparent;border-top:5px solid rgba(255,255,255,.35)}
+th.srt.sa .q::after{border-top:0;border-bottom:5px solid var(--coral)}
+th.srt.sd .q::after{border-top:5px solid var(--coral)}
 """
 # ---------------------------------------------------------------- icindekiler
 KISA = {"ihtiyac": ("İhtiyaç Dili", "Need Language"), "youtube": ("YouTube: Montaj ve Tamir", "YouTube: Installation and Repair"), "rakip": ("Rakip Görünürlüğü ve Ölçek", "Competitor Visibility and Scale"),
