@@ -1,0 +1,9 @@
+// Banyomarka (banyomarka.com) kategori okuyucu: .productItem kartlari (ilk sayfa 32 urun), marka img alt onekinden ("Marka - Urun"), fiyat .currentPrice.
+// Toplam: "Toplam N urun" metni. Kullanim (banyomarka.com sekmesinde): BM('asma-klozet','/asma-klozet')
+function pct(a,p){a=a.slice().sort(function(x,y){return x-y});if(!a.length)return null;var i=(a.length-1)*p,l=Math.floor(i),h=Math.ceil(i);return Math.round((a[l]+(a[h]-a[l])*(i-l))*100)/100}
+function pn(s){return parseFloat((s||'').replace(/[^\d,\.]/g,'').replace(/\./g,'').replace(',','.'))}
+function BM(key,path){var o={key:key,u:path,ts:'2026-09-30'};var x=new XMLHttpRequest();x.open('GET',path,false);x.send();o.st=x.status;if(x.status!=200)return o;var t=x.responseText;var d=new DOMParser().parseFromString(t,'text/html');var m=t.match(/Toplam (\d+) ürün/);o.toplam=m?parseInt(m[1]):null;
+var rows=[];[].slice.call(d.querySelectorAll('.productItem')).forEach(function(e,i){var nm=(e.querySelector('[itemprop=name]')||{}).getAttribute('content')||'';var alt=(e.querySelector('img')||{}).getAttribute('alt')||'';var br=alt.indexOf(' - ')>0?alt.split(' - ')[0]:'?';var cp=pn((e.querySelector('.currentPrice')||{}).textContent);var op=pn((e.querySelector('.oldPrice')||{}).textContent);rows.push({s:i+1,b:br,n:nm.slice(0,48),f:cp,o:op>cp?op:0})});
+o.n=rows.length;var pr=rows.map(function(r){return r.f}).filter(function(v){return v>0});o.p={min:Math.min.apply(null,pr),p25:pct(pr,.25),med:pct(pr,.5),p75:pct(pr,.75),max:Math.max.apply(null,pr)};
+var bt={};rows.forEach(function(r){var k=r.b.toLowerCase()==='vitra'?'VitrA':r.b;bt[k]=(bt[k]||0)+1});o.marka=Object.keys(bt).sort(function(a,b){return bt[b]-bt[a]}).slice(0,6).map(function(k){return k+':'+bt[k]}).join(', ');
+var v=rows.filter(function(r){return /vitra|artema/i.test(r.b)});o.vitra_n=v.length;o.vitra=v.slice(0,4).map(function(r){return [r.s,r.n,r.f,r.o].join('|')});return o}

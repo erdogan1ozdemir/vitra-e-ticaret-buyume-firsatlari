@@ -1,0 +1,10 @@
+// Banyoline (banyoline.com, Ticimax) kategori okuyucu: .productItem (ilk sayfa 24 urun); marka .productMarka; ad .productName; fiyat .discountPriceSpan / .productPrice.
+// Sayfa sayisi ?sayfa=N baglantilarindan. Kullanim: TX('klozet','/kategori/klozet')
+function pct(a,p){a=a.slice().sort(function(x,y){return x-y});if(!a.length)return null;var i=(a.length-1)*p,l=Math.floor(i),h=Math.ceil(i);return Math.round((a[l]+(a[h]-a[l])*(i-l))*100)/100}
+function pn(s){return parseFloat((s||'').replace(/[^\d,\.]/g,'').replace(/\./g,'').replace(',','.'))}
+function TX(key,path){var o={key:key,u:path,ts:'2026-09-30'};var x=new XMLHttpRequest();x.open('GET',path,false);x.send();o.st=x.status;if(x.status!=200)return o;var t=x.responseText;var d=new DOMParser().parseFromString(t,'text/html');
+var pgs=(t.match(/[?&]sayfa=(\d+)/g)||[]).map(function(s){return parseInt(s.replace(/\D/g,''))});o.sayfa=pgs.length?Math.max.apply(null,pgs)+'+':1;
+var rows=[];[].slice.call(d.querySelectorAll('.productItem')).forEach(function(e,i){var b=((e.querySelector('.productMarka')||{}).textContent||'').trim();var n=((e.querySelector('.productName')||{}).textContent||'').trim();var pp=e.querySelector('.productPrice');var ds=pp.querySelector('.discountPriceSpan');var all=(pp.textContent.match(/₺\s?[\d\.]+,\d{2}/g)||[]).map(pn);var f=ds?pn(ds.textContent):all[0];var old=Math.max.apply(null,all.concat([0]));rows.push({s:i+1,b:b||'?',n:n.slice(0,46),f:f,o:old>f?old:0})});
+o.n=rows.length;var pr=rows.map(function(r){return r.f}).filter(function(v){return v>0});o.p=pr.length?{min:Math.min.apply(null,pr),p25:pct(pr,.25),med:pct(pr,.5),p75:pct(pr,.75),max:Math.max.apply(null,pr)}:null;
+var bt={};rows.forEach(function(r){bt[r.b]=(bt[r.b]||0)+1});o.marka=Object.keys(bt).sort(function(a,b){return bt[b]-bt[a]}).slice(0,6).map(function(k){return k+':'+bt[k]}).join(', ');
+var v=rows.filter(function(r){return /vitra|artema/i.test(r.b+' '+r.n)});o.vitra_n=v.length;o.vitra=v.slice(0,3).map(function(r){return [r.s,r.n,r.f,r.o].join('|')});return o}

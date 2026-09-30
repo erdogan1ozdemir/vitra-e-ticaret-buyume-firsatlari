@@ -1,0 +1,10 @@
+// Banyomega (banyomega.com, T-Soft) kategori okuyucu: ilk HTML'de 18 urun (kalani sonradan yuklenir). Kart [data-toggle=product]; marka [data-qa=product-brand]; fiyat [data-toggle=price-sell-vat].
+// Kategori toplami sayfada gosterilmez; marka listesi .folder-product-brand. Kullanim: BMG('asma-klozet','/asma-klozetler')
+function pct(a,p){a=a.slice().sort(function(x,y){return x-y});if(!a.length)return null;var i=(a.length-1)*p,l=Math.floor(i),h=Math.ceil(i);return Math.round((a[l]+(a[h]-a[l])*(i-l))*100)/100}
+function pn(s){return parseFloat((s||'').replace(/[^\d,\.]/g,'').replace(/\./g,'').replace(',','.'))}
+function BMG(key,path){var o={key:key,u:path,ts:'2026-09-30'};var x=new XMLHttpRequest();x.open('GET',path,false);x.send();o.st=x.status;if(x.status!=200)return o;var d=new DOMParser().parseFromString(x.responseText,'text/html');
+var bl=d.querySelector('.folder-product-brand');o.markalar=bl?bl.textContent.replace(/\s+/g,' ').replace('Markalar','').trim():'';
+var rows=[];[].slice.call(d.querySelectorAll('[data-toggle=product]')).forEach(function(e,i){var b=((e.querySelector('[data-qa=product-brand]')||{}).textContent||'').replace(/ /g,'').trim();var n=((e.querySelector('[data-toggle=product-title]')||{}).textContent||'').trim();var f=pn((e.querySelector('[data-toggle=price-sell-vat]')||{}).textContent);var ol=e.querySelector('.line-through');var o2=ol?pn(ol.textContent):0;rows.push({s:i+1,b:b||'?',n:n.slice(0,48),f:f,o:o2>f?o2:0})});
+o.n=rows.length;var pr=rows.map(function(r){return r.f}).filter(function(v){return v>0});o.p=pr.length?{min:Math.min.apply(null,pr),p25:pct(pr,.25),med:pct(pr,.5),p75:pct(pr,.75),max:Math.max.apply(null,pr)}:null;
+var bt={};rows.forEach(function(r){var k=r.b.toLowerCase()==='vitra'?'VitrA':r.b;bt[k]=(bt[k]||0)+1});o.marka=Object.keys(bt).sort(function(a,b){return bt[b]-bt[a]}).slice(0,6).map(function(k){return k+':'+bt[k]}).join(', ');
+var v=rows.filter(function(r){return /vitra|artema/i.test(r.b)});o.vitra_n=v.length;o.vitra=v.slice(0,3).map(function(r){return [r.s,r.n,r.f,r.o].join('|')});return o}
