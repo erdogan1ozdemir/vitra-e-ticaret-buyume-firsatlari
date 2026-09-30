@@ -28,6 +28,8 @@ TUR = {}
 def _t(tur, *alanlar):
     for a in alanlar:
         TUR[a] = tur
+_t("haber ve sektör kaynağı", "aa.com.tr", "newsfilecorp.com", "sanitaerwirtschaft.de", "serfed.com")
+_t("marka sitesi", "eczacibasi.com.tr")
 _t("pazaryeri", "trendyol.com", "hepsiburada.com", "n11.com", "amazon.com.tr")
 _t("perakendeci", "koctas.com.tr", "bauhaus.com.tr", "bauhaus.info", "ikea.com.tr", "tekzen.com.tr", "evidea.com", "banyomarka.com", "banyoline.com", "homedepot.com",
    "victorianplumbing.co.uk", "vivense.com", "yerevdekor.com", "yurtbayseramik.com", "turkmenleryapi.com.tr", "egeseramikshop.com", "yapilir.com", "banyomoda.com.tr",
