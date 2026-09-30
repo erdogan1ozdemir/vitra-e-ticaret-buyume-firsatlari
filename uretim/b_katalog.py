@@ -2,6 +2,8 @@
 """Bolum: Katalog ve talep eslesmesi + pazaryeri gorunumu (Trendyol)."""
 from ortak import *
 from urllib.parse import quote as _q
+import json as _json
+_TURL = _json.load(open(os.path.join(veri.V, "islenmis", "trendyol_ozet_url.json"), encoding="utf-8"))["url"]
 import tema
 KTT = KT["tema"]
 GR_EN = {"SSG": "SSG", "BM": "BM", "Armatür-Duş": "Taps and showers", "Yıkanma": "Bathing areas", "Karo": "Tiles", "Aksesuar": "Accessories"}
@@ -56,12 +58,12 @@ for q, v in TY.items():
     med = v.get("fiyat_medyan") or v.get("fiyat_medyan_jenerik") or v.get("fiyat_medyan_gercek_havlupan")
     vu = v.get("vitra_urun", 0) + v.get("artema_urun", 0)
     lead = v["one_cikan"][0]
-    trows.append([veri_m(q), cell(v["n"]), cell(med) if med else n("-"), cell(vu) if vu else n("-"), u("https://www.trendyol.com/sr?q=" + _q(lead[0] + " " + q), lead[0]), cell(lead[1]), cell(lead[2]), x(v["not"], TY_NOT_EN[q])])
+    trows.append([veri_m(q), cell(v["n"]), cell(med) if med else n("-"), cell(vu) if vu else n("-"), u(_TURL.get(q) or ("https://www.trendyol.com/sr?q=" + _q(lead[0] + " " + q) + "&sst=MOST_RATED"), lead[0]), cell(lead[1]), cell(lead[2]), x(v["not"], TY_NOT_EN[q])])
 tbl2 = tablo([th("Trendyol araması", "Trendyol search", "Trendyol arama kutusuna yazılan ifade.", "Phrase typed into the Trendyol search box."),
               th("İncelenen ürün", "Products examined", "İncelenen ilk sonuç sayısı.", "Number of top results examined.", True),
               th("Medyan fiyat (TL)", "Median price (TL)", "İncelenen ürünlerin medyan satış fiyatı; havlupanda yalnız ısıtıcılı havlupanlar, iç takımda jenerik ürünler.", "Median sale price of the products examined; heated towel rails only for towel radiators, generic products for inner mechanisms.", True),
               th("VitrA / Artema ürün", "VitrA / Artema products", "İlk sonuçlarda VitrA veya Artema markalı ürün sayısı.", "Number of VitrA or Artema products in the top results.", True),
-              th("En çok değerlendirilen marka", "Most-reviewed brand", "İlk sonuçlarda değerlendirme sayısı en yüksek ürünün markası; bağlantı Trendyol'da marka + arama ifadesiyle yapılan aramaya gider.", "Brand of the most-reviewed product among the top results; the link opens a Trendyol search for brand + phrase."),
+              th("En çok değerlendirilen marka", "Most-reviewed brand", "İlk sonuçlarda değerlendirme sayısı en yüksek ürünün markası; bağlantı ürün sayfasını yeni sekmede açar.", "Brand of the most-reviewed product among the top results; the link opens the product page in a new tab."),
               th("Fiyat (TL)", "Price (TL)", "Bu ürünün satış fiyatı, 29.09.2026.", "Sale price of this product, 29.09.2026.", True),
               th("Değerlendirme sayısı", "Reviews", "Bu ürünün değerlendirme sayısı; satış hacmi göstergesi olarak kullanılmıştır.", "Review count of this product; used as a sales volume indicator.", True),
               th("Gözlem", "Observation", "Sonuç sayfasının genel görünümü.", "General view of the results page.")], trows, "uzun")

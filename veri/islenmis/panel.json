@@ -1,0 +1,1566 @@
+{
+ "ceyrek": [
+  {
+   "q": "2025Q4",
+   "net": 1737,
+   "model": 383,
+   "artema_pay": 35.80886586067933,
+   "ort_fiyat": 3538.9407023603917,
+   "indirim": 15.524512603416984,
+   "iptal": 8.98455779129621,
+   "iade": 9.733270940570895,
+   "komisyon": 8.961570909398517
+  },
+  {
+   "q": "2026Q1",
+   "net": 1672,
+   "model": 392,
+   "artema_pay": 18.361244019138756,
+   "ort_fiyat": 3321.5227272727275,
+   "indirim": 14.822214815705095,
+   "iptal": 10.042836744407426,
+   "iade": 10.376011423131843,
+   "komisyon": 9.52013869957177
+  },
+  {
+   "q": "2026Q2",
+   "net": 5878,
+   "model": 379,
+   "artema_pay": 51.1058183055461,
+   "ort_fiyat": 1782.1070091867982,
+   "indirim": 16.614179471460815,
+   "iptal": 9.767974792323116,
+   "iade": 6.0441134345459755,
+   "komisyon": 9.205315971733304
+  },
+  {
+   "q": "2026Q3",
+   "net": 7383,
+   "model": 370,
+   "artema_pay": 42.47595828254097,
+   "ort_fiyat": 1687.5599349857782,
+   "indirim": 20.314048367916826,
+   "iptal": 7.024694317909375,
+   "iade": 4.47134979621194,
+   "komisyon": 9.390581058016712
+  }
+ ],
+ "kategori": [
+  {
+   "kategori": "Lavabo Bataryası",
+   "net": 1245,
+   "adet_pay": 7.468506298740252,
+   "ciro_pay": 14.083022921821225,
+   "ort_fiyat": 3917.8184738955824,
+   "iptal": 15.145872129112353,
+   "iade": 7.572936064556177,
+   "puan": 4.604838709677419,
+   "deg": 124,
+   "dusuk": 8.064516129032258,
+   "q4": 296,
+   "q3": 167
+  },
+  {
+   "kategori": "Banyo Dolabı Seti",
+   "net": 445,
+   "adet_pay": 2.669466106778644,
+   "ciro_pay": 12.813661336387028,
+   "ort_fiyat": 9973.119101123595,
+   "iptal": 11.010830324909747,
+   "iade": 8.664259927797833,
+   "puan": 3.8333333333333335,
+   "deg": 72,
+   "dusuk": 25.0,
+   "q4": 125,
+   "q3": 114
+  },
+  {
+   "kategori": "Duş Sistemi",
+   "net": 791,
+   "adet_pay": 4.745050989802039,
+   "ciro_pay": 9.438812057303773,
+   "ort_fiyat": 4132.935524652339,
+   "iptal": 8.061002178649238,
+   "iade": 5.773420479302832,
+   "puan": 4.523255813953488,
+   "deg": 86,
+   "dusuk": 8.13953488372093,
+   "q4": 247,
+   "q3": 296
+  },
+  {
+   "kategori": "Klozet",
+   "net": 210,
+   "adet_pay": 1.259748050389922,
+   "ciro_pay": 8.285976413710374,
+   "ort_fiyat": 13666.02380952381,
+   "iptal": 13.23529411764706,
+   "iade": 9.558823529411764,
+   "puan": 3.8947368421052633,
+   "deg": 19,
+   "dusuk": 26.31578947368421,
+   "q4": 36,
+   "q3": 99
+  },
+  {
+   "kategori": "Eviye Bataryası",
+   "net": 349,
+   "adet_pay": 2.0935812837432515,
+   "ciro_pay": 6.233945887314774,
+   "ort_fiyat": 6186.647564469914,
+   "iptal": 8.735632183908045,
+   "iade": 11.03448275862069,
+   "puan": 4.527272727272727,
+   "deg": 55,
+   "dusuk": 9.090909090909092,
+   "q4": 84,
+   "q3": 142
+  },
+  {
+   "kategori": "Lavabo",
+   "net": 290,
+   "adet_pay": 1.7396520695860829,
+   "ciro_pay": 5.513600814154245,
+   "ort_fiyat": 6584.989655172414,
+   "iptal": 8.71934604904632,
+   "iade": 12.26158038147139,
+   "puan": 4.2727272727272725,
+   "deg": 22,
+   "dusuk": 18.181818181818183,
+   "q4": 55,
+   "q3": 89
+  },
+  {
+   "kategori": "Klozet Kapağı",
+   "net": 921,
+   "adet_pay": 5.5248950209958005,
+   "ciro_pay": 5.435258563208777,
+   "ort_fiyat": 2043.988056460369,
+   "iptal": 5.540417801998183,
+   "iade": 10.80835603996367,
+   "puan": 4.1891891891891895,
+   "deg": 74,
+   "dusuk": 13.513513513513514,
+   "q4": 56,
+   "q3": 364
+  },
+  {
+   "kategori": "Ara Musluk",
+   "net": 4525,
+   "adet_pay": 27.144571085782843,
+   "ciro_pay": 5.428782493743505,
+   "ort_fiyat": 415.5292817679558,
+   "iptal": 8.264621284755513,
+   "iade": 4.966442953020135,
+   "puan": 4.474025974025974,
+   "deg": 154,
+   "dusuk": 9.740259740259742,
+   "q4": 74,
+   "q3": 2067
+  },
+  {
+   "kategori": "Banyo Bataryası",
+   "net": 354,
+   "adet_pay": 2.123575284943011,
+   "ciro_pay": 5.317698991020871,
+   "ort_fiyat": 5202.813559322034,
+   "iptal": 8.15347721822542,
+   "iade": 6.954436450839328,
+   "puan": 4.594594594594595,
+   "deg": 37,
+   "dusuk": 8.108108108108109,
+   "q4": 79,
+   "q3": 155
+  },
+  {
+   "kategori": "Banyo Askısı",
+   "net": 1651,
+   "adet_pay": 9.904019196160768,
+   "ciro_pay": 4.880531098905547,
+   "ort_fiyat": 1023.8534221683828,
+   "iptal": 6.842105263157896,
+   "iade": 6.2631578947368425,
+   "puan": 4.740259740259741,
+   "deg": 77,
+   "dusuk": 2.5974025974025974,
+   "q4": 149,
+   "q3": 927
+  },
+  {
+   "kategori": "Tuvalet Kağıtlığı",
+   "net": 1432,
+   "adet_pay": 8.590281943611277,
+   "ciro_pay": 4.571305278218931,
+   "ort_fiyat": 1105.643156424581,
+   "iptal": 6.473915776241358,
+   "iade": 3.519798868636078,
+   "puan": 4.5285714285714285,
+   "deg": 70,
+   "dusuk": 11.428571428571429,
+   "q4": 99,
+   "q3": 801
+  },
+  {
+   "kategori": "Banyo Tesisatı",
+   "net": 1232,
+   "adet_pay": 7.390521895620876,
+   "ciro_pay": 4.124554651125794,
+   "ort_fiyat": 1159.5357142857142,
+   "iptal": 9.972862957937584,
+   "iade": 6.445047489823609,
+   "puan": 4.411764705882353,
+   "deg": 68,
+   "dusuk": 13.23529411764706,
+   "q4": 43,
+   "q3": 496
+  },
+  {
+   "kategori": "Rezervuar",
+   "net": 1147,
+   "adet_pay": 6.880623875224955,
+   "ciro_pay": 3.612119413985873,
+   "ort_fiyat": 1090.7279860505666,
+   "iptal": 7.390648567119156,
+   "iade": 6.108597285067873,
+   "puan": 4.098591549295775,
+   "deg": 71,
+   "dusuk": 19.718309859154928,
+   "q4": 51,
+   "q3": 615
+  },
+  {
+   "kategori": "Tuvalet Fırçası",
+   "net": 250,
+   "adet_pay": 1.4997000599880024,
+   "ciro_pay": 1.7740619183844324,
+   "ort_fiyat": 2457.8,
+   "iptal": 5.017921146953405,
+   "iade": 5.376344086021505,
+   "puan": 4.2,
+   "deg": 10,
+   "dusuk": 20.0,
+   "q4": 40,
+   "q3": 134
+  },
+  {
+   "kategori": "Banyo Düzenleyici",
+   "net": 165,
+   "adet_pay": 0.9898020395920816,
+   "ciro_pay": 1.217119944371054,
+   "ort_fiyat": 2554.860606060606,
+   "iptal": 4.918032786885246,
+   "iade": 4.918032786885246,
+   "puan": 4.875,
+   "deg": 8,
+   "dusuk": 0.0,
+   "q4": 16,
+   "q3": 74
+  },
+  {
+   "kategori": "Çöp Kovası",
+   "net": 116,
+   "adet_pay": 0.695860827834433,
+   "ciro_pay": 0.8651428260597035,
+   "ort_fiyat": 2583.137931034483,
+   "iptal": 6.349206349206349,
+   "iade": 1.5873015873015872,
+   "puan": 4.833333333333333,
+   "deg": 6,
+   "dusuk": 0.0,
+   "q4": 12,
+   "q3": 51
+  },
+  {
+   "kategori": "Musluk Başlığı",
+   "net": 757,
+   "adet_pay": 4.541091781643671,
+   "ciro_pay": 0.7186329424459031,
+   "ort_fiyat": 328.79788639365916,
+   "iptal": 7.875894988066825,
+   "iade": 1.7899761336515514,
+   "puan": 4.6521739130434785,
+   "deg": 23,
+   "dusuk": 4.3478260869565215,
+   "q4": 46,
+   "q3": 504
+  },
+  {
+   "kategori": "Çamaşır Makinesi Dolabı",
+   "net": 60,
+   "adet_pay": 0.3599280143971206,
+   "ciro_pay": 0.6715565658827033,
+   "ort_fiyat": 3876.5833333333335,
+   "iptal": 13.333333333333334,
+   "iade": 6.666666666666667,
+   "puan": 4.777777777777778,
+   "deg": 9,
+   "dusuk": 0.0,
+   "q4": 0,
+   "q3": 30
+  },
+  {
+   "kategori": "Sabunluk",
+   "net": 132,
+   "adet_pay": 0.7918416316736652,
+   "ciro_pay": 0.6068247435860494,
+   "ort_fiyat": 1592.2348484848485,
+   "iptal": 8.49673202614379,
+   "iade": 5.228758169934641,
+   "puan": 4.2,
+   "deg": 15,
+   "dusuk": 20.0,
+   "q4": 15,
+   "q3": 61
+  },
+  {
+   "kategori": "Banyo Aynası",
+   "net": 31,
+   "adet_pay": 0.1859628074385123,
+   "ciro_pay": 0.5607935463123851,
+   "ort_fiyat": 6265.548387096775,
+   "iptal": 15.217391304347828,
+   "iade": 17.391304347826086,
+   "puan": null,
+   "deg": 3,
+   "dusuk": null,
+   "q4": 6,
+   "q3": 19
+  },
+  {
+   "kategori": "Diş Fırçalık",
+   "net": 150,
+   "adet_pay": 0.8998200359928014,
+   "ciro_pay": 0.2815632163411992,
+   "ort_fiyat": 650.1333333333333,
+   "iptal": 3.6585365853658534,
+   "iade": 4.878048780487805,
+   "puan": 4.636363636363637,
+   "deg": 11,
+   "dusuk": 9.090909090909092,
+   "q4": 18,
+   "q3": 88
+  },
+  {
+   "kategori": "Tutunma Barı",
+   "net": 48,
+   "adet_pay": 0.28794241151769645,
+   "ciro_pay": 0.22828217045973398,
+   "ort_fiyat": 1647.2083333333333,
+   "iptal": 5.88235294117647,
+   "iade": 0.0,
+   "puan": null,
+   "deg": 0,
+   "dusuk": null,
+   "q4": 8,
+   "q3": 28
+  },
+  {
+   "kategori": "Ayna Etajeri",
+   "net": 50,
+   "adet_pay": 0.2999400119976005,
+   "ciro_pay": 0.18734983126706392,
+   "ort_fiyat": 1297.78,
+   "iptal": 5.555555555555555,
+   "iade": 1.8518518518518516,
+   "puan": null,
+   "deg": 4,
+   "dusuk": null,
+   "q4": 5,
+   "q3": 28
+  }
+ ],
+ "urun_adet": [
+  {
+   "kod": "A45200",
+   "ad": "A45200-Artema Filtreli Ara Musluk",
+   "kat": "Ara Musluk",
+   "marka": "Artema",
+   "net": 3703,
+   "adet_pay": 22.21355728854229,
+   "ciro_pay": 3.272592055609544,
+   "ort_fiyat": 306.09478800972187,
+   "iade": 2.3769100169779285,
+   "stok": 160
+  },
+  {
+   "kod": "NVMKJHR1013343",
+   "ad": "330B1314 Rezervuar İç Takım, Alttan Su Girişli, 6 L",
+   "kat": "Rezervuar",
+   "marka": "VitrA",
+   "net": 874,
+   "adet_pay": 5.2429514097180565,
+   "ciro_pay": 1.7551389762197458,
+   "ort_fiyat": 695.533180778032,
+   "iade": 2.8747433264887063,
+   "stok": 240
+  },
+  {
+   "kod": "A45228",
+   "ad": "A45228 Filtreli Çamaşır Musluğu, Krom",
+   "kat": "Musluk Başlığı",
+   "marka": "Artema",
+   "net": 757,
+   "adet_pay": 4.541091781643671,
+   "ciro_pay": 0.7186329424459031,
+   "ort_fiyat": 328.79788639365916,
+   "iade": 1.7899761336515514,
+   "stok": 0
+  },
+  {
+   "kod": "330B2016-0101",
+   "ad": "330B2016 Rezervuar İç Takım, Alttan Su Girişli, 3/6 L",
+   "kat": "Banyo Tesisatı",
+   "marka": "VitrA",
+   "net": 680,
+   "adet_pay": 4.079184163167366,
+   "ciro_pay": 1.670823034804528,
+   "ort_fiyat": 851.0191176470588,
+   "iade": 2.2546419098143233,
+   "stok": 79
+  },
+  {
+   "kod": "A42914",
+   "ad": "Serenity A42914 Yüksek Lavabo Bataryası, Krom",
+   "kat": "Lavabo Bataryası",
+   "marka": "Artema",
+   "net": 562,
+   "adet_pay": 3.371325734853029,
+   "ciro_pay": 4.213392003500715,
+   "ort_fiyat": 2596.6494661921706,
+   "iade": 3.5410764872521248,
+   "stok": 0
+  },
+  {
+   "kod": "A44789",
+   "ad": "Minimax A44789 Tuvalet Kağıtlığı, Krom",
+   "kat": "Tuvalet Kağıtlığı",
+   "marka": "VitrA",
+   "net": 434,
+   "adet_pay": 2.603479304139172,
+   "ciro_pay": 1.228310869581662,
+   "ort_fiyat": 980.2488479262673,
+   "iade": 4.123711340206185,
+   "stok": 279
+  },
+  {
+   "kod": "A41458",
+   "ad": "Sıva Üstü Ankastre Ara Kesme Valfi - A41458GR",
+   "kat": "Ara Musluk",
+   "marka": "VitrA",
+   "net": 392,
+   "adet_pay": 2.351529694061188,
+   "ciro_pay": 0.7800155714390727,
+   "ort_fiyat": 689.1836734693877,
+   "iade": 21.968365553602812,
+   "stok": 537
+  },
+  {
+   "kod": "A44943",
+   "ad": "Marin A44943 Halka Havluluk, Krom",
+   "kat": "Banyo Askısı",
+   "marka": "VitrA",
+   "net": 369,
+   "adet_pay": 2.2135572885422916,
+   "ciro_pay": 0.5358853647355237,
+   "ort_fiyat": 502.99457994579944,
+   "iade": 4.77326968973747,
+   "stok": 71
+  },
+  {
+   "kod": "A44783",
+   "ad": "Minimax A44783 Halka Havluluk, Krom",
+   "kat": "Banyo Askısı",
+   "marka": "VitrA",
+   "net": 341,
+   "adet_pay": 2.0455908818236352,
+   "ciro_pay": 1.0455632918712825,
+   "ort_fiyat": 1061.9736070381232,
+   "iade": 4.232804232804233,
+   "stok": 173
+  },
+  {
+   "kod": "8697221018697",
+   "ad": "Minimax A44796 Tuvalet Kağıtlığı, Krom",
+   "kat": "Tuvalet Kağıtlığı",
+   "marka": "VitrA",
+   "net": 330,
+   "adet_pay": 1.9796040791841631,
+   "ciro_pay": 0.8508452353365533,
+   "ort_fiyat": 893.0060606060606,
+   "iade": 1.8518518518518516,
+   "stok": 198
+  },
+  {
+   "kod": "A44944",
+   "ad": "Marin A44944 Uzun Havluluk, Krom",
+   "kat": "Banyo Askısı",
+   "marka": "VitrA",
+   "net": 262,
+   "adet_pay": 1.5716856628674267,
+   "ciro_pay": 0.5293515505581228,
+   "ort_fiyat": 699.7786259541984,
+   "iade": 10.557184750733137,
+   "stok": 57
+  },
+  {
+   "kod": "108-003-009",
+   "ad": "S50 Klozet kapağı 108-003-009 Duroplast - üstten sıkmalı - yavaş kapanır - metal menteşeli - b",
+   "kat": "Klozet Kapağı",
+   "marka": "VitrA",
+   "net": 227,
+   "adet_pay": 1.3617276544691062,
+   "ciro_pay": 1.272245933805042,
+   "ort_fiyat": 1941.1674008810573,
+   "iade": 9.30232558139535,
+   "stok": 110
+  },
+  {
+   "kod": "TYC00364406541",
+   "ad": "Marin A44947 İkili Askı, Krom",
+   "kat": "Banyo Askısı",
+   "marka": "VitrA",
+   "net": 169,
+   "adet_pay": 1.0137972405518896,
+   "ciro_pay": 0.17307245119315878,
+   "ort_fiyat": 354.698224852071,
+   "iade": 2.127659574468085,
+   "stok": 139
+  },
+  {
+   "kod": "ARTM-KR-R-45232",
+   "ad": "A45232 Ara Musluk, Krom",
+   "kat": "Ara Musluk",
+   "marka": "Artema",
+   "net": 167,
+   "adet_pay": 1.0017996400719855,
+   "ciro_pay": 0.3713446947594306,
+   "ort_fiyat": 770.1556886227545,
+   "iade": 4.591836734693878,
+   "stok": 0
+  },
+  {
+   "kod": "121-003-909",
+   "ad": "Integra 121-003-909 Universal Klozet Kapağı, Yavaş Kapanır, Kolay Çıkabilir, Beyaz",
+   "kat": "Klozet Kapağı",
+   "marka": "VitrA",
+   "net": 163,
+   "adet_pay": 0.9778044391121775,
+   "ciro_pay": 0.6217257665509482,
+   "ort_fiyat": 1321.079754601227,
+   "iade": 12.254901960784313,
+   "stok": 0
+  },
+  {
+   "kod": "A44784",
+   "ad": "Minimax Uzun Havluluk A44784 Krom",
+   "kat": "Banyo Askısı",
+   "marka": "VitrA",
+   "net": 161,
+   "adet_pay": 0.9658068386322735,
+   "ciro_pay": 0.6448467492874158,
+   "ort_fiyat": 1387.2298136645963,
+   "iade": 13.989637305699482,
+   "stok": 0
+  },
+  {
+   "kod": "A45149",
+   "ad": "Lavabo Yuvarlak Süzgeci Universal A45149 Basmalı - Krom",
+   "kat": "Banyo Tesisatı",
+   "marka": "VitrA",
+   "net": 160,
+   "adet_pay": 0.9598080383923214,
+   "ciro_pay": 0.4400551277217754,
+   "ort_fiyat": 952.5875,
+   "iade": 13.397129186602871,
+   "stok": 254
+  },
+  {
+   "kod": "ARTM-MNMX-KPKL",
+   "ad": "VitrA Minimax A44788 Kapaklı Tuvalet Kağıtlığı, Krom",
+   "kat": "Tuvalet Kağıtlığı",
+   "marka": "Artema",
+   "net": 154,
+   "adet_pay": 0.9238152369526095,
+   "ciro_pay": 0.5282168669647872,
+   "ort_fiyat": 1187.9805194805194,
+   "iade": 0.0,
+   "stok": 8
+  },
+  {
+   "kod": "TYC00147556108",
+   "ad": "Marin A44946 Tuvalet Kağıtlığı, Krom",
+   "kat": "Tuvalet Kağıtlığı",
+   "marka": "VitrA",
+   "net": 153,
+   "adet_pay": 0.9178164367126574,
+   "ciro_pay": 0.3038671114010409,
+   "ort_fiyat": 687.875816993464,
+   "iade": 7.734806629834254,
+   "stok": 90
+  },
+  {
+   "kod": "A45691",
+   "ad": "Master Slot Sürgülü El Duşu Takımı A45691",
+   "kat": "Duş Sistemi",
+   "marka": "Artema",
+   "net": 145,
+   "adet_pay": 0.8698260347930414,
+   "ciro_pay": 1.1515652599265613,
+   "ort_fiyat": 2750.6689655172413,
+   "iade": 3.0864197530864197,
+   "stok": 0
+  }
+ ],
+ "urun_ciro": [
+  {
+   "kod": "A42914",
+   "ad": "Serenity A42914 Yüksek Lavabo Bataryası, Krom",
+   "kat": "Lavabo Bataryası",
+   "marka": "Artema",
+   "net": 562,
+   "adet_pay": 3.371325734853029,
+   "ciro_pay": 4.213392003500715,
+   "ort_fiyat": 2596.6494661921706,
+   "iade": 3.5410764872521248,
+   "stok": 0
+  },
+  {
+   "kod": "A45200",
+   "ad": "A45200-Artema Filtreli Ara Musluk",
+   "kat": "Ara Musluk",
+   "marka": "Artema",
+   "net": 3703,
+   "adet_pay": 22.21355728854229,
+   "ciro_pay": 3.272592055609544,
+   "ort_fiyat": 306.09478800972187,
+   "iade": 2.3769100169779285,
+   "stok": 160
+  },
+  {
+   "kod": "A4720534",
+   "ad": "Aquaheat Bliss 240 A4720534 2f Termostatik Duş Sistemi, Fırçalı Nikel",
+   "kat": "Duş Sistemi",
+   "marka": "VitrA",
+   "net": 43,
+   "adet_pay": 0.2579484103179364,
+   "ciro_pay": 3.0408971726629836,
+   "ort_fiyat": 24493.511627906977,
+   "iade": 12.698412698412698,
+   "stok": 0
+  },
+  {
+   "kod": "NVMKJHR1013343",
+   "ad": "330B1314 Rezervuar İç Takım, Alttan Su Girişli, 6 L",
+   "kat": "Rezervuar",
+   "marka": "VitrA",
+   "net": 874,
+   "adet_pay": 5.2429514097180565,
+   "ciro_pay": 1.7551389762197458,
+   "ort_fiyat": 695.533180778032,
+   "iade": 2.8747433264887063,
+   "stok": 240
+  },
+  {
+   "kod": "330B2016-0101",
+   "ad": "330B2016 Rezervuar İç Takım, Alttan Su Girişli, 3/6 L",
+   "kat": "Banyo Tesisatı",
+   "marka": "VitrA",
+   "net": 680,
+   "adet_pay": 4.079184163167366,
+   "ciro_pay": 1.670823034804528,
+   "ort_fiyat": 851.0191176470588,
+   "iade": 2.2546419098143233,
+   "stok": 79
+  },
+  {
+   "kod": "108-003-009",
+   "ad": "S50 Klozet kapağı 108-003-009 Duroplast - üstten sıkmalı - yavaş kapanır - metal menteşeli - b",
+   "kat": "Klozet Kapağı",
+   "marka": "VitrA",
+   "net": 227,
+   "adet_pay": 1.3617276544691062,
+   "ciro_pay": 1.272245933805042,
+   "ort_fiyat": 1941.1674008810573,
+   "iade": 9.30232558139535,
+   "stok": 110
+  },
+  {
+   "kod": "A44789",
+   "ad": "Minimax A44789 Tuvalet Kağıtlığı, Krom",
+   "kat": "Tuvalet Kağıtlığı",
+   "marka": "VitrA",
+   "net": 434,
+   "adet_pay": 2.603479304139172,
+   "ciro_pay": 1.228310869581662,
+   "ort_fiyat": 980.2488479262673,
+   "iade": 4.123711340206185,
+   "stok": 279
+  },
+  {
+   "kod": "A43688",
+   "ad": "Shift T30 A43688 Lavabo Bataryası, Krom",
+   "kat": "Lavabo Bataryası",
+   "marka": "Artema",
+   "net": 110,
+   "adet_pay": 0.6598680263947211,
+   "ciro_pay": 1.1773194015361133,
+   "ort_fiyat": 3706.9727272727273,
+   "iade": 7.751937984496124,
+   "stok": 39
+  },
+  {
+   "kod": "A45691",
+   "ad": "Master Slot Sürgülü El Duşu Takımı A45691",
+   "kat": "Duş Sistemi",
+   "marka": "Artema",
+   "net": 145,
+   "adet_pay": 0.8698260347930414,
+   "ciro_pay": 1.1515652599265613,
+   "ort_fiyat": 2750.6689655172413,
+   "iade": 3.0864197530864197,
+   "stok": 0
+  },
+  {
+   "kod": "7041B003-6382",
+   "ad": "Shift T30 Asma Klozet ve Klozet Kapağı Seti 7041B003-6382, Beyaz, Kanalsız Klozet",
+   "kat": "Klozet",
+   "marka": "VitrA",
+   "net": 32,
+   "adet_pay": 0.19196160767846432,
+   "ciro_pay": 1.0783247542976935,
+   "ort_fiyat": 11671.25,
+   "iade": 2.857142857142857,
+   "stok": 16
+  },
+  {
+   "kod": "A44783",
+   "ad": "Minimax A44783 Halka Havluluk, Krom",
+   "kat": "Banyo Askısı",
+   "marka": "VitrA",
+   "net": 341,
+   "adet_pay": 2.0455908818236352,
+   "ciro_pay": 1.0455632918712825,
+   "ort_fiyat": 1061.9736070381232,
+   "iade": 4.232804232804233,
+   "stok": 173
+  },
+  {
+   "kod": "A43691",
+   "ad": "Shift T30 A43691 Eviye Bataryası, L Tipi, Krom",
+   "kat": "Eviye Bataryası",
+   "marka": "Artema",
+   "net": 62,
+   "adet_pay": 0.3719256148770246,
+   "ciro_pay": 1.011014630604478,
+   "ort_fiyat": 5647.854838709677,
+   "iade": 9.722222222222223,
+   "stok": 6
+  },
+  {
+   "kod": "69567",
+   "ad": "Ardea 69567 Banyo Dolabı Seti, Kapaklı, 80 cm, Altın Meşe",
+   "kat": "Banyo Dolabı Seti",
+   "marka": "VitrA",
+   "net": 38,
+   "adet_pay": 0.22795440911817635,
+   "ciro_pay": 1.0107432304574715,
+   "ort_fiyat": 9212.447368421053,
+   "iade": 4.444444444444445,
+   "stok": 0
+  },
+  {
+   "kod": "7870B403-0090230-003R009",
+   "ad": "Nest Quantumflush Asma Klozet Ve Etekli Soft Klozet Kapağı Seti, Beyaz",
+   "kat": "Klozet",
+   "marka": "VitrA",
+   "net": 25,
+   "adet_pay": 0.14997000599880025,
+   "ciro_pay": 1.0099838874929747,
+   "ort_fiyat": 13992.4,
+   "iade": 6.0606060606060606,
+   "stok": 0
+  },
+  {
+   "kod": "A42616",
+   "ad": "Suit A42616 Lavabo Bataryası, Yandan Kumandalı, Krom",
+   "kat": "Lavabo Bataryası",
+   "marka": "VitrA",
+   "net": 33,
+   "adet_pay": 0.1979604079184163,
+   "ciro_pay": 0.9774245315590154,
+   "ort_fiyat": 10258.575757575758,
+   "iade": 15.789473684210526,
+   "stok": 138
+  }
+ ],
+ "pareto": {
+  "urun": 727,
+  "ciro50": 58,
+  "ciro80": 203,
+  "adet50": 10,
+  "adet80": 71
+ },
+ "fiyat_bandi": [
+  {
+   "band": "<500",
+   "urun": 11,
+   "adet_pay": 29.304139172165566,
+   "ciro_pay": 4.508909229527897
+  },
+  {
+   "band": "500-1.000",
+   "urun": 38,
+   "adet_pay": 26.196760647870427,
+   "ciro_pay": 9.681960603901128
+  },
+  {
+   "band": "1.000-2.000",
+   "urun": 127,
+   "adet_pay": 16.412717456508698,
+   "ciro_pay": 11.32043505097097
+  },
+  {
+   "band": "2.000-5.000",
+   "urun": 222,
+   "adet_pay": 18.770245950809837,
+   "ciro_pay": 28.61127201033538
+  },
+  {
+   "band": "5.000-10.000",
+   "urun": 169,
+   "adet_pay": 6.106778644271146,
+   "ciro_pay": 21.729442001875203
+  },
+  {
+   "band": "10.000-20.000",
+   "urun": 115,
+   "adet_pay": 2.5434913017396523,
+   "ciro_pay": 15.471477201550353
+  },
+  {
+   "band": "20.000+",
+   "urun": 45,
+   "adet_pay": 0.6658668266346731,
+   "ciro_pay": 8.676503901839071
+  }
+ ],
+ "stok": {
+  "q3_urun": 370,
+  "stok0": 86,
+  "adet_pay": 17.282947311391034,
+  "ciro_pay": 26.738356346346553,
+  "ornek": [
+   {
+    "ad": "A45228 Filtreli Çamaşır Musluğu, Krom",
+    "net": 504
+   },
+   {
+    "ad": "Master Slot Sürgülü El Duşu Takımı A45691",
+    "net": 100
+   },
+   {
+    "ad": "A45232 Ara Musluk, Krom",
+    "net": 93
+   },
+   {
+    "ad": "A44945-Vitra Marin Tuvalet Kağıtlığı - Kapaklı - Krom",
+    "net": 78
+   },
+   {
+    "ad": "Integra 121-003-909 Universal Klozet Kapağı, Yavaş Kapanır, Kolay Çıkabilir, Beyaz",
+    "net": 58
+   },
+   {
+    "ad": "Punto A41192 Fonksiyonel Eviye Mutfak Bataryası ,Krom",
+    "net": 42
+   },
+   {
+    "ad": "Minimax S A41994 Banyo Bataryası, Krom",
+    "net": 31
+   },
+   {
+    "ad": "Aquaheat Bliss 240 A4720534 2f Termostatik Duş Sistemi, Fırçalı Nikel",
+    "net": 25
+   }
+  ]
+ },
+ "liste_fark": {
+  "medyan": -18.44667201283079,
+  "n": 333
+ },
+ "neden": {
+  "Müşterinin İptal Ettiği": 1135,
+  "Trendyol'un İptal Ettiği": 526,
+  "Benim İptal Ettiğim": 10,
+  "Kusurlu Ürün Gönderildi": 141,
+  "Yanlış Ürün Gönderildi": 31,
+  "Vazgeçtim": 121,
+  "Diğer": 221,
+  "Bedeni/Ebatı Küçük Geldi": 152,
+  "Bedeni/Ebatı Büyük Geldi": 185
+ },
+ "profil": [
+  {
+   "q": "2025Q4",
+   "yeni": 93.14,
+   "plus": 20.59,
+   "tek": 77.79,
+   "ust5": 41.980000000000004,
+   "kadin": 62.57
+  },
+  {
+   "q": "2026Q1",
+   "yeni": 93.43,
+   "plus": 35.11,
+   "tek": 74.29,
+   "ust5": 34.38,
+   "kadin": 59.24
+  },
+  {
+   "q": "2026Q2",
+   "yeni": 95.64,
+   "plus": 39.43,
+   "tek": 67.15,
+   "ust5": 18.330000000000002,
+   "kadin": 51.77
+  },
+  {
+   "q": "2026Q3",
+   "yeni": 94.79,
+   "plus": 43.15,
+   "tek": 70.35,
+   "ust5": 21.06,
+   "kadin": 54.36
+  }
+ ],
+ "il": [
+  {
+   "il": "İstanbul",
+   "pay": 32.99684542586751
+  },
+  {
+   "il": "Ankara",
+   "pay": 7.847003154574132
+  },
+  {
+   "il": "İzmir",
+   "pay": 7.066246056782334
+  },
+  {
+   "il": "Bursa",
+   "pay": 4.242902208201893
+  },
+  {
+   "il": "Kocaeli",
+   "pay": 3.9353312302839116
+  },
+  {
+   "il": "Antalya",
+   "pay": 3.5252365930599368
+  }
+ ],
+ "il_sayi": 82,
+ "saat": {
+  "0-3": 7.941640378548896,
+  "12-15": 18.990536277602523,
+  "15-18": 17.350157728706623,
+  "18-21": 16.151419558359624,
+  "21-24": 19.834384858044164,
+  "3-6": 1.2776025236593058,
+  "6-9": 3.446372239747634,
+  "9-12": 15.00788643533123
+ },
+ "gun": {
+  "Cuma": 12.302839116719243,
+  "Cumartesi": 12.176656151419559,
+  "Pazar": 13.61198738170347,
+  "Pazartesi": 16.742902208201894,
+  "Perşembe": 14.4794952681388,
+  "Salı": 14.763406940063092,
+  "Çarşamba": 15.922712933753944
+ },
+ "magaza": {
+  "takipci_bas": 41481,
+  "takipci_son": 126619,
+  "vitrin_siparis_2026": 29.583741866476515,
+  "kasim_takipci": 32216
+ },
+ "operasyon": {
+  "2026": {
+   "Satılan Ürün Adedi": 16242.0,
+   "Tedarik Edememe Oranı": 0.02,
+   "Tedarik Edilemeyen Ürün Adedi": 3.0,
+   "Kusurlu & Yanlış & Eksik İade Oranı": 0.87,
+   "Kusurlu & Yanlış & Eksik İade Adedi": 141.0,
+   "İade Oranı": 6.24,
+   "İade Adedi": 1013.0,
+   "İade Kabul Süresi": 23.87,
+   "Müşteriye Teslim Süresi": 75.07,
+   "Kargoya Teslim Süresi": 31.7,
+   "Kargoya Zamanında Teslim Oranı": 93.51,
+   "Hızlı Teslimatla Oluşan Gönderi Oranı": 48.48,
+   "Hızlı Teslimat Gönderilerinin Kargoya Zamanında Teslim Oranı": 92.01
+  },
+  "2025": {
+   "Satılan Ürün Adedi": 7427.0,
+   "Tedarik Edememe Oranı": 0.39,
+   "Tedarik Edilemeyen Ürün Adedi": 29.0,
+   "Kusurlu & Yanlış & Eksik İade Oranı": 2.61,
+   "Kusurlu & Yanlış & Eksik İade Adedi": 193.0,
+   "İade Oranı": 9.69,
+   "İade Adedi": 717.0,
+   "İade Kabul Süresi": 14.97,
+   "Müşteriye Teslim Süresi": 69.52,
+   "Kargoya Teslim Süresi": 27.62,
+   "Kargoya Zamanında Teslim Oranı": 90.96,
+   "Hızlı Teslimatla Oluşan Gönderi Oranı": 74.14,
+   "Hızlı Teslimat Gönderilerinin Kargoya Zamanında Teslim Oranı": 91.21
+  },
+  "2024": {
+   "Satılan Ürün Adedi": 12639.0,
+   "Tedarik Edememe Oranı": 0.28,
+   "Tedarik Edilemeyen Ürün Adedi": 36.0,
+   "Kusurlu & Yanlış & Eksik İade Oranı": 2.68,
+   "Kusurlu & Yanlış & Eksik İade Adedi": 338.0,
+   "İade Oranı": 8.42,
+   "İade Adedi": 1061.0,
+   "İade Kabul Süresi": 26.52,
+   "Müşteriye Teslim Süresi": 84.93,
+   "Kargoya Teslim Süresi": 37.02,
+   "Kargoya Zamanında Teslim Oranı": 92.16,
+   "Hızlı Teslimatla Oluşan Gönderi Oranı": 0.0,
+   "Hızlı Teslimat Gönderilerinin Kargoya Zamanında Teslim Oranı": 0.0
+  },
+  "2023": {
+   "Satılan Ürün Adedi": 15873.0,
+   "Tedarik Edememe Oranı": 1.0,
+   "Tedarik Edilemeyen Ürün Adedi": 158.0,
+   "Kusurlu & Yanlış & Eksik İade Oranı": 2.15,
+   "Kusurlu & Yanlış & Eksik İade Adedi": 338.0,
+   "İade Oranı": 7.88,
+   "İade Adedi": 1239.0,
+   "İade Kabul Süresi": 25.33,
+   "Müşteriye Teslim Süresi": 105.27,
+   "Kargoya Teslim Süresi": 37.13,
+   "Kargoya Zamanında Teslim Oranı": 89.46,
+   "Hızlı Teslimatla Oluşan Gönderi Oranı": 0.0,
+   "Hızlı Teslimat Gönderilerinin Kargoya Zamanında Teslim Oranı": 0.0
+  }
+ },
+ "deger": {
+  "n": 1023,
+  "ort": 4.4232649071358745,
+  "bes": 77.32160312805473,
+  "dusuk": 11.534701857282501,
+  "yorumlu": 399,
+  "artema": 4.53257790368272,
+  "vitra": 4.365671641791045,
+  "bas": "2025-10-02",
+  "son": "2026-09-28"
+ },
+ "tema": [
+  {
+   "tema": "Kalite ve malzeme",
+   "n": 164,
+   "ort": 4.640243902439025,
+   "dusuk": 9
+  },
+  {
+   "tema": "Görünüm ve tasarım",
+   "n": 116,
+   "ort": 4.698275862068965,
+   "dusuk": 7
+  },
+  {
+   "tema": "Hediye ve paketleme jesti",
+   "n": 82,
+   "ort": 4.829268292682927,
+   "dusuk": 2
+  },
+  {
+   "tema": "Kargo ve teslimat",
+   "n": 59,
+   "ort": 3.7966101694915255,
+   "dusuk": 17
+  },
+  {
+   "tema": "Ambalaj",
+   "n": 47,
+   "ort": 3.617021276595745,
+   "dusuk": 15
+  },
+  {
+   "tema": "Eksik parça ve aksesuar",
+   "n": 28,
+   "ort": 2.7857142857142856,
+   "dusuk": 14
+  },
+  {
+   "tema": "Ölçü ve uyum",
+   "n": 24,
+   "ort": 4.5,
+   "dusuk": 1
+  },
+  {
+   "tema": "Kırık ve hasar",
+   "n": 36,
+   "ort": 2.2777777777777777,
+   "dusuk": 25
+  },
+  {
+   "tema": "Montaj",
+   "n": 36,
+   "ort": 3.75,
+   "dusuk": 10
+  },
+  {
+   "tema": "İade ve değişim",
+   "n": 34,
+   "ort": 2.411764705882353,
+   "dusuk": 20
+  },
+  {
+   "tema": "Su kaçağı ve işlev",
+   "n": 11,
+   "ort": 2.090909090909091,
+   "dusuk": 8
+  }
+ ],
+ "satici": {
+  "n": 149,
+  "ort": 3.9731543624161074,
+  "bir": 32,
+  "teslim_medyan": 3.0,
+  "etki": {
+   "Kusurlu/hasarlı ürün teslimi": 11,
+   "Eksik ürün teslimi": 10,
+   "Yanlış/farklı ürün teslimi": 7,
+   "Geç teslimat": 4,
+   "Ürün/malzeme kalitesi": 2,
+   "Özensiz Paketleme": 1,
+   "Ürün fiyatı": 1
+  }
+ },
+ "soru": {
+  "n": 352,
+  "cevap_medyan_dk": 73.0,
+  "tema": [
+   {
+    "tema": "Uyumluluk (klozet, lavabo, valf kodu)",
+    "n": 83
+   },
+   {
+    "tema": "Stok, renk ve varyant",
+    "n": 58
+   },
+   {
+    "tema": "Ölçü ve boyut",
+    "n": 50
+   },
+   {
+    "tema": "Yedek parça",
+    "n": 36
+   },
+   {
+    "tema": "Kargo ve teslim süresi",
+    "n": 37
+   },
+   {
+    "tema": "Montaj",
+    "n": 30
+   },
+   {
+    "tema": "Kutu içeriği (kapak, rezervuar, hortum dahil mi)",
+    "n": 28
+   },
+   {
+    "tema": "Eksik, hasarlı, arızalı ürün",
+    "n": 21
+   },
+   {
+    "tema": "Orijinallik ve marka",
+    "n": 19
+   }
+  ],
+  "cevap": [
+   {
+    "kalip": "Danışma Hattı / yetkili servise yönlendirme",
+    "n": 57
+   },
+   {
+    "kalip": "\"İlgili ekibe ilettik, tekrar sorun\"",
+    "n": 36
+   },
+   {
+    "kalip": "\"Ürün kodunu paylaşırsanız\"",
+    "n": 23
+   },
+   {
+    "kalip": "Farklı marka uyumluluğu paylaşılamıyor",
+    "n": 20
+   },
+   {
+    "kalip": "Trendyol kuralı: parça ve bağlantı gönderilemiyor",
+    "n": 14
+   }
+  ]
+ },
+ "siparis_talep": {
+  "Teslimat Durumu": 39,
+  "Kusurlu Ürün Talebi": 12,
+  "Eksik Ürün Talebi": 6,
+  "Fatura Talebi": 4,
+  "Yanlış Ürün Talebi": 2
+ },
+ "donusum": {
+  "toplam_gor": 3874956,
+  "satici_gor": 2126533,
+  "sepet": 4.07696471204538,
+  "cr": 0.8344098116511711,
+  "satissiz_urun": 1429,
+  "urun": 2083,
+  "satissiz_gor": 8.371466607854193,
+  "kat": [
+   {
+    "kategori": "Banyo Dolabı Seti",
+    "gor_pay": 12.967539182321646,
+    "sepet": 1.960044821746525,
+    "cr": 0.14251574744613957,
+    "fav": 26515
+   },
+   {
+    "kategori": "Lavabo Bataryası",
+    "gor_pay": 10.537104291351227,
+    "sepet": 4.164230726319313,
+    "cr": 0.5529398638848599,
+    "fav": 36956
+   },
+   {
+    "kategori": "Duş Sistemi",
+    "gor_pay": 9.268184410963762,
+    "sepet": 2.408024719545794,
+    "cr": 0.32776737649106247,
+    "fav": 22030
+   },
+   {
+    "kategori": "Klozet",
+    "gor_pay": 8.18078064154189,
+    "sepet": 2.141785511045198,
+    "cr": 0.12990969551696588,
+    "fav": 9368
+   },
+   {
+    "kategori": "Banyo Tesisatı",
+    "gor_pay": 7.575429113961551,
+    "sepet": 3.748742969943015,
+    "cr": 0.8982333296087999,
+    "fav": 11911
+   },
+   {
+    "kategori": "Eviye Bataryası",
+    "gor_pay": 7.262055185600223,
+    "sepet": 2.5856375056659977,
+    "cr": 0.21045133717541928,
+    "fav": 35511
+   },
+   {
+    "kategori": "Ara Musluk",
+    "gor_pay": 6.976849171868012,
+    "sepet": 11.627405385367169,
+    "cr": 3.492063492063492,
+    "fav": 10689
+   },
+   {
+    "kategori": "Klozet Kapağı",
+    "gor_pay": 6.181470026564365,
+    "sepet": 3.6888270153897653,
+    "cr": 0.8101878266426273,
+    "fav": 18640
+   },
+   {
+    "kategori": "Lavabo",
+    "gor_pay": 5.440404639852756,
+    "sepet": 2.1073194343601975,
+    "cr": 0.24893683227880922,
+    "fav": 9814
+   },
+   {
+    "kategori": "Rezervuar",
+    "gor_pay": 4.328924122033376,
+    "sepet": 5.256582949508994,
+    "cr": 1.3871990962023117,
+    "fav": 9949
+   },
+   {
+    "kategori": "Banyo Askısı",
+    "gor_pay": 4.237272593465514,
+    "sepet": 7.619829757954431,
+    "cr": 1.9754292119369194,
+    "fav": 12640
+   },
+   {
+    "kategori": "Banyo Bataryası",
+    "gor_pay": 3.459903984560785,
+    "sepet": 3.658801783190171,
+    "cr": 0.45531151462433406,
+    "fav": 13546
+   },
+   {
+    "kategori": "Çamaşır Makinesi Dolabı",
+    "gor_pay": 3.3741775932938736,
+    "sepet": 1.6947026605159368,
+    "cr": 0.10591891628224605,
+    "fav": 2557
+   },
+   {
+    "kategori": "Tuvalet Kağıtlığı",
+    "gor_pay": 3.08991207754594,
+    "sepet": 8.28970597187557,
+    "cr": 2.2478237048761183,
+    "fav": 7583
+   }
+  ],
+  "bakan_cok": [
+   {
+    "ad": "İstanbul A48023 Ankastre Duş Başlığı, Tavandan, Krom",
+    "kat": "Duş Sistemi",
+    "gor": 21731,
+    "sepet": 88,
+    "sat": 0
+   },
+   {
+    "ad": "Renoform 773-5060-01 Asma Klozetler Için Taharet Deliksiz Platform, 6 Cm, Açık Gri",
+    "kat": "Rezervuar",
+    "gor": 17900,
+    "sepet": 326,
+    "sat": 2
+   },
+   {
+    "ad": "İstanbul 4518B403-0090 Rim-ex Asma Klozet, Clean, 52 cm, Beyaz",
+    "kat": "Klozet",
+    "gor": 12225,
+    "sepet": 87,
+    "sat": 1
+   },
+   {
+    "ad": "Origin A4488934 Yerden Fırçalı Nikel Diş Fırçalığı",
+    "kat": "Diş Fırçalık",
+    "gor": 10853,
+    "sepet": 54,
+    "sat": 2
+   },
+   {
+    "ad": "Valarte 7805B403-0090 Asma Klozet, Kolay Temizlenir, Kir Tutmayan, 54 cm, Beyaz, Kapak Dahil Değildir",
+    "kat": "Klozet",
+    "gor": 10550,
+    "sepet": 61,
+    "sat": 0
+   },
+   {
+    "ad": "Root Groove 69295 Lavabo Dolabı, Kapaklı, Mat Retro Yeşil, 80 cm",
+    "kat": "Banyo Dolabı Seti",
+    "gor": 8080,
+    "sepet": 65,
+    "sat": 2
+   },
+   {
+    "ad": "Sea 59930061000 Duş Kabin, Krom",
+    "kat": "Duşakabin",
+    "gor": 5043,
+    "sepet": 63,
+    "sat": 2
+   },
+   {
+    "ad": "ArchiPlan Lavabo 7404B003-0012 Dikdörtgen - kompakt - 60x38 cm - armatür deliksiz - su taşma d",
+    "kat": "Lavabo",
+    "gor": 4829,
+    "sepet": 47,
+    "sat": 2
+   }
+  ]
+ },
+ "donusum25": {
+  "sepet": 2.4773666869421533,
+  "cr": 0.4352390386406455
+ },
+ "enleri": [
+  {
+   "kategori": "Banyo Aksesuarları",
+   "sat_siz": 0,
+   "sat_vit": 0,
+   "ciro_siz": 0,
+   "ciro_vit": 0,
+   "fav_vit": 0,
+   "gor_vit": 0,
+   "gor_pay": 0.0,
+   "gor_top": 261781,
+   "sat_med": 187.79,
+   "vit_med": null,
+   "lider": "ATA HOME",
+   "lider_n": 9
+  },
+  {
+   "kategori": "Banyo Mobilyası",
+   "sat_siz": 0,
+   "sat_vit": 0,
+   "ciro_siz": 0,
+   "ciro_vit": 0,
+   "fav_vit": 0,
+   "gor_vit": 0,
+   "gor_pay": 0.0,
+   "gor_top": 142213,
+   "sat_med": 572.465,
+   "vit_med": null,
+   "lider": "Mowo Home",
+   "lider_n": 9
+  },
+  {
+   "kategori": "Bataryalar & Musluklar",
+   "sat_siz": 0,
+   "sat_vit": 2,
+   "ciro_siz": 0,
+   "ciro_vit": 2,
+   "fav_vit": 0,
+   "gor_vit": 0,
+   "gor_pay": 0.0,
+   "gor_top": 47559,
+   "sat_med": 351.97,
+   "vit_med": 422.99,
+   "lider": "KUSTAR",
+   "lider_n": 9
+  },
+  {
+   "kategori": "Duş Sistemi",
+   "sat_siz": 0,
+   "sat_vit": 0,
+   "ciro_siz": 0,
+   "ciro_vit": 1,
+   "fav_vit": 0,
+   "gor_vit": 1,
+   "gor_pay": 1.3483524818112869,
+   "gor_top": 71198,
+   "sat_med": 285.18,
+   "vit_med": 21130.915,
+   "lider": "Berev",
+   "lider_n": 8
+  },
+  {
+   "kategori": "Eviye",
+   "sat_siz": 0,
+   "sat_vit": 0,
+   "ciro_siz": 0,
+   "ciro_vit": 0,
+   "fav_vit": 0,
+   "gor_vit": 0,
+   "gor_pay": 0.0,
+   "gor_top": 14833,
+   "sat_med": 3100.0,
+   "vit_med": null,
+   "lider": "Asil Krom",
+   "lider_n": 9
+  },
+  {
+   "kategori": "Klozet",
+   "sat_siz": 2,
+   "sat_vit": 4,
+   "ciro_siz": 6,
+   "ciro_vit": 10,
+   "fav_vit": 5,
+   "gor_vit": 7,
+   "gor_pay": 7.4783052577845845,
+   "gor_top": 11754,
+   "sat_med": 6532.145,
+   "vit_med": 14734.5,
+   "lider": "Creavit",
+   "lider_n": 8
+  },
+  {
+   "kategori": "Klozet Kapağı",
+   "sat_siz": 1,
+   "sat_vit": 4,
+   "ciro_siz": 5,
+   "ciro_vit": 10,
+   "fav_vit": 6,
+   "gor_vit": 6,
+   "gor_pay": 11.444708680142687,
+   "gor_top": 16820,
+   "sat_med": 545.68,
+   "vit_med": 1748.625,
+   "lider": "NKP",
+   "lider_n": 6
+  },
+  {
+   "kategori": "Lavabo",
+   "sat_siz": 0,
+   "sat_vit": 0,
+   "ciro_siz": 1,
+   "ciro_vit": 1,
+   "fav_vit": 1,
+   "gor_vit": 0,
+   "gor_pay": 0.0,
+   "gor_top": 13812,
+   "sat_med": 2170.35,
+   "vit_med": 5960.0,
+   "lider": "Turkuaz",
+   "lider_n": 21
+  },
+  {
+   "kategori": "Rezervuar",
+   "sat_siz": 1,
+   "sat_vit": 8,
+   "ciro_siz": 3,
+   "ciro_vit": 18,
+   "fav_vit": 15,
+   "gor_vit": 17,
+   "gor_pay": 31.687959736740222,
+   "gor_top": 5166,
+   "sat_med": 193.05,
+   "vit_med": 1243.27,
+   "lider": "Visam",
+   "lider_n": 11
+  }
+ ],
+ "enleri_ozet": {
+  "satir": 2200,
+  "liste": 44,
+  "vit": 127,
+  "vit_3p": 93,
+  "siz": 34,
+  "bb_fark_siz": -20.0
+ },
+ "hb": {
+  "siparis": 2845,
+  "adet": 4210,
+  "sku": 701,
+  "komisyon": 14.958861353538511,
+  "kargo": 5.936115484135574,
+  "tahsilat": 0.814845490080633,
+  "hizmet": 0.18310572962458194,
+  "kampanya": 7.484062050113568,
+  "hak_edis": 74.0872249052289,
+  "gor": 110629,
+  "gor_sku": 949,
+  "sepet": 3.9555631886756633,
+  "cr": 0.9617731336268066,
+  "satissiz_sku": 729,
+  "satissiz_gor": 33.34207124714135,
+  "iptal_neden": {
+   "(belirtilmemiş)": 83,
+   "Müşteri vazgeçti": 65,
+   "Müşteri daha ucuza buldu": 53,
+   "Sipariş değişikliği": 45,
+   "Yanlış sipariş": 34,
+   "Satıcı ürünü sağlayamadı": 31,
+   "Uzun temin süresi": 21,
+   "Sipariş adresi değişikliği": 20,
+   "Fiyat değişikliği": 11,
+   "Temin süresi aşımı": 5,
+   "Yanlış barkod": 1
+  },
+  "iptal_top": 369,
+  "deg_sku": 204,
+  "deg_satici": 352,
+  "deg_hb": 1693,
+  "puan": 4.378665759313726
+ }
+}

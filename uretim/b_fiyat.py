@@ -35,6 +35,8 @@ T_VA = tablo([th("Ürün tipi", "Product type", "Yalnızca başlığında VitrA 
               th("Hepsiburada", "Hepsiburada", "Aynı fark.", "Same difference.", True), th("Koçtaş", "Koçtaş", "Aynı fark.", "Same difference.", True), th("Bağımsız mağaza", "Independent store", "Aynı fark.", "Same difference.", True)],
              [[x(a, TIP_EN[a]), n("%s (%d)" % (bin(b), c)), n(d), n(e), n(f), n(g)] for a, b, c, d, e, f, g in VA], "dar")
 # satici dokumu: liste bazinda
+import json as _json
+_SH = {d_["liste_basligi"]: d_["sonuc"].get("check_url") for d_ in _json.load(open(os.path.join(D, "_sellers_ham.json"), encoding="utf-8")) if d_.get("sonuc")}
 lst = {}
 for r in SAT:
     l = lst.setdefault(r["liste_basligi"], {"sorgu": r["urun_sorgusu"], "fiyat": [], "sat": [], "vo": None, "ucuz": None})
@@ -46,9 +48,9 @@ for b, l in lst.items():
     mn, md, mx = min(l["fiyat"]), statistics.median(l["fiyat"]), max(l["fiyat"])
     uc = l["ucuz"] or min(l["sat"], key=lambda s: s[2])[:2]
     vo = l["vo"]
-    srows.append([veri_m(b[:48] + ("…" if len(b) > 48 else "")), cell(len(l["fiyat"])), veri_m("%s (%s)" % (uc[0], uc[1])), cell(round(mn)), cell(round(md)), cell(round(mx)),
+    srows.append([u(_SH[b], b[:48] + ("…" if len(b) > 48 else "")) if _SH.get(b) else veri_m(b[:48] + ("…" if len(b) > 48 else "")), cell(len(l["fiyat"])), veri_m("%s (%s)" % (uc[0], uc[1])), cell(round(mn)), cell(round(md)), cell(round(mx)),
                   n("%s (%d.)" % (bin(round(vo[0])), vo[1])) if vo else x("listede yok", "not listed"), n(("+%%%s" % vo[2].replace(".", ",")) if vo and vo[2] else "-")])
-T_SAT = tablo([th("Ürün listesi", "Product list", "Google Shopping'de aynı ürünü satan satıcıların toplandığı liste; VitrA ve Artema ürün adı aramalarından.", "List gathering the sellers of the same product on Google Shopping; from VitrA and Artema product name searches."),
+T_SAT = tablo([th("Ürün listesi", "Product list", "Google Shopping'de aynı ürünü satan satıcıların toplandığı liste; VitrA ve Artema ürün adı aramalarından. Bağlantı Google Shopping satıcı listesini açar.", "List gathering the sellers of the same product on Google Shopping; from VitrA and Artema product name searches. The link opens the Google Shopping seller list."),
                th("Satıcı", "Sellers", "Listede görünen satıcı sayısı; 10 değeri \"10 ve üzeri\" anlamına gelir.", "Number of sellers shown in the list; 10 means \"10 or more\".", True),
                th("En ucuz satıcı (mecra)", "Cheapest seller (channel)", "Listede en düşük toplam fiyatı veren satıcı ve mecra türü.", "Seller and channel type with the lowest total price in the list."),
                th("Min", "Min", "TL.", "TL.", True), th("Medyan", "Median", "TL.", "TL.", True), th("Maks", "Max", "TL.", "TL.", True),

@@ -44,3 +44,10 @@ def doldur():
             if c not in MAGURL or not o or not o.get("okunan"): continue
             ad, tpl, sira = MAGURL[c]
             ekle(tpl % quote(q), "%s \"%s\" araması (%s, %s)" % (ad, q, a, sira), "%d ürün okundu, %d eşleşen; %s; VitrA/Artema %s ürün; marka dağılımı: %s" % (o["okunan"], o.get("eslesen") or 0, _f(o), _v(o) if _v(o) is not None else "-", (o.get("marka_str") or "-")[:90]), bolum=["derin"], yontem=Y, tarih=D30, kod=["D30"], kodbolum=False)
+    Y2 = "satıcı paneli dışa aktarımı (kullanıcı tarafından iletildi)"
+    ekle("https://partner.trendyol.com", "Trendyol satıcı paneli (VitrA resmi mağazası): satış, sipariş dağılımı, mağaza, operasyon, favori-görüntüleme, ürün ve satıcı değerlendirmeleri, ürün ve sipariş soruları, Trendyol'un Enleri",
+         "Çeyreklik net adet, iptal, iade, indirim ve komisyon oranları; müşteri profili; ürün görüntülenme ve dönüşüm; 1.023 ürün ve 149 satıcı değerlendirmesi; 352 ürün sorusu; 9 kategori × 5 liste Enleri (Eylül 2026). Ciro tutarı rapora alınmadı",
+         bolum=["panel"], yontem=Y2, tarih=D30, kod=["D31"], kodbolum=False)
+    ekle("https://merchant.hepsiburada.com", "Hepsiburada satıcı paneli: ürün performansı (hak ediş), görüntülenme, iptal ve değerlendirme raporları",
+         "Komisyon, kargo, hizmet bedeli ve kampanya indirimi oranları; 949 SKU görüntülenme ve dönüşüm; 369 iptal nedeni; 204 SKU değerlendirme",
+         bolum=["panel"], yontem=Y2, tarih=D30, kod=["D31"], kodbolum=False)

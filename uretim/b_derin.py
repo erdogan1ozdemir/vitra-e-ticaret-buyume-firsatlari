@@ -61,16 +61,20 @@ T2 = tablo([th("Hedef dışı kategori", "Non-target category", "VitrA gamında 
             th("VitrA · HB", "VitrA · HB", "Hepsiburada ilk 72'de VitrA ve Artema: adet · en iyi sıra · yorum payı.", "VitrA and Artema in the Hepsiburada first 72: count · best rank · review share."),
             th("VitrA'ya uyum", "Fit with VitrA", "Ürün ailesi, üretim ve marka konumu açısından yakınlık: Yakın / Orta / Uzak (değerlendirme).", "Proximity in product family, manufacturing and brand position: Close / Medium / Far (assessment).")], rows2, "uzun")
 SEC = ["klozet", "asma-klozet", "klozet-kapagi", "lavabo", "banyo-dolabi", "gomme-rezervuar", "rezervuar-ic-takimi", "lavabo-bataryasi", "banyo-bataryasi", "dusakabin", "camasir-makinesi-dolabi", "banyo-aynasi", "havlupan", "banyo-rafi", "mutfak-bataryasi"]
+_UR = L("urunler.jsonl")
+_URL = {(u_["kanal"], u_["kategori"], u_["sira"]): u_["url"] for u_ in _UR if u_.get("url")}
+_AD = {(u_["kanal"], u_["ad"]): u_["url"] for u_ in _UR if u_.get("url")}
 rows3 = []
 for s in SEC:
     for kanal, lst in (("Trendyol", TY), ("Hepsiburada", HB)):
         r = ilk(lst, s)
         if not r or not r.get("en_cok_yorum10"): continue
         e = r["en_cok_yorum10"][0]
-        _ara = ("https://www.trendyol.com/sr?q=" if kanal == "Trendyol" else "https://www.hepsiburada.com/ara?q=") + _q("%s %s" % (e[1], str(e[2])[:60]))
-        rows3.append([x(AD[s][0], AD[s][1]), veri_m(kanal), veri_m(str(e[2])[:48]), u(_ara, str(e[1])[:22]), cell(round(e[3])) if e[3] else n("-"), cell(e[4]), n(("%.1f" % e[5]).replace(".", ",")) if e[5] else n("-")])
+        _ara = _URL.get((kanal.lower(), r.get("kategori"), e[0])) or _URL.get((kanal.lower(), s, e[0])) or _AD.get((kanal.lower(), str(e[2]))) or \
+               (("https://www.trendyol.com/sr?q=" if kanal == "Trendyol" else "https://www.hepsiburada.com/ara?q=") + _q("%s %s" % (e[1], str(e[2])[:60])))
+        rows3.append([x(AD[s][0], AD[s][1]), veri_m(kanal), u(_ara, str(e[2])[:48]), u(_ara, str(e[1])[:22]), cell(round(e[3])) if e[3] else n("-"), cell(e[4]), n(("%.1f" % e[5]).replace(".", ",")) if e[5] else n("-")])
 T3 = tablo([th("Kategori", "Category", "Kategori.", "Category."), th("Kanal", "Channel", "Pazaryeri.", "Marketplace."), th("En çok değerlendirilen ürün", "Most-reviewed product", "Çok satan ilk 72 ürün içinde değerlendirme sayısı en yüksek ürün.", "Product with the most reviews among the first 72 best sellers."),
-            th("Marka", "Brand", "Ürünün markası; bağlantı pazaryerinde marka + ürün adıyla aramaya gider.", "Brand of the product; the link opens a marketplace search for brand + product name."), th("Fiyat (TL)", "Price (TL)", "Liste fiyatı, 30.09.2026.", "List price, 30.09.2026.", True), th("Değerlendirme sayısı", "Reviews", "Değerlendirme sayısı.", "Number of reviews.", True), th("Puan", "Rating", "Ortalama puan (5 üzerinden).", "Average rating (out of 5).", True)], rows3, "uzun")
+            th("Marka", "Brand", "Ürünün markası; bağlantı ürün sayfasını yeni sekmede açar.", "Brand of the product; the link opens the product page in a new tab."), th("Fiyat (TL)", "Price (TL)", "Liste fiyatı, 30.09.2026.", "List price, 30.09.2026.", True), th("Değerlendirme sayısı", "Reviews", "Değerlendirme sayısı.", "Number of reviews.", True), th("Puan", "Rating", "Ortalama puan (5 üzerinden).", "Average rating (out of 5).", True)], rows3, "uzun")
 MAG = ["Koçtaş", "Bauhaus", "Banyomarka", "Banyomega", "Banyoline", "Creavit (e-mağaza)"]
 def rk(m, s):
     for r in RK:

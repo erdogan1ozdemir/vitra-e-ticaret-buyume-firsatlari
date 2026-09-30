@@ -80,3 +80,6 @@ HTML = """
  insight("Makro göstergeler birlikte okunduğunda tablo şu şekildedir: harcama nominal olarak büyümekte, reel olarak yatay seyretmekte; konut el değiştirme hızı artmakta; güven ve tamirat niyeti yükselmekte; kredi koşulları gevşemekte ancak kredi talebi henüz canlanmamıştır. Bu bileşim, ertelenmiş yenileme talebinin biriktiğine işaret etmektedir. E-ticaret kanalı için öncelik, talep geri geldiğinde ilk temas noktası olmayı sağlayacak fiyat, taksit ve teslimat netliğidir.",
          "Read together, the macro indicators show the following: spending grows in nominal terms and moves sideways in real terms; housing turnover is rising; confidence and repair intent are climbing; credit conditions are easing but credit demand has not yet revived. This combination points to accumulated, postponed renovation demand. The priority for the e-commerce channel is price, instalment and delivery clarity that will make it the first point of contact when demand returns."),
 )
+
+from b_yenileme import EK as _EK
+HTML = HTML + _EK
