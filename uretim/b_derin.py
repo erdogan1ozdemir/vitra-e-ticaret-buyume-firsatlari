@@ -121,3 +121,6 @@ HTML = """
                                    ("Doğrulanmayan:", "Unverified:", "Koçtaş ve Bauhaus'ta öne çıkan Norm, Housera, Roomart, Fly ve Penta markalarının mağaza özel markası olup olmadığı doğrulanamamıştır; Koçtaş'ta sifon ve mutfak bataryası okunmamıştır.", "whether Norm, Housera, Roomart, Fly and Penta at Koçtaş and Bauhaus are store private labels could not be verified; traps and kitchen taps were not read at Koçtaş.")])),
  kaynak("Trendyol, Hepsiburada, Akakçe ve Cimri kategori listeleri (ilk 2 sayfa) · Koçtaş, Bauhaus, Banyomarka, Banyomega, Banyoline ve Creavit e-mağaza kategori sayfaları · Chrome · 30.09.2026", "Trendyol, Hepsiburada, Akakçe and Cimri category lists (first 2 pages) · Koçtaş, Bauhaus, Banyomarka, Banyomega, Banyoline and Creavit e-store category pages · Chrome · 30.09.2026", "D29"),
 )
+
+from b_derin2 import EK as _EK
+HTML = HTML + _EK

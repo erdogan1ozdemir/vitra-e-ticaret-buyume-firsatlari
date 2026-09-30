@@ -167,7 +167,7 @@ HERO = """<div class="hero dark"><div class="ring"></div>
              x("E-Ticaret Büyüme Fırsatları: Talep, Kullanıcı Davranışı ve Kanal Modeli", "E-Commerce Growth Opportunities: Demand, User Behaviour and Channel Model"),
              x("Pazar talebi, SSG ve BM derin incelemesi, katalog boşlukları, yeni kategori ve segmentler, set ve ürün + hizmet modelleri, benchmark ve makro ortam verileriyle vitra.com.tr, Trendyol ve Hepsiburada için büyüme fırsatları. Pazaryeri ve GA4 verisiyle genişletilecektir.",
                "Growth opportunities for vitra.com.tr, Trendyol and Hepsiburada built on market demand, an in-depth SSG and BM review, catalogue gaps, new categories and segments, set and product + service models, benchmarks and macro data. To be extended with marketplace and GA4 data."),
-             x("Sürüm 4 · %s" % "29.09.2026", "Version 4 · %s" % "29.09.2026"), x("Talep: Eyl 2022 - Ağu 2026", "Demand: Sep 2022 - Aug 2026"), x("Search Console: Haz 2025 - Eyl 2026", "Search Console: Jun 2025 - Sep 2026"),
+             x("Sürüm 5 · %s" % "30.09.2026", "Version 5 · %s" % "30.09.2026"), x("Talep: Eyl 2022 - Ağu 2026", "Demand: Sep 2022 - Aug 2026"), x("Search Console: Haz 2025 - Eyl 2026", "Search Console: Jun 2025 - Sep 2026"),
              x("53 bin kelime · 58 tema", "53K keywords · 58 themes"), x("Türkiye", "Turkey"))
 
 DOC = """<!doctype html>

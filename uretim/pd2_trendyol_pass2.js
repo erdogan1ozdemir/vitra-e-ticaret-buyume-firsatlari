@@ -1,0 +1,3 @@
+// Trendyol ikinci okuma (eslesme orani dusuk 10 kesit): web kategorisi (Klozet 109226, Lavabo 109227) zorlamali ya da kategorisiz arama, BEST_SELLER ilk sayfa. Sonuc __R2; pd2_topla.py eslesme orani yuksek olani tutar.
+window.__OV={"asma-klozet-takimi":"109226:Klozet","tuvalet-tasi-alaturka":"109226:Klozet","monoblok-lavabo":"109227:Lavabo","etajerli-lavabo":"109227:Lavabo","ayakli-lavabo":"109227:Lavabo","kose-lavabo":"109227:Lavabo","lavabo-ayagi":"109227:Lavabo","malzemelik":"","kuvet-bataryasi":"","cocuk-klozet":""};
+// (istek: '/sr?q='+encodeURIComponent(q)+(wc?'&wc='+wc.split(':')[0]:'')+'&sst=BEST_SELLER', kesitler arasi 3.3 sn)

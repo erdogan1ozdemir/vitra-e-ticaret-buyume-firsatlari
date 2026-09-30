@@ -1,0 +1,207 @@
+{
+ "toplam_eslesme": 200,
+ "benzersiz_kod": 125,
+ "kanal": {
+  "akakce": {
+   "n": 60,
+   "kod": 60,
+   "medyan_liste": -18.7,
+   "medyan_sepet": -8.4,
+   "altinda": 95,
+   "ustunde_sepet": 35
+  },
+  "hepsiburada": {
+   "n": 54,
+   "kod": 48,
+   "medyan_liste": -5.6,
+   "medyan_sepet": 7.8,
+   "altinda": 54,
+   "ustunde_sepet": 56
+  },
+  "cimri": {
+   "n": 42,
+   "kod": 37,
+   "medyan_liste": -14.4,
+   "medyan_sepet": -3.1,
+   "altinda": 86,
+   "ustunde_sepet": 33
+  },
+  "trendyol": {
+   "n": 44,
+   "kod": 42,
+   "medyan_liste": -14.0,
+   "medyan_sepet": -0.8,
+   "altinda": 89,
+   "ustunde_sepet": 41
+  }
+ },
+ "genel": {
+  "n": 200,
+  "medyan_liste": -14.4
+ },
+ "en_dusuk": [
+  {
+   "kanal": "akakce",
+   "kesit": "kumanda-paneli-temassiz",
+   "kod": "768-0880",
+   "pazar": 6406.25,
+   "liste": 12515,
+   "sepet": 11264,
+   "satici": null,
+   "site_ad": "Loop T  Kumanda Paneli"
+  },
+  {
+   "kanal": "hepsiburada",
+   "kesit": "kampanyali-urunler",
+   "kod": "A42231",
+   "pazar": 10550,
+   "liste": 17900,
+   "sepet": 16110,
+   "satici": "MED YAPI MARKET",
+   "site_ad": "Istanbul Ankastre Lavabo Bataryası"
+  },
+  {
+   "kanal": "akakce",
+   "kesit": "ankastre-stop-valf",
+   "kod": "A41441",
+   "pazar": 450.08,
+   "liste": 759,
+   "sepet": 653,
+   "satici": null,
+   "site_ad": " Ankastre Stop Valf"
+  },
+  {
+   "kanal": "cimri",
+   "kesit": "ankastre-stop-valf",
+   "kod": "A41441",
+   "pazar": 450.08,
+   "liste": 759,
+   "sepet": 653,
+   "satici": "PttAVM",
+   "site_ad": " Ankastre Stop Valf"
+  },
+  {
+   "kanal": "akakce",
+   "kesit": "kumanda-paneli-mekanik",
+   "kod": "740-2211",
+   "pazar": 998,
+   "liste": 1678,
+   "sepet": 1443,
+   "satici": null,
+   "site_ad": "Root Round Kumanda Paneli"
+  },
+  {
+   "kanal": "hepsiburada",
+   "kesit": "kumanda-paneli-mekanik",
+   "kod": "740-2211",
+   "pazar": 999,
+   "liste": 1678,
+   "sepet": 1443,
+   "satici": "Cemretesyapi",
+   "site_ad": "Root Round Kumanda Paneli"
+  },
+  {
+   "kanal": "akakce",
+   "kesit": "ankastre-stop-valf",
+   "kod": "A41458",
+   "pazar": 550,
+   "liste": 921,
+   "sepet": 829,
+   "satici": null,
+   "site_ad": "Ankastre Stop Valf"
+  },
+  {
+   "kanal": "trendyol",
+   "kesit": "kumanda-paneli-temassiz",
+   "kod": "768-0880",
+   "pazar": 7500,
+   "liste": 12515,
+   "sepet": 11264,
+   "satici": "ESÖZCANLAR",
+   "site_ad": "Loop T  Kumanda Paneli"
+  }
+ ],
+ "en_yuksek": [
+  {
+   "kanal": "trendyol",
+   "kesit": "malzemelik",
+   "kod": "A44051",
+   "pazar": 10129.01,
+   "liste": 3747,
+   "sepet": 3372,
+   "satici": "no:1306432",
+   "site_ad": "Arkitekta Köşe Malzemelik"
+  },
+  {
+   "kanal": "hepsiburada",
+   "kesit": "kuvet-bataryasi",
+   "kod": "A42743",
+   "pazar": 65948,
+   "liste": 29882,
+   "sepet": 26894,
+   "satici": "EKM Store",
+   "site_ad": "Root Round Küvet Bataryası"
+  },
+  {
+   "kanal": "hepsiburada",
+   "kesit": "pisuvar-yikama-sistemi",
+   "kod": "310-2521",
+   "pazar": 15922.98,
+   "liste": 7412,
+   "sepet": 6671,
+   "satici": "deryastore",
+   "site_ad": "Pisuvar Yıkama Sistemi"
+  },
+  {
+   "kanal": "hepsiburada",
+   "kesit": "pisuvar-yikama-sistemi",
+   "kod": "310-2521",
+   "pazar": 15153.88,
+   "liste": 7412,
+   "sepet": 6671,
+   "satici": "GndzHome",
+   "site_ad": "Pisuvar Yıkama Sistemi"
+  },
+  {
+   "kanal": "hepsiburada",
+   "kesit": "pisuvar-yikama-sistemi",
+   "kod": "310-2521",
+   "pazar": 14847.8,
+   "liste": 7412,
+   "sepet": 6671,
+   "satici": "DMRKN STORE",
+   "site_ad": "Pisuvar Yıkama Sistemi"
+  },
+  {
+   "kanal": "hepsiburada",
+   "kesit": "ankastre-stop-valf",
+   "kod": "A42793",
+   "pazar": 3929.24,
+   "liste": 2499,
+   "sepet": 2249,
+   "satici": "BanyoAtelier",
+   "site_ad": "Liquid Ankastre Stop Valf"
+  },
+  {
+   "kanal": "hepsiburada",
+   "kesit": "pisuvar-ara-bolmesi",
+   "kod": "5172L003-0155",
+   "pazar": 5815.5,
+   "liste": 4059,
+   "sepet": 3450,
+   "satici": "BanyoAtelier",
+   "site_ad": "Arkitekt Pisuvar Ara Bölmesi"
+  },
+  {
+   "kanal": "hepsiburada",
+   "kesit": "ankastre-stop-valf",
+   "kod": "A41441",
+   "pazar": 1060.26,
+   "liste": 759,
+   "sepet": 653,
+   "satici": "Cemretesyapi",
+   "site_ad": " Ankastre Stop Valf"
+  }
+ ],
+ "ustu_1_5x": 6
+}

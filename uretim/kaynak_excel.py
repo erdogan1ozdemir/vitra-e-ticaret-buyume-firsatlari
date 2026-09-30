@@ -12,7 +12,7 @@ from openpyxl.cell.text import InlineFont
 
 import kaynak_ortak as O
 import kaynakca
-import kaynak_veri_a, kaynak_veri_b, kaynak_veri_c, kaynak_veri_d, kaynak_veri_e, kaynak_veri_f, kaynak_veri_g
+import kaynak_veri_a, kaynak_veri_b, kaynak_veri_c, kaynak_veri_d, kaynak_veri_e, kaynak_veri_f, kaynak_veri_g, kaynak_veri_h
 
 INK = "10332F"; BAS = "434343"; COR = "FF7B52"; CIZ = "E0E0E0"; ZEB = "F7F5F2"
 XLSX = os.path.join(O.KOK, "VitrA_E-Ticaret_Kaynak_Siteler.xlsx")
@@ -68,7 +68,7 @@ def tarih_sirala(L):
     return sorted(L, key=lambda t: tuple(reversed(t.split("."))))
 
 # ---------------------------------------------------------------- satirlari topla
-for m in (kaynak_veri_a, kaynak_veri_b, kaynak_veri_c, kaynak_veri_d, kaynak_veri_e, kaynak_veri_f, kaynak_veri_g):
+for m in (kaynak_veri_a, kaynak_veri_b, kaynak_veri_c, kaynak_veri_d, kaynak_veri_e, kaynak_veri_f, kaynak_veri_g, kaynak_veri_h):
     m.doldur()
 
 # Kaynakca (K) adreslerinin tamami satir olmali
