@@ -4,6 +4,7 @@ VitrA'nın Türkiye e-ticaret kanalları (vitra.com.tr, Trendyol, Hepsiburada) i
 
 - Rapor: `VitrA_E-Ticaret_Buyume_Firsatlari.html`
 - Veri dosyası: `VitrA_E-Ticaret_Buyume_Firsatlari.xlsx` (79 sekme)
+- Kaynak siteler dökümü: `VitrA_E-Ticaret_Kaynak_Siteler.xlsx` (489 URL, 65 alan adı; URL, ne için bakıldı, hangi bölüme kaynak sağladı, hangi bilgiler alındı, yöntem)
 
 ## Kapsam (Sürüm 4 · 29.09.2026)
 
