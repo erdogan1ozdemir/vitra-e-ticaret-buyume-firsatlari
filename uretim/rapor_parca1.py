@@ -10,27 +10,18 @@ INBOUND = open(os.path.join(BASE, "logo_1.txt")).read().strip()
 
 GLOSSARY = {
  "CTR": "Click-through rate; gösterimin tıklamaya dönüşme oranı.",
- "Impression": "Gösterim; sitenin arama sonuçlarında görüntülendiği sayı.",
- "Click": "Tıklama; arama sonucundan siteye gelen ziyaret.",
- "Position": "Ortalama sıra; sitenin arama sonuçlarında ortalama olarak yer aldığı konum.",
  "DR": "Domain Rating; Ahrefs'in alan adı bağlantı gücü puanı, 0-100 ölçeğinde.",
  "Organik trafik": "Ahrefs'in sıralanan kelimelerden tahmin ettiği aylık ücretsiz arama ziyareti.",
  "Paid trafik": "Ahrefs'in Google Ads reklamlarından tahmin ettiği aylık ziyaret.",
- "Long-tail": "Düşük hacimli ancak niyeti belirgin uzun arama ifadeleri.",
  "Autocomplete": "Google arama kutusunda yazarken önerilen tamamlama ifadeleri; gerçek kullanıcı aramalarından türetilir.",
- "Bundle": "Birden fazla ürünün tek fiyatla birlikte satıldığı set.",
- "AOV": "Average Order Value; sipariş başına ortalama sepet tutarı.",
- "Conversion rate": "Ziyaretin satın almaya dönüşme oranı.",
- "Pureplayer": "Fiziksel mağazası olmayan, yalnızca çevrimiçi satış yapan perakendeci.",
- "Marketplace": "Üçüncü taraf satıcılara yer açan pazaryeri platformu.",
+ "Pure player": "Fiziksel mağazası olmayan, yalnızca çevrimiçi satış yapan perakendeci.",
  "Retargeting": "Siteyi ziyaret etmiş kullanıcıya sonradan gösterilen hatırlatıcı reklam.",
  "Kartlı Ödeme Endeksi": "TCMB'nin banka ve kredi kartı harcamalarından türettiği endeks; reel seri enflasyondan arındırılmıştır.",
  "Net yüzde": "Anketlerde olumlu yanıt payından olumsuz yanıt payının çıkarılmasıyla elde edilen gösterge.",
  "SSG": "Seramik sağlık gereçleri; klozet, lavabo, bide, pisuvar ve rezervuar gibi vitrifiye ürünler.",
  "BM": "Banyo mobilyası; lavabo dolabı, boy dolabı, aynalı dolap, ayna, tezgah ve tamamlayıcılar.",
- "3P": "Üçüncü taraf satıcı; başka bir satıcının ürününün marka sitesinde listelenip satıldığı model.",
+ "3P": "Üçüncü taraf satıcı; pazaryerinde ya da marka sitesinde ürünü markanın kendisi dışında satan satıcı.",
  "GA4": "Google Analytics 4; sitenin ziyaret, dönüşüm ve ürün performansını ölçen analitik aracı.",
- "GSC": "Google Search Console; Google'ın siteye gönderdiği arama trafiğini gösterim, tık ve sıra düzeyinde raporlayan araç.",
  "SERP": "Search Engine Results Page; bir arama için Google'ın döndürdüğü sonuç sayfası.",
  "KD": "Keyword Difficulty; Ahrefs'in bir kelimede ilk 10'a girmenin zorluğunu 0-100 arası puanlayan göstergesi.",
  "TP": "Traffic Potential; bir kelimede 1. sıradaki sayfanın tüm kelimelerinden aldığı tahmini aylık trafik (Ahrefs).",
@@ -40,15 +31,28 @@ GLOSSARY = {
  "TCMB": "Türkiye Cumhuriyet Merkez Bankası.",
  "EVDS": "TCMB Elektronik Veri Dağıtım Sistemi; makro ve finansal serilerin yayımlandığı veri tabanı.",
  "BKM": "Bankalararası Kart Merkezi; kartlı ödeme istatistiklerinin kaynağı.",
- "CPC": "Cost per click; Google Ads'te tıklama başına ortalama maliyet.",
  "Buybox": "Pazaryerinde aynı ürünü satan satıcılar arasında \"sepete ekle\" düğmesini kazanan satıcı.",
  "PVC": "Polivinil klorür; suya dayanıklı plastik gövde malzemesi.",
+ "Lead": "Satın alma öncesi iletişim talebi; form, geri arama ya da randevu gibi ölçülebilir müşteri adayı olayı.",
+ "SKU": "Stok birimi; renk ve ölçü dahil her ürün varyantının tekil kodu.",
+ "Merchant Center": "Ürün bilgisinin Google Shopping ve ücretsiz ürün listelemelerinde gösterilmesi için Google'a iletildiği araç.",
+ "Yerel paket": "Arama sonucunda harita ile birlikte gösterilen yerel işletme listesi (Local pack).",
+ "Desi": "Kargo ücretlendirmesinde paketin hacmine göre hesaplanan ağırlık birimi.",
+ "Medyan": "Sıralı değerlerin ortasındaki değer; uç fiyatlardan ortalamaya göre daha az etkilenir.",
  "MDF": "Orta yoğunluklu lif levha; banyo mobilyasında yaygın gövde malzemesi.",
 }
 
 def T(t):
     """Glossary terimini span'a alir."""
     return '<span class="term" data-term="%s">%s</span>' % (GLOSSARY[t].replace('"', "&quot;"), t)
+
+def _yeks(g, ymax):
+    """Y ekseni etiketi: buyuk olcekte K/M kisaltmasi."""
+    if g and (g >= 1_000_000 or ymax >= 100_000):
+        v, b = (g / 1_000_000, "M") if g >= 1_000_000 else (g / 1000, "K")
+        r = ("%.1f" % v).rstrip("0").rstrip("."); from t2_ortak import x
+        return x(r.replace(".", ",") + b, r + b)
+    return f"{int(g):,}".replace(",", ".") if g == int(g) else ("%.1f" % g).replace(".", ",")
 
 def cizgi(seriler, yukseklik=250, genislik=880, y_etiket="Aylık arama hacmi", aylar=None, x_etiket=None, kalin=None, notlar=None, bagla=False):
     """seriler: [(ad, renk, [degerler])] - aylar listesiyle hizali."""
@@ -66,7 +70,7 @@ def cizgi(seriler, yukseklik=250, genislik=880, y_etiket="Aylık arama hacmi", a
     g = 0
     while g <= ymax:
         p.append('<line class="grid" x1="%d" y1="%.1f" x2="%d" y2="%.1f"/>' % (sol, Y(g), genislik - sag, Y(g)))
-        p.append('<text class="ax" x="%d" y="%.1f" text-anchor="end">%s</text>' % (sol - 8, Y(g) + 4, f"{int(g):,}".replace(",", ".")))
+        p.append('<text class="ax" x="%d" y="%.1f" text-anchor="end">%s</text>' % (sol - 8, Y(g) + 4, _yeks(g, ymax)))
         g += adim
     for i, ay in enumerate(aylar):
         if x_etiket:

@@ -45,16 +45,7 @@ O["gsc_ay_toplam"] = {m: v for m,v in sorted(mt.items())}
 ul = veri.J("ham","gsc","ulke.json")["rows"]; tot = sum(r["clicks"] for r in ul)
 O["gsc_ulke"] = [(r["keys"][0], r["clicks"], round(100*r["clicks"]/tot,1)) for r in ul[:6]]
 so = veri.J("ham","gsc","sorgu_16ay.json")["rows"]
-NIY = [("Fiyat", r"fiyat|ucuz|indirim|kampanya|outlet|kaç para|ne kadar"), ("Montaj", r"montaj|nasıl takılır|nasıl yapılır|kurulum|takma"),
-       ("Tamir ve bakım", r"tamir|arıza|su kaçır|akıtı|tıkan|temizli|değişim|değiştir|onarım|bakım|yedek|iç takım|parça|servis"),
-       ("Ölçü ve teknik", r"ölçü|boyut|\bcm\b|litre|derinlik|yükseklik|genişlik|teknik|çizim|katalog"),
-       ("Seçim", r"en iyi|hangisi|tavsiye|öneri|yorum|karşılaştır|inceleme|nedir|farkı|kaliteli"),
-       ("Tasarım", r"dekorasyon|tasarım|fikir|model|trend|renk|modern|küçük banyo"),
-       ("Bayi ve mağaza", r"bayi|mağaza|showroom|satış nokta|nerede|iletişim|müşteri hizmet")]
-def niyet(q):
-    for a, rx in NIY:
-        if re.search(rx, q): return a
-    return "Ürün"
+from niyet_kurallari import NIY, niyet
 qs = defaultdict(lambda:[0,0,0]); ex = defaultdict(list)
 brand = [0,0]; 
 for r in so:
@@ -91,7 +82,7 @@ O["yt"] = {}
 kanal_c = Counter(); kanal_v = Counter(); vitra_rank = {}
 for q, vids in yt.items():
     v3 = [(v["baslik"], v["kanal"], v["goruntulenme"], v["url"], v["yayin"], v["sira"]) for v in vids[:5]]
-    O["yt"][q] = {"n": len(vids), "top": v3, "toplam_g": sum(v["goruntulenme"] or 0 for v in vids), "vitra": [v["sira"] for v in vids if "vitra" in v["kanal"].lower()]}
+    O["yt"][q] = {"n": len(vids), "top": v3, "toplam_g": sum(v["goruntulenme"] or 0 for v in vids), "vitra": [i_ + 1 for i_, v in enumerate(vids) if "vitra" in v["kanal"].lower()]}
     for v in vids: kanal_c[v["kanal"]]+=1; kanal_v[v["kanal"]]+= v["goruntulenme"] or 0
 O["yt_kanal"] = [(k, kanal_c[k], kanal_v[k]) for k,_ in kanal_c.most_common(15)]
 # --- 5. EVDS ---

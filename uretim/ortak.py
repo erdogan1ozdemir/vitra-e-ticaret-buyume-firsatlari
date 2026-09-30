@@ -35,7 +35,7 @@ def kpi_kart(v, k_tr, k_en, cls="", tag_tr=None, tag_en=None):
     t = ('<div class="tag">%s</div>' % x(tag_tr, tag_en)) if tag_tr else ""
     return '<div class="kpi"><div class="v %s">%s</div><div class="k">%s</div>%s</div>' % (cls, sayi(v), x(k_tr, k_en), t)
 def metric(mk_tr, mk_en, mv, md_tr, md_en):
-    return '<div class="metric"><div class="mk">%s</div><div class="mv">%s</div><div class="md">%s</div></div>' % (x(mk_tr, mk_en), sayi(mv), x(md_tr, md_en))
+    return '<div class="metric"><div class="mv">%s</div><div class="mk">%s</div><div class="md">%s</div></div>' % (sayi(mv), x(mk_tr, mk_en), x(md_tr, md_en))
 def note(nt_tr, nt_en, govde_html, sinif=""):
     return '<div class="note %s"><div class="nt">%s</div>%s</div>' % (sinif, x(nt_tr, nt_en), govde_html)
 def box(bt_tr, bt_en, govde_html):
@@ -61,6 +61,7 @@ def marks(maddeler):
     return '<ul class="marks">%s</ul>' % "".join('<li><span class="mk %s">%s</span><span class="mt">%s</span></li>' % (s, "✓" if s == "up" else "▲", x(*_kc(a, b))) for s, a, b in maddeler)
 def u(url, metin=None):
     m = metin or url.replace("https://www.", "").replace("https://", "")
+    from tr_ek import marka as _mk, marka_tek as _mt; m = _mt(_mk(m))
     from t2_ortak import EK as _EK
     if m not in _EK: x(m, m)   # baglanti metni (alan adi, sayfa yolu, video basligi) veridir; iki dilde aynidir
     return '<a class="dis" href="%s" target="_blank" rel="noopener">%s</a>' % (url, m)
@@ -88,6 +89,7 @@ def kwv(s):
     r = k(round(h)) if h >= 1000 else bin(round(h)); x(r, r.replace(".", "").replace(",", "."))
     return '<span class="kw">%s<i class="kv">%s</i></span>' % (s, r)
 def veri_m(s):
+    from tr_ek import marka as _mk, marka_tek as _mt; s = _mt(_mk(s))
     x(s, s); return s
 import json as _j, os as _o
 import base64 as _b64

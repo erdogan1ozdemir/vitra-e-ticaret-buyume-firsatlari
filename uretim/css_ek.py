@@ -33,10 +33,26 @@ CSS_EK = """
 /* metrik / tanim kartlari */
 .metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:13px;margin:0 0 20px}
 .metric{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 17px}
-.metric .mk{font-size:10.5px;letter-spacing:.14em;color:var(--muted);font-weight:700}
-.metric .mv{font-size:27px;font-weight:760;color:var(--teal);margin-top:7px;line-height:1.1;letter-spacing:-.01em}
-.metric .mv small{font-size:.44em;font-weight:600;color:var(--muted)}
-.metric .md{font-size:12.5px;color:var(--ink-2);margin-top:7px;line-height:1.5}
+.metric .mv{font-size:25px;font-weight:660;color:var(--ink);line-height:1.12;letter-spacing:-.02em}
+.metric .mv small{font-size:.48em;font-weight:600;color:var(--muted)}
+.metric .mk{font-size:11.5px;color:var(--muted);margin-top:6px;line-height:1.42;font-weight:600}
+.metric .md{font-size:12px;color:var(--ink-2);margin-top:6px;line-height:1.5}
+:root[data-theme="dark"] .chart [stroke="#10332F"]{stroke:#7FB3A8}
+:root[data-theme="dark"] .chart [fill="#10332F"]{fill:#7FB3A8}
+:root[data-theme="dark"] .legend i[style*="#10332F"],:root[data-theme="dark"] #tt i[style*="#10332F"],:root[data-theme="dark"] .tip i[style*="#10332F"]{background:#7FB3A8 !important}
+td.n{white-space:nowrap}
+.legend .lg-s{display:inline-flex;align-items:center}
+.legend i.kare{width:10px;height:10px;border-radius:2px}
+.legend i.nokta{width:9px;height:9px;border-radius:50%}
+.legend i.cizgi{width:14px;height:3px}
+td.hm{color:var(--ink)}
+.mx{font-weight:700}.mx.y{color:var(--green)}.mx.n{color:var(--muted)}
+.kwlej{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 10px;font-size:11.5px;color:var(--muted)}
+.kwlej .kw,.kwlist .kw.t-fiyat,.kwlist .kw.t-tamir,.kwlist .kw.t-montaj{display:inline-block;font-size:11.5px;padding:2px 9px;border-radius:5px;border:1px solid var(--line)}
+.kw.t-fiyat{background:color-mix(in srgb,var(--coral) 16%,var(--card)) !important;border-color:color-mix(in srgb,var(--coral) 55%,transparent) !important}
+.kw.t-tamir{background:color-mix(in srgb,var(--green) 14%,var(--card)) !important;border-color:color-mix(in srgb,var(--green) 50%,transparent) !important}
+.kw.t-montaj{background:color-mix(in srgb,var(--gold) 20%,var(--card)) !important;border-color:color-mix(in srgb,var(--gold) 60%,transparent) !important}
+.tw table td.hm{background-clip:padding-box}
 :root[data-theme="dark"] .metric .mv{color:#EDEAE4}
 /* not kutusu */
 .note{background:var(--coral-tint);border-radius:12px;padding:15px 19px;margin:0 0 20px}

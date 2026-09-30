@@ -31,7 +31,13 @@ def yaz(ws, r, c, v, bold=False, renk=INK, h="left", fill=None):
     if fill: cell.fill = PatternFill("solid", fgColor=fill)
     return cell
 def sekme(ad, baslik, notlar, basliklar, satirlar, genislik=None):
-    ws = wb.create_sheet(re.sub(r"[\[\]:*?/\\]", "", ad)[:31])
+    ad = re.sub(r"[\[\]:*?/\\]", "", ad).strip()
+    if len(ad) > 31:
+        ad = ad[:31].rsplit(" ", 1)[0].rstrip(" -·,&")
+    taban, i_ = ad, 2
+    while ad in wb.sheetnames:
+        ek = " (%d)" % i_; ad = taban[:31 - len(ek)].rstrip() + ek; i_ += 1
+    ws = wb.create_sheet(ad)
     yaz(ws, 1, 1, baslik, True); ws.row_dimensions[1].height = 22
     n_ = len(basliklar)
     c = ws.cell(row=2, column=1, value="\n".join(notlar)); c.font = F(); c.alignment = Alignment(vertical="top", wrap_text=True); c.border = CIZ
@@ -73,7 +79,7 @@ def hucre(td):
 for sec in S.select("main section"):
     sid = sec.get("id"); h2 = sec.find("h2"); bas = metin(h2).split(" ", 1)[1] if h2 else sid
     if sid in ("kaynakca", "sozluk"): continue
-    tablolar = [t_ for t_ in sec.select("div.tw table") if not t_.find_parent("dialog")]
+    tablolar = [t_ for t_ in sec.select("div.tw table") if not t_.find_parent("dialog") and not (t_.find_parent("div", attrs={"role": "tabpanel"}) and t_.find_parent("div", attrs={"role": "tabpanel"}).has_attr("hidden"))]
     if not tablolar: continue
     src = sec.select_one("p.src"); kaynak = metin(src) if src else ""
     lede = sec.select_one("p.lede"); lede_t = metin(lede) if lede else ""
@@ -89,7 +95,7 @@ for sec in S.select("main section"):
         if kaynak: notlar.append(kaynak)
         notlar += ["Sütun açıklamaları: " + " | ".join(aciklama)] if aciklama else []
         say += 1
-        ad = "%02d %s" % (say, (alt or bas)[:26].replace("/", "-").replace(":", ""))
+        ad = "%02d %s" % (say, (alt or bas).replace("/", "-").replace(":", ""))
         sekme(ad, "%s · %s" % (bas, alt or ("Tablo %d" % ti)), notlar, thead, rows)
 # kaynakca
 rows = []

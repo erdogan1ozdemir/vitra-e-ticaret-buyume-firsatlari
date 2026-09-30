@@ -13,7 +13,7 @@ NIYET = [
  ("Montaj", r"montaj|nasıl takılır|nasıl yapılır|kurulum|takma|bağlantı|montajı"),
  ("Tamir ve bakım", r"tamir|arıza|su kaçır|akıtı|tıkan|temizli|değişim|değiştir|onarım|bakım|yedek|iç takım|parça"),
  ("Ölçü ve teknik", r"ölçü|ölçüleri|boyut|cm\b|kaç litre|ağırlık|derinlik|yükseklik|genişlik|montaj ölçü|teknik|çizim"),
- ("Seçim ve karşılaştırma", r"en iyi|hangisi|tavsiye|öneri|yorum|karşılaştır|inceleme|nedir|ne işe|farkı|mi\b|mı\b|mu\b|mü\b|nasıl seçilir|kaliteli|dayanıklı"),
+ ("Seçim ve karşılaştırma", r"en iyi|hangisi|tavsiye|öneri|yorum|karşılaştır|inceleme|nedir|ne işe|farkı|\bmi\b|\bmı\b|\bmu\b|\bmü\b|nasıl seçilir|kaliteli"),
  ("Tasarım ve fikir", r"dekorasyon|tasarım|fikir|model|modelleri|trend|renk|modern|küçük banyo|dekor"),
  ("Yer ve kanal", r"nereden|satış noktası|bayi|mağaza|showroom|satan|nerede"),
 ]
@@ -29,6 +29,15 @@ for kw, v in kp.items():
     if kw not in kat or not v["hacim"]: continue
     k1,k2,k3 = kat[kw]; m = bool(re.search(MARKA, kw)); n = niyet(kw)
     rows.append({"kw": kw, "k1": k1, "k2": k2, "k3": k3, "markali": m, "niyet": n, "hacim": v["hacim"], "a25": ort(v["seri"],A25), "a26": ort(v["seri"],A26), "seri": v["seri"], "cpc": v.get("cpc")})
+# Keyword Planner yakin varyantlara (cogul, yazim farki) ayni aylik seriyi verir; ayni seri tek kelime sayilir
+_ilk = {}; _tekil = []
+for r in rows:
+    anahtar = tuple(sorted((k_, v_) for k_, v_ in r["seri"].items() if v_ is not None))
+    if anahtar and sum(v_ for _, v_ in anahtar) > 0 and anahtar in _ilk:
+        _ilk[anahtar].setdefault("varyant", []).append(r["kw"]); continue
+    _ilk[anahtar] = r; _tekil.append(r)
+print("varyant tekillestirme:", len(rows), "->", len(_tekil))
+rows = _tekil
 json.dump(rows, open(os.path.join(P, "veri/islenmis/kelime_seti.json"), "w", encoding="utf-8"), ensure_ascii=False)
 T = defaultdict(lambda: [0,0,0])
 for r in rows:

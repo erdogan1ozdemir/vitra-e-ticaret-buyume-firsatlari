@@ -14,7 +14,7 @@ T = [
  # --- bitisik: su, isitma
  ("aritma_bat", "Arıtmalı ve filtreli batarya", "Filter and purifier taps", "Bitişik", "Yok", r"(arıtmalı|filtreli|3 yollu|üç yollu) (batarya|musluk|armatür)|içme suyu (musluğu|bataryası)"),
  ("aritma", "Su arıtma cihazı", "Water purifier", "Bitişik", "Yok", r"arıtma|reverse osmosis|kapalı kasa arıtma"),
- ("yumusatma", "Su yumuşatma ve kireç önleme", "Water softening and limescale", "Bitişik", "Yok", r"su yumuşat|kireç önle|kireç tutucu|manyetik kireç|yumuşatma cihaz"),
+ ("yumusatma", "Su yumuşatma ve kireç önleme", "Water softeners and limescale prevention", "Bitişik", "Yok", r"su yumuşat|kireç önle|kireç tutucu|manyetik kireç|yumuşatma cihaz"),
  ("sicaksu", "Şofben, termosifon ve su ısıtıcı", "Water heaters", "Bitişik", "Yok", r"şofben|sofben|termosifon|anında su ısıtıcı|ani su ısıtıcı|elektrikli su ısıtıcı(?! kettle)|boyler|sıcak su tankı"),
  ("havlupan", "Havlupan ve banyo radyatörü", "Towel radiators", "Bitişik", "Kısmi", r"havlupan|banyo radyatör|havlu ısıtıcı|havlu kurutucu"),
  ("banyo_isitici", "Banyo ısıtıcısı", "Bathroom heater", "Bitişik", "Yok", r"banyo ısıtıcı|banyo sobası|banyo için ısıtıcı"),

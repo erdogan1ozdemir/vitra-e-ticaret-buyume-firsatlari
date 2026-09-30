@@ -21,7 +21,7 @@ TAM_HUCRE = {"td", "th", "dt", "b", "span", "li", "figcaption"}
 
 
 # --- sayi bicimi (TR -> EN) -------------------------------------------------
-_YUZDE = re.compile(r'([+\-−])?%(\d[\d.,]*)')
+_YUZDE = re.compile(r'([+\-−])?%(\d+(?:[.,]\d+)*)')
 _ONDALIK = re.compile(r'(?<=\d),(?=\d)')
 _BINLIK = re.compile(r'(?<![\d,])\d{1,3}(?:\.\d{3})+(?![\d.])')
 
@@ -288,6 +288,10 @@ def _grafik_etiketleri(corba):
             et.add(g["birim"])
         if g.get("olcu"):
             et.add(g["olcu"])
+        for nk in g.get("noktalar", []):
+            et.add(nk["b"])
+            for r in nk["s"]:
+                et.add(r["a"]); et.add(r["v"])
         for a in g.get("aylar", []):
             if a and not a[:1].isdigit():
                 et.add(a)
@@ -350,6 +354,7 @@ RUNTIME = r"""
     var o; try{ o = JSON.parse(g[1]); }catch(err){ return; }
     (o.seriler||[]).forEach(function(s){ if(veri.m[s.ad] !== undefined) s.ad = veri.m[s.ad]; });
     (o.satirlar||[]).forEach(function(s){ if(veri.m[s.ad] !== undefined) s.ad = veri.m[s.ad]; });
+    (o.noktalar||[]).forEach(function(nk){ if(veri.m[nk.b] !== undefined) nk.b = veri.m[nk.b]; nk.s.forEach(function(r){ if(veri.m[r.a] !== undefined) r.a = veri.m[r.a]; if(veri.m[r.v] !== undefined) r.v = veri.m[r.v]; }); });
     if(o.birim && veri.m[o.birim] !== undefined) o.birim = veri.m[o.birim];
     if(o.olcu && veri.m[o.olcu] !== undefined) o.olcu = veri.m[o.olcu];
     if(o.aylar) o.aylar = o.aylar.map(function(a){ return veri.m[a] !== undefined ? veri.m[a] : a; });

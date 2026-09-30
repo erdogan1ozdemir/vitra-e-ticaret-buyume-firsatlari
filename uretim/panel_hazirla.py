@@ -115,7 +115,8 @@ for c in MG.columns:
 m26 = MG[MG.t >= "2026-01-01"]
 R["magaza"] = {"takipci_bas": int(MG.sort_values("t").iloc[0]["Toplam Takipçi Sayısı"]), "takipci_son": int(MG.sort_values("t").iloc[-1]["Toplam Takipçi Sayısı"]),
                "vitrin_siparis_2026": m26["Mağazanın Brüt Sipariş Adedi"].sum() / m26["Toplam Brüt Sipariş Adedi"].sum() * 100,
-               "kasim_takipci": int(MG[(MG.t >= "2025-11-01") & (MG.t < "2025-12-01")]["Toplam Takipçi Sayısı - Kazanılan"].sum())}
+               "kasim_takipci": int(MG[(MG.t >= "2025-11-01") & (MG.t < "2025-12-01")]["Toplam Takipçi Sayısı - Kazanılan"].sum()),
+               "takipci_bas_t": str(MG.sort_values("t").iloc[0]["t"])[:10], "takipci_son_t": str(MG.sort_values("t").iloc[-1]["t"])[:10]}
 # operasyon
 OP = pd.read_excel(os.path.join(TY, "seller-144409-operasyon-raporu-2026.09.30-18.47.24.xlsx")).set_index("Kalite Metriklerim")
 R["operasyon"] = {str(c): {k: float(num(pd.Series([OP.loc[k, c]])).iloc[0]) for k in OP.index} for c in ["2026", "2025", "2024", "2023"]}

@@ -268,7 +268,11 @@
   "sira": 38.2
  },
  "şofben": null,
- "termosifon": null,
+ "termosifon": {
+  "tik": 0,
+  "gosterim": 87,
+  "sira": 9.7
+ },
  "mutfak tezgahı": null,
  "seramik yapıştırıcı": null,
  "derz dolgu": null,
@@ -304,7 +308,11 @@
   "sira": 11.9
  },
  "şamandıra": null,
- "klozet kapağı menteşesi": null,
+ "klozet kapağı menteşesi": {
+  "tik": 0,
+  "gosterim": 40,
+  "sira": 19.6
+ },
  "banyo tadilatı": {
   "tik": 14,
   "gosterim": 890,
@@ -325,7 +333,11 @@
   "gosterim": 1200,
   "sira": 6.0
  },
- "küçük banyo tasarımı": null,
+ "küçük banyo tasarımı": {
+  "tik": 0,
+  "gosterim": 19,
+  "sira": 8.7
+ },
  "banyo modelleri": {
   "tik": 476,
   "gosterim": 36876,

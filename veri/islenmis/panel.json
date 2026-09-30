@@ -983,7 +983,9 @@
   "takipci_bas": 41481,
   "takipci_son": 126619,
   "vitrin_siparis_2026": 29.583741866476515,
-  "kasim_takipci": 32216
+  "kasim_takipci": 32216,
+  "takipci_bas_t": "2025-01-01",
+  "takipci_son_t": "2026-09-29"
  },
  "operasyon": {
   "2026": {

@@ -48,11 +48,11 @@ OZ = [
           ("Çanak / tezgah üstü", r"çanak|tezgah üstü|tezgahüstü"), ("Etajerli / ayaklı", r"etajer|ayaklı"), ("Köşe", r"köşe"), ("Alaturka", r"alaturka|hela|tuvalet taşı"), ("Lavabolu", r"lavabolu|lavabo dahil|dolaplı lavabo"), ("Aynalı", r"aynalı"), ("Boy / kolon", r"boy dola|kolon")]),
  ("Ölçü", [("Ölçü (cm)", r"\b\d{2,3} ?cm\b|\b\d{2,3}x\d{2,3}\b|\b(40|45|50|55|60|65|70|75|80|85|90|100|120)\b"), ("Ölçüleri / boyut", r"ölçü|boyut|kaç cm")]),
  ("Renk ve malzeme", [("Siyah / antrasit", r"siyah|antrasit|füme|mat siyah"), ("Beyaz", r"beyaz"), ("Ahşap / meşe", r"ahşap|meşe|ceviz|masif"), ("Gri / renkli", r"\bgri\b|renkli|yeşil|mavi|bej|pembe|kahve"), ("Altın / bakır", r"altın|gold|bakır|bronz"),
-                      ("PVC / suya dayanıklı", r"pvc|suya dayanıklı|su geçirmez|nem"), ("MDF / lake", r"mdf|lake|akrilik|kompakt")]),
+                      ("PVC / suya dayanıklı", r"pvc|suya dayanıklı|su geçirmez|\bnem"), ("MDF / lake", r"mdf|lake|akrilik|kompakt")]),
  ("Özellik", [("Akıllı / elektronik", r"akıllı|elektronik|sensörlü|fotoselli|temassız"), ("Yavaş kapanan", r"yavaş kapan|amortisör"), ("Işıklı / ledli", r"ışıklı|ledli|led\b|aydınlatma"), ("Çekmeceli / kapaklı", r"çekmece|kapaklı"), ("Duvara tam dayalı", r"duvara (tam )?dayalı")]),
- ("İhtiyaç ve bağlam", [("Küçük / dar banyo", r"küçük|dar\b|mini\b|kompakt"), ("Modern / tasarım", r"modern|tasarım|lüks|şık|dekoratif"), ("Engelli / çocuk", r"engelli|çocuk|cocuk|yaşlı"), ("Modeller", r"model"), ("Fiyat", r"fiyat|ucuz|indirim|uygun"), ("Tamir / parça", r"tamir|iç takım|şamandıra|menteşe|yedek|conta|parça")]),
+ ("İhtiyaç ve bağlam", [("Küçük / dar banyo", r"küçük|\bdar\b|\bmini\b|kompakt"), ("Modern / tasarım", r"modern|tasarım|lüks|\bşık\b|dekoratif"), ("Engelli / çocuk", r"engelli|çocuk|cocuk|yaşlı"), ("Modeller", r"model"), ("Fiyat", r"fiyat|ucuz|indirim|uygun"), ("Tamir / parça", r"tamir|iç takım|şamandıra|menteşe|yedek|conta|parça")]),
  ("Marka ve kanal", [("VitrA", r"vitra"), ("Rakip marka", r"\b(kale|creavit|serel|ece|eca|bocchi|geberit|grohe|duravit|roca|ideal standard|turkuaz|isvea|visam|artema|seranit|yurtbay|ege seramik|çanakkale)\b"),
-                     ("Perakendeci / pazaryeri", r"koçtaş|koctas|ikea|bauhaus|tekzen|trendyol|hepsiburada|n11|amazon|evidea|vivense|bim|a101|şok")]),
+                     ("Perakendeci / pazaryeri", r"koçtaş|koctas|ikea|bauhaus|tekzen|trendyol|hepsiburada|n11|amazon|evidea|vivense|\bbim\b|a101|\bşok\b")]),
 ]
 def oz(temalar):
     rr = [r for r in YK["kelime"] if r["tema"] in temalar]

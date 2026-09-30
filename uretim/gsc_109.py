@@ -8,9 +8,18 @@ K = json.load(open(os.path.join(veri.V, "ham/derin/serp/kelime_sonuc.json"), enc
 kws = [r["kelime"] for r in K]
 rows = g["sorgu"](["query"], "2026-06-26", "2026-09-25", 25000)
 q = {r["keys"][0]: r for r in rows}
+# ilk 25.000 sorguda olmayan kelimeler tek tek, ayni sorgu duzeyinde (equals) cekilir
+BK = json.load(open(os.path.join(veri.V, "ham/derin/serp/gsc_bos_kontrol.json"), encoding="utf-8"))
+for kw in set(kws) | set(BK):
+    if kw in q: continue
+    rr = g["sorgu"](["query"], "2026-06-26", "2026-09-25", 10, [{"dimension": "query", "operator": "equals", "expression": kw}])
+    if rr: q[kw] = rr[0]
+kws = list(dict.fromkeys(kws + list(BK)))
 out = {kw: ({"tik": q[kw]["clicks"], "gosterim": q[kw]["impressions"], "sira": round(q[kw]["position"], 1)} if kw in q else None) for kw in kws}
 json.dump(out, open(os.path.join(veri.V, "ham/derin/serp/gsc_109.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 print("gsc eşleşen", sum(1 for v in out.values() if v), "/", len(kws))
+import sys
+if "--yt" not in sys.argv: sys.exit(0)
 A = json.load(open(os.path.join(veri.V, "islenmis", "analiz.json"), encoding="utf-8"))
 yq = list(A["yt"].keys())
 H = os.path.join(veri.V, "ham", "autocomplete_hacim.json"); hd = json.load(open(H, encoding="utf-8"))

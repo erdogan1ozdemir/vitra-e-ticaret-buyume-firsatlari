@@ -75,40 +75,44 @@ if "??" in govde: raise SystemExit("Bölüm atfı çözülemedi")
 govde, sira = kaynakca.coz(govde)
 P.append(bolum("kaynakca", "Kaynakça", "References", kaynakca.bolum_html(sira, x)))
 GL_EN = {
- "CTR": "Click-through rate; the share of impressions that turn into clicks.", "Impression": "The number of times the site appeared in search results.",
- "Click": "A visit to the site from a search result.", "Position": "The site's average rank in search results.",
+ "CTR": "Click-through rate; the share of impressions that turn into clicks.",
  "DR": "Domain Rating; Ahrefs' link strength score for a domain, on a 0-100 scale.", "Organik trafik": "Ahrefs' estimate of monthly free search visits from ranking keywords.",
- "Paid trafik": "Ahrefs' estimate of monthly visits from Google Ads.", "Long-tail": "Low-volume but clearly intended long search phrases.",
- "Autocomplete": "Completion phrases suggested while typing in the Google search box; derived from real user searches.", "Bundle": "A set of several products sold together at a single price.",
- "AOV": "Average Order Value; the average basket per order.", "Conversion rate": "The share of visits that turn into a purchase.",
- "Pureplayer": "A retailer without physical stores that sells online only.", "Marketplace": "A platform that hosts third-party sellers.",
+ "Paid trafik": "Ahrefs' estimate of monthly visits from Google Ads.",
+ "Autocomplete": "Completion phrases suggested while typing in the Google search box; derived from real user searches.",
+ "Pure player": "A retailer without physical stores that sells online only.",
  "Retargeting": "A reminder ad shown later to a user who visited the site.", "Kartlı Ödeme Endeksi": "An index the CBRT derives from bank and credit card spending; the real series is inflation-adjusted.",
  "Net yüzde": "A survey indicator obtained by subtracting the share of negative answers from the share of positive answers.",
  "SSG": "Sanitaryware; vitreous china products such as WCs, washbasins, bidets, urinals and cisterns.",
  "BM": "Bathroom furniture; basin units, tall cabinets, mirror cabinets, mirrors, countertops and complements.",
- "3P": "Third-party seller; a model where another seller's product is listed and sold on the brand site.",
+ "3P": "Third-party seller; a seller other than the brand itself that sells the product on a marketplace or the brand site.",
  "GA4": "Google Analytics 4; the analytics tool measuring the site's visits, conversions and product performance.",
- "GSC": "Google Search Console; the tool reporting the search traffic Google sends to the site at impression, click and position level.",
  "SERP": "Search Engine Results Page; the results page Google returns for a search.",
  "KD": "Keyword Difficulty; Ahrefs' 0-100 score for how hard it is to rank in the top 10 for a keyword.",
  "TP": "Traffic Potential; the estimated monthly traffic the page ranking first receives from all its keywords (Ahrefs).",
  "PAA": "People Also Ask; the \"related questions\" box on the search results page.",
  "AI Overview": "The AI-generated summary Google shows above search results; it links to the sites it cites.",
  "YoY": "Year over year; a period's change against the same period of the previous year.",
- "TCMB": "Central Bank of the Republic of Türkiye (CBRT).",
+ "TCMB": "Central Bank of the Republic of Türkiye.",
  "EVDS": "CBRT Electronic Data Delivery System; the database publishing macro and financial series.",
  "BKM": "Interbank Card Center; the source of card payment statistics.",
- "CPC": "Cost per click; the average cost per click in Google Ads.",
  "Buybox": "The seller that wins the \"add to basket\" button among sellers offering the same product on a marketplace.",
  "PVC": "Polyvinyl chloride; a water-resistant plastic body material.",
+ "Lead": "A pre-purchase contact request; a measurable prospect event such as a form, call-back or appointment.",
+ "SKU": "Stock keeping unit; the unique code of each product variant including colour and size.",
+ "Merchant Center": "The Google tool through which product information is submitted to be shown in Google Shopping and free product listings.",
+ "Yerel paket": "The list of local businesses shown with a map on the results page (Local pack).",
+ "Desi": "A volumetric weight unit used in shipping pricing in Turkey.",
+ "Medyan": "The middle value of ordered values; less affected by extreme prices than the average.",
  "MDF": "Medium-density fibreboard; a common body material in bathroom furniture.",
 }
-GL_TERM_EN = {"Organik trafik": "Organic traffic", "Paid trafik": "Paid traffic", "Kartlı Ödeme Endeksi": "Card Payment Index", "Net yüzde": "Net percentage", "SSG": "SSG", "BM": "BM", "3P": "3P", "TCMB": "CBRT", "EVDS": "EVDS"}
-sozluk = '<dl class="gl">%s</dl>' % "".join('<dt>%s</dt><dd>%s</dd>' % (x(t, GL_TERM_EN.get(t, t)), x(GLOSSARY[t], GL_EN[t])) for t in GLOSSARY)
+GL_TERM_EN = {"Yerel paket": "Local pack", "Desi": "Desi (volumetric weight)", "Medyan": "Median", "Organik trafik": "Organic traffic", "Paid trafik": "Paid traffic", "Kartlı Ödeme Endeksi": "Card Payment Index", "Net yüzde": "Net percentage", "SSG": "SSG", "BM": "BM", "3P": "3P", "TCMB": "CBRT", "EVDS": "EVDS"}
+_TRS = str.maketrans("çğıöşüÇĞİÖŞÜ", "cgiosuCGIOSU")
+sozluk = '<dl class="gl">%s</dl>' % "".join('<dt>%s</dt><dd>%s</dd>' % (x(t, GL_TERM_EN.get(t, t)), x(GLOSSARY[t], GL_EN[t])) for t in sorted(GLOSSARY, key=lambda t_: t_.translate(_TRS).lower()))
 P.append(bolum("sozluk", "Terim Sözlüğü", "Glossary", sozluk))
 govde = "\n".join(P[:-2]) if False else govde + "\n" + "\n".join(P[-2:])
 
 CSS_SON = """
+sup.ref{margin-left:.18em}
 .lg{display:inline-block;width:16px;height:16px;vertical-align:-3px;margin-right:6px;border-radius:3px;background-size:cover;background-position:center;background-color:#fff;flex:0 0 auto}
 .rank li .rl .lg{margin-right:7px}
 .h3n{margin:-6px 0 12px;color:var(--ink-2);font-size:13px;line-height:1.55;max-width:78ch}
@@ -168,7 +172,8 @@ b.mb{font-weight:650;color:var(--ink)}
 .tcopy:hover,.tcopy:focus-visible{color:var(--ink);border-color:var(--ink-2)}
 .tcopy.ok{color:var(--green);border-color:var(--green)}
 th.srt{cursor:pointer;user-select:none}
-th.srt .q::after{content:"";display:inline-block;width:0;height:0;margin-left:5px;vertical-align:middle;border-left:4px solid transparent;border-right:4px solid transparent;border-top:5px solid rgba(255,255,255,.35)}
+th.srt .q{position:relative;padding-right:12px;display:inline-block}
+th.srt .q::after{content:"";position:absolute;right:0;top:50%;margin-top:-2px;width:0;height:0;border-left:4px solid transparent;border-right:4px solid transparent;border-top:5px solid rgba(255,255,255,.35)}
 th.srt.sa .q::after{border-top:0;border-bottom:5px solid var(--coral)}
 th.srt.sd .q::after{border-top:5px solid var(--coral)}
 """

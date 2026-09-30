@@ -15,9 +15,8 @@ document.documentElement.classList.add('js');
   if(!btn) return;
   // Rapor varsayilan olarak acik temada acilir; kullanicinin kendi secimi
   // varsa o gecerlidir.
-  var kayit=null;
-  try{kayit=localStorage.getItem('vitra-tema');}catch(e){}
-  var aktif = (kayit === 'dark' || kayit === 'light') ? kayit : 'light';
+  /* rapor her acilista acik temayla baslar; koyu tema yalnizca dugmeyle secilir */
+  var aktif = 'light';
   function basliklandir(){
     var en = kok.getAttribute('data-dil')==='en';
     btn.title = (aktif==='dark')
@@ -38,7 +37,6 @@ document.documentElement.classList.add('js');
   btn.addEventListener('click',function(){
     var y = aktif==='dark' ? 'light' : 'dark';
     uygula(y);
-    try{localStorage.setItem('vitra-tema', y);}catch(e){}
   });
 })();
 
@@ -174,7 +172,15 @@ document.documentElement.classList.add('js');
       function ac(){
         var icerik, kx, ky;
         d = veriOku() || d;
-        if(d.tip==='bar'){
+        if(d.tip==='genel'){
+          var nk=d.noktalar[i];
+          icerik='<span class="tt-b">'+kac(nk.b)+'</span>';
+          nk.s.forEach(function(r){
+            icerik+='<span class="tt-r">'+(r.r?'<i style="background:'+r.r+'"></i>':'<i></i>')+'<span>'+kac(r.a)+'</span><span class="tt-n">'+kac(r.v)+'</span></span>';
+          });
+          var rg=z.getBoundingClientRect();
+          kx=rg.left+rg.width/2; ky=rg.top+4;
+        } else if(d.tip==='bar'){
           var sat=d.satirlar[i];
           var dv=Number(sat.deger), mt=Math.abs(dv).toFixed(1), isr=dv>0?'+':(dv<0?'-':'');
           var yazi=ingilizce() ? isr+mt+'%' : isr+'%'+mt.replace('.',',');
