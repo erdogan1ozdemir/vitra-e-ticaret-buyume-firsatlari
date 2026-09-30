@@ -153,6 +153,18 @@ document.documentElement.classList.add('js');
     var hx=svg.querySelector('.hx');
     var hp=svg.querySelectorAll('.hp');
     var bantlar=svg.querySelectorAll('.hz');
+    var gizli={};
+    /* lejant: seriye tiklayinca grafikten kaldir / geri getir */
+    [].forEach.call(fig.querySelectorAll('.legend .lg-t'),function(l){
+      function cevir(){
+        var k=parseInt(l.getAttribute('data-k'),10); gizli[k]=!gizli[k];
+        l.classList.toggle('off',!!gizli[k]); l.setAttribute('aria-pressed',gizli[k]?'false':'true');
+        var yol=svg.querySelector('path.sr[data-k="'+k+'"]'); if(yol) yol.style.display=gizli[k]?'none':'';
+        if(hp[k]) hp[k].style.display='none';
+      }
+      l.addEventListener('click',cevir);
+      l.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();cevir();}});
+    });
     function svgKonum(x,y){
       var vb=svg.viewBox.baseVal, r=svg.getBoundingClientRect();
       return {x:r.left + x*r.width/vb.width, y:r.top + y*r.height/vb.height};
@@ -164,10 +176,11 @@ document.documentElement.classList.add('js');
         d = veriOku() || d;
         if(d.tip==='bar'){
           var sat=d.satirlar[i];
+          var dv=Number(sat.deger), mt=Math.abs(dv).toFixed(1), isr=dv>0?'+':(dv<0?'-':'');
+          var yazi=ingilizce() ? isr+mt+'%' : isr+'%'+mt.replace('.',',');
           icerik='<span class="tt-b">'+kac(sat.ad)+'</span><span class="tt-r">'
-               + '<i style="background:'+sat.renk+'"></i><span>'+(document.documentElement.getAttribute('data-dil')==='en'
-                 ? 'Three-year change' : 'Üç yıllık değişim')+'</span>'
-               + '<span class="tt-n">'+(sat.deger>0?'+':'')+(ingilizce() ? String(sat.deger) : String(sat.deger).replace('.',','))+'%</span></span>';
+               + '<i style="background:'+sat.renk+'"></i><span>'+kac(d.olcu || (ingilizce() ? 'YoY change' : 'YoY değişim'))+'</span>'
+               + '<span class="tt-n">'+yazi+'</span></span>';
           var rz=z.getBoundingClientRect();
           kx=rz.left+rz.width/2; ky=rz.top;
         } else {
@@ -175,6 +188,7 @@ document.documentElement.classList.add('js');
           var enUst=null;
           for(var k=0;k<d.seriler.length;k++){
             var se=d.seriler[k], v=se.deger[i];
+            if(gizli[k]){ if(hp[k]) hp[k].style.display='none'; continue; }
             icerik+='<span class="tt-r"><i style="background:'+se.renk+'"></i>'
                   + '<span>'+kac(se.ad)+'</span><span class="tt-n">'+say(v)+'</span></span>';
             if(se.py[i]!==null && (enUst===null || se.py[i]<enUst)) enUst=se.py[i];

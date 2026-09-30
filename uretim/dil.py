@@ -286,6 +286,11 @@ def _grafik_etiketleri(corba):
                 et.add(s["ad"])
         if g.get("birim"):
             et.add(g["birim"])
+        if g.get("olcu"):
+            et.add(g["olcu"])
+        for a in g.get("aylar", []):
+            if a and not a[:1].isdigit():
+                et.add(a)
     return et
 
 
@@ -346,6 +351,8 @@ RUNTIME = r"""
     (o.seriler||[]).forEach(function(s){ if(veri.m[s.ad] !== undefined) s.ad = veri.m[s.ad]; });
     (o.satirlar||[]).forEach(function(s){ if(veri.m[s.ad] !== undefined) s.ad = veri.m[s.ad]; });
     if(o.birim && veri.m[o.birim] !== undefined) o.birim = veri.m[o.birim];
+    if(o.olcu && veri.m[o.olcu] !== undefined) o.olcu = veri.m[o.olcu];
+    if(o.aylar) o.aylar = o.aylar.map(function(a){ return veri.m[a] !== undefined ? veri.m[a] : a; });
     g.push(JSON.stringify(o));
   });
 

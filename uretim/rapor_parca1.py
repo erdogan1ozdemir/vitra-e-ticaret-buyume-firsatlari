@@ -50,7 +50,7 @@ def T(t):
     """Glossary terimini span'a alir."""
     return '<span class="term" data-term="%s">%s</span>' % (GLOSSARY[t].replace('"', "&quot;"), t)
 
-def cizgi(seriler, yukseklik=250, genislik=880, y_etiket="Aylık arama hacmi", aylar=None):
+def cizgi(seriler, yukseklik=250, genislik=880, y_etiket="Aylık arama hacmi", aylar=None, x_etiket=None, kalin=None):
     """seriler: [(ad, renk, [degerler])] - aylar listesiyle hizali."""
     aylar = aylar if aylar is not None else veri.AYLAR
     sol, sag, ust, alt = 58, 14, 16, 34
@@ -69,15 +69,18 @@ def cizgi(seriler, yukseklik=250, genislik=880, y_etiket="Aylık arama hacmi", a
         p.append('<text class="ax" x="%d" y="%.1f" text-anchor="end">%s</text>' % (sol - 8, Y(g) + 4, f"{int(g):,}".replace(",", ".")))
         g += adim
     for i, ay in enumerate(aylar):
+        if x_etiket:
+            p.append('<text class="ax" x="%.1f" y="%d" text-anchor="middle">%s</text>' % (X(i), yukseklik - 12, x_etiket[i]))
+            continue
         if ay.endswith("-01"):
             p.append('<line class="grid yr" x1="%.1f" y1="%d" x2="%.1f" y2="%.1f"/>' % (X(i), ust, X(i), ust + ih))
             p.append('<text class="ax" x="%.1f" y="%d" text-anchor="middle">%s</text>' % (X(i), yukseklik - 12, ay[:4]))
-    for ad, renk, s in seriler:
+    for sk, (ad, renk, s) in enumerate(seriler):
         d = []
         for i, v in enumerate(s):
             if v is None: continue
             d.append(("M" if not d else "L") + "%.1f %.1f" % (X(i), Y(v)))
-        p.append('<path d="%s" fill="none" stroke="%s" stroke-width="2.2" stroke-linejoin="round"/>' % (" ".join(d), renk))
+        p.append('<path class="sr" data-k="%d" d="%s" fill="none" stroke="%s" stroke-width="%s" stroke-linejoin="round"/>' % (sk, " ".join(d), renk, (kalin or {}).get(sk, 2.2)))
     # imlec cizgisi ve nokta isaretleri (JS ile konumlanir)
     p.append('<line class="hx" x1="0" y1="%d" x2="0" y2="%.1f" style="display:none"/>' % (ust, ust + ih))
     for _ in seriler:
@@ -89,7 +92,7 @@ def cizgi(seriler, yukseklik=250, genislik=880, y_etiket="Aylık arama hacmi", a
                  % (i, X(i) - bw / 2, ust, bw, ih))
     p.append('</svg>')
     lej = '<div class="legend">' + "".join(
-        '<span><i style="background:%s"></i>%s</span>' % (r, a) for a, r, _ in seriler) + '</div>'
+        '<span class="lg-t" data-k="%d" role="button" tabindex="0" aria-pressed="true"><i style="background:%s"></i>%s</span>' % (k_, r, a) for k_, (a, r, _) in enumerate(seriler)) + '</div>'
     veri_js = json.dumps({
         "aylar": aylar,
         "px": [round(X(i), 1) for i in range(n)],
@@ -100,7 +103,7 @@ def cizgi(seriler, yukseklik=250, genislik=880, y_etiket="Aylık arama hacmi", a
     return ('<figure class="fig" data-grafik=\'%s\'><figcaption class="figcap">%s</figcaption>'
             '%s<div class="tip" hidden></div>%s</figure>') % (veri_js, y_etiket, "".join(p), lej)
 
-def barlar(veriler, yukseklik=None, genislik=880):
+def barlar(veriler, yukseklik=None, genislik=880, olcu="YoY değişim"):
     """veriler: [(etiket, deger, renk)] yatay bar."""
     n = len(veriler); bh = 26; ara = 9
     yukseklik = yukseklik or (n * (bh + ara) + 14)
@@ -113,12 +116,13 @@ def barlar(veriler, yukseklik=None, genislik=880):
         w = iw * abs(v) / vmax
         p.append('<text class="bl" x="%d" y="%.1f" text-anchor="end">%s</text>' % (sol - 12, y + bh * 0.68, et))
         p.append('<rect x="%d" y="%.1f" width="%.1f" height="%d" rx="3" fill="%s"/>' % (sol, y, w, bh, renk))
-        p.append('<text class="bv" x="%.1f" y="%.1f">%s</text>' % (sol + w + 8, y + bh * 0.68, ("%+.1f" % v).replace(".", ",") + "%"))
+        _bv = ("%+.1f" % v).replace(".", ",").replace("+", "+%").replace("-", "-%")
+        p.append('<text class="bv" x="%.1f" y="%.1f">%s</text>' % (sol + w + 8, y + bh * 0.68, _bv))
         p.append('<rect class="hz" data-i="%d" x="%d" y="%.1f" width="%.1f" height="%d"/>'
                  % (i, sol, y, iw, bh))
     p.append('</svg>')
     veri_js = json.dumps({
-        "tip": "bar",
-        "satirlar": [{"ad": e, "deger": v, "renk": r} for e, v, r in veriler],
+        "tip": "bar", "olcu": olcu,
+        "satirlar": [{"ad": e, "deger": round(v, 1), "renk": r} for e, v, r in veriler],
     }, ensure_ascii=False).replace("'", "&#39;")
     return '<figure class="fig" data-grafik=\'%s\'>%s<div class="tip" hidden></div></figure>' % (veri_js, "".join(p))

@@ -124,6 +124,15 @@ CSS_SON = """
 @media(max-width:1180px){.two{grid-template-columns:minmax(0,1fr)}}
 .tw.uzun thead th{position:sticky;top:0;z-index:2}
 
+/* grafik sekmeleri ve lejant ac/kapa */
+.tabs.gtabs{margin:4px 0 8px}
+.tabs.gtabs.ic{margin:0 0 6px}
+.tabs.gtabs.ic button{font-size:11.5px;padding:4px 10px}
+.legend .lg-t{cursor:pointer;user-select:none;border-radius:4px;padding:1px 4px}
+.legend .lg-t:hover{color:var(--ink)}
+.legend .lg-t:focus-visible{outline:2px solid var(--coral);outline-offset:1px}
+.legend .lg-t.off{opacity:.38;text-decoration:line-through}
+
 /* duzen: icindekiler sola bitisik, icerik alani genis */
 .appbar .in{max-width:none;padding:12px max(24px,3vw) 12px 16px}
 .wrap{max-width:none;margin:0;padding:0 max(24px,3vw) 0 14px;gap:30px}

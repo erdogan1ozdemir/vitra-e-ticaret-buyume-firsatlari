@@ -28,6 +28,31 @@ sira = sorted(K1, key=lambda k: -K1[k]["a26"])
 RENK = {"Banyo Mobilyaları": "#E85F36", "Vitrifiyeler": "#10332F", "Armatürler": "#2E7D32", "Yıkanma Alanları": "#F5A623", "Karo Seramik Ürünleri": "#7A8C89", "Banyo Aksesuarları": "#B96BC2", "Duşlar": "#4A90D9", "Rezervuarlar": "#8B5A2B"}
 GRAFIK = cizgi([(kat("Toplam"), "#E85F36", AYK["Toplam"])] , y_etiket=x("Aylık arama hacmi · 2.420 kelime toplamı", "Monthly search volume · total of 2,420 keywords"), aylar=veri.AYLAR)
 GRAFIK_K = cizgi([(kat(k), RENK[k], AYK[k]) for k in sira[:5]], y_etiket=x("Aylık arama hacmi · en büyük 5 kategori", "Monthly search volume · five largest categories"), aylar=veri.AYLAR)
+
+# --- yil yil gorunum (Oca-Ara, 2023-2026) ---
+import json as _json, os as _os
+TY_ = _json.load(open(_os.path.join(veri.V, "islenmis", "talep_yillik.json"), encoding="utf-8"))
+AYA = [("Oca", "Jan"), ("Şub", "Feb"), ("Mar", "Mar"), ("Nis", "Apr"), ("May", "May"), ("Haz", "Jun"), ("Tem", "Jul"), ("Ağu", "Aug"), ("Eyl", "Sep"), ("Eki", "Oct"), ("Kas", "Nov"), ("Ara", "Dec")]
+for _a, _b in AYA: x(_a, _b)
+for _y in ("2023", "2024", "2025", "2026"): x(_y, _y)
+x("YoY değişim", "YoY change")
+YRENK = {"2023": "#9AA8A5", "2024": "#F5A623", "2025": "#10332F", "2026": "#E85F36"}
+def yil_grafik(kk, etiket_tr, etiket_en):
+    d = TY_["kategori"][kk]
+    return cizgi([(str(y), YRENK[str(y)], d[str(y)]) for y in TY_["yillar"]], y_etiket=x(etiket_tr, etiket_en),
+                 aylar=[a for a, _ in AYA], x_etiket=[a for a, _ in AYA], kalin={3: 3.2})
+_SEKME_NO = [0]
+def sekmeler(parcalar, sinif=""):
+    """parcalar: [(tr, en, html)] -> .tabs dugmeleri + paneller (ilk acik)."""
+    _SEKME_NO[0] += 1; n_ = _SEKME_NO[0]
+    b = "".join('<button type="button" role="tab" id="tt%d-%d" aria-controls="tp%d-%d" aria-selected="%s">%s</button>' % (n_, i_, n_, i_, "true" if i_ == 0 else "false", x(tr, en)) for i_, (tr, en, _) in enumerate(parcalar))
+    p_ = "".join('<div role="tabpanel" id="tp%d-%d" aria-labelledby="tt%d-%d"%s>%s</div>' % (n_, i_, n_, i_, "" if i_ == 0 else " hidden", h) for i_, (_, _, h) in enumerate(parcalar))
+    return '<div class="tabs %s" role="tablist">%s</div>%s' % (sinif, b, p_)
+GRAFIK = sekmeler([("Aylık seri · Eyl 2024 - Ağu 2026", "Monthly series · Sep 2024 - Aug 2026", GRAFIK),
+                   ("Yıl yıl · 2023 - 2026", "Year on year · 2023 - 2026", yil_grafik("Toplam", "Aylık arama hacmi · 2.420 kelime toplamı, yıllar üst üste (2026: Oca - Ağu)", "Monthly search volume · total of 2,420 keywords, years overlaid (2026: Jan - Aug)"))], "gtabs")
+_YK = sekmeler([(kk, KAT_EN.get(kk, kk), yil_grafik(kk, "Aylık arama hacmi · %s, yıllar üst üste" % kk, "Monthly search volume · %s, years overlaid" % KAT_EN.get(kk, kk))) for kk in sira], "gtabs ic")
+GRAFIK_K = sekmeler([("Aylık seri · en büyük 5 kategori", "Monthly series · five largest categories", GRAFIK_K),
+                     ("Yıl yıl · kategori seçimi", "Year on year · choose a category", _YK)], "gtabs")
 BAR = barlar([(_q, K1[_q]["yoy"], "#2E7D32" if K1[_q]["yoy"] > 0 else "#D32F2F") for _q in sorted(K1, key=lambda q: -K1[q]["yoy"])])
 for _kk in K1: kat(_kk)
 tbl = tablo([th("Kategori", "Category", "VitrA kategori ağacındaki ana kategori; 2.420 kelime 8 ana kategoriye dağıtılmıştır.", "Main category in the VitrA category tree; 2,420 keywords are distributed across 8 main categories."),
