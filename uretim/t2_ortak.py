@@ -54,6 +54,8 @@ def x(tr, en):
             for a, b in zip(pk, pv):
                 a, b = a.strip(), b.strip()
                 if a and not _SAYISAL.match(a):
+                    if _MARKA.fullmatch(a) or _MARKA.fullmatch(b):
+                        EK.setdefault(a, a); continue   # marka adi her iki dilde aynidir
                     EK.setdefault(a, b)   # parca kaydi yalnizca yedektir; butun blok dil katmaninda tek parca cevrilir
         else:
             _CAKISMA.append((k[:60], "parça sayısı", "%d/%d" % (len(pk), len(pv))))

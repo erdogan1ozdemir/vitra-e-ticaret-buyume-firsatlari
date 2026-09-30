@@ -40,10 +40,13 @@ def note(nt_tr, nt_en, govde_html, sinif=""):
     return '<div class="note %s"><div class="nt">%s</div>%s</div>' % (sinif, x(nt_tr, nt_en), govde_html)
 def box(bt_tr, bt_en, govde_html):
     return '<div class="box"><div class="bt">%s</div>%s</div>' % (x(bt_tr, bt_en), govde_html)
+def _kc(a, b):
+    from t2_ortak import _kalin_cift
+    return _kalin_cift(a, b)
 def fnote(no, h_tr, h_en, maddeler):
     """maddeler: [(tr, en)]"""
     return ('<article class="fnote"><span class="fc">%s</span><h3>%s</h3><ul>%s</ul></article>'
-            % (x("Bulgu %02d" % no, "Finding %02d" % no), x(h_tr, h_en), "".join("<li>%s</li>" % x(a, b) for a, b in maddeler)))
+            % (x("Bulgu %02d" % no, "Finding %02d" % no), x(h_tr, h_en), "".join("<li>%s</li>" % x(*_kc(a, b)) for a, b in maddeler)))
 def rank_list(satirlar, azami, you=None, fmt=bin):
     """satirlar: [(etiket_html, deger)]"""
     out = ['<ol class="rank">']
@@ -55,7 +58,7 @@ def step(no, h_tr, h_en, p_tr, p_en):
     return '<div class="step"><span class="sn">%d</span><h4>%s</h4><p>%s</p></div>' % (no, x(h_tr, h_en), x(p_tr, p_en))
 def marks(maddeler):
     """[(isaret 'up'|'at', tr, en)]"""
-    return '<ul class="marks">%s</ul>' % "".join('<li><span class="mk %s">%s</span>%s</li>' % (s, "✓" if s == "up" else "▲", x(a, b)) for s, a, b in maddeler)
+    return '<ul class="marks">%s</ul>' % "".join('<li><span class="mk %s">%s</span><span class="mt">%s</span></li>' % (s, "✓" if s == "up" else "▲", x(*_kc(a, b))) for s, a, b in maddeler)
 def u(url, metin=None):
     m = metin or url.replace("https://www.", "").replace("https://", "")
     from t2_ortak import EK as _EK
@@ -105,7 +108,7 @@ def lg(domain):
     return '<i class="lg lg-%s" aria-hidden="true"></i>' % domain.replace("www.", "").replace(".", "_")
 def ul_b(maddeler):
     """[(kalin_tr, kalin_en, tr, en)] -> madde listesi; kalin bolum basta."""
-    return '<ul class="nl">%s</ul>' % "".join('<li><b>%s</b> %s</li>' % (x(kt, ke), x(t, e)) for kt, ke, t, e in maddeler)
+    return '<ul class="nl">%s</ul>' % "".join('<li><b>%s</b> <span class="mt">%s</span></li>' % (x(kt, ke), x(*_kc(t, e))) for kt, ke, t, e in maddeler)
 def _J(*p): return _j.load(open(_o.path.join(veri.V, *p), encoding="utf-8"))
 SB = _J("islenmis", "ssg_bm.json"); YK = _J("islenmis", "yeni_kategori.json"); KT = _J("islenmis", "katalog.json"); TY = _J("islenmis", "trendyol_ozet.json")["sorgular"]
 HZ = _J("ham", "hizmet", "vitra_hizmetler.json")

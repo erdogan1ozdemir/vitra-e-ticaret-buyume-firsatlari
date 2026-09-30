@@ -60,7 +60,7 @@ HTML = """
  x("Benchmark seti üç halkadan oluşmaktadır: vitra.com.tr ile aynı aramalarda görünen organik rakipler, banyo sektörünün marka siteleri ve ürünün satıldığı pazaryeri ile yapı market kanalları. Ölçüm Ahrefs Türkiye verisiyle yapılmıştır; organik trafik değerleri tahmindir.",
    "The benchmark set consists of three rings: organic competitors that appear in the same searches as vitra.com.tr, the bathroom sector's brand sites, and the marketplace and DIY channels where the product is sold. Measurement uses Ahrefs Turkey data; organic traffic values are estimates."),
  kpi_kart(k(vit[4]), "vitra.com.tr tahmini aylık organik ziyaret · DR %d" % vit[1], "vitra.com.tr estimated monthly organic visits · DR %d" % vit[1]),
- kpi_kart(k(koc[4]), "koctas.com.tr organik ziyaret · VitrA'nın %s katı" % ("%.1f" % (koc[4] / vit[4])).replace(".", ","), "koctas.com.tr organic visits · %s times VitrA" % ("%.1f" % (koc[4] / vit[4]))),
+ kpi_kart(k(koc[4]), "koctas.com.tr organik ziyareti vitra.com.tr'nin yaklaşık %d katı" % round(koc[4] / vit[4]), "koctas.com.tr organic visits are about %d times vitra.com.tr's" % round(koc[4] / vit[4])),
  kpi_kart(bin(OR[0][1]), "Koçtaş ile ortak kelime · VitrA kelimelerinin %s" % yzd(100 * OR[0][1] / vit[2]), "Keywords shared with Koçtaş · %s of VitrA keywords" % (yzd(100 * OR[0][1] / vit[2]).replace("%", "") + "%")),
  kpi_kart(k(vit[5]), "vitra.com.tr tahmini aylık paid ziyaret · %d kelime" % vit[6], "vitra.com.tr estimated monthly paid visits · %d keywords" % vit[6]),
  x("Aynı aramalarda görünen siteler", "Sites appearing in the same searches"),

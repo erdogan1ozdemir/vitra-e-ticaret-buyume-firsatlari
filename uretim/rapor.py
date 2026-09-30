@@ -128,6 +128,8 @@ CSS_SON = """
 .tabs.gtabs{margin:4px 0 8px}
 .tabs.gtabs.ic{margin:0 0 6px}
 .tabs.gtabs.ic button{font-size:11.5px;padding:4px 10px}
+.fnote .fc{display:block;margin:0 0 4px}
+.fnote h3,.kpi h3,.step h3,.box h3{display:block;background:none;padding:0}
 .legend .lg-t{cursor:pointer;user-select:none;border-radius:4px;padding:1px 4px}
 .legend .lg-t:hover{color:var(--ink)}
 .legend .lg-t:focus-visible{outline:2px solid var(--coral);outline-offset:1px}
@@ -199,14 +201,8 @@ def dl_buton(sinif=""):
 HERO = """<div class="hero dark"><div class="ring"></div>
   <p class="eyebrow">%s</p>
   <h1>%s</h1>
-  <p class="sub">%s</p>
-  <div class="chips"><span class="chip f">%s</span><span class="chip">%s</span><span class="chip">%s</span><span class="chip">%s</span><span class="chip">%s</span></div>
 </div>""" % (x("VitrA TÜRKİYE · E-TİCARET BÜYÜME FIRSATLARI", "VitrA TURKEY · E-COMMERCE GROWTH OPPORTUNITIES"),
-             x("E-Ticaret Büyüme Fırsatları: Talep, Kullanıcı Davranışı ve Kanal Modeli", "E-Commerce Growth Opportunities: Demand, User Behaviour and Channel Model"),
-             x("Pazar talebi, SSG ve BM derin incelemesi, katalog boşlukları, yeni kategori ve segmentler, set ve ürün + hizmet modelleri, benchmark ve makro ortam verileriyle vitra.com.tr, Trendyol ve Hepsiburada için büyüme fırsatları. Pazaryeri ve GA4 verisiyle genişletilecektir.",
-               "Growth opportunities for vitra.com.tr, Trendyol and Hepsiburada built on market demand, an in-depth SSG and BM review, catalogue gaps, new categories and segments, set and product + service models, benchmarks and macro data. To be extended with marketplace and GA4 data."),
-             x("Sürüm 6 · %s" % "30.09.2026", "Version 6 · %s" % "30.09.2026"), x("Talep: Eyl 2022 - Ağu 2026", "Demand: Sep 2022 - Aug 2026"), x("Search Console: Haz 2025 - Eyl 2026", "Search Console: Jun 2025 - Sep 2026"),
-             x("53 bin kelime · 58 tema", "53K keywords · 58 themes"), x("Türkiye", "Turkey"))
+             x("E-Ticaret Büyüme Fırsatları: Talep, Kullanıcı Davranışı ve Kanal Modeli", "E-Commerce Growth Opportunities: Demand, User Behaviour and Channel Model"))
 
 DOC = """<!doctype html>
 <html lang="tr" data-theme="light"><head><meta charset="utf-8">

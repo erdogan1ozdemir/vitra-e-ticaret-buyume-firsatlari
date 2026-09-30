@@ -62,8 +62,8 @@ HTML = """
 %s
 %s
 """ % (
- x("Seramik sağlık gereçleri (SSG: klozet, lavabo, bide, pisuvar, rezervuar) ve banyo mobilyası (BM) için talep dört yıllık aylık seriyle, ürün tipi düzeyinde incelenmiştir. İkinci bölümde aynı segmentlerin genişletilmiş kelime evreninde kullanıcının hangi tip, ölçü, renk, özellik ve bağlamla aradığı ölçülmüştür.",
-   "Demand for sanitaryware (SSG: WCs, washbasins, bidets, urinals, cisterns) and bathroom furniture (BM) has been examined at product-type level with a four-year monthly series. The second part measures, in the expanded keyword universe for the same segments, which type, size, colour, feature and context the user searches with."),
+ x("Seramik sağlık gereçleri (SSG: klozet, lavabo, bide, pisuvar, rezervuar) ve banyo mobilyası (BM) için talep dört yıllık aylık seriyle, ürün tipi düzeyinde incelenmiştir. Genişletilmiş kelime evreninde kullanıcının hangi <b>tip, ölçü, renk, özellik ve bağlamla</b> aradığı da ölçülmüştür.",
+   "Demand for sanitaryware (SSG: WCs, washbasins, bidets, urinals, cisterns) and bathroom furniture (BM) has been examined at product-type level with a four-year monthly series. The expanded keyword universe also measures which <b>type, size, colour, feature and context</b> the user searches with."),
  kpi_kart(yz(ssg["uc"]), "SSG talebi · 3 yıllık değişim (Eyl 22 - Ağu 23 → Eyl 25 - Ağu 26)", "SSG demand · 3-year change (Sep 22 - Aug 23 → Sep 25 - Aug 26)", "up"),
  kpi_kart(yz(bm["uc"]), "BM talebi · 3 yıllık değişim", "BM demand · 3-year change", "dn"),
  kpi_kart(yz(akil["uc"]), "Akıllı klozet seti · 3 yıllık değişim", "Smart WC sets · 3-year change", "up"),

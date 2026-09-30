@@ -6,8 +6,8 @@ HTML = """
 %s
 %s
 """ % (
- x("Bu rapor, Inbound'un erişimindeki veri kaynaklarıyla hazırlanmıştır. VitrA'dan beklenen pazaryeri performansı, GA4 dönüşüm ve site içi arama raporları, iade ve çağrı merkezi verisi geldiğinde ilgili bölümler eklenecek ve öneriler güncellenecektir.",
-   "This report was prepared with the data sources available to Inbound. When the marketplace performance, GA4 conversion and site search reports, and return and call centre data expected from VitrA arrive, the related sections will be added and the proposals updated."),
+ x("Veri kaynakları, dönemleri ve yöntem notları aşağıdadır. GA4 dönüşüm ve site içi arama raporları, iade ve çağrı merkezi verisi bu sürüme dahil değildir.",
+   "Data sources, periods and method notes are listed below. GA4 conversion and site search reports and return and call centre data are not included in this version."),
  tablo([th("Veri kaynağı", "Data source", "Kullanılan kaynak.", "Source used."),
         th("Kapsam", "Scope", "Dönem, coğrafya ve örneklem.", "Period, geography and sample."),
         th("Kullanıldığı bölüm", "Used in section", "Verinin işlendiği bölüm.", "Section where the data is processed."),

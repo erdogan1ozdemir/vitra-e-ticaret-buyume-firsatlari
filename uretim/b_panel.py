@@ -131,6 +131,7 @@ OP = P["operasyon"]; HB = P["hb"]; DG = P["deger"]; SV = P["satici"]; ST = P["st
 ucuz = HB["iptal_neden"].get("Müşteri daha ucuza buldu", 0) / HB["iptal_top"] * 100
 kat_d = {r["kategori"]: r for r in P["kategori"]}
 
+x("%s kat" % f1(c3["net"] / c4["net"]), "%sx" % ondalik(c3["net"] / c4["net"]))
 EK = """
 <p class="lede">%s</p>
 <div class="kpis">%s%s%s%s</div>
@@ -166,7 +167,7 @@ EK = """
 """ % (
  x("VitrA'nın Trendyol resmi mağazasına ait satıcı paneli raporları (2025 Q4 - 2026 Q3 satış ve sipariş dağılımı, 2025 ve 2026 ürün görüntülenme, 12 aylık ürün ve satıcı değerlendirmeleri, Eylül 2026 ürün soruları, Eylül 2026 \"Trendyol'un Enleri\" kategori listeleri) ile Hepsiburada panel raporları (hak ediş, görüntülenme, iptal, değerlendirme) incelenmiştir. Ciro tutarları verilmemiş; adet, pay, oran ve ortalama fiyat kullanılmıştır.",
    "The seller panel reports of VitrA's official Trendyol store (2025 Q4 - 2026 Q3 sales and order distribution, 2025 and 2026 product views, 12 months of product and seller reviews, September 2026 product questions, September 2026 \"Trendyol Top Lists\" category lists) and Hepsiburada panel reports (settlement, views, cancellations, reviews) were examined. Revenue amounts are not shown; units, shares, rates and average prices are used."),
- kpi_kart("%s" % f1(c3["net"] / c4["net"]).rstrip("0").rstrip(",") + "x", "Net satış adedi · 2026 Q3 / 2025 Q4 (%s → %s)" % (bin(c4["net"]), bin(c3["net"])), "Net units · 2026 Q3 / 2025 Q4 (%s → %s)" % (f"{c4['net']:,}", f"{c3['net']:,}"), "up"),
+ kpi_kart("%s kat" % f1(c3["net"] / c4["net"]), "2026 Q3 net satış adedi 2025 Q4'ün %s katı (%s → %s)" % (f1(c3["net"] / c4["net"]), bin(c4["net"]), bin(c3["net"])), "2026 Q3 net units are %s times 2025 Q4 (%s → %s)" % (ondalik(c3["net"] / c4["net"]), f"{c4['net']:,}", f"{c3['net']:,}"), "up"),
  kpi_kart(yz((c3["ort_fiyat"] / c4["ort_fiyat"] - 1) * 100, ond=0), "Ortalama net satış fiyatı · %s TL → %s TL; karışım düşük fiyatlı tamamlayıcıya kaydı" % (bin(c4["ort_fiyat"]), bin(c3["ort_fiyat"])), "Average net selling price · %s TL → %s TL; the mix shifted to low-priced complements" % (f"{round(c4['ort_fiyat']):,}", f"{round(c3['ort_fiyat']):,}"), "dn"),
  kpi_kart("%d / 9" % sum(1 for e in EN if e["sat_siz"] == 0 and e["ciro_siz"] == 0), "Eylül 2026 kategori listelerinde resmi mağazanın hiç yer almadığı kategori (aksesuar, mobilya, batarya, duş, eviye)", "Categories where the official store is absent from the September 2026 lists (accessories, furniture, taps, shower, sink)", "dn"),
  kpi_kart(f1(DG["ort"]), "Ortalama ürün puanı (%s değerlendirme) · banyo dolabı seti %s, klozet %s" % (bin(DG["n"]), f1(kat_d["Banyo Dolabı Seti"]["puan"]), f1(kat_d["Klozet"]["puan"])), "Average product rating (%s reviews) · bathroom cabinet set %s, WC %s" % (f"{DG['n']:,}", ondalik(kat_d["Banyo Dolabı Seti"]["puan"]), ondalik(kat_d["Klozet"]["puan"])), "hi"),

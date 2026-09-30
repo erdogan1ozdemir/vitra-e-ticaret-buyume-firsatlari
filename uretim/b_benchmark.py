@@ -57,8 +57,8 @@ HTML = """
 %s
 %s
 """ % (
- x("Türkiye'den yapı market, mobilya perakendecisi, pureplayer, marka ve pazaryeri; yurt dışından banyo pureplayer'ı, yapı market ve üretici marka modelleri incelenmiştir. İkinci tabloda ürün keşfi ve dijital deneyim araçları VitrA'daki karşılıklarıyla birlikte verilmiştir.",
-   "From Turkey, a DIY retailer, furniture retailer, pureplayer, brand and marketplace; from abroad, a bathroom pureplayer, DIY retailers and a manufacturer brand have been examined. The second table gives product discovery and digital experience tools together with their counterparts at VitrA."),
+ x("Türkiye'den yapı market, mobilya perakendecisi, pureplayer, marka ve pazaryeri; yurt dışından banyo pureplayer'ı, yapı market ve üretici marka modelleri incelenmiştir. Ürün keşfi ve dijital deneyim araçları VitrA'daki karşılıklarıyla birlikte karşılaştırılmıştır.",
+   "From Turkey, a DIY retailer, furniture retailer, pureplayer, brand and marketplace; from abroad, a bathroom pureplayer, DIY retailers and a manufacturer brand have been examined. Product discovery and digital experience tools are compared with their counterparts at VitrA."),
  x("E-ticaret modelleri", "E-commerce models"),
  MOD,
  insight("İncelenen modellerde ortak eğilim, banyo alışverişinin tekil ürün satışından \"proje\" satışına kaymasıdır: Koçtaş tadilatı tek sayfada toplamakta, BAUHAUS komple banyoyu sabit fiyatla satmakta, Kohler bayi ağıyla bir günde kurulum paketi sunmaktadır. Kale de montaj ve yedek parça sayfalarını açarak aynı yöne ilerlemektedir. VitrA'nın farkı, bu modellerin çoğunun parçalarına (montaj, keşif, randevulu danışmanlık, set) zaten sahip olmasıdır; eksik olan bu parçaların tek bir teklif ve tek bir giriş kapısı altında birleştirilmesidir.",

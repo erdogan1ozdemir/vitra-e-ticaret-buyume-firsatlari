@@ -86,15 +86,15 @@ T_CS = tablo([th("Kategori", "Category", "Çok satan sıralamasının okunduğu 
               th("Not", "Note", "İkinci ve üçüncü markalar, okuma yöntemi.", "Second and third brands, reading method.")],
              [[x(*kat_), veri_m(ty_m) if ty_m != "-" else n("-"), _cs(ty_p), _cs(vt_n), _cs(vt_p), veri_m(hb_m) if hb_m != "-" else n("-"), _cs(hb_d), _cs(vh_n), _cs(vh_d), x(*CS_NOT[kat_[0]])]
               for kat_, ty_m, ty_p, vt_n, vt_p, hb_m, hb_d, vh_n, vh_d in CS], "uzun")
-FB = [("Klozet", "WC", "7.500", "15.848", "6.962", "13.910", "2,0-2,1x"), ("Klozet kapağı", "Toilet seat", "619", "1.670 (Integra)", "670", "2.190", "2,7-3,3x"),
-      ("Lavabo", "Washbasin", "2.930", "8.134", "1.635", "6.948", "2,8-4,2x"), ("Banyo dolabı / mobilya", "Bathroom cabinet / furniture", "6.400", "15.887", "2.148", "13.100", "2,5-6,1x"),
-      ("Rezervuar iç takım", "Inner mechanism", "281", "896-1.131", "490", "837", "1,7-3,2x"), ("Klozet takımı (set)", "WC set", "-", "11.999-16.735", "8.000-12.000", "13.200-17.600", "1,4-1,5x")]
+FB = [("Klozet", "WC", "7.500", "15.848", "6.962", "13.910", "~2x"), ("Klozet kapağı", "Toilet seat", "619", "1.670 (Integra)", "670", "2.190", "~3x"),
+      ("Lavabo", "Washbasin", "2.930", "8.134", "1.635", "6.948", "3-4x"), ("Banyo dolabı / mobilya", "Bathroom cabinet / furniture", "6.400", "15.887", "2.148", "13.100", "2,5-6x"),
+      ("Rezervuar iç takım", "Inner mechanism", "281", "896-1.131", "490", "837", "2-3x"), ("Klozet takımı (set)", "WC set", "-", "11.999-16.735", "8.000-12.000", "13.200-17.600", "~1,5x")]
 T_FB = tablo([th("Kategori", "Category", "Fiyat karşılaştırılan kategori.", "Category compared on price."),
               th("Trendyol kategori medyanı", "Trendyol category median", "Çok satan ilk 36 ürünün medyan fiyatı, TL.", "Median price of the top 36 bestsellers, TL.", True),
               th("VitrA Trendyol", "VitrA on Trendyol", "VitrA marka filtresindeki çok satan ilk 36'nın medyanı, TL.", "Median of VitrA's top 36 bestsellers under the brand filter, TL.", True),
               th("Hepsiburada kategori medyanı", "Hepsiburada category median", "Çok satan ilk 36 ürünün medyan fiyatı, TL.", "Median price of the top 36 bestsellers, TL.", True),
               th("VitrA Hepsiburada", "VitrA on Hepsiburada", "VitrA marka filtreli ilk 36 medyanı, TL.", "Median of VitrA's brand-filtered top 36, TL.", True),
-              th("VitrA / kategori", "VitrA / category", "VitrA medyanının kategori medyanına oranı (iki pazaryeri aralığı).", "Ratio of VitrA's median to the category median (range across the two marketplaces).", True)],
+              th("VitrA / kategori", "VitrA / category", "VitrA ürünlerinin medyan fiyatının, kategorinin çok satan ürünlerinin medyan fiyatına oranı; iki pazaryeri aralığı, yuvarlanmıştır.", "Ratio of the median price of VitrA products to the median price of the category's best sellers; range across the two marketplaces, rounded.", True)],
              [[x(a, b), n(c), n(d), n(e), n(f), n(g)] for a, b, c, d, e, f, g in FB])
 MK = AP["miknatis"]
 MK_EN = {"Taharet musluğu & ara musluk": "Bidet valves and stop valves", "Sifon, gider & süzgeç": "Siphons, drains and strainers", "Duş seti, başlığı & hortumu": "Shower sets, heads and hoses", "Klozet kapağı": "Toilet seat", "Banyo aksesuarı & düzenleyici": "Bathroom accessories and organisers",
@@ -150,7 +150,7 @@ HTML = """
  kpi_kart(k(cek_ty), "Trendyol banyo kategorilerinin aylık organik trafiği (Ahrefs, alt sınır)", "Monthly organic traffic of Trendyol bathroom categories (Ahrefs, lower bound)"),
  kpi_kart("%11,8", "VitrA'nın Trendyol klozet kategorisindeki listeleme payı · lavabo %3,2, banyo dolabı %0,4", "VitrA's listing share in the Trendyol WC category · washbasin 3.2%, bathroom cabinet 0.4%", "hi"),
  kpi_kart("%69", "Hepsiburada'da VitrA ürünlerinin üçüncü taraf satıcıdan sunulan payı", "Share of VitrA products offered by third-party sellers on Hepsiburada", "dn"),
- kpi_kart("2,0-6,1x", "VitrA medyan fiyatının çok satan kategori medyanına oranı (klozet, lavabo, dolap)", "Ratio of VitrA's median price to the bestseller category median (WC, washbasin, cabinet)", "dn"),
+ kpi_kart("2-6x", "Pazaryerindeki VitrA ürünlerinin medyan fiyatı, kategorinin çok satan ürünlerinin 2 ila 6 katı (klozet ~2, lavabo 3-4, banyo dolabı 6'ya kadar)", "The median price of VitrA products on marketplaces is 2 to 6 times that of the category's best sellers (WC ~2, washbasin 3-4, bathroom cabinet up to 6)", "dn"),
  x("Banyo trafiği hangi sitelerde?", "Which sites carry bathroom traffic?"),
  T_SITE,
  insight("Banyonun ana kategorilerinde organik trafik Trendyol (%s), Koçtaş (%s) ve Hepsiburada'da (%s) toplanmaktadır; Akakçe ve Cimri gibi fiyat karşılaştırma siteleri de toplam %s ile Amazon ve n11'in önündedir. Trendyol'da trafiğin yaklaşık %%61'i kategori, %%25'i arama ve koleksiyon sayfalarından gelmekte, ürün sayfalarının payı %%3'te kalmaktadır; banyo kararı pazaryerinde kategori listesi üzerinden verilmektedir. SSG, üç büyük sitede banyo trafiğinin %%21-24'ünü, BM Trendyol'da %%25'ini, IKEA'da %%60'ını oluşturmaktadır." % (k(cek_ty), k(cek_ko), k(cek_hb), k(72439 + 31886)),
