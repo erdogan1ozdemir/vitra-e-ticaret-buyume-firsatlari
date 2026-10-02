@@ -134,12 +134,6 @@ PLAN = [
   ("Bide nedir yazısı %s tık; \"pisuvar\" AI Overview'unda VitrA kaynak gösterilmektedir; \"şamandıra\" ve \"elektrikli havlupan\" AI Overview'larında VitrA yok" % bin(bn[1]),
    "The \"what is a bidet\" article %s clicks; VitrA is cited in the \"pisuvar\" AI Overview; not in the \"şamandıra\" and \"elektrikli havlupan\" AI Overviews" % f"{bn[1]:,}"), ("D33", "D19")),
 ]
-T_PLAN = tablo([th("Öncelik", "Priority", "Talep, mevcut görünürlük ve satış sonrası etkisi birlikte değerlendirilerek verilen sıra.", "Order given by assessing demand, current visibility and after-sales impact together."),
-                th("Konu kümesi", "Topic cluster", "Aynı ihtiyacı karşılayan soru grubu.", "A group of questions serving the same need."),
-                th("Sayfa tipi", "Page type", "Konunun karşılanacağı sayfa: destek sayfası, rehber yazı ya da kategori sayfasında soru-cevap.", "The page that answers the topic: support page, guide article or Q&A on a category page."),
-                th("Kullanıcı soruları", "User questions", "PAA kutusu, Search Console ve Autocomplete'ten örnek sorular; kullanıcının yazdığı biçimde.", "Example questions from the PAA box, Search Console and Autocomplete, as typed by users."),
-                th("Dayanak", "Basis", "Konuyu öne çıkaran bulgu.", "The finding that puts the topic forward.")],
-               [[ob(o), "<b>%s</b>" % x(*a), x(*t), sq, x(*d) + R(*kd)] for o, a, t, sq, d, kd in PLAN], "uzun")
 
 # ---------------------------------------------------------------- entity
 ENT = [
@@ -162,87 +156,69 @@ ENT = [
   ("Kurumsal metin \"1958 yılında kurulan VitrA\" ifadesini kullanıyor; Wikipedia ve Wikidata 1942'yi gösteriyor", "The corporate text says \"VitrA, founded in 1958\"; Wikipedia and Wikidata show 1942"),
   ("Kuruluş tarihi için tek anlatının belirlenmesi ve tüm kayıtlarda aynı biçimde yer alması", "Settling a single founding narrative and using it consistently across all records")),
 ]
-T_ENT = tablo([th("Kayıt", "Record", "Markanın yapay zeka modelleri ve arama motorlarınca okunan kaydı; bağlantı kaydı açar.", "The brand record read by AI models and search engines; the link opens the record."),
-               th("Mevcut durum (02.10.2026)", "Current state (02.10.2026)", "Kaydın 2 Ekim 2026 tarihli durumu.", "The state of the record on 2 October 2026."),
-               th("Önerilen güncelleme", "Suggested update", "Kaydı vitra.com.tr ve kurumsal bilgiyle tutarlı hale getirecek düzenleme.", "The edit that would make the record consistent with vitra.com.tr and corporate information.")],
-              [[a, x(*b), x(*c)] for a, b, c in ENT])
 
 # ---------------------------------------------------------------- AI Overview kaynak siteleri (site disi)
 YAYIN = [("banyome.com", 5), ("instagram.com", 5), ("wikipedia.org", 4), ("yapilir.com", 4), ("youtube.com", 3), ("banyomega.com", 3), ("eksisozluk.com", 2)]
-RK = [(veri_m(a), b) for a, b in YAYIN]
-RANK_Y = '<p class="figcap">%s</p>' % x("AI Overview'da kaynak gösterilen rehber ve topluluk siteleri · kaç blokta geçtiği (24 blok, 29.09.2026)", "Guide and community sites cited in AI Overview · number of blocks (24 blocks, 29.09.2026)") + rank_list(RK, 5, fmt=lambda v: bin(v))
+
+_POPSO, _DIASO = pop("Soru sorguları: gösterim, tık ve sıra", "Question queries: impressions, clicks and position", T_SO, "21 sorguyu gör", "See the 21 queries")
+def firsat(no, h_tr, h_en, maddeler):
+    return ('<article class="fnote"><span class="fc">%s</span><h3>%s</h3><ul>%s</ul></article>'
+            % (x("Fırsat %02d" % no, "Opportunity %02d" % no), x(h_tr, h_en), "".join("<li>%s</li>" % x(a, b) for a, b in maddeler)))
+FIRSAT = '<div class="fnotes">%s</div>' % "".join([
+ firsat(1, "Sorun çözen destek içeriği", "Problem-solving support content",
+        [("Rehber sayfalarında tıkların %s'i montaj, tamir ve temizlik yazılarından gelmektedir; bu yazılar sayfaların yalnız %s'idir" % (yzd(prat_t), yzd(prat_n)), "%s of guide page clicks come from installation, repair and cleaning articles, which are only %s of pages" % (("%.1f" % prat_t) + "%", ("%.1f" % prat_n) + "%")),
+         ("Destek bölümü 5 sayfadan oluşmaktadır; arıza, montaj, uyumluluk ve garanti sayfası bulunmamaktadır", "The support section consists of 5 pages; there is no troubleshooting, installation, compatibility or warranty page"),
+         ("Arıza, parça uyumu ve bakım sorularını cevaplayan destek sayfaları hem AI yanıtlarında kaynak olma hem de satış sonrası başvuruyu siteye taşıma fırsatı sunmaktadır", "Support pages answering troubleshooting, part compatibility and care questions offer the opportunity both to be a source in AI answers and to bring after-sales enquiries to the site")]),
+ firsat(2, "Karar ve ölçü sorularında kaynak olmak", "Becoming the source on decision and size questions",
+        [("VitrA 24 AI Overview'un 7'sinde kaynak gösterilmektedir (klozet ölçüleri, en iyi klozet markası, pisuvar)", "VitrA is cited in 7 of 24 AI Overviews (WC dimensions, best WC brand, urinal)"),
+         ("Banyo dolabı ölçüleri, gömme ve dış rezervuar karşılaştırması, engelli klozeti ve montaj ücreti sorularında kaynaklar pazaryerleri, rakip markalar ve rehber siteleridir", "On bathroom cabinet sizes, concealed versus exposed cisterns, accessible WCs and installation fees the sources are marketplaces, competitor brands and guide sites"),
+         ("Ölçü, seçim ve karşılaştırma odaklı rehber içerik ile kategori sayfalarındaki kısa soru-cevaplar bu sorularda görünürlüğü artırabilir", "Guide content focused on sizes, selection and comparison, together with short Q&A on category pages, can raise visibility on these questions")]),
+ firsat(3, "Soru sorgularında ilk sayfadan tıka", "From the first page to the click on question queries",
+        [("vitra.com.tr soru biçimli sorgularda ortalama %s. sıradadır, CTR %s'tir" % (("%.1f" % so_p).replace(".", ","), yzd(100 * so_c / so_i, 2)), "vitra.com.tr ranks %s on average on question queries with a CTR of %s" % ("%.1f" % so_p, ("%.2f" % (100 * so_c / so_i)) + "%")),
+         ("Klozet kapağı montajını soran sorgular %s gösterim almaktadır; cevap çoğunlukla sonuç sayfasında verilmektedir" % k(kap_i), "Queries about fitting a WC seat receive %s impressions; the answer is mostly given on the results page" % k(kap_i).replace(",", ".")),
+         ("Bu sorgularda AI Overview'da kaynak gösterilen sayfa olmak, tık kadar önemli bir görünürlük biçimidir", "Being the page cited in AI Overview is a form of visibility as important as the click on these queries")]),
+ firsat(4, "Marka ve entity tutarlılığı", "Brand and entity consistency",
+        [("Wikidata'da VitrA için iki ayrı kayıt bulunmaktadır; ana kayıtta resmi web sitesi alanı vitra.com.tr'yi göstermemektedir", "Wikidata holds two separate VitrA records; the official website field of the main record does not show vitra.com.tr"),
+         ("Türkçe Wikipedia maddesi kısadır; Artema'nın Wikidata ve Wikipedia kaydı bulunmamaktadır, \"VitrA ve Artema aynı marka mı?\" sorusu sonuç sayfasında çıkmaktadır", "The Turkish Wikipedia article is short; Artema has no Wikidata or Wikipedia record, and the question \"are VitrA and Artema the same brand?\" appears on the results page"),
+         ("Marka kayıtlarının tutarlı hale gelmesi, AI yanıtlarında VitrA ve Artema'nın doğru tanımlanmasını destekleyebilir", "Consistent brand records can support VitrA and Artema being identified correctly in AI answers")]),
+ firsat(5, "Site dışı sinyaller", "Off-site signals",
+        [("Şikayetvar'da VitrA puanı 18, son 1 yıl çözüm oranı %18'dir; marka güvenilirliği sorularında bu platformlar kaynak gösterilebilmektedir", "On Şikayetvar the VitrA score is 18 and the last-year resolution rate 18%; these platforms can be cited on brand reliability questions"),
+         ("En çok izlenen 14 YouTube tamir ve kurulum konusunda VitrA kanal videosu bulunmamaktadır; AI Overview kaynakları arasında markadan bağımsız rehber ve topluluk siteleri yer almaktadır", "There is no VitrA channel video in the 14 most-watched YouTube repair and installation topics; AI Overview sources include brand-independent guide and community sites"),
+         ("Şikayet yanıtları, tamir videoları ve rehber sitelerinde uzman içerik, markanın site dışında anılmasını güçlendirebilir", "Complaint replies, repair videos and expert content on guide sites can strengthen off-site mentions of the brand")]),
+ firsat(6, "AI ile alışveriş", "Shopping with AI",
+        [("Google Shopping'de VitrA sitesi listelemelerin %0,7'sini almakta, 27 kategori kelimesinin 15'inde görünmemektedir", "On Google Shopping the VitrA site takes 0.7% of listings and does not appear in 15 of 27 category keywords"),
+         ("Google AI Mode ve ChatGPT alışveriş yanıtları ürün akışlarından ve ürün sayfası verisinden yararlanmaktadır", "Google AI Mode and ChatGPT shopping answers draw on product feeds and product page data"),
+         ("Ürün akışının kapsamı, ürün bilgisinin zenginliği ve llms.txt'nin destek ve rehber içeriğiyle genişletilmesi bu yanıtlarda yer almayı destekleyebilir", "The coverage of the product feed, richer product information and an llms.txt expanded with support and guide content can support appearing in these answers")]),
+])
 
 HTML = """
 <p class="lede">%s</p>
 <div class="kpis">%s%s%s%s</div>
 <h3>%s</h3>
-%s
-%s
-%s
-<h3>%s</h3>
+<p class="popl">%s</p>
 %s
 %s
 <h3>%s</h3>
 %s
-%s
-%s
-<h3>%s</h3>
-%s
-%s
-<h3>%s</h3>
-<div class="split"><div>%s</div>%s</div>
-<h3>%s</h3>
 %s
 %s
 """ % (
- x("Google AI Overview, Gemini ve ChatGPT gibi yapay zeka yanıtları kullanıcının sorusunu birden fazla kaynaktan derlenen tek bir cevapla karşılamaktadır. Bu cevaplarda kaynak gösterilmek üç unsura bağlıdır: soruyu doğrudan cevaplayan sayfa, markanın ansiklopedik kayıtlarda tutarlı tanımlanması ve markadan site dışında söz edilmesi. Değerlendirme vitra.com.tr rehber içeriklerinin Search Console performansına (1 Eki 2025 - 25 Eyl 2026), 29.09.2026 AI Overview gözlemine ve 02.10.2026 tarihli Wikidata ve Wikipedia kayıtlarına dayanmaktadır.",
-   "AI answers such as Google AI Overview, Gemini and ChatGPT meet the user's question with a single answer compiled from several sources. Being cited in these answers depends on three elements: a page that answers the question directly, consistent identification of the brand in encyclopaedic records, and mentions of the brand off the site. The assessment is based on the Search Console performance of vitra.com.tr guide content (1 Oct 2025 - 25 Sep 2026), the AI Overview observation of 29.09.2026 and the Wikidata and Wikipedia records of 02.10.2026."),
+ x("Google AI Overview, Gemini ve ChatGPT gibi yapay zeka yanıtları kullanıcının sorusunu birden fazla kaynaktan derlenen tek bir cevapla karşılamaktadır. Bu cevaplarda kaynak gösterilmek, soruyu doğrudan cevaplayan sayfaya, markanın tutarlı tanımlanmasına ve markadan site dışında söz edilmesine bağlıdır. Değerlendirme vitra.com.tr rehber içeriklerinin Search Console performansına (1 Eki 2025 - 25 Eyl 2026), 29.09.2026 AI Overview gözlemine ve 02.10.2026 tarihli marka kayıtlarına dayanmaktadır.",
+   "AI answers such as Google AI Overview, Gemini and ChatGPT meet the user's question with a single answer compiled from several sources. Being cited in these answers depends on a page that answers the question directly, consistent identification of the brand, and mentions of the brand off the site. The assessment is based on the Search Console performance of vitra.com.tr guide content (1 Oct 2025 - 25 Sep 2026), the AI Overview observation of 29.09.2026 and brand records dated 02.10.2026."),
  kpi_kart(yzd(prat_t), "Rehber içerik tıklarının montaj, tamir ve temizlik yazılarından gelen payı · sayfaların %s'i, 1 Eki 2025 - 25 Eyl 2026" % yzd(prat_n), "Share of guide content clicks from installation, repair and cleaning articles · %s of pages, 1 Oct 2025 - 25 Sep 2026" % (("%.1f" % prat_n) + "%"), "hi"),
- kpi_kart(yzd(100 * so_c / so_i, 2), "Soru sorgularında CTR · %d sorgu, %s gösterim, ortalama sıra %s" % (len(SO), k(so_i), ("%.1f" % so_p).replace(".", ",")), "CTR on question queries · %d queries, %s impressions, average position %s" % (len(SO), k(so_i).replace(",", "."), "%.1f" % so_p), "dn"),
- kpi_kart("5", "Destek bölümündeki sayfa sayısı (SSS, ödeme, teslimat, işlem, değişim-iade); montaj, arıza, uyumluluk ve garanti sayfası yok", "Pages in the support section (FAQ, payment, delivery, process, exchange-return); no installation, troubleshooting, compatibility or warranty page"),
- kpi_kart("2", "Wikidata'da VitrA için ayrı kayıt; ana kayıtta resmi web sitesi alanı vitra.com.tr'yi göstermiyor", "Separate VitrA records on Wikidata; in the main record the official website field does not show vitra.com.tr", "dn"),
- x("Rehber içerik: hangi konular trafik alıyor?", "Guide content: which topics bring traffic?"),
- GR, T_GR,
- insight("vitra.com.tr'nin /ilham-veren-fikirler/ altındaki %d rehber sayfası dönemde %s organik tık almıştır. Montaj, tamir ve temizlik yazıları sayfaların %s'ini oluşturup tıkların %s'ini almaktadır; tamir konusunda tek yazı (gömme rezervuar tamiri) %s tık ile üçüncü sıradadır. Dekorasyon, trend ve sürdürülebilirlik yazıları sayfaların %s'ini, tıkların %s'ini oluşturmaktadır. Kullanıcının sorunu çözmeye yönelik içerikleri daha çok tıkladığı ve bu alanın sitede en az işlenen başlık olduğu görülmektedir." % (
-         TOP_N, k(TOP_T), yzd(prat_n), yzd(prat_t), bin(gt[1]), yzd(100 * (GS["dekor"][0] + GS["surd"][0]) / TOP_N), yzd(100 * (GS["dekor"][1] + GS["surd"][1]) / TOP_T)),
-         "The %d guide pages under /ilham-veren-fikirler/ on vitra.com.tr received %s organic clicks in the period. Installation, repair and cleaning articles make up %s of pages and take %s of clicks; the only repair article (concealed cistern repair) ranks third with %s clicks. Decoration, trend and sustainability articles make up %s of pages and %s of clicks. Users click more on content that solves a problem, and this is the least developed topic on the site." % (
-         TOP_N, k(TOP_T).replace(",", "."), ("%.1f" % prat_n) + "%", ("%.1f" % prat_t) + "%", f"{gt[1]:,}", ("%.1f" % (100 * (GS["dekor"][0] + GS["surd"][0]) / TOP_N)) + "%", ("%.1f" % (100 * (GS["dekor"][1] + GS["surd"][1]) / TOP_T)) + "%"), "D33"),
- x("Soru sorgularında sıra ve tık", "Position and clicks on question queries"),
- T_SO,
- insight("vitra.com.tr soru biçimli sorgularda ilk sayfada yer almaktadır: tablodaki %d sorgunun gösterim ağırlıklı ortalama sırası %s'dir. Buna karşın CTR %s seviyesinde kalmaktadır; klozet kapağı montajını soran 6 sorgu %s gösterime karşılık %s tık almıştır. Bu sorgularda cevabın sonuç sayfasında (AI Overview, PAA, video) verilmesi tık oranının düşük kalmasıyla ilişkilendirilebilir; kaynak gösterilen sayfa olmak bu sorgularda tık kadar önemli bir görünürlük biçimidir. Kapak tipine göre ayrışan sorgular (amortisörlü, üstten vidalı, eski tip, yavaş kapanan) her tip için ayrı cevap beklendiğini göstermektedir." % (
-         len(SO), ("%.1f" % so_p).replace(".", ","), yzd(100 * so_c / so_i, 2), k(kap_i), bin(kap_c)),
-         "vitra.com.tr appears on the first page for question-type queries: the impression-weighted average position of the %d queries in the table is %s. Yet CTR stays at %s; the 6 queries about fitting a WC seat received %s clicks against %s impressions. The low CTR can be associated with the answer being given on the results page itself (AI Overview, PAA, video); being the cited page is a form of visibility as important as the click for these queries. Queries that split by seat type (soft-close, top-fixing, old type) show that a separate answer is expected for each type." % (
-         len(SO), "%.1f" % so_p, ("%.2f" % (100 * so_c / so_i)) + "%", f"{kap_c:,}", k(kap_i).replace(",", ".")), "D33"),
- x("AI Overview odaklı içerik planı: destek sayfaları ve rehber içerik", "AI Overview-focused content plan: support pages and guide content"),
- T_PLAN,
- marks([("up", "Sayfanın ilk paragrafında soruya 40-60 kelimelik doğrudan cevap, ardından numaralı adımlar", "A direct 40-60 word answer to the question in the page's first paragraph, followed by numbered steps"),
-        ("up", "Model ve parça tipine göre ayrışan cevaplar ayrı başlıklarda: kapak tipi, rezervuar tipi, batarya tipi", "Answers that differ by model and part type under separate headings: seat type, cistern type, tap type"),
-        ("up", "Ölçü, uyumluluk ve parça bilgisi görsel içinde değil, sayfada metin ve tablo olarak", "Size, compatibility and part information as text and tables on the page, not inside images"),
-        ("up", "İlgili ürün, yedek parça, montaj hizmeti ve servis sayfalarına bağlantı; aynı konuda video varsa sayfaya gömülü", "Links to the related product, spare part, installation service and service pages; the video on the same topic embedded on the page"),
-        ("up", "Güncelleme tarihi ve içeriği hazırlayan uzman bilgisi; yüksek trafikli mevcut yazıların (evye, duşakabin temizliği, gömme rezervuar tamiri) soru-cevap bölümüyle güncellenmesi", "An update date and information on the expert who prepared the content; updating the high-traffic existing articles (sinks, shower enclosure cleaning, concealed cistern repair) with a Q&A section")]),
- insight("Planın odağı, kullanıcının bir sorunu çözmek ya da karar vermek için sorduğu sorulardır: tamir, montaj, uyumluluk, ölçü ve karşılaştırma. Bu soruların bir bölümünde VitrA bugün AI Overview'da kaynak gösterilmektedir (klozet ölçüleri, en iyi klozet markası, pisuvar); iç takım, montaj ücreti, engelli klozeti ve seçim karşılaştırmalarında kaynaklar pazaryerleri, rakip markalar ve rehber sitelerdir. Destek sayfaları aynı zamanda Şikayetvar'da yoğunlaşan yedek parça, montaj ve garanti konularına satış sonrası bir başvuru noktası sağlayabilir.",
-         "The plan focuses on the questions users ask to solve a problem or make a decision: repair, installation, compatibility, size and comparison. In some of these, VitrA is already cited in AI Overview today (WC dimensions, best WC brand, urinal); for inner mechanisms, installation fees, accessible WCs and selection comparisons the sources are marketplaces, competitor brands and guide sites. Support pages can also provide an after-sales reference point for the spare-part, installation and warranty topics concentrated on Şikayetvar.", "D19", "D24"),
- x("Marka ve entity tutarlılığı: Wikidata ve Wikipedia", "Brand and entity consistency: Wikidata and Wikipedia"),
- T_ENT,
- note("NOT", "NOTE", "<p>%s</p>" % x("Wikipedia'da marka adına yapılacak düzenlemeler, platformun çıkar çatışması kuralları gereği bağımsız yayınlara dayandırılmalı ve maddenin tartışma sayfası üzerinden önerilmelidir. Wikidata düzeltmeleri kaynak gösterilerek doğrudan yapılabilir.",
-                                         "Edits on behalf of the brand on Wikipedia should, under the platform's conflict-of-interest rules, be based on independent publications and proposed via the article's talk page. Wikidata corrections can be made directly with sources.")),
- x("Site dışı sinyaller: Şikayetvar, YouTube ve rehber siteleri", "Off-site signals: Şikayetvar, YouTube and guide sites"),
- marks([("at", "Şikayetvar: VitrA puanı 18, son 1 yıl çözüm oranı %18; marka güvenilirliği sorularında yapay zeka yanıtları şikayet ve forum platformlarını kaynak gösterebilmektedir. Yedek parça, montaj ve garanti şikayetlerine standart yanıt ve ilgili destek sayfasına bağlantı verilmesi, çözülen kayıtların kapatılması değerlendirilebilir",
-         "Şikayetvar: VitrA score 18, last-year resolution rate 18%; for brand reliability questions AI answers may cite complaint and forum platforms. A standard reply with a link to the related support page for spare-part, installation and warranty complaints, and closing resolved records, can be considered"),
-        ("at", "YouTube: en çok izlenen 14 tamir ve kurulum konusunun hiçbirinde VitrA kanal videosu yok; \"gömme rezervuar iç takımı\" ve \"gömme rezervuar mı dış rezervuar mı\" AI Overview'larında YouTube kaynak gösterilmektedir. Destek sayfalarıyla aynı başlıklarda video serisi ve videoların ilgili sayfaya gömülmesi değerlendirilebilir",
-         "YouTube: none of the 14 most-watched repair and installation topics has a VitrA channel video; YouTube is cited in the \"gömme rezervuar iç takımı\" and \"gömme rezervuar mı dış rezervuar mı\" AI Overviews. A video series under the same headings as the support pages, with the videos embedded on the related pages, can be considered"),
-        ("up", "Rehber ve topluluk siteleri: AI Overview'da kaynak gösterilen içeriklerin bir bölümü markadan bağımsız rehber ve topluluk sitelerindedir. Bu sitelerde ölçü, seçim ve bakım konularında uzman içerik ve konuk yazı ile VitrA'nın kaynak olarak anılması değerlendirilebilir",
-         "Guide and community sites: part of the content cited in AI Overview sits on guide and community sites independent of brands. Expert content and guest posts on size, selection and care topics on these sites, with VitrA cited as a source, can be considered")]),
- RANK_Y,
- x("AI ile alışveriş: ürün verisi ve llms.txt", "Shopping with AI: product data and llms.txt"),
- marks([("at", "Google Shopping'de VitrA sitesi listelemelerin %0,7'sini almakta ve 27 kategori kelimesinin 15'inde görünmemektedir. Google AI Mode ve ChatGPT alışveriş yanıtları ürün akışlarından ve ürün sayfası verisinden yararlanmaktadır; Merchant Center akışının tüm kategorileri kapsaması ve ölçü, renk, model kodu, uyumlu kapak ve iç takım, garanti süresi ve montaj hizmeti bilgisini taşıması değerlendirilebilir",
-         "On Google Shopping the VitrA site takes 0.7% of listings and does not appear in 15 of 27 category keywords. Google AI Mode and ChatGPT shopping answers draw on product feeds and product page data; a Merchant Center feed covering all categories and carrying size, colour, model code, compatible seat and inner mechanism, warranty period and installation service information can be considered"),
-        ("at", "Kategori sayfalarındaki kartların %71,1'i stoklu süzgeci dışındadır; stok ve fiyat bilgisinin ürün sayfası ile ürün akışında tutarlı olması, AI alışveriş yanıtlarında stokta olmayan ürünün önerilmesini sınırlayabilir",
-         "71.1% of the cards on category pages fall outside the in-stock filter; consistent stock and price information on the product page and in the product feed can limit out-of-stock products being suggested in AI shopping answers"),
-        ("up", "llms.txt yayında ve 83 bağlantı içermektedir; bunların 3'ü rehber içeriğe, 1'i destek sayfasına gitmektedir. Destek, montaj, yedek parça, garanti ve Artema bölümleriyle genişletilebilir. Sayfaların yapay zeka araçları için sade metin sürümleri gibi altyapı gerektiren düzenlemeler e-ticaret altyapısıyla birlikte ilerleyen dönemde değerlendirilebilir",
-         "llms.txt is live and contains 83 links, 3 of which go to guide content and 1 to a support page. It can be expanded with support, installation, spare-part, warranty and Artema sections. Changes that need platform work, such as plain-text versions of pages for AI tools, can be assessed later together with the e-commerce platform"),
-        ("at", "Rehber içerik site haritasında (sitemap-ilham.xml) 103 kaydın 2'si doldurulmamış şablon adresidir ve 1 adres iki kez yer almaktadır",
-         "In the guide content sitemap (sitemap-ilham.xml), 2 of 103 entries are unfilled template addresses and 1 address appears twice")]),
+ kpi_kart("7 / 24", "VitrA'nın kaynak gösterildiği AI Overview (29.09.2026 gözlemi)", "AI Overviews citing VitrA (observation of 29.09.2026)"),
+ kpi_kart(yzd(100 * so_c / so_i, 2), "Soru sorgularında CTR · ortalama sıra %s, 1 Eki 2025 - 25 Eyl 2026" % ("%.1f" % so_p).replace(".", ","), "CTR on question queries · average position %s, 1 Oct 2025 - 25 Sep 2026" % ("%.1f" % so_p), "dn"),
+ kpi_kart("5", "Destek bölümündeki sayfa sayısı; arıza, montaj, uyumluluk ve garanti sayfası yok", "Pages in the support section; no troubleshooting, installation, compatibility or warranty page"),
+ x("Mevcut durum: rehber içerik ve soru sorguları", "Current state: guide content and question queries"), _POPSO,
+ GR,
+ insight("vitra.com.tr'nin rehber sayfaları dönemde %s organik tık almıştır. Montaj, tamir ve temizlik yazıları sayfaların %s'ini oluşturup tıkların %s'ini almakta, dekorasyon, trend ve sürdürülebilirlik yazıları ise sayfaların %s'ini oluşturup tıkların %s'ini almaktadır; tamir konusunda tek yazı bulunmaktadır. Soru biçimli sorgularda site ilk sayfadadır ancak CTR %s'te kalmaktadır: cevabın sonuç sayfasında verildiği bu sorgularda AI Overview'da kaynak gösterilmek görünürlüğün ana biçimi haline gelmektedir." % (
+         k(TOP_T), yzd(prat_n), yzd(prat_t), yzd(100 * (GS["dekor"][0] + GS["surd"][0]) / TOP_N), yzd(100 * (GS["dekor"][1] + GS["surd"][1]) / TOP_T), yzd(100 * so_c / so_i, 2)),
+         "vitra.com.tr guide pages received %s organic clicks in the period. Installation, repair and cleaning articles make up %s of pages and take %s of clicks, while decoration, trend and sustainability articles make up %s of pages and take %s of clicks; there is a single repair article. On question queries the site is on the first page but CTR stays at %s: for these queries, answered on the results page itself, being cited in AI Overview becomes the main form of visibility." % (
+         k(TOP_T).replace(",", "."), ("%.1f" % prat_n) + "%", ("%.1f" % prat_t) + "%", ("%.1f" % (100 * (GS["dekor"][0] + GS["surd"][0]) / TOP_N)) + "%", ("%.1f" % (100 * (GS["dekor"][1] + GS["surd"][1]) / TOP_T)) + "%", ("%.2f" % (100 * so_c / so_i)) + "%"), "D33", "D19"),
+ x("Fırsat alanları", "Opportunity areas"),
+ FIRSAT,
+ insight("Fırsatların ortak noktası, kullanıcının bir sorunu çözmek ya da karar vermek için sorduğu sorulardır. Talep, satış sonrası şikayetler ve arama sonuçları aynı konularda (tamir, montaj, uyumluluk, ölçü) yoğunlaşmaktadır; bu konularda VitrA'nın üretici bilgisiyle kaynak olması, hem AI yanıtlarındaki görünürlüğü hem de satış sonrası deneyimi destekleyebilir.",
+         "What the opportunities share is the questions users ask to solve a problem or make a decision. Demand, after-sales complaints and search results concentrate on the same topics (repair, installation, compatibility, size); VitrA being the source on these topics with manufacturer knowledge can support both visibility in AI answers and the after-sales experience.", "D24", "D19"),
  kaynak("Google Search Console · /ilham-veren-fikirler/ sayfaları ve soru sorguları, 1 Eki 2025 - 25 Eyl 2026 · Google arama sonuçları ve AI Overview, 109 kelime, 29.09.2026 · Wikidata ve Wikipedia, 02.10.2026 · vitra.com.tr llms.txt ve site haritaları, 02.10.2026 · Şikayetvar, YouTube ve Google Shopping verileri ilgili bölümlerdeki kaynaklardandır",
         "Google Search Console · /ilham-veren-fikirler/ pages and question queries, 1 Oct 2025 - 25 Sep 2026 · Google search results and AI Overview, 109 keywords, 29.09.2026 · Wikidata and Wikipedia, 02.10.2026 · vitra.com.tr llms.txt and sitemaps, 02.10.2026 · Şikayetvar, YouTube and Google Shopping data come from the sources of the related sections", "D33", "D19", "D34", "D35", "D24", "D20", "D25"),
-)
+) + _DIASO
