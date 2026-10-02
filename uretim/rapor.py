@@ -11,7 +11,7 @@ import t2_ortak, kaynakca, ceviri, dil
 from t2_ortak import x, R
 from ortak import logo_css, logo_alan_adlari, lg
 import h3_not
-import b_ozet, b_makro, b_talep, b_ssgbm, b_niyet, b_organik, b_marka, b_youtube, b_katalog, b_yeni, b_set, b_rakip, b_benchmark, b_model, b_adimlar, b_yontem, b_serp, b_kategori_trafik, b_pazaryeri, b_politika, b_sikayet, b_fiyat, b_derin, b_panel
+import b_ozet, b_geo, b_makro, b_talep, b_ssgbm, b_niyet, b_organik, b_marka, b_youtube, b_katalog, b_yeni, b_set, b_rakip, b_benchmark, b_model, b_adimlar, b_yontem, b_serp, b_kategori_trafik, b_pazaryeri, b_politika, b_sikayet, b_fiyat, b_derin, b_panel
 
 AD = "VitrA_E-Ticaret_Buyume_Firsatlari"
 XLS = os.path.join(veri.KOK, AD + ".xlsx")
@@ -45,6 +45,7 @@ P.append(bolum("fiyat", "Fiyat ve Satıcı Manzarası: Shopping, Trendyol, Hepsi
 P.append(bolum("politika", "Kanal Politikaları ve Keşif Kanalları", "Channel Policies and Discovery Channels", b_politika.HTML))
 P.append(bolum("benchmark", "Benchmark: E-Ticaret Modelleri ve Dijital Deneyim", "Benchmark: E-Commerce Models and Digital Experience", b_benchmark.HTML))
 P.append(bolum("model", "Kanal Rolleri ve Etkileşim Modeli", "Channel Roles and Engagement Model", b_model.HTML))
+P.append(bolum("geo", "AI Aramada Görünürlük: İçerik, Entity ve Site Dışı Sinyaller", "Visibility in AI Search: Content, Entity and Off-Site Signals", b_geo.HTML))
 P.append(bolum("adimlar", "Sonraki Adımlar", "Next Steps", b_adimlar.HTML))
 P.append(bolum("yontem", "Yöntem ve Kapsam", "Method and Scope", b_yontem.HTML))
 
@@ -99,6 +100,10 @@ GL_EN = {
  "PVC": "Polyvinyl chloride; a water-resistant plastic body material.",
  "Lead": "A pre-purchase contact request; a measurable prospect event such as a form, call-back or appointment.",
  "SKU": "Stock keeping unit; the unique code of each product variant including colour and size.",
+ "GEO": "Generative Engine Optimization; preparing content and brand information so that it is cited in AI answers.",
+ "Entity": "The single record through which search engines and AI models recognise a brand or company; it holds information such as name, founding, website and related brands.",
+ "Wikidata": "The openly editable structured knowledge base linked to Wikipedia; search engines and AI models also read brand information from it.",
+ "llms.txt": "A text file placed at the site root that summarises the site's key pages for AI tools.",
  "Merchant Center": "The Google tool through which product information is submitted to be shown in Google Shopping and free product listings.",
  "Yerel paket": "The list of local businesses shown with a map on the results page (Local pack).",
  "Desi": "A volumetric weight unit used in shipping pricing in Turkey.",
@@ -180,9 +185,9 @@ th.srt.sd .q::after{border-top:5px solid var(--coral)}
 # ---------------------------------------------------------------- icindekiler
 KISA = {"ihtiyac": ("İhtiyaç Dili", "Need Language"), "youtube": ("YouTube: Montaj ve Tamir", "YouTube: Installation and Repair"), "rakip": ("Rakip Görünürlüğü ve Ölçek", "Competitor Visibility and Scale"),
         "model": ("Kanal Rolleri ve Model", "Channel Roles and Model"), "panel": ("Resmi Mağaza Paneli", "Official Store Panel"), "makro": ("Makro Ortam", "Macro Environment"), "talep": ("Kategori Talebi", "Category Demand"), "organik": ("Organik Kanal", "Organic Channel"),
-        "marka": ("Marka Aramaları", "Brand Searches"), "ssgbm": ("SSG ve BM Derin Talep", "SSG and BM In Depth"), "katalog": ("Katalog ve Talep", "Catalogue and Demand"), "yeni": ("Yeni Kategori ve Segment", "New Categories and Segments"), "set": ("Set ve Ürün + Hizmet", "Sets and Product + Service"), "benchmark": ("Benchmark ve Dijital Deneyim", "Benchmark and Digital Experience"), "serp": ("Google SERP ve AI Overview", "Google SERP and AI Overview"), "trafik": ("Marka Sitelerinde Trafik", "Traffic on Brand Sites"), "pazaryeri": ("Pazaryeri ve Çok Satanlar", "Marketplaces and Best Sellers"), "politika": ("Kanal Politikaları", "Channel Policies"), "sikayet": ("Şikayetvar: Satış Sonrası", "Şikayetvar: After-Sales"), "fiyat": ("Fiyat ve Satıcı Manzarası", "Price and Seller Landscape"), "derin": ("Alt Kategori Derinliği", "Sub-Category Depth")}
+        "marka": ("Marka Aramaları", "Brand Searches"), "ssgbm": ("SSG ve BM Derin Talep", "SSG and BM In Depth"), "katalog": ("Katalog ve Talep", "Catalogue and Demand"), "yeni": ("Yeni Kategori ve Segment", "New Categories and Segments"), "set": ("Set ve Ürün + Hizmet", "Sets and Product + Service"), "benchmark": ("Benchmark ve Dijital Deneyim", "Benchmark and Digital Experience"), "serp": ("Google SERP ve AI Overview", "Google SERP and AI Overview"), "trafik": ("Marka Sitelerinde Trafik", "Traffic on Brand Sites"), "pazaryeri": ("Pazaryeri ve Çok Satanlar", "Marketplaces and Best Sellers"), "politika": ("Kanal Politikaları", "Channel Policies"), "sikayet": ("Şikayetvar: Satış Sonrası", "Şikayetvar: After-Sales"), "fiyat": ("Fiyat ve Satıcı Manzarası", "Price and Seller Landscape"), "derin": ("Alt Kategori Derinliği", "Sub-Category Depth"), "geo": ("AI Aramada Görünürlük", "Visibility in AI Search")}
 KUMELER = [("DURUM", "STATUS", ["ozet", "makro"]), ("TALEP", "DEMAND", ["talep", "ssgbm", "ihtiyac", "organik", "marka", "serp", "youtube", "sikayet"]), ("FIRSAT", "OPPORTUNITY", ["katalog", "yeni", "set"]), ("REKABET VE MODEL", "COMPETITION AND MODEL", ["rakip", "trafik", "pazaryeri", "derin", "panel", "fiyat", "politika", "benchmark", "model"]),
-           ("PLAN", "PLAN", ["adimlar"]), ("EK", "APPENDIX", ["yontem", "kaynakca", "sozluk"])]
+           ("PLAN", "PLAN", ["geo", "adimlar"]), ("EK", "APPENDIX", ["yontem", "kaynakca", "sozluk"])]
 _bas = dict(BOLUMLER); _sira = {b: i + 1 for i, (b, _) in enumerate(BOLUMLER)}
 _kumede = [b for _, _, ids in KUMELER for b in ids]
 if _kumede != [b for b, _ in BOLUMLER]:

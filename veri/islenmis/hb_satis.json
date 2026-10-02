@@ -1,0 +1,409 @@
+{
+ "donem": "son 12 ay (rapor 02.10.2026)",
+ "urun_satir": 670,
+ "adet": 4283,
+ "ort_fiyat": 4403.769465328041,
+ "marka": {
+  "Artema": {
+   "adet_pay": 29.6054167639505,
+   "ciro_pay": 20.62178279631053
+  },
+  "VitrA": {
+   "adet_pay": 69.85757646509455,
+   "ciro_pay": 79.17748761222728
+  },
+  "Punto": {
+   "adet_pay": 0.5370067709549381,
+   "ciro_pay": 0.20072959146218072
+  }
+ },
+ "kategori": [
+  {
+   "kategori": "Banyo Mobilya",
+   "urun": 81,
+   "adet": 382,
+   "adet_pay": 8.918982021947233,
+   "ciro_pay": 19.75367162343911,
+   "ort_fiyat": 9753.424293193717
+  },
+  {
+   "kategori": "Klozet",
+   "urun": 36,
+   "adet": 212,
+   "adet_pay": 4.949801540975951,
+   "ciro_pay": 15.650668228975922,
+   "ort_fiyat": 13924.181462264147
+  },
+  {
+   "kategori": "Lavabo",
+   "urun": 58,
+   "adet": 260,
+   "adet_pay": 6.070511323838431,
+   "ciro_pay": 9.155009119386948,
+   "ort_fiyat": 6641.37623076923
+  },
+  {
+   "kategori": "Banyo Lavabo Bataryası",
+   "urun": 65,
+   "adet": 350,
+   "adet_pay": 8.17184216670558,
+   "ciro_pay": 9.048346893520682,
+   "ort_fiyat": 4876.113971428573
+  },
+  {
+   "kategori": "Duş Seti",
+   "urun": 41,
+   "adet": 162,
+   "adet_pay": 3.7823955171608685,
+   "ciro_pay": 6.690248576774057,
+   "ort_fiyat": 7789.326172839508
+  },
+  {
+   "kategori": "Banyo Bataryası",
+   "urun": 61,
+   "adet": 199,
+   "adet_pay": 4.64627597478403,
+   "ciro_pay": 6.324740224167538,
+   "ort_fiyat": 5994.628391959799
+  },
+  {
+   "kategori": "Klozet Kapağı",
+   "urun": 34,
+   "adet": 373,
+   "adet_pay": 8.708848937660518,
+   "ciro_pay": 4.908986069944359,
+   "ort_fiyat": 2482.3077211796244
+  },
+  {
+   "kategori": "Tuvalet Kağıtlığı",
+   "urun": 25,
+   "adet": 300,
+   "adet_pay": 7.004436142890497,
+   "ciro_pay": 3.2179308115520775,
+   "ort_fiyat": 2023.150066666667
+  },
+  {
+   "kategori": "Ara Musluk",
+   "urun": 34,
+   "adet": 538,
+   "adet_pay": 12.561288816250292,
+   "ciro_pay": 2.6857282988342956,
+   "ort_fiyat": 941.5696468401486
+  },
+  {
+   "kategori": "Mutfak Eviye Bataryası",
+   "urun": 21,
+   "adet": 78,
+   "adet_pay": 1.8211533971515292,
+   "ciro_pay": 2.614438418547914,
+   "ort_fiyat": 6322.028717948719
+  },
+  {
+   "kategori": "Sabunluk",
+   "urun": 22,
+   "adet": 82,
+   "adet_pay": 1.914545879056736,
+   "ciro_pay": 2.2917568641508654,
+   "ort_fiyat": 5271.416585365853
+  },
+  {
+   "kategori": "Duş Başlığı",
+   "urun": 27,
+   "adet": 130,
+   "adet_pay": 3.0352556619192157,
+   "ciro_pay": 2.0638475031479486,
+   "ort_fiyat": 2994.3799230769223
+  },
+  {
+   "kategori": "Tesisat Malzemeleri",
+   "urun": 20,
+   "adet": 340,
+   "adet_pay": 7.938360961942563,
+   "ciro_pay": 2.0103291554194618,
+   "ort_fiyat": 1115.220911764706
+  },
+  {
+   "kategori": "Havluluk",
+   "urun": 16,
+   "adet": 112,
+   "adet_pay": 2.6149894933457856,
+   "ciro_pay": 1.8006959569566465,
+   "ort_fiyat": 3032.4595535714284
+  },
+  {
+   "kategori": "Banyo Askısı",
+   "urun": 18,
+   "adet": 179,
+   "adet_pay": 4.1793135652579965,
+   "ciro_pay": 1.6322202695642167,
+   "ort_fiyat": 1719.88094972067
+  },
+  {
+   "kategori": "Klozet Fırçası",
+   "urun": 18,
+   "adet": 90,
+   "adet_pay": 2.1013308428671493,
+   "ciro_pay": 1.5915848845775449,
+   "ort_fiyat": 3335.492333333333
+  },
+  {
+   "kategori": "Rezervuar İç Takım",
+   "urun": 15,
+   "adet": 109,
+   "adet_pay": 2.5449451319168808,
+   "ciro_pay": 1.5526139620474204,
+   "ort_fiyat": 2686.641009174312
+  },
+  {
+   "kategori": "Banyo Aynası",
+   "urun": 11,
+   "adet": 20,
+   "adet_pay": 0.46696240952603313,
+   "ciro_pay": 1.1869568395596177,
+   "ort_fiyat": 11193.801
+  },
+  {
+   "kategori": "Tutamaklar",
+   "urun": 5,
+   "adet": 23,
+   "adet_pay": 0.5370067709549381,
+   "ciro_pay": 0.7575822555539522,
+   "ort_fiyat": 6212.6173913043485
+  },
+  {
+   "kategori": "Kumanda Paneli",
+   "urun": 14,
+   "adet": 62,
+   "adet_pay": 1.4475834695307028,
+   "ciro_pay": 0.7251755521977203,
+   "ort_fiyat": 2206.0945161290324
+  },
+  {
+   "kategori": "Köşe Rafları",
+   "urun": 5,
+   "adet": 59,
+   "adet_pay": 1.3775391081017978,
+   "ciro_pay": 0.6864903993255174,
+   "ort_fiyat": 2194.5986440677966
+  },
+  {
+   "kategori": "Banyo Çöp Kovası",
+   "urun": 4,
+   "adet": 18,
+   "adet_pay": 0.42026616857342985,
+   "ciro_pay": 0.5910062206370948,
+   "ort_fiyat": 6192.873333333334
+  },
+  {
+   "kategori": "Vitrifiye",
+   "urun": 1,
+   "adet": 24,
+   "adet_pay": 0.5603548914312397,
+   "ciro_pay": 0.5051474426641381,
+   "ort_fiyat": 3969.9
+  },
+  {
+   "kategori": "Tam Boy Dolap",
+   "urun": 4,
+   "adet": 9,
+   "adet_pay": 0.21013308428671493,
+   "ciro_pay": 0.4797832382747694,
+   "ort_fiyat": 10054.841111111113
+  },
+  {
+   "kategori": "Duş Bataryası",
+   "urun": 3,
+   "adet": 26,
+   "adet_pay": 0.6070511323838431,
+   "ciro_pay": 0.4497822488755312,
+   "ort_fiyat": 3262.8838461538467
+  },
+  {
+   "kategori": "Tapalar / Süzgeçler",
+   "urun": 11,
+   "adet": 65,
+   "adet_pay": 1.5176278309596078,
+   "ciro_pay": 0.44032290206889824,
+   "ort_fiyat": 1277.7049230769233
+  },
+  {
+   "kategori": "Duşakabin",
+   "urun": 1,
+   "adet": 3,
+   "adet_pay": 0.07004436142890497,
+   "ciro_pay": 0.38661082478010517,
+   "ort_fiyat": 24306.666666666668
+  },
+  {
+   "kategori": "Banyo Aksesuar Seti",
+   "urun": 1,
+   "adet": 9,
+   "adet_pay": 0.21013308428671493,
+   "ciro_pay": 0.194791255555777,
+   "ort_fiyat": 4082.25
+  },
+  {
+   "kategori": "Diş Fırçalık",
+   "urun": 6,
+   "adet": 32,
+   "adet_pay": 0.747139855241653,
+   "ciro_pay": 0.18218414801436358,
+   "ort_fiyat": 1073.8243750000001
+  },
+  {
+   "kategori": "Havlu Dispenseri",
+   "urun": 1,
+   "adet": 4,
+   "adet_pay": 0.09339248190520663,
+   "ciro_pay": 0.08869330547230093,
+   "ort_fiyat": 4182.1875
+  },
+  {
+   "kategori": "Ayna Etajeri",
+   "urun": 2,
+   "adet": 12,
+   "adet_pay": 0.28017744571561987,
+   "ciro_pay": 0.07375455080360013,
+   "ort_fiyat": 1159.2583333333334
+  },
+  {
+   "kategori": "İç Takım / Aksesuarları",
+   "urun": 3,
+   "adet": 8,
+   "adet_pay": 0.18678496381041326,
+   "ciro_pay": 0.07109646883701337,
+   "ort_fiyat": 1676.21875
+  },
+  {
+   "kategori": "Banyo Taburesi",
+   "urun": 1,
+   "adet": 2,
+   "adet_pay": 0.046696240952603316,
+   "ciro_pay": 0.06886439043283861,
+   "ort_fiyat": 6494.375
+  },
+  {
+   "kategori": "Duş Teknesi",
+   "urun": 2,
+   "adet": 8,
+   "adet_pay": 0.18678496381041326,
+   "ciro_pay": 0.05578616059452499,
+   "ort_fiyat": 1315.2525
+  },
+  {
+   "kategori": "Havlupan",
+   "urun": 1,
+   "adet": 1,
+   "adet_pay": 0.023348120476301658,
+   "ciro_pay": 0.03031406357920626,
+   "ort_fiyat": 5717.64
+  },
+  {
+   "kategori": "Pamuk Kutusu",
+   "urun": 1,
+   "adet": 1,
+   "adet_pay": 0.023348120476301658,
+   "ciro_pay": 0.019190731482430227,
+   "ort_fiyat": 3619.63
+  },
+  {
+   "kategori": "Setler",
+   "urun": 1,
+   "adet": 1,
+   "adet_pay": 0.023348120476301658,
+   "ciro_pay": 0.013650140283582813,
+   "ort_fiyat": 2574.6
+  }
+ ],
+ "urun_adet": [
+  {
+   "ad": "VitrA Origin Yuvarlak Lavabo Süzgeci Krom Basmalı Universal Özellikli ",
+   "kod": "A45149",
+   "kategori": "Tesisat Malzemeleri",
+   "adet": 167,
+   "ort_fiyat": 957.44
+  },
+  {
+   "ad": "Artema A45228 Filtreli Çamaşır Musluğu, Krom",
+   "kod": "A45228",
+   "kategori": "Ara Musluk",
+   "adet": 91,
+   "ort_fiyat": 300.14
+  },
+  {
+   "ad": "Artema A45200 Filtreli Ara Musluk – Krom Kaplama, Su Filtresi ile Hijy",
+   "kod": "A45200",
+   "kategori": "Ara Musluk",
+   "adet": 85,
+   "ort_fiyat": 281.91
+  },
+  {
+   "ad": "VitrA Origin A45214 Ara Musluk, Krom",
+   "kod": "A45214",
+   "kategori": "Ara Musluk",
+   "adet": 83,
+   "ort_fiyat": 1476.14
+  },
+  {
+   "ad": "Artema A41584 Uzun Musluk, Krom",
+   "kod": "A41584",
+   "kategori": "Ara Musluk",
+   "adet": 78,
+   "ort_fiyat": 875.2
+  },
+  {
+   "ad": "Artema Serenity A42914 Lavabo Bataryası, Krom",
+   "kod": "A42914-1",
+   "kategori": "Banyo Lavabo Bataryası",
+   "adet": 77,
+   "ort_fiyat": 2729.42
+  },
+  {
+   "ad": "VitrA A42230 Ankastre Lavabo Bataryası, Sıva Altı Grubu",
+   "kod": "A42230",
+   "kategori": "Banyo Lavabo Bataryası",
+   "adet": 71,
+   "ort_fiyat": 1820.9
+  },
+  {
+   "ad": "VitrA S20 5339B003-0012 Tezgah Altı Lavabo, 48 cm, Beyaz",
+   "kod": "5339B003-0012",
+   "kategori": "Lavabo",
+   "adet": 63,
+   "ort_fiyat": 4544.36
+  },
+  {
+   "ad": "VitrA Arkitekta A44444 Raflı Tuvalet Kağıtlığı, Krom, Duvara Montajlı",
+   "kod": "A44444",
+   "kategori": "Tuvalet Kağıtlığı",
+   "adet": 62,
+   "ort_fiyat": 1260.13
+  },
+  {
+   "ad": "VitrA Origin A44887 Tuvalet Kağıtlığı, Krom",
+   "kod": "A44887",
+   "kategori": "Tuvalet Kağıtlığı",
+   "adet": 57,
+   "ort_fiyat": 2226.21
+  },
+  {
+   "ad": "VitrA Mia 75102 Banyo Dolabı Seti Çekmeceli 60 cm Antrasit",
+   "kod": "75102",
+   "kategori": "Banyo Mobilya",
+   "adet": 57,
+   "ort_fiyat": 9772.33
+  },
+  {
+   "ad": "VitrA Sento 86-003R009 Klozet Kapağı, Yavaş Kapanır, Kolay Çıkabilir, ",
+   "kod": "86-003R009",
+   "kategori": "Klozet Kapağı",
+   "adet": 55,
+   "ort_fiyat": 2575.05
+  }
+ ],
+ "komisyon": {
+  "11.5": 666,
+  "16.0": 4
+ },
+ "ciro80_urun": 245
+}

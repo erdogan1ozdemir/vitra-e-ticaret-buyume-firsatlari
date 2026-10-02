@@ -147,6 +147,37 @@ _FBR = ["#F3E6DC", "#F7C8B3", "#FF9E7D", "#FF7B52", "#C9573A", "#4E6E68", "#1033
 GFB = yigin([(x("Adet payı", "Unit share"), [b["adet_pay"] for b in P["fiyat_bandi"]]), (x("Ciro payı", "Revenue share"), [b["ciro_pay"] for b in P["fiyat_bandi"]])],
             [(x(b["band"] + " TL", b["band"].replace(".", ",") + " TL"), r) for b, r in zip(P["fiyat_bandi"], _FBR)],
             x("Fiyat bandına göre net adet ve net ciro dağılımı (%100) · 12 aylık ortalama net satış fiyatı", "Distribution of net units and net revenue by price band (100%) · 12-month average net selling price"), genislik=460, sol=92)
+# --- Hepsiburada satis raporu (son 12 ay)
+HS = json.load(open(os.path.join(veri.V, "islenmis", "hb_satis.json"), encoding="utf-8"))
+HBK_EN = {"Banyo Mobilya": "Bathroom furniture", "Klozet": "WC", "Lavabo": "Washbasin", "Banyo Lavabo Bataryası": "Basin tap", "Duş Seti": "Shower set", "Banyo Bataryası": "Bath tap",
+          "Klozet Kapağı": "Toilet seat", "Tuvalet Kağıtlığı": "Toilet roll holder", "Ara Musluk": "Stop valve", "Mutfak Eviye Bataryası": "Kitchen tap", "Rezervuar": "Cistern", "Banyo Aksesuarları": "Bathroom accessories",
+          "Duş Başlığı": "Shower head", "Havluluk": "Towel rail", "Gömme Rezervuar": "Concealed cistern", "Banyo Aynası": "Bathroom mirror", "Lavabo Sifonu": "Basin trap", "Klozet İç Takımı": "WC inner mechanism"}
+def hbk(k_): return x(k_, HBK_EN.get(k_, KAT_EN.get(k_, k_)))
+_cq = P["ceyrek"]; _tyn = sum(c["net"] for c in _cq); _tyf = sum(c["net"] * c["ort_fiyat"] for c in _cq) / _tyn; _tya = sum(c["net"] * c["artema_pay"] for c in _cq) / _tyn
+_tyk = (min(c["komisyon"] for c in _cq), max(c["komisyon"] for c in _cq))
+T_HBK = tablo([th("Gösterge", "Indicator", "Karşılaştırılan gösterge.", "Indicator compared."),
+               th("Trendyol resmi mağaza", "Trendyol official store", "2025 Q4 - 2026 Q3 (1 Eki 2025 - 29 Eyl 2026) satış raporu; adet iptal ve iade düşülmüş net adettir.", "Sales report 2025 Q4 - 2026 Q3 (1 Oct 2025 - 29 Sep 2026); units are net of cancellations and returns.", True),
+               th("Hepsiburada resmi mağaza", "Hepsiburada official store", "Son 12 ayın ürün bazlı satış raporu (02.10.2026); adet raporun toplam satış adedidir.", "Product-level sales report for the last 12 months (02.10.2026); units are the report's total units sold.", True)],
+              [[x("Satış adedi (12 ay)", "Units sold (12 months)"), cell(_tyn), cell(HS["adet"])],
+               [x("Ortalama satış fiyatı (TL)", "Average selling price (TL)"), cell(_tyf), cell(HS["ort_fiyat"])],
+               [x("Artema adet payı", "Artema unit share"), pz(_tya), pz(HS["marka"]["Artema"]["adet_pay"])],
+               [x("Komisyon oranı", "Commission rate"), n("%s - %s" % (yzd(_tyk[0]), yzd(_tyk[1]))), n(yzd(11.5))],
+               [x("Satış alan ürün", "Products with sales"), cell(PA["urun"]), cell(HS["urun_satir"])],
+               [x("Cironun %80'ini oluşturan ürün", "Products making up 80% of revenue"), cell(PA["ciro80"]), cell(HS["ciro80_urun"])]], "dar")
+_HK = [r for r in HS["kategori"]][:12]
+GHB = _gr([(hbk(r["kategori"]), [r["adet_pay"], r["ciro_pay"]]) for r in _HK],
+          [(x("Adet payı", "Unit share"), "#9AA8A5"), (x("Ciro payı", "Revenue share"), "#E85F36")],
+          x("Hepsiburada resmi mağaza · ciro payına göre ilk 12 kategoride adet ve ciro payı · son 12 ay", "Hepsiburada official store · unit and revenue share in the top 12 categories by revenue share · last 12 months"))
+T_HBU = tablo([th("Ürün", "Product", "Hepsiburada satış raporundaki ürün adı.", "Product name in the Hepsiburada sales report."), th("Kod", "Code", "Satıcı ürün kodu.", "Seller product code."),
+               th("Kategori", "Category", "Hepsiburada alt kategorisi.", "Hepsiburada sub-category."),
+               th("Adet", "Units", "Son 12 ay toplam satış adedi.", "Total units sold in the last 12 months.", True), th("Ort. fiyat (TL)", "Avg. price (TL)", "Raporun ortalama satış fiyatı.", "Average selling price in the report.", True)],
+              [[veri_m(r["ad"]), veri_m(r["kod"]), hbk(r["kategori"]), cell(r["adet"]), cell(r["ort_fiyat"])] for r in HS["urun_adet"][:10]], "dar")
+_hb_kat = {r["kategori"]: r for r in HS["kategori"]}
+HB_BLOK = (T_HBK + GHB + T_HBU +
+  insight("Hepsiburada resmi mağazası son 12 ayda %s adet satmış, ortalama satış fiyatı %s TL'dir; Trendyol'da aynı dönemde net adet %s, ortalama fiyat %s TL'dir. Hepsiburada'da satış daha az ama daha yüksek fiyatlı ürünlerde toplanmaktadır: ciroda banyo mobilyası (%s) ve klozet (%s) öndedir, Trendyol'da ise ciroda lavabo bataryası ve banyo dolabı seti, adette ara musluk öne çıkmaktadır. Artema'nın adet payı Hepsiburada'da %s, Trendyol'da %s'dir; komisyon oranı Hepsiburada'da ürünlerin neredeyse tamamında %%11,5'tir. Hepsiburada'da cironun %%80'i %d üründen gelmektedir; ürün sayısına oranla Trendyol'dan daha yaygın bir dağılım görülmektedir." % (
+          bin(HS["adet"]), bin(HS["ort_fiyat"]), bin(_tyn), bin(_tyf), yzd(_hb_kat["Banyo Mobilya"]["ciro_pay"]), yzd(_hb_kat["Klozet"]["ciro_pay"]), yzd(HS["marka"]["Artema"]["adet_pay"]), yzd(_tya), HS["ciro80_urun"]),
+          "The Hepsiburada official store sold %s units in the last 12 months at an average selling price of %s TL; on Trendyol, net units in the same period were %s at an average price of %s TL. On Hepsiburada sales are fewer but concentrated in higher-priced products: bathroom furniture (%s) and WCs (%s) lead revenue, whereas on Trendyol basin taps and bathroom cabinet sets lead revenue and stop valves lead units. Artema's unit share is %s on Hepsiburada and %s on Trendyol; the commission rate on Hepsiburada is 11.5%% for almost all products. On Hepsiburada 80%% of revenue comes from %d products, a wider spread relative to the product count than on Trendyol." % (
+          f"{HS['adet']:,}", f"{round(HS['ort_fiyat']):,}", f"{_tyn:,}", f"{round(_tyf):,}", ondalik(_hb_kat["Banyo Mobilya"]["ciro_pay"]) + "%", ondalik(_hb_kat["Klozet"]["ciro_pay"]) + "%", ondalik(HS["marka"]["Artema"]["adet_pay"]) + "%", ondalik(_tya) + "%", HS["ciro80_urun"]), "D36", "D31"))
 EK = """
 <p class="lede">%s</p>
 <div class="kpis">%s%s%s%s</div>
@@ -242,7 +273,7 @@ EK = """
          "In 2026 the average time to hand over to the carrier is %s hours, the on-time handover rate %s and delivery to the customer %s hours; the median order-to-delivery time in seller reviews is %d days" % (ondalik(OP["2026"]["Kargoya Teslim Süresi"]), ondalik(OP["2026"]["Kargoya Zamanında Teslim Oranı"]) + "%", ondalik(OP["2026"]["Müşteriye Teslim Süresi"]), SV["teslim_medyan"])),
         ("up", "Marka bilgisine göre siparişler tüm platformlarda ertesi gün, en geç 2 gün içinde kargoya verilmektedir; 30 desi altındaki ürünler Aras Kargo, 30 desi üstü ve bazı kırılabilir ürünler Ceva Lojistik ile teslim edilmektedir. Değerlendirmelerde hasar ve gecikme şikayetleri daha çok 30 desi altındaki gönderilerde anılmakta, büyük hacimli gönderilerin teslimatı olumlu değerlendirilmektedir",
          "According to the brand, orders on all platforms are handed to the carrier the next day and within 2 days at most; products under 30 desi go with Aras Kargo, those above 30 desi and some fragile products with Ceva Logistics. In reviews, damage and delay complaints are mostly mentioned for shipments under 30 desi, while deliveries of bulky items are rated positively")]),
- x("Hepsiburada: hak ediş yapısı ve görüntülenme", "Hepsiburada: settlement structure and views"),
+ x("Hepsiburada: son 12 ay satış ve Trendyol ile karşılaştırma", "Hepsiburada: last 12 months of sales compared with Trendyol") + "</h3>" + HB_BLOK + "<h3>" + x("Hepsiburada: hak ediş yapısı ve görüntülenme", "Hepsiburada: settlement structure and views"),
  marks([("at", "Sipariş tutarının %s'i komisyon, %s'i kargo bedeli, %s'i tahsilat ve hizmet bedeli, %s'i kampanya indirimidir (01.08.2025 - 13.09.2026, %s sipariş, %s adet). Trendyol'da komisyon net ciroya oranla %s-%s bandındadır" % (yzd(HB["komisyon"]), yzd(HB["kargo"]), yzd(HB["tahsilat"] + HB["hizmet"]), yzd(HB["kampanya"]), bin(HB["siparis"]), bin(HB["adet"]), yzd(min(c["komisyon"] for c in P["ceyrek"])), yzd(max(c["komisyon"] for c in P["ceyrek"]))),
          "%s of order value is commission, %s shipping fees, %s collection and service fees and %s campaign discount (01.08.2025 - 13.09.2026, %s orders, %s units). On Trendyol commission is %s-%s of net revenue" % (ondalik(HB["komisyon"]) + "%", ondalik(HB["kargo"]) + "%", ondalik(HB["tahsilat"] + HB["hizmet"]) + "%", ondalik(HB["kampanya"]) + "%", f"{HB['siparis']:,}", f"{HB['adet']:,}", ondalik(min(c["komisyon"] for c in P["ceyrek"])) + "%", ondalik(max(c["komisyon"] for c in P["ceyrek"])) + "%")),
         ("at", "Hacimli ürünlerde kargo bedelinin sipariş tutarına oranı %15-30 bandına çıkmaktadır (çamaşır makinesi dolabı, aynalı dolap, hela taşı, dolap setleri)",
