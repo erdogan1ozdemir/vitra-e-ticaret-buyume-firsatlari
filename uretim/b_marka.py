@@ -38,6 +38,7 @@ tbl2 = tablo([th("Grup", "Group", "Kök ifadenin türü: kategori, montaj ve tam
 from niyet_kurallari import niyet as _niyet
 from collections import Counter as _Counter
 _ONERI = [o for t_, _ in TOHUM for o in _temiz(AU.get(t_, []))[:10]] + [o for g_, lst_ in _AE["grup"].items() for s_ in lst_ if s_ not in _HARIC for o in _temiz(_AE["oneri"].get(s_, []))[:10]]
+_ONERI = list(dict.fromkeys(_ONERI))   # iki kok ifadede donen ayni oneri bir kez sayilir
 AT = dict(_Counter(_niyet(o) for o in _ONERI))
 N_KOK = len(TOHUM) + N_EK
 _PER = [("Koçtaş", r"koçtaş|koctas"), ("IKEA", r"ikea"), ("Bauhaus", r"bauhaus"), ("Trendyol", r"trendyol"), ("Tekzen", r"tekzen"), ("Cimri", r"cimri"), ("A101", r"a101"), ("Hepsiburada", r"hepsiburada"), ("Amazon", r"amazon"), ("n11", r"\bn11\b")]
@@ -50,7 +51,7 @@ _ATS = sorted(AT.items(), key=lambda i: -i[1])
 GT3 = _gr([(x(t, T_EN[t]), [100 * v / attot]) for t, v in _ATS], [(x("Öneri payı", "Share of suggestions"), "#E85F36")], genislik=460)
 tema_rows = [[x(t, T_EN[t]), cell(v), n(yzd(100 * v / attot))] for t, v in sorted(AT.items(), key=lambda i: -i[1])]
 tbl3 = tablo([th("Öneri teması", "Suggestion theme", "Önerinin ifade kalıbına göre sınıfı.", "Class of the suggestion by phrase pattern."),
-              th("Öneri", "Suggestions", "Tablolarda yer alan 66 kök ifadeden dönen öneri sayısı (kök ifade başına en fazla 10).", "Number of suggestions returned for the 66 seed phrases in the tables (up to 10 per seed).", True),
+              th("Öneri", "Suggestions", "Tablolarda yer alan 66 kök ifadeden dönen tekil öneri sayısı (kök ifade başına en fazla 10; iki kök ifadede dönen öneri bir kez sayılmıştır).", "Number of unique suggestions returned for the 66 seed phrases in the tables (up to 10 per seed; a suggestion returned for two seeds is counted once).", True),
               th("Pay", "Share", "Toplam öneri içindeki pay.", "Share of total suggestions.", True)], tema_rows, "dar")
 rows4 = [[veri_m(q), cell(c), cell(i), n(yzd(ctr)), n(("%.1f" % pos).replace(".", ","))] for q, c, i, ctr, pos in TQ[:20]]
 tbl4 = tablo([th("Sorgu", "Query", "Kullanıcının Google'a yazdığı ifade.", "Phrase the user typed into Google."),

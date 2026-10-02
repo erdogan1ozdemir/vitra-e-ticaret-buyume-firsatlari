@@ -5,6 +5,24 @@ import json, os
 from urllib.parse import unquote as _uq
 D = os.path.join(veri.V, "ham", "derin")
 AP = json.load(open(os.path.join(D, "ahrefs_pazaryeri", "analiz_ozet_tablolar.json"), encoding="utf-8"))
+# banyo disi sayfalar (LED armatur, bebek kuveti, fotograf makinesi, kozmetik, terlik) banyo cekirdek trafiginden cikarilir
+import re as _re2, collections as _col2
+_SS = json.load(open(os.path.join(D, "ahrefs_pazaryeri", "analiz_sayfa_siniflandirma.json"), encoding="utf-8"))
+_DIS = _re2.compile(r"led armatür|şerit led|fotoğraf|kodak|vajinal|terlik|bebek küvet")
+_CIK = _col2.defaultdict(lambda: _col2.defaultdict(lambda: [0, 0]))
+for _site, _lst in _SS.items():
+    for _r in _lst:
+        if _r["grup"] == "çekirdek" and _DIS.search((_r.get("top_kw") or "") + " " + _r["url"].lower()):
+            _CIK[_site][_r["sinif"]][0] += _r["trafik"]; _CIK[_site][_r["sinif"]][1] += 1
+for _r in AP["site_tablosu"]:
+    _r["cekirdek"] -= sum(v_[0] for v_ in _CIK[_r["site"]].values())
+for _site, _key in (("trendyol", "altkat_trendyol"), ("hepsiburada", "altkat_hepsiburada")):
+    for _r in AP[_key]["satirlar"]:
+        _c = _CIK[_site].get(_r["sinif"])
+        if _c: _r["trafik"] -= _c[0]; _r["sayfa"] -= _c[1]
+    _tot = sum(_r["trafik"] for _r in AP[_key]["satirlar"] if _r["grup"] == "çekirdek"); AP[_key]["cekirdek_toplam"] = _tot
+    for _r in AP[_key]["satirlar"]:
+        if _r["grup"] == "çekirdek": _r["pay_cekirdek"] = 100 * _r["trafik"] / _tot
 SITE_DOM = {"trendyol": "trendyol.com", "hepsiburada": "hepsiburada.com", "n11": "n11.com", "amazon": "amazon.com.tr", "koctas": "koctas.com.tr", "bauhaus": "bauhaus.com.tr", "ikea": "ikea.com.tr", "tekzen": "tekzen.com.tr", "akakce": "akakce.com", "cimri": "cimri.com"}
 SITE_AD = {"trendyol": "Trendyol", "hepsiburada": "Hepsiburada", "n11": "n11", "amazon": "Amazon TR", "koctas": "Koçtaş", "bauhaus": "Bauhaus", "ikea": "IKEA", "tekzen": "Tekzen", "akakce": "Akakçe", "cimri": "Cimri"}
 SB_ = AP["ssg_bm"]
@@ -13,7 +31,7 @@ for r in sorted(AP["site_tablosu"], key=lambda r: -r["cekirdek"]):
     s = r["site"]; sb = SB_.get(s, {})
     srows.append([u("https://www." + SITE_DOM[s], SITE_AD[s]), cell(r["cekirdek"]), cell(sb.get("ssg", 0)), cell(sb.get("bm", 0)), cell(r["bitisik"]), u("https://www." + SITE_DOM[s] + r["top_url"], _uq(r["top_url"])[:60])])
 T_SITE = tablo([th("Site", "Site", "Pazaryeri, perakendeci veya fiyat karşılaştırma sitesi.", "Marketplace, retailer or price comparison site."),
-                th("Banyo ana kategorileri", "Main bathroom categories", "Banyo, SSG, BM, armatür ve yıkanma sayfalarının Ahrefs tahmini aylık organik trafiği; değerler alt sınır olarak okunmalıdır.", "Ahrefs estimated monthly organic traffic of bathroom, SSG, BM, tap and bathing pages; values should be read as a lower boundquery row limit.", True),
+                th("Banyo ana kategorileri", "Main bathroom categories", "Banyo, SSG, BM, armatür ve yıkanma sayfalarının Ahrefs tahmini aylık organik trafiği; değerler alt sınır olarak okunmalıdır.", "Ahrefs estimated monthly organic traffic of bathroom, SSG, BM, tap and bathing pages; values should be read as a lower bound; query row limit.", True),
                 th("SSG", "SSG", "Klozet, lavabo, bide, pisuvar, rezervuar, klozet kapağı ve iç takım sayfaları.", "WC, washbasin, bidet, urinal, cistern, seat and inner-mechanism pages.", True),
                 th("BM", "BM", "Banyo dolabı, lavabo dolabı, boy dolabı, ayna, çamaşır makinesi dolabı ve tezgah sayfaları.", "Bathroom cabinet, basin unit, tall cabinet, mirror, washing machine cabinet and countertop pages.", True),
                 th("Bitişik", "Adjacent", "Evye, mutfak bataryası, seramik, boy aynası, şofben gibi banyoya bitişik sayfalar.", "Pages adjacent to the bathroom such as sinks, kitchen taps, tiles, full-length mirrors and water heaters.", True),
@@ -182,7 +200,7 @@ HTML = """
          "Search suggestions on both marketplaces show spare-part and SSG intent for VitrA and tap intent for Artema. On Hepsiburada typing \"vitra\" brings Cistern Inner Mechanisms directly as the category suggestion. Installation service is offered on Hepsiburada in a separate category and through a third-party service seller.", "D21", "D22"),
  x("Düşük fiyatlı, yüksek trafikli kategoriler", "Low-priced, high-traffic categories"),
  T_MK,
- insight("Düşük fiyatlı ve yüksek trafikli kategoriler (banyo aksesuarı, duş başlığı, sifon, klozet kapağı, iç takım, taharet musluğu) pazaryerine sürekli ziyaret getirmekte ve sepete ek ürün taşıyabilmektedir. Trendyol ve Hepsiburada'da 700 TL altı en çok değerlendirilen ürünler duş başlığı (5 fonksiyonlu, 167-450 TL, 2.800-7.400 değ.), yapışkanlı raf (199 TL, 19.877 değ.) ve gider koku önleyicidir (130 TL, 5.405 değ.); VitrA'nın bu banttaki karşılığı klozet kapağı, iç takım, conta ve Artema filtreli ara musluktur (340-427 TL, 309-1.120 değ.). vitra.com.tr'de bu ürünlerin tek sayfada, ürün koduna göre bulunabilmesi hem arama trafiği hem de ana ürün satışına geçiş için giriş kapısı olabilir.",
-         "Low-priced, high-traffic categories (bathroom accessories, shower heads, siphons, toilet seats, inner mechanisms, bidet valves) bring a steady stream of visits to the marketplace and can carry add-on products into the basket. The most-reviewed products under 700 TL on Trendyol and Hepsiburada are shower heads (5-function, 167-450 TL, 2,800-7,400 reviews), adhesive shelves (199 TL, 19,877 reviews) and drain odour stoppers (130 TL, 5,405 reviews); VitrA's counterpart in this band is toilet seats, inner mechanisms, gaskets and the Artema filtered stop valve (340-427 TL, 309-1,120 reviews). Making these products findable on one page by product code on vitra.com.tr can be an entry point both for search traffic and for moving to main product sales.", "D17", "D21", "D22"),
+ insight("Düşük fiyatlı ve yüksek trafikli kategoriler (banyo aksesuarı, duş başlığı, sifon, klozet kapağı, iç takım, taharet musluğu) pazaryerine sürekli ziyaret getirmekte ve sepete ek ürün taşıyabilmektedir. Trendyol ve Hepsiburada'da 700 TL altı en çok değerlendirilen ürünler duş başlığı (5 fonksiyonlu, 167-450 TL, 2.800-7.400 değ.), yapışkanlı raf (199 TL, 19.877 değ.) ve gider koku önleyicidir (130 TL, 5.405 değ.); VitrA'nın bu banttaki karşılığı conta gibi küçük parçalar ve Artema filtreli ara musluktur (ara musluk 340-427 TL, 309-1.120 değ.); klozet kapağı ve iç takım bu bandın üzerindedir. vitra.com.tr'de bu ürünlerin tek sayfada, ürün koduna göre bulunabilmesi hem arama trafiği hem de ana ürün satışına geçiş için giriş kapısı olabilir.",
+         "Low-priced, high-traffic categories (bathroom accessories, shower heads, siphons, toilet seats, inner mechanisms, bidet valves) bring a steady stream of visits to the marketplace and can carry add-on products into the basket. The most-reviewed products under 700 TL on Trendyol and Hepsiburada are shower heads (5-function, 167-450 TL, 2,800-7,400 reviews), adhesive shelves (199 TL, 19,877 reviews) and drain odour stoppers (130 TL, 5,405 reviews); VitrA's counterpart in this band is small parts such as gaskets and the Artema filtered stop valve (stop valve 340-427 TL, 309-1,120 reviews); toilet seats and inner mechanisms sit above this band. Making these products findable on one page by product code on vitra.com.tr can be an entry point both for search traffic and for moving to main product sales.", "D17", "D21", "D22"),
  kaynak("Ahrefs Site Explorer top pages ve organic keywords (TR, 28.09.2026) · Trendyol ve Hepsiburada kategori, çok satan, marka filtresi ve arama önerisi sayfaları (tarayıcı, 29.09.2026)", "Ahrefs Site Explorer top pages and organic keywords (TR, 28.09.2026) · Trendyol and Hepsiburada category, bestseller, brand filter and search suggestion pages (browser, 29.09.2026)", "D17", "D21", "D22"),
 )

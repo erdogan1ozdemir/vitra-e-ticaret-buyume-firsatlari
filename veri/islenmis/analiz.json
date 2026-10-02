@@ -9,10 +9,10 @@
 },
 "Vitrifiyeler": {
 "a25": 782047.5,
-"a26": 770418.75,
+"a26": 737043.75,
 "n": 470,
 "hacim": 779400.0,
-"yoy": -1.4869621090790486
+"yoy": -5.754605698502968
 },
 "Karo Seramik Ürünleri": {
 "a25": 370092.5,
@@ -186,10 +186,10 @@
 },
 "Vitrifiyeler|Klozetler": {
 "a25": 371247.5,
-"a26": 399816.25,
+"a26": 366441.25,
 "n": 192,
 "hacim": 389170.0,
-"yoy": 7.695338015744224
+"yoy": -1.2946215126027782
 },
 "Vitrifiyeler|Klozet Kapakları": {
 "a25": 73511.25,
@@ -509,7 +509,7 @@
 },
 "toplam": {
 "a25": 3255928.75,
-"a26": 3074041.25,
+"a26": 3040666.25,
 "n": 2342
 },
 "aylik_k1": {
@@ -561,8 +561,8 @@
 3203650,
 3242040,
 2967180,
-3088520,
-3265410,
+2973020,
+3113910,
 2917940
 ],
 "Vitrifiyeler": [
@@ -587,8 +587,8 @@
 734700,
 765560,
 740030,
-857650,
-918680,
+742150,
+767180,
 739990
 ],
 "Karo Seramik Ürünleri": [
@@ -757,11 +757,11 @@
 "yoy": -8.517193400914335
 },
 "Jenerik ürün": {
-"a25": 2458271.25,
-"a26": 2245907.5,
-"n": 1675,
-"hacim": 2294870.0,
-"yoy": -8.638743588609277
+"a25": 2432257.5,
+"a26": 2189132.5,
+"n": 1667,
+"hacim": 2270600.0,
+"yoy": -9.995857757659298
 },
 "Fiyat": {
 "a25": 361843.75,
@@ -777,19 +777,19 @@
 "hacim": 401810.0,
 "yoy": 15.366965256961373
 },
+"Tamir ve bakım": {
+"a25": 56552.5,
+"a26": 52860.0,
+"n": 31,
+"hacim": 55420.0,
+"yoy": -6.529331152468942
+},
 "Montaj": {
 "a25": 5026.25,
 "a26": 5218.75,
 "n": 9,
 "hacim": 5310.0,
 "yoy": 3.829893061427514
-},
-"Tamir ve bakım": {
-"a25": 30538.75,
-"a26": 29460.0,
-"n": 23,
-"hacim": 31150.0,
-"yoy": -3.532397364004747
 },
 "Seçim ve karşılaştırma": {
 "a25": 3145.0,
@@ -850,11 +850,11 @@
 "yoy": 5.754614549402826
 },
 "Vitrifiyeler|Jenerik ürün": {
-"a25": 549757.5,
-"a26": 532797.5,
-"n": 302,
-"hacim": 548750.0,
-"yoy": -3.08499656666803
+"a25": 536048.75,
+"a26": 486567.5,
+"n": 296,
+"hacim": 535260.0,
+"yoy": -9.230736943235108
 },
 "Duşlar|Jenerik ürün": {
 "a25": 104038.75,
@@ -871,11 +871,11 @@
 "yoy": -10.92436100241445
 },
 "Yıkanma Alanları|Jenerik ürün": {
-"a25": 261305.0,
-"a26": 236252.5,
-"n": 166,
-"hacim": 230440.0,
-"yoy": -9.587455272574196
+"a25": 250030.0,
+"a26": 226527.5,
+"n": 165,
+"hacim": 220540.0,
+"yoy": -9.399872015358158
 },
 "Vitrifiyeler|Fiyat": {
 "a25": 126667.5,
@@ -899,11 +899,11 @@
 "yoy": 22.170562714498487
 },
 "Rezervuarlar|Jenerik ürün": {
-"a25": 50822.5,
-"a26": 49471.25,
-"n": 60,
-"hacim": 48570.0,
-"yoy": -2.658763343007531
+"a25": 49792.5,
+"a26": 48651.25,
+"n": 59,
+"hacim": 47690.0,
+"yoy": -2.2920118491740693
 },
 "Vitrifiyeler|Tasarım ve fikir": {
 "a25": 66616.25,
@@ -918,6 +918,13 @@
 "n": 9,
 "hacim": 4830.0,
 "yoy": -0.5610472882714435
+},
+"Vitrifiyeler|Tamir ve bakım": {
+"a25": 35615.0,
+"a26": 32633.75,
+"n": 16,
+"hacim": 35010.0,
+"yoy": -8.370770742664613
 },
 "Armatürler|Fiyat": {
 "a25": 44468.75,
@@ -1024,6 +1031,13 @@
 "hacim": 930.0,
 "yoy": -11.799761620977357
 },
+"Yıkanma Alanları|Tamir ve bakım": {
+"a25": 11275.0,
+"a26": 9725.0,
+"n": 1,
+"hacim": 9900.0,
+"yoy": -13.747228381374722
+},
 "Duşlar|Seçim ve karşılaştırma": {
 "a25": 1803.75,
 "a26": 1072.5,
@@ -1067,11 +1081,11 @@
 "yoy": -2.7386839102320315
 },
 "Rezervuarlar|Tamir ve bakım": {
-"a25": 5225.0,
-"a26": 5830.0,
-"n": 2,
-"hacim": 5700.0,
-"yoy": 11.578947368421044
+"a25": 6255.0,
+"a26": 6650.0,
+"n": 3,
+"hacim": 6580.0,
+"yoy": 6.314948041566737
 },
 "Banyo Aksesuarları|Seçim ve karşılaştırma": {
 "a25": 268.75,
@@ -1079,13 +1093,6 @@
 "n": 1,
 "hacim": 140.0,
 "yoy": -68.83720930232558
-},
-"Vitrifiyeler|Tamir ve bakım": {
-"a25": 21906.25,
-"a26": 19778.75,
-"n": 10,
-"hacim": 21520.0,
-"yoy": -9.71184022824536
 },
 "Banyo Aksesuarları|Tamir ve bakım": {
 "a25": 376.25,
@@ -1096,74 +1103,6 @@
 }
 },
 "niyet_ornek": {
-"Jenerik ürün": [
-[
-"banyo dolabı",
-95375
-],
-[
-"duş kabini",
-92938
-],
-[
-"wc",
-81350
-],
-[
-"klozet",
-49500
-],
-[
-"lavabo",
-41350
-],
-[
-"duş başlıkları",
-40700
-],
-[
-"banyo batarya",
-38650
-],
-[
-"taharet musluğu",
-37725
-]
-],
-"Tamir ve bakım": [
-[
-"klozet iç takımı",
-9450
-],
-[
-"rezervuar iç takım",
-5700
-],
-[
-"gömme rezervuar iç takımı",
-4650
-],
-[
-"klozet rezervuar iç takımı",
-1262
-],
-[
-"gömme rezervuar tamiri",
-1180
-],
-[
-"rezervuar iç takımı tamiri",
-1098
-],
-[
-"duşakabin parçaları",
-860
-],
-[
-"klozet parçaları",
-860
-]
-],
 "Seçim ve karşılaştırma": [
 [
 "en iyi duş başlığı",
@@ -1196,40 +1135,6 @@
 [
 "kaliteli banyo aksesuarları",
 84
-]
-],
-"Tasarım ve fikir": [
-[
-"duş kabin modelleri",
-43875
-],
-[
-"banyo dolabı modelleri",
-35875
-],
-[
-"banyo modelleri",
-20350
-],
-[
-"fayans modelleri",
-18475
-],
-[
-"banyo fayans modelleri",
-15775
-],
-[
-"evye modelleri",
-14875
-],
-[
-"lavabo modelleri",
-9538
-],
-[
-"banyo lavabo modelleri",
-8550
 ]
 ],
 "Fiyat": [
@@ -1266,38 +1171,72 @@
 6788
 ]
 ],
-"Montaj": [
+"Jenerik ürün": [
 [
-"klozet montajı",
-1225
+"banyo dolabı",
+95375
 ],
 [
-"klozet montaj aparatı",
-902
+"duş kabini",
+92938
 ],
 [
-"gömme klozet montajı",
-800
+"klozet",
+49500
 ],
 [
-"klozet nasıl takılır",
-784
+"wc",
+47975
 ],
 [
-"klozet bağlantı borusu",
-388
+"lavabo",
+41350
 ],
 [
-"gömme rezervuar montaj ölçüleri",
-375
+"duş başlıkları",
+40700
 ],
 [
-"asma klozet montaj seti",
-355
+"banyo batarya",
+38650
 ],
 [
-"duş başlığı takma aparatı",
-355
+"taharet musluğu",
+37725
+]
+],
+"Tasarım ve fikir": [
+[
+"duş kabin modelleri",
+43875
+],
+[
+"banyo dolabı modelleri",
+35875
+],
+[
+"banyo modelleri",
+20350
+],
+[
+"fayans modelleri",
+18475
+],
+[
+"banyo fayans modelleri",
+15775
+],
+[
+"evye modelleri",
+14875
+],
+[
+"lavabo modelleri",
+9538
+],
+[
+"banyo lavabo modelleri",
+8550
 ]
 ],
 "Ölçü ve teknik": [
@@ -1333,6 +1272,74 @@
 "banyo dolabı ölçüleri",
 1225
 ]
+],
+"Montaj": [
+[
+"klozet montajı",
+1225
+],
+[
+"klozet montaj aparatı",
+902
+],
+[
+"gömme klozet montajı",
+800
+],
+[
+"klozet nasıl takılır",
+784
+],
+[
+"klozet bağlantı borusu",
+388
+],
+[
+"gömme rezervuar montaj ölçüleri",
+375
+],
+[
+"asma klozet montaj seti",
+355
+],
+[
+"duş başlığı takma aparatı",
+355
+]
+],
+"Tamir ve bakım": [
+[
+"duşakabin tekeri",
+9725
+],
+[
+"klozet iç takımı",
+9450
+],
+[
+"klozet şamandıra",
+7350
+],
+[
+"rezervuar iç takım",
+5700
+],
+[
+"gömme rezervuar iç takımı",
+4650
+],
+[
+"klozet kapağı menteşesi",
+4525
+],
+[
+"klozet rezervuar iç takımı",
+1262
+],
+[
+"gömme rezervuar tamiri",
+1180
+]
 ]
 },
 "k2_yukselen": [
@@ -1350,11 +1357,6 @@
 "Karo Seramik Ürünleri|Banyo Karo Seramikleri",
 61007.5,
 9.151496175694419
-],
-[
-"Vitrifiyeler|Klozetler",
-399816.25,
-7.695338015744224
 ],
 [
 "Banyo Mobilyaları|Banyo Mobilyaları",
@@ -1395,6 +1397,11 @@
 "Karo Seramik Ürünleri|Duvar Karoları",
 7620.0,
 0.29615004935834577
+],
+[
+"Yıkanma Alanları|Duş Tekneleri",
+27776.25,
+0.027008777852799426
 ]
 ],
 "k2_dusen": [
@@ -1473,12 +1480,6 @@
 -12.2
 ],
 [
-"wc",
-"Vitrifiyeler",
-81350,
-107.0
-],
-[
 "klozet fiyat",
 "Vitrifiyeler",
 65562,
@@ -1495,6 +1496,12 @@
 "Vitrifiyeler",
 49500,
 -10.0
+],
+[
+"wc",
+"Vitrifiyeler",
+47975,
+22.1
 ],
 [
 "duş kabin modelleri",
@@ -1714,8 +1721,8 @@
 3247478
 ],
 [
-39499,
-3247602
+39493,
+3244054
 ],
 [
 37313,
@@ -1764,68 +1771,68 @@
 ],
 "Karo Seramik": [
 [
-12766,
-664250
+12532,
+659960
 ],
 [
-14894,
-722896
+14567,
+715814
 ],
 [
-15360,
-763001
+14962,
+756620
 ],
 [
-15400,
-817417
+14935,
+811036
 ],
 [
-16180,
-889472
+15779,
+882976
 ],
 [
-14975,
-868277
+14646,
+861764
 ],
 [
-16220,
-733854
+16244,
+741961
 ],
 [
-18520,
-474995
+18673,
+483900
 ],
 [
-15612,
-392897
+15715,
+397620
 ],
 [
-16152,
-421327
+16300,
+427477
 ],
 [
-16385,
-502620
+16608,
+511988
 ],
 [
-13695,
-435875
+13795,
+440130
 ],
 [
-14310,
-426602
+14404,
+430899
 ],
 [
-13921,
-411647
+14049,
+417781
 ],
 [
-11950,
-353706
+12055,
+359200
 ],
 [
-8979,
-289196
+9105,
+295746
 ]
 ],
 "Banyo Mobilyaları": [
@@ -1962,68 +1969,68 @@
 ],
 "Diğer": [
 [
-10116,
-402210
+10350,
+406500
 ],
 [
-12848,
-599052
+13170,
+606122
 ],
 [
-12883,
-611636
+13281,
+618017
 ],
 [
-12097,
-549242
+12562,
+555623
 ],
 [
-13363,
-546786
+13770,
+556830
 ],
 [
-11625,
-484991
+11949,
+491498
 ],
 [
-8547,
-320827
+8523,
+312720
 ],
 [
-6610,
-172304
+6457,
+163399
 ],
 [
-5942,
-363485
+5839,
+358762
 ],
 [
-6453,
-163651
+6305,
+157501
 ],
 [
-8234,
-207039
+8011,
+197671
 ],
 [
-6440,
-169360
+6340,
+165105
 ],
 [
-9069,
-207584
+8975,
+203287
 ],
 [
-9081,
-203034
+8953,
+196900
 ],
 [
-7690,
-180189
+7585,
+174695
 ],
 [
-6421,
-161648
+6295,
+155098
 ]
 ],
 "Duşlar": [
@@ -2230,8 +2237,8 @@
 243877
 ],
 [
-5801,
-288866
+5806,
+288878
 ],
 [
 6460,
@@ -2378,8 +2385,8 @@
 240152
 ],
 [
-5688,
-250248
+5693,
+250254
 ],
 [
 5792,
@@ -2430,49 +2437,49 @@
 1
 ],
 "kategori": [
-1625606,
-74014204,
-11086
+1157986,
+55378318,
+352
 ],
 "servis-bayi": [
 71118,
 3955742,
-471
+254
 ],
 "eski-online": [
 399074,
 34108271,
-2499
+2472
 ],
 "icerik": [
 113572,
 8709218,
-122
+106
 ],
 "katalog": [
 23441,
 773671,
-41
-],
-"diger": [
-92519,
-3618766,
-1122
-],
-"urun": [
-489948,
-5434587,
-7110
-],
-"kurumsal": [
-24268,
-1490281,
-340
+29
 ],
 "koleksiyon": [
-67240,
-1001585,
-189
+122830,
+3399611,
+264
+],
+"urun": [
+953023,
+23254440,
+15868
+],
+"kurumsal": [
+24988,
+1495042,
+421
+],
+"diger": [
+40754,
+2032012,
+599
 ],
 "urun-teknik": [
 13382,
@@ -2482,149 +2489,149 @@
 },
 "gsc_kat": {
 "Vitrifiyeler|Klozetler": [
-301378,
-16214258,
-912
+301242,
+16215024,
+803
 ],
 "Yıkanma Alanları|Duşakabin": [
-68936,
-2542902,
-149
+68933,
+2542521,
+127
 ],
 "Vitrifiyeler|Lavabolar": [
-329647,
-23559849,
-2319
+329267,
+22982483,
+1962
 ],
 "Banyo Mobilyaları|Genel": [
-66334,
-2465978,
-117
+66332,
+2465907,
+28
 ],
 "Karo Seramik|Karo Seramik": [
-449068,
-15206861,
-4307
+448101,
+15245479,
+3798
 ],
 "Armatürler|Eviye Bataryaları": [
 80265,
 3271808,
-179
+171
 ],
 "Banyo Mobilyaları|Banyo Dolapları": [
 80925,
 4415931,
-1251
+1136
 ],
 "Rezervuarlar|Gömme Rezervuarlar": [
-61619,
-2349369,
-127
+61778,
+2357278,
+104
 ],
 "Duşlar|Duş Setleri": [
 42845,
 1520879,
-12
+10
 ],
 "Yıkanma Alanları|Küvetler": [
-46228,
-1384962,
-436
+46270,
+1385231,
+403
 ],
 "Yıkanma Alanları|Duş Tekneleri": [
-39315,
-1619020,
-673
+39311,
+1619011,
+634
 ],
 "Armatürler|Banyo Bataryaları": [
-79053,
-2671880,
-980
+79041,
+2671854,
+890
 ],
 "Armatürler|Genel": [
 23662,
 1425184,
-98
+28
 ],
 "Armatürler|Lavabo Bataryaları": [
 112026,
 3258249,
-976
+867
 ],
 "Duşlar|Genel": [
 13210,
 417702,
-9
+2
 ],
 "Armatürler|Musluklar": [
 35129,
 2529180,
-79
+77
 ],
 "Vitrifiyeler|Akıllı Klozet": [
-24842,
-998449,
-43
+24799,
+996693,
+42
 ],
 "Vitrifiyeler|Klozet Kapakları": [
 51342,
 2272551,
-267
+242
 ],
 "Yıkanma Alanları|Duş Kanalları": [
 32376,
 1462567,
-366
+357
 ],
 "Vitrifiyeler|Genel": [
 16709,
 656323,
-95
+35
+],
+"Diğer|Diğer": [
+203846,
+8685057,
+2977
 ],
 "Banyo Aksesuarları|Genel": [
-23592,
-814049,
-100
+23566,
+813947,
+44
 ],
 "Rezervuarlar|İç Takımlar": [
 10709,
 1032662,
-32
+31
 ],
 "Yıkanma Alanları|Duş Üniteleri": [
 12706,
 868237,
-138
+133
 ],
 "Duşlar|Duş Başlıkları": [
 22913,
 638821,
-120
+116
 ],
 "Duşlar|Duş Sistemleri": [
-43033,
-1844571,
-451
+43020,
+1844523,
+426
 ],
 "Banyo Mobilyaları|Banyo Aynaları": [
 38251,
 2746693,
-505
-],
-"Diğer|Diğer": [
-151832,
-6577542,
-2951
+413
 ],
 "Rezervuarlar|Kumanda Panelleri": [
 31236,
 1025026,
-244
+236
 ],
 "Banyo Aksesuarları|Tuvalet Kağıtlıkları": [
 16972,
 645585,
-99
+95
 ],
 "Banyo Mobilyaları|Çamaşır Makinesi Dolapları": [
 9220,
@@ -2634,92 +2641,92 @@
 "Banyo Aksesuarları|Havluluklar": [
 24938,
 655489,
-212
+198
 ],
 "Vitrifiyeler|Tamamlayıcı": [
 9526,
 398752,
-66
+65
 ],
 "Armatürler|Eviyeler": [
-4802,
-88877,
-20
+4779,
+88809,
+14
 ],
 "Vitrifiyeler|Pisuvarlar": [
-20115,
-847311,
-113
+20113,
+847304,
+109
 ],
 "Banyo Mobilyaları|Tezgahlar": [
 8276,
 404606,
-254
+227
 ],
 "Banyo Aksesuarları|Tuvalet Fırçaları": [
 16932,
 396507,
-237
+230
 ],
 "Armatürler|Tamamlayıcı": [
 21771,
 536459,
-130
+128
 ],
 "Banyo Aksesuarları|Sabunluklar": [
 15264,
 509469,
-174
+163
 ],
 "Banyo Aksesuarları|Tutunma Barları": [
 8817,
 388239,
-16
+15
 ],
 "Banyo Aksesuarları|Diğer": [
-14365,
-319654,
-120
+14839,
+326515,
+142
 ],
 "Banyo Aksesuarları|Çöp Kovaları": [
 10620,
 326514,
-38
+37
 ],
 "Banyo Mobilyaları|Set Modülleri": [
 12279,
 462199,
-120
+118
 ],
 "Vitrifiyeler|Tuvalet Taşları": [
-5805,
-127169,
-17
+5772,
+127058,
+8
 ],
 "Armatürler|Ankastre": [
 29403,
 832243,
-305
+301
 ],
 "Duşlar|El Duşları": [
 22999,
 387566,
-202
+201
 ],
 "Duşlar|Duş Kolonları": [
 7252,
 69759,
-35
+34
 ],
 "Vitrifiyeler|Bideler": [
 2135,
 332743,
-69
+64
 ],
 "Banyo Mobilyaları|Lavabo Dolapları": [
 43881,
 849890,
-2638
+2637
 ],
 "Armatürler|Bide Bataryaları": [
 697,
@@ -2841,19 +2848,19 @@
 ],
 "gsc_sorgu_niyet": {
 "Markasız · Jenerik ürün": [
-763786,
-24326231,
-15576
+763493,
+24279301,
+15550
 ],
 "Markalı · Jenerik ürün": [
-519323,
-2525269,
-3270
+517809,
+2482712,
+3232
 ],
 "Markasız · Tasarım ve fikir": [
-99660,
-4355181,
-2065
+99642,
+4355059,
+2063
 ],
 "Markasız · Fiyat": [
 79140,
@@ -2865,15 +2872,15 @@
 153683,
 210
 ],
+"Markalı · Tamir ve bakım": [
+21937,
+543616,
+332
+],
 "Markalı · Tasarım ve fikir": [
 21265,
 78885,
 96
-],
-"Markalı · Tamir ve bakım": [
-20401,
-500774,
-293
 ],
 "Markasız · Ölçü ve teknik": [
 14967,
@@ -2881,14 +2888,14 @@
 726
 ],
 "Markasız · Seçim ve karşılaştırma": [
-12715,
-401935,
-342
+12712,
+401440,
+341
 ],
 "Markasız · Tamir ve bakım": [
-9887,
-686281,
-370
+10271,
+749424,
+402
 ],
 "Markalı · Yer ve kanal": [
 8966,
@@ -2901,14 +2908,14 @@
 93
 ],
 "Markasız · Montaj": [
-3683,
-394007,
-280
+3613,
+378411,
+277
 ],
 "Markalı · Montaj": [
-1676,
-39553,
-78
+1654,
+39268,
+77
 ],
 "Markasız · Yer ve kanal": [
 457,
@@ -3608,7 +3615,7 @@
 },
 "top_sayfa_3ay": [
 [
-"https://www.vitra.com.tr/",
+"https://www.vitra.com.tr",
 32744
 ],
 [
@@ -3633,7 +3640,7 @@
 ],
 [
 "https://www.vitra.com.tr/c-gomme-rezervuarlar",
-7101
+7121
 ],
 [
 "https://www.vitra.com.tr/c-karo-seramik-urunleri",
@@ -3641,35 +3648,35 @@
 ],
 [
 "https://www.vitra.com.tr/c-eviye-bataryalari",
-6758
+6779
 ],
 [
-"https://www.vitra.com.tr/c-dus-setleri",
-5621
+"https://www.vitra.com.tr/servisler-ve-satis-noktalari",
+5953
 ],
 [
 "https://www.vitra.com.tr/c-ev-ici-zemin-karo-seramikleri",
-5558
+5781
+],
+[
+"https://www.vitra.com.tr/c-dus-setleri",
+5631
 ],
 [
 "https://www.vitra.com.tr/c-lavabo-dolaplari",
 5339
 ],
 [
+"https://www.vitra.com.tr/c-dus-tekneleri",
+5066
+],
+[
 "https://www.vitra.com.tr/c-armaturler",
 4846
 ],
 [
-"https://www.vitra.com.tr/servisler-ve-satis-noktalari/",
-4554
-],
-[
 "https://www.vitra.com.tr/c-kuvetler",
 4458
-],
-[
-"https://www.vitra.com.tr/c-dus-tekneleri",
-4338
 ],
 [
 "https://www.vitra.com.tr/c-banyo-bataryalari",
@@ -3693,15 +3700,15 @@
 ],
 [
 "https://www.vitra.com.tr/c-dus-kanallari",
-2866
-],
-[
-"https://www.vitra.com.tr/ilham-veren-fikirler/en-kullanisli-evye-hangisi/",
-2773
+2882
 ],
 [
 "https://www.vitra.com.tr/c-klozet-kapaklari",
-2766
+2808
+],
+[
+"https://www.vitra.com.tr/ilham-veren-fikirler/en-kullanisli-evye-hangisi",
+2773
 ],
 [
 "https://www.vitra.com.tr/c-takim-klozetler",
@@ -3713,7 +3720,7 @@
 ],
 [
 "https://www.vitra.com.tr/c-tezgahalti-lavabolar",
-2692
+2702
 ],
 [
 "https://www.vitra.com.tr/c-dus-basliklari",
@@ -4515,10 +4522,10 @@
 ]
 },
 "auto_tema": {
-"Jenerik ürün": 303,
+"Jenerik ürün": 267,
 "Fiyat": 123,
-"Tamir ve bakım": 127,
-"Tasarım ve fikir": 33,
+"Tamir ve bakım": 166,
+"Tasarım ve fikir": 30,
 "Montaj": 66,
 "Ölçü ve teknik": 15,
 "Yer ve kanal": 16,
@@ -4579,11 +4586,54 @@
 7,
 8,
 10,
-11,
 14,
 15,
 16
-]
+],
+"vid": [
+"https://www.youtube.com/watch?v=-cd69ggAPzQ",
+"https://www.youtube.com/watch?v=5wtrrlLlAHU",
+"https://www.youtube.com/watch?v=BD9RY1cP2do",
+"https://www.youtube.com/watch?v=BqFD5HL-GXs",
+"https://www.youtube.com/watch?v=BxQDbQcYVBY",
+"https://www.youtube.com/watch?v=GEqpV2N4RKw",
+"https://www.youtube.com/watch?v=H6v6uGVlyOI",
+"https://www.youtube.com/watch?v=HU5fMJBFouU",
+"https://www.youtube.com/watch?v=Kr3eY8WkwHw",
+"https://www.youtube.com/watch?v=M_jVZSA91Cw",
+"https://www.youtube.com/watch?v=McVJmwv6bV8",
+"https://www.youtube.com/watch?v=YTXa8ML95HU",
+"https://www.youtube.com/watch?v=ZyMjTP4kSIw",
+"https://www.youtube.com/watch?v=bLxIXrCT3AQ",
+"https://www.youtube.com/watch?v=eY4k6fWkvDU",
+"https://www.youtube.com/watch?v=ek1oF0rBihg",
+"https://www.youtube.com/watch?v=epyefABb_Yk",
+"https://www.youtube.com/watch?v=rJ-vevoHzvY",
+"https://www.youtube.com/watch?v=y2A1b-6klpk",
+"https://www.youtube.com/watch?v=zI1_r5ZjMAY"
+],
+"g": {
+"https://www.youtube.com/watch?v=-cd69ggAPzQ": 344412,
+"https://www.youtube.com/watch?v=YTXa8ML95HU": 3904,
+"https://www.youtube.com/watch?v=HU5fMJBFouU": 38653,
+"https://www.youtube.com/watch?v=H6v6uGVlyOI": 25883,
+"https://www.youtube.com/watch?v=bLxIXrCT3AQ": 544,
+"https://www.youtube.com/watch?v=zI1_r5ZjMAY": 942678,
+"https://www.youtube.com/watch?v=ZyMjTP4kSIw": 26544,
+"https://www.youtube.com/watch?v=5wtrrlLlAHU": 81382,
+"https://www.youtube.com/watch?v=GEqpV2N4RKw": 69332,
+"https://www.youtube.com/watch?v=y2A1b-6klpk": 1557961,
+"https://www.youtube.com/watch?v=Kr3eY8WkwHw": 450,
+"https://www.youtube.com/watch?v=BxQDbQcYVBY": 16610,
+"https://www.youtube.com/watch?v=McVJmwv6bV8": 402,
+"https://www.youtube.com/watch?v=rJ-vevoHzvY": 1250537,
+"https://www.youtube.com/watch?v=BD9RY1cP2do": 271088,
+"https://www.youtube.com/watch?v=ek1oF0rBihg": 149555,
+"https://www.youtube.com/watch?v=BqFD5HL-GXs": 50317,
+"https://www.youtube.com/watch?v=epyefABb_Yk": 143951,
+"https://www.youtube.com/watch?v=eY4k6fWkvDU": 428,
+"https://www.youtube.com/watch?v=M_jVZSA91Cw": 55468
+}
 },
 "vitra gömme rezervuar": {
 "n": 29,
@@ -4636,7 +4686,69 @@
 10,
 13,
 28
-]
+],
+"vid": [
+"https://www.youtube.com/watch?v=17032T1ZOrY",
+"https://www.youtube.com/watch?v=2XOvYb5y_T8",
+"https://www.youtube.com/watch?v=2mzVnoBKXh4",
+"https://www.youtube.com/watch?v=51yNZO4JSFQ",
+"https://www.youtube.com/watch?v=6495TGVQPR4",
+"https://www.youtube.com/watch?v=6TgHlbFCsh8",
+"https://www.youtube.com/watch?v=7Gf5ekx4eM0",
+"https://www.youtube.com/watch?v=8aSO7T-b650",
+"https://www.youtube.com/watch?v=9kMSxZtzpiY",
+"https://www.youtube.com/watch?v=DRO9KAV77jg",
+"https://www.youtube.com/watch?v=JeerTrLsEww",
+"https://www.youtube.com/watch?v=LMPwOxA0X0I",
+"https://www.youtube.com/watch?v=NvSVnCZgJ4g",
+"https://www.youtube.com/watch?v=PCDcIJ78znA",
+"https://www.youtube.com/watch?v=QXPuFBTTScw",
+"https://www.youtube.com/watch?v=R1s-Zbxmmxw",
+"https://www.youtube.com/watch?v=TePYIggQX5E",
+"https://www.youtube.com/watch?v=VEKFVbwgQuY",
+"https://www.youtube.com/watch?v=WLG7aInsqoY",
+"https://www.youtube.com/watch?v=ZyMjTP4kSIw",
+"https://www.youtube.com/watch?v=a1i0pneZhdw",
+"https://www.youtube.com/watch?v=aZ1SpsH_ZDw",
+"https://www.youtube.com/watch?v=ckXoKx2ZEXw",
+"https://www.youtube.com/watch?v=iImZST7nDBI",
+"https://www.youtube.com/watch?v=jHvEr16_y30",
+"https://www.youtube.com/watch?v=nlcyMT37muA",
+"https://www.youtube.com/watch?v=o5fbPzVIEsI",
+"https://www.youtube.com/watch?v=sjyQZc9Ugzs",
+"https://www.youtube.com/watch?v=uiWwzjYYF0k"
+],
+"g": {
+"https://www.youtube.com/watch?v=2mzVnoBKXh4": 315444,
+"https://www.youtube.com/watch?v=NvSVnCZgJ4g": 265896,
+"https://www.youtube.com/watch?v=a1i0pneZhdw": 447399,
+"https://www.youtube.com/watch?v=uiWwzjYYF0k": 158770,
+"https://www.youtube.com/watch?v=6TgHlbFCsh8": 164545,
+"https://www.youtube.com/watch?v=6495TGVQPR4": 133774,
+"https://www.youtube.com/watch?v=R1s-Zbxmmxw": 6898,
+"https://www.youtube.com/watch?v=LMPwOxA0X0I": 230583,
+"https://www.youtube.com/watch?v=TePYIggQX5E": 9909,
+"https://www.youtube.com/watch?v=ZyMjTP4kSIw": 26546,
+"https://www.youtube.com/watch?v=7Gf5ekx4eM0": 10479,
+"https://www.youtube.com/watch?v=QXPuFBTTScw": 28470,
+"https://www.youtube.com/watch?v=2XOvYb5y_T8": 9783,
+"https://www.youtube.com/watch?v=DRO9KAV77jg": 5099,
+"https://www.youtube.com/watch?v=PCDcIJ78znA": 7095,
+"https://www.youtube.com/watch?v=JeerTrLsEww": 60074,
+"https://www.youtube.com/watch?v=nlcyMT37muA": 4710,
+"https://www.youtube.com/watch?v=iImZST7nDBI": 59858,
+"https://www.youtube.com/watch?v=VEKFVbwgQuY": 57663,
+"https://www.youtube.com/watch?v=9kMSxZtzpiY": 11768,
+"https://www.youtube.com/watch?v=o5fbPzVIEsI": 247412,
+"https://www.youtube.com/watch?v=17032T1ZOrY": 24245,
+"https://www.youtube.com/watch?v=51yNZO4JSFQ": 26807,
+"https://www.youtube.com/watch?v=8aSO7T-b650": 702880,
+"https://www.youtube.com/watch?v=ckXoKx2ZEXw": 82103,
+"https://www.youtube.com/watch?v=WLG7aInsqoY": 346963,
+"https://www.youtube.com/watch?v=aZ1SpsH_ZDw": 35713,
+"https://www.youtube.com/watch?v=sjyQZc9Ugzs": 35469,
+"https://www.youtube.com/watch?v=jHvEr16_y30": 2983
+}
 },
 "vitra gömme klozet su kaçırıyor": {
 "n": 19,
@@ -4685,7 +4797,49 @@
 "toplam_g": 2640247,
 "vitra": [
 19
-]
+],
+"vid": [
+"https://www.youtube.com/watch?v=17032T1ZOrY",
+"https://www.youtube.com/watch?v=2JGC3ZVJ6Hk",
+"https://www.youtube.com/watch?v=2mzVnoBKXh4",
+"https://www.youtube.com/watch?v=6TgHlbFCsh8",
+"https://www.youtube.com/watch?v=8aSO7T-b650",
+"https://www.youtube.com/watch?v=9kMSxZtzpiY",
+"https://www.youtube.com/watch?v=C1iD30l_ewM",
+"https://www.youtube.com/watch?v=DRO9KAV77jg",
+"https://www.youtube.com/watch?v=L2-HHM-Y9iQ",
+"https://www.youtube.com/watch?v=Mf_EFraTh78",
+"https://www.youtube.com/watch?v=PCDcIJ78znA",
+"https://www.youtube.com/watch?v=WLG7aInsqoY",
+"https://www.youtube.com/watch?v=a1i0pneZhdw",
+"https://www.youtube.com/watch?v=ckXoKx2ZEXw",
+"https://www.youtube.com/watch?v=eLA0UQvn-9U",
+"https://www.youtube.com/watch?v=hRSevbV1VkE",
+"https://www.youtube.com/watch?v=nlcyMT37muA",
+"https://www.youtube.com/watch?v=q5HFxNeKWNA",
+"https://www.youtube.com/watch?v=sW7X3yPqAQk"
+],
+"g": {
+"https://www.youtube.com/watch?v=a1i0pneZhdw": 447399,
+"https://www.youtube.com/watch?v=17032T1ZOrY": 24245,
+"https://www.youtube.com/watch?v=q5HFxNeKWNA": 7272,
+"https://www.youtube.com/watch?v=nlcyMT37muA": 4708,
+"https://www.youtube.com/watch?v=hRSevbV1VkE": 124376,
+"https://www.youtube.com/watch?v=WLG7aInsqoY": 346959,
+"https://www.youtube.com/watch?v=C1iD30l_ewM": 34220,
+"https://www.youtube.com/watch?v=ckXoKx2ZEXw": 82113,
+"https://www.youtube.com/watch?v=8aSO7T-b650": 702867,
+"https://www.youtube.com/watch?v=eLA0UQvn-9U": 310338,
+"https://www.youtube.com/watch?v=6TgHlbFCsh8": 164545,
+"https://www.youtube.com/watch?v=DRO9KAV77jg": 5099,
+"https://www.youtube.com/watch?v=Mf_EFraTh78": 9192,
+"https://www.youtube.com/watch?v=PCDcIJ78znA": 7095,
+"https://www.youtube.com/watch?v=sW7X3yPqAQk": 30889,
+"https://www.youtube.com/watch?v=2JGC3ZVJ6Hk": 5551,
+"https://www.youtube.com/watch?v=9kMSxZtzpiY": 11757,
+"https://www.youtube.com/watch?v=L2-HHM-Y9iQ": 6178,
+"https://www.youtube.com/watch?v=2mzVnoBKXh4": 315444
+}
 },
 "vitra rezervuar tamiri": {
 "n": 19,
@@ -4732,7 +4886,49 @@
 ]
 ],
 "toplam_g": 4602057,
-"vitra": []
+"vitra": [],
+"vid": [
+"https://www.youtube.com/watch?v=17032T1ZOrY",
+"https://www.youtube.com/watch?v=3kOkkvkj_jo",
+"https://www.youtube.com/watch?v=5JuO3A1Ft1U",
+"https://www.youtube.com/watch?v=6TgHlbFCsh8",
+"https://www.youtube.com/watch?v=8aSO7T-b650",
+"https://www.youtube.com/watch?v=91n0toN6pDQ",
+"https://www.youtube.com/watch?v=9kMSxZtzpiY",
+"https://www.youtube.com/watch?v=DRO9KAV77jg",
+"https://www.youtube.com/watch?v=FdTHsXjT9PM",
+"https://www.youtube.com/watch?v=PAfOsWWms28",
+"https://www.youtube.com/watch?v=VEKFVbwgQuY",
+"https://www.youtube.com/watch?v=WLG7aInsqoY",
+"https://www.youtube.com/watch?v=a1i0pneZhdw",
+"https://www.youtube.com/watch?v=ckXoKx2ZEXw",
+"https://www.youtube.com/watch?v=gZyDQFu01GY",
+"https://www.youtube.com/watch?v=iImZST7nDBI",
+"https://www.youtube.com/watch?v=nlcyMT37muA",
+"https://www.youtube.com/watch?v=sW7X3yPqAQk",
+"https://www.youtube.com/watch?v=uiWwzjYYF0k"
+],
+"g": {
+"https://www.youtube.com/watch?v=PAfOsWWms28": 31151,
+"https://www.youtube.com/watch?v=ckXoKx2ZEXw": 82103,
+"https://www.youtube.com/watch?v=nlcyMT37muA": 4710,
+"https://www.youtube.com/watch?v=a1i0pneZhdw": 447399,
+"https://www.youtube.com/watch?v=8aSO7T-b650": 702880,
+"https://www.youtube.com/watch?v=6TgHlbFCsh8": 164543,
+"https://www.youtube.com/watch?v=91n0toN6pDQ": 54133,
+"https://www.youtube.com/watch?v=3kOkkvkj_jo": 334927,
+"https://www.youtube.com/watch?v=VEKFVbwgQuY": 57663,
+"https://www.youtube.com/watch?v=WLG7aInsqoY": 346963,
+"https://www.youtube.com/watch?v=5JuO3A1Ft1U": 49670,
+"https://www.youtube.com/watch?v=9kMSxZtzpiY": 11768,
+"https://www.youtube.com/watch?v=17032T1ZOrY": 24245,
+"https://www.youtube.com/watch?v=iImZST7nDBI": 59858,
+"https://www.youtube.com/watch?v=DRO9KAV77jg": 5097,
+"https://www.youtube.com/watch?v=sW7X3yPqAQk": 30889,
+"https://www.youtube.com/watch?v=uiWwzjYYF0k": 158768,
+"https://www.youtube.com/watch?v=FdTHsXjT9PM": 21420,
+"https://www.youtube.com/watch?v=gZyDQFu01GY": 2013870
+}
 },
 "vitra banyo dolabı montajı": {
 "n": 19,
@@ -4790,7 +4986,49 @@
 17,
 18,
 19
-]
+],
+"vid": [
+"https://www.youtube.com/watch?v=2mzVnoBKXh4",
+"https://www.youtube.com/watch?v=9S6IAeKde88",
+"https://www.youtube.com/watch?v=BqFD5HL-GXs",
+"https://www.youtube.com/watch?v=G3Lzr0vEx5A",
+"https://www.youtube.com/watch?v=ImdxhW1Wu-M",
+"https://www.youtube.com/watch?v=KgwG5hqQuJo",
+"https://www.youtube.com/watch?v=OgFxIo8hftM",
+"https://www.youtube.com/watch?v=P7GM3KcWIj4",
+"https://www.youtube.com/watch?v=S7UN_iaV9Qw",
+"https://www.youtube.com/watch?v=UHBL4Mev3NI",
+"https://www.youtube.com/watch?v=_A--fNyi14E",
+"https://www.youtube.com/watch?v=_U8UbaOJLMY",
+"https://www.youtube.com/watch?v=b0w9MjCEDpk",
+"https://www.youtube.com/watch?v=dI4Qs_aTRSQ",
+"https://www.youtube.com/watch?v=fudQSFnZjOs",
+"https://www.youtube.com/watch?v=owlJ55zAZKQ",
+"https://www.youtube.com/watch?v=tx0aUPwc_-k",
+"https://www.youtube.com/watch?v=vpL1pUXd5Dw",
+"https://www.youtube.com/watch?v=yikfuqoeOCo"
+],
+"g": {
+"https://www.youtube.com/watch?v=b0w9MjCEDpk": 258468,
+"https://www.youtube.com/watch?v=_A--fNyi14E": 3296,
+"https://www.youtube.com/watch?v=vpL1pUXd5Dw": 256787,
+"https://www.youtube.com/watch?v=OgFxIo8hftM": 232983,
+"https://www.youtube.com/watch?v=fudQSFnZjOs": 225088,
+"https://www.youtube.com/watch?v=P7GM3KcWIj4": 41931,
+"https://www.youtube.com/watch?v=yikfuqoeOCo": 341,
+"https://www.youtube.com/watch?v=dI4Qs_aTRSQ": 81504,
+"https://www.youtube.com/watch?v=2mzVnoBKXh4": 315444,
+"https://www.youtube.com/watch?v=G3Lzr0vEx5A": 5098,
+"https://www.youtube.com/watch?v=tx0aUPwc_-k": 55295,
+"https://www.youtube.com/watch?v=KgwG5hqQuJo": 16708,
+"https://www.youtube.com/watch?v=BqFD5HL-GXs": 50317,
+"https://www.youtube.com/watch?v=_U8UbaOJLMY": 485,
+"https://www.youtube.com/watch?v=S7UN_iaV9Qw": 8198,
+"https://www.youtube.com/watch?v=owlJ55zAZKQ": 28585,
+"https://www.youtube.com/watch?v=9S6IAeKde88": 80928,
+"https://www.youtube.com/watch?v=UHBL4Mev3NI": 4542,
+"https://www.youtube.com/watch?v=ImdxhW1Wu-M": 635319
+}
 },
 "vitra akıllı klozet": {
 "n": 20,
@@ -4843,10 +5081,53 @@
 8,
 10,
 11,
-13,
 14,
 17
-]
+],
+"vid": [
+"https://www.youtube.com/watch?v=-cd69ggAPzQ",
+"https://www.youtube.com/watch?v=1R4xdB_kmYw",
+"https://www.youtube.com/watch?v=34dQTvo5vVI",
+"https://www.youtube.com/watch?v=5FdcpwXhfjg",
+"https://www.youtube.com/watch?v=8JFPjgpSWTI",
+"https://www.youtube.com/watch?v=FTsmxbADIvE",
+"https://www.youtube.com/watch?v=HU5fMJBFouU",
+"https://www.youtube.com/watch?v=Kr3eY8WkwHw",
+"https://www.youtube.com/watch?v=M_jVZSA91Cw",
+"https://www.youtube.com/watch?v=VS0YuosCvjE",
+"https://www.youtube.com/watch?v=VoBhntNjj0c",
+"https://www.youtube.com/watch?v=bLxIXrCT3AQ",
+"https://www.youtube.com/watch?v=eKcjAsEmMa4",
+"https://www.youtube.com/watch?v=epyefABb_Yk",
+"https://www.youtube.com/watch?v=lZ0wWuRat-k",
+"https://www.youtube.com/watch?v=rDiOIGAHwK0",
+"https://www.youtube.com/watch?v=t4dxs9kCIx8",
+"https://www.youtube.com/watch?v=y2A1b-6klpk",
+"https://www.youtube.com/watch?v=zI1_r5ZjMAY",
+"https://www.youtube.com/watch?v=zcTAMCfyOyI"
+],
+"g": {
+"https://www.youtube.com/watch?v=M_jVZSA91Cw": 55467,
+"https://www.youtube.com/watch?v=epyefABb_Yk": 143951,
+"https://www.youtube.com/watch?v=HU5fMJBFouU": 38653,
+"https://www.youtube.com/watch?v=bLxIXrCT3AQ": 544,
+"https://www.youtube.com/watch?v=t4dxs9kCIx8": 1521,
+"https://www.youtube.com/watch?v=1R4xdB_kmYw": 75442,
+"https://www.youtube.com/watch?v=zcTAMCfyOyI": 7180,
+"https://www.youtube.com/watch?v=34dQTvo5vVI": 1069,
+"https://www.youtube.com/watch?v=VS0YuosCvjE": 38,
+"https://www.youtube.com/watch?v=rDiOIGAHwK0": 39070,
+"https://www.youtube.com/watch?v=zI1_r5ZjMAY": 942679,
+"https://www.youtube.com/watch?v=FTsmxbADIvE": 135460,
+"https://www.youtube.com/watch?v=Kr3eY8WkwHw": 450,
+"https://www.youtube.com/watch?v=y2A1b-6klpk": 1557961,
+"https://www.youtube.com/watch?v=5FdcpwXhfjg": 1887,
+"https://www.youtube.com/watch?v=8JFPjgpSWTI": 30515,
+"https://www.youtube.com/watch?v=-cd69ggAPzQ": 344416,
+"https://www.youtube.com/watch?v=lZ0wWuRat-k": 14250,
+"https://www.youtube.com/watch?v=VoBhntNjj0c": 980,
+"https://www.youtube.com/watch?v=eKcjAsEmMa4": 3674
+}
 },
 "vitra v care": {
 "n": 19,
@@ -4905,7 +5186,49 @@
 12,
 14,
 19
-]
+],
+"vid": [
+"https://www.youtube.com/watch?v=-DfC9pfDMp4",
+"https://www.youtube.com/watch?v=-j5cJk7f9Ho",
+"https://www.youtube.com/watch?v=-lwhI68DNBI",
+"https://www.youtube.com/watch?v=2PORnZswwH0",
+"https://www.youtube.com/watch?v=34dQTvo5vVI",
+"https://www.youtube.com/watch?v=6nwt6Ltz8tk",
+"https://www.youtube.com/watch?v=De4UqrG5ZEs",
+"https://www.youtube.com/watch?v=E6oqg8BHnBQ",
+"https://www.youtube.com/watch?v=HU5fMJBFouU",
+"https://www.youtube.com/watch?v=HnQaFnaKchs",
+"https://www.youtube.com/watch?v=KG5JB7wrp90",
+"https://www.youtube.com/watch?v=PqGoCZTDLZo",
+"https://www.youtube.com/watch?v=Sm9U1N9i0mk",
+"https://www.youtube.com/watch?v=UYpjnecahFs",
+"https://www.youtube.com/watch?v=U__7jFbvzFU",
+"https://www.youtube.com/watch?v=epyefABb_Yk",
+"https://www.youtube.com/watch?v=lfDF7uJmRpo",
+"https://www.youtube.com/watch?v=pbUFK7x8nkk",
+"https://www.youtube.com/watch?v=rCOD7qsyGzk"
+],
+"g": {
+"https://www.youtube.com/watch?v=HU5fMJBFouU": 38653,
+"https://www.youtube.com/watch?v=2PORnZswwH0": 1854,
+"https://www.youtube.com/watch?v=E6oqg8BHnBQ": 1946,
+"https://www.youtube.com/watch?v=rCOD7qsyGzk": 35724,
+"https://www.youtube.com/watch?v=34dQTvo5vVI": 1067,
+"https://www.youtube.com/watch?v=-j5cJk7f9Ho": 374,
+"https://www.youtube.com/watch?v=-lwhI68DNBI": 215,
+"https://www.youtube.com/watch?v=pbUFK7x8nkk": 612,
+"https://www.youtube.com/watch?v=KG5JB7wrp90": 19717,
+"https://www.youtube.com/watch?v=-DfC9pfDMp4": 806,
+"https://www.youtube.com/watch?v=epyefABb_Yk": 143951,
+"https://www.youtube.com/watch?v=U__7jFbvzFU": 15789,
+"https://www.youtube.com/watch?v=6nwt6Ltz8tk": 6402,
+"https://www.youtube.com/watch?v=De4UqrG5ZEs": 2975901,
+"https://www.youtube.com/watch?v=Sm9U1N9i0mk": 4259,
+"https://www.youtube.com/watch?v=UYpjnecahFs": 3786,
+"https://www.youtube.com/watch?v=HnQaFnaKchs": 4824,
+"https://www.youtube.com/watch?v=PqGoCZTDLZo": 2377,
+"https://www.youtube.com/watch?v=lfDF7uJmRpo": 505
+}
 },
 "vitra lavabo": {
 "n": 20,
@@ -4964,7 +5287,51 @@
 17,
 18,
 19
-]
+],
+"vid": [
+"https://www.youtube.com/watch?v=54esDet6t7M",
+"https://www.youtube.com/watch?v=694fl9L5j_o",
+"https://www.youtube.com/watch?v=7FegxKdgClw",
+"https://www.youtube.com/watch?v=83Peg6OGnVk",
+"https://www.youtube.com/watch?v=B7iB8eQHJO4",
+"https://www.youtube.com/watch?v=CX7Vv4zeTTA",
+"https://www.youtube.com/watch?v=FkqJvCVyaZ4",
+"https://www.youtube.com/watch?v=YTXa8ML95HU",
+"https://www.youtube.com/watch?v=_A--fNyi14E",
+"https://www.youtube.com/watch?v=aW7Gqob8hWo",
+"https://www.youtube.com/watch?v=b0w9MjCEDpk",
+"https://www.youtube.com/watch?v=dI4Qs_aTRSQ",
+"https://www.youtube.com/watch?v=g8akY9TnYN4",
+"https://www.youtube.com/watch?v=mj9rkskF900",
+"https://www.youtube.com/watch?v=oS-zEaJMEPk",
+"https://www.youtube.com/watch?v=qtFqup9zxoU",
+"https://www.youtube.com/watch?v=x9aQfXPGYJc",
+"https://www.youtube.com/watch?v=xwhO23aMLJA",
+"https://www.youtube.com/watch?v=y4nKQ8CvhZo",
+"https://www.youtube.com/watch?v=z81KftznnuI"
+],
+"g": {
+"https://www.youtube.com/watch?v=b0w9MjCEDpk": 258468,
+"https://www.youtube.com/watch?v=FkqJvCVyaZ4": 235725,
+"https://www.youtube.com/watch?v=aW7Gqob8hWo": 1301,
+"https://www.youtube.com/watch?v=xwhO23aMLJA": 26089,
+"https://www.youtube.com/watch?v=54esDet6t7M": 86705,
+"https://www.youtube.com/watch?v=CX7Vv4zeTTA": 393,
+"https://www.youtube.com/watch?v=7FegxKdgClw": 740,
+"https://www.youtube.com/watch?v=83Peg6OGnVk": 463,
+"https://www.youtube.com/watch?v=x9aQfXPGYJc": 1114,
+"https://www.youtube.com/watch?v=z81KftznnuI": 2247,
+"https://www.youtube.com/watch?v=qtFqup9zxoU": 2481,
+"https://www.youtube.com/watch?v=YTXa8ML95HU": 3902,
+"https://www.youtube.com/watch?v=dI4Qs_aTRSQ": 81504,
+"https://www.youtube.com/watch?v=694fl9L5j_o": 14376,
+"https://www.youtube.com/watch?v=oS-zEaJMEPk": 228946,
+"https://www.youtube.com/watch?v=B7iB8eQHJO4": 7515,
+"https://www.youtube.com/watch?v=y4nKQ8CvhZo": 224830,
+"https://www.youtube.com/watch?v=mj9rkskF900": 195822,
+"https://www.youtube.com/watch?v=_A--fNyi14E": 3296,
+"https://www.youtube.com/watch?v=g8akY9TnYN4": 21214
+}
 },
 "klozet montajı nasıl yapılır": {
 "n": 19,
@@ -5014,7 +5381,49 @@
 "vitra": [
 16,
 18
-]
+],
+"vid": [
+"https://www.youtube.com/watch?v=-aOZH35q-xA",
+"https://www.youtube.com/watch?v=5xgE6GGhvII",
+"https://www.youtube.com/watch?v=CwUrMCzqVFM",
+"https://www.youtube.com/watch?v=D-ZGP6tkTck",
+"https://www.youtube.com/watch?v=Dlp5RKNB3dI",
+"https://www.youtube.com/watch?v=ECFUBnW-Cas&t=60s",
+"https://www.youtube.com/watch?v=Ggx218kF-bU",
+"https://www.youtube.com/watch?v=IKACq0lXBOQ",
+"https://www.youtube.com/watch?v=LbUVMFe2c5g",
+"https://www.youtube.com/watch?v=OuRfS97c0g4",
+"https://www.youtube.com/watch?v=P4F7oGAMtgQ",
+"https://www.youtube.com/watch?v=TzDTVuaZfoE",
+"https://www.youtube.com/watch?v=VWU2Af0ZEms",
+"https://www.youtube.com/watch?v=WMYfAQqcqAM",
+"https://www.youtube.com/watch?v=XDg1FoQmdEA",
+"https://www.youtube.com/watch?v=ezgyZ-uEFSI",
+"https://www.youtube.com/watch?v=hhO1XgVlo0E",
+"https://www.youtube.com/watch?v=ib1Avj6fuOw",
+"https://www.youtube.com/watch?v=wYPa5VGU6yc"
+],
+"g": {
+"https://www.youtube.com/watch?v=-aOZH35q-xA": 601676,
+"https://www.youtube.com/watch?v=wYPa5VGU6yc": 195794,
+"https://www.youtube.com/watch?v=TzDTVuaZfoE": 489724,
+"https://www.youtube.com/watch?v=OuRfS97c0g4": 138202,
+"https://www.youtube.com/watch?v=IKACq0lXBOQ": 547579,
+"https://www.youtube.com/watch?v=CwUrMCzqVFM": 213088,
+"https://www.youtube.com/watch?v=hhO1XgVlo0E": 125265,
+"https://www.youtube.com/watch?v=WMYfAQqcqAM": 14243,
+"https://www.youtube.com/watch?v=XDg1FoQmdEA": 69003,
+"https://www.youtube.com/watch?v=Ggx218kF-bU": 40405,
+"https://www.youtube.com/watch?v=VWU2Af0ZEms": 358406,
+"https://www.youtube.com/watch?v=D-ZGP6tkTck": 471563,
+"https://www.youtube.com/watch?v=ezgyZ-uEFSI": 133818,
+"https://www.youtube.com/watch?v=ECFUBnW-Cas&t=60s": 365136,
+"https://www.youtube.com/watch?v=5xgE6GGhvII": 16219,
+"https://www.youtube.com/watch?v=ib1Avj6fuOw": 68868,
+"https://www.youtube.com/watch?v=Dlp5RKNB3dI": 26431,
+"https://www.youtube.com/watch?v=P4F7oGAMtgQ": 707103,
+"https://www.youtube.com/watch?v=LbUVMFe2c5g": 17433
+}
 },
 "asma klozet montajı": {
 "n": 19,
@@ -5066,7 +5475,49 @@
 8,
 16,
 18
-]
+],
+"vid": [
+"https://www.youtube.com/watch?v=0Pos6wQJ2L4",
+"https://www.youtube.com/watch?v=2mzVnoBKXh4&t=281s",
+"https://www.youtube.com/watch?v=5xgE6GGhvII",
+"https://www.youtube.com/watch?v=CwUrMCzqVFM",
+"https://www.youtube.com/watch?v=HZh8TbkYQKE",
+"https://www.youtube.com/watch?v=IYUidrI1zi8",
+"https://www.youtube.com/watch?v=OuRfS97c0g4",
+"https://www.youtube.com/watch?v=T8o68ubY2KY",
+"https://www.youtube.com/watch?v=TU-57EFrR1U",
+"https://www.youtube.com/watch?v=TzDTVuaZfoE",
+"https://www.youtube.com/watch?v=VC4MC8z8shU",
+"https://www.youtube.com/watch?v=VWU2Af0ZEms",
+"https://www.youtube.com/watch?v=WOOWp_h9_Qo",
+"https://www.youtube.com/watch?v=ib1Avj6fuOw",
+"https://www.youtube.com/watch?v=sA7KVgabKPU",
+"https://www.youtube.com/watch?v=vn1pwI1zw0I",
+"https://www.youtube.com/watch?v=w6EQQqdOq08",
+"https://www.youtube.com/watch?v=wmMBKD-GfNE",
+"https://www.youtube.com/watch?v=xUxiJw7zIP4"
+],
+"g": {
+"https://www.youtube.com/watch?v=TzDTVuaZfoE": 489724,
+"https://www.youtube.com/watch?v=5xgE6GGhvII": 16219,
+"https://www.youtube.com/watch?v=vn1pwI1zw0I": 261989,
+"https://www.youtube.com/watch?v=0Pos6wQJ2L4": 36169,
+"https://www.youtube.com/watch?v=sA7KVgabKPU": 45926,
+"https://www.youtube.com/watch?v=w6EQQqdOq08": 251729,
+"https://www.youtube.com/watch?v=VWU2Af0ZEms": 358406,
+"https://www.youtube.com/watch?v=wmMBKD-GfNE": 97253,
+"https://www.youtube.com/watch?v=T8o68ubY2KY": 6188,
+"https://www.youtube.com/watch?v=VC4MC8z8shU": 8139,
+"https://www.youtube.com/watch?v=IYUidrI1zi8": 150607,
+"https://www.youtube.com/watch?v=TU-57EFrR1U": 1819302,
+"https://www.youtube.com/watch?v=xUxiJw7zIP4": 9934,
+"https://www.youtube.com/watch?v=OuRfS97c0g4": 138202,
+"https://www.youtube.com/watch?v=WOOWp_h9_Qo": 51069,
+"https://www.youtube.com/watch?v=2mzVnoBKXh4&t=281s": 315446,
+"https://www.youtube.com/watch?v=CwUrMCzqVFM": 213088,
+"https://www.youtube.com/watch?v=ib1Avj6fuOw": 68868,
+"https://www.youtube.com/watch?v=HZh8TbkYQKE": 1420
+}
 },
 "gömme rezervuar montajı": {
 "n": 19,
@@ -5116,7 +5567,49 @@
 "vitra": [
 1,
 12
-]
+],
+"vid": [
+"https://www.youtube.com/watch?v=2mzVnoBKXh4",
+"https://www.youtube.com/watch?v=3DhfZjfu_Z8",
+"https://www.youtube.com/watch?v=6495TGVQPR4",
+"https://www.youtube.com/watch?v=GFMzfEuQcCk",
+"https://www.youtube.com/watch?v=Htn4dbV0Ua4",
+"https://www.youtube.com/watch?v=IGJKl2pyCq4",
+"https://www.youtube.com/watch?v=IYUidrI1zi8",
+"https://www.youtube.com/watch?v=IZCOiqt3Qw0",
+"https://www.youtube.com/watch?v=LMPwOxA0X0I",
+"https://www.youtube.com/watch?v=NvSVnCZgJ4g",
+"https://www.youtube.com/watch?v=R1s-Zbxmmxw",
+"https://www.youtube.com/watch?v=TU-57EFrR1U",
+"https://www.youtube.com/watch?v=TePYIggQX5E",
+"https://www.youtube.com/watch?v=TzDTVuaZfoE",
+"https://www.youtube.com/watch?v=UjJjEzjGNlY",
+"https://www.youtube.com/watch?v=c1FcXnvvWHM",
+"https://www.youtube.com/watch?v=cCEo3gjkpZE",
+"https://www.youtube.com/watch?v=y3F5pE9cXNE",
+"https://www.youtube.com/watch?v=yiAaLI1LD8Q"
+],
+"g": {
+"https://www.youtube.com/watch?v=2mzVnoBKXh4": 315444,
+"https://www.youtube.com/watch?v=y3F5pE9cXNE": 172329,
+"https://www.youtube.com/watch?v=LMPwOxA0X0I": 230583,
+"https://www.youtube.com/watch?v=TePYIggQX5E": 9906,
+"https://www.youtube.com/watch?v=IYUidrI1zi8": 150602,
+"https://www.youtube.com/watch?v=UjJjEzjGNlY": 182169,
+"https://www.youtube.com/watch?v=6495TGVQPR4": 133780,
+"https://www.youtube.com/watch?v=TU-57EFrR1U": 1819275,
+"https://www.youtube.com/watch?v=yiAaLI1LD8Q": 110788,
+"https://www.youtube.com/watch?v=GFMzfEuQcCk": 1930,
+"https://www.youtube.com/watch?v=cCEo3gjkpZE": 62740,
+"https://www.youtube.com/watch?v=NvSVnCZgJ4g": 265895,
+"https://www.youtube.com/watch?v=R1s-Zbxmmxw": 6894,
+"https://www.youtube.com/watch?v=TzDTVuaZfoE": 489721,
+"https://www.youtube.com/watch?v=c1FcXnvvWHM": 59970,
+"https://www.youtube.com/watch?v=Htn4dbV0Ua4": 48838,
+"https://www.youtube.com/watch?v=IZCOiqt3Qw0": 7494,
+"https://www.youtube.com/watch?v=3DhfZjfu_Z8": 12132,
+"https://www.youtube.com/watch?v=IGJKl2pyCq4": 116317
+}
 },
 "gömme rezervuar tamiri": {
 "n": 22,
@@ -5163,7 +5656,55 @@
 ]
 ],
 "toplam_g": 2522768,
-"vitra": []
+"vitra": [],
+"vid": [
+"https://www.youtube.com/watch?v=18w24OHSEbs",
+"https://www.youtube.com/watch?v=6TgHlbFCsh8",
+"https://www.youtube.com/watch?v=8CAaLwT7BRA",
+"https://www.youtube.com/watch?v=AI8RAgnww4A",
+"https://www.youtube.com/watch?v=DvhsVTEjPBk",
+"https://www.youtube.com/watch?v=K_xCHH14qo4",
+"https://www.youtube.com/watch?v=MVOhPuYhrOE",
+"https://www.youtube.com/watch?v=Mf_EFraTh78",
+"https://www.youtube.com/watch?v=OZy5OQH_Lq8",
+"https://www.youtube.com/watch?v=VQHy1FNsZhQ",
+"https://www.youtube.com/watch?v=a1i0pneZhdw",
+"https://www.youtube.com/watch?v=aD9lN-j9VM8",
+"https://www.youtube.com/watch?v=ckXoKx2ZEXw",
+"https://www.youtube.com/watch?v=eLA0UQvn-9U",
+"https://www.youtube.com/watch?v=mSQ8_ZxbU74",
+"https://www.youtube.com/watch?v=nlcyMT37muA",
+"https://www.youtube.com/watch?v=oiTMn5SyTR8",
+"https://www.youtube.com/watch?v=r2lhE061uok",
+"https://www.youtube.com/watch?v=uiWwzjYYF0k",
+"https://www.youtube.com/watch?v=wVDhCF5sTp4",
+"https://www.youtube.com/watch?v=whKmPdGmE-0",
+"https://www.youtube.com/watch?v=xDnL2ssGZOQ"
+],
+"g": {
+"https://www.youtube.com/watch?v=DvhsVTEjPBk": 322069,
+"https://www.youtube.com/watch?v=eLA0UQvn-9U": 310338,
+"https://www.youtube.com/watch?v=ckXoKx2ZEXw": 82113,
+"https://www.youtube.com/watch?v=18w24OHSEbs": 102750,
+"https://www.youtube.com/watch?v=Mf_EFraTh78": 9192,
+"https://www.youtube.com/watch?v=K_xCHH14qo4": 18970,
+"https://www.youtube.com/watch?v=mSQ8_ZxbU74": 3245,
+"https://www.youtube.com/watch?v=r2lhE061uok": 77748,
+"https://www.youtube.com/watch?v=6TgHlbFCsh8": 164557,
+"https://www.youtube.com/watch?v=a1i0pneZhdw": 447399,
+"https://www.youtube.com/watch?v=wVDhCF5sTp4": 8377,
+"https://www.youtube.com/watch?v=xDnL2ssGZOQ": 1019,
+"https://www.youtube.com/watch?v=nlcyMT37muA": 4710,
+"https://www.youtube.com/watch?v=AI8RAgnww4A": 32564,
+"https://www.youtube.com/watch?v=VQHy1FNsZhQ": 216389,
+"https://www.youtube.com/watch?v=whKmPdGmE-0": 115412,
+"https://www.youtube.com/watch?v=aD9lN-j9VM8": 181134,
+"https://www.youtube.com/watch?v=MVOhPuYhrOE": 21526,
+"https://www.youtube.com/watch?v=8CAaLwT7BRA": 12129,
+"https://www.youtube.com/watch?v=OZy5OQH_Lq8": 136235,
+"https://www.youtube.com/watch?v=oiTMn5SyTR8": 96111,
+"https://www.youtube.com/watch?v=uiWwzjYYF0k": 158781
+}
 },
 "klozet kapağı montajı": {
 "n": 20,
@@ -5214,7 +5755,51 @@
 1,
 6,
 17
-]
+],
+"vid": [
+"https://www.youtube.com/watch?v=-UYrE1deVYM",
+"https://www.youtube.com/watch?v=0sDf9toQegQ",
+"https://www.youtube.com/watch?v=3rnivNp9ix4",
+"https://www.youtube.com/watch?v=4q2XL0hDUo0",
+"https://www.youtube.com/watch?v=6p3Mv7mVTgo",
+"https://www.youtube.com/watch?v=CXnzoGoQeqQ",
+"https://www.youtube.com/watch?v=CfUUAozWzyY",
+"https://www.youtube.com/watch?v=E1qhLBjUabA",
+"https://www.youtube.com/watch?v=GAL3y8lRkxU",
+"https://www.youtube.com/watch?v=H4s5WIeomcg",
+"https://www.youtube.com/watch?v=JdllfKw_z1A",
+"https://www.youtube.com/watch?v=NAWhPEcbcYM",
+"https://www.youtube.com/watch?v=P4F7oGAMtgQ",
+"https://www.youtube.com/watch?v=Rcvk_z95Zxc",
+"https://www.youtube.com/watch?v=XnePu-buXrg",
+"https://www.youtube.com/watch?v=ZPFQ-HlP61Q",
+"https://www.youtube.com/watch?v=c_sZnPq3E4A",
+"https://www.youtube.com/watch?v=mmeMX_KKfGQ",
+"https://www.youtube.com/watch?v=ueCULZTjN_8",
+"https://www.youtube.com/watch?v=zSeOPXyFeYU"
+],
+"g": {
+"https://www.youtube.com/watch?v=P4F7oGAMtgQ": 707130,
+"https://www.youtube.com/watch?v=6p3Mv7mVTgo": 102717,
+"https://www.youtube.com/watch?v=Rcvk_z95Zxc": 607249,
+"https://www.youtube.com/watch?v=GAL3y8lRkxU": 162875,
+"https://www.youtube.com/watch?v=CXnzoGoQeqQ": 460743,
+"https://www.youtube.com/watch?v=c_sZnPq3E4A": 271614,
+"https://www.youtube.com/watch?v=XnePu-buXrg": 4025,
+"https://www.youtube.com/watch?v=-UYrE1deVYM": 526303,
+"https://www.youtube.com/watch?v=NAWhPEcbcYM": 112753,
+"https://www.youtube.com/watch?v=ZPFQ-HlP61Q": 2662,
+"https://www.youtube.com/watch?v=0sDf9toQegQ": 15598,
+"https://www.youtube.com/watch?v=zSeOPXyFeYU": 41815,
+"https://www.youtube.com/watch?v=mmeMX_KKfGQ": 47996,
+"https://www.youtube.com/watch?v=ueCULZTjN_8": 58728,
+"https://www.youtube.com/watch?v=4q2XL0hDUo0": 18347,
+"https://www.youtube.com/watch?v=H4s5WIeomcg": 16759,
+"https://www.youtube.com/watch?v=3rnivNp9ix4": 338418,
+"https://www.youtube.com/watch?v=CfUUAozWzyY": 162110,
+"https://www.youtube.com/watch?v=E1qhLBjUabA": 8245,
+"https://www.youtube.com/watch?v=JdllfKw_z1A": 33718
+}
 },
 "klozet kapağı nasıl değiştirilir": {
 "n": 19,
@@ -5265,7 +5850,49 @@
 2,
 3,
 18
-]
+],
+"vid": [
+"https://www.youtube.com/watch?v=0s89n48IGMk",
+"https://www.youtube.com/watch?v=3rnivNp9ix4",
+"https://www.youtube.com/watch?v=4svHKxf0Z7I",
+"https://www.youtube.com/watch?v=6p3Mv7mVTgo",
+"https://www.youtube.com/watch?v=8MM1m1tWxts",
+"https://www.youtube.com/watch?v=B8bwCbx2OiU",
+"https://www.youtube.com/watch?v=CXnzoGoQeqQ",
+"https://www.youtube.com/watch?v=CfUUAozWzyY",
+"https://www.youtube.com/watch?v=GAL3y8lRkxU",
+"https://www.youtube.com/watch?v=NAWhPEcbcYM",
+"https://www.youtube.com/watch?v=P4F7oGAMtgQ",
+"https://www.youtube.com/watch?v=RACx7_aRkbQ",
+"https://www.youtube.com/watch?v=Rcvk_z95Zxc",
+"https://www.youtube.com/watch?v=XTmYR8NC8Qs",
+"https://www.youtube.com/watch?v=c_sZnPq3E4A",
+"https://www.youtube.com/watch?v=gEQzePagm8k",
+"https://www.youtube.com/watch?v=ts03wsklTC8",
+"https://www.youtube.com/watch?v=ueCULZTjN_8",
+"https://www.youtube.com/watch?v=xoVxzy5MXjo"
+],
+"g": {
+"https://www.youtube.com/watch?v=CXnzoGoQeqQ": 460765,
+"https://www.youtube.com/watch?v=P4F7oGAMtgQ": 707097,
+"https://www.youtube.com/watch?v=c_sZnPq3E4A": 271614,
+"https://www.youtube.com/watch?v=GAL3y8lRkxU": 162875,
+"https://www.youtube.com/watch?v=Rcvk_z95Zxc": 607242,
+"https://www.youtube.com/watch?v=ueCULZTjN_8": 58728,
+"https://www.youtube.com/watch?v=xoVxzy5MXjo": 618,
+"https://www.youtube.com/watch?v=NAWhPEcbcYM": 112744,
+"https://www.youtube.com/watch?v=B8bwCbx2OiU": 8675,
+"https://www.youtube.com/watch?v=4svHKxf0Z7I": 101186,
+"https://www.youtube.com/watch?v=gEQzePagm8k": 37021,
+"https://www.youtube.com/watch?v=CfUUAozWzyY": 162103,
+"https://www.youtube.com/watch?v=0s89n48IGMk": 142,
+"https://www.youtube.com/watch?v=RACx7_aRkbQ": 97362,
+"https://www.youtube.com/watch?v=8MM1m1tWxts": 549849,
+"https://www.youtube.com/watch?v=XTmYR8NC8Qs": 178928,
+"https://www.youtube.com/watch?v=6p3Mv7mVTgo": 102717,
+"https://www.youtube.com/watch?v=3rnivNp9ix4": 338431,
+"https://www.youtube.com/watch?v=ts03wsklTC8": 237100
+}
 },
 "lavabo bataryası montajı": {
 "n": 19,
@@ -5314,7 +5941,49 @@
 "toplam_g": 3529733,
 "vitra": [
 1
-]
+],
+"vid": [
+"https://www.youtube.com/watch?v=02duVbVy7y8",
+"https://www.youtube.com/watch?v=5HZkJfASrx0",
+"https://www.youtube.com/watch?v=6w-UBtMEHEg",
+"https://www.youtube.com/watch?v=9tY8JIGKNI0",
+"https://www.youtube.com/watch?v=FkqJvCVyaZ4",
+"https://www.youtube.com/watch?v=HZGodRXDVDM",
+"https://www.youtube.com/watch?v=IAhNW1ar4S0",
+"https://www.youtube.com/watch?v=Jeb53xZKMFY",
+"https://www.youtube.com/watch?v=Jxpq4TzIXho",
+"https://www.youtube.com/watch?v=LN0R-JxirdI",
+"https://www.youtube.com/watch?v=P4Cq_wR1Mt8",
+"https://www.youtube.com/watch?v=SGvM5CkRRF4",
+"https://www.youtube.com/watch?v=V-Dz2BU2L8A",
+"https://www.youtube.com/watch?v=VKCOOB18BWA",
+"https://www.youtube.com/watch?v=Wb9V4T7DxUY",
+"https://www.youtube.com/watch?v=_i2MV3uFIL4",
+"https://www.youtube.com/watch?v=ftH0AyZZ04c",
+"https://www.youtube.com/watch?v=h0FMvPnBD2U",
+"https://www.youtube.com/watch?v=wW32u7vWoTo"
+],
+"g": {
+"https://www.youtube.com/watch?v=FkqJvCVyaZ4": 235717,
+"https://www.youtube.com/watch?v=Wb9V4T7DxUY": 314111,
+"https://www.youtube.com/watch?v=6w-UBtMEHEg": 372798,
+"https://www.youtube.com/watch?v=02duVbVy7y8": 142141,
+"https://www.youtube.com/watch?v=P4Cq_wR1Mt8": 572875,
+"https://www.youtube.com/watch?v=V-Dz2BU2L8A": 11089,
+"https://www.youtube.com/watch?v=wW32u7vWoTo": 43870,
+"https://www.youtube.com/watch?v=Jeb53xZKMFY": 23841,
+"https://www.youtube.com/watch?v=HZGodRXDVDM": 10087,
+"https://www.youtube.com/watch?v=SGvM5CkRRF4": 26596,
+"https://www.youtube.com/watch?v=IAhNW1ar4S0": 174252,
+"https://www.youtube.com/watch?v=ftH0AyZZ04c": 79304,
+"https://www.youtube.com/watch?v=Jxpq4TzIXho": 3704,
+"https://www.youtube.com/watch?v=5HZkJfASrx0": 89725,
+"https://www.youtube.com/watch?v=_i2MV3uFIL4": 30880,
+"https://www.youtube.com/watch?v=h0FMvPnBD2U": 1045216,
+"https://www.youtube.com/watch?v=VKCOOB18BWA": 4062,
+"https://www.youtube.com/watch?v=LN0R-JxirdI": 345387,
+"https://www.youtube.com/watch?v=9tY8JIGKNI0": 4078
+}
 },
 "banyo bataryası nasıl takılır": {
 "n": 20,
@@ -5364,7 +6033,51 @@
 "vitra": [
 13,
 18
-]
+],
+"vid": [
+"https://www.youtube.com/watch?v=3TPLbcwGCUg",
+"https://www.youtube.com/watch?v=5HZkJfASrx0",
+"https://www.youtube.com/watch?v=B_oeCbNfoC4",
+"https://www.youtube.com/watch?v=FkqJvCVyaZ4",
+"https://www.youtube.com/watch?v=LN0R-JxirdI",
+"https://www.youtube.com/watch?v=M9BZHBW8zLI",
+"https://www.youtube.com/watch?v=P4Cq_wR1Mt8",
+"https://www.youtube.com/watch?v=SGvM5CkRRF4",
+"https://www.youtube.com/watch?v=U0_j-oco9eg",
+"https://www.youtube.com/watch?v=Wb9V4T7DxUY",
+"https://www.youtube.com/watch?v=X2lT0FhNX6Q",
+"https://www.youtube.com/watch?v=_i7VQEx_iLI",
+"https://www.youtube.com/watch?v=b9_yzporR3U",
+"https://www.youtube.com/watch?v=ftH0AyZZ04c",
+"https://www.youtube.com/watch?v=iZ8DzQmFk4w",
+"https://www.youtube.com/watch?v=kpuxBxH8MEQ",
+"https://www.youtube.com/watch?v=tbjS6PIKmLw",
+"https://www.youtube.com/watch?v=yGFWaCYbRgI",
+"https://www.youtube.com/watch?v=yX2zsYPTCMM",
+"https://www.youtube.com/watch?v=zuze5H-TOHA"
+],
+"g": {
+"https://www.youtube.com/watch?v=M9BZHBW8zLI": 64429,
+"https://www.youtube.com/watch?v=LN0R-JxirdI": 345387,
+"https://www.youtube.com/watch?v=ftH0AyZZ04c": 79304,
+"https://www.youtube.com/watch?v=5HZkJfASrx0": 89725,
+"https://www.youtube.com/watch?v=yX2zsYPTCMM": 17325,
+"https://www.youtube.com/watch?v=tbjS6PIKmLw": 134413,
+"https://www.youtube.com/watch?v=X2lT0FhNX6Q": 13410,
+"https://www.youtube.com/watch?v=3TPLbcwGCUg": 528951,
+"https://www.youtube.com/watch?v=B_oeCbNfoC4": 2176,
+"https://www.youtube.com/watch?v=_i7VQEx_iLI": 860,
+"https://www.youtube.com/watch?v=U0_j-oco9eg": 74283,
+"https://www.youtube.com/watch?v=SGvM5CkRRF4": 26596,
+"https://www.youtube.com/watch?v=FkqJvCVyaZ4": 235735,
+"https://www.youtube.com/watch?v=yGFWaCYbRgI": 28838,
+"https://www.youtube.com/watch?v=Wb9V4T7DxUY": 314111,
+"https://www.youtube.com/watch?v=kpuxBxH8MEQ": 65579,
+"https://www.youtube.com/watch?v=iZ8DzQmFk4w": 428,
+"https://www.youtube.com/watch?v=zuze5H-TOHA": 273111,
+"https://www.youtube.com/watch?v=P4Cq_wR1Mt8": 572875,
+"https://www.youtube.com/watch?v=b9_yzporR3U": 27598
+}
 },
 "banyo dolabı montajı": {
 "n": 19,
@@ -5413,7 +6126,49 @@
 "toplam_g": 1115588,
 "vitra": [
 3
-]
+],
+"vid": [
+"https://www.youtube.com/watch?v=6IF1lIl4qBc",
+"https://www.youtube.com/watch?v=EPzdCttOVfQ",
+"https://www.youtube.com/watch?v=KgwG5hqQuJo",
+"https://www.youtube.com/watch?v=NrQct0BiA1c",
+"https://www.youtube.com/watch?v=OgFxIo8hftM",
+"https://www.youtube.com/watch?v=P7GM3KcWIj4",
+"https://www.youtube.com/watch?v=PafZrrPFXbQ",
+"https://www.youtube.com/watch?v=QyDXrU_7kn8",
+"https://www.youtube.com/watch?v=Vz9x2Uxy0pE",
+"https://www.youtube.com/watch?v=b0w9MjCEDpk",
+"https://www.youtube.com/watch?v=dDhPiv6qSrY",
+"https://www.youtube.com/watch?v=e1XjoCPLEgw",
+"https://www.youtube.com/watch?v=eJfbgbwquZo",
+"https://www.youtube.com/watch?v=fudQSFnZjOs",
+"https://www.youtube.com/watch?v=iqxK-Cnoi08",
+"https://www.youtube.com/watch?v=kFgrXejjrSc",
+"https://www.youtube.com/watch?v=owlJ55zAZKQ",
+"https://www.youtube.com/watch?v=ql4ByEgz6rA",
+"https://www.youtube.com/watch?v=vYiC1YQuAOQ"
+],
+"g": {
+"https://www.youtube.com/watch?v=fudQSFnZjOs": 225101,
+"https://www.youtube.com/watch?v=OgFxIo8hftM": 232983,
+"https://www.youtube.com/watch?v=b0w9MjCEDpk": 258468,
+"https://www.youtube.com/watch?v=KgwG5hqQuJo": 16706,
+"https://www.youtube.com/watch?v=eJfbgbwquZo": 91513,
+"https://www.youtube.com/watch?v=vYiC1YQuAOQ": 35181,
+"https://www.youtube.com/watch?v=kFgrXejjrSc": 12224,
+"https://www.youtube.com/watch?v=iqxK-Cnoi08": 35221,
+"https://www.youtube.com/watch?v=P7GM3KcWIj4": 41927,
+"https://www.youtube.com/watch?v=NrQct0BiA1c": 5026,
+"https://www.youtube.com/watch?v=6IF1lIl4qBc": 13653,
+"https://www.youtube.com/watch?v=dDhPiv6qSrY": 82253,
+"https://www.youtube.com/watch?v=QyDXrU_7kn8": 6637,
+"https://www.youtube.com/watch?v=EPzdCttOVfQ": 4567,
+"https://www.youtube.com/watch?v=Vz9x2Uxy0pE": 11717,
+"https://www.youtube.com/watch?v=PafZrrPFXbQ": 267,
+"https://www.youtube.com/watch?v=owlJ55zAZKQ": 28585,
+"https://www.youtube.com/watch?v=e1XjoCPLEgw": 8587,
+"https://www.youtube.com/watch?v=ql4ByEgz6rA": 4972
+}
 },
 "duşakabin montajı": {
 "n": 23,
@@ -5462,7 +6217,57 @@
 "toplam_g": 2256266,
 "vitra": [
 10
-]
+],
+"vid": [
+"https://www.youtube.com/watch?v=-f6pvAdEODA",
+"https://www.youtube.com/watch?v=24wBbV83-0w",
+"https://www.youtube.com/watch?v=4zx-8keiW48",
+"https://www.youtube.com/watch?v=9S6IAeKde88",
+"https://www.youtube.com/watch?v=9nmcrtXsglA",
+"https://www.youtube.com/watch?v=C_K14JlorJw",
+"https://www.youtube.com/watch?v=IahnhMXxg-o",
+"https://www.youtube.com/watch?v=J0fVXFFRXP0",
+"https://www.youtube.com/watch?v=Ky0VEZta3DA",
+"https://www.youtube.com/watch?v=LDWlFjN0rPg",
+"https://www.youtube.com/watch?v=N86DjWA00lo",
+"https://www.youtube.com/watch?v=SjDd5t5T4n8",
+"https://www.youtube.com/watch?v=Sk0oM2bJvvs",
+"https://www.youtube.com/watch?v=bCs1fj7Vbaw",
+"https://www.youtube.com/watch?v=eMYR5XNv2iA",
+"https://www.youtube.com/watch?v=en8B5496kIQ",
+"https://www.youtube.com/watch?v=j0OygOLc3Tw",
+"https://www.youtube.com/watch?v=lsmk2NYCO_s",
+"https://www.youtube.com/watch?v=mOkph7E16so",
+"https://www.youtube.com/watch?v=neONN4L8SSU",
+"https://www.youtube.com/watch?v=pSkOOQMYsOA",
+"https://www.youtube.com/watch?v=u3gz1LHYLgM",
+"https://www.youtube.com/watch?v=xIK4tJj01Mk"
+],
+"g": {
+"https://www.youtube.com/watch?v=SjDd5t5T4n8": 888,
+"https://www.youtube.com/watch?v=24wBbV83-0w": 341303,
+"https://www.youtube.com/watch?v=Ky0VEZta3DA": 91916,
+"https://www.youtube.com/watch?v=neONN4L8SSU": 8471,
+"https://www.youtube.com/watch?v=mOkph7E16so": 611122,
+"https://www.youtube.com/watch?v=4zx-8keiW48": 92249,
+"https://www.youtube.com/watch?v=LDWlFjN0rPg": 81051,
+"https://www.youtube.com/watch?v=j0OygOLc3Tw": 177033,
+"https://www.youtube.com/watch?v=pSkOOQMYsOA": 142320,
+"https://www.youtube.com/watch?v=9S6IAeKde88": 80928,
+"https://www.youtube.com/watch?v=-f6pvAdEODA": 14403,
+"https://www.youtube.com/watch?v=lsmk2NYCO_s": 8078,
+"https://www.youtube.com/watch?v=Sk0oM2bJvvs": 29770,
+"https://www.youtube.com/watch?v=en8B5496kIQ": 24971,
+"https://www.youtube.com/watch?v=bCs1fj7Vbaw": 116256,
+"https://www.youtube.com/watch?v=IahnhMXxg-o": 26893,
+"https://www.youtube.com/watch?v=N86DjWA00lo": 1359,
+"https://www.youtube.com/watch?v=J0fVXFFRXP0": 136351,
+"https://www.youtube.com/watch?v=eMYR5XNv2iA": 74223,
+"https://www.youtube.com/watch?v=u3gz1LHYLgM": 68337,
+"https://www.youtube.com/watch?v=9nmcrtXsglA": 121118,
+"https://www.youtube.com/watch?v=C_K14JlorJw": 376,
+"https://www.youtube.com/watch?v=xIK4tJj01Mk": 6850
+}
 },
 "duş seti montajı": {
 "n": 19,
@@ -5511,7 +6316,49 @@
 "toplam_g": 1998322,
 "vitra": [
 7
-]
+],
+"vid": [
+"https://www.youtube.com/watch?v=-8FYDxbBp_k",
+"https://www.youtube.com/watch?v=5HZkJfASrx0",
+"https://www.youtube.com/watch?v=CzMl6DbmK60",
+"https://www.youtube.com/watch?v=Hh-PaziEVnM",
+"https://www.youtube.com/watch?v=MfFPqSvyPS0",
+"https://www.youtube.com/watch?v=NbocLlhveLw",
+"https://www.youtube.com/watch?v=Pm3k5UJPUT8",
+"https://www.youtube.com/watch?v=QfnR4Zf4xCA",
+"https://www.youtube.com/watch?v=RV8tal8NxpU",
+"https://www.youtube.com/watch?v=UIU6JJws7_U",
+"https://www.youtube.com/watch?v=UhEROdygvu4",
+"https://www.youtube.com/watch?v=XQLjx6tHNzs",
+"https://www.youtube.com/watch?v=Xq9drfMDumc",
+"https://www.youtube.com/watch?v=YLqyWWIw1so",
+"https://www.youtube.com/watch?v=hU6xysw2rBY",
+"https://www.youtube.com/watch?v=hjLr5sJNzwY",
+"https://www.youtube.com/watch?v=mNAu3-BtQgM",
+"https://www.youtube.com/watch?v=t8jZQroKbXU",
+"https://www.youtube.com/watch?v=xTYtlboZdww"
+],
+"g": {
+"https://www.youtube.com/watch?v=Hh-PaziEVnM": 817081,
+"https://www.youtube.com/watch?v=MfFPqSvyPS0": 74260,
+"https://www.youtube.com/watch?v=RV8tal8NxpU": 105394,
+"https://www.youtube.com/watch?v=CzMl6DbmK60": 7421,
+"https://www.youtube.com/watch?v=hU6xysw2rBY": 18760,
+"https://www.youtube.com/watch?v=5HZkJfASrx0": 89725,
+"https://www.youtube.com/watch?v=-8FYDxbBp_k": 151630,
+"https://www.youtube.com/watch?v=t8jZQroKbXU": 174744,
+"https://www.youtube.com/watch?v=mNAu3-BtQgM": 162064,
+"https://www.youtube.com/watch?v=UhEROdygvu4": 59101,
+"https://www.youtube.com/watch?v=xTYtlboZdww": 17520,
+"https://www.youtube.com/watch?v=YLqyWWIw1so": 106427,
+"https://www.youtube.com/watch?v=QfnR4Zf4xCA": 1488,
+"https://www.youtube.com/watch?v=NbocLlhveLw": 70003,
+"https://www.youtube.com/watch?v=hjLr5sJNzwY": 124884,
+"https://www.youtube.com/watch?v=XQLjx6tHNzs": 2425,
+"https://www.youtube.com/watch?v=Xq9drfMDumc": 11669,
+"https://www.youtube.com/watch?v=Pm3k5UJPUT8": 450,
+"https://www.youtube.com/watch?v=UIU6JJws7_U": 3276
+}
 },
 "rezervuar su kaçırıyor": {
 "n": 23,
@@ -5558,7 +6405,57 @@
 ]
 ],
 "toplam_g": 7626099,
-"vitra": []
+"vitra": [],
+"vid": [
+"https://www.youtube.com/watch?v=35vLC_CdFgo",
+"https://www.youtube.com/watch?v=751sqpI8g8M",
+"https://www.youtube.com/watch?v=8Jz22xkRJCE",
+"https://www.youtube.com/watch?v=DFwAyZQf4q4",
+"https://www.youtube.com/watch?v=DvhsVTEjPBk",
+"https://www.youtube.com/watch?v=IASiDqbEbcI",
+"https://www.youtube.com/watch?v=P6CqzmfzTpM",
+"https://www.youtube.com/watch?v=U3uNRutqttg",
+"https://www.youtube.com/watch?v=W7zOvdA7HCI",
+"https://www.youtube.com/watch?v=WLG7aInsqoY",
+"https://www.youtube.com/watch?v=Y5N0zvGgBmo",
+"https://www.youtube.com/watch?v=a1i0pneZhdw",
+"https://www.youtube.com/watch?v=arCL6-p9jTc",
+"https://www.youtube.com/watch?v=beCkNLOJtkw",
+"https://www.youtube.com/watch?v=eLA0UQvn-9U",
+"https://www.youtube.com/watch?v=gRz_D8c1wfE",
+"https://www.youtube.com/watch?v=gZyDQFu01GY",
+"https://www.youtube.com/watch?v=hRSevbV1VkE",
+"https://www.youtube.com/watch?v=hg9UrFXk1ls",
+"https://www.youtube.com/watch?v=j3oIRIZc2IM",
+"https://www.youtube.com/watch?v=l7b5Eg_of9k",
+"https://www.youtube.com/watch?v=qv8YTompB44",
+"https://www.youtube.com/watch?v=xRwdiScSweI"
+],
+"g": {
+"https://www.youtube.com/watch?v=l7b5Eg_of9k": 453806,
+"https://www.youtube.com/watch?v=gZyDQFu01GY": 2013927,
+"https://www.youtube.com/watch?v=U3uNRutqttg": 1251071,
+"https://www.youtube.com/watch?v=751sqpI8g8M": 16418,
+"https://www.youtube.com/watch?v=beCkNLOJtkw": 226757,
+"https://www.youtube.com/watch?v=eLA0UQvn-9U": 310338,
+"https://www.youtube.com/watch?v=8Jz22xkRJCE": 176940,
+"https://www.youtube.com/watch?v=a1i0pneZhdw": 447399,
+"https://www.youtube.com/watch?v=j3oIRIZc2IM": 470155,
+"https://www.youtube.com/watch?v=xRwdiScSweI": 46064,
+"https://www.youtube.com/watch?v=P6CqzmfzTpM": 128269,
+"https://www.youtube.com/watch?v=W7zOvdA7HCI": 37084,
+"https://www.youtube.com/watch?v=WLG7aInsqoY": 346959,
+"https://www.youtube.com/watch?v=gRz_D8c1wfE": 22720,
+"https://www.youtube.com/watch?v=35vLC_CdFgo": 170931,
+"https://www.youtube.com/watch?v=Y5N0zvGgBmo": 66119,
+"https://www.youtube.com/watch?v=hRSevbV1VkE": 124375,
+"https://www.youtube.com/watch?v=arCL6-p9jTc": 305354,
+"https://www.youtube.com/watch?v=DFwAyZQf4q4": 250456,
+"https://www.youtube.com/watch?v=hg9UrFXk1ls": 35912,
+"https://www.youtube.com/watch?v=IASiDqbEbcI": 229060,
+"https://www.youtube.com/watch?v=DvhsVTEjPBk": 322020,
+"https://www.youtube.com/watch?v=qv8YTompB44": 173965
+}
 },
 "klozet su kaçırıyor": {
 "n": 17,
@@ -5605,7 +6502,45 @@
 ]
 ],
 "toplam_g": 5522813,
-"vitra": []
+"vitra": [],
+"vid": [
+"https://www.youtube.com/watch?v=DFwAyZQf4q4",
+"https://www.youtube.com/watch?v=GEqu05Veh3s",
+"https://www.youtube.com/watch?v=P6CqzmfzTpM",
+"https://www.youtube.com/watch?v=R7n1GODYfJU",
+"https://www.youtube.com/watch?v=U3uNRutqttg",
+"https://www.youtube.com/watch?v=W7zOvdA7HCI",
+"https://www.youtube.com/watch?v=Y5N0zvGgBmo",
+"https://www.youtube.com/watch?v=a1i0pneZhdw",
+"https://www.youtube.com/watch?v=aJ0UEM3Z6Ww",
+"https://www.youtube.com/watch?v=beCkNLOJtkw",
+"https://www.youtube.com/watch?v=dFIohbLwE3Q",
+"https://www.youtube.com/watch?v=eLA0UQvn-9U",
+"https://www.youtube.com/watch?v=gRz_D8c1wfE",
+"https://www.youtube.com/watch?v=gZyDQFu01GY",
+"https://www.youtube.com/watch?v=l7b5Eg_of9k",
+"https://www.youtube.com/watch?v=nNa0hTE_qss",
+"https://www.youtube.com/watch?v=v6ja8_j20RA"
+],
+"g": {
+"https://www.youtube.com/watch?v=l7b5Eg_of9k": 453752,
+"https://www.youtube.com/watch?v=gZyDQFu01GY": 2013967,
+"https://www.youtube.com/watch?v=v6ja8_j20RA": 6321,
+"https://www.youtube.com/watch?v=U3uNRutqttg": 1251071,
+"https://www.youtube.com/watch?v=R7n1GODYfJU": 24660,
+"https://www.youtube.com/watch?v=P6CqzmfzTpM": 128284,
+"https://www.youtube.com/watch?v=dFIohbLwE3Q": 2386,
+"https://www.youtube.com/watch?v=W7zOvdA7HCI": 37084,
+"https://www.youtube.com/watch?v=beCkNLOJtkw": 226779,
+"https://www.youtube.com/watch?v=nNa0hTE_qss": 89651,
+"https://www.youtube.com/watch?v=GEqu05Veh3s": 55005,
+"https://www.youtube.com/watch?v=aJ0UEM3Z6Ww": 136812,
+"https://www.youtube.com/watch?v=gRz_D8c1wfE": 22727,
+"https://www.youtube.com/watch?v=DFwAyZQf4q4": 250456,
+"https://www.youtube.com/watch?v=Y5N0zvGgBmo": 66126,
+"https://www.youtube.com/watch?v=a1i0pneZhdw": 447399,
+"https://www.youtube.com/watch?v=eLA0UQvn-9U": 310333
+}
 },
 "klozet tıkanıklığı nasıl açılır": {
 "n": 34,
@@ -5652,7 +6587,79 @@
 ]
 ],
 "toplam_g": 14061532,
-"vitra": []
+"vitra": [],
+"vid": [
+"https://www.youtube.com/shorts/23BXOQxC7IE",
+"https://www.youtube.com/shorts/2B0vzfo1uNw",
+"https://www.youtube.com/shorts/5PnG6uoZBko",
+"https://www.youtube.com/shorts/DXKzyrtdHwU",
+"https://www.youtube.com/shorts/FDD7kKWg6dc",
+"https://www.youtube.com/shorts/IAxv8BygyIQ",
+"https://www.youtube.com/shorts/O2bjYZCzoXs",
+"https://www.youtube.com/shorts/OJW1U8dEsO4",
+"https://www.youtube.com/shorts/QG--hVIXLWY",
+"https://www.youtube.com/shorts/TmTNeDmFK-M",
+"https://www.youtube.com/shorts/_hZVEXKHMD0",
+"https://www.youtube.com/shorts/ezJXcqTeFfA",
+"https://www.youtube.com/shorts/gYTAZm_D-NY",
+"https://www.youtube.com/shorts/g_SuDl5s1N0",
+"https://www.youtube.com/shorts/hO9MVe_svGs",
+"https://www.youtube.com/shorts/ufGnUUHzxGk",
+"https://www.youtube.com/shorts/zp3ymqKAtnA",
+"https://www.youtube.com/watch?v=27SK-a7hcsc",
+"https://www.youtube.com/watch?v=2M5quOaOYNY",
+"https://www.youtube.com/watch?v=33kVYDtdXe8",
+"https://www.youtube.com/watch?v=4nwboIKs_ZU",
+"https://www.youtube.com/watch?v=7KLRwlEK7Q8",
+"https://www.youtube.com/watch?v=GJwvSuILcIo",
+"https://www.youtube.com/watch?v=ImM7s9U7zOU",
+"https://www.youtube.com/watch?v=P5Sz6-9UF1s",
+"https://www.youtube.com/watch?v=SuKS93EJWhQ",
+"https://www.youtube.com/watch?v=VlfBU_okI_w",
+"https://www.youtube.com/watch?v=YnYQxrnIswk",
+"https://www.youtube.com/watch?v=cPvNjmednn0",
+"https://www.youtube.com/watch?v=d5OhKH53ZdI",
+"https://www.youtube.com/watch?v=h9iIzLkY8mE",
+"https://www.youtube.com/watch?v=jWHRtvr-4g8",
+"https://www.youtube.com/watch?v=k9ZyTaA6480",
+"https://www.youtube.com/watch?v=xue_GzR82AM"
+],
+"g": {
+"https://www.youtube.com/watch?v=GJwvSuILcIo": 208097,
+"https://www.youtube.com/watch?v=VlfBU_okI_w": 112861,
+"https://www.youtube.com/watch?v=d5OhKH53ZdI": 1079048,
+"https://www.youtube.com/watch?v=ImM7s9U7zOU": 493728,
+"https://www.youtube.com/watch?v=33kVYDtdXe8": 256044,
+"https://www.youtube.com/watch?v=cPvNjmednn0": 31212,
+"https://www.youtube.com/watch?v=7KLRwlEK7Q8": 143436,
+"https://www.youtube.com/watch?v=xue_GzR82AM": 26855,
+"https://www.youtube.com/watch?v=4nwboIKs_ZU": 18469,
+"https://www.youtube.com/watch?v=k9ZyTaA6480": 109654,
+"https://www.youtube.com/watch?v=2M5quOaOYNY": 4276,
+"https://www.youtube.com/watch?v=YnYQxrnIswk": 72966,
+"https://www.youtube.com/watch?v=jWHRtvr-4g8": 43591,
+"https://www.youtube.com/watch?v=h9iIzLkY8mE": 24891,
+"https://www.youtube.com/shorts/5PnG6uoZBko": 117129,
+"https://www.youtube.com/shorts/IAxv8BygyIQ": 274314,
+"https://www.youtube.com/shorts/ufGnUUHzxGk": 65232,
+"https://www.youtube.com/shorts/O2bjYZCzoXs": 1004377,
+"https://www.youtube.com/shorts/TmTNeDmFK-M": 185315,
+"https://www.youtube.com/shorts/_hZVEXKHMD0": 3713270,
+"https://www.youtube.com/shorts/hO9MVe_svGs": 313066,
+"https://www.youtube.com/shorts/zp3ymqKAtnA": 20231,
+"https://www.youtube.com/shorts/2B0vzfo1uNw": 557228,
+"https://www.youtube.com/shorts/23BXOQxC7IE": 59404,
+"https://www.youtube.com/shorts/QG--hVIXLWY": 4481316,
+"https://www.youtube.com/watch?v=P5Sz6-9UF1s": 5657,
+"https://www.youtube.com/shorts/FDD7kKWg6dc": 149548,
+"https://www.youtube.com/shorts/OJW1U8dEsO4": 34664,
+"https://www.youtube.com/shorts/ezJXcqTeFfA": 169198,
+"https://www.youtube.com/shorts/DXKzyrtdHwU": 160357,
+"https://www.youtube.com/watch?v=SuKS93EJWhQ": 16796,
+"https://www.youtube.com/shorts/g_SuDl5s1N0": 39181,
+"https://www.youtube.com/shorts/gYTAZm_D-NY": 13514,
+"https://www.youtube.com/watch?v=27SK-a7hcsc": 56607
+}
 },
 "banyo yenileme": {
 "n": 19,
@@ -5699,7 +6706,49 @@
 ]
 ],
 "toplam_g": 8667883,
-"vitra": []
+"vitra": [],
+"vid": [
+"https://www.youtube.com/watch?v=4TvUUKm56qk",
+"https://www.youtube.com/watch?v=7kWu0FY4oLw",
+"https://www.youtube.com/watch?v=BZKa50zgHO4",
+"https://www.youtube.com/watch?v=F1xPW7C3dEg",
+"https://www.youtube.com/watch?v=IFi1aK5Rqnk",
+"https://www.youtube.com/watch?v=JUIekc2vpDU",
+"https://www.youtube.com/watch?v=Js7bKwIH8Kw",
+"https://www.youtube.com/watch?v=LbIRKipqe8M",
+"https://www.youtube.com/watch?v=P12kFQDdtFc",
+"https://www.youtube.com/watch?v=UeOSS2CXXeE",
+"https://www.youtube.com/watch?v=XUu4ttSBeVE",
+"https://www.youtube.com/watch?v=eG1ri3AuNEg",
+"https://www.youtube.com/watch?v=i6LUqim0vm8",
+"https://www.youtube.com/watch?v=il5m2-pJTf8",
+"https://www.youtube.com/watch?v=jD5JtA4G-Gk",
+"https://www.youtube.com/watch?v=m1Wb85PMC94",
+"https://www.youtube.com/watch?v=oZjAP4cHxX4",
+"https://www.youtube.com/watch?v=oqZEzAjzkeg",
+"https://www.youtube.com/watch?v=tNvspmwo5wk"
+],
+"g": {
+"https://www.youtube.com/watch?v=UeOSS2CXXeE": 7360,
+"https://www.youtube.com/watch?v=tNvspmwo5wk": 1567374,
+"https://www.youtube.com/watch?v=LbIRKipqe8M": 2552497,
+"https://www.youtube.com/watch?v=oqZEzAjzkeg": 90989,
+"https://www.youtube.com/watch?v=7kWu0FY4oLw": 53118,
+"https://www.youtube.com/watch?v=BZKa50zgHO4": 2303,
+"https://www.youtube.com/watch?v=IFi1aK5Rqnk": 2217,
+"https://www.youtube.com/watch?v=F1xPW7C3dEg": 12347,
+"https://www.youtube.com/watch?v=XUu4ttSBeVE": 75857,
+"https://www.youtube.com/watch?v=jD5JtA4G-Gk": 605,
+"https://www.youtube.com/watch?v=P12kFQDdtFc": 53306,
+"https://www.youtube.com/watch?v=eG1ri3AuNEg": 292876,
+"https://www.youtube.com/watch?v=JUIekc2vpDU": 589711,
+"https://www.youtube.com/watch?v=4TvUUKm56qk": 843846,
+"https://www.youtube.com/watch?v=il5m2-pJTf8": 91870,
+"https://www.youtube.com/watch?v=i6LUqim0vm8": 18763,
+"https://www.youtube.com/watch?v=oZjAP4cHxX4": 84369,
+"https://www.youtube.com/watch?v=m1Wb85PMC94": 4605,
+"https://www.youtube.com/watch?v=Js7bKwIH8Kw": 2323870
+}
 },
 "banyo tadilatı": {
 "n": 19,
@@ -5746,7 +6795,49 @@
 ]
 ],
 "toplam_g": 5893834,
-"vitra": []
+"vitra": [],
+"vid": [
+"https://www.youtube.com/watch?v=3IkNgIxv94U",
+"https://www.youtube.com/watch?v=577mnVVUUOQ",
+"https://www.youtube.com/watch?v=58D6Ecv3x5Q",
+"https://www.youtube.com/watch?v=7QsmLt1SDk0",
+"https://www.youtube.com/watch?v=B9of8szv5pg",
+"https://www.youtube.com/watch?v=BZKa50zgHO4",
+"https://www.youtube.com/watch?v=IFi1aK5Rqnk",
+"https://www.youtube.com/watch?v=JUIekc2vpDU",
+"https://www.youtube.com/watch?v=LbIRKipqe8M",
+"https://www.youtube.com/watch?v=RY_FtDqP4Q4",
+"https://www.youtube.com/watch?v=UeOSS2CXXeE",
+"https://www.youtube.com/watch?v=eG1ri3AuNEg",
+"https://www.youtube.com/watch?v=euHy_NUIpdY",
+"https://www.youtube.com/watch?v=m1Wb85PMC94",
+"https://www.youtube.com/watch?v=oZjAP4cHxX4",
+"https://www.youtube.com/watch?v=oqZEzAjzkeg",
+"https://www.youtube.com/watch?v=rQ2p1DuuRis",
+"https://www.youtube.com/watch?v=tNvspmwo5wk",
+"https://www.youtube.com/watch?v=vHTfTA8UjVw"
+],
+"g": {
+"https://www.youtube.com/watch?v=oZjAP4cHxX4": 84372,
+"https://www.youtube.com/watch?v=IFi1aK5Rqnk": 2217,
+"https://www.youtube.com/watch?v=tNvspmwo5wk": 1567374,
+"https://www.youtube.com/watch?v=BZKa50zgHO4": 2303,
+"https://www.youtube.com/watch?v=rQ2p1DuuRis": 160,
+"https://www.youtube.com/watch?v=m1Wb85PMC94": 4605,
+"https://www.youtube.com/watch?v=UeOSS2CXXeE": 7364,
+"https://www.youtube.com/watch?v=oqZEzAjzkeg": 90989,
+"https://www.youtube.com/watch?v=vHTfTA8UjVw": 2884,
+"https://www.youtube.com/watch?v=LbIRKipqe8M": 2552499,
+"https://www.youtube.com/watch?v=7QsmLt1SDk0": 1303,
+"https://www.youtube.com/watch?v=577mnVVUUOQ": 324819,
+"https://www.youtube.com/watch?v=58D6Ecv3x5Q": 2049,
+"https://www.youtube.com/watch?v=eG1ri3AuNEg": 292876,
+"https://www.youtube.com/watch?v=euHy_NUIpdY": 4398,
+"https://www.youtube.com/watch?v=RY_FtDqP4Q4": 24014,
+"https://www.youtube.com/watch?v=JUIekc2vpDU": 589711,
+"https://www.youtube.com/watch?v=B9of8szv5pg": 2202,
+"https://www.youtube.com/watch?v=3IkNgIxv94U": 337695
+}
 },
 "küçük banyo dekorasyonu": {
 "n": 22,
@@ -5793,7 +6884,51 @@
 ]
 ],
 "toplam_g": 780048,
-"vitra": []
+"vitra": [],
+"vid": [
+"https://www.youtube.com/watch?v=-_Ijw38BH6Y",
+"https://www.youtube.com/watch?v=0ImwBgxS950",
+"https://www.youtube.com/watch?v=2oE_Ez1qMFg",
+"https://www.youtube.com/watch?v=7ear_9hv7Dc",
+"https://www.youtube.com/watch?v=7kWu0FY4oLw",
+"https://www.youtube.com/watch?v=FC27PbkWU_Y",
+"https://www.youtube.com/watch?v=HRomjauwW1E",
+"https://www.youtube.com/watch?v=OsbLjCIRvKY",
+"https://www.youtube.com/watch?v=P12kFQDdtFc",
+"https://www.youtube.com/watch?v=PZRR_3C1prg",
+"https://www.youtube.com/watch?v=Q4HuuCuszXU",
+"https://www.youtube.com/watch?v=W7OgXFhn8q0",
+"https://www.youtube.com/watch?v=XdU5zWy1pdc",
+"https://www.youtube.com/watch?v=_UkbbUh1Kn0",
+"https://www.youtube.com/watch?v=bMaUGRKJwjU",
+"https://www.youtube.com/watch?v=drkhmOCQRP0",
+"https://www.youtube.com/watch?v=iSYNy8jOOfU",
+"https://www.youtube.com/watch?v=oZjAP4cHxX4",
+"https://www.youtube.com/watch?v=pOcwYZtlm4Q",
+"https://www.youtube.com/watch?v=yvJ_3dr8mz4"
+],
+"g": {
+"https://www.youtube.com/watch?v=2oE_Ez1qMFg": 227159,
+"https://www.youtube.com/watch?v=7ear_9hv7Dc": 4378,
+"https://www.youtube.com/watch?v=pOcwYZtlm4Q": 30621,
+"https://www.youtube.com/watch?v=OsbLjCIRvKY": 7774,
+"https://www.youtube.com/watch?v=7kWu0FY4oLw": 53117,
+"https://www.youtube.com/watch?v=FC27PbkWU_Y": 92345,
+"https://www.youtube.com/watch?v=iSYNy8jOOfU": 903,
+"https://www.youtube.com/watch?v=oZjAP4cHxX4": 84369,
+"https://www.youtube.com/watch?v=Q4HuuCuszXU": 19486,
+"https://www.youtube.com/watch?v=P12kFQDdtFc": 53306,
+"https://www.youtube.com/watch?v=W7OgXFhn8q0": 22517,
+"https://www.youtube.com/watch?v=0ImwBgxS950": 78259,
+"https://www.youtube.com/watch?v=yvJ_3dr8mz4": 2428,
+"https://www.youtube.com/watch?v=XdU5zWy1pdc": 2090,
+"https://www.youtube.com/watch?v=_UkbbUh1Kn0": 1342,
+"https://www.youtube.com/watch?v=bMaUGRKJwjU": 3571,
+"https://www.youtube.com/watch?v=-_Ijw38BH6Y": 26992,
+"https://www.youtube.com/watch?v=PZRR_3C1prg": 13122,
+"https://www.youtube.com/watch?v=drkhmOCQRP0": 24626,
+"https://www.youtube.com/watch?v=HRomjauwW1E": 7784
+}
 },
 "akıllı klozet inceleme": {
 "n": 19,
@@ -5843,7 +6978,49 @@
 "vitra": [
 17,
 19
-]
+],
+"vid": [
+"https://www.youtube.com/watch?v=27QkJwwGrYg",
+"https://www.youtube.com/watch?v=3vmm33hKJWE",
+"https://www.youtube.com/watch?v=8JFPjgpSWTI",
+"https://www.youtube.com/watch?v=8g49pRgbpaw",
+"https://www.youtube.com/watch?v=AO8OvQrHW80",
+"https://www.youtube.com/watch?v=De4UqrG5ZEs",
+"https://www.youtube.com/watch?v=FTsmxbADIvE",
+"https://www.youtube.com/watch?v=MZi5rq30FHQ",
+"https://www.youtube.com/watch?v=M_jVZSA91Cw",
+"https://www.youtube.com/watch?v=SU2lf1bxSm4",
+"https://www.youtube.com/watch?v=_ieTctiLfuA",
+"https://www.youtube.com/watch?v=aGCjg7csRzY",
+"https://www.youtube.com/watch?v=elB7K-elCgU",
+"https://www.youtube.com/watch?v=epyefABb_Yk",
+"https://www.youtube.com/watch?v=hRWM4krO9_8",
+"https://www.youtube.com/watch?v=t5oUkEQrxpU",
+"https://www.youtube.com/watch?v=uCtNA3o5Of0",
+"https://www.youtube.com/watch?v=xyXsK9f780g",
+"https://www.youtube.com/watch?v=zOAAB0056x8"
+],
+"g": {
+"https://www.youtube.com/watch?v=epyefABb_Yk": 143951,
+"https://www.youtube.com/watch?v=8g49pRgbpaw": 316,
+"https://www.youtube.com/watch?v=M_jVZSA91Cw": 55468,
+"https://www.youtube.com/watch?v=zOAAB0056x8": 1001434,
+"https://www.youtube.com/watch?v=elB7K-elCgU": 120,
+"https://www.youtube.com/watch?v=8JFPjgpSWTI": 30515,
+"https://www.youtube.com/watch?v=SU2lf1bxSm4": 209420,
+"https://www.youtube.com/watch?v=27QkJwwGrYg": 1659,
+"https://www.youtube.com/watch?v=AO8OvQrHW80": 2110,
+"https://www.youtube.com/watch?v=hRWM4krO9_8": 6662,
+"https://www.youtube.com/watch?v=FTsmxbADIvE": 135461,
+"https://www.youtube.com/watch?v=t5oUkEQrxpU": 11274,
+"https://www.youtube.com/watch?v=aGCjg7csRzY": 873,
+"https://www.youtube.com/watch?v=_ieTctiLfuA": 270,
+"https://www.youtube.com/watch?v=MZi5rq30FHQ": 1114,
+"https://www.youtube.com/watch?v=3vmm33hKJWE": 341,
+"https://www.youtube.com/watch?v=uCtNA3o5Of0": 5611,
+"https://www.youtube.com/watch?v=xyXsK9f780g": 1286,
+"https://www.youtube.com/watch?v=De4UqrG5ZEs": 2975901
+}
 },
 "en iyi klozet markası": {
 "n": 37,
@@ -5893,7 +7070,85 @@
 "vitra": [
 1,
 3
-]
+],
+"vid": [
+"https://www.youtube.com/shorts/-3JLF23IYeg",
+"https://www.youtube.com/shorts/4BfNDemoqno",
+"https://www.youtube.com/shorts/7_rOlZ_rIGs",
+"https://www.youtube.com/shorts/BfM6Kbl6nvE",
+"https://www.youtube.com/shorts/EKu3Quz7ACU",
+"https://www.youtube.com/shorts/Giav2uaoc4U",
+"https://www.youtube.com/shorts/Hqe6uDM_Hvk",
+"https://www.youtube.com/shorts/O9dV81DXgfI",
+"https://www.youtube.com/shorts/RtYcbm7U7mM",
+"https://www.youtube.com/shorts/VpXkvLCljpE",
+"https://www.youtube.com/shorts/WOIzThLnm8c",
+"https://www.youtube.com/shorts/ZZu_t7CWCqQ",
+"https://www.youtube.com/shorts/aqp1oyq4DtU",
+"https://www.youtube.com/shorts/qVM3HDAJ3Ok",
+"https://www.youtube.com/shorts/s5ltc9SpGmA",
+"https://www.youtube.com/shorts/seFvRJFFDs4",
+"https://www.youtube.com/shorts/uD-z7v1FEDo",
+"https://www.youtube.com/shorts/zXW_T8vlu0Y",
+"https://www.youtube.com/watch?v=-aOZH35q-xA",
+"https://www.youtube.com/watch?v=-cd69ggAPzQ",
+"https://www.youtube.com/watch?v=4pnaPqsEcDs",
+"https://www.youtube.com/watch?v=EMsR4CdEmrA",
+"https://www.youtube.com/watch?v=FTsmxbADIvE",
+"https://www.youtube.com/watch?v=HZh8TbkYQKE",
+"https://www.youtube.com/watch?v=LpNdhewvDVY",
+"https://www.youtube.com/watch?v=Ohlco7_7ji4",
+"https://www.youtube.com/watch?v=Ovl4WfAU0FY",
+"https://www.youtube.com/watch?v=QWkHJzM5sQs&t=167s",
+"https://www.youtube.com/watch?v=Z6Ffss_gYo4",
+"https://www.youtube.com/watch?v=c4FWwzQonpc",
+"https://www.youtube.com/watch?v=eeA1j43o5cw",
+"https://www.youtube.com/watch?v=epyefABb_Yk",
+"https://www.youtube.com/watch?v=gQaroTxpmK4",
+"https://www.youtube.com/watch?v=li3YDN3a6XA",
+"https://www.youtube.com/watch?v=ue2QB8YjcA4",
+"https://www.youtube.com/watch?v=y3jDJXb8Hrs",
+"https://www.youtube.com/watch?v=zI1_r5ZjMAY"
+],
+"g": {
+"https://www.youtube.com/watch?v=zI1_r5ZjMAY": 942679,
+"https://www.youtube.com/watch?v=4pnaPqsEcDs": 20623,
+"https://www.youtube.com/watch?v=-cd69ggAPzQ": 344412,
+"https://www.youtube.com/watch?v=EMsR4CdEmrA": 31039,
+"https://www.youtube.com/watch?v=Ovl4WfAU0FY": 12918,
+"https://www.youtube.com/watch?v=eeA1j43o5cw": 47230,
+"https://www.youtube.com/watch?v=FTsmxbADIvE": 135461,
+"https://www.youtube.com/watch?v=HZh8TbkYQKE": 1420,
+"https://www.youtube.com/watch?v=y3jDJXb8Hrs": 7496,
+"https://www.youtube.com/watch?v=Z6Ffss_gYo4": 14116,
+"https://www.youtube.com/watch?v=c4FWwzQonpc": 11138,
+"https://www.youtube.com/watch?v=Ohlco7_7ji4": 23221,
+"https://www.youtube.com/watch?v=gQaroTxpmK4": 27236,
+"https://www.youtube.com/watch?v=li3YDN3a6XA": 47236,
+"https://www.youtube.com/watch?v=epyefABb_Yk": 143951,
+"https://www.youtube.com/watch?v=LpNdhewvDVY": 0,
+"https://www.youtube.com/watch?v=QWkHJzM5sQs&t=167s": 1,
+"https://www.youtube.com/shorts/qVM3HDAJ3Ok": 10598,
+"https://www.youtube.com/shorts/uD-z7v1FEDo": 4905,
+"https://www.youtube.com/shorts/Hqe6uDM_Hvk": 8004934,
+"https://www.youtube.com/shorts/BfM6Kbl6nvE": 112857,
+"https://www.youtube.com/watch?v=-aOZH35q-xA": 601643,
+"https://www.youtube.com/shorts/-3JLF23IYeg": 1660,
+"https://www.youtube.com/shorts/O9dV81DXgfI": 16107,
+"https://www.youtube.com/shorts/aqp1oyq4DtU": 115849,
+"https://www.youtube.com/shorts/s5ltc9SpGmA": 208545,
+"https://www.youtube.com/shorts/seFvRJFFDs4": 406537,
+"https://www.youtube.com/shorts/RtYcbm7U7mM": 825753,
+"https://www.youtube.com/shorts/4BfNDemoqno": 1317959,
+"https://www.youtube.com/shorts/7_rOlZ_rIGs": 224318,
+"https://www.youtube.com/shorts/EKu3Quz7ACU": 102883,
+"https://www.youtube.com/shorts/VpXkvLCljpE": 2634,
+"https://www.youtube.com/watch?v=ue2QB8YjcA4": 74010,
+"https://www.youtube.com/shorts/WOIzThLnm8c": 1914,
+"https://www.youtube.com/shorts/Giav2uaoc4U": 193944,
+"https://www.youtube.com/shorts/ZZu_t7CWCqQ": 128227,
+"https://www.youtube.com/shorts/zXW_T8vlu0Y": 23580
+}
 },
 "banyo dolabı tavsiye": {
 "n": 26,
@@ -5942,7 +7197,63 @@
 "toplam_g": 1052699,
 "vitra": [
 10
-]
+],
+"vid": [
+"https://www.youtube.com/watch?v=-oW4SaQVbAA",
+"https://www.youtube.com/watch?v=0zXRfNzo4r0",
+"https://www.youtube.com/watch?v=3IqgTYjK5FU",
+"https://www.youtube.com/watch?v=54esDet6t7M",
+"https://www.youtube.com/watch?v=88BcbwW2duo",
+"https://www.youtube.com/watch?v=AZLZxlR39YA",
+"https://www.youtube.com/watch?v=BlA2TRg-Wss",
+"https://www.youtube.com/watch?v=GuX7b--XdDA",
+"https://www.youtube.com/watch?v=JsaXVG1DpXc",
+"https://www.youtube.com/watch?v=M5LelZ-l1NU",
+"https://www.youtube.com/watch?v=QVbAQYEIvTk",
+"https://www.youtube.com/watch?v=SUH-ZYPsC8U",
+"https://www.youtube.com/watch?v=X0D5Qma2qck",
+"https://www.youtube.com/watch?v=Y26wINCyxJs",
+"https://www.youtube.com/watch?v=ZMnaK51l6cI",
+"https://www.youtube.com/watch?v=b0w9MjCEDpk",
+"https://www.youtube.com/watch?v=bABv-O7zkY8",
+"https://www.youtube.com/watch?v=bDssOfLlIu4",
+"https://www.youtube.com/watch?v=ebfTzhqfd04",
+"https://www.youtube.com/watch?v=hjH3N820N8Q",
+"https://www.youtube.com/watch?v=iYM2dj8XMeE",
+"https://www.youtube.com/watch?v=p9qHHALHnXI",
+"https://www.youtube.com/watch?v=sNZHX9VSDS4",
+"https://www.youtube.com/watch?v=tCOwPeRLx6Y",
+"https://www.youtube.com/watch?v=vYiC1YQuAOQ",
+"https://www.youtube.com/watch?v=yVIzOsI0bwI"
+],
+"g": {
+"https://www.youtube.com/watch?v=54esDet6t7M": 86705,
+"https://www.youtube.com/watch?v=bDssOfLlIu4": 301,
+"https://www.youtube.com/watch?v=iYM2dj8XMeE": 8549,
+"https://www.youtube.com/watch?v=-oW4SaQVbAA": 28858,
+"https://www.youtube.com/watch?v=SUH-ZYPsC8U": 144,
+"https://www.youtube.com/watch?v=yVIzOsI0bwI": 4222,
+"https://www.youtube.com/watch?v=GuX7b--XdDA": 32244,
+"https://www.youtube.com/watch?v=bABv-O7zkY8": 14564,
+"https://www.youtube.com/watch?v=88BcbwW2duo": 82587,
+"https://www.youtube.com/watch?v=b0w9MjCEDpk": 258468,
+"https://www.youtube.com/watch?v=QVbAQYEIvTk": 19412,
+"https://www.youtube.com/watch?v=tCOwPeRLx6Y": 14974,
+"https://www.youtube.com/watch?v=Y26wINCyxJs": 43949,
+"https://www.youtube.com/watch?v=ZMnaK51l6cI": 5830,
+"https://www.youtube.com/watch?v=sNZHX9VSDS4": 30608,
+"https://www.youtube.com/watch?v=M5LelZ-l1NU": 16740,
+"https://www.youtube.com/watch?v=hjH3N820N8Q": 3502,
+"https://www.youtube.com/watch?v=p9qHHALHnXI": 1,
+"https://www.youtube.com/watch?v=ebfTzhqfd04": 19796,
+"https://www.youtube.com/watch?v=vYiC1YQuAOQ": 35183,
+"https://www.youtube.com/watch?v=AZLZxlR39YA": 11158,
+"https://www.youtube.com/watch?v=BlA2TRg-Wss": 273773,
+"https://www.youtube.com/watch?v=0zXRfNzo4r0": 27697,
+"https://www.youtube.com/watch?v=X0D5Qma2qck": 14179,
+"https://www.youtube.com/watch?v=3IqgTYjK5FU": 4186,
+"https://www.youtube.com/watch?v=JsaXVG1DpXc": 15069
+}
 },
 "banyo dolabı inceleme": {
 "n": 15,
@@ -5991,7 +7302,41 @@
 "toplam_g": 659869,
 "vitra": [
 10
-]
+],
+"vid": [
+"https://www.youtube.com/watch?v=88BcbwW2duo",
+"https://www.youtube.com/watch?v=GuX7b--XdDA",
+"https://www.youtube.com/watch?v=QVbAQYEIvTk",
+"https://www.youtube.com/watch?v=R8zBn3xul2M",
+"https://www.youtube.com/watch?v=U3WUqL2Cluw",
+"https://www.youtube.com/watch?v=Vz9x2Uxy0pE",
+"https://www.youtube.com/watch?v=Y26wINCyxJs",
+"https://www.youtube.com/watch?v=b0w9MjCEDpk",
+"https://www.youtube.com/watch?v=bABv-O7zkY8",
+"https://www.youtube.com/watch?v=bDssOfLlIu4",
+"https://www.youtube.com/watch?v=eJfbgbwquZo",
+"https://www.youtube.com/watch?v=iYM2dj8XMeE",
+"https://www.youtube.com/watch?v=nB_7Mu0nszs",
+"https://www.youtube.com/watch?v=tCOwPeRLx6Y",
+"https://www.youtube.com/watch?v=vYiC1YQuAOQ"
+],
+"g": {
+"https://www.youtube.com/watch?v=bDssOfLlIu4": 301,
+"https://www.youtube.com/watch?v=R8zBn3xul2M": 50,
+"https://www.youtube.com/watch?v=GuX7b--XdDA": 32243,
+"https://www.youtube.com/watch?v=bABv-O7zkY8": 14564,
+"https://www.youtube.com/watch?v=eJfbgbwquZo": 91513,
+"https://www.youtube.com/watch?v=U3WUqL2Cluw": 32830,
+"https://www.youtube.com/watch?v=vYiC1YQuAOQ": 35181,
+"https://www.youtube.com/watch?v=iYM2dj8XMeE": 8549,
+"https://www.youtube.com/watch?v=88BcbwW2duo": 82588,
+"https://www.youtube.com/watch?v=b0w9MjCEDpk": 258468,
+"https://www.youtube.com/watch?v=nB_7Mu0nszs": 13530,
+"https://www.youtube.com/watch?v=tCOwPeRLx6Y": 14974,
+"https://www.youtube.com/watch?v=Y26wINCyxJs": 43949,
+"https://www.youtube.com/watch?v=QVbAQYEIvTk": 19412,
+"https://www.youtube.com/watch?v=Vz9x2Uxy0pE": 11717
+}
 },
 "klozet alırken nelere dikkat": {
 "n": 20,
@@ -6039,76 +7384,99 @@
 ],
 "toplam_g": 3626839,
 "vitra": [
-6,
-8
-]
+6
+],
+"vid": [
+"https://www.youtube.com/shorts/0LhVhCrfPLg",
+"https://www.youtube.com/shorts/4BfNDemoqno",
+"https://www.youtube.com/shorts/4pTXV_8aRhY",
+"https://www.youtube.com/shorts/CyUVK373Oys",
+"https://www.youtube.com/shorts/HrWUENJkbFk",
+"https://www.youtube.com/shorts/KBb3JMNqL4g",
+"https://www.youtube.com/shorts/mlfejEZMWZs",
+"https://www.youtube.com/shorts/z4Ck5456HQ8",
+"https://www.youtube.com/watch?v=-aOZH35q-xA",
+"https://www.youtube.com/watch?v=-cd69ggAPzQ",
+"https://www.youtube.com/watch?v=4pnaPqsEcDs",
+"https://www.youtube.com/watch?v=CwUrMCzqVFM",
+"https://www.youtube.com/watch?v=EMsR4CdEmrA",
+"https://www.youtube.com/watch?v=FrUnkhe6v4s",
+"https://www.youtube.com/watch?v=QKFjc9iZtNU",
+"https://www.youtube.com/watch?v=XZizxu1rKfA&t=11s",
+"https://www.youtube.com/watch?v=Z6Ffss_gYo4",
+"https://www.youtube.com/watch?v=gQaroTxpmK4",
+"https://www.youtube.com/watch?v=jNI-sHbInAw",
+"https://www.youtube.com/watch?v=kwnS-10eseA"
+],
+"g": {
+"https://www.youtube.com/watch?v=4pnaPqsEcDs": 20623,
+"https://www.youtube.com/shorts/z4Ck5456HQ8": 21331,
+"https://www.youtube.com/watch?v=Z6Ffss_gYo4": 14116,
+"https://www.youtube.com/watch?v=kwnS-10eseA": 66435,
+"https://www.youtube.com/watch?v=CwUrMCzqVFM": 213078,
+"https://www.youtube.com/watch?v=-cd69ggAPzQ": 344412,
+"https://www.youtube.com/shorts/KBb3JMNqL4g": 26241,
+"https://www.youtube.com/shorts/mlfejEZMWZs": 28306,
+"https://www.youtube.com/shorts/CyUVK373Oys": 113979,
+"https://www.youtube.com/shorts/HrWUENJkbFk": 372217,
+"https://www.youtube.com/shorts/4BfNDemoqno": 1317959,
+"https://www.youtube.com/watch?v=FrUnkhe6v4s": 2193,
+"https://www.youtube.com/shorts/4pTXV_8aRhY": 355513,
+"https://www.youtube.com/watch?v=XZizxu1rKfA&t=11s": 48326,
+"https://www.youtube.com/shorts/0LhVhCrfPLg": 4882,
+"https://www.youtube.com/watch?v=gQaroTxpmK4": 27237,
+"https://www.youtube.com/watch?v=QKFjc9iZtNU": 13043,
+"https://www.youtube.com/watch?v=-aOZH35q-xA": 601669,
+"https://www.youtube.com/watch?v=jNI-sHbInAw": 4240,
+"https://www.youtube.com/watch?v=EMsR4CdEmrA": 31039
+}
 }
 },
 "yt_kanal": [
 [
 "VitrA Türkiye",
-71,
-25352532
-],
-[
-"Macit Tesisat",
-28,
-5979981
+44,
+12893205
 ],
 [
 "Tesisat Servisim",
-27,
-5206279
+19,
+2827537
 ],
 [
 "Tesisatçı Genç",
-23,
-4647709
+16,
+2965426
+],
+[
+"Macit Tesisat",
+15,
+2309468
 ],
 [
 "Mini Tesisat",
-19,
-697871
+10,
+276619
 ],
 [
 "VitrA Bathrooms",
-12,
-143318
-],
-[
-"Kılıç Tadilat",
-11,
-190168
+9,
+64945
 ],
 [
 "Banyomoda",
-10,
-583537
+8,
+302637
+],
+[
+"Kılıç Tadilat",
+7,
+167491
 ],
 [
 "Yaşar Alanoğlu",
-10,
-4551438
-],
-[
-"şehmus kalkan",
-8,
-9695347
-],
-[
-"YapıStil",
 6,
-572785
-],
-[
-"NASIL YAPILIR",
-6,
-773516
-],
-[
-"Sıhhi Tesisat Ustaları",
-6,
-390840
+2984742
 ],
 [
 "Can Alt Yapı Tesisat Hizmetleri",
@@ -6116,9 +7484,29 @@
 5146134
 ],
 [
-"Dekordelisi",
-6,
-21853
+"şehmus kalkan",
+5,
+5030697
+],
+[
+"Dusaks Duşakabin",
+5,
+315426
+],
+[
+"Sıhhi Tesisat Ustaları",
+4,
+250166
+],
+[
+"Creavit",
+4,
+290233
+],
+[
+"Bıdık Amca",
+4,
+454970
 ]
 ],
 "kart": {

@@ -8,7 +8,9 @@ import tema
 KTT = KT["tema"]
 GR_EN = {"SSG": "SSG", "BM": "BM", "Armatür-Duş": "Taps and showers", "Yıkanma": "Bathing areas", "Karo": "Tiles", "Aksesuar": "Accessories", "Bitişik": "Adjacent"}
 _EK_TEMA = {"havlupan"}   # bitisik grupta olup katalogda urunu bulunan tema
+import tema as _tema
 def _durum(tk, v):
+    if tk in _tema.META: return _tema.META[tk]["durum"]   # Bolum 12 ile ayni durum degerlendirmesi
     if tk == "hela": return "Kısmi"   # sitede 1 urun; urun haritasinda yok
     u_ = v["urun"] or 0
     return "Var" if u_ >= 20 else ("Kısmi" if u_ >= 1 else "Yok")
@@ -38,7 +40,7 @@ tbl = tablo([th("Grup", "Group", "Tema grubu.", "Theme group."),
              th("3 yıllık değişim", "3-year change", "Eyl 22 - Ağu 23 ile Eyl 25 - Ağu 26 ortalamaları arasındaki değişim.", "Change between the Sep 22 - Aug 23 and Sep 25 - Aug 26 averages.", True),
              th("VitrA ürün", "VitrA products", "vitra.com.tr ürün sitemap'inde temaya eşlenen ürün adresi sayısı; renk ve ölçü varyantları ayrı sayılır.", "Number of product URLs in the vitra.com.tr product sitemap mapped to the theme; colour and size variants counted separately.", True),
              th("Model", "Models", "Renk ekleri ayıklanmış tekil ürün adı sayısı (yaklaşık).", "Approximate number of unique product names after removing colour suffixes.", True),
-             th("Durum", "Status", "VitrA kataloğunda temanın karşılığı: Var (20 ve üzeri ürün adresi), Kısmi (1-19; hela taşında sitede 1 ürün), Yok (ürün yok).", "Coverage of the theme in the VitrA catalogue: Available (20 or more product URLs), Partial (1-19; one product on the site for squat toilets), Not available (no product)."),
+             th("Durum", "Status", "VitrA kataloğunda temanın karşılığı: Var (temada yeterli ürün derinliği), Kısmi (ürün var ama derinlik ya da kategori sayfası sınırlı), Yok (ürün yok); Yeni Kategori bölümüyle aynı değerlendirmedir.", "Coverage of the theme in the VitrA catalogue: Available (sufficient product depth), Partial (products exist but depth or a category page is limited), Not available (no products); the same assessment as the New Categories section."),
              th("Not", "Note", "Katalog ve pazaryeri gözlemi.", "Catalogue and marketplace observation.")], rows, "uzun")
 TY_EN = {"banyo dolabı": "bathroom cabinet", "suya dayanıklı banyo dolabı": "water-resistant bathroom cabinet", "çamaşır makinesi dolabı": "washing machine cabinet", "ledli banyo aynası": "LED bathroom mirror",
          "granit evye": "granite sink", "arıtmalı batarya": "purifier tap", "havlupan": "towel radiator", "klozet taharet aparatı": "WC bidet attachment", "çocuk klozet adaptörü": "child toilet seat adapter",

@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """Bolum: Rakip gorunurlugu ve kanal olcegi (Ahrefs)."""
 from ortak import *
+import json, os
 from rapor_parca1 import T
 import veri
 OR = veri.AHREFS["ahrefs_organik_rakipler_tr"]; BT = veri.AHREFS["ahrefs_batch_tr"]
@@ -9,7 +10,7 @@ TIP = {"koctas.com.tr": ("Yapı market", "DIY retailer"), "kale.com.tr": ("Banyo
        "banyomoda.com": ("Pure player", "Pure player"), "banyomoda.com.tr": ("Pure player", "Pure player"), "ngkutahyaseramik.com.tr": ("Seramik markası", "Tile brand"), "balneom.com": ("Pure player", "Pure player"), "yapimanya.com": ("Pure player", "Pure player"), "artema.com.tr": ("Grup markası", "Group brand"),
        "banyoline.com": ("Pure player", "Pure player"), "roca.com.tr": ("Banyo markası", "Bathroom brand"), "egeseramik.com": ("Seramik markası", "Tile brand"), "turkuazseramik.com.tr": ("Seramik markası", "Tile brand"), "vitra.net.tr": ("Grup sitesi", "Group site"),
        "vitra.com.tr": ("Banyo markası (VitrA)", "Bathroom brand (VitrA)"), "tekzen.com.tr": ("Yapı market", "DIY retailer"), "ikea.com.tr": ("Mobilya perakendecisi", "Furniture retailer"), "evidea.com": ("Pure player", "Pure player"), "vivense.com": ("Pure player", "Pure player"),
-       "serel.com.tr": ("Banyo markası", "Bathroom brand"), "ecebanyo.com": ("Banyo markası", "Bathroom brand"), "idealstandard.com.tr": ("Banyo markası", "Bathroom brand"), "trendyol.com": ("Pazaryeri", "Marketplace"), "hepsiburada.com": ("Pazaryeri", "Marketplace"),
+       "serel.com.tr": ("Banyo markası", "Bathroom brand"), "ecebanyo.com": ("Banyo markası", "Bathroom brand"), "serelseramik.com.tr": ("Banyo markası", "Bathroom brand"), "eca.com.tr": ("Banyo ve ısıtma markası", "Bathroom and heating brand"), "idealstandard.com.tr": ("Banyo markası", "Bathroom brand"), "trendyol.com": ("Pazaryeri", "Marketplace"), "hepsiburada.com": ("Pazaryeri", "Marketplace"),
        "n11.com": ("Pazaryeri", "Marketplace"), "amazon.com.tr": ("Pazaryeri", "Marketplace"), "akakce.com": ("Fiyat karşılaştırma", "Price comparison"), "cimri.com": ("Fiyat karşılaştırma", "Price comparison"), "duravit.com.tr": ("Banyo markası", "Bathroom brand"),
        "geberit.com.tr": ("Banyo markası", "Bathroom brand"), "bien.com.tr": ("Seramik markası", "Tile brand")}
 def tip(d): return x(*TIP.get(d, ("Diğer", "Other")))
@@ -27,11 +28,17 @@ tbl = tablo([th("Alan adı", "Domain", "vitra.com.tr ile aynı kelimelerde sıra
              th("DR", "DR", "Domain Rating, 0-100.", "Domain Rating, 0-100.", True)], rows, "uzun")
 SIRA = ["trendyol.com", "hepsiburada.com", "akakce.com", "amazon.com.tr", "ikea.com.tr", "koctas.com.tr", "n11.com", "vivense.com", "vitra.com.tr", "bauhaus.com.tr", "kale.com.tr", "evidea.com", "creavit.com.tr", "tekzen.com.tr", "artema.com.tr", "roca.com.tr", "duravit.com.tr", "geberit.com.tr", "bien.com.tr", "serel.com.tr", "ecebanyo.com", "idealstandard.com.tr"]
 bt = {b[0]: b for b in BT}
-rows2 = []
-for d in sorted([d_ for d_ in SIRA if d_ in bt], key=lambda d_: -bt[d_][4]):
-    if d not in bt: continue
+# serel.com.tr ve ecebanyo.com markalarin gercek alan adlari degil; serelseramik.com.tr ve eca.com.tr ayri Batch sonucundan eklenir
+_ST = json.load(open(os.path.join(veri.V, "ham", "derin", "ahrefs_markalar", "site_toplam.json"), encoding="utf-8"))["siteler"]
+_ST = dict(_ST) if isinstance(_ST, list) else _ST
+_r2 = []
+for d in [d_ for d_ in SIRA if d_ in bt and d_ not in ("serel.com.tr", "ecebanyo.com")]:
     b = bt[d]
-    rows2.append([u("https://www." + d, d), tip(d), cell(b[1]), cellk(b[2]), cellk(b[3]), cellk(b[4]), cellk(b[5]), cellk(b[6])])
+    _r2.append((b[4], [u("https://www." + d, d), tip(d), cell(b[1]), cellk(b[2]), cellk(b[3]), cellk(b[4]), cellk(b[5]), cellk(b[6])]))
+for d in ("serelseramik.com.tr", "eca.com.tr"):
+    v = _ST.get(d)
+    if v: _r2.append((v["org_traffic"], [u("https://www." + d, d), tip(d), cell(v["dr"]), cellk(v["org_keywords"]), n("-"), cellk(v["org_traffic"]), n("-"), n("-")]))
+rows2 = [r_ for _, r_ in sorted(_r2, key=lambda t_: -t_[0])]
 tbl2 = tablo([th("Alan adı", "Domain", "Ahrefs Batch Analysis, Türkiye, alt alan adları dahil.", "Ahrefs Batch Analysis, Turkey, subdomains included."),
               th("Tip", "Type", "Sitenin iş modeli.", "The site's business model."),
               th("DR", "DR", "Domain Rating.", "Domain Rating.", True),
@@ -41,7 +48,8 @@ tbl2 = tablo([th("Alan adı", "Domain", "Ahrefs Batch Analysis, Türkiye, alt al
               th("Paid trafik", "Paid traffic", "Tahmini aylık Google Ads ziyareti.", "Estimated monthly Google Ads visits.", True),
               th("Paid kelime", "Paid keywords", "Reklam verilen kelime sayısı.", "Number of advertised keywords.", True)], rows2, "uzun")
 az = max(b[4] for b in BT)
-marka = [b for b in BT if b[4] > 0 and b[0] in ("vitra.com.tr", "kale.com.tr", "creavit.com.tr", "artema.com.tr", "roca.com.tr", "duravit.com.tr", "geberit.com.tr", "serel.com.tr", "ecebanyo.com", "idealstandard.com.tr", "bien.com.tr")]
+marka = [b for b in BT if b[4] > 0 and b[0] in ("vitra.com.tr", "kale.com.tr", "creavit.com.tr", "artema.com.tr", "roca.com.tr", "duravit.com.tr", "geberit.com.tr", "idealstandard.com.tr", "bien.com.tr")]
+if _ST.get("serelseramik.com.tr"): marka = marka + [["serelseramik.com.tr", _ST["serelseramik.com.tr"]["dr"], 0, 0, _ST["serelseramik.com.tr"]["org_traffic"]]]   # E.C.A. trafiginin buyuk kismi kombi ve klima oldugu icin grafikte yer almaz
 RANK = rank_list([(u("https://www." + b[0], b[0]), b[4]) for b in sorted(marka, key=lambda b: -b[4])], max(b[4] for b in marka), you=lambda e: "vitra.com.tr" in e)
 koc = bt["koctas.com.tr"]; ik = bt["ikea.com.tr"]; bh = bt["bauhaus.com.tr"]; ty = bt["trendyol.com"]; hb = bt["hepsiburada.com"]
 _pp = [r_ for r_ in OR[:15] if TIP.get(r_[0], ("",))[0] == "Pure player"]

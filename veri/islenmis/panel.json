@@ -3,7 +3,7 @@
   {
    "q": "2025Q4",
    "net": 1737,
-   "model": 383,
+   "model": 348,
    "artema_pay": 35.80886586067933,
    "ort_fiyat": 3538.9407023603917,
    "indirim": 15.524512603416984,
@@ -14,7 +14,7 @@
   {
    "q": "2026Q1",
    "net": 1672,
-   "model": 392,
+   "model": 350,
    "artema_pay": 18.361244019138756,
    "ort_fiyat": 3321.5227272727275,
    "indirim": 14.822214815705095,
@@ -25,7 +25,7 @@
   {
    "q": "2026Q2",
    "net": 5878,
-   "model": 379,
+   "model": 349,
    "artema_pay": 51.1058183055461,
    "ort_fiyat": 1782.1070091867982,
    "indirim": 16.614179471460815,
@@ -36,7 +36,7 @@
   {
    "q": "2026Q3",
    "net": 7383,
-   "model": 370,
+   "model": 337,
    "artema_pay": 42.47595828254097,
    "ort_fiyat": 1687.5599349857782,
    "indirim": 20.314048367916826,
@@ -845,8 +845,8 @@
   }
  ],
  "stok": {
-  "q3_urun": 370,
-  "stok0": 86,
+  "q3_urun": 337,
+  "stok0": 78,
   "adet_pay": 17.282947311391034,
   "ciro_pay": 26.738356346346553,
   "ornek": [
@@ -892,13 +892,26 @@
   "Müşterinin İptal Ettiği": 1135,
   "Trendyol'un İptal Ettiği": 526,
   "Benim İptal Ettiğim": 10,
+  "Modelini Beğenmedim": 0,
   "Kusurlu Ürün Gönderildi": 141,
   "Yanlış Ürün Gönderildi": 31,
   "Vazgeçtim": 121,
   "Diğer": 221,
   "Bedeni/Ebatı Küçük Geldi": 152,
-  "Bedeni/Ebatı Büyük Geldi": 185
+  "Bedeni/Ebatı Büyük Geldi": 185,
+  "Ürün ile Görsel & İçerik Bilgisi Uyuşmuyor": 0,
+  "Yanlış Sipariş Verdim": 234,
+  "Kalitesini Beğenmedim": 0,
+  "Teslim Edilemeyen Gönderi": 111,
+  "Gönderi Sevk Edilemedi": 0,
+  "Tazmin": 19,
+  "Taşıma Sürecinde İade Edildi": 4,
+  "Oluşmayan Gönderi Kodu": 0,
+  "Tedarik Edilemedi": 2,
+  "Kargo Teslimatı Gecikmesi": 0,
+  "Müşteri Onayı Tamamlanmayan Gönderi": 0
  },
+ "iade_adedi": 1221,
  "profil": [
   {
    "q": "2025Q4",
@@ -1427,7 +1440,7 @@
    "gor_pay": 0.0,
    "gor_top": 47559,
    "sat_med": 351.97,
-   "vit_med": 422.99,
+   "vit_med": 595.95,
    "lider": "KUSTAR",
    "lider_n": 9
   },
@@ -1472,7 +1485,7 @@
    "gor_pay": 7.4783052577845845,
    "gor_top": 11754,
    "sat_med": 6532.145,
-   "vit_med": 14734.5,
+   "vit_med": 15348.21,
    "lider": "Creavit",
    "lider_n": 8
   },
@@ -1487,7 +1500,7 @@
    "gor_pay": 11.444708680142687,
    "gor_top": 16820,
    "sat_med": 545.68,
-   "vit_med": 1748.625,
+   "vit_med": 2024.44,
    "lider": "NKP",
    "lider_n": 6
   },
@@ -1517,7 +1530,7 @@
    "gor_pay": 31.687959736740222,
    "gor_top": 5166,
    "sat_med": 193.05,
-   "vit_med": 1243.27,
+   "vit_med": 1283.94,
    "lider": "Visam",
    "lider_n": 11
   }

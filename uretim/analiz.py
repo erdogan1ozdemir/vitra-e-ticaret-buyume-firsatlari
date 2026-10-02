@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """Rapor bolumlerinin kullandigi turetilmis sayilar -> veri/islenmis/analiz.json"""
-import json, re, os
+import re, json, re, os
 from collections import defaultdict, Counter
 import veri
 O = {}
@@ -64,8 +64,9 @@ for r in sa:
 O["online_aylik"] = {m: [on.get(m,0), yeni.get(m,0)] for m in aylar_g}
 # en cok tiklanan kategori sayfalari (son 3 ay Tem-Eyl 2026)
 sp = defaultdict(int)
+def _tekil(u): return u.split("#")[0].split("?")[0].rstrip("/").lower()
 for r in sa:
-    if r["keys"][1] >= "2026-07-01": sp[r["keys"][0]] += r["clicks"]
+    if r["keys"][1] >= "2026-07-01": sp[_tekil(r["keys"][0])] += r["clicks"]
 O["top_sayfa_3ay"] = sorted(sp.items(), key=lambda x:-x[1])[:30]
 # --- 3. autocomplete ---
 ac = veri.AY["autocomplete"]
@@ -79,11 +80,16 @@ O["auto_tema"] = dict(tema)
 # --- 4. youtube ---
 yt = veri.AY["youtube"]
 O["yt"] = {}
-kanal_c = Counter(); kanal_v = Counter(); vitra_rank = {}
+kanal_c = Counter(); kanal_v = Counter(); vitra_rank = {}; _gor = set()
+def _vid(u): return re.sub(r"[&?]pp=[^&]*", "", u or "")   # aramaya ozgu ek: ayni video tek sayilir
+VKANAL = ("VitrA Türkiye", "VitrA Bathrooms")   # resmi marka kanallari; bayi ve servis kanallari haric
 for q, vids in yt.items():
     v3 = [(v["baslik"], v["kanal"], v["goruntulenme"], v["url"], v["yayin"], v["sira"]) for v in vids[:5]]
-    O["yt"][q] = {"n": len(vids), "top": v3, "toplam_g": sum(v["goruntulenme"] or 0 for v in vids), "vitra": [i_ + 1 for i_, v in enumerate(vids) if "vitra" in v["kanal"].lower()]}
-    for v in vids: kanal_c[v["kanal"]]+=1; kanal_v[v["kanal"]]+= v["goruntulenme"] or 0
+    O["yt"][q] = {"n": len(vids), "top": v3, "toplam_g": sum(v["goruntulenme"] or 0 for v in vids), "vitra": [i_ + 1 for i_, v in enumerate(vids) if v["kanal"] in VKANAL],
+                  "vid": sorted({_vid(v["url"]) for v in vids}), "g": {_vid(v["url"]): v["goruntulenme"] or 0 for v in vids}}
+    for v in vids:
+        if _vid(v["url"]) in _gor: continue
+        _gor.add(_vid(v["url"])); kanal_c[v["kanal"]]+=1; kanal_v[v["kanal"]]+= v["goruntulenme"] or 0
 O["yt_kanal"] = [(k, kanal_c[k], kanal_v[k]) for k,_ in kanal_c.most_common(15)]
 # --- 5. EVDS ---
 E = veri.EVDS; kh = E["kart_harcama_aylik_mnTL"]

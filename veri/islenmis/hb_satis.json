@@ -1,6 +1,6 @@
 {
  "donem": "son 12 ay (rapor 02.10.2026)",
- "urun_satir": 670,
+ "urun_satir": 666,
  "adet": 4283,
  "ort_fiyat": 4403.769465328041,
  "marka": {
@@ -321,89 +321,89 @@
    "kod": "A45149",
    "kategori": "Tesisat Malzemeleri",
    "adet": 167,
-   "ort_fiyat": 957.44
+   "ort_fiyat": 957.4373652694611
   },
   {
    "ad": "Artema A45228 Filtreli Çamaşır Musluğu, Krom",
    "kod": "A45228",
    "kategori": "Ara Musluk",
    "adet": 91,
-   "ort_fiyat": 300.14
+   "ort_fiyat": 300.1381318681319
   },
   {
    "ad": "Artema A45200 Filtreli Ara Musluk – Krom Kaplama, Su Filtresi ile Hijy",
    "kod": "A45200",
    "kategori": "Ara Musluk",
    "adet": 85,
-   "ort_fiyat": 281.91
+   "ort_fiyat": 281.91211764705884
+  },
+  {
+   "ad": "Artema Serenity A42914 Yüksek Lavabo Bataryası, Krom",
+   "kod": "A42914",
+   "kategori": "Banyo Lavabo Bataryası",
+   "adet": 84,
+   "ort_fiyat": 2762.0741666666663
   },
   {
    "ad": "VitrA Origin A45214 Ara Musluk, Krom",
    "kod": "A45214",
    "kategori": "Ara Musluk",
    "adet": 83,
-   "ort_fiyat": 1476.14
+   "ort_fiyat": 1476.1448192771086
   },
   {
    "ad": "Artema A41584 Uzun Musluk, Krom",
    "kod": "A41584",
    "kategori": "Ara Musluk",
    "adet": 78,
-   "ort_fiyat": 875.2
-  },
-  {
-   "ad": "Artema Serenity A42914 Lavabo Bataryası, Krom",
-   "kod": "A42914-1",
-   "kategori": "Banyo Lavabo Bataryası",
-   "adet": 77,
-   "ort_fiyat": 2729.42
+   "ort_fiyat": 875.1969230769231
   },
   {
    "ad": "VitrA A42230 Ankastre Lavabo Bataryası, Sıva Altı Grubu",
    "kod": "A42230",
    "kategori": "Banyo Lavabo Bataryası",
    "adet": 71,
-   "ort_fiyat": 1820.9
+   "ort_fiyat": 1820.8950704225354
   },
   {
    "ad": "VitrA S20 5339B003-0012 Tezgah Altı Lavabo, 48 cm, Beyaz",
    "kod": "5339B003-0012",
    "kategori": "Lavabo",
    "adet": 63,
-   "ort_fiyat": 4544.36
+   "ort_fiyat": 4544.358095238095
   },
   {
    "ad": "VitrA Arkitekta A44444 Raflı Tuvalet Kağıtlığı, Krom, Duvara Montajlı",
    "kod": "A44444",
    "kategori": "Tuvalet Kağıtlığı",
    "adet": 62,
-   "ort_fiyat": 1260.13
+   "ort_fiyat": 1260.131129032258
   },
   {
    "ad": "VitrA Origin A44887 Tuvalet Kağıtlığı, Krom",
    "kod": "A44887",
    "kategori": "Tuvalet Kağıtlığı",
    "adet": 57,
-   "ort_fiyat": 2226.21
+   "ort_fiyat": 2226.2064912280703
   },
   {
    "ad": "VitrA Mia 75102 Banyo Dolabı Seti Çekmeceli 60 cm Antrasit",
    "kod": "75102",
    "kategori": "Banyo Mobilya",
    "adet": 57,
-   "ort_fiyat": 9772.33
+   "ort_fiyat": 9772.327719298246
   },
   {
    "ad": "VitrA Sento 86-003R009 Klozet Kapağı, Yavaş Kapanır, Kolay Çıkabilir, ",
    "kod": "86-003R009",
    "kategori": "Klozet Kapağı",
    "adet": 55,
-   "ort_fiyat": 2575.05
+   "ort_fiyat": 2575.052909090909
   }
  ],
  "komisyon": {
   "11.5": 666,
   "16.0": 4
  },
- "ciro80_urun": 245
+ "ciro80_urun": 243
 }

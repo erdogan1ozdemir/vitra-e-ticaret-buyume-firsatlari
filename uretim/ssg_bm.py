@@ -3,6 +3,7 @@
 import json, os, re, collections
 import veri
 K48 = json.load(open(os.path.join(veri.V, "ham", "kp_sezon_2022-09_2026-08.json"), encoding="utf-8"))["kelimeler"]
+import aykiri; K48 = {k_: (dict(v_, seri=aykiri.seri(k_, v_.get("seri"))) if isinstance(v_, dict) else v_) for k_, v_ in K48.items()}   # Dunya Kupasi 2026 'wc' duzeltmesi
 s = open(os.path.join(veri.V, "kaynak", "sezon_dashboard.js"), encoding="utf-8").read(); d = json.loads(s[s.index("{"):s.rindex("}") + 1])
 kat = {k["kw"].strip().lower(): (k["k1"], k["k2"], k["k3"]) for k in d["keywords"]}
 def ay(y1, m1, y2, m2):

@@ -52,7 +52,8 @@ def sekme(ad, baslik, notlar, basliklar, satirlar, genislik=None):
     for j, sat in enumerate(satirlar):
         rr = hr + 1 + j; yuk = 15
         for i, dv in enumerate(sat, 1):
-            v = deger(dv) if isinstance(dv, str) else dv
+            _kod = i <= len(basliklar) and re.search(r"(^|\b)(Kod|SKU|Model kodu)\b", str(basliklar[i - 1]))
+            v = dv if _kod else (deger(dv) if isinstance(dv, str) else dv)   # urun kodlari metin kalir
             sayisal = isinstance(v, (int, float))
             cell = yaz(ws, rr, i, v, h="center" if sayisal else "left")
             if isinstance(dv, str) and dv.strip().startswith(("+", "-")) and sayisal and ("%" in dv):
@@ -68,6 +69,7 @@ def sekme(ad, baslik, notlar, basliklar, satirlar, genislik=None):
     ws.freeze_panes = ws.cell(row=hr + 1, column=1)
     return ws
 def metin(el):
+    for b in el.select("button"): b.decompose()   # acilir liste ve ok dugmeleri
     for s in el.select("span.t"): s.replace_with(s.get_text())   # dil katmani
     return " ".join(el.get_text(" ").split())
 # --- bolumler -> sekmeler ---

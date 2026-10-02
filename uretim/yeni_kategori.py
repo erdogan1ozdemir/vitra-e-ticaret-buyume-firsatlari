@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-"""Genisletilmis evren -> tema tablosu (48 ay). Varyant tekillestirme: ayni tema icinde ayni seri tek sayilir."""
+"""Genisletilmis evren -> tema tablosu (48 ay). Varyant tekillestirme: ayni aylik seri (Keyword Planner birlesik hacmi) temalar arasi da tek sayilir."""
 import json, os, re, collections
-import veri, tema
+import veri, tema, aykiri
 U = json.load(open(os.path.join(veri.V, "ham", "kfk_evren.json"), encoding="utf-8"))["kelimeler"]
 KP48 = os.path.join(veri.V, "ham", "kp_sezon_2022-09_2026-08.json")
 if os.path.exists(KP48):
@@ -21,12 +21,12 @@ def ort(s, a):
     v = [s.get(x) for x in a if s.get(x) is not None]; return sum(v) / len(v) if v else 0
 rows = []
 for kw, v in U.items():
-    s = v.get("seri") or {}
+    s = aykiri.seri(kw, v.get("seri") or {})
     if len(s) < 40: continue
     t = tema.sinif(kw)
     if not t: continue
     rows.append({"kw": kw, "tema": t, "v12": ort(s, P3), "v0": ort(s, P0), "a25": ort(s, A25), "a26": ort(s, A26), "cpc": v.get("cpc"),
-                 "cekirdek": kw in CEK, "imza": (t, tuple(s.get(x) for x in sorted(s)))})
+                 "cekirdek": kw in CEK, "imza": tuple(s.get(x) for x in sorted(s))})
 # varyant tekillestirme
 gor = set(); tek = []
 for r in sorted(rows, key=lambda r: (-r["v12"], len(r["kw"]))):

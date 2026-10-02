@@ -43,7 +43,7 @@ for q in CEY:
     d = U[U.q == q]
     brut, net = d["Brüt Satış Adedi"].sum(), d["Net Satış Adedi"].sum()
     art = d[d.Marka == "Artema"]["Net Satış Adedi"].sum()
-    cey.append({"q": q, "net": int(net), "model": int(d["Model Kodu"].nunique()), "artema_pay": art / net * 100,
+    cey.append({"q": q, "net": int(net), "model": int(d[d["Net Satış Adedi"] > 0]["Model Kodu"].nunique()), "artema_pay": art / net * 100,
                 "ort_fiyat": d["Net Ciro"].sum() / net, "indirim": d["İndirim Tutarı"].sum() / d["Brüt Ciro"].sum() * 100,
                 "iptal": d["İptal Adedi"].sum() / brut * 100, "iade": d["İade Adedi"].sum() / brut * 100,
                 "komisyon": d["Toplam Komisyon Tutarı"].sum() / d["Net Ciro"].sum() * 100})
@@ -78,7 +78,7 @@ R["pareto"] = {"urun": int(len(P)), "ciro50": int((s < .5).sum() + 1), "ciro80":
 bands = [(0, 500, "<500"), (500, 1000, "500-1.000"), (1000, 2000, "1.000-2.000"), (2000, 5000, "2.000-5.000"), (5000, 10000, "5.000-10.000"), (10000, 20000, "10.000-20.000"), (20000, 1e12, "20.000+")]
 R["fiyat_bandi"] = [{"band": b, "urun": int(((P.ort_fiyat >= lo) & (P.ort_fiyat < hi)).sum()), "adet_pay": P[(P.ort_fiyat >= lo) & (P.ort_fiyat < hi)].net.sum() / tn * 100,
                      "ciro_pay": P[(P.ort_fiyat >= lo) & (P.ort_fiyat < hi)].ciro.sum() / tc * 100} for lo, hi, b in bands]
-q3 = U[U.q == "2026Q3"]; z = q3[q3["Güncel Stok"] == 0]
+q3 = U[(U.q == "2026Q3") & (U["Net Satış Adedi"] > 0)]; z = q3[q3["Güncel Stok"] == 0]
 R["stok"] = {"q3_urun": int(q3["Model Kodu"].nunique()), "stok0": int(z["Model Kodu"].nunique()), "adet_pay": z["Net Satış Adedi"].sum() / q3["Net Satış Adedi"].sum() * 100,
              "ciro_pay": z["Net Ciro"].sum() / q3["Net Ciro"].sum() * 100,
              "ornek": [{"ad": ADM.get(str(r["Model Kodu"]).strip(), r["Ürün Adı"]) if not isinstance(r["Ürün Adı"], str) else r["Ürün Adı"], "net": int(r["Net Satış Adedi"])} for _, r in z.sort_values("Net Satış Adedi", ascending=False).head(8).iterrows()]}
@@ -86,8 +86,8 @@ q3v = q3[(q3["Güncel Satış Fiyatı"] > 0) & (q3["Ortalama Satış Fiyatı"] >
 R["liste_fark"] = {"medyan": float(((q3v["Ortalama Satış Fiyatı"] / q3v["Güncel Satış Fiyatı"] - 1) * 100).median()), "n": int(len(q3v))}
 # iptal iade nedenleri
 M = pd.concat([pd.read_excel(f, sheet_name="marka-bazlı-satış-raporu") for f in glob.glob(os.path.join(TY, "seller-144409-satış-raporu-*.xlsx"))])
-cols = ["Müşterinin İptal Ettiği", "Trendyol'un İptal Ettiği", "Benim İptal Ettiğim", "Kusurlu Ürün Gönderildi", "Yanlış Ürün Gönderildi", "Vazgeçtim", "Diğer", "Bedeni/Ebatı Küçük Geldi", "Bedeni/Ebatı Büyük Geldi"]
-R["neden"] = {c: int(num(M[c]).sum()) for c in cols}
+cols = list(M.columns[list(M.columns).index("Müşterinin İptal Ettiği"):])   # tum iptal ve iade neden sutunlari
+R["neden"] = {c: int(num(M[c]).sum()) for c in cols}; R["iade_adedi"] = int(num(M["İade Adedi"]).sum())
 # siparis dagilimi
 def dag(sh):
     out = {}
@@ -176,7 +176,7 @@ for k, g in E.groupby("kategori"):
     en.append({"kategori": k, "sat_siz": int(s_.siz.sum()), "sat_vit": int(s_.vit.sum()), "ciro_siz": int(c_.siz.sum()), "ciro_vit": int(c_.vit.sum()),
                "fav_vit": int(f_.vit.sum()), "gor_vit": int(v_.vit.sum()) if len(v_) else None,
                "gor_pay": float(vv[v_.vit.values].sum() / vv.sum() * 100) if len(v_) and vv.sum() else None, "gor_top": int(vv.sum()) if len(v_) and vv.sum() else None,
-               "sat_med": float(s_.ort_fiyat.replace(0, np.nan).median()), "vit_med": float(g[g.vit].ort_fiyat.replace(0, np.nan).median()) if g.vit.any() else None,
+               "sat_med": float(s_.ort_fiyat.replace(0, np.nan).median()), "vit_med": float(g[g.vit].drop_duplicates(subset=[c_ for c_ in ("urun_id", "urun", "ad", "baslik") if c_ in g.columns][:1] or None).ort_fiyat.replace(0, np.nan).median()) if g.vit.any() else None,
                "lider": lider, "lider_n": int((s_.marka == lider).sum()) if lider else 0})
 R["enleri"] = en
 vr = E[E.vit]; R["enleri_ozet"] = {"satir": int(len(E)), "liste": int(E.groupby(["kategori", "liste"]).ngroups), "vit": int(len(vr)), "vit_3p": int((~vr.siz).sum()), "siz": int(E.siz.sum()),

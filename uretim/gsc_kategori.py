@@ -23,19 +23,25 @@ K = {
 SIRA = ["dus-sistem","dus-kabin","dus-unite","termostatik","havlupan","tuvalet-tasi","helatasi","boy-dolap","banyo-raf","akilli-klozet","klozet-kapak","asma-klozet","takim-klozet","klozet","canak-lavabo","lavabo-dolab","lavabo-batarya","tezgahlar","tezgah","etajer","hilton","lavabo","pisuvar","bide-batarya","bide","vitrifiye","sifon",
         "ic-takim","kumanda","rezervuar","aynali-banyo","banyo-dolap","camasir","ayna","set-modul","banyo-mobilya","eviye-batarya","eviye","banyo-batarya","stop-valf","ankastre","musluk","armatur",
         "dus-set","dus-basl","dus-sistem","el-dus","dus-kolon","dusakabin","dus-tekne","dus-kanal","hidromasaj","kuvet","duslar","porselen","karo","seramik","kagitlik","havluluk","firca","sabunluk","cop-kova","tutunma","malzemelik","aski","aksesuar"]
+ISLEV = {"tr", "fiyat-listeleri", "kesfet", "bize-ulasin", "montaj-rehberi", "360-magazalar", "kampanyalar", "support", "sikca-sorulan-sorular", "misafir", "montaj-hizmeti",
+         "iletisim", "giris", "sepet", "hesabim", "arama", "magazalar", "servisler", "kariyer", "kvkk", "cerez-politikasi", "uyelik", "odeme-rehberi", "teslimat-rehberi", "islem-rehberi", "degisim-iade-rehberi", "seramik-hesaplama"}
 def tur(url):
     u = url.replace("https://www.vitra.com.tr","").replace("https://vitra.com.tr","")
     if url.startswith("https://online."): return "eski-online"
     if u in ("", "/"): return "anasayfa"
-    if re.search(r"-p-a?\d+", u) or u.startswith("/p-"): return "urun"
+    if re.search(r"-p-[a-z]{0,2}\d|-sku-", u) or u.startswith("/p-"): return "urun"   # yeni (-p-a123) ve eski yapi (-sku-, -p-k...) urun adresleri
     if u.startswith("/product"): return "urun-teknik"
     if u.startswith("/c-") or u.startswith(("/karo-seramik-urunleri","/vitrifiyeler","/armaturler","/yikanma-alanlari","/banyo-mobilyalari","/banyo-aksesuarlari","/rezervuarlar","/dus-sistemleri","/duslar")): return "kategori"
-    if re.search(r"^/[a-z0-9-]+/?$", u) and any(k in u for k in K): return "kategori"
+    u0 = u.split("?")[0].split("#")[0]
+    if re.match(r"^/tse?-", u0) or "yerli-mali-belgesi" in u0: return "kurumsal"   # TSE / uygunluk belgeleri
+    if u0.startswith(("/banyo-koleksiyonlari", "/karo-koleksiyonlari", "/v-/", "/v-")): return "koleksiyon"
     if u.startswith(("/hakkimizda","/basin-odasi","/musteri-hizmetleri","/kurumsal","/iletisim","/surdurulebilirlik","/kariyer")): return "kurumsal"
     if u.startswith("/ilham") or u.startswith("/blog"): return "icerik"
     if u.startswith("/servis") or "satis-nokta" in u or "bayi" in u: return "servis-bayi"
     if u.startswith("/katalog"): return "katalog"
     if u.startswith("/v/") or u.startswith("/koleksiyon"): return "koleksiyon"
+    _tek = re.match(r"^/([a-z0-9-]+)/?$", u.split("?")[0].split("#")[0])
+    if _tek and _tek.group(1) not in ISLEV and len(_tek.group(1).split("-")) <= 2 and not any(k_ in _tek.group(1) for k_ in K): return "koleksiyon"   # tek seviyeli kisa koleksiyon adresleri (retromix, sento, origin...)
     return "diger"
 def kat(url):
     u = url.lower()
@@ -43,11 +49,16 @@ def kat(url):
         if s in u: return K[s]
     return ("Diğer","Diğer")
 d = json.load(open(os.path.join(G, "sayfa_16ay.json")))["rows"]
-ozet = defaultdict(lambda: [0,0,0]); kat_ozet = defaultdict(lambda: [0,0,0,0])
+def tekil(url):
+    """Sayfalama, filtre ve izleme parametreleri ile capa ayni sayfa sayilir."""
+    return url.split("#")[0].split("?")[0].rstrip("/").lower().replace("://vitra.com.tr", "://www.vitra.com.tr")
+ozet = defaultdict(lambda: [0,0,0]); kat_ozet = defaultdict(lambda: [0,0,0,0]); _s = defaultdict(set); _ks = defaultdict(set)
 for r in d:
-    t = tur(r["keys"][0]); ozet[t][0]+=r["clicks"]; ozet[t][1]+=r["impressions"]; ozet[t][2]+=1
+    t = tur(r["keys"][0]); ozet[t][0]+=r["clicks"]; ozet[t][1]+=r["impressions"]; _s[t].add(tekil(r["keys"][0]))
     if t in ("kategori","urun","eski-online","koleksiyon","urun-teknik"):
-        k = kat(r["keys"][0]); kat_ozet[k][0]+=r["clicks"]; kat_ozet[k][1]+=r["impressions"]; kat_ozet[k][2]+=1
+        k = kat(r["keys"][0]); kat_ozet[k][0]+=r["clicks"]; kat_ozet[k][1]+=r["impressions"]; _ks[k].add(tekil(r["keys"][0]))
+for t in ozet: ozet[t][2] = len(_s[t])
+for k in kat_ozet: kat_ozet[k][2] = len(_ks[k])
 print("Sayfa türü · 16 ay tık / gösterim / sayfa")
 for t,(c,i,n) in sorted(ozet.items(), key=lambda x:-x[1][0]): print(f"  {t:12} {c:9} {i:11} {n:6}")
 print("\nKategori (kategori+ürün sayfaları) · 16 ay")

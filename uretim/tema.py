@@ -38,7 +38,7 @@ T = [
  ("taharet_aparat", "Taharet aparatı ve bide kapağı", "Bidet attachments and seats", "SSG", "Yok", r"taharet aparat|bide aparat|taharet kapağı|bide kapağı|washlet|elektrikli klozet kapağı|ısıtmalı klozet kapağı|elektronik klozet kapağı|bide makinesi"),
  ("ticari", "Ticari ıslak hacim donanımı (dispenser, el kurutma)", "Commercial washroom equipment", "Bitişik", "Kısmi", r"el kurutma|dispenser|kağıt havluluk|havlu makinesi|fotoselli sabun|sensörlü sabun"),
  ("yedek", "Yedek parça (kartuş, başlık, perlatör)", "Spare parts", "Armatür-Duş", "Kısmi", r"kartuş|perlatör|aeratör|musluk başlığı|musluk ucu|batarya ucu|musluk contası|batarya tamir|musluk tamir|\bspiral\b(?!li)|flexible hortum|esnek hortum|duş hortumu|şamandıra|\bkada\b|boşaltma grubu|klozet menteşe|kapak menteşe|menteşesi|yedek parça"),
- ("taharet_musluk", "Taharet musluğu ve el duşu", "Bidet valves and hand sprays", "Armatür-Duş", "Kısmi", r"taharet musluğ|taharet el duşu|taharet çubuğu|taharet ucu|taharet borusu"),
+ ("taharet_musluk", "Taharet musluğu ve el duşu", "Bidet valves and hand sprays", "Armatür-Duş", "Kısmi", r"taharet musluk|taharet musluğ|taharet el duşu|taharet çubuğu|taharet ucu|taharet borusu"),
  ("bahce", "Bahçe, havuz ve dış mekan suyu", "Garden and outdoor water", "Bitişik", "Yok", r"bahçe musluğ|bahçe duş|havuz duş|dış mekan duş|bahçe lavabo|bahçe çeşme"),
  ("camasir_musluk", "Çamaşır makinesi musluğu", "Washing machine valve", "Armatür-Duş", "Kısmi", r"çamaşır makinesi musluğ|çamaşır musluğ"),
  ("wellness", "Sauna, buhar ve ev spası", "Sauna, steam and home spa", "Yıkanma", "Yok", r"sauna (kabin|soba|fiyat|odası|taş|ısıtıcı|yapım|malzeme|model)|ev tipi sauna|infrared sauna|^sauna$|buhar (odası|kabin|jeneratör)|hamam kabini|ev tipi hamam|infrared kabin"),
@@ -61,7 +61,7 @@ T = [
  # --- BM
  ("camasir_dolap", "Çamaşır ve kurutma makinesi dolabı", "Washer and dryer cabinet", "BM", "Var", r"(çamaşır|kurutma|bulaşık) makine(si)? dola[bp]|makine dola[bp]|çamaşır dola[bp]"),
  ("boy_dolap", "Banyo boy dolabı", "Tall cabinet", "BM", "Var", r"boy dola[bp]"),
- ("aynali_dolap", "Aynalı banyo dolabı", "Mirror cabinet", "BM", "Var", r"aynalı (banyo )?dolap|ayna dola[bp]"),
+ ("aynali_dolap", "Aynalı banyo dolabı", "Mirror cabinet", "BM", "Var", r"aynalı (banyo )?dola[pb]|ayna dola[bp]"),
  ("ayna", "Banyo aynası", "Bathroom mirror", "BM", "Var", r"banyo ayna|lavabo ayna|tuvalet ayna|makyaj ayna"),
  ("banyo_raf", "Banyo rafı ve kulp", "Bathroom shelves and handles", "BM", "Kısmi", r"banyo raf|dolap kulp|banyo kulp|klozet üstü|klozet arkası|havluluk raf"),
  ("tezgah", "Banyo tezgahı", "Bathroom countertop", "BM", "Var", r"banyo tezgah|lavabo tezgah|tezgah üstü|tezgahüstü|lavabo altı tezgah"),

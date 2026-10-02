@@ -121,7 +121,7 @@ GUVEN = {"Tekrar almama, tavsiye etmeme": r"bir daha|asla|tavsiye etmiyorum|tavs
 def kanal(L):
     """Satin alma kanali (birbirini dislamaz): vitra.com.tr, pazaryeri platformu, perakende zinciri, bayi/yapi market, belirtilmemis."""
     plat = re.compile("|".join(T.PLATFORMLAR.values())); per = re.compile("|".join(T.PERAKENDE.values()))
-    bayi = re.compile(r"bayi|showroom|nova\b|hırdavat|yapı market|inşaat malzeme|yapı merkezi|yapı malzeme|tesisat market|sanayi|ticaret|dekorasyon")
+    bayi = re.compile(r"bayi|showroom|hırdavat|yapı market|inşaat malzeme|yapı merkezi|yapı malzeme|tesisat market")   # zayif kelimeler (ticaret, sanayi, dekorasyon, nova) cikarildi
     c = collections.Counter(); yok = 0
     for r in L:
         t = T.kucuk(r["baslik"] + " " + r["metin"]); k = []
@@ -136,7 +136,7 @@ def kanal(L):
 
 KANIT = {"Garanti reddi gerekçesi olarak 'kullanıcı hatası' / 'usta hatası'": r"kullanıcı hatası|usta hatası|montaj hatası olduğ|kullanım hatası",
          "Fatura veya servis fişi verilmemesi": r"servis fiş|fatura (?:verilme|vermedi|kesilme|kesmedi|yok|talep)|faturasız|faturasız|fatura vermiyor",
-         "Yedek parçanın tek başına satılmaması, komple set / ürün değişimi önerisi": r"komple (?:set|takım|değiş|rezervuar|kapak)|tüm (?:set|takım)|tek başına (?:temin|satış|satılm)|parça satışı yok|parçası satılm|satılmıyor|satmıyorlar|satmıyoruz",
+         "Yedek parçanın tek başına satılmaması, komple set / ürün değişimi önerisi": r"komple (?:set|takım|rezervuar|kapak)|tüm (?:set|takım)|tek başına (?:temin|satış|satılm)|parça satışı yok|parçası satılm|satılmıyor|satmıyorlar|satmıyoruz",
          "Ücretsiz montaj / kampanya vaadi ve sonradan ücret talebi": r"ücretsiz (?:montaj|kurulum)|montaj (?:dahil|ücretsiz)|kurulum (?:dahil|ücretsiz)",
          "Garanti süresi anılan (10 yıl, ömür boyu, 5 yıl, 2 yıl vb.)": r"10 yıl|ömür boyu|\b5 yıl|\b2 yıl garanti|garantili olarak sat|yıl garanti"}
 

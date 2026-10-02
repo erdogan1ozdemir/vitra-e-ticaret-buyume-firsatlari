@@ -6,7 +6,12 @@ from grafik2 import gruplu
 import csv as _csv, os as _os, json as _json
 
 _D = _os.path.join(veri.V, "ham", "geo")
-IL = [(s_, int(c), int(i), float(p_)) for s_, c, i, p_ in _csv.reader(open(_os.path.join(_D, "gsc_ilham.tsv"), encoding="utf-8"), delimiter="\t")]
+_IL0 = [(s_, int(c), int(i), float(p_)) for s_, c, i, p_ in _csv.reader(open(_os.path.join(_D, "gsc_ilham.tsv"), encoding="utf-8"), delimiter="\t")]
+_ILB = {}
+for s_, c, i, p_ in _IL0:   # ayni yazinin eski adresi (-old) tek sayfa sayilir
+    k_ = s_[:-4] if s_.endswith("-old") else s_
+    a_ = _ILB.setdefault(k_, [0, 0, 0.0]); a_[2] = (a_[2] * a_[1] + p_ * i) / (a_[1] + i) if (a_[1] + i) else p_; a_[0] += c; a_[1] += i
+IL = [(k_, v_[0], v_[1], v_[2]) for k_, v_ in _ILB.items()]
 SO = [(q, int(c), int(i), float(p_)) for q, c, i, p_ in _csv.reader(open(_os.path.join(_D, "gsc_soru.tsv"), encoding="utf-8"), delimiter="\t")]
 SOD = {q: (c, i, p_) for q, c, i, p_ in SO}
 _SK = {r["kelime"]: r for r in _json.load(open(_os.path.join(veri.V, "ham/derin/serp/kelime_sonuc.json"), encoding="utf-8"))}

@@ -5,16 +5,17 @@ from collections import defaultdict
 P = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 s = open(os.path.join(P, "veri/kaynak/sezon_dashboard.js"), encoding="utf-8").read(); d = json.loads(s[s.index("{"):s.rindex("}")+1])
 kp = json.load(open(os.path.join(P, "veri/ham/kp_sezon_2024-09_2026-08.json")))["kelimeler"]
+import aykiri; kp = {k_: (dict(v_, seri=aykiri.seri(k_, v_.get("seri"))) if isinstance(v_, dict) else v_) for k_, v_ in kp.items()}   # Dunya Kupasi 2026 'wc' duzeltmesi
 kat = {k["kw"].strip().lower(): (k["k1"], k["k2"], k["k3"]) for k in d["keywords"]}
 MARKA = r"vitra|artema|creavit|kale|ece\b|serel|duravit|geberit|grohe|hansgrohe|roca|ideal standard|bien|kütahya|kutahya|çanakkale|canakkale|ege seramik|yurtbay|turkuaz|bocchi|newarc|isvea|toto|eca\b|nsk|ferro|penta|fixet|orka|nemo|dilara|tema\b|koçtaş|koctas|bauhaus|ikea|tekzen|trendyol|hepsiburada|n11|amazon"
 NIYET = [
  ("Fiyat", r"fiyat|ucuz|uygun|indirim|kampanya|outlet|kaç para|ne kadar|tl\b"),
  ("Taksit ve ödeme", r"taksit|kredi|ödeme|vade"),
- ("Montaj", r"montaj|nasıl takılır|nasıl yapılır|kurulum|takma|bağlantı|montajı"),
- ("Tamir ve bakım", r"tamir|arıza|su kaçır|akıtı|tıkan|temizli|değişim|değiştir|onarım|bakım|yedek|iç takım|parça"),
+ ("Montaj", r"montaj|nasıl takılır|nasıl yapılır|kurulum|takma|bağlantı|montajı|taktır"),
+ ("Tamir ve bakım", r"tamir|arıza|su kaçır|akıtı|tıkan|temizli|değişim|değiştir|onarım|bakım|yedek|iç takım|parça|şamandıra|menteşe|teker|conta|kartuş|damper|amortisör|boşaltma"),
  ("Ölçü ve teknik", r"ölçü|ölçüleri|boyut|cm\b|kaç litre|ağırlık|derinlik|yükseklik|genişlik|montaj ölçü|teknik|çizim"),
  ("Seçim ve karşılaştırma", r"en iyi|hangisi|tavsiye|öneri|yorum|karşılaştır|inceleme|nedir|ne işe|farkı|\bmi\b|\bmı\b|\bmu\b|\bmü\b|nasıl seçilir|kaliteli"),
- ("Tasarım ve fikir", r"dekorasyon|tasarım|fikir|model|modelleri|trend|renk|modern|küçük banyo|dekor"),
+ ("Tasarım ve fikir", r"dekorasyon|tasarım|fikir|model|modelleri|trend(?!yol)|renk|modern|küçük banyo|dekor"),
  ("Yer ve kanal", r"nereden|satış noktası|bayi|mağaza|showroom|satan|nerede"),
 ]
 def niyet(kw):
