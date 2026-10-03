@@ -1,0 +1,2699 @@
+{
+ "kaynak": "Similarweb (Apify) · Haz - Ağu 2026 · tüm ülkeler",
+ "siteler": [
+  {
+   "alan": "trendyol.com",
+   "grup": "pazar",
+   "seri": [
+    {
+     "ay": "2026-06",
+     "ziyaret": 113073290
+    },
+    {
+     "ay": "2026-07",
+     "ziyaret": 106360699
+    },
+    {
+     "ay": "2026-08",
+     "ziyaret": 102126038
+    }
+   ],
+   "ort_ziyaret": 107186676,
+   "son_ay": "2026-08",
+   "son_ziyaret": 102126038,
+   "tr_pay": 92.32,
+   "ilk_ulke": "TR",
+   "ilk_ulke_pay": 92.32,
+   "kanal": {
+    "direct": 36.87,
+    "organik": 42.71,
+    "ucretli": 2.09,
+    "sosyal_org": 3.9,
+    "sosyal_ucretli": 3.91,
+    "referans": 2.54,
+    "eposta": 1.49,
+    "display": 4.4,
+    "affiliate": 1.07,
+    "ai": 1.02
+   },
+   "modellenmis": false,
+   "kucuk": false,
+   "hemen_cikma": 33.0,
+   "sayfa_ziyaret": 7.88,
+   "sure_sn": 418,
+   "organik_kelime": 520622,
+   "ai_ziyaret": 1010545,
+   "ulkeler": [
+    {
+     "ulke": "TR",
+     "pay": 92.32
+    },
+    {
+     "ulke": "RO",
+     "pay": 1.81
+    },
+    {
+     "ulke": "GR",
+     "pay": 0.66
+    },
+    {
+     "ulke": "US",
+     "pay": 0.66
+    },
+    {
+     "ulke": "SA",
+     "pay": 0.65
+    }
+   ],
+   "rakipler": [
+    "hepsiburada.com",
+    "amazon.com.tr",
+    "n11.com",
+    "akakce.com",
+    "cimri.com",
+    "sahibinden.com",
+    "vatanbilgisayar.com",
+    "pttavm.com",
+    "teknosa.com",
+    "epey.com"
+   ],
+   "ayrica_ziyaret": [
+    "hepsiburada.com",
+    "amazon.com.tr",
+    "akakce.com",
+    "google.com",
+    "instagram.com"
+   ],
+   "sosyal_ag": [
+    {
+     "ad": "Youtube",
+     "pay": 43.9
+    },
+    {
+     "ad": "Facebook",
+     "pay": 28.8
+    },
+    {
+     "ad": "Instagram",
+     "pay": 8.5
+    },
+    {
+     "ad": "X-twitter",
+     "pay": 7.3
+    },
+    {
+     "ad": "WhatsApp Webapp",
+     "pay": 6.6
+    }
+   ],
+   "kelimeler": [
+    {
+     "kelime": "trendyol",
+     "hacim": 2321970
+    },
+    {
+     "kelime": "trendyol.com",
+     "hacim": 63790
+    },
+    {
+     "kelime": "trendyol yemek",
+     "hacim": 56180
+    },
+    {
+     "kelime": "lego",
+     "hacim": 1668520
+    },
+    {
+     "kelime": "iphone 15",
+     "hacim": 1021280
+    }
+   ]
+  },
+  {
+   "alan": "hepsiburada.com",
+   "grup": "pazar",
+   "seri": [
+    {
+     "ay": "2026-06",
+     "ziyaret": 60356187
+    },
+    {
+     "ay": "2026-07",
+     "ziyaret": 63897131
+    },
+    {
+     "ay": "2026-08",
+     "ziyaret": 63221914
+    }
+   ],
+   "ort_ziyaret": 62491744,
+   "son_ay": "2026-08",
+   "son_ziyaret": 63221914,
+   "tr_pay": 96.64,
+   "ilk_ulke": "TR",
+   "ilk_ulke_pay": 96.64,
+   "kanal": {
+    "direct": 36.38,
+    "organik": 32.53,
+    "ucretli": 7.11,
+    "sosyal_org": 3.01,
+    "sosyal_ucretli": 4.18,
+    "referans": 2.99,
+    "eposta": 1.22,
+    "display": 11.29,
+    "affiliate": 0.23,
+    "ai": 1.05
+   },
+   "modellenmis": false,
+   "kucuk": false,
+   "hemen_cikma": 39.2,
+   "sayfa_ziyaret": 5.32,
+   "sure_sn": 257,
+   "organik_kelime": 0,
+   "ai_ziyaret": 646900,
+   "ulkeler": [],
+   "rakipler": [],
+   "ayrica_ziyaret": [],
+   "sosyal_ag": [],
+   "kelimeler": [
+    {
+     "kelime": "hepsiburada",
+     "hacim": 1005880
+    },
+    {
+     "kelime": "chatgpt",
+     "hacim": 173210590
+    },
+    {
+     "kelime": "hepsiburada.com",
+     "hacim": 40360
+    },
+    {
+     "kelime": "hepsi burada",
+     "hacim": 50320
+    },
+    {
+     "kelime": "gs",
+     "hacim": 872370
+    }
+   ]
+  },
+  {
+   "alan": "akakce.com",
+   "grup": "pazar",
+   "seri": [
+    {
+     "ay": "2026-06",
+     "ziyaret": 41668221
+    },
+    {
+     "ay": "2026-07",
+     "ziyaret": 41507409
+    },
+    {
+     "ay": "2026-08",
+     "ziyaret": 42094082
+    }
+   ],
+   "ort_ziyaret": 41756571,
+   "son_ay": "2026-08",
+   "son_ziyaret": 42094082,
+   "tr_pay": 97.43,
+   "ilk_ulke": "TR",
+   "ilk_ulke_pay": 97.43,
+   "kanal": {
+    "direct": 21.93,
+    "organik": 67.69,
+    "ucretli": 3.49,
+    "sosyal_org": 1.98,
+    "sosyal_ucretli": 0.9,
+    "referans": 1.96,
+    "eposta": 0.23,
+    "display": 0.9,
+    "affiliate": 0,
+    "ai": 0.92
+   },
+   "modellenmis": false,
+   "kucuk": false,
+   "hemen_cikma": 31.6,
+   "sayfa_ziyaret": 3.67,
+   "sure_sn": 134,
+   "organik_kelime": 304969,
+   "ai_ziyaret": 384791,
+   "ulkeler": [
+    {
+     "ulke": "TR",
+     "pay": 97.43
+    },
+    {
+     "ulke": "DE",
+     "pay": 0.52
+    },
+    {
+     "ulke": "NL",
+     "pay": 0.18
+    },
+    {
+     "ulke": "US",
+     "pay": 0.16
+    },
+    {
+     "ulke": "CY",
+     "pay": 0.12
+    }
+   ],
+   "rakipler": [
+    "trendyol.com",
+    "cimri.com",
+    "hepsiburada.com",
+    "vatanbilgisayar.com",
+    "epey.com",
+    "amazon.com.tr",
+    "mediamarkt.com.tr",
+    "n11.com",
+    "teknosa.com",
+    "sahibinden.com"
+   ],
+   "ayrica_ziyaret": [
+    "trendyol.com",
+    "cimri.com",
+    "vatanbilgisayar.com",
+    "epey.com",
+    "sahibinden.com"
+   ],
+   "sosyal_ag": [
+    {
+     "ad": "Facebook",
+     "pay": 45.7
+    },
+    {
+     "ad": "Youtube",
+     "pay": 40.9
+    },
+    {
+     "ad": "X-twitter",
+     "pay": 5.5
+    },
+    {
+     "ad": "Instagram",
+     "pay": 2.8
+    },
+    {
+     "ad": "WhatsApp Webapp",
+     "pay": 2.8
+    }
+   ],
+   "kelimeler": [
+    {
+     "kelime": "akakçe",
+     "hacim": 176260
+    },
+    {
+     "kelime": "akakce",
+     "hacim": 36890
+    },
+    {
+     "kelime": "iphone 17",
+     "hacim": 2586720
+    },
+    {
+     "kelime": "iphone 15",
+     "hacim": 1021280
+    },
+    {
+     "kelime": "iphone 16",
+     "hacim": 1079700
+    }
+   ]
+  },
+  {
+   "alan": "amazon.com.tr",
+   "grup": "pazar",
+   "seri": [
+    {
+     "ay": "2026-06",
+     "ziyaret": 35083334
+    },
+    {
+     "ay": "2026-07",
+     "ziyaret": 33717649
+    },
+    {
+     "ay": "2026-08",
+     "ziyaret": 32824452
+    }
+   ],
+   "ort_ziyaret": 33875145,
+   "son_ay": "2026-08",
+   "son_ziyaret": 32824452,
+   "tr_pay": 96.23,
+   "ilk_ulke": "TR",
+   "ilk_ulke_pay": 96.23,
+   "kanal": {
+    "direct": 39.04,
+    "organik": 28.86,
+    "ucretli": 6.26,
+    "sosyal_org": 7.51,
+    "sosyal_ucretli": 0.77,
+    "referans": 8.76,
+    "eposta": 1.83,
+    "display": 2.24,
+    "affiliate": 3.49,
+    "ai": 1.25
+   },
+   "modellenmis": false,
+   "kucuk": false,
+   "hemen_cikma": 40.0,
+   "sayfa_ziyaret": 6.73,
+   "sure_sn": 234,
+   "organik_kelime": 0,
+   "ai_ziyaret": 402553,
+   "ulkeler": [],
+   "rakipler": [],
+   "ayrica_ziyaret": [],
+   "sosyal_ag": [],
+   "kelimeler": [
+    {
+     "kelime": "amazon",
+     "hacim": 87031820
+    },
+    {
+     "kelime": "amazon türkiye",
+     "hacim": 26580
+    },
+    {
+     "kelime": "amazon tr",
+     "hacim": 54810
+    },
+    {
+     "kelime": "amazon müşteri hizmetleri",
+     "hacim": 8380
+    },
+    {
+     "kelime": "amazon prime",
+     "hacim": 9536960
+    }
+   ]
+  },
+  {
+   "alan": "n11.com",
+   "grup": "pazar",
+   "seri": [
+    {
+     "ay": "2026-06",
+     "ziyaret": 16467631
+    },
+    {
+     "ay": "2026-07",
+     "ziyaret": 16880265
+    },
+    {
+     "ay": "2026-08",
+     "ziyaret": 16166180
+    }
+   ],
+   "ort_ziyaret": 16504692,
+   "son_ay": "2026-08",
+   "son_ziyaret": 16166180,
+   "tr_pay": 97.46,
+   "ilk_ulke": "TR",
+   "ilk_ulke_pay": 97.46,
+   "kanal": {
+    "direct": 33.59,
+    "organik": 19.93,
+    "ucretli": 5.27,
+    "sosyal_org": 3.53,
+    "sosyal_ucretli": 2.47,
+    "referans": 3.14,
+    "eposta": 1.2,
+    "display": 29.71,
+    "affiliate": 0.38,
+    "ai": 0.79
+   },
+   "modellenmis": false,
+   "kucuk": false,
+   "hemen_cikma": 27.3,
+   "sayfa_ziyaret": 4.34,
+   "sure_sn": 144,
+   "organik_kelime": 0,
+   "ai_ziyaret": 125595,
+   "ulkeler": [],
+   "rakipler": [],
+   "ayrica_ziyaret": [],
+   "sosyal_ag": [],
+   "kelimeler": [
+    {
+     "kelime": "n11",
+     "hacim": 218170
+    },
+    {
+     "kelime": "n11 satıcı paneli",
+     "hacim": 27270
+    },
+    {
+     "kelime": "n11 satıcı",
+     "hacim": 10630
+    },
+    {
+     "kelime": "n11 müşteri hizmetleri",
+     "hacim": 2200
+    },
+    {
+     "kelime": "defacto",
+     "hacim": 140620
+    }
+   ]
+  },
+  {
+   "alan": "cimri.com",
+   "grup": "pazar",
+   "seri": [
+    {
+     "ay": "2026-06",
+     "ziyaret": 12791705
+    },
+    {
+     "ay": "2026-07",
+     "ziyaret": 12689997
+    },
+    {
+     "ay": "2026-08",
+     "ziyaret": 11767645
+    }
+   ],
+   "ort_ziyaret": 12416449,
+   "son_ay": "2026-08",
+   "son_ziyaret": 11767645,
+   "tr_pay": 94.83,
+   "ilk_ulke": "TR",
+   "ilk_ulke_pay": 94.83,
+   "kanal": {
+    "direct": 28.5,
+    "organik": 56.5,
+    "ucretli": 6.65,
+    "sosyal_org": 1.01,
+    "sosyal_ucretli": 2.14,
+    "referans": 1.52,
+    "eposta": 0.17,
+    "display": 2.44,
+    "affiliate": 0,
+    "ai": 1.06
+   },
+   "modellenmis": false,
+   "kucuk": false,
+   "hemen_cikma": 37.6,
+   "sayfa_ziyaret": 2.78,
+   "sure_sn": 88,
+   "organik_kelime": 0,
+   "ai_ziyaret": 122729,
+   "ulkeler": [],
+   "rakipler": [],
+   "ayrica_ziyaret": [],
+   "sosyal_ag": [],
+   "kelimeler": [
+    {
+     "kelime": "cimri",
+     "hacim": 65820
+    },
+    {
+     "kelime": "iphone 17",
+     "hacim": 2586720
+    },
+    {
+     "kelime": "cimri com",
+     "hacim": 6500
+    },
+    {
+     "kelime": "iphone 17 pro max",
+     "hacim": 1233110
+    },
+    {
+     "kelime": "airpods",
+     "hacim": 613830
+    }
+   ]
+  },
+  {
+   "alan": "koctas.com.tr",
+   "grup": "yapi",
+   "seri": [
+    {
+     "ay": "2026-06",
+     "ziyaret": 5494551
+    },
+    {
+     "ay": "2026-07",
+     "ziyaret": 5430380
+    },
+    {
+     "ay": "2026-08",
+     "ziyaret": 4911780
+    }
+   ],
+   "ort_ziyaret": 5278904,
+   "son_ay": "2026-08",
+   "son_ziyaret": 4911780,
+   "tr_pay": 96.13,
+   "ilk_ulke": "TR",
+   "ilk_ulke_pay": 96.13,
+   "kanal": {
+    "direct": 20.34,
+    "organik": 45.87,
+    "ucretli": 9.62,
+    "sosyal_org": 2.31,
+    "sosyal_ucretli": 4.35,
+    "referans": 4.28,
+    "eposta": 1.13,
+    "display": 10.64,
+    "affiliate": 0.02,
+    "ai": 1.43
+   },
+   "modellenmis": false,
+   "kucuk": false,
+   "hemen_cikma": 34.7,
+   "sayfa_ziyaret": 3.28,
+   "sure_sn": 125,
+   "organik_kelime": 51652,
+   "ai_ziyaret": 68759,
+   "ulkeler": [
+    {
+     "ulke": "TR",
+     "pay": 96.13
+    },
+    {
+     "ulke": "DE",
+     "pay": 0.72
+    },
+    {
+     "ulke": "US",
+     "pay": 0.27
+    },
+    {
+     "ulke": "FR",
+     "pay": 0.22
+    },
+    {
+     "ulke": "NL",
+     "pay": 0.21
+    }
+   ],
+   "rakipler": [
+    "bauhaus.com.tr",
+    "ikea.com.tr",
+    "vivense.com",
+    "vitra.com.tr",
+    "jysk.com.tr",
+    "shop.creavit.com.tr",
+    "amazon.com.tr",
+    "n11.com",
+    "hepsiburada.com",
+    "trendyol.com"
+   ],
+   "ayrica_ziyaret": [
+    "bauhaus.com.tr",
+    "hepsiburada.com",
+    "trendyol.com",
+    "ikea.com.tr",
+    "akakce.com"
+   ],
+   "sosyal_ag": [
+    {
+     "ad": "Youtube",
+     "pay": 45.4
+    },
+    {
+     "ad": "Facebook",
+     "pay": 41.8
+    },
+    {
+     "ad": "Instagram",
+     "pay": 6.5
+    },
+    {
+     "ad": "X-twitter",
+     "pay": 3.8
+    },
+    {
+     "ad": "Pinterest",
+     "pay": 2.6
+    }
+   ],
+   "kelimeler": [
+    {
+     "kelime": "koçtaş",
+     "hacim": 100830
+    },
+    {
+     "kelime": "koctas",
+     "hacim": 11330
+    },
+    {
+     "kelime": "evidea",
+     "hacim": 20270
+    },
+    {
+     "kelime": "koç taş",
+     "hacim": 2590
+    },
+    {
+     "kelime": "çalışma masası",
+     "hacim": 15870
+    }
+   ]
+  },
+  {
+   "alan": "ikea.com.tr",
+   "grup": "yapi",
+   "seri": [
+    {
+     "ay": "2026-06",
+     "ziyaret": 4769660
+    },
+    {
+     "ay": "2026-07",
+     "ziyaret": 5136159
+    },
+    {
+     "ay": "2026-08",
+     "ziyaret": 5752051
+    }
+   ],
+   "ort_ziyaret": 5219290,
+   "son_ay": "2026-08",
+   "son_ziyaret": 5752051,
+   "tr_pay": 92.61,
+   "ilk_ulke": "TR",
+   "ilk_ulke_pay": 92.61,
+   "kanal": {
+    "direct": 33.3,
+    "organik": 53.81,
+    "ucretli": 2.45,
+    "sosyal_org": 3.64,
+    "sosyal_ucretli": 0.48,
+    "referans": 2.07,
+    "eposta": 1.94,
+    "display": 1.51,
+    "affiliate": 0.03,
+    "ai": 0.77
+   },
+   "modellenmis": false,
+   "kucuk": false,
+   "hemen_cikma": 29.9,
+   "sayfa_ziyaret": 6.93,
+   "sure_sn": 231,
+   "organik_kelime": 0,
+   "ai_ziyaret": 42263,
+   "ulkeler": [],
+   "rakipler": [],
+   "ayrica_ziyaret": [],
+   "sosyal_ag": [],
+   "kelimeler": [
+    {
+     "kelime": "ikea",
+     "hacim": 9891480
+    },
+    {
+     "kelime": "ıkea",
+     "hacim": 9030
+    },
+    {
+     "kelime": "i̇kea",
+     "hacim": 8360
+    },
+    {
+     "kelime": "ikea masa",
+     "hacim": 4640
+    },
+    {
+     "kelime": "ikea divan",
+     "hacim": 1480
+    }
+   ]
+  },
+  {
+   "alan": "vivense.com",
+   "grup": "uzman",
+   "seri": [
+    {
+     "ay": "2026-06",
+     "ziyaret": 1683980
+    },
+    {
+     "ay": "2026-07",
+     "ziyaret": 1615791
+    },
+    {
+     "ay": "2026-08",
+     "ziyaret": 2187400
+    }
+   ],
+   "ort_ziyaret": 1829057,
+   "son_ay": "2026-08",
+   "son_ziyaret": 2187400,
+   "tr_pay": 96.3,
+   "ilk_ulke": "TR",
+   "ilk_ulke_pay": 96.3,
+   "kanal": {
+    "direct": 35.77,
+    "organik": 43.35,
+    "ucretli": 7.9,
+    "sosyal_org": 3.73,
+    "sosyal_ucretli": 3.07,
+    "referans": 2.61,
+    "eposta": 1.13,
+    "display": 1.02,
+    "affiliate": 0,
+    "ai": 1.42
+   },
+   "modellenmis": false,
+   "kucuk": false,
+   "hemen_cikma": 44.0,
+   "sayfa_ziyaret": 4.24,
+   "sure_sn": 181,
+   "organik_kelime": 0,
+   "ai_ziyaret": 30724,
+   "ulkeler": [],
+   "rakipler": [],
+   "ayrica_ziyaret": [],
+   "sosyal_ag": [],
+   "kelimeler": [
+    {
+     "kelime": "vivense",
+     "hacim": 40550
+    },
+    {
+     "kelime": "çalışma masası",
+     "hacim": 15870
+    },
+    {
+     "kelime": "l koltuk",
+     "hacim": 18530
+    },
+    {
+     "kelime": "avize",
+     "hacim": 15090
+    },
+    {
+     "kelime": "koltuk takımı",
+     "hacim": 7510
+    }
+   ]
+  },
+  {
+   "alan": "bauhaus.com.tr",
+   "grup": "yapi",
+   "seri": [
+    {
+     "ay": "2026-06",
+     "ziyaret": 1383213
+    },
+    {
+     "ay": "2026-07",
+     "ziyaret": 1966249
+    },
+    {
+     "ay": "2026-08",
+     "ziyaret": 1625135
+    }
+   ],
+   "ort_ziyaret": 1658199,
+   "son_ay": "2026-08",
+   "son_ziyaret": 1625135,
+   "tr_pay": 96.63,
+   "ilk_ulke": "TR",
+   "ilk_ulke_pay": 96.63,
+   "kanal": {
+    "direct": 24.74,
+    "organik": 49.35,
+    "ucretli": 6,
+    "sosyal_org": 3.48,
+    "sosyal_ucretli": 6.62,
+    "referans": 5.43,
+    "eposta": 1.77,
+    "display": 1.46,
+    "affiliate": 0,
+    "ai": 1.15
+   },
+   "modellenmis": false,
+   "kucuk": false,
+   "hemen_cikma": 31.8,
+   "sayfa_ziyaret": 4.39,
+   "sure_sn": 101,
+   "organik_kelime": 0,
+   "ai_ziyaret": 18413,
+   "ulkeler": [],
+   "rakipler": [],
+   "ayrica_ziyaret": [],
+   "sosyal_ag": [],
+   "kelimeler": [
+    {
+     "kelime": "bauhaus",
+     "hacim": 763120
+    },
+    {
+     "kelime": "bahaus",
+     "hacim": 13700
+    },
+    {
+     "kelime": "bauhause",
+     "hacim": 6840
+    },
+    {
+     "kelime": "bauhouse",
+     "hacim": 5490
+    },
+    {
+     "kelime": "tente",
+     "hacim": 18410
+    }
+   ]
+  },
+  {
+   "alan": "evidea.com",
+   "grup": "uzman",
+   "seri": [
+    {
+     "ay": "2026-06",
+     "ziyaret": 544648
+    },
+    {
+     "ay": "2026-07",
+     "ziyaret": 662359
+    },
+    {
+     "ay": "2026-08",
+     "ziyaret": 681768
+    }
+   ],
+   "ort_ziyaret": 629592,
+   "son_ay": "2026-08",
+   "son_ziyaret": 681768,
+   "tr_pay": 93.65,
+   "ilk_ulke": "TR",
+   "ilk_ulke_pay": 93.65,
+   "kanal": {
+    "direct": 24.18,
+    "organik": 51.82,
+    "ucretli": 9.03,
+    "sosyal_org": 3.9,
+    "sosyal_ucretli": 3.67,
+    "referans": 5.71,
+    "eposta": 0.55,
+    "display": 0.66,
+    "affiliate": 0.26,
+    "ai": 0.22
+   },
+   "modellenmis": false,
+   "kucuk": false,
+   "hemen_cikma": 39.3,
+   "sayfa_ziyaret": 3.3,
+   "sure_sn": 145,
+   "organik_kelime": 0,
+   "ai_ziyaret": 1454,
+   "ulkeler": [],
+   "rakipler": [],
+   "ayrica_ziyaret": [],
+   "sosyal_ag": [],
+   "kelimeler": [
+    {
+     "kelime": "evidea",
+     "hacim": 20270
+    },
+    {
+     "kelime": "evedia",
+     "hacim": 1720
+    },
+    {
+     "kelime": "çalışma masası",
+     "hacim": 15870
+    },
+    {
+     "kelime": "mudo home",
+     "hacim": 4240
+    },
+    {
+     "kelime": "evi̇dea",
+     "hacim": 740
+    }
+   ]
+  },
+  {
+   "alan": "kale.com.tr",
+   "grup": "marka",
+   "seri": [
+    {
+     "ay": "2026-06",
+     "ziyaret": 228511
+    },
+    {
+     "ay": "2026-07",
+     "ziyaret": 254334
+    },
+    {
+     "ay": "2026-08",
+     "ziyaret": 252269
+    }
+   ],
+   "ort_ziyaret": 245038,
+   "son_ay": "2026-08",
+   "son_ziyaret": 252269,
+   "tr_pay": 96.56,
+   "ilk_ulke": "TR",
+   "ilk_ulke_pay": 96.56,
+   "kanal": {
+    "direct": 52.73,
+    "organik": 29.32,
+    "ucretli": 1.26,
+    "sosyal_org": 6.31,
+    "sosyal_ucretli": 0,
+    "referans": 3.1,
+    "eposta": 7.04,
+    "display": 0,
+    "affiliate": 0,
+    "ai": 0.23
+   },
+   "modellenmis": false,
+   "kucuk": false,
+   "hemen_cikma": 22.4,
+   "sayfa_ziyaret": 9.37,
+   "sure_sn": 726,
+   "organik_kelime": 959,
+   "ai_ziyaret": 550,
+   "ulkeler": [
+    {
+     "ulke": "TR",
+     "pay": 96.56
+    },
+    {
+     "ulke": "QA",
+     "pay": 1.31
+    },
+    {
+     "ulke": "US",
+     "pay": 0.63
+    },
+    {
+     "ulke": "GB",
+     "pay": 0.34
+    },
+    {
+     "ulke": "DE",
+     "pay": 0.32
+    }
+   ],
+   "rakipler": [
+    "vitra.com.tr",
+    "egeseramik.com",
+    "yapimarka.com",
+    "ngkutahyaseramik.com.tr",
+    "koctas.com.tr",
+    "creavit.com.tr",
+    "lamarporselen.com",
+    "turkuazseramik.com.tr",
+    "banyomarka.com",
+    "seranit.com.tr"
+   ],
+   "ayrica_ziyaret": [
+    "vitra.com.tr",
+    "ngkutahyaseramik.com.tr",
+    "koctas.com.tr",
+    "egeseramik.com",
+    "kale.my.site.com"
+   ],
+   "sosyal_ag": [
+    {
+     "ad": "WhatsApp Webapp",
+     "pay": 100
+    }
+   ],
+   "kelimeler": [
+    {
+     "kelime": "çanakkale seramik",
+     "hacim": 1220
+    },
+    {
+     "kelime": "kale",
+     "hacim": 119820
+    },
+    {
+     "kelime": "kale seramik",
+     "hacim": 960
+    },
+    {
+     "kelime": "fayans",
+     "hacim": 2880
+    },
+    {
+     "kelime": "klozet kapağı",
+     "hacim": 4810
+    }
+   ]
+  },
+  {
+   "alan": "vitra.com.tr",
+   "grup": "marka",
+   "seri": [
+    {
+     "ay": "2026-06",
+     "ziyaret": 216724
+    },
+    {
+     "ay": "2026-07",
+     "ziyaret": 169814
+    },
+    {
+     "ay": "2026-08",
+     "ziyaret": 196079
+    }
+   ],
+   "ort_ziyaret": 194206,
+   "son_ay": "2026-08",
+   "son_ziyaret": 196079,
+   "tr_pay": 77.75,
+   "ilk_ulke": "TR",
+   "ilk_ulke_pay": 77.75,
+   "kanal": {
+    "direct": 37.52,
+    "organik": 54.25,
+    "ucretli": 4.41,
+    "sosyal_org": 0.64,
+    "sosyal_ucretli": 0.78,
+    "referans": 0.89,
+    "eposta": 0.24,
+    "display": 0.49,
+    "affiliate": 0,
+    "ai": 0.79
+   },
+   "modellenmis": false,
+   "kucuk": false,
+   "hemen_cikma": 55.0,
+   "sayfa_ziyaret": 5.42,
+   "sure_sn": 158,
+   "organik_kelime": 1882,
+   "ai_ziyaret": 1362,
+   "ulkeler": [
+    {
+     "ulke": "TR",
+     "pay": 77.75
+    },
+    {
+     "ulke": "RU",
+     "pay": 14.9
+    },
+    {
+     "ulke": "UZ",
+     "pay": 1.43
+    },
+    {
+     "ulke": "AZ",
+     "pay": 1.12
+    },
+    {
+     "ulke": "DE",
+     "pay": 1.06
+    }
+   ],
+   "rakipler": [
+    "kale.com.tr",
+    "creavit.com.tr",
+    "banyomarka.com",
+    "artema.com.tr",
+    "koctas.com.tr",
+    "egeseramik.com",
+    "seramiksan.com.tr",
+    "hansgrohe.de",
+    "geberit.de",
+    "laufen.com"
+   ],
+   "ayrica_ziyaret": [
+    "koctas.com.tr",
+    "kale.com.tr",
+    "banyomarka.com",
+    "bauhaus.com.tr",
+    "ngkutahyaseramik.com.tr"
+   ],
+   "sosyal_ag": [
+    {
+     "ad": "Facebook",
+     "pay": 100
+    }
+   ],
+   "kelimeler": [
+    {
+     "kelime": "vitra",
+     "hacim": 33250
+    },
+    {
+     "kelime": "vitra gömme rezervuar",
+     "hacim": 1280
+    },
+    {
+     "kelime": "klozet",
+     "hacim": 4710
+    },
+    {
+     "kelime": "klozet fiyatları",
+     "hacim": 1740
+    },
+    {
+     "kelime": "banyo dolabı",
+     "hacim": 5840
+    }
+   ]
+  },
+  {
+   "alan": "banyomarka.com",
+   "grup": "uzman",
+   "seri": [
+    {
+     "ay": "2026-06",
+     "ziyaret": 71666
+    },
+    {
+     "ay": "2026-07",
+     "ziyaret": 78376
+    },
+    {
+     "ay": "2026-08",
+     "ziyaret": 88247
+    }
+   ],
+   "ort_ziyaret": 79430,
+   "son_ay": "2026-08",
+   "son_ziyaret": 88247,
+   "tr_pay": 94.66,
+   "ilk_ulke": "TR",
+   "ilk_ulke_pay": 94.66,
+   "kanal": {
+    "direct": 33.49,
+    "organik": 44.98,
+    "ucretli": 2.67,
+    "sosyal_org": 17.57,
+    "sosyal_ucretli": 0,
+    "referans": 1.28,
+    "eposta": 0,
+    "display": 0,
+    "affiliate": 0,
+    "ai": 0
+   },
+   "modellenmis": false,
+   "kucuk": false,
+   "hemen_cikma": 39.3,
+   "sayfa_ziyaret": 6.32,
+   "sure_sn": 104,
+   "organik_kelime": 1265,
+   "ai_ziyaret": 0,
+   "ulkeler": [
+    {
+     "ulke": "TR",
+     "pay": 94.66
+    },
+    {
+     "ulke": "DE",
+     "pay": 2.17
+    },
+    {
+     "ulke": "US",
+     "pay": 1.61
+    },
+    {
+     "ulke": "GB",
+     "pay": 0.96
+    },
+    {
+     "ulke": "FR",
+     "pay": 0.6
+    }
+   ],
+   "rakipler": [
+    "banyomoda.com.tr",
+    "vitra.com.tr",
+    "creavit.com.tr",
+    "banyona.com",
+    "banyomega.com",
+    "groheturkiye.com",
+    "yapimarka.com",
+    "banyocity.com",
+    "banyome.com",
+    "idealstandardturkey.com"
+   ],
+   "ayrica_ziyaret": [
+    "vitra.com.tr",
+    "koctas.com.tr",
+    "bauhaus.com.tr",
+    "milliyet.com.tr",
+    "facebook.com"
+   ],
+   "sosyal_ag": [],
+   "kelimeler": [
+    {
+     "kelime": "vitra rezervuar yedek parça",
+     "hacim": 770
+    },
+    {
+     "kelime": "7112210500 kale",
+     "hacim": 710
+    },
+    {
+     "kelime": "7112240000 kale water closet weight",
+     "hacim": 710
+    },
+    {
+     "kelime": "klozet fiyatları",
+     "hacim": 1740
+    },
+    {
+     "kelime": "geberit 111.950.00.6",
+     "hacim": 900
+    }
+   ]
+  },
+  {
+   "alan": "eca.com.tr",
+   "grup": "marka",
+   "seri": [
+    {
+     "ay": "2026-06",
+     "ziyaret": 68802
+    },
+    {
+     "ay": "2026-07",
+     "ziyaret": 59129
+    },
+    {
+     "ay": "2026-08",
+     "ziyaret": 92636
+    }
+   ],
+   "ort_ziyaret": 73522,
+   "son_ay": "2026-08",
+   "son_ziyaret": 92636,
+   "tr_pay": 89.32,
+   "ilk_ulke": "TR",
+   "ilk_ulke_pay": 89.32,
+   "kanal": {
+    "direct": 19.21,
+    "organik": 78.31,
+    "ucretli": 0.01,
+    "sosyal_org": 0.62,
+    "sosyal_ucretli": 0,
+    "referans": 0.28,
+    "eposta": 0.01,
+    "display": 0.01,
+    "affiliate": 0.01,
+    "ai": 1.55
+   },
+   "modellenmis": false,
+   "kucuk": false,
+   "hemen_cikma": 32.7,
+   "sayfa_ziyaret": 3.85,
+   "sure_sn": 52,
+   "organik_kelime": 785,
+   "ai_ziyaret": 0,
+   "ulkeler": [
+    {
+     "ulke": "TR",
+     "pay": 89.32
+    },
+    {
+     "ulke": "IQ",
+     "pay": 4.63
+    },
+    {
+     "ulke": "US",
+     "pay": 2.61
+    },
+    {
+     "ulke": "DE",
+     "pay": 1.77
+    },
+    {
+     "ulke": "GB",
+     "pay": 1.48
+    }
+   ],
+   "rakipler": [
+    "lindab.com",
+    "renson.net",
+    "mircom.com",
+    "duco.eu",
+    "ubbink.com",
+    "vilpe.com",
+    "customer.resideo.com",
+    "promat.com",
+    "kone.us",
+    "elba.com.tr"
+   ],
+   "ayrica_ziyaret": [
+    "eca.web.tr",
+    "koctas.com.tr",
+    "vitra.com.tr",
+    "haber7.com",
+    "haberler.com"
+   ],
+   "sosyal_ag": [],
+   "kelimeler": [
+    {
+     "kelime": "eca",
+     "hacim": 156100
+    },
+    {
+     "kelime": "klima",
+     "hacim": 45000
+    },
+    {
+     "kelime": "dış ünitesiz klima",
+     "hacim": 1800
+    },
+    {
+     "kelime": "eca kombi",
+     "hacim": 430
+    },
+    {
+     "kelime": "serel ankastre köpük sabunluk",
+     "hacim": 830
+    }
+   ]
+  },
+  {
+   "alan": "egeseramik.com",
+   "grup": "marka",
+   "seri": [
+    {
+     "ay": "2026-06",
+     "ziyaret": 58140
+    },
+    {
+     "ay": "2026-07",
+     "ziyaret": 60748
+    },
+    {
+     "ay": "2026-08",
+     "ziyaret": 48979
+    }
+   ],
+   "ort_ziyaret": 55956,
+   "son_ay": "2026-08",
+   "son_ziyaret": 48979,
+   "tr_pay": 95.36,
+   "ilk_ulke": "TR",
+   "ilk_ulke_pay": 95.36,
+   "kanal": {
+    "direct": 49.7,
+    "organik": 47.26,
+    "ucretli": 0.01,
+    "sosyal_org": 2.21,
+    "sosyal_ucretli": 0,
+    "referans": 0.01,
+    "eposta": 0.79,
+    "display": 0.01,
+    "affiliate": 0.01,
+    "ai": 0
+   },
+   "modellenmis": false,
+   "kucuk": false,
+   "hemen_cikma": 16.2,
+   "sayfa_ziyaret": 4.53,
+   "sure_sn": 69,
+   "organik_kelime": 0,
+   "ai_ziyaret": 0,
+   "ulkeler": [],
+   "rakipler": [],
+   "ayrica_ziyaret": [],
+   "sosyal_ag": [],
+   "kelimeler": [
+    {
+     "kelime": "ege seramik",
+     "hacim": 3290
+    },
+    {
+     "kelime": "ege seramik toilet",
+     "hacim": 530
+    },
+    {
+     "kelime": "60x60 bari ceviz mat",
+     "hacim": 330
+    },
+    {
+     "kelime": "egetech rocky anthracite",
+     "hacim": 110
+    },
+    {
+     "kelime": "ege seramik katalog",
+     "hacim": 90
+    }
+   ]
+  },
+  {
+   "alan": "tekzen.com.tr",
+   "grup": "yapi",
+   "seri": [
+    {
+     "ay": "2026-06",
+     "ziyaret": 59425
+    },
+    {
+     "ay": "2026-07",
+     "ziyaret": 51232
+    },
+    {
+     "ay": "2026-08",
+     "ziyaret": 47895
+    }
+   ],
+   "ort_ziyaret": 52851,
+   "son_ay": "2026-08",
+   "son_ziyaret": 47895,
+   "tr_pay": 83.07,
+   "ilk_ulke": "TR",
+   "ilk_ulke_pay": 83.07,
+   "kanal": {
+    "direct": 8.25,
+    "organik": 91.75,
+    "ucretli": 0,
+    "sosyal_org": 0,
+    "sosyal_ucretli": 0,
+    "referans": 0,
+    "eposta": 0,
+    "display": 0,
+    "affiliate": 0,
+    "ai": 0
+   },
+   "modellenmis": false,
+   "kucuk": false,
+   "hemen_cikma": 31.4,
+   "sayfa_ziyaret": 3.49,
+   "sure_sn": 76,
+   "organik_kelime": 786,
+   "ai_ziyaret": 0,
+   "ulkeler": [
+    {
+     "ulke": "TR",
+     "pay": 83.07
+    },
+    {
+     "ulke": "US",
+     "pay": 11.93
+    },
+    {
+     "ulke": "DE",
+     "pay": 5.0
+    }
+   ],
+   "rakipler": [
+    "koctas.com.tr",
+    "ozkocayapimarket.com.tr",
+    "bauhaus.com.tr",
+    "kamusalmarket.com",
+    "rekabetcifiyat.com",
+    "hepsiburada.com",
+    "trendyol.com",
+    "amazon.com.tr",
+    "hizlial.com",
+    "gittigidiyor.com"
+   ],
+   "ayrica_ziyaret": [
+    "trendyol.com",
+    "google.com"
+   ],
+   "sosyal_ag": [],
+   "kelimeler": [
+    {
+     "kelime": "tekzen",
+     "hacim": 5590
+    },
+    {
+     "kelime": "yapı market",
+     "hacim": 610
+    },
+    {
+     "kelime": "tekzen ankara",
+     "hacim": 470
+    },
+    {
+     "kelime": "kiler dolabı",
+     "hacim": 2740
+    },
+    {
+     "kelime": "tekzen sergi dolabı",
+     "hacim": 220
+    }
+   ]
+  },
+  {
+   "alan": "seramiksan.com.tr",
+   "grup": "marka",
+   "seri": [
+    {
+     "ay": "2026-06",
+     "ziyaret": 33033
+    },
+    {
+     "ay": "2026-07",
+     "ziyaret": 40866
+    },
+    {
+     "ay": "2026-08",
+     "ziyaret": 40924
+    }
+   ],
+   "ort_ziyaret": 38274,
+   "son_ay": "2026-08",
+   "son_ziyaret": 40924,
+   "tr_pay": 99.18,
+   "ilk_ulke": "TR",
+   "ilk_ulke_pay": 99.18,
+   "kanal": {
+    "direct": 63.1,
+    "organik": 30.85,
+    "ucretli": 0,
+    "sosyal_org": 4.49,
+    "sosyal_ucretli": 0,
+    "referans": 0.4,
+    "eposta": 0,
+    "display": 0,
+    "affiliate": 0,
+    "ai": 1.15
+   },
+   "modellenmis": false,
+   "kucuk": false,
+   "hemen_cikma": 35.6,
+   "sayfa_ziyaret": 3.96,
+   "sure_sn": 241,
+   "organik_kelime": 0,
+   "ai_ziyaret": 463,
+   "ulkeler": [],
+   "rakipler": [],
+   "ayrica_ziyaret": [],
+   "sosyal_ag": [],
+   "kelimeler": [
+    {
+     "kelime": "seramison faans",
+     "hacim": 790
+    },
+    {
+     "kelime": "seramiksan fayans",
+     "hacim": 520
+    },
+    {
+     "kelime": "seramiksan",
+     "hacim": 520
+    },
+    {
+     "kelime": "bolt klozet",
+     "hacim": 310
+    },
+    {
+     "kelime": "seramiksan hill rim out satın al",
+     "hacim": 630
+    }
+   ]
+  },
+  {
+   "alan": "creavit.com.tr",
+   "grup": "marka",
+   "seri": [
+    {
+     "ay": "2026-06",
+     "ziyaret": 32722
+    },
+    {
+     "ay": "2026-07",
+     "ziyaret": 28692
+    },
+    {
+     "ay": "2026-08",
+     "ziyaret": 39686
+    }
+   ],
+   "ort_ziyaret": 33700,
+   "son_ay": "2026-08",
+   "son_ziyaret": 39686,
+   "tr_pay": 90.77,
+   "ilk_ulke": "TR",
+   "ilk_ulke_pay": 90.77,
+   "kanal": {
+    "direct": 22.58,
+    "organik": 66.79,
+    "ucretli": 8.38,
+    "sosyal_org": 0.49,
+    "sosyal_ucretli": 1.21,
+    "referans": 0.42,
+    "eposta": 0.03,
+    "display": 0.04,
+    "affiliate": 0.03,
+    "ai": 0.03
+   },
+   "modellenmis": false,
+   "kucuk": false,
+   "hemen_cikma": 41.2,
+   "sayfa_ziyaret": 5.07,
+   "sure_sn": 206,
+   "organik_kelime": 853,
+   "ai_ziyaret": 0,
+   "ulkeler": [
+    {
+     "ulke": "TR",
+     "pay": 90.77
+    },
+    {
+     "ulke": "US",
+     "pay": 3.44
+    },
+    {
+     "ulke": "DE",
+     "pay": 3.21
+    },
+    {
+     "ulke": "GB",
+     "pay": 1.94
+    },
+    {
+     "ulke": "PK",
+     "pay": 0.39
+    }
+   ],
+   "rakipler": [
+    "vitra.com.tr",
+    "kale.com.tr",
+    "koctas.com.tr",
+    "banyoistanbul.com",
+    "turkmenleryapi.com.tr",
+    "yapimarka.com",
+    "banyovit.com",
+    "vado.com",
+    "geberit.com.tr",
+    "banyome.com"
+   ],
+   "ayrica_ziyaret": [
+    "koctas.com.tr",
+    "vitra.com.tr",
+    "ikea.com.tr",
+    "enabiz.gov.tr",
+    "amazon.com.tr"
+   ],
+   "sosyal_ag": [
+    {
+     "ad": "Facebook",
+     "pay": 100
+    }
+   ],
+   "kelimeler": [
+    {
+     "kelime": "creavit",
+     "hacim": 2400
+    },
+    {
+     "kelime": "klozet kapağı",
+     "hacim": 4810
+    },
+    {
+     "kelime": "banyo dolabı",
+     "hacim": 5840
+    },
+    {
+     "kelime": "klozet",
+     "hacim": 4710
+    },
+    {
+     "kelime": "duş seti",
+     "hacim": 2620
+    }
+   ]
+  },
+  {
+   "alan": "artema.com.tr",
+   "grup": "marka",
+   "seri": [
+    {
+     "ay": "2026-06",
+     "ziyaret": 17227
+    },
+    {
+     "ay": "2026-07",
+     "ziyaret": 20305
+    },
+    {
+     "ay": "2026-08",
+     "ziyaret": 10389
+    }
+   ],
+   "ort_ziyaret": 15974,
+   "son_ay": "2026-08",
+   "son_ziyaret": 10389,
+   "tr_pay": 100,
+   "ilk_ulke": "TR",
+   "ilk_ulke_pay": 100,
+   "kanal": {
+    "direct": 26.91,
+    "organik": 55.61,
+    "ucretli": 1.18,
+    "sosyal_org": 3.56,
+    "sosyal_ucretli": 0.48,
+    "referans": 4.79,
+    "eposta": 2.19,
+    "display": 2.94,
+    "affiliate": 0.41,
+    "ai": 1.92
+   },
+   "modellenmis": true,
+   "kucuk": false,
+   "hemen_cikma": 33.7,
+   "sayfa_ziyaret": 4.5,
+   "sure_sn": 181,
+   "organik_kelime": 176,
+   "ai_ziyaret": 0,
+   "ulkeler": [
+    {
+     "ulke": "TR",
+     "pay": 100
+    }
+   ],
+   "rakipler": [
+    "vitra.com.tr",
+    "koctas.com.tr",
+    "eczacibasi.com.tr",
+    "banyomega.com",
+    "banyomoda.com.tr",
+    "geberitnorthamerica.com",
+    "hansgrohe.com",
+    "kolo.com.pl",
+    "aquatherm.de",
+    "serelseramik.com.tr"
+   ],
+   "ayrica_ziyaret": [],
+   "sosyal_ag": [],
+   "kelimeler": [
+    {
+     "kelime": "artema",
+     "hacim": 2190
+    },
+    {
+     "kelime": "duş seti artema",
+     "hacim": 200
+    },
+    {
+     "kelime": "artema root square seti",
+     "hacim": 260
+    },
+    {
+     "kelime": "artema base round 200 duş kolonu montajı",
+     "hacim": 170
+    },
+    {
+     "kelime": "artema banyo bataryası",
+     "hacim": 230
+    }
+   ]
+  },
+  {
+   "alan": "hansgrohe.com.tr",
+   "grup": "marka",
+   "seri": [
+    {
+     "ay": "2026-06",
+     "ziyaret": 6670
+    },
+    {
+     "ay": "2026-07",
+     "ziyaret": 6329
+    },
+    {
+     "ay": "2026-08",
+     "ziyaret": 31842
+    }
+   ],
+   "ort_ziyaret": 14947,
+   "son_ay": "2026-08",
+   "son_ziyaret": 31842,
+   "tr_pay": 100,
+   "ilk_ulke": "TR",
+   "ilk_ulke_pay": 100,
+   "kanal": {
+    "direct": 26.8,
+    "organik": 58.42,
+    "ucretli": 1.98,
+    "sosyal_org": 2.98,
+    "sosyal_ucretli": 0.48,
+    "referans": 3.26,
+    "eposta": 1.57,
+    "display": 2.38,
+    "affiliate": 0.55,
+    "ai": 1.57
+   },
+   "modellenmis": true,
+   "kucuk": false,
+   "hemen_cikma": 64.1,
+   "sayfa_ziyaret": 1.84,
+   "sure_sn": 260,
+   "organik_kelime": 0,
+   "ai_ziyaret": 0,
+   "ulkeler": [],
+   "rakipler": [],
+   "ayrica_ziyaret": [],
+   "sosyal_ag": [],
+   "kelimeler": [
+    {
+     "kelime": "hansgrohe",
+     "hacim": 37250
+    },
+    {
+     "kelime": "43927000 d16-10 tek gözlü granit",
+     "hacim": 390
+    },
+    {
+     "kelime": "24595000",
+     "hacim": 170
+    },
+    {
+     "kelime": "raindance alive s duş kolonu 300 2jet showerselect comfort termostat ile",
+     "hacim": 170
+    },
+    {
+     "kelime": "hans grohe",
+     "hacim": 4240
+    }
+   ]
+  },
+  {
+   "alan": "geberit.com.tr",
+   "grup": "marka",
+   "seri": [
+    {
+     "ay": "2026-06",
+     "ziyaret": 13117
+    },
+    {
+     "ay": "2026-07",
+     "ziyaret": 9376
+    },
+    {
+     "ay": "2026-08",
+     "ziyaret": 14454
+    }
+   ],
+   "ort_ziyaret": 12316,
+   "son_ay": "2026-08",
+   "son_ziyaret": 14454,
+   "tr_pay": 95.42,
+   "ilk_ulke": "TR",
+   "ilk_ulke_pay": 95.42,
+   "kanal": {
+    "direct": 28.17,
+    "organik": 57.27,
+    "ucretli": 11.38,
+    "sosyal_org": 1.06,
+    "sosyal_ucretli": 0,
+    "referans": 2.12,
+    "eposta": 0,
+    "display": 0,
+    "affiliate": 0,
+    "ai": 0
+   },
+   "modellenmis": false,
+   "kucuk": false,
+   "hemen_cikma": 55.4,
+   "sayfa_ziyaret": 3.04,
+   "sure_sn": 135,
+   "organik_kelime": 225,
+   "ai_ziyaret": 0,
+   "ulkeler": [
+    {
+     "ulke": "TR",
+     "pay": 95.42
+    },
+    {
+     "ulke": "US",
+     "pay": 3.8
+    },
+    {
+     "ulke": "DE",
+     "pay": 0.78
+    }
+   ],
+   "rakipler": [
+    "banyomarka.com",
+    "pentabanyo.com",
+    "cistermiser.co.uk",
+    "siamp.fr",
+    "banyocity.com",
+    "liv.si",
+    "varion.ru",
+    "fluidmasteruk.com",
+    "sfasanitrit.com.br",
+    "norika.com.sg"
+   ],
+   "ayrica_ziyaret": [
+    "hepsiburada.com",
+    "mail.google.com",
+    "instagram.com",
+    "chatgpt.com",
+    "youtube.com"
+   ],
+   "sosyal_ag": [],
+   "kelimeler": [
+    {
+     "kelime": "geberit 154.450.ks.1",
+     "hacim": 810
+    },
+    {
+     "kelime": "gebrit",
+     "hacim": 770
+    },
+    {
+     "kelime": "klozet",
+     "hacim": 4710
+    },
+    {
+     "kelime": "geberit nisbetiye",
+     "hacim": 190
+    },
+    {
+     "kelime": "wc",
+     "hacim": 103640
+    }
+   ]
+  },
+  {
+   "alan": "turkuazseramik.com.tr",
+   "grup": "marka",
+   "seri": [
+    {
+     "ay": "2026-06",
+     "ziyaret": 10322
+    },
+    {
+     "ay": "2026-07",
+     "ziyaret": 10325
+    },
+    {
+     "ay": "2026-08",
+     "ziyaret": 13976
+    }
+   ],
+   "ort_ziyaret": 11541,
+   "son_ay": "2026-08",
+   "son_ziyaret": 13976,
+   "tr_pay": 80.07,
+   "ilk_ulke": "TR",
+   "ilk_ulke_pay": 80.07,
+   "kanal": {
+    "direct": 24.49,
+    "organik": 72.59,
+    "ucretli": 0.35,
+    "sosyal_org": 2.56,
+    "sosyal_ucretli": 0,
+    "referans": 0,
+    "eposta": 0,
+    "display": 0,
+    "affiliate": 0,
+    "ai": 0
+   },
+   "modellenmis": false,
+   "kucuk": false,
+   "hemen_cikma": 48.2,
+   "sayfa_ziyaret": 3.37,
+   "sure_sn": 118,
+   "organik_kelime": 209,
+   "ai_ziyaret": 0,
+   "ulkeler": [
+    {
+     "ulke": "TR",
+     "pay": 80.07
+    },
+    {
+     "ulke": "ID",
+     "pay": 14.57
+    },
+    {
+     "ulke": "US",
+     "pay": 5.36
+    }
+   ],
+   "rakipler": [
+    "kale.com.tr",
+    "vitra.com.tr",
+    "creavit.com.tr",
+    "banyoline.com",
+    "seramikburada.com.tr",
+    "kalecore.com.tr",
+    "kepezyapimarket.com.tr",
+    "shop.creavit.com.tr",
+    "banyomega.com",
+    "niagaracorp.com"
+   ],
+   "ayrica_ziyaret": [
+    "google.com",
+    "trendyol.com",
+    "web.whatsapp.com",
+    "id.hyper3d.ai"
+   ],
+   "sosyal_ag": [],
+   "kelimeler": [
+    {
+     "kelime": "turkuaz",
+     "hacim": 9760
+    },
+    {
+     "kelime": "turkuaz seramik",
+     "hacim": 210
+    },
+    {
+     "kelime": "sharp 100*48",
+     "hacim": 1070
+    },
+    {
+     "kelime": "seramik lavabo sifonu",
+     "hacim": 310
+    },
+    {
+     "kelime": "nil 85x90 turkuaz",
+     "hacim": 160
+    }
+   ]
+  },
+  {
+   "alan": "roca.com.tr",
+   "grup": "marka",
+   "seri": [
+    {
+     "ay": "2026-06",
+     "ziyaret": 4787
+    },
+    {
+     "ay": "2026-07",
+     "ziyaret": 9007
+    },
+    {
+     "ay": "2026-08",
+     "ziyaret": 9904
+    }
+   ],
+   "ort_ziyaret": 7899,
+   "son_ay": "2026-08",
+   "son_ziyaret": 9904,
+   "tr_pay": 100,
+   "ilk_ulke": "TR",
+   "ilk_ulke_pay": null,
+   "kanal": {
+    "direct": 35.72,
+    "organik": 37,
+    "ucretli": 1.33,
+    "sosyal_org": 4.63,
+    "sosyal_ucretli": 0.5,
+    "referans": 9.22,
+    "eposta": 2.22,
+    "display": 6.41,
+    "affiliate": 1.27,
+    "ai": 1.69
+   },
+   "modellenmis": true,
+   "kucuk": false,
+   "hemen_cikma": 24.1,
+   "sayfa_ziyaret": 4.15,
+   "sure_sn": 50,
+   "organik_kelime": 179,
+   "ai_ziyaret": 0,
+   "ulkeler": [
+    {
+     "ulke": "TR",
+     "pay": 100
+    }
+   ],
+   "rakipler": [],
+   "ayrica_ziyaret": [],
+   "sosyal_ag": [],
+   "kelimeler": [
+    {
+     "kelime": "klozet kapağı",
+     "hacim": 4810
+    },
+    {
+     "kelime": "victoria",
+     "hacim": 127600
+    },
+    {
+     "kelime": "roca",
+     "hacim": 29950
+    },
+    {
+     "kelime": "küvet",
+     "hacim": 2040
+    },
+    {
+     "kelime": "roca lavabo bataryası",
+     "hacim": 110
+    }
+   ]
+  },
+  {
+   "alan": "duravit.com.tr",
+   "grup": "marka",
+   "seri": [
+    {
+     "ay": "2026-06",
+     "ziyaret": 5388
+    },
+    {
+     "ay": "2026-07",
+     "ziyaret": 4673
+    },
+    {
+     "ay": "2026-08",
+     "ziyaret": 13581
+    }
+   ],
+   "ort_ziyaret": 7881,
+   "son_ay": "2026-08",
+   "son_ziyaret": 13581,
+   "tr_pay": 100,
+   "ilk_ulke": "TR",
+   "ilk_ulke_pay": 100,
+   "kanal": {
+    "direct": 31.79,
+    "organik": 44.06,
+    "ucretli": 1.67,
+    "sosyal_org": 4.74,
+    "sosyal_ucretli": 0.64,
+    "referans": 6,
+    "eposta": 3.05,
+    "display": 4.55,
+    "affiliate": 0.82,
+    "ai": 2.7
+   },
+   "modellenmis": true,
+   "kucuk": false,
+   "hemen_cikma": 53.5,
+   "sayfa_ziyaret": 2.41,
+   "sure_sn": 62,
+   "organik_kelime": 120,
+   "ai_ziyaret": 0,
+   "ulkeler": [
+    {
+     "ulke": "TR",
+     "pay": 100
+    }
+   ],
+   "rakipler": [
+    "geberit.com.tr",
+    "vitra.com.tr",
+    "creavit.com.tr",
+    "hansgrohe.com.tr",
+    "hueppe.com.tr",
+    "idevit.com.tr",
+    "bocchi.com.tr",
+    "seycan.com.tr",
+    "guralvit.com.tr"
+   ],
+   "ayrica_ziyaret": [],
+   "sosyal_ag": [],
+   "kelimeler": [
+    {
+     "kelime": "duravit",
+     "hacim": 11350
+    },
+    {
+     "kelime": "duravi̇t",
+     "hacim": 340
+    },
+    {
+     "kelime": "küvet",
+     "hacim": 2040
+    },
+    {
+     "kelime": "klozet",
+     "hacim": 4710
+    },
+    {
+     "kelime": "kapılı küvet",
+     "hacim": 70
+    }
+   ]
+  },
+  {
+   "alan": "grohe.com.tr",
+   "grup": "marka",
+   "seri": [
+    {
+     "ay": "2026-06",
+     "ziyaret": 13072
+    },
+    {
+     "ay": "2026-07",
+     "ziyaret": 3201
+    },
+    {
+     "ay": "2026-08",
+     "ziyaret": 1587
+    }
+   ],
+   "ort_ziyaret": 5953,
+   "son_ay": "2026-08",
+   "son_ziyaret": 1587,
+   "tr_pay": 100,
+   "ilk_ulke": "TR",
+   "ilk_ulke_pay": null,
+   "kanal": {
+    "direct": 32.41,
+    "organik": 44.01,
+    "ucretli": 1.58,
+    "sosyal_org": 4.84,
+    "sosyal_ucretli": 0.64,
+    "referans": 6.22,
+    "eposta": 3.1,
+    "display": 3.67,
+    "affiliate": 0.82,
+    "ai": 2.69
+   },
+   "modellenmis": true,
+   "kucuk": false,
+   "hemen_cikma": 32.1,
+   "sayfa_ziyaret": 2.46,
+   "sure_sn": 60,
+   "organik_kelime": 56,
+   "ai_ziyaret": 0,
+   "ulkeler": [
+    {
+     "ulke": "TR",
+     "pay": 100
+    }
+   ],
+   "rakipler": [
+    "groheturkiye.com",
+    "yildirimmermer.com.tr",
+    "facebook.com",
+    "google.com.tr"
+   ],
+   "ayrica_ziyaret": [],
+   "sosyal_ag": [],
+   "kelimeler": [
+    {
+     "kelime": "grohe taharet sprey takımı tempesta krom- 26357000",
+     "hacim": 230
+    },
+    {
+     "kelime": "grohe concetto xl",
+     "hacim": 330
+    },
+    {
+     "kelime": "887*47.5",
+     "hacim": 240
+    },
+    {
+     "kelime": "24062dc0",
+     "hacim": 200
+    },
+    {
+     "kelime": "grohe",
+     "hacim": 43580
+    }
+   ]
+  },
+  {
+   "alan": "banyomega.com",
+   "grup": "uzman",
+   "seri": [
+    {
+     "ay": "2026-06",
+     "ziyaret": 2949
+    },
+    {
+     "ay": "2026-07",
+     "ziyaret": 6794
+    },
+    {
+     "ay": "2026-08",
+     "ziyaret": 6559
+    }
+   ],
+   "ort_ziyaret": 5434,
+   "son_ay": "2026-08",
+   "son_ziyaret": 6559,
+   "tr_pay": 92.85,
+   "ilk_ulke": "TR",
+   "ilk_ulke_pay": 92.85,
+   "kanal": {
+    "direct": 23.69,
+    "organik": 59.49,
+    "ucretli": 1.72,
+    "sosyal_org": 4.58,
+    "sosyal_ucretli": 0,
+    "referans": 1.49,
+    "eposta": 8.61,
+    "display": 0,
+    "affiliate": 0,
+    "ai": 0.42
+   },
+   "modellenmis": false,
+   "kucuk": false,
+   "hemen_cikma": 57.3,
+   "sayfa_ziyaret": 1.53,
+   "sure_sn": 21,
+   "organik_kelime": 320,
+   "ai_ziyaret": 0,
+   "ulkeler": [
+    {
+     "ulke": "TR",
+     "pay": 92.85
+    },
+    {
+     "ulke": "US",
+     "pay": 7.15
+    }
+   ],
+   "rakipler": [
+    "banyomarka.com",
+    "banyomoda.com.tr",
+    "bocchibagno.com",
+    "banyome.com",
+    "vitra.com.tr",
+    "idealkabin.com.tr",
+    "shop.creavit.com.tr",
+    "creavit.com.tr",
+    "turkuazseramik.com.tr",
+    "seramikturkiye.org"
+   ],
+   "ayrica_ziyaret": [
+    "instagram.com",
+    "google.com"
+   ],
+   "sosyal_ag": [],
+   "kelimeler": [
+    {
+     "kelime": "ankastre duş seti",
+     "hacim": 2480
+    },
+    {
+     "kelime": "vitra s50",
+     "hacim": 1040
+    },
+    {
+     "kelime": "küvet",
+     "hacim": 2040
+    },
+    {
+     "kelime": "duş robotu seti",
+     "hacim": 410
+    },
+    {
+     "kelime": "banyomega",
+     "hacim": 110
+    }
+   ]
+  },
+  {
+   "alan": "banyome.com",
+   "grup": "uzman",
+   "seri": [
+    {
+     "ay": "2026-06",
+     "ziyaret": 4862
+    },
+    {
+     "ay": "2026-07",
+     "ziyaret": 4215
+    },
+    {
+     "ay": "2026-08",
+     "ziyaret": 5840
+    }
+   ],
+   "ort_ziyaret": 4972,
+   "son_ay": "2026-08",
+   "son_ziyaret": 5840,
+   "tr_pay": 94.98,
+   "ilk_ulke": "TR",
+   "ilk_ulke_pay": 94.98,
+   "kanal": {
+    "direct": 26.79,
+    "organik": 42.47,
+    "ucretli": 4.21,
+    "sosyal_org": 4.93,
+    "sosyal_ucretli": 2.83,
+    "referans": 6.67,
+    "eposta": 2.95,
+    "display": 4.35,
+    "affiliate": 2.56,
+    "ai": 2.25
+   },
+   "modellenmis": true,
+   "kucuk": false,
+   "hemen_cikma": 48.5,
+   "sayfa_ziyaret": 1.55,
+   "sure_sn": 75,
+   "organik_kelime": 0,
+   "ai_ziyaret": 0,
+   "ulkeler": [],
+   "rakipler": [],
+   "ayrica_ziyaret": [],
+   "sosyal_ag": [],
+   "kelimeler": [
+    {
+     "kelime": "lavabo sifon çeşitleri",
+     "hacim": 200
+    },
+    {
+     "kelime": "23303da0",
+     "hacim": 170
+    },
+    {
+     "kelime": "24058en1",
+     "hacim": 170
+    },
+    {
+     "kelime": "25044003",
+     "hacim": 170
+    },
+    {
+     "kelime": "30294be0",
+     "hacim": 170
+    }
+   ]
+  },
+  {
+   "alan": "banyoline.com",
+   "grup": "uzman",
+   "seri": [
+    {
+     "ay": "2026-06",
+     "ziyaret": 3785
+    },
+    {
+     "ay": "2026-07",
+     "ziyaret": 4147
+    },
+    {
+     "ay": "2026-08",
+     "ziyaret": 4427
+    }
+   ],
+   "ort_ziyaret": 4120,
+   "son_ay": "2026-08",
+   "son_ziyaret": 4427,
+   "tr_pay": 100,
+   "ilk_ulke": "TR",
+   "ilk_ulke_pay": 100,
+   "kanal": {
+    "direct": 28.41,
+    "organik": 49.68,
+    "ucretli": 2.47,
+    "sosyal_org": 3.76,
+    "sosyal_ucretli": 2.13,
+    "referans": 4.97,
+    "eposta": 2.12,
+    "display": 3,
+    "affiliate": 1.79,
+    "ai": 1.66
+   },
+   "modellenmis": true,
+   "kucuk": false,
+   "hemen_cikma": 39.6,
+   "sayfa_ziyaret": 1.99,
+   "sure_sn": 167,
+   "organik_kelime": 0,
+   "ai_ziyaret": 0,
+   "ulkeler": [],
+   "rakipler": [],
+   "ayrica_ziyaret": [],
+   "sosyal_ag": [],
+   "kelimeler": [
+    {
+     "kelime": "denko madrid 80 cm banyo dolabı seti (alt ve üst modül )",
+     "hacim": 160
+    },
+    {
+     "kelime": "ankastre duş seti artema",
+     "hacim": 140
+    },
+    {
+     "kelime": "sharp 100*48",
+     "hacim": 1070
+    },
+    {
+     "kelime": "hilton lavabo",
+     "hacim": 640
+    },
+    {
+     "kelime": "banyo lavabosu seti",
+     "hacim": 350
+    }
+   ]
+  },
+  {
+   "alan": "serelseramik.com.tr",
+   "grup": "marka",
+   "seri": [
+    {
+     "ay": "2026-06",
+     "ziyaret": 1725
+    },
+    {
+     "ay": "2026-07",
+     "ziyaret": 2456
+    },
+    {
+     "ay": "2026-08",
+     "ziyaret": 2836
+    }
+   ],
+   "ort_ziyaret": 2339,
+   "son_ay": "2026-08",
+   "son_ziyaret": 2836,
+   "tr_pay": 100,
+   "ilk_ulke": "TR",
+   "ilk_ulke_pay": 100,
+   "kanal": {
+    "direct": 32.64,
+    "organik": 44.18,
+    "ucretli": 1.5,
+    "sosyal_org": 4.83,
+    "sosyal_ucretli": 0.61,
+    "referans": 6.39,
+    "eposta": 3.2,
+    "display": 3.18,
+    "affiliate": 0.73,
+    "ai": 2.74
+   },
+   "modellenmis": true,
+   "kucuk": false,
+   "hemen_cikma": 23.3,
+   "sayfa_ziyaret": 2.95,
+   "sure_sn": 37,
+   "organik_kelime": 49,
+   "ai_ziyaret": 0,
+   "ulkeler": [
+    {
+     "ulke": "TR",
+     "pay": 100
+    }
+   ],
+   "rakipler": [
+    "eca.com.tr",
+    "kale.com.tr",
+    "banyocu.com.tr",
+    "elginkan.com.tr",
+    "artema.com.tr",
+    "bauhaus.com.tr",
+    "koctas.com.tr",
+    "helvex.com.mx",
+    "canovate.com",
+    "kolo.com.pl"
+   ],
+   "ayrica_ziyaret": [
+    "google.com"
+   ],
+   "sosyal_ag": [],
+   "kelimeler": [
+    {
+     "kelime": "serel klozet kapağı",
+     "hacim": 480
+    },
+    {
+     "kelime": "serel ceramics",
+     "hacim": 50
+    },
+    {
+     "kelime": "serel yereli̇",
+     "hacim": 1750
+    },
+    {
+     "kelime": "serel çocuk-yetişkin klozet kapağı",
+     "hacim": 330
+    },
+    {
+     "kelime": "klozet kapakları",
+     "hacim": 540
+    }
+   ]
+  },
+  {
+   "alan": "bien.com.tr",
+   "grup": "marka",
+   "seri": [
+    {
+     "ay": "2026-06",
+     "ziyaret": 246
+    },
+    {
+     "ay": "2026-07",
+     "ziyaret": 290
+    },
+    {
+     "ay": "2026-08",
+     "ziyaret": 193
+    }
+   ],
+   "ort_ziyaret": 243,
+   "son_ay": "2026-08",
+   "son_ziyaret": 193,
+   "tr_pay": 100.0,
+   "ilk_ulke": "TR",
+   "ilk_ulke_pay": 100,
+   "kanal": {
+    "direct": 38.41,
+    "organik": 32.83,
+    "ucretli": 0.95,
+    "sosyal_org": 6.69,
+    "sosyal_ucretli": 0.65,
+    "referans": 11.53,
+    "eposta": 2.9,
+    "display": 2.73,
+    "affiliate": 1.63,
+    "ai": 1.68
+   },
+   "modellenmis": true,
+   "kucuk": true,
+   "hemen_cikma": 44.8,
+   "sayfa_ziyaret": 1.01,
+   "sure_sn": 0,
+   "organik_kelime": 0,
+   "ai_ziyaret": 0,
+   "ulkeler": [],
+   "rakipler": [],
+   "ayrica_ziyaret": [],
+   "sosyal_ag": [],
+   "kelimeler": [
+    {
+     "kelime": "bien",
+     "hacim": 15350
+    },
+    {
+     "kelime": "bien portal",
+     "hacim": 3600
+    },
+    {
+     "kelime": "bien klima",
+     "hacim": 340
+    },
+    {
+     "kelime": "bien agency i fotoğraf prodüksiyon ajansı",
+     "hacim": 330
+    },
+    {
+     "kelime": "bien ajans",
+     "hacim": 270
+    }
+   ]
+  }
+ ]
+}

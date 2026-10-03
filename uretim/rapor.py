@@ -11,7 +11,7 @@ import t2_ortak, kaynakca, ceviri, dil
 from t2_ortak import x, R
 from ortak import logo_css, logo_alan_adlari, lg
 import h3_not
-import b_ozet, b_geo, b_makro, b_talep, b_ssgbm, b_niyet, b_organik, b_marka, b_youtube, b_katalog, b_yeni, b_set, b_rakip, b_benchmark, b_model, b_adimlar, b_yontem, b_serp, b_kategori_trafik, b_pazaryeri, b_politika, b_sikayet, b_fiyat, b_derin, b_panel
+import b_ozet, b_geo, b_makro, b_talep, b_ssgbm, b_niyet, b_organik, b_marka, b_youtube, b_katalog, b_yeni, b_set, b_rakip, b_benchmark, b_model, b_adimlar, b_yontem, b_serp, b_rakip_sw, b_kategori_trafik, b_pazaryeri, b_politika, b_sikayet, b_fiyat, b_derin, b_panel, b_yorum
 
 AD = "VitrA_E-Ticaret_Buyume_Firsatlari"
 XLS = os.path.join(veri.KOK, AD + ".xlsx")
@@ -32,15 +32,16 @@ P.append(bolum("organik", "Organik Kanal Performansı", "Organic Channel Perform
 P.append(bolum("marka", "Marka Aramaları ve Autocomplete", "Brand Searches and Autocomplete", b_marka.HTML))
 P.append(bolum("serp", "Google Arama Sonuçları ve AI Overview", "Google Search Results and AI Overview", b_serp.HTML))
 P.append(bolum("youtube", "YouTube: Montaj, Tamir ve Karar Videoları", "YouTube: Installation, Repair and Decision Videos", b_youtube.HTML))
-P.append(bolum("sikayet", "Şikayetvar: Satış Sonrası Deneyim", "Şikayetvar: After-Sales Experience", b_sikayet.HTML))
+P.append(bolum("sikayet", "Şikayetvar: Satış Sonrası Deneyim", "Şikayetvar: After-Sales Experience", b_sikayet.HTML + b_yorum.KOPRU_SIKAYET))
 P.append(bolum("katalog", "Katalog ve Talep Eşleşmesi", "Catalogue and Demand Fit", b_katalog.HTML))
 P.append(bolum("yeni", "Yeni Kategori ve Segment Fırsatları", "New Category and Segment Opportunities", b_yeni.HTML))
 P.append(bolum("set", "Set, Komple Banyo ve Ürün + Hizmet", "Sets, Complete Bathrooms and Product + Service", b_set.HTML))
-P.append(bolum("rakip", "Rakip Görünürlüğü ve Kanal Ölçeği", "Competitor Visibility and Channel Scale", b_rakip.HTML))
+P.append(bolum("rakip", "Rakip Görünürlüğü ve Kanal Ölçeği", "Competitor Visibility and Channel Scale", b_rakip.HTML + b_rakip_sw.HTML))
 P.append(bolum("trafik", "Marka ve Uzman Sitelerde Kategori Trafiği", "Category Traffic on Brand and Specialist Sites", b_kategori_trafik.HTML))
 P.append(bolum("pazaryeri", "Pazaryerleri: Kategori Yapısı ve Çok Satanlar", "Marketplaces: Category Structure and Best Sellers", b_pazaryeri.HTML))
 P.append(bolum("derin", "Pazaryeri Alt Kategori Derinliği: Çok Satanlar ve Rakip Mağazalar", "Marketplace Sub-Category Depth: Best Sellers and Competitor Stores", b_derin.HTML))
-P.append(bolum("panel", "VitrA Resmi Mağaza: Pazaryeri Panel Verisi", "VitrA Official Store: Marketplace Panel Data", b_panel.HTML))
+P.append(bolum("panel", "VitrA Resmi Mağaza: Pazaryeri Panel Verisi", "VitrA Official Store: Marketplace Panel Data", b_panel.HTML + b_yorum.KOPRU_PANEL))
+P.append(bolum("yorum", "Pazaryeri Yorumları ve Soru-Cevap: Sentiment ve Pain Point Analizi", "Marketplace Reviews and Q&A: Sentiment and Pain Point Analysis", b_yorum.HTML))
 P.append(bolum("fiyat", "Fiyat ve Satıcı Manzarası: Shopping, Trendyol, Hepsiburada", "Price and Seller Landscape: Shopping, Trendyol, Hepsiburada", b_fiyat.HTML))
 P.append(bolum("politika", "Kanal Politikaları ve Keşif Kanalları", "Channel Policies and Discovery Channels", b_politika.HTML))
 P.append(bolum("benchmark", "Benchmark: E-Ticaret Modelleri ve Dijital Deneyim", "Benchmark: E-Commerce Models and Digital Experience", b_benchmark.HTML))
@@ -181,12 +182,24 @@ th.srt .q{position:relative;padding-right:12px;display:inline-block}
 th.srt .q::after{content:"";position:absolute;right:0;top:50%;margin-top:-2px;width:0;height:0;border-left:4px solid transparent;border-right:4px solid transparent;border-top:5px solid rgba(255,255,255,.35)}
 th.srt.sa .q::after{border-top:0;border-bottom:5px solid var(--coral)}
 th.srt.sd .q::after{border-top:5px solid var(--coral)}
+/* alt sayfa: yorum ve soru seti */
+.altlink{display:inline-flex;align-items:center;gap:6px;height:32px;padding:0 10px;border-radius:6px;font-size:12px;font-weight:600;white-space:nowrap;
+  border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.10);color:#fff;text-decoration:none}
+.altlink:hover,.altlink:focus{background:rgba(255,255,255,.20);border-color:rgba(255,255,255,.5);color:#fff;text-decoration:none}
+.altlink:focus-visible{outline:2px solid var(--coral);outline-offset:2px}
+.altlink svg{width:14px;height:14px;flex:0 0 auto}
+@media(max-width:720px){.altlink .t{display:none}.altlink{padding:0 8px}}
+a.popb.altb{text-decoration:none;display:inline-block;margin-left:0}
+.fnote h4.kh4{margin:2px 0 8px;font-size:16px}
+.kopru{margin:14px 0 4px;color:var(--ink-2);font-size:13.5px}
+.tw.genis table{min-width:1460px}
+.tw.genis td:first-child{white-space:nowrap}
 """
 # ---------------------------------------------------------------- icindekiler
-KISA = {"ihtiyac": ("İhtiyaç Dili", "Need Language"), "youtube": ("YouTube: Montaj ve Tamir", "YouTube: Installation and Repair"), "rakip": ("Rakip Görünürlüğü ve Ölçek", "Competitor Visibility and Scale"),
+KISA = {"yorum": ("Yorumlar ve Soru-Cevap", "Reviews and Q&A"), "ihtiyac": ("İhtiyaç Dili", "Need Language"), "youtube": ("YouTube: Montaj ve Tamir", "YouTube: Installation and Repair"), "rakip": ("Rakip Görünürlüğü ve Ölçek", "Competitor Visibility and Scale"),
         "model": ("Kanal Rolleri ve Model", "Channel Roles and Model"), "panel": ("Resmi Mağaza Paneli", "Official Store Panel"), "makro": ("Makro Ortam", "Macro Environment"), "talep": ("Kategori Talebi", "Category Demand"), "organik": ("Organik Kanal", "Organic Channel"),
         "marka": ("Marka Aramaları", "Brand Searches"), "ssgbm": ("SSG ve BM Derin Talep", "SSG and BM In Depth"), "katalog": ("Katalog ve Talep", "Catalogue and Demand"), "yeni": ("Yeni Kategori ve Segment", "New Categories and Segments"), "set": ("Set ve Ürün + Hizmet", "Sets and Product + Service"), "benchmark": ("Benchmark ve Dijital Deneyim", "Benchmark and Digital Experience"), "serp": ("Google SERP ve AI Overview", "Google SERP and AI Overview"), "trafik": ("Marka Sitelerinde Trafik", "Traffic on Brand Sites"), "pazaryeri": ("Pazaryeri ve Çok Satanlar", "Marketplaces and Best Sellers"), "politika": ("Kanal Politikaları", "Channel Policies"), "sikayet": ("Şikayetvar: Satış Sonrası", "Şikayetvar: After-Sales"), "fiyat": ("Fiyat ve Satıcı Manzarası", "Price and Seller Landscape"), "derin": ("Alt Kategori Derinliği", "Sub-Category Depth"), "geo": ("AI Arama ve GEO Fırsatları", "AI Search and GEO Opportunities")}
-KUMELER = [("DURUM", "STATUS", ["ozet", "makro"]), ("TALEP", "DEMAND", ["talep", "ssgbm", "ihtiyac", "organik", "marka", "serp", "youtube", "sikayet"]), ("FIRSAT", "OPPORTUNITY", ["katalog", "yeni", "set"]), ("REKABET VE MODEL", "COMPETITION AND MODEL", ["rakip", "trafik", "pazaryeri", "derin", "panel", "fiyat", "politika", "benchmark", "model"]),
+KUMELER = [("DURUM", "STATUS", ["ozet", "makro"]), ("TALEP", "DEMAND", ["talep", "ssgbm", "ihtiyac", "organik", "marka", "serp", "youtube", "sikayet"]), ("FIRSAT", "OPPORTUNITY", ["katalog", "yeni", "set"]), ("REKABET VE MODEL", "COMPETITION AND MODEL", ["rakip", "trafik", "pazaryeri", "derin", "panel", "yorum", "fiyat", "politika", "benchmark", "model"]),
            ("PLAN", "PLAN", ["geo", "adimlar"]), ("EK", "APPENDIX", ["yontem", "kaynakca", "sozluk"])]
 _bas = dict(BOLUMLER); _sira = {b: i + 1 for i, (b, _) in enumerate(BOLUMLER)}
 _kumede = [b for _, _, ids in KUMELER for b in ids]
@@ -216,6 +229,12 @@ def dl_buton(sinif=""):
     return ('<a class="dl %s" href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,%s" download="%s" title="Veri dosyasını indir · %d sekme · %s KB">%s<span class="t">%s</span> <span class="dl-alt">&middot; Excel, %s KB</span></a>'
             % (sinif, b64, os.path.basename(XLS), sekme, kb, IKON, x("Veri dosyası", "Data file"), kb))
 
+# ---------------------------------------------------------------- alt sayfa baglantisi (ust bar, dil dugmesinin solu)
+ALTLINK = ('<a class="altlink" href="yorum-soru-seti.html" target="_blank" rel="noopener" title="%s">'
+           '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>'
+           '<span class="t">%s</span></a>') % ("Yorum ve soru setini yeni sekmede aç", x("Yorum ve soru seti", "Review and Q&A set"))
+x("Yorum ve soru setini yeni sekmede aç", "Open the review and Q&A set in a new tab")
+
 # ---------------------------------------------------------------- hero
 HERO = """<div class="hero dark"><div class="ring"></div>
   <p class="eyebrow">%s</p>
@@ -233,7 +252,7 @@ DOC = """<!doctype html>
 <header class="appbar"><div class="in">
   <div class="brandbit"><span class="lbl">%s</span>
     <span class="logo-card"><img src="%s" alt="VitrA"></span></div>
-  <div class="brandbit" style="gap:12px">%s%s<span class="lbl">%s</span>
+  <div class="brandbit" style="gap:12px">%s%s%s<span class="lbl">%s</span>
     <span class="ib"><img src="%s" alt="Inbound"></span></div>
 </div></header>
 <div class="wrap">
@@ -249,7 +268,7 @@ DOC = """<!doctype html>
   <div class="tocsheet__in"><div class="tocsheet__tut"></div>%s</div>
 </div>
 <script>%s</script>
-</body></html>""" % (CSS + CSS_EK + KAYNAKCA_CSS + CSS_SON + logo_css(), target_css, x("Marka", "Brand"), VITRA, TEMA, dl_buton(), x("Hazırlayan", "Prepared by"), INBOUND, x("İçindekiler", "Contents"), toc, HERO, govde,
+</body></html>""" % (CSS + CSS_EK + KAYNAKCA_CSS + CSS_SON + logo_css(), target_css, x("Marka", "Brand"), VITRA, ALTLINK, TEMA, dl_buton(), x("Hazırlayan", "Prepared by"), INBOUND, x("İçindekiler", "Contents"), toc, HERO, govde,
                      dl_buton("dl-foot"), x("Hacimler Google Keyword Planner &middot; sayfa ve sorgu verisi Google Search Console &middot; rakip ölçümü Ahrefs &middot; makro seriler TCMB EVDS &middot; autocomplete ve YouTube Google",
                                             "Volumes Google Keyword Planner &middot; page and query data Google Search Console &middot; competitor measurement Ahrefs &middot; macro series CBRT EVDS &middot; autocomplete and YouTube Google"),
                      x("İçindekiler menüsünü aç", "Open the contents menu"), x("İçindekiler", "Contents"), toc, JS)

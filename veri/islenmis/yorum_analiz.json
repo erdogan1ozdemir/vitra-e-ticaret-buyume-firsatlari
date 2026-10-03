@@ -1,0 +1,14018 @@
+{
+ "esik_marka": 40,
+ "kumeler": [
+  "VitrA",
+  "Artema",
+  "Creavit",
+  "Turkuaz",
+  "Visam",
+  "E.C.A.",
+  "Durul",
+  "Turavit",
+  "Kale",
+  "TEMA",
+  "Newarc",
+  "Grohe",
+  "Serel",
+  "Diğer markalar"
+ ],
+ "toplam": {
+  "yorum": 12673,
+  "metinli": 9047,
+  "soru": 4912,
+  "urun": 665,
+  "kanal": {
+   "Trendyol": 5868,
+   "Hepsiburada": 6805
+  },
+  "soru_kanal": {
+   "Trendyol": 3827,
+   "Hepsiburada": 1085
+  },
+  "vg_yorum": 2609,
+  "rakip_yorum": 10064,
+  "vg_soru": 1917,
+  "rakip_soru": 2995,
+  "donem": [
+   "2017-09-21",
+   "2026-10-03"
+  ],
+  "son12": 62.2
+ },
+ "marka": {
+  "VitrA": {
+   "n": 1326,
+   "metinli": 644,
+   "ort_puan": 4.37,
+   "olumlu": 83.5,
+   "notr": 4.4,
+   "olumsuz": 12.1,
+   "olumsuz_metinli": 129,
+   "olumlu_metinli": 477,
+   "pain": [
+    [
+     "kirik",
+     47,
+     36.4
+    ],
+    [
+     "satis_sonrasi",
+     45,
+     34.9
+    ],
+    [
+     "kalite",
+     28,
+     21.7
+    ],
+    [
+     "montaj",
+     19,
+     14.7
+    ],
+    [
+     "paket",
+     19,
+     14.7
+    ],
+    [
+     "kargo",
+     15,
+     11.6
+    ],
+    [
+     "mekanizma",
+     15,
+     11.6
+    ],
+    [
+     "fiyat",
+     11,
+     8.5
+    ],
+    [
+     "eksik",
+     8,
+     6.2
+    ],
+    [
+     "basinc",
+     7,
+     5.4
+    ],
+    [
+     "olcu",
+     7,
+     5.4
+    ],
+    [
+     "gorunum",
+     6,
+     4.7
+    ],
+    [
+     "ses",
+     3,
+     2.3
+    ],
+    [
+     "sizinti",
+     1,
+     0.8
+    ],
+    [
+     "temizlik",
+     1,
+     0.8
+    ],
+    [
+     "farkli",
+     1,
+     0.8
+    ],
+    [
+     "yuzey",
+     1,
+     0.8
+    ]
+   ],
+   "guclu": [
+    [
+     "kalite",
+     220,
+     46.1
+    ],
+    [
+     "montaj",
+     74,
+     15.5
+    ],
+    [
+     "kargo",
+     70,
+     14.7
+    ],
+    [
+     "paket",
+     65,
+     13.6
+    ],
+    [
+     "fiyat",
+     60,
+     12.6
+    ],
+    [
+     "gorunum",
+     33,
+     6.9
+    ],
+    [
+     "kirik",
+     27,
+     5.7
+    ],
+    [
+     "olcu",
+     21,
+     4.4
+    ],
+    [
+     "mekanizma",
+     17,
+     3.6
+    ],
+    [
+     "ses",
+     6,
+     1.3
+    ],
+    [
+     "eksik",
+     4,
+     0.8
+    ],
+    [
+     "yuzey",
+     4,
+     0.8
+    ],
+    [
+     "sizinti",
+     4,
+     0.8
+    ],
+    [
+     "temizlik",
+     2,
+     0.4
+    ],
+    [
+     "basinc",
+     2,
+     0.4
+    ],
+    [
+     "farkli",
+     1,
+     0.2
+    ]
+   ],
+   "tema_tum": {
+    "kirik": 12.7,
+    "eksik": 2.0,
+    "olcu": 5.3,
+    "montaj": 15.8,
+    "sizinti": 0.8,
+    "basinc": 1.4,
+    "yuzey": 1.1,
+    "mekanizma": 5.9,
+    "kalite": 40.1,
+    "gorunum": 6.2,
+    "farkli": 0.3,
+    "kargo": 13.7,
+    "paket": 13.7,
+    "fiyat": 12.4,
+    "satis_sonrasi": 15.4,
+    "temizlik": 0.6,
+    "ses": 1.6
+   },
+   "tema_neg": {
+    "kirik": 36.4,
+    "eksik": 6.2,
+    "olcu": 5.4,
+    "montaj": 14.7,
+    "sizinti": 0.8,
+    "basinc": 5.4,
+    "yuzey": 0.8,
+    "mekanizma": 11.6,
+    "kalite": 21.7,
+    "gorunum": 4.7,
+    "farkli": 0.8,
+    "kargo": 11.6,
+    "paket": 14.7,
+    "fiyat": 8.5,
+    "satis_sonrasi": 34.9,
+    "temizlik": 0.8,
+    "ses": 2.3
+   },
+   "kanal": {
+    "Trendyol": 716,
+    "Hepsiburada": 610
+   },
+   "kanal_profil": {
+    "Trendyol": {
+     "n": 716,
+     "metinli": 324,
+     "ort_puan": 4.39,
+     "olumlu": 84.1,
+     "notr": 3.8,
+     "olumsuz": 12.2,
+     "olumsuz_metinli": 64,
+     "olumlu_metinli": 246,
+     "pain": [
+      [
+       "kirik",
+       24,
+       37.5
+      ],
+      [
+       "satis_sonrasi",
+       19,
+       29.7
+      ],
+      [
+       "kalite",
+       12,
+       18.8
+      ],
+      [
+       "paket",
+       12,
+       18.8
+      ],
+      [
+       "montaj",
+       8,
+       12.5
+      ],
+      [
+       "kargo",
+       6,
+       9.4
+      ],
+      [
+       "fiyat",
+       6,
+       9.4
+      ],
+      [
+       "eksik",
+       6,
+       9.4
+      ],
+      [
+       "mekanizma",
+       5,
+       7.8
+      ],
+      [
+       "gorunum",
+       3,
+       4.7
+      ],
+      [
+       "basinc",
+       3,
+       4.7
+      ],
+      [
+       "ses",
+       2,
+       3.1
+      ],
+      [
+       "olcu",
+       1,
+       1.6
+      ],
+      [
+       "sizinti",
+       1,
+       1.6
+      ],
+      [
+       "temizlik",
+       1,
+       1.6
+      ],
+      [
+       "farkli",
+       1,
+       1.6
+      ]
+     ],
+     "guclu": [
+      [
+       "kalite",
+       110,
+       44.7
+      ],
+      [
+       "kargo",
+       34,
+       13.8
+      ],
+      [
+       "montaj",
+       33,
+       13.4
+      ],
+      [
+       "paket",
+       30,
+       12.2
+      ],
+      [
+       "gorunum",
+       20,
+       8.1
+      ],
+      [
+       "fiyat",
+       19,
+       7.7
+      ],
+      [
+       "olcu",
+       11,
+       4.5
+      ],
+      [
+       "kirik",
+       9,
+       3.7
+      ],
+      [
+       "mekanizma",
+       4,
+       1.6
+      ],
+      [
+       "ses",
+       3,
+       1.2
+      ],
+      [
+       "yuzey",
+       3,
+       1.2
+      ],
+      [
+       "temizlik",
+       2,
+       0.8
+      ],
+      [
+       "basinc",
+       2,
+       0.8
+      ],
+      [
+       "eksik",
+       2,
+       0.8
+      ],
+      [
+       "farkli",
+       1,
+       0.4
+      ],
+      [
+       "sizinti",
+       1,
+       0.4
+      ]
+     ],
+     "tema_tum": {
+      "kirik": 11.1,
+      "eksik": 2.5,
+      "olcu": 4.3,
+      "montaj": 13.6,
+      "sizinti": 0.6,
+      "basinc": 1.5,
+      "yuzey": 1.2,
+      "mekanizma": 3.4,
+      "kalite": 38.6,
+      "gorunum": 7.1,
+      "farkli": 0.6,
+      "kargo": 13.0,
+      "paket": 13.6,
+      "fiyat": 8.0,
+      "satis_sonrasi": 15.4,
+      "temizlik": 0.9,
+      "ses": 1.5
+     },
+     "tema_neg": {
+      "kirik": 37.5,
+      "eksik": 9.4,
+      "olcu": 1.6,
+      "montaj": 12.5,
+      "sizinti": 1.6,
+      "basinc": 4.7,
+      "yuzey": 0.0,
+      "mekanizma": 7.8,
+      "kalite": 18.8,
+      "gorunum": 4.7,
+      "farkli": 1.6,
+      "kargo": 9.4,
+      "paket": 18.8,
+      "fiyat": 9.4,
+      "satis_sonrasi": 29.7,
+      "temizlik": 1.6,
+      "ses": 3.1
+     },
+     "kanal": {
+      "Trendyol": 716
+     }
+    },
+    "Hepsiburada": {
+     "n": 610,
+     "metinli": 320,
+     "ort_puan": 4.36,
+     "olumlu": 82.8,
+     "notr": 5.2,
+     "olumsuz": 12.0,
+     "olumsuz_metinli": 65,
+     "olumlu_metinli": 231,
+     "pain": [
+      [
+       "satis_sonrasi",
+       26,
+       40.0
+      ],
+      [
+       "kirik",
+       23,
+       35.4
+      ],
+      [
+       "kalite",
+       16,
+       24.6
+      ],
+      [
+       "montaj",
+       11,
+       16.9
+      ],
+      [
+       "mekanizma",
+       10,
+       15.4
+      ],
+      [
+       "kargo",
+       9,
+       13.8
+      ],
+      [
+       "paket",
+       7,
+       10.8
+      ],
+      [
+       "olcu",
+       6,
+       9.2
+      ],
+      [
+       "fiyat",
+       5,
+       7.7
+      ],
+      [
+       "basinc",
+       4,
+       6.2
+      ],
+      [
+       "gorunum",
+       3,
+       4.6
+      ],
+      [
+       "eksik",
+       2,
+       3.1
+      ],
+      [
+       "ses",
+       1,
+       1.5
+      ],
+      [
+       "yuzey",
+       1,
+       1.5
+      ]
+     ],
+     "guclu": [
+      [
+       "kalite",
+       110,
+       47.6
+      ],
+      [
+       "montaj",
+       41,
+       17.7
+      ],
+      [
+       "fiyat",
+       41,
+       17.7
+      ],
+      [
+       "kargo",
+       36,
+       15.6
+      ],
+      [
+       "paket",
+       35,
+       15.2
+      ],
+      [
+       "kirik",
+       18,
+       7.8
+      ],
+      [
+       "gorunum",
+       13,
+       5.6
+      ],
+      [
+       "mekanizma",
+       13,
+       5.6
+      ],
+      [
+       "olcu",
+       10,
+       4.3
+      ],
+      [
+       "ses",
+       3,
+       1.3
+      ],
+      [
+       "sizinti",
+       3,
+       1.3
+      ],
+      [
+       "eksik",
+       2,
+       0.9
+      ],
+      [
+       "yuzey",
+       1,
+       0.4
+      ]
+     ],
+     "tema_tum": {
+      "kirik": 14.4,
+      "eksik": 1.6,
+      "olcu": 6.2,
+      "montaj": 18.1,
+      "sizinti": 0.9,
+      "basinc": 1.2,
+      "yuzey": 0.9,
+      "mekanizma": 8.4,
+      "kalite": 41.6,
+      "gorunum": 5.3,
+      "farkli": 0.0,
+      "kargo": 14.4,
+      "paket": 13.8,
+      "fiyat": 16.9,
+      "satis_sonrasi": 15.3,
+      "temizlik": 0.3,
+      "ses": 1.6
+     },
+     "tema_neg": {
+      "kirik": 35.4,
+      "eksik": 3.1,
+      "olcu": 9.2,
+      "montaj": 16.9,
+      "sizinti": 0.0,
+      "basinc": 6.2,
+      "yuzey": 1.5,
+      "mekanizma": 15.4,
+      "kalite": 24.6,
+      "gorunum": 4.6,
+      "farkli": 0.0,
+      "kargo": 13.8,
+      "paket": 10.8,
+      "fiyat": 7.7,
+      "satis_sonrasi": 40.0,
+      "temizlik": 0.0,
+      "ses": 1.5
+     },
+     "kanal": {
+      "Hepsiburada": 610
+     }
+    }
+   },
+   "markalar": []
+  },
+  "Artema": {
+   "n": 1283,
+   "metinli": 595,
+   "ort_puan": 4.58,
+   "olumlu": 89.9,
+   "notr": 2.2,
+   "olumsuz": 8.0,
+   "olumsuz_metinli": 78,
+   "olumlu_metinli": 496,
+   "pain": [
+    [
+     "satis_sonrasi",
+     40,
+     51.3
+    ],
+    [
+     "kalite",
+     21,
+     26.9
+    ],
+    [
+     "montaj",
+     17,
+     21.8
+    ],
+    [
+     "kirik",
+     13,
+     16.7
+    ],
+    [
+     "kargo",
+     12,
+     15.4
+    ],
+    [
+     "paket",
+     9,
+     11.5
+    ],
+    [
+     "sizinti",
+     8,
+     10.3
+    ],
+    [
+     "mekanizma",
+     8,
+     10.3
+    ],
+    [
+     "eksik",
+     8,
+     10.3
+    ],
+    [
+     "fiyat",
+     5,
+     6.4
+    ],
+    [
+     "gorunum",
+     5,
+     6.4
+    ],
+    [
+     "basinc",
+     5,
+     6.4
+    ],
+    [
+     "ses",
+     3,
+     3.8
+    ],
+    [
+     "farkli",
+     3,
+     3.8
+    ],
+    [
+     "olcu",
+     2,
+     2.6
+    ],
+    [
+     "yuzey",
+     1,
+     1.3
+    ]
+   ],
+   "guclu": [
+    [
+     "kalite",
+     255,
+     51.4
+    ],
+    [
+     "kargo",
+     65,
+     13.1
+    ],
+    [
+     "paket",
+     65,
+     13.1
+    ],
+    [
+     "montaj",
+     54,
+     10.9
+    ],
+    [
+     "gorunum",
+     50,
+     10.1
+    ],
+    [
+     "fiyat",
+     39,
+     7.9
+    ],
+    [
+     "olcu",
+     17,
+     3.4
+    ],
+    [
+     "basinc",
+     12,
+     2.4
+    ],
+    [
+     "kirik",
+     11,
+     2.2
+    ],
+    [
+     "sizinti",
+     7,
+     1.4
+    ],
+    [
+     "mekanizma",
+     7,
+     1.4
+    ],
+    [
+     "yuzey",
+     7,
+     1.4
+    ],
+    [
+     "eksik",
+     7,
+     1.4
+    ],
+    [
+     "temizlik",
+     6,
+     1.2
+    ],
+    [
+     "farkli",
+     2,
+     0.4
+    ]
+   ],
+   "tema_tum": {
+    "kirik": 4.2,
+    "eksik": 2.9,
+    "olcu": 3.4,
+    "montaj": 12.6,
+    "sizinti": 2.5,
+    "basinc": 3.2,
+    "yuzey": 1.5,
+    "mekanizma": 2.7,
+    "kalite": 47.9,
+    "gorunum": 9.6,
+    "farkli": 0.8,
+    "kargo": 13.3,
+    "paket": 12.9,
+    "fiyat": 7.7,
+    "satis_sonrasi": 16.1,
+    "temizlik": 1.0,
+    "ses": 0.5
+   },
+   "tema_neg": {
+    "kirik": 16.7,
+    "eksik": 10.3,
+    "olcu": 2.6,
+    "montaj": 21.8,
+    "sizinti": 10.3,
+    "basinc": 6.4,
+    "yuzey": 1.3,
+    "mekanizma": 10.3,
+    "kalite": 26.9,
+    "gorunum": 6.4,
+    "farkli": 3.8,
+    "kargo": 15.4,
+    "paket": 11.5,
+    "fiyat": 6.4,
+    "satis_sonrasi": 51.3,
+    "temizlik": 0.0,
+    "ses": 3.8
+   },
+   "kanal": {
+    "Trendyol": 336,
+    "Hepsiburada": 947
+   },
+   "kanal_profil": {
+    "Trendyol": {
+     "n": 336,
+     "metinli": 125,
+     "ort_puan": 4.51,
+     "olumlu": 88.1,
+     "notr": 2.1,
+     "olumsuz": 9.8,
+     "olumsuz_metinli": 21,
+     "olumlu_metinli": 101,
+     "pain": [
+      [
+       "satis_sonrasi",
+       11,
+       52.4
+      ],
+      [
+       "kargo",
+       6,
+       28.6
+      ],
+      [
+       "montaj",
+       4,
+       19.0
+      ],
+      [
+       "kalite",
+       4,
+       19.0
+      ],
+      [
+       "sizinti",
+       3,
+       14.3
+      ],
+      [
+       "mekanizma",
+       3,
+       14.3
+      ],
+      [
+       "kirik",
+       3,
+       14.3
+      ],
+      [
+       "eksik",
+       2,
+       9.5
+      ],
+      [
+       "paket",
+       2,
+       9.5
+      ],
+      [
+       "gorunum",
+       2,
+       9.5
+      ],
+      [
+       "fiyat",
+       1,
+       4.8
+      ]
+     ],
+     "guclu": [
+      [
+       "kalite",
+       54,
+       53.5
+      ],
+      [
+       "kargo",
+       11,
+       10.9
+      ],
+      [
+       "gorunum",
+       11,
+       10.9
+      ],
+      [
+       "paket",
+       11,
+       10.9
+      ],
+      [
+       "montaj",
+       8,
+       7.9
+      ],
+      [
+       "fiyat",
+       6,
+       5.9
+      ],
+      [
+       "kirik",
+       3,
+       3.0
+      ],
+      [
+       "sizinti",
+       3,
+       3.0
+      ],
+      [
+       "temizlik",
+       2,
+       2.0
+      ],
+      [
+       "olcu",
+       1,
+       1.0
+      ],
+      [
+       "basinc",
+       1,
+       1.0
+      ],
+      [
+       "farkli",
+       1,
+       1.0
+      ]
+     ],
+     "tema_tum": {
+      "kirik": 4.8,
+      "eksik": 3.2,
+      "olcu": 0.8,
+      "montaj": 10.4,
+      "sizinti": 4.8,
+      "basinc": 0.8,
+      "yuzey": 0.0,
+      "mekanizma": 2.4,
+      "kalite": 48.0,
+      "gorunum": 10.4,
+      "farkli": 0.8,
+      "kargo": 14.4,
+      "paket": 11.2,
+      "fiyat": 5.6,
+      "satis_sonrasi": 21.6,
+      "temizlik": 1.6,
+      "ses": 0.0
+     },
+     "tema_neg": {
+      "kirik": 14.3,
+      "eksik": 9.5,
+      "olcu": 0.0,
+      "montaj": 19.0,
+      "sizinti": 14.3,
+      "basinc": 0.0,
+      "yuzey": 0.0,
+      "mekanizma": 14.3,
+      "kalite": 19.0,
+      "gorunum": 9.5,
+      "farkli": 0.0,
+      "kargo": 28.6,
+      "paket": 9.5,
+      "fiyat": 4.8,
+      "satis_sonrasi": 52.4,
+      "temizlik": 0.0,
+      "ses": 0.0
+     },
+     "kanal": {
+      "Trendyol": 336
+     }
+    },
+    "Hepsiburada": {
+     "n": 947,
+     "metinli": 470,
+     "ort_puan": 4.61,
+     "olumlu": 90.5,
+     "notr": 2.2,
+     "olumsuz": 7.3,
+     "olumsuz_metinli": 57,
+     "olumlu_metinli": 395,
+     "pain": [
+      [
+       "satis_sonrasi",
+       29,
+       50.9
+      ],
+      [
+       "kalite",
+       17,
+       29.8
+      ],
+      [
+       "montaj",
+       13,
+       22.8
+      ],
+      [
+       "kirik",
+       10,
+       17.5
+      ],
+      [
+       "paket",
+       7,
+       12.3
+      ],
+      [
+       "kargo",
+       6,
+       10.5
+      ],
+      [
+       "eksik",
+       6,
+       10.5
+      ],
+      [
+       "mekanizma",
+       5,
+       8.8
+      ],
+      [
+       "basinc",
+       5,
+       8.8
+      ],
+      [
+       "sizinti",
+       5,
+       8.8
+      ],
+      [
+       "fiyat",
+       4,
+       7.0
+      ],
+      [
+       "ses",
+       3,
+       5.3
+      ],
+      [
+       "gorunum",
+       3,
+       5.3
+      ],
+      [
+       "farkli",
+       3,
+       5.3
+      ],
+      [
+       "olcu",
+       2,
+       3.5
+      ],
+      [
+       "yuzey",
+       1,
+       1.8
+      ]
+     ],
+     "guclu": [
+      [
+       "kalite",
+       201,
+       50.9
+      ],
+      [
+       "kargo",
+       54,
+       13.7
+      ],
+      [
+       "paket",
+       54,
+       13.7
+      ],
+      [
+       "montaj",
+       46,
+       11.6
+      ],
+      [
+       "gorunum",
+       39,
+       9.9
+      ],
+      [
+       "fiyat",
+       33,
+       8.4
+      ],
+      [
+       "olcu",
+       16,
+       4.1
+      ],
+      [
+       "basinc",
+       11,
+       2.8
+      ],
+      [
+       "kirik",
+       8,
+       2.0
+      ],
+      [
+       "mekanizma",
+       7,
+       1.8
+      ],
+      [
+       "yuzey",
+       7,
+       1.8
+      ],
+      [
+       "eksik",
+       7,
+       1.8
+      ],
+      [
+       "sizinti",
+       4,
+       1.0
+      ],
+      [
+       "temizlik",
+       4,
+       1.0
+      ],
+      [
+       "farkli",
+       1,
+       0.3
+      ]
+     ],
+     "tema_tum": {
+      "kirik": 4.0,
+      "eksik": 2.8,
+      "olcu": 4.0,
+      "montaj": 13.2,
+      "sizinti": 1.9,
+      "basinc": 3.8,
+      "yuzey": 1.9,
+      "mekanizma": 2.8,
+      "kalite": 47.9,
+      "gorunum": 9.4,
+      "farkli": 0.9,
+      "kargo": 13.0,
+      "paket": 13.4,
+      "fiyat": 8.3,
+      "satis_sonrasi": 14.7,
+      "temizlik": 0.9,
+      "ses": 0.6
+     },
+     "tema_neg": {
+      "kirik": 17.5,
+      "eksik": 10.5,
+      "olcu": 3.5,
+      "montaj": 22.8,
+      "sizinti": 8.8,
+      "basinc": 8.8,
+      "yuzey": 1.8,
+      "mekanizma": 8.8,
+      "kalite": 29.8,
+      "gorunum": 5.3,
+      "farkli": 5.3,
+      "kargo": 10.5,
+      "paket": 12.3,
+      "fiyat": 7.0,
+      "satis_sonrasi": 50.9,
+      "temizlik": 0.0,
+      "ses": 5.3
+     },
+     "kanal": {
+      "Hepsiburada": 947
+     }
+    }
+   },
+   "markalar": []
+  },
+  "Creavit": {
+   "n": 796,
+   "metinli": 505,
+   "ort_puan": 4.55,
+   "olumlu": 89.2,
+   "notr": 2.4,
+   "olumsuz": 8.4,
+   "olumsuz_metinli": 63,
+   "olumlu_metinli": 428,
+   "pain": [
+    [
+     "kalite",
+     20,
+     31.7
+    ],
+    [
+     "montaj",
+     17,
+     27.0
+    ],
+    [
+     "satis_sonrasi",
+     14,
+     22.2
+    ],
+    [
+     "kirik",
+     10,
+     15.9
+    ],
+    [
+     "olcu",
+     8,
+     12.7
+    ],
+    [
+     "eksik",
+     7,
+     11.1
+    ],
+    [
+     "fiyat",
+     6,
+     9.5
+    ],
+    [
+     "sizinti",
+     6,
+     9.5
+    ],
+    [
+     "kargo",
+     5,
+     7.9
+    ],
+    [
+     "paket",
+     4,
+     6.3
+    ],
+    [
+     "gorunum",
+     2,
+     3.2
+    ],
+    [
+     "yuzey",
+     2,
+     3.2
+    ],
+    [
+     "mekanizma",
+     1,
+     1.6
+    ]
+   ],
+   "guclu": [
+    [
+     "kalite",
+     207,
+     48.4
+    ],
+    [
+     "montaj",
+     90,
+     21.0
+    ],
+    [
+     "paket",
+     80,
+     18.7
+    ],
+    [
+     "kargo",
+     72,
+     16.8
+    ],
+    [
+     "fiyat",
+     55,
+     12.9
+    ],
+    [
+     "gorunum",
+     44,
+     10.3
+    ],
+    [
+     "kirik",
+     18,
+     4.2
+    ],
+    [
+     "yuzey",
+     12,
+     2.8
+    ],
+    [
+     "basinc",
+     10,
+     2.3
+    ],
+    [
+     "olcu",
+     10,
+     2.3
+    ],
+    [
+     "sizinti",
+     9,
+     2.1
+    ],
+    [
+     "eksik",
+     5,
+     1.2
+    ],
+    [
+     "mekanizma",
+     4,
+     0.9
+    ],
+    [
+     "farkli",
+     2,
+     0.5
+    ],
+    [
+     "temizlik",
+     2,
+     0.5
+    ],
+    [
+     "ses",
+     1,
+     0.2
+    ]
+   ],
+   "tema_tum": {
+    "kirik": 6.3,
+    "eksik": 2.4,
+    "olcu": 3.8,
+    "montaj": 21.8,
+    "sizinti": 3.0,
+    "basinc": 2.0,
+    "yuzey": 3.0,
+    "mekanizma": 1.2,
+    "kalite": 46.5,
+    "gorunum": 9.3,
+    "farkli": 0.6,
+    "kargo": 15.4,
+    "paket": 16.8,
+    "fiyat": 12.7,
+    "satis_sonrasi": 10.1,
+    "temizlik": 0.4,
+    "ses": 0.2
+   },
+   "tema_neg": {
+    "kirik": 15.9,
+    "eksik": 11.1,
+    "olcu": 12.7,
+    "montaj": 27.0,
+    "sizinti": 9.5,
+    "basinc": 0.0,
+    "yuzey": 3.2,
+    "mekanizma": 1.6,
+    "kalite": 31.7,
+    "gorunum": 3.2,
+    "farkli": 0.0,
+    "kargo": 7.9,
+    "paket": 6.3,
+    "fiyat": 9.5,
+    "satis_sonrasi": 22.2,
+    "temizlik": 0.0,
+    "ses": 0.0
+   },
+   "kanal": {
+    "Hepsiburada": 631,
+    "Trendyol": 165
+   },
+   "kanal_profil": {
+    "Trendyol": {
+     "n": 165,
+     "metinli": 165,
+     "ort_puan": 4.79,
+     "olumlu": 95.8,
+     "notr": 0.6,
+     "olumsuz": 3.6,
+     "olumsuz_metinli": 6,
+     "olumlu_metinli": 158,
+     "pain": [
+      [
+       "kalite",
+       2,
+       33.3
+      ],
+      [
+       "montaj",
+       2,
+       33.3
+      ],
+      [
+       "yuzey",
+       1,
+       16.7
+      ],
+      [
+       "fiyat",
+       1,
+       16.7
+      ],
+      [
+       "kirik",
+       1,
+       16.7
+      ],
+      [
+       "paket",
+       1,
+       16.7
+      ]
+     ],
+     "guclu": [
+      [
+       "kalite",
+       85,
+       53.8
+      ],
+      [
+       "paket",
+       36,
+       22.8
+      ],
+      [
+       "kargo",
+       22,
+       13.9
+      ],
+      [
+       "montaj",
+       22,
+       13.9
+      ],
+      [
+       "gorunum",
+       17,
+       10.8
+      ],
+      [
+       "fiyat",
+       14,
+       8.9
+      ],
+      [
+       "kirik",
+       5,
+       3.2
+      ],
+      [
+       "basinc",
+       3,
+       1.9
+      ],
+      [
+       "yuzey",
+       3,
+       1.9
+      ],
+      [
+       "olcu",
+       2,
+       1.3
+      ],
+      [
+       "ses",
+       1,
+       0.6
+      ],
+      [
+       "sizinti",
+       1,
+       0.6
+      ],
+      [
+       "mekanizma",
+       1,
+       0.6
+      ],
+      [
+       "temizlik",
+       1,
+       0.6
+      ],
+      [
+       "eksik",
+       1,
+       0.6
+      ]
+     ],
+     "tema_tum": {
+      "kirik": 3.6,
+      "eksik": 0.6,
+      "olcu": 1.8,
+      "montaj": 14.5,
+      "sizinti": 0.6,
+      "basinc": 1.8,
+      "yuzey": 3.0,
+      "mekanizma": 0.6,
+      "kalite": 53.3,
+      "gorunum": 10.3,
+      "farkli": 0.0,
+      "kargo": 13.3,
+      "paket": 22.4,
+      "fiyat": 9.1,
+      "satis_sonrasi": 10.3,
+      "temizlik": 0.6,
+      "ses": 0.6
+     },
+     "tema_neg": {
+      "kirik": 16.7,
+      "eksik": 0.0,
+      "olcu": 0.0,
+      "montaj": 33.3,
+      "sizinti": 0.0,
+      "basinc": 0.0,
+      "yuzey": 16.7,
+      "mekanizma": 0.0,
+      "kalite": 33.3,
+      "gorunum": 0.0,
+      "farkli": 0.0,
+      "kargo": 0.0,
+      "paket": 16.7,
+      "fiyat": 16.7,
+      "satis_sonrasi": 0.0,
+      "temizlik": 0.0,
+      "ses": 0.0
+     },
+     "kanal": {
+      "Trendyol": 165
+     }
+    },
+    "Hepsiburada": {
+     "n": 631,
+     "metinli": 340,
+     "ort_puan": 4.49,
+     "olumlu": 87.5,
+     "notr": 2.9,
+     "olumsuz": 9.7,
+     "olumsuz_metinli": 57,
+     "olumlu_metinli": 270,
+     "pain": [
+      [
+       "kalite",
+       18,
+       31.6
+      ],
+      [
+       "montaj",
+       15,
+       26.3
+      ],
+      [
+       "satis_sonrasi",
+       14,
+       24.6
+      ],
+      [
+       "kirik",
+       9,
+       15.8
+      ],
+      [
+       "olcu",
+       8,
+       14.0
+      ],
+      [
+       "eksik",
+       7,
+       12.3
+      ],
+      [
+       "sizinti",
+       6,
+       10.5
+      ],
+      [
+       "fiyat",
+       5,
+       8.8
+      ],
+      [
+       "kargo",
+       5,
+       8.8
+      ],
+      [
+       "paket",
+       3,
+       5.3
+      ],
+      [
+       "gorunum",
+       2,
+       3.5
+      ],
+      [
+       "mekanizma",
+       1,
+       1.8
+      ],
+      [
+       "yuzey",
+       1,
+       1.8
+      ]
+     ],
+     "guclu": [
+      [
+       "kalite",
+       122,
+       45.2
+      ],
+      [
+       "montaj",
+       68,
+       25.2
+      ],
+      [
+       "kargo",
+       50,
+       18.5
+      ],
+      [
+       "paket",
+       44,
+       16.3
+      ],
+      [
+       "fiyat",
+       41,
+       15.2
+      ],
+      [
+       "gorunum",
+       27,
+       10.0
+      ],
+      [
+       "kirik",
+       13,
+       4.8
+      ],
+      [
+       "yuzey",
+       9,
+       3.3
+      ],
+      [
+       "sizinti",
+       8,
+       3.0
+      ],
+      [
+       "olcu",
+       8,
+       3.0
+      ],
+      [
+       "basinc",
+       7,
+       2.6
+      ],
+      [
+       "eksik",
+       4,
+       1.5
+      ],
+      [
+       "mekanizma",
+       3,
+       1.1
+      ],
+      [
+       "farkli",
+       2,
+       0.7
+      ],
+      [
+       "temizlik",
+       1,
+       0.4
+      ]
+     ],
+     "tema_tum": {
+      "kirik": 7.6,
+      "eksik": 3.2,
+      "olcu": 4.7,
+      "montaj": 25.3,
+      "sizinti": 4.1,
+      "basinc": 2.1,
+      "yuzey": 2.9,
+      "mekanizma": 1.5,
+      "kalite": 43.2,
+      "gorunum": 8.8,
+      "farkli": 0.9,
+      "kargo": 16.5,
+      "paket": 14.1,
+      "fiyat": 14.4,
+      "satis_sonrasi": 10.0,
+      "temizlik": 0.3,
+      "ses": 0.0
+     },
+     "tema_neg": {
+      "kirik": 15.8,
+      "eksik": 12.3,
+      "olcu": 14.0,
+      "montaj": 26.3,
+      "sizinti": 10.5,
+      "basinc": 0.0,
+      "yuzey": 1.8,
+      "mekanizma": 1.8,
+      "kalite": 31.6,
+      "gorunum": 3.5,
+      "farkli": 0.0,
+      "kargo": 8.8,
+      "paket": 5.3,
+      "fiyat": 8.8,
+      "satis_sonrasi": 24.6,
+      "temizlik": 0.0,
+      "ses": 0.0
+     },
+     "kanal": {
+      "Hepsiburada": 631
+     }
+    }
+   },
+   "markalar": []
+  },
+  "Turkuaz": {
+   "n": 485,
+   "metinli": 378,
+   "ort_puan": 4.25,
+   "olumlu": 80.8,
+   "notr": 3.9,
+   "olumsuz": 15.3,
+   "olumsuz_metinli": 71,
+   "olumlu_metinli": 293,
+   "pain": [
+    [
+     "kirik",
+     33,
+     46.5
+    ],
+    [
+     "satis_sonrasi",
+     30,
+     42.3
+    ],
+    [
+     "kargo",
+     15,
+     21.1
+    ],
+    [
+     "montaj",
+     13,
+     18.3
+    ],
+    [
+     "kalite",
+     10,
+     14.1
+    ],
+    [
+     "eksik",
+     10,
+     14.1
+    ],
+    [
+     "paket",
+     9,
+     12.7
+    ],
+    [
+     "mekanizma",
+     5,
+     7.0
+    ],
+    [
+     "farkli",
+     4,
+     5.6
+    ],
+    [
+     "fiyat",
+     3,
+     4.2
+    ],
+    [
+     "ses",
+     2,
+     2.8
+    ],
+    [
+     "olcu",
+     2,
+     2.8
+    ],
+    [
+     "yuzey",
+     2,
+     2.8
+    ],
+    [
+     "basinc",
+     1,
+     1.4
+    ],
+    [
+     "gorunum",
+     1,
+     1.4
+    ]
+   ],
+   "guclu": [
+    [
+     "paket",
+     103,
+     35.2
+    ],
+    [
+     "kalite",
+     99,
+     33.8
+    ],
+    [
+     "kargo",
+     71,
+     24.2
+    ],
+    [
+     "fiyat",
+     29,
+     9.9
+    ],
+    [
+     "montaj",
+     28,
+     9.6
+    ],
+    [
+     "gorunum",
+     27,
+     9.2
+    ],
+    [
+     "kirik",
+     25,
+     8.5
+    ],
+    [
+     "olcu",
+     10,
+     3.4
+    ],
+    [
+     "eksik",
+     9,
+     3.1
+    ],
+    [
+     "mekanizma",
+     7,
+     2.4
+    ],
+    [
+     "sizinti",
+     1,
+     0.3
+    ]
+   ],
+   "tema_tum": {
+    "kirik": 16.9,
+    "eksik": 5.0,
+    "olcu": 3.2,
+    "montaj": 11.4,
+    "sizinti": 0.3,
+    "basinc": 0.3,
+    "yuzey": 0.5,
+    "mekanizma": 3.7,
+    "kalite": 29.4,
+    "gorunum": 7.4,
+    "farkli": 1.1,
+    "kargo": 23.8,
+    "paket": 30.7,
+    "fiyat": 8.7,
+    "satis_sonrasi": 22.2,
+    "temizlik": 0.3,
+    "ses": 0.5
+   },
+   "tema_neg": {
+    "kirik": 46.5,
+    "eksik": 14.1,
+    "olcu": 2.8,
+    "montaj": 18.3,
+    "sizinti": 0.0,
+    "basinc": 1.4,
+    "yuzey": 2.8,
+    "mekanizma": 7.0,
+    "kalite": 14.1,
+    "gorunum": 1.4,
+    "farkli": 5.6,
+    "kargo": 21.1,
+    "paket": 12.7,
+    "fiyat": 4.2,
+    "satis_sonrasi": 42.3,
+    "temizlik": 0.0,
+    "ses": 2.8
+   },
+   "kanal": {
+    "Hepsiburada": 277,
+    "Trendyol": 208
+   },
+   "kanal_profil": {
+    "Trendyol": {
+     "n": 208,
+     "metinli": 208,
+     "ort_puan": 4.5,
+     "olumlu": 87.0,
+     "notr": 3.4,
+     "olumsuz": 9.6,
+     "olumsuz_metinli": 20,
+     "olumlu_metinli": 181,
+     "pain": [
+      [
+       "kirik",
+       9,
+       45.0
+      ],
+      [
+       "satis_sonrasi",
+       8,
+       40.0
+      ],
+      [
+       "eksik",
+       3,
+       15.0
+      ],
+      [
+       "kargo",
+       3,
+       15.0
+      ],
+      [
+       "montaj",
+       3,
+       15.0
+      ],
+      [
+       "farkli",
+       2,
+       10.0
+      ],
+      [
+       "mekanizma",
+       2,
+       10.0
+      ],
+      [
+       "paket",
+       2,
+       10.0
+      ],
+      [
+       "kalite",
+       1,
+       5.0
+      ],
+      [
+       "yuzey",
+       1,
+       5.0
+      ]
+     ],
+     "guclu": [
+      [
+       "kalite",
+       65,
+       35.9
+      ],
+      [
+       "paket",
+       60,
+       33.1
+      ],
+      [
+       "kargo",
+       45,
+       24.9
+      ],
+      [
+       "gorunum",
+       19,
+       10.5
+      ],
+      [
+       "fiyat",
+       18,
+       9.9
+      ],
+      [
+       "montaj",
+       15,
+       8.3
+      ],
+      [
+       "kirik",
+       14,
+       7.7
+      ],
+      [
+       "olcu",
+       6,
+       3.3
+      ],
+      [
+       "eksik",
+       6,
+       3.3
+      ],
+      [
+       "mekanizma",
+       4,
+       2.2
+      ]
+     ],
+     "tema_tum": {
+      "kirik": 13.5,
+      "eksik": 4.3,
+      "olcu": 2.9,
+      "montaj": 9.1,
+      "sizinti": 0.0,
+      "basinc": 0.0,
+      "yuzey": 0.5,
+      "mekanizma": 3.4,
+      "kalite": 32.2,
+      "gorunum": 9.1,
+      "farkli": 1.0,
+      "kargo": 24.5,
+      "paket": 30.3,
+      "fiyat": 9.1,
+      "satis_sonrasi": 23.6,
+      "temizlik": 0.0,
+      "ses": 0.0
+     },
+     "tema_neg": {
+      "kirik": 45.0,
+      "eksik": 15.0,
+      "olcu": 0.0,
+      "montaj": 15.0,
+      "sizinti": 0.0,
+      "basinc": 0.0,
+      "yuzey": 5.0,
+      "mekanizma": 10.0,
+      "kalite": 5.0,
+      "gorunum": 0.0,
+      "farkli": 10.0,
+      "kargo": 15.0,
+      "paket": 10.0,
+      "fiyat": 0.0,
+      "satis_sonrasi": 40.0,
+      "temizlik": 0.0,
+      "ses": 0.0
+     },
+     "kanal": {
+      "Trendyol": 208
+     }
+    },
+    "Hepsiburada": {
+     "n": 277,
+     "metinli": 170,
+     "ort_puan": 4.06,
+     "olumlu": 76.2,
+     "notr": 4.3,
+     "olumsuz": 19.5,
+     "olumsuz_metinli": 51,
+     "olumlu_metinli": 112,
+     "pain": [
+      [
+       "kirik",
+       24,
+       47.1
+      ],
+      [
+       "satis_sonrasi",
+       22,
+       43.1
+      ],
+      [
+       "kargo",
+       12,
+       23.5
+      ],
+      [
+       "montaj",
+       10,
+       19.6
+      ],
+      [
+       "kalite",
+       9,
+       17.6
+      ],
+      [
+       "eksik",
+       7,
+       13.7
+      ],
+      [
+       "paket",
+       7,
+       13.7
+      ],
+      [
+       "mekanizma",
+       3,
+       5.9
+      ],
+      [
+       "fiyat",
+       3,
+       5.9
+      ],
+      [
+       "farkli",
+       2,
+       3.9
+      ],
+      [
+       "ses",
+       2,
+       3.9
+      ],
+      [
+       "olcu",
+       2,
+       3.9
+      ],
+      [
+       "basinc",
+       1,
+       2.0
+      ],
+      [
+       "gorunum",
+       1,
+       2.0
+      ],
+      [
+       "yuzey",
+       1,
+       2.0
+      ]
+     ],
+     "guclu": [
+      [
+       "paket",
+       43,
+       38.4
+      ],
+      [
+       "kalite",
+       34,
+       30.4
+      ],
+      [
+       "kargo",
+       26,
+       23.2
+      ],
+      [
+       "montaj",
+       13,
+       11.6
+      ],
+      [
+       "fiyat",
+       11,
+       9.8
+      ],
+      [
+       "kirik",
+       11,
+       9.8
+      ],
+      [
+       "gorunum",
+       8,
+       7.1
+      ],
+      [
+       "olcu",
+       4,
+       3.6
+      ],
+      [
+       "mekanizma",
+       3,
+       2.7
+      ],
+      [
+       "eksik",
+       3,
+       2.7
+      ],
+      [
+       "sizinti",
+       1,
+       0.9
+      ]
+     ],
+     "tema_tum": {
+      "kirik": 21.2,
+      "eksik": 5.9,
+      "olcu": 3.5,
+      "montaj": 14.1,
+      "sizinti": 0.6,
+      "basinc": 0.6,
+      "yuzey": 0.6,
+      "mekanizma": 4.1,
+      "kalite": 25.9,
+      "gorunum": 5.3,
+      "farkli": 1.2,
+      "kargo": 22.9,
+      "paket": 31.2,
+      "fiyat": 8.2,
+      "satis_sonrasi": 20.6,
+      "temizlik": 0.6,
+      "ses": 1.2
+     },
+     "tema_neg": {
+      "kirik": 47.1,
+      "eksik": 13.7,
+      "olcu": 3.9,
+      "montaj": 19.6,
+      "sizinti": 0.0,
+      "basinc": 2.0,
+      "yuzey": 2.0,
+      "mekanizma": 5.9,
+      "kalite": 17.6,
+      "gorunum": 2.0,
+      "farkli": 3.9,
+      "kargo": 23.5,
+      "paket": 13.7,
+      "fiyat": 5.9,
+      "satis_sonrasi": 43.1,
+      "temizlik": 0.0,
+      "ses": 3.9
+     },
+     "kanal": {
+      "Hepsiburada": 277
+     }
+    }
+   },
+   "markalar": []
+  },
+  "Visam": {
+   "n": 446,
+   "metinli": 351,
+   "ort_puan": 4.54,
+   "olumlu": 89.2,
+   "notr": 2.2,
+   "olumsuz": 8.5,
+   "olumsuz_metinli": 37,
+   "olumlu_metinli": 305,
+   "pain": [
+    [
+     "satis_sonrasi",
+     13,
+     35.1
+    ],
+    [
+     "kalite",
+     10,
+     27.0
+    ],
+    [
+     "kirik",
+     8,
+     21.6
+    ],
+    [
+     "paket",
+     7,
+     18.9
+    ],
+    [
+     "eksik",
+     4,
+     10.8
+    ],
+    [
+     "sizinti",
+     4,
+     10.8
+    ],
+    [
+     "kargo",
+     3,
+     8.1
+    ],
+    [
+     "montaj",
+     3,
+     8.1
+    ],
+    [
+     "mekanizma",
+     2,
+     5.4
+    ],
+    [
+     "olcu",
+     2,
+     5.4
+    ],
+    [
+     "gorunum",
+     1,
+     2.7
+    ],
+    [
+     "fiyat",
+     1,
+     2.7
+    ],
+    [
+     "farkli",
+     1,
+     2.7
+    ]
+   ],
+   "guclu": [
+    [
+     "kalite",
+     94,
+     30.8
+    ],
+    [
+     "montaj",
+     63,
+     20.7
+    ],
+    [
+     "kargo",
+     37,
+     12.1
+    ],
+    [
+     "fiyat",
+     28,
+     9.2
+    ],
+    [
+     "paket",
+     25,
+     8.2
+    ],
+    [
+     "sizinti",
+     10,
+     3.3
+    ],
+    [
+     "kirik",
+     8,
+     2.6
+    ],
+    [
+     "mekanizma",
+     6,
+     2.0
+    ],
+    [
+     "olcu",
+     5,
+     1.6
+    ],
+    [
+     "eksik",
+     3,
+     1.0
+    ],
+    [
+     "gorunum",
+     3,
+     1.0
+    ],
+    [
+     "yuzey",
+     1,
+     0.3
+    ],
+    [
+     "ses",
+     1,
+     0.3
+    ]
+   ],
+   "tema_tum": {
+    "kirik": 5.1,
+    "eksik": 2.3,
+    "olcu": 2.3,
+    "montaj": 19.7,
+    "sizinti": 4.0,
+    "basinc": 0.0,
+    "yuzey": 0.3,
+    "mekanizma": 2.3,
+    "kalite": 29.6,
+    "gorunum": 1.1,
+    "farkli": 0.3,
+    "kargo": 11.7,
+    "paket": 9.4,
+    "fiyat": 8.3,
+    "satis_sonrasi": 11.4,
+    "temizlik": 0.0,
+    "ses": 0.3
+   },
+   "tema_neg": {
+    "kirik": 21.6,
+    "eksik": 10.8,
+    "olcu": 5.4,
+    "montaj": 8.1,
+    "sizinti": 10.8,
+    "basinc": 0.0,
+    "yuzey": 0.0,
+    "mekanizma": 5.4,
+    "kalite": 27.0,
+    "gorunum": 2.7,
+    "farkli": 2.7,
+    "kargo": 8.1,
+    "paket": 18.9,
+    "fiyat": 2.7,
+    "satis_sonrasi": 35.1,
+    "temizlik": 0.0,
+    "ses": 0.0
+   },
+   "kanal": {
+    "Hepsiburada": 196,
+    "Trendyol": 250
+   },
+   "kanal_profil": {
+    "Trendyol": {
+     "n": 250,
+     "metinli": 250,
+     "ort_puan": 4.49,
+     "olumlu": 87.6,
+     "notr": 3.2,
+     "olumsuz": 9.2,
+     "olumsuz_metinli": 23,
+     "olumlu_metinli": 219,
+     "pain": [
+      [
+       "satis_sonrasi",
+       9,
+       39.1
+      ],
+      [
+       "kirik",
+       6,
+       26.1
+      ],
+      [
+       "paket",
+       4,
+       17.4
+      ],
+      [
+       "kargo",
+       3,
+       13.0
+      ],
+      [
+       "eksik",
+       3,
+       13.0
+      ],
+      [
+       "kalite",
+       3,
+       13.0
+      ],
+      [
+       "montaj",
+       3,
+       13.0
+      ],
+      [
+       "sizinti",
+       2,
+       8.7
+      ],
+      [
+       "farkli",
+       1,
+       4.3
+      ],
+      [
+       "mekanizma",
+       1,
+       4.3
+      ],
+      [
+       "olcu",
+       1,
+       4.3
+      ]
+     ],
+     "guclu": [
+      [
+       "kalite",
+       67,
+       30.6
+      ],
+      [
+       "montaj",
+       47,
+       21.5
+      ],
+      [
+       "kargo",
+       31,
+       14.2
+      ],
+      [
+       "fiyat",
+       22,
+       10.0
+      ],
+      [
+       "paket",
+       17,
+       7.8
+      ],
+      [
+       "sizinti",
+       8,
+       3.7
+      ],
+      [
+       "kirik",
+       7,
+       3.2
+      ],
+      [
+       "olcu",
+       3,
+       1.4
+      ],
+      [
+       "mekanizma",
+       3,
+       1.4
+      ],
+      [
+       "gorunum",
+       2,
+       0.9
+      ],
+      [
+       "eksik",
+       2,
+       0.9
+      ]
+     ],
+     "tema_tum": {
+      "kirik": 5.6,
+      "eksik": 2.4,
+      "olcu": 2.0,
+      "montaj": 21.2,
+      "sizinti": 4.0,
+      "basinc": 0.0,
+      "yuzey": 0.0,
+      "mekanizma": 1.6,
+      "kalite": 28.0,
+      "gorunum": 0.8,
+      "farkli": 0.4,
+      "kargo": 14.0,
+      "paket": 8.8,
+      "fiyat": 8.8,
+      "satis_sonrasi": 11.2,
+      "temizlik": 0.0,
+      "ses": 0.0
+     },
+     "tema_neg": {
+      "kirik": 26.1,
+      "eksik": 13.0,
+      "olcu": 4.3,
+      "montaj": 13.0,
+      "sizinti": 8.7,
+      "basinc": 0.0,
+      "yuzey": 0.0,
+      "mekanizma": 4.3,
+      "kalite": 13.0,
+      "gorunum": 0.0,
+      "farkli": 4.3,
+      "kargo": 13.0,
+      "paket": 17.4,
+      "fiyat": 0.0,
+      "satis_sonrasi": 39.1,
+      "temizlik": 0.0,
+      "ses": 0.0
+     },
+     "kanal": {
+      "Trendyol": 250
+     }
+    },
+    "Hepsiburada": {
+     "n": 196,
+     "metinli": 101,
+     "ort_puan": 4.6,
+     "olumlu": 91.3,
+     "notr": 1.0,
+     "olumsuz": 7.7,
+     "olumsuz_metinli": 14,
+     "olumlu_metinli": 86,
+     "pain": [
+      [
+       "kalite",
+       7,
+       50.0
+      ],
+      [
+       "satis_sonrasi",
+       4,
+       28.6
+      ],
+      [
+       "paket",
+       3,
+       21.4
+      ],
+      [
+       "kirik",
+       2,
+       14.3
+      ],
+      [
+       "sizinti",
+       2,
+       14.3
+      ],
+      [
+       "mekanizma",
+       1,
+       7.1
+      ],
+      [
+       "olcu",
+       1,
+       7.1
+      ],
+      [
+       "eksik",
+       1,
+       7.1
+      ],
+      [
+       "gorunum",
+       1,
+       7.1
+      ],
+      [
+       "fiyat",
+       1,
+       7.1
+      ]
+     ],
+     "guclu": [
+      [
+       "kalite",
+       27,
+       31.4
+      ],
+      [
+       "montaj",
+       16,
+       18.6
+      ],
+      [
+       "paket",
+       8,
+       9.3
+      ],
+      [
+       "fiyat",
+       6,
+       7.0
+      ],
+      [
+       "kargo",
+       6,
+       7.0
+      ],
+      [
+       "mekanizma",
+       3,
+       3.5
+      ],
+      [
+       "olcu",
+       2,
+       2.3
+      ],
+      [
+       "sizinti",
+       2,
+       2.3
+      ],
+      [
+       "yuzey",
+       1,
+       1.2
+      ],
+      [
+       "ses",
+       1,
+       1.2
+      ],
+      [
+       "eksik",
+       1,
+       1.2
+      ],
+      [
+       "gorunum",
+       1,
+       1.2
+      ],
+      [
+       "kirik",
+       1,
+       1.2
+      ]
+     ],
+     "tema_tum": {
+      "kirik": 4.0,
+      "eksik": 2.0,
+      "olcu": 3.0,
+      "montaj": 15.8,
+      "sizinti": 4.0,
+      "basinc": 0.0,
+      "yuzey": 1.0,
+      "mekanizma": 4.0,
+      "kalite": 33.7,
+      "gorunum": 2.0,
+      "farkli": 0.0,
+      "kargo": 5.9,
+      "paket": 10.9,
+      "fiyat": 6.9,
+      "satis_sonrasi": 11.9,
+      "temizlik": 0.0,
+      "ses": 1.0
+     },
+     "tema_neg": {
+      "kirik": 14.3,
+      "eksik": 7.1,
+      "olcu": 7.1,
+      "montaj": 0.0,
+      "sizinti": 14.3,
+      "basinc": 0.0,
+      "yuzey": 0.0,
+      "mekanizma": 7.1,
+      "kalite": 50.0,
+      "gorunum": 7.1,
+      "farkli": 0.0,
+      "kargo": 0.0,
+      "paket": 21.4,
+      "fiyat": 7.1,
+      "satis_sonrasi": 28.6,
+      "temizlik": 0.0,
+      "ses": 0.0
+     },
+     "kanal": {
+      "Hepsiburada": 196
+     }
+    }
+   },
+   "markalar": []
+  },
+  "E.C.A.": {
+   "n": 406,
+   "metinli": 347,
+   "ort_puan": 4.53,
+   "olumlu": 88.4,
+   "notr": 3.9,
+   "olumsuz": 7.6,
+   "olumsuz_metinli": 31,
+   "olumlu_metinli": 302,
+   "pain": [
+    [
+     "satis_sonrasi",
+     12,
+     38.7
+    ],
+    [
+     "montaj",
+     5,
+     16.1
+    ],
+    [
+     "yuzey",
+     4,
+     12.9
+    ],
+    [
+     "kalite",
+     4,
+     12.9
+    ],
+    [
+     "kirik",
+     2,
+     6.5
+    ],
+    [
+     "fiyat",
+     2,
+     6.5
+    ],
+    [
+     "olcu",
+     2,
+     6.5
+    ],
+    [
+     "sizinti",
+     2,
+     6.5
+    ],
+    [
+     "kargo",
+     1,
+     3.2
+    ],
+    [
+     "paket",
+     1,
+     3.2
+    ],
+    [
+     "mekanizma",
+     1,
+     3.2
+    ],
+    [
+     "farkli",
+     1,
+     3.2
+    ],
+    [
+     "eksik",
+     1,
+     3.2
+    ],
+    [
+     "gorunum",
+     1,
+     3.2
+    ]
+   ],
+   "guclu": [
+    [
+     "kalite",
+     100,
+     33.1
+    ],
+    [
+     "kargo",
+     51,
+     16.9
+    ],
+    [
+     "paket",
+     42,
+     13.9
+    ],
+    [
+     "montaj",
+     30,
+     9.9
+    ],
+    [
+     "fiyat",
+     20,
+     6.6
+    ],
+    [
+     "sizinti",
+     11,
+     3.6
+    ],
+    [
+     "gorunum",
+     9,
+     3.0
+    ],
+    [
+     "kirik",
+     8,
+     2.6
+    ],
+    [
+     "mekanizma",
+     4,
+     1.3
+    ],
+    [
+     "olcu",
+     4,
+     1.3
+    ],
+    [
+     "yuzey",
+     2,
+     0.7
+    ],
+    [
+     "eksik",
+     2,
+     0.7
+    ],
+    [
+     "temizlik",
+     1,
+     0.3
+    ]
+   ],
+   "tema_tum": {
+    "kirik": 3.2,
+    "eksik": 0.9,
+    "olcu": 1.7,
+    "montaj": 11.0,
+    "sizinti": 4.0,
+    "basinc": 0.0,
+    "yuzey": 1.7,
+    "mekanizma": 1.4,
+    "kalite": 32.0,
+    "gorunum": 2.9,
+    "farkli": 0.3,
+    "kargo": 15.0,
+    "paket": 12.4,
+    "fiyat": 6.9,
+    "satis_sonrasi": 12.4,
+    "temizlik": 0.3,
+    "ses": 0.0
+   },
+   "tema_neg": {
+    "kirik": 6.5,
+    "eksik": 3.2,
+    "olcu": 6.5,
+    "montaj": 16.1,
+    "sizinti": 6.5,
+    "basinc": 0.0,
+    "yuzey": 12.9,
+    "mekanizma": 3.2,
+    "kalite": 12.9,
+    "gorunum": 3.2,
+    "farkli": 3.2,
+    "kargo": 3.2,
+    "paket": 3.2,
+    "fiyat": 6.5,
+    "satis_sonrasi": 38.7,
+    "temizlik": 0.0,
+    "ses": 0.0
+   },
+   "kanal": {
+    "Hepsiburada": 106,
+    "Trendyol": 300
+   },
+   "kanal_profil": {
+    "Trendyol": {
+     "n": 300,
+     "metinli": 300,
+     "ort_puan": 4.51,
+     "olumlu": 88.3,
+     "notr": 3.7,
+     "olumsuz": 8.0,
+     "olumsuz_metinli": 24,
+     "olumlu_metinli": 265,
+     "pain": [
+      [
+       "satis_sonrasi",
+       9,
+       37.5
+      ],
+      [
+       "montaj",
+       3,
+       12.5
+      ],
+      [
+       "olcu",
+       2,
+       8.3
+      ],
+      [
+       "sizinti",
+       2,
+       8.3
+      ],
+      [
+       "kalite",
+       2,
+       8.3
+      ],
+      [
+       "yuzey",
+       2,
+       8.3
+      ],
+      [
+       "kargo",
+       1,
+       4.2
+      ],
+      [
+       "paket",
+       1,
+       4.2
+      ],
+      [
+       "kirik",
+       1,
+       4.2
+      ],
+      [
+       "mekanizma",
+       1,
+       4.2
+      ],
+      [
+       "farkli",
+       1,
+       4.2
+      ],
+      [
+       "eksik",
+       1,
+       4.2
+      ],
+      [
+       "fiyat",
+       1,
+       4.2
+      ],
+      [
+       "gorunum",
+       1,
+       4.2
+      ]
+     ],
+     "guclu": [
+      [
+       "kalite",
+       81,
+       30.6
+      ],
+      [
+       "kargo",
+       45,
+       17.0
+      ],
+      [
+       "paket",
+       38,
+       14.3
+      ],
+      [
+       "montaj",
+       27,
+       10.2
+      ],
+      [
+       "fiyat",
+       17,
+       6.4
+      ],
+      [
+       "sizinti",
+       10,
+       3.8
+      ],
+      [
+       "kirik",
+       8,
+       3.0
+      ],
+      [
+       "gorunum",
+       7,
+       2.6
+      ],
+      [
+       "olcu",
+       4,
+       1.5
+      ],
+      [
+       "mekanizma",
+       3,
+       1.1
+      ],
+      [
+       "eksik",
+       2,
+       0.8
+      ],
+      [
+       "yuzey",
+       1,
+       0.4
+      ]
+     ],
+     "tema_tum": {
+      "kirik": 3.3,
+      "eksik": 1.0,
+      "olcu": 2.0,
+      "montaj": 11.0,
+      "sizinti": 4.0,
+      "basinc": 0.0,
+      "yuzey": 1.0,
+      "mekanizma": 1.3,
+      "kalite": 29.7,
+      "gorunum": 2.7,
+      "farkli": 0.3,
+      "kargo": 15.3,
+      "paket": 13.0,
+      "fiyat": 6.7,
+      "satis_sonrasi": 11.7,
+      "temizlik": 0.0,
+      "ses": 0.0
+     },
+     "tema_neg": {
+      "kirik": 4.2,
+      "eksik": 4.2,
+      "olcu": 8.3,
+      "montaj": 12.5,
+      "sizinti": 8.3,
+      "basinc": 0.0,
+      "yuzey": 8.3,
+      "mekanizma": 4.2,
+      "kalite": 8.3,
+      "gorunum": 4.2,
+      "farkli": 4.2,
+      "kargo": 4.2,
+      "paket": 4.2,
+      "fiyat": 4.2,
+      "satis_sonrasi": 37.5,
+      "temizlik": 0.0,
+      "ses": 0.0
+     },
+     "kanal": {
+      "Trendyol": 300
+     }
+    },
+    "Hepsiburada": {
+     "n": 106,
+     "metinli": 47,
+     "ort_puan": 4.58,
+     "olumlu": 88.7,
+     "notr": 4.7,
+     "olumsuz": 6.6,
+     "olumsuz_metinli": 7,
+     "olumlu_metinli": 37,
+     "pain": [
+      [
+       "satis_sonrasi",
+       3,
+       42.9
+      ],
+      [
+       "montaj",
+       2,
+       28.6
+      ],
+      [
+       "yuzey",
+       2,
+       28.6
+      ],
+      [
+       "kalite",
+       2,
+       28.6
+      ],
+      [
+       "kirik",
+       1,
+       14.3
+      ],
+      [
+       "fiyat",
+       1,
+       14.3
+      ]
+     ],
+     "guclu": [
+      [
+       "kalite",
+       19,
+       51.4
+      ],
+      [
+       "kargo",
+       6,
+       16.2
+      ],
+      [
+       "paket",
+       4,
+       10.8
+      ],
+      [
+       "montaj",
+       3,
+       8.1
+      ],
+      [
+       "fiyat",
+       3,
+       8.1
+      ],
+      [
+       "gorunum",
+       2,
+       5.4
+      ],
+      [
+       "yuzey",
+       1,
+       2.7
+      ],
+      [
+       "mekanizma",
+       1,
+       2.7
+      ],
+      [
+       "temizlik",
+       1,
+       2.7
+      ],
+      [
+       "sizinti",
+       1,
+       2.7
+      ]
+     ],
+     "tema_tum": {
+      "kirik": 2.1,
+      "eksik": 0.0,
+      "olcu": 0.0,
+      "montaj": 10.6,
+      "sizinti": 4.3,
+      "basinc": 0.0,
+      "yuzey": 6.4,
+      "mekanizma": 2.1,
+      "kalite": 46.8,
+      "gorunum": 4.3,
+      "farkli": 0.0,
+      "kargo": 12.8,
+      "paket": 8.5,
+      "fiyat": 8.5,
+      "satis_sonrasi": 17.0,
+      "temizlik": 2.1,
+      "ses": 0.0
+     },
+     "tema_neg": {
+      "kirik": 14.3,
+      "eksik": 0.0,
+      "olcu": 0.0,
+      "montaj": 28.6,
+      "sizinti": 0.0,
+      "basinc": 0.0,
+      "yuzey": 28.6,
+      "mekanizma": 0.0,
+      "kalite": 28.6,
+      "gorunum": 0.0,
+      "farkli": 0.0,
+      "kargo": 0.0,
+      "paket": 0.0,
+      "fiyat": 14.3,
+      "satis_sonrasi": 42.9,
+      "temizlik": 0.0,
+      "ses": 0.0
+     },
+     "kanal": {
+      "Hepsiburada": 106
+     }
+    }
+   },
+   "markalar": []
+  },
+  "Durul": {
+   "n": 400,
+   "metinli": 321,
+   "ort_puan": 4.61,
+   "olumlu": 91.0,
+   "notr": 2.8,
+   "olumsuz": 6.2,
+   "olumsuz_metinli": 20,
+   "olumlu_metinli": 292,
+   "pain": [
+    [
+     "montaj",
+     11,
+     55.0
+    ],
+    [
+     "kalite",
+     5,
+     25.0
+    ],
+    [
+     "kirik",
+     5,
+     25.0
+    ],
+    [
+     "fiyat",
+     2,
+     10.0
+    ],
+    [
+     "olcu",
+     2,
+     10.0
+    ],
+    [
+     "kargo",
+     2,
+     10.0
+    ],
+    [
+     "paket",
+     1,
+     5.0
+    ],
+    [
+     "satis_sonrasi",
+     1,
+     5.0
+    ],
+    [
+     "eksik",
+     1,
+     5.0
+    ]
+   ],
+   "guclu": [
+    [
+     "kalite",
+     122,
+     41.8
+    ],
+    [
+     "paket",
+     85,
+     29.1
+    ],
+    [
+     "kargo",
+     79,
+     27.1
+    ],
+    [
+     "montaj",
+     77,
+     26.4
+    ],
+    [
+     "fiyat",
+     41,
+     14.0
+    ],
+    [
+     "gorunum",
+     31,
+     10.6
+    ],
+    [
+     "kirik",
+     23,
+     7.9
+    ],
+    [
+     "olcu",
+     11,
+     3.8
+    ],
+    [
+     "eksik",
+     7,
+     2.4
+    ],
+    [
+     "basinc",
+     3,
+     1.0
+    ],
+    [
+     "yuzey",
+     1,
+     0.3
+    ],
+    [
+     "temizlik",
+     1,
+     0.3
+    ]
+   ],
+   "tema_tum": {
+    "kirik": 9.0,
+    "eksik": 2.5,
+    "olcu": 4.0,
+    "montaj": 29.0,
+    "sizinti": 0.0,
+    "basinc": 0.9,
+    "yuzey": 0.6,
+    "mekanizma": 0.0,
+    "kalite": 40.8,
+    "gorunum": 9.7,
+    "farkli": 0.0,
+    "kargo": 25.5,
+    "paket": 26.8,
+    "fiyat": 13.7,
+    "satis_sonrasi": 10.9,
+    "temizlik": 0.3,
+    "ses": 0.0
+   },
+   "tema_neg": {
+    "kirik": 25.0,
+    "eksik": 5.0,
+    "olcu": 10.0,
+    "montaj": 55.0,
+    "sizinti": 0.0,
+    "basinc": 0.0,
+    "yuzey": 0.0,
+    "mekanizma": 0.0,
+    "kalite": 25.0,
+    "gorunum": 0.0,
+    "farkli": 0.0,
+    "kargo": 10.0,
+    "paket": 5.0,
+    "fiyat": 10.0,
+    "satis_sonrasi": 5.0,
+    "temizlik": 0.0,
+    "ses": 0.0
+   },
+   "kanal": {
+    "Hepsiburada": 200,
+    "Trendyol": 200
+   },
+   "kanal_profil": {
+    "Trendyol": {
+     "n": 200,
+     "metinli": 200,
+     "ort_puan": 4.92,
+     "olumlu": 99.5,
+     "notr": 0.0,
+     "olumsuz": 0.5,
+     "olumsuz_metinli": 1,
+     "olumlu_metinli": 199,
+     "pain": [
+      [
+       "kirik",
+       1,
+       100.0
+      ],
+      [
+       "olcu",
+       1,
+       100.0
+      ],
+      [
+       "kargo",
+       1,
+       100.0
+      ]
+     ],
+     "guclu": [
+      [
+       "kalite",
+       76,
+       38.2
+      ],
+      [
+       "paket",
+       68,
+       34.2
+      ],
+      [
+       "kargo",
+       59,
+       29.6
+      ],
+      [
+       "montaj",
+       41,
+       20.6
+      ],
+      [
+       "fiyat",
+       27,
+       13.6
+      ],
+      [
+       "gorunum",
+       21,
+       10.6
+      ],
+      [
+       "kirik",
+       16,
+       8.0
+      ],
+      [
+       "olcu",
+       6,
+       3.0
+      ],
+      [
+       "basinc",
+       3,
+       1.5
+      ],
+      [
+       "eksik",
+       2,
+       1.0
+      ]
+     ],
+     "tema_tum": {
+      "kirik": 8.5,
+      "eksik": 1.0,
+      "olcu": 3.5,
+      "montaj": 20.5,
+      "sizinti": 0.0,
+      "basinc": 1.5,
+      "yuzey": 0.0,
+      "mekanizma": 0.0,
+      "kalite": 38.0,
+      "gorunum": 10.5,
+      "farkli": 0.0,
+      "kargo": 30.0,
+      "paket": 34.0,
+      "fiyat": 13.5,
+      "satis_sonrasi": 11.5,
+      "temizlik": 0.0,
+      "ses": 0.0
+     },
+     "tema_neg": {
+      "kirik": 100.0,
+      "eksik": 0.0,
+      "olcu": 100.0,
+      "montaj": 0.0,
+      "sizinti": 0.0,
+      "basinc": 0.0,
+      "yuzey": 0.0,
+      "mekanizma": 0.0,
+      "kalite": 0.0,
+      "gorunum": 0.0,
+      "farkli": 0.0,
+      "kargo": 100.0,
+      "paket": 0.0,
+      "fiyat": 0.0,
+      "satis_sonrasi": 0.0,
+      "temizlik": 0.0,
+      "ses": 0.0
+     },
+     "kanal": {
+      "Trendyol": 200
+     }
+    },
+    "Hepsiburada": {
+     "n": 200,
+     "metinli": 121,
+     "ort_puan": 4.29,
+     "olumlu": 82.5,
+     "notr": 5.5,
+     "olumsuz": 12.0,
+     "olumsuz_metinli": 19,
+     "olumlu_metinli": 93,
+     "pain": [
+      [
+       "montaj",
+       11,
+       57.9
+      ],
+      [
+       "kalite",
+       5,
+       26.3
+      ],
+      [
+       "kirik",
+       4,
+       21.1
+      ],
+      [
+       "fiyat",
+       2,
+       10.5
+      ],
+      [
+       "olcu",
+       1,
+       5.3
+      ],
+      [
+       "paket",
+       1,
+       5.3
+      ],
+      [
+       "satis_sonrasi",
+       1,
+       5.3
+      ],
+      [
+       "eksik",
+       1,
+       5.3
+      ],
+      [
+       "kargo",
+       1,
+       5.3
+      ]
+     ],
+     "guclu": [
+      [
+       "kalite",
+       46,
+       49.5
+      ],
+      [
+       "montaj",
+       36,
+       38.7
+      ],
+      [
+       "kargo",
+       20,
+       21.5
+      ],
+      [
+       "paket",
+       17,
+       18.3
+      ],
+      [
+       "fiyat",
+       14,
+       15.1
+      ],
+      [
+       "gorunum",
+       10,
+       10.8
+      ],
+      [
+       "kirik",
+       7,
+       7.5
+      ],
+      [
+       "eksik",
+       5,
+       5.4
+      ],
+      [
+       "olcu",
+       5,
+       5.4
+      ],
+      [
+       "yuzey",
+       1,
+       1.1
+      ],
+      [
+       "temizlik",
+       1,
+       1.1
+      ]
+     ],
+     "tema_tum": {
+      "kirik": 9.9,
+      "eksik": 5.0,
+      "olcu": 5.0,
+      "montaj": 43.0,
+      "sizinti": 0.0,
+      "basinc": 0.0,
+      "yuzey": 1.7,
+      "mekanizma": 0.0,
+      "kalite": 45.5,
+      "gorunum": 8.3,
+      "farkli": 0.0,
+      "kargo": 18.2,
+      "paket": 14.9,
+      "fiyat": 14.0,
+      "satis_sonrasi": 9.9,
+      "temizlik": 0.8,
+      "ses": 0.0
+     },
+     "tema_neg": {
+      "kirik": 21.1,
+      "eksik": 5.3,
+      "olcu": 5.3,
+      "montaj": 57.9,
+      "sizinti": 0.0,
+      "basinc": 0.0,
+      "yuzey": 0.0,
+      "mekanizma": 0.0,
+      "kalite": 26.3,
+      "gorunum": 0.0,
+      "farkli": 0.0,
+      "kargo": 5.3,
+      "paket": 5.3,
+      "fiyat": 10.5,
+      "satis_sonrasi": 5.3,
+      "temizlik": 0.0,
+      "ses": 0.0
+     },
+     "kanal": {
+      "Hepsiburada": 200
+     }
+    }
+   },
+   "markalar": []
+  },
+  "Turavit": {
+   "n": 382,
+   "metinli": 289,
+   "ort_puan": 4.51,
+   "olumlu": 86.4,
+   "notr": 5.2,
+   "olumsuz": 8.4,
+   "olumsuz_metinli": 29,
+   "olumlu_metinli": 244,
+   "pain": [
+    [
+     "kirik",
+     9,
+     31.0
+    ],
+    [
+     "satis_sonrasi",
+     9,
+     31.0
+    ],
+    [
+     "paket",
+     4,
+     13.8
+    ],
+    [
+     "gorunum",
+     3,
+     10.3
+    ],
+    [
+     "montaj",
+     3,
+     10.3
+    ],
+    [
+     "kalite",
+     3,
+     10.3
+    ],
+    [
+     "olcu",
+     3,
+     10.3
+    ],
+    [
+     "eksik",
+     2,
+     6.9
+    ],
+    [
+     "mekanizma",
+     2,
+     6.9
+    ],
+    [
+     "kargo",
+     2,
+     6.9
+    ],
+    [
+     "farkli",
+     1,
+     3.4
+    ],
+    [
+     "fiyat",
+     1,
+     3.4
+    ]
+   ],
+   "guclu": [
+    [
+     "kalite",
+     100,
+     41.0
+    ],
+    [
+     "paket",
+     87,
+     35.7
+    ],
+    [
+     "kargo",
+     59,
+     24.2
+    ],
+    [
+     "fiyat",
+     33,
+     13.5
+    ],
+    [
+     "kirik",
+     24,
+     9.8
+    ],
+    [
+     "montaj",
+     23,
+     9.4
+    ],
+    [
+     "gorunum",
+     15,
+     6.1
+    ],
+    [
+     "eksik",
+     6,
+     2.5
+    ],
+    [
+     "mekanizma",
+     4,
+     1.6
+    ],
+    [
+     "basinc",
+     3,
+     1.2
+    ],
+    [
+     "temizlik",
+     3,
+     1.2
+    ],
+    [
+     "sizinti",
+     1,
+     0.4
+    ],
+    [
+     "ses",
+     1,
+     0.4
+    ],
+    [
+     "yuzey",
+     1,
+     0.4
+    ],
+    [
+     "farkli",
+     1,
+     0.4
+    ]
+   ],
+   "tema_tum": {
+    "kirik": 12.8,
+    "eksik": 2.8,
+    "olcu": 1.0,
+    "montaj": 9.7,
+    "sizinti": 0.3,
+    "basinc": 1.0,
+    "yuzey": 0.3,
+    "mekanizma": 2.8,
+    "kalite": 37.4,
+    "gorunum": 7.3,
+    "farkli": 0.7,
+    "kargo": 21.5,
+    "paket": 31.8,
+    "fiyat": 12.1,
+    "satis_sonrasi": 13.1,
+    "temizlik": 1.4,
+    "ses": 0.3
+   },
+   "tema_neg": {
+    "kirik": 31.0,
+    "eksik": 6.9,
+    "olcu": 10.3,
+    "montaj": 10.3,
+    "sizinti": 0.0,
+    "basinc": 0.0,
+    "yuzey": 0.0,
+    "mekanizma": 6.9,
+    "kalite": 10.3,
+    "gorunum": 10.3,
+    "farkli": 3.4,
+    "kargo": 6.9,
+    "paket": 13.8,
+    "fiyat": 3.4,
+    "satis_sonrasi": 31.0,
+    "temizlik": 0.0,
+    "ses": 0.0
+   },
+   "kanal": {
+    "Hepsiburada": 245,
+    "Trendyol": 137
+   },
+   "kanal_profil": {
+    "Trendyol": {
+     "n": 137,
+     "metinli": 137,
+     "ort_puan": 4.85,
+     "olumlu": 95.6,
+     "notr": 2.2,
+     "olumsuz": 2.2,
+     "olumsuz_metinli": 3,
+     "olumlu_metinli": 131,
+     "pain": [
+      [
+       "satis_sonrasi",
+       2,
+       66.7
+      ],
+      [
+       "gorunum",
+       1,
+       33.3
+      ],
+      [
+       "paket",
+       1,
+       33.3
+      ],
+      [
+       "fiyat",
+       1,
+       33.3
+      ]
+     ],
+     "guclu": [
+      [
+       "kalite",
+       60,
+       45.8
+      ],
+      [
+       "paket",
+       56,
+       42.7
+      ],
+      [
+       "kargo",
+       30,
+       22.9
+      ],
+      [
+       "kirik",
+       16,
+       12.2
+      ],
+      [
+       "fiyat",
+       15,
+       11.5
+      ],
+      [
+       "montaj",
+       10,
+       7.6
+      ],
+      [
+       "gorunum",
+       5,
+       3.8
+      ],
+      [
+       "eksik",
+       2,
+       1.5
+      ],
+      [
+       "temizlik",
+       2,
+       1.5
+      ],
+      [
+       "ses",
+       1,
+       0.8
+      ],
+      [
+       "yuzey",
+       1,
+       0.8
+      ],
+      [
+       "basinc",
+       1,
+       0.8
+      ],
+      [
+       "farkli",
+       1,
+       0.8
+      ]
+     ],
+     "tema_tum": {
+      "kirik": 12.4,
+      "eksik": 1.5,
+      "olcu": 0.0,
+      "montaj": 8.0,
+      "sizinti": 0.0,
+      "basinc": 0.7,
+      "yuzey": 0.7,
+      "mekanizma": 0.0,
+      "kalite": 44.5,
+      "gorunum": 5.8,
+      "farkli": 0.7,
+      "kargo": 21.9,
+      "paket": 41.6,
+      "fiyat": 11.7,
+      "satis_sonrasi": 16.8,
+      "temizlik": 1.5,
+      "ses": 0.7
+     },
+     "tema_neg": {
+      "kirik": 0.0,
+      "eksik": 0.0,
+      "olcu": 0.0,
+      "montaj": 0.0,
+      "sizinti": 0.0,
+      "basinc": 0.0,
+      "yuzey": 0.0,
+      "mekanizma": 0.0,
+      "kalite": 0.0,
+      "gorunum": 33.3,
+      "farkli": 0.0,
+      "kargo": 0.0,
+      "paket": 33.3,
+      "fiyat": 33.3,
+      "satis_sonrasi": 66.7,
+      "temizlik": 0.0,
+      "ses": 0.0
+     },
+     "kanal": {
+      "Trendyol": 137
+     }
+    },
+    "Hepsiburada": {
+     "n": 245,
+     "metinli": 152,
+     "ort_puan": 4.32,
+     "olumlu": 81.2,
+     "notr": 6.9,
+     "olumsuz": 11.8,
+     "olumsuz_metinli": 26,
+     "olumlu_metinli": 113,
+     "pain": [
+      [
+       "kirik",
+       9,
+       34.6
+      ],
+      [
+       "satis_sonrasi",
+       7,
+       26.9
+      ],
+      [
+       "montaj",
+       3,
+       11.5
+      ],
+      [
+       "kalite",
+       3,
+       11.5
+      ],
+      [
+       "olcu",
+       3,
+       11.5
+      ],
+      [
+       "paket",
+       3,
+       11.5
+      ],
+      [
+       "gorunum",
+       2,
+       7.7
+      ],
+      [
+       "eksik",
+       2,
+       7.7
+      ],
+      [
+       "mekanizma",
+       2,
+       7.7
+      ],
+      [
+       "kargo",
+       2,
+       7.7
+      ],
+      [
+       "farkli",
+       1,
+       3.8
+      ]
+     ],
+     "guclu": [
+      [
+       "kalite",
+       40,
+       35.4
+      ],
+      [
+       "paket",
+       31,
+       27.4
+      ],
+      [
+       "kargo",
+       29,
+       25.7
+      ],
+      [
+       "fiyat",
+       18,
+       15.9
+      ],
+      [
+       "montaj",
+       13,
+       11.5
+      ],
+      [
+       "gorunum",
+       10,
+       8.8
+      ],
+      [
+       "kirik",
+       8,
+       7.1
+      ],
+      [
+       "mekanizma",
+       4,
+       3.5
+      ],
+      [
+       "eksik",
+       4,
+       3.5
+      ],
+      [
+       "basinc",
+       2,
+       1.8
+      ],
+      [
+       "sizinti",
+       1,
+       0.9
+      ],
+      [
+       "temizlik",
+       1,
+       0.9
+      ]
+     ],
+     "tema_tum": {
+      "kirik": 13.2,
+      "eksik": 3.9,
+      "olcu": 2.0,
+      "montaj": 11.2,
+      "sizinti": 0.7,
+      "basinc": 1.3,
+      "yuzey": 0.0,
+      "mekanizma": 5.3,
+      "kalite": 30.9,
+      "gorunum": 8.6,
+      "farkli": 0.7,
+      "kargo": 21.1,
+      "paket": 23.0,
+      "fiyat": 12.5,
+      "satis_sonrasi": 9.9,
+      "temizlik": 1.3,
+      "ses": 0.0
+     },
+     "tema_neg": {
+      "kirik": 34.6,
+      "eksik": 7.7,
+      "olcu": 11.5,
+      "montaj": 11.5,
+      "sizinti": 0.0,
+      "basinc": 0.0,
+      "yuzey": 0.0,
+      "mekanizma": 7.7,
+      "kalite": 11.5,
+      "gorunum": 7.7,
+      "farkli": 3.8,
+      "kargo": 7.7,
+      "paket": 11.5,
+      "fiyat": 0.0,
+      "satis_sonrasi": 26.9,
+      "temizlik": 0.0,
+      "ses": 0.0
+     },
+     "kanal": {
+      "Hepsiburada": 245
+     }
+    }
+   },
+   "markalar": []
+  },
+  "Kale": {
+   "n": 238,
+   "metinli": 143,
+   "ort_puan": 4.49,
+   "olumlu": 89.1,
+   "notr": 2.5,
+   "olumsuz": 8.4,
+   "olumsuz_metinli": 18,
+   "olumlu_metinli": 122,
+   "pain": [
+    [
+     "kirik",
+     6,
+     33.3
+    ],
+    [
+     "satis_sonrasi",
+     6,
+     33.3
+    ],
+    [
+     "kalite",
+     3,
+     16.7
+    ],
+    [
+     "fiyat",
+     2,
+     11.1
+    ],
+    [
+     "olcu",
+     2,
+     11.1
+    ],
+    [
+     "paket",
+     2,
+     11.1
+    ],
+    [
+     "eksik",
+     1,
+     5.6
+    ],
+    [
+     "montaj",
+     1,
+     5.6
+    ],
+    [
+     "farkli",
+     1,
+     5.6
+    ]
+   ],
+   "guclu": [
+    [
+     "kalite",
+     37,
+     30.3
+    ],
+    [
+     "paket",
+     25,
+     20.5
+    ],
+    [
+     "kargo",
+     22,
+     18.0
+    ],
+    [
+     "montaj",
+     21,
+     17.2
+    ],
+    [
+     "fiyat",
+     8,
+     6.6
+    ],
+    [
+     "kirik",
+     6,
+     4.9
+    ],
+    [
+     "olcu",
+     5,
+     4.1
+    ],
+    [
+     "sizinti",
+     3,
+     2.5
+    ],
+    [
+     "mekanizma",
+     3,
+     2.5
+    ],
+    [
+     "gorunum",
+     3,
+     2.5
+    ],
+    [
+     "eksik",
+     1,
+     0.8
+    ],
+    [
+     "farkli",
+     1,
+     0.8
+    ],
+    [
+     "temizlik",
+     1,
+     0.8
+    ]
+   ],
+   "tema_tum": {
+    "kirik": 8.4,
+    "eksik": 1.4,
+    "olcu": 5.6,
+    "montaj": 15.4,
+    "sizinti": 2.1,
+    "basinc": 0.0,
+    "yuzey": 0.0,
+    "mekanizma": 2.8,
+    "kalite": 28.0,
+    "gorunum": 2.1,
+    "farkli": 1.4,
+    "kargo": 16.1,
+    "paket": 18.9,
+    "fiyat": 7.0,
+    "satis_sonrasi": 20.3,
+    "temizlik": 0.7,
+    "ses": 0.0
+   },
+   "tema_neg": {
+    "kirik": 33.3,
+    "eksik": 5.6,
+    "olcu": 11.1,
+    "montaj": 5.6,
+    "sizinti": 0.0,
+    "basinc": 0.0,
+    "yuzey": 0.0,
+    "mekanizma": 0.0,
+    "kalite": 16.7,
+    "gorunum": 0.0,
+    "farkli": 5.6,
+    "kargo": 0.0,
+    "paket": 11.1,
+    "fiyat": 11.1,
+    "satis_sonrasi": 33.3,
+    "temizlik": 0.0,
+    "ses": 0.0
+   },
+   "kanal": {
+    "Hepsiburada": 173,
+    "Trendyol": 65
+   },
+   "kanal_profil": {
+    "Trendyol": {
+     "n": 65,
+     "metinli": 65,
+     "ort_puan": 4.52,
+     "olumlu": 87.7,
+     "notr": 1.5,
+     "olumsuz": 10.8,
+     "olumsuz_metinli": 7,
+     "olumlu_metinli": 57,
+     "pain": [
+      [
+       "satis_sonrasi",
+       4,
+       57.1
+      ],
+      [
+       "paket",
+       2,
+       28.6
+      ],
+      [
+       "kirik",
+       1,
+       14.3
+      ],
+      [
+       "eksik",
+       1,
+       14.3
+      ],
+      [
+       "kalite",
+       1,
+       14.3
+      ],
+      [
+       "olcu",
+       1,
+       14.3
+      ],
+      [
+       "montaj",
+       1,
+       14.3
+      ],
+      [
+       "farkli",
+       1,
+       14.3
+      ]
+     ],
+     "guclu": [
+      [
+       "kalite",
+       21,
+       36.8
+      ],
+      [
+       "paket",
+       19,
+       33.3
+      ],
+      [
+       "kargo",
+       13,
+       22.8
+      ],
+      [
+       "montaj",
+       10,
+       17.5
+      ],
+      [
+       "kirik",
+       3,
+       5.3
+      ],
+      [
+       "olcu",
+       3,
+       5.3
+      ],
+      [
+       "mekanizma",
+       2,
+       3.5
+      ],
+      [
+       "gorunum",
+       2,
+       3.5
+      ],
+      [
+       "fiyat",
+       1,
+       1.8
+      ],
+      [
+       "temizlik",
+       1,
+       1.8
+      ]
+     ],
+     "tema_tum": {
+      "kirik": 6.2,
+      "eksik": 1.5,
+      "olcu": 7.7,
+      "montaj": 16.9,
+      "sizinti": 0.0,
+      "basinc": 0.0,
+      "yuzey": 0.0,
+      "mekanizma": 4.6,
+      "kalite": 33.8,
+      "gorunum": 3.1,
+      "farkli": 1.5,
+      "kargo": 20.0,
+      "paket": 32.3,
+      "fiyat": 1.5,
+      "satis_sonrasi": 20.0,
+      "temizlik": 1.5,
+      "ses": 0.0
+     },
+     "tema_neg": {
+      "kirik": 14.3,
+      "eksik": 14.3,
+      "olcu": 14.3,
+      "montaj": 14.3,
+      "sizinti": 0.0,
+      "basinc": 0.0,
+      "yuzey": 0.0,
+      "mekanizma": 0.0,
+      "kalite": 14.3,
+      "gorunum": 0.0,
+      "farkli": 14.3,
+      "kargo": 0.0,
+      "paket": 28.6,
+      "fiyat": 0.0,
+      "satis_sonrasi": 57.1,
+      "temizlik": 0.0,
+      "ses": 0.0
+     },
+     "kanal": {
+      "Trendyol": 65
+     }
+    },
+    "Hepsiburada": {
+     "n": 173,
+     "metinli": 78,
+     "ort_puan": 4.47,
+     "olumlu": 89.6,
+     "notr": 2.9,
+     "olumsuz": 7.5,
+     "olumsuz_metinli": 11,
+     "olumlu_metinli": 65,
+     "pain": [
+      [
+       "kirik",
+       5,
+       45.5
+      ],
+      [
+       "satis_sonrasi",
+       2,
+       18.2
+      ],
+      [
+       "fiyat",
+       2,
+       18.2
+      ],
+      [
+       "kalite",
+       2,
+       18.2
+      ],
+      [
+       "olcu",
+       1,
+       9.1
+      ]
+     ],
+     "guclu": [
+      [
+       "kalite",
+       16,
+       24.6
+      ],
+      [
+       "montaj",
+       11,
+       16.9
+      ],
+      [
+       "kargo",
+       9,
+       13.8
+      ],
+      [
+       "fiyat",
+       7,
+       10.8
+      ],
+      [
+       "paket",
+       6,
+       9.2
+      ],
+      [
+       "kirik",
+       3,
+       4.6
+      ],
+      [
+       "sizinti",
+       3,
+       4.6
+      ],
+      [
+       "olcu",
+       2,
+       3.1
+      ],
+      [
+       "eksik",
+       1,
+       1.5
+      ],
+      [
+       "mekanizma",
+       1,
+       1.5
+      ],
+      [
+       "farkli",
+       1,
+       1.5
+      ],
+      [
+       "gorunum",
+       1,
+       1.5
+      ]
+     ],
+     "tema_tum": {
+      "kirik": 10.3,
+      "eksik": 1.3,
+      "olcu": 3.8,
+      "montaj": 14.1,
+      "sizinti": 3.8,
+      "basinc": 0.0,
+      "yuzey": 0.0,
+      "mekanizma": 1.3,
+      "kalite": 23.1,
+      "gorunum": 1.3,
+      "farkli": 1.3,
+      "kargo": 12.8,
+      "paket": 7.7,
+      "fiyat": 11.5,
+      "satis_sonrasi": 20.5,
+      "temizlik": 0.0,
+      "ses": 0.0
+     },
+     "tema_neg": {
+      "kirik": 45.5,
+      "eksik": 0.0,
+      "olcu": 9.1,
+      "montaj": 0.0,
+      "sizinti": 0.0,
+      "basinc": 0.0,
+      "yuzey": 0.0,
+      "mekanizma": 0.0,
+      "kalite": 18.2,
+      "gorunum": 0.0,
+      "farkli": 0.0,
+      "kargo": 0.0,
+      "paket": 0.0,
+      "fiyat": 18.2,
+      "satis_sonrasi": 18.2,
+      "temizlik": 0.0,
+      "ses": 0.0
+     },
+     "kanal": {
+      "Hepsiburada": 173
+     }
+    }
+   },
+   "markalar": []
+  },
+  "TEMA": {
+   "n": 199,
+   "metinli": 111,
+   "ort_puan": 4.37,
+   "olumlu": 83.9,
+   "notr": 4.5,
+   "olumsuz": 11.6,
+   "olumsuz_metinli": 22,
+   "olumlu_metinli": 86,
+   "pain": [
+    [
+     "satis_sonrasi",
+     9,
+     40.9
+    ],
+    [
+     "kalite",
+     5,
+     22.7
+    ],
+    [
+     "kirik",
+     3,
+     13.6
+    ],
+    [
+     "eksik",
+     3,
+     13.6
+    ],
+    [
+     "yuzey",
+     2,
+     9.1
+    ],
+    [
+     "mekanizma",
+     2,
+     9.1
+    ],
+    [
+     "fiyat",
+     2,
+     9.1
+    ],
+    [
+     "paket",
+     2,
+     9.1
+    ],
+    [
+     "kargo",
+     2,
+     9.1
+    ],
+    [
+     "montaj",
+     1,
+     4.5
+    ],
+    [
+     "temizlik",
+     1,
+     4.5
+    ],
+    [
+     "basinc",
+     1,
+     4.5
+    ]
+   ],
+   "guclu": [
+    [
+     "kalite",
+     31,
+     36.0
+    ],
+    [
+     "montaj",
+     27,
+     31.4
+    ],
+    [
+     "fiyat",
+     18,
+     20.9
+    ],
+    [
+     "paket",
+     6,
+     7.0
+    ],
+    [
+     "kargo",
+     5,
+     5.8
+    ],
+    [
+     "gorunum",
+     4,
+     4.7
+    ],
+    [
+     "kirik",
+     3,
+     3.5
+    ],
+    [
+     "eksik",
+     2,
+     2.3
+    ],
+    [
+     "yuzey",
+     2,
+     2.3
+    ],
+    [
+     "sizinti",
+     2,
+     2.3
+    ],
+    [
+     "temizlik",
+     1,
+     1.2
+    ],
+    [
+     "mekanizma",
+     1,
+     1.2
+    ]
+   ],
+   "tema_tum": {
+    "kirik": 6.3,
+    "eksik": 4.5,
+    "olcu": 0.0,
+    "montaj": 26.1,
+    "sizinti": 1.8,
+    "basinc": 0.9,
+    "yuzey": 3.6,
+    "mekanizma": 4.5,
+    "kalite": 34.2,
+    "gorunum": 3.6,
+    "farkli": 0.0,
+    "kargo": 6.3,
+    "paket": 7.2,
+    "fiyat": 18.0,
+    "satis_sonrasi": 16.2,
+    "temizlik": 2.7,
+    "ses": 0.0
+   },
+   "tema_neg": {
+    "kirik": 13.6,
+    "eksik": 13.6,
+    "olcu": 0.0,
+    "montaj": 4.5,
+    "sizinti": 0.0,
+    "basinc": 4.5,
+    "yuzey": 9.1,
+    "mekanizma": 9.1,
+    "kalite": 22.7,
+    "gorunum": 0.0,
+    "farkli": 0.0,
+    "kargo": 9.1,
+    "paket": 9.1,
+    "fiyat": 9.1,
+    "satis_sonrasi": 40.9,
+    "temizlik": 4.5,
+    "ses": 0.0
+   },
+   "kanal": {
+    "Hepsiburada": 199
+   },
+   "kanal_profil": {
+    "Trendyol": {
+     "n": 0,
+     "metinli": 0,
+     "ort_puan": null,
+     "olumlu": null,
+     "notr": null,
+     "olumsuz": null,
+     "olumsuz_metinli": 0,
+     "olumlu_metinli": 0,
+     "pain": [],
+     "guclu": [],
+     "tema_tum": {
+      "kirik": null,
+      "eksik": null,
+      "olcu": null,
+      "montaj": null,
+      "sizinti": null,
+      "basinc": null,
+      "yuzey": null,
+      "mekanizma": null,
+      "kalite": null,
+      "gorunum": null,
+      "farkli": null,
+      "kargo": null,
+      "paket": null,
+      "fiyat": null,
+      "satis_sonrasi": null,
+      "temizlik": null,
+      "ses": null
+     },
+     "tema_neg": {
+      "kirik": null,
+      "eksik": null,
+      "olcu": null,
+      "montaj": null,
+      "sizinti": null,
+      "basinc": null,
+      "yuzey": null,
+      "mekanizma": null,
+      "kalite": null,
+      "gorunum": null,
+      "farkli": null,
+      "kargo": null,
+      "paket": null,
+      "fiyat": null,
+      "satis_sonrasi": null,
+      "temizlik": null,
+      "ses": null
+     },
+     "kanal": {}
+    },
+    "Hepsiburada": {
+     "n": 199,
+     "metinli": 111,
+     "ort_puan": 4.37,
+     "olumlu": 83.9,
+     "notr": 4.5,
+     "olumsuz": 11.6,
+     "olumsuz_metinli": 22,
+     "olumlu_metinli": 86,
+     "pain": [
+      [
+       "satis_sonrasi",
+       9,
+       40.9
+      ],
+      [
+       "kalite",
+       5,
+       22.7
+      ],
+      [
+       "kirik",
+       3,
+       13.6
+      ],
+      [
+       "eksik",
+       3,
+       13.6
+      ],
+      [
+       "yuzey",
+       2,
+       9.1
+      ],
+      [
+       "mekanizma",
+       2,
+       9.1
+      ],
+      [
+       "fiyat",
+       2,
+       9.1
+      ],
+      [
+       "paket",
+       2,
+       9.1
+      ],
+      [
+       "kargo",
+       2,
+       9.1
+      ],
+      [
+       "montaj",
+       1,
+       4.5
+      ],
+      [
+       "temizlik",
+       1,
+       4.5
+      ],
+      [
+       "basinc",
+       1,
+       4.5
+      ]
+     ],
+     "guclu": [
+      [
+       "kalite",
+       31,
+       36.0
+      ],
+      [
+       "montaj",
+       27,
+       31.4
+      ],
+      [
+       "fiyat",
+       18,
+       20.9
+      ],
+      [
+       "paket",
+       6,
+       7.0
+      ],
+      [
+       "kargo",
+       5,
+       5.8
+      ],
+      [
+       "gorunum",
+       4,
+       4.7
+      ],
+      [
+       "kirik",
+       3,
+       3.5
+      ],
+      [
+       "eksik",
+       2,
+       2.3
+      ],
+      [
+       "yuzey",
+       2,
+       2.3
+      ],
+      [
+       "sizinti",
+       2,
+       2.3
+      ],
+      [
+       "temizlik",
+       1,
+       1.2
+      ],
+      [
+       "mekanizma",
+       1,
+       1.2
+      ]
+     ],
+     "tema_tum": {
+      "kirik": 6.3,
+      "eksik": 4.5,
+      "olcu": 0.0,
+      "montaj": 26.1,
+      "sizinti": 1.8,
+      "basinc": 0.9,
+      "yuzey": 3.6,
+      "mekanizma": 4.5,
+      "kalite": 34.2,
+      "gorunum": 3.6,
+      "farkli": 0.0,
+      "kargo": 6.3,
+      "paket": 7.2,
+      "fiyat": 18.0,
+      "satis_sonrasi": 16.2,
+      "temizlik": 2.7,
+      "ses": 0.0
+     },
+     "tema_neg": {
+      "kirik": 13.6,
+      "eksik": 13.6,
+      "olcu": 0.0,
+      "montaj": 4.5,
+      "sizinti": 0.0,
+      "basinc": 4.5,
+      "yuzey": 9.1,
+      "mekanizma": 9.1,
+      "kalite": 22.7,
+      "gorunum": 0.0,
+      "farkli": 0.0,
+      "kargo": 9.1,
+      "paket": 9.1,
+      "fiyat": 9.1,
+      "satis_sonrasi": 40.9,
+      "temizlik": 4.5,
+      "ses": 0.0
+     },
+     "kanal": {
+      "Hepsiburada": 199
+     }
+    }
+   },
+   "markalar": []
+  },
+  "Newarc": {
+   "n": 99,
+   "metinli": 66,
+   "ort_puan": 4.38,
+   "olumlu": 83.8,
+   "notr": 3.0,
+   "olumsuz": 13.1,
+   "olumsuz_metinli": 13,
+   "olumlu_metinli": 50,
+   "pain": [
+    [
+     "montaj",
+     5,
+     38.5
+    ],
+    [
+     "satis_sonrasi",
+     4,
+     30.8
+    ],
+    [
+     "kirik",
+     4,
+     30.8
+    ],
+    [
+     "sizinti",
+     2,
+     15.4
+    ],
+    [
+     "mekanizma",
+     2,
+     15.4
+    ],
+    [
+     "kalite",
+     2,
+     15.4
+    ],
+    [
+     "olcu",
+     1,
+     7.7
+    ],
+    [
+     "eksik",
+     1,
+     7.7
+    ],
+    [
+     "kargo",
+     1,
+     7.7
+    ]
+   ],
+   "guclu": [
+    [
+     "paket",
+     23,
+     46.0
+    ],
+    [
+     "kalite",
+     17,
+     34.0
+    ],
+    [
+     "montaj",
+     12,
+     24.0
+    ],
+    [
+     "kargo",
+     11,
+     22.0
+    ],
+    [
+     "gorunum",
+     6,
+     12.0
+    ],
+    [
+     "fiyat",
+     5,
+     10.0
+    ],
+    [
+     "eksik",
+     2,
+     4.0
+    ],
+    [
+     "mekanizma",
+     2,
+     4.0
+    ],
+    [
+     "kirik",
+     2,
+     4.0
+    ],
+    [
+     "olcu",
+     1,
+     2.0
+    ]
+   ],
+   "tema_tum": {
+    "kirik": 10.6,
+    "eksik": 4.5,
+    "olcu": 3.0,
+    "montaj": 25.8,
+    "sizinti": 3.0,
+    "basinc": 0.0,
+    "yuzey": 0.0,
+    "mekanizma": 7.6,
+    "kalite": 28.8,
+    "gorunum": 10.6,
+    "farkli": 0.0,
+    "kargo": 18.2,
+    "paket": 34.8,
+    "fiyat": 7.6,
+    "satis_sonrasi": 15.2,
+    "temizlik": 0.0,
+    "ses": 0.0
+   },
+   "tema_neg": {
+    "kirik": 30.8,
+    "eksik": 7.7,
+    "olcu": 7.7,
+    "montaj": 38.5,
+    "sizinti": 15.4,
+    "basinc": 0.0,
+    "yuzey": 0.0,
+    "mekanizma": 15.4,
+    "kalite": 15.4,
+    "gorunum": 0.0,
+    "farkli": 0.0,
+    "kargo": 7.7,
+    "paket": 0.0,
+    "fiyat": 0.0,
+    "satis_sonrasi": 30.8,
+    "temizlik": 0.0,
+    "ses": 0.0
+   },
+   "kanal": {
+    "Hepsiburada": 99
+   },
+   "kanal_profil": {
+    "Trendyol": {
+     "n": 0,
+     "metinli": 0,
+     "ort_puan": null,
+     "olumlu": null,
+     "notr": null,
+     "olumsuz": null,
+     "olumsuz_metinli": 0,
+     "olumlu_metinli": 0,
+     "pain": [],
+     "guclu": [],
+     "tema_tum": {
+      "kirik": null,
+      "eksik": null,
+      "olcu": null,
+      "montaj": null,
+      "sizinti": null,
+      "basinc": null,
+      "yuzey": null,
+      "mekanizma": null,
+      "kalite": null,
+      "gorunum": null,
+      "farkli": null,
+      "kargo": null,
+      "paket": null,
+      "fiyat": null,
+      "satis_sonrasi": null,
+      "temizlik": null,
+      "ses": null
+     },
+     "tema_neg": {
+      "kirik": null,
+      "eksik": null,
+      "olcu": null,
+      "montaj": null,
+      "sizinti": null,
+      "basinc": null,
+      "yuzey": null,
+      "mekanizma": null,
+      "kalite": null,
+      "gorunum": null,
+      "farkli": null,
+      "kargo": null,
+      "paket": null,
+      "fiyat": null,
+      "satis_sonrasi": null,
+      "temizlik": null,
+      "ses": null
+     },
+     "kanal": {}
+    },
+    "Hepsiburada": {
+     "n": 99,
+     "metinli": 66,
+     "ort_puan": 4.38,
+     "olumlu": 83.8,
+     "notr": 3.0,
+     "olumsuz": 13.1,
+     "olumsuz_metinli": 13,
+     "olumlu_metinli": 50,
+     "pain": [
+      [
+       "montaj",
+       5,
+       38.5
+      ],
+      [
+       "satis_sonrasi",
+       4,
+       30.8
+      ],
+      [
+       "kirik",
+       4,
+       30.8
+      ],
+      [
+       "sizinti",
+       2,
+       15.4
+      ],
+      [
+       "mekanizma",
+       2,
+       15.4
+      ],
+      [
+       "kalite",
+       2,
+       15.4
+      ],
+      [
+       "olcu",
+       1,
+       7.7
+      ],
+      [
+       "eksik",
+       1,
+       7.7
+      ],
+      [
+       "kargo",
+       1,
+       7.7
+      ]
+     ],
+     "guclu": [
+      [
+       "paket",
+       23,
+       46.0
+      ],
+      [
+       "kalite",
+       17,
+       34.0
+      ],
+      [
+       "montaj",
+       12,
+       24.0
+      ],
+      [
+       "kargo",
+       11,
+       22.0
+      ],
+      [
+       "gorunum",
+       6,
+       12.0
+      ],
+      [
+       "fiyat",
+       5,
+       10.0
+      ],
+      [
+       "eksik",
+       2,
+       4.0
+      ],
+      [
+       "mekanizma",
+       2,
+       4.0
+      ],
+      [
+       "kirik",
+       2,
+       4.0
+      ],
+      [
+       "olcu",
+       1,
+       2.0
+      ]
+     ],
+     "tema_tum": {
+      "kirik": 10.6,
+      "eksik": 4.5,
+      "olcu": 3.0,
+      "montaj": 25.8,
+      "sizinti": 3.0,
+      "basinc": 0.0,
+      "yuzey": 0.0,
+      "mekanizma": 7.6,
+      "kalite": 28.8,
+      "gorunum": 10.6,
+      "farkli": 0.0,
+      "kargo": 18.2,
+      "paket": 34.8,
+      "fiyat": 7.6,
+      "satis_sonrasi": 15.2,
+      "temizlik": 0.0,
+      "ses": 0.0
+     },
+     "tema_neg": {
+      "kirik": 30.8,
+      "eksik": 7.7,
+      "olcu": 7.7,
+      "montaj": 38.5,
+      "sizinti": 15.4,
+      "basinc": 0.0,
+      "yuzey": 0.0,
+      "mekanizma": 15.4,
+      "kalite": 15.4,
+      "gorunum": 0.0,
+      "farkli": 0.0,
+      "kargo": 7.7,
+      "paket": 0.0,
+      "fiyat": 0.0,
+      "satis_sonrasi": 30.8,
+      "temizlik": 0.0,
+      "ses": 0.0
+     },
+     "kanal": {
+      "Hepsiburada": 99
+     }
+    }
+   },
+   "markalar": []
+  },
+  "Grohe": {
+   "n": 131,
+   "metinli": 64,
+   "ort_puan": 4.56,
+   "olumlu": 89.3,
+   "notr": 1.5,
+   "olumsuz": 9.2,
+   "olumsuz_metinli": 11,
+   "olumlu_metinli": 53,
+   "pain": [
+    [
+     "satis_sonrasi",
+     6,
+     54.5
+    ],
+    [
+     "montaj",
+     4,
+     36.4
+    ],
+    [
+     "paket",
+     3,
+     27.3
+    ],
+    [
+     "eksik",
+     2,
+     18.2
+    ],
+    [
+     "kalite",
+     1,
+     9.1
+    ],
+    [
+     "kirik",
+     1,
+     9.1
+    ],
+    [
+     "sizinti",
+     1,
+     9.1
+    ],
+    [
+     "kargo",
+     1,
+     9.1
+    ]
+   ],
+   "guclu": [
+    [
+     "kalite",
+     26,
+     49.1
+    ],
+    [
+     "kargo",
+     10,
+     18.9
+    ],
+    [
+     "paket",
+     7,
+     13.2
+    ],
+    [
+     "gorunum",
+     7,
+     13.2
+    ],
+    [
+     "fiyat",
+     7,
+     13.2
+    ],
+    [
+     "montaj",
+     6,
+     11.3
+    ],
+    [
+     "ses",
+     2,
+     3.8
+    ],
+    [
+     "eksik",
+     1,
+     1.9
+    ],
+    [
+     "olcu",
+     1,
+     1.9
+    ]
+   ],
+   "tema_tum": {
+    "kirik": 1.6,
+    "eksik": 4.7,
+    "olcu": 1.6,
+    "montaj": 15.6,
+    "sizinti": 1.6,
+    "basinc": 0.0,
+    "yuzey": 0.0,
+    "mekanizma": 0.0,
+    "kalite": 42.2,
+    "gorunum": 10.9,
+    "farkli": 0.0,
+    "kargo": 17.2,
+    "paket": 15.6,
+    "fiyat": 10.9,
+    "satis_sonrasi": 20.3,
+    "temizlik": 0.0,
+    "ses": 3.1
+   },
+   "tema_neg": {
+    "kirik": 9.1,
+    "eksik": 18.2,
+    "olcu": 0.0,
+    "montaj": 36.4,
+    "sizinti": 9.1,
+    "basinc": 0.0,
+    "yuzey": 0.0,
+    "mekanizma": 0.0,
+    "kalite": 9.1,
+    "gorunum": 0.0,
+    "farkli": 0.0,
+    "kargo": 9.1,
+    "paket": 27.3,
+    "fiyat": 0.0,
+    "satis_sonrasi": 54.5,
+    "temizlik": 0.0,
+    "ses": 0.0
+   },
+   "kanal": {
+    "Hepsiburada": 113,
+    "Trendyol": 18
+   },
+   "kanal_profil": {
+    "Trendyol": {
+     "n": 18,
+     "metinli": 18,
+     "ort_puan": 3.83,
+     "olumlu": 72.2,
+     "notr": 0.0,
+     "olumsuz": 27.8,
+     "olumsuz_metinli": 5,
+     "olumlu_metinli": 13,
+     "pain": [
+      [
+       "montaj",
+       3,
+       60.0
+      ],
+      [
+       "paket",
+       3,
+       60.0
+      ],
+      [
+       "satis_sonrasi",
+       3,
+       60.0
+      ],
+      [
+       "eksik",
+       2,
+       40.0
+      ],
+      [
+       "sizinti",
+       1,
+       20.0
+      ],
+      [
+       "kargo",
+       1,
+       20.0
+      ]
+     ],
+     "guclu": [
+      [
+       "kalite",
+       6,
+       46.2
+      ],
+      [
+       "kargo",
+       2,
+       15.4
+      ],
+      [
+       "montaj",
+       1,
+       7.7
+      ],
+      [
+       "paket",
+       1,
+       7.7
+      ],
+      [
+       "eksik",
+       1,
+       7.7
+      ],
+      [
+       "gorunum",
+       1,
+       7.7
+      ],
+      [
+       "olcu",
+       1,
+       7.7
+      ]
+     ],
+     "tema_tum": {
+      "kirik": 0.0,
+      "eksik": 16.7,
+      "olcu": 5.6,
+      "montaj": 22.2,
+      "sizinti": 5.6,
+      "basinc": 0.0,
+      "yuzey": 0.0,
+      "mekanizma": 0.0,
+      "kalite": 33.3,
+      "gorunum": 5.6,
+      "farkli": 0.0,
+      "kargo": 16.7,
+      "paket": 22.2,
+      "fiyat": 0.0,
+      "satis_sonrasi": 38.9,
+      "temizlik": 0.0,
+      "ses": 0.0
+     },
+     "tema_neg": {
+      "kirik": 0.0,
+      "eksik": 40.0,
+      "olcu": 0.0,
+      "montaj": 60.0,
+      "sizinti": 20.0,
+      "basinc": 0.0,
+      "yuzey": 0.0,
+      "mekanizma": 0.0,
+      "kalite": 0.0,
+      "gorunum": 0.0,
+      "farkli": 0.0,
+      "kargo": 20.0,
+      "paket": 60.0,
+      "fiyat": 0.0,
+      "satis_sonrasi": 60.0,
+      "temizlik": 0.0,
+      "ses": 0.0
+     },
+     "kanal": {
+      "Trendyol": 18
+     }
+    },
+    "Hepsiburada": {
+     "n": 113,
+     "metinli": 46,
+     "ort_puan": 4.68,
+     "olumlu": 92.0,
+     "notr": 1.8,
+     "olumsuz": 6.2,
+     "olumsuz_metinli": 6,
+     "olumlu_metinli": 40,
+     "pain": [
+      [
+       "satis_sonrasi",
+       3,
+       50.0
+      ],
+      [
+       "kalite",
+       1,
+       16.7
+      ],
+      [
+       "kirik",
+       1,
+       16.7
+      ],
+      [
+       "montaj",
+       1,
+       16.7
+      ]
+     ],
+     "guclu": [
+      [
+       "kalite",
+       20,
+       50.0
+      ],
+      [
+       "kargo",
+       8,
+       20.0
+      ],
+      [
+       "fiyat",
+       7,
+       17.5
+      ],
+      [
+       "paket",
+       6,
+       15.0
+      ],
+      [
+       "gorunum",
+       6,
+       15.0
+      ],
+      [
+       "montaj",
+       5,
+       12.5
+      ],
+      [
+       "ses",
+       2,
+       5.0
+      ]
+     ],
+     "tema_tum": {
+      "kirik": 2.2,
+      "eksik": 0.0,
+      "olcu": 0.0,
+      "montaj": 13.0,
+      "sizinti": 0.0,
+      "basinc": 0.0,
+      "yuzey": 0.0,
+      "mekanizma": 0.0,
+      "kalite": 45.7,
+      "gorunum": 13.0,
+      "farkli": 0.0,
+      "kargo": 17.4,
+      "paket": 13.0,
+      "fiyat": 15.2,
+      "satis_sonrasi": 13.0,
+      "temizlik": 0.0,
+      "ses": 4.3
+     },
+     "tema_neg": {
+      "kirik": 16.7,
+      "eksik": 0.0,
+      "olcu": 0.0,
+      "montaj": 16.7,
+      "sizinti": 0.0,
+      "basinc": 0.0,
+      "yuzey": 0.0,
+      "mekanizma": 0.0,
+      "kalite": 16.7,
+      "gorunum": 0.0,
+      "farkli": 0.0,
+      "kargo": 0.0,
+      "paket": 0.0,
+      "fiyat": 0.0,
+      "satis_sonrasi": 50.0,
+      "temizlik": 0.0,
+      "ses": 0.0
+     },
+     "kanal": {
+      "Hepsiburada": 113
+     }
+    }
+   },
+   "markalar": []
+  },
+  "Serel": {
+   "n": 71,
+   "metinli": 41,
+   "ort_puan": 4.23,
+   "olumlu": 77.5,
+   "notr": 9.9,
+   "olumsuz": 12.7,
+   "olumsuz_metinli": 7,
+   "olumlu_metinli": 32,
+   "pain": [
+    [
+     "eksik",
+     3,
+     42.9
+    ],
+    [
+     "kalite",
+     2,
+     28.6
+    ],
+    [
+     "kirik",
+     1,
+     14.3
+    ],
+    [
+     "kargo",
+     1,
+     14.3
+    ],
+    [
+     "paket",
+     1,
+     14.3
+    ],
+    [
+     "satis_sonrasi",
+     1,
+     14.3
+    ],
+    [
+     "montaj",
+     1,
+     14.3
+    ],
+    [
+     "gorunum",
+     1,
+     14.3
+    ]
+   ],
+   "guclu": [
+    [
+     "kalite",
+     6,
+     18.8
+    ],
+    [
+     "kargo",
+     6,
+     18.8
+    ],
+    [
+     "montaj",
+     3,
+     9.4
+    ],
+    [
+     "gorunum",
+     2,
+     6.2
+    ],
+    [
+     "fiyat",
+     2,
+     6.2
+    ],
+    [
+     "paket",
+     1,
+     3.1
+    ],
+    [
+     "eksik",
+     1,
+     3.1
+    ],
+    [
+     "temizlik",
+     1,
+     3.1
+    ]
+   ],
+   "tema_tum": {
+    "kirik": 2.4,
+    "eksik": 9.8,
+    "olcu": 2.4,
+    "montaj": 12.2,
+    "sizinti": 0.0,
+    "basinc": 0.0,
+    "yuzey": 0.0,
+    "mekanizma": 0.0,
+    "kalite": 19.5,
+    "gorunum": 7.3,
+    "farkli": 0.0,
+    "kargo": 17.1,
+    "paket": 4.9,
+    "fiyat": 4.9,
+    "satis_sonrasi": 9.8,
+    "temizlik": 2.4,
+    "ses": 0.0
+   },
+   "tema_neg": {
+    "kirik": 14.3,
+    "eksik": 42.9,
+    "olcu": 0.0,
+    "montaj": 14.3,
+    "sizinti": 0.0,
+    "basinc": 0.0,
+    "yuzey": 0.0,
+    "mekanizma": 0.0,
+    "kalite": 28.6,
+    "gorunum": 14.3,
+    "farkli": 0.0,
+    "kargo": 14.3,
+    "paket": 14.3,
+    "fiyat": 0.0,
+    "satis_sonrasi": 14.3,
+    "temizlik": 0.0,
+    "ses": 0.0
+   },
+   "kanal": {
+    "Hepsiburada": 49,
+    "Trendyol": 22
+   },
+   "kanal_profil": {
+    "Trendyol": {
+     "n": 22,
+     "metinli": 22,
+     "ort_puan": 4.73,
+     "olumlu": 90.9,
+     "notr": 9.1,
+     "olumsuz": 0.0,
+     "olumsuz_metinli": 0,
+     "olumlu_metinli": 20,
+     "pain": [],
+     "guclu": [
+      [
+       "kargo",
+       4,
+       20.0
+      ],
+      [
+       "montaj",
+       2,
+       10.0
+      ],
+      [
+       "kalite",
+       2,
+       10.0
+      ],
+      [
+       "gorunum",
+       1,
+       5.0
+      ],
+      [
+       "temizlik",
+       1,
+       5.0
+      ],
+      [
+       "fiyat",
+       1,
+       5.0
+      ]
+     ],
+     "tema_tum": {
+      "kirik": 0.0,
+      "eksik": 0.0,
+      "olcu": 4.5,
+      "montaj": 13.6,
+      "sizinti": 0.0,
+      "basinc": 0.0,
+      "yuzey": 0.0,
+      "mekanizma": 0.0,
+      "kalite": 9.1,
+      "gorunum": 4.5,
+      "farkli": 0.0,
+      "kargo": 18.2,
+      "paket": 0.0,
+      "fiyat": 4.5,
+      "satis_sonrasi": 4.5,
+      "temizlik": 4.5,
+      "ses": 0.0
+     },
+     "tema_neg": {
+      "kirik": null,
+      "eksik": null,
+      "olcu": null,
+      "montaj": null,
+      "sizinti": null,
+      "basinc": null,
+      "yuzey": null,
+      "mekanizma": null,
+      "kalite": null,
+      "gorunum": null,
+      "farkli": null,
+      "kargo": null,
+      "paket": null,
+      "fiyat": null,
+      "satis_sonrasi": null,
+      "temizlik": null,
+      "ses": null
+     },
+     "kanal": {
+      "Trendyol": 22
+     }
+    },
+    "Hepsiburada": {
+     "n": 49,
+     "metinli": 19,
+     "ort_puan": 4,
+     "olumlu": 71.4,
+     "notr": 10.2,
+     "olumsuz": 18.4,
+     "olumsuz_metinli": 7,
+     "olumlu_metinli": 12,
+     "pain": [
+      [
+       "eksik",
+       3,
+       42.9
+      ],
+      [
+       "kalite",
+       2,
+       28.6
+      ],
+      [
+       "kirik",
+       1,
+       14.3
+      ],
+      [
+       "kargo",
+       1,
+       14.3
+      ],
+      [
+       "paket",
+       1,
+       14.3
+      ],
+      [
+       "satis_sonrasi",
+       1,
+       14.3
+      ],
+      [
+       "montaj",
+       1,
+       14.3
+      ],
+      [
+       "gorunum",
+       1,
+       14.3
+      ]
+     ],
+     "guclu": [
+      [
+       "kalite",
+       4,
+       33.3
+      ],
+      [
+       "kargo",
+       2,
+       16.7
+      ],
+      [
+       "paket",
+       1,
+       8.3
+      ],
+      [
+       "eksik",
+       1,
+       8.3
+      ],
+      [
+       "gorunum",
+       1,
+       8.3
+      ],
+      [
+       "fiyat",
+       1,
+       8.3
+      ],
+      [
+       "montaj",
+       1,
+       8.3
+      ]
+     ],
+     "tema_tum": {
+      "kirik": 5.3,
+      "eksik": 21.1,
+      "olcu": 0.0,
+      "montaj": 10.5,
+      "sizinti": 0.0,
+      "basinc": 0.0,
+      "yuzey": 0.0,
+      "mekanizma": 0.0,
+      "kalite": 31.6,
+      "gorunum": 10.5,
+      "farkli": 0.0,
+      "kargo": 15.8,
+      "paket": 10.5,
+      "fiyat": 5.3,
+      "satis_sonrasi": 15.8,
+      "temizlik": 0.0,
+      "ses": 0.0
+     },
+     "tema_neg": {
+      "kirik": 14.3,
+      "eksik": 42.9,
+      "olcu": 0.0,
+      "montaj": 14.3,
+      "sizinti": 0.0,
+      "basinc": 0.0,
+      "yuzey": 0.0,
+      "mekanizma": 0.0,
+      "kalite": 28.6,
+      "gorunum": 14.3,
+      "farkli": 0.0,
+      "kargo": 14.3,
+      "paket": 14.3,
+      "fiyat": 0.0,
+      "satis_sonrasi": 14.3,
+      "temizlik": 0.0,
+      "ses": 0.0
+     },
+     "kanal": {
+      "Hepsiburada": 49
+     }
+    }
+   },
+   "markalar": []
+  },
+  "Diğer markalar": {
+   "n": 6411,
+   "metinli": 5192,
+   "ort_puan": 4.43,
+   "olumlu": 85.5,
+   "notr": 4.0,
+   "olumsuz": 10.5,
+   "olumsuz_metinli": 646,
+   "olumlu_metinli": 4343,
+   "pain": [
+    [
+     "kalite",
+     169,
+     26.2
+    ],
+    [
+     "satis_sonrasi",
+     141,
+     21.8
+    ],
+    [
+     "kirik",
+     140,
+     21.7
+    ],
+    [
+     "montaj",
+     99,
+     15.3
+    ],
+    [
+     "kargo",
+     64,
+     9.9
+    ],
+    [
+     "mekanizma",
+     64,
+     9.9
+    ],
+    [
+     "paket",
+     64,
+     9.9
+    ],
+    [
+     "eksik",
+     49,
+     7.6
+    ],
+    [
+     "sizinti",
+     42,
+     6.5
+    ],
+    [
+     "fiyat",
+     35,
+     5.4
+    ],
+    [
+     "olcu",
+     28,
+     4.3
+    ],
+    [
+     "yuzey",
+     27,
+     4.2
+    ],
+    [
+     "gorunum",
+     15,
+     2.3
+    ],
+    [
+     "farkli",
+     8,
+     1.2
+    ],
+    [
+     "basinc",
+     8,
+     1.2
+    ],
+    [
+     "temizlik",
+     5,
+     0.8
+    ],
+    [
+     "ses",
+     3,
+     0.5
+    ]
+   ],
+   "guclu": [
+    [
+     "kalite",
+     1654,
+     38.1
+    ],
+    [
+     "montaj",
+     879,
+     20.2
+    ],
+    [
+     "fiyat",
+     725,
+     16.7
+    ],
+    [
+     "kargo",
+     714,
+     16.4
+    ],
+    [
+     "paket",
+     663,
+     15.3
+    ],
+    [
+     "gorunum",
+     349,
+     8.0
+    ],
+    [
+     "kirik",
+     202,
+     4.7
+    ],
+    [
+     "olcu",
+     103,
+     2.4
+    ],
+    [
+     "mekanizma",
+     75,
+     1.7
+    ],
+    [
+     "basinc",
+     74,
+     1.7
+    ],
+    [
+     "eksik",
+     74,
+     1.7
+    ],
+    [
+     "sizinti",
+     51,
+     1.2
+    ],
+    [
+     "yuzey",
+     47,
+     1.1
+    ],
+    [
+     "temizlik",
+     25,
+     0.6
+    ],
+    [
+     "ses",
+     10,
+     0.2
+    ],
+    [
+     "farkli",
+     5,
+     0.1
+    ]
+   ],
+   "tema_tum": {
+    "kirik": 7.2,
+    "eksik": 2.5,
+    "olcu": 2.7,
+    "montaj": 19.7,
+    "sizinti": 1.9,
+    "basinc": 1.6,
+    "yuzey": 1.5,
+    "mekanizma": 3.0,
+    "kalite": 36.3,
+    "gorunum": 7.3,
+    "farkli": 0.3,
+    "kargo": 15.6,
+    "paket": 14.4,
+    "fiyat": 15.3,
+    "satis_sonrasi": 15.2,
+    "temizlik": 0.7,
+    "ses": 0.3
+   },
+   "tema_neg": {
+    "kirik": 21.7,
+    "eksik": 7.6,
+    "olcu": 4.3,
+    "montaj": 15.3,
+    "sizinti": 6.5,
+    "basinc": 1.2,
+    "yuzey": 4.2,
+    "mekanizma": 9.9,
+    "kalite": 26.2,
+    "gorunum": 2.3,
+    "farkli": 1.2,
+    "kargo": 9.9,
+    "paket": 9.9,
+    "fiyat": 5.4,
+    "satis_sonrasi": 21.8,
+    "temizlik": 0.8,
+    "ses": 0.5
+   },
+   "kanal": {
+    "Hepsiburada": 2960,
+    "Trendyol": 3451
+   },
+   "kanal_profil": {
+    "Trendyol": {
+     "n": 3451,
+     "metinli": 3451,
+     "ort_puan": 4.61,
+     "olumlu": 90.4,
+     "notr": 2.2,
+     "olumsuz": 7.4,
+     "olumsuz_metinli": 257,
+     "olumlu_metinli": 3118,
+     "pain": [
+      [
+       "kirik",
+       75,
+       29.2
+      ],
+      [
+       "kalite",
+       66,
+       25.7
+      ],
+      [
+       "satis_sonrasi",
+       63,
+       24.5
+      ],
+      [
+       "montaj",
+       42,
+       16.3
+      ],
+      [
+       "paket",
+       29,
+       11.3
+      ],
+      [
+       "mekanizma",
+       29,
+       11.3
+      ],
+      [
+       "kargo",
+       28,
+       10.9
+      ],
+      [
+       "eksik",
+       19,
+       7.4
+      ],
+      [
+       "sizinti",
+       13,
+       5.1
+      ],
+      [
+       "fiyat",
+       13,
+       5.1
+      ],
+      [
+       "olcu",
+       12,
+       4.7
+      ],
+      [
+       "yuzey",
+       11,
+       4.3
+      ],
+      [
+       "gorunum",
+       6,
+       2.3
+      ],
+      [
+       "farkli",
+       4,
+       1.6
+      ],
+      [
+       "basinc",
+       4,
+       1.6
+      ]
+     ],
+     "guclu": [
+      [
+       "kalite",
+       1162,
+       37.3
+      ],
+      [
+       "montaj",
+       623,
+       20.0
+      ],
+      [
+       "kargo",
+       524,
+       16.8
+      ],
+      [
+       "paket",
+       510,
+       16.4
+      ],
+      [
+       "fiyat",
+       509,
+       16.3
+      ],
+      [
+       "gorunum",
+       266,
+       8.5
+      ],
+      [
+       "kirik",
+       120,
+       3.8
+      ],
+      [
+       "olcu",
+       78,
+       2.5
+      ],
+      [
+       "basinc",
+       52,
+       1.7
+      ],
+      [
+       "mekanizma",
+       50,
+       1.6
+      ],
+      [
+       "eksik",
+       45,
+       1.4
+      ],
+      [
+       "sizinti",
+       30,
+       1.0
+      ],
+      [
+       "yuzey",
+       28,
+       0.9
+      ],
+      [
+       "temizlik",
+       22,
+       0.7
+      ],
+      [
+       "ses",
+       7,
+       0.2
+      ],
+      [
+       "farkli",
+       5,
+       0.2
+      ]
+     ],
+     "tema_tum": {
+      "kirik": 6.0,
+      "eksik": 1.9,
+      "olcu": 2.8,
+      "montaj": 19.6,
+      "sizinti": 1.2,
+      "basinc": 1.6,
+      "yuzey": 1.2,
+      "mekanizma": 2.4,
+      "kalite": 36.1,
+      "gorunum": 8.0,
+      "farkli": 0.3,
+      "kargo": 16.4,
+      "paket": 15.8,
+      "fiyat": 15.4,
+      "satis_sonrasi": 15.5,
+      "temizlik": 0.6,
+      "ses": 0.2
+     },
+     "tema_neg": {
+      "kirik": 29.2,
+      "eksik": 7.4,
+      "olcu": 4.7,
+      "montaj": 16.3,
+      "sizinti": 5.1,
+      "basinc": 1.6,
+      "yuzey": 4.3,
+      "mekanizma": 11.3,
+      "kalite": 25.7,
+      "gorunum": 2.3,
+      "farkli": 1.6,
+      "kargo": 10.9,
+      "paket": 11.3,
+      "fiyat": 5.1,
+      "satis_sonrasi": 24.5,
+      "temizlik": 0.0,
+      "ses": 0.0
+     },
+     "kanal": {
+      "Trendyol": 3451
+     }
+    },
+    "Hepsiburada": {
+     "n": 2960,
+     "metinli": 1741,
+     "ort_puan": 4.23,
+     "olumlu": 79.8,
+     "notr": 6.1,
+     "olumsuz": 14.2,
+     "olumsuz_metinli": 389,
+     "olumlu_metinli": 1225,
+     "pain": [
+      [
+       "kalite",
+       103,
+       26.5
+      ],
+      [
+       "satis_sonrasi",
+       78,
+       20.1
+      ],
+      [
+       "kirik",
+       65,
+       16.7
+      ],
+      [
+       "montaj",
+       57,
+       14.7
+      ],
+      [
+       "kargo",
+       36,
+       9.3
+      ],
+      [
+       "mekanizma",
+       35,
+       9.0
+      ],
+      [
+       "paket",
+       35,
+       9.0
+      ],
+      [
+       "eksik",
+       30,
+       7.7
+      ],
+      [
+       "sizinti",
+       29,
+       7.5
+      ],
+      [
+       "fiyat",
+       22,
+       5.7
+      ],
+      [
+       "olcu",
+       16,
+       4.1
+      ],
+      [
+       "yuzey",
+       16,
+       4.1
+      ],
+      [
+       "gorunum",
+       9,
+       2.3
+      ],
+      [
+       "temizlik",
+       5,
+       1.3
+      ],
+      [
+       "farkli",
+       4,
+       1.0
+      ],
+      [
+       "basinc",
+       4,
+       1.0
+      ],
+      [
+       "ses",
+       3,
+       0.8
+      ]
+     ],
+     "guclu": [
+      [
+       "kalite",
+       492,
+       40.2
+      ],
+      [
+       "montaj",
+       256,
+       20.9
+      ],
+      [
+       "fiyat",
+       216,
+       17.6
+      ],
+      [
+       "kargo",
+       190,
+       15.5
+      ],
+      [
+       "paket",
+       153,
+       12.5
+      ],
+      [
+       "gorunum",
+       83,
+       6.8
+      ],
+      [
+       "kirik",
+       82,
+       6.7
+      ],
+      [
+       "eksik",
+       29,
+       2.4
+      ],
+      [
+       "olcu",
+       25,
+       2.0
+      ],
+      [
+       "mekanizma",
+       25,
+       2.0
+      ],
+      [
+       "basinc",
+       22,
+       1.8
+      ],
+      [
+       "sizinti",
+       21,
+       1.7
+      ],
+      [
+       "yuzey",
+       19,
+       1.6
+      ],
+      [
+       "ses",
+       3,
+       0.2
+      ],
+      [
+       "temizlik",
+       3,
+       0.2
+      ]
+     ],
+     "tema_tum": {
+      "kirik": 9.6,
+      "eksik": 3.5,
+      "olcu": 2.5,
+      "montaj": 19.9,
+      "sizinti": 3.2,
+      "basinc": 1.6,
+      "yuzey": 2.3,
+      "mekanizma": 4.1,
+      "kalite": 36.8,
+      "gorunum": 6.0,
+      "farkli": 0.4,
+      "kargo": 14.1,
+      "paket": 11.8,
+      "fiyat": 15.2,
+      "satis_sonrasi": 14.6,
+      "temizlik": 0.7,
+      "ses": 0.4
+     },
+     "tema_neg": {
+      "kirik": 16.7,
+      "eksik": 7.7,
+      "olcu": 4.1,
+      "montaj": 14.7,
+      "sizinti": 7.5,
+      "basinc": 1.0,
+      "yuzey": 4.1,
+      "mekanizma": 9.0,
+      "kalite": 26.5,
+      "gorunum": 2.3,
+      "farkli": 1.0,
+      "kargo": 9.3,
+      "paket": 9.0,
+      "fiyat": 5.7,
+      "satis_sonrasi": 20.1,
+      "temizlik": 1.3,
+      "ses": 0.8
+     },
+     "kanal": {
+      "Hepsiburada": 2960
+     }
+    }
+   },
+   "markalar": [
+    [
+     "Genel Markalar",
+     538
+    ],
+    [
+     "Berev",
+     437
+    ],
+    [
+     "Armour armatür",
+     250
+    ],
+    [
+     "Hakersan",
+     249
+    ],
+    [
+     "Tetto Elagante",
+     199
+    ],
+    [
+     "Seramiksan",
+     163
+    ],
+    [
+     "Suvia",
+     162
+    ],
+    [
+     "NOY",
+     150
+    ],
+    [
+     "NKP",
+     150
+    ],
+    [
+     "Makbulce",
+     149
+    ],
+    [
+     "KUSTAR",
+     147
+    ],
+    [
+     "Fause",
+     146
+    ]
+   ]
+  }
+ },
+ "vg": {
+  "n": 2609,
+  "metinli": 1239,
+  "ort_puan": 4.48,
+  "olumlu": 86.6,
+  "notr": 3.3,
+  "olumsuz": 10.0,
+  "olumsuz_metinli": 207,
+  "olumlu_metinli": 973,
+  "pain": [
+   [
+    "satis_sonrasi",
+    85,
+    41.1
+   ],
+   [
+    "kirik",
+    60,
+    29.0
+   ],
+   [
+    "kalite",
+    49,
+    23.7
+   ],
+   [
+    "montaj",
+    36,
+    17.4
+   ],
+   [
+    "paket",
+    28,
+    13.5
+   ],
+   [
+    "kargo",
+    27,
+    13.0
+   ],
+   [
+    "mekanizma",
+    23,
+    11.1
+   ],
+   [
+    "eksik",
+    16,
+    7.7
+   ],
+   [
+    "fiyat",
+    16,
+    7.7
+   ],
+   [
+    "basinc",
+    12,
+    5.8
+   ],
+   [
+    "gorunum",
+    11,
+    5.3
+   ],
+   [
+    "sizinti",
+    9,
+    4.3
+   ],
+   [
+    "olcu",
+    9,
+    4.3
+   ],
+   [
+    "ses",
+    6,
+    2.9
+   ],
+   [
+    "farkli",
+    4,
+    1.9
+   ],
+   [
+    "yuzey",
+    2,
+    1.0
+   ],
+   [
+    "temizlik",
+    1,
+    0.5
+   ]
+  ],
+  "guclu": [
+   [
+    "kalite",
+    475,
+    48.8
+   ],
+   [
+    "kargo",
+    135,
+    13.9
+   ],
+   [
+    "paket",
+    130,
+    13.4
+   ],
+   [
+    "montaj",
+    128,
+    13.2
+   ],
+   [
+    "fiyat",
+    99,
+    10.2
+   ],
+   [
+    "gorunum",
+    83,
+    8.5
+   ],
+   [
+    "olcu",
+    38,
+    3.9
+   ],
+   [
+    "kirik",
+    38,
+    3.9
+   ],
+   [
+    "mekanizma",
+    24,
+    2.5
+   ],
+   [
+    "basinc",
+    14,
+    1.4
+   ],
+   [
+    "sizinti",
+    11,
+    1.1
+   ],
+   [
+    "eksik",
+    11,
+    1.1
+   ],
+   [
+    "yuzey",
+    11,
+    1.1
+   ],
+   [
+    "temizlik",
+    8,
+    0.8
+   ],
+   [
+    "ses",
+    6,
+    0.6
+   ],
+   [
+    "farkli",
+    3,
+    0.3
+   ]
+  ],
+  "tema_tum": {
+   "kirik": 8.6,
+   "eksik": 2.4,
+   "olcu": 4.4,
+   "montaj": 14.3,
+   "sizinti": 1.6,
+   "basinc": 2.3,
+   "yuzey": 1.3,
+   "mekanizma": 4.4,
+   "kalite": 43.8,
+   "gorunum": 7.8,
+   "farkli": 0.6,
+   "kargo": 13.5,
+   "paket": 13.3,
+   "fiyat": 10.2,
+   "satis_sonrasi": 15.7,
+   "temizlik": 0.8,
+   "ses": 1.0
+  },
+  "tema_neg": {
+   "kirik": 29.0,
+   "eksik": 7.7,
+   "olcu": 4.3,
+   "montaj": 17.4,
+   "sizinti": 4.3,
+   "basinc": 5.8,
+   "yuzey": 1.0,
+   "mekanizma": 11.1,
+   "kalite": 23.7,
+   "gorunum": 5.3,
+   "farkli": 1.9,
+   "kargo": 13.0,
+   "paket": 13.5,
+   "fiyat": 7.7,
+   "satis_sonrasi": 41.1,
+   "temizlik": 0.5,
+   "ses": 2.9
+  },
+  "kanal": {
+   "Trendyol": 1052,
+   "Hepsiburada": 1557
+  }
+ },
+ "rakip": {
+  "n": 10064,
+  "metinli": 7808,
+  "ort_puan": 4.45,
+  "olumlu": 86.1,
+  "notr": 3.8,
+  "olumsuz": 10.1,
+  "olumsuz_metinli": 968,
+  "olumlu_metinli": 6550,
+  "pain": [
+   [
+    "satis_sonrasi",
+    246,
+    25.4
+   ],
+   [
+    "kalite",
+    234,
+    24.2
+   ],
+   [
+    "kirik",
+    222,
+    22.9
+   ],
+   [
+    "montaj",
+    163,
+    16.8
+   ],
+   [
+    "paket",
+    98,
+    10.1
+   ],
+   [
+    "kargo",
+    97,
+    10.0
+   ],
+   [
+    "eksik",
+    84,
+    8.7
+   ],
+   [
+    "mekanizma",
+    79,
+    8.2
+   ],
+   [
+    "sizinti",
+    57,
+    5.9
+   ],
+   [
+    "fiyat",
+    54,
+    5.6
+   ],
+   [
+    "olcu",
+    50,
+    5.2
+   ],
+   [
+    "yuzey",
+    37,
+    3.8
+   ],
+   [
+    "gorunum",
+    24,
+    2.5
+   ],
+   [
+    "farkli",
+    16,
+    1.7
+   ],
+   [
+    "basinc",
+    10,
+    1.0
+   ],
+   [
+    "temizlik",
+    6,
+    0.6
+   ],
+   [
+    "ses",
+    5,
+    0.5
+   ]
+  ],
+  "guclu": [
+   [
+    "kalite",
+    2493,
+    38.1
+   ],
+   [
+    "montaj",
+    1259,
+    19.2
+   ],
+   [
+    "paket",
+    1147,
+    17.5
+   ],
+   [
+    "kargo",
+    1137,
+    17.4
+   ],
+   [
+    "fiyat",
+    971,
+    14.8
+   ],
+   [
+    "gorunum",
+    500,
+    7.6
+   ],
+   [
+    "kirik",
+    319,
+    4.9
+   ],
+   [
+    "olcu",
+    150,
+    2.3
+   ],
+   [
+    "eksik",
+    113,
+    1.7
+   ],
+   [
+    "mekanizma",
+    106,
+    1.6
+   ],
+   [
+    "basinc",
+    90,
+    1.4
+   ],
+   [
+    "sizinti",
+    88,
+    1.3
+   ],
+   [
+    "yuzey",
+    66,
+    1.0
+   ],
+   [
+    "temizlik",
+    35,
+    0.5
+   ],
+   [
+    "ses",
+    15,
+    0.2
+   ],
+   [
+    "farkli",
+    9,
+    0.1
+   ]
+  ],
+  "tema_tum": {
+   "kirik": 7.6,
+   "eksik": 2.6,
+   "olcu": 2.7,
+   "montaj": 19.0,
+   "sizinti": 1.9,
+   "basinc": 1.3,
+   "yuzey": 1.4,
+   "mekanizma": 2.7,
+   "kalite": 36.1,
+   "gorunum": 7.0,
+   "farkli": 0.4,
+   "kargo": 16.3,
+   "paket": 16.3,
+   "fiyat": 13.7,
+   "satis_sonrasi": 14.8,
+   "temizlik": 0.6,
+   "ses": 0.3
+  },
+  "tema_neg": {
+   "kirik": 22.9,
+   "eksik": 8.7,
+   "olcu": 5.2,
+   "montaj": 16.8,
+   "sizinti": 5.9,
+   "basinc": 1.0,
+   "yuzey": 3.8,
+   "mekanizma": 8.2,
+   "kalite": 24.2,
+   "gorunum": 2.5,
+   "farkli": 1.7,
+   "kargo": 10.0,
+   "paket": 10.1,
+   "fiyat": 5.6,
+   "satis_sonrasi": 25.4,
+   "temizlik": 0.6,
+   "ses": 0.5
+  },
+  "kanal": {
+   "Hepsiburada": 5248,
+   "Trendyol": 4816
+  }
+ },
+ "resmi": {
+  "n": 1335,
+  "metinli": 580,
+  "ort_puan": 4.44,
+  "olumlu": 85.8,
+  "notr": 3.4,
+  "olumsuz": 10.8,
+  "olumsuz_metinli": 106,
+  "olumlu_metinli": 452,
+  "pain": [
+   [
+    "satis_sonrasi",
+    42,
+    39.6
+   ],
+   [
+    "kirik",
+    31,
+    29.2
+   ],
+   [
+    "kalite",
+    26,
+    24.5
+   ],
+   [
+    "montaj",
+    17,
+    16.0
+   ],
+   [
+    "paket",
+    17,
+    16.0
+   ],
+   [
+    "kargo",
+    14,
+    13.2
+   ],
+   [
+    "mekanizma",
+    10,
+    9.4
+   ],
+   [
+    "eksik",
+    10,
+    9.4
+   ],
+   [
+    "fiyat",
+    9,
+    8.5
+   ],
+   [
+    "gorunum",
+    6,
+    5.7
+   ],
+   [
+    "sizinti",
+    5,
+    4.7
+   ],
+   [
+    "basinc",
+    5,
+    4.7
+   ],
+   [
+    "ses",
+    3,
+    2.8
+   ],
+   [
+    "olcu",
+    3,
+    2.8
+   ],
+   [
+    "farkli",
+    2,
+    1.9
+   ],
+   [
+    "temizlik",
+    1,
+    0.9
+   ]
+  ],
+  "guclu": [
+   [
+    "kalite",
+    224,
+    49.6
+   ],
+   [
+    "paket",
+    64,
+    14.2
+   ],
+   [
+    "kargo",
+    52,
+    11.5
+   ],
+   [
+    "montaj",
+    47,
+    10.4
+   ],
+   [
+    "gorunum",
+    45,
+    10.0
+   ],
+   [
+    "fiyat",
+    37,
+    8.2
+   ],
+   [
+    "olcu",
+    20,
+    4.4
+   ],
+   [
+    "kirik",
+    20,
+    4.4
+   ],
+   [
+    "mekanizma",
+    9,
+    2.0
+   ],
+   [
+    "temizlik",
+    8,
+    1.8
+   ],
+   [
+    "basinc",
+    6,
+    1.3
+   ],
+   [
+    "yuzey",
+    5,
+    1.1
+   ],
+   [
+    "sizinti",
+    4,
+    0.9
+   ],
+   [
+    "ses",
+    3,
+    0.7
+   ],
+   [
+    "eksik",
+    3,
+    0.7
+   ],
+   [
+    "farkli",
+    2,
+    0.4
+   ]
+  ],
+  "tema_tum": {
+   "kirik": 9.3,
+   "eksik": 2.6,
+   "olcu": 4.3,
+   "montaj": 11.9,
+   "sizinti": 1.6,
+   "basinc": 2.1,
+   "yuzey": 1.2,
+   "mekanizma": 3.8,
+   "kalite": 44.3,
+   "gorunum": 8.8,
+   "farkli": 0.7,
+   "kargo": 11.9,
+   "paket": 14.3,
+   "fiyat": 8.6,
+   "satis_sonrasi": 16.6,
+   "temizlik": 1.6,
+   "ses": 1.0
+  },
+  "tema_neg": {
+   "kirik": 29.2,
+   "eksik": 9.4,
+   "olcu": 2.8,
+   "montaj": 16.0,
+   "sizinti": 4.7,
+   "basinc": 4.7,
+   "yuzey": 0.0,
+   "mekanizma": 9.4,
+   "kalite": 24.5,
+   "gorunum": 5.7,
+   "farkli": 1.9,
+   "kargo": 13.2,
+   "paket": 16.0,
+   "fiyat": 8.5,
+   "satis_sonrasi": 39.6,
+   "temizlik": 0.9,
+   "ses": 2.8
+  },
+  "kanal": {
+   "Trendyol": 1002,
+   "Hepsiburada": 333
+  }
+ },
+ "diger_satici": {
+  "n": 1224,
+  "metinli": 609,
+  "ort_puan": 4.5,
+  "olumlu": 87.3,
+  "notr": 3.3,
+  "olumsuz": 9.5,
+  "olumsuz_metinli": 99,
+  "olumlu_metinli": 475,
+  "pain": [
+   [
+    "satis_sonrasi",
+    43,
+    43.4
+   ],
+   [
+    "kirik",
+    28,
+    28.3
+   ],
+   [
+    "kalite",
+    23,
+    23.2
+   ],
+   [
+    "montaj",
+    18,
+    18.2
+   ],
+   [
+    "mekanizma",
+    13,
+    13.1
+   ],
+   [
+    "kargo",
+    13,
+    13.1
+   ],
+   [
+    "paket",
+    11,
+    11.1
+   ],
+   [
+    "fiyat",
+    7,
+    7.1
+   ],
+   [
+    "basinc",
+    7,
+    7.1
+   ],
+   [
+    "olcu",
+    6,
+    6.1
+   ],
+   [
+    "eksik",
+    6,
+    6.1
+   ],
+   [
+    "gorunum",
+    5,
+    5.1
+   ],
+   [
+    "sizinti",
+    4,
+    4.0
+   ],
+   [
+    "ses",
+    3,
+    3.0
+   ],
+   [
+    "yuzey",
+    2,
+    2.0
+   ],
+   [
+    "farkli",
+    2,
+    2.0
+   ]
+  ],
+  "guclu": [
+   [
+    "kalite",
+    241,
+    50.7
+   ],
+   [
+    "montaj",
+    75,
+    15.8
+   ],
+   [
+    "kargo",
+    72,
+    15.2
+   ],
+   [
+    "fiyat",
+    59,
+    12.4
+   ],
+   [
+    "paket",
+    57,
+    12.0
+   ],
+   [
+    "gorunum",
+    38,
+    8.0
+   ],
+   [
+    "olcu",
+    18,
+    3.8
+   ],
+   [
+    "kirik",
+    16,
+    3.4
+   ],
+   [
+    "mekanizma",
+    15,
+    3.2
+   ],
+   [
+    "basinc",
+    8,
+    1.7
+   ],
+   [
+    "eksik",
+    7,
+    1.5
+   ],
+   [
+    "sizinti",
+    6,
+    1.3
+   ],
+   [
+    "yuzey",
+    5,
+    1.1
+   ],
+   [
+    "ses",
+    3,
+    0.6
+   ],
+   [
+    "farkli",
+    1,
+    0.2
+   ]
+  ],
+  "tema_tum": {
+   "kirik": 8.0,
+   "eksik": 2.3,
+   "olcu": 4.8,
+   "montaj": 16.6,
+   "sizinti": 1.6,
+   "basinc": 2.6,
+   "yuzey": 1.3,
+   "mekanizma": 5.3,
+   "kalite": 45.3,
+   "gorunum": 7.6,
+   "farkli": 0.5,
+   "kargo": 14.3,
+   "paket": 11.8,
+   "fiyat": 12.0,
+   "satis_sonrasi": 14.9,
+   "temizlik": 0.2,
+   "ses": 1.1
+  },
+  "tema_neg": {
+   "kirik": 28.3,
+   "eksik": 6.1,
+   "olcu": 6.1,
+   "montaj": 18.2,
+   "sizinti": 4.0,
+   "basinc": 7.1,
+   "yuzey": 2.0,
+   "mekanizma": 13.1,
+   "kalite": 23.2,
+   "gorunum": 5.1,
+   "farkli": 2.0,
+   "kargo": 13.1,
+   "paket": 11.1,
+   "fiyat": 7.1,
+   "satis_sonrasi": 43.4,
+   "temizlik": 0.0,
+   "ses": 3.0
+  },
+  "kanal": {
+   "Hepsiburada": 1224
+  }
+ },
+ "hb_resmi": {
+  "n": 333,
+  "metinli": 181,
+  "ort_puan": 4.54,
+  "olumlu": 88.3,
+  "notr": 3.9,
+  "olumsuz": 7.8,
+  "olumsuz_metinli": 23,
+  "olumlu_metinli": 151,
+  "pain": [
+   [
+    "satis_sonrasi",
+    12,
+    52.2
+   ],
+   [
+    "kalite",
+    10,
+    43.5
+   ],
+   [
+    "montaj",
+    6,
+    26.1
+   ],
+   [
+    "kirik",
+    5,
+    21.7
+   ],
+   [
+    "paket",
+    3,
+    13.0
+   ],
+   [
+    "mekanizma",
+    2,
+    8.7
+   ],
+   [
+    "basinc",
+    2,
+    8.7
+   ],
+   [
+    "eksik",
+    2,
+    8.7
+   ],
+   [
+    "fiyat",
+    2,
+    8.7
+   ],
+   [
+    "olcu",
+    2,
+    8.7
+   ],
+   [
+    "kargo",
+    2,
+    8.7
+   ],
+   [
+    "ses",
+    1,
+    4.3
+   ],
+   [
+    "farkli",
+    1,
+    4.3
+   ],
+   [
+    "gorunum",
+    1,
+    4.3
+   ],
+   [
+    "sizinti",
+    1,
+    4.3
+   ]
+  ],
+  "guclu": [
+   [
+    "kalite",
+    70,
+    46.4
+   ],
+   [
+    "paket",
+    32,
+    21.2
+   ],
+   [
+    "kargo",
+    18,
+    11.9
+   ],
+   [
+    "fiyat",
+    15,
+    9.9
+   ],
+   [
+    "gorunum",
+    14,
+    9.3
+   ],
+   [
+    "montaj",
+    12,
+    7.9
+   ],
+   [
+    "kirik",
+    10,
+    6.6
+   ],
+   [
+    "olcu",
+    8,
+    5.3
+   ],
+   [
+    "mekanizma",
+    5,
+    3.3
+   ],
+   [
+    "temizlik",
+    4,
+    2.6
+   ],
+   [
+    "yuzey",
+    3,
+    2.0
+   ],
+   [
+    "basinc",
+    3,
+    2.0
+   ],
+   [
+    "eksik",
+    2,
+    1.3
+   ],
+   [
+    "sizinti",
+    1,
+    0.7
+   ]
+  ],
+  "tema_tum": {
+   "kirik": 8.8,
+   "eksik": 2.2,
+   "olcu": 5.5,
+   "montaj": 10.5,
+   "sizinti": 1.1,
+   "basinc": 3.3,
+   "yuzey": 2.2,
+   "mekanizma": 4.4,
+   "kalite": 45.3,
+   "gorunum": 8.3,
+   "farkli": 0.6,
+   "kargo": 11.0,
+   "paket": 19.3,
+   "fiyat": 11.0,
+   "satis_sonrasi": 14.9,
+   "temizlik": 2.2,
+   "ses": 0.6
+  },
+  "tema_neg": {
+   "kirik": 21.7,
+   "eksik": 8.7,
+   "olcu": 8.7,
+   "montaj": 26.1,
+   "sizinti": 4.3,
+   "basinc": 8.7,
+   "yuzey": 0.0,
+   "mekanizma": 8.7,
+   "kalite": 43.5,
+   "gorunum": 4.3,
+   "farkli": 4.3,
+   "kargo": 8.7,
+   "paket": 13.0,
+   "fiyat": 8.7,
+   "satis_sonrasi": 52.2,
+   "temizlik": 0.0,
+   "ses": 4.3
+  },
+  "kanal": {
+   "Hepsiburada": 333
+  }
+ },
+ "grup": [
+  {
+   "grup": "Banyo dolabı",
+   "vitra": {
+    "n": 335,
+    "metinli": 166,
+    "ort_puan": 4.12,
+    "olumlu": 77.3,
+    "notr": 4.8,
+    "olumsuz": 17.9,
+    "olumsuz_metinli": 50,
+    "olumlu_metinli": 108,
+    "pain": [
+     [
+      "kirik",
+      29,
+      58.0
+     ],
+     [
+      "satis_sonrasi",
+      26,
+      52.0
+     ],
+     [
+      "kalite",
+      10,
+      20.0
+     ],
+     [
+      "paket",
+      10,
+      20.0
+     ],
+     [
+      "kargo",
+      9,
+      18.0
+     ],
+     [
+      "montaj",
+      7,
+      14.0
+     ],
+     [
+      "fiyat",
+      4,
+      8.0
+     ],
+     [
+      "basinc",
+      3,
+      6.0
+     ],
+     [
+      "gorunum",
+      3,
+      6.0
+     ],
+     [
+      "olcu",
+      3,
+      6.0
+     ],
+     [
+      "eksik",
+      1,
+      2.0
+     ]
+    ],
+    "guclu": [
+     [
+      "kalite",
+      45,
+      41.7
+     ],
+     [
+      "kargo",
+      28,
+      25.9
+     ],
+     [
+      "paket",
+      25,
+      23.1
+     ],
+     [
+      "kirik",
+      16,
+      14.8
+     ],
+     [
+      "fiyat",
+      15,
+      13.9
+     ],
+     [
+      "montaj",
+      11,
+      10.2
+     ],
+     [
+      "gorunum",
+      8,
+      7.4
+     ],
+     [
+      "olcu",
+      2,
+      1.9
+     ],
+     [
+      "eksik",
+      1,
+      0.9
+     ],
+     [
+      "mekanizma",
+      1,
+      0.9
+     ]
+    ],
+    "tema_tum": {
+     "kirik": 28.9,
+     "eksik": 1.2,
+     "olcu": 3.0,
+     "montaj": 11.4,
+     "sizinti": 0.0,
+     "basinc": 1.8,
+     "yuzey": 0.6,
+     "mekanizma": 0.6,
+     "kalite": 34.9,
+     "gorunum": 7.2,
+     "farkli": 0.0,
+     "kargo": 22.3,
+     "paket": 21.7,
+     "fiyat": 13.9,
+     "satis_sonrasi": 22.3,
+     "temizlik": 0.0,
+     "ses": 0.0
+    },
+    "tema_neg": {
+     "kirik": 58.0,
+     "eksik": 2.0,
+     "olcu": 6.0,
+     "montaj": 14.0,
+     "sizinti": 0.0,
+     "basinc": 6.0,
+     "yuzey": 0.0,
+     "mekanizma": 0.0,
+     "kalite": 20.0,
+     "gorunum": 6.0,
+     "farkli": 0.0,
+     "kargo": 18.0,
+     "paket": 20.0,
+     "fiyat": 8.0,
+     "satis_sonrasi": 52.0,
+     "temizlik": 0.0,
+     "ses": 0.0
+    },
+    "kanal": {
+     "Trendyol": 82,
+     "Hepsiburada": 253
+    }
+   },
+   "rakip": {
+    "n": 1595,
+    "metinli": 1232,
+    "ort_puan": 4.52,
+    "olumlu": 87.7,
+    "notr": 4.8,
+    "olumsuz": 7.5,
+    "olumsuz_metinli": 112,
+    "olumlu_metinli": 1056,
+    "pain": [
+     [
+      "kirik",
+      33,
+      29.5
+     ],
+     [
+      "satis_sonrasi",
+      33,
+      29.5
+     ],
+     [
+      "kalite",
+      31,
+      27.7
+     ],
+     [
+      "kargo",
+      26,
+      23.2
+     ],
+     [
+      "montaj",
+      24,
+      21.4
+     ],
+     [
+      "eksik",
+      20,
+      17.9
+     ],
+     [
+      "paket",
+      14,
+      12.5
+     ],
+     [
+      "olcu",
+      11,
+      9.8
+     ],
+     [
+      "fiyat",
+      9,
+      8.0
+     ],
+     [
+      "mekanizma",
+      6,
+      5.4
+     ],
+     [
+      "yuzey",
+      6,
+      5.4
+     ],
+     [
+      "gorunum",
+      4,
+      3.6
+     ],
+     [
+      "temizlik",
+      1,
+      0.9
+     ],
+     [
+      "ses",
+      1,
+      0.9
+     ],
+     [
+      "farkli",
+      1,
+      0.9
+     ]
+    ],
+    "guclu": [
+     [
+      "kalite",
+      461,
+      43.7
+     ],
+     [
+      "montaj",
+      300,
+      28.4
+     ],
+     [
+      "paket",
+      233,
+      22.1
+     ],
+     [
+      "kargo",
+      210,
+      19.9
+     ],
+     [
+      "fiyat",
+      152,
+      14.4
+     ],
+     [
+      "gorunum",
+      118,
+      11.2
+     ],
+     [
+      "kirik",
+      103,
+      9.8
+     ],
+     [
+      "olcu",
+      33,
+      3.1
+     ],
+     [
+      "eksik",
+      32,
+      3.0
+     ],
+     [
+      "mekanizma",
+      14,
+      1.3
+     ],
+     [
+      "basinc",
+      11,
+      1.0
+     ],
+     [
+      "yuzey",
+      6,
+      0.6
+     ],
+     [
+      "temizlik",
+      3,
+      0.3
+     ],
+     [
+      "farkli",
+      1,
+      0.1
+     ]
+    ],
+    "tema_tum": {
+     "kirik": 12.2,
+     "eksik": 4.5,
+     "olcu": 3.8,
+     "montaj": 28.2,
+     "sizinti": 0.0,
+     "basinc": 0.9,
+     "yuzey": 1.2,
+     "mekanizma": 2.0,
+     "kalite": 41.3,
+     "gorunum": 10.3,
+     "farkli": 0.2,
+     "kargo": 20.5,
+     "paket": 20.8,
+     "fiyat": 13.9,
+     "satis_sonrasi": 16.6,
+     "temizlik": 0.5,
+     "ses": 0.2
+    },
+    "tema_neg": {
+     "kirik": 29.5,
+     "eksik": 17.9,
+     "olcu": 9.8,
+     "montaj": 21.4,
+     "sizinti": 0.0,
+     "basinc": 0.0,
+     "yuzey": 5.4,
+     "mekanizma": 5.4,
+     "kalite": 27.7,
+     "gorunum": 3.6,
+     "farkli": 0.9,
+     "kargo": 23.2,
+     "paket": 12.5,
+     "fiyat": 8.0,
+     "satis_sonrasi": 29.5,
+     "temizlik": 0.9,
+     "ses": 0.9
+    },
+    "kanal": {
+     "Hepsiburada": 1008,
+     "Trendyol": 587
+    }
+   }
+  },
+  {
+   "grup": "Banyo ve duş bataryası",
+   "vitra": {
+    "n": 82,
+    "metinli": 33,
+    "ort_puan": 4.56,
+    "olumlu": 90.2,
+    "notr": 1.2,
+    "olumsuz": 8.5,
+    "olumsuz_metinli": 6,
+    "olumlu_metinli": 27,
+    "pain": [
+     [
+      "paket",
+      2,
+      33.3
+     ],
+     [
+      "satis_sonrasi",
+      2,
+      33.3
+     ],
+     [
+      "kirik",
+      2,
+      33.3
+     ],
+     [
+      "montaj",
+      1,
+      16.7
+     ],
+     [
+      "kargo",
+      1,
+      16.7
+     ],
+     [
+      "olcu",
+      1,
+      16.7
+     ]
+    ],
+    "guclu": [
+     [
+      "kalite",
+      13,
+      48.1
+     ],
+     [
+      "montaj",
+      4,
+      14.8
+     ],
+     [
+      "kargo",
+      4,
+      14.8
+     ],
+     [
+      "paket",
+      4,
+      14.8
+     ],
+     [
+      "gorunum",
+      3,
+      11.1
+     ],
+     [
+      "farkli",
+      1,
+      3.7
+     ],
+     [
+      "olcu",
+      1,
+      3.7
+     ],
+     [
+      "fiyat",
+      1,
+      3.7
+     ],
+     [
+      "kirik",
+      1,
+      3.7
+     ]
+    ],
+    "tema_tum": {
+     "kirik": 9.1,
+     "eksik": 0.0,
+     "olcu": 6.1,
+     "montaj": 15.2,
+     "sizinti": 0.0,
+     "basinc": 0.0,
+     "yuzey": 0.0,
+     "mekanizma": 0.0,
+     "kalite": 39.4,
+     "gorunum": 9.1,
+     "farkli": 3.0,
+     "kargo": 15.2,
+     "paket": 18.2,
+     "fiyat": 3.0,
+     "satis_sonrasi": 15.2,
+     "temizlik": 0.0,
+     "ses": 0.0
+    },
+    "tema_neg": {
+     "kirik": 33.3,
+     "eksik": 0.0,
+     "olcu": 16.7,
+     "montaj": 16.7,
+     "sizinti": 0.0,
+     "basinc": 0.0,
+     "yuzey": 0.0,
+     "mekanizma": 0.0,
+     "kalite": 0.0,
+     "gorunum": 0.0,
+     "farkli": 0.0,
+     "kargo": 16.7,
+     "paket": 33.3,
+     "fiyat": 0.0,
+     "satis_sonrasi": 33.3,
+     "temizlik": 0.0,
+     "ses": 0.0
+    },
+    "kanal": {
+     "Trendyol": 75,
+     "Hepsiburada": 7
+    }
+   },
+   "rakip": {
+    "n": 811,
+    "metinli": 649,
+    "ort_puan": 4.38,
+    "olumlu": 84.1,
+    "notr": 4.4,
+    "olumsuz": 11.5,
+    "olumsuz_metinli": 86,
+    "olumlu_metinli": 537,
+    "pain": [
+     [
+      "satis_sonrasi",
+      23,
+      26.7
+     ],
+     [
+      "kalite",
+      18,
+      20.9
+     ],
+     [
+      "kirik",
+      14,
+      16.3
+     ],
+     [
+      "montaj",
+      10,
+      11.6
+     ],
+     [
+      "mekanizma",
+      10,
+      11.6
+     ],
+     [
+      "paket",
+      7,
+      8.1
+     ],
+     [
+      "sizinti",
+      6,
+      7.0
+     ],
+     [
+      "kargo",
+      5,
+      5.8
+     ],
+     [
+      "gorunum",
+      3,
+      3.5
+     ],
+     [
+      "yuzey",
+      3,
+      3.5
+     ],
+     [
+      "fiyat",
+      3,
+      3.5
+     ],
+     [
+      "eksik",
+      2,
+      2.3
+     ],
+     [
+      "olcu",
+      2,
+      2.3
+     ],
+     [
+      "farkli",
+      2,
+      2.3
+     ],
+     [
+      "basinc",
+      1,
+      1.2
+     ]
+    ],
+    "guclu": [
+     [
+      "kalite",
+      233,
+      43.4
+     ],
+     [
+      "kargo",
+      93,
+      17.3
+     ],
+     [
+      "montaj",
+      92,
+      17.1
+     ],
+     [
+      "fiyat",
+      78,
+      14.5
+     ],
+     [
+      "paket",
+      74,
+      13.8
+     ],
+     [
+      "gorunum",
+      49,
+      9.1
+     ],
+     [
+      "kirik",
+      14,
+      2.6
+     ],
+     [
+      "yuzey",
+      8,
+      1.5
+     ],
+     [
+      "basinc",
+      8,
+      1.5
+     ],
+     [
+      "mekanizma",
+      6,
+      1.1
+     ],
+     [
+      "sizinti",
+      5,
+      0.9
+     ],
+     [
+      "eksik",
+      4,
+      0.7
+     ],
+     [
+      "temizlik",
+      2,
+      0.4
+     ],
+     [
+      "olcu",
+      2,
+      0.4
+     ],
+     [
+      "ses",
+      2,
+      0.4
+     ]
+    ],
+    "tema_tum": {
+     "kirik": 4.9,
+     "eksik": 0.9,
+     "olcu": 0.6,
+     "montaj": 16.3,
+     "sizinti": 1.8,
+     "basinc": 1.4,
+     "yuzey": 1.7,
+     "mekanizma": 2.6,
+     "kalite": 40.4,
+     "gorunum": 8.3,
+     "farkli": 0.3,
+     "kargo": 15.4,
+     "paket": 12.5,
+     "fiyat": 13.1,
+     "satis_sonrasi": 24.3,
+     "temizlik": 0.3,
+     "ses": 0.3
+    },
+    "tema_neg": {
+     "kirik": 16.3,
+     "eksik": 2.3,
+     "olcu": 2.3,
+     "montaj": 11.6,
+     "sizinti": 7.0,
+     "basinc": 1.2,
+     "yuzey": 3.5,
+     "mekanizma": 11.6,
+     "kalite": 20.9,
+     "gorunum": 3.5,
+     "farkli": 2.3,
+     "kargo": 5.8,
+     "paket": 8.1,
+     "fiyat": 3.5,
+     "satis_sonrasi": 26.7,
+     "temizlik": 0.0,
+     "ses": 0.0
+    },
+    "kanal": {
+     "Hepsiburada": 311,
+     "Trendyol": 500
+    }
+   }
+  },
+  {
+   "grup": "Duş seti ve sistemi",
+   "vitra": {
+    "n": 197,
+    "metinli": 92,
+    "ort_puan": 4.52,
+    "olumlu": 87.3,
+    "notr": 3.6,
+    "olumsuz": 9.1,
+    "olumsuz_metinli": 12,
+    "olumlu_metinli": 77,
+    "pain": [
+     [
+      "kalite",
+      5,
+      41.7
+     ],
+     [
+      "satis_sonrasi",
+      5,
+      41.7
+     ],
+     [
+      "kargo",
+      3,
+      25.0
+     ],
+     [
+      "mekanizma",
+      2,
+      16.7
+     ],
+     [
+      "basinc",
+      2,
+      16.7
+     ],
+     [
+      "ses",
+      1,
+      8.3
+     ],
+     [
+      "paket",
+      1,
+      8.3
+     ],
+     [
+      "fiyat",
+      1,
+      8.3
+     ],
+     [
+      "gorunum",
+      1,
+      8.3
+     ],
+     [
+      "kirik",
+      1,
+      8.3
+     ]
+    ],
+    "guclu": [
+     [
+      "kalite",
+      43,
+      55.8
+     ],
+     [
+      "paket",
+      15,
+      19.5
+     ],
+     [
+      "fiyat",
+      8,
+      10.4
+     ],
+     [
+      "kargo",
+      8,
+      10.4
+     ],
+     [
+      "montaj",
+      6,
+      7.8
+     ],
+     [
+      "basinc",
+      5,
+      6.5
+     ],
+     [
+      "gorunum",
+      5,
+      6.5
+     ],
+     [
+      "olcu",
+      2,
+      2.6
+     ],
+     [
+      "mekanizma",
+      1,
+      1.3
+     ],
+     [
+      "yuzey",
+      1,
+      1.3
+     ],
+     [
+      "kirik",
+      1,
+      1.3
+     ],
+     [
+      "eksik",
+      1,
+      1.3
+     ],
+     [
+      "sizinti",
+      1,
+      1.3
+     ],
+     [
+      "temizlik",
+      1,
+      1.3
+     ]
+    ],
+    "tema_tum": {
+     "kirik": 2.2,
+     "eksik": 2.2,
+     "olcu": 2.2,
+     "montaj": 7.6,
+     "sizinti": 1.1,
+     "basinc": 8.7,
+     "yuzey": 1.1,
+     "mekanizma": 3.3,
+     "kalite": 53.3,
+     "gorunum": 6.5,
+     "farkli": 0.0,
+     "kargo": 12.0,
+     "paket": 18.5,
+     "fiyat": 10.9,
+     "satis_sonrasi": 18.5,
+     "temizlik": 1.1,
+     "ses": 1.1
+    },
+    "tema_neg": {
+     "kirik": 8.3,
+     "eksik": 0.0,
+     "olcu": 0.0,
+     "montaj": 0.0,
+     "sizinti": 0.0,
+     "basinc": 16.7,
+     "yuzey": 0.0,
+     "mekanizma": 16.7,
+     "kalite": 41.7,
+     "gorunum": 8.3,
+     "farkli": 0.0,
+     "kargo": 25.0,
+     "paket": 8.3,
+     "fiyat": 8.3,
+     "satis_sonrasi": 41.7,
+     "temizlik": 0.0,
+     "ses": 8.3
+    },
+    "kanal": {
+     "Trendyol": 80,
+     "Hepsiburada": 117
+    }
+   },
+   "rakip": {
+    "n": 2555,
+    "metinli": 1740,
+    "ort_puan": 4.42,
+    "olumlu": 85.7,
+    "notr": 3.4,
+    "olumsuz": 10.9,
+    "olumsuz_metinli": 264,
+    "olumlu_metinli": 1413,
+    "pain": [
+     [
+      "kalite",
+      72,
+      27.3
+     ],
+     [
+      "satis_sonrasi",
+      52,
+      19.7
+     ],
+     [
+      "montaj",
+      36,
+      13.6
+     ],
+     [
+      "kirik",
+      36,
+      13.6
+     ],
+     [
+      "mekanizma",
+      20,
+      7.6
+     ],
+     [
+      "paket",
+      18,
+      6.8
+     ],
+     [
+      "eksik",
+      17,
+      6.4
+     ],
+     [
+      "fiyat",
+      16,
+      6.1
+     ],
+     [
+      "sizinti",
+      15,
+      5.7
+     ],
+     [
+      "yuzey",
+      13,
+      4.9
+     ],
+     [
+      "kargo",
+      11,
+      4.2
+     ],
+     [
+      "olcu",
+      8,
+      3.0
+     ],
+     [
+      "basinc",
+      7,
+      2.7
+     ],
+     [
+      "gorunum",
+      6,
+      2.3
+     ],
+     [
+      "farkli",
+      2,
+      0.8
+     ],
+     [
+      "temizlik",
+      2,
+      0.8
+     ]
+    ],
+    "guclu": [
+     [
+      "kalite",
+      523,
+      37.0
+     ],
+     [
+      "fiyat",
+      249,
+      17.6
+     ],
+     [
+      "montaj",
+      230,
+      16.3
+     ],
+     [
+      "kargo",
+      179,
+      12.7
+     ],
+     [
+      "paket",
+      158,
+      11.2
+     ],
+     [
+      "gorunum",
+      107,
+      7.6
+     ],
+     [
+      "basinc",
+      53,
+      3.8
+     ],
+     [
+      "yuzey",
+      36,
+      2.5
+     ],
+     [
+      "sizinti",
+      32,
+      2.3
+     ],
+     [
+      "kirik",
+      29,
+      2.1
+     ],
+     [
+      "eksik",
+      16,
+      1.1
+     ],
+     [
+      "olcu",
+      16,
+      1.1
+     ],
+     [
+      "mekanizma",
+      10,
+      0.7
+     ],
+     [
+      "temizlik",
+      4,
+      0.3
+     ],
+     [
+      "ses",
+      3,
+      0.2
+     ],
+     [
+      "farkli",
+      2,
+      0.1
+     ]
+    ],
+    "tema_tum": {
+     "kirik": 4.1,
+     "eksik": 1.9,
+     "olcu": 1.4,
+     "montaj": 15.9,
+     "sizinti": 2.9,
+     "basinc": 3.6,
+     "yuzey": 2.9,
+     "mekanizma": 2.1,
+     "kalite": 35.9,
+     "gorunum": 6.7,
+     "farkli": 0.3,
+     "kargo": 11.1,
+     "paket": 10.6,
+     "fiyat": 16.1,
+     "satis_sonrasi": 13.0,
+     "temizlik": 0.4,
+     "ses": 0.2
+    },
+    "tema_neg": {
+     "kirik": 13.6,
+     "eksik": 6.4,
+     "olcu": 3.0,
+     "montaj": 13.6,
+     "sizinti": 5.7,
+     "basinc": 2.7,
+     "yuzey": 4.9,
+     "mekanizma": 7.6,
+     "kalite": 27.3,
+     "gorunum": 2.3,
+     "farkli": 0.8,
+     "kargo": 4.2,
+     "paket": 6.8,
+     "fiyat": 6.1,
+     "satis_sonrasi": 19.7,
+     "temizlik": 0.8,
+     "ses": 0.0
+    },
+    "kanal": {
+     "Hepsiburada": 1892,
+     "Trendyol": 663
+    }
+   }
+  },
+  {
+   "grup": "Klozet kapağı",
+   "vitra": {
+    "n": 307,
+    "metinli": 164,
+    "ort_puan": 4.29,
+    "olumlu": 80.5,
+    "notr": 6.5,
+    "olumsuz": 13.0,
+    "olumsuz_metinli": 35,
+    "olumlu_metinli": 113,
+    "pain": [
+     [
+      "kalite",
+      11,
+      31.4
+     ],
+     [
+      "mekanizma",
+      9,
+      25.7
+     ],
+     [
+      "satis_sonrasi",
+      8,
+      22.9
+     ],
+     [
+      "kirik",
+      7,
+      20.0
+     ],
+     [
+      "montaj",
+      5,
+      14.3
+     ],
+     [
+      "fiyat",
+      4,
+      11.4
+     ],
+     [
+      "basinc",
+      3,
+      8.6
+     ],
+     [
+      "olcu",
+      3,
+      8.6
+     ],
+     [
+      "eksik",
+      2,
+      5.7
+     ],
+     [
+      "gorunum",
+      2,
+      5.7
+     ],
+     [
+      "paket",
+      1,
+      2.9
+     ],
+     [
+      "ses",
+      1,
+      2.9
+     ],
+     [
+      "kargo",
+      1,
+      2.9
+     ],
+     [
+      "yuzey",
+      1,
+      2.9
+     ]
+    ],
+    "guclu": [
+     [
+      "kalite",
+      64,
+      56.6
+     ],
+     [
+      "montaj",
+      28,
+      24.8
+     ],
+     [
+      "fiyat",
+      20,
+      17.7
+     ],
+     [
+      "olcu",
+      11,
+      9.7
+     ],
+     [
+      "kargo",
+      11,
+      9.7
+     ],
+     [
+      "paket",
+      11,
+      9.7
+     ],
+     [
+      "mekanizma",
+      10,
+      8.8
+     ],
+     [
+      "gorunum",
+      5,
+      4.4
+     ],
+     [
+      "kirik",
+      4,
+      3.5
+     ],
+     [
+      "eksik",
+      2,
+      1.8
+     ],
+     [
+      "temizlik",
+      1,
+      0.9
+     ],
+     [
+      "ses",
+      1,
+      0.9
+     ]
+    ],
+    "tema_tum": {
+     "kirik": 7.3,
+     "eksik": 2.4,
+     "olcu": 12.2,
+     "montaj": 22.0,
+     "sizinti": 0.0,
+     "basinc": 1.8,
+     "yuzey": 1.2,
+     "mekanizma": 12.8,
+     "kalite": 47.0,
+     "gorunum": 4.3,
+     "farkli": 0.0,
+     "kargo": 9.1,
+     "paket": 7.9,
+     "fiyat": 16.5,
+     "satis_sonrasi": 14.0,
+     "temizlik": 1.2,
+     "ses": 1.8
+    },
+    "tema_neg": {
+     "kirik": 20.0,
+     "eksik": 5.7,
+     "olcu": 8.6,
+     "montaj": 14.3,
+     "sizinti": 0.0,
+     "basinc": 8.6,
+     "yuzey": 2.9,
+     "mekanizma": 25.7,
+     "kalite": 31.4,
+     "gorunum": 5.7,
+     "farkli": 0.0,
+     "kargo": 2.9,
+     "paket": 2.9,
+     "fiyat": 11.4,
+     "satis_sonrasi": 22.9,
+     "temizlik": 0.0,
+     "ses": 2.9
+    },
+    "kanal": {
+     "Trendyol": 84,
+     "Hepsiburada": 223
+    }
+   },
+   "rakip": {
+    "n": 1575,
+    "metinli": 1388,
+    "ort_puan": 4.41,
+    "olumlu": 84.4,
+    "notr": 3.7,
+    "olumsuz": 11.9,
+    "olumsuz_metinli": 182,
+    "olumlu_metinli": 1157,
+    "pain": [
+     [
+      "kirik",
+      74,
+      40.7
+     ],
+     [
+      "satis_sonrasi",
+      58,
+      31.9
+     ],
+     [
+      "kalite",
+      37,
+      20.3
+     ],
+     [
+      "montaj",
+      31,
+      17.0
+     ],
+     [
+      "paket",
+      25,
+      13.7
+     ],
+     [
+      "kargo",
+      24,
+      13.2
+     ],
+     [
+      "eksik",
+      23,
+      12.6
+     ],
+     [
+      "mekanizma",
+      11,
+      6.0
+     ],
+     [
+      "olcu",
+      11,
+      6.0
+     ],
+     [
+      "fiyat",
+      9,
+      4.9
+     ],
+     [
+      "farkli",
+      8,
+      4.4
+     ],
+     [
+      "gorunum",
+      6,
+      3.3
+     ],
+     [
+      "sizinti",
+      4,
+      2.2
+     ],
+     [
+      "basinc",
+      2,
+      1.1
+     ],
+     [
+      "ses",
+      2,
+      1.1
+     ],
+     [
+      "yuzey",
+      2,
+      1.1
+     ]
+    ],
+    "guclu": [
+     [
+      "kalite",
+      452,
+      39.1
+     ],
+     [
+      "paket",
+      258,
+      22.3
+     ],
+     [
+      "montaj",
+      234,
+      20.2
+     ],
+     [
+      "kargo",
+      215,
+      18.6
+     ],
+     [
+      "fiyat",
+      187,
+      16.2
+     ],
+     [
+      "kirik",
+      63,
+      5.4
+     ],
+     [
+      "gorunum",
+      50,
+      4.3
+     ],
+     [
+      "olcu",
+      49,
+      4.2
+     ],
+     [
+      "mekanizma",
+      42,
+      3.6
+     ],
+     [
+      "eksik",
+      21,
+      1.8
+     ],
+     [
+      "temizlik",
+      13,
+      1.1
+     ],
+     [
+      "sizinti",
+      3,
+      0.3
+     ],
+     [
+      "farkli",
+      3,
+      0.3
+     ],
+     [
+      "ses",
+      3,
+      0.3
+     ],
+     [
+      "basinc",
+      2,
+      0.2
+     ],
+     [
+      "yuzey",
+      1,
+      0.1
+     ]
+    ],
+    "tema_tum": {
+     "kirik": 10.5,
+     "eksik": 3.3,
+     "olcu": 4.7,
+     "montaj": 19.7,
+     "sizinti": 0.5,
+     "basinc": 0.3,
+     "yuzey": 0.2,
+     "mekanizma": 4.4,
+     "kalite": 36.2,
+     "gorunum": 4.4,
+     "farkli": 0.8,
+     "kargo": 17.7,
+     "paket": 20.9,
+     "fiyat": 14.3,
+     "satis_sonrasi": 14.8,
+     "temizlik": 1.1,
+     "ses": 0.4
+    },
+    "tema_neg": {
+     "kirik": 40.7,
+     "eksik": 12.6,
+     "olcu": 6.0,
+     "montaj": 17.0,
+     "sizinti": 2.2,
+     "basinc": 1.1,
+     "yuzey": 1.1,
+     "mekanizma": 6.0,
+     "kalite": 20.3,
+     "gorunum": 3.3,
+     "farkli": 4.4,
+     "kargo": 13.2,
+     "paket": 13.7,
+     "fiyat": 4.9,
+     "satis_sonrasi": 31.9,
+     "temizlik": 0.0,
+     "ses": 1.1
+    },
+    "kanal": {
+     "Hepsiburada": 561,
+     "Trendyol": 1014
+    }
+   }
+  },
+  {
+   "grup": "Lavabo bataryası",
+   "vitra": {
+    "n": 230,
+    "metinli": 106,
+    "ort_puan": 4.67,
+    "olumlu": 92.2,
+    "notr": 1.7,
+    "olumsuz": 6.1,
+    "olumsuz_metinli": 10,
+    "olumlu_metinli": 94,
+    "pain": [
+     [
+      "satis_sonrasi",
+      6,
+      60.0
+     ],
+     [
+      "sizinti",
+      2,
+      20.0
+     ],
+     [
+      "fiyat",
+      2,
+      20.0
+     ],
+     [
+      "eksik",
+      2,
+      20.0
+     ],
+     [
+      "kalite",
+      2,
+      20.0
+     ],
+     [
+      "kirik",
+      1,
+      10.0
+     ],
+     [
+      "farkli",
+      1,
+      10.0
+     ],
+     [
+      "gorunum",
+      1,
+      10.0
+     ],
+     [
+      "montaj",
+      1,
+      10.0
+     ],
+     [
+      "kargo",
+      1,
+      10.0
+     ]
+    ],
+    "guclu": [
+     [
+      "kalite",
+      48,
+      51.1
+     ],
+     [
+      "gorunum",
+      19,
+      20.2
+     ],
+     [
+      "paket",
+      14,
+      14.9
+     ],
+     [
+      "montaj",
+      10,
+      10.6
+     ],
+     [
+      "kargo",
+      8,
+      8.5
+     ],
+     [
+      "fiyat",
+      5,
+      5.3
+     ],
+     [
+      "olcu",
+      4,
+      4.3
+     ],
+     [
+      "mekanizma",
+      2,
+      2.1
+     ],
+     [
+      "kirik",
+      1,
+      1.1
+     ],
+     [
+      "temizlik",
+      1,
+      1.1
+     ]
+    ],
+    "tema_tum": {
+     "kirik": 2.8,
+     "eksik": 1.9,
+     "olcu": 3.8,
+     "montaj": 10.4,
+     "sizinti": 1.9,
+     "basinc": 0.0,
+     "yuzey": 0.0,
+     "mekanizma": 1.9,
+     "kalite": 49.1,
+     "gorunum": 18.9,
+     "farkli": 0.9,
+     "kargo": 8.5,
+     "paket": 13.2,
+     "fiyat": 6.6,
+     "satis_sonrasi": 15.1,
+     "temizlik": 0.9,
+     "ses": 0.0
+    },
+    "tema_neg": {
+     "kirik": 10.0,
+     "eksik": 20.0,
+     "olcu": 0.0,
+     "montaj": 10.0,
+     "sizinti": 20.0,
+     "basinc": 0.0,
+     "yuzey": 0.0,
+     "mekanizma": 0.0,
+     "kalite": 20.0,
+     "gorunum": 10.0,
+     "farkli": 10.0,
+     "kargo": 10.0,
+     "paket": 0.0,
+     "fiyat": 20.0,
+     "satis_sonrasi": 60.0,
+     "temizlik": 0.0,
+     "ses": 0.0
+    },
+    "kanal": {
+     "Trendyol": 125,
+     "Hepsiburada": 105
+    }
+   },
+   "rakip": {
+    "n": 970,
+    "metinli": 863,
+    "ort_puan": 4.58,
+    "olumlu": 89.5,
+    "notr": 3.0,
+    "olumsuz": 7.5,
+    "olumsuz_metinli": 72,
+    "olumlu_metinli": 766,
+    "pain": [
+     [
+      "satis_sonrasi",
+      21,
+      29.2
+     ],
+     [
+      "montaj",
+      19,
+      26.4
+     ],
+     [
+      "kalite",
+      16,
+      22.2
+     ],
+     [
+      "yuzey",
+      10,
+      13.9
+     ],
+     [
+      "kirik",
+      7,
+      9.7
+     ],
+     [
+      "mekanizma",
+      7,
+      9.7
+     ],
+     [
+      "paket",
+      4,
+      5.6
+     ],
+     [
+      "sizinti",
+      4,
+      5.6
+     ],
+     [
+      "kargo",
+      4,
+      5.6
+     ],
+     [
+      "fiyat",
+      3,
+      4.2
+     ],
+     [
+      "olcu",
+      2,
+      2.8
+     ],
+     [
+      "farkli",
+      1,
+      1.4
+     ],
+     [
+      "gorunum",
+      1,
+      1.4
+     ],
+     [
+      "eksik",
+      1,
+      1.4
+     ]
+    ],
+    "guclu": [
+     [
+      "kalite",
+      302,
+      39.4
+     ],
+     [
+      "fiyat",
+      124,
+      16.2
+     ],
+     [
+      "paket",
+      116,
+      15.1
+     ],
+     [
+      "kargo",
+      111,
+      14.5
+     ],
+     [
+      "gorunum",
+      95,
+      12.4
+     ],
+     [
+      "montaj",
+      86,
+      11.2
+     ],
+     [
+      "kirik",
+      15,
+      2.0
+     ],
+     [
+      "yuzey",
+      12,
+      1.6
+     ],
+     [
+      "mekanizma",
+      11,
+      1.4
+     ],
+     [
+      "olcu",
+      10,
+      1.3
+     ],
+     [
+      "basinc",
+      6,
+      0.8
+     ],
+     [
+      "sizinti",
+      5,
+      0.7
+     ],
+     [
+      "eksik",
+      5,
+      0.7
+     ],
+     [
+      "ses",
+      3,
+      0.4
+     ],
+     [
+      "temizlik",
+      3,
+      0.4
+     ],
+     [
+      "farkli",
+      2,
+      0.3
+     ]
+    ],
+    "tema_tum": {
+     "kirik": 3.0,
+     "eksik": 0.7,
+     "olcu": 1.5,
+     "montaj": 12.6,
+     "sizinti": 1.2,
+     "basinc": 0.7,
+     "yuzey": 2.7,
+     "mekanizma": 2.1,
+     "kalite": 37.3,
+     "gorunum": 11.7,
+     "farkli": 0.3,
+     "kargo": 13.7,
+     "paket": 13.9,
+     "fiyat": 15.2,
+     "satis_sonrasi": 11.2,
+     "temizlik": 0.3,
+     "ses": 0.3
+    },
+    "tema_neg": {
+     "kirik": 9.7,
+     "eksik": 1.4,
+     "olcu": 2.8,
+     "montaj": 26.4,
+     "sizinti": 5.6,
+     "basinc": 0.0,
+     "yuzey": 13.9,
+     "mekanizma": 9.7,
+     "kalite": 22.2,
+     "gorunum": 1.4,
+     "farkli": 1.4,
+     "kargo": 5.6,
+     "paket": 5.6,
+     "fiyat": 4.2,
+     "satis_sonrasi": 29.2,
+     "temizlik": 0.0,
+     "ses": 0.0
+    },
+    "kanal": {
+     "Hepsiburada": 196,
+     "Trendyol": 774
+    }
+   }
+  },
+  {
+   "grup": "Rezervuar ve iç takım",
+   "vitra": {
+    "n": 256,
+    "metinli": 149,
+    "ort_puan": 4.46,
+    "olumlu": 85.9,
+    "notr": 4.3,
+    "olumsuz": 9.8,
+    "olumsuz_metinli": 20,
+    "olumlu_metinli": 119,
+    "pain": [
+     [
+      "montaj",
+      6,
+      30.0
+     ],
+     [
+      "mekanizma",
+      6,
+      30.0
+     ],
+     [
+      "kalite",
+      5,
+      25.0
+     ],
+     [
+      "satis_sonrasi",
+      5,
+      25.0
+     ],
+     [
+      "kirik",
+      4,
+      20.0
+     ],
+     [
+      "kargo",
+      4,
+      20.0
+     ],
+     [
+      "paket",
+      4,
+      20.0
+     ],
+     [
+      "ses",
+      2,
+      10.0
+     ],
+     [
+      "eksik",
+      2,
+      10.0
+     ],
+     [
+      "gorunum",
+      1,
+      5.0
+     ],
+     [
+      "fiyat",
+      1,
+      5.0
+     ],
+     [
+      "basinc",
+      1,
+      5.0
+     ],
+     [
+      "sizinti",
+      1,
+      5.0
+     ]
+    ],
+    "guclu": [
+     [
+      "kalite",
+      44,
+      37.0
+     ],
+     [
+      "kargo",
+      22,
+      18.5
+     ],
+     [
+      "paket",
+      21,
+      17.6
+     ],
+     [
+      "montaj",
+      21,
+      17.6
+     ],
+     [
+      "fiyat",
+      14,
+      11.8
+     ],
+     [
+      "mekanizma",
+      5,
+      4.2
+     ],
+     [
+      "ses",
+      5,
+      4.2
+     ],
+     [
+      "sizinti",
+      4,
+      3.4
+     ],
+     [
+      "kirik",
+      4,
+      3.4
+     ],
+     [
+      "yuzey",
+      2,
+      1.7
+     ],
+     [
+      "gorunum",
+      2,
+      1.7
+     ],
+     [
+      "olcu",
+      1,
+      0.8
+     ],
+     [
+      "eksik",
+      1,
+      0.8
+     ]
+    ],
+    "tema_tum": {
+     "kirik": 8.1,
+     "eksik": 2.7,
+     "olcu": 0.7,
+     "montaj": 21.5,
+     "sizinti": 3.4,
+     "basinc": 0.7,
+     "yuzey": 1.3,
+     "mekanizma": 10.1,
+     "kalite": 34.9,
+     "gorunum": 2.0,
+     "farkli": 0.0,
+     "kargo": 17.4,
+     "paket": 18.1,
+     "fiyat": 10.7,
+     "satis_sonrasi": 12.1,
+     "temizlik": 0.0,
+     "ses": 4.7
+    },
+    "tema_neg": {
+     "kirik": 20.0,
+     "eksik": 10.0,
+     "olcu": 0.0,
+     "montaj": 30.0,
+     "sizinti": 5.0,
+     "basinc": 5.0,
+     "yuzey": 0.0,
+     "mekanizma": 30.0,
+     "kalite": 25.0,
+     "gorunum": 5.0,
+     "farkli": 0.0,
+     "kargo": 20.0,
+     "paket": 20.0,
+     "fiyat": 5.0,
+     "satis_sonrasi": 25.0,
+     "temizlik": 0.0,
+     "ses": 10.0
+    },
+    "kanal": {
+     "Trendyol": 157,
+     "Hepsiburada": 99
+    }
+   },
+   "rakip": {
+    "n": 1301,
+    "metinli": 966,
+    "ort_puan": 4.43,
+    "olumlu": 85.9,
+    "notr": 3.5,
+    "olumsuz": 10.6,
+    "olumsuz_metinli": 131,
+    "olumlu_metinli": 806,
+    "pain": [
+     [
+      "satis_sonrasi",
+      33,
+      25.2
+     ],
+     [
+      "kalite",
+      31,
+      23.7
+     ],
+     [
+      "kirik",
+      18,
+      13.7
+     ],
+     [
+      "sizinti",
+      18,
+      13.7
+     ],
+     [
+      "montaj",
+      17,
+      13.0
+     ],
+     [
+      "paket",
+      17,
+      13.0
+     ],
+     [
+      "mekanizma",
+      13,
+      9.9
+     ],
+     [
+      "olcu",
+      10,
+      7.6
+     ],
+     [
+      "eksik",
+      9,
+      6.9
+     ],
+     [
+      "kargo",
+      8,
+      6.1
+     ],
+     [
+      "fiyat",
+      7,
+      5.3
+     ],
+     [
+      "gorunum",
+      3,
+      2.3
+     ],
+     [
+      "ses",
+      2,
+      1.5
+     ],
+     [
+      "farkli",
+      1,
+      0.8
+     ],
+     [
+      "yuzey",
+      1,
+      0.8
+     ]
+    ],
+    "guclu": [
+     [
+      "kalite",
+      219,
+      27.2
+     ],
+     [
+      "montaj",
+      153,
+      19.0
+     ],
+     [
+      "kargo",
+      124,
+      15.4
+     ],
+     [
+      "fiyat",
+      88,
+      10.9
+     ],
+     [
+      "paket",
+      82,
+      10.2
+     ],
+     [
+      "sizinti",
+      39,
+      4.8
+     ],
+     [
+      "kirik",
+      24,
+      3.0
+     ],
+     [
+      "mekanizma",
+      19,
+      2.4
+     ],
+     [
+      "olcu",
+      18,
+      2.2
+     ],
+     [
+      "eksik",
+      9,
+      1.1
+     ],
+     [
+      "gorunum",
+      9,
+      1.1
+     ],
+     [
+      "ses",
+      3,
+      0.4
+     ],
+     [
+      "basinc",
+      1,
+      0.1
+     ],
+     [
+      "temizlik",
+      1,
+      0.1
+     ],
+     [
+      "yuzey",
+      1,
+      0.1
+     ]
+    ],
+    "tema_tum": {
+     "kirik": 4.6,
+     "eksik": 2.0,
+     "olcu": 3.2,
+     "montaj": 18.2,
+     "sizinti": 5.9,
+     "basinc": 0.1,
+     "yuzey": 0.2,
+     "mekanizma": 3.5,
+     "kalite": 26.3,
+     "gorunum": 1.2,
+     "farkli": 0.3,
+     "kargo": 13.9,
+     "paket": 10.5,
+     "fiyat": 10.2,
+     "satis_sonrasi": 11.1,
+     "temizlik": 0.2,
+     "ses": 0.5
+    },
+    "tema_neg": {
+     "kirik": 13.7,
+     "eksik": 6.9,
+     "olcu": 7.6,
+     "montaj": 13.0,
+     "sizinti": 13.7,
+     "basinc": 0.0,
+     "yuzey": 0.8,
+     "mekanizma": 9.9,
+     "kalite": 23.7,
+     "gorunum": 2.3,
+     "farkli": 0.8,
+     "kargo": 6.1,
+     "paket": 13.0,
+     "fiyat": 5.3,
+     "satis_sonrasi": 25.2,
+     "temizlik": 0.0,
+     "ses": 1.5
+    },
+    "kanal": {
+     "Hepsiburada": 654,
+     "Trendyol": 647
+    }
+   }
+  }
+ ],
+ "urunler": [
+  {
+   "marka": "VitrA",
+   "urun": "VitrA Mia 75100 Banyo Dolabı Seti, Çekmeceli, 80 cm, Antrasit",
+   "grup": "Banyo dolabı",
+   "url": "https://www.hepsiburada.com/vitra-mia-75100-banyo-dolabi-seti-cekmeceli-80-cm-antrasit-p-HBV00001AVOWN",
+   "n": 44,
+   "metinli": 26,
+   "ort_puan": 3.91,
+   "olumsuz": 25.0,
+   "pain": [
+    [
+     "satis_sonrasi",
+     6,
+     54.5
+    ],
+    [
+     "kirik",
+     5,
+     45.5
+    ],
+    [
+     "kalite",
+     3,
+     27.3
+    ],
+    [
+     "montaj",
+     3,
+     27.3
+    ],
+    [
+     "olcu",
+     2,
+     18.2
+    ],
+    [
+     "kargo",
+     1,
+     9.1
+    ],
+    [
+     "paket",
+     1,
+     9.1
+    ],
+    [
+     "gorunum",
+     1,
+     9.1
+    ]
+   ]
+  },
+  {
+   "marka": "VitrA",
+   "urun": "330B1314 Rezervuar İç Takım, Alttan Su Girişli, 6 L",
+   "grup": "Rezervuar ve iç takım",
+   "url": null,
+   "n": 54,
+   "metinli": 27,
+   "ort_puan": 3.96,
+   "olumsuz": 22.2,
+   "pain": [
+    [
+     "kalite",
+     3,
+     33.3
+    ],
+    [
+     "kargo",
+     3,
+     33.3
+    ],
+    [
+     "ses",
+     2,
+     22.2
+    ],
+    [
+     "montaj",
+     2,
+     22.2
+    ],
+    [
+     "paket",
+     2,
+     22.2
+    ],
+    [
+     "kirik",
+     1,
+     11.1
+    ],
+    [
+     "mekanizma",
+     1,
+     11.1
+    ],
+    [
+     "gorunum",
+     1,
+     11.1
+    ],
+    [
+     "fiyat",
+     1,
+     11.1
+    ],
+    [
+     "satis_sonrasi",
+     1,
+     11.1
+    ],
+    [
+     "eksik",
+     1,
+     11.1
+    ]
+   ]
+  },
+  {
+   "marka": "VitrA",
+   "urun": "VitrA Mia 75100 Banyo Dolabı Seti Çekmeceli 80 cm Antrasit",
+   "grup": "Banyo dolabı",
+   "url": "https://www.hepsiburada.com/vitra-mia-75100-banyo-dolabi-seti-cekmeceli-80-cm-antrasit-p-HBV00001AVOWN",
+   "n": 18,
+   "metinli": 8,
+   "ort_puan": 3.94,
+   "olumsuz": 22.2,
+   "pain": [
+    [
+     "kirik",
+     1,
+     33.3
+    ],
+    [
+     "montaj",
+     1,
+     33.3
+    ],
+    [
+     "basinc",
+     1,
+     33.3
+    ],
+    [
+     "satis_sonrasi",
+     1,
+     33.3
+    ],
+    [
+     "gorunum",
+     1,
+     33.3
+    ],
+    [
+     "paket",
+     1,
+     33.3
+    ]
+   ]
+  },
+  {
+   "marka": "VitrA",
+   "urun": "VitrA Mia 75024 Banyo Dolabı Seti, Çekmeceli, 80 cm, Parlak Beyaz",
+   "grup": "Banyo dolabı",
+   "url": "https://www.hepsiburada.com/vitra-mia-75024-banyo-dolabi-seti-cekmeceli-80-cm-parlak-beyaz-p-HBV00000R8QGV",
+   "n": 33,
+   "metinli": 21,
+   "ort_puan": 4.15,
+   "olumsuz": 18.2,
+   "pain": [
+    [
+     "kirik",
+     3,
+     60.0
+    ],
+    [
+     "satis_sonrasi",
+     3,
+     60.0
+    ],
+    [
+     "paket",
+     2,
+     40.0
+    ],
+    [
+     "kargo",
+     2,
+     40.0
+    ],
+    [
+     "olcu",
+     1,
+     20.0
+    ]
+   ]
+  },
+  {
+   "marka": "VitrA",
+   "urun": "VitrA Mia 66166 Boy Dolabı, 35 cm, Parlak Beyaz",
+   "grup": "Banyo dolabı",
+   "url": "https://www.hepsiburada.com/vitra-mia-66166-boy-dolabi-35-cm-parlak-beyaz-p-HBV00001AVOWP",
+   "n": 32,
+   "metinli": 17,
+   "ort_puan": 4,
+   "olumsuz": 15.6,
+   "pain": [
+    [
+     "kargo",
+     2,
+     66.7
+    ],
+    [
+     "satis_sonrasi",
+     2,
+     66.7
+    ],
+    [
+     "kalite",
+     2,
+     66.7
+    ],
+    [
+     "kirik",
+     1,
+     33.3
+    ],
+    [
+     "fiyat",
+     1,
+     33.3
+    ],
+    [
+     "montaj",
+     1,
+     33.3
+    ],
+    [
+     "paket",
+     1,
+     33.3
+    ]
+   ]
+  },
+  {
+   "marka": "VitrA",
+   "urun": "330B2016 Rezervuar İç Takım, Alttan Su Girişli, 3/6 L",
+   "grup": "Rezervuar ve iç takım",
+   "url": null,
+   "n": 34,
+   "metinli": 16,
+   "ort_puan": 4.32,
+   "olumsuz": 14.7,
+   "pain": [
+    [
+     "montaj",
+     3,
+     75.0
+    ],
+    [
+     "satis_sonrasi",
+     3,
+     75.0
+    ],
+    [
+     "paket",
+     2,
+     50.0
+    ],
+    [
+     "mekanizma",
+     2,
+     50.0
+    ],
+    [
+     "kirik",
+     1,
+     25.0
+    ],
+    [
+     "basinc",
+     1,
+     25.0
+    ],
+    [
+     "kalite",
+     1,
+     25.0
+    ],
+    [
+     "kargo",
+     1,
+     25.0
+    ],
+    [
+     "sizinti",
+     1,
+     25.0
+    ]
+   ]
+  },
+  {
+   "marka": "VitrA",
+   "urun": "VitrA Integra 121-003-909 Universal Klozet Kapağı, Yavaş Kapanır, Kolay Çıkabilir, Beyaz",
+   "grup": "Klozet kapağı",
+   "url": "https://www.hepsiburada.com/vitra-integra-121-003-909-universal-klozet-kapagi-yavas-kapanir-kolay-cikabilir-beyaz-p-HBV00000YCVHD",
+   "n": 96,
+   "metinli": 57,
+   "ort_puan": 4.2,
+   "olumsuz": 14.6,
+   "pain": [
+    [
+     "mekanizma",
+     6,
+     46.2
+    ],
+    [
+     "kalite",
+     5,
+     38.5
+    ],
+    [
+     "satis_sonrasi",
+     4,
+     30.8
+    ],
+    [
+     "olcu",
+     3,
+     23.1
+    ],
+    [
+     "montaj",
+     3,
+     23.1
+    ],
+    [
+     "fiyat",
+     1,
+     7.7
+    ],
+    [
+     "ses",
+     1,
+     7.7
+    ],
+    [
+     "kargo",
+     1,
+     7.7
+    ]
+   ]
+  },
+  {
+   "marka": "Artema",
+   "urun": "Artema Master Slot A45691 3F Sürgülü El Duşu Takımı Krom Plastik Şık Tasarım ve Kolay Montaj",
+   "grup": "Duş seti ve sistemi",
+   "url": "https://www.hepsiburada.com/artema-master-slot-a45691-3f-surgulu-el-dusu-takimi-krom-plastik-sik-tasarim-ve-kolay-montaj-p-HBV00000EK9UB",
+   "n": 22,
+   "metinli": 12,
+   "ort_puan": 4.45,
+   "olumsuz": 13.6,
+   "pain": [
+    [
+     "satis_sonrasi",
+     2,
+     66.7
+    ],
+    [
+     "fiyat",
+     1,
+     33.3
+    ],
+    [
+     "kargo",
+     1,
+     33.3
+    ],
+    [
+     "basinc",
+     1,
+     33.3
+    ],
+    [
+     "kalite",
+     1,
+     33.3
+    ],
+    [
+     "gorunum",
+     1,
+     33.3
+    ]
+   ]
+  },
+  {
+   "marka": "Artema",
+   "urun": "Artema V3 A42151 Pull-Out Eviye Bataryası, Krom",
+   "grup": "Eviye bataryası",
+   "url": "https://www.hepsiburada.com/artema-v3-a42151-pull-out-eviye-bataryasi-krom-p-HBV000006CYGW",
+   "n": 89,
+   "metinli": 46,
+   "ort_puan": 4.39,
+   "olumsuz": 13.5,
+   "pain": [
+    [
+     "satis_sonrasi",
+     4,
+     57.1
+    ],
+    [
+     "eksik",
+     4,
+     57.1
+    ],
+    [
+     "montaj",
+     2,
+     28.6
+    ],
+    [
+     "kirik",
+     1,
+     14.3
+    ],
+    [
+     "paket",
+     1,
+     14.3
+    ],
+    [
+     "fiyat",
+     1,
+     14.3
+    ],
+    [
+     "kalite",
+     1,
+     14.3
+    ]
+   ]
+  },
+  {
+   "marka": "Artema",
+   "urun": "A45200-Artema Filtreli Ara Musluk",
+   "grup": "Ara musluk ve tesisat",
+   "url": null,
+   "n": 95,
+   "metinli": 31,
+   "ort_puan": 4.36,
+   "olumsuz": 12.6,
+   "pain": [
+    [
+     "satis_sonrasi",
+     5,
+     62.5
+    ],
+    [
+     "mekanizma",
+     3,
+     37.5
+    ],
+    [
+     "montaj",
+     2,
+     25.0
+    ],
+    [
+     "sizinti",
+     2,
+     25.0
+    ],
+    [
+     "gorunum",
+     2,
+     25.0
+    ],
+    [
+     "eksik",
+     1,
+     12.5
+    ],
+    [
+     "kalite",
+     1,
+     12.5
+    ],
+    [
+     "kargo",
+     1,
+     12.5
+    ],
+    [
+     "kirik",
+     1,
+     12.5
+    ]
+   ]
+  },
+  {
+   "marka": "Artema",
+   "urun": "Artema Split Dual Flow Eviye Bataryası A42144, 360° Dönebilen, Krom, Çift Fonksiyonlu Başlık, Tezgah Üstü Montaj",
+   "grup": "Eviye bataryası",
+   "url": "https://www.hepsiburada.com/artema-split-dual-flow-eviye-bataryasi-a42144-360-donebilen-krom-cift-fonksiyonlu-baslik-tezgah-ustu-montaj-p-HBV000002RRDW",
+   "n": 98,
+   "metinli": 57,
+   "ort_puan": 4.41,
+   "olumsuz": 12.2,
+   "pain": [
+    [
+     "satis_sonrasi",
+     7,
+     63.6
+    ],
+    [
+     "paket",
+     4,
+     36.4
+    ],
+    [
+     "montaj",
+     4,
+     36.4
+    ],
+    [
+     "kalite",
+     3,
+     27.3
+    ],
+    [
+     "kargo",
+     3,
+     27.3
+    ],
+    [
+     "farkli",
+     2,
+     18.2
+    ],
+    [
+     "basinc",
+     1,
+     9.1
+    ],
+    [
+     "kirik",
+     1,
+     9.1
+    ],
+    [
+     "olcu",
+     1,
+     9.1
+    ]
+   ]
+  },
+  {
+   "marka": "Artema",
+   "urun": "Artema A45200 Filtreli Ara Musluk, Krom",
+   "grup": "Ara musluk ve tesisat",
+   "url": "https://www.hepsiburada.com/artema-a45200-filtreli-ara-musluk-krom-p-HBV00000R1JAU",
+   "n": 59,
+   "metinli": 30,
+   "ort_puan": 4.41,
+   "olumsuz": 11.9,
+   "pain": [
+    [
+     "satis_sonrasi",
+     3,
+     42.9
+    ],
+    [
+     "montaj",
+     2,
+     28.6
+    ],
+    [
+     "sizinti",
+     1,
+     14.3
+    ],
+    [
+     "kirik",
+     1,
+     14.3
+    ],
+    [
+     "basinc",
+     1,
+     14.3
+    ],
+    [
+     "yuzey",
+     1,
+     14.3
+    ],
+    [
+     "mekanizma",
+     1,
+     14.3
+    ],
+    [
+     "kalite",
+     1,
+     14.3
+    ],
+    [
+     "olcu",
+     1,
+     14.3
+    ],
+    [
+     "ses",
+     1,
+     14.3
+    ],
+    [
+     "eksik",
+     1,
+     14.3
+    ]
+   ]
+  },
+  {
+   "marka": "VitrA",
+   "urun": "VitrA S20 Round 109-003-909 Universal Klozet Kapağı, Yavaş Kapanır, Kolay Çıkabilir, Beyaz",
+   "grup": "Klozet kapağı",
+   "url": "https://www.hepsiburada.com/vitra-s20-round-109-003-909-universal-klozet-kapagi-yavas-kapanir-kolay-cikabilir-beyaz-p-HBV0000116JQT",
+   "n": 97,
+   "metinli": 52,
+   "ort_puan": 4.39,
+   "olumsuz": 11.3,
+   "pain": [
+    [
+     "kalite",
+     5,
+     50.0
+    ],
+    [
+     "kirik",
+     3,
+     30.0
+    ],
+    [
+     "basinc",
+     2,
+     20.0
+    ],
+    [
+     "mekanizma",
+     2,
+     20.0
+    ],
+    [
+     "yuzey",
+     1,
+     10.0
+    ],
+    [
+     "montaj",
+     1,
+     10.0
+    ],
+    [
+     "satis_sonrasi",
+     1,
+     10.0
+    ],
+    [
+     "eksik",
+     1,
+     10.0
+    ],
+    [
+     "gorunum",
+     1,
+     10.0
+    ],
+    [
+     "fiyat",
+     1,
+     10.0
+    ]
+   ]
+  },
+  {
+   "marka": "VitrA",
+   "urun": "VitrA Mia 75102 Banyo Dolabı Seti Çekmeceli 60 cm Antrasit",
+   "grup": "Banyo dolabı",
+   "url": "https://www.hepsiburada.com/vitra-mia-75102-banyo-dolabi-seti-cekmeceli-60-cm-antrasit-p-HBV00001AVOWH",
+   "n": 97,
+   "metinli": 44,
+   "ort_puan": 4.38,
+   "olumsuz": 11.3,
+   "pain": [
+    [
+     "kirik",
+     7,
+     77.8
+    ],
+    [
+     "satis_sonrasi",
+     5,
+     55.6
+    ],
+    [
+     "paket",
+     2,
+     22.2
+    ],
+    [
+     "kargo",
+     1,
+     11.1
+    ],
+    [
+     "montaj",
+     1,
+     11.1
+    ]
+   ]
+  },
+  {
+   "marka": "Artema",
+   "urun": "Artema Nano A45696 1F El Duşu, Krom",
+   "grup": "Duş seti ve sistemi",
+   "url": "https://www.hepsiburada.com/artema-nano-a45696-1f-el-dusu-krom-p-HBCV00001EPTYK",
+   "n": 67,
+   "metinli": 37,
+   "ort_puan": 4.49,
+   "olumsuz": 10.4,
+   "pain": [
+    [
+     "satis_sonrasi",
+     3,
+     75.0
+    ],
+    [
+     "kalite",
+     3,
+     75.0
+    ],
+    [
+     "mekanizma",
+     2,
+     50.0
+    ],
+    [
+     "basinc",
+     1,
+     25.0
+    ],
+    [
+     "ses",
+     1,
+     25.0
+    ],
+    [
+     "paket",
+     1,
+     25.0
+    ]
+   ]
+  },
+  {
+   "marka": "Artema",
+   "urun": "Artema A45200 Filtreli Ara Musluk – Krom Kaplama, Su Filtresi ile Hijyenik ve Güvenli Su Kullanımı",
+   "grup": "Ara musluk ve tesisat",
+   "url": "https://www.hepsiburada.com/artema-a45200-filtreli-ara-musluk-krom-kaplama-su-filtresi-ile-hijyenik-ve-guvenli-su-kullanimi-p-HBV00000R1JAU",
+   "n": 39,
+   "metinli": 17,
+   "ort_puan": 4.36,
+   "olumsuz": 10.3,
+   "pain": [
+    [
+     "satis_sonrasi",
+     1,
+     33.3
+    ],
+    [
+     "sizinti",
+     1,
+     33.3
+    ],
+    [
+     "kirik",
+     1,
+     33.3
+    ],
+    [
+     "kalite",
+     1,
+     33.3
+    ]
+   ]
+  },
+  {
+   "marka": "VitrA",
+   "urun": "Minimax A44789 Tuvalet Kağıtlığı, Krom",
+   "grup": "Diğer",
+   "url": null,
+   "n": 22,
+   "metinli": 8,
+   "ort_puan": 4.5,
+   "olumsuz": 9.1,
+   "pain": [
+    [
+     "satis_sonrasi",
+     1,
+     100.0
+    ]
+   ]
+  },
+  {
+   "marka": "VitrA",
+   "urun": "Integra 121-003-909 Universal Klozet Kapağı, Yavaş Kapanır, Kolay Çıkabilir, Beyaz",
+   "grup": "Klozet kapağı",
+   "url": null,
+   "n": 23,
+   "metinli": 9,
+   "ort_puan": 4.43,
+   "olumsuz": 8.7,
+   "pain": [
+    [
+     "kalite",
+     1,
+     50.0
+    ]
+   ]
+  },
+  {
+   "marka": "VitrA",
+   "urun": "Sıva Üstü Ankastre Ara Kesme Valfi - A41458GR",
+   "grup": "Banyo ve duş bataryası",
+   "url": null,
+   "n": 24,
+   "metinli": 7,
+   "ort_puan": 4.54,
+   "olumsuz": 8.3,
+   "pain": [
+    [
+     "olcu",
+     1,
+     100.0
+    ]
+   ]
+  },
+  {
+   "marka": "Artema",
+   "urun": "Serenity A42914 Yüksek Lavabo Bataryası, Krom",
+   "grup": "Lavabo bataryası",
+   "url": null,
+   "n": 29,
+   "metinli": 9,
+   "ort_puan": 4.69,
+   "olumsuz": 6.9,
+   "pain": [
+    [
+     "satis_sonrasi",
+     2,
+     100.0
+    ],
+    [
+     "kirik",
+     1,
+     50.0
+    ]
+   ]
+  },
+  {
+   "marka": "Artema",
+   "urun": "Artema Harmony A41864 Pull-Out Eviye Bataryası, Krom",
+   "grup": "Eviye bataryası",
+   "url": "https://www.hepsiburada.com/artema-harmony-a41864-pull-out-eviye-bataryasi-krom-p-HBV00000EIYNI",
+   "n": 74,
+   "metinli": 33,
+   "ort_puan": 4.65,
+   "olumsuz": 6.8,
+   "pain": [
+    [
+     "montaj",
+     3,
+     60.0
+    ],
+    [
+     "kirik",
+     2,
+     40.0
+    ],
+    [
+     "satis_sonrasi",
+     2,
+     40.0
+    ],
+    [
+     "kalite",
+     1,
+     20.0
+    ],
+    [
+     "paket",
+     1,
+     20.0
+    ],
+    [
+     "sizinti",
+     1,
+     20.0
+    ],
+    [
+     "gorunum",
+     1,
+     20.0
+    ],
+    [
+     "fiyat",
+     1,
+     20.0
+    ]
+   ]
+  },
+  {
+   "marka": "Artema",
+   "urun": "Artema A45232 Ara Musluk, Krom",
+   "grup": "Ara musluk ve tesisat",
+   "url": "https://www.hepsiburada.com/artema-a45232-ara-musluk-krom-p-HBV00000I2FIV",
+   "n": 93,
+   "metinli": 45,
+   "ort_puan": 4.69,
+   "olumsuz": 5.4,
+   "pain": [
+    [
+     "satis_sonrasi",
+     2,
+     40.0
+    ],
+    [
+     "kirik",
+     1,
+     20.0
+    ],
+    [
+     "basinc",
+     1,
+     20.0
+    ],
+    [
+     "kalite",
+     1,
+     20.0
+    ],
+    [
+     "mekanizma",
+     1,
+     20.0
+    ],
+    [
+     "ses",
+     1,
+     20.0
+    ],
+    [
+     "farkli",
+     1,
+     20.0
+    ],
+    [
+     "sizinti",
+     1,
+     20.0
+    ]
+   ]
+  },
+  {
+   "marka": "Artema",
+   "urun": "A45228 Filtreli Çamaşır Musluğu, Krom",
+   "grup": "Banyo aksesuarı",
+   "url": null,
+   "n": 20,
+   "metinli": 9,
+   "ort_puan": 4.6,
+   "olumsuz": 5.0,
+   "pain": [
+    [
+     "kirik",
+     1,
+     100.0
+    ],
+    [
+     "kalite",
+     1,
+     100.0
+    ]
+   ]
+  },
+  {
+   "marka": "Artema",
+   "urun": "Artema Maestro Pro A42152 Eviye Bataryası, Krom",
+   "grup": "Eviye bataryası",
+   "url": "https://www.hepsiburada.com/artema-maestro-pro-a42152-eviye-bataryasi-krom-p-HBV00000EK9UN",
+   "n": 50,
+   "metinli": 24,
+   "ort_puan": 4.68,
+   "olumsuz": 4.0,
+   "pain": [
+    [
+     "satis_sonrasi",
+     2,
+     100.0
+    ],
+    [
+     "montaj",
+     1,
+     50.0
+    ],
+    [
+     "mekanizma",
+     1,
+     50.0
+    ]
+   ]
+  },
+  {
+   "marka": "VitrA",
+   "urun": "Gömme Rezervuar Dirsekli Şamandra Flatör Doldurma Grubu",
+   "grup": "Rezervuar ve iç takım",
+   "url": "https://www.trendyol.com/vitra/gomme-rezervuar-dirsekli-samandra-flator-doldurma-grubu-p-163671199?boutiqueId=61&merchantId=924404",
+   "n": 50,
+   "metinli": 50,
+   "ort_puan": 4.72,
+   "olumsuz": 4.0,
+   "pain": [
+    [
+     "montaj",
+     1,
+     50.0
+    ],
+    [
+     "kirik",
+     1,
+     50.0
+    ]
+   ]
+  }
+ ],
+ "ay": {
+  "2019-06": [
+   1,
+   0
+  ],
+  "2019-07": [
+   1,
+   0
+  ],
+  "2019-08": [
+   1,
+   0
+  ],
+  "2019-09": [
+   1,
+   0
+  ],
+  "2019-11": [
+   1,
+   0
+  ],
+  "2020-02": [
+   2,
+   0
+  ],
+  "2020-04": [
+   1,
+   0
+  ],
+  "2020-09": [
+   1,
+   0
+  ],
+  "2020-11": [
+   1,
+   0
+  ],
+  "2020-12": [
+   1,
+   0
+  ],
+  "2021-01": [
+   1,
+   0
+  ],
+  "2021-02": [
+   1,
+   0
+  ],
+  "2021-03": [
+   1,
+   0
+  ],
+  "2021-04": [
+   1,
+   0
+  ],
+  "2021-05": [
+   3,
+   0
+  ],
+  "2021-06": [
+   5,
+   0
+  ],
+  "2021-07": [
+   8,
+   2
+  ],
+  "2021-08": [
+   4,
+   0
+  ],
+  "2021-09": [
+   3,
+   1
+  ],
+  "2021-10": [
+   5,
+   0
+  ],
+  "2021-11": [
+   2,
+   1
+  ],
+  "2021-12": [
+   5,
+   0
+  ],
+  "2022-01": [
+   1,
+   0
+  ],
+  "2022-02": [
+   5,
+   0
+  ],
+  "2022-03": [
+   13,
+   0
+  ],
+  "2022-04": [
+   11,
+   1
+  ],
+  "2022-05": [
+   8,
+   0
+  ],
+  "2022-06": [
+   8,
+   0
+  ],
+  "2022-07": [
+   13,
+   2
+  ],
+  "2022-08": [
+   5,
+   0
+  ],
+  "2022-09": [
+   24,
+   2
+  ],
+  "2022-10": [
+   24,
+   1
+  ],
+  "2022-11": [
+   27,
+   6
+  ],
+  "2022-12": [
+   19,
+   5
+  ],
+  "2023-01": [
+   20,
+   4
+  ],
+  "2023-02": [
+   11,
+   0
+  ],
+  "2023-03": [
+   20,
+   2
+  ],
+  "2023-04": [
+   16,
+   0
+  ],
+  "2023-05": [
+   13,
+   1
+  ],
+  "2023-06": [
+   17,
+   4
+  ],
+  "2023-07": [
+   4,
+   0
+  ],
+  "2023-08": [
+   9,
+   1
+  ],
+  "2023-09": [
+   6,
+   0
+  ],
+  "2023-10": [
+   9,
+   0
+  ],
+  "2023-11": [
+   15,
+   0
+  ],
+  "2023-12": [
+   15,
+   0
+  ],
+  "2024-01": [
+   17,
+   0
+  ],
+  "2024-02": [
+   11,
+   0
+  ],
+  "2024-03": [
+   19,
+   0
+  ],
+  "2024-04": [
+   9,
+   0
+  ],
+  "2024-05": [
+   13,
+   3
+  ],
+  "2024-06": [
+   17,
+   1
+  ],
+  "2024-07": [
+   23,
+   10
+  ],
+  "2024-08": [
+   41,
+   3
+  ],
+  "2024-09": [
+   28,
+   2
+  ],
+  "2024-10": [
+   29,
+   3
+  ],
+  "2024-11": [
+   30,
+   2
+  ],
+  "2024-12": [
+   19,
+   0
+  ],
+  "2025-01": [
+   22,
+   1
+  ],
+  "2025-02": [
+   15,
+   2
+  ],
+  "2025-03": [
+   21,
+   1
+  ],
+  "2025-04": [
+   20,
+   2
+  ],
+  "2025-05": [
+   13,
+   0
+  ],
+  "2025-06": [
+   9,
+   2
+  ],
+  "2025-07": [
+   20,
+   2
+  ],
+  "2025-08": [
+   22,
+   5
+  ],
+  "2025-09": [
+   30,
+   1
+  ],
+  "2025-10": [
+   125,
+   13
+  ],
+  "2025-11": [
+   129,
+   12
+  ],
+  "2025-12": [
+   88,
+   8
+  ],
+  "2026-01": [
+   75,
+   7
+  ],
+  "2026-02": [
+   36,
+   1
+  ],
+  "2026-03": [
+   166,
+   15
+  ],
+  "2026-04": [
+   64,
+   4
+  ],
+  "2026-05": [
+   206,
+   22
+  ],
+  "2026-06": [
+   209,
+   18
+  ],
+  "2026-07": [
+   228,
+   25
+  ],
+  "2026-08": [
+   246,
+   27
+  ],
+  "2026-09": [
+   241,
+   37
+  ],
+  "2026-10": [
+   5,
+   0
+  ]
+ },
+ "soru": {
+  "VitrA": {
+   "n": 1090,
+   "cevapli": 99.8,
+   "medyan_saat": 1.1,
+   "24s_ici": 98.3,
+   "resmi_cevap": 26.7,
+   "tema": [
+    [
+     "uyum",
+     348,
+     31.9
+    ],
+    [
+     "diger",
+     235,
+     21.6
+    ],
+    [
+     "olcu",
+     206,
+     18.9
+    ],
+    [
+     "icerik",
+     200,
+     18.3
+    ],
+    [
+     "teknik",
+     176,
+     16.1
+    ],
+    [
+     "montaj",
+     172,
+     15.8
+    ],
+    [
+     "renk",
+     73,
+     6.7
+    ],
+    [
+     "stok",
+     61,
+     5.6
+    ],
+    [
+     "garanti",
+     57,
+     5.2
+    ],
+    [
+     "fiyat",
+     6,
+     0.6
+    ]
+   ],
+   "kanal_profil": {
+    "Trendyol": {
+     "n": 958,
+     "cevapli": 99.8,
+     "medyan_saat": 1.0,
+     "24s_ici": 99.0,
+     "resmi_cevap": 26.3,
+     "tema": [
+      [
+       "uyum",
+       297,
+       31.0
+      ],
+      [
+       "diger",
+       220,
+       23.0
+      ],
+      [
+       "olcu",
+       178,
+       18.6
+      ],
+      [
+       "icerik",
+       178,
+       18.6
+      ],
+      [
+       "montaj",
+       155,
+       16.2
+      ],
+      [
+       "teknik",
+       148,
+       15.4
+      ],
+      [
+       "renk",
+       68,
+       7.1
+      ],
+      [
+       "stok",
+       57,
+       5.9
+      ],
+      [
+       "garanti",
+       54,
+       5.6
+      ],
+      [
+       "fiyat",
+       4,
+       0.4
+      ]
+     ]
+    },
+    "Hepsiburada": {
+     "n": 132,
+     "cevapli": 100.0,
+     "medyan_saat": 7.6,
+     "24s_ici": 93.2,
+     "resmi_cevap": 29.5,
+     "tema": [
+      [
+       "uyum",
+       51,
+       38.6
+      ],
+      [
+       "teknik",
+       28,
+       21.2
+      ],
+      [
+       "olcu",
+       28,
+       21.2
+      ],
+      [
+       "icerik",
+       22,
+       16.7
+      ],
+      [
+       "montaj",
+       17,
+       12.9
+      ],
+      [
+       "diger",
+       15,
+       11.4
+      ],
+      [
+       "renk",
+       5,
+       3.8
+      ],
+      [
+       "stok",
+       4,
+       3.0
+      ],
+      [
+       "garanti",
+       3,
+       2.3
+      ],
+      [
+       "fiyat",
+       2,
+       1.5
+      ]
+     ]
+    }
+   }
+  },
+  "Artema": {
+   "n": 827,
+   "cevapli": 99.9,
+   "medyan_saat": 1.0,
+   "24s_ici": 97.1,
+   "resmi_cevap": 15.1,
+   "tema": [
+    [
+     "diger",
+     207,
+     25.0
+    ],
+    [
+     "teknik",
+     190,
+     23.0
+    ],
+    [
+     "olcu",
+     170,
+     20.6
+    ],
+    [
+     "uyum",
+     169,
+     20.4
+    ],
+    [
+     "icerik",
+     165,
+     20.0
+    ],
+    [
+     "montaj",
+     112,
+     13.5
+    ],
+    [
+     "garanti",
+     76,
+     9.2
+    ],
+    [
+     "stok",
+     38,
+     4.6
+    ],
+    [
+     "renk",
+     34,
+     4.1
+    ],
+    [
+     "fiyat",
+     2,
+     0.2
+    ]
+   ],
+   "kanal_profil": {
+    "Trendyol": {
+     "n": 685,
+     "cevapli": 99.9,
+     "medyan_saat": 0.8,
+     "24s_ici": 98.0,
+     "resmi_cevap": 14.3,
+     "tema": [
+      [
+       "diger",
+       176,
+       25.7
+      ],
+      [
+       "icerik",
+       152,
+       22.2
+      ],
+      [
+       "teknik",
+       145,
+       21.2
+      ],
+      [
+       "olcu",
+       141,
+       20.6
+      ],
+      [
+       "uyum",
+       140,
+       20.4
+      ],
+      [
+       "montaj",
+       89,
+       13.0
+      ],
+      [
+       "garanti",
+       57,
+       8.3
+      ],
+      [
+       "stok",
+       37,
+       5.4
+      ],
+      [
+       "renk",
+       23,
+       3.4
+      ],
+      [
+       "fiyat",
+       2,
+       0.3
+      ]
+     ]
+    },
+    "Hepsiburada": {
+     "n": 142,
+     "cevapli": 100.0,
+     "medyan_saat": 5.1,
+     "24s_ici": 93.0,
+     "resmi_cevap": 19.0,
+     "tema": [
+      [
+       "teknik",
+       45,
+       31.7
+      ],
+      [
+       "diger",
+       31,
+       21.8
+      ],
+      [
+       "uyum",
+       29,
+       20.4
+      ],
+      [
+       "olcu",
+       29,
+       20.4
+      ],
+      [
+       "montaj",
+       23,
+       16.2
+      ],
+      [
+       "garanti",
+       19,
+       13.4
+      ],
+      [
+       "icerik",
+       13,
+       9.2
+      ],
+      [
+       "renk",
+       11,
+       7.7
+      ],
+      [
+       "stok",
+       1,
+       0.7
+      ]
+     ]
+    }
+   }
+  },
+  "Creavit": {
+   "n": 129,
+   "cevapli": 100.0,
+   "medyan_saat": 3,
+   "24s_ici": 93.8,
+   "resmi_cevap": 0.0,
+   "tema": [
+    [
+     "uyum",
+     29,
+     22.5
+    ],
+    [
+     "olcu",
+     28,
+     21.7
+    ],
+    [
+     "diger",
+     27,
+     20.9
+    ],
+    [
+     "teknik",
+     26,
+     20.2
+    ],
+    [
+     "icerik",
+     23,
+     17.8
+    ],
+    [
+     "montaj",
+     16,
+     12.4
+    ],
+    [
+     "garanti",
+     15,
+     11.6
+    ],
+    [
+     "stok",
+     4,
+     3.1
+    ],
+    [
+     "renk",
+     4,
+     3.1
+    ]
+   ],
+   "kanal_profil": {
+    "Trendyol": {
+     "n": 80,
+     "cevapli": 100.0,
+     "medyan_saat": 1.0,
+     "24s_ici": 98.8,
+     "resmi_cevap": 0.0,
+     "tema": [
+      [
+       "diger",
+       23,
+       28.8
+      ],
+      [
+       "uyum",
+       15,
+       18.8
+      ],
+      [
+       "teknik",
+       15,
+       18.8
+      ],
+      [
+       "icerik",
+       14,
+       17.5
+      ],
+      [
+       "olcu",
+       13,
+       16.2
+      ],
+      [
+       "montaj",
+       9,
+       11.2
+      ],
+      [
+       "garanti",
+       4,
+       5.0
+      ],
+      [
+       "renk",
+       3,
+       3.8
+      ],
+      [
+       "stok",
+       2,
+       2.5
+      ]
+     ]
+    },
+    "Hepsiburada": {
+     "n": 49,
+     "cevapli": 100.0,
+     "medyan_saat": 6.6,
+     "24s_ici": 85.7,
+     "resmi_cevap": 0.0,
+     "tema": [
+      [
+       "olcu",
+       15,
+       30.6
+      ],
+      [
+       "uyum",
+       14,
+       28.6
+      ],
+      [
+       "garanti",
+       11,
+       22.4
+      ],
+      [
+       "teknik",
+       11,
+       22.4
+      ],
+      [
+       "icerik",
+       9,
+       18.4
+      ],
+      [
+       "montaj",
+       7,
+       14.3
+      ],
+      [
+       "diger",
+       4,
+       8.2
+      ],
+      [
+       "stok",
+       2,
+       4.1
+      ],
+      [
+       "renk",
+       1,
+       2.0
+      ]
+     ]
+    }
+   }
+  },
+  "Turkuaz": {
+   "n": 205,
+   "cevapli": 100.0,
+   "medyan_saat": 0.7,
+   "24s_ici": 98.5,
+   "resmi_cevap": 0.0,
+   "tema": [
+    [
+     "olcu",
+     59,
+     28.8
+    ],
+    [
+     "icerik",
+     53,
+     25.9
+    ],
+    [
+     "diger",
+     45,
+     22.0
+    ],
+    [
+     "montaj",
+     35,
+     17.1
+    ],
+    [
+     "teknik",
+     24,
+     11.7
+    ],
+    [
+     "uyum",
+     24,
+     11.7
+    ],
+    [
+     "renk",
+     14,
+     6.8
+    ],
+    [
+     "garanti",
+     7,
+     3.4
+    ],
+    [
+     "stok",
+     2,
+     1.0
+    ],
+    [
+     "fiyat",
+     1,
+     0.5
+    ]
+   ],
+   "kanal_profil": {
+    "Trendyol": {
+     "n": 140,
+     "cevapli": 100.0,
+     "medyan_saat": 0.2,
+     "24s_ici": 100.0,
+     "resmi_cevap": 0.0,
+     "tema": [
+      [
+       "icerik",
+       37,
+       26.4
+      ],
+      [
+       "olcu",
+       33,
+       23.6
+      ],
+      [
+       "diger",
+       33,
+       23.6
+      ],
+      [
+       "montaj",
+       26,
+       18.6
+      ],
+      [
+       "teknik",
+       14,
+       10.0
+      ],
+      [
+       "renk",
+       13,
+       9.3
+      ],
+      [
+       "uyum",
+       13,
+       9.3
+      ],
+      [
+       "garanti",
+       6,
+       4.3
+      ],
+      [
+       "stok",
+       1,
+       0.7
+      ]
+     ]
+    },
+    "Hepsiburada": {
+     "n": 65,
+     "cevapli": 100.0,
+     "medyan_saat": 6.1,
+     "24s_ici": 95.4,
+     "resmi_cevap": 0.0,
+     "tema": [
+      [
+       "olcu",
+       26,
+       40.0
+      ],
+      [
+       "icerik",
+       16,
+       24.6
+      ],
+      [
+       "diger",
+       12,
+       18.5
+      ],
+      [
+       "uyum",
+       11,
+       16.9
+      ],
+      [
+       "teknik",
+       10,
+       15.4
+      ],
+      [
+       "montaj",
+       9,
+       13.8
+      ],
+      [
+       "renk",
+       1,
+       1.5
+      ],
+      [
+       "fiyat",
+       1,
+       1.5
+      ],
+      [
+       "garanti",
+       1,
+       1.5
+      ],
+      [
+       "stok",
+       1,
+       1.5
+      ]
+     ]
+    }
+   }
+  },
+  "Visam": {
+   "n": 182,
+   "cevapli": 100.0,
+   "medyan_saat": 1.0,
+   "24s_ici": 98.4,
+   "resmi_cevap": 0.0,
+   "tema": [
+    [
+     "uyum",
+     63,
+     34.6
+    ],
+    [
+     "olcu",
+     46,
+     25.3
+    ],
+    [
+     "icerik",
+     42,
+     23.1
+    ],
+    [
+     "teknik",
+     33,
+     18.1
+    ],
+    [
+     "diger",
+     33,
+     18.1
+    ],
+    [
+     "montaj",
+     28,
+     15.4
+    ],
+    [
+     "stok",
+     8,
+     4.4
+    ],
+    [
+     "garanti",
+     5,
+     2.7
+    ],
+    [
+     "renk",
+     5,
+     2.7
+    ],
+    [
+     "fiyat",
+     1,
+     0.5
+    ]
+   ],
+   "kanal_profil": {
+    "Trendyol": {
+     "n": 120,
+     "cevapli": 100.0,
+     "medyan_saat": 1.0,
+     "24s_ici": 97.5,
+     "resmi_cevap": 0.0,
+     "tema": [
+      [
+       "icerik",
+       34,
+       28.3
+      ],
+      [
+       "uyum",
+       31,
+       25.8
+      ],
+      [
+       "teknik",
+       26,
+       21.7
+      ],
+      [
+       "olcu",
+       25,
+       20.8
+      ],
+      [
+       "diger",
+       20,
+       16.7
+      ],
+      [
+       "montaj",
+       14,
+       11.7
+      ],
+      [
+       "stok",
+       6,
+       5.0
+      ],
+      [
+       "renk",
+       4,
+       3.3
+      ],
+      [
+       "garanti",
+       2,
+       1.7
+      ]
+     ]
+    },
+    "Hepsiburada": {
+     "n": 62,
+     "cevapli": 100.0,
+     "medyan_saat": 1.0,
+     "24s_ici": 100.0,
+     "resmi_cevap": 0.0,
+     "tema": [
+      [
+       "uyum",
+       32,
+       51.6
+      ],
+      [
+       "olcu",
+       21,
+       33.9
+      ],
+      [
+       "montaj",
+       14,
+       22.6
+      ],
+      [
+       "diger",
+       13,
+       21.0
+      ],
+      [
+       "icerik",
+       8,
+       12.9
+      ],
+      [
+       "teknik",
+       7,
+       11.3
+      ],
+      [
+       "garanti",
+       3,
+       4.8
+      ],
+      [
+       "stok",
+       2,
+       3.2
+      ],
+      [
+       "fiyat",
+       1,
+       1.6
+      ],
+      [
+       "renk",
+       1,
+       1.6
+      ]
+     ]
+    }
+   }
+  },
+  "E.C.A.": {
+   "n": 146,
+   "cevapli": 100.0,
+   "medyan_saat": 1.0,
+   "24s_ici": 95.2,
+   "resmi_cevap": 0.0,
+   "tema": [
+    [
+     "diger",
+     36,
+     24.7
+    ],
+    [
+     "uyum",
+     36,
+     24.7
+    ],
+    [
+     "teknik",
+     35,
+     24.0
+    ],
+    [
+     "olcu",
+     32,
+     21.9
+    ],
+    [
+     "icerik",
+     30,
+     20.5
+    ],
+    [
+     "montaj",
+     17,
+     11.6
+    ],
+    [
+     "garanti",
+     14,
+     9.6
+    ],
+    [
+     "stok",
+     7,
+     4.8
+    ],
+    [
+     "renk",
+     7,
+     4.8
+    ]
+   ],
+   "kanal_profil": {
+    "Trendyol": {
+     "n": 120,
+     "cevapli": 100.0,
+     "medyan_saat": 0.6,
+     "24s_ici": 94.2,
+     "resmi_cevap": 0.0,
+     "tema": [
+      [
+       "uyum",
+       34,
+       28.3
+      ],
+      [
+       "diger",
+       30,
+       25.0
+      ],
+      [
+       "olcu",
+       27,
+       22.5
+      ],
+      [
+       "teknik",
+       27,
+       22.5
+      ],
+      [
+       "icerik",
+       24,
+       20.0
+      ],
+      [
+       "montaj",
+       14,
+       11.7
+      ],
+      [
+       "renk",
+       7,
+       5.8
+      ],
+      [
+       "garanti",
+       7,
+       5.8
+      ],
+      [
+       "stok",
+       6,
+       5.0
+      ]
+     ]
+    },
+    "Hepsiburada": {
+     "n": 26,
+     "cevapli": 100.0,
+     "medyan_saat": 3.6,
+     "24s_ici": 100.0,
+     "resmi_cevap": 0.0,
+     "tema": [
+      [
+       "teknik",
+       8,
+       30.8
+      ],
+      [
+       "garanti",
+       7,
+       26.9
+      ],
+      [
+       "diger",
+       6,
+       23.1
+      ],
+      [
+       "icerik",
+       6,
+       23.1
+      ],
+      [
+       "olcu",
+       5,
+       19.2
+      ],
+      [
+       "montaj",
+       3,
+       11.5
+      ],
+      [
+       "uyum",
+       2,
+       7.7
+      ],
+      [
+       "stok",
+       1,
+       3.8
+      ]
+     ]
+    }
+   }
+  },
+  "Durul": {
+   "n": 160,
+   "cevapli": 100.0,
+   "medyan_saat": 2.0,
+   "24s_ici": 99.4,
+   "resmi_cevap": 0.0,
+   "tema": [
+    [
+     "diger",
+     60,
+     37.5
+    ],
+    [
+     "olcu",
+     56,
+     35.0
+    ],
+    [
+     "icerik",
+     26,
+     16.2
+    ],
+    [
+     "montaj",
+     24,
+     15.0
+    ],
+    [
+     "teknik",
+     13,
+     8.1
+    ],
+    [
+     "stok",
+     12,
+     7.5
+    ],
+    [
+     "uyum",
+     12,
+     7.5
+    ],
+    [
+     "renk",
+     8,
+     5.0
+    ],
+    [
+     "garanti",
+     5,
+     3.1
+    ],
+    [
+     "fiyat",
+     3,
+     1.9
+    ]
+   ],
+   "kanal_profil": {
+    "Trendyol": {
+     "n": 80,
+     "cevapli": 100.0,
+     "medyan_saat": 1.0,
+     "24s_ici": 100.0,
+     "resmi_cevap": 0.0,
+     "tema": [
+      [
+       "diger",
+       39,
+       48.8
+      ],
+      [
+       "icerik",
+       19,
+       23.8
+      ],
+      [
+       "olcu",
+       14,
+       17.5
+      ],
+      [
+       "uyum",
+       9,
+       11.2
+      ],
+      [
+       "teknik",
+       6,
+       7.5
+      ],
+      [
+       "montaj",
+       5,
+       6.2
+      ],
+      [
+       "renk",
+       4,
+       5.0
+      ],
+      [
+       "garanti",
+       2,
+       2.5
+      ],
+      [
+       "stok",
+       1,
+       1.2
+      ]
+     ]
+    },
+    "Hepsiburada": {
+     "n": 80,
+     "cevapli": 100.0,
+     "medyan_saat": 7.0,
+     "24s_ici": 98.8,
+     "resmi_cevap": 0.0,
+     "tema": [
+      [
+       "olcu",
+       42,
+       52.5
+      ],
+      [
+       "diger",
+       21,
+       26.2
+      ],
+      [
+       "montaj",
+       19,
+       23.8
+      ],
+      [
+       "stok",
+       11,
+       13.8
+      ],
+      [
+       "icerik",
+       7,
+       8.8
+      ],
+      [
+       "teknik",
+       7,
+       8.8
+      ],
+      [
+       "renk",
+       4,
+       5.0
+      ],
+      [
+       "uyum",
+       3,
+       3.8
+      ],
+      [
+       "fiyat",
+       3,
+       3.8
+      ],
+      [
+       "garanti",
+       3,
+       3.8
+      ]
+     ]
+    }
+   }
+  },
+  "Turavit": {
+   "n": 128,
+   "cevapli": 100.0,
+   "medyan_saat": 0.5,
+   "24s_ici": 100.0,
+   "resmi_cevap": 0.0,
+   "tema": [
+    [
+     "olcu",
+     37,
+     28.9
+    ],
+    [
+     "diger",
+     26,
+     20.3
+    ],
+    [
+     "icerik",
+     25,
+     19.5
+    ],
+    [
+     "teknik",
+     23,
+     18.0
+    ],
+    [
+     "montaj",
+     21,
+     16.4
+    ],
+    [
+     "uyum",
+     21,
+     16.4
+    ],
+    [
+     "renk",
+     9,
+     7.0
+    ],
+    [
+     "stok",
+     7,
+     5.5
+    ],
+    [
+     "garanti",
+     3,
+     2.3
+    ]
+   ],
+   "kanal_profil": {
+    "Trendyol": {
+     "n": 120,
+     "cevapli": 100.0,
+     "medyan_saat": 0.4,
+     "24s_ici": 100.0,
+     "resmi_cevap": 0.0,
+     "tema": [
+      [
+       "olcu",
+       34,
+       28.3
+      ],
+      [
+       "diger",
+       25,
+       20.8
+      ],
+      [
+       "icerik",
+       23,
+       19.2
+      ],
+      [
+       "teknik",
+       23,
+       19.2
+      ],
+      [
+       "uyum",
+       20,
+       16.7
+      ],
+      [
+       "montaj",
+       19,
+       15.8
+      ],
+      [
+       "renk",
+       9,
+       7.5
+      ],
+      [
+       "stok",
+       5,
+       4.2
+      ],
+      [
+       "garanti",
+       2,
+       1.7
+      ]
+     ]
+    },
+    "Hepsiburada": {
+     "n": 8,
+     "cevapli": 100.0,
+     "medyan_saat": 10.2,
+     "24s_ici": 100.0,
+     "resmi_cevap": 0.0,
+     "tema": [
+      [
+       "olcu",
+       3,
+       37.5
+      ],
+      [
+       "stok",
+       2,
+       25.0
+      ],
+      [
+       "montaj",
+       2,
+       25.0
+      ],
+      [
+       "icerik",
+       2,
+       25.0
+      ],
+      [
+       "garanti",
+       1,
+       12.5
+      ],
+      [
+       "diger",
+       1,
+       12.5
+      ],
+      [
+       "uyum",
+       1,
+       12.5
+      ]
+     ]
+    }
+   }
+  },
+  "Kale": {
+   "n": 91,
+   "cevapli": 100.0,
+   "medyan_saat": 0.8,
+   "24s_ici": 92.3,
+   "resmi_cevap": 0.0,
+   "tema": [
+    [
+     "uyum",
+     33,
+     36.3
+    ],
+    [
+     "olcu",
+     26,
+     28.6
+    ],
+    [
+     "diger",
+     15,
+     16.5
+    ],
+    [
+     "icerik",
+     14,
+     15.4
+    ],
+    [
+     "teknik",
+     11,
+     12.1
+    ],
+    [
+     "montaj",
+     7,
+     7.7
+    ],
+    [
+     "garanti",
+     7,
+     7.7
+    ],
+    [
+     "stok",
+     6,
+     6.6
+    ],
+    [
+     "renk",
+     3,
+     3.3
+    ]
+   ],
+   "kanal_profil": {
+    "Trendyol": {
+     "n": 38,
+     "cevapli": 100.0,
+     "medyan_saat": 0.8,
+     "24s_ici": 94.7,
+     "resmi_cevap": 0.0,
+     "tema": [
+      [
+       "diger",
+       11,
+       28.9
+      ],
+      [
+       "icerik",
+       9,
+       23.7
+      ],
+      [
+       "uyum",
+       9,
+       23.7
+      ],
+      [
+       "olcu",
+       8,
+       21.1
+      ],
+      [
+       "teknik",
+       4,
+       10.5
+      ],
+      [
+       "garanti",
+       3,
+       7.9
+      ],
+      [
+       "stok",
+       2,
+       5.3
+      ],
+      [
+       "montaj",
+       1,
+       2.6
+      ],
+      [
+       "renk",
+       1,
+       2.6
+      ]
+     ]
+    },
+    "Hepsiburada": {
+     "n": 53,
+     "cevapli": 100.0,
+     "medyan_saat": 0.9,
+     "24s_ici": 90.6,
+     "resmi_cevap": 0.0,
+     "tema": [
+      [
+       "uyum",
+       24,
+       45.3
+      ],
+      [
+       "olcu",
+       18,
+       34.0
+      ],
+      [
+       "teknik",
+       7,
+       13.2
+      ],
+      [
+       "montaj",
+       6,
+       11.3
+      ],
+      [
+       "icerik",
+       5,
+       9.4
+      ],
+      [
+       "garanti",
+       4,
+       7.5
+      ],
+      [
+       "diger",
+       4,
+       7.5
+      ],
+      [
+       "stok",
+       4,
+       7.5
+      ],
+      [
+       "renk",
+       2,
+       3.8
+      ]
+     ]
+    }
+   }
+  },
+  "TEMA": {
+   "n": 58,
+   "cevapli": 100.0,
+   "medyan_saat": 1.3,
+   "24s_ici": 93.1,
+   "resmi_cevap": 0.0,
+   "tema": [
+    [
+     "uyum",
+     20,
+     34.5
+    ],
+    [
+     "olcu",
+     19,
+     32.8
+    ],
+    [
+     "icerik",
+     13,
+     22.4
+    ],
+    [
+     "teknik",
+     10,
+     17.2
+    ],
+    [
+     "montaj",
+     9,
+     15.5
+    ],
+    [
+     "garanti",
+     5,
+     8.6
+    ],
+    [
+     "diger",
+     5,
+     8.6
+    ],
+    [
+     "stok",
+     4,
+     6.9
+    ],
+    [
+     "renk",
+     1,
+     1.7
+    ]
+   ],
+   "kanal_profil": {
+    "Trendyol": {
+     "n": 0,
+     "cevapli": null,
+     "medyan_saat": null,
+     "24s_ici": null,
+     "resmi_cevap": null,
+     "tema": []
+    },
+    "Hepsiburada": {
+     "n": 58,
+     "cevapli": 100.0,
+     "medyan_saat": 1.3,
+     "24s_ici": 93.1,
+     "resmi_cevap": 0.0,
+     "tema": [
+      [
+       "uyum",
+       20,
+       34.5
+      ],
+      [
+       "olcu",
+       19,
+       32.8
+      ],
+      [
+       "icerik",
+       13,
+       22.4
+      ],
+      [
+       "teknik",
+       10,
+       17.2
+      ],
+      [
+       "montaj",
+       9,
+       15.5
+      ],
+      [
+       "garanti",
+       5,
+       8.6
+      ],
+      [
+       "diger",
+       5,
+       8.6
+      ],
+      [
+       "stok",
+       4,
+       6.9
+      ],
+      [
+       "renk",
+       1,
+       1.7
+      ]
+     ]
+    }
+   }
+  },
+  "Newarc": {
+   "n": 20,
+   "cevapli": 100.0,
+   "medyan_saat": 0.3,
+   "24s_ici": 100.0,
+   "resmi_cevap": 0.0,
+   "tema": [
+    [
+     "montaj",
+     10,
+     50.0
+    ],
+    [
+     "teknik",
+     8,
+     40.0
+    ],
+    [
+     "olcu",
+     8,
+     40.0
+    ],
+    [
+     "uyum",
+     5,
+     25.0
+    ],
+    [
+     "icerik",
+     4,
+     20.0
+    ],
+    [
+     "diger",
+     2,
+     10.0
+    ]
+   ],
+   "kanal_profil": {
+    "Trendyol": {
+     "n": 0,
+     "cevapli": null,
+     "medyan_saat": null,
+     "24s_ici": null,
+     "resmi_cevap": null,
+     "tema": []
+    },
+    "Hepsiburada": {
+     "n": 20,
+     "cevapli": 100.0,
+     "medyan_saat": 0.3,
+     "24s_ici": 100.0,
+     "resmi_cevap": 0.0,
+     "tema": [
+      [
+       "montaj",
+       10,
+       50.0
+      ],
+      [
+       "teknik",
+       8,
+       40.0
+      ],
+      [
+       "olcu",
+       8,
+       40.0
+      ],
+      [
+       "uyum",
+       5,
+       25.0
+      ],
+      [
+       "icerik",
+       4,
+       20.0
+      ],
+      [
+       "diger",
+       2,
+       10.0
+      ]
+     ]
+    }
+   }
+  },
+  "Grohe": {
+   "n": 36,
+   "cevapli": 100.0,
+   "medyan_saat": 0.9,
+   "24s_ici": 97.2,
+   "resmi_cevap": 0.0,
+   "tema": [
+    [
+     "teknik",
+     11,
+     30.6
+    ],
+    [
+     "icerik",
+     9,
+     25.0
+    ],
+    [
+     "garanti",
+     9,
+     25.0
+    ],
+    [
+     "diger",
+     7,
+     19.4
+    ],
+    [
+     "uyum",
+     5,
+     13.9
+    ],
+    [
+     "montaj",
+     5,
+     13.9
+    ],
+    [
+     "olcu",
+     3,
+     8.3
+    ]
+   ],
+   "kanal_profil": {
+    "Trendyol": {
+     "n": 16,
+     "cevapli": 100.0,
+     "medyan_saat": 0.5,
+     "24s_ici": 100.0,
+     "resmi_cevap": 0.0,
+     "tema": [
+      [
+       "icerik",
+       5,
+       31.2
+      ],
+      [
+       "diger",
+       5,
+       31.2
+      ],
+      [
+       "garanti",
+       4,
+       25.0
+      ],
+      [
+       "olcu",
+       3,
+       18.8
+      ],
+      [
+       "teknik",
+       2,
+       12.5
+      ],
+      [
+       "montaj",
+       2,
+       12.5
+      ],
+      [
+       "uyum",
+       2,
+       12.5
+      ]
+     ]
+    },
+    "Hepsiburada": {
+     "n": 20,
+     "cevapli": 100.0,
+     "medyan_saat": 1.5,
+     "24s_ici": 95.0,
+     "resmi_cevap": 0.0,
+     "tema": [
+      [
+       "teknik",
+       9,
+       45.0
+      ],
+      [
+       "garanti",
+       5,
+       25.0
+      ],
+      [
+       "icerik",
+       4,
+       20.0
+      ],
+      [
+       "uyum",
+       3,
+       15.0
+      ],
+      [
+       "montaj",
+       3,
+       15.0
+      ],
+      [
+       "diger",
+       2,
+       10.0
+      ]
+     ]
+    }
+   }
+  },
+  "Serel": {
+   "n": 41,
+   "cevapli": 100.0,
+   "medyan_saat": 2,
+   "24s_ici": 92.7,
+   "resmi_cevap": 0.0,
+   "tema": [
+    [
+     "uyum",
+     16,
+     39.0
+    ],
+    [
+     "olcu",
+     11,
+     26.8
+    ],
+    [
+     "diger",
+     8,
+     19.5
+    ],
+    [
+     "garanti",
+     8,
+     19.5
+    ],
+    [
+     "icerik",
+     7,
+     17.1
+    ],
+    [
+     "teknik",
+     6,
+     14.6
+    ],
+    [
+     "montaj",
+     3,
+     7.3
+    ],
+    [
+     "renk",
+     2,
+     4.9
+    ],
+    [
+     "stok",
+     1,
+     2.4
+    ]
+   ],
+   "kanal_profil": {
+    "Trendyol": {
+     "n": 20,
+     "cevapli": 100.0,
+     "medyan_saat": 0.7,
+     "24s_ici": 100.0,
+     "resmi_cevap": 0.0,
+     "tema": [
+      [
+       "uyum",
+       12,
+       60.0
+      ],
+      [
+       "garanti",
+       7,
+       35.0
+      ],
+      [
+       "icerik",
+       5,
+       25.0
+      ],
+      [
+       "teknik",
+       4,
+       20.0
+      ],
+      [
+       "diger",
+       4,
+       20.0
+      ],
+      [
+       "montaj",
+       1,
+       5.0
+      ],
+      [
+       "renk",
+       1,
+       5.0
+      ]
+     ]
+    },
+    "Hepsiburada": {
+     "n": 21,
+     "cevapli": 100.0,
+     "medyan_saat": 12.0,
+     "24s_ici": 85.7,
+     "resmi_cevap": 0.0,
+     "tema": [
+      [
+       "olcu",
+       11,
+       52.4
+      ],
+      [
+       "diger",
+       4,
+       19.0
+      ],
+      [
+       "uyum",
+       4,
+       19.0
+      ],
+      [
+       "teknik",
+       2,
+       9.5
+      ],
+      [
+       "icerik",
+       2,
+       9.5
+      ],
+      [
+       "montaj",
+       2,
+       9.5
+      ],
+      [
+       "garanti",
+       1,
+       4.8
+      ],
+      [
+       "renk",
+       1,
+       4.8
+      ],
+      [
+       "stok",
+       1,
+       4.8
+      ]
+     ]
+    }
+   }
+  },
+  "Diğer markalar": {
+   "n": 1799,
+   "cevapli": 100.0,
+   "medyan_saat": 1,
+   "24s_ici": 96.1,
+   "resmi_cevap": 0.0,
+   "tema": [
+    [
+     "diger",
+     474,
+     26.3
+    ],
+    [
+     "icerik",
+     376,
+     20.9
+    ],
+    [
+     "olcu",
+     350,
+     19.5
+    ],
+    [
+     "uyum",
+     328,
+     18.2
+    ],
+    [
+     "montaj",
+     292,
+     16.2
+    ],
+    [
+     "teknik",
+     290,
+     16.1
+    ],
+    [
+     "stok",
+     118,
+     6.6
+    ],
+    [
+     "renk",
+     114,
+     6.3
+    ],
+    [
+     "garanti",
+     87,
+     4.8
+    ],
+    [
+     "fiyat",
+     3,
+     0.2
+    ]
+   ],
+   "kanal_profil": {
+    "Trendyol": {
+     "n": 1450,
+     "cevapli": 100.0,
+     "medyan_saat": 1.0,
+     "24s_ici": 97.4,
+     "resmi_cevap": 0.0,
+     "tema": [
+      [
+       "diger",
+       410,
+       28.3
+      ],
+      [
+       "icerik",
+       337,
+       23.2
+      ],
+      [
+       "olcu",
+       262,
+       18.1
+      ],
+      [
+       "uyum",
+       247,
+       17.0
+      ],
+      [
+       "teknik",
+       218,
+       15.0
+      ],
+      [
+       "montaj",
+       216,
+       14.9
+      ],
+      [
+       "renk",
+       101,
+       7.0
+      ],
+      [
+       "stok",
+       99,
+       6.8
+      ],
+      [
+       "garanti",
+       67,
+       4.6
+      ]
+     ]
+    },
+    "Hepsiburada": {
+     "n": 349,
+     "cevapli": 100.0,
+     "medyan_saat": 3.8,
+     "24s_ici": 90.3,
+     "resmi_cevap": 0.0,
+     "tema": [
+      [
+       "olcu",
+       88,
+       25.2
+      ],
+      [
+       "uyum",
+       81,
+       23.2
+      ],
+      [
+       "montaj",
+       76,
+       21.8
+      ],
+      [
+       "teknik",
+       72,
+       20.6
+      ],
+      [
+       "diger",
+       64,
+       18.3
+      ],
+      [
+       "icerik",
+       39,
+       11.2
+      ],
+      [
+       "garanti",
+       20,
+       5.7
+      ],
+      [
+       "stok",
+       19,
+       5.4
+      ],
+      [
+       "renk",
+       13,
+       3.7
+      ],
+      [
+       "fiyat",
+       3,
+       0.9
+      ]
+     ]
+    }
+   }
+  }
+ },
+ "soru_vg": {
+  "n": 1917,
+  "cevapli": 99.8,
+  "medyan_saat": 1.0,
+  "24s_ici": 97.8,
+  "resmi_cevap": 21.7,
+  "tema": [
+   [
+    "uyum",
+    517,
+    27.0
+   ],
+   [
+    "diger",
+    442,
+    23.1
+   ],
+   [
+    "olcu",
+    376,
+    19.6
+   ],
+   [
+    "teknik",
+    366,
+    19.1
+   ],
+   [
+    "icerik",
+    365,
+    19.0
+   ],
+   [
+    "montaj",
+    284,
+    14.8
+   ],
+   [
+    "garanti",
+    133,
+    6.9
+   ],
+   [
+    "renk",
+    107,
+    5.6
+   ],
+   [
+    "stok",
+    99,
+    5.2
+   ],
+   [
+    "fiyat",
+    8,
+    0.4
+   ]
+  ]
+ },
+ "soru_rakip": {
+  "n": 2995,
+  "cevapli": 100.0,
+  "medyan_saat": 1,
+  "24s_ici": 96.4,
+  "resmi_cevap": 0.0,
+  "tema": [
+   [
+    "diger",
+    738,
+    24.6
+   ],
+   [
+    "olcu",
+    675,
+    22.5
+   ],
+   [
+    "icerik",
+    622,
+    20.8
+   ],
+   [
+    "uyum",
+    592,
+    19.8
+   ],
+   [
+    "teknik",
+    490,
+    16.4
+   ],
+   [
+    "montaj",
+    467,
+    15.6
+   ],
+   [
+    "stok",
+    169,
+    5.6
+   ],
+   [
+    "renk",
+    167,
+    5.6
+   ],
+   [
+    "garanti",
+    165,
+    5.5
+   ],
+   [
+    "fiyat",
+    8,
+    0.3
+   ]
+  ]
+ },
+ "cevaplayan_hb": [
+  [
+   "VitrA resmi mağaza",
+   66
+  ],
+  [
+   "ODRYS",
+   19
+  ],
+  [
+   "Evdema",
+   13
+  ],
+  [
+   "NewBanyo",
+   12
+  ],
+  [
+   "KLC YAPI MALZEMELERİ",
+   10
+  ],
+  [
+   "Ankastrend",
+   7
+  ],
+  [
+   "serhatyapimarket",
+   7
+  ],
+  [
+   "BodrumAkel",
+   6
+  ],
+  [
+   "AYDOĞDU YAPI",
+   6
+  ],
+  [
+   "EnarHome",
+   5
+  ]
+ ]
+}
