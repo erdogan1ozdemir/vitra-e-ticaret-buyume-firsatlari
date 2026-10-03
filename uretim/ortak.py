@@ -148,3 +148,11 @@ def git(hedef):
     """hedef: '#bolum' (bolum kimligi) ya da alt baslik metni."""
     i = hedef[1:] if hedef.startswith("#") else hid(hedef)
     return '<a class="git" href="#%s" aria-label="İlgili bölüme git" title="İlgili bölüme git">→</a>' % i
+
+# ---------------------------------------------------------------- grup etiketi (tablolarda renkli kume rozeti)
+_ETK = {}
+def etk(tr, en, anahtar=None):
+    """Grup / kume degerini renkli rozetle yazar; ayni deger rapor boyunca ayni rengi alir (8 renk dongusu)."""
+    k_ = anahtar or tr
+    if k_ not in _ETK: _ETK[k_] = len(_ETK) % 8 + 1
+    return '<span class="etk e%d">%s</span>' % (_ETK[k_], x(tr, en))

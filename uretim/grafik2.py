@@ -228,7 +228,16 @@ def gruplu(satirlar, seriler, cap="", genislik=880, bicim=f_pay, vurgu=None, sol
 
 
 # ---------------------------------------------------------------- %100 yigilmis
-def yigin(satirlar, seriler, cap="", genislik=880, bicim=f_pay, sol=150, mutlak=False, bh=30, ara=12):
+def _acik(renk):
+    """Dolgu rengi acik mi (koyu yazi gerekir mi)?"""
+    try:
+        r_, g_, b_ = (int(renk[i:i + 2], 16) for i in (1, 3, 5))
+        return (0.299 * r_ + 0.587 * g_ + 0.114 * b_) > 150
+    except Exception:
+        return False
+
+
+def yigin(satirlar, seriler, cap="", genislik=880, bicim=f_pay, sol=150, mutlak=False, bh=30, ara=12, esik=None):
     """satirlar: [(etiket, [pay...])] toplam ~100 ; seriler: [(ad, renk)]. mutlak: olcek en buyuk satir toplamina gore."""
     sag = 50 if mutlak else 14; ust = 4
     n_ = len(satirlar); yukseklik = n_ * (bh + ara) + ust
@@ -242,8 +251,10 @@ def yigin(satirlar, seriler, cap="", genislik=880, bicim=f_pay, sol=150, mutlak=
         for j, v in enumerate(vs):
             w = iw * v / top
             p.append('<rect x="%.1f" y="%.1f" width="%.1f" height="%d" fill="%s" stroke="var(--card)" stroke-width="1"/>' % (xx, y, w, bh, seriler[j][1]))
-            if w > 34 and not mutlak:
-                p.append('<text x="%.1f" y="%.1f" text-anchor="middle" style="font-size:10.5px;font-weight:650" fill="%s">%s</text>' % (xx + w / 2, y + bh * 0.64, "#FFFFFF" if j >= len(vs) // 2 else "#10332F", bicim(v, 0)))
+            goster = (w > 34) if esik is None else (v >= esik and w >= 18)
+            if goster and not mutlak:
+                yazi = ("#10332F" if _acik(seriler[j][1]) else "#FFFFFF") if esik is not None else ("#FFFFFF" if j >= len(vs) // 2 else "#10332F")
+                p.append('<text x="%.1f" y="%.1f" text-anchor="middle" style="font-size:%spx;font-weight:650" fill="%s">%s</text>' % (xx + w / 2, y + bh * 0.64, 11 if w >= 34 else 9.5, yazi, bicim(v, 0)))
             xx += w
         if mutlak:
             p.append('<text class="bv" x="%.1f" y="%.1f">%s</text>' % (xx + 6, y + bh * 0.72, bicim(sum(vs))))

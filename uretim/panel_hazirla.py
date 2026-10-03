@@ -177,8 +177,9 @@ for k, g in E.groupby("kategori"):
                "fav_vit": int(f_.vit.sum()), "gor_vit": int(v_.vit.sum()) if len(v_) else None,
                "gor_pay": float(vv[v_.vit.values].sum() / vv.sum() * 100) if len(v_) and vv.sum() else None, "gor_top": int(vv.sum()) if len(v_) and vv.sum() else None,
                "sat_med": float(s_.ort_fiyat.replace(0, np.nan).median()), "vit_med": float(g[g.vit].drop_duplicates(subset=[c_ for c_ in ("urun_id", "urun", "ad", "baslik") if c_ in g.columns][:1] or None).ort_fiyat.replace(0, np.nan).median()) if g.vit.any() else None,
-               "lider": lider, "lider_n": int((s_.marka == lider).sum()) if lider else 0})
+               "lider": lider, "lider_n": int((s_.marka == lider).sum()) if lider else 0, "siz_tum": int(g.siz.sum())})
 R["enleri"] = en
+R["enleri_liste"] = {k: int(v) for k, v in E.groupby("liste").kategori.nunique().items()}
 vr = E[E.vit]; R["enleri_ozet"] = {"satir": int(len(E)), "liste": int(E.groupby(["kategori", "liste"]).ngroups), "vit": int(len(vr)), "vit_3p": int((~vr.siz).sum()), "siz": int(E.siz.sum()),
                                   "bb_fark_siz": float(((vr[vr.siz].buybox_fiyat / vr[vr.siz].ort_fiyat - 1) * 100).median())}
 # HB

@@ -1412,7 +1412,8 @@
    "sat_med": 187.79,
    "vit_med": null,
    "lider": "ATA HOME",
-   "lider_n": 9
+   "lider_n": 9,
+   "siz_tum": 0
   },
   {
    "kategori": "Banyo Mobilyası",
@@ -1427,7 +1428,8 @@
    "sat_med": 572.465,
    "vit_med": null,
    "lider": "Mowo Home",
-   "lider_n": 9
+   "lider_n": 9,
+   "siz_tum": 0
   },
   {
    "kategori": "Bataryalar & Musluklar",
@@ -1442,7 +1444,8 @@
    "sat_med": 351.97,
    "vit_med": 595.95,
    "lider": "KUSTAR",
-   "lider_n": 9
+   "lider_n": 9,
+   "siz_tum": 0
   },
   {
    "kategori": "Duş Sistemi",
@@ -1457,7 +1460,8 @@
    "sat_med": 285.18,
    "vit_med": 21130.915,
    "lider": "Berev",
-   "lider_n": 8
+   "lider_n": 8,
+   "siz_tum": 0
   },
   {
    "kategori": "Eviye",
@@ -1472,7 +1476,8 @@
    "sat_med": 3100.0,
    "vit_med": null,
    "lider": "Asil Krom",
-   "lider_n": 9
+   "lider_n": 9,
+   "siz_tum": 0
   },
   {
    "kategori": "Klozet",
@@ -1487,7 +1492,8 @@
    "sat_med": 6532.145,
    "vit_med": 15348.21,
    "lider": "Creavit",
-   "lider_n": 8
+   "lider_n": 8,
+   "siz_tum": 13
   },
   {
    "kategori": "Klozet Kapağı",
@@ -1502,7 +1508,8 @@
    "sat_med": 545.68,
    "vit_med": 2024.44,
    "lider": "NKP",
-   "lider_n": 6
+   "lider_n": 6,
+   "siz_tum": 12
   },
   {
    "kategori": "Lavabo",
@@ -1517,7 +1524,8 @@
    "sat_med": 2170.35,
    "vit_med": 5960.0,
    "lider": "Turkuaz",
-   "lider_n": 21
+   "lider_n": 21,
+   "siz_tum": 2
   },
   {
    "kategori": "Rezervuar",
@@ -1532,9 +1540,17 @@
    "sat_med": 193.05,
    "vit_med": 1283.94,
    "lider": "Visam",
-   "lider_n": 11
+   "lider_n": 11,
+   "siz_tum": 7
   }
  ],
+ "enleri_liste": {
+  "En Çok Ciro Getirenler": 9,
+  "En Çok Değerlendirilenler": 8,
+  "En Çok Favorilenenler": 9,
+  "En Çok Görüntülenenler": 9,
+  "En Çok Satılanlar": 9
+ },
  "enleri_ozet": {
   "satir": 2200,
   "liste": 44,

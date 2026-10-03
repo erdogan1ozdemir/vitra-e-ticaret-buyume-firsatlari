@@ -53,6 +53,7 @@ P.append(bolum("yontem", "Yöntem ve Kapsam", "Method and Scope", b_yontem.HTML)
 govde = "\n".join(P)
 # --- son islemler: alt baslik aciklamasi, uzun tablo, logo
 from ortak import hid as _hid
+from t2_ortak import _kalin_cift
 _IDLER = set()
 def _h3_id(t):
     i = _hid(t); j = i; k_ = 2
@@ -61,9 +62,12 @@ def _h3_id(t):
 def _h3_not(m):
     t = m.group(1)
     if t in h3_not.N:
-        tr, en = h3_not.N[t]; return '<h3 id="%s">%s</h3><p class="h3n">%s</p>' % (_h3_id(t), t, x(tr, en))
+        tr, en = h3_not.N[t]; return '<h3 id="%s">%s</h3><p class="h3n">%s</p>' % (_h3_id(t), t, x(*_kalin_cift(tr, en)))
     return '<h3 id="%s">%s</h3>' % (_h3_id(t), t)
 govde = re.sub(r'<h3>([^<]+)</h3>', _h3_not, govde)
+# tablolarda VitrA satiri: ilk hucresi VitrA / vitra.com.tr olan satirlar hafif zeminle vurgulanir
+_VR = re.compile(r'<tr><td>(?:<[^>]+>\s*)*(?:VitrA|vitra\.com\.tr)(?:\s*\([^)]*\))?\s*(?:<[^>]+>\s*)*</td>')
+govde = _VR.sub(lambda m: m.group(0).replace("<tr><td>", '<tr class="vsat"><td>', 1), govde)
 # ozetteki ok baglantilarinin hedefi var mi?
 _hedef = set(re.findall(r'id="([^"]+)"', govde))
 _kayip = sorted(set(re.findall(r'<a class="git" href="#([^"]+)"', govde)) - _hedef)
@@ -209,6 +213,21 @@ a.git:focus-visible{outline:2px solid var(--coral);outline-offset:2px}
 /* soru tablolarinda metrikler ortali */
 .tw.sorular td.n,.tw.sorular th.n,.tw.sorusut td:last-child,.tw.sorusut th:last-child{text-align:center;vertical-align:middle}
 .tw.sorular td{vertical-align:middle}
+/* grup etiketleri */
+.etk{display:inline-block;padding:2px 9px;border-radius:11px;font-size:11.5px;font-weight:620;white-space:nowrap;line-height:1.5}
+.e1{background:#DCEFEA;color:#10332F}.e2{background:#FFE3D8;color:#B6431F}.e3{background:#FCEBC7;color:#7A5000}.e4{background:#DCE8F7;color:#1F4E8C}
+.e5{background:#ECE3F5;color:#5B3A87}.e6{background:#DFF0DD;color:#2E6B2E}.e7{background:#F8DDE6;color:#8C2950}.e8{background:#E8E6E1;color:#4A4A4A}
+:root[data-theme="dark"] .e1{background:#1E3B36;color:#A9DCD1}:root[data-theme="dark"] .e2{background:#4A2A1F;color:#FFB99E}:root[data-theme="dark"] .e3{background:#45381C;color:#F5D08A}
+:root[data-theme="dark"] .e4{background:#1F3048;color:#A9C6EE}:root[data-theme="dark"] .e5{background:#33284A;color:#CDB6EC}:root[data-theme="dark"] .e6{background:#21391F;color:#B2DCAA}
+:root[data-theme="dark"] .e7{background:#47222F;color:#F2AFC5}:root[data-theme="dark"] .e8{background:#2E2D2A;color:#D3D0C9}
+/* vurgu */
+b.vk{font-weight:650;color:var(--ink);background:linear-gradient(transparent 58%,var(--coral-tint) 58%);padding:0 1px}
+tr.vsat td{background:color-mix(in srgb,var(--coral-tint) 55%,transparent)}
+tr.vsat td:first-child{font-weight:650}
+/* ara tablo basliklari ve urun tablolari */
+p.tbas{margin:30px 0 8px;font-size:14.5px}
+.tw.urunt table{min-width:1180px}
+.tw.urunt td:first-child,.tw.urunt th:first-child{min-width:300px;max-width:380px;white-space:normal}
 h3[id]{scroll-margin-top:calc(var(--apph, 64px) + 24px)}
 .tw.genis table{min-width:1460px}
 .tw.genis td:first-child{white-space:nowrap}

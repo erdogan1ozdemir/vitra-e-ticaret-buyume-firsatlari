@@ -16,7 +16,7 @@ T_GR = tablo([th("Niyet grubu", "Intent group", "68 YouTube aramasının niyete 
               th("Medyan izlenme", "Median views", "Video başına medyan izlenme; tek bir viral videonun etkisini dengelemek için verilmiştir.", "Median views per video; given to offset the effect of a single viral video.", True),
               th("VitrA kanalının göründüğü arama", "Searches with VitrA channel", "VitrA Türkiye, VitrA Bathrooms veya Artema Türkiye (aynı grup) kanalından en az bir videonun ilk 20'de olduğu arama sayısı.", "Number of searches with at least one video from VitrA Türkiye, VitrA Bathrooms or Artema Türkiye in the top 20.", True),
               th("VitrA ort. en iyi sıra", "VitrA avg. best position", "VitrA kanalının göründüğü aramalarda en iyi sıraların ortalaması.", "Average of best positions in searches where the VitrA channel appears.", True)],
-             [[x(g, GEN[g]), cell(v["arama"]), cell(v["tekil_video"]), n(mil(v["toplam_izlenme_tekil"])), cell(v["medyan_izlenme_video"]),
+             [[etk(g, GEN[g]), cell(v["arama"]), cell(v["tekil_video"]), n(mil(v["toplam_izlenme_tekil"])), cell(v["medyan_izlenme_video"]),
                n("%d / %d" % (v["vitra_olan_arama"], v["arama"])), n(x(("%.1f" % v["vitra_ort_en_iyi_sira"]).replace(".", ","), "%.1f" % v["vitra_ort_en_iyi_sira"]) if v["vitra_ort_en_iyi_sira"] else "-")]
               for g, v in AN["grup"].items()])
 TUR = {"Marka": "Brand", "Tesisatçı / usta": "Plumber / installer", "Perakendeci": "Retailer", "Dekorasyon / iç mimar": "Decoration / interior designer", "İnceleme / teknoloji": "Review / technology", "Diğer": "Other"}

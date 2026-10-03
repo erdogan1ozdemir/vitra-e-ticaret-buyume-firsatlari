@@ -11,7 +11,7 @@ ttot = sum(v[0] for v in GT.values())
 rows = [[x(tur_tr[t], tur_en[t]), cell(v[2]), cellk(v[0]), n(yzd(100 * v[0] / ttot)), cellk(v[1]), n(yzd(100 * v[0] / v[1]) if v[1] else "-")] for t, v in sorted(GT.items(), key=lambda i: -i[1][0])]
 tbl = tablo([th("Sayfa türü", "Page type", "Adres yapısına göre sayfa sınıfı; /c- ve kategori dizinleri kategori, -p- ve -sku- kodlu adresler (eski adres yapısı dahil) ürün sayfasıdır.", "Page class by URL structure; /c- and category directories are category pages, addresses coded -p- and -sku- (including the old URL structure) are product pages."),
              th("Sayfa", "Pages", "Dönemde en az bir gösterim almış tekil sayfa sayısı (ilk 25.000 adres); sayfalama ve filtre parametreli adresler ana sayfayla tek sayfa sayılmıştır.", "Number of unique pages with at least one impression in the period (top 25,000 addresses); paginated and filtered addresses are counted as one page with their base page.", True),
-             th("Tık", "Clicks", "1 Haz 2025 - 25 Eyl 2026 toplam tık.", "Total clicks, 1 Jun 2025 - 25 Sep 2026.", True),
+             th("Click", "Clicks", "1 Haz 2025 - 25 Eyl 2026 toplam click.", "Total clicks, 1 Jun 2025 - 25 Sep 2026.", True),
              th("Pay", "Share", "Sayfa türünün toplam tık içindeki payı.", "Page type's share of total clicks.", True),
              th("Gösterim", "Impressions", "Aynı dönemde gösterim.", "Impressions in the same period.", True),
              th("CTR", "CTR", "Tık / gösterim.", "Clicks / impressions.", True)], rows)
@@ -27,8 +27,8 @@ def _talep_pay(k1):
 rows2 = [[x(k1, KAT_EN2.get(k1, k1)), cell(v[2]), cellk(v[0]), n(yzd(100 * v[0] / ktot)), _talep_pay(k1), cellk(v[1]), n(yzd(100 * v[0] / v[1]))] for k1, v in sorted(k1s.items(), key=lambda i: -i[1][0])]
 tbl2 = tablo([th("Kategori", "Category", "Kategori, ürün, koleksiyon ve eski online.vitra.com.tr sayfalarının adres yapısından türetilen ana kategori.", "Main category derived from the URL structure of category, product, collection and old online.vitra.com.tr pages."),
               th("Sayfa", "Pages", "Kategoriye eşlenen tekil sayfa sayısı; sayfalama ve filtre parametreli adresler tek sayılmıştır.", "Number of unique pages mapped to the category; paginated and filtered addresses are counted once.", True),
-              th("Tık", "Clicks", "1 Haz 2025 - 25 Eyl 2026 toplam tık.", "Total clicks, 1 Jun 2025 - 25 Sep 2026.", True),
-              th("Tık payı", "Click share", "Kategoriye eşlenen sayfaların (kategori, ürün, koleksiyon, teknik föy ve eski online.vitra.com.tr adresleri) toplam tıkı içindeki pay.", "Share of total clicks of pages mapped to a category (category, product, collection, technical sheet and old online.vitra.com.tr addresses).", True),
+              th("Click", "Clicks", "1 Haz 2025 - 25 Eyl 2026 toplam click.", "Total clicks, 1 Jun 2025 - 25 Sep 2026.", True),
+              th("Click payı", "Click share", "Kategoriye eşlenen sayfaların (kategori, ürün, koleksiyon, teknik föy ve eski online.vitra.com.tr adresleri) toplam click'i içindeki pay.", "Share of total clicks of pages mapped to a category (category, product, collection, technical sheet and old online.vitra.com.tr addresses).", True),
               th("Talep payı", "Demand share", "Kategorinin Oca-Ağu 2026 arama talebindeki payı (Bölüm 03, 2.342 kelime).", "The category's share of Jan-Aug 2026 search demand (Section 03, 2,342 keywords).", True),
               th("Gösterim", "Impressions", "Aynı dönemde gösterim.", "Impressions in the same period.", True),
               th("CTR", "CTR", "Tık / gösterim.", "Clicks / impressions.", True)], rows2, "dar")
@@ -47,7 +47,7 @@ son12 = sum(MT[m][0] for m in aylar[-12:]); son12i = sum(MT[m][1] for m in aylar
 x("/ (ana sayfa)", "/ (home page)")
 rows3 = [[u("https://www.vitra.com.tr" + (p_ or "/"), p_ if p_ not in ("", "/") else "/ (ana sayfa)"), cellk(c)] for p_, c in [(uu.replace("https://www.vitra.com.tr", ""), cc) for uu, cc in TS[:15]]]
 tbl3 = tablo([th("Sayfa adresi", "Page address", "Sayfa adresi; bağlantı canlı sayfaya gider.", "Page address; the link opens the live page."),
-              th("Tık · Tem-Eyl 2026", "Clicks · Jul-Sep 2026", "1 Temmuz - 25 Eylül 2026 organik tık.", "Organic clicks, 1 July - 25 September 2026.", True)], rows3, "dar")
+              th("Click · Tem-Eyl 2026", "Clicks · Jul-Sep 2026", "1 Temmuz - 25 Eylül 2026 organik click.", "Organic clicks, 1 July - 25 September 2026.", True)], rows3, "dar")
 kloz = GK.get("Vitrifiyeler|Klozetler", [0,0,0]); lav = GK.get("Vitrifiyeler|Lavabolar", [0,0,0]); karo = k1s["Karo Seramik"]
 HTML = """
 <p class="lede">%s</p>
@@ -82,7 +82,7 @@ HTML = """
  x("En çok tık alan sayfalar · Tem-Eyl 2026", "Pages with most clicks · Jul-Sep 2026"), tbl3,
  x("Cihaz ve ülke", "Device and country"),
  tablo([th("Kırılım", "Breakdown", "Search Console cihaz ve ülke boyutu.", "Search Console device and country dimension."),
-        th("Tık", "Clicks", "1 Haz 2025 - 25 Eyl 2026 toplam.", "Total, 1 Jun 2025 - 25 Sep 2026.", True),
+        th("Click", "Clicks", "1 Haz 2025 - 25 Eyl 2026 toplam.", "Total, 1 Jun 2025 - 25 Sep 2026.", True),
         th("Pay", "Share", "Toplam tık içindeki pay.", "Share of total clicks.", True),
         th("CTR", "CTR", "Tık / gösterim.", "Clicks / impressions.", True)],
        [[x("Mobil", "Mobile"), cellk(GC["MOBILE"][0]), n(yzd(mob)), n(yzd(ctr_m))],

@@ -62,8 +62,8 @@ UB = [th("Ürün", "Product", "Trendyol'daki ürün adı; bağlantı ürün sayf
       th("Net adet", "Net units", "2025 Q4 - 2026 Q3 net satış adedi.", "Net units, 2025 Q4 - 2026 Q3.", True), th("Adet payı", "Unit share", "Mağaza net adedi içindeki pay.", "Share of the store's net units.", True),
       th("Ciro payı", "Revenue share", "Mağaza net cirosu içindeki pay.", "Share of the store's net revenue.", True), th("Ort. net fiyat (TL)", "Avg. net price (TL)", "Net ciro / net adet.", "Net revenue / net units.", True),
       th("İade", "Returns", "İade adedi / brüt satış adedi.", "Returned units / gross units.", True), th("Güncel stok", "Current stock", "30.09.2026 itibarıyla stok: Var / Yok.", "Stock as of 30.09.2026: Available / Not available.", True)]
-T3 = tablo(UB, urun_rows(P["urun_adet"]), "uzun")
-T3b = tablo(UB, urun_rows(P["urun_ciro"]), "uzun")
+T3 = tablo(UB, urun_rows(P["urun_adet"]), "uzun urunt")
+T3b = tablo(UB, urun_rows(P["urun_ciro"]), "uzun urunt")
 FB = tablo([th("Fiyat bandı (TL)", "Price band (TL)", "Ürünün 12 aylık ortalama net satış fiyatı.", "The product's 12-month average net selling price."),
             th("Ürün sayısı", "Products", "Banttaki satılan ürün sayısı.", "Number of products sold in the band.", True),
             th("Adet payı", "Unit share", "Net adet içindeki pay.", "Share of net units.", True), th("Ciro payı", "Revenue share", "Net ciro içindeki pay.", "Share of net revenue.", True)],
@@ -231,7 +231,7 @@ EK = """
          ondalik(kat_d["Banyo Dolabı Seti"]["ciro_pay"]) + "%", ondalik(kat_d["Banyo Dolabı Seti"]["adet_pay"]) + "%", ondalik(kat_d["Lavabo Bataryası"]["ciro_pay"]) + "%", ondalik(kat_d["Lavabo Bataryası"]["adet_pay"]) + "%", ondalik(kat_d["Klozet"]["ciro_pay"]) + "%", ondalik(kat_d["Klozet"]["adet_pay"]) + "%", ondalik(kat_d["Ara Musluk"]["adet_pay"]) + "%", ondalik(kat_d["Ara Musluk"]["ciro_pay"]) + "%",
          ondalik(kat_d["Banyo Dolabı Seti"]["puan"]), ondalik(kat_d["Banyo Dolabı Seti"]["dusuk"]) + "%", ondalik(kat_d["Klozet"]["puan"]), ondalik(kat_d["Klozet"]["dusuk"]) + "%", "%d%%" % round(abs((kat_d["Lavabo Bataryası"]["q3"] / kat_d["Lavabo Bataryası"]["q4"] - 1) * 100))), "D31"),
  x("Çok satan ürünler: adet ve ciro katkısı", "Best-selling products: unit and revenue contribution"), T3,
- '<p><b>%s</b></p>' % x("Ciroya en çok katkı veren 15 ürün", "The 15 products contributing most to revenue") + T3b, '<p><b>%s</b></p>' % x("Fiyat bandına göre adet ve ciro payı", "Unit and revenue share by price band") + GFB + FB,
+ '<p class="tbas"><b>%s</b></p>' % x("Ciroya en çok katkı veren 15 ürün", "The 15 products contributing most to revenue") + T3b, '<p class="tbas"><b>%s</b></p>' % x("Fiyat bandına göre adet ve ciro payı", "Unit and revenue share by price band") + GFB + FB,
  marks([("at", "Adedin %%50'si %d üründen, %%80'i %d üründen gelmektedir; cironun %%50'si %d, %%80'i %d üründedir (satılan %d model kodu)" % (PA["adet50"], PA["adet80"], PA["ciro50"], PA["ciro80"], PA["urun"]),
          "%d products make up 50%% of units and %d make up 80%%; 50%% of revenue comes from %d and 80%% from %d products (%d model codes sold)" % (PA["adet50"], PA["adet80"], PA["ciro50"], PA["ciro80"], PA["urun"])),
         ("at", "2026 Q3'te satılan %d ürünün %d'inde güncel stok 0; bu ürünler Q3 adedinin %s'i, cirosunun %s'idir (çamaşır musluğu A45228, Master Slot el duşu, Integra klozet kapağı, Punto evye bataryası, Aquaheat Bliss 240)" % (ST["q3_urun"], ST["stok0"], yzd(ST["adet_pay"]), yzd(ST["ciro_pay"])),

@@ -139,7 +139,12 @@ def _sira_ayni(a, b):
         nu, nv = _re.sub(r"[^\d]", "", u), _re.sub(r"[^\d]", "", v)
         if (nu or nv) and nu != nv: return False
     return True
+_YILDIZ = _re.compile(r"\*\*(.+?)\*\*")
+def _yildiz(t):
+    """**ifade** isaretini okumayi kolaylastiran vurguya cevirir."""
+    return _YILDIZ.sub(r'<b class="vk">\1</b>', t)
 def _kalin_cift(tr, en):
+    tr, en = _yildiz(tr), _yildiz(en)
     a, b = _kalin(_vurgu(tr)), _kalin(_vurgu(en, True))
     if a.count("<b") != b.count("<b") or a.count("<span") != b.count("<span") or not _sira_ayni(a, b):
         a, b = _kalin(tr), _kalin(en)

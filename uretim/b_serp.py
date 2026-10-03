@@ -38,7 +38,7 @@ def _kw_tablo(lst):
                   th("Aylık hacim", "Monthly volume", "Google Keyword Planner, Eylül 2025 - Ağustos 2026 aylık ortalama arama hacmi.", "Google Keyword Planner, average monthly search volume, September 2025 - August 2026.", True),
                   th("VitrA sırası (SERP)", "VitrA position (SERP)", "29.09.2026 Google TR mobil tek gözlemde vitra.com.tr'nin sırası; \"-\" ilk 20'de yok.", "Position of vitra.com.tr in the single Google TR mobile observation of 29.09.2026; \"-\" not in top 20.", True),
                   th("Search Console ort. sıra", "Search Console avg. position", "26.06 - 25.09.2026 ortalama sıra, tüm cihazlar; \"-\" gösterim yok.", "Average position 26.06 - 25.09.2026, all devices; \"-\" no impressions.", True),
-                  th("Search Console tık", "Search Console clicks", "Aynı dönemde bu kelimeden gelen tık.", "Clicks from this keyword in the same period.", True),
+                  th("Search Console click", "Search Console clicks", "Aynı dönemde bu kelimeden gelen click.", "Clicks from this keyword in the same period.", True),
                   th("İlk 3 alan adı", "Top 3 domains", "SERP gözleminde ilk üç organik sonucun alan adı.", "Domains of the first three organic results in the SERP observation.")], rows_, "uzun")
 _POP109, _DIA109 = pop("109 kelime: hacim, VitrA sırası ve ilk 3 alan adı", "109 keywords: volume, VitrA position and top 3 domains", _kw_tablo(_SK), "109 kelimeyi gör", "See the 109 keywords")
 _DIALAR = [_DIA109]
@@ -69,7 +69,7 @@ BOS_VAR = [kw_ for kw_, _ in BOS if _gsira(kw_)]
 T_BOS = tablo([th("Arama kelimesi", "Search keyword", "29.09.2026 mobil SERP gözleminde vitra.com.tr'nin ilk 20'de görünmediği kelime.", "Keyword where vitra.com.tr did not appear in the top 20 in the mobile SERP observation of 29.09.2026."),
                th("Aylık hacim", "Monthly volume", "Google Keyword Planner, Eylül 2025 - Ağustos 2026 aylık ortalama arama hacmi.", "Google Keyword Planner, average monthly search volume, September 2025 - August 2026.", True),
                th("Search Console ort. sıra", "Search Console avg. position", "vitra.com.tr'nin bu sorgudaki 26.06 - 25.09.2026 ortalama sırası (sorgu düzeyinde, tüm cihazlar); \"-\" sorgu raporda yok.", "vitra.com.tr average position for this query, 26.06 - 25.09.2026 (query level, all devices); \"-\" query not in the report.", True),
-               th("Search Console tık", "Search Console clicks", "Aynı dönemde bu kelimeden gelen tık.", "Clicks from this keyword in the same period.", True),
+               th("Search Console click", "Search Console clicks", "Aynı dönemde bu kelimeden gelen click.", "Clicks from this keyword in the same period.", True),
                th("Google sırası (30.09)", "Google position (30.09)", "google.com.tr, oturumsuz arama, 30.09.2026; ilk sayfadaki organik sonuçlar arasında vitra.com.tr'nin sırası; \"-\" ilk sayfada yok.", "google.com.tr, signed-out search, 30.09.2026; position of vitra.com.tr among first-page organic results; \"-\" not on page 1.", True),
                th("İlk 5 sonuç (30.09)", "Top 5 results (30.09)", "Aynı Google kontrolünde ilk beş organik sonucun alan adı, sırasıyla; \"-\" alan adı okunamayan sonuç.", "Domains of the first five organic results in the same Google check, in order; \"-\" a result whose domain could not be read."),
                th("Durum", "Status", "VitrA'nın 30.09.2026 Google ilk sayfasındaki varlığı.", "VitrA's presence on the Google first page on 30.09.2026.")], brow, "uzun")

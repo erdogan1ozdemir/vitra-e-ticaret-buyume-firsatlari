@@ -13,7 +13,7 @@ TIP = {"koctas.com.tr": ("Yapı market", "DIY retailer"), "kale.com.tr": ("Banyo
        "serel.com.tr": ("Banyo markası", "Bathroom brand"), "ecebanyo.com": ("Banyo markası", "Bathroom brand"), "serelseramik.com.tr": ("Banyo markası", "Bathroom brand"), "eca.com.tr": ("Banyo ve ısıtma markası", "Bathroom and heating brand"), "idealstandard.com.tr": ("Banyo markası", "Bathroom brand"), "trendyol.com": ("Pazaryeri", "Marketplace"), "hepsiburada.com": ("Pazaryeri", "Marketplace"),
        "n11.com": ("Pazaryeri", "Marketplace"), "amazon.com.tr": ("Pazaryeri", "Marketplace"), "akakce.com": ("Fiyat karşılaştırma", "Price comparison"), "cimri.com": ("Fiyat karşılaştırma", "Price comparison"), "duravit.com.tr": ("Banyo markası", "Bathroom brand"),
        "geberit.com.tr": ("Banyo markası", "Bathroom brand"), "bien.com.tr": ("Seramik markası", "Tile brand")}
-def tip(d): return x(*TIP.get(d, ("Diğer", "Other")))
+def tip(d): return etk(*TIP.get(d, ("Diğer", "Other")))
 vit = next(b for b in BT if b[0] == "vitra.com.tr")
 rows = []
 for d, ortak_, rk, tr_, dr, pay in OR[:15]:

@@ -16,7 +16,7 @@ rows = []
 for gtr, gen, qs in GRUP:
     for q in qs:
         v = Y[q]; vr = v["vitra"]
-        rows.append([x(gtr, gen), veri_m(q), cell(v["n"]), cell(v["toplam_g"]), n(x("%s" % (", ".join(str(i) for i in vr[:6]) + ("…" if len(vr) > 6 else "")) if vr else "-", "%s" % (", ".join(str(i) for i in vr[:6]) + ("…" if len(vr) > 6 else "")) if vr else "-")), vid(v["top"][0])])
+        rows.append([etk(gtr, gen), veri_m(q), cell(v["n"]), cell(v["toplam_g"]), n(x("%s" % (", ".join(str(i) for i in vr[:6]) + ("…" if len(vr) > 6 else "")) if vr else "-", "%s" % (", ".join(str(i) for i in vr[:6]) + ("…" if len(vr) > 6 else "")) if vr else "-")), vid(v["top"][0])])
 tbl = tablo([th("Grup", "Group", "Aramanın niyet grubu.", "Intent group of the search."),
              th("YouTube araması", "YouTube search", "YouTube arama kutusuna yazılan ifade; Türkiye.", "Phrase typed into the YouTube search box; Turkey."),
              th("Sonuç", "Results", "Alınan video sayısı (ilk sayfa).", "Number of videos retrieved (first page).", True),
@@ -29,7 +29,7 @@ prow = []
 for gtr, gen, qs in GRUP:
     for q in qs:
         v = Y[q]; vr = v["vitra"]; h = (_AH.get(q) or {}).get("ort2026"); tp = v["top"][0] if v.get("top") else None
-        prow.append([kw(q), x(gtr, gen), cell(round(h)) if h else n("-"), cell(v["n"]), cell(v["toplam_g"]), n(", ".join(str(i) for i in vr[:6]) if vr else "-"),
+        prow.append([kw(q), etk(gtr, gen), cell(round(h)) if h else n("-"), cell(v["n"]), cell(v["toplam_g"]), n(", ".join(str(i) for i in vr[:6]) if vr else "-"),
                      veri_m(" ".join(tp[1].split()) if tp else "-"), cell(tp[2] or 0) if tp else n("-")])
 _PT = tablo([th("Arama ifadesi", "Search phrase", "YouTube'da aranan ifade.", "Phrase searched on YouTube."), th("Grup", "Group", "Aramanın niyet grubu.", "Intent group of the search."),
              th("Google aylık hacim", "Google monthly volume", "Aynı ifadenin Google'daki Ocak - Ağustos 2026 aylık ortalama arama hacmi (Google Ads); \"-\" hacim dönmedi.", "Average monthly Google search volume for the same phrase, January - August 2026 (Google Ads); \"-\" no volume returned.", True),

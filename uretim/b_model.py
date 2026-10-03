@@ -18,10 +18,7 @@ KANAL = tablo([th("Kanal", "Channel", "Satış kanalı.", "Sales channel."),
                 x("Klozet kapağı, batarya, aksesuar, duş seti, iç takım", "Toilet seats, taps, accessories, shower sets, inner mechanisms")],
                [x("Hepsiburada", "Hepsiburada"), x("İkinci pazaryeri (tahmini aylık %s organik ziyaret); ev ve yapı kategorisinde güçlü, teslimat ve taksit vurgulu" % k(next(b[4] for b in veri.AHREFS["ahrefs_batch_tr"] if b[0] == "hepsiburada.com")), "The second marketplace (estimated %s monthly organic visits); strong in home and construction, delivery and instalment led" % k(next(b[4] for b in veri.AHREFS["ahrefs_batch_tr"] if b[0] == "hepsiburada.com"))),
                 x("Orta segment ve büyük hacimli ürünlerde taksit ve teslimat vaadiyle ikinci erişim kanalı", "Second reach channel for mid-segment and bulky products with instalment and delivery promise"),
-                x("Klozet takımı, banyo dolabı, duşakabin, küvet", "WC sets, bathroom cabinets, shower enclosures, bathtubs")],
-               [x("Yapı market (Koçtaş, Bauhaus, Tekzen)", "DIY retailers (Koçtaş, Bauhaus, Tekzen)"), x("Kategori aramalarında VitrA ile en çok ortak kelimeye sahip kanal; \"vitra klozet fiyatları koçtaş\" gibi aramalar mevcut", "The channel sharing the most keywords with VitrA in category searches; searches such as \"vitra klozet fiyatları koçtaş\" exist"),
-                x("Tamamlayıcı ürün ve montaj hizmetiyle birlikte satış", "Sales together with complementary products and installation service"),
-                x("Klozet, lavabo, batarya, montaj malzemesi", "WCs, washbasins, taps, fitting materials")]])
+                x("Klozet takımı, banyo dolabı, duşakabin, küvet", "WC sets, bathroom cabinets, shower enclosures, bathtubs")]])
 def dr(d): return '<span class="badge %s">%s</span>' % ({"Var": "b-var", "Kısmi": "b-kis", "Yok": "b-yok"}[d], x(d, {"Var": "Available", "Kısmi": "Partial", "Yok": "Not available"}[d]))
 ETK = tablo([th("Bileşen", "Component", "Hacimli ve ölçüye bağlı üründe karar öncesi belirsizliği azaltan unsur.", "Element that reduces pre-decision uncertainty for bulky and dimension-dependent products."),
              th("VitrA'da bugün", "At VitrA today", "vitra.com.tr üzerindeki mevcut uygulama (29.09.2026).", "Current implementation on vitra.com.tr (29.09.2026)."),

@@ -5,6 +5,8 @@ import json, os
 from urllib.parse import unquote as _uq
 D = os.path.join(veri.V, "ham", "derin")
 AP = json.load(open(os.path.join(D, "ahrefs_pazaryeri", "analiz_ozet_tablolar.json"), encoding="utf-8"))
+_KPV = json.load(open(os.path.join(veri.V, "ham", "kp_ahrefs_degis.json"), encoding="utf-8"))["kelimeler"]   # arama hacmi: Google Keyword Planner
+def _kph(k_): return (_KPV.get(k_) or {}).get("ort12")
 # banyo disi sayfalar (LED armatur, bebek kuveti, fotograf makinesi, kozmetik, terlik) banyo cekirdek trafiginden cikarilir
 import re as _re2, collections as _col2
 _SS = json.load(open(os.path.join(D, "ahrefs_pazaryeri", "analiz_sayfa_siniflandirma.json"), encoding="utf-8"))
@@ -49,13 +51,14 @@ for a in adlar:
     t_, h_ = ty.get(a, {}), hb.get(a, {})
     grp = t_.get("grup") or h_.get("grup") or ""
     def _ord(i): return "%d%s" % (i, "th" if 10 <= i % 100 <= 20 else {1: "st", 2: "nd", 3: "rd"}.get(i % 10, "th"))
-    kwtxt = (kw(t_["top_kw"]) + " <span>" + x("(%s · %d. sıra)" % (bin(t_["top_hacim"] or 0), t_["top_sira"] or 0), "(%s · %s)" % (bin(t_["top_hacim"] or 0), _ord(t_["top_sira"] or 0))) + "</span>") if t_.get("top_kw") else "-"
-    arows.append([x({"Batarya & musluk (banyo)": "Batarya & musluk"}.get(a, a), SIN_EN.get(a, a)), x({"çekirdek": "ana", "dışı": "kapsam dışı"}.get(grp, grp), {"çekirdek": "main", "bitişik": "adjacent", "dışı": "outside"}.get(grp, grp)), cell(t_.get("trafik", 0)) if t_ else n("-"), cell(h_.get("trafik", 0)) if h_ else n("-"), kwtxt])
+    _h = _kph(t_.get("top_kw"))
+    kwtxt = (kw(t_["top_kw"]) + " <span>" + x("(%s · %d. sıra)" % (bin(_h) if _h else "-", t_["top_sira"] or 0), "(%s · %s)" % (bin(_h) if _h else "-", _ord(t_["top_sira"] or 0))) + "</span>") if t_.get("top_kw") else "-"
+    arows.append([x({"Batarya & musluk (banyo)": "Batarya & musluk"}.get(a, a), SIN_EN.get(a, a)), etk({"çekirdek": "ana", "dışı": "kapsam dışı"}.get(grp, grp), {"çekirdek": "main", "bitişik": "adjacent", "dışı": "outside"}.get(grp, grp)), cell(t_.get("trafik", 0)) if t_ else n("-"), cell(h_.get("trafik", 0)) if h_ else n("-"), kwtxt])
 T_ALT = tablo([th("Alt kategori", "Sub-category", "Sayfaların URL ve en iyi kelimesine göre sınıflandığı banyo alt kategorisi.", "Bathroom sub-category into which pages were classified by URL and top keyword."),
                th("Grup", "Group", "Ana: VitrA'nın sattığı banyo kategorileri · bitişik: banyoyla birlikte alınan ama VitrA'nın sınırlı sattığı kategoriler.", "Main: bathroom categories VitrA sells · adjacent: categories bought with the bathroom that VitrA sells in a limited way."),
                th("Trendyol trafik", "Trendyol traffic", "Ahrefs tahmini aylık organik trafik.", "Ahrefs estimated monthly organic traffic.", True),
                th("Hepsiburada trafik", "Hepsiburada traffic", "Ahrefs tahmini aylık organik trafik.", "Ahrefs estimated monthly organic traffic.", True),
-               th("Trendyol'da en çok trafik getiren kelime", "Top Trendyol keyword", "Kelime, aylık hacim ve Trendyol'un sırası.", "Keyword, monthly volume and Trendyol's position.")], arows, "uzun")
+               th("Trendyol'da en çok trafik getiren kelime", "Top Trendyol keyword", "Kelime, aylık arama hacmi (Google Keyword Planner, Eyl 2025 - Ağu 2026 ortalaması) ve Trendyol'un sırası.", "Keyword, monthly search volume (Google Keyword Planner, Sep 2025 - Aug 2026 average) and Trendyol's position.")], arows, "uzun")
 # kategori yapisi ve VitrA listeleme payi (tarayici)
 KY = [("Klozet", "WC", "1.458", "172", "%11,8", "4.095", "302", "%7,4"), ("Lavabo", "Washbasin", "5.806", "186", "%3,2", "8.956", "313", "%3,5"),
       ("Klozet kapağı", "Toilet seat", "4.384", "76", "%1,7", "10.000+", "143", "-"), ("Rezervuar ve iç takım", "Cistern and inner mechanism", "4.149", "284", "%6,8", "3.956", "-", "-"),

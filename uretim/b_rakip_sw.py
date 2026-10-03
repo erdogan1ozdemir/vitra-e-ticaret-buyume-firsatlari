@@ -33,16 +33,16 @@ def dagilim(r): return [kn(r, "direct"), kn(r, "organik"), kn(r, "ucretli"), sos
 _mk = sorted([r for r in SW.values() if r["grup"] == "marka" and not r["modellenmis"]], key=lambda r: -r["ort_ziyaret"])
 _sk = sorted([r for r in SW.values() if r["grup"] != "marka" and not r["modellenmis"]], key=lambda r: -r["ort_ziyaret"])
 G1 = yigin([(AD[r["alan"]], dagilim(r)) for r in _mk], SERI,
-           x("Ziyaretin kanallara dağılımı (%100) · marka siteleri · Haz - Ağu 2026", "Distribution of visits by channel (100%) · brand sites · Jun - Aug 2026"), sol=110, bh=26, ara=10)
+           x("Ziyaretin kanallara dağılımı (%100) · marka siteleri · Haz - Ağu 2026 · %5 ve üzeri paylar etiketli", "Distribution of visits by channel (100%) · brand sites · Jun - Aug 2026 · shares of 5% and above labelled"), sol=110, bh=28, ara=10, esik=5)
 G2 = yigin([(AD[r["alan"]], dagilim(r)) for r in _sk], SERI,
-           x("Ziyaretin kanallara dağılımı (%100) · pazaryeri, yapı market ve uzman siteler · Haz - Ağu 2026", "Distribution of visits by channel (100%) · marketplaces, DIY and specialist sites · Jun - Aug 2026"), sol=110, bh=22, ara=8)
+           x("Ziyaretin kanallara dağılımı (%100) · pazaryeri, yapı market ve uzman siteler · Haz - Ağu 2026 · %5 ve üzeri paylar etiketli", "Distribution of visits by channel (100%) · marketplaces, DIY and specialist sites · Jun - Aug 2026 · shares of 5% and above labelled"), sol=110, bh=26, ara=8, esik=5)
 GRAFIK = sekmeler([("Marka siteleri", "Brand sites", G1), ("Pazaryeri, yapı market ve uzman siteler", "Marketplaces, DIY and specialist sites", G2)], "gtabs")
 
 def _p(v): return n(yzd(v)) if v is not None else n("-")
 def satir(r):
     m = r["modellenmis"]
     kanal = [n("-")] * 7 if m else [_p(v) for v in dagilim(r)]
-    return [u("https://www." + r["alan"], r["alan"]), x(*GRUP[r["grup"]]), cellk(r["ort_ziyaret"]), _p(r["tr_pay"])] + kanal + [
+    return [u("https://www." + r["alan"], r["alan"]), etk(*GRUP[r["grup"]]), cellk(r["ort_ziyaret"]), _p(r["tr_pay"])] + kanal + [
         _p(r["hemen_cikma"]), n(f1(r["sayfa_ziyaret"]) if r["sayfa_ziyaret"] is not None else "-"), n(sure(r["sure_sn"]))]
 BAS = [th("Alan adı", "Domain", "Similarweb ile ölçülen site; yeni sekmede açılır.", "Site measured with Similarweb; opens in a new tab."),
        th("Grup", "Group", "Sitenin iş modeline göre grubu.", "Group of the site by business model."),

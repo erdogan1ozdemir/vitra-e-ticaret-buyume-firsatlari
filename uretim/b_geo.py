@@ -46,11 +46,11 @@ GR = gruplu([(x(b, c), [100 * GS[a][0] / TOP_N, 100 * GS[a][1] / TOP_T]) for a, 
             x("Rehber içerik gruplarının sayfa sayısı ve organik tık payı · /ilham-veren-fikirler/, 1 Eki 2025 - 25 Eyl 2026", "Share of pages and organic clicks by guide content group · /ilham-veren-fikirler/, 1 Oct 2025 - 25 Sep 2026"))
 T_GR = tablo([th("İçerik grubu", "Content group", "Sayfa adresindeki konuya göre yapılan gruplama.", "Grouping by the topic in the page address."),
               th("Sayfa", "Pages", "Dönemde en az 5 tık alan sayfa sayısı.", "Number of pages with at least 5 clicks in the period.", True),
-              th("Tık", "Clicks", "1 Eki 2025 - 25 Eyl 2026 organik tık.", "Organic clicks, 1 Oct 2025 - 25 Sep 2026.", True),
-              th("Tık payı", "Click share", "Rehber içeriklerin toplam tıkı içindeki pay.", "Share of the total clicks of guide content.", True),
+              th("Click", "Clicks", "1 Eki 2025 - 25 Eyl 2026 organik click.", "Organic clicks, 1 Oct 2025 - 25 Sep 2026.", True),
+              th("Click payı", "Click share", "Rehber içeriklerin toplam click'i içindeki pay.", "Share of the total clicks of guide content.", True),
               th("Gösterim", "Impressions", "Aynı dönemde gösterim.", "Impressions in the same period.", True),
               th("CTR", "CTR", "Tık / gösterim.", "Clicks / impressions.", True),
-              th("En çok tık alan sayfa", "Page with most clicks", "Grubun en çok tık alan sayfası; bağlantı canlı sayfayı açar.", "The group's page with the most clicks; the link opens the live page.")],
+              th("En çok click alan sayfa", "Page with most clicks", "Grubun en çok click alan sayfası; bağlantı canlı sayfayı açar.", "The group's page with the most clicks; the link opens the live page.")],
              [[x(b, c), cell(GS[a][0]), cellk(GS[a][1]), n(yzd(100 * GS[a][1] / TOP_T)), cellk(GS[a][2]), n(yzd(100 * GS[a][1] / GS[a][2])), u(ILHAM + GS[a][3][0] + ("" if GS[a][3][0].endswith("rehberi") else "/"), _baslik(GS[a][3][0])) + " (%s)" % bin(GS[a][3][1])] for a, b, c in GRUP])
 
 # ---------------------------------------------------------------- soru sorgulari
@@ -58,7 +58,7 @@ so_i = sum(i for _, _, i, _ in SO); so_c = sum(c for _, c, _, _ in SO)
 so_p = sum(p_ * i for _, _, i, p_ in SO) / so_i
 T_SO = tablo([th("Sorgu", "Query", "Search Console'da vitra.com.tr'nin gösterim aldığı soru biçimli sorgu; \"nasıl\" ve \"su kaçır\" içeren sorgulardan gösterime göre seçilmiştir.", "Question-type query for which vitra.com.tr received impressions; selected by impressions from queries containing \"nasıl\" (how) and \"su kaçır\" (leaking)."),
               th("Gösterim", "Impressions", "1 Eki 2025 - 25 Eyl 2026 gösterim.", "Impressions, 1 Oct 2025 - 25 Sep 2026.", True),
-              th("Tık", "Clicks", "Aynı dönemde tık.", "Clicks in the same period.", True),
+              th("Click", "Clicks", "Aynı dönemde click.", "Clicks in the same period.", True),
               th("CTR", "CTR", "Tık / gösterim.", "Clicks / impressions.", True),
               th("Ort. sıra", "Avg. position", "Gösterim ağırlıklı ortalama sıra, tüm cihazlar.", "Impression-weighted average position, all devices.", True)],
              [[kw(q), cellk(i), cell(c), n(yzd(100 * c / i, 2)), n(("%.1f" % p_).replace(".", ","))] for q, c, i, p_ in sorted(SO, key=lambda r: -r[2])], "uzun")

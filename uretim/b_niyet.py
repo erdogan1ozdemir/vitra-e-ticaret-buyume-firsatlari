@@ -49,7 +49,7 @@ for key, v in GS.items():
     rows3.append([x(m, "Branded" if m == "Markalı" else "Non-brand"), x(nm, G_EN[nm]), cell(v[0]), n(yzd(100 * v[0] / gtot)), cell(v[1]), n(yzd(100 * v[0] / v[1]) if v[1] else "-"), '<div class="kwlist">%s</div>' % ex])
 tbl3 = tablo([th("Marka", "Brand", "Sorgunun \"vitra\" veya \"artema\" içerip içermediği.", "Whether the query contains \"vitra\" or \"artema\"."),
               th("İhtiyaç sınıfı", "Need class", "Sorgunun ifade kalıbına göre sınıfı.", "Class of the query by phrase pattern."),
-              th("Tık", "Clicks", "Google Search Console, 1 Haz 2025 - 25 Eyl 2026, ilk 25.000 sorgu.", "Google Search Console, 1 Jun 2025 - 25 Sep 2026, top 25,000 queries.", True),
+              th("Click", "Clicks", "Google Search Console, 1 Haz 2025 - 25 Eyl 2026, ilk 25.000 sorgu.", "Google Search Console, 1 Jun 2025 - 25 Sep 2026, top 25,000 queries.", True),
               th("Pay", "Share", "Sınıfın toplam tık içindeki payı.", "The class's share of total clicks.", True),
               th("Gösterim", "Impressions", "Aynı dönemde gösterim.", "Impressions in the same period.", True),
               th("CTR", "CTR", "Tık / gösterim.", "Clicks / impressions.", True),

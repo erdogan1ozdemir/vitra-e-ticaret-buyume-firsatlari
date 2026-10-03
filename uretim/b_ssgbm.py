@@ -14,14 +14,22 @@ def k3rows(seg, lim):
         _, k2, k3 = key.split("|")
         out.append([kat2(k2), kat2(k3) if k3 != k2 else x("Genel", "General"), cellk(v["p0"]), cellk(v["p3"]), n(yz(v["uc"])), n(yz(v["yoy"]))])
     return out
-from grafik2 import dumbbell as _db, f_deg as _fd
+from grafik2 import sapma as _sp, gruplu as _gr, f_deg as _fd, f_k as _fk
+from b_talep import sekmeler as _sek
 def k3grafik(seg, lim):
+    """Iki sekme: 3 yillik degisim (yuzde, siralı) ve iki donemin aylik ortalama hacmi (yan yana cubuk)."""
     sat = sorted([(k, v) for k, v in K3.items() if k.startswith(seg + "|")], key=lambda i: -i[1]["p3"])[:lim]
-    et = [kat2(kk.split("|")[2]) for kk, _ in sat]
-    return _db([(e, v["p0"], v["p3"]) for e, (_, v) in zip(et, sat)],
-               (x("Eyl 22 - Ağu 23 aylık ort.", "Sep 22 - Aug 23 monthly avg."), "#9AA8A5"), (x("Eyl 25 - Ağu 26 aylık ort.", "Sep 25 - Aug 26 monthly avg."), "#E85F36" if seg == "BM" else "#10332F"),
-               x("%s ürün tipleri · Eyl 22 - Ağu 23 tabanından Eyl 25 - Ağu 26'ya aylık ortalama arama hacmi" % seg, "%s product types · average monthly search volume from the Sep 22 - Aug 23 base to Sep 25 - Aug 26" % seg),
-               ek=[(x("3 yıllık değişim", "3-year change"), [_fd(v["uc"]) for _, v in sat])])
+    et = {kk: kat2(kk.split("|")[2]) for kk, _ in sat}
+    renk = "#E85F36" if seg == "BM" else "#10332F"
+    dg = sorted(sat, key=lambda i: -i[1]["uc"])
+    G1 = _sp([(et[kk], v["uc"]) for kk, v in dg], x("3 yıllık değişim", "3-year change"),
+             x("%s ürün tipleri · Eyl 22 - Ağu 23 tabanına göre Eyl 25 - Ağu 26 aylık ortalama arama hacmindeki değişim, en çok artandan en çok azalana" % seg,
+               "%s product types · change in average monthly search volume from the Sep 22 - Aug 23 base to Sep 25 - Aug 26, from the largest increase to the largest decrease" % seg),
+             ek=[(x("Eyl 22 - Ağu 23 aylık ort.", "Sep 22 - Aug 23 monthly avg."), [_fk(v["p0"]) for _, v in dg]), (x("Eyl 25 - Ağu 26 aylık ort.", "Sep 25 - Aug 26 monthly avg."), [_fk(v["p3"]) for _, v in dg])])
+    G2 = _gr([(et[kk], [v["p0"], v["p3"]]) for kk, v in sat],
+             [(x("Eyl 22 - Ağu 23 aylık ort.", "Sep 22 - Aug 23 monthly avg."), "#B9C4C1"), (x("Eyl 25 - Ağu 26 aylık ort.", "Sep 25 - Aug 26 monthly avg."), renk)],
+             x("%s ürün tipleri · iki dönemin aylık ortalama arama hacmi, hacme göre sıralı" % seg, "%s product types · average monthly search volume in the two periods, sorted by volume" % seg), bicim=_fk)
+    return _sek([("3 yıllık değişim (%)", "3-year change (%)", G1), ("Arama hacmi: iki dönem", "Search volume: two periods", G2)], "gtabs")
 BAS = [th("Alt kategori", "Sub-category", "VitrA kategori ağacındaki alt kategori.", "Sub-category in the VitrA category tree."),
        th("Ürün tipi", "Product type", "Alt kategorinin altındaki ürün tipi; \"Genel\" alt kategori adıyla yapılan aramalardır.", "Product type under the sub-category; \"General\" is searches made with the sub-category name."),
        th("Eyl 22 - Ağu 23", "Sep 22 - Aug 23", "Eylül 2022 - Ağustos 2023 aylık ortalama arama hacmi.", "Average monthly search volume, September 2022 - August 2023.", True),
