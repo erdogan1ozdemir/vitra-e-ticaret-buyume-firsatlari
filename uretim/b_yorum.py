@@ -51,7 +51,7 @@ TM = tablo([th("Marka", "Brand", "Değerlendirme kaydı bulunan marka; rakipler 
             th("En sık pain point", "Top pain points", "Olumsuz metinli yorumlarda en sık geçen iki tema ve bu yorumlardaki payı; olumsuz metinli yorumu 15'in altındaysa boş bırakılmıştır.", "The two themes most often mentioned in negative text reviews and their share; blank if there are fewer than 15 negative text reviews."),
             th("Öne çıkan güçlü yön", "Top strengths", "Olumlu metinli yorumlarda en sık geçen iki tema ve bu yorumlardaki payı.", "The two themes most often mentioned in positive text reviews and their share."),
             th("Soru", "Questions", "Ürün sayfalarındaki soru-cevap kaydı sayısı.", "Number of Q&A records on product pages.", True)],
-           [_mrow(m) for m in _sira])
+           [_mrow(m) for m in _sira], "sorusut")
 
 # ---------------------------------------------------------------- pain point profili
 _tema = sorted(YAD, key=lambda t: -(VG["tema_neg"].get(t) or 0))
@@ -136,7 +136,7 @@ TS = tablo([th("Soru teması", "Question theme", "Soru metnine anahtar ifade kur
             th("VitrA", "VitrA", "VitrA ürünlerine gelen soruların ilgili temaya giren payı.", "Share of questions on VitrA products falling into the theme.", True),
             th("Artema", "Artema", "Artema ürünlerine gelen soruların ilgili temaya giren payı.", "Share of questions on Artema products falling into the theme.", True),
             th("Rakipler", "Competitors", "Rakip ürünlere gelen soruların ilgili temaya giren payı.", "Share of questions on competitor products falling into the theme.", True)],
-           [_srow(t) for t in sorted(_stema, key=lambda t: -(_vs.get(t) or 0))])
+           [_srow(t) for t in sorted(_stema, key=lambda t: -(_vs.get(t) or 0))], "sorular")
 
 _d0, _d1 = TOP["donem"]
 _k_neg = M["VitrA"]["tema_neg"].get("kirik") or 0; _r_neg = RK["tema_neg"].get("kirik") or 0

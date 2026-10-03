@@ -122,9 +122,9 @@ SC_EN = {"Danışma Hattı / yetkili servise yönlendirme": "Referral to the Hel
          "Trendyol kuralı: parça ve bağlantı gönderilemiyor": "Trendyol rule: parts and links cannot be sent"}
 T8 = tablo([th("Soru teması", "Question theme", "Eylül 2026'da ürün sayfalarında sorulan %d sorunun sınıflandırması; bir soru birden fazla temaya girebilir." % P["soru"]["n"], "Classification of the %d questions asked on product pages in September 2026; a question can fall into more than one theme." % P["soru"]["n"]),
             th("Soru", "Questions", "Temaya giren soru sayısı.", "Number of questions in the theme.", True)],
-           [[x(t["tema"], SQ_EN[t["tema"]]), cell(t["n"])] for t in sorted(P["soru"]["tema"], key=lambda t: -t["n"])], "dar")
+           [[x(t["tema"], SQ_EN[t["tema"]]), cell(t["n"])] for t in sorted(P["soru"]["tema"], key=lambda t: -t["n"])], "dar sorular")
 T8b = tablo([th("Yanıt kalıbı", "Answer pattern", "Onaylanan yanıtlarda tekrar eden kalıp.", "Recurring pattern in approved answers."), th("Yanıt", "Answers", "Kalıbı içeren yanıt sayısı.", "Number of answers containing the pattern.", True)],
-            [[x(c["kalip"], SC_EN[c["kalip"]]), cell(c["n"])] for c in sorted(P["soru"]["cevap"], key=lambda c: -c["n"])], "dar")
+            [[x(c["kalip"], SC_EN[c["kalip"]]), cell(c["n"])] for c in sorted(P["soru"]["cevap"], key=lambda c: -c["n"])], "dar sorular")
 # --- degerler
 NE = P["neden"]; _IPT = ("Müşterinin İptal Ettiği", "Trendyol'un İptal Ettiği", "Benim İptal Ettiğim"); iade_top = sum(v for k_, v in NE.items() if k_ not in _IPT)   # = İade Adedi
 yanlis_sip = NE.get("Yanlış Sipariş Verdim", 0) / iade_top * 100

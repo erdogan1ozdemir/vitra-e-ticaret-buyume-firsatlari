@@ -64,45 +64,56 @@ def main():
     K = A["kumeler"]; M = A["marka"]; S = A["soru"]; TOP = A["toplam"]
 
     # ------------------------------------------------ marka x pazaryeri ozet tablosu
+    def dv(v): return "" if v is None else ("%.4f" % v)
     def satir(m, kanal=None):
         p = M[m] if kanal is None else M[m]["kanal_profil"][kanal]
         s = S[m] if kanal is None else S[m]["kanal_profil"][kanal]
         if not p["n"] and not s["n"]: return ""
-        pain = (", ".join('%s <small>%s</small>' % (tema_ad(t), P(r, 0)) for t, _, r in p["pain"][:3] if r) or "-") if p["olumsuz_metinli"] >= 15 else "-"
+        pk = p["olumsuz_metinli"] >= 15 and p["pain"]
+        pain = (", ".join('%s <small>%s</small>' % (tema_ad(t), P(r, 0)) for t, _, r in p["pain"][:3] if r) or "-") if pk else "-"
         guc = ", ".join('%s <small>%s</small>' % (tema_ad(t), P(r, 0)) for t, _, r in p["guclu"][:2] if r) or "-"
         ad = m if m != "Diğer markalar" else T("Diğer markalar", "Other brands")
         kn = T(kanal, KANAL_EN[kanal]) if kanal else T("İki pazaryeri", "Both marketplaces")
-        vurgu = ' class="vg"' if m in ("VitrA", "Artema") else ""
-        return ('<tr%s><td><b>%s</b></td><td>%s</td><td class="n">%s</td><td class="n">%s</td><td class="n">%s</td><td class="n pos">%s</td><td class="n neg">%s</td>'
-                '<td>%s</td><td>%s</td><td class="n">%s</td><td class="n">%s</td></tr>') % (
-            vurgu, ad, kn, N(p["n"]), N(p["metinli"]), F(p["ort_puan"]), P(p["olumlu"]), P(p["olumsuz"]), pain, guc, N(s["n"]), saat(s["medyan_saat"]))
-    bas = ('<tr><th>%s</th><th>%s</th><th class="n">%s</th><th class="n">%s</th><th class="n">%s</th><th class="n">%s</th><th class="n">%s</th><th>%s</th><th>%s</th><th class="n">%s</th><th class="n">%s</th></tr>'
+        grp = "vg" if m in ("VitrA", "Artema") else ("diger" if m == "Diğer markalar" else "rakip")
+        vurgu = ' class="vg"' if grp == "vg" else ""
+        return ('<tr%s data-g="%s"><td><b>%s</b></td><td>%s</td><td class="n" data-v="%s">%s</td><td class="n" data-v="%s">%s</td><td class="n" data-v="%s">%s</td>'
+                '<td class="n pos" data-v="%s">%s</td><td class="n neg" data-v="%s">%s</td><td data-v="%s">%s</td><td data-v="%s">%s</td>'
+                '<td class="n c" data-v="%s">%s</td><td class="n c" data-v="%s">%s</td></tr>') % (
+            vurgu, grp, ad, kn, dv(p["n"]), N(p["n"]), dv(p["metinli"]), N(p["metinli"]), dv(p["ort_puan"]), F(p["ort_puan"]),
+            dv(p["olumlu"]), P(p["olumlu"]), dv(p["olumsuz"]), P(p["olumsuz"]), dv(p["pain"][0][2]) if pk else "", pain,
+            dv(p["guclu"][0][2]) if p["guclu"] else "", guc, dv(s["n"]), N(s["n"]), dv(s["medyan_saat"]), saat(s["medyan_saat"]))
+    bas = ('<thead><tr><th>%s</th><th>%s</th><th class="n">%s</th><th class="n">%s</th><th class="n">%s</th><th class="n">%s</th><th class="n">%s</th><th>%s</th><th>%s</th><th class="n c">%s</th><th class="n c">%s</th></tr></thead>'
            % (T("Marka", "Brand"), T("Pazaryeri", "Marketplace"), T("Yorum", "Reviews"), T("Metinli", "With text"), T("Ort. puan", "Avg. rating"),
               T("Olumlu", "Positive"), T("Olumsuz", "Negative"), T("En sık pain point'ler", "Top pain points"), T("Öne çıkan güçlü yönler", "Top strengths"),
               T("Soru", "Questions"), T("Medyan cevap süresi", "Median answer time")))
     OZ = {}
     for anah, kanal in (("tum", None), ("ty", "Trendyol"), ("hb", "Hepsiburada")):
-        OZ[anah] = '<div class="tw"><table class="tb">%s%s</table></div>' % (bas, "".join(satir(m, kanal) for m in K))
+        OZ[anah] = '<div class="tw"><table class="tb srt ozt">%s<tbody>%s</tbody></table></div>' % (bas, "".join(satir(m, kanal) for m in K))
 
     # ------------------------------------------------ pain point matrisi
-    mat_bas = "<tr><th>%s</th>%s</tr>" % (T("Tema", "Theme"), "".join('<th class="n">%s</th>' % (m if m != "Diğer markalar" else T("Diğer", "Other")) for m in K))
+    mat_bas = "<thead><tr><th>%s</th>%s</tr></thead>" % (T("Tema", "Theme"), "".join('<th class="n c">%s</th>' % (m if m != "Diğer markalar" else T("Diğer", "Other")) for m in K))
     def hucre(v):
-        if v is None: return '<td class="n">-</td>'
+        if v is None: return '<td class="n c" data-v="">-</td>'
         a = min(1, v / 45)
-        return '<td class="n hm" style="--a:%.2f">%s</td>' % (a, P(v, 0))
+        return '<td class="n c hm" style="--a:%.2f" data-v="%.4f">%s</td>' % (a, v, P(v, 0))
     mat = "".join("<tr><td>%s</td>%s</tr>" % (tema_ad(t), "".join(hucre(M[m]["tema_neg"].get(t) if M[m]["olumsuz_metinli"] >= 15 else None) for m in K)) for t, _, _, _ in YORUM)
-    mat += "<tr class='alt'><td>%s</td>%s</tr>" % (T("Olumsuz metinli yorum sayısı", "Negative text reviews"), "".join('<td class="n">%s</td>' % N(M[m]["olumsuz_metinli"]) for m in K))
-    MAT = '<div class="tw"><table class="tb mx">%s%s</table></div>' % (mat_bas, mat)
+    mat_alt = "<tr class='alt'><td>%s</td>%s</tr>" % (T("Olumsuz metinli yorum sayısı", "Negative text reviews"), "".join('<td class="n c">%s</td>' % N(M[m]["olumsuz_metinli"]) for m in K))
+    MAT = '<div class="tw"><table class="tb mx srt">%s<tbody>%s</tbody><tfoot>%s</tfoot></table></div>' % (mat_bas, mat, mat_alt)
 
     # ------------------------------------------------ soru kumeleri matrisi
-    sm_bas = "<tr><th>%s</th>%s</tr>" % (T("Soru teması", "Question theme"), "".join('<th class="n">%s</th>' % (m if m != "Diğer markalar" else T("Diğer", "Other")) for m in K if S[m]["n"]))
+    sm_bas = "<thead><tr><th>%s</th>%s</tr></thead>" % (T("Soru teması", "Question theme"), "".join('<th class="n c">%s</th>' % (m if m != "Diğer markalar" else T("Diğer", "Other")) for m in K if S[m]["n"]))
     def stema(m, t):
         d = {k: r for k, _, r in S[m]["tema"]}
         return d.get(t)
     sm = "".join("<tr><td>%s</td>%s</tr>" % (tema_ad(t, True), "".join(hucre(stema(m, t)) for m in K if S[m]["n"])) for t in [k for k, _, _, _ in SORU] + ["diger"])
-    sm += "<tr class='alt'><td>%s</td>%s</tr>" % (T("Soru sayısı", "Number of questions"), "".join('<td class="n">%s</td>' % N(S[m]["n"]) for m in K if S[m]["n"]))
-    sm += "<tr class='alt'><td>%s</td>%s</tr>" % (T("Medyan cevap süresi", "Median answer time"), "".join('<td class="n">%s</td>' % saat(S[m]["medyan_saat"]) for m in K if S[m]["n"]))
-    SMAT = '<div class="tw"><table class="tb mx">%s%s</table></div>' % (sm_bas, sm)
+    sm_alt = "<tr class='alt'><td>%s</td>%s</tr>" % (T("Soru sayısı", "Number of questions"), "".join('<td class="n c">%s</td>' % N(S[m]["n"]) for m in K if S[m]["n"]))
+    sm_alt += "<tr class='alt'><td>%s</td>%s</tr>" % (T("Medyan cevap süresi", "Median answer time"), "".join('<td class="n c">%s</td>' % saat(S[m]["medyan_saat"]) for m in K if S[m]["n"]))
+    SMAT = '<div class="tw"><table class="tb mx srt">%s<tbody>%s</tbody><tfoot>%s</tfoot></table></div>' % (sm_bas, sm, sm_alt)
+
+    # ------------------------------------------------ ozet tablosu suzgeci
+    OZF = ('<div class="filtre"><input id="ozAra" type="search" aria-label="Ara" data-ph-tr="Marka veya tema ara" data-ph-en="Search brand or theme">'
+           '<select id="ozGrup" aria-label="Grup">%s</select><span class="say" id="ozSay" style="margin:0"></span></div>') % "".join(
+        '<option value="%s" data-tr="%s" data-en="%s">%s</option>' % (v, a, b, a) for v, a, b in (("", "Tüm markalar", "All brands"), ("vg", "VitrA ve Artema", "VitrA and Artema"), ("rakip", "Rakip markalar", "Competitor brands"), ("diger", "Diğer markalar", "Other brands")))
 
     # ------------------------------------------------ marka notlari
     vg_neg = A["vg"]["olumsuz"]; rk_neg = A["rakip"]["olumsuz"]
@@ -207,6 +218,14 @@ h2::after{content:"";position:absolute;left:0;bottom:-1px;width:72px;height:3px;
 .tb .pos{color:var(--green)}.tb .neg{color:var(--red)}
 .tb.mx td.hm{background:rgba(var(--hm),calc(var(--a)*.55))}
 .tb tr.alt td{background:var(--neutral);font-weight:600}
+.tb td.c,.tb th.c{text-align:center;vertical-align:middle}
+.tb.mx td{vertical-align:middle}
+.tb.srt thead th{cursor:pointer;user-select:none}
+.tb.srt thead th::after{content:" \2195";opacity:.45;font-size:10px}
+.tb.srt thead th[aria-sort="ascending"]::after{content:" \25B2";opacity:1;color:var(--coral)}
+.tb.srt thead th[aria-sort="descending"]::after{content:" \25BC";opacity:1;color:var(--coral)}
+.tb.srt thead th:focus-visible{outline:2px solid var(--coral);outline-offset:-2px}
+.tb tbody tr.gizli{display:none}
 .note{background:var(--neutral);border-radius:10px;padding:12px 14px;margin:12px 0;font-size:13.5px}
 .note b{color:var(--coral-deep)}
 .ins{border:1px solid var(--line);background:var(--card);border-radius:10px;padding:12px 14px;margin:12px 0;font-size:14px}
@@ -310,10 +329,31 @@ document.getElementById('sDaha').addEventListener('click',function(){sS+=40;sCiz
 /* ---- sekmeler */
 document.querySelectorAll('.tabs').forEach(function(t){t.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;
  t.querySelectorAll('button').forEach(function(x){var on=x===b;x.setAttribute('aria-selected',on);var p=document.getElementById(x.getAttribute('aria-controls'));if(p)p.hidden=!on})})});
+
+/* ---- tablo siralama */
+function hucreDeger(td){var v=td.getAttribute('data-v');if(v!==null){return v===''?null:+v}var t=(td.innerText||'').trim();return t===''||t==='-'?null:t}
+function sirala(t,ci,th){
+ var yon=th.getAttribute('aria-sort')==='descending'?'ascending':'descending';
+ [].forEach.call(t.tHead.rows[0].cells,function(c){c.removeAttribute('aria-sort')});th.setAttribute('aria-sort',yon);
+ var tb=t.tBodies[0],rows=[].slice.call(tb.rows);
+ rows.sort(function(a,b){var x=hucreDeger(a.cells[ci]),y=hucreDeger(b.cells[ci]);if(x===null&&y===null)return 0;if(x===null)return 1;if(y===null)return -1;
+  var r=(typeof x==='number'&&typeof y==='number')?x-y:String(x).localeCompare(String(y),dil());return yon==='ascending'?r:-r});
+ rows.forEach(function(r){tb.appendChild(r)})}
+document.querySelectorAll('table.srt').forEach(function(t){[].forEach.call(t.tHead.rows[0].cells,function(th,ci){th.tabIndex=0;th.setAttribute('role','columnheader');
+ th.addEventListener('click',function(){sirala(t,ci,th)});th.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();sirala(t,ci,th)}})})});
+/* ---- ozet tablosu suzgeci */
+function ozSuz(){var q=document.getElementById('ozAra').value.toLocaleLowerCase(dil()==='en'?'en':'tr'),g=document.getElementById('ozGrup').value,gor=0,top=0;
+ var panel=[].slice.call(document.querySelectorAll('table.ozt')).filter(function(t){return !t.closest('[hidden]')})[0];
+ document.querySelectorAll('table.ozt').forEach(function(t){[].forEach.call(t.tBodies[0].rows,function(r){
+  var ok=(!g||r.dataset.g===g)&&(!q||(r.innerText||r.textContent).toLocaleLowerCase(dil()==='en'?'en':'tr').indexOf(q)>=0);
+  r.classList.toggle('gizli',!ok);if(t===panel){top++;if(ok)gor++}})});
+ document.getElementById('ozSay').textContent=T(gor+' / '+top+' satır',gor+' / '+top+' rows')}
+['ozAra','ozGrup'].forEach(function(id){document.getElementById(id).addEventListener('input',ozSuz)});
+document.querySelectorAll('.tabs').forEach(function(t){t.addEventListener('click',function(){setTimeout(ozSuz,0)})});
 /* ---- yaninda gelen derin baglanti: #yorumlar?marka=VitrA */
 function derin(){var h=location.hash||'';var m=h.match(/marka=([^&]+)/);if(m){var v=decodeURIComponent(m[1]);['yMarka','sMarka'].forEach(function(id){document.getElementById(id).value=v})}}
 /* ---- dil ve tema */
-function dilKur(l){kok.lang=l;document.getElementById('dil').querySelector('b').textContent=l==='en'?'TR':'EN';document.title=l==='en'?'VitrA | Reviews and Q&A Set':'VitrA | Yorum ve Soru Seti';secimler();derin();yCiz();sCiz()}
+function dilKur(l){kok.lang=l;document.getElementById('dil').querySelector('b').textContent=l==='en'?'TR':'EN';document.title=l==='en'?'VitrA | Reviews and Q&A Set':'VitrA | Yorum ve Soru Seti';secimler();derin();yCiz();sCiz();document.querySelectorAll('#ozGrup option').forEach(function(o){o.textContent=o.getAttribute(l==='en'?'data-en':'data-tr')});var oa=document.getElementById('ozAra');oa.placeholder=oa.getAttribute(l==='en'?'data-ph-en':'data-ph-tr');ozSuz()}
 document.getElementById('dil').addEventListener('click',function(){var l=dil()==='en'?'tr':'en';try{localStorage.setItem('vitra-dil',l)}catch(e){}dilKur(l)});
 document.getElementById('tema').addEventListener('click',function(){kok.setAttribute('data-theme',kok.getAttribute('data-theme')==='dark'?'light':'dark')});
 var l0='tr';try{l0=localStorage.getItem('vitra-dil')||'tr'}catch(e){}
@@ -398,9 +438,9 @@ dilKur(l0==='en'?'en':'tr');
                   % (en_s(TOP["yorum"], 0), en_s(TOP["soru"], 0), "%s %s" % (ay_en[d0[5:7]], d0[:4]), "%s %s" % (ay_en[d1[5:7]], d1[:4]), en_s(TOP["son12"], 0) + "%")),
         "kpi": KPI,
         "h_oz": T("Marka ve pazaryeri özeti", "Brand and marketplace summary"),
-        "n_oz": T("Ortalama puan ve duygu dağılımı tüm yorumlardan, tema payları metinli yorumlardan hesaplanmıştır. Pain point payı: olumsuz (1-2 puan) metinli yorumların ilgili temaya değinen oranı (olumsuz metinli yorumu 15'in altındaki satırlarda gösterilmemiştir); güçlü yön payı: olumlu (4-5 puan) metinli yorumlardaki oran. VitrA ve Artema satırları vurgulanmıştır.",
-                  "Average rating and sentiment split are calculated from all reviews, theme shares from reviews with text. Pain point share: the share of negative (1-2 star) text reviews mentioning the theme (not shown for rows with fewer than 15 negative text reviews); strength share: the share among positive (4-5 star) text reviews. VitrA and Artema rows are highlighted."),
-        "oz": sekme("oz", [(T("İki pazaryeri", "Both marketplaces"), OZ["tum"]), ("Trendyol", OZ["ty"]), ("Hepsiburada", OZ["hb"])]),
+        "n_oz": T("Sütun başlığına tıklayarak sıralayabilir, marka veya tema adıyla ve marka grubuyla süzebilirsiniz. Ortalama puan ve duygu dağılımı tüm yorumlardan, tema payları metinli yorumlardan hesaplanmıştır. Pain point payı: olumsuz (1-2 puan) metinli yorumların ilgili temaya değinen oranı (olumsuz metinli yorumu 15'in altındaki satırlarda gösterilmemiştir); güçlü yön payı: olumlu (4-5 puan) metinli yorumlardaki oran. VitrA ve Artema satırları vurgulanmıştır.",
+                  "Click a column header to sort, and filter by brand or theme name and by brand group. Average rating and sentiment split are calculated from all reviews, theme shares from reviews with text. Pain point share: the share of negative (1-2 star) text reviews mentioning the theme (not shown for rows with fewer than 15 negative text reviews); strength share: the share among positive (4-5 star) text reviews. VitrA and Artema rows are highlighted."),
+        "oz": OZF + sekme("oz", [(T("İki pazaryeri", "Both marketplaces"), OZ["tum"]), ("Trendyol", OZ["ty"]), ("Hepsiburada", OZ["hb"])]),
         "i_oz": T("VitrA ve Artema yorumlarında olumsuz pay %s, rakip markalarda %s'tir. Ortalama puan VitrA'da %s, Artema'da %s düzeyindedir."
                   % ("%" + tr_s(vg["olumsuz"]), "%" + tr_s(rk["olumsuz"]), tr_s(M["VitrA"]["ort_puan"], 2), tr_s(M["Artema"]["ort_puan"], 2)),
                   "The negative share is %s in VitrA and Artema reviews and %s for competitor brands. The average rating is %s for VitrA and %s for Artema."

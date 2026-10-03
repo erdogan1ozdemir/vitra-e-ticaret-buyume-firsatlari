@@ -206,6 +206,9 @@ a.git{display:inline-flex;align-items:center;justify-content:center;width:20px;h
   background:var(--coral-tint);color:var(--coral-deep);font-weight:700;font-size:12px;line-height:1;text-decoration:none;vertical-align:1px}
 a.git:hover,a.git:focus-visible{background:var(--coral-deep);color:#fff;text-decoration:none}
 a.git:focus-visible{outline:2px solid var(--coral);outline-offset:2px}
+/* soru tablolarinda metrikler ortali */
+.tw.sorular td.n,.tw.sorular th.n,.tw.sorusut td:last-child,.tw.sorusut th:last-child{text-align:center;vertical-align:middle}
+.tw.sorular td{vertical-align:middle}
 h3[id]{scroll-margin-top:calc(var(--apph, 64px) + 24px)}
 .tw.genis table{min-width:1460px}
 .tw.genis td:first-child{white-space:nowrap}
