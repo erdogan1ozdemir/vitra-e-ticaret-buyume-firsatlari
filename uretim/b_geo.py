@@ -3,6 +3,7 @@
 from ortak import *
 from rapor_parca1 import T
 from grafik2 import gruplu
+import serp_ozet as _SO
 import csv as _csv, os as _os, json as _json
 
 _D = _os.path.join(veri.V, "ham", "geo")
@@ -163,9 +164,48 @@ ENT = [
 ]
 
 # ---------------------------------------------------------------- AI Overview kaynak siteleri (site disi)
-YAYIN = [("banyome.com", 5), ("instagram.com", 5), ("wikipedia.org", 4), ("yapilir.com", 4), ("youtube.com", 3), ("banyomega.com", 3), ("eksisozluk.com", 2)]
+YAYIN = sorted(((d_, _SO.AI_ALAN[d_]) for d_ in ("banyome.com", "instagram.com", "wikipedia.org", "yapilir.com", "youtube.com", "banyomega.com", "eksisozluk.com")), key=lambda t_: -t_[1])
 
 _POPSO, _DIASO = pop("Soru sorguları: gösterim, tık ve sıra", "Question queries: impressions, clicks and position", T_SO, "21 sorguyu gör", "See the 21 queries")
+# ---------------------------------------------------------------- yapay zeka yanitlarinda VitrA (ChatGPT, Gemini, AI Overview)
+AIG = _json.load(open(_os.path.join(_D, "ai_gorunurluk.json"), encoding="utf-8"))
+_PRV = [("chatgpt", "ChatGPT"), ("gemini", "Gemini"), ("google_ai_overview", "Google AI Overview")]
+_RK = [("kale.com.tr", "Kale"), ("creavit.com.tr", "Creavit"), ("geberit.com.tr", "Geberit"), ("trendyol.com", "Trendyol"), ("hepsiburada.com", "Hepsiburada"), ("koctas.com.tr", "Koçtaş")]
+def _po(a_, b_): return 100 * a_ / b_ if b_ else 0
+AIV = {p_: _po(AIG["saglayici"][p_]["vitra"], AIG["saglayici"][p_]["markasiz_n"]) for p_, _ in _PRV}
+T_AIG = tablo([th("Platform", "Platform", "Yanıtın alındığı yapay zeka platformu.", "The AI platform the answer was taken from."),
+               th("Yanıt", "Answers", "4 Eyl - 3 Eki 2026 arasında marka adı geçmeyen 111 soruya alınan yanıt sayısı.", "Answers received to the 111 questions without a brand name, 4 Sep - 3 Oct 2026.", True),
+               th("VitrA", "VitrA", "VitrA'nın adıyla geçtiği yanıtların payı.", "Share of answers that name VitrA.", True)]
+              + [th(ad_, ad_, "%s adının geçtiği yanıtların payı (aynı yanıtlar)." % ad_, "Share of answers that name %s (same answers)." % ad_, True) for _, ad_ in _RK],
+              [[x(a_, a_), cell(AIG["saglayici"][p_]["markasiz_n"]), n("<b>%s</b>" % yzd(AIV[p_]))] + [n(yzd(_po(AIG["saglayici"][p_]["rakip"][d_], AIG["saglayici"][p_]["markasiz_n"]))) for d_, _ in _RK] for p_, a_ in _PRV])
+_KYN = AIG["kaynak"]
+T_AIK = tablo([th("Alan adı", "Domain", "Yanıtta kaynak olarak bağlantı verilen alan adı; bağlantı siteyi açar.", "Domain linked as a source in the answer; the link opens the site."),
+               th("Yanıt", "Answers", "Alan adının en az bir kez kaynak gösterildiği yanıt sayısı, markasız sorular, üç platform toplamı.", "Answers citing the domain at least once, questions without a brand name, all three platforms.", True),
+               th("AI Overview", "AI Overview", "Google AI Overview yanıtlarında kaynak gösterildiği yanıt sayısı.", "Google AI Overview answers citing the domain.", True),
+               th("ChatGPT", "ChatGPT", "ChatGPT yanıtlarında kaynak gösterildiği yanıt sayısı.", "ChatGPT answers citing the domain.", True),
+               th("Gemini", "Gemini", "Gemini yanıtlarında kaynak gösterildiği yanıt sayısı.", "Gemini answers citing the domain.", True),
+               th("Satın alma soruları", "Purchase questions", "\"Nereden alınır\", teslimat, iade ve montaj dahil satış gibi 14 markasız satın alma sorusunda (28.09 - 01.10.2026) kaynak gösterildiği yanıt sayısı.", "Answers citing the domain for 14 purchase questions without a brand name such as where to buy, delivery, returns and sales with installation (28.09 - 01.10.2026).", True)],
+              [[u("https://" + r_[0], r_[0]), cell(r_[1]), cell(r_[2]), cell(r_[3]), cell(r_[4]), cell(r_[5])] for r_ in _KYN])
+_PZ4 = sum(r_[1] for r_ in _KYN if r_[0] in ("trendyol.com", "koctas.com.tr", "hepsiburada.com", "akakce.com"))
+_KD = {r_[0]: r_ for r_ in _KYN}
+_KS = [dict(zip(AIG["klasor_sutun"], r_)) for r_ in AIG["klasor_soru"]]
+def _oy(a_, b_): return "%d / %d" % (a_, b_)
+def _kac(a_, b_): return "tamamında" if a_ == b_ else ek(a_, "inde")
+T_AIS = tablo([th("Soru metni", "Question", "Yapay zeka platformlarına sorulan soru; kullanıcının yazdığı biçimde korunmuştur.", "The question asked to the AI platforms, kept as the user would type it."),
+               th("Grup", "Group", "Satın alma ve teslimat soruları ile montaj soruları.", "Purchase and delivery questions and installation questions."),
+               th("Markalı", "Branded", "Soruda VitrA adı geçiyor mu?", "Does the question name VitrA?"),
+               th("VitrA adı geçen", "VitrA named", "VitrA'nın adıyla geçtiği yanıt / toplam yanıt (ChatGPT, Gemini ve AI Overview birlikte).", "Answers naming VitrA / total answers (ChatGPT, Gemini and AI Overview together).", True),
+               th("vitra.com.tr kaynak", "vitra.com.tr cited", "vitra.com.tr'nin kaynak gösterildiği yanıt / toplam yanıt.", "Answers citing vitra.com.tr / total answers.", True),
+               th("Pazaryeri kaynak", "Marketplace cited", "Trendyol, Hepsiburada, Koçtaş, n11, Amazon, Bauhaus, Akakçe veya Cimri'nin kaynak gösterildiği yanıt / toplam yanıt.", "Answers citing Trendyol, Hepsiburada, Koçtaş, n11, Amazon, Bauhaus, Akakçe or Cimri / total answers.", True)],
+              [[kw(r_["soru"]), etk("Satın alma", "Purchase", "ais-e") if r_["klasor"] == "e-ticaret" else etk("Montaj", "Installation", "ais-m"), x("Evet", "Yes") if r_["markali"] else x("Hayır", "No"),
+                n(_oy(r_["vitra_adi"], r_["yanit"])), n(_oy(r_["vitra_kaynak"], r_["yanit"])), n(_oy(r_["pazaryeri_kaynak"], r_["yanit"]))]
+               for r_ in sorted(_KS, key=lambda r_: (r_["klasor"] != "e-ticaret", r_["markali"], r_["vitra_adi"] / r_["yanit"]))], "uzun")
+_Q = {r_["soru"]: r_ for r_ in _KS}
+_q1 = _Q["vitra klozet trendyol mu hepsiburada mı daha uygun"]; _q2 = _Q["klozet nereden alınır en uygun fiyata"]
+_q3 = _Q["banyo ürünlerinde iade ve değişim nasıl yapılır online alışverişte"]; _q4 = _Q["online alınan klozet nasıl teslim edilir kargo hasarı olur mu"]
+_q5 = _Q["klozet montajı dahil satış yapan siteler"]; _q6 = _Q["banyo dolabı montajı"]
+_DY = AIG["duygu"]
+
 def firsat(no, h_tr, h_en, maddeler):
     return ('<article class="fnote"><span class="fc">%s</span><h3>%s</h3><ul>%s</ul></article>'
             % (x("Fırsat %02d" % no, "Opportunity %02d" % no), x(h_tr, h_en), "".join("<li>%s</li>" % x(a, b) for a, b in maddeler)))
@@ -175,7 +215,7 @@ FIRSAT = '<div class="fnotes">%s</div>' % "".join([
          ("Destek bölümü 5 sayfadan oluşmaktadır; arıza, montaj, uyumluluk ve garanti sayfası bulunmamaktadır", "The support section consists of 5 pages; there is no troubleshooting, installation, compatibility or warranty page"),
          ("Arıza, parça uyumu ve bakım sorularını cevaplayan destek sayfaları hem AI yanıtlarında kaynak olma hem de satış sonrası başvuruyu siteye taşıma fırsatı sunmaktadır", "Support pages answering troubleshooting, part compatibility and care questions offer the opportunity both to be a source in AI answers and to bring after-sales enquiries to the site")]),
  firsat(2, "Karar ve ölçü sorularında kaynak olmak", "Becoming the source on decision and size questions",
-        [("VitrA 24 AI Overview'un 7'sinde kaynak gösterilmektedir (klozet ölçüleri, en iyi klozet markası, pisuvar)", "VitrA is cited in 7 of 24 AI Overviews (WC dimensions, best WC brand, urinal)"),
+        [("VitrA %d AI Overview'un %s kaynak gösterilmektedir (klozet ölçüleri, en iyi klozet markası, pisuvar)" % (len(_SO.AI_ICERIK), ek(len(_SO.AI_VITRA), "inde")), "VitrA is cited in %d of %d AI Overviews (WC dimensions, best WC brand, urinal)" % (len(_SO.AI_VITRA), len(_SO.AI_ICERIK))),
          ("Banyo dolabı ölçüleri, gömme ve dış rezervuar karşılaştırması, engelli klozeti ve montaj ücreti sorularında kaynaklar pazaryerleri, rakip markalar ve rehber siteleridir", "On bathroom cabinet sizes, concealed versus exposed cisterns, accessible WCs and installation fees the sources are marketplaces, competitor brands and guide sites"),
          ("Ölçü, seçim ve karşılaştırma odaklı rehber içerik ile kategori sayfalarındaki kısa soru-cevaplar bu sorularda görünürlüğü artırabilir", "Guide content focused on sizes, selection and comparison, together with short Q&A on category pages, can raise visibility on these questions")]),
  firsat(3, "Soru sorgularında ilk sayfadan tıka", "From the first page to the click on question queries",
@@ -191,7 +231,9 @@ FIRSAT = '<div class="fnotes">%s</div>' % "".join([
          ("En çok izlenen 14 YouTube tamir ve kurulum konusunda VitrA kanal videosu bulunmamaktadır; AI Overview kaynakları arasında markadan bağımsız rehber ve topluluk siteleri yer almaktadır", "There is no VitrA channel video in the 14 most-watched YouTube repair and installation topics; AI Overview sources include brand-independent guide and community sites"),
          ("Şikayet yanıtları, tamir videoları ve rehber sitelerinde uzman içerik, markanın site dışında anılmasını güçlendirebilir", "Complaint replies, repair videos and expert content on guide sites can strengthen off-site mentions of the brand")]),
  firsat(6, "AI ile alışveriş", "Shopping with AI",
-        [("Google Shopping'de VitrA sitesi listelemelerin %0,7'sini almakta, 27 kategori kelimesinin 15'inde görünmemektedir", "On Google Shopping the VitrA site takes 0.7% of listings and does not appear in 15 of 27 category keywords"),
+        [("\"Vitra klozet trendyol mu hepsiburada mı daha uygun\" sorusunda yapay zeka yanıtlarının %d'%s VitrA geçmekte, vitra.com.tr %s kaynak gösterilmektedir; iade ve teslimat sorularında VitrA %d yanıtın yalnız %s anılmaktadır" % (_q1["yanit"], "inin tamamında" if _q1["vitra_adi"] == _q1["yanit"] else "", ek(_q1["vitra_kaynak"], "inde"), _q3["yanit"] + _q4["yanit"], ek(_q3["vitra_adi"] + _q4["vitra_adi"], "inde")),
+          "For \"vitra klozet trendyol mu hepsiburada mı daha uygun\" VitrA is named in all %d AI answers while vitra.com.tr is cited in %d; in return and delivery questions VitrA is named in only %d of %d answers" % (_q1["yanit"], _q1["vitra_kaynak"], _q3["vitra_adi"] + _q4["vitra_adi"], _q3["yanit"] + _q4["yanit"])),
+         ("Google Shopping'de VitrA sitesi listelemelerin %0,7'sini almakta, 27 kategori kelimesinin 15'inde görünmemektedir", "On Google Shopping the VitrA site takes 0.7% of listings and does not appear in 15 of 27 category keywords"),
          ("Google AI Mode ve ChatGPT alışveriş yanıtları ürün akışlarından ve ürün sayfası verisinden yararlanmaktadır", "Google AI Mode and ChatGPT shopping answers draw on product feeds and product page data"),
          ("Ürün akışının kapsamı, ürün bilgisinin zenginliği ve llms.txt'nin destek ve rehber içeriğiyle genişletilmesi bu yanıtlarda yer almayı destekleyebilir", "The coverage of the product feed, richer product information and an llms.txt expanded with support and guide content can support appearing in these answers")]),
 ])
@@ -206,12 +248,21 @@ HTML = """
 <h3>%s</h3>
 %s
 %s
+<h3>%s</h3>
+%s
+%s
+<h3>%s</h3>
+%s
+%s
+<h3>%s</h3>
+%s
+%s
 %s
 """ % (
  x("Google AI Overview, Gemini ve ChatGPT gibi yapay zeka yanıtları kullanıcının sorusunu birden fazla kaynaktan derlenen tek bir cevapla karşılamaktadır. Bu cevaplarda kaynak gösterilmek, soruyu doğrudan cevaplayan sayfaya, markanın tutarlı tanımlanmasına ve markadan site dışında söz edilmesine bağlıdır. Değerlendirme vitra.com.tr rehber içeriklerinin Search Console performansına (1 Eki 2025 - 25 Eyl 2026), 29.09.2026 AI Overview gözlemine ve 02.10.2026 tarihli marka kayıtlarına dayanmaktadır.",
    "AI answers such as Google AI Overview, Gemini and ChatGPT meet the user's question with a single answer compiled from several sources. Being cited in these answers depends on a page that answers the question directly, consistent identification of the brand, and mentions of the brand off the site. The assessment is based on the Search Console performance of vitra.com.tr guide content (1 Oct 2025 - 25 Sep 2026), the AI Overview observation of 29.09.2026 and brand records dated 02.10.2026."),
  kpi_kart(yzd(prat_t), "Rehber içerik tıklarının montaj, tamir ve temizlik yazılarından gelen payı · sayfaların %s'i, 1 Eki 2025 - 25 Eyl 2026" % yzd(prat_n), "Share of guide content clicks from installation, repair and cleaning articles · %s of pages, 1 Oct 2025 - 25 Sep 2026" % (("%.1f" % prat_n) + "%"), "hi"),
- kpi_kart("7 / 24", "VitrA'nın kaynak gösterildiği AI Overview (29.09.2026 gözlemi)", "AI Overviews citing VitrA (observation of 29.09.2026)"),
+ kpi_kart("%d / %d" % (len(_SO.AI_VITRA), len(_SO.AI_ICERIK)), "VitrA'nın kaynak gösterildiği AI Overview (29.09.2026 gözlemi)", "AI Overviews citing VitrA (observation of 29.09.2026)"),
  kpi_kart(yzd(100 * so_c / so_i, 2), "Soru sorgularında CTR · ortalama sıra %s, 1 Eki 2025 - 25 Eyl 2026" % ("%.1f" % so_p).replace(".", ","), "CTR on question queries · average position %s, 1 Oct 2025 - 25 Sep 2026" % ("%.1f" % so_p), "dn"),
  kpi_kart("5", "Destek bölümündeki sayfa sayısı; arıza, montaj, uyumluluk ve garanti sayfası yok", "Pages in the support section; no troubleshooting, installation, compatibility or warranty page"),
  x("Mevcut durum: rehber içerik ve soru sorguları", "Current state: guide content and question queries"), _POPSO,
@@ -220,10 +271,29 @@ HTML = """
          k(TOP_T), yzd(prat_n), yzd(prat_t), yzd(100 * (GS["dekor"][0] + GS["surd"][0]) / TOP_N), yzd(100 * (GS["dekor"][1] + GS["surd"][1]) / TOP_T), yzd(100 * so_c / so_i, 2)),
          "vitra.com.tr guide pages received %s organic clicks in the period. Installation, repair and cleaning articles make up %s of pages and take %s of clicks, while decoration, trend and sustainability articles make up %s of pages and take %s of clicks; there is a single repair article. On question queries the site is on the first page but CTR stays at %s: for these queries, answered on the results page itself, being cited in AI Overview becomes the main form of visibility." % (
          k(TOP_T).replace(",", "."), ("%.1f" % prat_n) + "%", ("%.1f" % prat_t) + "%", ("%.1f" % (100 * (GS["dekor"][0] + GS["surd"][0]) / TOP_N)) + "%", ("%.1f" % (100 * (GS["dekor"][1] + GS["surd"][1]) / TOP_T)) + "%", ("%.2f" % (100 * so_c / so_i)) + "%"), "D33", "D19"),
+ x("Yapay zeka yanıtlarında VitrA: ChatGPT, Gemini ve Google AI Overview", "VitrA in AI answers: ChatGPT, Gemini and Google AI Overview"),
+ T_AIG,
+ insight(("**Marka adı geçmeyen %d soruda VitrA, yapay zeka yanıtlarında en sık adı geçen üretici markadır**: ChatGPT yanıtlarının %s, Gemini'nin %s ve Google AI Overview'un %s VitrA'yı adıyla anmaktadır. Kale ve Creavit üç platformda da bu oranın altındadır; AI Overview'da ise Trendyol, Hepsiburada ve Koçtaş gibi satış kanalları yanıtların %%28-32 bandında yer almaktadır. Yanıtların %s olumsuz tonludur.")
+         % (AIG["markasiz_soru"], yzd(AIV["chatgpt"]) + "'inde", yzd(AIV["gemini"]) + "'ünde", yzd(AIV["google_ai_overview"]) + "'unda", yzd(100 * _DY["olumsuz"] / _DY["n"]) + "'i"),
+         ("**In %d questions without a brand name, VitrA is the manufacturer brand named most often in AI answers**: %s of ChatGPT answers, %s of Gemini answers and %s of Google AI Overview answers name VitrA. Kale and Creavit stay below this rate on all three platforms; in AI Overview, sales channels such as Trendyol, Hepsiburada and Koçtaş appear in 28-32%% of answers. %s of answers have a negative tone.")
+         % (AIG["markasiz_soru"], ("%.1f" % AIV["chatgpt"]) + "%", ("%.1f" % AIV["gemini"]) + "%", ("%.1f" % AIV["google_ai_overview"]) + "%", ("%.1f" % (100 * _DY["olumsuz"] / _DY["n"])) + "%"), "D39"),
+ x("Yapay zeka yanıtlarında en çok kaynak gösterilen alan adları", "Domains cited most in AI answers"),
+ T_AIK,
+ insight(("**vitra.com.tr, yapay zeka yanıtlarında en çok kaynak gösterilen alan adıdır** (%s yanıt); ancak Trendyol, Koçtaş, Hepsiburada ve Akakçe birlikte %s yanıtta kaynaktır. **Satın alma sorularında sıralama değişmektedir**: Koçtaş (%d), Trendyol (%d) ve Bauhaus (%d) vitra.com.tr'nin (%d) önündedir. Rehber siteleri (banyome.com, yapilir.com) ve YouTube da montaj ve seçim sorularında sık kaynak gösterilmektedir.")
+         % (bin(_KD["vitra.com.tr"][1]), bin(_PZ4), _KD["koctas.com.tr"][5], _KD["trendyol.com"][5], _KD["bauhaus.com.tr"][5], _KD["vitra.com.tr"][5]),
+         ("**vitra.com.tr is the domain cited most in AI answers** (%s answers); however Trendyol, Koçtaş, Hepsiburada and Akakçe together are cited in %s answers. **The order changes for purchase questions**: Koçtaş (%d), Trendyol (%d) and Bauhaus (%d) are ahead of vitra.com.tr (%d). Guide sites (banyome.com, yapilir.com) and YouTube are also frequently cited for installation and selection questions.")
+         % (f"{_KD['vitra.com.tr'][1]:,}", f"{_PZ4:,}", _KD["koctas.com.tr"][5], _KD["trendyol.com"][5], _KD["bauhaus.com.tr"][5], _KD["vitra.com.tr"][5]), "D39"),
+ x("Satın alma ve montaj sorularında VitrA ve vitra.com.tr", "VitrA and vitra.com.tr in purchase and installation questions"),
+ T_AIS,
+ insight(("**Satın almaya yakın sorularda VitrA adı geçse de yanıt kullanıcıyı pazaryerine yönlendirmektedir**: \"vitra klozet trendyol mu hepsiburada mı daha uygun\" sorusunda VitrA %d yanıtın %s geçmekte, vitra.com.tr yalnızca %s kaynak gösterilmektedir; \"klozet nereden alınır en uygun fiyata\" sorusunda pazaryeri kaynakları %d yanıtın %s yer almaktadır. **Teslimat ve iade sorularında VitrA neredeyse hiç anılmamaktadır** (iade ve değişim %d yanıtın %s, kargo ve teslimat %d yanıtın %s). Montaj dahil satış sorusunda ise vitra.com.tr %d yanıtın %s kaynaktır; \"banyo dolabı montajı\" sorusunda vitra.com.tr hiç kaynak gösterilmemektedir. **Teslimat, kargo hasarı, iade, kurulum ve banyo dolabı montajı koşullarının vitra.com.tr'de soru-cevap biçiminde yer alması**, bu yanıtlarda kaynak gösterilme potansiyeli taşımaktadır.")
+         % (_q1["yanit"], _kac(_q1["vitra_adi"], _q1["yanit"]), ek(_q1["vitra_kaynak"], "inde"),
+            _q2["yanit"], ek(_q2["pazaryeri_kaynak"], "inde"), _q3["yanit"], ek(_q3["vitra_adi"], "inde"), _q4["yanit"], ek(_q4["vitra_adi"], "inde"), _q5["yanit"], ek(_q5["vitra_kaynak"], "inde")),
+         ("**In questions close to purchase, VitrA is named but the answer points the user to marketplaces**: for \"vitra klozet trendyol mu hepsiburada mı daha uygun\" VitrA is named in %s answers while vitra.com.tr is cited in only %d; for \"klozet nereden alınır en uygun fiyata\" marketplace sources appear in %d of %d answers. **VitrA is barely named in delivery and return questions** (returns and exchanges %d of %d answers, shipping and delivery %d of %d). For the question on sales including installation, vitra.com.tr is cited in %d of %d answers; for \"banyo dolabı montajı\" vitra.com.tr is never cited. **Presenting delivery, shipping damage, returns, installation and cabinet fitting terms on vitra.com.tr in a question-and-answer format** has the potential to be cited in these answers.")
+         % (("all %d" % _q1["yanit"]) if _q1["vitra_adi"] == _q1["yanit"] else ("%d of %d" % (_q1["vitra_adi"], _q1["yanit"])), _q1["vitra_kaynak"], _q2["pazaryeri_kaynak"], _q2["yanit"], _q3["vitra_adi"], _q3["yanit"], _q4["vitra_adi"], _q4["yanit"], _q5["vitra_kaynak"], _q5["yanit"]), "D39"),
  x("Fırsat alanları", "Opportunity areas"),
  FIRSAT,
  insight("Fırsatların ortak noktası, kullanıcının bir sorunu çözmek ya da karar vermek için sorduğu sorulardır. Talep, satış sonrası şikayetler ve arama sonuçları aynı konularda (tamir, montaj, uyumluluk, ölçü) yoğunlaşmaktadır; bu konularda VitrA'nın üretici bilgisiyle kaynak olması, hem AI yanıtlarındaki görünürlüğü hem de satış sonrası deneyimi destekleyebilir.",
          "What the opportunities share is the questions users ask to solve a problem or make a decision. Demand, after-sales complaints and search results concentrate on the same topics (repair, installation, compatibility, size); VitrA being the source on these topics with manufacturer knowledge can support both visibility in AI answers and the after-sales experience.", "D24", "D19"),
- kaynak("Google Search Console · /ilham-veren-fikirler/ sayfaları ve soru sorguları, 1 Eki 2025 - 25 Eyl 2026 · Google arama sonuçları ve AI Overview, 109 kelime, 29.09.2026 · Wikidata ve Wikipedia, 02.10.2026 · vitra.com.tr llms.txt ve site haritaları, 02.10.2026 · Şikayetvar, YouTube ve Google Shopping verileri ilgili bölümlerdeki kaynaklardandır",
-        "Google Search Console · /ilham-veren-fikirler/ pages and question queries, 1 Oct 2025 - 25 Sep 2026 · Google search results and AI Overview, 109 keywords, 29.09.2026 · Wikidata and Wikipedia, 02.10.2026 · vitra.com.tr llms.txt and sitemaps, 02.10.2026 · Şikayetvar, YouTube and Google Shopping data come from the sources of the related sections", "D33", "D19", "D34", "D35", "D24", "D20", "D25"),
+ kaynak("Google Search Console · /ilham-veren-fikirler/ sayfaları ve soru sorguları, 1 Eki 2025 - 25 Eyl 2026 · Google arama sonuçları ve AI Overview, %d kelime, 29.09.2026 · Yapay zeka yanıt takibi, 125 soru, ChatGPT, Gemini ve Google AI Overview, 4 Eyl - 3 Eki 2026 · Wikidata ve Wikipedia, 02.10.2026 · vitra.com.tr llms.txt ve site haritaları, 02.10.2026 · Şikayetvar, YouTube ve Google Shopping verileri ilgili bölümlerdeki kaynaklardandır" % _SO.N,
+        "Google Search Console · /ilham-veren-fikirler/ pages and question queries, 1 Oct 2025 - 25 Sep 2026 · Google search results and AI Overview, %d keywords, 29.09.2026 · AI answer tracking, 125 questions, ChatGPT, Gemini and Google AI Overview, 4 Sep - 3 Oct 2026 · Wikidata and Wikipedia, 02.10.2026 · vitra.com.tr llms.txt and sitemaps, 02.10.2026 · Şikayetvar, YouTube and Google Shopping data come from the sources of the related sections" % _SO.N, "D33", "D19", "D39", "D34", "D35", "D24", "D20", "D25"),
 ) + _DIASO

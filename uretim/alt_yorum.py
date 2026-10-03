@@ -194,6 +194,11 @@ a{color:var(--coral-deep)}
 .btn svg{width:15px;height:15px}
 #tema .ay{display:none}:root[data-theme="dark"] #tema .ay{display:block}:root[data-theme="dark"] #tema .gunes{display:none}
 main{max-width:1240px;margin:0 auto;padding:26px 22px 60px}
+.setnav{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 18px}
+.setnav a{font-size:12.5px;padding:5px 12px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink-2);text-decoration:none;white-space:nowrap}
+.setnav a:hover{border-color:var(--coral-deep);color:var(--coral-deep)}
+.setnav a[aria-current="page"]{background:var(--teal);border-color:var(--teal);color:#fff}
+:root[data-theme="dark"] .setnav a[aria-current="page"]{background:var(--coral-deep);border-color:var(--coral-deep)}
 .eyebrow{font-size:11px;letter-spacing:.14em;color:var(--coral-deep);font-weight:700;margin:0 0 6px}
 h1{font-size:clamp(23px,3.4vw,32px);line-height:1.2;margin:0 0 10px;text-wrap:balance}
 .lede{color:var(--ink-2);max-width:92ch;margin:0 0 18px}
@@ -228,6 +233,7 @@ h2::after{content:"";position:absolute;left:0;bottom:-1px;width:72px;height:3px;
 .tb tbody tr.gizli{display:none}
 .note{background:var(--neutral);border-radius:10px;padding:12px 14px;margin:12px 0;font-size:13.5px}
 .note b{color:var(--coral-deep)}
+li::marker{color:#E85F36}
 .ins{border:1px solid var(--line);background:var(--card);border-radius:10px;padding:12px 14px;margin:12px 0;font-size:14px}
 .ins::before{content:"➔ ";color:var(--coral-deep);font-weight:700}
 .kartlar{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
@@ -381,11 +387,12 @@ dilKur(l0==='en'?'en':'tr');
 <meta name="robots" content="noindex,nofollow">
 <title>VitrA | Yorum ve Soru Seti</title><style>%(css)s</style></head><body>
 <header class="appbar"><div class="in">
- <div class="bb"><span class="lbl">%(marka)s</span><span class="logo-card"><img src="%(vitra)s" alt="VitrA"></span>
+ <div class="bb"><span class="logo-card"><img src="%(vitra)s" alt="VitrA"></span>
   <a class="geri" href="%(ana)s">← <span class="uzun">%(geri)s</span></a></div>
- <div class="bb">%(dilb)s%(temab)s<span class="lbl">%(haz)s</span><span class="ib"><img src="%(inb)s" alt="Inbound"></span></div>
+ <div class="bb">%(dilb)s%(temab)s<span class="ib"><img src="%(inb)s" alt="Inbound"></span></div>
 </div></header>
 <main>
+%(nav)s
 <p class="eyebrow">%(eyebrow)s</p>
 <h1>%(h1)s</h1>
 <p class="lede">%(lede)s</p>
@@ -428,7 +435,7 @@ dilKur(l0==='en'?'en':'tr');
 <script type="application/json" id="veri">%(veri)s</script>
 <script>%(js)s</script>
 </body></html>""" % {
-        "css": CSS, "marka": T("Marka", "Brand"), "vitra": VITRA, "ana": ANA, "geri": T("Rapora dön", "Back to the report"), "dilb": DIL_BTN, "temab": TEMA_BTN,
+        "nav": __import__("alt_veri").setnav(AD), "css": CSS, "marka": T("Marka", "Brand"), "vitra": VITRA, "ana": ANA, "geri": T("Rapora dön", "Back to the report"), "dilb": DIL_BTN, "temab": TEMA_BTN,
         "haz": T("Hazırlayan", "Prepared by"), "inb": INBOUND,
         "eyebrow": T("VitrA TÜRKİYE · PAZARYERİ YORUMLARI VE SORU-CEVAP", "VitrA TURKEY · MARKETPLACE REVIEWS AND Q&amp;A"),
         "h1": T("Yorum ve Soru Seti: Marka ve Pazaryeri Kırılımı", "Reviews and Q&amp;A Set: Brand and Marketplace Breakdown"),

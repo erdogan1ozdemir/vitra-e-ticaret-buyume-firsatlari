@@ -156,3 +156,25 @@ def etk(tr, en, anahtar=None):
     k_ = anahtar or tr
     if k_ not in _ETK: _ETK[k_] = len(_ETK) % 8 + 1
     return '<span class="etk e%d">%s</span>' % (_ETK[k_], x(tr, en))
+
+
+_SON = {1: ("i", 0), 2: ("i", 1), 3: ("ü", 0), 4: ("ö", 0), 5: ("e", 0), 6: ("ı", 1), 7: ("i", 1), 8: ("i", 0), 9: ("u", 0)}
+_ONL = {1: ("o", 0), 2: ("i", 1), 3: ("u", 0), 4: ("ı", 0), 5: ("i", 1), 6: ("ı", 0), 7: ("i", 0), 8: ("e", 0), 9: ("a", 0)}
+_SERT = {1: 0, 2: 0, 3: 1, 4: 1, 5: 1, 6: 0, 7: 0, 8: 0, 9: 0}
+
+
+def ek(n, tip):
+    """Sayiya Turkce ek: tip 'i' (iyelik: 84'u, 6'si), 'in' (6'nin, 14'un), 'de' (19'unda degil -> 19'da), 'e' (3'e, 6'ya)."""
+    n = int(n); s = str(n)
+    if n % 1000 == 0 and n: unl, sesli, sert = "i", 0, 0
+    elif n % 100 == 0 and n: unl, sesli, sert = "ü", 0, 0
+    elif n % 10 == 0 and n: unl, sesli = _ONL[(n // 10) % 10]; sert = (n // 10) % 10 in (4, 6, 7)
+    else: unl, sesli = _SON.get(n % 10, ("ı", 1)); sert = _SERT.get(n % 10, 0)
+    h4 = {"e": "i", "i": "i", "a": "ı", "ı": "ı", "o": "u", "u": "u", "ö": "ü", "ü": "ü"}[unl]
+    h2 = "e" if unl in "eiöü" else "a"
+    if tip == "i": return s + "'" + ("s" if sesli else "") + h4
+    if tip == "inde": return s + "'" + ("s" if sesli else "") + h4 + "nd" + ("e" if h4 in "iü" else "a")
+    if tip == "in": return s + "'" + ("n" if sesli else "") + h4 + "n"
+    if tip == "de": return s + "'" + ("t" if sert else "d") + h2
+    if tip == "e": return s + "'" + ("y" if sesli else "") + h2
+    raise ValueError(tip)

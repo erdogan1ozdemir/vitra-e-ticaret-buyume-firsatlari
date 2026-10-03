@@ -51,6 +51,24 @@ def doldur():
     ekle("https://merchant.hepsiburada.com", "Hepsiburada satıcı paneli: ürün performansı (hak ediş), görüntülenme, iptal ve değerlendirme raporları",
          "Komisyon, kargo, hizmet bedeli ve kampanya indirimi oranları; 949 SKU görüntülenme ve dönüşüm; 369 iptal nedeni; 204 SKU değerlendirme",
          bolum=["panel"], yontem=Y2, tarih=D30, kod=["D31"], kodbolum=False)
+    for url_, amac_, bilgi_ in [
+        ("https://www.wikidata.org/wiki/Q7937213", "Wikidata VitrA kaydı (marka ve entity tutarlılığı)", "Kuruluş tarihi, üst kuruluş, web sitesi ve ürün grubu alanları"),
+        ("https://www.wikidata.org/wiki/Q127325081", "Wikidata ikinci VitrA kaydı", "Aynı marka için ayrı kayıt; alanlar ve bağlantılar"),
+        ("https://tr.wikipedia.org/wiki/VitrA", "Türkçe Wikipedia VitrA maddesi", "Kuruluş tarihi, Artema ilişkisi"),
+        ("https://en.wikipedia.org/wiki/VitrA_(sanitaryware)", "İngilizce Wikipedia VitrA maddesi", "Kuruluş tarihi, üst kuruluş")]:
+        ekle(url_, amac_, bilgi_, bolum=["geo"], yontem="web araştırması (sayfa okuma)", tarih="02.10.2026", kod=["D34"], kodbolum=False, tur="kamu verisi")
+    for url_, amac_, bilgi_ in [
+        ("https://www.vitra.com.tr/llms.txt", "vitra.com.tr llms.txt", "Dosyadaki bölüm ve bağlantılar; destek ve rehber içeriğinin kapsamı"),
+        ("https://www.vitra.com.tr/sitemaps/sitemap-ilham.xml", "vitra.com.tr ilham site haritası", "Rehber ve ilham sayfalarının listesi"),
+        ("https://www.vitra.com.tr/sitemaps/sitemap-support.xml", "vitra.com.tr destek site haritası", "Destek bölümündeki sayfa sayısı (5)")]:
+        ekle(url_, amac_, bilgi_, bolum=["geo"], yontem="web araştırması (sayfa okuma)", tarih="02.10.2026", kod=["D35"], kodbolum=False, tur="marka sitesi")
+    ekle("https://www.similarweb.com/website/vitra.com.tr/", "Similarweb site trafiği ve kanal kırılımı", "31 alan adı; aylık ziyaret, kanal payları, etkileşim; Haz - Ağu 2026",
+         bolum=["rakip"], yontem="API (Similarweb verisi)", tarih="03.10.2026", kod=["D37"], kodbolum=False, tur="API")
+    Y4 = "yapay zeka yanıt takibi (günlük ve haftalık koşu)"
+    for url_, ad_ in [("https://chatgpt.com", "ChatGPT"), ("https://gemini.google.com", "Gemini"), ("https://www.google.com.tr", "Google AI Overview")]:
+        ekle(url_ + "#ai-yanit", "%s yanıtları: 125 soruda VitrA ve rakip markaların adı geçme oranı, kaynak gösterilen alan adları" % ad_,
+             "111 markasız ve 14 markalı soru; e-ticaret (20 soru) ve montaj (9 soru) grupları 28.09.2026'dan itibaren; 4 Eyl - 3 Eki 2026",
+             bolum=["geo"], yontem=Y4, tarih="04.10.2026", kod=["D39"], kodbolum=False, tur="yapay zeka")
     Y3 = "web araştırması (sayfa okuma)"
     for url_, amac_, bilgi_ in [
         ("https://www.aa.com.tr/tr/gundem/turkiyede-ortalama-hane-halki-buyuklugu-2024te-3-11-oldu/3566979", "TÜİK ADNKS hane sayısı (banyo yenileme tahmini)", "2024 hane sayısı 26.599.261, ortalama hane büyüklüğü 3,11"),

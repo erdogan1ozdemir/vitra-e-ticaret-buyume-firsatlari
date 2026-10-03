@@ -259,6 +259,12 @@ document.documentElement.classList.add('js');
   });
 
   /* mobil icindekiler sayfasi */
+  (function(){var b=document.getElementById('altmenu-b'),p=document.getElementById('altmenu-p');if(!b||!p)return;
+   function kapa(){p.hidden=true;b.setAttribute('aria-expanded','false')}
+   b.addEventListener('click',function(e){e.stopPropagation();var ac=p.hidden;p.hidden=!ac;b.setAttribute('aria-expanded',ac?'true':'false');if(ac){var f=p.querySelector('a');if(f)f.focus()}});
+   document.addEventListener('click',function(e){if(!p.hidden&&!p.contains(e.target))kapa()});
+   document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!p.hidden){kapa();b.focus()}});
+   p.addEventListener('click',function(e){if(e.target.closest('a'))kapa()})})();
   var fab=document.getElementById('tocfab'), sheet=document.getElementById('tocsheet');
   if(fab&&sheet){
     var oncekiOdak=null;

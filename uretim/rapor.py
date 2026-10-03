@@ -20,11 +20,11 @@ XLS = os.path.join(veri.KOK, AD + ".xlsx")
 BOLUMLER = []
 def bolum(bid, tr, en, govde):
     BOLUMLER.append((bid, tr))
-    return '<section id="%s"><h2><span class="no">%02d</span>%s</h2>%s</section>' % (bid, len(BOLUMLER), x(tr, en), govde)
+    return '<section id="%s"><h2><span class="h2i"><span class="no">%02d</span>%s</span></h2>%s</section>' % (bid, len(BOLUMLER), x(tr, en), govde)
 
 P = []
 P.append(bolum("ozet", "Özet", "Summary", b_ozet.HTML))
-P.append(bolum("makro", "Makro Ortam ve Ödeme Gücü", "Macro Environment and Purchasing Power", b_makro.HTML))
+P.append(bolum("makro", "Ekonomik Ortam: Harcama, Güven ve Konut Piyasası", "Economic Environment: Spending, Confidence and Housing Market", b_makro.HTML))
 P.append(bolum("talep", "Kategori Talebi ve Dönemsel Değişim", "Category Demand and Period Change", b_talep.HTML))
 P.append(bolum("ssgbm", "SSG ve BM: Derin Talep İncelemesi", "SSG and BM: In-Depth Demand Review", b_ssgbm.HTML))
 P.append(bolum("ihtiyac", "İhtiyaç Dili: Kullanıcı Ne Arıyor?", "Need Language: What Is the User Searching For?", b_niyet.HTML))
@@ -65,6 +65,12 @@ def _h3_not(m):
         tr, en = h3_not.N[t]; return '<h3 id="%s">%s</h3><p class="h3n">%s</p>' % (_h3_id(t), t, x(*_kalin_cift(tr, en)))
     return '<h3 id="%s">%s</h3>' % (_h3_id(t), t)
 govde = re.sub(r'<h3>([^<]+)</h3>', _h3_not, govde)
+# cok sutunlu tablolar: sutun sayisina gore asgari genislik, ilk (metin) sutununa asgari genislik
+def _genislik(m):
+    blok = m.group(0); nc = blok[:blok.find("</tr>")].count("<th")
+    if nc < 6 or "genis" in m.group(1) or "urunt" in m.group(1): return blok
+    return blok.replace('<div class="tw %s">' % m.group(1), '<div class="tw %s cok" style="--nc:%d">' % (m.group(1), nc), 1) if m.group(1) else blok.replace('<div class="tw">', '<div class="tw cok" style="--nc:%d">' % nc, 1)
+govde = re.sub(r'<div class="tw ?([^"]*)">.*?</table></div>', _genislik, govde, flags=re.S)
 # tablolarda VitrA satiri: ilk hucresi VitrA / vitra.com.tr olan satirlar hafif zeminle vurgulanir
 _VR = re.compile(r'<tr><td>(?:<[^>]+>\s*)*(?:VitrA|vitra\.com\.tr)(?:\s*\([^)]*\))?\s*(?:<[^>]+>\s*)*</td>')
 govde = _VR.sub(lambda m: m.group(0).replace("<tr><td>", '<tr class="vsat"><td>', 1), govde)
@@ -174,9 +180,16 @@ dialog.popd::backdrop{background:rgba(16,51,47,.45)}
 main{max-width:1280px}
 @media(max-width:940px){.wrap{padding:0 16px}.appbar .in{padding:10px 16px}}
 /* basliklar */
-h2{position:relative;padding-bottom:9px;border-bottom:1px solid var(--line)}
-h2::after{content:"";position:absolute;left:0;bottom:-1px;width:72px;height:3px;border-radius:2px;background:linear-gradient(90deg,var(--coral) 0%,var(--coral-deep) 100%)}
+h2{position:relative;padding-bottom:0;border-bottom:1px solid var(--line);font-size:23.6px}
+h2 .h2i{display:inline-block;padding-bottom:9px;margin-bottom:-1px;border-bottom:3px solid var(--coral-deep)}
+@media(max-width:940px){h2{font-size:21.3px}}
+@media(max-width:520px){h2{font-size:19.6px}}
 h3{display:inline-block;padding:1px 10px 1px 0;border-radius:2px;background:linear-gradient(to top,var(--coral-tint) 0 34%,transparent 34%)}
+main h3{font-size:18.6px}
+@media(max-width:940px){main h3{font-size:17.4px}}
+main .fnote h3{font-size:15px}
+/* madde imleri: Inbound turuncusu */
+li::marker{color:#E85F36}
 .two h3{display:inline-block}
 .h3n{max-width:none}
 /* vurgu */
@@ -202,7 +215,15 @@ th.srt.sd .q::after{border-top:5px solid var(--coral)}
 .altlink:hover,.altlink:focus{background:rgba(255,255,255,.20);border-color:rgba(255,255,255,.5);color:#fff;text-decoration:none}
 .altlink:focus-visible{outline:2px solid var(--coral);outline-offset:2px}
 .altlink svg{width:14px;height:14px;flex:0 0 auto}
-@media(max-width:720px){.altlink .t{display:none}.altlink{padding:0 8px}}
+.altset{display:flex;gap:6px;flex-wrap:nowrap}
+.altmenu{display:none;position:relative}
+.altmenu__p{position:absolute;right:0;top:40px;z-index:60;min-width:230px;background:var(--card);border:1px solid var(--line);border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.18);padding:6px}
+.altmenu__p[hidden]{display:none}
+a.altm{display:flex;align-items:center;gap:9px;padding:9px 10px;border-radius:7px;color:var(--ink);font-size:13.5px;text-decoration:none}
+a.altm:hover,a.altm:focus-visible{background:var(--neutral);text-decoration:none}
+a.altm svg{width:16px;height:16px;flex:0 0 auto;color:var(--coral-deep)}
+@media(max-width:1240px){.altset{display:none}.altmenu{display:block}}
+@media(max-width:720px){.altmenu .altlink .t{display:none}.altmenu .altlink{padding:0 8px}.altmenu__p{position:fixed;left:12px;right:12px;top:60px;min-width:0}}
 a.popb.altb{text-decoration:none;display:inline-block;margin-left:0}
 .fnote h4.kh4{margin:2px 0 8px;font-size:16px}
 .kopru{margin:14px 0 4px;color:var(--ink-2);font-size:13.5px}
@@ -221,11 +242,16 @@ a.git:focus-visible{outline:2px solid var(--coral);outline-offset:2px}
 :root[data-theme="dark"] .e4{background:#1F3048;color:#A9C6EE}:root[data-theme="dark"] .e5{background:#33284A;color:#CDB6EC}:root[data-theme="dark"] .e6{background:#21391F;color:#B2DCAA}
 :root[data-theme="dark"] .e7{background:#47222F;color:#F2AFC5}:root[data-theme="dark"] .e8{background:#2E2D2A;color:#D3D0C9}
 /* vurgu */
-b.vk{font-weight:650;color:var(--ink);background:linear-gradient(transparent 58%,var(--coral-tint) 58%);padding:0 1px}
+b.vk{font-weight:700;color:var(--ink)}
 tr.vsat td{background:color-mix(in srgb,var(--coral-tint) 55%,transparent)}
 tr.vsat td:first-child{font-weight:650}
 /* ara tablo basliklari ve urun tablolari */
 p.tbas{margin:30px 0 8px;font-size:14.5px}
+.fnote p.fac{margin:0 0 8px;color:var(--muted);font-size:12.8px;line-height:1.5}
+.tw.cok table{min-width:max(100%, calc(var(--nc) * 118px + 140px))}
+.tw.cok td,.tw.cok th{min-width:96px}
+.tw.cok td:first-child,.tw.cok th:first-child{min-width:230px}
+.tw.cok td{vertical-align:middle}
 .tw.urunt table{min-width:1180px}
 .tw.urunt td:first-child,.tw.urunt th:first-child{min-width:300px;max-width:380px;white-space:normal}
 h3[id]{scroll-margin-top:calc(var(--apph, 64px) + 24px)}
@@ -234,7 +260,7 @@ h3[id]{scroll-margin-top:calc(var(--apph, 64px) + 24px)}
 """
 # ---------------------------------------------------------------- icindekiler
 KISA = {"yorum": ("Yorumlar ve Soru-Cevap", "Reviews and Q&A"), "ihtiyac": ("İhtiyaç Dili", "Need Language"), "youtube": ("YouTube: Montaj ve Tamir", "YouTube: Installation and Repair"), "rakip": ("Rakip Görünürlüğü ve Ölçek", "Competitor Visibility and Scale"),
-        "model": ("Kanal Rolleri ve Model", "Channel Roles and Model"), "panel": ("Resmi Mağaza Paneli", "Official Store Panel"), "makro": ("Makro Ortam", "Macro Environment"), "talep": ("Kategori Talebi", "Category Demand"), "organik": ("Organik Kanal", "Organic Channel"),
+        "model": ("Kanal Rolleri ve Model", "Channel Roles and Model"), "panel": ("Resmi Mağaza Paneli", "Official Store Panel"), "makro": ("Ekonomik Ortam", "Economic Environment"), "talep": ("Kategori Talebi", "Category Demand"), "organik": ("Organik Kanal", "Organic Channel"),
         "marka": ("Marka Aramaları", "Brand Searches"), "ssgbm": ("SSG ve BM Derin Talep", "SSG and BM In Depth"), "katalog": ("Katalog ve Talep", "Catalogue and Demand"), "yeni": ("Yeni Kategori ve Segment", "New Categories and Segments"), "set": ("Set ve Ürün + Hizmet", "Sets and Product + Service"), "benchmark": ("Benchmark ve Dijital Deneyim", "Benchmark and Digital Experience"), "serp": ("Google SERP ve AI Overview", "Google SERP and AI Overview"), "trafik": ("Marka Sitelerinde Trafik", "Traffic on Brand Sites"), "pazaryeri": ("Pazaryeri ve Çok Satanlar", "Marketplaces and Best Sellers"), "politika": ("Kanal Politikaları", "Channel Policies"), "sikayet": ("Şikayetvar: Satış Sonrası", "Şikayetvar: After-Sales"), "fiyat": ("Fiyat ve Satıcı Manzarası", "Price and Seller Landscape"), "derin": ("Alt Kategori Derinliği", "Sub-Category Depth"), "geo": ("AI Arama ve GEO Fırsatları", "AI Search and GEO Opportunities")}
 KUMELER = [("DURUM", "STATUS", ["ozet", "makro"]), ("TALEP", "DEMAND", ["talep", "ssgbm", "ihtiyac", "organik", "marka", "serp", "youtube", "sikayet"]), ("FIRSAT", "OPPORTUNITY", ["katalog", "yeni", "set"]), ("REKABET VE MODEL", "COMPETITION AND MODEL", ["rakip", "trafik", "pazaryeri", "derin", "panel", "yorum", "fiyat", "politika", "benchmark", "model"]),
            ("PLAN", "PLAN", ["geo", "adimlar"]), ("EK", "APPENDIX", ["yontem", "kaynakca", "sozluk"])]
@@ -262,15 +288,20 @@ def dl_buton(sinif=""):
     b64 = base64.b64encode(open(XLS, "rb").read()).decode(); kb = round(os.path.getsize(XLS) / 1024)
     with zipfile.ZipFile(XLS) as z: sekme = sum(1 for nm in z.namelist() if nm.startswith("xl/worksheets/sheet"))
     x("Veri dosyasını indir · %d sekme · %s KB" % (sekme, kb), "Download the data file · %d sheets · %s KB" % (sekme, kb))
-    x("· Excel, %s KB" % kb, "· Excel, %s KB" % kb)
-    return ('<a class="dl %s" href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,%s" download="%s" title="Veri dosyasını indir · %d sekme · %s KB">%s<span class="t">%s</span> <span class="dl-alt">&middot; Excel, %s KB</span></a>'
-            % (sinif, b64, os.path.basename(XLS), sekme, kb, IKON, x("Veri dosyası", "Data file"), kb))
+    return ('<a class="dl %s" href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,%s" download="%s" title="Veri dosyasını indir · %d sekme · %s KB">%s<span class="t">%s</span> </a>'
+            % (sinif, b64, os.path.basename(XLS), sekme, kb, IKON, x("Veri dosyası", "Data file")))
 
 # ---------------------------------------------------------------- alt sayfa baglantisi (ust bar, dil dugmesinin solu)
-ALTLINK = ('<a class="altlink" href="yorum-soru-seti.html" target="_blank" rel="noopener" title="%s">'
-           '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>'
-           '<span class="t">%s</span></a>') % ("Yorum ve soru setini yeni sekmede aç", x("Yorum ve soru seti", "Review and Q&A set"))
-x("Yorum ve soru setini yeni sekmede aç", "Open the review and Q&A set in a new tab")
+from alt_veri import SETLER as _SETLER
+def _altlink(f, tr, en, ikon, sinif="altlink"):
+    return ('<a class="%s" href="%s" target="_blank" rel="noopener" title="%s">'
+            '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">%s</svg>'
+            '<span class="t">%s</span></a>') % (sinif, f, x("%s setini yeni sekmede aç" % tr, "Open the %s set in a new tab" % en.lower().replace("q&a", "Q&A")), ikon, x(tr, en))
+ALTLINK = ('<div class="altset">%s</div><div class="altmenu"><button class="altlink" type="button" id="altmenu-b" aria-expanded="false" aria-controls="altmenu-p" title="%s">'
+           '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg>'
+           '<span class="t">%s</span></button><div class="altmenu__p" id="altmenu-p" hidden>%s</div></div>') % (
+    "".join(_altlink(*s_) for s_ in _SETLER), x("Veri setlerini göster", "Show the data sets"), x("Veri setleri", "Data sets"),
+    "".join(_altlink(*s_, sinif="altm") for s_ in _SETLER))
 
 # ---------------------------------------------------------------- hero
 HERO = """<div class="hero dark"><div class="ring"></div>
@@ -287,9 +318,9 @@ DOC = """<!doctype html>
 %s</style></head>
 <body>
 <header class="appbar"><div class="in">
-  <div class="brandbit"><span class="lbl">%s</span>
+  <div class="brandbit">
     <span class="logo-card"><img src="%s" alt="VitrA"></span></div>
-  <div class="brandbit" style="gap:12px">%s%s%s<span class="lbl">%s</span>
+  <div class="brandbit" style="gap:12px">%s%s%s
     <span class="ib"><img src="%s" alt="Inbound"></span></div>
 </div></header>
 <div class="wrap">
@@ -305,7 +336,7 @@ DOC = """<!doctype html>
   <div class="tocsheet__in"><div class="tocsheet__tut"></div>%s</div>
 </div>
 <script>%s</script>
-</body></html>""" % (CSS + CSS_EK + KAYNAKCA_CSS + CSS_SON + logo_css(), target_css, x("Marka", "Brand"), VITRA, ALTLINK, TEMA, dl_buton(), x("Hazırlayan", "Prepared by"), INBOUND, x("İçindekiler", "Contents"), toc, HERO, govde,
+</body></html>""" % (CSS + CSS_EK + KAYNAKCA_CSS + CSS_SON + logo_css(), target_css, VITRA, ALTLINK, TEMA, dl_buton(), INBOUND, x("İçindekiler", "Contents"), toc, HERO, govde,
                      dl_buton("dl-foot"), x("Hacimler Google Keyword Planner &middot; sayfa ve sorgu verisi Google Search Console &middot; rakip ölçümü Ahrefs &middot; makro seriler TCMB EVDS &middot; autocomplete ve YouTube Google",
                                             "Volumes Google Keyword Planner &middot; page and query data Google Search Console &middot; competitor measurement Ahrefs &middot; macro series CBRT EVDS &middot; autocomplete and YouTube Google"),
                      x("İçindekiler menüsünü aç", "Open the contents menu"), x("İçindekiler", "Contents"), toc, JS)
@@ -319,3 +350,7 @@ yol = os.path.join(veri.KOK, AD + ".html")
 open(yol, "w", encoding="utf-8").write(DOC)
 if _eksik_h3: print("uyarı · açıklaması olmayan alt başlık:", _eksik_h3)
 print("kaydedildi:", yol, len(DOC), "karakter,", len(BOLUMLER), "bölüm,", _n, "ifade çevrildi")
+
+# ---------------------------------------------------------------- alt sayfalar: genis veri setleri
+import alt_veri
+alt_veri.main(ceviri.EN)

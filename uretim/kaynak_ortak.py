@@ -14,7 +14,7 @@ RAPOR = os.path.join(KOK, "VitrA_E-Ticaret_Buyume_Firsatlari.html")
 H = open(RAPOR, encoding="utf-8").read()
 BOLUM = {}       # id -> (no, ad)
 SIRA = []
-for sid, no, govde in re.findall(r'<section id="([^"]+)"><h2><span class="no">(\d+)</span>(.*?)</h2>', H, re.S):
+for sid, no, govde in re.findall(r'<section id="([^"]+)"><h2>(?:<span class="h2i">)?<span class="no">(\d+)</span>(.*?)</h2>', H, re.S):
     ad = html.unescape(re.sub(r"<[^>]+>", "", govde)).strip()
     BOLUM[sid] = (int(no), ad); SIRA.append(sid)
 
@@ -28,12 +28,12 @@ def _kod_bolum():
     no2kod = {}
     for n, body in lis:
         txt = html.unescape(re.sub(r"<[^>]+>", "", body))
-        hit = [c for c, (tr, en, u) in kaynakca.K.items() if tr in txt]
+        hit = [c for c, (tr, en, u) in kaynakca.K.items() if tr.lower() in txt.lower()]
         if len(hit) != 1:
             raise SystemExit("Kaynakca numarasi koda eslenemedi: %s %s" % (n, hit))
         no2kod[int(n)] = hit[0]
     sonuc = {c: [] for c in kaynakca.K}
-    for sid, no, body in re.findall(r'<section id="([^"]+)"><h2><span class="no">(\d+)</span>(.*?)</section>', H, re.S):
+    for sid, no, body in re.findall(r'<section id="([^"]+)"><h2>(?:<span class="h2i">)?<span class="no">(\d+)</span>(.*?)</section>', H, re.S):
         if sid in ("kaynakca", "sozluk"):
             continue
         nums = set()
