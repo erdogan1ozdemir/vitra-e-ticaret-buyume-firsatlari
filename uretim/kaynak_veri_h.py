@@ -64,7 +64,11 @@ def doldur():
         ekle(url_, amac_, bilgi_, bolum=["geo"], yontem="web araştırması (sayfa okuma)", tarih="02.10.2026", kod=["D35"], kodbolum=False, tur="marka sitesi")
     ekle("https://www.similarweb.com/website/vitra.com.tr/", "Similarweb site trafiği ve kanal kırılımı", "31 alan adı; aylık ziyaret, kanal payları, etkileşim; Haz - Ağu 2026",
          bolum=["rakip"], yontem="API (Similarweb verisi)", tarih="03.10.2026", kod=["D37"], kodbolum=False, tur="API")
-    Y4 = "yapay zeka yanıt takibi (günlük ve haftalık koşu)"
+    ekle("https://www.vitra.com.tr/search?q=klozet+kapa%C4%9F%C4%B1", "vitra.com.tr site içi arama testi (38 arama)", "Sonuç sayısı, ilk 20 ürün kartı; 6 aramada sonuç yok; ilk kartlarda montaj hizmeti",
+         bolum=["yolculuk"], yontem="curl (herkese açık arama sayfası, istekler arası 2 sn)", tarih="04.10.2026", kod=["D40"], adet=38, kodbolum=False, tur="marka sitesi")
+    ekle("https://www.vitra.com.tr/sepetim", "vitra.com.tr sepet, giriş ve üyeliksiz alışveriş ekranları", "Sepeti Onayla → giriş paneli → e-posta ekranı → adres; montaj ve öneri karuselleri sepetin altında",
+         bolum=["yolculuk"], yontem="ekran görüntüsü (kullanıcı tarafından iletildi)", tarih="04.10.2026", kod=["D41"], kodbolum=False, tur="marka sitesi")
+    Y4 = "yapay zeka yanıt takibi (tekrarlı koşu)"
     for url_, ad_ in [("https://chatgpt.com", "ChatGPT"), ("https://gemini.google.com", "Gemini"), ("https://www.google.com.tr", "Google AI Overview")]:
         ekle(url_ + "#ai-yanit", "%s yanıtları: 125 soruda VitrA ve rakip markaların adı geçme oranı, kaynak gösterilen alan adları" % ad_,
              "111 markasız ve 14 markalı soru; e-ticaret (20 soru) ve montaj (9 soru) grupları 28.09.2026'dan itibaren; 4 Eyl - 3 Eki 2026",

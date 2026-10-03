@@ -178,3 +178,13 @@ def ek(n, tip):
     if tip == "de": return s + "'" + ("t" if sert else "d") + h2
     if tip == "e": return s + "'" + ("y" if sesli else "") + h2
     raise ValueError(tip)
+
+
+def alt_btn(dosya, tr, en, hedef=""):
+    """Bolum icinden ilgili veri seti alt sayfasina (yeni sekme) giden dugme."""
+    return '<a class="popb altb" href="%s%s" target="_blank" rel="noopener">%s <span aria-hidden="true">↗</span></a>' % (dosya, hedef, x(tr, en))
+
+
+def kopru(tr, en, dosya, b_tr, b_en, hedef=""):
+    """Kisa aciklama + alt sayfa dugmesi (bolum icinde, ilgili tablonun yaninda)."""
+    return '<p class="kopru">%s %s</p>' % (x(tr, en), alt_btn(dosya, b_tr, b_en, hedef))

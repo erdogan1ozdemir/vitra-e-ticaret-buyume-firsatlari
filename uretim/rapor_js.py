@@ -259,6 +259,7 @@ document.documentElement.classList.add('js');
   });
 
   /* mobil icindekiler sayfasi */
+  document.addEventListener('click',function(e){var im=e.target.closest('.ekranlar img');if(im)im.closest('figure').classList.toggle('acik')});
   (function(){var b=document.getElementById('altmenu-b'),p=document.getElementById('altmenu-p');if(!b||!p)return;
    function kapa(){p.hidden=true;b.setAttribute('aria-expanded','false')}
    b.addEventListener('click',function(e){e.stopPropagation();var ac=p.hidden;p.hidden=!ac;b.setAttribute('aria-expanded',ac?'true':'false');if(ac){var f=p.querySelector('a');if(f)f.focus()}});

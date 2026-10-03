@@ -44,6 +44,8 @@ P.append(bolum("panel", "VitrA Resmi Mağaza: Pazaryeri Panel Verisi", "VitrA Of
 P.append(bolum("yorum", "Pazaryeri Yorumları ve Soru-Cevap: Sentiment ve Pain Point Analizi", "Marketplace Reviews and Q&A: Sentiment and Pain Point Analysis", b_yorum.HTML))
 P.append(bolum("fiyat", "Fiyat ve Satıcı Manzarası: Shopping, Trendyol, Hepsiburada", "Price and Seller Landscape: Shopping, Trendyol, Hepsiburada", b_fiyat.HTML))
 P.append(bolum("politika", "Kanal Politikaları ve Keşif Kanalları", "Channel Policies and Discovery Channels", b_politika.HTML))
+import b_yolculuk
+P.append(bolum("yolculuk", "vitra.com.tr Satın Alma Yolculuğu: Site İçi Arama, Sepet ve Ödeme", "vitra.com.tr Purchase Journey: Site Search, Cart and Checkout", b_yolculuk.HTML))
 P.append(bolum("benchmark", "Benchmark: E-Ticaret Modelleri ve Dijital Deneyim", "Benchmark: E-Commerce Models and Digital Experience", b_benchmark.HTML))
 P.append(bolum("model", "Kanal Rolleri ve Etkileşim Modeli", "Channel Roles and Engagement Model", b_model.HTML))
 P.append(bolum("geo", "AI Arama ve GEO Fırsatları", "AI Search and GEO Opportunities", b_geo.HTML))
@@ -59,12 +61,27 @@ def _h3_id(t):
     i = _hid(t); j = i; k_ = 2
     while j in _IDLER: j = "%s-%d" % (i, k_); k_ += 1
     _IDLER.add(j); return j
+import serp_ozet as _SO
+from ortak import kopru as _kopru
+# alt basliktan ilgili veri seti alt sayfasina dugme (basligin aciklama notunun hemen altinda)
+H3_ALT = {
+ "Kim sıralanıyor?": ("%d kelimenin ilk 10 sonucu, AI Overview kaynakları ve \"Diğer sorular\" kutusu süzülebilir tablolar halinde ayrı sayfadadır." % _SO.N,
+                      "The top 10 results, AI Overview sources and \"People also ask\" box for the %d keywords are in filterable tables on a separate page." % _SO.N, "arama-sonuclari.html", "Arama Sonuçları sayfasını görüntüle", "View the Search Results page", ""),
+ "Kullanıcının Google'da sorduğu sorular": ("%d sorunun tamamı, çıktığı kelimelerle birlikte:" % len(_SO.PAA_SORU), "All %d questions with the keywords where they appeared:" % len(_SO.PAA_SORU), "arama-sonuclari.html", "Soruları görüntüle", "View the questions", "#paa"),
+ "Ana kategori düzeyinde değişim": ("Talep bölümlerindeki 2.342 kelimenin tamamı, kategori, niyet ve iki dönemin arama hacmiyle:", "All 2,342 keywords in the demand sections, with category, intent and search volume for both periods:", "kelime-evreni.html", "Kelime Evreni sayfasını görüntüle", "View the Keyword Universe page", ""),
+ "Autocomplete önerilerinin tema oranı": ("Tüm otomatik tamamlama önerileri, kök ifade ve grupla:", "All autocomplete suggestions, with seed term and group:", "kelime-evreni.html", "Önerileri görüntüle", "View the suggestions", "#oneriler"),
+ "Alt kesitler: vitra.com.tr, pazaryeri ve fiyat karşılaştırma siteleri": ("Taramadaki 11.982 ürün kartının tamamı (kanal, marka, satıcı, fiyat, puan):", "All 11,982 product cards from the scan (channel, brand, seller, price, rating):", "pazaryeri-taramasi.html", "Pazaryeri Taraması sayfasını görüntüle", "View the Marketplace Scan page", ""),
+ "Genişletilmiş tarama: 68 arama, altı niyet grubu": ("68 aramanın tüm video sonuçları ve kanal özeti:", "All video results of the 68 searches and the channel summary:", "youtube-videolari.html", "YouTube Videoları sayfasını görüntüle", "View the YouTube Videos page", ""),
+}
 def _h3_not(m):
     t = m.group(1)
+    ek_ = _kopru(*H3_ALT[t]) if t in H3_ALT else ""
     if t in h3_not.N:
-        tr, en = h3_not.N[t]; return '<h3 id="%s">%s</h3><p class="h3n">%s</p>' % (_h3_id(t), t, x(*_kalin_cift(tr, en)))
-    return '<h3 id="%s">%s</h3>' % (_h3_id(t), t)
+        tr, en = h3_not.N[t]; return '<h3 id="%s">%s</h3><p class="h3n">%s</p>%s' % (_h3_id(t), t, x(*_kalin_cift(tr, en)), ek_)
+    return '<h3 id="%s">%s</h3>%s' % (_h3_id(t), t, ek_)
 govde = re.sub(r'<h3>([^<]+)</h3>', _h3_not, govde)
+_yok = [t for t in H3_ALT if 'id="%s"' % _hid(t) not in govde]
+if _yok: raise SystemExit('alt sayfa dugmesi icin baslik bulunamadi: %s' % _yok)
 # cok sutunlu tablolar: sutun sayisina gore asgari genislik, ilk (metin) sutununa asgari genislik
 def _genislik(m):
     blok = m.group(0); nc = blok[:blok.find("</tr>")].count("<th")
@@ -222,7 +239,7 @@ th.srt.sd .q::after{border-top:5px solid var(--coral)}
 a.altm{display:flex;align-items:center;gap:9px;padding:9px 10px;border-radius:7px;color:var(--ink);font-size:13.5px;text-decoration:none}
 a.altm:hover,a.altm:focus-visible{background:var(--neutral);text-decoration:none}
 a.altm svg{width:16px;height:16px;flex:0 0 auto;color:var(--coral-deep)}
-@media(max-width:1240px){.altset{display:none}.altmenu{display:block}}
+@media(max-width:1400px){.altset{display:none}.altmenu{display:block}}
 @media(max-width:720px){.altmenu .altlink .t{display:none}.altmenu .altlink{padding:0 8px}.altmenu__p{position:fixed;left:12px;right:12px;top:60px;min-width:0}}
 a.popb.altb{text-decoration:none;display:inline-block;margin-left:0}
 .fnote h4.kh4{margin:2px 0 8px;font-size:16px}
@@ -255,14 +272,23 @@ p.tbas{margin:30px 0 8px;font-size:14.5px}
 .tw.urunt table{min-width:1180px}
 .tw.urunt td:first-child,.tw.urunt th:first-child{min-width:300px;max-width:380px;white-space:normal}
 h3[id]{scroll-margin-top:calc(var(--apph, 64px) + 24px)}
+.ekranlar{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:12px 0 14px}
+.ekranlar figure{margin:0;position:relative;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px}
+.ekranlar img{width:100%;height:auto;display:block;border-radius:6px;border:1px solid var(--line)}
+.ekranlar figcaption{font-size:12.5px;line-height:1.45;color:var(--ink-2);margin-top:7px}
+.ekranlar .eno{position:absolute;top:14px;left:14px;width:24px;height:24px;border-radius:50%;background:var(--coral-deep);color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.ekranlar img{cursor:zoom-in}
+.ekranlar figure.acik{grid-column:1/-1}
+.ekranlar figure.acik img{cursor:zoom-out}
+@media(max-width:720px){.ekranlar{grid-template-columns:1fr}}
 .tw.genis table{min-width:1460px}
 .tw.genis td:first-child{white-space:nowrap}
 """
 # ---------------------------------------------------------------- icindekiler
-KISA = {"yorum": ("Yorumlar ve Soru-Cevap", "Reviews and Q&A"), "ihtiyac": ("İhtiyaç Dili", "Need Language"), "youtube": ("YouTube: Montaj ve Tamir", "YouTube: Installation and Repair"), "rakip": ("Rakip Görünürlüğü ve Ölçek", "Competitor Visibility and Scale"),
+KISA = {"yolculuk": ("Satın Alma Yolculuğu", "Purchase Journey"), "yorum": ("Yorumlar ve Soru-Cevap", "Reviews and Q&A"), "ihtiyac": ("İhtiyaç Dili", "Need Language"), "youtube": ("YouTube: Montaj ve Tamir", "YouTube: Installation and Repair"), "rakip": ("Rakip Görünürlüğü ve Ölçek", "Competitor Visibility and Scale"),
         "model": ("Kanal Rolleri ve Model", "Channel Roles and Model"), "panel": ("Resmi Mağaza Paneli", "Official Store Panel"), "makro": ("Ekonomik Ortam", "Economic Environment"), "talep": ("Kategori Talebi", "Category Demand"), "organik": ("Organik Kanal", "Organic Channel"),
         "marka": ("Marka Aramaları", "Brand Searches"), "ssgbm": ("SSG ve BM Derin Talep", "SSG and BM In Depth"), "katalog": ("Katalog ve Talep", "Catalogue and Demand"), "yeni": ("Yeni Kategori ve Segment", "New Categories and Segments"), "set": ("Set ve Ürün + Hizmet", "Sets and Product + Service"), "benchmark": ("Benchmark ve Dijital Deneyim", "Benchmark and Digital Experience"), "serp": ("Google SERP ve AI Overview", "Google SERP and AI Overview"), "trafik": ("Marka Sitelerinde Trafik", "Traffic on Brand Sites"), "pazaryeri": ("Pazaryeri ve Çok Satanlar", "Marketplaces and Best Sellers"), "politika": ("Kanal Politikaları", "Channel Policies"), "sikayet": ("Şikayetvar: Satış Sonrası", "Şikayetvar: After-Sales"), "fiyat": ("Fiyat ve Satıcı Manzarası", "Price and Seller Landscape"), "derin": ("Alt Kategori Derinliği", "Sub-Category Depth"), "geo": ("AI Arama ve GEO Fırsatları", "AI Search and GEO Opportunities")}
-KUMELER = [("DURUM", "STATUS", ["ozet", "makro"]), ("TALEP", "DEMAND", ["talep", "ssgbm", "ihtiyac", "organik", "marka", "serp", "youtube", "sikayet"]), ("FIRSAT", "OPPORTUNITY", ["katalog", "yeni", "set"]), ("REKABET VE MODEL", "COMPETITION AND MODEL", ["rakip", "trafik", "pazaryeri", "derin", "panel", "yorum", "fiyat", "politika", "benchmark", "model"]),
+KUMELER = [("DURUM", "STATUS", ["ozet", "makro"]), ("TALEP", "DEMAND", ["talep", "ssgbm", "ihtiyac", "organik", "marka", "serp", "youtube", "sikayet"]), ("FIRSAT", "OPPORTUNITY", ["katalog", "yeni", "set"]), ("REKABET VE MODEL", "COMPETITION AND MODEL", ["rakip", "trafik", "pazaryeri", "derin", "panel", "yorum", "fiyat", "politika", "yolculuk", "benchmark", "model"]),
            ("PLAN", "PLAN", ["geo", "adimlar"]), ("EK", "APPENDIX", ["yontem", "kaynakca", "sozluk"])]
 _bas = dict(BOLUMLER); _sira = {b: i + 1 for i, (b, _) in enumerate(BOLUMLER)}
 _kumede = [b for _, _, ids in KUMELER for b in ids]
@@ -296,7 +322,7 @@ from alt_veri import SETLER as _SETLER
 def _altlink(f, tr, en, ikon, sinif="altlink"):
     return ('<a class="%s" href="%s" target="_blank" rel="noopener" title="%s">'
             '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">%s</svg>'
-            '<span class="t">%s</span></a>') % (sinif, f, x("%s setini yeni sekmede aç" % tr, "Open the %s set in a new tab" % en.lower().replace("q&a", "Q&A")), ikon, x(tr, en))
+            '<span class="t">%s</span></a>') % (sinif, f, x("%s sayfasını yeni sekmede aç" % tr, "Open the %s page in a new tab" % en), ikon, x(tr, en))
 ALTLINK = ('<div class="altset">%s</div><div class="altmenu"><button class="altlink" type="button" id="altmenu-b" aria-expanded="false" aria-controls="altmenu-p" title="%s">'
            '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg>'
            '<span class="t">%s</span></button><div class="altmenu__p" id="altmenu-p" hidden>%s</div></div>') % (

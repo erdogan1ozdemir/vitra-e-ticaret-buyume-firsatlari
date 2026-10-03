@@ -15,7 +15,7 @@ for _m in K: x(_m, _m if _m != "Diğer markalar" else "Other brands")
 for _k, (_t, _e) in list(YAD.items()) + list(SAD.items()): x(_t, _e)
 
 
-def alt_btn(tr="Yorum ve soru setini görüntüle", en="View the review and Q&A set", hedef=""):
+def alt_btn(tr="Pazaryeri Yorumları sayfasını görüntüle", en="View the Marketplace Reviews page", hedef=""):
     return '<a class="popb altb" href="%s%s" target="_blank" rel="noopener">%s <span aria-hidden="true">↗</span></a>' % (ALT, hedef, x(tr, en))
 
 

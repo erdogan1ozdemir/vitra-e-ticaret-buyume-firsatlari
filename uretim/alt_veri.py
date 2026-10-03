@@ -6,17 +6,19 @@ Kisisel veri yoktur: yorumcu / soru soran / sikayet eden adi tasinmaz; satici ve
 import json, os, html, re, csv, collections
 import veri
 from rapor_parca1 import VITRA, INBOUND
+from ortak import ek
 
 ANA = "VitrA_E-Ticaret_Buyume_Firsatlari.html"
 E = html.escape
 
 # ust bar ve sayfalar arasi gezinme: (dosya, TR ad, EN ad, ikon yolu)
 SETLER = [
-    ("yorum-soru-seti.html", "Yorum ve soru", "Reviews and Q&A", '<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>'),
-    ("arama-sonuclari.html", "Arama sonuçları", "Search results", '<circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/>'),
-    ("kelime-evreni.html", "Kelime evreni", "Keyword universe", '<path d="M4 7h16M4 12h10M4 17h13"/>'),
-    ("pazaryeri-taramasi.html", "Pazaryeri taraması", "Marketplace scan", '<path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18M16 10a4 4 0 0 1-8 0"/>'),
-    ("youtube-videolari.html", "YouTube videoları", "YouTube videos", '<rect x="2" y="5" width="20" height="14" rx="3"/><path d="m10 9 5 3-5 3z"/>'),
+    ("yorum-soru-seti.html", "Pazaryeri Yorumları", "Marketplace Reviews", '<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>'),
+    ("arama-sonuclari.html", "Arama Sonuçları", "Search Results", '<circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/>'),
+    ("kelime-evreni.html", "Kelime Evreni", "Keyword Universe", '<path d="M4 7h16M4 12h10M4 17h13"/>'),
+    ("pazaryeri-taramasi.html", "Pazaryeri Taraması", "Marketplace Scan", '<path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18M16 10a4 4 0 0 1-8 0"/>'),
+    ("youtube-videolari.html", "YouTube Videoları", "YouTube Videos", '<rect x="2" y="5" width="20" height="14" rx="3"/><path d="m10 9 5 3-5 3z"/>'),
+    ("geo-promptlari.html", "GEO Promptları", "GEO Prompts", '<path d="M12 3l1.9 4.6L18.5 9l-4.6 1.9L12 15.5l-1.9-4.6L5.5 9l4.6-1.4z"/><path d="M19 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/>'),
 ]
 
 
@@ -100,6 +102,10 @@ h2 .h2i{display:inline-block;padding-bottom:8px;margin-bottom:-1px;border-bottom
 .tb td.uz{min-width:260px}
 .tb td.kw{white-space:nowrap}
 .tb td.cv{min-width:170px}
+.tb td.uz2{min-width:420px;max-width:640px}
+.tb td.uz2 summary{cursor:pointer;color:var(--ink-2)}
+.tb td.uz2 summary:hover{color:var(--coral-deep)}
+.tb td.uz2 .ym{white-space:pre-wrap;margin-top:8px;padding:10px 12px;background:var(--neutral);border-radius:8px;font-size:12.5px;line-height:1.55;max-height:420px;overflow:auto}
 .tb .u{text-decoration:none}.tb .u:hover{text-decoration:underline}
 .tb .bos{color:var(--muted)}
 .etk{display:inline-block;font-size:11.5px;padding:1px 8px;border-radius:999px;background:var(--neutral);color:var(--ink-2);white-space:nowrap}
@@ -138,6 +144,8 @@ function hucre(c,v){
   case 'sayi':return '<td class="n">'+sayi(v,c.o||0)+'</td>';
   case 'para':return '<td class="n">'+(dil()==='en'?'TRY ':'')+sayi(v,0)+(dil()==='en'?'':' TL')+'</td>';
   case 'yuzde':return '<td class="n">'+yuzde(v,c.o)+'</td>';
+  case 'oran':return '<td class="n">'+(dil()==='en'?sayi(v,c.o==null?1:c.o)+'%':'%'+sayi(v,c.o==null?1:c.o))+'</td>';
+  case 'uzun':var k=String(v),o=k.replace(/\s+/g,' ').slice(0,170);return '<td class="uz2"><details><summary>'+esc(o)+(k.length>170?'…':'')+'</summary><div class="ym">'+esc(k)+'</div></details></td>';
   case 'link':return '<td class="'+(c.uz?'uz':'')+'"><a class="u" href="'+esc(v[1])+'" target="_blank" rel="noopener">'+esc(v[0])+'</a></td>';
   case 'kat':return '<td>'+etk(c.k,v)+'</td>';
   case 'cev':return '<td class="cv">'+esc(cv(v))+'</td>';
@@ -207,7 +215,7 @@ def setnav(aktif):
 
 def kolon(k, tr, en, a_tr, a_en, tip="metin", f=False, uz=False, o=0):
     """Tablo sutunu: k anahtar, tip metin|kw|sayi|para|yuzde|link|kat|cev|once; f suzgec; uz genis metin."""
-    return {"k": k, "t": [tr, en], "a": [a_tr, a_en], "tip": tip, "f": 1 if f else 0, "n": 1 if tip in ("sayi", "para", "yuzde", "once") else 0, "uz": 1 if uz else 0, "o": o}
+    return {"k": k, "t": [tr, en], "a": [a_tr, a_en], "tip": tip, "f": 1 if f else 0, "n": 1 if tip in ("sayi", "para", "yuzde", "oran", "once") else 0, "uz": 1 if uz else 0, "o": o}
 
 
 def tablo_html(anah):
@@ -618,11 +626,99 @@ def youtube():
           ("Kaynak: YouTube arama sonuçları, Türkiye · 29.09.2026", "Source: YouTube search results, Turkey · 29.09.2026"))
 
 
+# ====================================================================== 5. GEO promptlari (yapay zeka yanit takibi)
+KLASOR = {"e-ticaret": ("E-ticaret", "E-commerce"), "montaj": ("Montaj", "Installation"), "Vitrifiyeler": ("Vitrifiyeler", "Sanitaryware"), "Armatürler": ("Armatürler", "Taps"),
+          "Top 25 Keywords": ("Öncelikli 25 kelime", "Top 25 keywords"), "Banyo Mobilyaları": ("Banyo Mobilyaları", "Bathroom Furniture"), "Banyo Yenileme": ("Banyo Yenileme", "Bathroom Renovation"),
+          "Rezervuar": ("Rezervuar", "Cisterns"), "Yıkanma Alanları": ("Yıkanma Alanları", "Bathing Areas"), "Duşlar": ("Duşlar", "Showers"), "Banyo Aksesuarları": ("Banyo Aksesuarları", "Bathroom Accessories")}
+PTIP = {"custom": ("Genel soru", "General question"), "best": ("En iyi / öneri", "Best / recommendation"), "vs": ("Karşılaştırma", "Comparison"), "reviews": ("Yorum ve deneyim", "Reviews and experience")}
+PROV = {"chatgpt": ("ChatGPT", "ChatGPT"), "gemini": ("Gemini", "Gemini"), "google_ai_overview": ("Google AI Overview", "Google AI Overview")}
+
+
+def geo_promptlari():
+    D = json.load(open(os.path.join(veri.V, "ham/geo/ai_promptlar.json"), encoding="utf-8"))
+    cev = {a: b for a, b in list(KLASOR.values()) + list(PTIP.values()) + list(PROV.values())}
+    cev.update({"Evet": "Yes", "Hayır": "No", "Geçti": "Named", "Geçmedi": "Not named"})
+    ST = collections.defaultdict(dict)
+    for r in D["istatistik"]:
+        ST[r["pid"]][r["prov"]] = {k: (float(v) if v not in (None, "") else None) for k, v in r.items() if k not in ("pid", "prov")}
+    def oran(pid, prov, k):
+        s = ST[pid].get(prov)
+        return round(100 * s[k] / s["n"], 1) if s and s["n"] else None
+    def top(pid, k):
+        n = sum(s["n"] for s in ST[pid].values()); v = sum(s[k] or 0 for s in ST[pid].values())
+        return round(100 * v / n, 1) if n else None
+    R = []
+    for p in D["promptlar"]:
+        i = p["id"]; n = int(sum(s["n"] for s in ST[i].values()))
+        sl = [s["sira"] for s in ST[i].values() if s.get("sira")]
+        R.append([p["content"], KLASOR.get(p["folder"], (p["folder"], p["folder"]))[0], PTIP.get(p["kategori"], (p["kategori"],))[0], "Evet" if p["markali"] else "Hayır", n,
+                  oran(i, "chatgpt", "vitra"), oran(i, "gemini", "vitra"), oran(i, "google_ai_overview", "vitra"), round(sum(sl) / len(sl), 1) if sl else None,
+                  top(i, "vkaynak"), top(i, "pzkaynak"), top(i, "kale"), top(i, "creavit"), 1 if (top(i, "vitra") or 0) >= 50 else 0])
+    PM = {p["id"]: p for p in D["promptlar"]}
+    Y = []
+    for r in D["son_yanit"]:
+        p = PM.get(r["pid"])
+        if not p or not r.get("metin"): continue
+        m = re.sub(r"\*\*(.+?)\*\*", r"\1", r["metin"]).strip()
+        t_ = (r.get("tarih") or "")[:10]; t_ = ".".join(reversed(t_.split("-"))) if t_ else None
+        Y.append([p["content"], PROV[r["prov"]][0], "Geçti" if r["bm"] else "Geçmedi", m, int(r["bp"]) if r.get("bp") not in (None, "") else None,
+                  KLASOR.get(p["folder"], (p["folder"],))[0], t_, r.get("rakip") or None, r.get("kaynaklar") or None, 1 if r["bm"] else 0])
+    Y.sort(key=lambda r: (r[5], r[0], r[1]))
+    Rv = [r[:13] for r in R]; [a.append(b[13]) for a, b in zip(Rv, R)]
+    Yv = [r[:9] for r in Y]; [a.append(b[9]) for a, b in zip(Yv, Y)]
+    tb = {"prm": {"c": [kolon("p", "Prompt", "Prompt", "Yapay zeka platformlarına sorulan soru; olduğu gibi korunmuştur.", "The question asked to the AI platforms, kept as is.", "kw"),
+                        kolon("k", "Klasör", "Folder", "Sorunun ait olduğu konu klasörü; e-ticaret ve montaj klasörleri 28.09.2026'da eklenmiştir.", "Topic folder of the question; the e-commerce and installation folders were added on 28.09.2026.", "cev", True),
+                        kolon("t", "Soru tipi", "Question type", "Genel soru, en iyi / öneri, karşılaştırma ya da yorum ve deneyim sorusu.", "General, best / recommendation, comparison or reviews and experience question.", "kat", True),
+                        kolon("m", "Markalı", "Branded", "Soruda VitrA adı geçiyor mu?", "Does the question name VitrA?", "kat", True),
+                        kolon("n", "Yanıt", "Answers", "4 Eyl - 3 Eki 2026 arasında üç platformdan alınan toplam yanıt sayısı.", "Total answers from the three platforms, 4 Sep - 3 Oct 2026.", "sayi"),
+                        kolon("g", "ChatGPT · VitrA", "ChatGPT · VitrA", "ChatGPT yanıtlarında VitrA'nın adıyla geçtiği yanıtların payı.", "Share of ChatGPT answers naming VitrA.", "oran"),
+                        kolon("ge", "Gemini · VitrA", "Gemini · VitrA", "Gemini yanıtlarında VitrA'nın adıyla geçtiği yanıtların payı.", "Share of Gemini answers naming VitrA.", "oran"),
+                        kolon("a", "AI Overview · VitrA", "AI Overview · VitrA", "Google AI Overview yanıtlarında VitrA'nın adıyla geçtiği yanıtların payı.", "Share of Google AI Overview answers naming VitrA.", "oran"),
+                        kolon("s", "VitrA sırası", "VitrA position", "VitrA'nın adı geçtiğinde yanıttaki ortalama sırası (1: ilk anılan marka).", "VitrA's average position in the answer when named (1: first brand mentioned).", "sayi", o=1),
+                        kolon("vk", "vitra.com.tr kaynak", "vitra.com.tr cited", "vitra.com.tr'nin kaynak gösterildiği yanıtların payı, üç platform birlikte.", "Share of answers citing vitra.com.tr, three platforms together.", "oran"),
+                        kolon("pk", "Pazaryeri kaynak", "Marketplace cited", "Trendyol, Hepsiburada, Koçtaş, n11, Amazon, Bauhaus, Akakçe veya Cimri'nin kaynak gösterildiği yanıtların payı.", "Share of answers citing Trendyol, Hepsiburada, Koçtaş, n11, Amazon, Bauhaus, Akakçe or Cimri.", "oran"),
+                        kolon("ka", "Kale", "Kale", "Kale'nin adının geçtiği yanıtların payı.", "Share of answers naming Kale.", "oran"),
+                        kolon("cr", "Creavit", "Creavit", "Creavit'in adının geçtiği yanıtların payı.", "Share of answers naming Creavit.", "oran")],
+                  "r": Rv, "vg": 13, "s": [4, "d"]},
+          "yan": {"c": [kolon("p", "Prompt", "Prompt", "Yapay zeka platformlarına sorulan soru.", "The question asked to the AI platforms.", "kw", True),
+                        kolon("pl", "Platform", "Platform", "Yanıtın alındığı platform.", "The platform the answer came from.", "kat", True),
+                        kolon("v", "VitrA", "VitrA", "Yanıtta VitrA'nın adı geçti mi?", "Was VitrA named in the answer?", "kat", True),
+                        kolon("y", "Yanıt metni", "Answer text", "Yapay zeka yanıtının metni; özet satıra tıklayınca tamamı açılır. Yanıtlar olduğu gibi korunmuş, yalnızca kalın yazım işaretleri kaldırılmıştır.", "Text of the AI answer; click the summary line to open it in full. Answers are kept as is; only bold markers were removed.", "uzun"),
+                        kolon("vs", "VitrA sırası", "VitrA position", "VitrA'nın yanıtta anılan markalar arasındaki sırası.", "VitrA's position among the brands named in the answer.", "sayi"),
+                        kolon("k", "Klasör", "Folder", "Sorunun konu klasörü.", "Topic folder of the question.", "cev", True),
+                        kolon("tr", "Tarih", "Date", "Yanıtın alındığı gün (her soru ve platform için en son yanıt).", "Day the answer was received (latest answer per question and platform).", "metin"),
+                        kolon("rk", "Adı geçen rakip siteler", "Competitor sites named", "Yanıtta adı geçen takip edilen rakip ve kanal alan adları.", "Tracked competitor and channel domains named in the answer.", "metin", uz=True),
+                        kolon("ky", "Kaynak alan adları", "Cited domains", "Yanıtta kaynak olarak bağlantı verilen alan adları.", "Domains linked as sources in the answer.", "metin", uz=True)],
+                  "r": Yv, "vg": 9, "s": None}}
+    mark = [r for r in R if r[3] == "Hayır"]
+    def ort(i): L = [r[i] for r in mark if r[i] is not None]; return sum(L) / len(L) if L else 0
+    nv = sum(1 for r in Y if r[9])
+    sayfa("geo-promptlari.html", ("VitrA | GEO Promptları", "VitrA | GEO Prompts"),
+          ("VitrA TÜRKİYE · YAPAY ZEKA YANITLARI", "VitrA TURKEY · AI ANSWERS"),
+          ("GEO Promptları: %d Soru, ChatGPT, Gemini ve Google AI Overview Yanıtları" % len(R), "GEO Prompts: %d Questions, ChatGPT, Gemini and Google AI Overview Answers" % len(R)),
+          ("Banyo ürünleri, montaj ve online alışverişle ilgili %d soru düzenli aralıklarla ChatGPT, Gemini ve Google AI Overview'a sorulmakta; yanıtta hangi markaların adının geçtiği, VitrA'nın kaçıncı sırada anıldığı ve hangi sitelerin kaynak gösterildiği kaydedilmektedir. İlk tablo 4 Eyl - 3 Eki 2026 dönemindeki oranları, ikinci tablo her soru ve platform için en son yanıtın tam metnini içerir. Bu set, Bölüm 08'deki tek günlük Google arama gözleminden ayrıdır." % len(R),
+           "%d questions on bathroom products, installation and online shopping are asked to ChatGPT, Gemini and Google AI Overview at regular intervals; which brands are named, VitrA's position and which sites are cited are recorded. The first table shows the rates for 4 Sep - 3 Oct 2026, the second the full text of the latest answer per question and platform. This set is separate from the single-day Google search observation in Section 08." % len(R)),
+          [(N(len(R)), ("soru · %s VitrA adıyla" % ek(sum(1 for r in R if r[3] == "Evet"), "i"), "questions · %d naming VitrA" % sum(1 for r in R if r[3] == "Evet"))),
+           (N(sum(r[4] for r in R)), ("yanıt, 4 Eyl - 3 Eki 2026", "answers, 4 Sep - 3 Oct 2026")),
+           (P(ort(6)), ("markasız sorularda Gemini yanıtlarında VitrA payı (soru ortalaması)", "VitrA share in Gemini answers to unbranded questions (question average)")),
+           (P(ort(5)), ("markasız sorularda ChatGPT yanıtlarında VitrA payı (soru ortalaması)", "VitrA share in ChatGPT answers to unbranded questions (question average)")),
+           (N(len(Y)), ("en son yanıt metni · %s VitrA geçiyor" % ek(nv, "inde"), "latest answer texts · %d name VitrA" % nv))],
+          [("promptlar", ("Promptlar: platform bazında VitrA, rakipler ve kaynaklar", "Prompts: VitrA, competitors and sources by platform"),
+            ("Her satır bir sorudur. Klasör, soru tipi ve markalı süzgeçleriyle daraltılabilir; VitrA'nın yanıtların en az yarısında geçtiği sorular vurgulanmıştır.", "Each row is a question. Narrow with the folder, question type and branded filters; questions where VitrA is named in at least half of the answers are highlighted."), "prm", None),
+           ("yanitlar", ("Son yanıtlar", "Latest answers"),
+            ("Her soru ve platform için en son alınan yanıt; özet satıra tıklanınca metnin tamamı açılır. Prompt, platform ve \"VitrA\" süzgeçleriyle belirli bir sorunun üç platformdaki yanıtı yan yana okunabilir.", "The latest answer per question and platform; click the summary line to open the full text. Use the prompt, platform and \"VitrA\" filters to read one question's answers across the three platforms."), "yan", None)],
+          tb, cev,
+          ("Sorular markanın kategori ağacı, satın alma ve montaj ihtiyaçları üzerinden belirlenmiştir. Yanıtlar kişiselleştirilmemiş oturumlardan alınır; aynı soruya gün içinde farklı yanıt verilebilir, bu nedenle oranlar yön göstericidir. Markanın adı geçme ve kaynak gösterilme ayrı ölçülür: bir yanıt VitrA'yı anarken kaynak olarak pazaryerini gösterebilir.",
+           "Questions were set from the brand's category tree and purchase and installation needs. Answers come from non-personalised sessions; the same question may get different answers within the day, so rates are indicative. Being named and being cited are measured separately: an answer may name VitrA while citing a marketplace as the source."),
+          ("Kaynak: Yapay zeka yanıt takibi · ChatGPT, Gemini ve Google AI Overview · 4 Eyl - 3 Eki 2026", "Source: AI answer tracking · ChatGPT, Gemini and Google AI Overview · 4 Sep - 3 Oct 2026"))
+
+
 def main(EK):
     arama_sonuclari()
     kelime_evreni(EK)
     eksik = pazaryeri_taramasi(EK)
     youtube()
+    geo_promptlari()
     return eksik
 
 
