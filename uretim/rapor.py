@@ -52,12 +52,22 @@ P.append(bolum("yontem", "Yöntem ve Kapsam", "Method and Scope", b_yontem.HTML)
 
 govde = "\n".join(P)
 # --- son islemler: alt baslik aciklamasi, uzun tablo, logo
+from ortak import hid as _hid
+_IDLER = set()
+def _h3_id(t):
+    i = _hid(t); j = i; k_ = 2
+    while j in _IDLER: j = "%s-%d" % (i, k_); k_ += 1
+    _IDLER.add(j); return j
 def _h3_not(m):
     t = m.group(1)
     if t in h3_not.N:
-        tr, en = h3_not.N[t]; return '<h3>%s</h3><p class="h3n">%s</p>' % (t, x(tr, en))
-    return m.group(0)
+        tr, en = h3_not.N[t]; return '<h3 id="%s">%s</h3><p class="h3n">%s</p>' % (_h3_id(t), t, x(tr, en))
+    return '<h3 id="%s">%s</h3>' % (_h3_id(t), t)
 govde = re.sub(r'<h3>([^<]+)</h3>', _h3_not, govde)
+# ozetteki ok baglantilarinin hedefi var mi?
+_hedef = set(re.findall(r'id="([^"]+)"', govde))
+_kayip = sorted(set(re.findall(r'<a class="git" href="#([^"]+)"', govde)) - _hedef)
+if _kayip: raise SystemExit("Ok bağlantısının hedefi bulunamadı: %s" % _kayip)
 _eksik_h3 = sorted({m for m in re.findall(r'(?<!</span>)<h3>([^<]+)</h3>', govde) if m not in h3_not.N and m != "Öne çıkan bulgular"})
 def _uzun(m):
     blok = m.group(0)
@@ -192,6 +202,11 @@ th.srt.sd .q::after{border-top:5px solid var(--coral)}
 a.popb.altb{text-decoration:none;display:inline-block;margin-left:0}
 .fnote h4.kh4{margin:2px 0 8px;font-size:16px}
 .kopru{margin:14px 0 4px;color:var(--ink-2);font-size:13.5px}
+a.git{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;margin-left:7px;border-radius:50%;
+  background:var(--coral-tint);color:var(--coral-deep);font-weight:700;font-size:12px;line-height:1;text-decoration:none;vertical-align:1px}
+a.git:hover,a.git:focus-visible{background:var(--coral-deep);color:#fff;text-decoration:none}
+a.git:focus-visible{outline:2px solid var(--coral);outline-offset:2px}
+h3[id]{scroll-margin-top:calc(var(--apph, 64px) + 24px)}
 .tw.genis table{min-width:1460px}
 .tw.genis td:first-child{white-space:nowrap}
 """

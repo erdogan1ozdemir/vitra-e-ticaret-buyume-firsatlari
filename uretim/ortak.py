@@ -136,3 +136,15 @@ def pop(baslik_tr, baslik_en, icerik, etiket_tr=None, etiket_en=None, ikon=False
     dia = ('<dialog class="popd" id="%s"><div class="pophd"><b>%s</b><button type="button" class="popx" aria-label="%s">×</button></div>'
            '<div class="popbd">%s</div></dialog>') % (pid, x(baslik_tr, baslik_en), x("Kapat", "Close"), icerik)
     return dug, dia
+
+# ---------------------------------------------------------------- ozetten ilgili alt basliga ok baglantisi
+_HTR = str.maketrans("çğıöşüÇĞİÖŞÜ", "cgiosucgiosu")
+def hid(baslik):
+    """Alt baslik (h3) metninden kimlik: 'h-' + sade harfler."""
+    import re as _r
+    return "h-" + _r.sub(r"[^a-z0-9]+", "-", baslik.translate(_HTR).lower()).strip("-")[:70]
+x("İlgili bölüme git", "Go to the related section"); x("→", "→")
+def git(hedef):
+    """hedef: '#bolum' (bolum kimligi) ya da alt baslik metni."""
+    i = hedef[1:] if hedef.startswith("#") else hid(hedef)
+    return '<a class="git" href="#%s" aria-label="İlgili bölüme git" title="İlgili bölüme git">→</a>' % i

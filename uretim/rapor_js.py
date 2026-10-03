@@ -254,7 +254,7 @@ document.documentElement.classList.add('js');
       setTimeout(isaretle,420);
     }, yumusak?70:0);
   }
-  links.concat(mobil).forEach(function(a){
+  links.concat(mobil, [].slice.call(document.querySelectorAll('a.git[href^="#"]'))).forEach(function(a){
     a.addEventListener('click',function(e){e.preventDefault();git(a.getAttribute('href').slice(1));});
   });
 
