@@ -175,7 +175,7 @@ HTML = """
  kpi_kart(yzd(_vs.get("uyum")), "VitrA sorularında uyumluluk ve kullanım yeri payı", "Share of compatibility and place of use in VitrA questions"),
  x("Duygu dağılımı: marka bazında", "Sentiment split by brand"),
  GD, TM,
- insight("Olumsuz yorum payı VitrA'da %s, Artema'da %s, rakiplerde %s düzeyindedir (iki marka birlikte %s ile rakip düzeyindedir); ortalama puan VitrA'da %s, Artema'da %s düzeyindedir. Olumlu yorumlarda en sık geçen tema malzeme ve sağlamlıktır (VitrA %s, Artema %s). Rakipler arasında olumsuz payın en yüksek olduğu markalar: %s."
+ insight("Olumsuz yorum payı VitrA'da %s, Artema'da %s, rakiplerde %s düzeyindedir (iki marka birlikte %s ile rakip düzeyindedir); ortalama puan VitrA'da %s, Artema'da %s düzeyindedir. Olumlu yorumlarda en sık geçen tema malzeme ve sağlamlıktır (VitrA %s, Artema %s). Rakipler arasında olumsuz payın en yüksek olduğu markalar %s olarak öne çıkmaktadır."
          % (yzd(M["VitrA"]["olumsuz"]), yzd(M["Artema"]["olumsuz"]), yzd(RK["olumsuz"]), yzd(VG["olumsuz"]), f1(M["VitrA"]["ort_puan"]), f1(M["Artema"]["ort_puan"]), yzd(tp(M["VitrA"], "kalite")), yzd(tp(M["Artema"], "kalite")),
             " ve ".join("%s (%s)" % (m, yzd(M[m]["olumsuz"])) for m in sorted(RAK, key=lambda m: -(M[m]["olumsuz"] or 0))[:2])),
          "The negative review share is %s at VitrA, %s at Artema and %s at competitors (the two brands together are in line with competitors at %s); the average rating is %s for VitrA and %s for Artema. The most frequent theme in positive reviews is material and sturdiness (VitrA %s, Artema %s). Among competitors, the brands with the highest negative share: %s."
@@ -189,7 +189,7 @@ HTML = """
          % (ye(_k_neg), "above" if _k_neg > _r_neg + 2 else "close to", ye(_r_neg)), "D38"),
  x("Ürün grubu karşılaştırması", "Product group comparison"),
  TG,
- insight("VitrA ve Artema olumsuz payının rakiplerin belirgin biçimde üzerinde kaldığı grup: %s. %s gruplarında VitrA ve Artema olumsuz payı rakiplerin altındadır. Bu dağılım, VitrA'nın olumsuz deneyiminin ürün geneline yayılmadığına, belirli bir ürün grubunda yoğunlaştığına işaret etmektedir."
+ insight("VitrA ve Artema olumsuz payının rakiplerin belirgin biçimde üzerinde kaldığı grup %s olarak görülmektedir. %s gruplarında VitrA ve Artema olumsuz payı rakiplerin altındadır. Bu dağılım, VitrA'nın olumsuz deneyiminin ürün geneline yayılmadığına, belirli bir ürün grubunda yoğunlaştığına işaret etmektedir."
          % ("; ".join("%s (%s, rakipler %s)" % (g["grup"].lower(), yzd(g["vitra"]["olumsuz"]), yzd(g["rakip"]["olumsuz"])) for g in _ust) or "-", (", ".join(g["grup"].lower() for g in _alt) or "-").capitalize()),
          "The group where the VitrA and Artema negative share stays clearly above competitors: %s. In the %s groups the VitrA and Artema negative share is below competitors. This distribution indicates that VitrA's negative experience is not spread across the range but concentrated in a specific product group."
          % ("; ".join("%s (%s, competitors %s)" % (GEN.get(g["grup"], g["grup"]).lower(), ye(g["vitra"]["olumsuz"]), ye(g["rakip"]["olumsuz"])) for g in _ust) or "-", ", ".join(GEN.get(g["grup"], g["grup"]).lower() for g in _alt) or "-"), "D38"),

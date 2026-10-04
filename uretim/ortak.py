@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """Bicimlendirme yardimcilari (TR bicimi; dil katmani EN'e cevirir)."""
 import json, os, veri
+import html as _h
 from t2_ortak import x, R, th, tablo, n, insight, p, h3, li, kaynak, olcek, sayi
 A = json.load(open(os.path.join(veri.V, "islenmis", "analiz.json"), encoding="utf-8"))
 AY_TR = {"01":"Oca","02":"Şub","03":"Mar","04":"Nis","05":"May","06":"Haz","07":"Tem","08":"Ağu","09":"Eyl","10":"Eki","11":"Kas","12":"Ara"}
@@ -33,11 +34,21 @@ def yzd(v, ond=1):
     """duz yuzde metni: %12,5"""
     return ("%" + ("%." + str(ond) + "f") % v).replace(".", ",")
 def cell(v): return n(bin(v))
-def kpi_kart(v, k_tr, k_en, cls="", tag_tr=None, tag_en=None):
+KARO_EKSIK = []
+def _karo_ac(etiket_tr, ac):
+    """Karo açıklama balonu: önce çağrıdaki açıklama, yoksa karo_aciklama sözlüğünde etiketin başıyla eşleşen kayıt."""
+    if not ac:
+        import karo_aciklama
+        ac = karo_aciklama.bul(etiket_tr)
+    if not ac:
+        KARO_EKSIK.append(etiket_tr); return ""
+    x(ac[0], ac[1])
+    return ' data-t="%s" tabindex="0"' % _h.escape(ac[0], quote=True)
+def kpi_kart(v, k_tr, k_en, cls="", tag_tr=None, tag_en=None, ac=None):
     t = ('<div class="tag">%s</div>' % x(tag_tr, tag_en)) if tag_tr else ""
-    return '<div class="kpi"><div class="v %s">%s</div><div class="k">%s</div>%s</div>' % (cls, sayi(v), x(k_tr, k_en), t)
-def metric(mk_tr, mk_en, mv, md_tr, md_en):
-    return '<div class="metric"><div class="mv">%s</div><div class="mk">%s</div><div class="md">%s</div></div>' % (sayi(mv), x(mk_tr, mk_en), x(md_tr, md_en))
+    return '<div class="kpi"%s><div class="v %s">%s</div><div class="k">%s</div>%s</div>' % (_karo_ac(k_tr, ac), cls, sayi(v), x(k_tr, k_en), t)
+def metric(mk_tr, mk_en, mv, md_tr, md_en, ac=None):
+    return '<div class="metric"%s><div class="mv">%s</div><div class="mk">%s</div><div class="md">%s</div></div>' % (_karo_ac(mk_tr, ac), sayi(mv), x(mk_tr, mk_en), x(md_tr, md_en))
 def note(nt_tr, nt_en, govde_html, sinif=""):
     return '<div class="note %s"><div class="nt">%s</div>%s</div>' % (sinif, x(nt_tr, nt_en), govde_html)
 def box(bt_tr, bt_en, govde_html):

@@ -133,6 +133,6 @@ HTML = """
         th("Aksiyon", "Action", "Önerilen düzenleme.", "Proposed adjustment."),
         th("Dayanak", "Basis", "Öneriyi destekleyen bulgu ve kaynak.", "Finding and source supporting the proposal."),
         th("Beklenen etki", "Expected effect", "Düzenlemenin hedeflediği sonuç.", "The outcome the adjustment targets.")], rows, "uzun"),
- insight("Bu rapordan sonra ilk adım olarak üç nokta değerlendirilebilir: (1) yedek parça kategorisinin açılması ve eski yedek parça adresinin bu kategoriye yönlendirilmesi, (2) mevcut montaj, keşif ve Banyo Asistanı'nın tek bir \"banyo yenileme paketi\" altında birleştirilmesi, (3) sepette tek adımlı üyeliksiz satın alma ve site içi aramanın iki yolunun tekleştirilmesi.",
+ insight("Bu rapordan sonra ilk adım olarak (1) yedek parça kategorisinin açılması ve eski yedek parça adresinin bu kategoriye yönlendirilmesi, (2) mevcut montaj, keşif ve Banyo Asistanı'nın tek bir \"banyo yenileme paketi\" altında birleştirilmesi ve (3) sepette tek adımlı üyeliksiz satın alma ile site içi aramanın iki yolunun tekleştirilmesi değerlendirilebilir.",
          "Three points can be considered as the first step after this report: (1) opening a spare-parts category and redirecting the old spare-parts address to it, (2) combining the existing installation, survey and Bathroom Assistant under a single \"bathroom renovation package\", (3) one-step guest purchase in the cart and aligning the two site search paths."),
 )

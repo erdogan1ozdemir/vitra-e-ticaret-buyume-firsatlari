@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Bolum: Kategori talebi ve donemsel degisim (Keyword Planner, 2.328 kelime)."""
+"""Bolum: Kategori talebi ve donemsel degisim (Keyword Planner, 2.299 kelime)."""
 from ortak import *
 from rapor_parca1 import T, cizgi, barlar
 import veri
@@ -44,7 +44,7 @@ def katp(k_):
 toplam_yoy = (TOP["a26"] / TOP["a25"] - 1) * 100
 sira = sorted(K1, key=lambda k: -K1[k]["a26"])
 RENK = {"Banyo Mobilyaları": "#E85F36", "Vitrifiyeler": "#10332F", "Armatürler": "#2E7D32", "Yıkanma Alanları": "#F5A623", "Karo Seramik Ürünleri": "#7A8C89", "Banyo Aksesuarları": "#B96BC2", "Duşlar": "#4A90D9", "Rezervuarlar": "#8B5A2B"}
-GRAFIK = cizgi([(kat("Toplam"), "#E85F36", AYK["Toplam"])] , y_etiket=x("Aylık arama hacmi · 2.328 kelime toplamı", "Monthly search volume · total of 2,328 keywords"), aylar=veri.AYLAR)
+GRAFIK = cizgi([(kat("Toplam"), "#E85F36", AYK["Toplam"])] , y_etiket=x("Aylık arama hacmi · 2.299 kelime toplamı", "Monthly search volume · total of 2,299 keywords"), aylar=veri.AYLAR)
 GRAFIK_K = cizgi([(kat(k), RENK[k], AYK[k]) for k in sira[:5]], y_etiket=x("Aylık arama hacmi · en büyük 5 kategori", "Monthly search volume · five largest categories"), aylar=veri.AYLAR)
 
 # --- yil yil gorunum (Oca-Ara, 2023-2026) ---
@@ -81,7 +81,7 @@ for _j, _y in enumerate(TY_["yillar"]):
     _p = max(_ix, key=lambda i: _s[i]); _b = min(_ix, key=lambda i: _s[i])
     for _i2, _tur, _yer in ((_p, "peak", "ust"), (_b, "base", "alt")):
         _r = k(_s[_i2]); _nt.append((_j, _i2, x("%s %s" % (_r, _tur), "%s %s" % (_r.replace(",", "."), _tur)), _yer))
-GRAFIK = cizgi(_ys, yukseklik=270, y_etiket=x("Aylık arama hacmi · 2.328 kelime toplamı · yıllara göre renkli (peak: yılın en yüksek ayı, base: en düşük ayı)", "Monthly search volume · total of 2,328 keywords · coloured by year (peak: highest month of the year, base: lowest month)"), aylar=AY23, notlar=_nt, bagla=True)
+GRAFIK = cizgi(_ys, yukseklik=270, y_etiket=x("Aylık arama hacmi · 2.299 kelime toplamı · yıllara göre renkli (peak: yılın en yüksek ayı, base: en düşük ayı)", "Monthly search volume · total of 2,299 keywords · coloured by year (peak: highest month of the year, base: lowest month)"), aylar=AY23, notlar=_nt, bagla=True)
 GRAFIK_K = cizgi([(kat(k_), RENK[k_], [None if v is None else v for v in _uzun(k_)][:len(AY23)]) for k_ in sira[:5]], y_etiket=x("Aylık arama hacmi · en büyük 5 kategori", "Monthly search volume · five largest categories"), aylar=AY23)
 _AYF = [(b_ / a_ - 1) * 100 for a_, b_ in zip(TY_["kategori"]["Toplam"]["2025"][:8], TY_["kategori"]["Toplam"]["2026"][:8])]
 _SEKME_NO = [0]
@@ -92,13 +92,13 @@ def sekmeler(parcalar, sinif=""):
     p_ = "".join('<div role="tabpanel" id="tp%d-%d" aria-labelledby="tt%d-%d"%s>%s</div>' % (n_, i_, n_, i_, "" if i_ == 0 else " hidden", h) for i_, (_, _, h) in enumerate(parcalar))
     return '<div class="tabs %s" role="tablist">%s</div>%s' % (sinif, b, p_)
 GRAFIK = sekmeler([("Aylık seri · Oca 2023 - Ağu 2026", "Monthly series · Jan 2023 - Aug 2026", GRAFIK),
-                   ("Yıl yıl · 2023 - 2026", "Year on year · 2023 - 2026", yil_grafik("Toplam", "Aylık arama hacmi · 2.328 kelime toplamı, yıllar üst üste (2026: Oca - Ağu)", "Monthly search volume · total of 2,328 keywords, years overlaid (2026: Jan - Aug)"))], "gtabs")
+                   ("Yıl yıl · 2023 - 2026", "Year on year · 2023 - 2026", yil_grafik("Toplam", "Aylık arama hacmi · 2.299 kelime toplamı, yıllar üst üste (2026: Oca - Ağu)", "Monthly search volume · total of 2,299 keywords, years overlaid (2026: Jan - Aug)"))], "gtabs")
 _YK = sekmeler([(kk, KAT_EN.get(kk, kk), yil_grafik(kk, "Aylık arama hacmi · %s, yıllar üst üste" % kk, "Monthly search volume · %s, years overlaid" % KAT_EN.get(kk, kk))) for kk in sira], "gtabs ic")
 GRAFIK_K = sekmeler([("Aylık seri · en büyük 5 kategori", "Monthly series · five largest categories", GRAFIK_K),
                      ("Yıl yıl · kategori seçimi", "Year on year · choose a category", _YK)], "gtabs")
 BAR = barlar([(_q, K1[_q]["yoy"], "#2E7D32" if K1[_q]["yoy"] > 0 else "#D32F2F") for _q in sorted(K1, key=lambda q: -K1[q]["yoy"])])
 for _kk in K1: kat(_kk)
-tbl = tablo([th("Kategori", "Category", "VitrA kategori ağacındaki ana kategori; 2.328 kelime 8 ana kategoriye dağıtılmıştır. Ok simgesi kategorideki en yüksek hacimli 50 kelimeyi açar.", "Main category in the VitrA category tree; 2,328 keywords are distributed across 8 main categories. The arrow icon opens the 50 highest-volume keywords in the category."),
+tbl = tablo([th("Kategori", "Category", "VitrA kategori ağacındaki ana kategori; 2.299 kelime 8 ana kategoriye dağıtılmıştır. Ok simgesi kategorideki en yüksek hacimli 50 kelimeyi açar.", "Main category in the VitrA category tree; 2,299 keywords are distributed across 8 main categories. The arrow icon opens the 50 highest-volume keywords in the category."),
              th("Kelime", "Keywords", "Kategoriye atanan kelime sayısı.", "Number of keywords assigned to the category.", True),
              th("2025 aylık ort.", "2025 monthly avg.", "Ocak - Ağustos 2025 aylık ortalama arama hacmi (kategorideki kelimelerin toplamı, aya bölünmüş), Google Keyword Planner, Türkiye.", "Average monthly search volume for January - August 2025 (sum of the category's keywords, divided by months), Google Keyword Planner, Turkey.", True),
              th("2026 aylık ort.", "2026 monthly avg.", "Ocak - Ağustos 2026 aylık ortalama arama hacmi; aynı takvim aylarını kapsar.", "Average monthly search volume for January - August 2026; covers the same calendar months.", True),
@@ -126,7 +126,9 @@ _YD = sorted(A["k2_yukselen"] + A["k2_dusen"], key=lambda r: -r[2])
 SAPMA = _sapma([(kat2(r[0].split("|")[1]), r[2]) for r in _YD], x("YoY değişim", "YoY change"),
                x("Alt kategori talebinde YoY değişim · Oca-Ağu 2026 / Oca-Ağu 2025, aylık 3.000 ve üzeri hacimli alt kategoriler", "YoY change in sub-category demand · Jan-Aug 2026 / Jan-Aug 2025, sub-categories with monthly volume of 3,000 and above"),
                ek=[(x("2026 aylık ort.", "2026 monthly avg."), [_fk(r[1]) for r in _YD])])
-kloz = K2["Vitrifiyeler|Klozetler"]; bm = K1["Banyo Mobilyaları"]; ld = K2["Banyo Mobilyaları|Lavabo Dolapları"]; bk = K2["Karo Seramik Ürünleri|Banyo Karo Seramikleri"]
+kloz = K2["Vitrifiyeler|Klozetler"]; bm = K1["Banyo Mobilyaları"]
+ld = K2["Banyo Mobilyaları|Lavabo Dolapları"]; bk = K2["Karo Seramik Ürünleri|Banyo Karo Seramikleri"]
+if min(K1, key=lambda k_: K1[k_]["yoy"]) != "Banyo Mobilyaları": raise SystemExit("talep: en büyük daralma artık Banyo Mobilyaları değil")
 HTML = """
 <p class="lede">%s</p>
 <div class="kpis">%s%s%s%s</div>
@@ -145,15 +147,15 @@ HTML = """
 %s
 %s
 """ % (
- x("Talep tabanı, VitrA kategori ağacına eşlenmiş 2.328 tekil arama kelimesidir; Keyword Planner'ın aynı aylık hacmi verdiği yakın yazım varyantları (ör. \"banyo dolabı\", \"banyo dolap\", \"banyo dolapları\") tek kelime olarak sayılmıştır. Hacimler Google Keyword Planner'dan aylık olarak alınmıştır (grafiklerde Ocak 2023 - Ağustos 2026, üç yıllık karşılaştırmada Eylül 2022'den itibaren); yıllık karşılaştırma aynı takvim aylarını kapsayan Ocak - Ağustos pencereleri üzerinden yapılmaktadır.",
-   "The demand base is 2,328 unique search keywords mapped to the VitrA category tree; close spelling variants to which Keyword Planner assigns the same monthly volume (e.g. \"banyo dolabı\", \"banyo dolap\", \"banyo dolapları\") are counted as one keyword. Volumes were taken monthly from Google Keyword Planner (January 2023 - August 2026 in the charts, from September 2022 in the three-year comparison); the year-on-year comparison uses January - August windows covering the same calendar months."),
- kpi_kart(k(TOP["a26"]), "Aylık ortalama arama · 2026 (Oca-Ağu), 2.328 kelime", "Average monthly searches · 2026 (Jan-Aug), 2,328 keywords"),
+ x("Talep tabanı, VitrA kategori ağacına eşlenmiş 2.299 tekil arama kelimesidir; Keyword Planner'ın aynı aylık hacmi verdiği yakın yazım varyantları (ör. \"banyo dolabı\", \"banyo dolap\", \"banyo dolapları\") tek kelime olarak sayılmıştır. Hacimler Google Keyword Planner'dan aylık olarak alınmıştır (grafiklerde Ocak 2023 - Ağustos 2026, üç yıllık karşılaştırmada Eylül 2022'den itibaren); yıllık karşılaştırma aynı takvim aylarını kapsayan Ocak - Ağustos pencereleri üzerinden yapılmaktadır.",
+   "The demand base is 2,299 unique search keywords mapped to the VitrA category tree; close spelling variants to which Keyword Planner assigns the same monthly volume (e.g. \"banyo dolabı\", \"banyo dolap\", \"banyo dolapları\") are counted as one keyword. Volumes were taken monthly from Google Keyword Planner (January 2023 - August 2026 in the charts, from September 2022 in the three-year comparison); the year-on-year comparison uses January - August windows covering the same calendar months."),
+ kpi_kart(k(TOP["a26"]), "Aylık ortalama arama · 2026 (Oca-Ağu), 2.299 kelime", "Average monthly searches · 2026 (Jan-Aug), 2,299 keywords"),
  kpi_kart(yz(toplam_yoy), "Toplam talep değişimi · 2026 / 2025, aynı aylar", "Total demand change · 2026 / 2025, same months", "dn"),
  kpi_kart(yz(A["niyet"]["Tasarım ve fikir"]["yoy"]), "Tasarım ve model aramaları · en hızlı büyüyen ihtiyaç sınıfı (Bölüm [[b:ihtiyac]])", "Design and model searches · fastest-growing need class (Section [[b:ihtiyac]])", "up"),
- kpi_kart(yz(bm["yoy"]), "Banyo Mobilyaları · ikinci büyük kategoride daralma", "Bathroom Furniture · contraction in the second-largest category", "dn"),
+ kpi_kart(yz(bm["yoy"]), "Banyo Mobilyaları · ana kategoriler arasında en büyük daralma", "Bathroom Furniture · largest contraction among main categories", "dn"),
  GRAFIK,
- insight("2.328 kelimenin toplam talebi 2026'nın ilk sekiz ayında bir önceki yılın aynı dönemine göre %s daralmıştır. Daralma yılın ilk iki ayında yoğunlaşmaktadır (Ocak %s, Şubat %s); Mart - Temmuz arasında aylık fark %s ile %s arasında dalgalanmakta, Ağustos'ta %s seviyesine inmektedir. Daralma tüm ana kategorilere yayılmaktadır; tüketici güveni ve konut tamiratı niyetindeki iyileşme (Bölüm [[b:makro]]) henüz aramalara yansımamıştır." % (yz(toplam_yoy), yz(_AYF[0]), yz(_AYF[1]), yz(min(_AYF[2:7])), yz(max(_AYF[2:7])), yz(_AYF[7])),
-         "Total demand for the 2,328 keywords contracted %s in the first eight months of 2026 compared with the same period a year earlier. The contraction is concentrated in the first two months (January %s, February %s); between March and July the monthly gap fluctuates between %s and %s, and in August it falls to %s. The contraction spreads across all main categories; the improvement in consumer confidence and home repair intent (Section [[b:makro]]) has not yet reached searches." % (yz(toplam_yoy), yz(_AYF[0]), yz(_AYF[1]), yz(min(_AYF[2:7])), yz(max(_AYF[2:7])), yz(_AYF[7])), "D1", "D11"),
+ insight("2.299 kelimenin toplam talebi 2026'nın ilk sekiz ayında bir önceki yılın aynı dönemine göre %s daralmıştır. Daralma yılın ilk iki ayında yoğunlaşmaktadır (Ocak %s, Şubat %s); Mart - Temmuz arasında aylık fark %s ile %s arasında dalgalanmakta, Ağustos'ta %s seviyesine inmektedir. Daralma tüm ana kategorilere yayılmaktadır; tüketici güveni ve konut tamiratı niyetindeki iyileşme (Bölüm [[b:makro]]) henüz aramalara yansımamıştır." % (yz(toplam_yoy), yz(_AYF[0]), yz(_AYF[1]), yz(min(_AYF[2:7])), yz(max(_AYF[2:7])), yz(_AYF[7])),
+         "Total demand for the 2,299 keywords contracted %s in the first eight months of 2026 compared with the same period a year earlier. The contraction is concentrated in the first two months (January %s, February %s); between March and July the monthly gap fluctuates between %s and %s, and in August it falls to %s. The contraction spreads across all main categories; the improvement in consumer confidence and home repair intent (Section [[b:makro]]) has not yet reached searches." % (yz(toplam_yoy), yz(_AYF[0]), yz(_AYF[1]), yz(min(_AYF[2:7])), yz(max(_AYF[2:7])), yz(_AYF[7])), "D1", "D11"),
  x("Ana kategori düzeyinde değişim", "Change at main category level"),
  tbl, BAR,
  x("Kategorilerin aylık seyri", "Monthly course of the categories"),
@@ -164,7 +166,7 @@ HTML = """
  x("Daralan alt kategoriler", "Contracting sub-categories"), tablo(bas2, k2rows(A["k2_dusen"]), "dar"),
  SAPMA + insight("Büyüyen alt kategoriler iki örüntü taşımaktadır: (1) dış mekan ve banyo karosu gibi tadilatın görünür yüzeyleri (Balkon, Teras & Bahçe Karo Seramikleri %s, Banyo Karo Seramikleri %s), (2) banyo tezgahı ve duş kanalı gibi tamamlayıcı ürünler. Ana kategoriyle aynı adı taşıyan \"Duşlar\" (%s) ve \"Banyo Mobilyaları\" (%s) satırları kategori adıyla yapılan genel aramaları (\"duş\", \"banyo modelleri\" gibi) kapsar; bu satırlardaki artış belirli bir ürün talebinden çok genel ilgi olarak okunabilir. Daralan tarafta ise Lavabo Dolapları (%s), Banyo Aynaları (%s) ve Banyo Aksesuar Setleri (%s) gibi mobilya ve aksesuar ürünleri ile Bideler yer almaktadır. E-ticaret kanalı için bu ayrım, kampanya ve set kurgusunun hangi kategoride talebi yakalayabileceğine işaret etmektedir: karo ve tamamlayıcı ürün tarafında mevcut talebin karşılanması, mobilya tarafında ise talebin kampanya ve içerikle desteklenmesi değerlendirilebilir." % (yz(K2["Karo Seramik Ürünleri|Balkon, Teras & Bahçe Karo Seramikleri"]["yoy"]), yz(bk["yoy"]), yz(K2["Duşlar|Duşlar"]["yoy"]), yz(K2["Banyo Mobilyaları|Banyo Mobilyaları"]["yoy"]), yz(ld["yoy"]), yz(K2["Banyo Mobilyaları|Banyo Aynaları"]["yoy"]), yz(K2["Banyo Aksesuarları|Banyo Aksesuar Setleri"]["yoy"])),
          "The growing sub-categories carry two patterns: (1) the visible surfaces of a refit such as outdoor and bathroom tiles (Balcony, Terrace & Garden Tiles %s, Bathroom Tiles %s), (2) complementary products such as bathroom countertops and shower channels. The \"Showers\" (%s) and \"Bathroom Furniture\" (%s) rows, which share the name of their main category, cover general searches made with the category name (such as \"duş\" and \"banyo modelleri\"); their growth can be read as general interest rather than demand for a specific product. On the contracting side sit furniture and accessory products such as Washbasin Units (%s), Bathroom Mirrors (%s) and Bathroom Accessory Sets (%s), together with Bidets. For the e-commerce channel this distinction indicates where campaign and set design can capture demand: on the tile and complementary product side existing demand can be served, while on the furniture side demand can be supported through campaigns and content." % (yz(K2["Karo Seramik Ürünleri|Balkon, Teras & Bahçe Karo Seramikleri"]["yoy"]), yz(bk["yoy"]), yz(K2["Duşlar|Duşlar"]["yoy"]), yz(K2["Banyo Mobilyaları|Banyo Mobilyaları"]["yoy"]), yz(ld["yoy"]), yz(K2["Banyo Mobilyaları|Banyo Aynaları"]["yoy"]), yz(K2["Banyo Aksesuarları|Banyo Aksesuar Setleri"]["yoy"])), "D1"),
- kaynak("Google Ads Keyword Planner · Türkiye, Türkçe · 2.328 kelime · aylık hacim Oca 2023 - Ağu 2026 · kategori eşlemesi Inbound kelime araştırması (2025) · \"lavabo\" ve \"wc\" serilerindeki aykırı aylar Yöntem notundaki gibi düzeltilmiştir",
-        "Google Ads Keyword Planner · Turkey, Turkish · 2,328 keywords · monthly volume Jan 2023 - Aug 2026 · category mapping from Inbound keyword research (2025) · outlier months in the \"lavabo\" and \"wc\" series corrected as described in the Method note", "D1", "D11"),
+ kaynak("Google Ads Keyword Planner · Türkiye, Türkçe · 2.299 kelime · aylık hacim Oca 2023 - Ağu 2026 · kategori eşlemesi Inbound kelime araştırması (2025) · \"lavabo\" ve \"wc\" serilerindeki aykırı aylar Yöntem notundaki gibi düzeltilmiştir",
+        "Google Ads Keyword Planner · Turkey, Turkish · 2,299 keywords · monthly volume Jan 2023 - Aug 2026 · category mapping from Inbound keyword research (2025) · outlier months in the \"lavabo\" and \"wc\" series corrected as described in the Method note", "D1", "D11"),
 ) + "".join(_TDIA)
 

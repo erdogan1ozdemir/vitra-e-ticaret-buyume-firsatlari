@@ -11,7 +11,8 @@ kat = {k["kw"].strip().lower(): (k["k1"], k["k2"], k["k3"]) for k in d["keywords
 for k in json.load(open(os.path.join(P, "veri/kaynak/ek_kelimeler.json"), encoding="utf-8")):
     kat[k["kw"]] = (k["k1"], k["k2"], k["k3"])
 kp.update(json.load(open(os.path.join(P, "veri/ham/kp_ek_2024-09_2026-08.json")))["kelimeler"])
-MARKA = r"vitra|artema|creavit|kale|ece\b|serel|duravit|geberit|grohe|hansgrohe|roca|ideal standard|bien|kütahya|kutahya|çanakkale|canakkale|ege seramik|yurtbay|turkuaz|bocchi|newarc|isvea|toto|eca\b|nsk|ferro|penta|fixet|orka|nemo|dilara|tema\b|koçtaş|koctas|bauhaus|ikea|tekzen|trendyol|hepsiburada|n11|amazon"
+import haric_kural
+MARKA = haric_kural.MARKA
 NIYET = [
  ("Fiyat", r"fiyat|ucuz|uygun|indirim|kampanya|outlet|kaç para|ne kadar|tl\b"),
  ("Taksit ve ödeme", r"taksit|kredi|ödeme|vade"),
@@ -63,15 +64,31 @@ for a_ in _sira:
 print("varyant tekillestirme:", len(rows), "->", len(_tekil))
 # "Banyo Tezgahları" altına kaynak listeden gelen mutfak ve genel tezgah aramaları (banyo/lavabo içermeyen, büyük ölçüde mutfak
 # tezgahı ve porselen levha talebi) banyo mobilyası evreninden çıkarılır; ayrı tutulup raporun yöntem notunda belirtilir.
-HARIC_TEZGAH = sorted(r["kw"] for r in _tekil if r["k2"] == "Banyo Tezgahları" and not re.search(r"banyo|lavabo", r["kw"]))
-json.dump({"aciklama": "Banyo Tezgahları alt kategorisinden çıkarılan, banyo veya lavabo içermeyen mutfak ve genel tezgah aramaları", "kelimeler": HARIC_TEZGAH,
-           "a26_toplam": sum(r["a26"] for r in _tekil if r["kw"] in HARIC_TEZGAH)}, open(os.path.join(P, "veri/islenmis/kelime_haric.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-_tekil = [r for r in _tekil if r["kw"] not in set(HARIC_TEZGAH)]
+# Kaynak kategori listesinde banyo alt kategorisine eşlenmiş, ancak Google sonuçlarında banyo dışı niyete kayan genel ifadeler (04.10.2026 SERP kontrolü,
+# veri/ham/derin/serp/genel_kelime_kontrol_2026-10-04.json): mobilya kulpu ve salon konsolu, genel çöp kovası, masa peçeteliği, uygulama ve elektronik
+# paneli, doğal taş traverten. Banyo bağlamı taşıyan biçimleri (banyo dolabı kulpu, tuvalet çöp kovası, kumanda paneli) evrende kalır.
+import haric_kural
+HARIC_GRUP = {g: [] for g in haric_kural.GRUP_AD}
+for r in _tekil:
+    g = haric_kural.grup(r["kw"], r["k2"], MARKA)
+    if g: HARIC_GRUP[g].append(r["kw"])
+HARIC_GRUP = {g: sorted(L) for g, L in HARIC_GRUP.items()}
+HARIC = sorted({k_ for L in HARIC_GRUP.values() for k_ in L})
+# çıkarılan kelimelerin yazım varyantları da (ör. dolap kulpu -> dolap kolu, dolap tutacağı) aynı aylık seriyi taşır; diğer hesaplarda sızmaması için listeye eklenir
+HARIC_VAR = sorted({v_ for r in _tekil if r["kw"] in set(HARIC) for v_ in (r.get("varyant") or [])} - set(HARIC))
+json.dump({"aciklama": "Kelime evreninden çıkarılan aramalar: mutfak ve genel tezgah, banyo dışı niyete kayan genel ifadeler ve marka adı geçen aramalar",
+           "kelimeler": HARIC + HARIC_VAR, "gruplar": HARIC_GRUP, "varyant": HARIC_VAR,
+           # SERP setinin C grubu (marka ve karşılaştırma) markalı aramaları bilerek içerdiği için SERP dışlaması yalnız markasız grupları kullanır
+           "kelimeler_markasiz": sorted({k_ for g, L in HARIC_GRUP.items() if g != "markali" for k_ in L} | {v_ for r in _tekil if r["kw"] in {k_ for g, L in HARIC_GRUP.items() if g != "markali" for k_ in L} for v_ in (r.get("varyant") or [])}),
+           "a26_toplam": sum(r["a26"] for r in _tekil if r["kw"] in HARIC),
+           "grup_a26": {g: sum(r["a26"] for r in _tekil if r["kw"] in L) for g, L in HARIC_GRUP.items()}},
+          open(os.path.join(P, "veri/islenmis/kelime_haric.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+_tekil = [r for r in _tekil if r["kw"] not in set(HARIC)]
 # Türkçe karakter: varyant grubunda karakterli yazımı bulunmayan iki kanonik ad
 _AD_TR = {"cocuk klozet": "çocuk klozet", "cocuk klozet kapak": "çocuk klozet kapak"}
 for r in _tekil:
     if r["kw"] in _AD_TR: r["varyant"] = sorted(set(r.get("varyant") or []) | {r["kw"]}); r["kw"] = _AD_TR[r["kw"]]
-print("tezgah dışlaması:", len(HARIC_TEZGAH), "kelime ->", len(_tekil))
+print("dışlama:", {g: len(L) for g, L in HARIC_GRUP.items()}, "->", len(_tekil))
 rows = _tekil
 json.dump(rows, open(os.path.join(P, "veri/islenmis/kelime_seti.json"), "w", encoding="utf-8"), ensure_ascii=False)
 T = defaultdict(lambda: [0,0,0])

@@ -69,7 +69,7 @@ HTML = """
 %s
 %s
 """ % (
- x("Benchmark seti üç halkadan oluşmaktadır: vitra.com.tr ile aynı aramalarda görünen organik rakipler, banyo sektörünün marka siteleri ve ürünün satıldığı pazaryeri ile yapı market kanalları. Ölçüm Ahrefs (organik görünürlük, Türkiye), SEOmonitor (Google click payı, mobil) ve Similarweb (site trafiği, tüm ülkeler) tahminleriyle yapılmıştır; değerler kaynağa göre farklı yöntemle hesaplandığından karşılaştırmalar aynı kaynak içinde okunmalıdır.",
+ x("Benchmark seti üç halkadan oluşmaktadır; ilk halkada vitra.com.tr ile aynı aramalarda görünen organik rakipler, ikincide banyo sektörünün marka siteleri, üçüncüde ürünün satıldığı pazaryeri ve yapı market kanalları yer almaktadır. Ölçüm Ahrefs (organik görünürlük, Türkiye), SEOmonitor (Google click payı, mobil) ve Similarweb (site trafiği, tüm ülkeler) tahminleriyle yapılmıştır; değerler kaynağa göre farklı yöntemle hesaplandığından karşılaştırmalar aynı kaynak içinde okunmalıdır.",
    "The benchmark set consists of three rings: organic competitors that appear in the same searches as vitra.com.tr, the bathroom sector's brand sites, and the marketplace and DIY channels where the product is sold. Measurement uses Ahrefs (organic visibility, Turkey), SEOmonitor (Google click share, mobile) and Similarweb (site traffic, all countries) estimates; as each source uses a different method, comparisons should be read within the same source."),
  kpi_kart(k(vit[4]), "vitra.com.tr tahmini aylık organik ziyaret · DR %d" % vit[1], "vitra.com.tr estimated monthly organic visits · DR %d" % vit[1]),
  kpi_kart(k(koc[4]), "koctas.com.tr organik ziyareti vitra.com.tr'nin ~%dx'i" % round(koc[4] / vit[4]), "koctas.com.tr organic visits are ~%dx vitra.com.tr's" % round(koc[4] / vit[4])),

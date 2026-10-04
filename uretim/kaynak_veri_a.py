@@ -10,7 +10,7 @@ def doldur():
     # ------------------------------------------------------------ Keyword Planner (DataForSEO Google Ads uc noktalari)
     ekle("https://ads.google.com/home/tools/keyword-planner/",
          "Kategori kelimelerinin aylık arama hacmi ve kelime evreni (kategori talebi, SSG ve BM incelemesi, yeni kategori fırsatları)",
-         "2.420 aday kategori kelimesi için aylık hacim (Eyl 2022 - Ağu 2026 ve Eyl 2024 - Ağu 2026 pencereleri; tekilleştirme, 19 baş kelime eklemesi ve 21 mutfak tezgahı aramasının çıkarılmasıyla raporda 2.328 kelime); 10 kök ifade grubundan 52.973 kelimelik evren, 48 aylık seri; hacimler Türkiye, Türkçe",
+         "2.420 aday kategori kelimesi için aylık hacim (Eyl 2022 - Ağu 2026 ve Eyl 2024 - Ağu 2026 pencereleri; tekilleştirme ve 19 baş kelime eklemesinden sonra 21 mutfak ve genel tezgah araması, Google sonuçlarında banyo dışı ürünlere yönelen 25 genel ifade ve marka adı geçen 4 arama çıkarılarak raporda 2.299 kelime); 10 kök ifade grubundan 52.973 kelimelik evren, 48 aylık seri; hacimler Türkiye, Türkçe",
          yontem="API (DataForSEO, Google Ads uç noktaları)", tarih=[D28, D29], kod=["D1", "D12"], tur="API")
     ekle("https://api.dataforseo.com/v3/keywords_data/google_ads/search_volume/live",
          "Sezon reposundaki 2.420 kelime için Keyword Planner aylık hacmi (talep, ihtiyaç dili ve organik kanal bölümlerinin hacim tabanı)",
@@ -38,7 +38,7 @@ def doldur():
          yontem="API (DataForSEO)", tarih=D28, kod=["D3"], tur="API")
     ekle("https://api.dataforseo.com/v3/serp/google/organic/live/advanced",
          "Google mobil SERP: 334 kelime (VitrA gamı, yakın kategoriler, marka ve karşılaştırma); ayrıca Shopping/ürün bloğu kontrolü ve sosyal profil sayıları için SERP özetleri",
-         "351 aday kelimeden Keyword Planner'da hacmi olan 334 kelime çekilmiş, niyeti VitrA gamı dışına kayan ve mutfak tezgahı olan 7 kelime çıkarılarak 327 kelime analiz edilmiştir (A 163, B 84, C 80); Türkiye, Türkçe, mobil Android, depth 20 (ilk 20 organik sonuç), aynı gün üç gözlem, sıra için medyan, takipteki 158 kelimede SEOmonitor sırası; AI Overview içerik çekimi; PAA; ilk gözlem 29.09.2026'da 109 kelimeyle yapılmıştır. Kanal politikaları için 15 kategori ve 10 kontrol kelimesi × mobil ve masaüstü Shopping blok kontrolü (0 blok) ve Instagram/TikTok sayı özetleri",
+         "351 aday kelimeden Keyword Planner'da hacmi olan 334 kelime çekilmiş, Google sonuçlarında banyo dışı ürünlere yönelen genel kelimeler (tek başına kartuş ve şamandıra, tekstil banyo takımı, mutfak tezgahı, mobilya kulpu, genel çöp kovası, masa peçeteliği) olmak üzere 12 kelime çıkarılarak 322 kelime analiz edilmiştir (A 159, B 83, C 80); Türkiye, Türkçe, mobil Android, depth 20 (ilk 20 organik sonuç), aynı gün üç gözlem, sıra için medyan, takipteki 154 kelimede SEOmonitor sırası; AI Overview içerik çekimi; PAA; ilk gözlem 29.09.2026'da 109 kelimeyle yapılmıştır. Kanal politikaları için 15 kategori ve 10 kontrol kelimesi × mobil ve masaüstü Shopping blok kontrolü (0 blok) ve Instagram/TikTok sayı özetleri",
          bolum=["serp", "trafik", "politika"], yontem="API (DataForSEO)", tarih=[D29, "04.10.2026"], kod=["D19", "D23"], tur="API")
     ekle("https://api.dataforseo.com/v3/serp/google/organic/live/regular",
          "Google SERP özetleri: site:sikayetvar.com sorguları ve Akakçe/Cimri erişilemediğinde yedek okuma",
@@ -162,7 +162,7 @@ def doldur():
          bolum=["set", "benchmark"], yontem="curl", tarih=D29, kod=["D13"], tur="marka sitesi")
     ekle("https://www.vitra.com.tr/c-montaj-hizmeti",
          "VitrA montaj hizmeti kategorisi ve kalemleri (ürün + hizmet, set ve keşif boşluğu)",
-         "11 montaj kalemi ve fiyatı: klozet 2.750 TL, gömme rezervuar 3.900, banyo mobilyası seti 4.000, lavabo 2.300, armatür ve duş 2.350, büyük 5.300 TL; 1 yıl servis garantisi; 40.000 TL üzeri kampanyada ücretsiz montaj",
+         "11 montaj kalemi ve fiyatı: klozet 2.750 TL, gömme rezervuar 3.900, banyo mobilyası seti 4.000, lavabo 2.299, armatür ve duş 2.350, büyük 5.300 TL; 1 yıl servis garantisi; 40.000 TL üzeri kampanyada ücretsiz montaj",
          bolum=["set", "politika", "model", "benchmark"], yontem=["curl", "tarayıcı"], tarih=[D29], kod=["D13", "D23"], tur="marka sitesi")
     ekle("https://www.vitra.com.tr/kesif-hizmeti/kesif-hizmeti-p-etic_kesif",
          "VitrA keşif hizmeti ürün sayfası (ürün + hizmet, keşif boşluğu)",

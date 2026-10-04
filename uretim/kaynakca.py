@@ -5,8 +5,8 @@ from urllib.parse import urlsplit, unquote
 TARIH = "28.09.2026"
 # kod: (baslik_tr, baslik_en, [url], tarih)
 K = {
- "D1": ("Google Ads Keyword Planner · 2.328 kategori kelimesi · Türkiye, Türkçe · Oca 2023 - Ağu 2026",
-        "Google Ads Keyword Planner · 2,328 category keywords · Turkey, Turkish · Jan 2023 - Aug 2026",
+ "D1": ("Google Ads Keyword Planner · 2.299 kategori kelimesi · Türkiye, Türkçe · Oca 2023 - Ağu 2026",
+        "Google Ads Keyword Planner · 2,299 category keywords · Turkey, Turkish · Jan 2023 - Aug 2026",
         ["https://ads.google.com/home/tools/keyword-planner/"]),
  "D2": ("Google Search Console · sc-domain:vitra.com.tr · sayfa, sorgu, cihaz ve ülke kırılımı · 1 Haz 2025 - 25 Eyl 2026",
         "Google Search Console · sc-domain:vitra.com.tr · page, query, device and country breakdown · 1 Jun 2025 - 25 Sep 2026",
@@ -62,8 +62,8 @@ K = {
  "D18": ("Ahrefs Site Explorer ve Keywords Explorer · 24 marka ve uzman e-ticaret sitesi top pages, 69 baş kelime, 18 marka araması · Türkiye · 28.09.2026",
          "Ahrefs Site Explorer and Keywords Explorer · top pages of 24 brand and specialist e-commerce sites, 69 head keywords, 18 brand searches · Turkey · 28.09.2026",
          ["https://ahrefs.com/site-explorer", "https://ahrefs.com/keywords-explorer"]),
- "D19": ("Google arama sonuçları · 327 kelime (A VitrA gamı 163, B yakın kategoriler 84, C marka ve karşılaştırma 80), ilk 20 organik sonuç, AI Overview ve SERP özellikleri, aynı gün üç gözlem; takipteki 158 kelimede sıralar SEOmonitor 03.10.2026 · Türkiye, Türkçe, mobil · 04.10.2026",
-         "Google search results · 327 keywords (A VitrA range 163, B adjacent categories 84, C brand and comparison 80), top 20 organic results, AI Overview and SERP features, three observations on the same day; positions for the 158 tracked keywords from SEOmonitor 03.10.2026 · Turkey, Turkish, mobile · 04.10.2026",
+ "D19": ("Google arama sonuçları · 322 kelime (A VitrA gamı 159, B yakın kategoriler 83, C marka ve karşılaştırma 80), ilk 20 organik sonuç, AI Overview ve SERP özellikleri, aynı gün üç gözlem; takipteki 154 kelimede sıralar SEOmonitor 03.10.2026 · Türkiye, Türkçe, mobil · 04.10.2026",
+         "Google search results · 322 keywords (A VitrA range 159, B adjacent categories 83, C brand and comparison 80), top 20 organic results, AI Overview and SERP features, three observations on the same day; positions for the 154 tracked keywords from SEOmonitor 03.10.2026 · Turkey, Turkish, mobile · 04.10.2026",
          ["https://www.google.com.tr"]),
  "D20": ("YouTube arama sonuçları ve yorumlar · 68 arama ifadesi, 560 kanal, 2.218 yorum · Türkiye · 29.09.2026",
          "YouTube search results and comments · 68 search phrases, 560 channels, 2,218 comments · Turkey · 29.09.2026",
@@ -98,8 +98,8 @@ K = {
  "D30": ("Alt kategori tamamlayıcı taraması · vitra.com.tr 55 kategori ve 3 özel sayfa (ürün, fiyat aralığı, stok, kampanya etiketi); Trendyol, Hepsiburada, Akakçe ve Cimri aramaları (57 kesit, çok satan sırası); Koçtaş, Bauhaus, Banyomarka, Banyomega, Banyoline ve Creavit e-mağaza aramaları; aynı model kodunda fiyat eşleşmesi · 30.09.2026",
          "Sub-category complementary scan · vitra.com.tr 55 category and 3 special pages (products, price range, stock, campaign label); Trendyol, Hepsiburada, Akakçe and Cimri searches (57 segments, best-seller order); Koçtaş, Bauhaus, Banyomarka, Banyomega, Banyoline and Creavit e-store searches; price matching on the same model code · 30.09.2026",
          ["https://www.vitra.com.tr/c-canak-lavabolar", "https://www.vitra.com.tr/c-dus-uniteleri", "https://www.vitra.com.tr/c-kampanyali-urunler", "https://www.trendyol.com/sr?q=s%C3%BCrg%C3%BCl%C3%BC%20el%20du%C5%9Fu%20tak%C4%B1m%C4%B1&sst=BEST_SELLER", "https://www.hepsiburada.com/ara?q=ankastre%20stop%20valf&siralama=coksatan", "https://www.akakce.com/klozet/ayakli-klozet.html", "https://www.cimri.com/arama?q=ayakl%C4%B1%20klozet", "https://www.koctas.com.tr/search?q=%C3%A7anak%20lavabo&sort=bestseller-desc", "https://www.banyomarka.com/arama?q=s%C3%BCrg%C3%BCl%C3%BC%20el%20du%C5%9Fu%20tak%C4%B1m%C4%B1"]),
-  "D31": ("VitrA resmi mağaza satıcı paneli · Trendyol: satış (2025 Q4 - 2026 Q3), sipariş dağılımı, mağaza, operasyon, favori-görüntüleme (2025, 2026), ürün ve satıcı değerlendirmeleri, ürün ve sipariş soruları, Trendyol'un Enleri (Eylül 2026) · Hepsiburada: ürün performansı, görüntülenme, iptal, değerlendirme · 30.09.2026",
-         "VitrA official store seller panel · Trendyol: sales (2025 Q4 - 2026 Q3), order distribution, store, operations, favourite-views (2025, 2026), product and seller reviews, product and order questions, Trendyol Top Lists (September 2026) · Hepsiburada: product performance, views, cancellations, reviews · 30.09.2026",
+  "D31": ("VitrA resmi mağaza satıcı paneli · Trendyol: satış (2025 Q4 - 2026 Q3), sipariş dağılımı, mağaza, operasyon, favori-görüntüleme (2025, 2026), ürün ve satıcı değerlendirmeleri, ürün ve sipariş soruları, Trendyol'un Enleri (Eylül 2026) · Hepsiburada: ürün performansı, görüntülenme ve iptal (son 12 ay), değerlendirme · 30.09.2026",
+         "VitrA official store seller panel · Trendyol: sales (2025 Q4 - 2026 Q3), order distribution, store, operations, favourite-views (2025, 2026), product and seller reviews, product and order questions, Trendyol Top Lists (September 2026) · Hepsiburada: product performance, views and cancellations (last 12 months), reviews · 30.09.2026",
          ["https://partner.trendyol.com", "https://merchant.hepsiburada.com"]),
   "D32": ("Banyo yenileme adedi araştırması · TÜİK ADNKS 2024, konut satışları 2023-2026, yapı izinleri, Bina ve Konut Nitelikleri 2021 · Türkiye Seramik Federasyonu, Sanayi Bakanlığı seramik notu · Eczacıbaşı basın bülteni (2022) ve faaliyet raporları · VDS-Forsa banyo araştırması (Almanya, 2017) · 30.09.2026",
          "Bathroom renovation research · TurkStat ABPRS 2024, house sales 2023-2026, building permits, Building and Dwelling Characteristics 2021 · Turkish Ceramics Federation, Ministry of Industry ceramics note · Eczacıbaşı press release (2022) and annual reports · VDS-Forsa bathroom survey (Germany, 2017) · 30.09.2026",

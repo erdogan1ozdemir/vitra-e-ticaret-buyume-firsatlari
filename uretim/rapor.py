@@ -69,7 +69,7 @@ H3_ALT = {
  "A · Kim sıralanıyor?": ("Üç gruptaki %d kelimenin ilk 10 sonucu, AI Overview kaynakları ve \"Diğer sorular\" kutusu süzülebilir tablolar halinde ayrı sayfadadır." % _SO.NT,
                       "The top 10 results, AI Overview sources and \"People also ask\" box for the %d keywords in all three groups are in filterable tables on a separate page." % _SO.NT, "arama-sonuclari.html", "Arama Sonuçları sayfasını görüntüle", "View the Search Results page", ""),
  "Kullanıcının Google'da sorduğu sorular": ("%d sorunun tamamı, çıktığı kelimelerle birlikte:" % len(_SO.PAA_SORU), "All %d questions with the keywords where they appeared:" % len(_SO.PAA_SORU), "arama-sonuclari.html", "Soruları görüntüle", "View the questions", "#paa"),
- "Ana kategori düzeyinde değişim": ("Talep bölümlerindeki 2.328 kelimenin tamamı, kategori, niyet ve iki dönemin arama hacmiyle:", "All 2,328 keywords in the demand sections, with category, intent and search volume for both periods:", "kelime-evreni.html", "Kelime Evreni sayfasını görüntüle", "View the Keyword Universe page", ""),
+ "Ana kategori düzeyinde değişim": ("Talep bölümlerindeki 2.299 kelimenin tamamı, kategori, niyet ve iki dönemin arama hacmiyle:", "All 2,299 keywords in the demand sections, with category, intent and search volume for both periods:", "kelime-evreni.html", "Kelime Evreni sayfasını görüntüle", "View the Keyword Universe page", ""),
  "Autocomplete önerilerinin tema oranı": ("Tüm otomatik tamamlama önerileri, kök ifade ve grupla:", "All autocomplete suggestions, with seed term and group:", "kelime-evreni.html", "Önerileri görüntüle", "View the suggestions", "#oneriler"),
  "Alt kesitler: vitra.com.tr, pazaryeri ve fiyat karşılaştırma siteleri": ("Taramadaki 11.982 ürün kartının tamamı (kanal, marka, satıcı, fiyat, puan):", "All 11,982 product cards from the scan (channel, brand, seller, price, rating):", "pazaryeri-taramasi.html", "Pazaryeri Taraması sayfasını görüntüle", "View the Marketplace Scan page", ""),
  "Genişletilmiş tarama: 68 arama, altı niyet grubu": ("68 aramanın tüm video sonuçları ve kanal özeti:", "All video results of the 68 searches and the channel summary:", "youtube-videolari.html", "YouTube Videoları sayfasını görüntüle", "View the YouTube Videos page", ""),
@@ -123,6 +123,10 @@ for _m in re.finditer(r'<section id="([^"]+)">(.*?)</section>', govde, re.S):
 def _bk(t):
     return re.sub(r"\[\[bk:([^\]]+)\]\]", lambda m: ", ".join(sorted({n_ for c_ in m.group(1).split(",") for n_ in _KB.get(c_.strip(), ())})) or "-", t)
 govde = _bk(govde); t2_ortak.EK = {_bk(k_): _bk(v_) for k_, v_ in t2_ortak.EK.items()}
+# Tablo kaynak logoları: "Tabloyu kopyala" düğmesinin solunda kaynak logosu ve hover'da kaynak, kapsam, veri dönemi (tablo_kaynak.py)
+import tablo_kaynak
+govde, _TKR = tablo_kaynak.uygula(govde, t2_ortak.EK, x)
+open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "tablo_kaynak_rapor.txt"), "w", encoding="utf-8").write("\n".join("%s | %s | %s" % (a_, b_, ", ".join(c_)) for a_, b_, c_ in _TKR))
 govde, sira = kaynakca.coz(govde)
 _KAY = kaynakca.bolum_html(sira, x)
 GL_EN = {
@@ -243,7 +247,13 @@ b.mb{font-weight:650;color:var(--ink)}
 /* tablo araclari */
 .tbox{margin:0 0 14px}
 .tbox .tw{margin:0}
-.tbar{display:flex;justify-content:flex-end;margin:0 0 4px}
+.tbar{display:flex;justify-content:flex-end;align-items:center;gap:10px;margin:0 0 4px}
+.tkay{display:inline-flex;align-items:center;gap:5px}
+.tk{display:inline-flex;align-items:center;justify-content:center;cursor:help;border:1px solid var(--line);border-radius:6px;padding:3px;background:#fff}
+.tk .lg{width:16px;height:16px;margin:0;vertical-align:0;border-radius:3px}
+.lg-web{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2310332F%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%229%22/%3E%3Cpath%20d%3D%22M3%2012h18M12%203c2.6%202.6%203.9%205.6%203.9%209s-1.3%206.4-3.9%209c-2.6-2.6-3.9-5.6-3.9-9S9.4%205.6%2012%203z%22/%3E%3C/svg%3E");background-color:#fff}
+.tk:hover{border-color:var(--ink-2)}
+.tk:focus-visible{outline:2px solid var(--coral);outline-offset:1px}
 .tcopy{display:inline-flex;align-items:center;gap:5px;font:inherit;font-size:11px;color:var(--muted);background:transparent;border:1px solid var(--line);border-radius:5px;padding:2px 8px;cursor:pointer;line-height:1.4}
 .tcopy:hover,.tcopy:focus-visible{color:var(--ink);border-color:var(--ink-2)}
 .tcopy.ok{color:var(--green);border-color:var(--green)}
@@ -400,6 +410,9 @@ dil.TERIMLER = {t: (GLOSSARY[t], GL_TERM_EN.get(t, t), GL_EN[t]) for t in GLOSSA
 DOC, _n, _de = dil.uygula(DOC, "VitrA Turkey | E-Commerce Growth Opportunities")
 yol = os.path.join(veri.KOK, AD + ".html")
 DOC, _ekd = ortak.yuzde_ek_duzelt(DOC)   # %X,Y'ek: ek, okunan son sayiya gore
+if ortak.KARO_EKSIK:   # her karo açıklama balonu taşımalıdır (karo_aciklama.py)
+    open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "karo_eksik.txt"), "w", encoding="utf-8").write("\n".join(sorted(set(ortak.KARO_EKSIK))))
+    raise SystemExit("açıklaması olmayan karo: %d (uretim/karo_eksik.txt)" % len(set(ortak.KARO_EKSIK)))
 DOC = DOC.replace("\u2013", "-")   # urun adlarindaki en dash
 print("yüzde eki düzeltmesi:", _ekd)
 open(yol, "w", encoding="utf-8").write(DOC)

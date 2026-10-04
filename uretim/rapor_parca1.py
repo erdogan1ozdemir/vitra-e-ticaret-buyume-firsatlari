@@ -68,12 +68,16 @@ def _yeks(g, ymax):
         return x(r.replace(".", ",") + b, r + b)
     return f"{int(g):,}".replace(",", ".") if g == int(g) else ("%.1f" % g).replace(".", ",")
 
-def cizgi(seriler, yukseklik=250, genislik=880, y_etiket="Aylık arama hacmi", aylar=None, x_etiket=None, kalin=None, notlar=None, bagla=False):
-    """seriler: [(ad, renk, [degerler])] - aylar listesiyle hizali."""
+def cizgi(seriler, yukseklik=250, genislik=880, y_etiket="Aylık arama hacmi", aylar=None, x_etiket=None, kalin=None, notlar=None, bagla=False,
+          birim=None, ondalik=0, gizli=(), olcek=False):
+    """seriler: [(ad, renk, [degerler])] - aylar listesiyle hizali.
+    birim: (tr, en) balon kalibi, {v} degerin yeri (ör. ("{v} milyar ₺", "₺{v} billion")); ondalik: balondaki ondalik hane;
+    gizli: baslangicta kapali seri indeksleri; olcek: lejantta seri acilip kapaninca y ekseni gorunen serilere gore yeniden olceklenir."""
+    gz = set(gizli or ())
     aylar = aylar if aylar is not None else veri.AYLAR
     sol, sag, ust, alt = 58, 14, (30 if notlar else 16), 34
     iw = genislik - sol - sag; ih = yukseklik - ust - alt
-    tum = [v for _, _, s in seriler for v in s if v is not None]
+    tum = [v for k_, (_, _, s) in enumerate(seriler) if k_ not in gz for v in s if v is not None]
     ymax = max(tum) * 1.08; ymin = 0
     n = len(aylar)
     def X(i): return sol + iw * i / (n - 1)
@@ -81,11 +85,12 @@ def cizgi(seriler, yukseklik=250, genislik=880, y_etiket="Aylık arama hacmi", a
     p = ['<svg class="chart" viewBox="0 0 %d %d" role="img" preserveAspectRatio="xMidYMid meet">' % (genislik, yukseklik)]
     adim = 10 ** int(math.log10(ymax)) / 2
     while ymax / adim > 6: adim *= 2
-    g = 0
+    g = 0; p.append('<g class="gy">')
     while g <= ymax:
         p.append('<line class="grid" x1="%d" y1="%.1f" x2="%d" y2="%.1f"/>' % (sol, Y(g), genislik - sag, Y(g)))
         p.append('<text class="ax" x="%d" y="%.1f" text-anchor="end">%s</text>' % (sol - 8, Y(g) + 4, _yeks(g, ymax)))
         g += adim
+    p.append('</g>')
     for i, ay in enumerate(aylar):
         if x_etiket:
             p.append('<text class="ax" x="%.1f" y="%d" text-anchor="middle">%s</text>' % (X(i), yukseklik - 12, x_etiket[i]))
@@ -98,7 +103,7 @@ def cizgi(seriler, yukseklik=250, genislik=880, y_etiket="Aylık arama hacmi", a
         for i, v in enumerate(s):
             if v is None: continue
             d.append(("M" if not d else "L") + "%.1f %.1f" % (X(i), Y(v)))
-        p.append('<path class="sr" data-k="%d" d="%s" fill="none" stroke="%s" stroke-width="%s" stroke-linejoin="round"/>' % (sk, " ".join(d), renk, (kalin or {}).get(sk, 2.2)))
+        p.append('<path class="sr" data-k="%d" d="%s" fill="none" stroke="%s" stroke-width="%s" stroke-linejoin="round"%s/>' % (sk, " ".join(d), renk, (kalin or {}).get(sk, 2.2), ' style="display:none"' if sk in gz else ''))
         if bagla and sk > 0:
             i0 = next((i for i, v in enumerate(s) if v is not None), None)
             onc = seriler[sk - 1][2]
@@ -108,7 +113,7 @@ def cizgi(seriler, yukseklik=250, genislik=880, y_etiket="Aylık arama hacmi", a
     for sk, i, metin, yer in (notlar or []):
         v = seriler[sk][2][i]; renk = seriler[sk][1]
         yy = Y(v) - 9 if yer == "ust" else Y(v) + 17
-        p.append('<g class="an" data-k="%d"><circle cx="%.1f" cy="%.1f" r="3.2" fill="%s"/><text class="anl" x="%.1f" y="%.1f" text-anchor="%s" fill="%s">%s</text></g>' % (sk, X(i), Y(v), renk, X(i) + (-4 if i == 0 else (4 if i == n - 1 else 0)), yy, "start" if i == 0 else ("end" if i == n - 1 else "middle"), renk, metin))
+        p.append('<g class="an" data-k="%d" data-i="%d" data-yer="%s"%s><circle cx="%.1f" cy="%.1f" r="3.2" fill="%s"/><text class="anl" x="%.1f" y="%.1f" text-anchor="%s" fill="%s">%s</text></g>' % (sk, i, yer, ' style="display:none"' if sk in gz else '', X(i), Y(v), renk, X(i) + (-4 if i == 0 else (4 if i == n - 1 else 0)), yy, "start" if i == 0 else ("end" if i == n - 1 else "middle"), renk, metin))
     # imlec cizgisi ve nokta isaretleri (JS ile konumlanir)
     p.append('<line class="hx" x1="0" y1="%d" x2="0" y2="%.1f" style="display:none"/>' % (ust, ust + ih))
     for _ in seriler:
@@ -120,14 +125,18 @@ def cizgi(seriler, yukseklik=250, genislik=880, y_etiket="Aylık arama hacmi", a
                  % (i, X(i) - bw / 2, ust, bw, ih))
     p.append('</svg>')
     lej = '<div class="legend">' + "".join(
-        '<span class="lg-t" data-k="%d" role="button" tabindex="0" aria-pressed="true"><i style="background:%s"></i>%s</span>' % (k_, r, a) for k_, (a, r, _) in enumerate(seriler)) + '</div>'
-    veri_js = json.dumps({
+        '<span class="lg-t%s" data-k="%d" role="button" tabindex="0" aria-pressed="%s"><i style="background:%s"></i>%s</span>' % (" off" if k_ in gz else "", k_, "false" if k_ in gz else "true", r, a) for k_, (a, r, _) in enumerate(seriler)) + '</div>'
+    ek = {}
+    if birim: ek["birimk"] = list(birim); ek["ond"] = ondalik
+    if gz: ek["gizli"] = sorted(gz)
+    if olcek: ek["olcek"] = {"ust": ust, "ih": round(ih, 1), "sol": sol, "sag": genislik - sag, "kmax": 100_000}
+    veri_js = json.dumps(dict(ek, **{
         "aylar": aylar,
         "px": [round(X(i), 1) for i in range(n)],
         "seriler": [{"ad": a, "renk": r, "deger": s,
                      "py": [(round(Y(v), 1) if v is not None else None) for v in s]}
                     for a, r, s in seriler],
-    }, ensure_ascii=False).replace("'", "&#39;")
+    }), ensure_ascii=False).replace("'", "&#39;")
     return ('<figure class="fig" data-grafik=\'%s\'><figcaption class="figcap">%s</figcaption>'
             '%s<div class="tip" hidden></div>%s</figure>') % (veri_js, y_etiket, "".join(p), lej)
 

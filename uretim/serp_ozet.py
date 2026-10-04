@@ -10,7 +10,7 @@ _V = json.load(open(os.path.join(_D, "kelime_sonuc_v2.json"), encoding="utf-8"))
 TARIH = _V["tarih"]
 # Analizden cikarilan kelimeler: mutfak ve genel tezgah aramalari (kelime evreninden de cikarildi) ile niyeti VitrA gami disina kayan
 # genel kelimeler (kartus: yazici kartusu; samandira: olta samandirasi; banyo seti / banyo takimi: tekstil takimi)
-DISLA = set(json.load(open(os.path.join(veri.V, "islenmis", "kelime_haric.json"), encoding="utf-8"))["kelimeler"]) | {"kartuş", "şamandıra", "banyo seti", "banyo takımı"}
+DISLA = set(json.load(open(os.path.join(veri.V, "islenmis", "kelime_haric.json"), encoding="utf-8"))["kelimeler_markasiz"]) | {"kartuş", "şamandıra", "banyo seti", "banyo takımı"}
 DISLANAN = [r["kelime"] for r in _V["kelimeler"] if r["kelime"] in DISLA]
 TUM = [r for r in _V["kelimeler"] if r["kelime"] not in DISLA]
 CIKAN = json.load(open(os.path.join(_D, "set_v2.json"), encoding="utf-8"))["hacimsiz_cikan"]

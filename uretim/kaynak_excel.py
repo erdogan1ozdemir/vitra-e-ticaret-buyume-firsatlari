@@ -15,7 +15,8 @@ import kaynakca
 import kaynak_veri_a, kaynak_veri_b, kaynak_veri_c, kaynak_veri_d, kaynak_veri_e, kaynak_veri_f, kaynak_veri_g, kaynak_veri_h
 
 INK = "10332F"; BAS = "434343"; COR = "FF7B52"; CIZ = "E0E0E0"; ZEB = "F7F5F2"
-XLSX = os.path.join(O.KOK, "VitrA_E-Ticaret_Kaynak_Siteler.xlsx")
+XLSX = os.path.join(O.KOK, "VitrA_E-Ticaret_Kaynak_Siteler.xlsx")          # markaya giden sürüm (araç ve veri servisi ayrıntısı yok)
+XLSX_IC = os.path.join(O.KOK, "VitrA_E-Ticaret_Kaynak_Siteler_Ic_Kullanim.xlsx")   # iç kullanım: yöntem, araç ve erişim ayrıntıları
 
 def F(b=False, c=INK, sz=10, u=None):
     return Font(name="Calibri", bold=b, color=c, size=sz, underline=u)
@@ -223,7 +224,7 @@ def uret():
         ("Kaynakça kodu", "Kaynakça girdisinin iç kodu (D, Y, B); 'Rapordaki kaynakça no' sütunu aynı girdinin rapordaki üst simge numarasıdır. Kaynakçada yer almayan destek sayfaları '-' ile işaretlidir."),
         ("Tarih", "Erişim (veri çekim) tarihi GG.AA.YYYY; raporun kaynakçasında erişim tarihi yer almaz, bu dökümde tutulur: 27.09.2026 (Ahrefs organik rakipler), 28.09.2026 (Ahrefs, Search Console, Keyword Planner, EVDS, autocomplete), 29.09.2026 (derin araştırma turu), 30.09.2026 (tarayıcı doğrulaması, ek autocomplete), 02.10.2026 (Wikidata, site haritaları, rehber içerik), 03.10.2026 (Similarweb, SEOmonitor, pazaryeri yorumları), 04.10.2026 (Google arama sonuçları, ek Keyword Planner kelimeleri, site içi arama, sepet, destek SSS envanteri)."),
     ]
-    ws = sayfa(wb, "01 Kaynaklar", "VitrA e-ticaret büyüme fırsatları · kaynak siteler ve sayfalar (%d satır, %d alan adı) · iç kullanım: veri toplama yöntemi ve araç ayrıntıları içerir" % (len(SATIRLAR), len(alanlar)), n1,
+    ws = sayfa(wb, "01 Kaynaklar", "VitrA e-ticaret büyüme fırsatları · kaynak siteler ve sayfalar (%d satır, %d alan adı) · iç kullanım sürümü: veri toplama yöntemi ve araç ayrıntıları içerir; markaya giden sürüm VitrA_E-Ticaret_Kaynak_Siteler.xlsx" % (len(SATIRLAR), len(alanlar)), n1,
                ["URL", "Alan adı", "Ne için bakıldı", "Raporun hangi bölümüne kaynak sağladı", "Hangi bilgiler alındı", "Erişim tarihi", "Yöntem (tarayıcı / API / curl / MCP)", "Kaynakça kodu", "Rapordaki kaynakça no"],
                S1, [58, 24, 52, 40, 72, 15, 26, 13, 13], merkez=(5, 7, 8), link_sutun=0, hrefs=satirlar_href)
     n2 = [
@@ -240,9 +241,87 @@ def uret():
         ("Not", "Alınamayan kalemler raporda boş bırakılmamış, ilgili satırlar çıkarılmış ya da kaynağıyla birlikte işaretlenmiştir."),
     ]
     sayfa(wb, "03 Yöntem", "Yöntem ve alınamayanlar", n3, ["Madde"], [[m] for m in S3], [170], link_sutun=None)
+    wb.save(XLSX_IC)
+    return XLSX_IC
+
+# ---------------------------------------------------------------- marka sürümü
+# Markaya giden sürümde veri toplama araçları ve veri servisleri (uç nokta adresleri, otomasyon, tarayıcı ayrıntısı) yer almaz;
+# araştırılan tüm siteler ve sayfalar kalır. Veri servisi satırlarının topladığı veri, asıl kaynak satırlarında (Google, Trendyol vb.) durur.
+ARAC_ALAN = {"dataforseo.com", "apify.com"}
+TUR_MARKA = {"API": "ölçüm aracı", "dahili (Inbound)": "dahili çalışma (Inbound)"}
+_TEMIZ_MARKA = [
+    (r"\s*;?\s*ilk okuma Apify ile \(curl 403\)", ""), (r"\s*\(Apify,\s*", " ("), (r"\s*\(Apify\)", ""), (r"Apify ile\s*", ""),
+    (r"Kategori sitemap'i 403 döndüğü için kategori yapısı tarayıcıyla okundu", "Kategori yapısı kategori sayfalarından okundu"),
+    (r"\s*\(Chrome ile sayfada bulunamadı\)", " (sayfada bulunamadı)"), (r";?\s*bot korumalı sayfalar[^|;]*", ""),
+    (r"\s*\(curl 403\)", ""), (r"\bcurl\b", "doğrudan erişim"), (r"Playwright", "tarayıcı"), (r"\bMCP\b", ""), (r"\bAPI\b", "veri servisi"),
+    (r"DataForSEO", "arama sonucu veri servisi"), (r"asenkron task_post ve task_get/advanced", "ürün ve satıcı listeleri"),
+]
+def marka_temizle(t):
+    t = str(t)
+    for a, b in _TEMIZ_MARKA: t = re.sub(a, b, t)
+    return re.sub(r"\s{2,}", " ", t).strip(" ;")
+
+def _yontem_tablosu():
+    """Raporun Yöntem ve Kapsam tablosu (bölüm 27): veri kaynağı, kapsam, kullanıldığı bölüm, not."""
+    from bs4 import BeautifulSoup
+    h = open(os.path.join(O.KOK, "VitrA_E-Ticaret_Buyume_Firsatlari.html"), encoding="utf-8").read()
+    t = BeautifulSoup(h, "html.parser").select_one("section#ek table")
+    out = []
+    for tr in t.select("tbody tr"):
+        h_ = [" ".join(td.get_text(" ", strip=True).split()) for td in tr.select("td")]
+        out.append([re.sub(r"\s+([,.;:)])", r"\1", c) for c in h_])
+    return out
+
+def uret_marka():
+    wb = Workbook(); wb.remove(wb.active)
+    sat = []
+    for r in SATIRLAR:
+        a = O.alan_adi(r["url"])
+        if a in ARAC_ALAN: continue
+        v = satir_degerleri(r)
+        url, href = v[0], r["href"]
+        if a == "github.com":
+            url, href, a_ = "Inbound VitrA kategori kelime araştırması ve sezonsallık çalışması (dahili çalışma, 2025 - Haziran 2026)", None, "Inbound (dahili)"
+        else:
+            a_ = v[1]
+        sat.append(([url, a_, marka_temizle(v[2]), v[3], marka_temizle(v[4]), v[5], v[8]], href, a, r))
+    al = {}
+    for row, _, a, r in sat:
+        d = al.setdefault(a, {"bolum": set(), "tarih": [], "adet": 0})
+        d["bolum"] |= set(r["bolum"]); d["adet"] += r["adet"]
+        for t in r["tarih"]:
+            if t not in d["tarih"]: d["tarih"].append(t)
+    n1 = [
+        ("Okuma", "Bir satır bir URL'yi gösterir; toplu okunan sayfalarda (ürün sayfaları, arama sorguları, listeler) kalıp adres ve adet tek satırdadır, adet 'Hangi bilgiler alındı' alanında yazılıdır. Süslü parantezli adresler kalıp adrestir; bağlantı, kalıba uyan gerçek bir örnek sayfaya gider."),
+        ("Kapsam", "Rapordaki %d kaynakça girdisinin tüm adresleri, rapordaki bağlantılar ve araştırma sırasında incelenen sayfalar; politika, garanti ve servis sayfalarının her biri ayrı satırdadır." % len(O.KOD_NO)),
+        ("Sıralama", "Bölüm sırasına göre, aynı bölüm içinde alan adına göre; birden fazla bölüme kaynak sağlayan adresler ilk bölümde durur, bölümler '·' ile birleştirilmiştir."),
+        ("Kaynakça no", "Raporun kaynakçasındaki numaradır (metindeki üst simge); kaynakçada yer almayan destek sayfaları '-' ile işaretlidir."),
+        ("Tarih", "Erişim tarihi GG.AA.YYYY; raporun kaynakçasında erişim tarihi yer almaz, bu dökümde tutulur: 27.09.2026 (organik rakipler), 28.09.2026 (Ahrefs, Search Console, Keyword Planner, EVDS, Google önerileri), 29.09.2026 (pazaryeri, şikayet, kanal politikası ve fiyat incelemesi), 30.09.2026 (site doğrulaması, ek Google önerileri), 02.10.2026 (Wikidata, site haritaları, rehber içerik), 03.10.2026 (Similarweb, SEOmonitor, pazaryeri yorumları), 04.10.2026 (Google arama sonuçları, ek Keyword Planner kelimeleri, site içi arama, sepet, destek SSS sayfaları)."),
+    ]
+    sayfa(wb, "01 Kaynaklar", "VitrA e-ticaret büyüme fırsatları · kaynak siteler ve sayfalar (%d satır, %d alan adı)" % (len(sat), len(al)), n1,
+          ["URL", "Alan adı", "Ne için bakıldı", "Raporun hangi bölümüne kaynak sağladı", "Hangi bilgiler alındı", "Erişim tarihi", "Rapordaki kaynakça no"],
+          [s_[0] for s_ in sat], [58, 24, 52, 40, 72, 15, 13], merkez=(5, 6), link_sutun=0, hrefs=[s_[1] for s_ in sat])
+    S2m = []
+    for a in sorted(al, key=lambda a: (-al[a]["adet"], a)):
+        d = al[a]; secs = sorted(d["bolum"], key=lambda s: O.BOLUM[s][0])
+        S2m.append(["Inbound (dahili)" if a == "github.com" else a, d["adet"], " · ".join("%02d" % O.BOLUM[s][0] for s in secs) if len(secs) > 6 else " · ".join(O.bolum_adi(s) for s in secs),
+                    TUR_MARKA.get(TUR[a], TUR[a]), " · ".join(tarih_sirala(d["tarih"]))])
+    n2 = [
+        ("Okuma", "Alan adı, 01 Kaynaklar sayfasındaki satırların kayıtlı alan adıdır (alt alan adları kök alan adına indirilmiştir)."),
+        ("Sayfa/sorgu sayısı", "Alan adına ait satırların adet toplamıdır; kalıp adres satırlarında adet dahildir. Ahrefs kayıt sayıları (top pages satırları) toplama katılmaz, ilgili satırda yazılıdır."),
+        ("Kullanıldığı bölümler", "Alan adının kaynak sağladığı bölümler; altıdan fazla bölüm bulunan alan adlarında yalnızca bölüm numaraları verilmiştir."),
+        ("Kaynak türü", "pazaryeri, perakendeci (yapı market ve mobilya), marka sitesi, fiyat karşılaştırma, arama motoru, ölçüm aracı, pazar ölçümü, yapay zeka, açık bilgi kaynağı, haber ve sektör kaynağı, sosyal (video, sosyal ağ ve şikayet platformu), kamu verisi, dahili çalışma (Inbound)."),
+    ]
+    sayfa(wb, "02 Alan adı özeti", "Alan adı özeti (%d alan adı)" % len(al), n2, ["Alan adı", "Sayfa/sorgu sayısı", "Kullanıldığı bölümler", "Kaynak türü", "Erişim tarihleri"],
+          S2m, [30, 16, 62, 26, 40], merkez=(3,), sayisal=(1,))
+    YT = _yontem_tablosu()
+    n3 = [("Okuma", "Raporun 27. bölümündeki Yöntem ve Kapsam tablosudur; her veri kaynağının dönemi, coğrafyası, örneklemi, kullanıldığı bölüm ve ölçüm sınırı verilmiştir.")]
+    sayfa(wb, "03 Yöntem ve kapsam", "Yöntem ve kapsam (%d veri kaynağı)" % len(YT), n3, ["Veri kaynağı", "Kapsam", "Kullanıldığı bölüm", "Not"], YT, [30, 60, 18, 100], merkez=(2,))
     wb.save(XLSX)
-    return XLSX
+    return XLSX, len(sat), len(al), len(YT)
 
 if __name__ == "__main__":
     yol = uret()
     print(yol, len(S1), "satir", len(S2), "alan adi", len(S3), "yontem maddesi")
+    m = uret_marka()
+    print(m[0], m[1], "satir", m[2], "alan adi", m[3], "yontem satiri")

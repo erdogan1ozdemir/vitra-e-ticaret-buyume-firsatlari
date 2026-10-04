@@ -272,6 +272,9 @@ td a.dis{font-weight:500}
 /* Balon .tw{overflow-x:auto} sarmalayicisi tarafindan kirpilmasin diye
    position:fixed tek bir ogeden yonetilir; th ve grafikler ayni ogeyi kullanir. */
 th[data-t]{cursor:help}
+.kpi[data-t],.metric[data-t]{cursor:help}
+.kpi[data-t] .k,.metric[data-t] .mk{text-decoration:underline dotted;text-decoration-color:color-mix(in srgb,currentColor 45%,transparent);text-underline-offset:3px}
+.kpi[data-t]:focus-visible,.metric[data-t]:focus-visible{outline:2px solid var(--coral);outline-offset:2px}
 th[data-t] span.q{border-bottom:1px dotted rgba(255,255,255,.55);padding-bottom:1px}
 #tt{position:fixed;z-index:80;max-width:290px;background:var(--teal);color:#fff;
   font-size:11.5px;line-height:1.45;padding:8px 11px;border-radius:6px;
