@@ -6,8 +6,8 @@
 - blog (/ilham-veren-fikirler/, tüm alt alan adları): aylık seri, 12 ay sayfa listesi, Haz-Eyl yıllık karşılaştırma
 - Search Console yapay zeka özellikleri dışa aktarımı (18 May - 29 Eyl 2026, /ilham-veren-fikirler/ filtreli) ile sayfa ve sorgu eşleştirmesi"""
 import json, os, re, csv, io, contextlib
-from collections import defaultdict
 import openpyxl
+from collections import defaultdict
 P = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 H = os.path.join(P, "veri/ham/gsc2")
 def J(ad): return json.load(open(os.path.join(H, ad + ".json"), encoding="utf-8"))
@@ -24,6 +24,18 @@ for r in cih:
     gun[d][0] += r["clicks"]; gun[d][1] += r["impressions"]
     if "2025-10-01" <= d <= "2026-09-30": dv[c][0] += r["clicks"]; dv[c][1] += r["impressions"]
 O["ay"] = {m: [v[0], v[1], round(v[2] / v[1], 2) if v[1] else None] for m, v in sorted(ay.items())}
+# 2025 Ocak - Mayıs: API'nin 16 aylık saklama süresi dışında; marka ekibinin Search Console aylık dışa aktarımından (tık ve gösterim; sıra yok)
+_wb = openpyxl.load_workbook(os.path.join(P, "veri/kaynak/gsc_2025_2026h1_aylik.xlsx"), read_only=True, data_only=True)
+_r = list(_wb.active.iter_rows(values_only=True))
+_c25 = next(r for r in _r if r[0] == 2025.0); _i25 = [r for r in _r if r[0] == 2025.0][1]
+for _k in range(1, 13):
+    _m = "2025-%02d" % _k
+    if _m in O["ay"]:   # API ile örtüşen aylar birebir aynı olmalıdır
+        assert (O["ay"][_m][0], O["ay"][_m][1]) == (int(_c25[_k]), int(_i25[_k])), ("2025 dışa aktarım uyuşmuyor", _m)
+    else:
+        O["ay"][_m] = [int(_c25[_k]), int(_i25[_k]), None]
+O["ay"] = dict(sorted(O["ay"].items()))
+O["ay_disaktarim"] = ["2025-%02d" % k for k in range(1, 6)]
 O["gun"] = dict(sorted(gun.items()))
 Y12 = ["2025-%02d" % m for m in (10, 11, 12)] + ["2026-%02d" % m for m in range(1, 10)]
 O["y12"] = {"click": sum(O["ay"][m][0] for m in Y12), "gosterim": sum(O["ay"][m][1] for m in Y12)}
@@ -99,7 +111,7 @@ def sayfa_top(ad):
 B26, B25, BGA = sayfa_top("blog_sayfa_2026"), sayfa_top("blog_sayfa_2025"), sayfa_top("blog_sayfa_genai")
 O["blog_hazeyl"] = {"2026": B26, "2025": B25}
 # ------------------------------------------------------------------ yapay zeka özellikleri dışa aktarımı
-X = "/Users/Erdo/Downloads/vitra.com.tr-Performance-on-Search-Generative-AI-Features-2026-10-04.xlsx"
+X = os.path.join(P, "veri/kaynak/gsc_genai/gsc_yapay_zeka_blog_gunluk_2026-10-04.xlsx")
 wb = openpyxl.load_workbook(X, read_only=True)
 O["genai_gun"] = {str(d)[:10]: int(v) for d, v in list(wb["Chart"].iter_rows(values_only=True))[1:]}
 ga = defaultdict(int)
@@ -107,7 +119,7 @@ for u, v in list(wb["Pages"].iter_rows(values_only=True))[1:]: ga[yol(u)] += int
 O["genai_sayfa"] = dict(sorted(ga.items(), key=lambda x: -x[1]))
 O["genai_cihaz"] = {d: int(v) for d, v in list(wb["Devices"].iter_rows(values_only=True))[1:]}
 O["genai_filtre"] = {a: b for a, b in list(wb["Filters"].iter_rows(values_only=True))[1:]}
-wb2 = openpyxl.load_workbook(X.replace(".xlsx", " (1).xlsx"), read_only=True)
+wb2 = openpyxl.load_workbook(X.replace("gunluk", "aylik"), read_only=True)
 O["genai_ay"] = [(a, int(b)) for a, b in list(wb2["Chart"].iter_rows(values_only=True))[1:]]
 bg = {r["keys"][0]: [r["clicks"], r["impressions"]] for r in J("blog_gunluk_2026")}
 O["blog_gun"] = bg
@@ -126,6 +138,32 @@ for u, g in O["genai_sayfa"].items():
     sat.append({"u": u, "genai": g, "gos_genai_donem": t[1] if t else None, "c26": a6[0] if a6 else 0, "i26": a6[1] if a6 else 0, "p26": a6[2] if a6 else None,
                 "c25": a5[0] if a5 else 0, "i25": a5[1] if a5 else 0, "p25": a5[2] if a5 else None})
 O["genai_sayfa_tablo"] = sat
+# ------------------------------------------------------------------ site geneli yapay zeka özellikleri (filtresiz dışa aktarım, 18 May - 29 Eyl 2026; sayfa listesi ilk 1.000 sayfa)
+XS = os.path.join(P, "veri/kaynak/gsc_genai/gsc_yapay_zeka_site_gunluk_2026-10-05.xlsx")
+ws = openpyxl.load_workbook(XS, read_only=True)
+O["genai_site_gun"] = {str(d)[:10]: int(v) for d, v in list(ws["Chart"].iter_rows(values_only=True))[1:]}
+O["genai_site_cihaz"] = {d: int(v) for d, v in list(ws["Devices"].iter_rows(values_only=True))[1:]}
+gs = defaultdict(int)
+for u, v in list(ws["Pages"].iter_rows(values_only=True))[1:]: gs[tekil(u)] += int(v)
+ws2 = openpyxl.load_workbook(XS.replace("gunluk", "aylik"), read_only=True)
+O["genai_site_ay"] = [(a, int(b)) for a, b in list(ws2["Chart"].iter_rows(values_only=True))[1:]]
+O["genai_site_pay"] = []
+for etk, top in O["genai_site_ay"]:
+    a, b = etk.split(" - "); si = sum(v[1] for d, v in gun.items() if a <= d <= b); sc = sum(v[0] for d, v in gun.items() if a <= d <= b)
+    O["genai_site_pay"].append((a, b, top, si, sc))
+# aynı dönemde tüm sayfaların toplam gösterimi (sayfa türü payı için)
+SGD = defaultdict(lambda: [0, 0, 0.0])
+for r in J("sayfa_genai_donem"):
+    a = SGD[tekil(r["keys"][0])]; a[0] += r["clicks"]; a[1] += r["impressions"]; a[2] += r["position"] * r["impressions"]
+gtur = defaultdict(lambda: [0, 0, 0, 0, 0])   # yapay zeka gösterimi, toplam gösterim, tık, sayfa sayısı (listede), toplam sayfa
+for u, (c, i, _) in SGD.items():
+    t = GK.tur(u); a = gtur[t]; a[1] += i; a[2] += c; a[4] += 1
+for u, g in gs.items():
+    t = GK.tur(u); a = gtur[t]; a[0] += g; a[3] += 1
+O["genai_site_tur"] = {t: v for t, v in gtur.items()}
+O["genai_site_sayfa"] = [(yol(u), g, SGD[u][1] if u in SGD else None, SGD[u][0] if u in SGD else None, round(SGD[u][2] / SGD[u][1], 1) if u in SGD and SGD[u][1] else None, GK.tur(u))
+                         for u, g in sorted(gs.items(), key=lambda x: -x[1])]
+O["genai_site_liste_toplam"] = sum(gs.values())
 # ------------------------------------------------------------------ sorgu düzeyi: Ahrefs SERP özelliği (AI Overview) ile eşleştirme
 AH = list(csv.DictReader(open(os.path.join(P, "veri/ham/marka_kelime/ahrefs_blog_aio.tsv"), encoding="utf-8"), delimiter="\t"))
 AHD = {r["keyword"].strip().lower(): r for r in AH}

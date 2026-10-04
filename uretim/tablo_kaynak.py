@@ -67,7 +67,7 @@ ATAMA = [
  ("derin", "Aynı model kodunda", ["trendyol", "hepsiburada", "akakce", "cimri", "vitra"]),
  ("yolculuk", "Sepet ve ödeme", ["vitra"]), ("yolculuk", "Dönüşüm fırsatları", ["vitra"]), ("yolculuk", "Site içi arama", ["vitra", "kp"]), ("yolculuk", "Yolculuk adımları", ["google", "vitra"]),
  ("geo", "Ölçüm setleri", ["chatgpt", "gemini", "google", "seomonitor", "gsc"]), ("geo", "Yapay zeka yanıt takibi", ["chatgpt", "gemini", "google"]),
- ("yapayzeka", "Yapay zeka özelliklerinde gösterim", ["gsc"]), ("yapayzeka", "Yapay zeka gösterim payına göre", ["gsc"]), ("yapayzeka", "Yapay zeka özelliklerinde en çok", ["gsc"]),
+ ("yapayzeka", "Yapay zeka özelliklerinde gösterim", ["gsc"]), ("yapayzeka", "Yapay zeka gösterim payına göre", ["gsc"]), ("yapayzeka", "Yapay zeka özelliklerinde en çok", ["gsc"]), ("yapayzeka", "Sayfa türüne göre yapay zeka", ["gsc"]),
  ("yapayzeka", "AI Overview çıkan ve çıkmayan", ["gsc", "ahrefs"]),
  ("geo", "SEOmonitor takibi", ["seomonitor"]), ("geo", "Rapor hedef kelimeleri", ["google"]), ("geo", "Sitenin hazırlığı", ["gsc"]),
  ("politika", "Ödeme ve taksit", ["web"]), ("politika", "Kargo, teslimat", ["web"]), ("politika", "Garanti, yedek parça", ["web"]),

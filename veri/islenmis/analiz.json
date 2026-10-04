@@ -1103,40 +1103,6 @@
 }
 },
 "niyet_ornek": {
-"Ölçü ve teknik": [
-[
-"klozet ölçüleri",
-2912
-],
-[
-"80 cm banyo dolabı",
-2150
-],
-[
-"duşakabin ölçüleri",
-1875
-],
-[
-"gömme rezervuar ölçü",
-1638
-],
-[
-"60 cm banyo dolabı",
-1412
-],
-[
-"lavabo ölçüleri",
-1322
-],
-[
-"65 cm banyo dolabı",
-1262
-],
-[
-"banyo dolabı ölçüleri",
-1225
-]
-],
 "Fiyat": [
 [
 "klozet fiyatları",
@@ -1205,38 +1171,72 @@
 84
 ]
 ],
-"Montaj": [
+"Ölçü ve teknik": [
 [
-"klozet montajı",
+"klozet ölçüleri",
+2912
+],
+[
+"80 cm banyo dolabı",
+2150
+],
+[
+"duşakabin ölçüleri",
+1875
+],
+[
+"gömme rezervuar ölçü",
+1638
+],
+[
+"60 cm banyo dolabı",
+1412
+],
+[
+"lavabo ölçüleri",
+1322
+],
+[
+"65 cm banyo dolabı",
+1262
+],
+[
+"banyo dolabı ölçüleri",
 1225
+]
+],
+"Tamir ve bakım": [
+[
+"duşakabin tekeri",
+9725
 ],
 [
-"klozet montaj aparatı",
-902
+"klozet iç takımı",
+9450
 ],
 [
-"gömme klozet montajı",
-800
+"klozet şamandırası",
+7350
 ],
 [
-"klozet nasıl takılır",
-784
+"rezervuar iç takım",
+5700
 ],
 [
-"klozet bağlantı borusu",
-388
+"gömme rezervuar iç takımı",
+4650
 ],
 [
-"gömme rezervuar montaj ölçüleri",
-375
+"klozet kapağı menteşesi",
+4525
 ],
 [
-"asma klozet montaj seti",
-355
+"batarya kartuşu",
+2975
 ],
 [
-"duş başlığı takma aparatı",
-355
+"klozet rezervuar iç takımı",
+1262
 ]
 ],
 "Tasarım ve fikir": [
@@ -1307,38 +1307,38 @@
 35875
 ]
 ],
-"Tamir ve bakım": [
+"Montaj": [
 [
-"duşakabin tekeri",
-9725
+"klozet montajı",
+1225
 ],
 [
-"klozet iç takımı",
-9450
+"klozet montaj aparatı",
+902
 ],
 [
-"klozet şamandırası",
-7350
+"gömme klozet montajı",
+800
 ],
 [
-"rezervuar iç takım",
-5700
+"klozet nasıl takılır",
+784
 ],
 [
-"gömme rezervuar iç takımı",
-4650
+"klozet bağlantı borusu",
+388
 ],
 [
-"klozet kapağı menteşesi",
-4525
+"gömme rezervuar montaj ölçüleri",
+375
 ],
 [
-"batarya kartuşu",
-2975
+"asma klozet montaj seti",
+355
 ],
 [
-"klozet rezervuar iç takımı",
-1262
+"duş başlığı takma aparatı",
+355
 ]
 ]
 },
@@ -1619,6 +1619,11 @@
 ]
 ],
 "gsc_aylar": [
+"2025-01",
+"2025-02",
+"2025-03",
+"2025-04",
+"2025-05",
 "2025-06",
 "2025-07",
 "2025-08",
@@ -1637,6 +1642,31 @@
 "2026-09"
 ],
 "gsc_ay_toplam": {
+"2025-01": [
+196602,
+4180068,
+null
+],
+"2025-02": [
+156132,
+3529381,
+null
+],
+"2025-03": [
+162259,
+3573564,
+null
+],
+"2025-04": [
+188672,
+4206271,
+null
+],
+"2025-05": [
+191704,
+4417975,
+null
+],
 "2025-06": [
 158759,
 4036695,

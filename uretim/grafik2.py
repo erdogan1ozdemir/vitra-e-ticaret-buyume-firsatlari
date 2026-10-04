@@ -403,3 +403,88 @@ def halka(dilimler, cap="", merkez=None, genislik=880, bicim=None, deger_bicim=N
     p += bantlar + yay_bant   # once lejant satirlari (dikdortgen), sonra halka dilimleri
     p.append("</svg>")
     return _fig("".join(p), nok, "", cap)
+
+
+# ---------------------------------------------------------------- kombo2: gruplu cubuk + cizgi + kesikli cizgi, uc eksen
+def kombo2(etiketler, seriler, cap="", genislik=880, yukseklik=300, etiket_goster=False):
+    """etiketler: [str] (x ile kayitli). seriler: [dict(ad, renk, deger=[v|None], tip='cubuk'|'cizgi'|'kesik', eksen='sol'|'sag'|'sag2',
+    bicim=fn, ters=False, eksen_ad=str)]. Ayni eksendeki cubuklar yan yana gruplanir; None degerler bosluk birakir.
+    ters=True eksende kucuk deger ustte cizilir (ortalama sira icin)."""
+    eksenler = []
+    for s_ in seriler:
+        if s_.get("eksen", "sol") not in eksenler: eksenler.append(s_.get("eksen", "sol"))
+    sol, ust, alt = 62, 30, 34
+    sag = 20 + (52 if "sag" in eksenler else 0) + (52 if "sag2" in eksenler else 0)
+    iw = genislik - sol - sag; ih = yukseklik - ust - alt
+    n_ = len(etiketler); bw = iw / n_
+    olc = {}
+    for e in eksenler:
+        vs = [v for s_ in seriler if s_.get("eksen", "sol") == e for v in s_["deger"] if v is not None]
+        ters = any(s_.get("ters") for s_ in seriler if s_.get("eksen", "sol") == e)
+        if ters:
+            lo, hi = min(vs), max(vs); pad = max(0.5, (hi - lo) * 0.25); lo = max(0, math.floor((lo - pad) * 2) / 2); hi = math.ceil((hi + pad) * 2) / 2
+            olc[e] = (lo, hi, True)
+        else:
+            a_ = _adim(max(vs) * 1.08); olc[e] = (0, a_ * math.ceil(max(vs) * 1.08 / a_), False)
+    def Y(e, v):
+        lo, hi, t = olc[e]
+        f = (v - lo) / (hi - lo) if hi > lo else 0
+        return ust + ih * f if t else ust + ih - ih * f
+    p = [_svg(genislik, yukseklik)]
+    # eksenler
+    ex = {"sol": sol - 8, "sag": genislik - sag + 8, "sag2": genislik - sag + 60}
+    for e in eksenler:
+        lo, hi, t = olc[e]; renk = next(s_["renk"] for s_ in seriler if s_.get("eksen", "sol") == e)
+        adim = _adim(hi - lo) if not t else max(0.5, _adim(hi - lo))
+        g = lo
+        while g <= hi + 1e-9:
+            if e == "sol": p.append('<line class="grid" x1="%d" y1="%.1f" x2="%d" y2="%.1f"/>' % (sol, Y(e, g), genislik - sag, Y(e, g)))
+            et = (("%.1f" % g).rstrip("0").rstrip(".").replace(".", ",") if t else f_ek(g))
+            if t: et = x(et, et.replace(",", "."))
+            p.append('<text class="ax" x="%d" y="%.1f" text-anchor="%s"%s>%s</text>' % (ex[e], Y(e, g) + 4, "end" if e == "sol" else "start", "" if e == "sol" else ' fill="%s"' % renk, et))
+            g += adim
+        ad_ = next((s_.get("eksen_ad") for s_ in seriler if s_.get("eksen", "sol") == e and s_.get("eksen_ad")), None)
+        if ad_:   # eksen başlığı: sol eksende sola, en dıştaki sağ eksende sağa yaslı (uzun başlıklar kırpılmaz)
+            if e == "sol": ax_, an_ = 4, "start"
+            elif e == "sag2" or "sag2" not in eksenler: ax_, an_ = genislik - 4, "end"
+            else: ax_, an_ = ex[e], "start"
+            p.append('<text class="ax" x="%d" y="%d" text-anchor="%s" style="font-weight:600"%s>%s</text>' % (ax_, ust - 12, an_, "" if e == "sol" else ' fill="%s"' % renk, ad_))
+    cubuklar = [s_ for s_ in seriler if s_.get("tip", "cizgi") == "cubuk"]
+    nb = len(cubuklar); gw = bw * (0.72 if nb > 1 else 0.52); w1 = gw / max(1, nb)
+    for i, et in enumerate(etiketler):
+        cx = sol + bw * i + bw / 2
+        for j, s_ in enumerate(cubuklar):
+            v = s_["deger"][i]
+            if v is None: continue
+            e = s_.get("eksen", "sol"); x0 = cx - gw / 2 + j * w1
+            p.append('<rect x="%.1f" y="%.1f" width="%.1f" height="%.1f" rx="2.5" fill="%s"/>' % (x0 + 1, Y(e, v), max(1, w1 - 2), max(0, ust + ih - Y(e, v)), s_["renk"]))
+            if etiket_goster: p.append('<text class="bv" x="%.1f" y="%.1f" text-anchor="middle" style="font-size:10px">%s</text>' % (x0 + w1 / 2, Y(e, v) - 4, s_["bicim"](v)))
+        p.append('<text class="ax" x="%.1f" y="%d" text-anchor="middle">%s</text>' % (cx, yukseklik - 12, et))
+    for s_ in seriler:
+        if s_.get("tip", "cizgi") == "cubuk": continue
+        e = s_.get("eksen", "sol"); seg = []; yol_ = []
+        for i, v in enumerate(s_["deger"]):
+            if v is None:
+                if seg: yol_.append(seg); seg = []
+                continue
+            seg.append((sol + bw * i + bw / 2, Y(e, v)))
+        if seg: yol_.append(seg)
+        das = ' stroke-dasharray="6 4"' if s_.get("tip") == "kesik" else ""
+        for sg in yol_:
+            p.append('<path d="%s" fill="none" stroke="%s" stroke-width="2.4" stroke-linejoin="round"%s/>' % (" ".join(("M" if k == 0 else "L") + "%.1f %.1f" % q for k, q in enumerate(sg)), s_["renk"], das))
+            for q in sg: p.append('<circle cx="%.1f" cy="%.1f" r="3" fill="%s"/>' % (q[0], q[1], s_["renk"]))
+    nok = []
+    for i, et in enumerate(etiketler):
+        p.append('<rect class="hz" data-i="%d" x="%.1f" y="%d" width="%.1f" height="%d"/>' % (i, sol + bw * i, ust, bw, ih))
+        nok.append({"b": et, "s": [{"a": s_["ad"], "r": s_["renk"], "v": s_["bicim"](s_["deger"][i]) if s_["deger"][i] is not None else "-"} for s_ in seriler]})
+    p.append("</svg>")
+    lej = '<div class="legend">' + "".join(
+        ('<span class="lg-s"><i class="%s" style="%s"></i>%s</span>' % ("kesik" if s_.get("tip") == "kesik" else ("kare" if s_.get("tip") == "cubuk" else "cizgi"),
+                                                                     ("border-top-color:%s" % s_["renk"]) if s_.get("tip") == "kesik" else ("background:%s" % s_["renk"]), s_["ad"])) for s_ in seriler) + '</div>'
+    return _fig("".join(p), nok, lej, cap)
+
+
+def cift(cizgi_html, cubuk_html):
+    """Ayni veri icin cizgi ve cubuk gorunumu; dugmeyle gecis (rapor_js .gcift)."""
+    return ('<div class="gcift"><div class="gcift-b" role="group" aria-label="%s"><button type="button" aria-pressed="true" data-g="0">%s</button><button type="button" aria-pressed="false" data-g="1">%s</button></div>'
+            '<div class="gcift-p" data-g="0">%s</div><div class="gcift-p" data-g="1" hidden>%s</div></div>') % (x("Grafik türü", "Chart type"), x("Çizgi", "Line"), x("Çubuk", "Bar"), cizgi_html, cubuk_html)

@@ -134,7 +134,7 @@ G_MARKA = sekmeler([("VitrA · yıllar üst üste", "VitrA · years overlaid", G
 # ---------------------------------------------------------------- 4 · VitrA ile birlikte aranan ifadeler: ihtiyac sinifi
 NV = O["vitra_niyet"]; _NT = sum(v_["o2026"] for v_ in NV.values())
 N_EN = {"Jenerik ürün": "Generic product", "Fiyat": "Price", "Tamir ve bakım": "Repair and maintenance", "Tasarım ve fikir": "Design and ideas", "Ölçü ve teknik": "Dimensions and technical",
-        "Montaj": "Installation", "Seçim ve karşılaştırma": "Choice and comparison", "Taksit ve ödeme": "Instalments and payment", "Yer ve kanal": "Place and channel"}
+        "Montaj": "Installation", "Seçim ve karşılaştırma": "Selection and comparison", "Taksit ve ödeme": "Instalments and payment", "Yer ve kanal": "Place and channel"}
 def _oran(a, b): return (a / b - 1) * 100 if b >= ESIK else None
 _ORN = {}
 for r_ in O["vitra_kw"]:

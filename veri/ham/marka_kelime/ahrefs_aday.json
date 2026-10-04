@@ -218,7 +218,8 @@
 "kaynak": [
 "artema.com.tr",
 "hepsiburada.com",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema minimax s": {
@@ -237,7 +238,8 @@
 "marka": "Artema",
 "kaynak": [
 "artema.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema gold mutfak bataryası": {
@@ -245,7 +247,8 @@
 "kaynak": [
 "artema.com.tr",
 "hepsiburada.com",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema yedek parça katalog": {
@@ -259,7 +262,8 @@
 "kaynak": [
 "artema.com.tr",
 "hepsiburada.com",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema duş bataryası": {
@@ -267,7 +271,8 @@
 "kaynak": [
 "artema.com.tr",
 "hepsiburada.com",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema 3 yollu mutfak bataryası": {
@@ -275,13 +280,15 @@
 "kaynak": [
 "artema.com.tr",
 "hepsiburada.com",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema ankastre banyo bataryası": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"trendyol.com"
 ]
 },
 "artema joy 3s": {
@@ -295,7 +302,8 @@
 "kaynak": [
 "artema.com.tr",
 "hepsiburada.com",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema banyo lavabo bataryası": {
@@ -303,21 +311,24 @@
 "kaynak": [
 "artema.com.tr",
 "hepsiburada.com",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema banyo duş seti": {
 "marka": "Artema",
 "kaynak": [
 "artema.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema ankastre lavabo bataryası": {
 "marka": "Artema",
 "kaynak": [
 "artema.com.tr",
-"hepsiburada.com"
+"hepsiburada.com",
+"trendyol.com"
 ]
 },
 "artema çanak lavabo bataryası": {
@@ -325,7 +336,8 @@
 "kaynak": [
 "artema.com.tr",
 "hepsiburada.com",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema robot duş seti": {
@@ -333,7 +345,8 @@
 "kaynak": [
 "artema.com.tr",
 "hepsiburada.com",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema yedek parça": {
@@ -347,14 +360,16 @@
 "kaynak": [
 "artema.com.tr",
 "hepsiburada.com",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema win s banyo bataryası": {
 "marka": "Artema",
 "kaynak": [
 "artema.com.tr",
-"hepsiburada.com"
+"hepsiburada.com",
+"trendyol.com"
 ]
 },
 "artema lavabo sifonu": {
@@ -362,38 +377,50 @@
 "kaynak": [
 "artema.com.tr",
 "hepsiburada.com",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema tuvalet kağıtlığı": {
 "marka": "Artema",
 "kaynak": [
 "artema.com.tr",
-"koctas.com.tr"
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema duş başlığı seti": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema stop valf": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"trendyol.com"
 ]
 },
 "artema ankastre taharet musluğu": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema armatür": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema root round": {
@@ -411,25 +438,35 @@
 "artema kısa musluk": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"trendyol.com"
 ]
 },
 "artema root round lavabo bataryası": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema taharet musluğu iç takımı": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema siyah banyo bataryası": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema a42144": {
@@ -441,19 +478,27 @@
 "artema kuğu lavabo bataryası": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema duvardan mutfak bataryası": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"trendyol.com"
 ]
 },
 "artema el duşu": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema bayileri": {
@@ -465,25 +510,34 @@
 "artema mutfak bataryası başlığı": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema musluk ucu": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"trendyol.com"
 ]
 },
 "artema solid s eviye bataryası": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"trendyol.com"
 ]
 },
 "artema klozet musluğu": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema yedek parça fiyat listesi": {
@@ -495,13 +549,17 @@
 "artema verona eviye bataryası": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"trendyol.com"
 ]
 },
 "artema çeşme": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema kimin": {
@@ -519,85 +577,126 @@
 "artema spiralli eviye bataryası": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema yüksek lavabo bataryası": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema havluluk": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema siyah batarya": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema duş seti fiyatları": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema duş": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema tuvalet musluğu": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema lavabo": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "duş seti artema": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema yağmurlama duş seti": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema arıtmalı musluk": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema banyo bataryası ve duş seti": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema banyo aksesuarları": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "banyo bataryası artema": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema çamaşır makinesi musluğu": {
@@ -609,7 +708,9 @@
 "artema mutfak bataryaları": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema verona": {
@@ -627,7 +728,9 @@
 "artema win s ankastre duş seti": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"trendyol.com"
 ]
 },
 "artema satış noktaları": {
@@ -639,7 +742,10 @@
 "artema sürgülü duş seti": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema mutfak": {
@@ -651,37 +757,50 @@
 "artema sabunluk": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"trendyol.com"
 ]
 },
 "artema arıtmalı batarya fiyatları": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema sıvı sabunluk": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"trendyol.com"
 ]
 },
 "artema batarya seti": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema el duşu başlığı": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "banyo lavabo bataryası artema": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema fiyat listesi": {
@@ -699,7 +818,10 @@
 "artema klozet kapağı": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema duş spirali": {
@@ -711,31 +833,44 @@
 "artema beyaz mutfak bataryası": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema marin s banyo bataryası": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema evye bataryası": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema 3 yollu musluk": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema ankastre stop valf": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema servis izmir": {
@@ -753,31 +888,45 @@
 "artema fotoselli batarya": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema mutfak evye bataryası": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema banyo batarya seti 3'lü": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema eviye bataryası fiyatları": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema duşakabin": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema online satış": {
@@ -813,13 +962,17 @@
 "artema kare ara musluk": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "arıtmalı batarya artema": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema maestro pro": {
@@ -831,7 +984,9 @@
 "artema minimax s banyo bataryası": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema katalog": {
@@ -843,19 +998,25 @@
 "artema punto duş seti": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema minimax s lavabo bataryası": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"trendyol.com"
 ]
 },
 "artema solid s lavabo bataryası a42440": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema fabrikası": {
@@ -867,7 +1028,10 @@
 "artema ankastre banyo bataryası (sıva altı)": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema solid s banyo bataryası a42444": {
@@ -879,7 +1043,8 @@
 "artema fold s mutfak bataryası": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"trendyol.com"
 ]
 },
 "artema çöp kovası": {
@@ -891,13 +1056,17 @@
 "artema solid s eviye bataryası a42148": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"trendyol.com"
 ]
 },
 "artema minimax s eviye bataryası": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema duş sistemleri": {
@@ -909,13 +1078,16 @@
 "artema banyo bataryası yedek parça": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"koctas.com.tr"
 ]
 },
 "artema ares banyo bataryası": {
 "marka": "Artema",
 "kaynak": [
-"artema.com.tr"
+"artema.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "artema servis antalya": {
@@ -1082,13 +1254,15 @@
 "marka": "Creavit",
 "kaynak": [
 "creavit.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit klozet kapağı parçaları": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"trendyol.com"
 ]
 },
 "creavit yedek parça": {
@@ -1102,14 +1276,16 @@
 "kaynak": [
 "creavit.com.tr",
 "hepsiburada.com",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit taharet musluğu": {
 "marka": "Creavit",
 "kaynak": [
 "creavit.com.tr",
-"hepsiburada.com"
+"hepsiburada.com",
+"trendyol.com"
 ]
 },
 "creavit duvara sıfır klozet": {
@@ -1117,7 +1293,8 @@
 "kaynak": [
 "creavit.com.tr",
 "hepsiburada.com",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit lavabo modelleri": {
@@ -1125,7 +1302,8 @@
 "kaynak": [
 "creavit.com.tr",
 "hepsiburada.com",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit servis": {
@@ -1137,19 +1315,28 @@
 "creavit çanak lavabo": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit klozet iç takımı": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit elegant asma klozet": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit tp325": {
@@ -1161,7 +1348,8 @@
 "creavit terra asma klozet": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"trendyol.com"
 ]
 },
 "creavit bayileri": {
@@ -1173,19 +1361,26 @@
 "creavit pisuvar": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"trendyol.com"
 ]
 },
 "creavit tezgah üstü lavabo": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit klozet modelleri": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit klozet kapağı nasıl sökülür": {
@@ -1197,13 +1392,17 @@
 "creavit gömme rezervuar seti": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"hepsiburada.com",
+"trendyol.com"
 ]
 },
 "creavit tezgah altı lavabo": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"hepsiburada.com",
+"trendyol.com"
 ]
 },
 "creavit logo": {
@@ -1221,13 +1420,18 @@
 "creavit gömme rezervuar boşaltma grubu": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit kanalsız klozet": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit çamaşır ve kurutma makinesi dolabı": {
@@ -1239,7 +1443,10 @@
 "creavit gömme rezervuar yedek parça": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit banyo": {
@@ -1251,7 +1458,9 @@
 "creavit kumanda paneli": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"hepsiburada.com",
+"trendyol.com"
 ]
 },
 "creavit fe322": {
@@ -1263,121 +1472,169 @@
 "creavit musluk": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit rezervuar": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit lara klozet kapağı": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit kayra banyo dolabı": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit lavabo 80 cm": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "klozet creavit": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit tp325 asma klozet": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit banyo lavabosu": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit lavabo dolabı": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit asma klozet fiyatları": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit hela taşı": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit duş başlığı": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit elegant rim-off asma klozet": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit duck klozet kapağı": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit ankastre duş seti": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit yavaş kapanan klozet kapağı": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit klozet takımı": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit gömme rezervuar iç takımı fiyatları": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit lavabo fiyatları": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit seramik": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit ankara": {
@@ -1389,25 +1646,36 @@
 "creavit banyo dolabı fiyatları": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit gömme rezervuar kapağı": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit siyah klozet": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit gömme rezervuar şamandıra": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit kayra": {
@@ -1419,7 +1687,8 @@
 "creavit stop valf": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"trendyol.com"
 ]
 },
 "creavit yedek parça fiyat listesi": {
@@ -1431,25 +1700,34 @@
 "klozet kapağı creavit": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit iç takım": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit amasra klozet kapağı": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit gömme rezervuar kumanda paneli": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"trendyol.com"
 ]
 },
 "creavit fiyat listesi": {
@@ -1461,19 +1739,25 @@
 "creavit gömme klozet": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit klozet su deposu": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit klozet kapağı montaj vidası": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"hepsiburada.com",
+"trendyol.com"
 ]
 },
 "creavit yetkili servis": {
@@ -1485,31 +1769,43 @@
 "creavit lara klozet fiyat": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit evye bataryası": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit gömme rezervuar parçaları": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit sifon kapağı": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit klozet kapağı fiyatları": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"hepsiburada.com"
 ]
 },
 "creavit boşaltma grubu": {
@@ -1527,7 +1823,8 @@
 "creavit sifon": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"trendyol.com"
 ]
 },
 "creavit çamaşır makinesi dolabı": {
@@ -1539,25 +1836,34 @@
 "creavit rezervuar basma butonu": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"hepsiburada.com",
+"trendyol.com"
 ]
 },
 "creavit rezervuar kapağı": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit tuvalet taşı fiyatları": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit banyo lavabo": {
 "marka": "Creavit",
 "kaynak": [
-"creavit.com.tr"
+"creavit.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "creavit klozet kapak menteşesi": {
@@ -1881,15 +2187,6 @@
 "marka": "E.C.A.",
 "kaynak": [
 "eca.com.tr"
-]
-},
-"eca termostatik vana": {
-"marka": "E.C.A.",
-"kaynak": [
-"eca.com.tr",
-"hepsiburada.com",
-"koctas.com.tr",
-"trendyol.com"
 ]
 },
 "eca confeo plus": {
@@ -2261,15 +2558,6 @@
 "trendyol.com"
 ]
 },
-"eca termostatik vana fiyatları": {
-"marka": "E.C.A.",
-"kaynak": [
-"eca.com.tr",
-"hepsiburada.com",
-"koctas.com.tr",
-"trendyol.com"
-]
-},
 "eca dalia banyo bataryası": {
 "marka": "E.C.A.",
 "kaynak": [
@@ -2326,14 +2614,6 @@
 ]
 },
 "eca nita spiralli eviye bataryası": {
-"marka": "E.C.A.",
-"kaynak": [
-"eca.com.tr",
-"hepsiburada.com",
-"trendyol.com"
-]
-},
-"eca termostatik vana dereceleri": {
 "marka": "E.C.A.",
 "kaynak": [
 "eca.com.tr",
@@ -2445,7 +2725,8 @@
 "marka": "E.C.A.",
 "kaynak": [
 "eca.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca uzun musluk": {
@@ -2453,7 +2734,8 @@
 "kaynak": [
 "eca.com.tr",
 "hepsiburada.com",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca kalorifer vanası": {
@@ -2461,21 +2743,24 @@
 "kaynak": [
 "eca.com.tr",
 "hepsiburada.com",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca spylos spiralli eviye bataryası": {
 "marka": "E.C.A.",
 "kaynak": [
 "eca.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca çeşme": {
 "marka": "E.C.A.",
 "kaynak": [
 "eca.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca robot duş seti": {
@@ -2483,21 +2768,24 @@
 "kaynak": [
 "eca.com.tr",
 "hepsiburada.com",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca niobe kuğu lavabo bataryası": {
 "marka": "E.C.A.",
 "kaynak": [
 "eca.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca spylos eviye bataryası": {
 "marka": "E.C.A.",
 "kaynak": [
 "eca.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca otomatik hava purjörü": {
@@ -2510,13 +2798,15 @@
 "marka": "E.C.A.",
 "kaynak": [
 "eca.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca ankastre banyo bataryası": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"trendyol.com"
 ]
 },
 "eca batarya banyo": {
@@ -2524,13 +2814,15 @@
 "kaynak": [
 "eca.com.tr",
 "hepsiburada.com",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca musluk başlığı": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"trendyol.com"
 ]
 },
 "eca döner": {
@@ -2543,7 +2835,8 @@
 "marka": "E.C.A.",
 "kaynak": [
 "eca.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca tiera": {
@@ -2556,14 +2849,16 @@
 "marka": "E.C.A.",
 "kaynak": [
 "eca.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca spylos lavabo bataryası": {
 "marka": "E.C.A.",
 "kaynak": [
 "eca.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca bahçe musluğu": {
@@ -2576,14 +2871,16 @@
 "marka": "E.C.A.",
 "kaynak": [
 "eca.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca tiera mutfak bataryası": {
 "marka": "E.C.A.",
 "kaynak": [
 "eca.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca niobe mutfak bataryası": {
@@ -2591,7 +2888,8 @@
 "kaynak": [
 "eca.com.tr",
 "hepsiburada.com",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca confeo": {
@@ -2604,35 +2902,40 @@
 "marka": "E.C.A.",
 "kaynak": [
 "eca.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca çift çıkışlı musluk": {
 "marka": "E.C.A.",
 "kaynak": [
 "eca.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca mutfak batarya": {
 "marka": "E.C.A.",
 "kaynak": [
 "eca.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca delta mutfak bataryası": {
 "marka": "E.C.A.",
 "kaynak": [
 "eca.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca çamaşır musluğu": {
 "marka": "E.C.A.",
 "kaynak": [
 "eca.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca online satış": {
@@ -2646,14 +2949,16 @@
 "kaynak": [
 "eca.com.tr",
 "hepsiburada.com",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "3 yollu musluk eca": {
 "marka": "E.C.A.",
 "kaynak": [
 "eca.com.tr",
-"hepsiburada.com"
+"hepsiburada.com",
+"trendyol.com"
 ]
 },
 "eca proteus 24 kw": {
@@ -2666,14 +2971,16 @@
 "marka": "E.C.A.",
 "kaynak": [
 "eca.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "banyo bataryası eca": {
 "marka": "E.C.A.",
 "kaynak": [
 "eca.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca ısı pompası fiyatları": {
@@ -2699,7 +3006,8 @@
 "kaynak": [
 "eca.com.tr",
 "hepsiburada.com",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca oda termostatı fiyatı": {
@@ -2723,7 +3031,8 @@
 "eca lia lavabo bataryası": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"trendyol.com"
 ]
 },
 "eca proteus premix 45 kw": {
@@ -2735,19 +3044,28 @@
 "eca luna banyo bataryası": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca stop valf": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca batarya seti": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca felis": {
@@ -2789,31 +3107,42 @@
 "eca delta banyo bataryası": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca arıtmalı musluk": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca ankastre duş seti fiyatları": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca termostatik banyo bataryası": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"hepsiburada.com",
+"trendyol.com"
 ]
 },
 "eca gold batarya": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"trendyol.com"
 ]
 },
 "eca ankastre taharet musluğu salmastrası": {
@@ -2828,12 +3157,6 @@
 "eca.com.tr"
 ]
 },
-"termostatik vana eca": {
-"marka": "E.C.A.",
-"kaynak": [
-"eca.com.tr"
-]
-},
 "eca kalorifer peteği": {
 "marka": "E.C.A.",
 "kaynak": [
@@ -2843,7 +3166,9 @@
 "eca mutfak bataryası gold": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"hepsiburada.com",
+"trendyol.com"
 ]
 },
 "eca spylos 12000": {
@@ -2855,7 +3180,8 @@
 "eca siyah batarya": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"trendyol.com"
 ]
 },
 "eca confeo plus su basma": {
@@ -2873,25 +3199,35 @@
 "eca sensörlü musluk fiyatları": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca luna mutfak bataryası": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca çeşme fiyatları": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca fotoselli batarya": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"hepsiburada.com",
+"koctas.com.tr"
 ]
 },
 "eca citius premix 24 kw özellikleri": {
@@ -2915,19 +3251,27 @@
 "eca musluk çeşitleri": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca lavabo batarya fiyatları": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca dalia duş seti": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca phoenix": {
@@ -2945,7 +3289,9 @@
 "eca küresel vana": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"hepsiburada.com",
+"trendyol.com"
 ]
 },
 "mamak eca servisi": {
@@ -2957,13 +3303,16 @@
 "eca çanak lavabo bataryası": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca nita eviye bataryası": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"trendyol.com"
 ]
 },
 "eca felis 125 kw": {
@@ -2975,43 +3324,58 @@
 "eca evye bataryası": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca mina banyo bataryası": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"trendyol.com"
 ]
 },
 "eca musluk mutfak": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca banyo aksesuarları": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca klasik banyo bataryası": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca nita lavabo bataryası": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"trendyol.com"
 ]
 },
 "eca klozet takımı fiyatları": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca ara kesme valfi": {
@@ -3035,7 +3399,9 @@
 "eca mutfak bataryası en ucuz": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca ap hatası": {
@@ -3047,7 +3413,9 @@
 "eca lavabo": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca sıcak su gelmiyor": {
@@ -3059,7 +3427,10 @@
 "eca banyo bataryaları": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca citius premix sıcak su gelmiyor": {
@@ -3077,13 +3448,17 @@
 "eca endüstriyel mutfak bataryası": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "arıtma çıkışlı batarya eca": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"hepsiburada.com",
+"trendyol.com"
 ]
 },
 "eca nedir": {
@@ -3101,37 +3476,52 @@
 "eca berber bataryası": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca armatür fiyatları": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca lavabo batarya modelleri": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca küresel vana 3/4": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"trendyol.com"
 ]
 },
 "eca duvardan lavabo bataryası": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca mina lavabo bataryası": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca yedek parça listesi": {
@@ -3143,13 +3533,18 @@
 "eca çift çıkışlı taharet musluğu": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca pınar kısa musluk": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"hepsiburada.com",
+"trendyol.com"
 ]
 },
 "eca dual flow": {
@@ -3161,7 +3556,8 @@
 "eca nita esnek uçlu eviye bataryası": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"trendyol.com"
 ]
 },
 "eca akıllı oda termostatı": {
@@ -3179,13 +3575,17 @@
 "eca tiera ankastre banyo bataryası": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"hepsiburada.com",
+"trendyol.com"
 ]
 },
 "eca vera lavabo bataryası": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca kablolu oda termostatı": {
@@ -3209,13 +3609,18 @@
 "eca 3 yollu musluk": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca icon lavabo bataryası": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca icon banyo bataryası": {
@@ -3239,7 +3644,9 @@
 "eca spil lavabo bataryası": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"hepsiburada.com",
+"trendyol.com"
 ]
 },
 "eca proteus premix 42 kw": {
@@ -3251,7 +3658,9 @@
 "eca beyaz mutfak bataryası": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca termostat kablosuz": {
@@ -3269,13 +3678,17 @@
 "eca flux eviye bataryası": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca klozet iç takımı": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca iş ilanları": {
@@ -3293,7 +3706,9 @@
 "eca nita banyo bataryası": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca şikayet": {
@@ -3311,7 +3726,9 @@
 "eca eviye bataryası fiyatları": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca yan ürünü": {
@@ -3335,7 +3752,9 @@
 "eca banyo dolabı": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"hepsiburada.com",
+"trendyol.com"
 ]
 },
 "eca proteus premix ölçüleri": {
@@ -3365,7 +3784,9 @@
 "eca delta eviye bataryası yedek parça": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"hepsiburada.com",
+"trendyol.com"
 ]
 },
 "oda termostatı eca": {
@@ -3383,7 +3804,9 @@
 "eca spylos kuğu lavabo bataryası": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca confeo premix kullanım kılavuzu": {
@@ -3449,7 +3872,10 @@
 "eca gömme rezervuar seti": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca garanti sorgulama": {
@@ -3467,7 +3893,8 @@
 "eca vera eviye bataryası": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"trendyol.com"
 ]
 },
 "eca rize servis": {
@@ -3491,7 +3918,10 @@
 "eca havlupan 50*100": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "eca confeo premix 30 kw": {
@@ -3503,7 +3933,8 @@
 "eca tuvalet taşı": {
 "marka": "E.C.A.",
 "kaynak": [
-"eca.com.tr"
+"eca.com.tr",
+"trendyol.com"
 ]
 },
 "eca citius premix fiyat": {
@@ -5006,14 +5437,6 @@
 "vitra.com.tr"
 ]
 },
-"eca termostatik vana kafası": {
-"marka": "E.C.A.",
-"kaynak": [
-"hepsiburada.com",
-"koctas.com.tr",
-"trendyol.com"
-]
-},
 "serel klozet fiyatları": {
 "marka": "Serel",
 "kaynak": [
@@ -5635,13 +6058,6 @@
 "trendyol.com"
 ]
 },
-"kale ofis mobilyaları": {
-"marka": "Kale",
-"kaynak": [
-"hepsiburada.com",
-"trendyol.com"
-]
-},
 "vitra akıllı klozet kapağı": {
 "marka": "VitrA",
 "kaynak": [
@@ -5688,6 +6104,7 @@
 "kaynak": [
 "hepsiburada.com",
 "koctas.com.tr",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -5695,6 +6112,7 @@
 "marka": "VitrA",
 "kaynak": [
 "hepsiburada.com",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -5703,6 +6121,7 @@
 "kaynak": [
 "hepsiburada.com",
 "koctas.com.tr",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -5717,7 +6136,8 @@
 "kaynak": [
 "hepsiburada.com",
 "koctas.com.tr",
-"serelseramik.com.tr"
+"serelseramik.com.tr",
+"trendyol.com"
 ]
 },
 "panel duş seti vitra": {
@@ -5725,13 +6145,15 @@
 "kaynak": [
 "hepsiburada.com",
 "koctas.com.tr",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
 "serel kumanda paneli": {
 "marka": "Serel",
 "kaynak": [
-"hepsiburada.com"
+"hepsiburada.com",
+"trendyol.com"
 ]
 },
 "artema siyah mutfak bataryası": {
@@ -5745,6 +6167,7 @@
 "kaynak": [
 "hepsiburada.com",
 "koctas.com.tr",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -5752,6 +6175,7 @@
 "marka": "VitrA",
 "kaynak": [
 "hepsiburada.com",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -5759,13 +6183,15 @@
 "marka": "Serel",
 "kaynak": [
 "hepsiburada.com",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "vitra gömme rezervuar boşaltma grubu": {
 "marka": "VitrA",
 "kaynak": [
-"hepsiburada.com"
+"hepsiburada.com",
+"trendyol.com"
 ]
 },
 "vitra asma klozet modelleri": {
@@ -5773,6 +6199,7 @@
 "kaynak": [
 "hepsiburada.com",
 "koctas.com.tr",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -5780,6 +6207,7 @@
 "marka": "VitrA",
 "kaynak": [
 "hepsiburada.com",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -5788,7 +6216,8 @@
 "kaynak": [
 "hepsiburada.com",
 "kale.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "vitra ayaklı tuvalet kağıtlığı": {
@@ -5796,6 +6225,7 @@
 "kaynak": [
 "hepsiburada.com",
 "koctas.com.tr",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -5803,6 +6233,7 @@
 "marka": "VitrA",
 "kaynak": [
 "hepsiburada.com",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -5810,7 +6241,8 @@
 "marka": "Serel",
 "kaynak": [
 "hepsiburada.com",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "kale rezervuar": {
@@ -5831,13 +6263,15 @@
 "serel yavaş kapanan klozet kapağı menteşesi": {
 "marka": "Serel",
 "kaynak": [
-"hepsiburada.com"
+"hepsiburada.com",
+"trendyol.com"
 ]
 },
 "vitra çöp kovası": {
 "marka": "VitrA",
 "kaynak": [
 "hepsiburada.com",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -5846,6 +6280,7 @@
 "kaynak": [
 "hepsiburada.com",
 "koctas.com.tr",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -5853,13 +6288,15 @@
 "marka": "Artema",
 "kaynak": [
 "hepsiburada.com",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "turkuaz lavabo modelleri": {
 "marka": "Turkuaz",
 "kaynak": [
 "hepsiburada.com",
+"trendyol.com",
 "turkuazseramik.com.tr"
 ]
 },
@@ -5868,13 +6305,15 @@
 "kaynak": [
 "hepsiburada.com",
 "kale.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "vitra taharet musluğu ucu": {
 "marka": "VitrA",
 "kaynak": [
 "hepsiburada.com",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -5882,6 +6321,7 @@
 "marka": "VitrA",
 "kaynak": [
 "hepsiburada.com",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -5890,7 +6330,8 @@
 "kaynak": [
 "hepsiburada.com",
 "kale.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "kale banyo lavabosu": {
@@ -5898,7 +6339,8 @@
 "kaynak": [
 "hepsiburada.com",
 "kale.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "kale basic klozet kapağı": {
@@ -5906,13 +6348,15 @@
 "kaynak": [
 "hepsiburada.com",
 "kale.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "vitra oturmalı duşakabin": {
 "marka": "VitrA",
 "kaynak": [
 "hepsiburada.com",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -5920,6 +6364,7 @@
 "marka": "VitrA",
 "kaynak": [
 "hepsiburada.com",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -5928,6 +6373,7 @@
 "kaynak": [
 "hepsiburada.com",
 "koctas.com.tr",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -5936,13 +6382,15 @@
 "kaynak": [
 "hepsiburada.com",
 "kale.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "vitra sabunluk": {
 "marka": "VitrA",
 "kaynak": [
 "hepsiburada.com",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -5951,6 +6399,7 @@
 "kaynak": [
 "hepsiburada.com",
 "koctas.com.tr",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -5959,7 +6408,8 @@
 "kaynak": [
 "hepsiburada.com",
 "koctas.com.tr",
-"serelseramik.com.tr"
+"serelseramik.com.tr",
+"trendyol.com"
 ]
 },
 "vitra engelli klozet": {
@@ -5974,14 +6424,16 @@
 "kaynak": [
 "hepsiburada.com",
 "kale.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "vitra gömme rezervuar contası koçtaş": {
 "marka": "VitrA",
 "kaynak": [
 "hepsiburada.com",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "vitra origin lavabo bataryası": {
@@ -5996,6 +6448,7 @@
 "marka": "VitrA",
 "kaynak": [
 "hepsiburada.com",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -6004,6 +6457,7 @@
 "kaynak": [
 "hepsiburada.com",
 "koctas.com.tr",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -6012,13 +6466,15 @@
 "kaynak": [
 "hepsiburada.com",
 "koctas.com.tr",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
 "artema taharet musluğu fiyatları": {
 "marka": "Artema",
 "kaynak": [
-"hepsiburada.com"
+"hepsiburada.com",
+"trendyol.com"
 ]
 },
 "turkuaz bella klozet fiyatları": {
@@ -6026,6 +6482,7 @@
 "kaynak": [
 "hepsiburada.com",
 "koctas.com.tr",
+"trendyol.com",
 "turkuazseramik.com.tr"
 ]
 },
@@ -6033,13 +6490,15 @@
 "marka": "Serel",
 "kaynak": [
 "hepsiburada.com",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "vitra ankastre stop valf": {
 "marka": "VitrA",
 "kaynak": [
 "hepsiburada.com",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -6048,6 +6507,7 @@
 "kaynak": [
 "hepsiburada.com",
 "koctas.com.tr",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -6056,13 +6516,15 @@
 "kaynak": [
 "hepsiburada.com",
 "koctas.com.tr",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
 "serel gömme rezervuar kumanda paneli": {
 "marka": "Serel",
 "kaynak": [
-"hepsiburada.com"
+"hepsiburada.com",
+"trendyol.com"
 ]
 },
 "kale klozet kapağı fiyatları": {
@@ -6070,7 +6532,8 @@
 "kaynak": [
 "hepsiburada.com",
 "kale.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "kale klozet modelleri": {
@@ -6078,13 +6541,15 @@
 "kaynak": [
 "hepsiburada.com",
 "kale.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "vitra banyo duş seti": {
 "marka": "VitrA",
 "kaynak": [
-"hepsiburada.com"
+"hepsiburada.com",
+"trendyol.com"
 ]
 },
 "kale sifon kapağı": {
@@ -6092,7 +6557,8 @@
 "kaynak": [
 "hepsiburada.com",
 "kale.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "vitra gömme rezervuar fiyat": {
@@ -6100,6 +6566,7 @@
 "kaynak": [
 "hepsiburada.com",
 "koctas.com.tr",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -6107,7 +6574,8 @@
 "marka": "Serel",
 "kaynak": [
 "hepsiburada.com",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "vitra banyo aynası": {
@@ -6115,6 +6583,7 @@
 "kaynak": [
 "hepsiburada.com",
 "koctas.com.tr",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -6123,6 +6592,7 @@
 "kaynak": [
 "hepsiburada.com",
 "koctas.com.tr",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -6130,6 +6600,7 @@
 "marka": "VitrA",
 "kaynak": [
 "hepsiburada.com",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -6138,7 +6609,8 @@
 "kaynak": [
 "hepsiburada.com",
 "kale.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "vitra asma klozet+gömme rezervuar seti": {
@@ -6146,20 +6618,23 @@
 "kaynak": [
 "hepsiburada.com",
 "koctas.com.tr",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
 "artema batarya kartuşu": {
 "marka": "Artema",
 "kaynak": [
-"hepsiburada.com"
+"hepsiburada.com",
+"trendyol.com"
 ]
 },
 "kale tezgah altı lavabo": {
 "marka": "Kale",
 "kaynak": [
 "hepsiburada.com",
-"kale.com.tr"
+"kale.com.tr",
+"trendyol.com"
 ]
 },
 "kale lavabo modelleri": {
@@ -6167,7 +6642,8 @@
 "kaynak": [
 "hepsiburada.com",
 "kale.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "vitra fotoselli batarya": {
@@ -6181,6 +6657,7 @@
 "marka": "VitrA",
 "kaynak": [
 "hepsiburada.com",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -6188,6 +6665,7 @@
 "marka": "VitrA",
 "kaynak": [
 "hepsiburada.com",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -6196,7 +6674,8 @@
 "kaynak": [
 "hepsiburada.com",
 "kale.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "vitra gömme rezervuar yedek parça": {
@@ -6204,6 +6683,7 @@
 "kaynak": [
 "hepsiburada.com",
 "koctas.com.tr",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -6212,6 +6692,7 @@
 "kaynak": [
 "hepsiburada.com",
 "koctas.com.tr",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -6219,7 +6700,8 @@
 "marka": "Kale",
 "kaynak": [
 "hepsiburada.com",
-"kale.com.tr"
+"kale.com.tr",
+"trendyol.com"
 ]
 },
 "grohe batarya": {
@@ -7109,6 +7591,2818 @@
 "trendyol.com"
 ]
 },
+"vitra yeşil seramik": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"vitra.com.tr"
+]
+},
+"vitra çamaşır makinesi dolabı": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra 120x240 seramik": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra havlupan": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra rezervuar iç takımı yedek parçaları": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra klozet ölçüleri": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra el duşu": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra şelale batarya": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"vitra.com.tr"
+]
+},
+"vitra gold batarya": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra ora banyo dolabı": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra rezervuar contası": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"vitra klozet iç takım değişimi": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"vitra.com.tr"
+]
+},
+"vitra alttan çıkışlı klozet": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra sıvı sabunluk": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra renkli klozet": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra duş bataryası": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"banyo dolabı vitra": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra gömme rezervuar taharet musluğu": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra gömme taharet musluğu": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra klozet basma butonu": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra havlu askısı": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra yer seramik fiyat listesi": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra 80 cm lavabo": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra ankastre batarya": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra gömme rezervuar kapak": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra ankastre duş seti fiyatları": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra gömme rezervuar iç takımı fiyatları": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra kare klozet kapağı": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra batarya mutfak": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra lavabo taşı": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"lavabo vitra": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra mobilya": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra mutfak bataryası fiyatları": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra frame lavabo": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra gömme klozet fiyatları": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra klozet taharet musluğu": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra klozet gömme rezervuar": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra süzgeç": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra robot duş seti": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"taharet musluğu vitra": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra fayans modelleri": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra yer karosu": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra norm duvara sıfır klozet": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra jakuzi fiyatları": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"vitra.com.tr"
+]
+},
+"vitra nf klozet kapağı": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra tepe duş seti": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"ankastre duş seti vitra": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra plural lavabo": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"vitra.com.tr"
+]
+},
+"vitra ankastre duş bataryası": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra origin duş seti": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra şamandıra contası": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"vitra gomme rezervuar": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra rezervuar kapağı fiyatları": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra mutfak seramik": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra klozet duvara sıfır": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra duvar seramik": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra alafranga tuvalet": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra pisuvar fotoseli": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"abdest lavabosu vitra": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra banyo dolabı 80 cm": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra hela taşı gömme rezervuar": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra klozet musluğu": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra klozet taşı": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra kağıt havluluk": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra istanbul serisi klozet": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra gömme rezervuar fiyatı": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra lavabo süzgeci": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"vitra.com.tr"
+]
+},
+"vitra ankastre vana": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra twin 2 kumanda paneli": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra klozet seti": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra mutfak evye fiyatları": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra pnömatik kumanda paneli": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"vitra kare klozet": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra klozet kapağı vidası": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra rezervuar iç takımı fiyatları": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"vitra aksesuar": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra klozet iç takım": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra 60x60 seramik fiyat": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"vitra.com.tr"
+]
+},
+"vitra 711 kumanda paneli": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"vitra klozet iç takım fiyatları": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra dokunmatik sifon": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra rimex asma klozet": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra çift kademeli iç takım": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"vitra duşakabin koçtaş": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr"
+]
+},
+"vitra klozet kumanda paneli": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra musluk modelleri": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra tepe duşu": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra sento klozet kapağı": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra wc": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra klozet kapağı montaj vidası": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra klozet iç takımı fiyatı": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra tuvalet taşı fiyatı": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra duvar içi gömme rezervuar": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra klozet kapağı modelleri": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra sifon düğmesi": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"klozet modelleri vitra": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra gömme lavabo": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"vitra s20 tezgah altı lavabo": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"seramik vitra": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"vitra.com.tr"
+]
+},
+"vitra plural klozet": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"vitra.com.tr"
+]
+},
+"vitra asma klozet seti": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"s50 vitra klozet": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra banyo mobilyaları": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra 100 cm banyo dolabı": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra lineer süzgeç": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra sifon contası": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"vitra rezervuar seti": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra musluk bataryası": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra gömme rezervuar şamandıra fiyatı": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"vitra mutfak musluğu": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra kemer klozet": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"duş başlığı vitra": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"gömme rezervuar ölçüleri vitra": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"vitra.com.tr"
+]
+},
+"vitra duş teknesi fiyat listesi": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra sento rimex asma klozet": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra gömme rezervuar seti 4'lü": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra gömme rezervuar seti fiyatı": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra gri seramik": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra klozet kapakları": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra dış mekan seramik": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"vitra.com.tr"
+]
+},
+"klozet vitra fiyat": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra banyo dolap": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra rezervuar kumanda paneli": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra ankastre stop valf sıva üstü": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra hijyen klozet": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra sessiz klozet kapağı": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra marin havluluk": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra siyah batarya": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra pisuvar sifonu": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra gömme rezervuar şamandırası": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"gömme klozet vitra": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"tezgah üstü lavabo vitra": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"fayans parke görünümlü seramik vitra": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"vitra.com.tr"
+]
+},
+"vitra siyah duş seti": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra kumanda paneli fiyatları": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra arkadan çıkışlı klozet": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra banyo batarya seti": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra gömme rezervuar kapağı fiyatları": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra z lavabo": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra sensörlü musluk": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra klozet parçaları": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"s20 vitra klozet": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"kumanda paneli vitra": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"banyo bataryası vitra": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra ora smoothflush klozet seti": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra asma klozet takımı": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra banyo lavabo modelleri": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra 10x30 seramik": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"vitra.com.tr"
+]
+},
+"vitra gömme rezervuar taşı": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra hilton lavabo modelleri": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra beyaz seramik": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra klozet contası": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra hygiene klozet": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra havalı kumanda paneli": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra ısıtmalı klozet": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra stop valf fiyatları": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra seramik banyo": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra klozet su deposu": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"vitra 30x60 seramik": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"vitra.com.tr"
+]
+},
+"vitra ovalis smoothflush klozet seti": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra seramik mutfak": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"vitra.com.tr"
+]
+},
+"vitra gömmeli klozet": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra evye bataryası": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"vitra sento dolap": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra klozet iç takımı tamiri": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra klozet kapak menteşesi": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"vitra gömme rezervuar doldurma grubu": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"vitra gömme rezervuar havalı panel pnömatik değişim seti": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"vitra alafranga tuvalet fiyatları": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra klozet kapağı yedek parça": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"vitra klozet sifon düğmesi": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra seramik yapıştırıcı": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"klozet takımı vitra": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra altıgen seramik": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"vitra.com.tr"
+]
+},
+"vitra clean klozet": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"abdest alma lavabosu vitra": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra s50 klozet takımı": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra banyo lavaboları": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra duvara tam dayalı klozet": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra lavabo sifon seti": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra mutfak evye": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra v care akıllı klozet fiyatı": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra klozet montaj seti": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"vitra central rim-ex klozet seti": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra banyo dolap seti": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra rezervuar iç takımı 3/6 lt": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra gömme rezervuar kumanda paneli ön kapak": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra dus": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra banyo fayansları": {
+"marka": "VitrA",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"artema fold s banyo bataryası": {
+"marka": "Artema",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"artema flo s eviye bataryası": {
+"marka": "Artema",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"artema marin s eviye bataryası a42149": {
+"marka": "Artema",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"artema win s lavabo bataryası": {
+"marka": "Artema",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"artema gömme rezervuar": {
+"marka": "Artema",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr"
+]
+},
+"artema gömme taharet musluğu": {
+"marka": "Artema",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"artema nora s lavabo bataryası": {
+"marka": "Artema",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"artema 3 lü batarya seti": {
+"marka": "Artema",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"artema nora s banyo bataryası": {
+"marka": "Artema",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"artema flo s banyo bataryası": {
+"marka": "Artema",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"artema şelale batarya": {
+"marka": "Artema",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"artema marin s lavabo bataryası": {
+"marka": "Artema",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"artema tekli musluk": {
+"marka": "Artema",
+"kaynak": [
+"hepsiburada.com"
+]
+},
+"artema juno lavabo bataryası": {
+"marka": "Artema",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"artema a45200 filtreli ara musluk": {
+"marka": "Artema",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"artema tuvalet fırçası": {
+"marka": "Artema",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"artema solid s batarya seti": {
+"marka": "Artema",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"artema x line lavabo bataryası": {
+"marka": "Artema",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"artema x line banyo bataryası": {
+"marka": "Artema",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"artema q line lavabo bataryası": {
+"marka": "Artema",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"artema system rain ls25 duş kolonu": {
+"marka": "Artema",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"eca kısa musluk": {
+"marka": "E.C.A.",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"eca tekli musluk": {
+"marka": "E.C.A.",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"eca batarya kartuşu": {
+"marka": "E.C.A.",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"eca 3/4 küresel vana fiyatı": {
+"marka": "E.C.A.",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"eca proteus 3 yollu vana motoru": {
+"marka": "E.C.A.",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"eca batarya rozeti": {
+"marka": "E.C.A.",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"eca batarya borusu": {
+"marka": "E.C.A.",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"eca pınar uzun musluk": {
+"marka": "E.C.A.",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"eca taharet musluğu fiyatları": {
+"marka": "E.C.A.",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"eca 3 yollu vana fiyatı": {
+"marka": "E.C.A.",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"eca zafir lavabo bataryası": {
+"marka": "E.C.A.",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"eca musluk kartuşu": {
+"marka": "E.C.A.",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"eca niobe 3'lü batarya seti": {
+"marka": "E.C.A.",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"eca vera banyo bataryası": {
+"marka": "E.C.A.",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"eca üç yollu vana motoru": {
+"marka": "E.C.A.",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"eca batarya flex hortum": {
+"marka": "E.C.A.",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"eca banyo bataryası yön değiştirici": {
+"marka": "E.C.A.",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"creavit gömme rezervuar contası": {
+"marka": "Creavit",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"creavit klozet yorumları": {
+"marka": "Creavit",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"creavit gömme rezervuar tamiri": {
+"marka": "Creavit",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"serel asma klozet fiyatları": {
+"marka": "Serel",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"serelseramik.com.tr",
+"trendyol.com"
+]
+},
+"serel zeta klozet kapağı": {
+"marka": "Serel",
+"kaynak": [
+"hepsiburada.com",
+"serelseramik.com.tr"
+]
+},
+"serel gömme rezervuar şamandıra": {
+"marka": "Serel",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"serel banyo dolabı": {
+"marka": "Serel",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"serelseramik.com.tr",
+"trendyol.com"
+]
+},
+"serel lavabo modelleri ve fiyatları": {
+"marka": "Serel",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"serelseramik.com.tr",
+"trendyol.com"
+]
+},
+"serel klozet iç takım": {
+"marka": "Serel",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"serel lavabo fiyatları": {
+"marka": "Serel",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"serelseramik.com.tr",
+"trendyol.com"
+]
+},
+"serel gömme rezervuar boşaltma grubu": {
+"marka": "Serel",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"serel pia klozet + rezervuar + kapak + iç takım": {
+"marka": "Serel",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"serel gömme rezervuar parçaları": {
+"marka": "Serel",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"serel kibele rezervuar iç takımı": {
+"marka": "Serel",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"serel nita klozet": {
+"marka": "Serel",
+"kaynak": [
+"hepsiburada.com"
+]
+},
+"serel rezervuar basma butonu": {
+"marka": "Serel",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"serel klozet kapağı montaj vidası": {
+"marka": "Serel",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"serel gömme rezervuar ölçüleri": {
+"marka": "Serel",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"serel klozet kapağı amortisörü": {
+"marka": "Serel",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"serel klozet kapağı fiyatları": {
+"marka": "Serel",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"serelseramik.com.tr",
+"trendyol.com"
+]
+},
+"serel gömme rezervuar takımı": {
+"marka": "Serel",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"serel sifon": {
+"marka": "Serel",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"serel vega klozet kapağı": {
+"marka": "Serel",
+"kaynak": [
+"hepsiburada.com",
+"serelseramik.com.tr",
+"trendyol.com"
+]
+},
+"serel hygiene klozet kapağı menteşesi": {
+"marka": "Serel",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"kale kanalsız klozet": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale seramik 60x120": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr"
+]
+},
+"kale klozet iç takımı": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"kale duş başlığı": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale banyo aksesuarları": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale versus gömme rezervuar": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"trendyol.com"
+]
+},
+"kale armatür": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale marka klozet": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale lotus banyo dolabı": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr"
+]
+},
+"kale kare klozet kapağı": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale marka klozet kapağı": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale gömme rezervuar şamandıra": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"trendyol.com"
+]
+},
+"kale klozet kapağı yavaş kapanan": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale stil klozet kapağı": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"trendyol.com"
+]
+},
+"kale tuvalet taşı fiyatları": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale kaynak makinesi": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale seramik lavabo": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale lavabo fiyatları": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale babel klozet kapağı": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale klozet takımı": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale gömme rezervuar kumanda paneli": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"trendyol.com"
+]
+},
+"kale batarya fiyatları": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale tezgah üstü lavabo": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"trendyol.com"
+]
+},
+"kale gömme rezervuar paneli": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale sifon": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale klozet kapağı menteşesi": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"kale gömme rezervuar seti": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale etajerli lavabo": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"trendyol.com"
+]
+},
+"kale vitrifiye": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr"
+]
+},
+"kale banyo dolabı 100 cm": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale ankastre taharet musluğu": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale basics klozet kapağı": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale dolap": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale banyo bataryası fiyatları": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com"
+]
+},
+"kale evye bataryası": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale iç takım": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale banyo lavabo modelleri": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale mutfak bataryası fiyatları": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale banyo dolabı 80 cm": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale lavabo bataryası fiyatları": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale lavabo 80 cm": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"trendyol.com"
+]
+},
+"kale gömme rezervuar fiyatları": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale ankastre banyo bataryası": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"trendyol.com"
+]
+},
+"kale sifon takımı": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale rezervuar iç takım değişimi": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"trendyol.com"
+]
+},
+"kale pure su arıtma çıkışlı mutfak bataryası": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"trendyol.com"
+]
+},
+"kale klozet iç takım": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale gömme rezervuar iç takım": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale sifon iç takımı": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale şifreli dolap kilidi": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com"
+]
+},
+"kale idea asma klozet": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr"
+]
+},
+"kale banyo lavabo": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale idea klozet kapağı": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale duşakabin modelleri": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"trendyol.com"
+]
+},
+"kale gömme rezervuar boşaltma - iç takım": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"trendyol.com"
+]
+},
+"klozet fiyatları kale": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kale vista banyo dolabı": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr"
+]
+},
+"kale çift basmalı rezervuar iç takım 3/6 litre": {
+"marka": "Kale",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"fayans kalebodur fiyatları": {
+"marka": "Kalebodur",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"kalebodur seramik fiyatları": {
+"marka": "Kalebodur",
+"kaynak": [
+"hepsiburada.com",
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"tezgah arası kalebodur": {
+"marka": "Kalebodur",
+"kaynak": [
+"hepsiburada.com"
+]
+},
+"kalebodur fayans boyası": {
+"marka": "Kalebodur",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"turkuaz city asma klozet": {
+"marka": "Turkuaz",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"turkuazseramik.com.tr"
+]
+},
+"turkuaz duru klozet": {
+"marka": "Turkuaz",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"turkuazseramik.com.tr"
+]
+},
+"turkuaz gömme rezervuar": {
+"marka": "Turkuaz",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"turkuazseramik.com.tr"
+]
+},
+"turkuaz tuvalet taşı fiyatları": {
+"marka": "Turkuaz",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"turkuazseramik.com.tr"
+]
+},
+"turkuaz bella duvara sıfır klozet": {
+"marka": "Turkuaz",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"turkuazseramik.com.tr"
+]
+},
+"turkuaz cerastyle lavabo": {
+"marka": "Turkuaz",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"turkuazseramik.com.tr"
+]
+},
+"turkuaz duvara sıfır klozet": {
+"marka": "Turkuaz",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"turkuazseramik.com.tr"
+]
+},
+"turkuaz aqua asma klozet": {
+"marka": "Turkuaz",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"turkuazseramik.com.tr"
+]
+},
+"turkuaz çanak lavabo": {
+"marka": "Turkuaz",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"turkuazseramik.com.tr"
+]
+},
+"turkuaz noura klozet": {
+"marka": "Turkuaz",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"turkuazseramik.com.tr"
+]
+},
+"turkuaz lila asma klozet": {
+"marka": "Turkuaz",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"turkuazseramik.com.tr"
+]
+},
+"turkuaz mona klozet": {
+"marka": "Turkuaz",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"turkuazseramik.com.tr"
+]
+},
+"turkuaz asma klozet fiyatları": {
+"marka": "Turkuaz",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"turkuazseramik.com.tr"
+]
+},
+"turkuaz ayaklı lavabo fiyatları": {
+"marka": "Turkuaz",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"turkuazseramik.com.tr"
+]
+},
+"turkuaz seramik lavabo": {
+"marka": "Turkuaz",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"turkuazseramik.com.tr"
+]
+},
+"turkuaz tezgah üstü lavabo": {
+"marka": "Turkuaz",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"turkuazseramik.com.tr"
+]
+},
+"turkuaz fayans": {
+"marka": "Turkuaz",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"turkuazseramik.com.tr"
+]
+},
+"turkuaz klozet kapağı parçaları": {
+"marka": "Turkuaz",
+"kaynak": [
+"hepsiburada.com"
+]
+},
+"turkuaz klozet kapağı fiyatları": {
+"marka": "Turkuaz",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"turkuazseramik.com.tr"
+]
+},
+"turkuaz bella klozet kapağı": {
+"marka": "Turkuaz",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"turkuazseramik.com.tr"
+]
+},
+"turkuaz lavabo fiyatları": {
+"marka": "Turkuaz",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"turkuazseramik.com.tr"
+]
+},
+"turkuaz duru duvara sıfır klozet": {
+"marka": "Turkuaz",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"turkuazseramik.com.tr"
+]
+},
+"turkuaz mona asma klozet": {
+"marka": "Turkuaz",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"turkuazseramik.com.tr"
+]
+},
+"turkuaz yarım ayak lavabo": {
+"marka": "Turkuaz",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"turkuazseramik.com.tr"
+]
+},
+"turkuaz duru asma klozet": {
+"marka": "Turkuaz",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"trendyol.com",
+"turkuazseramik.com.tr"
+]
+},
+"turkuaz fayans modelleri": {
+"marka": "Turkuaz",
+"kaynak": [
+"hepsiburada.com",
+"koctas.com.tr",
+"turkuazseramik.com.tr"
+]
+},
+"turkuaz lila klozet": {
+"marka": "Turkuaz",
+"kaynak": [
+"hepsiburada.com",
+"trendyol.com",
+"turkuazseramik.com.tr"
+]
+},
 "idevit": {
 "marka": "Idevit",
 "kaynak": [
@@ -7427,20 +10721,23 @@
 "marka": "Kale",
 "kaynak": [
 "kale.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "kale banyo dolapları katalog": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"trendyol.com"
 ]
 },
 "kale banyo dolabı fiyatları": {
 "marka": "Kale",
 "kaynak": [
 "kale.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "kale fayans": {
@@ -7502,7 +10799,8 @@
 "marka": "Kale",
 "kaynak": [
 "kale.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "zemin kalebodur modelleri": {
@@ -7526,7 +10824,8 @@
 "kale seramik banyo modelleri": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"trendyol.com"
 ]
 },
 "kalebodur döşeme": {
@@ -7551,21 +10850,16 @@
 "marka": "Kalebodur",
 "kaynak": [
 "kale.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "fayans kalebodur": {
 "marka": "Kalebodur",
 "kaynak": [
 "kale.com.tr",
-"koctas.com.tr"
-]
-},
-"kale kanalsız klozet": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr",
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "dış cephe kalebodur": {
@@ -7577,7 +10871,9 @@
 "kale lavabo dolabı": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "balkon kalebodur": {
@@ -7589,7 +10885,9 @@
 "kale banyo dolabı modelleri": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "kalebodur nasıl döşenir": {
@@ -7600,12 +10898,6 @@
 },
 "kalebodur kaplama": {
 "marka": "Kalebodur",
-"kaynak": [
-"kale.com.tr"
-]
-},
-"kale seramik 60x120": {
-"marka": "Kale",
 "kaynak": [
 "kale.com.tr"
 ]
@@ -7625,19 +10917,8 @@
 "kale seramik bayileri": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
-]
-},
-"kale duş başlığı": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
-"kale banyo aksesuarları": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"koctas.com.tr"
 ]
 },
 "beyaz kalebodur": {
@@ -7649,25 +10930,31 @@
 "kale seramik banyo": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"koctas.com.tr"
 ]
 },
 "kale hygiene klozet": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "kale banyo modelleri": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"trendyol.com"
 ]
 },
 "kale rezervuar basma butonu": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "kale tuvalet": {
@@ -7679,13 +10966,9 @@
 "kale seramik banyo dolabı": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
-]
-},
-"kale versus gömme rezervuar": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "kale türkçe": {
@@ -7709,7 +10992,8 @@
 "kale idea 2.0 asma klozet": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"trendyol.com"
 ]
 },
 "kale bayi özel": {
@@ -7721,16 +11005,11 @@
 "seramik kalebodur": {
 "marka": "Kalebodur",
 "kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"koctas.com.tr"
 ]
 },
 "kale porselen": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
-"kale armatür": {
 "marka": "Kale",
 "kaynak": [
 "kale.com.tr"
@@ -7751,7 +11030,8 @@
 "kale zero 2.0 lavabo": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"trendyol.com"
 ]
 },
 "kale kale": {
@@ -7769,7 +11049,8 @@
 "kale hela taşı": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"koctas.com.tr"
 ]
 },
 "kale pisuvar": {
@@ -7781,13 +11062,8 @@
 "kale banyo seramik": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
-]
-},
-"kale marka klozet": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"koctas.com.tr"
 ]
 },
 "kalebodur fiyatı": {
@@ -7797,18 +11073,6 @@
 ]
 },
 "kale seramik banyo fayans modelleri": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
-"kale lotus banyo dolabı": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
-"kale kare klozet kapağı": {
 "marka": "Kale",
 "kaynak": [
 "kale.com.tr"
@@ -7829,49 +11093,16 @@
 "kale zero 2.0 asma klozet": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
-]
-},
-"kale marka klozet kapağı": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
-"kale gömme rezervuar şamandıra": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"trendyol.com"
 ]
 },
 "kale mare banyo bataryası": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
-]
-},
-"kale klozet kapağı yavaş kapanan": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
-"kale stil klozet kapağı": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
-"kale tuvalet taşı fiyatları": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
-"kale seramik lavabo": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "kalebodur parke": {
@@ -7883,13 +11114,8 @@
 "kale miro banyo dolabı": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
-]
-},
-"kale lavabo fiyatları": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"trendyol.com"
 ]
 },
 "gri kalebodur modelleri": {
@@ -7904,24 +11130,6 @@
 "kale.com.tr"
 ]
 },
-"kale babel klozet kapağı": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
-"kale klozet takımı": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
-"kale gömme rezervuar kumanda paneli": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
 "kale bayileri": {
 "marka": "Kale",
 "kaynak": [
@@ -7931,19 +11139,15 @@
 "kale stop valf": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
-]
-},
-"kale batarya fiyatları": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"trendyol.com"
 ]
 },
 "kale seramik fiyatları": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"koctas.com.tr"
 ]
 },
 "salon kalebodur modelleri": {
@@ -7955,7 +11159,9 @@
 "kale basics smart klozet kapağı": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "mermer desenli kalebodur": {
@@ -7964,20 +11170,8 @@
 "kale.com.tr"
 ]
 },
-"kale tezgah üstü lavabo": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
 "kalebodur mutfak": {
 "marka": "Kalebodur",
-"kaynak": [
-"kale.com.tr"
-]
-},
-"kale gömme rezervuar paneli": {
-"marka": "Kale",
 "kaynak": [
 "kale.com.tr"
 ]
@@ -8024,19 +11218,7 @@
 "kale.com.tr"
 ]
 },
-"kale sifon": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
 "kale sinterflex": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
-"kale gömme rezervuar seti": {
 "marka": "Kale",
 "kaynak": [
 "kale.com.tr"
@@ -8063,13 +11245,9 @@
 "kale seramik klozet": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
-]
-},
-"kale etajerli lavabo": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "kale yedek parça": {
@@ -8079,12 +11257,6 @@
 ]
 },
 "kale seramik sahibi": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
-"kale vitrifiye": {
 "marka": "Kale",
 "kaynak": [
 "kale.com.tr"
@@ -8108,31 +11280,7 @@
 "kale.com.tr"
 ]
 },
-"kale banyo dolabı 100 cm": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
 "kale duş teknesi": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
-"fayans kalebodur fiyatları": {
-"marka": "Kalebodur",
-"kaynak": [
-"kale.com.tr"
-]
-},
-"kalebodur seramik fiyatları": {
-"marka": "Kalebodur",
-"kaynak": [
-"kale.com.tr"
-]
-},
-"kale ankastre taharet musluğu": {
 "marka": "Kale",
 "kaynak": [
 "kale.com.tr"
@@ -8150,22 +11298,19 @@
 "kale.com.tr"
 ]
 },
-"kale basics klozet kapağı": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
 "klozet kapağı kale": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "kale rezervuar iç takım montajı": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"trendyol.com"
 ]
 },
 "e kale": {
@@ -8187,12 +11332,6 @@
 ]
 },
 "kale sinterflex fiyat": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
-"kale dolap": {
 "marka": "Kale",
 "kaynak": [
 "kale.com.tr"
@@ -8222,22 +11361,19 @@
 "kale.com.tr"
 ]
 },
-"kale evye bataryası": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
 "kale indigo klozet kapağı": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "kalebodur süpürgelik": {
 "marka": "Kalebodur",
 "kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"trendyol.com"
 ]
 },
 "kahverengi kalebodur modelleri": {
@@ -8246,28 +11382,11 @@
 "kale.com.tr"
 ]
 },
-"kale iç takım": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
-"kale banyo lavabo modelleri": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
-"kale mutfak bataryası fiyatları": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
 "kale mare lavabo bataryası": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"trendyol.com"
 ]
 },
 "33x33 kalebodur": {
@@ -8279,7 +11398,9 @@
 "kale idea banyo dolabı": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "mavi kalebodur": {
@@ -8290,18 +11411,6 @@
 },
 "mutfak yer kalebodur modelleri": {
 "marka": "Kalebodur",
-"kaynak": [
-"kale.com.tr"
-]
-},
-"kale banyo dolabı 80 cm": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
-"kale lavabo bataryası fiyatları": {
-"marka": "Kale",
 "kaynak": [
 "kale.com.tr"
 ]
@@ -8321,7 +11430,9 @@
 "kale babel klozet": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "kalebodur markaları": {
@@ -8360,26 +11471,8 @@
 "kale.com.tr"
 ]
 },
-"kale lavabo 80 cm": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
-"kale gömme rezervuar fiyatları": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
 "parke kalebodur": {
 "marka": "Kalebodur",
-"kaynak": [
-"kale.com.tr"
-]
-},
-"kale ankastre banyo bataryası": {
-"marka": "Kale",
 "kaynak": [
 "kale.com.tr"
 ]
@@ -8402,22 +11495,20 @@
 "kale.com.tr"
 ]
 },
-"kale sifon takımı": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
 "tuvalet kalebodur modelleri": {
 "marka": "Kalebodur",
 "kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "kale banyo dolabi": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "kale mutfak": {
@@ -8459,7 +11550,9 @@
 "kale loft klozet": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "tuvalet kalebodur": {
@@ -8477,13 +11570,9 @@
 "kale indigo klozet": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
-]
-},
-"kale rezervuar iç takım değişimi": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "kale seramik fabrika": {
@@ -8516,16 +11605,12 @@
 "kale.com.tr"
 ]
 },
-"kale pure su arıtma çıkışlı mutfak bataryası": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
 "kale basic smart klozet kapağı": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "kalebodur ve fayans arasındaki fark": {
@@ -8555,7 +11640,8 @@
 "kale optimum klozet": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"koctas.com.tr"
 ]
 },
 "izmir kale": {
@@ -8588,32 +11674,8 @@
 "kale.com.tr"
 ]
 },
-"kale klozet iç takım": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
-"kale gömme rezervuar iç takım": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
 "kalebodur modelleri mutfak": {
 "marka": "Kalebodur",
-"kaynak": [
-"kale.com.tr"
-]
-},
-"kale sifon iç takımı": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
-"kale idea asma klozet": {
-"marka": "Kale",
 "kaynak": [
 "kale.com.tr"
 ]
@@ -8642,12 +11704,6 @@
 "kale.com.tr"
 ]
 },
-"kale banyo lavabo": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
 "60x120 kale seramik": {
 "marka": "Kale",
 "kaynak": [
@@ -8666,19 +11722,7 @@
 "kale.com.tr"
 ]
 },
-"kale idea klozet kapağı": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
 "bayi özel kale": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
-"kale duşakabin modelleri": {
 "marka": "Kale",
 "kaynak": [
 "kale.com.tr"
@@ -8699,7 +11743,8 @@
 "kale seramik fayans": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"koctas.com.tr"
 ]
 },
 "çanakkale kale": {
@@ -8729,13 +11774,17 @@
 "kalebodur mutfak fayans modelleri": {
 "marka": "Kalebodur",
 "kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "kale çamaşır makinesi dolabı": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "kale seramik bursa": {
@@ -8747,7 +11796,9 @@
 "kale idea klozet": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "kale seramik yer karoları": {
@@ -8759,7 +11810,8 @@
 "kalebodur fayans çeşitleri": {
 "marka": "Kalebodur",
 "kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"koctas.com.tr"
 ]
 },
 "en uygun kalebodur fiyatları": {
@@ -8777,7 +11829,9 @@
 "kale duşakabin fiyatları": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "uygun kalebodur fiyatları": {
@@ -8792,32 +11846,8 @@
 "kale.com.tr"
 ]
 },
-"kale gömme rezervuar boşaltma - iç takım": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
 "kalebodur temizliği": {
 "marka": "Kalebodur",
-"kaynak": [
-"kale.com.tr"
-]
-},
-"klozet fiyatları kale": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
-"kale vista banyo dolabı": {
-"marka": "Kale",
-"kaynak": [
-"kale.com.tr"
-]
-},
-"kale çift basmalı rezervuar iç takım 3/6 litre": {
-"marka": "Kale",
 "kaynak": [
 "kale.com.tr"
 ]
@@ -8831,7 +11861,8 @@
 "kale klozet kapağı montajı": {
 "marka": "Kale",
 "kaynak": [
-"kale.com.tr"
+"kale.com.tr",
+"trendyol.com"
 ]
 },
 "mermer desen kalebodur": {
@@ -9329,20 +12360,23 @@
 "artema su arıtmalı batarya": {
 "marka": "Artema",
 "kaynak": [
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "vitra s50 klozet kapağı": {
 "marka": "VitrA",
 "kaynak": [
 "koctas.com.tr",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
 "serel iç takım": {
 "marka": "Serel",
 "kaynak": [
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "vitra banyo seramik modelleri": {
@@ -9356,6 +12390,7 @@
 "marka": "VitrA",
 "kaynak": [
 "koctas.com.tr",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -9363,6 +12398,7 @@
 "marka": "VitrA",
 "kaynak": [
 "koctas.com.tr",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -9370,6 +12406,7 @@
 "marka": "VitrA",
 "kaynak": [
 "koctas.com.tr",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -9377,6 +12414,7 @@
 "marka": "VitrA",
 "kaynak": [
 "koctas.com.tr",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -9384,13 +12422,15 @@
 "marka": "VitrA",
 "kaynak": [
 "koctas.com.tr",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
 "kale banyo dolabı koçtaş": {
 "marka": "Kale",
 "kaynak": [
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "vitra ahşap görünümlü seramik": {
@@ -9416,13 +12456,15 @@
 "marka": "VitrA",
 "kaynak": [
 "koctas.com.tr",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
 "turkuaz tuvalet taşı": {
 "marka": "Turkuaz",
 "kaynak": [
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "koçtaş vitra klozet": {
@@ -9441,7 +12483,8 @@
 "serel rezervuar iç takımı yedek parçaları": {
 "marka": "Serel",
 "kaynak": [
-"koctas.com.tr"
+"koctas.com.tr",
+"trendyol.com"
 ]
 },
 "vitra banyo seramik kataloğu": {
@@ -9455,6 +12498,7 @@
 "marka": "VitrA",
 "kaynak": [
 "koctas.com.tr",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -9462,6 +12506,7 @@
 "marka": "VitrA",
 "kaynak": [
 "koctas.com.tr",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -9469,6 +12514,7 @@
 "marka": "VitrA",
 "kaynak": [
 "koctas.com.tr",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -9476,6 +12522,7 @@
 "marka": "VitrA",
 "kaynak": [
 "koctas.com.tr",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -9489,6 +12536,7 @@
 "marka": "VitrA",
 "kaynak": [
 "koctas.com.tr",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
@@ -9496,20 +12544,15 @@
 "marka": "VitrA",
 "kaynak": [
 "koctas.com.tr",
+"trendyol.com",
 "vitra.com.tr"
 ]
 },
 "koçtaş eca banyo bataryası fiyatları": {
 "marka": "E.C.A.",
 "kaynak": [
-"koctas.com.tr"
-]
-},
-"serel asma klozet fiyatları": {
-"marka": "Serel",
-"kaynak": [
 "koctas.com.tr",
-"serelseramik.com.tr"
+"trendyol.com"
 ]
 },
 "grohe mutfak bataryası": {
@@ -10155,6 +13198,883 @@
 "marka": "Yurtbay",
 "kaynak": [
 "koctas.com.tr"
+]
+},
+"vitra fayans fiyatları": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr"
+]
+},
+"vitra banyo dolapları fiyatları": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra integra asma klozet": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"vitra.com.tr"
+]
+},
+"vitra küçük banyo modelleri": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra mia banyo dolabı": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra çeşme": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra yer süzgeci": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra gömme rezervuar butonu": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra sento banyo dolabı": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra yer seramik": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra musluk fiyatları": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"duş seti vitra": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra gömme rezervuar takımı": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"çanak lavabo vitra": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra 60 cm banyo dolabı": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra banyo modelleri ve fiyatları": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra batarya fiyatları": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"koçtaş vitra banyo dolabı": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr"
+]
+},
+"vitra wc taşı": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"duşakabin vitra": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra çanak lavabo bataryası": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"vitra klozet kapagi": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra banyo dolabı fiyatları": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra 80 cm banyo dolabı": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"gömme rezervuar iç takımı vitra": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra ses yok klozet kapağı": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra sifon iç takımı": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra s40 asma klozet": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"terrazzo seramik vitra": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"vitra.com.tr"
+]
+},
+"vitra banyo mobilyası": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"vitra.com.tr"
+]
+},
+"vitra 100 cm lavabo": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra dolaplı lavabo modelleri": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra duşa kabin": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra aynalı dolap": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra parke görünümlü seramik": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"vitra.com.tr"
+]
+},
+"vitra banyo lavabo dolabı": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra küçük lavabo": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra klozet dwg": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"vitra.com.tr"
+]
+},
+"vitra banyo musluğu": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra klozet yedek parça": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra banyo takımı": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"vitra.com.tr"
+]
+},
+"vitra 60x60 seramik": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"banyo dolapları vitra": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra klozet şamandıra": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra klozet kapağı, yavaş kapanan": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra canak lavabo": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra banyo fayans": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra rezervuar iç takım": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra granit": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra diana klozet": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra nuvoplast klozet kapağı": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra 50 cm banyo dolabı": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"mutfak bataryası vitra": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra banyo dolabı 100 cm": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra hela taşı fiyatları": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra rezervuar fiyatları": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra s50 lavabo": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra v8 gömme rezervuar seti": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra klozet rezervuar iç takımı": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"tuvalet taşı vitra": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra banyo seramikleri": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra kemer klozet kapağı": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"koçtaş vitra gömme rezervuar": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr"
+]
+},
+"vitra yavaş kapanır klozet kapağı": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra banyo dolap modelleri ve fiyatları": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra ayak yıkama lavabosu": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra banyo dolabı koçtaş": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr"
+]
+},
+"koçtaş klozet vitra": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr"
+]
+},
+"vitra punto duş seti": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra metropole çanak lavabo": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra klozet koçtaş": {
+"marka": "VitrA",
+"kaynak": [
+"koctas.com.tr"
+]
+},
+"artema root square banyo bataryası": {
+"marka": "Artema",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"koçtaş artema duş seti": {
+"marka": "Artema",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"artema win s eviye bataryası": {
+"marka": "Artema",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"artema filtreli ara musluk a45200": {
+"marka": "Artema",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"eca batarya yedek parça": {
+"marka": "E.C.A.",
+"kaynak": [
+"koctas.com.tr"
+]
+},
+"eca musluk fiyatları koçtaş": {
+"marka": "E.C.A.",
+"kaynak": [
+"koctas.com.tr"
+]
+},
+"koçtaş eca lavabo bataryası": {
+"marka": "E.C.A.",
+"kaynak": [
+"koctas.com.tr"
+]
+},
+"eca duş seti koçtaş": {
+"marka": "E.C.A.",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"koçtaş eca batarya": {
+"marka": "E.C.A.",
+"kaynak": [
+"koctas.com.tr"
+]
+},
+"eca mutfak batarya yedek parça": {
+"marka": "E.C.A.",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"eca mutfak bataryası koçtaş": {
+"marka": "E.C.A.",
+"kaynak": [
+"koctas.com.tr"
+]
+},
+"eca duş başlığı koçtaş": {
+"marka": "E.C.A.",
+"kaynak": [
+"koctas.com.tr"
+]
+},
+"eca musluk yedek parça": {
+"marka": "E.C.A.",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"serel tuvalet kapağı": {
+"marka": "Serel",
+"kaynak": [
+"koctas.com.tr",
+"serelseramik.com.tr",
+"trendyol.com"
+]
+},
+"serel nita asma klozet": {
+"marka": "Serel",
+"kaynak": [
+"koctas.com.tr",
+"serelseramik.com.tr",
+"trendyol.com"
+]
+},
+"serel hela taşı": {
+"marka": "Serel",
+"kaynak": [
+"koctas.com.tr",
+"serelseramik.com.tr"
+]
+},
+"serel klozet takımı": {
+"marka": "Serel",
+"kaynak": [
+"koctas.com.tr",
+"serelseramik.com.tr",
+"trendyol.com"
+]
+},
+"serel marka klozet": {
+"marka": "Serel",
+"kaynak": [
+"koctas.com.tr",
+"serelseramik.com.tr",
+"trendyol.com"
+]
+},
+"serel friendly klozet": {
+"marka": "Serel",
+"kaynak": [
+"koctas.com.tr",
+"serelseramik.com.tr",
+"trendyol.com"
+]
+},
+"serel tuvalet taşı fiyatı": {
+"marka": "Serel",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"serel gömme klozet": {
+"marka": "Serel",
+"kaynak": [
+"koctas.com.tr",
+"serelseramik.com.tr",
+"trendyol.com"
+]
+},
+"serel klozet modelleri": {
+"marka": "Serel",
+"kaynak": [
+"koctas.com.tr",
+"serelseramik.com.tr",
+"trendyol.com"
+]
+},
+"gömme rezervuar serel": {
+"marka": "Serel",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"serel hygiene klozet fiyat": {
+"marka": "Serel",
+"kaynak": [
+"koctas.com.tr",
+"serelseramik.com.tr",
+"trendyol.com"
+]
+},
+"klozet kapağı serel": {
+"marka": "Serel",
+"kaynak": [
+"koctas.com.tr",
+"serelseramik.com.tr",
+"trendyol.com"
+]
+},
+"serel nita duvara sıfır klozet": {
+"marka": "Serel",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"serel spil btw 4 lü klozet seti": {
+"marka": "Serel",
+"kaynak": [
+"koctas.com.tr",
+"serelseramik.com.tr",
+"trendyol.com"
+]
+},
+"serel kanalsız klozet": {
+"marka": "Serel",
+"kaynak": [
+"koctas.com.tr",
+"serelseramik.com.tr",
+"trendyol.com"
+]
+},
+"serel klozet sifon kapağı": {
+"marka": "Serel",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"serel klozet kapağı parçaları": {
+"marka": "Serel",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"serel wc taşı": {
+"marka": "Serel",
+"kaynak": [
+"koctas.com.tr",
+"serelseramik.com.tr"
+]
+},
+"serel asma klozet+rezervuar fiyatları": {
+"marka": "Serel",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"serel gömme rezervuar koçtaş": {
+"marka": "Serel",
+"kaynak": [
+"koctas.com.tr"
+]
+},
+"koçtaş kale klozet": {
+"marka": "Kale",
+"kaynak": [
+"koctas.com.tr"
+]
+},
+"koçtaş kale banyo dolabı": {
+"marka": "Kale",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"en ucuz fayans kalebodur fiyatları istanbul": {
+"marka": "Kalebodur",
+"kaynak": [
+"koctas.com.tr"
+]
+},
+"en ucuz fayans kalebodur fiyatları istanbul avrupa yakası": {
+"marka": "Kalebodur",
+"kaynak": [
+"koctas.com.tr"
+]
+},
+"koçtaş kalebodur fayans fiyatları": {
+"marka": "Kalebodur",
+"kaynak": [
+"koctas.com.tr"
+]
+},
+"turkuaz banyo dolabı": {
+"marka": "Turkuaz",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"turkuazseramik.com.tr"
+]
+},
+"turkuaz alaturka tuvalet taşı fiyatları": {
+"marka": "Turkuaz",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"turkuazseramik.com.tr"
+]
+},
+"turkuaz klozet takımı fiyatları": {
+"marka": "Turkuaz",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com"
+]
+},
+"turkuaz duvara sıfır klozet fiyatları": {
+"marka": "Turkuaz",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"turkuazseramik.com.tr"
+]
+},
+"turkuaz rengi seramik modelleri": {
+"marka": "Turkuaz",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"turkuazseramik.com.tr"
+]
+},
+"turkuaz banyo fayans modelleri": {
+"marka": "Turkuaz",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"turkuazseramik.com.tr"
+]
+},
+"turkuaz seramik klozet kapağı": {
+"marka": "Turkuaz",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"turkuazseramik.com.tr"
+]
+},
+"turkuaz klozet takımı": {
+"marka": "Turkuaz",
+"kaynak": [
+"koctas.com.tr",
+"trendyol.com",
+"turkuazseramik.com.tr"
 ]
 },
 "newarc": {
@@ -11214,124 +15134,11 @@
 "serelseramik.com.tr"
 ]
 },
-"serel tuvalet kapağı": {
-"marka": "Serel",
-"kaynak": [
-"serelseramik.com.tr"
-]
-},
-"serel nita asma klozet": {
-"marka": "Serel",
-"kaynak": [
-"serelseramik.com.tr"
-]
-},
 "serel beta klozet kapağı": {
 "marka": "Serel",
 "kaynak": [
-"serelseramik.com.tr"
-]
-},
-"serel zeta klozet kapağı": {
-"marka": "Serel",
-"kaynak": [
-"serelseramik.com.tr"
-]
-},
-"serel hela taşı": {
-"marka": "Serel",
-"kaynak": [
-"serelseramik.com.tr"
-]
-},
-"serel klozet takımı": {
-"marka": "Serel",
-"kaynak": [
-"serelseramik.com.tr"
-]
-},
-"serel banyo dolabı": {
-"marka": "Serel",
-"kaynak": [
-"serelseramik.com.tr"
-]
-},
-"serel marka klozet": {
-"marka": "Serel",
-"kaynak": [
-"serelseramik.com.tr"
-]
-},
-"serel friendly klozet": {
-"marka": "Serel",
-"kaynak": [
-"serelseramik.com.tr"
-]
-},
-"serel lavabo modelleri ve fiyatları": {
-"marka": "Serel",
-"kaynak": [
-"serelseramik.com.tr"
-]
-},
-"serel lavabo fiyatları": {
-"marka": "Serel",
-"kaynak": [
-"serelseramik.com.tr"
-]
-},
-"serel gömme klozet": {
-"marka": "Serel",
-"kaynak": [
-"serelseramik.com.tr"
-]
-},
-"serel klozet modelleri": {
-"marka": "Serel",
-"kaynak": [
-"serelseramik.com.tr"
-]
-},
-"serel hygiene klozet fiyat": {
-"marka": "Serel",
-"kaynak": [
-"serelseramik.com.tr"
-]
-},
-"klozet kapağı serel": {
-"marka": "Serel",
-"kaynak": [
-"serelseramik.com.tr"
-]
-},
-"serel spil btw 4 lü klozet seti": {
-"marka": "Serel",
-"kaynak": [
-"serelseramik.com.tr"
-]
-},
-"serel kanalsız klozet": {
-"marka": "Serel",
-"kaynak": [
-"serelseramik.com.tr"
-]
-},
-"serel wc taşı": {
-"marka": "Serel",
-"kaynak": [
-"serelseramik.com.tr"
-]
-},
-"serel klozet kapağı fiyatları": {
-"marka": "Serel",
-"kaynak": [
-"serelseramik.com.tr"
-]
-},
-"serel vega klozet kapağı": {
-"marka": "Serel",
-"kaynak": [
-"serelseramik.com.tr"
+"serelseramik.com.tr",
+"trendyol.com"
 ]
 },
 "serel banyo": {
@@ -11550,97 +15357,530 @@
 "trendyol.com"
 ]
 },
+"vitra s20 klozet kapağı": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra metropole lavabo": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra pisuvar sensörü": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra abdest lavabosu fiyatı": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra eviye": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra mutfak evyesi": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra klozet kapağı parçaları": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra sento rim-ex kanalsız duvara tam dayalı klozet": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra etajerli lavabo": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra banyo tasarımları": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra origin ankastre lavabo bataryası": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra flat duş teknesi": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra yarım ayak lavabo": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra vitrifiye": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra s50 duvara sıfır klozet": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra ikili lavabo": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra termostatik banyo bataryası": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra memoria klozet": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra s 50 klozet": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra engelli lavabo": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra rimex klozet": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com"
+]
+},
+"vitra alçıpan tipi gömme rezervuar": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra stop valf uzatma": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com"
+]
+},
+"vitra çocuk klozeti": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra v care akıllı klozet": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra retro klozet kapağı": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra klozet asma": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com"
+]
+},
+"vitra gold kumanda paneli": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra siyah kumanda paneli": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra güneş hela taşı": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra valarte klozet": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra otomatik klozet": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com"
+]
+},
+"vitra deterjan hazneli klozet": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra 65 cm banyo dolabı": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com"
+]
+},
+"vitra ankastre stop valf sıva altı": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra kanalsız klozet yorumlar": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra dusakabin": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra integra rimex asma klozet": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra cam mozaik": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra klozet su basma butonu": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra lavabo ölçüleri": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra küvet fiyatları": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra integra rim-ex kanalsız duvara tam dayalı klozet": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra archiplan lavabo": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra loop r kumanda paneli": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra bide": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra çiftli lavabo": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra memoria çanak lavabo": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra 8 cm gömme rezervuar": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra zemin seramik": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"duş teknesi vitra": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra sento rim ex kanalsız duvara tam dayalı klozet": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra şamandıra tamiri": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra metropol lavabo": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"vitra metropole rim-ex asma klozet": {
+"marka": "VitrA",
+"kaynak": [
+"trendyol.com",
+"vitra.com.tr"
+]
+},
+"artema fold s lavabo bataryası": {
+"marka": "Artema",
+"kaynak": [
+"trendyol.com"
+]
+},
+"artema fold s eviye bataryası": {
+"marka": "Artema",
+"kaynak": [
+"trendyol.com"
+]
+},
+"eca banyo duş seti": {
+"marka": "E.C.A.",
+"kaynak": [
+"trendyol.com"
+]
+},
+"eca klozet kapağı": {
+"marka": "E.C.A.",
+"kaynak": [
+"trendyol.com"
+]
+},
+"eca mutfak bataryası kartuşu": {
+"marka": "E.C.A.",
+"kaynak": [
+"trendyol.com"
+]
+},
+"eca mini küresel vana 1/2": {
+"marka": "E.C.A.",
+"kaynak": [
+"trendyol.com"
+]
+},
+"serel rezervuar iç takımı tamiri": {
+"marka": "Serel",
+"kaynak": [
+"trendyol.com"
+]
+},
+"serel yavaş kapanan klozet kapağı tamiri": {
+"marka": "Serel",
+"kaynak": [
+"trendyol.com"
+]
+},
+"serel gömme rezervuar taharet musluğu": {
+"marka": "Serel",
+"kaynak": [
+"trendyol.com"
+]
+},
+"serel gömme rezervuar tamiri": {
+"marka": "Serel",
+"kaynak": [
+"trendyol.com"
+]
+},
+"serel rezervuar iç takımı montajı": {
+"marka": "Serel",
+"kaynak": [
+"trendyol.com"
+]
+},
+"serel kanalsız klozet kullanıcı yorumları": {
+"marka": "Serel",
+"kaynak": [
+"trendyol.com"
+]
+},
+"serel klozet kapağı montajı": {
+"marka": "Serel",
+"kaynak": [
+"trendyol.com"
+]
+},
+"futbol kale fotoğrafı": {
+"marka": "Kale",
+"kaynak": [
+"trendyol.com"
+]
+},
+"kale dolap kilidi": {
+"marka": "Kale",
+"kaynak": [
+"trendyol.com"
+]
+},
 "turkuaz ibiza asma klozet": {
 "marka": "Turkuaz",
 "kaynak": [
-"turkuazseramik.com.tr"
-]
-},
-"turkuaz banyo dolabı": {
-"marka": "Turkuaz",
-"kaynak": [
-"turkuazseramik.com.tr"
-]
-},
-"turkuaz city asma klozet": {
-"marka": "Turkuaz",
-"kaynak": [
-"turkuazseramik.com.tr"
-]
-},
-"turkuaz duru klozet": {
-"marka": "Turkuaz",
-"kaynak": [
+"trendyol.com",
 "turkuazseramik.com.tr"
 ]
 },
 "turkuaz klozet modelleri": {
 "marka": "Turkuaz",
 "kaynak": [
+"trendyol.com",
 "turkuazseramik.com.tr"
 ]
 },
-"turkuaz alaturka tuvalet taşı fiyatları": {
+"turkuaz mobilya": {
 "marka": "Turkuaz",
 "kaynak": [
+"trendyol.com"
+]
+},
+"evim turkuaz mobilya": {
+"marka": "Turkuaz",
+"kaynak": [
+"trendyol.com"
+]
+},
+"turkuaz klozet kapağı menteşesi": {
+"marka": "Turkuaz",
+"kaynak": [
+"trendyol.com"
+]
+},
+"turkuaz engelli klozet": {
+"marka": "Turkuaz",
+"kaynak": [
+"trendyol.com",
 "turkuazseramik.com.tr"
 ]
 },
-"turkuaz gömme rezervuar": {
+"turkuaz duşakabin": {
 "marka": "Turkuaz",
 "kaynak": [
+"trendyol.com",
 "turkuazseramik.com.tr"
 ]
 },
-"turkuaz tuvalet taşı fiyatları": {
+"turkuaz hela taşı": {
 "marka": "Turkuaz",
 "kaynak": [
-"turkuazseramik.com.tr"
-]
-},
-"turkuaz bella duvara sıfır klozet": {
-"marka": "Turkuaz",
-"kaynak": [
-"turkuazseramik.com.tr"
-]
-},
-"turkuaz cerastyle lavabo": {
-"marka": "Turkuaz",
-"kaynak": [
-"turkuazseramik.com.tr"
-]
-},
-"turkuaz duvara sıfır klozet": {
-"marka": "Turkuaz",
-"kaynak": [
-"turkuazseramik.com.tr"
-]
-},
-"turkuaz duvara sıfır klozet fiyatları": {
-"marka": "Turkuaz",
-"kaynak": [
-"turkuazseramik.com.tr"
-]
-},
-"turkuaz aqua asma klozet": {
-"marka": "Turkuaz",
-"kaynak": [
-"turkuazseramik.com.tr"
-]
-},
-"turkuaz çanak lavabo": {
-"marka": "Turkuaz",
-"kaynak": [
+"trendyol.com",
 "turkuazseramik.com.tr"
 ]
 },
 "turkuaz seramik klozet": {
-"marka": "Turkuaz",
-"kaynak": [
-"turkuazseramik.com.tr"
-]
-},
-"turkuaz noura klozet": {
 "marka": "Turkuaz",
 "kaynak": [
 "turkuazseramik.com.tr"
@@ -11652,25 +15892,7 @@
 "turkuazseramik.com.tr"
 ]
 },
-"turkuaz lila asma klozet": {
-"marka": "Turkuaz",
-"kaynak": [
-"turkuazseramik.com.tr"
-]
-},
 "turkuaz mutfak": {
-"marka": "Turkuaz",
-"kaynak": [
-"turkuazseramik.com.tr"
-]
-},
-"turkuaz mona klozet": {
-"marka": "Turkuaz",
-"kaynak": [
-"turkuazseramik.com.tr"
-]
-},
-"turkuaz asma klozet fiyatları": {
 "marka": "Turkuaz",
 "kaynak": [
 "turkuazseramik.com.tr"
@@ -11682,37 +15904,7 @@
 "turkuazseramik.com.tr"
 ]
 },
-"turkuaz ayaklı lavabo fiyatları": {
-"marka": "Turkuaz",
-"kaynak": [
-"turkuazseramik.com.tr"
-]
-},
-"turkuaz seramik lavabo": {
-"marka": "Turkuaz",
-"kaynak": [
-"turkuazseramik.com.tr"
-]
-},
-"turkuaz tezgah üstü lavabo": {
-"marka": "Turkuaz",
-"kaynak": [
-"turkuazseramik.com.tr"
-]
-},
-"turkuaz fayans": {
-"marka": "Turkuaz",
-"kaynak": [
-"turkuazseramik.com.tr"
-]
-},
 "turkuaz cerastyle": {
-"marka": "Turkuaz",
-"kaynak": [
-"turkuazseramik.com.tr"
-]
-},
-"turkuaz rengi seramik modelleri": {
 "marka": "Turkuaz",
 "kaynak": [
 "turkuazseramik.com.tr"
@@ -11724,43 +15916,7 @@
 "turkuazseramik.com.tr"
 ]
 },
-"turkuaz banyo fayans modelleri": {
-"marka": "Turkuaz",
-"kaynak": [
-"turkuazseramik.com.tr"
-]
-},
 "turkuaz banyo": {
-"marka": "Turkuaz",
-"kaynak": [
-"turkuazseramik.com.tr"
-]
-},
-"turkuaz klozet kapağı fiyatları": {
-"marka": "Turkuaz",
-"kaynak": [
-"turkuazseramik.com.tr"
-]
-},
-"turkuaz seramik klozet kapağı": {
-"marka": "Turkuaz",
-"kaynak": [
-"turkuazseramik.com.tr"
-]
-},
-"turkuaz bella klozet kapağı": {
-"marka": "Turkuaz",
-"kaynak": [
-"turkuazseramik.com.tr"
-]
-},
-"turkuaz lavabo fiyatları": {
-"marka": "Turkuaz",
-"kaynak": [
-"turkuazseramik.com.tr"
-]
-},
-"turkuaz engelli klozet": {
 "marka": "Turkuaz",
 "kaynak": [
 "turkuazseramik.com.tr"
@@ -11772,67 +15928,13 @@
 "turkuazseramik.com.tr"
 ]
 },
-"turkuaz duru duvara sıfır klozet": {
-"marka": "Turkuaz",
-"kaynak": [
-"turkuazseramik.com.tr"
-]
-},
 "turkuaz tech": {
 "marka": "Turkuaz",
 "kaynak": [
 "turkuazseramik.com.tr"
 ]
 },
-"turkuaz klozet takımı": {
-"marka": "Turkuaz",
-"kaynak": [
-"turkuazseramik.com.tr"
-]
-},
-"turkuaz mona asma klozet": {
-"marka": "Turkuaz",
-"kaynak": [
-"turkuazseramik.com.tr"
-]
-},
-"turkuaz yarım ayak lavabo": {
-"marka": "Turkuaz",
-"kaynak": [
-"turkuazseramik.com.tr"
-]
-},
-"turkuaz duru asma klozet": {
-"marka": "Turkuaz",
-"kaynak": [
-"turkuazseramik.com.tr"
-]
-},
-"turkuaz fayans modelleri": {
-"marka": "Turkuaz",
-"kaynak": [
-"turkuazseramik.com.tr"
-]
-},
-"turkuaz duşakabin": {
-"marka": "Turkuaz",
-"kaynak": [
-"turkuazseramik.com.tr"
-]
-},
-"turkuaz lila klozet": {
-"marka": "Turkuaz",
-"kaynak": [
-"turkuazseramik.com.tr"
-]
-},
 "turkuaz servis": {
-"marka": "Turkuaz",
-"kaynak": [
-"turkuazseramik.com.tr"
-]
-},
-"turkuaz hela taşı": {
 "marka": "Turkuaz",
 "kaynak": [
 "turkuazseramik.com.tr"
@@ -12348,37 +16450,13 @@
 "vitra.com.tr"
 ]
 },
-"vitra s20 klozet kapağı": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "vitra sento klozet": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"
 ]
 },
-"vitra metropole lavabo": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra pisuvar sensörü": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "vitra marmostone": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra abdest lavabosu fiyatı": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"
@@ -12426,25 +16504,7 @@
 "vitra.com.tr"
 ]
 },
-"vitra eviye": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra mutfak evyesi": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "vitra yetkili servis ücretleri": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra klozet kapağı parçaları": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"
@@ -12486,18 +16546,6 @@
 "vitra.com.tr"
 ]
 },
-"vitra sento rim-ex kanalsız duvara tam dayalı klozet": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra etajerli lavabo": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "vitra ankara mağaza": {
 "marka": "VitrA",
 "kaynak": [
@@ -12516,12 +16564,6 @@
 "vitra.com.tr"
 ]
 },
-"vitra banyo tasarımları": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "vitra jakuzi": {
 "marka": "VitrA",
 "kaynak": [
@@ -12534,19 +16576,7 @@
 "vitra.com.tr"
 ]
 },
-"vitra origin ankastre lavabo bataryası": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "vitra havuz seramiği": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra flat duş teknesi": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"
@@ -12565,12 +16595,6 @@
 ]
 },
 "vitra taharet musluğu montajı": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra yarım ayak lavabo": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"
@@ -12600,18 +16624,6 @@
 "vitra.com.tr"
 ]
 },
-"vitra yeşil seramik": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra çamaşır makinesi dolabı": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "vitra teknik servis": {
 "marka": "VitrA",
 "kaynak": [
@@ -12630,18 +16642,6 @@
 "vitra.com.tr"
 ]
 },
-"vitra 120x240 seramik": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra havlupan": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "vitra kitkat": {
 "marka": "VitrA",
 "kaynak": [
@@ -12654,25 +16654,7 @@
 "vitra.com.tr"
 ]
 },
-"vitra rezervuar iç takımı yedek parçaları": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "vitra miniworx": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra klozet ölçüleri": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra el duşu": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"
@@ -12684,19 +16666,7 @@
 "vitra.com.tr"
 ]
 },
-"vitra şelale batarya": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "vitra s20 lavabo": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra gold batarya": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"
@@ -12720,12 +16690,6 @@
 "vitra.com.tr"
 ]
 },
-"vitra ora banyo dolabı": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "bozüyük vitra": {
 "marka": "VitrA",
 "kaynak": [
@@ -12744,31 +16708,7 @@
 "vitra.com.tr"
 ]
 },
-"vitra banyo dolapları fiyatları": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "vitra izmir bayileri": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra klozet iç takım değişimi": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra integra asma klozet": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra alttan çıkışlı klozet": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"
@@ -12786,37 +16726,7 @@
 "vitra.com.tr"
 ]
 },
-"vitra sıvı sabunluk": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "vitra kapak": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra renkli klozet": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra duş bataryası": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"banyo dolabı vitra": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra gömme rezervuar taharet musluğu": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"
@@ -12828,19 +16738,7 @@
 "vitra.com.tr"
 ]
 },
-"vitra vitrifiye": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "vitra move masajlı duş sistemi": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra küçük banyo modelleri": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"
@@ -12852,43 +16750,7 @@
 "vitra.com.tr"
 ]
 },
-"vitra gömme taharet musluğu": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra klozet basma butonu": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra havlu askısı": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "vitra 10x10 seramik": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra s50 duvara sıfır klozet": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra yer seramik fiyat listesi": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra 80 cm lavabo": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"
@@ -12900,43 +16762,7 @@
 "vitra.com.tr"
 ]
 },
-"vitra ankastre batarya": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra gömme rezervuar kapak": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra mia banyo dolabı": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "vitra buton": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra ankastre duş seti fiyatları": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra çeşme": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra yer süzgeci": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"
@@ -12960,12 +16786,6 @@
 "vitra.com.tr"
 ]
 },
-"vitra gömme rezervuar butonu": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "vitra ankara bayileri": {
 "marka": "VitrA",
 "kaynak": [
@@ -12978,25 +16798,7 @@
 "vitra.com.tr"
 ]
 },
-"vitra sento banyo dolabı": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra yer seramik": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "ankara vitra bayileri": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra gömme rezervuar iç takımı fiyatları": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"
@@ -13014,79 +16816,13 @@
 "vitra.com.tr"
 ]
 },
-"vitra kare klozet kapağı": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra batarya mutfak": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra musluk fiyatları": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra lavabo taşı": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"lavabo vitra": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"duş seti vitra": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra gömme rezervuar takımı": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"çanak lavabo vitra": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "vitra marmostone açık gri": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"
 ]
 },
-"vitra mobilya": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra mutfak bataryası fiyatları": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "vitra liquid": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra ikili lavabo": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"
@@ -13099,18 +16835,6 @@
 ]
 },
 "vitra servis izmir": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra termostatik banyo bataryası": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra 60 cm banyo dolabı": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"
@@ -13140,31 +16864,7 @@
 "vitra.com.tr"
 ]
 },
-"vitra banyo modelleri ve fiyatları": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra frame lavabo": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra gömme klozet fiyatları": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "vitra geo çanak lavabo": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra batarya fiyatları": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"
@@ -13176,37 +16876,13 @@
 "vitra.com.tr"
 ]
 },
-"vitra wc taşı": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "vitra gömme rezervuar tamiri": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"
 ]
 },
-"duşakabin vitra": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra klozet taharet musluğu": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "vitra suadiye mağaza": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra klozet gömme rezervuar": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"
@@ -13224,24 +16900,6 @@
 "vitra.com.tr"
 ]
 },
-"vitra süzgeç": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra robot duş seti": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"taharet musluğu vitra": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "vitra cardostone bej": {
 "marka": "VitrA",
 "kaynak": [
@@ -13254,31 +16912,7 @@
 "vitra.com.tr"
 ]
 },
-"vitra fayans modelleri": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra memoria klozet": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra yer karosu": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "olcay yapı vitra": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra norm duvara sıfır klozet": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"
@@ -13302,18 +16936,6 @@
 "vitra.com.tr"
 ]
 },
-"vitra klozet kapagi": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra jakuzi fiyatları": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "retromix vitra": {
 "marka": "VitrA",
 "kaynak": [
@@ -13326,31 +16948,7 @@
 "vitra.com.tr"
 ]
 },
-"vitra nf klozet kapağı": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra tepe duş seti": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"ankastre duş seti vitra": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "vitra havuz seramikleri": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra plural lavabo": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"
@@ -13362,31 +16960,7 @@
 "vitra.com.tr"
 ]
 },
-"vitra ankastre duş bataryası": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "vitra aspenwood": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra s 50 klozet": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra origin duş seti": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra banyo dolabı fiyatları": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"
@@ -13404,31 +16978,13 @@
 "vitra.com.tr"
 ]
 },
-"vitra 80 cm banyo dolabı": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "vitra zentrum asma klozet": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"
 ]
 },
-"vitra gomme rezervuar": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "vitra duş sistemleri": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra rezervuar kapağı fiyatları": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"
@@ -13452,49 +17008,7 @@
 "vitra.com.tr"
 ]
 },
-"vitra mutfak seramik": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "vitra hangi ülkenin": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra klozet duvara sıfır": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra duvar seramik": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra engelli lavabo": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra alafranga tuvalet": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra pisuvar fotoseli": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"gömme rezervuar iç takımı vitra": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"
@@ -13506,67 +17020,13 @@
 "vitra.com.tr"
 ]
 },
-"abdest lavabosu vitra": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra banyo dolabı 80 cm": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra hela taşı gömme rezervuar": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra klozet musluğu": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra alçıpan tipi gömme rezervuar": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra klozet taşı": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "vitra root square": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"
 ]
 },
-"vitra kağıt havluluk": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "vitra cementmix": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra istanbul serisi klozet": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra ses yok klozet kapağı": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"
@@ -13590,37 +17050,7 @@
 "vitra.com.tr"
 ]
 },
-"vitra gömme rezervuar fiyatı": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra lavabo süzgeci": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra çocuk klozeti": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra ankastre vana": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "vitra genel müdürlük": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra sifon iç takımı": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"
@@ -13632,19 +17062,7 @@
 "vitra.com.tr"
 ]
 },
-"vitra v care akıllı klozet": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "vitra calacatta 60x120": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra twin 2 kumanda paneli": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"
@@ -13680,31 +17098,7 @@
 "vitra.com.tr"
 ]
 },
-"terrazzo seramik vitra": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra klozet seti": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra mutfak evye fiyatları": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "vitra edirne": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra kare klozet": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"
@@ -13722,12 +17116,6 @@
 "vitra.com.tr"
 ]
 },
-"vitra retro klozet kapağı": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "vitra turan güneş": {
 "marka": "VitrA",
 "kaynak": [
@@ -13740,25 +17128,7 @@
 "vitra.com.tr"
 ]
 },
-"vitra klozet kapağı vidası": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "vitra root": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra banyo mobilyası": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra 100 cm lavabo": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"
@@ -13782,36 +17152,6 @@
 "vitra.com.tr"
 ]
 },
-"vitra dolaplı lavabo modelleri": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra aksesuar": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra klozet iç takım": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra duşa kabin": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra 60x60 seramik fiyat": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
 "online vitra": {
 "marka": "VitrA",
 "kaynak": [
@@ -13819,18 +17159,6 @@
 ]
 },
 "vitra newcon": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra gold kumanda paneli": {
-"marka": "VitrA",
-"kaynak": [
-"vitra.com.tr"
-]
-},
-"vitra aynalı dolap": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"
@@ -13878,25 +17206,1045 @@
 "vitra.com.tr"
 ]
 },
-"vitra parke görünümlü seramik": {
+"esözcanlar vitra": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"
 ]
 },
-"vitra klozet iç takım fiyatları": {
+"vitra boy dolabı": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"
 ]
 },
-"vitra dokunmatik sifon": {
+"vitra duş hortumu": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"
 ]
 },
-"vitra siyah kumanda paneli": {
+"vitra outlet": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra trabzon": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra taharet musluğu yedek parça": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"eskişehir vitra": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra mozaik": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra showroom istanbul": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra frame": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra move": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra urbancrete vizon": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra bağdat caddesi": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra mermer": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra mode": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra ümraniye": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra ataşehir": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra ayaklı küvet": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra iş başvurusu": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra yedek parça fiyat listesi": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra lavobo": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra family lavabo": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra gömme rezervuar su kaçırıyor": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra com": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra intema": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"eskihisar vitra": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"cardostone vitra": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra kampanya": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra gömme rezervuar garanti süresi": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"istanbul vitra bayileri": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra equal": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra online satış": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra gömme rezervuar montaj": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra banyo modelleri 2023": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra tiles": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"ankara vitra": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra profesyonel": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra klozet su kaçırıyor": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"antalya vitra": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra urbancrete beyaz": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra set 6.0": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra aquamarine": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra endüstriyel tasarım staj": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra şikayet hattı": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra zentrum": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra marin": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra ürünleri": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra fabrikası": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra alsancak": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra 85-003-009": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra eskişehir fabrikası": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra koltuk": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"s20 vitra": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra staj": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra servis ümraniye": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra fabrikası nerede": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra root classic": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra nest": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"sento vitra": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra servis mersin": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"bursa vitra": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"izmir vitra": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"origin vitra": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra 800-1868": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra izmit": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra mode serisi": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra marin tuvalet kağıtlığı": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra terazzo": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"mersin vitra servisi": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra kuvet": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra turkey": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"resincrete vitra": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra servis izmit": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra servis ücretleri": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra mutfak modelleri ve fiyatları": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra bakırköy": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"urbancrete vitra": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra marmori calacatta": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra archiplan": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra valarte banyo dolabı": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra kocaeli": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra versus": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra adana mağaza": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra root banyo dolabı": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra metropol": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra ses yok kapak": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"eskişehir vitra fabrikası": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra root groove": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra mecidiyeköy": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra tr": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra gebze": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra bayileri izmir": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"banyo vitra": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra 740-0680": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra şikayet": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra rimex": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra sifon tamiri": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra calacatta": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra inovasyon merkezi": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra istanbul bayileri": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra tatami": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"valarte vitra": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"eczacıbaşı vitra fabrika": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra s 50": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra çocuk klozet": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"nişantaşı vitra": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra retro": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra mia 40 cm": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra iç takim": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra zentrum duvara tam dayalı klozet": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra homemade": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra quadrum": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra klozet kapağı sökme": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra smooth flush": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra bathrooms": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra v-care": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra gömme rezervuar servis": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra yetkili servisi": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra bayilik": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra samsun mağaza": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra yavaş kapanan klozet kapağı bozuldu": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra bayiler": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra mağazalar": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra team": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra mağazası": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra 800 1868": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra family": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra pro": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra bozüyük çalışma saatleri": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"eczacibasi vitra": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra klozet servis": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra voyage": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra karo san. ve tic. a.ş.": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra ic takim": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra v8 gömme rezervuar": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra s50 rimex": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra family abdest lavabosu": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"liquid vitra": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra com.tr": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra fiyat": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra tek basmalı kumanda paneli": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra şamandıra fiyatları": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra iç takım fiyatları": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra s50 kanallı asma klozet + tam set kampanyası": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra rimex kanalsız klozet": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra genel müdürü": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"800-1868 vitra": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra burgbad": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra suadiye mağaz": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra bayii istanbul": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"banyo dolabı modelleri vitra": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"banyo parke görünümlü seramik vitra": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra ovalis smoothflush asma klozet": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra online shop": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra müşteri şikayet hattı": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra evye fiyatları": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra dus teknesi": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra bathroom": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra throne seramik": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra teşhir ürünleri": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra tezgah arası": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra gr set + parlak panel + stop valf": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra retro klozet": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra atelier": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra çift kademeli rezervuar iç takımı": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra çamaşır sepetli banyo dolabı": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra gömme rezervuar fiyat listesi": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra granit seramik": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra klozet kapak fiyatları": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra step banyo dolabı": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra klozet kapağı yedek parçaları": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra gömme rezervuar koçtaş": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra şubeleri": {
+"marka": "VitrA",
+"kaynak": [
+"vitra.com.tr"
+]
+},
+"vitra cement mix": {
 "marka": "VitrA",
 "kaynak": [
 "vitra.com.tr"

@@ -162,7 +162,7 @@ KISA = {"Yıllık banyo yenileme ve yeni konut banyosu tahmini": "Banyo yenileme
         "Aylık organik performans: 2025 ve 2026": "Aylık organik 2025-2026", "Trafik hangi sayfa türlerine geliyor? · Oca-Eyl 2026": "Sayfa türleri 2026",
         "Kategori bazında organik trafik · Oca-Eyl 2026": "Kategori tıkları 2026", "En çok tık alan sayfalar · Oca-Eyl 2026": "En çok tık alan sayfalar",
         "Blog (İlham Veren Fikirler): aylık tık, konu grupları ve yazılar": "Blog", "Cihaz ve ülke · 12 ay": "Cihaz ve ülke",
-        "Yapay zeka özelliklerinde gösterim ve blog gösterimindeki payı": "Yapay zeka gösterim payı", "Yapay zeka gösterim payına göre blog yazılarında tık değişimi": "YZ payına göre",
+        "Yapay zeka özelliklerinde gösterim: site geneli ve blog": "Yapay zeka gösterim payı", "Sayfa türüne göre yapay zeka gösterimi": "YZ sayfa türü", "Yapay zeka özelliklerinde en çok gösterilen sayfalar · site geneli": "YZ en çok gösterilen sayfa", "Yapay zeka gösterim payına göre blog yazılarında tık değişimi": "YZ payına göre",
         "Yapay zeka özelliklerinde en çok gösterilen blog yazıları": "YZ'de en çok gösterilen yazı", "AI Overview çıkan ve çıkmayan blog aramalarında tık ve sıra": "AI Overview",
         "Yapay zeka yanıt takibi · 111 markasız soruda markaların anılma payı": "AI yanıtlarında markalar",
         "Yapay zeka yanıt takibi · 111 markasız soruda kaynak gösterilen alan adları": "AI yanıt kaynakları",

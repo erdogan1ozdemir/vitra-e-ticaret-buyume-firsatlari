@@ -19,7 +19,7 @@ def _isr_en(v): return ("+" if round(v, 1) > 0 else ("-" if round(v, 1) < 0 else
 def _ay(m): return AY.get(m)
 x("Oca", "Jan"); x("Şub", "Feb"); x("Mar", "Mar"); x("Nis", "Apr"); x("May", "May"); x("Haz", "Jun"); x("Tem", "Jul"); x("Ağu", "Aug"); x("Eyl", "Sep"); x("Eki", "Oct"); x("Kas", "Nov"); x("Ara", "Dec")
 AD = [a for a, _ in AYA]
-def _yil(y, i): return [(_ay("%d-%02d" % (y, m)) or [None, None])[i] for m in range(1, 13)]
+def _yil(y, i): return [(_ay("%d-%02d" % (y, m)) or [None, None, None])[i] for m in range(1, 13)]
 HE = ["06", "07", "08", "09"]
 def _top(y, i, aylar=HE): return sum(AY["%d-%s" % (y, m)][i] for m in aylar)
 c25, c26 = _top(2025, 0), _top(2026, 0); i25, i26 = _top(2025, 1), _top(2026, 1)
@@ -30,36 +30,97 @@ mob = 100 * GC["MOBILE"][0] / cih_t; mob_i = 100 * GC["MOBILE"][1] / cih_i
 ctr_m = 100 * GC["MOBILE"][0] / GC["MOBILE"][1]; ctr_d = 100 * GC["DESKTOP"][0] / GC["DESKTOP"][1]
 
 # ---------------------------------------------------------------- 1 · aylık seri 2025 ve 2026
-x("Aylık organik tık · vitra.com.tr, 2025 ve 2026 üst üste (Search Console 16 ayı sakladığı için 2025 Haziran'da başlar)", "Monthly organic clicks · vitra.com.tr, 2025 and 2026 overlaid (as Search Console keeps 16 months, 2025 starts in June)")
-G_AY = sekmeler([("Click", "Clicks", cizgi([("2025", YRENK["2025"], _yil(2025, 0)), ("2026", YRENK["2026"], _yil(2026, 0))],
-                                         y_etiket=x("Aylık organik tık · vitra.com.tr, 2025 ve 2026 üst üste (Search Console 16 ayı sakladığı için 2025 Haziran'da başlar)", "Monthly organic clicks · vitra.com.tr, 2025 and 2026 overlaid (as Search Console keeps 16 months, 2025 starts in June)"),
-                                         aylar=AD, x_etiket=AD, kalin={1: 3.2})),
-                 ("Gösterim", "Impressions", cizgi([("2025", YRENK["2025"], _yil(2025, 1)), ("2026", YRENK["2026"], _yil(2026, 1))],
-                                         y_etiket=x("Aylık gösterim · vitra.com.tr, 2025 ve 2026 üst üste", "Monthly impressions · vitra.com.tr, 2025 and 2026 overlaid"),
-                                         aylar=AD, x_etiket=AD, kalin={1: 3.2}))], "gtabs")
+# 2025 Ocak - Mayıs tık ve gösterimi marka ekibinin Search Console aylık dışa aktarımındandır (API 16 ay saklar); bu aylar için ortalama sıra yoktur.
+from grafik2 import kombo2 as _kombo2, cift as _cift, f_k as _fk2, f_pay as _fpay
+x("Click", "Clicks"); x("Gösterim", "Impressions"); x("Ort. sıra", "Avg. position")
+def _sira_b(v): t = ("%.1f" % v); return x(t.replace(".", ","), t)
+def _cizgi_yil(i, et_tr, et_en):
+    return cizgi([("2025", YRENK["2025"], _yil(2025, i)), ("2026", YRENK["2026"], _yil(2026, i))], y_etiket=x(et_tr, et_en), aylar=AD, x_etiket=AD, kalin={1: 3.2})
+def _cubuk_yil(i, ad_tr, ad_en, et_tr, et_en):
+    return _kombo2(AD, [{"ad": "2025", "renk": YRENK["2025"], "deger": _yil(2025, i), "tip": "cubuk", "bicim": _fk2},
+                        {"ad": "2026", "renk": YRENK["2026"], "deger": _yil(2026, i), "tip": "cubuk", "bicim": _fk2, "eksen_ad": x(ad_tr, ad_en)}], cap=x(et_tr, et_en))
+_ET_C = ("Aylık organik tık · vitra.com.tr, 2025 ve 2026 üst üste", "Monthly organic clicks · vitra.com.tr, 2025 and 2026 overlaid")
+_ET_G = ("Aylık gösterim · vitra.com.tr, 2025 ve 2026 üst üste", "Monthly impressions · vitra.com.tr, 2025 and 2026 overlaid")
+_A26 = AD[:9]
+_KG = _kombo2(AD, [{"ad": x("Gösterim 2025", "Impressions 2025"), "renk": "#B9C6C3", "deger": _yil(2025, 1), "tip": "cubuk", "eksen": "sol", "bicim": _fk2, "eksen_ad": x("Gösterim", "Impressions")},
+                   {"ad": x("Gösterim 2026", "Impressions 2026"), "renk": "#F4B9A3", "deger": _yil(2026, 1), "tip": "cubuk", "eksen": "sol", "bicim": _fk2},
+                   {"ad": x("Click 2025", "Clicks 2025"), "renk": YRENK["2025"], "deger": _yil(2025, 0), "tip": "cizgi", "eksen": "sag", "bicim": _fk2, "eksen_ad": x("Click", "Clicks")},
+                   {"ad": x("Click 2026", "Clicks 2026"), "renk": YRENK["2026"], "deger": _yil(2026, 0), "tip": "cizgi", "eksen": "sag", "bicim": _fk2}],
+              cap=x("Aylık gösterim (çubuk, sol eksen) ve organik tık (çizgi, sağ eksen) · 2025 ve 2026", "Monthly impressions (bars, left axis) and organic clicks (lines, right axis) · 2025 and 2026"))
+_K26 = _kombo2(_A26, [{"ad": x("Gösterim", "Impressions"), "renk": "#B9C6C3", "deger": _yil(2026, 1)[:9], "tip": "cubuk", "eksen": "sol", "bicim": _fk2, "eksen_ad": x("Gösterim", "Impressions")},
+                      {"ad": x("Click", "Clicks"), "renk": YRENK["2026"], "deger": _yil(2026, 0)[:9], "tip": "cizgi", "eksen": "sag", "bicim": _fk2, "eksen_ad": x("Click", "Clicks")},
+                      {"ad": x("Ort. sıra", "Avg. position"), "renk": "#10332F", "deger": _yil(2026, 2)[:9], "tip": "kesik", "eksen": "sag2", "ters": True, "bicim": _sira_b, "eksen_ad": x("Sıra", "Position")}],
+               cap=x("2026 · aylık gösterim (çubuk), organik tık (çizgi) ve ortalama Google sırası (kesikli çizgi, ters eksen: yukarısı daha iyi sıra)", "2026 · monthly impressions (bars), organic clicks (line) and average Google position (dashed line, reversed axis: higher is a better position)"))
+G_AY = sekmeler([("Click", "Clicks", _cift(_cizgi_yil(0, *_ET_C), _cubuk_yil(0, "Click", "Clicks", *_ET_C))),
+                 ("Gösterim", "Impressions", _cift(_cizgi_yil(1, *_ET_G), _cubuk_yil(1, "Gösterim", "Impressions", *_ET_G))),
+                 ("Click ve gösterim", "Clicks and impressions", _KG),
+                 ("2026: click, gösterim, sıra", "2026: clicks, impressions, position", _K26)], "gtabs")
+# yatay ısı tabloları: aylar sütunda, yıllar satırda; hücre rengi satır içindeki görece büyüklüğü gösterir
+def _kh(v):
+    r = k(v) if v >= 1000 else bin(v); x(r, r.replace(",", "."))
+    return '<span class="kh" data-v="%d">%s</span>' % (round(v), r)
+def _isi_hucre(degerler, ters=False):
+    vs = [v for v in degerler if v is not None]; lo, hi = (min(vs), max(vs)) if vs else (0, 1)
+    out = []
+    for v in degerler:
+        if v is None: out.append(None); continue
+        t = (v - lo) / (hi - lo) if hi > lo else 0.5
+        if ters: t = 1 - t
+        out.append(("var(--isi-a)", (t - 0.5) * 2 * 0.5) if t >= 0.5 else ("var(--isi-d)", (0.5 - t) * 2 * 0.5))
+    return out
+def _yatay(m_tr, m_en, ac_tr, ac_en, i, bicim, top_bicim, deg_tip, ters=False):
+    v25 = [(_ay("2025-%02d" % m) or [None, None, None])[i] if i < 2 else None for m in range(1, 13)]
+    v26 = [(_ay("2026-%02d" % m) or [None, None, None])[i] if i < 2 else None for m in range(1, 13)]
+    if i == 2:   # CTR
+        v25 = [100 * a[0] / a[1] if a else None for a in (_ay("2025-%02d" % m) for m in range(1, 13))]
+        v26 = [100 * a[0] / a[1] if a else None for a in (_ay("2026-%02d" % m) for m in range(1, 13))]
+    if i == 3:   # ortalama sıra
+        v25 = [(_ay("2025-%02d" % m) or [None, None, None])[2] for m in range(1, 13)]
+        v26 = [(_ay("2026-%02d" % m) or [None, None, None])[2] for m in range(1, 13)]
+    def top(y):
+        L = [_ay("%d-%02d" % (y, m)) for m in range(1, 10)]
+        if i == 0: return sum(a[0] for a in L)
+        if i == 1: return sum(a[1] for a in L)
+        if i == 2: return 100 * sum(a[0] for a in L) / sum(a[1] for a in L)
+        if all(a[2] for a in L): return sum(a[2] * a[1] for a in L) / sum(a[1] for a in L)
+        return None
+    bas = [th(m_tr, m_en, ac_tr, ac_en)] + [th(a_, b_, "%s %s" % (a_, "2025 ve 2026"), "%s %s" % (b_, "2025 and 2026"), True) for a_, b_ in AYA] + \
+          [th("Oca-Eyl", "Jan-Sep", "Ocak - Eylül toplamı ya da ortalaması; iki yılın kıyaslanabildiği dönem.", "January - September total or average; the period comparable across the two years.", True)]
+    rows = []
+    for y, v, renk in ((2025, v25, YRENK["2025"]), (2026, v26, YRENK["2026"])):
+        hs = _isi_hucre(v, ters)
+        cells = ['<td class="yil"><i style="background:%s"></i>%d</td>' % (renk, y)]
+        for val, h in zip(v, hs):
+            cells.append('<td class="n">-</td>' if val is None else '<td class="n yh" style="--yr:%s;--a:%.2f">%s</td>' % (h[0], h[1], bicim(val)))
+        tv = top(y); cells.append('<td class="n top">%s</td>' % (top_bicim(tv) if tv is not None else "-"))
+        rows.append("<tr>%s</tr>" % "".join(cells))
+    dc = ['<td>%s</td>' % x("Değişim", "Change")]
+    for a, b in list(zip(v25, v26)) + [(top(2025), top(2026))]:
+        if a is None or b is None: dc.append('<td class="n">-</td>'); continue
+        if deg_tip == "oran": dc.append('<td class="n">%s</td>' % yz((b / a - 1) * 100))
+        elif deg_tip == "puan":
+            d = b - a; t_ = ("+" if d > 0 else "") + ("%.2f" % d).replace(".", ","); x(t_, t_.replace(",", "."))
+            dc.append('<td class="n"><span class="%s">%s</span></td>' % ("up" if d > 0 else ("dn" if d < 0 else ""), t_))
+        else:
+            d = b - a; t_ = ("+" if d > 0 else "") + ("%.1f" % d).replace(".", ","); x(t_, t_.replace(",", "."))
+            dc.append('<td class="n"><span class="%s">%s</span></td>' % ("up" if d < 0 else ("dn" if d > 0 else ""), t_))
+    rows.append('<tr class="deg">%s</tr>' % "".join(dc))
+    return '<div class="tw yatay xl"><table><thead><tr>%s</tr></thead><tbody>%s</tbody></table></div>' % ("".join(bas), "".join(rows))
+def _pct2(v): r = yzd(v, 2); return r
 def _d(a, b): return n(yz((b / a - 1) * 100)) if a and b else n("-")
-def _c(v): return cellk(v) if v else n("-")
-def _ctr(r): return n(yzd(100 * r[0] / r[1], 2)) if r else n("-")
-def _sira(r): return n(("%.1f" % r[2]).replace(".", ",")) if r and r[2] else n("-")
-_AYS = []
-for m in range(1, 13):
-    a5, a6 = _ay("2025-%02d" % m), _ay("2026-%02d" % m)
-    if not (a5 or a6): continue
-    _AYS.append([x(*AYA[m - 1]), _c(a5[0] if a5 else 0), _c(a6[0] if a6 else 0), _d(a5[0] if a5 else 0, a6[0] if a6 else 0), _c(a5[1] if a5 else 0), _c(a6[1] if a6 else 0),
-                 _d(a5[1] if a5 else 0, a6[1] if a6 else 0), _ctr(a5), _ctr(a6), _sira(a5), _sira(a6)])
-T_AY = tablo([th("Ay", "Month", "Takvim ayı; 2025 Ocak - Mayıs Search Console'un saklama süresi dışında kaldığı için boştur, 2026 Ekim - Aralık henüz gelmemiştir.", "Calendar month; January - May 2025 is outside Search Console's retention period and October - December 2026 has not yet come."),
-              th("Click 2025", "Clicks 2025", "Ayın organik tıkı, 2025.", "Organic clicks in the month, 2025.", True), th("Click 2026", "Clicks 2026", "Ayın organik tıkı, 2026; Eylül'ün son günleri Search Console ön verisidir.", "Organic clicks in the month, 2026; the last days of September are Search Console preliminary data.", True),
-              th("YoY", "YoY", "2026 tıkının 2025'in aynı ayına göre değişimi.", "Change of 2026 clicks against the same month of 2025.", True),
-              th("Gösterim 2025", "Impressions 2025", "Ayın gösterimi, 2025.", "Impressions in the month, 2025.", True), th("Gösterim 2026", "Impressions 2026", "Ayın gösterimi, 2026.", "Impressions in the month, 2026.", True),
-              th("Gösterim YoY", "Impressions YoY", "2026 gösteriminin 2025'in aynı ayına göre değişimi.", "Change of 2026 impressions against the same month of 2025.", True),
-              th("CTR 2025", "CTR 2025", "Tık / gösterim, 2025.", "Clicks / impressions, 2025.", True), th("CTR 2026", "CTR 2026", "Tık / gösterim, 2026.", "Clicks / impressions, 2026.", True),
-              th("Ort. sıra 2025", "Avg. position 2025", "Gösterimle ağırlıklı ortalama Google sırası, 2025.", "Impression-weighted average Google position, 2025.", True), th("Ort. sıra 2026", "Avg. position 2026", "Gösterimle ağırlıklı ortalama Google sırası, 2026.", "Impression-weighted average Google position, 2026.", True)], _AYS, "dar")
-_yy = {m: (AY["2026-" + m][0] / AY["2025-" + m][0] - 1) * 100 for m in HE}
-_yi = {m: (AY["2026-" + m][1] / AY["2025-" + m][1] - 1) * 100 for m in HE}
-INS_AY = insight("Search Console'un sakladığı dönemde iki yılın kıyaslanabildiği Haziran - Eylül aylarında organik tık %s, gösterim %s değişmiştir. Haziran'da tık %s artarken Temmuz'da yatay (%s) seyretmiş, Ağustos (%s) ve Eylül'de (%s) gerilemiştir; aynı aylarda gösterim Ağustos'ta %s, Eylül'de %s daralmıştır. Gösterimdeki daralma tıktan daha belirgindir; kategori talebindeki gerileme (Bölüm [[b:talep]]) ve blog sayfalarında yapay zeka özelliklerinin artan payı (Bölüm [[b:yapayzeka]]) bu dönemle ilişkilendirilebilir."
-                 % (yz(he_c), yz(he_i), yz(_yy["06"]), yz(_yy["07"]), yz(_yy["08"]), yz(_yy["09"]), yz(_yi["08"]), yz(_yi["09"])),
-                 "In June - September, the months that can be compared across the two years within Search Console's retention period, organic clicks changed %s and impressions %s. Clicks rose %s in June, were flat in July (%s) and declined in August (%s) and September (%s); in the same months impressions contracted %s in August and %s in September. The contraction is clearer in impressions than in clicks; the decline in category demand (Section [[b:talep]]) and the growing share of AI features on blog pages (Section [[b:yapayzeka]]) can be associated with this period."
-                 % (yz(he_c), yz(he_i), yz(_yy["06"]), yz(_yy["07"]), yz(_yy["08"]), yz(_yy["09"]), yz(_yi["08"]), yz(_yi["09"])), "D2")
+T_AY = (_yatay("Click", "Clicks", "Aylık organik tık; 2025 Ocak - Mayıs Search Console aylık dışa aktarımından, diğer aylar Search Console API'den. Değişim aynı ayın 2025'e göre yüzde değişimidir.", "Monthly organic clicks; January - May 2025 from the Search Console monthly export, other months from the Search Console API. Change is the percentage change against the same month of 2025.", 0, _kh, _kh, "oran")
+        + _yatay("Gösterim", "Impressions", "Aylık gösterim; kaynak ve değişim tanımı Click tablosuyla aynıdır.", "Monthly impressions; source and change definition as in the Clicks table.", 1, _kh, _kh, "oran")
+        + _yatay("CTR", "CTR", "Tık / gösterim; Değişim satırı 2026 ile 2025 arasındaki yüzde puan farkıdır (ör. +0,40 = 0,40 puan artış).", "Clicks / impressions; the Change row is the difference in percentage points between 2026 and 2025 (e.g. +0.40 = up 0.40 points).", 2, _pct2, _pct2, "puan")
+        + _yatay("Ort. sıra", "Avg. position", "Gösterimle ağırlıklı ortalama Google sırası; 2025 Ocak - Mayıs için dışa aktarımda sıra bulunmamaktadır. Değişim sıra farkıdır, eksi değer daha iyi sıradır; renk düşük sırayı yeşil gösterir.", "Impression-weighted average Google position; the export has no position for January - May 2025. Change is the difference in position, a negative value is a better position; colour shows lower positions in green.", 3, lambda v: _sira_b(v), lambda v: _sira_b(v), "sira", ters=True))
+_OE = lambda y, i_: sum(AY["%d-%02d" % (y, m)][i_] for m in range(1, 10))
+oe_c = (_OE(2026, 0) / _OE(2025, 0) - 1) * 100; oe_i = (_OE(2026, 1) / _OE(2025, 1) - 1) * 100
+_yy = {"%02d" % m: (AY["2026-%02d" % m][0] / AY["2025-%02d" % m][0] - 1) * 100 for m in range(1, 10)}
+_yi = {"%02d" % m: (AY["2026-%02d" % m][1] / AY["2025-%02d" % m][1] - 1) * 100 for m in range(1, 10)}
+_GS = G2["genai_site_pay"]
+INS_AY = insight("Ocak - Eylül 2026'da organik tık 2025'in aynı aylarına göre %s, gösterim %s değişmiştir. Tık Şubat - Nisan'da artmış (Mart %s, Nisan %s), Mayıs'ta (%s) ve Ağustos - Eylül'de (%s, %s) gerilemiştir; Haziran'daki artış (%s) 2025 Haziran'ının yılın en düşük aylarından biri olmasıyla birliktedir. Gösterimdeki daralma Temmuz'dan itibaren derinleşmiş, Eylül'de %s'e ulaşmıştır. Kategori talebindeki gerileme (Bölüm [[b:talep]]) ve Google yapay zeka özelliklerinin site gösterimindeki payının Mayıs'ta %s iken Eylül'de %s'e çıkması (Bölüm [[b:yapayzeka]]) bu dönemle ilişkilendirilebilir."
+                 % (yz(oe_c), yz(oe_i), yz(_yy["03"]), yz(_yy["04"]), yz(_yy["05"]), yz(_yy["08"]), yz(_yy["09"]), yz(_yy["06"]), yz(_yi["09"]), yzd(100 * _GS[0][2] / _GS[0][3]), yzd(100 * _GS[-1][2] / _GS[-1][3])),
+                 "In January - September 2026, organic clicks changed %s and impressions %s against the same months of 2025. Clicks rose in February - April (March %s, April %s) and declined in May (%s) and August - September (%s, %s); the rise in June (%s) comes with June 2025 being one of the lowest months of the year. The contraction in impressions deepened from July and reached %s in September. The decline in category demand (Section [[b:talep]]) and the share of Google AI features in site impressions rising from %s in May to %s in September (Section [[b:yapayzeka]]) can be associated with this period."
+                 % (yz(oe_c), yz(oe_i), yz(_yy["03"]), yz(_yy["04"]), yz(_yy["05"]), yz(_yy["08"]), yz(_yy["09"]), yz(_yy["06"]), yz(_yi["09"]), yzd(100 * _GS[0][2] / _GS[0][3]), yzd(100 * _GS[-1][2] / _GS[-1][3])), "D2", "D44")
 
 # ---------------------------------------------------------------- 2 · sayfa türü (Oca - Eyl 2026), alt kırılım hover
 tur_en = {"kategori": "Category pages", "urun": "Product pages", "eski-online": "Old online.vitra.com.tr addresses", "anasayfa": "Home page", "icerik": "Content and inspiration (blog)", "diger": "Other", "servis-bayi": "Service and dealer", "koleksiyon": "Collection pages", "kurumsal": "Corporate", "katalog": "Catalogue", "urun-teknik": "Product technical sheets"}
@@ -164,12 +225,15 @@ tbl3 = tablo([th("Sayfa adresi", "Page address", "Sayfa adresi; bağlantı canl�
 # ---------------------------------------------------------------- 5 · blog (İlham Veren Fikirler)
 BA = G2["blog_ay"]; SAS = G2["site_ay_sayfa"]
 def _bl(y, i): return [(BA.get("%d-%02d" % (y, m)) or [None, None])[i] for m in range(1, 13)]
-G_BLOG = sekmeler([("Click", "Clicks", cizgi([("2025", YRENK["2025"], _bl(2025, 0)), ("2026", YRENK["2026"], _bl(2026, 0))],
-                                         y_etiket=x("Blog sayfalarının aylık organik tıkı · /ilham-veren-fikirler/, tüm alt alan adları, 2025 ve 2026 üst üste", "Monthly organic clicks of blog pages · /ilham-veren-fikirler/, all subdomains, 2025 and 2026 overlaid"),
-                                         aylar=AD, x_etiket=AD, kalin={1: 3.2})),
-                   ("Gösterim", "Impressions", cizgi([("2025", YRENK["2025"], _bl(2025, 1)), ("2026", YRENK["2026"], _bl(2026, 1))],
-                                         y_etiket=x("Blog sayfalarının aylık gösterimi · /ilham-veren-fikirler/, 2025 ve 2026 üst üste", "Monthly impressions of blog pages · /ilham-veren-fikirler/, 2025 and 2026 overlaid"),
-                                         aylar=AD, x_etiket=AD, kalin={1: 3.2}))], "gtabs")
+def _blog_cubuk(i, ad_tr, ad_en, et_tr, et_en):
+    return _kombo2(AD, [{"ad": "2025", "renk": YRENK["2025"], "deger": _bl(2025, i), "tip": "cubuk", "bicim": _fk2},
+                        {"ad": "2026", "renk": YRENK["2026"], "deger": _bl(2026, i), "tip": "cubuk", "bicim": _fk2, "eksen_ad": x(ad_tr, ad_en)}], cap=x(et_tr, et_en))
+_EBC = ("Blog sayfalarının aylık organik tıkı · /ilham-veren-fikirler/, tüm alt alan adları, 2025 ve 2026 üst üste", "Monthly organic clicks of blog pages · /ilham-veren-fikirler/, all subdomains, 2025 and 2026 overlaid")
+_EBG = ("Blog sayfalarının aylık gösterimi · /ilham-veren-fikirler/, 2025 ve 2026 üst üste", "Monthly impressions of blog pages · /ilham-veren-fikirler/, 2025 and 2026 overlaid")
+G_BLOG = sekmeler([("Click", "Clicks", _cift(cizgi([("2025", YRENK["2025"], _bl(2025, 0)), ("2026", YRENK["2026"], _bl(2026, 0))], y_etiket=x(*_EBC), aylar=AD, x_etiket=AD, kalin={1: 3.2}),
+                                          _blog_cubuk(0, "Click", "Clicks", *_EBC))),
+                   ("Gösterim", "Impressions", _cift(cizgi([("2025", YRENK["2025"], _bl(2025, 1)), ("2026", YRENK["2026"], _bl(2026, 1))], y_etiket=x(*_EBG), aylar=AD, x_etiket=AD, kalin={1: 3.2}),
+                                          _blog_cubuk(1, "Gösterim", "Impressions", *_EBG)))], "gtabs")
 b12c = sum(BA[m][0] for m in _G12.Y12); b12i = sum(BA[m][1] for m in _G12.Y12); s12 = sum(SAS[m] for m in _G12.Y12)
 bc25, bc26 = sum(BA["2025-" + m][0] for m in HE), sum(BA["2026-" + m][0] for m in HE); bi25, bi26 = sum(BA["2025-" + m][1] for m in HE), sum(BA["2026-" + m][1] for m in HE)
 B26, B25 = G2["blog_hazeyl"]["2026"], G2["blog_hazeyl"]["2025"]
@@ -256,7 +320,7 @@ HTML = """
    "Search Console data shows the monthly trend of the traffic vitra.com.tr receives from Google and which page types and categories it lands on. Data comes from the domain-level property (sc-domain:vitra.com.tr); all subdomains are covered as a single total. Totals, blog, device and country breakdowns cover 1 October 2025 - 30 September 2026 (12 months). As online.vitra.com.tr addresses moved to www.vitra.com.tr in December 2025, page types, categories and the pages with most clicks are given with 1 January - 30 September 2026 data."),
  kpi_kart(k(y12c), "Organik tık · %s (12 ay); gösterim %s" % (D12[0], k(y12i)), "Organic clicks · %s (12 months); impressions %s" % (D12[1], k(y12i).replace(",", "."))),
  kpi_kart(yzd(100 * y12c / y12i), "Ortalama CTR · %s" % D12[0], "Average CTR · %s" % D12[1]),
- kpi_kart(yz(he_c), "Organik tık değişimi · Haz-Eyl 2026 / Haz-Eyl 2025; gösterim %s" % _isr(he_i), "Organic click change · Jun-Sep 2026 / Jun-Sep 2025; impressions %s" % _isr_en(he_i), "dn" if he_c < 0 else ""),
+ kpi_kart(yz(oe_c), "Organik tık değişimi · Oca-Eyl 2026 / Oca-Eyl 2025; gösterim %s" % _isr(oe_i), "Organic click change · Jan-Sep 2026 / Jan-Sep 2025; impressions %s" % _isr_en(oe_i), "dn" if oe_c < 0 else ""),
  kpi_kart(yzd(mob), "Mobil tık payı · %s; gösterim payı %s" % (D12[0], yzd(mob_i)), "Mobile click share · %s; impression share %s" % (D12[1], _pay_en(mob_i))),
  x("Aylık organik performans: 2025 ve 2026", "Monthly organic performance: 2025 and 2026"), G_AY, T_AY, INS_AY,
  x("Trafik hangi sayfa türlerine geliyor? · Oca-Eyl 2026", "Which page types does the traffic land on? · Jan-Sep 2026"), HALKA_TUR + tbl, INS_TUR,
