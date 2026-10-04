@@ -1,0 +1,2362 @@
+{
+ "tarih": "2026-10-04",
+ "kelimeler": [
+  {
+   "kw": "klozet",
+   "grup": "A",
+   "tema": "Vitrifiyeler",
+   "alt": "Klozetler",
+   "hacim": 50417
+  },
+  {
+   "kw": "klozet fiyatları",
+   "grup": "A",
+   "tema": "Vitrifiyeler",
+   "alt": "Klozetler",
+   "hacim": 66125
+  },
+  {
+   "kw": "asma klozet",
+   "grup": "A",
+   "tema": "Vitrifiyeler",
+   "alt": "Klozetler",
+   "hacim": 6975
+  },
+  {
+   "kw": "akıllı klozet",
+   "grup": "A",
+   "tema": "Vitrifiyeler",
+   "alt": "Klozetler",
+   "hacim": 2583
+  },
+  {
+   "kw": "klozet kapağı",
+   "grup": "A",
+   "tema": "Vitrifiyeler",
+   "alt": "Klozet Kapakları",
+   "hacim": 38167
+  },
+  {
+   "kw": "klozet iç takımı",
+   "grup": "A",
+   "tema": "Vitrifiyeler",
+   "alt": "Klozetler",
+   "hacim": 9967
+  },
+  {
+   "kw": "gömme rezervuar",
+   "grup": "A",
+   "tema": "Rezervuarlar",
+   "alt": "Gömme Rezervuarlar",
+   "hacim": 15625
+  },
+  {
+   "kw": "gömme rezervuar iç takımı",
+   "grup": "A",
+   "tema": "Rezervuarlar",
+   "alt": "Gömme Rezervuarlar",
+   "hacim": 4650
+  },
+  {
+   "kw": "lavabo",
+   "grup": "A",
+   "tema": "Vitrifiyeler",
+   "alt": "Lavabolar",
+   "hacim": 55483
+  },
+  {
+   "kw": "çanak lavabo",
+   "grup": "A",
+   "tema": "Vitrifiyeler",
+   "alt": "Lavabolar",
+   "hacim": 6975
+  },
+  {
+   "kw": "lavabo modelleri",
+   "grup": "A",
+   "tema": "Vitrifiyeler",
+   "alt": "Lavabolar",
+   "hacim": 8558
+  },
+  {
+   "kw": "pisuvar",
+   "grup": "A",
+   "tema": "Vitrifiyeler",
+   "alt": "Pisuvarlar",
+   "hacim": 10817
+  },
+  {
+   "kw": "bide",
+   "grup": "A",
+   "tema": "Vitrifiyeler",
+   "alt": "Bideler",
+   "hacim": 12542
+  },
+  {
+   "kw": "tuvalet taşı",
+   "grup": "A",
+   "tema": "Vitrifiyeler",
+   "alt": "Klozetler",
+   "hacim": 9183
+  },
+  {
+   "kw": "kanalsız klozet",
+   "grup": "A",
+   "tema": "Vitrifiyeler",
+   "alt": "Klozetler",
+   "hacim": 2025
+  },
+  {
+   "kw": "klozet takımı",
+   "grup": "A",
+   "tema": "Vitrifiyeler",
+   "alt": "Klozetler",
+   "hacim": 13000
+  },
+  {
+   "kw": "banyo dolabı",
+   "grup": "A",
+   "tema": "Banyo Mobilyaları",
+   "alt": "Banyo Dolapları",
+   "hacim": 98625
+  },
+  {
+   "kw": "banyo dolabı modelleri",
+   "grup": "A",
+   "tema": "Banyo Mobilyaları",
+   "alt": "Banyo Dolapları",
+   "hacim": 36183
+  },
+  {
+   "kw": "lavabo dolabı",
+   "grup": "A",
+   "tema": "Banyo Mobilyaları",
+   "alt": "Lavabo Dolapları",
+   "hacim": 8725
+  },
+  {
+   "kw": "lavabolu banyo dolabı",
+   "grup": "A",
+   "tema": "Banyo Mobilyaları",
+   "alt": "Lavabo Dolapları",
+   "hacim": 6625
+  },
+  {
+   "kw": "aynalı banyo dolabı",
+   "grup": "A",
+   "tema": "Banyo Mobilyaları",
+   "alt": "Banyo Aynaları",
+   "hacim": 5167
+  },
+  {
+   "kw": "banyo aynası",
+   "grup": "A",
+   "tema": "Banyo Mobilyaları",
+   "alt": "Banyo Aynaları",
+   "hacim": 10267
+  },
+  {
+   "kw": "ledli ayna",
+   "grup": "A",
+   "tema": "Banyo Mobilyaları",
+   "alt": "Banyo Aynaları",
+   "hacim": 5000
+  },
+  {
+   "kw": "çamaşır makinesi dolabı",
+   "grup": "A",
+   "tema": "Banyo Mobilyaları",
+   "alt": "Banyo Dolapları",
+   "hacim": 33450
+  },
+  {
+   "kw": "kurutma makinesi dolabı",
+   "grup": "A",
+   "tema": "Banyo Mobilyaları",
+   "alt": "Banyo Dolapları",
+   "hacim": 11200
+  },
+  {
+   "kw": "banyo tezgahı",
+   "grup": "A",
+   "tema": "Banyo Mobilyaları",
+   "alt": "Banyo Tezgahları",
+   "hacim": 1775
+  },
+  {
+   "kw": "suya dayanıklı banyo dolabı",
+   "grup": "A",
+   "tema": "Banyo Mobilyaları",
+   "alt": "Banyo Dolapları",
+   "hacim": 3027
+  },
+  {
+   "kw": "80 cm banyo dolabı",
+   "grup": "A",
+   "tema": "Banyo Mobilyaları",
+   "alt": "Banyo Dolapları",
+   "hacim": 2192
+  },
+  {
+   "kw": "banyo rafı",
+   "grup": "A",
+   "tema": "Banyo Mobilyaları",
+   "alt": "Banyo Mobilya Tamamlayıcıları",
+   "hacim": 10708
+  },
+  {
+   "kw": "dolap kulpu",
+   "grup": "A",
+   "tema": "Banyo Mobilyaları",
+   "alt": "Banyo Mobilya Tamamlayıcıları",
+   "hacim": 24242
+  },
+  {
+   "kw": "banyo bataryası",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Banyo Bataryaları",
+   "hacim": 39267
+  },
+  {
+   "kw": "lavabo bataryası",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Lavabo Bataryaları",
+   "hacim": 23833
+  },
+  {
+   "kw": "eviye bataryası",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Eviye Bataryaları",
+   "hacim": 1700
+  },
+  {
+   "kw": "termostatik batarya",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Banyo Bataryaları",
+   "hacim": 584
+  },
+  {
+   "kw": "ankastre batarya",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Banyo Bataryaları",
+   "hacim": 712
+  },
+  {
+   "kw": "taharet musluğu",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Musluk ve Ara Musluklar",
+   "hacim": 37417
+  },
+  {
+   "kw": "duş seti",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Duş Setleri",
+   "hacim": 18850
+  },
+  {
+   "kw": "duş başlığı",
+   "grup": "A",
+   "tema": "Duşlar",
+   "alt": "Duş Başlıkları",
+   "hacim": 42133
+  },
+  {
+   "kw": "robot duş seti",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Duş Setleri",
+   "hacim": 4983
+  },
+  {
+   "kw": "ara musluk",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Armatür Tamamlayıcı Ürünleri",
+   "hacim": 3933
+  },
+  {
+   "kw": "sifon",
+   "grup": "A",
+   "tema": "Rezervuarlar",
+   "alt": "Gömme Rezervuarlar",
+   "hacim": 5925
+  },
+  {
+   "kw": "kartuş",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": null,
+   "hacim": 12042
+  },
+  {
+   "kw": "musluk başlığı",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Armatür Tamamlayıcı Ürünleri",
+   "hacim": 13450
+  },
+  {
+   "kw": "duşakabin",
+   "grup": "A",
+   "tema": "Yıkanma Alanları",
+   "alt": "Duşakabin",
+   "hacim": 95375
+  },
+  {
+   "kw": "duşakabin fiyatları",
+   "grup": "A",
+   "tema": "Yıkanma Alanları",
+   "alt": "Duşakabin",
+   "hacim": 56833
+  },
+  {
+   "kw": "küvet",
+   "grup": "A",
+   "tema": "Yıkanma Alanları",
+   "alt": "Küvetler",
+   "hacim": 13225
+  },
+  {
+   "kw": "jakuzi",
+   "grup": "A",
+   "tema": "Yıkanma Alanları",
+   "alt": "Küvetler",
+   "hacim": 28967
+  },
+  {
+   "kw": "duş teknesi",
+   "grup": "A",
+   "tema": "Yıkanma Alanları",
+   "alt": "Duş Tekneleri",
+   "hacim": 5800
+  },
+  {
+   "kw": "duş kanalı",
+   "grup": "A",
+   "tema": "Yıkanma Alanları",
+   "alt": "Duş Kanalları",
+   "hacim": 1030
+  },
+  {
+   "kw": "klozet adaptörü",
+   "grup": "A",
+   "tema": "Vitrifiyeler",
+   "alt": "Klozetler",
+   "hacim": 1550
+  },
+  {
+   "kw": "engelli klozet",
+   "grup": "A",
+   "tema": "Vitrifiyeler",
+   "alt": "Klozetler",
+   "hacim": 1575
+  },
+  {
+   "kw": "tutunma barı",
+   "grup": "A",
+   "tema": "Banyo Aksesuarları",
+   "alt": "Diğer Banyo Aksesuarları",
+   "hacim": 890
+  },
+  {
+   "kw": "yer süzgeci",
+   "grup": "A",
+   "tema": "Yıkanma Alanları",
+   "alt": "Duş Kanalları",
+   "hacim": 1750
+  },
+  {
+   "kw": "taharet aparatı",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Armatür Tamamlayıcı Ürünleri",
+   "hacim": 111
+  },
+  {
+   "kw": "ısıtmalı klozet kapağı",
+   "grup": "A",
+   "tema": "Vitrifiyeler",
+   "alt": "Klozet Kapakları",
+   "hacim": 525
+  },
+  {
+   "kw": "şamandıra",
+   "grup": "A",
+   "tema": "Vitrifiyeler",
+   "alt": null,
+   "hacim": 9808
+  },
+  {
+   "kw": "klozet kapağı menteşesi",
+   "grup": "A",
+   "tema": "Vitrifiyeler",
+   "alt": "Klozet Kapakları",
+   "hacim": 4483
+  },
+  {
+   "kw": "banyo tadilatı",
+   "grup": "A",
+   "tema": "Hizmet ve ilham",
+   "alt": null,
+   "hacim": 1933
+  },
+  {
+   "kw": "banyo tadilat fiyatları",
+   "grup": "A",
+   "tema": "Hizmet ve ilham",
+   "alt": null,
+   "hacim": 484
+  },
+  {
+   "kw": "banyo yenileme",
+   "grup": "A",
+   "tema": "Hizmet ve ilham",
+   "alt": "Banyo Mobilyaları",
+   "hacim": 1867
+  },
+  {
+   "kw": "banyo tasarım",
+   "grup": "A",
+   "tema": "Hizmet ve ilham",
+   "alt": "Banyo Mobilyaları",
+   "hacim": 4500
+  },
+  {
+   "kw": "küçük banyo tasarımı",
+   "grup": "A",
+   "tema": "Hizmet ve ilham",
+   "alt": null,
+   "hacim": 1792
+  },
+  {
+   "kw": "banyo modelleri",
+   "grup": "A",
+   "tema": "Hizmet ve ilham",
+   "alt": "Banyo Mobilyaları",
+   "hacim": 20283
+  },
+  {
+   "kw": "küçük banyo modelleri",
+   "grup": "A",
+   "tema": "Hizmet ve ilham",
+   "alt": "Banyo Mobilyaları",
+   "hacim": 2275
+  },
+  {
+   "kw": "banyo dekorasyonu",
+   "grup": "A",
+   "tema": "Hizmet ve ilham",
+   "alt": null,
+   "hacim": 6592
+  },
+  {
+   "kw": "banyo seti",
+   "grup": "A",
+   "tema": "Hizmet ve ilham",
+   "alt": "Banyo Aksesuar Setleri",
+   "hacim": 23017
+  },
+  {
+   "kw": "komple banyo",
+   "grup": "A",
+   "tema": "Hizmet ve ilham",
+   "alt": null,
+   "hacim": 17
+  },
+  {
+   "kw": "klozet montajı",
+   "grup": "A",
+   "tema": "Hizmet ve ilham",
+   "alt": "Klozetler",
+   "hacim": 1300
+  },
+  {
+   "kw": "klozet montaj ücreti",
+   "grup": "A",
+   "tema": "Hizmet ve ilham",
+   "alt": null,
+   "hacim": 76
+  },
+  {
+   "kw": "gömme rezervuar montajı",
+   "grup": "A",
+   "tema": "Hizmet ve ilham",
+   "alt": null,
+   "hacim": 1150
+  },
+  {
+   "kw": "fayans",
+   "grup": "A",
+   "tema": "Karo Seramik Ürünleri",
+   "alt": "Karo Seramik Ürünleri",
+   "hacim": 25058
+  },
+  {
+   "kw": "fayans fiyatları",
+   "grup": "A",
+   "tema": "Karo Seramik Ürünleri",
+   "alt": "Karo Seramik Ürünleri",
+   "hacim": 23425
+  },
+  {
+   "kw": "seramik",
+   "grup": "A",
+   "tema": "Karo Seramik Ürünleri",
+   "alt": "Karo Seramik Ürünleri",
+   "hacim": 31100
+  },
+  {
+   "kw": "porselen karo",
+   "grup": "A",
+   "tema": "Karo Seramik Ürünleri",
+   "alt": "Porselen Karolar",
+   "hacim": 540
+  },
+  {
+   "kw": "banyo fayans modelleri",
+   "grup": "A",
+   "tema": "Karo Seramik Ürünleri",
+   "alt": "Banyo Karo Seramikleri",
+   "hacim": 15725
+  },
+  {
+   "kw": "klozet ölçüleri",
+   "grup": "A",
+   "tema": "Soru ve karar",
+   "alt": "Klozetler",
+   "hacim": 3042
+  },
+  {
+   "kw": "banyo dolabı ölçüleri",
+   "grup": "A",
+   "tema": "Soru ve karar",
+   "alt": "Banyo Dolapları",
+   "hacim": 1225
+  },
+  {
+   "kw": "en iyi klozet markası",
+   "grup": "A",
+   "tema": "Soru ve karar",
+   "alt": null,
+   "hacim": 859
+  },
+  {
+   "kw": "hangi klozet alınmalı",
+   "grup": "A",
+   "tema": "Soru ve karar",
+   "alt": null,
+   "hacim": 17
+  },
+  {
+   "kw": "akıllı klozet nedir",
+   "grup": "A",
+   "tema": "Soru ve karar",
+   "alt": null,
+   "hacim": 58
+  },
+  {
+   "kw": "klozet su kaçırıyor",
+   "grup": "A",
+   "tema": "Soru ve karar",
+   "alt": null,
+   "hacim": 1690
+  },
+  {
+   "kw": "çamaşır ve kurutma makinesi dolabı",
+   "grup": "A",
+   "tema": "Banyo Mobilyaları",
+   "alt": "Banyo Dolapları",
+   "hacim": 10625
+  },
+  {
+   "kw": "duşakabin modelleri",
+   "grup": "A",
+   "tema": "Yıkanma Alanları",
+   "alt": "Duşakabin",
+   "hacim": 43500
+  },
+  {
+   "kw": "duşakabin tekeri",
+   "grup": "A",
+   "tema": "Yıkanma Alanları",
+   "alt": "Duşakabin",
+   "hacim": 9967
+  },
+  {
+   "kw": "duşakabin camı",
+   "grup": "A",
+   "tema": "Yıkanma Alanları",
+   "alt": "Duşakabin",
+   "hacim": 6750
+  },
+  {
+   "kw": "banyo duşakabin",
+   "grup": "A",
+   "tema": "Yıkanma Alanları",
+   "alt": "Duşakabin",
+   "hacim": 3192
+  },
+  {
+   "kw": "en ucuz duşakabin fiyatları",
+   "grup": "A",
+   "tema": "Yıkanma Alanları",
+   "alt": "Duşakabin",
+   "hacim": 2600
+  },
+  {
+   "kw": "siyah duşakabin",
+   "grup": "A",
+   "tema": "Yıkanma Alanları",
+   "alt": "Duşakabin",
+   "hacim": 2567
+  },
+  {
+   "kw": "banyo lavabo",
+   "grup": "A",
+   "tema": "Vitrifiyeler",
+   "alt": "Lavabolar",
+   "hacim": 12100
+  },
+  {
+   "kw": "banyo lavabo modelleri",
+   "grup": "A",
+   "tema": "Vitrifiyeler",
+   "alt": "Lavabolar",
+   "hacim": 8700
+  },
+  {
+   "kw": "hilton lavabo",
+   "grup": "A",
+   "tema": "Vitrifiyeler",
+   "alt": "Lavabolar",
+   "hacim": 8125
+  },
+  {
+   "kw": "ayak lavabosu",
+   "grup": "A",
+   "tema": "Vitrifiyeler",
+   "alt": "Lavabolar",
+   "hacim": 5900
+  },
+  {
+   "kw": "lavabo fiyat",
+   "grup": "A",
+   "tema": "Vitrifiyeler",
+   "alt": "Lavabolar",
+   "hacim": 6758
+  },
+  {
+   "kw": "mutfak bataryası",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Eviye Bataryaları",
+   "hacim": 36800
+  },
+  {
+   "kw": "mutfak musluğu",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Eviye Bataryaları",
+   "hacim": 12550
+  },
+  {
+   "kw": "mutfak batarya fiyatları",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Eviye Bataryaları",
+   "hacim": 7600
+  },
+  {
+   "kw": "arıtmalı mutfak bataryası",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Eviye Bataryaları",
+   "hacim": 5900
+  },
+  {
+   "kw": "evye batarya",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Eviye Bataryaları",
+   "hacim": 4267
+  },
+  {
+   "kw": "sıcak su musluğu",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Eviye Bataryaları",
+   "hacim": 3962
+  },
+  {
+   "kw": "mutfak çeşmeleri",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Eviye Bataryaları",
+   "hacim": 3550
+  },
+  {
+   "kw": "musluk",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Musluk ve Ara Musluklar",
+   "hacim": 22767
+  },
+  {
+   "kw": "taharet musluğu ucu",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Musluk ve Ara Musluklar",
+   "hacim": 5000
+  },
+  {
+   "kw": "klozet taharet musluğu",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Musluk ve Ara Musluklar",
+   "hacim": 4650
+  },
+  {
+   "kw": "musluk çeşitleri",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Musluk ve Ara Musluklar",
+   "hacim": 2608
+  },
+  {
+   "kw": "taharet musluğu seti",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Musluk ve Ara Musluklar",
+   "hacim": 1792
+  },
+  {
+   "kw": "taharet musluğu fiyatları",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Musluk ve Ara Musluklar",
+   "hacim": 1917
+  },
+  {
+   "kw": "musluk batarya",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Lavabo Bataryaları",
+   "hacim": 14125
+  },
+  {
+   "kw": "lavabo musluğu",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Lavabo Bataryaları",
+   "hacim": 6125
+  },
+  {
+   "kw": "banyo lavabo batarya",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Lavabo Bataryaları",
+   "hacim": 5500
+  },
+  {
+   "kw": "aç kapa musluk",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Lavabo Bataryaları",
+   "hacim": 3550
+  },
+  {
+   "kw": "lavabo bataryaları fiyatları",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Lavabo Bataryaları",
+   "hacim": 3308
+  },
+  {
+   "kw": "banyo batarya fiyatları",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Banyo Bataryaları",
+   "hacim": 8250
+  },
+  {
+   "kw": "banyo musluğu",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Banyo Bataryaları",
+   "hacim": 7650
+  },
+  {
+   "kw": "duş batarya",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Banyo Bataryaları",
+   "hacim": 6000
+  },
+  {
+   "kw": "jakuzi fiyatları",
+   "grup": "A",
+   "tema": "Yıkanma Alanları",
+   "alt": "Küvetler",
+   "hacim": 12367
+  },
+  {
+   "kw": "küvet fiyatları",
+   "grup": "A",
+   "tema": "Yıkanma Alanları",
+   "alt": "Küvetler",
+   "hacim": 5700
+  },
+  {
+   "kw": "banyo küvet",
+   "grup": "A",
+   "tema": "Yıkanma Alanları",
+   "alt": "Küvetler",
+   "hacim": 3133
+  },
+  {
+   "kw": "duş başlığı seti",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Duş Setleri",
+   "hacim": 21992
+  },
+  {
+   "kw": "banyo duş seti",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Duş Setleri",
+   "hacim": 6000
+  },
+  {
+   "kw": "ankastre duş seti",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Duş Setleri",
+   "hacim": 4133
+  },
+  {
+   "kw": "klozet kapağı fiyat",
+   "grup": "A",
+   "tema": "Vitrifiyeler",
+   "alt": "Klozet Kapakları",
+   "hacim": 6800
+  },
+  {
+   "kw": "tepe duş başlığı",
+   "grup": "A",
+   "tema": "Duşlar",
+   "alt": "Duş Başlıkları",
+   "hacim": 2850
+  },
+  {
+   "kw": "banyo fıskiye",
+   "grup": "A",
+   "tema": "Duşlar",
+   "alt": "Duş Başlıkları",
+   "hacim": 3092
+  },
+  {
+   "kw": "duş başlığı tutucu",
+   "grup": "A",
+   "tema": "Duşlar",
+   "alt": "Duş Başlıkları",
+   "hacim": 2483
+  },
+  {
+   "kw": "dolap kulp modelleri",
+   "grup": "A",
+   "tema": "Banyo Mobilyaları",
+   "alt": "Banyo Mobilya Tamamlayıcıları",
+   "hacim": 8125
+  },
+  {
+   "kw": "kulp modelleri",
+   "grup": "A",
+   "tema": "Banyo Mobilyaları",
+   "alt": "Banyo Mobilya Tamamlayıcıları",
+   "hacim": 5000
+  },
+  {
+   "kw": "porselen tezgah",
+   "grup": "A",
+   "tema": "Banyo Mobilyaları",
+   "alt": "Banyo Tezgahları",
+   "hacim": 17067
+  },
+  {
+   "kw": "tezgâh",
+   "grup": "A",
+   "tema": "Banyo Mobilyaları",
+   "alt": "Banyo Tezgahları",
+   "hacim": 11033
+  },
+  {
+   "kw": "mermer tezgah",
+   "grup": "A",
+   "tema": "Banyo Mobilyaları",
+   "alt": "Banyo Tezgahları",
+   "hacim": 9933
+  },
+  {
+   "kw": "banyo lavabo dolabı",
+   "grup": "A",
+   "tema": "Banyo Mobilyaları",
+   "alt": "Lavabo Dolapları",
+   "hacim": 7775
+  },
+  {
+   "kw": "lavabo alt dolabı",
+   "grup": "A",
+   "tema": "Banyo Mobilyaları",
+   "alt": "Lavabo Dolapları",
+   "hacim": 5717
+  },
+  {
+   "kw": "banyo ayna modelleri",
+   "grup": "A",
+   "tema": "Banyo Mobilyaları",
+   "alt": "Banyo Aynaları",
+   "hacim": 2742
+  },
+  {
+   "kw": "lavabo sifonu",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Armatür Tamamlayıcı Ürünleri",
+   "hacim": 5942
+  },
+  {
+   "kw": "rezervuar",
+   "grup": "A",
+   "tema": "Rezervuarlar",
+   "alt": "Gömme Rezervuarlar",
+   "hacim": 6725
+  },
+  {
+   "kw": "sıvı sabunluk",
+   "grup": "A",
+   "tema": "Banyo Aksesuarları",
+   "alt": "Sabunluklar",
+   "hacim": 18592
+  },
+  {
+   "kw": "sabunluk",
+   "grup": "A",
+   "tema": "Banyo Aksesuarları",
+   "alt": "Sabunluklar",
+   "hacim": 7150
+  },
+  {
+   "kw": "banyo sabunluk seti",
+   "grup": "A",
+   "tema": "Banyo Aksesuarları",
+   "alt": "Sabunluklar",
+   "hacim": 2275
+  },
+  {
+   "kw": "etajer",
+   "grup": "A",
+   "tema": "Banyo Aksesuarları",
+   "alt": "Diğer Banyo Aksesuarları",
+   "hacim": 8208
+  },
+  {
+   "kw": "etejer",
+   "grup": "A",
+   "tema": "Banyo Aksesuarları",
+   "alt": "Diğer Banyo Aksesuarları",
+   "hacim": 4150
+  },
+  {
+   "kw": "batarya",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Armatürler",
+   "hacim": 10450
+  },
+  {
+   "kw": "batarya musluk",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Armatürler",
+   "hacim": 8700
+  },
+  {
+   "kw": "çöp kovası",
+   "grup": "A",
+   "tema": "Banyo Aksesuarları",
+   "alt": "Banyo Çöp Kovaları",
+   "hacim": 21175
+  },
+  {
+   "kw": "banyo çöp kovaları",
+   "grup": "A",
+   "tema": "Banyo Aksesuarları",
+   "alt": "Banyo Çöp Kovaları",
+   "hacim": 4450
+  },
+  {
+   "kw": "banyo takımı",
+   "grup": "A",
+   "tema": "Banyo Aksesuarları",
+   "alt": "Banyo Aksesuar Setleri",
+   "hacim": 4500
+  },
+  {
+   "kw": "tekneli duşakabin",
+   "grup": "A",
+   "tema": "Yıkanma Alanları",
+   "alt": "Duş Tekneleri",
+   "hacim": 3867
+  },
+  {
+   "kw": "tuvalet kağıdı askılığı",
+   "grup": "A",
+   "tema": "Banyo Aksesuarları",
+   "alt": "Tuvalet Kağıtlıkları",
+   "hacim": 5417
+  },
+  {
+   "kw": "tuvalet fırçası",
+   "grup": "A",
+   "tema": "Banyo Aksesuarları",
+   "alt": "Tuvalet Fırçaları",
+   "hacim": 13575
+  },
+  {
+   "kw": "havluluk",
+   "grup": "A",
+   "tema": "Banyo Aksesuarları",
+   "alt": "Havluluklar",
+   "hacim": 4150
+  },
+  {
+   "kw": "banyo aksesuarları",
+   "grup": "A",
+   "tema": "Banyo Aksesuarları",
+   "alt": "Banyo Aksesuarları",
+   "hacim": 11167
+  },
+  {
+   "kw": "banyo dolabı seti",
+   "grup": "A",
+   "tema": "Banyo Mobilyaları",
+   "alt": "Banyo Set Modülleri",
+   "hacim": 3250
+  },
+  {
+   "kw": "duş",
+   "grup": "A",
+   "tema": "Duşlar",
+   "alt": "Duşlar",
+   "hacim": 9158
+  },
+  {
+   "kw": "duşakabin rafı",
+   "grup": "A",
+   "tema": "Duşlar",
+   "alt": "Duş Tamamlayıcı Ürünleri",
+   "hacim": 2067
+  },
+  {
+   "kw": "banyo askılığı",
+   "grup": "A",
+   "tema": "Banyo Aksesuarları",
+   "alt": "Banyo Askıları",
+   "hacim": 2750
+  },
+  {
+   "kw": "sifon kapağı",
+   "grup": "A",
+   "tema": "Rezervuarlar",
+   "alt": "Rezervuar Kumanda Panelleri",
+   "hacim": 810
+  },
+  {
+   "kw": "duş paneli",
+   "grup": "A",
+   "tema": "Duşlar",
+   "alt": "Masajlı Duş Sistemleri",
+   "hacim": 1300
+  },
+  {
+   "kw": "vitrifiye",
+   "grup": "A",
+   "tema": "Vitrifiyeler",
+   "alt": "Vitrifiyeler",
+   "hacim": 2817
+  },
+  {
+   "kw": "diş fırçalık",
+   "grup": "A",
+   "tema": "Banyo Aksesuarları",
+   "alt": "Diş Fırçalıkları",
+   "hacim": 1892
+  },
+  {
+   "kw": "yer sifonu",
+   "grup": "A",
+   "tema": "Yıkanma Alanları",
+   "alt": "Yıkanma Alanı Tamamlayıcı Ürünler",
+   "hacim": 1125
+  },
+  {
+   "kw": "tepe duş",
+   "grup": "A",
+   "tema": "Duşlar",
+   "alt": "Ankastre Duş Yönlendiriciler",
+   "hacim": 646
+  },
+  {
+   "kw": "rezervuar takımı",
+   "grup": "A",
+   "tema": "Rezervuarlar",
+   "alt": "Gömme Rezervuar Setleri",
+   "hacim": 508
+  },
+  {
+   "kw": "klozet montaj aparatı",
+   "grup": "A",
+   "tema": "Rezervuarlar",
+   "alt": "Taşıyıcı Aparatlar",
+   "hacim": 868
+  },
+  {
+   "kw": "duş kolonları",
+   "grup": "A",
+   "tema": "Duşlar",
+   "alt": "Duş Kolonları",
+   "hacim": 613
+  },
+  {
+   "kw": "el duşu",
+   "grup": "A",
+   "tema": "Duşlar",
+   "alt": "El Duşu Takımları",
+   "hacim": 561
+  },
+  {
+   "kw": "seramik tabure",
+   "grup": "A",
+   "tema": "Vitrifiyeler",
+   "alt": "Vitrifiye Tamamlayıcıları",
+   "hacim": 615
+  },
+  {
+   "kw": "duş bataryası fiyatları",
+   "grup": "A",
+   "tema": "Duşlar",
+   "alt": "Bataryalı Duş Sistemleri",
+   "hacim": 519
+  },
+  {
+   "kw": "yıkanma",
+   "grup": "A",
+   "tema": "Yıkanma Alanları",
+   "alt": "Yıkanma Alanları",
+   "hacim": 121
+  },
+  {
+   "kw": "gömme rezervuar montaj ölçüleri",
+   "grup": "A",
+   "tema": "Rezervuarlar",
+   "alt": "Gömme Rezervuar Montaj Aksesuarları",
+   "hacim": 389
+  },
+  {
+   "kw": "duş sürgüsü",
+   "grup": "A",
+   "tema": "Duşlar",
+   "alt": "Sürgülü El Duşu Takımları",
+   "hacim": 82
+  },
+  {
+   "kw": "duş üniteleri",
+   "grup": "A",
+   "tema": "Yıkanma Alanları",
+   "alt": "Duş Üniteleri",
+   "hacim": 158
+  },
+  {
+   "kw": "bide musluğu",
+   "grup": "A",
+   "tema": "Armatürler",
+   "alt": "Bide Bataryaları",
+   "hacim": 160
+  },
+  {
+   "kw": "su arıtma cihazı",
+   "grup": "B",
+   "tema": "Su arıtma cihazı",
+   "alt": "aritma",
+   "hacim": 73458
+  },
+  {
+   "kw": "su arıtma",
+   "grup": "B",
+   "tema": "Su arıtma cihazı",
+   "alt": "aritma",
+   "hacim": 23833
+  },
+  {
+   "kw": "arıtma cihazı",
+   "grup": "B",
+   "tema": "Su arıtma cihazı",
+   "alt": "aritma",
+   "hacim": 17408
+  },
+  {
+   "kw": "su arıtma cihazlarının fiyatı",
+   "grup": "B",
+   "tema": "Su arıtma cihazı",
+   "alt": "aritma",
+   "hacim": 17050
+  },
+  {
+   "kw": "su arıtma filtresi",
+   "grup": "B",
+   "tema": "Su arıtma cihazı",
+   "alt": "aritma",
+   "hacim": 16175
+  },
+  {
+   "kw": "arıtma musluğu",
+   "grup": "B",
+   "tema": "Su arıtma cihazı",
+   "alt": "aritma",
+   "hacim": 11817
+  },
+  {
+   "kw": "termosifon",
+   "grup": "B",
+   "tema": "Şofben, termosifon ve su ısıtıcı",
+   "alt": "sicaksu",
+   "hacim": 61500
+  },
+  {
+   "kw": "şofben",
+   "grup": "B",
+   "tema": "Şofben, termosifon ve su ısıtıcı",
+   "alt": "sicaksu",
+   "hacim": 36075
+  },
+  {
+   "kw": "şofben fiyatları",
+   "grup": "B",
+   "tema": "Şofben, termosifon ve su ısıtıcı",
+   "alt": "sicaksu",
+   "hacim": 27267
+  },
+  {
+   "kw": "elektrik şofben",
+   "grup": "B",
+   "tema": "Şofben, termosifon ve su ısıtıcı",
+   "alt": "sicaksu",
+   "hacim": 24492
+  },
+  {
+   "kw": "termosifon fiyatları",
+   "grup": "B",
+   "tema": "Şofben, termosifon ve su ısıtıcı",
+   "alt": "sicaksu",
+   "hacim": 22033
+  },
+  {
+   "kw": "elektrik şofben fiyatı",
+   "grup": "B",
+   "tema": "Şofben, termosifon ve su ısıtıcı",
+   "alt": "sicaksu",
+   "hacim": 9892
+  },
+  {
+   "kw": "banyo paspası",
+   "grup": "B",
+   "tema": "Banyo tekstili (havlu, bornoz, paspas, perde)",
+   "alt": "tekstil",
+   "hacim": 26717
+  },
+  {
+   "kw": "bornoz",
+   "grup": "B",
+   "tema": "Banyo tekstili (havlu, bornoz, paspas, perde)",
+   "alt": "tekstil",
+   "hacim": 15500
+  },
+  {
+   "kw": "bornoz takımı",
+   "grup": "B",
+   "tema": "Banyo tekstili (havlu, bornoz, paspas, perde)",
+   "alt": "tekstil",
+   "hacim": 15225
+  },
+  {
+   "kw": "banyo havluları",
+   "grup": "B",
+   "tema": "Banyo tekstili (havlu, bornoz, paspas, perde)",
+   "alt": "tekstil",
+   "hacim": 8700
+  },
+  {
+   "kw": "banyo paspas takımı",
+   "grup": "B",
+   "tema": "Banyo tekstili (havlu, bornoz, paspas, perde)",
+   "alt": "tekstil",
+   "hacim": 7050
+  },
+  {
+   "kw": "çocuk bornoz",
+   "grup": "B",
+   "tema": "Banyo tekstili (havlu, bornoz, paspas, perde)",
+   "alt": "tekstil",
+   "hacim": 6358
+  },
+  {
+   "kw": "mutfak tezgahı",
+   "grup": "B",
+   "tema": "Mutfak tezgahı",
+   "alt": "mutfak_tezgah",
+   "hacim": 24242
+  },
+  {
+   "kw": "mutfak tezgahı fiyatları",
+   "grup": "B",
+   "tema": "Mutfak tezgahı",
+   "alt": "mutfak_tezgah",
+   "hacim": 12042
+  },
+  {
+   "kw": "mutfak tezgahı modelleri",
+   "grup": "B",
+   "tema": "Mutfak tezgahı",
+   "alt": "mutfak_tezgah",
+   "hacim": 11592
+  },
+  {
+   "kw": "granit tezgah",
+   "grup": "B",
+   "tema": "Mutfak tezgahı",
+   "alt": "mutfak_tezgah",
+   "hacim": 11075
+  },
+  {
+   "kw": "kuvars tezgah",
+   "grup": "B",
+   "tema": "Mutfak tezgahı",
+   "alt": "mutfak_tezgah",
+   "hacim": 7950
+  },
+  {
+   "kw": "mutfak tezgahı çeşitleri",
+   "grup": "B",
+   "tema": "Mutfak tezgahı",
+   "alt": "mutfak_tezgah",
+   "hacim": 5700
+  },
+  {
+   "kw": "evye",
+   "grup": "B",
+   "tema": "Mutfak evyesi (granit, çelik, akıllı)",
+   "alt": "evye",
+   "hacim": 18783
+  },
+  {
+   "kw": "evye modelleri",
+   "grup": "B",
+   "tema": "Mutfak evyesi (granit, çelik, akıllı)",
+   "alt": "evye",
+   "hacim": 14625
+  },
+  {
+   "kw": "mutfak evye",
+   "grup": "B",
+   "tema": "Mutfak evyesi (granit, çelik, akıllı)",
+   "alt": "evye",
+   "hacim": 12325
+  },
+  {
+   "kw": "mutfak lavaboları",
+   "grup": "B",
+   "tema": "Mutfak evyesi (granit, çelik, akıllı)",
+   "alt": "evye",
+   "hacim": 6400
+  },
+  {
+   "kw": "mutfak evye modelleri",
+   "grup": "B",
+   "tema": "Mutfak evyesi (granit, çelik, akıllı)",
+   "alt": "evye",
+   "hacim": 4983
+  },
+  {
+   "kw": "granit evye",
+   "grup": "B",
+   "tema": "Mutfak evyesi (granit, çelik, akıllı)",
+   "alt": "evye",
+   "hacim": 4667
+  },
+  {
+   "kw": "kirli sepet",
+   "grup": "B",
+   "tema": "Banyo düzenleme ve depolama",
+   "alt": "duzen",
+   "hacim": 33200
+  },
+  {
+   "kw": "çamaşır sepeti",
+   "grup": "B",
+   "tema": "Banyo düzenleme ve depolama",
+   "alt": "duzen",
+   "hacim": 21308
+  },
+  {
+   "kw": "kirli çamaşır sepeti",
+   "grup": "B",
+   "tema": "Banyo düzenleme ve depolama",
+   "alt": "duzen",
+   "hacim": 10150
+  },
+  {
+   "kw": "ecza dolabı",
+   "grup": "B",
+   "tema": "Banyo düzenleme ve depolama",
+   "alt": "duzen",
+   "hacim": 9850
+  },
+  {
+   "kw": "katlanır çamaşır sepeti",
+   "grup": "B",
+   "tema": "Banyo düzenleme ve depolama",
+   "alt": "duzen",
+   "hacim": 5217
+  },
+  {
+   "kw": "banyo taburesi",
+   "grup": "B",
+   "tema": "Banyo düzenleme ve depolama",
+   "alt": "duzen",
+   "hacim": 4567
+  },
+  {
+   "kw": "derz dolgu",
+   "grup": "B",
+   "tema": "Yapıştırıcı, derz ve su yalıtımı",
+   "alt": "yapi_kimya",
+   "hacim": 14675
+  },
+  {
+   "kw": "fayans yapıştırıcısı",
+   "grup": "B",
+   "tema": "Yapıştırıcı, derz ve su yalıtımı",
+   "alt": "yapi_kimya",
+   "hacim": 5900
+  },
+  {
+   "kw": "derz",
+   "grup": "B",
+   "tema": "Yapıştırıcı, derz ve su yalıtımı",
+   "alt": "yapi_kimya",
+   "hacim": 5067
+  },
+  {
+   "kw": "seramik yapıştırıcı",
+   "grup": "B",
+   "tema": "Yapıştırıcı, derz ve su yalıtımı",
+   "alt": "yapi_kimya",
+   "hacim": 4333
+  },
+  {
+   "kw": "hidrofor",
+   "grup": "B",
+   "tema": "Tesisat ekipmanı (hidrofor, basınç, kaçak)",
+   "alt": "tesisat",
+   "hacim": 27875
+  },
+  {
+   "kw": "hidrofor fiyatları",
+   "grup": "B",
+   "tema": "Tesisat ekipmanı (hidrofor, basınç, kaçak)",
+   "alt": "tesisat",
+   "hacim": 11442
+  },
+  {
+   "kw": "hidrofor pompası",
+   "grup": "B",
+   "tema": "Tesisat ekipmanı (hidrofor, basınç, kaçak)",
+   "alt": "tesisat",
+   "hacim": 8325
+  },
+  {
+   "kw": "basınç düşürücü",
+   "grup": "B",
+   "tema": "Tesisat ekipmanı (hidrofor, basınç, kaçak)",
+   "alt": "tesisat",
+   "hacim": 5500
+  },
+  {
+   "kw": "havlupan fiyatları",
+   "grup": "B",
+   "tema": "Havlupan ve banyo radyatörü",
+   "alt": "havlupan",
+   "hacim": 5983
+  },
+  {
+   "kw": "havlupan petek",
+   "grup": "B",
+   "tema": "Havlupan ve banyo radyatörü",
+   "alt": "havlupan",
+   "hacim": 2275
+  },
+  {
+   "kw": "elektrikli havlupan",
+   "grup": "B",
+   "tema": "Havlupan ve banyo radyatörü",
+   "alt": "havlupan",
+   "hacim": 1852
+  },
+  {
+   "kw": "fayans boyası",
+   "grup": "B",
+   "tema": "Alternatif duvar-zemin kaplama",
+   "alt": "kaplama",
+   "hacim": 25558
+  },
+  {
+   "kw": "fayans boyası fiyatları",
+   "grup": "B",
+   "tema": "Alternatif duvar-zemin kaplama",
+   "alt": "kaplama",
+   "hacim": 2850
+  },
+  {
+   "kw": "fayans üstü kaplama",
+   "grup": "B",
+   "tema": "Alternatif duvar-zemin kaplama",
+   "alt": "kaplama",
+   "hacim": 1992
+  },
+  {
+   "kw": "en iyi fayans boyası",
+   "grup": "B",
+   "tema": "Alternatif duvar-zemin kaplama",
+   "alt": "kaplama",
+   "hacim": 885
+  },
+  {
+   "kw": "bebek küvet",
+   "grup": "B",
+   "tema": "Çocuk ve bebek banyo ürünleri",
+   "alt": "cocuk",
+   "hacim": 7100
+  },
+  {
+   "kw": "cocuk klozet kapak",
+   "grup": "B",
+   "tema": "Çocuk ve bebek banyo ürünleri",
+   "alt": "cocuk",
+   "hacim": 4383
+  },
+  {
+   "kw": "cocuk klozet",
+   "grup": "B",
+   "tema": "Çocuk ve bebek banyo ürünleri",
+   "alt": "cocuk",
+   "hacim": 3225
+  },
+  {
+   "kw": "bebek yıkama küveti",
+   "grup": "B",
+   "tema": "Çocuk ve bebek banyo ürünleri",
+   "alt": "cocuk",
+   "hacim": 2317
+  },
+  {
+   "kw": "klozet yükseltici",
+   "grup": "B",
+   "tema": "Yaşlı ve engelli banyo ürünleri",
+   "alt": "engelli",
+   "hacim": 2792
+  },
+  {
+   "kw": "engelli tuvaleti",
+   "grup": "B",
+   "tema": "Yaşlı ve engelli banyo ürünleri",
+   "alt": "engelli",
+   "hacim": 1600
+  },
+  {
+   "kw": "engelli tutunma barı",
+   "grup": "B",
+   "tema": "Yaşlı ve engelli banyo ürünleri",
+   "alt": "engelli",
+   "hacim": 1300
+  },
+  {
+   "kw": "sauna",
+   "grup": "B",
+   "tema": "Sauna, buhar ve ev spası",
+   "alt": "wellness",
+   "hacim": 16017
+  },
+  {
+   "kw": "sauna sobası",
+   "grup": "B",
+   "tema": "Sauna, buhar ve ev spası",
+   "alt": "wellness",
+   "hacim": 1183
+  },
+  {
+   "kw": "buhar odası",
+   "grup": "B",
+   "tema": "Sauna, buhar ve ev spası",
+   "alt": "wellness",
+   "hacim": 1140
+  },
+  {
+   "kw": "dispenser peçetelik",
+   "grup": "B",
+   "tema": "Ticari ıslak hacim donanımı (dispenser, el kurutma)",
+   "alt": "ticari",
+   "hacim": 2817
+  },
+  {
+   "kw": "el kurutma makinesi",
+   "grup": "B",
+   "tema": "Ticari ıslak hacim donanımı (dispenser, el kurutma)",
+   "alt": "ticari",
+   "hacim": 2567
+  },
+  {
+   "kw": "sensörlü sabunluk",
+   "grup": "B",
+   "tema": "Ticari ıslak hacim donanımı (dispenser, el kurutma)",
+   "alt": "ticari",
+   "hacim": 1767
+  },
+  {
+   "kw": "çamaşır makinesi musluğu",
+   "grup": "B",
+   "tema": "Çamaşır makinesi musluğu",
+   "alt": "camasir_musluk",
+   "hacim": 5617
+  },
+  {
+   "kw": "çamaşır musluğu",
+   "grup": "B",
+   "tema": "Çamaşır makinesi musluğu",
+   "alt": "camasir_musluk",
+   "hacim": 893
+  },
+  {
+   "kw": "çamaşır makinesi musluğu 2 li",
+   "grup": "B",
+   "tema": "Çamaşır makinesi musluğu",
+   "alt": "camasir_musluk",
+   "hacim": 535
+  },
+  {
+   "kw": "bahçe musluğu",
+   "grup": "B",
+   "tema": "Bahçe, havuz ve dış mekan suyu",
+   "alt": "bahce",
+   "hacim": 2692
+  },
+  {
+   "kw": "bahçe duşu",
+   "grup": "B",
+   "tema": "Bahçe, havuz ve dış mekan suyu",
+   "alt": "bahce",
+   "hacim": 678
+  },
+  {
+   "kw": "çift çıkışlı bahçe musluğu",
+   "grup": "B",
+   "tema": "Bahçe, havuz ve dış mekan suyu",
+   "alt": "bahce",
+   "hacim": 618
+  },
+  {
+   "kw": "su yumuşatıcı cihaz",
+   "grup": "B",
+   "tema": "Su yumuşatma ve kireç önleme",
+   "alt": "yumusatma",
+   "hacim": 4283
+  },
+  {
+   "kw": "su yumuşatma",
+   "grup": "B",
+   "tema": "Su yumuşatma ve kireç önleme",
+   "alt": "yumusatma",
+   "hacim": 391
+  },
+  {
+   "kw": "hazır banyo dolabı",
+   "grup": "B",
+   "tema": "Prefabrik ve hazır banyo",
+   "alt": "prefabrik",
+   "hacim": 1775
+  },
+  {
+   "kw": "banyo kabini",
+   "grup": "B",
+   "tema": "Prefabrik ve hazır banyo",
+   "alt": "prefabrik",
+   "hacim": 671
+  },
+  {
+   "kw": "arıtmalı batarya",
+   "grup": "B",
+   "tema": "Arıtmalı ve filtreli batarya",
+   "alt": "aritma_bat",
+   "hacim": 2650
+  },
+  {
+   "kw": "arıtmalı musluk bataryası",
+   "grup": "B",
+   "tema": "Arıtmalı ve filtreli batarya",
+   "alt": "aritma_bat",
+   "hacim": 1090
+  },
+  {
+   "kw": "çöp öğütücü",
+   "grup": "B",
+   "tema": "Çöp öğütücü",
+   "alt": "cop_ogutucu",
+   "hacim": 1240
+  },
+  {
+   "kw": "çöp öğütme makinası",
+   "grup": "B",
+   "tema": "Çöp öğütücü",
+   "alt": "cop_ogutucu",
+   "hacim": 359
+  },
+  {
+   "kw": "banyo ısıtıcı",
+   "grup": "B",
+   "tema": "Banyo ısıtıcısı",
+   "alt": "banyo_isitici",
+   "hacim": 842
+  },
+  {
+   "kw": "elektrikli banyo ısıtıcı",
+   "grup": "B",
+   "tema": "Banyo ısıtıcısı",
+   "alt": "banyo_isitici",
+   "hacim": 210
+  },
+  {
+   "kw": "elektrikli klozet kapağı",
+   "grup": "B",
+   "tema": "Taharet aparatı ve bide kapağı",
+   "alt": "taharet_aparat",
+   "hacim": 124
+  },
+  {
+   "kw": "klozet taharet aparatı",
+   "grup": "B",
+   "tema": "Taharet aparatı ve bide kapağı",
+   "alt": "taharet_aparat",
+   "hacim": 66
+  },
+  {
+   "kw": "banyo tartısı",
+   "grup": "B",
+   "tema": "Banyo tartısı",
+   "alt": "tarti",
+   "hacim": 362
+  },
+  {
+   "kw": "banyo lambası",
+   "grup": "B",
+   "tema": "Banyo aydınlatması ve ışıklı ayna",
+   "alt": null,
+   "hacim": 3733
+  },
+  {
+   "kw": "vitra klozet",
+   "grup": "C",
+   "tema": "VitrA ve Artema",
+   "alt": "VitrA",
+   "hacim": 11367
+  },
+  {
+   "kw": "vitra gömme rezervuar",
+   "grup": "C",
+   "tema": "VitrA ve Artema",
+   "alt": "VitrA",
+   "hacim": 13000
+  },
+  {
+   "kw": "vitra klozet kapağı",
+   "grup": "C",
+   "tema": "VitrA ve Artema",
+   "alt": "VitrA",
+   "hacim": 4200
+  },
+  {
+   "kw": "vitra banyo dolabı",
+   "grup": "C",
+   "tema": "VitrA ve Artema",
+   "alt": "VitrA",
+   "hacim": 4817
+  },
+  {
+   "kw": "vitra gömme rezervuar iç takımı",
+   "grup": "C",
+   "tema": "VitrA ve Artema",
+   "alt": "VitrA",
+   "hacim": 3200
+  },
+  {
+   "kw": "vitra lavabo",
+   "grup": "C",
+   "tema": "VitrA ve Artema",
+   "alt": "VitrA",
+   "hacim": 3017
+  },
+  {
+   "kw": "vitra duş seti",
+   "grup": "C",
+   "tema": "VitrA ve Artema",
+   "alt": "VitrA",
+   "hacim": 2192
+  },
+  {
+   "kw": "vitra asma klozet",
+   "grup": "C",
+   "tema": "VitrA ve Artema",
+   "alt": "VitrA",
+   "hacim": 2108
+  },
+  {
+   "kw": "vitra gömme rezervuar seti",
+   "grup": "C",
+   "tema": "VitrA ve Artema",
+   "alt": "VitrA",
+   "hacim": 1958
+  },
+  {
+   "kw": "vitra rezervuar iç takımı",
+   "grup": "C",
+   "tema": "VitrA ve Artema",
+   "alt": "VitrA",
+   "hacim": 1150
+  },
+  {
+   "kw": "vitra mutfak bataryası",
+   "grup": "C",
+   "tema": "VitrA ve Artema",
+   "alt": "VitrA",
+   "hacim": 1200
+  },
+  {
+   "kw": "vitra ankastre duş seti",
+   "grup": "C",
+   "tema": "VitrA ve Artema",
+   "alt": "VitrA",
+   "hacim": 1325
+  },
+  {
+   "kw": "vitra çanak lavabo",
+   "grup": "C",
+   "tema": "VitrA ve Artema",
+   "alt": "VitrA",
+   "hacim": 995
+  },
+  {
+   "kw": "vitra s50 asma klozet",
+   "grup": "C",
+   "tema": "VitrA ve Artema",
+   "alt": "VitrA",
+   "hacim": 982
+  },
+  {
+   "kw": "vitra klozet iç takımı",
+   "grup": "C",
+   "tema": "VitrA ve Artema",
+   "alt": "VitrA",
+   "hacim": 965
+  },
+  {
+   "kw": "vitra batarya",
+   "grup": "C",
+   "tema": "VitrA ve Artema",
+   "alt": "VitrA",
+   "hacim": 950
+  },
+  {
+   "kw": "artema mutfak bataryası",
+   "grup": "C",
+   "tema": "VitrA ve Artema",
+   "alt": "Artema",
+   "hacim": 7475
+  },
+  {
+   "kw": "artema banyo bataryası",
+   "grup": "C",
+   "tema": "VitrA ve Artema",
+   "alt": "Artema",
+   "hacim": 5233
+  },
+  {
+   "kw": "artema duş seti",
+   "grup": "C",
+   "tema": "VitrA ve Artema",
+   "alt": "Artema",
+   "hacim": 3192
+  },
+  {
+   "kw": "artema duş başlığı",
+   "grup": "C",
+   "tema": "VitrA ve Artema",
+   "alt": "Artema",
+   "hacim": 1175
+  },
+  {
+   "kw": "artema ankastre duş seti",
+   "grup": "C",
+   "tema": "VitrA ve Artema",
+   "alt": "Artema",
+   "hacim": 910
+  },
+  {
+   "kw": "eca mutfak bataryası",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "E.C.A.",
+   "hacim": 8550
+  },
+  {
+   "kw": "eca batarya",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "E.C.A.",
+   "hacim": 4083
+  },
+  {
+   "kw": "eca duş seti",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "E.C.A.",
+   "hacim": 3308
+  },
+  {
+   "kw": "kale klozet kapağı",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "Kale",
+   "hacim": 2192
+  },
+  {
+   "kw": "kale klozet",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "Kale",
+   "hacim": 2150
+  },
+  {
+   "kw": "kale banyo dolabı",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "Kale",
+   "hacim": 2033
+  },
+  {
+   "kw": "serel gömme rezervuar",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "Serel",
+   "hacim": 3933
+  },
+  {
+   "kw": "serel klozet kapağı",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "Serel",
+   "hacim": 2483
+  },
+  {
+   "kw": "serel klozet",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "Serel",
+   "hacim": 2442
+  },
+  {
+   "kw": "creavit klozet",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "Creavit",
+   "hacim": 3800
+  },
+  {
+   "kw": "creavit klozet kapağı",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "Creavit",
+   "hacim": 2442
+  },
+  {
+   "kw": "creavit banyo dolabı",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "Creavit",
+   "hacim": 1500
+  },
+  {
+   "kw": "visam gömme rezervuar iç takımı",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "Visam",
+   "hacim": 3683
+  },
+  {
+   "kw": "visam gömme rezervuar",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "Visam",
+   "hacim": 3075
+  },
+  {
+   "kw": "visam rezervuar iç takım",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "Visam",
+   "hacim": 1250
+  },
+  {
+   "kw": "turkuaz klozet",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "Turkuaz",
+   "hacim": 2317
+  },
+  {
+   "kw": "turkuaz lavabo",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "Turkuaz",
+   "hacim": 960
+  },
+  {
+   "kw": "turkuaz bella klozet",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "Turkuaz",
+   "hacim": 765
+  },
+  {
+   "kw": "grohe duş seti",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "Grohe",
+   "hacim": 2833
+  },
+  {
+   "kw": "grohe mutfak bataryası",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "Grohe",
+   "hacim": 1750
+  },
+  {
+   "kw": "grohe gömme rezervuar",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "Grohe",
+   "hacim": 930
+  },
+  {
+   "kw": "geberit gömme rezervuar",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "Geberit",
+   "hacim": 3933
+  },
+  {
+   "kw": "geberit klozet",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "Geberit",
+   "hacim": 2042
+  },
+  {
+   "kw": "geberit gömme rezervuar iç takımı",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "Geberit",
+   "hacim": 578
+  },
+  {
+   "kw": "bien klozet",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "Bien",
+   "hacim": 1675
+  },
+  {
+   "kw": "bien klozet kapağı",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "Bien",
+   "hacim": 736
+  },
+  {
+   "kw": "bien gömme rezervuar",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "Bien",
+   "hacim": 535
+  },
+  {
+   "kw": "orka banyo dolabı",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "Orka",
+   "hacim": 5500
+  },
+  {
+   "kw": "orka lavabo",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "Orka",
+   "hacim": 164
+  },
+  {
+   "kw": "orka banyo dolabı 80 cm",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "Orka",
+   "hacim": 165
+  },
+  {
+   "kw": "bocchi klozet",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "Bocchi",
+   "hacim": 1500
+  },
+  {
+   "kw": "bocchi lavabo",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "Bocchi",
+   "hacim": 1225
+  },
+  {
+   "kw": "bocchi klozet kapağı",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "Bocchi",
+   "hacim": 633
+  },
+  {
+   "kw": "duravit klozet kapağı",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "Duravit",
+   "hacim": 1150
+  },
+  {
+   "kw": "duravit klozet",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "Duravit",
+   "hacim": 1015
+  },
+  {
+   "kw": "duravit lavabo",
+   "grup": "C",
+   "tema": "Rakip marka",
+   "alt": "Duravit",
+   "hacim": 474
+  },
+  {
+   "kw": "ikea banyo dolabı",
+   "grup": "C",
+   "tema": "Perakendeci adıyla",
+   "alt": "IKEA",
+   "hacim": 8792
+  },
+  {
+   "kw": "ikea lavabolu banyo dolabı",
+   "grup": "C",
+   "tema": "Perakendeci adıyla",
+   "alt": "IKEA",
+   "hacim": 1270
+  },
+  {
+   "kw": "koçtaş banyo dolabı",
+   "grup": "C",
+   "tema": "Perakendeci adıyla",
+   "alt": "Koçtaş",
+   "hacim": 14625
+  },
+  {
+   "kw": "koçtaş klozet",
+   "grup": "C",
+   "tema": "Perakendeci adıyla",
+   "alt": "Koçtaş",
+   "hacim": 2442
+  },
+  {
+   "kw": "vitra mı eca mı",
+   "grup": "C",
+   "tema": "Karşılaştırma ve marka seçimi",
+   "alt": null,
+   "hacim": 12
+  },
+  {
+   "kw": "vitra mı artema mı",
+   "grup": "C",
+   "tema": "Karşılaştırma ve marka seçimi",
+   "alt": null,
+   "hacim": 11
+  },
+  {
+   "kw": "kale mi vitra mı",
+   "grup": "C",
+   "tema": "Karşılaştırma ve marka seçimi",
+   "alt": null,
+   "hacim": 12
+  },
+  {
+   "kw": "vitra ve artema aynı mı",
+   "grup": "C",
+   "tema": "Karşılaştırma ve marka seçimi",
+   "alt": null,
+   "hacim": 22
+  },
+  {
+   "kw": "artema mı eca mı",
+   "grup": "C",
+   "tema": "Karşılaştırma ve marka seçimi",
+   "alt": null,
+   "hacim": 68
+  },
+  {
+   "kw": "en iyi asma klozet markası",
+   "grup": "C",
+   "tema": "Karşılaştırma ve marka seçimi",
+   "alt": null,
+   "hacim": 75
+  },
+  {
+   "kw": "en iyi klozet kapağı markası",
+   "grup": "C",
+   "tema": "Karşılaştırma ve marka seçimi",
+   "alt": null,
+   "hacim": 18
+  },
+  {
+   "kw": "en iyi banyo dolabı markaları",
+   "grup": "C",
+   "tema": "Karşılaştırma ve marka seçimi",
+   "alt": null,
+   "hacim": 105
+  },
+  {
+   "kw": "en iyi banyo batarya markası",
+   "grup": "C",
+   "tema": "Karşılaştırma ve marka seçimi",
+   "alt": null,
+   "hacim": 202
+  },
+  {
+   "kw": "en iyi musluk batarya markası",
+   "grup": "C",
+   "tema": "Karşılaştırma ve marka seçimi",
+   "alt": null,
+   "hacim": 388
+  },
+  {
+   "kw": "en iyi gömme rezervuar markaları",
+   "grup": "C",
+   "tema": "Karşılaştırma ve marka seçimi",
+   "alt": null,
+   "hacim": 88
+  },
+  {
+   "kw": "en iyi vitrifiye markaları",
+   "grup": "C",
+   "tema": "Karşılaştırma ve marka seçimi",
+   "alt": null,
+   "hacim": 39
+  },
+  {
+   "kw": "klozet markaları",
+   "grup": "C",
+   "tema": "Karşılaştırma ve marka seçimi",
+   "alt": null,
+   "hacim": 917
+  },
+  {
+   "kw": "kaliteli klozet markaları",
+   "grup": "C",
+   "tema": "Karşılaştırma ve marka seçimi",
+   "alt": null,
+   "hacim": 58
+  },
+  {
+   "kw": "banyo batarya markaları",
+   "grup": "C",
+   "tema": "Karşılaştırma ve marka seçimi",
+   "alt": null,
+   "hacim": 148
+  },
+  {
+   "kw": "banyo dolabı markaları",
+   "grup": "C",
+   "tema": "Karşılaştırma ve marka seçimi",
+   "alt": null,
+   "hacim": 262
+  },
+  {
+   "kw": "vitrifiye markaları",
+   "grup": "C",
+   "tema": "Karşılaştırma ve marka seçimi",
+   "alt": null,
+   "hacim": 231
+  },
+  {
+   "kw": "vitra artema yedek parça",
+   "grup": "C",
+   "tema": "Karşılaştırma ve marka seçimi",
+   "alt": null,
+   "hacim": 98
+  },
+  {
+   "kw": "vitra artema yetkili servis",
+   "grup": "C",
+   "tema": "Karşılaştırma ve marka seçimi",
+   "alt": null,
+   "hacim": 459
+  }
+ ],
+ "hacimsiz_cikan": [
+  "boy dolabı",
+  "gömme rezervuar mı dış rezervuar mı",
+  "vitra mı serel mi",
+  "vitra mı creavit mi",
+  "vitra mı geberit mi",
+  "vitra mı turkuaz mı",
+  "vitra mı duravit mi",
+  "grohe mi vitra mı",
+  "vitra ile artema arasındaki fark",
+  "artema mı grohe mi",
+  "eca mı creavit mi",
+  "serel mi creavit mi",
+  "en kaliteli vitrifiye markaları",
+  "hangi klozet markası iyi",
+  "kaliteli banyo dolabı markaları",
+  "türk vitrifiye markaları",
+  "artema türk malı mı"
+ ]
+}

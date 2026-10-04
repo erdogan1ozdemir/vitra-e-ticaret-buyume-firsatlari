@@ -1,3473 +1,33 @@
 {
  "tarih": "2026-10-04",
- "kaynak": "vitra.com.tr /search?q= (herkese açık arama sayfası)",
+ "kaynak": "vitra.com.tr /search?text= (arama kutusunda Enter sonrası açılan sonuç sayfası)",
  "sorgular": [
   {
-   "url": "https://www.vitra.com.tr/search?q=klozet",
+   "url": "https://www.vitra.com.tr/search?text=klozet",
    "sonuc": 370,
    "urunler": [
     {
-     "ad": "Klozet Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "2750.0",
-     "id": "ETIC_MTJ(KLOZET)"
-    },
-    {
-     "ad": "Akıllı Klozet Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "2212.5",
-     "id": "ETIC_MTJ(AKLOZET)"
-    },
-    {
-     "ad": "V-Fix Prime 8cm Asma Klozetler için Gömme Rezervuar",
-     "kategori": "Rezervuarlar/Gömme Rezervuarlar/Asma Klozetler için Gömme Rezervuarlar",
-     "fiyat": "5730.0",
-     "id": "768-1851-01"
-    },
-    {
-     "ad": "Sento Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "3557.0",
-     "id": "130-003R009"
-    },
-    {
-     "ad": "İç Takım",
-     "kategori": "Vitrifiyeler/Klozetler/Rezervuar ve Klozet İç Takımları",
-     "fiyat": "896.0",
-     "id": "330B1314"
-    },
-    {
-     "ad": "Sento Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "3228.0",
-     "id": "86-003R009"
-    },
-    {
-     "ad": "Universal Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "1720.0",
-     "id": "121-003-909"
-    },
-    {
-     "ad": "Sento Asma Klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "14767.0",
-     "id": "7748B003-0559"
-    },
-    {
-     "ad": "S50 Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "2612.0",
-     "id": "108-003-009"
-    },
-    {
-     "ad": "Integra Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "2942.0",
-     "id": "131-003R009"
-    },
-    {
-     "ad": "Metropole Round QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "18691.0",
-     "id": "7910B403-0090"
-    },
-    {
-     "ad": "Valarte Klozet Kapağı",
+     "ad": "Liquid Klozet Kapağı",
      "kategori": "Vitrifiyeler/Klozet Kapakları",
      "fiyat": "3551.0",
-     "id": "124-003R009"
-    },
-    {
-     "ad": "V-Fix Prime 8cm Asma Klozetler için Gömme Rezervuar",
-     "kategori": "Rezervuarlar/Gömme Rezervuarlar/Asma Klozetler için Gömme Rezervuarlar",
-     "fiyat": "11895.0",
-     "id": "768-5800-01"
-    },
-    {
-     "ad": "Sento Klozet kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "4801.0",
-     "id": "130-422R009"
-    },
-    {
-     "ad": "Metropole Square QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "20560.0",
-     "id": "7906B403-0090"
-    },
-    {
-     "ad": "Memoria Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "3551.0",
-     "id": "106-003R009"
-    },
-    {
-     "ad": "Integra Square Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "2942.0",
-     "id": "191-003R009"
-    },
-    {
-     "ad": "Sento Rezervuar",
-     "kategori": "Vitrifiyeler/Klozetler/Rezervuar ve Klozet İç Takımları",
-     "fiyat": "3825.0",
-     "id": "5639B003-0108"
-    },
-    {
-     "ad": "İç Takım",
-     "kategori": "Klozetler ve Rezervuarlar/Rezervuarlar ve İç Takımlar",
-     "fiyat": "1131.0",
-     "id": "330B2016"
-    },
-    {
-     "ad": "Sento Asma Klozet Seti",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozet Takımları",
-     "fiyat": "44390.0",
-     "id": "7948B403-6262"
+     "id": "137-003R009"
     }
    ],
    "bos": false,
-   "http": 1094563,
+   "http": 1060430,
    "grup": "Kategori",
    "sorgu": "klozet",
    "beklenen": "klozet"
   },
   {
-   "url": "https://www.vitra.com.tr/search?q=asma+klozet",
+   "url": "https://www.vitra.com.tr/search?text=asma%20klozet",
    "sonuc": 429,
    "urunler": [
     {
-     "ad": "Klozet Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "2750.0",
-     "id": "ETIC_MTJ(KLOZET)"
-    },
-    {
-     "ad": "Akıllı Klozet Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "2212.5",
-     "id": "ETIC_MTJ(AKLOZET)"
-    },
-    {
-     "ad": "V-Fix Prime 8cm Asma Klozetler için Gömme Rezervuar",
-     "kategori": "Rezervuarlar/Gömme Rezervuarlar/Asma Klozetler için Gömme Rezervuarlar",
-     "fiyat": "5730.0",
-     "id": "768-1851-01"
-    },
-    {
-     "ad": "Sento Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "3557.0",
-     "id": "130-003R009"
-    },
-    {
-     "ad": "Lavabo Yuvarlak Süzgeci Universal",
-     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Lavabo Sifon ve Süzgeçleri",
-     "fiyat": "1273.0",
-     "id": "A45149"
-    },
-    {
-     "ad": "İç Takım",
-     "kategori": "Vitrifiyeler/Klozetler/Rezervuar ve Klozet İç Takımları",
-     "fiyat": "896.0",
-     "id": "330B1314"
-    },
-    {
-     "ad": "Sento Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "3228.0",
-     "id": "86-003R009"
-    },
-    {
-     "ad": "Universal Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "1720.0",
-     "id": "121-003-909"
-    },
-    {
      "ad": "Sento Asma Klozet",
      "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
      "fiyat": "14767.0",
      "id": "7748B003-0559"
-    },
-    {
-     "ad": "S50 Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "2612.0",
-     "id": "108-003-009"
-    },
-    {
-     "ad": "Integra Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "2942.0",
-     "id": "131-003R009"
-    },
-    {
-     "ad": "Metropole Round QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "18691.0",
-     "id": "7910B403-0090"
-    },
-    {
-     "ad": "Valarte Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "3551.0",
-     "id": "124-003R009"
-    },
-    {
-     "ad": "V-Fix Prime 8cm Asma Klozetler için Gömme Rezervuar",
-     "kategori": "Rezervuarlar/Gömme Rezervuarlar/Asma Klozetler için Gömme Rezervuarlar",
-     "fiyat": "11895.0",
-     "id": "768-5800-01"
-    },
-    {
-     "ad": "Sento Klozet kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "4801.0",
-     "id": "130-422R009"
-    },
-    {
-     "ad": "Metropole Square QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "20560.0",
-     "id": "7906B403-0090"
-    },
-    {
-     "ad": "Memoria Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "3551.0",
-     "id": "106-003R009"
-    },
-    {
-     "ad": "Integra Square Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "2942.0",
-     "id": "191-003R009"
-    },
-    {
-     "ad": "Sento Rezervuar",
-     "kategori": "Vitrifiyeler/Klozetler/Rezervuar ve Klozet İç Takımları",
-     "fiyat": "3825.0",
-     "id": "5639B003-0108"
-    },
-    {
-     "ad": "İç Takım",
-     "kategori": "Klozetler ve Rezervuarlar/Rezervuarlar ve İç Takımlar",
-     "fiyat": "1131.0",
-     "id": "330B2016"
-    }
-   ],
-   "bos": false,
-   "http": 1178034,
-   "grup": "Kategori",
-   "sorgu": "asma klozet",
-   "beklenen": "asma klozet"
-  },
-  {
-   "url": "https://www.vitra.com.tr/search?q=lavabo",
-   "sonuc": 2104,
-   "urunler": [
-    {
-     "ad": "Lavabo Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "2300.0",
-     "id": "ETIC_MTJ(LAVABO)"
-    },
-    {
-     "ad": "Origin Lavabo Sifonu",
-     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Lavabo Sifon ve Süzgeçleri",
-     "fiyat": "3103.0",
-     "id": "A45123"
-    },
-    {
-     "ad": "Minibox Ankastre Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Ankastre Lavabo Bataryaları",
-     "fiyat": "2928.0",
-     "id": "A42230"
-    },
-    {
-     "ad": "Lavabo Yuvarlak Süzgeci Universal",
-     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Lavabo Sifon ve Süzgeçleri",
-     "fiyat": "1273.0",
-     "id": "A45149"
-    },
-    {
-     "ad": "Root Round Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Tek Armatür Delikli Lavabo Bataryaları",
-     "fiyat": "7806.0",
-     "id": "A42706"
-    },
-    {
-     "ad": "Lavabo Yuvarlak Süzgeci Universal",
-     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Lavabo Sifon ve Süzgeçleri",
-     "fiyat": "1203.0",
-     "id": "A45148"
-    },
-    {
-     "ad": "Suit Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Tek Armatür Delikli Lavabo Bataryaları",
-     "fiyat": "14824.0",
-     "id": "A42616"
-    },
-    {
-     "ad": "Lavabo/Eviye Sifonu",
-     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Lavabo Sifon ve Süzgeçleri",
-     "fiyat": "1905.0",
-     "id": "A45122"
-    },
-    {
-     "ad": "Origin Lavabo Sifonu",
-     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Lavabo Sifon ve Süzgeçleri",
-     "fiyat": "4651.0",
-     "id": "A4512336WTC"
-    },
-    {
-     "ad": "Lavabo Sifonu",
-     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Lavabo Sifon ve Süzgeçleri",
-     "fiyat": "1881.0",
-     "id": "A45151"
-    },
-    {
-     "ad": "Origin Ankastre Lavabo Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "5597.0",
-     "id": "A42621"
-    },
-    {
-     "ad": "Root Round Temassız Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Temassız Lavabo Bataryaları",
-     "fiyat": "21520.0",
-     "id": "A47122"
-    },
-    {
-     "ad": "Origin Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Tek Armatür Delikli Lavabo Bataryaları",
-     "fiyat": "12231.0",
-     "id": "A42556"
-    },
-    {
-     "ad": "Origin Ankastre Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Ankastre Lavabo Bataryaları",
-     "fiyat": "16508.0",
-     "id": "A4258136WTC"
-    },
-    {
-     "ad": "S20 Tezgahaltı Lavabo",
-     "kategori": "Vitrifiyeler/Lavabolar/Tezgahaltı Lavabolar",
-     "fiyat": "5960.0",
-     "id": "6069B003-0012"
-    },
-    {
-     "ad": "Origin Temassız Ankastre Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Temassız Lavabo Bataryaları",
-     "fiyat": "15947.0",
-     "id": "A47112"
-    },
-    {
-     "ad": "Origin Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Tek Armatür Delikli Lavabo Bataryaları",
-     "fiyat": "18340.0",
-     "id": "A4255636WTC"
-    },
-    {
-     "ad": "Outline Çanak Lavabo",
-     "kategori": "Vitrifiyeler/Lavabolar/Çanak Lavabolar",
-     "fiyat": "13188.0",
-     "id": "5995B403-0016"
-    },
-    {
-     "ad": "Origin Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Çanak Lavabo Bataryaları",
-     "fiyat": "16881.0",
-     "id": "A42558"
-    },
-    {
-     "ad": "Origin Çanak Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Çanak Lavabo Bataryaları",
-     "fiyat": "22012.0",
-     "id": "A4255736WTC"
-    }
-   ],
-   "bos": false,
-   "http": 1580137,
-   "grup": "Kategori",
-   "sorgu": "lavabo",
-   "beklenen": "lavabo"
-  },
-  {
-   "url": "https://www.vitra.com.tr/search?q=banyo+dolab%C4%B1",
-   "sonuc": 2643,
-   "urunler": [
-    {
-     "ad": "Diğer Banyo Mobilyaları Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "2000.0",
-     "id": "ETIC_MTJ(DIGERBM)"
-    },
-    {
-     "ad": "Banyo Mobilyası Seti Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "4000.0",
-     "id": "ETIC_MTJ(BMSET)"
-    },
-    {
-     "ad": "Minibox Ankastre Banyo Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "3145.0",
-     "id": "A41949"
-    },
-    {
-     "ad": "Minimax Yedek Tuvalet Kağıtlığı",
-     "kategori": "Banyo Aksesuarları/Tuvalet Kağıtlıkları",
-     "fiyat": "1271.0",
-     "id": "A44789"
-    },
-    {
-     "ad": "Minimax Askı",
-     "kategori": "Banyo Aksesuarları/Banyo Askıları",
-     "fiyat": "969.0",
-     "id": "A44787"
-    },
-    {
-     "ad": "Origin Tuvalet Kağıtlığı",
-     "kategori": "Banyo Aksesuarları/Tuvalet Kağıtlıkları",
-     "fiyat": "2569.0",
-     "id": "A44887"
-    },
-    {
-     "ad": "Minimax Tuvalet Kağıtlığı",
-     "kategori": "Banyo Aksesuarları/Tuvalet Kağıtlıkları",
-     "fiyat": "1113.0",
-     "id": "A44796"
-    },
-    {
-     "ad": "Origin Askı",
-     "kategori": "Banyo Aksesuarları/Banyo Askıları",
-     "fiyat": "1903.0",
-     "id": "A44884"
-    },
-    {
-     "ad": "Minimax Halka Havluluk",
-     "kategori": "Banyo Aksesuarları/Havluluklar",
-     "fiyat": "1360.0",
-     "id": "A44783"
-    },
-    {
-     "ad": "Marin Askı",
-     "kategori": "Banyo Aksesuarları/Banyo Askıları",
-     "fiyat": "397.0",
-     "id": "A44947"
-    },
-    {
-     "ad": "Origin Ankastre Banyo Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "8837.0",
-     "id": "A4262036WTC"
-    },
-    {
-     "ad": "Marin Tuvalet Fırçalığı",
-     "kategori": "Banyo Aksesuarları/Tuvalet Fırçaları",
-     "fiyat": "1402.0",
-     "id": "A44948"
-    },
-    {
-     "ad": "Origin Çıkış Ucu",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Banyo Batarya Çıkış Uçları",
-     "fiyat": "7742.0",
-     "id": "A4262236WTC"
-    },
-    {
-     "ad": "Minibox Ankastre Duş Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "2513.0",
-     "id": "A42213"
-    },
-    {
-     "ad": "Origin Ankastre Duş Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "8398.0",
-     "id": "A4262136WTC"
-    },
-    {
-     "ad": "Arkitekta Çöp Kovası",
-     "kategori": "Banyo Aksesuarları/Banyo Çöp Kovaları",
-     "fiyat": "2397.0",
-     "id": "A44012"
-    },
-    {
-     "ad": "Minimax Uzun Havluluk",
-     "kategori": "Banyo Aksesuarları/Havluluklar",
-     "fiyat": "1851.0",
-     "id": "A44784"
-    },
-    {
-     "ad": "Root Round Banyo Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Duvardan Banyo Bataryaları",
-     "fiyat": "9919.0",
-     "id": "A42725"
-    },
-    {
-     "ad": "Origin Ankastre Lavabo Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "5597.0",
-     "id": "A42621"
-    },
-    {
-     "ad": "Marin Tuvalet Kağıtlığı",
-     "kategori": "Banyo Aksesuarları/Tuvalet Kağıtlıkları",
-     "fiyat": "854.0",
-     "id": "A44946"
-    }
-   ],
-   "bos": false,
-   "http": 1601215,
-   "grup": "Kategori",
-   "sorgu": "banyo dolabı",
-   "beklenen": "dolab|dolap"
-  },
-  {
-   "url": "https://www.vitra.com.tr/search?q=du%C5%9Fakabin",
-   "sonuc": 182,
-   "urunler": [
-    {
-     "ad": "Universal Sürgülü Oval Panel",
-     "kategori": "Yıkanma Alanları/Duşakabin",
-     "fiyat": "36648.0",
-     "id": "65650002282"
-    }
-   ],
-   "bos": false,
-   "http": 734823,
-   "grup": "Kategori",
-   "sorgu": "duşakabin",
-   "beklenen": "duşakabin|duş kabin"
-  },
-  {
-   "url": "https://www.vitra.com.tr/search?q=banyo+bataryas%C4%B1",
-   "sonuc": 3137,
-   "urunler": [
-    {
-     "ad": "Diğer Banyo Mobilyaları Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "2000.0",
-     "id": "ETIC_MTJ(DIGERBM)"
-    },
-    {
-     "ad": "Banyo Mobilyası Seti Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "4000.0",
-     "id": "ETIC_MTJ(BMSET)"
-    },
-    {
-     "ad": "Minibox Ankastre Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Ankastre Lavabo Bataryaları",
-     "fiyat": "2928.0",
-     "id": "A42230"
-    },
-    {
-     "ad": "Minibox Ankastre Banyo Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "3145.0",
-     "id": "A41949"
-    },
-    {
-     "ad": "Minimax Yedek Tuvalet Kağıtlığı",
-     "kategori": "Banyo Aksesuarları/Tuvalet Kağıtlıkları",
-     "fiyat": "1271.0",
-     "id": "A44789"
-    },
-    {
-     "ad": "Root Round Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Tek Armatür Delikli Lavabo Bataryaları",
-     "fiyat": "7806.0",
-     "id": "A42706"
-    },
-    {
-     "ad": "Minimax Askı",
-     "kategori": "Banyo Aksesuarları/Banyo Askıları",
-     "fiyat": "969.0",
-     "id": "A44787"
-    },
-    {
-     "ad": "Origin Tuvalet Kağıtlığı",
-     "kategori": "Banyo Aksesuarları/Tuvalet Kağıtlıkları",
-     "fiyat": "2569.0",
-     "id": "A44887"
-    },
-    {
-     "ad": "Minimax Tuvalet Kağıtlığı",
-     "kategori": "Banyo Aksesuarları/Tuvalet Kağıtlıkları",
-     "fiyat": "1113.0",
-     "id": "A44796"
-    },
-    {
-     "ad": "Origin Askı",
-     "kategori": "Banyo Aksesuarları/Banyo Askıları",
-     "fiyat": "1903.0",
-     "id": "A44884"
-    },
-    {
-     "ad": "Minimax Halka Havluluk",
-     "kategori": "Banyo Aksesuarları/Havluluklar",
-     "fiyat": "1360.0",
-     "id": "A44783"
-    },
-    {
-     "ad": "Suit Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Tek Armatür Delikli Lavabo Bataryaları",
-     "fiyat": "14824.0",
-     "id": "A42616"
-    },
-    {
-     "ad": "Marin Askı",
-     "kategori": "Banyo Aksesuarları/Banyo Askıları",
-     "fiyat": "397.0",
-     "id": "A44947"
-    },
-    {
-     "ad": "Origin Ankastre Banyo Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "8837.0",
-     "id": "A4262036WTC"
-    },
-    {
-     "ad": "Marin Tuvalet Fırçalığı",
-     "kategori": "Banyo Aksesuarları/Tuvalet Fırçaları",
-     "fiyat": "1402.0",
-     "id": "A44948"
-    },
-    {
-     "ad": "Origin Çıkış Ucu",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Banyo Batarya Çıkış Uçları",
-     "fiyat": "7742.0",
-     "id": "A4262236WTC"
-    },
-    {
-     "ad": "Minibox Ankastre Duş Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "2513.0",
-     "id": "A42213"
-    },
-    {
-     "ad": "Origin Ankastre Duş Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "8398.0",
-     "id": "A4262136WTC"
-    },
-    {
-     "ad": "Arkitekta Çöp Kovası",
-     "kategori": "Banyo Aksesuarları/Banyo Çöp Kovaları",
-     "fiyat": "2397.0",
-     "id": "A44012"
-    },
-    {
-     "ad": "Minimax Uzun Havluluk",
-     "kategori": "Banyo Aksesuarları/Havluluklar",
-     "fiyat": "1851.0",
-     "id": "A44784"
-    }
-   ],
-   "bos": false,
-   "http": 1702242,
-   "grup": "Kategori",
-   "sorgu": "banyo bataryası",
-   "beklenen": "batarya"
-  },
-  {
-   "url": "https://www.vitra.com.tr/search?q=g%C3%B6mme+rezervuar",
-   "sonuc": 196,
-   "urunler": [
-    {
-     "ad": "Gömme Rezervuar Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "3900.0",
-     "id": "ETIC_MTJ(GOMMERZ)"
-    },
-    {
-     "ad": "V-Fix Prime 8cm Asma Klozetler için Gömme Rezervuar",
-     "kategori": "Rezervuarlar/Gömme Rezervuarlar/Asma Klozetler için Gömme Rezervuarlar",
-     "fiyat": "5730.0",
-     "id": "768-1851-01"
-    },
-    {
-     "ad": "Root Round Kumanda Paneli",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
-     "fiyat": "1344.0",
-     "id": "740-2280"
-    },
-    {
-     "ad": "İç Takım",
-     "kategori": "Vitrifiyeler/Klozetler/Rezervuar ve Klozet İç Takımları",
-     "fiyat": "896.0",
-     "id": "330B1314"
-    },
-    {
-     "ad": "Origin Kumamda Paneli,  Cam",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
-     "fiyat": "5196.0",
-     "id": "740-1601"
-    },
-    {
-     "ad": "V-Fix Prime 8cm Asma Klozetler için Gömme Rezervuar",
-     "kategori": "Rezervuarlar/Gömme Rezervuarlar/Asma Klozetler için Gömme Rezervuarlar",
-     "fiyat": "11895.0",
-     "id": "768-5800-01"
-    },
-    {
-     "ad": "Root Square Kumanda Paneli",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
-     "fiyat": "1344.0",
-     "id": "740-2380"
-    },
-    {
-     "ad": "Sento Rezervuar",
-     "kategori": "Vitrifiyeler/Klozetler/Rezervuar ve Klozet İç Takımları",
-     "fiyat": "3825.0",
-     "id": "5639B003-0108"
-    },
-    {
-     "ad": "Root Square Kumanda Paneli",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
-     "fiyat": "1678.0",
-     "id": "740-2311"
-    },
-    {
-     "ad": "İç Takım",
-     "kategori": "Klozetler ve Rezervuarlar/Rezervuarlar ve İç Takımlar",
-     "fiyat": "1131.0",
-     "id": "330B2016"
-    },
-    {
-     "ad": "Root Round Kumanda Paneli",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
-     "fiyat": "3579.0",
-     "id": "740-2224"
-    },
-    {
-     "ad": "Gömme rezervuar elektrik bağlantı seti",
-     "kategori": "Rezervuarlar/Gömme Rezervuar Montaj Aksesuarları",
-     "fiyat": "5054.0",
-     "id": "300-1029"
-    },
-    {
-     "ad": "Root Square Kumanda Paneli",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
-     "fiyat": "3579.0",
-     "id": "740-2324"
-    },
-    {
-     "ad": "V-Fix Prime 8cm Helataşları için Gömme Rezervuar",
-     "kategori": "Rezervuarlar/Gömme Rezervuarlar/Tuvalet Taşları için Gömme Rezervuarlar",
-     "fiyat": "4566.0",
-     "id": "768-1700-01"
-    },
-    {
-     "ad": "Root Round Kumanda Paneli",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
-     "fiyat": "1158.0",
-     "id": "740-2200"
-    },
-    {
-     "ad": "Root Round Kumanda Paneli",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
-     "fiyat": "3802.0",
-     "id": "740-2225"
-    },
-    {
-     "ad": "Origin Kumanda Paneli,  Cam",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
-     "fiyat": "5196.0",
-     "id": "740-1600"
-    },
-    {
-     "ad": "Root Square Kumanda Paneli",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
-     "fiyat": "3802.0",
-     "id": "740-2395"
-    },
-    {
-     "ad": "Root Square Kumanda Paneli",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
-     "fiyat": "1158.0",
-     "id": "740-2300"
-    },
-    {
-     "ad": "Integra Square Rezervuar",
-     "kategori": "Vitrifiyeler/Klozetler/Rezervuar ve Klozet İç Takımları",
-     "fiyat": "3825.0",
-     "id": "7100B003-0108"
-    }
-   ],
-   "bos": false,
-   "http": 1017238,
-   "grup": "Kategori",
-   "sorgu": "gömme rezervuar",
-   "beklenen": "rezervuar"
-  },
-  {
-   "url": "https://www.vitra.com.tr/search?q=havlupan",
-   "sonuc": 2,
-   "urunler": [
-    {
-     "ad": "Artepan Havlupan",
-     "kategori": "Banyo Aksesuarları/Diğer Banyo Aksesuarları/Havlupanlar",
-     "fiyat": "6572.0",
-     "id": "A44845"
-    }
-   ],
-   "bos": false,
-   "http": 508543,
-   "grup": "Kategori",
-   "sorgu": "havlupan",
-   "beklenen": "havlupan"
-  },
-  {
-   "url": "https://www.vitra.com.tr/search?q=evye",
-   "sonuc": 47,
-   "urunler": [
-    {
-     "ad": "Lavabo/Eviye Sifonu",
-     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Lavabo Sifon ve Süzgeçleri",
-     "fiyat": "1905.0",
-     "id": "A45122"
-    },
-    {
-     "ad": "Maestro Pro Eviye Bataryası",
-     "kategori": "Armatürler/Eviye Bataryaları/Idealine Eviye Bataryası",
-     "fiyat": "13387.0",
-     "id": "A42152"
-    },
-    {
-     "ad": "Split Dual Flow Eviye Bataryası",
-     "kategori": "Armatürler/Eviye Bataryaları/Masterline Eviye Bataryası",
-     "fiyat": "13387.0",
-     "id": "A42144"
-    },
-    {
-     "ad": "Masterline Pull-Out Eviye Bataryası",
-     "kategori": "Armatürler/Eviye Bataryaları/Masterline Eviye Bataryası",
-     "fiyat": "12177.0",
-     "id": "A42146"
-    },
-    {
-     "ad": "Lavabo ve Eviye Sifonu",
-     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Lavabo Sifon ve Süzgeçleri",
-     "fiyat": "1638.0",
-     "id": "A45117"
-    },
-    {
-     "ad": "IdeaLine Eviye Bataryası",
-     "kategori": "Armatürler/Eviye Bataryaları/Idealine Eviye Bataryası",
-     "fiyat": "9526.0",
-     "id": "A42136"
-    },
-    {
-     "ad": "Verona Eviye Bataryası",
-     "kategori": "Armatürler/Eviye Bataryaları/Idealine Eviye Bataryası",
-     "fiyat": "9512.0",
-     "id": "A4215406"
-    },
-    {
-     "ad": "Masterline Xl Pull-Out Eviye Bataryası",
-     "kategori": "Armatürler/Eviye Bataryaları/Masterline Eviye Bataryası",
-     "fiyat": "8712.0",
-     "id": "A42147"
-    },
-    {
-     "ad": "Verona Eviye Bataryası",
-     "kategori": "Armatürler/Eviye Bataryaları/Idealine Eviye Bataryası",
-     "fiyat": "11418.0",
-     "id": "A4215433"
-    },
-    {
-     "ad": "V3 Pull-Out Eviye Bataryası",
-     "kategori": "Armatürler/Eviye Bataryaları/Masterline Eviye Bataryası",
-     "fiyat": "10514.0",
-     "id": "A42151"
-    },
-    {
-     "ad": "Sense Hybrid Eviye Bataryası",
-     "kategori": "Armatürler/Eviye Bataryaları/Masterline Eviye Bataryası",
-     "fiyat": "30503.0",
-     "id": "A47230"
-    },
-    {
-     "ad": "Harmony Eviye Bataryası",
-     "kategori": "Armatürler/Eviye Bataryaları/Masterline Eviye Bataryası",
-     "fiyat": "7616.0",
-     "id": "A41864"
-    },
-    {
-     "ad": "Masterline Pull-Down Eviye Bataryası",
-     "kategori": "Armatürler/Eviye Bataryaları/Masterline Eviye Bataryası",
-     "fiyat": "12805.0",
-     "id": "A42145"
-    },
-    {
-     "ad": "Root Square Eviye Bataryası",
-     "kategori": "Armatürler/Eviye Bataryaları/Idealine Eviye Bataryası",
-     "fiyat": "9537.0",
-     "id": "A42753"
-    },
-    {
-     "ad": "Root Round Eviye Bataryası",
-     "kategori": "Armatürler/Eviye Bataryaları/Idealine Eviye Bataryası",
-     "fiyat": "12546.0",
-     "id": "A4274236"
-    },
-    {
-     "ad": "Root Round Eviye Bataryası",
-     "kategori": "Armatürler/Eviye Bataryaları/Idealine Eviye Bataryası",
-     "fiyat": "13802.0",
-     "id": "A4274234"
-    },
-    {
-     "ad": "Root Round Eviye Bataryası",
-     "kategori": "Armatürler/Eviye Bataryaları/Idealine Eviye Bataryası",
-     "fiyat": "13802.0",
-     "id": "A4274229"
-    },
-    {
-     "ad": "Inox Pull-Down Eviye Bataryası",
-     "kategori": "Armatürler/Eviye Bataryaları/Idealine Eviye Bataryası",
-     "fiyat": "13452.0",
-     "id": "A43740"
-    }
-   ],
-   "bos": false,
-   "http": 882762,
-   "grup": "Kategori",
-   "sorgu": "evye",
-   "beklenen": "evye|eviye"
-  },
-  {
-   "url": "https://www.vitra.com.tr/search?q=du%C5%9F+seti",
-   "sonuc": 1888,
-   "urunler": [
-    {
-     "ad": "Armatür ve Duş Sistemleri Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "2350.0",
-     "id": "ETIC_MTJ(ARMATUR)"
-    },
-    {
-     "ad": "Banyo Mobilyası Seti Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "4000.0",
-     "id": "ETIC_MTJ(BMSET)"
-    },
-    {
-     "ad": "Origin Duş Başlığı",
-     "kategori": "Duş Sistemleri/Duş Başlıkları",
-     "fiyat": "12486.0",
-     "id": "A4563836WTC"
-    },
-    {
-     "ad": "Minibox Ankastre Banyo Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "3145.0",
-     "id": "A41949"
-    },
-    {
-     "ad": "Origin Ankastre Yönlendirici",
-     "kategori": "Duş Sistemleri/Ankastre Duş Yönlendiriciler",
-     "fiyat": "3107.0",
-     "id": "A4285936WTC"
-    },
-    {
-     "ad": "Origin Ankastre Banyo Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "8837.0",
-     "id": "A4262036WTC"
-    },
-    {
-     "ad": "Origin Çıkış Ucu",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Banyo Batarya Çıkış Uçları",
-     "fiyat": "7742.0",
-     "id": "A4262236WTC"
-    },
-    {
-     "ad": "Minibox Ankastre Duş Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "2513.0",
-     "id": "A42213"
-    },
-    {
-     "ad": "Origin Ankastre Duş Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "8398.0",
-     "id": "A4262136WTC"
-    },
-    {
-     "ad": "Root Round Banyo Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Duvardan Banyo Bataryaları",
-     "fiyat": "9919.0",
-     "id": "A42725"
-    },
-    {
-     "ad": "Duş Başlığı",
-     "kategori": "Duş Sistemleri/Duş Başlıkları",
-     "fiyat": "8323.0",
-     "id": "A45638"
-    },
-    {
-     "ad": "Origin Ankastre El Duşu Çıkışı",
-     "kategori": "Duş Sistemleri/Duş Tamamlayıcı Ürünleri",
-     "fiyat": "3417.0",
-     "id": "A4262536WTC"
-    },
-    {
-     "ad": "Origin Ankastre Lavabo Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "5597.0",
-     "id": "A42621"
-    },
-    {
-     "ad": "Ankastre El Duşu Çıkışı",
-     "kategori": "Duş Sistemleri/Duş Tamamlayıcı Ürünleri",
-     "fiyat": "2276.0",
-     "id": "A42625"
-    },
-    {
-     "ad": "DK800 Kare Style Duş Kanalı",
-     "kategori": "Yıkanma Alanları/Duş Kanalları",
-     "fiyat": "659.0",
-     "id": "59980061000"
-    },
-    {
-     "ad": "Duş Dirseği",
-     "kategori": "Duş Sistemleri/Duş Başlıkları/Duş Dirsekleri",
-     "fiyat": "1429.0",
-     "id": "A45652"
-    },
-    {
-     "ad": "V-Box",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "5726.0",
-     "id": "A42806"
-    },
-    {
-     "ad": "Suit Ankastre Banyo Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "11201.0",
-     "id": "A4283839"
-    },
-    {
-     "ad": "Origin Duş Dirseği",
-     "kategori": "Duş Sistemleri/Duş Başlıkları/Duş Dirsekleri",
-     "fiyat": "3678.0",
-     "id": "A4263136WTC"
-    },
-    {
-     "ad": "Sento Asma Klozet Seti",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozet Takımları",
-     "fiyat": "44390.0",
-     "id": "7948B403-6262"
-    }
-   ],
-   "bos": false,
-   "http": 1472530,
-   "grup": "Kategori",
-   "sorgu": "duş seti",
-   "beklenen": "duş set|el duşu|duş sistem"
-  },
-  {
-   "url": "https://www.vitra.com.tr/search?q=klozet+kapa%C4%9F%C4%B1",
-   "sonuc": 371,
-   "urunler": [
-    {
-     "ad": "Klozet Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "2750.0",
-     "id": "ETIC_MTJ(KLOZET)"
-    },
-    {
-     "ad": "Akıllı Klozet Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "2212.5",
-     "id": "ETIC_MTJ(AKLOZET)"
-    },
-    {
-     "ad": "V-Fix Prime 8cm Asma Klozetler için Gömme Rezervuar",
-     "kategori": "Rezervuarlar/Gömme Rezervuarlar/Asma Klozetler için Gömme Rezervuarlar",
-     "fiyat": "5730.0",
-     "id": "768-1851-01"
-    },
-    {
-     "ad": "Sento Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "3557.0",
-     "id": "130-003R009"
-    },
-    {
-     "ad": "İç Takım",
-     "kategori": "Vitrifiyeler/Klozetler/Rezervuar ve Klozet İç Takımları",
-     "fiyat": "896.0",
-     "id": "330B1314"
-    },
-    {
-     "ad": "Sento Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "3228.0",
-     "id": "86-003R009"
-    },
-    {
-     "ad": "Universal Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "1720.0",
-     "id": "121-003-909"
-    },
-    {
-     "ad": "Sento Asma Klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "14767.0",
-     "id": "7748B003-0559"
-    },
-    {
-     "ad": "S50 Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "2612.0",
-     "id": "108-003-009"
-    },
-    {
-     "ad": "Integra Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "2942.0",
-     "id": "131-003R009"
-    },
-    {
-     "ad": "Metropole Round QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "18691.0",
-     "id": "7910B403-0090"
-    },
-    {
-     "ad": "Valarte Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "3551.0",
-     "id": "124-003R009"
-    },
-    {
-     "ad": "V-Fix Prime 8cm Asma Klozetler için Gömme Rezervuar",
-     "kategori": "Rezervuarlar/Gömme Rezervuarlar/Asma Klozetler için Gömme Rezervuarlar",
-     "fiyat": "11895.0",
-     "id": "768-5800-01"
-    },
-    {
-     "ad": "Sento Klozet kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "4801.0",
-     "id": "130-422R009"
-    },
-    {
-     "ad": "Metropole Square QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "20560.0",
-     "id": "7906B403-0090"
-    },
-    {
-     "ad": "Memoria Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "3551.0",
-     "id": "106-003R009"
-    },
-    {
-     "ad": "Integra Square Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "2942.0",
-     "id": "191-003R009"
-    },
-    {
-     "ad": "Sento Rezervuar",
-     "kategori": "Vitrifiyeler/Klozetler/Rezervuar ve Klozet İç Takımları",
-     "fiyat": "3825.0",
-     "id": "5639B003-0108"
-    },
-    {
-     "ad": "İç Takım",
-     "kategori": "Klozetler ve Rezervuarlar/Rezervuarlar ve İç Takımlar",
-     "fiyat": "1131.0",
-     "id": "330B2016"
-    },
-    {
-     "ad": "Sento Asma Klozet Seti",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozet Takımları",
-     "fiyat": "44390.0",
-     "id": "7948B403-6262"
-    }
-   ],
-   "bos": false,
-   "http": 1095107,
-   "grup": "Yedek parça ve aksesuar",
-   "sorgu": "klozet kapağı",
-   "beklenen": "kapa[kğ]"
-  },
-  {
-   "url": "https://www.vitra.com.tr/search?q=i%C3%A7+tak%C4%B1m",
-   "sonuc": 180,
-   "urunler": [
-    {
-     "ad": "İç Takım",
-     "kategori": "Vitrifiyeler/Klozetler/Rezervuar ve Klozet İç Takımları",
-     "fiyat": "896.0",
-     "id": "330B1314"
-    },
-    {
-     "ad": "Sento Rezervuar",
-     "kategori": "Vitrifiyeler/Klozetler/Rezervuar ve Klozet İç Takımları",
-     "fiyat": "3825.0",
-     "id": "5639B003-0108"
-    },
-    {
-     "ad": "İç Takım",
-     "kategori": "Klozetler ve Rezervuarlar/Rezervuarlar ve İç Takımlar",
-     "fiyat": "1131.0",
-     "id": "330B2016"
-    },
-    {
-     "ad": "Sento Asma Klozet Seti",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozet Takımları",
-     "fiyat": "44390.0",
-     "id": "7948B403-6262"
-    },
-    {
-     "ad": "Prime Stick Elduşu Takımı",
-     "kategori": "Duş Sistemleri/El Duşu Takımları",
-     "fiyat": "3121.0",
-     "id": "A45926"
-    },
-    {
-     "ad": "Prime Stick Elduşu Takımı",
-     "kategori": "Duş Sistemleri/El Duşu Takımları",
-     "fiyat": "4680.0",
-     "id": "A4592636"
-    },
-    {
-     "ad": "Sento Klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Takım Klozetler",
-     "fiyat": "10863.0",
-     "id": "5987B003-0092"
-    },
-    {
-     "ad": "Core Round Elduşu Takımı",
-     "kategori": "Duş Sistemleri/El Duşu Takımları",
-     "fiyat": "2770.0",
-     "id": "A45914"
-    },
-    {
-     "ad": "Core Round Elduşu Takımı",
-     "kategori": "Duş Sistemleri/El Duşu Takımları",
-     "fiyat": "4571.0",
-     "id": "A4591434"
-    },
-    {
-     "ad": "Integra Square Rezervuar",
-     "kategori": "Vitrifiyeler/Klozetler/Rezervuar ve Klozet İç Takımları",
-     "fiyat": "3825.0",
-     "id": "7100B003-0108"
-    },
-    {
-     "ad": "Origin Classic Sürgülü El Duşu Takımı",
-     "kategori": "Duş Sistemleri/Sürgülü El Duşu Takımları",
-     "fiyat": "14296.0",
-     "id": "A4579636"
-    },
-    {
-     "ad": "Origin Classic El Duşu Takımı",
-     "kategori": "Duş Sistemleri/El Duşu Takımları",
-     "fiyat": "10954.0",
-     "id": "A4579529"
-    },
-    {
-     "ad": "Prime Round Elduşu Takımı",
-     "kategori": "Duş Sistemleri/El Duşu Takımları",
-     "fiyat": "3325.0",
-     "id": "A45924"
-    },
-    {
-     "ad": "Prime Stick Elduşu Takımı",
-     "kategori": "Duş Sistemleri/El Duşu Takımları",
-     "fiyat": "5149.0",
-     "id": "A4592625"
-    },
-    {
-     "ad": "Prime Square Elduşu Takımı",
-     "kategori": "Duş Sistemleri/El Duşu Takımları",
-     "fiyat": "3657.0",
-     "id": "A45925"
-    },
-    {
-     "ad": "Integra Square Takım Klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Yerden Tek Klozetler",
-     "fiyat": "9265.0",
-     "id": "7086B003-0092"
-    },
-    {
-     "ad": "Shift T30 Asma Klozet Seti",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozet Takımları",
-     "fiyat": "14702.0",
-     "id": "7041B003-6382"
-    },
-    {
-     "ad": "Base Round Elduşu Takımı",
-     "kategori": "Duş Sistemleri/El Duşu Takımları",
-     "fiyat": "2309.0",
-     "id": "A45906"
-    },
-    {
-     "ad": "Core Round Elduşu Takımı",
-     "kategori": "Duş Sistemleri/El Duşu Takımları",
-     "fiyat": "4571.0",
-     "id": "A4591425"
-    },
-    {
-     "ad": "Prime Round Sürgülü El Duşu",
-     "kategori": "Duş Sistemleri/El Duşu Takımları",
-     "fiyat": "5047.0",
-     "id": "A45927"
-    }
-   ],
-   "bos": false,
-   "http": 1008253,
-   "grup": "Yedek parça ve aksesuar",
-   "sorgu": "iç takım",
-   "beklenen": "iç takım"
-  },
-  {
-   "url": "https://www.vitra.com.tr/search?q=rezervuar+i%C3%A7+tak%C4%B1m%C4%B1",
-   "sonuc": 222,
-   "urunler": [
-    {
-     "ad": "Gömme Rezervuar Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "3900.0",
-     "id": "ETIC_MTJ(GOMMERZ)"
-    },
-    {
-     "ad": "V-Fix Prime 8cm Asma Klozetler için Gömme Rezervuar",
-     "kategori": "Rezervuarlar/Gömme Rezervuarlar/Asma Klozetler için Gömme Rezervuarlar",
-     "fiyat": "5730.0",
-     "id": "768-1851-01"
-    },
-    {
-     "ad": "Root Round Kumanda Paneli",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
-     "fiyat": "1344.0",
-     "id": "740-2280"
-    },
-    {
-     "ad": "İç Takım",
-     "kategori": "Vitrifiyeler/Klozetler/Rezervuar ve Klozet İç Takımları",
-     "fiyat": "896.0",
-     "id": "330B1314"
-    },
-    {
-     "ad": "Origin Kumamda Paneli,  Cam",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
-     "fiyat": "5196.0",
-     "id": "740-1601"
-    },
-    {
-     "ad": "V-Fix Prime 8cm Asma Klozetler için Gömme Rezervuar",
-     "kategori": "Rezervuarlar/Gömme Rezervuarlar/Asma Klozetler için Gömme Rezervuarlar",
-     "fiyat": "11895.0",
-     "id": "768-5800-01"
-    },
-    {
-     "ad": "Root Square Kumanda Paneli",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
-     "fiyat": "1344.0",
-     "id": "740-2380"
-    },
-    {
-     "ad": "Sento Rezervuar",
-     "kategori": "Vitrifiyeler/Klozetler/Rezervuar ve Klozet İç Takımları",
-     "fiyat": "3825.0",
-     "id": "5639B003-0108"
-    },
-    {
-     "ad": "Root Square Kumanda Paneli",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
-     "fiyat": "1678.0",
-     "id": "740-2311"
-    },
-    {
-     "ad": "İç Takım",
-     "kategori": "Klozetler ve Rezervuarlar/Rezervuarlar ve İç Takımlar",
-     "fiyat": "1131.0",
-     "id": "330B2016"
-    },
-    {
-     "ad": "Root Round Kumanda Paneli",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
-     "fiyat": "3579.0",
-     "id": "740-2224"
-    },
-    {
-     "ad": "Gömme rezervuar elektrik bağlantı seti",
-     "kategori": "Rezervuarlar/Gömme Rezervuar Montaj Aksesuarları",
-     "fiyat": "5054.0",
-     "id": "300-1029"
-    },
-    {
-     "ad": "Prime Stick Elduşu Takımı",
-     "kategori": "Duş Sistemleri/El Duşu Takımları",
-     "fiyat": "3121.0",
-     "id": "A45926"
-    },
-    {
-     "ad": "Root Square Kumanda Paneli",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
-     "fiyat": "3579.0",
-     "id": "740-2324"
-    },
-    {
-     "ad": "V-Fix Prime 8cm Helataşları için Gömme Rezervuar",
-     "kategori": "Rezervuarlar/Gömme Rezervuarlar/Tuvalet Taşları için Gömme Rezervuarlar",
-     "fiyat": "4566.0",
-     "id": "768-1700-01"
-    },
-    {
-     "ad": "Root Round Kumanda Paneli",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
-     "fiyat": "1158.0",
-     "id": "740-2200"
-    },
-    {
-     "ad": "Root Round Kumanda Paneli",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
-     "fiyat": "3802.0",
-     "id": "740-2225"
-    },
-    {
-     "ad": "Prime Stick Elduşu Takımı",
-     "kategori": "Duş Sistemleri/El Duşu Takımları",
-     "fiyat": "4680.0",
-     "id": "A4592636"
-    },
-    {
-     "ad": "Origin Kumanda Paneli,  Cam",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
-     "fiyat": "5196.0",
-     "id": "740-1600"
-    },
-    {
-     "ad": "Core Round Elduşu Takımı",
-     "kategori": "Duş Sistemleri/El Duşu Takımları",
-     "fiyat": "2770.0",
-     "id": "A45914"
-    }
-   ],
-   "bos": false,
-   "http": 1093649,
-   "grup": "Yedek parça ve aksesuar",
-   "sorgu": "rezervuar iç takımı",
-   "beklenen": "iç takım"
-  },
-  {
-   "url": "https://www.vitra.com.tr/search?q=%C5%9Famand%C4%B1ra",
-   "sonuc": 0,
-   "urunler": [],
-   "bos": true,
-   "http": 430484,
-   "grup": "Yedek parça ve aksesuar",
-   "sorgu": "şamandıra",
-   "beklenen": "şamandıra|iç takım"
-  },
-  {
-   "url": "https://www.vitra.com.tr/search?q=klozet+kapa%C4%9F%C4%B1+mente%C5%9Fesi",
-   "sonuc": 371,
-   "urunler": [
-    {
-     "ad": "Klozet Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "2750.0",
-     "id": "ETIC_MTJ(KLOZET)"
-    },
-    {
-     "ad": "Akıllı Klozet Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "2212.5",
-     "id": "ETIC_MTJ(AKLOZET)"
-    },
-    {
-     "ad": "V-Fix Prime 8cm Asma Klozetler için Gömme Rezervuar",
-     "kategori": "Rezervuarlar/Gömme Rezervuarlar/Asma Klozetler için Gömme Rezervuarlar",
-     "fiyat": "5730.0",
-     "id": "768-1851-01"
-    },
-    {
-     "ad": "Sento Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "3557.0",
-     "id": "130-003R009"
-    },
-    {
-     "ad": "İç Takım",
-     "kategori": "Vitrifiyeler/Klozetler/Rezervuar ve Klozet İç Takımları",
-     "fiyat": "896.0",
-     "id": "330B1314"
-    },
-    {
-     "ad": "Sento Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "3228.0",
-     "id": "86-003R009"
-    },
-    {
-     "ad": "Universal Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "1720.0",
-     "id": "121-003-909"
-    },
-    {
-     "ad": "Sento Asma Klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "14767.0",
-     "id": "7748B003-0559"
-    },
-    {
-     "ad": "S50 Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "2612.0",
-     "id": "108-003-009"
-    },
-    {
-     "ad": "Integra Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "2942.0",
-     "id": "131-003R009"
-    },
-    {
-     "ad": "Metropole Round QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "18691.0",
-     "id": "7910B403-0090"
-    },
-    {
-     "ad": "Valarte Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "3551.0",
-     "id": "124-003R009"
-    },
-    {
-     "ad": "V-Fix Prime 8cm Asma Klozetler için Gömme Rezervuar",
-     "kategori": "Rezervuarlar/Gömme Rezervuarlar/Asma Klozetler için Gömme Rezervuarlar",
-     "fiyat": "11895.0",
-     "id": "768-5800-01"
-    },
-    {
-     "ad": "Sento Klozet kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "4801.0",
-     "id": "130-422R009"
-    },
-    {
-     "ad": "Metropole Square QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "20560.0",
-     "id": "7906B403-0090"
-    },
-    {
-     "ad": "Memoria Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "3551.0",
-     "id": "106-003R009"
-    },
-    {
-     "ad": "Integra Square Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "2942.0",
-     "id": "191-003R009"
-    },
-    {
-     "ad": "Sento Rezervuar",
-     "kategori": "Vitrifiyeler/Klozetler/Rezervuar ve Klozet İç Takımları",
-     "fiyat": "3825.0",
-     "id": "5639B003-0108"
-    },
-    {
-     "ad": "İç Takım",
-     "kategori": "Klozetler ve Rezervuarlar/Rezervuarlar ve İç Takımlar",
-     "fiyat": "1131.0",
-     "id": "330B2016"
-    },
-    {
-     "ad": "Sento Asma Klozet Seti",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozet Takımları",
-     "fiyat": "44390.0",
-     "id": "7948B403-6262"
-    }
-   ],
-   "bos": false,
-   "http": 1095591,
-   "grup": "Yedek parça ve aksesuar",
-   "sorgu": "klozet kapağı menteşesi",
-   "beklenen": "menteşe"
-  },
-  {
-   "url": "https://www.vitra.com.tr/search?q=kartu%C5%9F",
-   "sonuc": 0,
-   "urunler": [],
-   "bos": true,
-   "http": 430444,
-   "grup": "Yedek parça ve aksesuar",
-   "sorgu": "kartuş",
-   "beklenen": "kartuş"
-  },
-  {
-   "url": "https://www.vitra.com.tr/search?q=conta",
-   "sonuc": 1,
-   "urunler": [],
-   "bos": false,
-   "http": 460771,
-   "grup": "Yedek parça ve aksesuar",
-   "sorgu": "conta",
-   "beklenen": "conta"
-  },
-  {
-   "url": "https://www.vitra.com.tr/search?q=kumanda+paneli",
-   "sonuc": 123,
-   "urunler": [
-    {
-     "ad": "Root Round Kumanda Paneli",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
-     "fiyat": "1344.0",
-     "id": "740-2280"
-    },
-    {
-     "ad": "Origin Kumamda Paneli,  Cam",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
-     "fiyat": "5196.0",
-     "id": "740-1601"
-    },
-    {
-     "ad": "Root Square Kumanda Paneli",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
-     "fiyat": "1344.0",
-     "id": "740-2380"
-    },
-    {
-     "ad": "Sento Rezervuar",
-     "kategori": "Vitrifiyeler/Klozetler/Rezervuar ve Klozet İç Takımları",
-     "fiyat": "3825.0",
-     "id": "5639B003-0108"
-    },
-    {
-     "ad": "Root Square Kumanda Paneli",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
-     "fiyat": "1678.0",
-     "id": "740-2311"
-    },
-    {
-     "ad": "Root Round Kumanda Paneli",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
-     "fiyat": "3579.0",
-     "id": "740-2224"
-    },
-    {
-     "ad": "Root Square Kumanda Paneli",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
-     "fiyat": "3579.0",
-     "id": "740-2324"
-    },
-    {
-     "ad": "Root Round Kumanda Paneli",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
-     "fiyat": "1158.0",
-     "id": "740-2200"
-    },
-    {
-     "ad": "Root Round Kumanda Paneli",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
-     "fiyat": "3802.0",
-     "id": "740-2225"
-    },
-    {
-     "ad": "Origin Classic Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Tek Armatür Delikli Lavabo Bataryaları",
-     "fiyat": "14794.0",
-     "id": "A42880"
-    },
-    {
-     "ad": "Origin Kumanda Paneli,  Cam",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
-     "fiyat": "5196.0",
-     "id": "740-1600"
-    },
-    {
-     "ad": "Root Square Kumanda Paneli",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
-     "fiyat": "3802.0",
-     "id": "740-2395"
-    },
-    {
-     "ad": "Root Square Kumanda Paneli",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
-     "fiyat": "1158.0",
-     "id": "740-2300"
-    },
-    {
-     "ad": "Integra Square Rezervuar",
-     "kategori": "Vitrifiyeler/Klozetler/Rezervuar ve Klozet İç Takımları",
-     "fiyat": "3825.0",
-     "id": "7100B003-0108"
-    },
-    {
-     "ad": "Loop T  Kumanda Paneli",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Temassız Kumanda Panelleri",
-     "fiyat": "12515.0",
-     "id": "768-0880"
-    },
-    {
-     "ad": "V-Care Akıllı Smart Panel, 8 cm ",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Akıllı Kumanda Panelleri",
-     "fiyat": "29729.0",
-     "id": "768-1502"
-    },
-    {
-     "ad": "Origin Kumanda Paneli",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
-     "fiyat": "1158.0",
-     "id": "740-2400"
-    },
-    {
-     "ad": "Origin Classic Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Tek Armatür Delikli Lavabo Bataryaları",
-     "fiyat": "17010.0",
-     "id": "A42884"
-    },
-    {
-     "ad": "Liquid Kumanda Paneli",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
-     "fiyat": "15048.0",
-     "id": "740-2101"
-    },
-    {
-     "ad": "Origin Classic Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Tek Armatür Delikli Lavabo Bataryaları",
-     "fiyat": "28067.0",
-     "id": "A4288429"
-    }
-   ],
-   "bos": false,
-   "http": 1020823,
-   "grup": "Yedek parça ve aksesuar",
-   "sorgu": "kumanda paneli",
-   "beklenen": "kumanda"
-  },
-  {
-   "url": "https://www.vitra.com.tr/search?q=taharet+muslu%C4%9Fu",
-   "sonuc": 133,
-   "urunler": [
-    {
-     "ad": "Origin Ara Musluk",
-     "kategori": "Armatürler/Musluk ve Ara Musluklar",
-     "fiyat": "1745.0",
-     "id": "A45214"
-    },
-    {
-     "ad": "Uzun Musluk",
-     "kategori": "Armatürler/Musluk ve Ara Musluklar",
-     "fiyat": "1215.0",
-     "id": "A41584"
-    },
-    {
-     "ad": "Filtreli Ara Musluk",
-     "kategori": "Armatürler/Musluk ve Ara Musluklar",
-     "fiyat": "427.0",
-     "id": "A45200"
-    },
-    {
-     "ad": "Metropole Round QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "18691.0",
-     "id": "7910B403-0090"
-    },
-    {
-     "ad": "Metropole Square QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "20560.0",
-     "id": "7906B403-0090"
-    },
-    {
-     "ad": "Origin Ara Musluk",
-     "kategori": "Armatürler/Musluk ve Ara Musluklar",
-     "fiyat": "3108.0",
-     "id": "A4521436WTC"
-    },
-    {
-     "ad": "Origin Ara Musluk",
-     "kategori": "Armatürler/Musluk ve Ara Musluklar",
-     "fiyat": "3108.0",
-     "id": "A4521434"
-    },
-    {
-     "ad": "Sento Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "19936.0",
-     "id": "7748B022-0559"
-    },
-    {
-     "ad": "Taharet Duşu",
-     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Taharet El Duşları",
-     "fiyat": "3019.0",
-     "id": "A45747"
-    },
-    {
-     "ad": "Memoria Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "33031.0",
-     "id": "5885B422-0559"
-    },
-    {
-     "ad": "Integra Square Takım Klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Yerden Tek Klozetler",
-     "fiyat": "9265.0",
-     "id": "7086B003-0092"
-    },
-    {
-     "ad": "Metropole Square QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "27755.0",
-     "id": "7906B422-0090"
-    },
-    {
-     "ad": "Plural Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "46827.0",
-     "id": "7830B422-0090"
-    },
-    {
-     "ad": "Liquid Ara Musluk",
-     "kategori": "Armatürler/Musluk ve Ara Musluklar",
-     "fiyat": "5552.0",
-     "id": "A4275939"
-    },
-    {
-     "ad": "Origin Ara Musluk",
-     "kategori": "Armatürler/Musluk ve Ara Musluklar",
-     "fiyat": "3108.0",
-     "id": "A4521429"
-    },
-    {
-     "ad": "Metropole Round QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "25233.0",
-     "id": "7910B422-0090"
-    },
-    {
-     "ad": "Metropole Round QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "25233.0",
-     "id": "7910B483-0090"
-    },
-    {
-     "ad": "Ara Musluk",
-     "kategori": "Armatürler/Musluk ve Ara Musluklar",
-     "fiyat": "1013.0",
-     "id": "A45232"
-    },
-    {
-     "ad": "Integra Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "12027.0",
-     "id": "7041B003-0090"
-    },
-    {
-     "ad": "Ara Musluk",
-     "kategori": "Armatürler/Musluk ve Ara Musluklar",
-     "fiyat": "1247.0",
-     "id": "A45206"
-    }
-   ],
-   "bos": false,
-   "http": 986028,
-   "grup": "Yedek parça ve aksesuar",
-   "sorgu": "taharet musluğu",
-   "beklenen": "taharet"
-  },
-  {
-   "url": "https://www.vitra.com.tr/search?q=lavabo+sifonu",
-   "sonuc": 2115,
-   "urunler": [
-    {
-     "ad": "Lavabo Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "2300.0",
-     "id": "ETIC_MTJ(LAVABO)"
-    },
-    {
-     "ad": "Origin Lavabo Sifonu",
-     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Lavabo Sifon ve Süzgeçleri",
-     "fiyat": "3103.0",
-     "id": "A45123"
-    },
-    {
-     "ad": "Minibox Ankastre Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Ankastre Lavabo Bataryaları",
-     "fiyat": "2928.0",
-     "id": "A42230"
-    },
-    {
-     "ad": "Lavabo Yuvarlak Süzgeci Universal",
-     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Lavabo Sifon ve Süzgeçleri",
-     "fiyat": "1273.0",
-     "id": "A45149"
-    },
-    {
-     "ad": "Root Round Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Tek Armatür Delikli Lavabo Bataryaları",
-     "fiyat": "7806.0",
-     "id": "A42706"
-    },
-    {
-     "ad": "Lavabo Yuvarlak Süzgeci Universal",
-     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Lavabo Sifon ve Süzgeçleri",
-     "fiyat": "1203.0",
-     "id": "A45148"
-    },
-    {
-     "ad": "Suit Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Tek Armatür Delikli Lavabo Bataryaları",
-     "fiyat": "14824.0",
-     "id": "A42616"
-    },
-    {
-     "ad": "Lavabo/Eviye Sifonu",
-     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Lavabo Sifon ve Süzgeçleri",
-     "fiyat": "1905.0",
-     "id": "A45122"
-    },
-    {
-     "ad": "Origin Lavabo Sifonu",
-     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Lavabo Sifon ve Süzgeçleri",
-     "fiyat": "4651.0",
-     "id": "A4512336WTC"
-    },
-    {
-     "ad": "Lavabo Sifonu",
-     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Lavabo Sifon ve Süzgeçleri",
-     "fiyat": "1881.0",
-     "id": "A45151"
-    },
-    {
-     "ad": "Origin Ankastre Lavabo Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "5597.0",
-     "id": "A42621"
-    },
-    {
-     "ad": "Root Round Temassız Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Temassız Lavabo Bataryaları",
-     "fiyat": "21520.0",
-     "id": "A47122"
-    },
-    {
-     "ad": "Origin Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Tek Armatür Delikli Lavabo Bataryaları",
-     "fiyat": "12231.0",
-     "id": "A42556"
-    },
-    {
-     "ad": "Origin Ankastre Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Ankastre Lavabo Bataryaları",
-     "fiyat": "16508.0",
-     "id": "A4258136WTC"
-    },
-    {
-     "ad": "S20 Tezgahaltı Lavabo",
-     "kategori": "Vitrifiyeler/Lavabolar/Tezgahaltı Lavabolar",
-     "fiyat": "5960.0",
-     "id": "6069B003-0012"
-    },
-    {
-     "ad": "Origin Temassız Ankastre Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Temassız Lavabo Bataryaları",
-     "fiyat": "15947.0",
-     "id": "A47112"
-    },
-    {
-     "ad": "Origin Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Tek Armatür Delikli Lavabo Bataryaları",
-     "fiyat": "18340.0",
-     "id": "A4255636WTC"
-    },
-    {
-     "ad": "Outline Çanak Lavabo",
-     "kategori": "Vitrifiyeler/Lavabolar/Çanak Lavabolar",
-     "fiyat": "13188.0",
-     "id": "5995B403-0016"
-    },
-    {
-     "ad": "Origin Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Çanak Lavabo Bataryaları",
-     "fiyat": "16881.0",
-     "id": "A42558"
-    },
-    {
-     "ad": "Origin Çanak Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Çanak Lavabo Bataryaları",
-     "fiyat": "22012.0",
-     "id": "A4255736WTC"
-    }
-   ],
-   "bos": false,
-   "http": 1590211,
-   "grup": "Yedek parça ve aksesuar",
-   "sorgu": "lavabo sifonu",
-   "beklenen": "sifon"
-  },
-  {
-   "url": "https://www.vitra.com.tr/search?q=klozet+kapagi",
-   "sonuc": 370,
-   "urunler": [
-    {
-     "ad": "Klozet Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "2750.0",
-     "id": "ETIC_MTJ(KLOZET)"
-    },
-    {
-     "ad": "Akıllı Klozet Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "2212.5",
-     "id": "ETIC_MTJ(AKLOZET)"
-    },
-    {
-     "ad": "V-Fix Prime 8cm Asma Klozetler için Gömme Rezervuar",
-     "kategori": "Rezervuarlar/Gömme Rezervuarlar/Asma Klozetler için Gömme Rezervuarlar",
-     "fiyat": "5730.0",
-     "id": "768-1851-01"
-    },
-    {
-     "ad": "Sento Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "3557.0",
-     "id": "130-003R009"
-    },
-    {
-     "ad": "İç Takım",
-     "kategori": "Vitrifiyeler/Klozetler/Rezervuar ve Klozet İç Takımları",
-     "fiyat": "896.0",
-     "id": "330B1314"
-    },
-    {
-     "ad": "Sento Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "3228.0",
-     "id": "86-003R009"
-    },
-    {
-     "ad": "Universal Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "1720.0",
-     "id": "121-003-909"
-    },
-    {
-     "ad": "Sento Asma Klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "14767.0",
-     "id": "7748B003-0559"
-    },
-    {
-     "ad": "S50 Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "2612.0",
-     "id": "108-003-009"
-    },
-    {
-     "ad": "Integra Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "2942.0",
-     "id": "131-003R009"
-    },
-    {
-     "ad": "Metropole Round QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "18691.0",
-     "id": "7910B403-0090"
-    },
-    {
-     "ad": "Valarte Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "3551.0",
-     "id": "124-003R009"
-    },
-    {
-     "ad": "V-Fix Prime 8cm Asma Klozetler için Gömme Rezervuar",
-     "kategori": "Rezervuarlar/Gömme Rezervuarlar/Asma Klozetler için Gömme Rezervuarlar",
-     "fiyat": "11895.0",
-     "id": "768-5800-01"
-    },
-    {
-     "ad": "Sento Klozet kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "4801.0",
-     "id": "130-422R009"
-    },
-    {
-     "ad": "Metropole Square QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "20560.0",
-     "id": "7906B403-0090"
-    },
-    {
-     "ad": "Memoria Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "3551.0",
-     "id": "106-003R009"
-    },
-    {
-     "ad": "Integra Square Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "2942.0",
-     "id": "191-003R009"
-    },
-    {
-     "ad": "Sento Rezervuar",
-     "kategori": "Vitrifiyeler/Klozetler/Rezervuar ve Klozet İç Takımları",
-     "fiyat": "3825.0",
-     "id": "5639B003-0108"
-    },
-    {
-     "ad": "İç Takım",
-     "kategori": "Klozetler ve Rezervuarlar/Rezervuarlar ve İç Takımlar",
-     "fiyat": "1131.0",
-     "id": "330B2016"
-    },
-    {
-     "ad": "Sento Asma Klozet Seti",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozet Takımları",
-     "fiyat": "44390.0",
-     "id": "7948B403-6262"
-    }
-   ],
-   "bos": false,
-   "http": 1094807,
-   "grup": "Yazım farkı",
-   "sorgu": "klozet kapagi",
-   "beklenen": "kapa[kğ]"
-  },
-  {
-   "url": "https://www.vitra.com.tr/search?q=dusakabin",
-   "sonuc": 0,
-   "urunler": [],
-   "bos": true,
-   "http": 430440,
-   "grup": "Yazım farkı",
-   "sorgu": "dusakabin",
-   "beklenen": "duşakabin|duş kabin"
-  },
-  {
-   "url": "https://www.vitra.com.tr/search?q=banyo+dolabi",
-   "sonuc": 2640,
-   "urunler": [
-    {
-     "ad": "Diğer Banyo Mobilyaları Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "2000.0",
-     "id": "ETIC_MTJ(DIGERBM)"
-    },
-    {
-     "ad": "Banyo Mobilyası Seti Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "4000.0",
-     "id": "ETIC_MTJ(BMSET)"
-    },
-    {
-     "ad": "Minibox Ankastre Banyo Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "3145.0",
-     "id": "A41949"
-    },
-    {
-     "ad": "Minimax Yedek Tuvalet Kağıtlığı",
-     "kategori": "Banyo Aksesuarları/Tuvalet Kağıtlıkları",
-     "fiyat": "1271.0",
-     "id": "A44789"
-    },
-    {
-     "ad": "Minimax Askı",
-     "kategori": "Banyo Aksesuarları/Banyo Askıları",
-     "fiyat": "969.0",
-     "id": "A44787"
-    },
-    {
-     "ad": "Origin Tuvalet Kağıtlığı",
-     "kategori": "Banyo Aksesuarları/Tuvalet Kağıtlıkları",
-     "fiyat": "2569.0",
-     "id": "A44887"
-    },
-    {
-     "ad": "Minimax Tuvalet Kağıtlığı",
-     "kategori": "Banyo Aksesuarları/Tuvalet Kağıtlıkları",
-     "fiyat": "1113.0",
-     "id": "A44796"
-    },
-    {
-     "ad": "Origin Askı",
-     "kategori": "Banyo Aksesuarları/Banyo Askıları",
-     "fiyat": "1903.0",
-     "id": "A44884"
-    },
-    {
-     "ad": "Minimax Halka Havluluk",
-     "kategori": "Banyo Aksesuarları/Havluluklar",
-     "fiyat": "1360.0",
-     "id": "A44783"
-    },
-    {
-     "ad": "Marin Askı",
-     "kategori": "Banyo Aksesuarları/Banyo Askıları",
-     "fiyat": "397.0",
-     "id": "A44947"
-    },
-    {
-     "ad": "Origin Ankastre Banyo Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "8837.0",
-     "id": "A4262036WTC"
-    },
-    {
-     "ad": "Marin Tuvalet Fırçalığı",
-     "kategori": "Banyo Aksesuarları/Tuvalet Fırçaları",
-     "fiyat": "1402.0",
-     "id": "A44948"
-    },
-    {
-     "ad": "Origin Çıkış Ucu",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Banyo Batarya Çıkış Uçları",
-     "fiyat": "7742.0",
-     "id": "A4262236WTC"
-    },
-    {
-     "ad": "Minibox Ankastre Duş Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "2513.0",
-     "id": "A42213"
-    },
-    {
-     "ad": "Origin Ankastre Duş Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "8398.0",
-     "id": "A4262136WTC"
-    },
-    {
-     "ad": "Arkitekta Çöp Kovası",
-     "kategori": "Banyo Aksesuarları/Banyo Çöp Kovaları",
-     "fiyat": "2397.0",
-     "id": "A44012"
-    },
-    {
-     "ad": "Minimax Uzun Havluluk",
-     "kategori": "Banyo Aksesuarları/Havluluklar",
-     "fiyat": "1851.0",
-     "id": "A44784"
-    },
-    {
-     "ad": "Root Round Banyo Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Duvardan Banyo Bataryaları",
-     "fiyat": "9919.0",
-     "id": "A42725"
-    },
-    {
-     "ad": "Origin Ankastre Lavabo Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "5597.0",
-     "id": "A42621"
-    },
-    {
-     "ad": "Marin Tuvalet Kağıtlığı",
-     "kategori": "Banyo Aksesuarları/Tuvalet Kağıtlıkları",
-     "fiyat": "854.0",
-     "id": "A44946"
-    }
-   ],
-   "bos": false,
-   "http": 1594240,
-   "grup": "Yazım farkı",
-   "sorgu": "banyo dolabi",
-   "beklenen": "dolab|dolap"
-  },
-  {
-   "url": "https://www.vitra.com.tr/search?q=rezarvuar",
-   "sonuc": 0,
-   "urunler": [],
-   "bos": true,
-   "http": 430440,
-   "grup": "Yazım farkı",
-   "sorgu": "rezarvuar",
-   "beklenen": "rezervuar"
-  },
-  {
-   "url": "https://www.vitra.com.tr/search?q=klozed",
-   "sonuc": 0,
-   "urunler": [],
-   "bos": true,
-   "http": 430422,
-   "grup": "Yazım farkı",
-   "sorgu": "klozed",
-   "beklenen": "klozet"
-  },
-  {
-   "url": "https://www.vitra.com.tr/search?q=batarya",
-   "sonuc": 1035,
-   "urunler": [
-    {
-     "ad": "Minibox Ankastre Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Ankastre Lavabo Bataryaları",
-     "fiyat": "2928.0",
-     "id": "A42230"
-    },
-    {
-     "ad": "Minibox Ankastre Banyo Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "3145.0",
-     "id": "A41949"
-    },
-    {
-     "ad": "Root Round Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Tek Armatür Delikli Lavabo Bataryaları",
-     "fiyat": "7806.0",
-     "id": "A42706"
-    },
-    {
-     "ad": "Suit Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Tek Armatür Delikli Lavabo Bataryaları",
-     "fiyat": "14824.0",
-     "id": "A42616"
-    },
-    {
-     "ad": "Origin Ankastre Banyo Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "8837.0",
-     "id": "A4262036WTC"
-    },
-    {
-     "ad": "Origin Çıkış Ucu",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Banyo Batarya Çıkış Uçları",
-     "fiyat": "7742.0",
-     "id": "A4262236WTC"
-    },
-    {
-     "ad": "Minibox Ankastre Duş Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "2513.0",
-     "id": "A42213"
-    },
-    {
-     "ad": "Origin Ankastre Duş Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "8398.0",
-     "id": "A4262136WTC"
-    },
-    {
-     "ad": "Root Round Banyo Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Duvardan Banyo Bataryaları",
-     "fiyat": "9919.0",
-     "id": "A42725"
-    },
-    {
-     "ad": "Origin Ankastre Lavabo Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "5597.0",
-     "id": "A42621"
-    },
-    {
-     "ad": "Root Round Temassız Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Temassız Lavabo Bataryaları",
-     "fiyat": "21520.0",
-     "id": "A47122"
-    },
-    {
-     "ad": "Origin Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Tek Armatür Delikli Lavabo Bataryaları",
-     "fiyat": "12231.0",
-     "id": "A42556"
-    },
-    {
-     "ad": "V-Box",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "5726.0",
-     "id": "A42806"
-    },
-    {
-     "ad": "Origin Ankastre Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Ankastre Lavabo Bataryaları",
-     "fiyat": "16508.0",
-     "id": "A4258136WTC"
-    },
-    {
-     "ad": "Suit Ankastre Banyo Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "11201.0",
-     "id": "A4283839"
-    },
-    {
-     "ad": "Origin Temassız Ankastre Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Temassız Lavabo Bataryaları",
-     "fiyat": "15947.0",
-     "id": "A47112"
-    },
-    {
-     "ad": "Origin Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Tek Armatür Delikli Lavabo Bataryaları",
-     "fiyat": "18340.0",
-     "id": "A4255636WTC"
-    },
-    {
-     "ad": "Origin Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Çanak Lavabo Bataryaları",
-     "fiyat": "16881.0",
-     "id": "A42558"
-    },
-    {
-     "ad": "Origin Çanak Lavabo Bataryası",
-     "kategori": "Armatürler/Lavabo Bataryaları/Çanak Lavabo Bataryaları",
-     "fiyat": "22012.0",
-     "id": "A4255736WTC"
-    },
-    {
-     "ad": "Suit Banyo Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Duvardan Banyo Bataryaları",
-     "fiyat": "34826.0",
-     "id": "A4281839"
-    }
-   ],
-   "bos": false,
-   "http": 1186147,
-   "grup": "Yazım farkı",
-   "sorgu": "batarya",
-   "beklenen": "batarya"
-  },
-  {
-   "url": "https://www.vitra.com.tr/search?q=80+cm+banyo+dolab%C4%B1",
-   "sonuc": 4448,
-   "urunler": [
-    {
-     "ad": "Diğer Banyo Mobilyaları Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "2000.0",
-     "id": "ETIC_MTJ(DIGERBM)"
-    },
-    {
-     "ad": "Banyo Mobilyası Seti Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "4000.0",
-     "id": "ETIC_MTJ(BMSET)"
-    },
-    {
-     "ad": "Minibox Ankastre Banyo Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "3145.0",
-     "id": "A41949"
-    },
-    {
-     "ad": "Minimax Yedek Tuvalet Kağıtlığı",
-     "kategori": "Banyo Aksesuarları/Tuvalet Kağıtlıkları",
-     "fiyat": "1271.0",
-     "id": "A44789"
-    },
-    {
-     "ad": "Minimax Askı",
-     "kategori": "Banyo Aksesuarları/Banyo Askıları",
-     "fiyat": "969.0",
-     "id": "A44787"
-    },
-    {
-     "ad": "Origin Tuvalet Kağıtlığı",
-     "kategori": "Banyo Aksesuarları/Tuvalet Kağıtlıkları",
-     "fiyat": "2569.0",
-     "id": "A44887"
-    },
-    {
-     "ad": "Minimax Tuvalet Kağıtlığı",
-     "kategori": "Banyo Aksesuarları/Tuvalet Kağıtlıkları",
-     "fiyat": "1113.0",
-     "id": "A44796"
-    },
-    {
-     "ad": "Origin Askı",
-     "kategori": "Banyo Aksesuarları/Banyo Askıları",
-     "fiyat": "1903.0",
-     "id": "A44884"
-    },
-    {
-     "ad": "Minimax Halka Havluluk",
-     "kategori": "Banyo Aksesuarları/Havluluklar",
-     "fiyat": "1360.0",
-     "id": "A44783"
-    },
-    {
-     "ad": "Marin Askı",
-     "kategori": "Banyo Aksesuarları/Banyo Askıları",
-     "fiyat": "397.0",
-     "id": "A44947"
-    },
-    {
-     "ad": "Origin Ankastre Banyo Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "8837.0",
-     "id": "A4262036WTC"
-    },
-    {
-     "ad": "Marin Tuvalet Fırçalığı",
-     "kategori": "Banyo Aksesuarları/Tuvalet Fırçaları",
-     "fiyat": "1402.0",
-     "id": "A44948"
-    },
-    {
-     "ad": "Origin Çıkış Ucu",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Banyo Batarya Çıkış Uçları",
-     "fiyat": "7742.0",
-     "id": "A4262236WTC"
-    },
-    {
-     "ad": "Minibox Ankastre Duş Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "2513.0",
-     "id": "A42213"
-    },
-    {
-     "ad": "Sento Asma Klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "14767.0",
-     "id": "7748B003-0559"
-    },
-    {
-     "ad": "Origin Ankastre Duş Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "8398.0",
-     "id": "A4262136WTC"
-    },
-    {
-     "ad": "Arkitekta Çöp Kovası",
-     "kategori": "Banyo Aksesuarları/Banyo Çöp Kovaları",
-     "fiyat": "2397.0",
-     "id": "A44012"
-    },
-    {
-     "ad": "Minimax Uzun Havluluk",
-     "kategori": "Banyo Aksesuarları/Havluluklar",
-     "fiyat": "1851.0",
-     "id": "A44784"
-    },
-    {
-     "ad": "Root Round Banyo Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Duvardan Banyo Bataryaları",
-     "fiyat": "9919.0",
-     "id": "A42725"
-    },
-    {
-     "ad": "Origin Ankastre Lavabo Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "5597.0",
-     "id": "A42621"
-    }
-   ],
-   "bos": false,
-   "http": 2130071,
-   "grup": "Ölçü ve özellik",
-   "sorgu": "80 cm banyo dolabı",
-   "beklenen": "80"
-  },
-  {
-   "url": "https://www.vitra.com.tr/search?q=kanals%C4%B1z+klozet",
-   "sonuc": 371,
-   "urunler": [
-    {
-     "ad": "Klozet Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "2750.0",
-     "id": "ETIC_MTJ(KLOZET)"
-    },
-    {
-     "ad": "Akıllı Klozet Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "2212.5",
-     "id": "ETIC_MTJ(AKLOZET)"
-    },
-    {
-     "ad": "V-Fix Prime 8cm Asma Klozetler için Gömme Rezervuar",
-     "kategori": "Rezervuarlar/Gömme Rezervuarlar/Asma Klozetler için Gömme Rezervuarlar",
-     "fiyat": "5730.0",
-     "id": "768-1851-01"
-    },
-    {
-     "ad": "Sento Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "3557.0",
-     "id": "130-003R009"
-    },
-    {
-     "ad": "İç Takım",
-     "kategori": "Vitrifiyeler/Klozetler/Rezervuar ve Klozet İç Takımları",
-     "fiyat": "896.0",
-     "id": "330B1314"
-    },
-    {
-     "ad": "Sento Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "3228.0",
-     "id": "86-003R009"
-    },
-    {
-     "ad": "Universal Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "1720.0",
-     "id": "121-003-909"
-    },
-    {
-     "ad": "Sento Asma Klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "14767.0",
-     "id": "7748B003-0559"
-    },
-    {
-     "ad": "S50 Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "2612.0",
-     "id": "108-003-009"
-    },
-    {
-     "ad": "Integra Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "2942.0",
-     "id": "131-003R009"
-    },
-    {
-     "ad": "Metropole Round QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "18691.0",
-     "id": "7910B403-0090"
-    },
-    {
-     "ad": "Valarte Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "3551.0",
-     "id": "124-003R009"
-    },
-    {
-     "ad": "V-Fix Prime 8cm Asma Klozetler için Gömme Rezervuar",
-     "kategori": "Rezervuarlar/Gömme Rezervuarlar/Asma Klozetler için Gömme Rezervuarlar",
-     "fiyat": "11895.0",
-     "id": "768-5800-01"
-    },
-    {
-     "ad": "Sento Klozet kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "4801.0",
-     "id": "130-422R009"
-    },
-    {
-     "ad": "Metropole Square QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "20560.0",
-     "id": "7906B403-0090"
-    },
-    {
-     "ad": "Memoria Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "3551.0",
-     "id": "106-003R009"
-    },
-    {
-     "ad": "Integra Square Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "2942.0",
-     "id": "191-003R009"
-    },
-    {
-     "ad": "Sento Rezervuar",
-     "kategori": "Vitrifiyeler/Klozetler/Rezervuar ve Klozet İç Takımları",
-     "fiyat": "3825.0",
-     "id": "5639B003-0108"
-    },
-    {
-     "ad": "İç Takım",
-     "kategori": "Klozetler ve Rezervuarlar/Rezervuarlar ve İç Takımlar",
-     "fiyat": "1131.0",
-     "id": "330B2016"
-    },
-    {
-     "ad": "Sento Asma Klozet Seti",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozet Takımları",
-     "fiyat": "44390.0",
-     "id": "7948B403-6262"
-    }
-   ],
-   "bos": false,
-   "http": 1106496,
-   "grup": "Ölçü ve özellik",
-   "sorgu": "kanalsız klozet",
-   "beklenen": "kanalsız|rim-?ex|rimless"
-  },
-  {
-   "url": "https://www.vitra.com.tr/search?q=ak%C4%B1ll%C4%B1+klozet",
-   "sonuc": 373,
-   "urunler": [
-    {
-     "ad": "Klozet Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "2750.0",
-     "id": "ETIC_MTJ(KLOZET)"
-    },
-    {
-     "ad": "Akıllı Klozet Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "2212.5",
-     "id": "ETIC_MTJ(AKLOZET)"
-    },
-    {
-     "ad": "Akıllı Panel Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "937.5",
-     "id": "ETIC_MTJ(APANEL)"
-    },
-    {
-     "ad": "V-Fix Prime 8cm Asma Klozetler için Gömme Rezervuar",
-     "kategori": "Rezervuarlar/Gömme Rezervuarlar/Asma Klozetler için Gömme Rezervuarlar",
-     "fiyat": "5730.0",
-     "id": "768-1851-01"
-    },
-    {
-     "ad": "Sento Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "3557.0",
-     "id": "130-003R009"
-    },
-    {
-     "ad": "İç Takım",
-     "kategori": "Vitrifiyeler/Klozetler/Rezervuar ve Klozet İç Takımları",
-     "fiyat": "896.0",
-     "id": "330B1314"
-    },
-    {
-     "ad": "Sento Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "3228.0",
-     "id": "86-003R009"
-    },
-    {
-     "ad": "Universal Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "1720.0",
-     "id": "121-003-909"
-    },
-    {
-     "ad": "Sento Asma Klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "14767.0",
-     "id": "7748B003-0559"
-    },
-    {
-     "ad": "S50 Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "2612.0",
-     "id": "108-003-009"
-    },
-    {
-     "ad": "Integra Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "2942.0",
-     "id": "131-003R009"
-    },
-    {
-     "ad": "Metropole Round QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "18691.0",
-     "id": "7910B403-0090"
-    },
-    {
-     "ad": "Valarte Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "3551.0",
-     "id": "124-003R009"
-    },
-    {
-     "ad": "V-Fix Prime 8cm Asma Klozetler için Gömme Rezervuar",
-     "kategori": "Rezervuarlar/Gömme Rezervuarlar/Asma Klozetler için Gömme Rezervuarlar",
-     "fiyat": "11895.0",
-     "id": "768-5800-01"
-    },
-    {
-     "ad": "Sento Klozet kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "4801.0",
-     "id": "130-422R009"
-    },
-    {
-     "ad": "Metropole Square QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "20560.0",
-     "id": "7906B403-0090"
-    },
-    {
-     "ad": "Memoria Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "3551.0",
-     "id": "106-003R009"
-    },
-    {
-     "ad": "Integra Square Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "2942.0",
-     "id": "191-003R009"
-    },
-    {
-     "ad": "Sento Rezervuar",
-     "kategori": "Vitrifiyeler/Klozetler/Rezervuar ve Klozet İç Takımları",
-     "fiyat": "3825.0",
-     "id": "5639B003-0108"
-    },
-    {
-     "ad": "İç Takım",
-     "kategori": "Klozetler ve Rezervuarlar/Rezervuarlar ve İç Takımlar",
-     "fiyat": "1131.0",
-     "id": "330B2016"
-    }
-   ],
-   "bos": false,
-   "http": 1102778,
-   "grup": "Ölçü ve özellik",
-   "sorgu": "akıllı klozet",
-   "beklenen": "akıllı|v-care"
-  },
-  {
-   "url": "https://www.vitra.com.tr/search?q=siyah+klozet",
-   "sonuc": 1103,
-   "urunler": [
-    {
-     "ad": "Klozet Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "2750.0",
-     "id": "ETIC_MTJ(KLOZET)"
-    },
-    {
-     "ad": "Akıllı Klozet Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "2212.5",
-     "id": "ETIC_MTJ(AKLOZET)"
-    },
-    {
-     "ad": "V-Fix Prime 8cm Asma Klozetler için Gömme Rezervuar",
-     "kategori": "Rezervuarlar/Gömme Rezervuarlar/Asma Klozetler için Gömme Rezervuarlar",
-     "fiyat": "5730.0",
-     "id": "768-1851-01"
-    },
-    {
-     "ad": "Origin Duş Başlığı",
-     "kategori": "Duş Sistemleri/Duş Başlıkları",
-     "fiyat": "12486.0",
-     "id": "A4563836WTC"
-    },
-    {
-     "ad": "Sento Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "3557.0",
-     "id": "130-003R009"
-    },
-    {
-     "ad": "İç Takım",
-     "kategori": "Vitrifiyeler/Klozetler/Rezervuar ve Klozet İç Takımları",
-     "fiyat": "896.0",
-     "id": "330B1314"
-    },
-    {
-     "ad": "Origin Ankastre Yönlendirici",
-     "kategori": "Duş Sistemleri/Ankastre Duş Yönlendiriciler",
-     "fiyat": "3107.0",
-     "id": "A4285936WTC"
-    },
-    {
-     "ad": "Sento Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "3228.0",
-     "id": "86-003R009"
-    },
-    {
-     "ad": "Universal Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "1720.0",
-     "id": "121-003-909"
-    },
-    {
-     "ad": "Origin Ankastre Banyo Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "8837.0",
-     "id": "A4262036WTC"
-    },
-    {
-     "ad": "Origin Çıkış Ucu",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Banyo Batarya Çıkış Uçları",
-     "fiyat": "7742.0",
-     "id": "A4262236WTC"
-    },
-    {
-     "ad": "Sento Asma Klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "14767.0",
-     "id": "7748B003-0559"
-    },
-    {
-     "ad": "Origin Ankastre Duş Bataryası",
-     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
-     "fiyat": "8398.0",
-     "id": "A4262136WTC"
-    },
-    {
-     "ad": "S50 Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "2612.0",
-     "id": "108-003-009"
-    },
-    {
-     "ad": "Origin Ankastre El Duşu Çıkışı",
-     "kategori": "Duş Sistemleri/Duş Tamamlayıcı Ürünleri",
-     "fiyat": "3417.0",
-     "id": "A4262536WTC"
-    },
-    {
-     "ad": "Origin Lavabo Sifonu",
-     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Lavabo Sifon ve Süzgeçleri",
-     "fiyat": "4651.0",
-     "id": "A4512336WTC"
-    },
-    {
-     "ad": "Origin Kumamda Paneli,  Cam",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
-     "fiyat": "5196.0",
-     "id": "740-1601"
-    },
-    {
-     "ad": "Integra Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "2942.0",
-     "id": "131-003R009"
-    },
-    {
-     "ad": "Origin Askı",
-     "kategori": "Banyo Aksesuarları/Banyo Askıları",
-     "fiyat": "2855.0",
-     "id": "A4488436"
-    },
-    {
-     "ad": "Metropole Round QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "18691.0",
-     "id": "7910B403-0090"
-    }
-   ],
-   "bos": false,
-   "http": 1796407,
-   "grup": "Ölçü ve özellik",
-   "sorgu": "siyah klozet",
-   "beklenen": "siyah"
-  },
-  {
-   "url": "https://www.vitra.com.tr/search?q=metropole",
-   "sonuc": 344,
-   "urunler": [
-    {
-     "ad": "Metropole Round QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "18691.0",
-     "id": "7910B403-0090"
-    },
-    {
-     "ad": "Metropole Square QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "20560.0",
-     "id": "7906B403-0090"
-    },
-    {
-     "ad": "Metropole Tezgahaltı lavabo",
-     "kategori": "Vitrifiyeler/Lavabolar/Tezgahaltı Lavabolar",
-     "fiyat": "10624.0",
-     "id": "7535B403-1083"
-    },
-    {
-     "ad": "Metropole Square QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "27755.0",
-     "id": "7906B422-0090"
-    },
-    {
-     "ad": "Metropole Round QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "25233.0",
-     "id": "7910B422-0090"
-    },
-    {
-     "ad": "Metropole Round QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "25233.0",
-     "id": "7910B483-0090"
-    },
-    {
-     "ad": "Metropole Square QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "27755.0",
-     "id": "7906B483-0090"
-    },
-    {
-     "ad": "Metropole Round QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "25233.0",
-     "id": "7910B401-0090"
-    },
-    {
-     "ad": "Metropole Square QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "27755.0",
-     "id": "7906B401-0090"
-    },
-    {
-     "ad": "Metropole Pure Boy Dolabı",
-     "kategori": "Banyo Mobilyaları/Banyo Dolapları/Banyo Boy Dolapları",
-     "fiyat": "23316.0",
-     "id": "67344"
-    },
-    {
-     "ad": "Metropole Pure Lavabo Dolabı",
-     "kategori": "Banyo Mobilyaları/Lavabo Dolapları/Lavabo Dahil Lavabo Dolapları",
-     "fiyat": "38971.0",
-     "id": "67336"
-    },
-    {
-     "ad": "Metropole Infinit Etajerli",
-     "kategori": "Lavabolar/Etajerli Lavabolar",
-     "fiyat": "19863.0",
-     "id": "M58000018003"
-    },
-    {
-     "ad": "Metropole Pure Boy Dolabı",
-     "kategori": "Banyo Mobilyaları/Banyo Dolapları/Banyo Boy Dolapları",
-     "fiyat": "23316.0",
-     "id": "67219"
-    },
-    {
-     "ad": "Metropole Pure Lavabo Dolabı",
-     "kategori": "Banyo Mobilyaları/Lavabo Dolapları/Lavabo Dahil Lavabo Dolapları",
-     "fiyat": "42869.0",
-     "id": "67214"
-    },
-    {
-     "ad": "Metropole Pure Boy Dolabı",
-     "kategori": "Banyo Mobilyaları/Banyo Dolapları/Banyo Boy Dolapları",
-     "fiyat": "23316.0",
-     "id": "67277"
-    },
-    {
-     "ad": "Metropole Edge Lavabo Dolabı",
-     "kategori": "Banyo Mobilyaları/Lavabo Dolapları/Lavabo Dahil Lavabo Dolapları",
-     "fiyat": "80540.0",
-     "id": "67138"
-    },
-    {
-     "ad": "Metropole Edge Lavabo Dolabı",
-     "kategori": "Banyo Mobilyaları/Lavabo Dolapları/Lavabo Dahil Lavabo Dolapları",
-     "fiyat": "66563.0",
-     "id": "67136"
-    },
-    {
-     "ad": "Metropole Edge Aynalı Banyo Dolabı",
-     "kategori": "Banyo Mobilyaları/Banyo Aynaları/Aynalı Banyo Dolabı",
-     "fiyat": "67142.0",
-     "id": "67148"
-    },
-    {
-     "ad": "Metropole Edge Boy Dolabı",
-     "kategori": "Banyo Mobilyaları/Banyo Dolapları/Banyo Boy Dolapları",
-     "fiyat": "51091.0",
-     "id": "80543"
-    }
-   ],
-   "bos": false,
-   "http": 988579,
-   "grup": "Seri ve ürün kodu",
-   "sorgu": "metropole",
-   "beklenen": "metropole"
-  },
-  {
-   "url": "https://www.vitra.com.tr/search?q=sento",
-   "sonuc": 222,
-   "urunler": [
-    {
-     "ad": "Sento Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "3557.0",
-     "id": "130-003R009"
-    },
-    {
-     "ad": "Sento Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "3228.0",
-     "id": "86-003R009"
-    },
-    {
-     "ad": "Sento Asma Klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "14767.0",
-     "id": "7748B003-0559"
-    },
-    {
-     "ad": "Sento Klozet kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "4801.0",
-     "id": "130-422R009"
-    },
-    {
-     "ad": "Sento Rezervuar",
-     "kategori": "Vitrifiyeler/Klozetler/Rezervuar ve Klozet İç Takımları",
-     "fiyat": "3825.0",
-     "id": "5639B003-0108"
-    },
-    {
-     "ad": "Sento Asma Klozet Seti",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozet Takımları",
-     "fiyat": "44390.0",
-     "id": "7948B403-6262"
-    },
-    {
-     "ad": "Sento Kids Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "3020.0",
-     "id": "133-003-009"
-    },
-    {
-     "ad": "Sento Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "19936.0",
-     "id": "7748B022-0559"
-    },
-    {
-     "ad": "Sento Kids Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "4077.0",
-     "id": "133-100-009"
-    },
-    {
-     "ad": "Sento Klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Takım Klozetler",
-     "fiyat": "10863.0",
-     "id": "5987B003-0092"
-    },
-    {
-     "ad": "Sento Kids Asma Klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "12684.0",
-     "id": "7360B003-0090"
-    },
-    {
-     "ad": "Sento Asma Klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "19936.0",
-     "id": "7748B083-0559"
-    },
-    {
-     "ad": "Sento Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "4801.0",
-     "id": "130-401R009"
-    },
-    {
-     "ad": "Sento Asma Klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "14767.0",
-     "id": "7747B003-0559"
-    },
-    {
-     "ad": "Sento Çocuk Kumanda Paneli",
-     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
-     "fiyat": "1651.0",
-     "id": "740-2001"
-    },
-    {
-     "ad": "Sento Asma Klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "19308.0",
-     "id": "7748B003-7211"
-    },
-    {
-     "ad": "Sento Kids Lavabo",
-     "kategori": "Vitrifiyeler/Lavabolar/Standart Lavabo ve Ayakları",
-     "fiyat": "12015.0",
-     "id": "7353B003-1741"
-    },
-    {
-     "ad": "Sento Aynalı Banyo Dolabı",
-     "kategori": "Banyo Mobilyaları/Banyo Aynaları/Aynalı Banyo Dolabı",
-     "fiyat": "21632.0",
-     "id": "60896"
-    },
-    {
-     "ad": "Sento Aynalı Banyo Dolabı",
-     "kategori": "Banyo Mobilyaları/Banyo Aynaları/Aynalı Banyo Dolabı",
-     "fiyat": "23200.0",
-     "id": "60897"
-    },
-    {
-     "ad": "Sento Klozet Kapağı",
-     "kategori": "Vitrifiyeler/Klozet Kapakları",
-     "fiyat": "4801.0",
-     "id": "130-483R009"
-    }
-   ],
-   "bos": false,
-   "http": 1137586,
-   "grup": "Seri ve ürün kodu",
-   "sorgu": "sento",
-   "beklenen": "sento"
-  },
-  {
-   "url": "https://www.vitra.com.tr/search?q=integra",
-   "sonuc": 1,
-   "urunler": [],
-   "bos": false,
-   "http": 464567,
-   "grup": "Seri ve ürün kodu",
-   "sorgu": "integra",
-   "beklenen": "integra"
-  },
-  {
-   "url": "https://www.vitra.com.tr/search?q=7906B483-0090",
-   "sonuc": 46,
-   "urunler": [
-    {
-     "ad": "Metropole Round QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "18691.0",
-     "id": "7910B403-0090"
-    },
-    {
-     "ad": "Metropole Square QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "20560.0",
-     "id": "7906B403-0090"
-    },
-    {
-     "ad": "Equal Asma Klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "21843.0",
-     "id": "7245B403-0090"
-    },
-    {
-     "ad": "Sento Kids Asma Klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "12684.0",
-     "id": "7360B003-0090"
-    },
-    {
-     "ad": "İstanbul Asma Klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "30529.0",
-     "id": "4518B403-0090"
-    },
-    {
-     "ad": "Metropole Square QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "27755.0",
-     "id": "7906B422-0090"
-    },
-    {
-     "ad": "Liquid Asma Klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "28489.0",
-     "id": "7321B403-0090"
-    },
-    {
-     "ad": "Plural Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "46827.0",
-     "id": "7830B422-0090"
-    },
-    {
-     "ad": "Metropole Round QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "25233.0",
-     "id": "7910B422-0090"
-    },
-    {
-     "ad": "Metropole Round QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "25233.0",
-     "id": "7910B483-0090"
-    },
-    {
-     "ad": "Plural Asma Klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "34688.0",
-     "id": "7830B403-0090"
-    },
-    {
-     "ad": "Valarte Asma Klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "20928.0",
-     "id": "7805B403-0090"
-    },
-    {
-     "ad": "Integra Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "12027.0",
-     "id": "7041B003-0090"
-    },
-    {
-     "ad": "Integra Square Asma Klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "12368.0",
-     "id": "7082B003-0090"
-    },
-    {
-     "ad": "Plural Asma Klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "46827.0",
-     "id": "7830B483-0090"
-    },
-    {
-     "ad": "Metropole Square QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "27755.0",
-     "id": "7906B483-0090"
-    },
-    {
-     "ad": "Metropole Round QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "25233.0",
-     "id": "7910B401-0090"
-    },
-    {
-     "ad": "Metropole Square QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "27755.0",
-     "id": "7906B401-0090"
-    },
-    {
-     "ad": "Equal Asma Klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "29489.0",
-     "id": "7245B476-0090"
-    },
-    {
-     "ad": "Plural Asma Klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "46827.0",
-     "id": "7830B401-0090"
-    }
-   ],
-   "bos": false,
-   "http": 877579,
-   "grup": "Seri ve ürün kodu",
-   "sorgu": "7906B483-0090",
-   "beklenen": "7906b483|metropole"
-  },
-  {
-   "url": "https://www.vitra.com.tr/search?q=montaj",
-   "sonuc": 160,
-   "urunler": [
-    {
-     "ad": "Armatür ve Duş Sistemleri Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "2350.0",
-     "id": "ETIC_MTJ(ARMATUR)"
-    },
-    {
-     "ad": "Küçük Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "1150.0",
-     "id": "ETIC_MTJ(KUCUK)"
-    },
-    {
-     "ad": "Klozet Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "2750.0",
-     "id": "ETIC_MTJ(KLOZET)"
-    },
-    {
-     "ad": "Diğer Banyo Mobilyaları Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "2000.0",
-     "id": "ETIC_MTJ(DIGERBM)"
-    },
-    {
-     "ad": "Banyo Mobilyası Seti Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "4000.0",
-     "id": "ETIC_MTJ(BMSET)"
-    },
-    {
-     "ad": "Lavabo Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "2300.0",
-     "id": "ETIC_MTJ(LAVABO)"
-    },
-    {
-     "ad": "Büyük Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "5300.0",
-     "id": "ETIC_MTJ(BUYUK)"
-    },
-    {
-     "ad": "Orta Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "2200.0",
-     "id": "ETIC_MTJ(ORTA)"
-    },
-    {
-     "ad": "Gömme Rezervuar Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "3900.0",
-     "id": "ETIC_MTJ(GOMMERZ)"
-    },
-    {
-     "ad": "Akıllı Klozet Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "2212.5",
-     "id": "ETIC_MTJ(AKLOZET)"
-    },
-    {
-     "ad": "Akıllı Panel Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "937.5",
-     "id": "ETIC_MTJ(APANEL)"
-    },
-    {
-     "ad": "Sento Asma Klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "14767.0",
-     "id": "7748B003-0559"
-    },
-    {
-     "ad": "Metropole Round QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "18691.0",
-     "id": "7910B403-0090"
-    },
-    {
-     "ad": "V-Fix Prime 8cm Asma Klozetler için Gömme Rezervuar",
-     "kategori": "Rezervuarlar/Gömme Rezervuarlar/Asma Klozetler için Gömme Rezervuarlar",
-     "fiyat": "11895.0",
-     "id": "768-5800-01"
-    },
-    {
-     "ad": "Metropole Square QuantumFlush Asma klozet",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
-     "fiyat": "20560.0",
-     "id": "7906B403-0090"
-    },
-    {
-     "ad": "Sento Asma Klozet Seti",
-     "kategori": "Vitrifiyeler/Klozetler/Asma Klozet Takımları",
-     "fiyat": "44390.0",
-     "id": "7948B403-6262"
-    },
-    {
-     "ad": "Gömme rezervuar elektrik bağlantı seti",
-     "kategori": "Rezervuarlar/Gömme Rezervuar Montaj Aksesuarları",
-     "fiyat": "5054.0",
-     "id": "300-1029"
     },
     {
      "ad": "Memoria Asma Klozet",
@@ -3486,16 +46,1786 @@
      "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
      "fiyat": "19936.0",
      "id": "7748B022-0559"
+    },
+    {
+     "ad": "Memoria Asma Klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
+     "fiyat": "33031.0",
+     "id": "5885B483-0559"
+    },
+    {
+     "ad": "Memoria Asma klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
+     "fiyat": "33031.0",
+     "id": "5885B422-0559"
+    },
+    {
+     "ad": "Sento Asma Klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
+     "fiyat": "19936.0",
+     "id": "7748B083-0559"
+    },
+    {
+     "ad": "İstanbul Asma Klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
+     "fiyat": "30529.0",
+     "id": "4518B403-0090"
+    },
+    {
+     "ad": "Memoria Asma Klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
+     "fiyat": "33031.0",
+     "id": "5885B401-0559"
+    },
+    {
+     "ad": "Liquid Asma Klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
+     "fiyat": "28489.0",
+     "id": "7321B403-0090"
+    },
+    {
+     "ad": "Plural Asma klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
+     "fiyat": "46827.0",
+     "id": "7830B422-0090"
+    },
+    {
+     "ad": "Sento Asma Klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
+     "fiyat": "14767.0",
+     "id": "7747B003-0559"
+    },
+    {
+     "ad": "Plural Asma Klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
+     "fiyat": "34688.0",
+     "id": "7830B403-0090"
+    },
+    {
+     "ad": "Valarte Asma Klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
+     "fiyat": "20928.0",
+     "id": "7805B403-0090"
+    },
+    {
+     "ad": "Plural Asma Klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
+     "fiyat": "46827.0",
+     "id": "7830B483-0090"
+    },
+    {
+     "ad": "Integra Asma klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
+     "fiyat": "12027.0",
+     "id": "7041B003-0090"
+    },
+    {
+     "ad": "Sento Asma Klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
+     "fiyat": "19308.0",
+     "id": "7748B003-7211"
+    },
+    {
+     "ad": "Sento Asma Klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
+     "fiyat": "19936.0",
+     "id": "7748B001-0559"
+    },
+    {
+     "ad": "Equal Asma Klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
+     "fiyat": "29489.0",
+     "id": "7245B476-0090"
+    },
+    {
+     "ad": "Sento Asma Klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
+     "fiyat": "18235.0",
+     "id": "7748B003-1684"
     }
    ],
    "bos": false,
-   "http": 961836,
+   "http": 1175144,
+   "grup": "Kategori",
+   "sorgu": "asma klozet",
+   "beklenen": "asma klozet"
+  },
+  {
+   "url": "https://www.vitra.com.tr/search?text=lavabo",
+   "sonuc": 2104,
+   "urunler": [
+    {
+     "ad": "Istanbul Lavabo Bataryası",
+     "kategori": "Armatürler/Lavabo Bataryaları/Tek Armatür Delikli Lavabo Bataryaları",
+     "fiyat": "17826.0",
+     "id": "A41826"
+    },
+    {
+     "ad": "Lavabo Sifonu",
+     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Lavabo Sifon ve Süzgeçleri",
+     "fiyat": "1881.0",
+     "id": "A45151"
+    },
+    {
+     "ad": "Lavabo Sifonu",
+     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Lavabo Sifon ve Süzgeçleri",
+     "fiyat": "1940.0",
+     "id": "A45118"
+    },
+    {
+     "ad": "Archiplan Lavabo",
+     "kategori": "Vitrifiyeler/Lavabolar/Etajerli Lavabolar",
+     "fiyat": "13144.0",
+     "id": "7410B003-1452"
+    },
+    {
+     "ad": "Integra Lavabo",
+     "kategori": "Vitrifiyeler/Lavabolar/Standart Lavabo ve Ayakları",
+     "fiyat": "4840.0",
+     "id": "7066L003-0001"
+    }
+   ],
+   "bos": false,
+   "http": 1550525,
+   "grup": "Kategori",
+   "sorgu": "lavabo",
+   "beklenen": "lavabo"
+  },
+  {
+   "url": "https://www.vitra.com.tr/search?text=banyo%20dolab%C4%B1",
+   "sonuc": 2643,
+   "urunler": [
+    {
+     "ad": "Mia Banyo Dolabı Seti",
+     "kategori": "Banyo Mobilyaları/Banyo Set Modülleri",
+     "fiyat": "13881.0",
+     "id": "75100"
+    },
+    {
+     "ad": "Mia Banyo Dolabı Seti",
+     "kategori": "Banyo Mobilyaları/Banyo Set Modülleri",
+     "fiyat": "13881.0",
+     "id": "75024"
+    },
+    {
+     "ad": "Mia Banyo Dolabı Seti",
+     "kategori": "Banyo Mobilyaları/Banyo Set Modülleri",
+     "fiyat": "12387.0",
+     "id": "75021"
+    },
+    {
+     "ad": "Core Aynalı Banyo Dolabı",
+     "kategori": "Banyo Mobilyaları/Banyo Aynaları/Aynalı Banyo Dolabı",
+     "fiyat": "11209.0",
+     "id": "66911"
+    },
+    {
+     "ad": "Core Aynalı Banyo Dolabı",
+     "kategori": "Banyo Mobilyaları/Banyo Aynaları/Aynalı Banyo Dolabı",
+     "fiyat": "12888.0",
+     "id": "66912"
+    },
+    {
+     "ad": "Core Aynalı Banyo Dolabı",
+     "kategori": "Banyo Mobilyaları/Banyo Aynaları/Aynalı Banyo Dolabı",
+     "fiyat": "9526.0",
+     "id": "66909"
+    },
+    {
+     "ad": "Sento Aynalı Banyo Dolabı",
+     "kategori": "Banyo Mobilyaları/Banyo Aynaları/Aynalı Banyo Dolabı",
+     "fiyat": "23200.0",
+     "id": "60897"
+    },
+    {
+     "ad": "Sento Aynalı Banyo Dolabı",
+     "kategori": "Banyo Mobilyaları/Banyo Aynaları/Aynalı Banyo Dolabı",
+     "fiyat": "21632.0",
+     "id": "60896"
+    },
+    {
+     "ad": "Core Aynalı Banyo Dolabı",
+     "kategori": "Banyo Mobilyaları/Banyo Aynaları/Aynalı Banyo Dolabı",
+     "fiyat": "15879.0",
+     "id": "66913"
+    },
+    {
+     "ad": "Valarte Aynalı Banyo Dolabı",
+     "kategori": "Banyo Mobilyaları/Banyo Aynaları/Aynalı Banyo Dolabı",
+     "fiyat": "28388.0",
+     "id": "62231"
+    },
+    {
+     "ad": "Valarte Aynalı Banyo Dolabı",
+     "kategori": "Banyo Mobilyaları/Banyo Aynaları/Aynalı Banyo Dolabı",
+     "fiyat": "30869.0",
+     "id": "62235"
+    }
+   ],
+   "bos": false,
+   "http": 1611028,
+   "grup": "Kategori",
+   "sorgu": "banyo dolabı",
+   "beklenen": "dolab|dolap"
+  },
+  {
+   "url": "https://www.vitra.com.tr/search?text=du%C5%9Fakabin",
+   "sonuc": 182,
+   "urunler": [
+    {
+     "ad": "Universal Sürgülü Oval Panel",
+     "kategori": "Yıkanma Alanları/Duşakabin",
+     "fiyat": "36648.0",
+     "id": "65650002282"
+    }
+   ],
+   "bos": false,
+   "http": 734738,
+   "grup": "Kategori",
+   "sorgu": "duşakabin",
+   "beklenen": "duşakabin|duş kabin"
+  },
+  {
+   "url": "https://www.vitra.com.tr/search?text=banyo%20bataryas%C4%B1",
+   "sonuc": 3137,
+   "urunler": [
+    {
+     "ad": "Origin Banyo Bataryası",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Duvardan Banyo Bataryaları",
+     "fiyat": "27434.0",
+     "id": "A4261936WTC"
+    },
+    {
+     "ad": "Minimax Round Banyo Bataryası",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Duvardan Banyo Bataryaları",
+     "fiyat": "9952.0",
+     "id": "A43548"
+    },
+    {
+     "ad": "Minimax Square Banyo Bataryası",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Duvardan Banyo Bataryaları",
+     "fiyat": "16107.0",
+     "id": "A4352036"
+    },
+    {
+     "ad": "Minimax Square Banyo Bataryası",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Duvardan Banyo Bataryaları",
+     "fiyat": "10738.0",
+     "id": "A43520"
+    },
+    {
+     "ad": "Minimax Round Banyo Bataryası",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Duvardan Banyo Bataryaları",
+     "fiyat": "16422.0",
+     "id": "A4354874"
+    },
+    {
+     "ad": "Minimax Round Banyo Bataryası",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Duvardan Banyo Bataryaları",
+     "fiyat": "16422.0",
+     "id": "A4354825"
+    },
+    {
+     "ad": "Origin Aura Standart Banyo Bataryası",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Duvardan Banyo Bataryaları",
+     "fiyat": "18292.0",
+     "id": "A43780"
+    },
+    {
+     "ad": "Origin Aura Standart Banyo Bataryası",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Duvardan Banyo Bataryaları",
+     "fiyat": "30182.0",
+     "id": "A4378029"
+    },
+    {
+     "ad": "Root Square Banyo Bataryası",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Duvardan Banyo Bataryaları",
+     "fiyat": "12589.0",
+     "id": "A4273729"
+    },
+    {
+     "ad": "Minimax Round Banyo Bataryası",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Duvardan Banyo Bataryaları",
+     "fiyat": "14929.0",
+     "id": "A4354836"
+    },
+    {
+     "ad": "Minimax Square Banyo Bataryası",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Duvardan Banyo Bataryaları",
+     "fiyat": "17717.0",
+     "id": "A4352029"
+    },
+    {
+     "ad": "Minimax Square Banyo Bataryası",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Duvardan Banyo Bataryaları",
+     "fiyat": "17717.0",
+     "id": "A4352034"
+    },
+    {
+     "ad": "Minimax Square Banyo Bataryası",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Duvardan Banyo Bataryaları",
+     "fiyat": "17717.0",
+     "id": "A4352074"
+    }
+   ],
+   "bos": false,
+   "http": 1688572,
+   "grup": "Kategori",
+   "sorgu": "banyo bataryası",
+   "beklenen": "batarya"
+  },
+  {
+   "url": "https://www.vitra.com.tr/search?text=g%C3%B6mme%20rezervuar",
+   "sonuc": 196,
+   "urunler": [
+    {
+     "ad": "Gömme Rezervuar Montaj Hizmeti",
+     "kategori": "Montaj Hizmeti",
+     "fiyat": "3900.0",
+     "id": "ETIC_MTJ(GOMMERZ)"
+    },
+    {
+     "ad": "Gömme rezervuar elektrik bağlantı seti",
+     "kategori": "Rezervuarlar/Gömme Rezervuar Montaj Aksesuarları",
+     "fiyat": "5054.0",
+     "id": "300-1029"
+    },
+    {
+     "ad": "V8-Fix Prime Gömme Rezervuar",
+     "kategori": "Rezervuarlar/Gömme Rezervuarlar/Asma Klozetler için Gömme Rezervuarlar",
+     "fiyat": "10648.0",
+     "id": "768-5801-01"
+    }
+   ],
+   "bos": false,
+   "http": 964174,
+   "grup": "Kategori",
+   "sorgu": "gömme rezervuar",
+   "beklenen": "rezervuar"
+  },
+  {
+   "url": "https://www.vitra.com.tr/search?text=havlupan",
+   "sonuc": 2,
+   "urunler": [
+    {
+     "ad": "Artepan Havlupan",
+     "kategori": "Banyo Aksesuarları/Diğer Banyo Aksesuarları/Havlupanlar",
+     "fiyat": "6572.0",
+     "id": "A44845"
+    }
+   ],
+   "bos": false,
+   "http": 508513,
+   "grup": "Kategori",
+   "sorgu": "havlupan",
+   "beklenen": "havlupan"
+  },
+  {
+   "url": "https://www.vitra.com.tr/search?text=evye",
+   "sonuc": 47,
+   "urunler": [
+    {
+     "ad": "IdeaLine Eviye Bataryası",
+     "kategori": "Armatürler/Eviye Bataryaları/Idealine Eviye Bataryası",
+     "fiyat": "9526.0",
+     "id": "A42136"
+    },
+    {
+     "ad": "Lavabo/Eviye Sifonu",
+     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Lavabo Sifon ve Süzgeçleri",
+     "fiyat": "1905.0",
+     "id": "A45122"
+    },
+    {
+     "ad": "Verona Eviye Bataryası",
+     "kategori": "Armatürler/Eviye Bataryaları/Idealine Eviye Bataryası",
+     "fiyat": "9512.0",
+     "id": "A4215406"
+    },
+    {
+     "ad": "Verona Eviye Bataryası",
+     "kategori": "Armatürler/Eviye Bataryaları/Idealine Eviye Bataryası",
+     "fiyat": "11418.0",
+     "id": "A4215433"
+    },
+    {
+     "ad": "Harmony Eviye Bataryası",
+     "kategori": "Armatürler/Eviye Bataryaları/Masterline Eviye Bataryası",
+     "fiyat": "7616.0",
+     "id": "A41864"
+    },
+    {
+     "ad": "Maestro Pro Eviye Bataryası",
+     "kategori": "Armatürler/Eviye Bataryaları/Idealine Eviye Bataryası",
+     "fiyat": "13387.0",
+     "id": "A42152"
+    },
+    {
+     "ad": "Lavabo ve Eviye Sifonu",
+     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Lavabo Sifon ve Süzgeçleri",
+     "fiyat": "1638.0",
+     "id": "A45117"
+    },
+    {
+     "ad": "Root Square Eviye Bataryası",
+     "kategori": "Armatürler/Eviye Bataryaları/Idealine Eviye Bataryası",
+     "fiyat": "9537.0",
+     "id": "A42753"
+    },
+    {
+     "ad": "Root Round Eviye Bataryası",
+     "kategori": "Armatürler/Eviye Bataryaları/Idealine Eviye Bataryası",
+     "fiyat": "13802.0",
+     "id": "A4274234"
+    },
+    {
+     "ad": "Inox Pull-Down Eviye Bataryası",
+     "kategori": "Armatürler/Eviye Bataryaları/Idealine Eviye Bataryası",
+     "fiyat": "13452.0",
+     "id": "A43740"
+    },
+    {
+     "ad": "Root Round Eviye Bataryası",
+     "kategori": "Armatürler/Eviye Bataryaları/Idealine Eviye Bataryası",
+     "fiyat": "12546.0",
+     "id": "A4274236"
+    },
+    {
+     "ad": "Root Round Eviye Bataryası",
+     "kategori": "Armatürler/Eviye Bataryaları/Idealine Eviye Bataryası",
+     "fiyat": "13802.0",
+     "id": "A4274229"
+    }
+   ],
+   "bos": false,
+   "http": 872233,
+   "grup": "Kategori",
+   "sorgu": "evye",
+   "beklenen": "evye|eviye"
+  },
+  {
+   "url": "https://www.vitra.com.tr/search?text=du%C5%9F%20seti",
+   "sonuc": 1888,
+   "urunler": [
+    {
+     "ad": "Liquid Ankastre Duş Seti",
+     "kategori": "Armatürler/Duş Setleri",
+     "fiyat": "102681.0",
+     "id": "A4277739"
+    },
+    {
+     "ad": "Root Round Ankastre Banyo Seti",
+     "kategori": "Armatürler/Duş Setleri",
+     "fiyat": "30616.0",
+     "id": "A4932636"
+    },
+    {
+     "ad": "Root Round Ankastre Banyo Seti",
+     "kategori": "Armatürler/Duş Setleri",
+     "fiyat": "33395.0",
+     "id": "A4932629"
+    }
+   ],
+   "bos": false,
+   "http": 1425021,
+   "grup": "Kategori",
+   "sorgu": "duş seti",
+   "beklenen": "duş set|el duşu|duş sistem"
+  },
+  {
+   "url": "https://www.vitra.com.tr/search?text=klozet%20kapa%C4%9F%C4%B1",
+   "sonuc": 371,
+   "urunler": [
+    {
+     "ad": "Liquid Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "3551.0",
+     "id": "137-003R009"
+    },
+    {
+     "ad": "Sento Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "3228.0",
+     "id": "86-003R009"
+    },
+    {
+     "ad": "Valarte Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "3551.0",
+     "id": "124-003R009"
+    },
+    {
+     "ad": "Memoria Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "3551.0",
+     "id": "106-003R009"
+    },
+    {
+     "ad": "İstanbul Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "5905.0",
+     "id": "166-003-109"
+    },
+    {
+     "ad": "Memoria Klozet kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "4794.0",
+     "id": "106-422R009"
+    },
+    {
+     "ad": "Memoria Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "4794.0",
+     "id": "106-483R009"
+    },
+    {
+     "ad": "Memoria Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "4794.0",
+     "id": "106-401R009"
+    }
+   ],
+   "bos": false,
+   "http": 1075136,
+   "grup": "Yedek parça ve aksesuar",
+   "sorgu": "klozet kapağı",
+   "beklenen": "kapa[kğ]"
+  },
+  {
+   "url": "https://www.vitra.com.tr/search?text=i%C3%A7%20tak%C4%B1m",
+   "sonuc": 180,
+   "urunler": [
+    {
+     "ad": "İç Takım",
+     "kategori": "Vitrifiyeler/Klozetler/Rezervuar ve Klozet İç Takımları",
+     "fiyat": "896.0",
+     "id": "330B1314"
+    },
+    {
+     "ad": "İç Takım",
+     "kategori": "Klozetler ve Rezervuarlar/Rezervuarlar ve İç Takımlar",
+     "fiyat": "1131.0",
+     "id": "330B2016"
+    },
+    {
+     "ad": "Integra Takım klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Takım Klozetler",
+     "fiyat": "",
+     "id": "7043B003-0092"
+    }
+   ],
+   "bos": false,
+   "http": 985184,
+   "grup": "Yedek parça ve aksesuar",
+   "sorgu": "iç takım",
+   "beklenen": "iç takım"
+  },
+  {
+   "url": "https://www.vitra.com.tr/search?text=rezervuar%20i%C3%A7%20tak%C4%B1m%C4%B1",
+   "sonuc": 222,
+   "urunler": [
+    {
+     "ad": "İç Takım",
+     "kategori": "Vitrifiyeler/Klozetler/Rezervuar ve Klozet İç Takımları",
+     "fiyat": "896.0",
+     "id": "330B1314"
+    },
+    {
+     "ad": "İç Takım",
+     "kategori": "Klozetler ve Rezervuarlar/Rezervuarlar ve İç Takımlar",
+     "fiyat": "1131.0",
+     "id": "330B2016"
+    },
+    {
+     "ad": "Sento Rezervuar",
+     "kategori": "Vitrifiyeler/Klozetler/Rezervuar ve Klozet İç Takımları",
+     "fiyat": "3825.0",
+     "id": "5639B003-0108"
+    },
+    {
+     "ad": "Integra Rezervuar",
+     "kategori": "Vitrifiyeler/Klozetler/Rezervuar ve Klozet İç Takımları",
+     "fiyat": "2894.0",
+     "id": "5428B003-0107"
+    },
+    {
+     "ad": "Integra Square Rezervuar",
+     "kategori": "Vitrifiyeler/Klozetler/Rezervuar ve Klozet İç Takımları",
+     "fiyat": "3825.0",
+     "id": "7100B003-0108"
+    },
+    {
+     "ad": "Sento Kids Rezervuar",
+     "kategori": "Vitrifiyeler/Klozetler/Rezervuar ve Klozet İç Takımları",
+     "fiyat": "5174.0",
+     "id": "7363B003-5723"
+    }
+   ],
+   "bos": false,
+   "http": 1053653,
+   "grup": "Yedek parça ve aksesuar",
+   "sorgu": "rezervuar iç takımı",
+   "beklenen": "iç takım"
+  },
+  {
+   "url": "https://www.vitra.com.tr/search?text=%C5%9Famand%C4%B1ra",
+   "sonuc": 0,
+   "urunler": [],
+   "bos": true,
+   "http": 430690,
+   "grup": "Yedek parça ve aksesuar",
+   "sorgu": "şamandıra",
+   "beklenen": "şamandıra|iç takım"
+  },
+  {
+   "url": "https://www.vitra.com.tr/search?text=klozet%20kapa%C4%9F%C4%B1%20mente%C5%9Fesi",
+   "sonuc": 371,
+   "urunler": [
+    {
+     "ad": "Sento Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "3557.0",
+     "id": "130-003R009"
+    },
+    {
+     "ad": "Sento Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "3228.0",
+     "id": "86-003R009"
+    },
+    {
+     "ad": "Universal Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "1720.0",
+     "id": "121-003-909"
+    },
+    {
+     "ad": "S50 Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "2612.0",
+     "id": "108-003-009"
+    },
+    {
+     "ad": "Integra Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "2942.0",
+     "id": "131-003R009"
+    },
+    {
+     "ad": "Valarte Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "3551.0",
+     "id": "124-003R009"
+    },
+    {
+     "ad": "Sento Klozet kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "4801.0",
+     "id": "130-422R009"
+    },
+    {
+     "ad": "Memoria Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "3551.0",
+     "id": "106-003R009"
+    },
+    {
+     "ad": "Equal Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "3914.0",
+     "id": "119-003R009"
+    },
+    {
+     "ad": "Universal Klozet kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "2942.0",
+     "id": "210-003R009"
+    },
+    {
+     "ad": "Universal Klozet kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "2942.0",
+     "id": "212-003R009"
+    },
+    {
+     "ad": "Universal Klozet kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "3236.0",
+     "id": "207-003R009"
+    },
+    {
+     "ad": "Universal Klozet kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "3236.0",
+     "id": "208-003R009"
+    },
+    {
+     "ad": "Universal Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "2612.0",
+     "id": "84-003-009"
+    },
+    {
+     "ad": "Universal Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "2612.0",
+     "id": "85-003-009"
+    },
+    {
+     "ad": "İstanbul Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "5905.0",
+     "id": "166-003-109"
+    },
+    {
+     "ad": "Universal Klozet kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "3972.0",
+     "id": "231-422R009"
+    },
+    {
+     "ad": "Universal Klozet kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "4369.0",
+     "id": "207-422R009"
+    }
+   ],
+   "bos": false,
+   "http": 1093651,
+   "grup": "Yedek parça ve aksesuar",
+   "sorgu": "klozet kapağı menteşesi",
+   "beklenen": "menteşe"
+  },
+  {
+   "url": "https://www.vitra.com.tr/search?text=kartu%C5%9F",
+   "sonuc": 0,
+   "urunler": [],
+   "bos": true,
+   "http": 430662,
+   "grup": "Yedek parça ve aksesuar",
+   "sorgu": "kartuş",
+   "beklenen": "kartuş"
+  },
+  {
+   "url": "https://www.vitra.com.tr/search?text=conta",
+   "sonuc": 1,
+   "urunler": [],
+   "bos": false,
+   "http": 460741,
+   "grup": "Yedek parça ve aksesuar",
+   "sorgu": "conta",
+   "beklenen": "conta"
+  },
+  {
+   "url": "https://www.vitra.com.tr/search?text=kumanda%20paneli",
+   "sonuc": 123,
+   "urunler": [
+    {
+     "ad": "Origin Kumanda Paneli",
+     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
+     "fiyat": "1158.0",
+     "id": "740-2400"
+    },
+    {
+     "ad": "Liquid Kumanda Paneli",
+     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
+     "fiyat": "15048.0",
+     "id": "740-2101"
+    },
+    {
+     "ad": "Origin Kumanda Paneli",
+     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
+     "fiyat": "1344.0",
+     "id": "740-2480"
+    },
+    {
+     "ad": "Root Round Kumanda Paneli",
+     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
+     "fiyat": "1344.0",
+     "id": "740-2280"
+    },
+    {
+     "ad": "Root Square Kumanda Paneli",
+     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
+     "fiyat": "1344.0",
+     "id": "740-2380"
+    },
+    {
+     "ad": "Root Square Kumanda Paneli",
+     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
+     "fiyat": "1678.0",
+     "id": "740-2311"
+    },
+    {
+     "ad": "Root Round Kumanda Paneli",
+     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
+     "fiyat": "3579.0",
+     "id": "740-2224"
+    },
+    {
+     "ad": "Root Square Kumanda Paneli",
+     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
+     "fiyat": "3579.0",
+     "id": "740-2324"
+    },
+    {
+     "ad": "Root Round Kumanda Paneli",
+     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
+     "fiyat": "1158.0",
+     "id": "740-2200"
+    },
+    {
+     "ad": "Root Round Kumanda Paneli",
+     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
+     "fiyat": "3802.0",
+     "id": "740-2225"
+    },
+    {
+     "ad": "Origin Kumanda Paneli,  Cam",
+     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
+     "fiyat": "5196.0",
+     "id": "740-1600"
+    },
+    {
+     "ad": "Root Square Kumanda Paneli",
+     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
+     "fiyat": "3802.0",
+     "id": "740-2395"
+    },
+    {
+     "ad": "Root Square Kumanda Paneli",
+     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Mekanik Kumanda Panelleri",
+     "fiyat": "1158.0",
+     "id": "740-2300"
+    }
+   ],
+   "bos": false,
+   "http": 1013073,
+   "grup": "Yedek parça ve aksesuar",
+   "sorgu": "kumanda paneli",
+   "beklenen": "kumanda"
+  },
+  {
+   "url": "https://www.vitra.com.tr/search?text=taharet%20muslu%C4%9Fu",
+   "sonuc": 133,
+   "urunler": [
+    {
+     "ad": "Taharet Duşu",
+     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Taharet El Duşları",
+     "fiyat": "3019.0",
+     "id": "A45747"
+    },
+    {
+     "ad": "Taharet El Duşu",
+     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Taharet El Duşları",
+     "fiyat": "4528.0",
+     "id": "A4574736"
+    },
+    {
+     "ad": "Taharet El Duşu",
+     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Taharet El Duşları",
+     "fiyat": "4981.0",
+     "id": "A4574739"
+    },
+    {
+     "ad": "Taharet El Duşu",
+     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Taharet El Duşları",
+     "fiyat": "4981.0",
+     "id": "A4574729"
+    },
+    {
+     "ad": "Uzun Musluk",
+     "kategori": "Armatürler/Musluk ve Ara Musluklar",
+     "fiyat": "1215.0",
+     "id": "A41584"
+    },
+    {
+     "ad": "Ara Musluk",
+     "kategori": "Armatürler/Musluk ve Ara Musluklar",
+     "fiyat": "1247.0",
+     "id": "A45206"
+    },
+    {
+     "ad": "Filtreli Ara Musluk",
+     "kategori": "Armatürler/Musluk ve Ara Musluklar",
+     "fiyat": "427.0",
+     "id": "A45200"
+    },
+    {
+     "ad": "Ara Musluk",
+     "kategori": "Armatürler/Musluk ve Ara Musluklar",
+     "fiyat": "1013.0",
+     "id": "A45232"
+    },
+    {
+     "ad": "Liquid Ara Musluk",
+     "kategori": "Armatürler/Musluk ve Ara Musluklar",
+     "fiyat": "3363.0",
+     "id": "A42759"
+    }
+   ],
+   "bos": false,
+   "http": 955713,
+   "grup": "Yedek parça ve aksesuar",
+   "sorgu": "taharet musluğu",
+   "beklenen": "taharet"
+  },
+  {
+   "url": "https://www.vitra.com.tr/search?text=lavabo%20sifonu",
+   "sonuc": 2115,
+   "urunler": [
+    {
+     "ad": "Lavabo Sifonu",
+     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Lavabo Sifon ve Süzgeçleri",
+     "fiyat": "1881.0",
+     "id": "A45151"
+    },
+    {
+     "ad": "Lavabo Sifonu",
+     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Lavabo Sifon ve Süzgeçleri",
+     "fiyat": "1940.0",
+     "id": "A45118"
+    },
+    {
+     "ad": "Lavabo Sifonu",
+     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Lavabo Sifon ve Süzgeçleri",
+     "fiyat": "5120.0",
+     "id": "A4512374"
+    },
+    {
+     "ad": "Lavabo Sifonu Seti",
+     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Lavabo Sifon ve Süzgeçleri",
+     "fiyat": "622.0",
+     "id": "A45110"
+    },
+    {
+     "ad": "Lavabo Sifonu",
+     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Lavabo Sifon ve Süzgeçleri",
+     "fiyat": "5120.0",
+     "id": "A4512329"
+    },
+    {
+     "ad": "Origin Lavabo Sifonu",
+     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Lavabo Sifon ve Süzgeçleri",
+     "fiyat": "3103.0",
+     "id": "A45123"
+    },
+    {
+     "ad": "Origin Lavabo Sifonu",
+     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Lavabo Sifon ve Süzgeçleri",
+     "fiyat": "4651.0",
+     "id": "A4512336WTC"
+    },
+    {
+     "ad": "Origin Lavabo Sifonu",
+     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Lavabo Sifon ve Süzgeçleri",
+     "fiyat": "5120.0",
+     "id": "A4512334"
+    },
+    {
+     "ad": "Liquid Lavabo Sifonu T tipi",
+     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Lavabo Sifon ve Süzgeçleri",
+     "fiyat": "3759.0",
+     "id": "A45124"
+    },
+    {
+     "ad": "Liquid Lavabo Sifonu T tipi",
+     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Lavabo Sifon ve Süzgeçleri",
+     "fiyat": "6201.0",
+     "id": "A4512439"
+    },
+    {
+     "ad": "SUIT Sifon Alt Grubu",
+     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Lavabo Sifon ve Süzgeçleri",
+     "fiyat": "5120.0",
+     "id": "A4512339"
+    },
+    {
+     "ad": "Lavabo/Eviye Sifonu",
+     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Lavabo Sifon ve Süzgeçleri",
+     "fiyat": "1905.0",
+     "id": "A45122"
+    },
+    {
+     "ad": "Lavabo ve Eviye Sifonu",
+     "kategori": "Armatürler/Armatür Tamamlayıcı Ürünleri/Lavabo Sifon ve Süzgeçleri",
+     "fiyat": "1638.0",
+     "id": "A45117"
+    }
+   ],
+   "bos": false,
+   "http": 1564041,
+   "grup": "Yedek parça ve aksesuar",
+   "sorgu": "lavabo sifonu",
+   "beklenen": "sifon"
+  },
+  {
+   "url": "https://www.vitra.com.tr/search?text=klozet%20kapagi",
+   "sonuc": 370,
+   "urunler": [
+    {
+     "ad": "Sento Klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Takım Klozetler",
+     "fiyat": "10863.0",
+     "id": "5987B003-0092"
+    },
+    {
+     "ad": "Klozet Montaj Hizmeti",
+     "kategori": "Montaj Hizmeti",
+     "fiyat": "2750.0",
+     "id": "ETIC_MTJ(KLOZET)"
+    },
+    {
+     "ad": "Sento Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "3557.0",
+     "id": "130-003R009"
+    },
+    {
+     "ad": "Sento Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "3228.0",
+     "id": "86-003R009"
+    },
+    {
+     "ad": "Universal Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "1720.0",
+     "id": "121-003-909"
+    },
+    {
+     "ad": "Sento Asma Klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
+     "fiyat": "14767.0",
+     "id": "7748B003-0559"
+    },
+    {
+     "ad": "S50 Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "2612.0",
+     "id": "108-003-009"
+    },
+    {
+     "ad": "Integra Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "2942.0",
+     "id": "131-003R009"
+    },
+    {
+     "ad": "Valarte Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "3551.0",
+     "id": "124-003R009"
+    },
+    {
+     "ad": "Sento Klozet kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "4801.0",
+     "id": "130-422R009"
+    },
+    {
+     "ad": "Memoria Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "3551.0",
+     "id": "106-003R009"
+    },
+    {
+     "ad": "Memoria Asma Klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
+     "fiyat": "24468.0",
+     "id": "5885B403-0559"
+    },
+    {
+     "ad": "Equal Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "3914.0",
+     "id": "119-003R009"
+    },
+    {
+     "ad": "Equal Asma Klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
+     "fiyat": "21843.0",
+     "id": "7245B403-0090"
+    },
+    {
+     "ad": "Universal Klozet kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "2942.0",
+     "id": "210-003R009"
+    },
+    {
+     "ad": "Universal Klozet kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "2942.0",
+     "id": "212-003R009"
+    },
+    {
+     "ad": "Universal Klozet kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "3236.0",
+     "id": "207-003R009"
+    }
+   ],
+   "bos": false,
+   "http": 1090591,
+   "grup": "Yazım farkı",
+   "sorgu": "klozet kapagi",
+   "beklenen": "kapa[kğ]"
+  },
+  {
+   "url": "https://www.vitra.com.tr/search?text=dusakabin",
+   "sonuc": 0,
+   "urunler": [],
+   "bos": true,
+   "http": 430670,
+   "grup": "Yazım farkı",
+   "sorgu": "dusakabin",
+   "beklenen": "duşakabin|duş kabin"
+  },
+  {
+   "url": "https://www.vitra.com.tr/search?text=banyo%20dolabi",
+   "sonuc": 2640,
+   "urunler": [
+    {
+     "ad": "Suit Banyo Bataryası",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Duvardan Banyo Bataryaları",
+     "fiyat": "34826.0",
+     "id": "A4281839"
+    },
+    {
+     "ad": "Origin Banyo Bataryası",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Duvardan Banyo Bataryaları",
+     "fiyat": "18292.0",
+     "id": "A42619"
+    },
+    {
+     "ad": "Suit Banyo Bataryası",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Duvardan Banyo Bataryaları",
+     "fiyat": "21105.0",
+     "id": "A42818"
+    },
+    {
+     "ad": "Origin Banyo Bataryası",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Duvardan Banyo Bataryaları",
+     "fiyat": "27434.0",
+     "id": "A4261936WTC"
+    },
+    {
+     "ad": "Suit Banyo Bataryası",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Duvardan Banyo Bataryaları",
+     "fiyat": "34826.0",
+     "id": "A4281874"
+    },
+    {
+     "ad": "Minibox Ankastre Banyo Bataryası",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
+     "fiyat": "3145.0",
+     "id": "A41949"
+    },
+    {
+     "ad": "Origin Ankastre Banyo Bataryası",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Ankastre Bataryalar",
+     "fiyat": "8837.0",
+     "id": "A4262036WTC"
+    }
+   ],
+   "bos": false,
+   "http": 1580166,
+   "grup": "Yazım farkı",
+   "sorgu": "banyo dolabi",
+   "beklenen": "dolab|dolap"
+  },
+  {
+   "url": "https://www.vitra.com.tr/search?text=rezarvuar",
+   "sonuc": 0,
+   "urunler": [],
+   "bos": true,
+   "http": 430670,
+   "grup": "Yazım farkı",
+   "sorgu": "rezarvuar",
+   "beklenen": "rezervuar"
+  },
+  {
+   "url": "https://www.vitra.com.tr/search?text=klozed",
+   "sonuc": 0,
+   "urunler": [],
+   "bos": true,
+   "http": 430652,
+   "grup": "Yazım farkı",
+   "sorgu": "klozed",
+   "beklenen": "klozet"
+  },
+  {
+   "url": "https://www.vitra.com.tr/search?text=batarya",
+   "sonuc": 1035,
+   "urunler": [
+    {
+     "ad": "Origin Çıkış Ucu",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Banyo Batarya Çıkış Uçları",
+     "fiyat": "7742.0",
+     "id": "A4262236WTC"
+    },
+    {
+     "ad": "Çıkış Ucu",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Banyo Batarya Çıkış Uçları",
+     "fiyat": "5483.0",
+     "id": "A43126"
+    },
+    {
+     "ad": "SUIT Çıkış Ucu",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Banyo Batarya Çıkış Uçları",
+     "fiyat": "7399.0",
+     "id": "A42918"
+    },
+    {
+     "ad": "Minimax Round Çıkış Ucu",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Banyo Batarya Çıkış Uçları",
+     "fiyat": "5451.0",
+     "id": "A43542"
+    },
+    {
+     "ad": "Origin Çıkış Ucu",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Banyo Batarya Çıkış Uçları",
+     "fiyat": "8518.0",
+     "id": "A4262234"
+    },
+    {
+     "ad": "Origin Çıkış Ucu",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Banyo Batarya Çıkış Uçları",
+     "fiyat": "5163.0",
+     "id": "A42622"
+    },
+    {
+     "ad": "Suit Çıkış Ucu",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Banyo Batarya Çıkış Uçları",
+     "fiyat": "6166.0",
+     "id": "A42831"
+    },
+    {
+     "ad": "Çıkış Ucu",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Banyo Batarya Çıkış Uçları",
+     "fiyat": "9342.0",
+     "id": "A4313136"
+    },
+    {
+     "ad": "Çıkış Ucu",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Banyo Batarya Çıkış Uçları",
+     "fiyat": "6228.0",
+     "id": "A43131"
+    },
+    {
+     "ad": "Minimax Square Çıkış Ucu",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Banyo Batarya Çıkış Uçları",
+     "fiyat": "6851.0",
+     "id": "A43595"
+    },
+    {
+     "ad": "Suit Çıkış Ucu",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Banyo Batarya Çıkış Uçları",
+     "fiyat": "10173.0",
+     "id": "A4283139"
+    },
+    {
+     "ad": "Origin Classic Çıkış Ucu",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Banyo Batarya Çıkış Uçları",
+     "fiyat": "10393.0",
+     "id": "A4289925"
+    },
+    {
+     "ad": "Çıkış Ucu",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Banyo Batarya Çıkış Uçları",
+     "fiyat": "8225.0",
+     "id": "A4312636"
+    },
+    {
+     "ad": "Çıkış Ucu",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Banyo Batarya Çıkış Uçları",
+     "fiyat": "6878.0",
+     "id": "A42501"
+    },
+    {
+     "ad": "Çıkış Ucu",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Banyo Batarya Çıkış Uçları",
+     "fiyat": "6966.0",
+     "id": "A4311174"
+    },
+    {
+     "ad": "Origin Classic Çıkış Ucu",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Banyo Batarya Çıkış Uçları",
+     "fiyat": "9449.0",
+     "id": "A4289936"
+    },
+    {
+     "ad": "Minimax Square Çıkış Ucu",
+     "kategori": "Armatürler/Banyo ve Duş Bataryaları/Banyo Batarya Çıkış Uçları",
+     "fiyat": "10277.0",
+     "id": "A4359536"
+    }
+   ],
+   "bos": false,
+   "http": 1168079,
+   "grup": "Yazım farkı",
+   "sorgu": "batarya",
+   "beklenen": "batarya"
+  },
+  {
+   "url": "https://www.vitra.com.tr/search?text=80%20cm%20banyo%20dolab%C4%B1",
+   "sonuc": 4448,
+   "urunler": [
+    {
+     "ad": "Core Aynalı Banyo Dolabı",
+     "kategori": "Banyo Mobilyaları/Banyo Aynaları/Aynalı Banyo Dolabı",
+     "fiyat": "11209.0",
+     "id": "66911"
+    },
+    {
+     "ad": "Sento Aynalı Banyo Dolabı",
+     "kategori": "Banyo Mobilyaları/Banyo Aynaları/Aynalı Banyo Dolabı",
+     "fiyat": "21632.0",
+     "id": "60896"
+    },
+    {
+     "ad": "Core Aynalı Banyo Dolabı",
+     "kategori": "Banyo Mobilyaları/Banyo Aynaları/Aynalı Banyo Dolabı",
+     "fiyat": "11209.0",
+     "id": "80512"
+    },
+    {
+     "ad": "Core Aynalı Banyo Dolabı",
+     "kategori": "Banyo Mobilyaları/Banyo Aynaları/Aynalı Banyo Dolabı",
+     "fiyat": "11209.0",
+     "id": "67603"
+    }
+   ],
+   "bos": false,
+   "http": 2111426,
+   "grup": "Ölçü ve özellik",
+   "sorgu": "80 cm banyo dolabı",
+   "beklenen": "80"
+  },
+  {
+   "url": "https://www.vitra.com.tr/search?text=kanals%C4%B1z%20klozet",
+   "sonuc": 371,
+   "urunler": [
+    {
+     "ad": "Sento Klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Takım Klozetler",
+     "fiyat": "10863.0",
+     "id": "5987B003-0092"
+    },
+    {
+     "ad": "Klozet Montaj Hizmeti",
+     "kategori": "Montaj Hizmeti",
+     "fiyat": "2750.0",
+     "id": "ETIC_MTJ(KLOZET)"
+    },
+    {
+     "ad": "Sento Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "3557.0",
+     "id": "130-003R009"
+    },
+    {
+     "ad": "Sento Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "3228.0",
+     "id": "86-003R009"
+    },
+    {
+     "ad": "Universal Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "1720.0",
+     "id": "121-003-909"
+    },
+    {
+     "ad": "Sento Asma Klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
+     "fiyat": "14767.0",
+     "id": "7748B003-0559"
+    },
+    {
+     "ad": "S50 Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "2612.0",
+     "id": "108-003-009"
+    },
+    {
+     "ad": "Integra Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "2942.0",
+     "id": "131-003R009"
+    },
+    {
+     "ad": "Valarte Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "3551.0",
+     "id": "124-003R009"
+    },
+    {
+     "ad": "Sento Klozet kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "4801.0",
+     "id": "130-422R009"
+    },
+    {
+     "ad": "Memoria Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "3551.0",
+     "id": "106-003R009"
+    },
+    {
+     "ad": "Memoria Asma Klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
+     "fiyat": "24468.0",
+     "id": "5885B403-0559"
+    },
+    {
+     "ad": "Equal Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "3914.0",
+     "id": "119-003R009"
+    },
+    {
+     "ad": "Equal Asma Klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
+     "fiyat": "21843.0",
+     "id": "7245B403-0090"
+    },
+    {
+     "ad": "Universal Klozet kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "2942.0",
+     "id": "210-003R009"
+    }
+   ],
+   "bos": false,
+   "http": 1096393,
+   "grup": "Ölçü ve özellik",
+   "sorgu": "kanalsız klozet",
+   "beklenen": "kanalsız|rim-?ex|rimless"
+  },
+  {
+   "url": "https://www.vitra.com.tr/search?text=ak%C4%B1ll%C4%B1%20klozet",
+   "sonuc": 373,
+   "urunler": [
+    {
+     "ad": "Akıllı Klozet Montaj Hizmeti",
+     "kategori": "Montaj Hizmeti",
+     "fiyat": "2212.5",
+     "id": "ETIC_MTJ(AKLOZET)"
+    },
+    {
+     "ad": "V-Care Ultra Akıllı Asma Klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Akıllı Klozetler",
+     "fiyat": "73370.0",
+     "id": "7234B003-6222"
+    },
+    {
+     "ad": "V-Care Prime Akıllı Asma Klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Akıllı Klozetler",
+     "fiyat": "96165.0",
+     "id": "7231B403-6216"
+    },
+    {
+     "ad": "V-Care 3 Base Akıllı Asma Klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Akıllı Klozetler",
+     "fiyat": "58461.0",
+     "id": "7777B403-6377"
+    },
+    {
+     "ad": "V-Care 3 Core Akıllı Asma Klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Akıllı Klozetler",
+     "fiyat": "76108.0",
+     "id": "7777B403-6388"
+    },
+    {
+     "ad": "V-Care 3 Prime Akıllı Asma Klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Akıllı Klozetler",
+     "fiyat": "98610.0",
+     "id": "7777B403-6399"
+    },
+    {
+     "ad": "Akıllı Panel Montaj Hizmeti",
+     "kategori": "Montaj Hizmeti",
+     "fiyat": "937.5",
+     "id": "ETIC_MTJ(APANEL)"
+    },
+    {
+     "ad": "V-Care Akıllı Smart Panel, 8 cm ",
+     "kategori": "Rezervuarlar/Rezervuar Kumanda Panelleri/Akıllı Kumanda Panelleri",
+     "fiyat": "29729.0",
+     "id": "768-1502"
+    },
+    {
+     "ad": "Sento Klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Takım Klozetler",
+     "fiyat": "10863.0",
+     "id": "5987B003-0092"
+    },
+    {
+     "ad": "Klozet Montaj Hizmeti",
+     "kategori": "Montaj Hizmeti",
+     "fiyat": "2750.0",
+     "id": "ETIC_MTJ(KLOZET)"
+    }
+   ],
+   "bos": false,
+   "http": 1078307,
+   "grup": "Ölçü ve özellik",
+   "sorgu": "akıllı klozet",
+   "beklenen": "akıllı|v-care"
+  },
+  {
+   "url": "https://www.vitra.com.tr/search?text=siyah%20klozet",
+   "sonuc": 1103,
+   "urunler": [
+    {
+     "ad": "Sento Asma Klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
+     "fiyat": "19936.0",
+     "id": "7748B083-0559"
+    },
+    {
+     "ad": "Memoria Asma Klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
+     "fiyat": "33031.0",
+     "id": "5885B483-0559"
+    },
+    {
+     "ad": "Plural Asma Klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
+     "fiyat": "46827.0",
+     "id": "7830B483-0090"
+    },
+    {
+     "ad": "Plural Yerden Klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Yerden Tek Klozetler",
+     "fiyat": "51510.0",
+     "id": "7815B483-0090"
+    },
+    {
+     "ad": "Sento Asma klozet",
+     "kategori": "Vitrifiyeler/Klozetler/Asma Klozetler",
+     "fiyat": "",
+     "id": "7748B483-0559"
+    },
+    {
+     "ad": "Plural Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "9967.0",
+     "id": "126-483-009"
+    },
+    {
+     "ad": "Memoria Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "4794.0",
+     "id": "106-483R009"
+    },
+    {
+     "ad": "Sento Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "4801.0",
+     "id": "130-483R009"
+    },
+    {
+     "ad": "Plural Klozet Kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "10078.0",
+     "id": "126-483-029"
+    },
+    {
+     "ad": "Universal Klozet kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "3972.0",
+     "id": "212-483R009"
+    },
+    {
+     "ad": "Universal Klozet kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "3972.0",
+     "id": "210-483R009"
+    },
+    {
+     "ad": "Universal Klozet kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "3972.0",
+     "id": "231-483R009"
+    },
+    {
+     "ad": "Universal Klozet kapağı",
+     "kategori": "Vitrifiyeler/Klozet Kapakları",
+     "fiyat": "4369.0",
+     "id": "208-483R009"
+    }
+   ],
+   "bos": false,
+   "http": 1783910,
+   "grup": "Ölçü ve özellik",
+   "sorgu": "siyah klozet",
+   "beklenen": "siyah"
+  },
+  {
+   "url": "https://www.vitra.com.tr/search?text=metropole",
+   "sonuc": 344,
+   "urunler": [],
+   "bos": false,
+   "http": 951254,
+   "grup": "Seri ve ürün kodu",
+   "sorgu": "metropole",
+   "beklenen": "metropole"
+  },
+  {
+   "url": "https://www.vitra.com.tr/search?text=sento",
+   "sonuc": 222,
+   "urunler": [
+    {
+     "ad": "Sento Rezervuar",
+     "kategori": "Vitrifiyeler/Klozetler/Rezervuar ve Klozet İç Takımları",
+     "fiyat": "3825.0",
+     "id": "5639B003-0108"
+    },
+    {
+     "ad": "Sento Kids Lavabo",
+     "kategori": "Vitrifiyeler/Lavabolar/Standart Lavabo ve Ayakları",
+     "fiyat": "12015.0",
+     "id": "7353B003-1741"
+    }
+   ],
+   "bos": false,
+   "http": 1110431,
+   "grup": "Seri ve ürün kodu",
+   "sorgu": "sento",
+   "beklenen": "sento"
+  },
+  {
+   "url": "https://www.vitra.com.tr/search?text=integra",
+   "sonuc": 1,
+   "urunler": [],
+   "bos": false,
+   "http": 464537,
+   "grup": "Seri ve ürün kodu",
+   "sorgu": "integra",
+   "beklenen": "integra"
+  },
+  {
+   "url": "https://www.vitra.com.tr/search?text=7906B483-0090",
+   "sonuc": 0,
+   "urunler": [],
+   "bos": true,
+   "http": 559508,
+   "grup": "Seri ve ürün kodu",
+   "sorgu": "7906B483-0090",
+   "beklenen": "7906b483|metropole"
+  },
+  {
+   "url": "https://www.vitra.com.tr/search?text=montaj",
+   "sonuc": 160,
+   "urunler": [
+    {
+     "ad": "Klozet Montaj Hizmeti",
+     "kategori": "Montaj Hizmeti",
+     "fiyat": "2750.0",
+     "id": "ETIC_MTJ(KLOZET)"
+    },
+    {
+     "ad": "Lavabo Montaj Hizmeti",
+     "kategori": "Montaj Hizmeti",
+     "fiyat": "2300.0",
+     "id": "ETIC_MTJ(LAVABO)"
+    },
+    {
+     "ad": "Orta Montaj Hizmeti",
+     "kategori": "Montaj Hizmeti",
+     "fiyat": "2200.0",
+     "id": "ETIC_MTJ(ORTA)"
+    },
+    {
+     "ad": "Akıllı Panel Montaj Hizmeti",
+     "kategori": "Montaj Hizmeti",
+     "fiyat": "937.5",
+     "id": "ETIC_MTJ(APANEL)"
+    },
+    {
+     "ad": "Akıllı Klozet Montaj Hizmeti",
+     "kategori": "Montaj Hizmeti",
+     "fiyat": "2212.5",
+     "id": "ETIC_MTJ(AKLOZET)"
+    },
+    {
+     "ad": "Büyük Montaj Hizmeti",
+     "kategori": "Montaj Hizmeti",
+     "fiyat": "5300.0",
+     "id": "ETIC_MTJ(BUYUK)"
+    },
+    {
+     "ad": "Gömme Rezervuar Montaj Hizmeti",
+     "kategori": "Montaj Hizmeti",
+     "fiyat": "3900.0",
+     "id": "ETIC_MTJ(GOMMERZ)"
+    },
+    {
+     "ad": "Küçük Montaj Hizmeti",
+     "kategori": "Montaj Hizmeti",
+     "fiyat": "1150.0",
+     "id": "ETIC_MTJ(KUCUK)"
+    },
+    {
+     "ad": "Banyo Mobilyası Seti Montaj Hizmeti",
+     "kategori": "Montaj Hizmeti",
+     "fiyat": "4000.0",
+     "id": "ETIC_MTJ(BMSET)"
+    },
+    {
+     "ad": "Diğer Banyo Mobilyaları Montaj Hizmeti",
+     "kategori": "Montaj Hizmeti",
+     "fiyat": "2000.0",
+     "id": "ETIC_MTJ(DIGERBM)"
+    },
+    {
+     "ad": "Armatür ve Duş Sistemleri Montaj Hizmeti",
+     "kategori": "Montaj Hizmeti",
+     "fiyat": "2350.0",
+     "id": "ETIC_MTJ(ARMATUR)"
+    },
+    {
+     "ad": "Lavabo Taşıyıcı Seti",
+     "kategori": "Banyo Aksesuarları/Tamamlayıcı Aksesuarlar",
+     "fiyat": "",
+     "id": "325010YP1TE"
+    },
+    {
+     "ad": "Origin Duş Dirseği",
+     "kategori": "Duş Sistemleri/Duş Başlıkları/Duş Dirsekleri",
+     "fiyat": "2146.0",
+     "id": "A4565236WTC"
+    },
+    {
+     "ad": "Origin Duş Dirseği",
+     "kategori": "Duş Sistemleri/Duş Başlıkları/Duş Dirsekleri",
+     "fiyat": "2146.0",
+     "id": "A4565036WTC"
+    },
+    {
+     "ad": "Origin Duş Dirseği",
+     "kategori": "Duş Sistemleri/Duş Başlıkları/Duş Dirsekleri",
+     "fiyat": "1617.0",
+     "id": "A4564936WTC"
+    },
+    {
+     "ad": "V-Fix Prime 8cm Asma Klozetler için Gömme Rezervuar",
+     "kategori": "Rezervuarlar/Gömme Rezervuarlar/Asma Klozetler için Gömme Rezervuarlar",
+     "fiyat": "11895.0",
+     "id": "768-5800-01"
+    }
+   ],
+   "bos": false,
+   "http": 942956,
    "grup": "Hizmet ve destek",
    "sorgu": "montaj",
    "beklenen": "montaj"
   },
   {
-   "url": "https://www.vitra.com.tr/search?q=yedek+par%C3%A7a",
+   "url": "https://www.vitra.com.tr/search?text=yedek%20par%C3%A7a",
    "sonuc": 15,
    "urunler": [
     {
@@ -3524,30 +1854,42 @@
     }
    ],
    "bos": false,
-   "http": 730825,
+   "http": 730747,
    "grup": "Hizmet ve destek",
    "sorgu": "yedek parça",
    "beklenen": "yedek|iç takım|menteşe|kartuş|conta"
   },
   {
-   "url": "https://www.vitra.com.tr/search?q=garanti",
+   "url": "https://www.vitra.com.tr/search?text=garanti",
    "sonuc": 0,
    "urunler": [],
    "bos": true,
-   "http": 430428,
+   "http": 430658,
    "grup": "Hizmet ve destek",
    "sorgu": "garanti",
    "beklenen": "garanti"
   },
   {
-   "url": "https://www.vitra.com.tr/search?q=servis",
+   "url": "https://www.vitra.com.tr/search?text=servis",
    "sonuc": 8,
    "urunler": [
+    {
+     "ad": "Orta Montaj Hizmeti",
+     "kategori": "Montaj Hizmeti",
+     "fiyat": "2200.0",
+     "id": "ETIC_MTJ(ORTA)"
+    },
     {
      "ad": "Küçük Montaj Hizmeti",
      "kategori": "Montaj Hizmeti",
      "fiyat": "1150.0",
      "id": "ETIC_MTJ(KUCUK)"
+    },
+    {
+     "ad": "Gömme Rezervuar Montaj Hizmeti",
+     "kategori": "Montaj Hizmeti",
+     "fiyat": "3900.0",
+     "id": "ETIC_MTJ(GOMMERZ)"
     },
     {
      "ad": "Klozet Montaj Hizmeti",
@@ -3556,10 +1898,10 @@
      "id": "ETIC_MTJ(KLOZET)"
     },
     {
-     "ad": "Diğer Banyo Mobilyaları Montaj Hizmeti",
+     "ad": "Lavabo Montaj Hizmeti",
      "kategori": "Montaj Hizmeti",
-     "fiyat": "2000.0",
-     "id": "ETIC_MTJ(DIGERBM)"
+     "fiyat": "2300.0",
+     "id": "ETIC_MTJ(LAVABO)"
     },
     {
      "ad": "Banyo Mobilyası Seti Montaj Hizmeti",
@@ -3568,32 +1910,20 @@
      "id": "ETIC_MTJ(BMSET)"
     },
     {
-     "ad": "Lavabo Montaj Hizmeti",
+     "ad": "Diğer Banyo Mobilyaları Montaj Hizmeti",
      "kategori": "Montaj Hizmeti",
-     "fiyat": "2300.0",
-     "id": "ETIC_MTJ(LAVABO)"
+     "fiyat": "2000.0",
+     "id": "ETIC_MTJ(DIGERBM)"
     },
     {
      "ad": "Büyük Montaj Hizmeti",
      "kategori": "Montaj Hizmeti",
      "fiyat": "5300.0",
      "id": "ETIC_MTJ(BUYUK)"
-    },
-    {
-     "ad": "Orta Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "2200.0",
-     "id": "ETIC_MTJ(ORTA)"
-    },
-    {
-     "ad": "Gömme Rezervuar Montaj Hizmeti",
-     "kategori": "Montaj Hizmeti",
-     "fiyat": "3900.0",
-     "id": "ETIC_MTJ(GOMMERZ)"
     }
    ],
    "bos": false,
-   "http": 552014,
+   "http": 551984,
    "grup": "Hizmet ve destek",
    "sorgu": "servis",
    "beklenen": "servis"

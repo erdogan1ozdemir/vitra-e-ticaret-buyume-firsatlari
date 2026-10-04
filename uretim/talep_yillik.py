@@ -3,11 +3,11 @@
 import json, os
 from collections import defaultdict
 import veri
-K48 = json.load(open(os.path.join(veri.V, "ham", "kp_sezon_2022-09_2026-08.json"), encoding="utf-8"))["kelimeler"]
+K48 = veri.k48()
 import aykiri; K48 = {k_: (dict(v_, seri=aykiri.seri(k_, v_.get("seri"))) if isinstance(v_, dict) else v_) for k_, v_ in K48.items()}   # Dunya Kupasi 2026 'wc' duzeltmesi
 Y = defaultdict(lambda: defaultdict(float)); eks = 0
 for r in veri.KELIME:
-    s = (K48.get(r["kw"]) or {}).get("seri") if isinstance(K48, dict) else None
+    s = veri.seri_bul(K48, r)
     if not s: eks += 1; continue
     for m, v in s.items():
         if v is None: continue

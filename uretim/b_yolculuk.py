@@ -16,19 +16,24 @@ def _img(ad):
     return "data:image/jpeg;base64," + base64.b64encode(open(os.path.join(_K, "sepet_akisi", ad), "rb").read()).decode()
 
 
-# ---------------------------------------------------------------- site ici arama testi
+# ---------------------------------------------------------------- site ici arama testi (iki yol: anlik sonuc katmani ve Enter sonrasi sonuc sayfasi)
 GRUP_EN = {"Kategori": "Category", "Yedek parça ve aksesuar": "Spare parts and accessories", "Yazım farkı": "Spelling variant", "Ölçü ve özellik": "Size and feature",
            "Seri ve ürün kodu": "Series and product code", "Hizmet ve destek": "Service and support"}
 for a, b in GRUP_EN.items(): x(a, b)
-
-
-def _ilgili(r):
-    rx = re.compile(r["beklenen"], re.I)
-    hiz = r["grup"] == "Hizmet ve destek"   # hizmet aramalari disinda montaj hizmeti karti ilgili urun sayilmaz
-    return sum(1 for u_ in r["urunler"][:8] if rx.search((u_["ad"] or "") + " " + (u_["kategori"] or "")) and (hiz or u_["kategori"] != "Montaj Hizmeti"))
-
-
-def _mtj(r): return sum(1 for u_ in r["urunler"][:4] if (u_["kategori"] or "") == "Montaj Hizmeti")
+KAT = json.load(open(os.path.join(_K, "site_arama", "katman.json"), encoding="utf-8"))["sonuc"]
+# degerlendirme: ilk kartlar ve sonuc sayilari tek tek incelenerek atanmistir (04.10.2026)
+DEG = {"U": ("Uyumlu", "Consistent"), "T": ("Anlık sonuç uyumlu, sonuç sayfası boş veya ilgisiz", "Instant results fine, results page empty or off-target"),
+       "K": ("Anlık sonuçta karşılık yok", "No match in instant results"), "Y": ("İki yolda da ilgili ürün yok", "No relevant product on either path"),
+       "D": ("Destek sayfasına yönlendirme yok", "No route to the support page"), "P": ("Kısmen uyumlu", "Partly consistent"), "G": ("VitrA gamı dışında", "Outside VitrA's range")}
+DEGK = {"klozet": "U", "asma klozet": "U", "lavabo": "T", "banyo dolabı": "U", "duşakabin": "U", "banyo bataryası": "U", "gömme rezervuar": "U", "havlupan": "P", "evye": "G",
+        "duş seti": "U", "klozet kapağı": "U", "iç takım": "U", "rezervuar iç takımı": "P", "şamandıra": "T", "klozet kapağı menteşesi": "K", "kartuş": "Y", "conta": "Y",
+        "kumanda paneli": "U", "taharet musluğu": "K", "lavabo sifonu": "U", "klozet kapagi": "P", "dusakabin": "T", "banyo dolabi": "T", "rezarvuar": "T", "klozed": "T",
+        "batarya": "U", "80 cm banyo dolabı": "K", "kanalsız klozet": "P", "akıllı klozet": "U", "siyah klozet": "P", "metropole": "U", "sento": "U", "integra": "T",
+        "7906B483-0090": "T", "montaj": "U", "yedek parça": "Y", "garanti": "D", "servis": "D"}
+assert set(DEGK) == {r["sorgu"] for r in SA}, "degerlendirmesi olmayan arama"
+for a, b in DEG.values(): x(a, b)
+SAY = {k_: sum(1 for v_ in DEGK.values() if v_ == k_) for k_ in DEG}
+_SA = {r["sorgu"]: r for r in SA}
 
 
 def _hacim(q):
@@ -36,31 +41,26 @@ def _hacim(q):
     return round(v) if v else None
 
 
-SIFIR = [r for r in SA if r["sonuc"] == 0]
-KARTSIZ = [r for r in SA if r["sonuc"] > 0 and not r["urunler"]]
-MTJ = [r for r in SA if _mtj(r) and r["grup"] != "Hizmet ve destek"]
-DUSUK = [r for r in SA if r["urunler"] and len(r["urunler"]) >= 8 and _ilgili(r) <= 3 and r["grup"] != "Hizmet ve destek"]
-_SA = {r["sorgu"]: r for r in SA}
+def _kart(ad):
+    return x(ad, __import__("t2_ortak").EK.get(ad, ad)) if ad else x("Ürün bulunamadı", "No product found")
 
 
-def _ilgili_h(r):
-    if not r["urunler"]: return n("-")
-    m = min(8, len(r["urunler"])); v = _ilgili(r)
-    h = "%d / %d" % (v, m)
-    return n('<span class="dn">%s</span>' % h if v <= m / 2 else h)
+def _sayi(v): return cell(v) if v else n('<span class="dn">0</span>')
 
 
-T_ARA = tablo([th("Arama ifadesi", "Search phrase", "vitra.com.tr arama kutusuna yazılan ifade; bağlantı arama sonucunu yeni sekmede açar.", "The term typed into the vitra.com.tr search box; the link opens the search result in a new tab."),
+T_ARA = tablo([th("Arama ifadesi", "Search phrase", "vitra.com.tr arama kutusuna yazılan ifade; bağlantı Enter sonrası açılan sonuç sayfasını yeni sekmede açar.", "The term typed into the vitra.com.tr search box; the link opens the results page shown after Enter in a new tab."),
                th("Grup", "Group", "Aramanın türü: kategori, yedek parça ve aksesuar, yazım farkı, ölçü ve özellik, seri ve ürün kodu, hizmet ve destek.", "Type of search: category, spare parts and accessories, spelling variant, size and feature, series and product code, service and support."),
-               th("Sonuç", "Results", "Arama sayfasının başlığında yazan sonuç sayısı.", "Number of results shown in the search page heading.", True),
-               th("İlk 8 kartta ilgili", "Relevant in first 8 cards", "İlk 8 karttan adında ya da kategorisinde aranan ürün tipi geçen ürünlerin sayısı; ürün aramalarında montaj hizmeti kartları sayılmamıştır.", "Of the first 8 cards, how many products carry the searched product type in their name or category; installation service cards are not counted in product searches.", True),
-               th("İlk 4 kartta montaj hizmeti", "Installation service in first 4", "İlk 4 kart içindeki montaj hizmeti kartı sayısı.", "Number of installation service cards among the first 4 cards.", True),
-               th("İlk kart", "First card", "Sonuç listesinde ilk sıradaki kart.", "The first card in the result list."),
-               th("Google aylık hacim", "Google monthly volume", "Aynı ifadenin Google'daki ortalama aylık arama hacmi, Keyword Planner, Eyl 2025 - Ağu 2026; kullanıcı dilindeki talebin büyüklüğünü gösterir.", "Average monthly Google search volume of the same term, Keyword Planner, Sep 2025 - Aug 2026; shows the size of demand in the user's own words.", True)],
-              [[u(r["url"], r["sorgu"]), etk(r["grup"], GRUP_EN[r["grup"]], "sa-" + r["grup"]), cell(r["sonuc"]) if r["sonuc"] else n('<span class="dn">0</span>'),
-                _ilgili_h(r), cell(_mtj(r)) if r["urunler"] else n("-"), x(r["urunler"][0]["ad"], __import__("t2_ortak").EK.get(r["urunler"][0]["ad"], r["urunler"][0]["ad"])) if r["urunler"] else x("Ürün kartı dönmedi", "No product card returned"),
-                cell(_hacim(r["sorgu"])) if _hacim(r["sorgu"]) else n("-")] for r in SA], "uzun")
-
+               th("Anlık sonuç", "Instant results", "Arama kutusuna yazarken açılan sonuç katmanındaki sonuç sayısı (Chrome, 04.10.2026).", "Number of results in the layer that opens while typing in the search box (Chrome, 04.10.2026).", True),
+               th("Anlık sonuçta ilk kart", "First card in instant results", "Sonuç katmanında ilk sıradaki ürün.", "The first product in the results layer."),
+               th("Sonuç sayfası", "Results page", "Enter'a basıldığında açılan /search sayfasındaki sonuç sayısı.", "Number of results on the /search page that opens after pressing Enter.", True),
+               th("Sonuç sayfasında ilk kart", "First card on results page", "Sonuç sayfasında ilk sıradaki ürün.", "The first product on the results page."),
+               th("Değerlendirme", "Assessment", "İlk kartlar ve sonuç sayıları birlikte incelenerek atanan sınıf.", "Class assigned by reviewing the first cards and result counts together."),
+               th("Google aylık hacim", "Google monthly volume", "Aynı ifadenin Google'daki ortalama aylık arama hacmi, Keyword Planner, Eyl 2025 - Ağu 2026.", "Average monthly Google search volume of the same term, Keyword Planner, Sep 2025 - Aug 2026.", True)],
+              [[u(r["url"], r["sorgu"]), etk(r["grup"], GRUP_EN[r["grup"]], "sa-" + r["grup"]),
+                _sayi(KAT[r["sorgu"]]["sonuc"]), _kart((KAT[r["sorgu"]]["ilk"] or [None])[0]),
+                _sayi(r["sonuc"]), _kart(r["urunler"][0]["ad"] if r["urunler"] else None),
+                etk(*DEG[DEGK[r["sorgu"]]], "sd-" + DEGK[r["sorgu"]]), cell(_hacim(r["sorgu"])) if _hacim(r["sorgu"]) else n("-")] for r in SA], "uzun")
+_ILG = SAY["U"] + SAY["P"]
 # ---------------------------------------------------------------- yolculuk adimlari
 _kirik_v, _kirik_r = YA["marka"]["VitrA"]["tema_neg"]["kirik"], YA["rakip"]["tema_neg"]["kirik"]
 _stok = 100 * _D2.top_yok / _D2.top_kart
@@ -83,10 +83,10 @@ ADIM = [
   ("Kullanıcı ürünü bulsa da satın alamıyor ve başka kanala geçebiliyor", "The user finds the product but cannot buy it and may move to another channel"),
   ("Stokta olmayan ürünlerin listede sona alınması, tahmini tedarik tarihi ya da yakın model önerisi", "Moving out-of-stock products to the end of lists, an estimated restock date or a close alternative"), "vitra.com.tr kategori sayfaları: ürün, fiyat aralığı ve stok"),
  (("Site içi arama", "Site search"),
-  ("%d test aramasının %s sonuç dönmüyor (şamandıra, kartuş, garanti, yazım farkları); %d ürün aramasında ilk 4 kartta montaj hizmeti çıkıyor" % (len(SA), ek(len(SIFIR), "inde"), len(MTJ)),
-   "%d of %d test searches return no results (float valve, cartridge, warranty, spelling variants); in %d product searches an installation service appears among the first 4 cards" % (len(SIFIR), len(SA), len(MTJ))),
-  ("Aradığını bulamayan kullanıcı siteden çıkabiliyor ya da Google'a dönüyor", "A user who cannot find the product may leave the site or return to Google"),
-  ("Eş anlamlı ve yazım farkı sözlüğü, sıfır sonuçta öneri, montaj hizmeti kartlarının ürün sonuçlarından ayrılması", "A synonym and spelling-variant dictionary, suggestions on zero results, separating installation service cards from product results"), "Site içi arama: kullanıcının yazdığı ifadeler ne döndürüyor?"),
+  ("Yazarken açılan anlık sonuçlar %d aramanın %s ilgili; Enter sonrası sonuç sayfası %d aramada boş ya da ilgisiz (şamandıra, dusakabin, ürün kodu); kartuş, conta, yedek parça, garanti ve servis aramalarında ilgili ürün ya da destek sayfası dönmüyor" % (len(SA), ek(_ILG, "inde"), SAY["T"]),
+   "Instant results while typing are relevant for %d of %d searches; the results page after Enter is empty or off-target for %d (float valve, dusakabin, product code); cartridge, seal, spare part, warranty and service searches return no relevant product or support page" % (_ILG, len(SA), SAY["T"])),
+  ("Enter'a basan ya da parça adıyla arayan kullanıcı aradığını bulamayabiliyor", "Users who press Enter or search by part name may not find what they are looking for"),
+  ("Sonuç sayfasının anlık sonuçlarla aynı altyapıya bağlanması; yedek parça ve destek ifadeleri için yönlendirme kuralları", "Connecting the results page to the same engine as instant results; routing rules for spare-part and support terms"), "Site içi arama: kullanıcının yazdığı ifadeler ne döndürüyor?"),
  (("Ürün sayfası: fiyat", "Product page: price"),
   ("İncelenen 29 VitrA ürününün 19'unda en düşük fiyat vitra.com.tr'de değil, bir pazaryeri satıcısında", "For 19 of the 29 VitrA products reviewed, the lowest price is not on vitra.com.tr but at a marketplace seller"),
   ("Fiyat karşılaştıran kullanıcı satın almayı pazaryerinde tamamlayabiliyor", "A user comparing prices may complete the purchase on a marketplace"),
@@ -145,8 +145,8 @@ def _ob(o): return '<span class="badge %s">%s</span>' % (OC[o], x(o, OE[o]))
 FIRSAT = [
  ("Öncelik 1", ("Üyeliksiz satın almanın sepette tek adıma indirilmesi", "Reducing guest purchase to a single step in the cart"),
   ("E-posta veya telefon alanı ve \"Üye olmadan satın al\" butonu sipariş özetine alınabilir; giriş paneli ve ayrı e-posta ekranı aradan çıkar.", "An e-mail or phone field and a \"Buy without an account\" button can be placed in the order summary; the sign-in panel and the separate e-mail screen drop out.")),
- ("Öncelik 1", ("Site içi aramada sıfır sonucun ve alakasız ilk sonuçların azaltılması", "Reducing zero results and irrelevant first results in site search"),
-  ("Kullanıcı dilindeki ifadeler (şamandıra, kartuş, taharet musluğu, menteşe) ve yazım farkları (dusakabin, rezarvuar) için eş anlamlı sözlüğü; ürün aramalarında montaj hizmeti kartlarının ayrı bir şeritte gösterilmesi değerlendirilebilir.", "A synonym dictionary for user terms (float valve, cartridge, bidet tap, hinge) and spelling variants (dusakabin, rezarvuar); showing installation service cards in a separate strip in product searches can be considered.")),
+ ("Öncelik 1", ("Site içi aramanın iki yolunun tekleştirilmesi ve parça ile destek aramalarının yönlendirilmesi", "Aligning the two site search paths and routing part and support searches"),
+  ("Enter sonrası sonuç sayfasının anlık sonuçlarla aynı altyapıya bağlanması; kartuş, conta, menteşe, \"yedek parça\" aramalarının ilgili parça kategorisine, garanti ve servis aramalarının destek ve garanti sayfalarına yönlendirilmesi; ölçü içeren aramalarda (\"80 cm banyo dolabı\") ölçü süzgecinin uygulanması değerlendirilebilir.", "Connecting the results page after Enter to the same engine as instant results; routing cartridge, seal, hinge and \"yedek parça\" searches to the relevant parts category and warranty and service searches to the support and warranty pages; applying the size filter for searches with sizes (\"80 cm banyo dolabı\") can be considered.")),
  ("Öncelik 2", ("Sepette montaj hizmeti ve tamamlayıcı ürünlerin görünür olması", "Making installation services and complementary products visible in the cart"),
   ("Montaj ve \"VitrA'nın senin için seçtikleri\" karuselleri küçültülüp sepet listesinin hemen altına taşınabilir; ürünle eşleşen montaj hizmeti ürün satırında önerilebilir.", "The installation and \"VitrA picks for you\" carousels can be made smaller and moved directly below the cart list; the installation service matching the product can be suggested on the product row.")),
  ("Öncelik 2", ("Stok dışı ürünlerin listede ve aramada yönetilmesi", "Managing out-of-stock products in lists and search"),
@@ -159,7 +159,6 @@ T_FIR = tablo([th("Öncelik", "Priority", "Önerilen sıra; etki ve uygulama kol
                th("Nasıl?", "How?", "Fırsat için önerilen düzenleme.", "The change proposed for the opportunity.")],
               [[_ob(o), "<b>%s</b>" % x(*f), x(*a)] for o, f, a in FIRSAT])
 
-_ilk = _SA["banyo dolabı"]
 HTML = """
 <p class="lede">%s</p>
 <div class="kpis">%s%s%s%s</div>
@@ -181,8 +180,8 @@ HTML = """
  x("Bu bölüm, kullanıcının VitrA ürününü bulmasından satın almasına ve teslimat sonrasına kadar geçtiği adımları vitra.com.tr üzerinden ele almaktadır. Raporun diğer bölümlerindeki bulgular yolculuk sırasına göre bir araya getirilmiş; site içi arama ve sepet-ödeme adımları için ayrıca gözlem yapılmıştır. Gözlemler 4 Ekim 2026 tarihlidir ve oturum açılmadan yapılmıştır.",
    "This section covers the steps a user goes through on vitra.com.tr from finding a VitrA product to purchase and after delivery. Findings from other sections of the report are brought together in journey order; site search and the cart-checkout steps were observed separately. Observations are dated 4 October 2026 and were made without signing in."),
  kpi_kart("3", "Üyeliksiz alışverişte \"Sepeti Onayla\"dan adres adımına kadar tıklama · iki ara ekran", "Clicks from \"Confirm cart\" to the address step in guest checkout · two intermediate screens", "dn"),
- kpi_kart("%d / %d" % (len(SIFIR), len(SA)), "Sonuç dönmeyen site içi arama (şamandıra, kartuş, garanti, yazım farkları) · 04.10.2026", "Site searches returning no results (float valve, cartridge, warranty, spelling variants) · 04.10.2026", "dn"),
- kpi_kart("%d / %d" % (len(MTJ), len([r for r in SA if r["urunler"] and r["grup"] != "Hizmet ve destek"])), "İlk 4 kartta montaj hizmeti çıkan ürün araması", "Product searches with an installation service among the first 4 cards"),
+ kpi_kart("%d / %d" % (SAY["T"], len(SA)), "Anlık sonuçlarda bulunup Enter sonrası sonuç sayfasında boş ya da ilgisiz dönen site içi arama · 04.10.2026", "Site searches found in instant results but empty or off-target on the results page after Enter · 04.10.2026", "dn"),
+ kpi_kart("%d / %d" % (SAY["Y"] + SAY["D"], len(SA)), "İki yolda da ilgili ürün ya da destek sayfası dönmeyen arama (kartuş, conta, yedek parça, garanti, servis)", "Searches returning no relevant product or support page on either path (cartridge, seal, spare part, warranty, service)", "dn"),
  kpi_kart(yzd(_stok), "vitra.com.tr kategori sayfalarında stoklu süzgecinin dışında kalan varyant kartı payı · 30.09.2026", "Share of variant cards outside the in-stock filter on vitra.com.tr category pages · 30.09.2026", "dn"),
  x("Yolculuk adımları: gözlem, etki ve öneri", "Journey steps: observation, effect and recommendation"),
  T_YOL,
@@ -190,10 +189,10 @@ HTML = """
          "**Users mostly get to know VitrA on a marketplace or in an AI answer, and when they reach vitra.com.tr they face extra barriers in search, stock and checkout**. Visibility at the discovery stage is covered in the SEO and GEO sections of the report. A large part of the on-site barriers can be reduced with changes under the site's own control, such as the search dictionary, cart layout and checkout flow.", "D40", "D41"),
  x("Site içi arama: kullanıcının yazdığı ifadeler ne döndürüyor?", "Site search: what do the user's own terms return?"),
  T_ARA,
- insight(("**%d test aramasının %s sonuç dönmemektedir**: şamandıra, kartuş ve garanti ile \"dusakabin\", \"rezarvuar\", \"klozed\" gibi yazım farkları. **Kategori aramalarında ilk sonuçlar aranan ürünle eşleşmemektedir**: \"banyo dolabı\" aramasında %s sonuç dönmekte, ancak ilk 8 kartın hiçbiri banyo dolabı değildir (montaj hizmeti, batarya, kağıtlık ve askı). %d ürün aramasında ilk 4 kartta montaj hizmeti yer almaktadır. Model adı ve ürün kodu aramaları (metropole, sento, 7906B483-0090) ise doğru ürünü ilk sıraya getirmektedir. Kullanıcının Google'da kullandığı ifadeler (taharet musluğu, şamandıra, klozet kapağı menteşesi) için eş anlamlı sözlüğü ve sıfır sonuçta öneri gösterilmesi site içi aramanın dönüşüme katkısını artırabilir.")
-         % (len(SA), ek(len(SIFIR), "inde"), bin(_ilk["sonuc"]), len(MTJ)),
-         ("**%d of %d test searches return no results**: float valve, cartridge and warranty, and spelling variants such as \"dusakabin\", \"rezarvuar\" and \"klozed\". **In category searches the first results do not match the searched product**: \"banyo dolabı\" returns %s results, but none of the first 8 cards is a bathroom cabinet (installation service, taps, toilet roll holders and hooks). In %d product searches an installation service appears among the first 4 cards. Searches by model name and product code (metropole, sento, 7906B483-0090) bring the right product to the top. A synonym dictionary for the terms users use on Google (bidet tap, float valve, toilet seat hinge) and suggestions on zero results can increase the contribution of site search to conversion.")
-         % (len(SIFIR), len(SA), f"{_ilk['sonuc']:,}", len(MTJ)), "D40"),
+ insight(("**Arama kutusuna yazarken açılan anlık sonuçlar %d aramanın %s doğrudan, %s kısmen ilgili ürünleri getirmektedir**; yazım farklarını (dusakabin, rezarvuar, klozed) ve kullanıcı dilini (şamandıra yazınca iç takım) doğru eşleştirmektedir. **Enter'a basıldığında açılan sonuç sayfası ise farklı bir arama altyapısıyla çalışmakta ve %d aramada anlık sonuçlardan ayrışmaktadır**: şamandıra, dusakabin, rezarvuar, klozed ve ürün kodu aramalarında sonuç sayfası boş dönmekte, \"banyo dolabi\" yazımında ilk kartlar batarya olmaktadır; \"banyo dolabı\" için anlık sonuçlar %s, sonuç sayfası %s sonuç göstermektedir. İki yolda da karşılığı bulunmayan aramalar yedek parça (kartuş, conta, \"yedek parça\") ve destek (garanti, servis) ifadeleridir; garanti ve servis aramalarında destek sayfası yerine montaj hizmeti ve parça kartları çıkmaktadır. Ölçü içeren aramalar (\"80 cm banyo dolabı\") ve parça adları (\"klozet kapağı menteşesi\") anlık sonuçlarda \"Ürün bulunamadı\" vermektedir. Sonuç sayfasının anlık sonuçlarla aynı altyapıya bağlanması ve yedek parça ile destek ifadeleri için yönlendirme kuralları aramanın dönüşüme katkısını artırabilir.")
+         % (len(SA), ek(SAY["U"], "inde"), ek(SAY["P"], "inde"), SAY["T"], bin(KAT["banyo dolabı"]["sonuc"]), bin(_SA["banyo dolabı"]["sonuc"])),
+         ("**Instant results that open while typing in the search box return directly relevant products for %d of %d searches and partly relevant ones for %d**; they match spelling variants (dusakabin, rezarvuar, klozed) and user language (typing float valve returns inner mechanisms) correctly. **The results page that opens after pressing Enter runs on a different search engine and diverges from instant results for %d searches**: the results page is empty for float valve, dusakabin, rezarvuar, klozed and product code searches, and for \"banyo dolabi\" the first cards are taps; for \"banyo dolabı\" instant results show %s results and the results page %s. Searches with no match on either path are spare-part (cartridge, seal, \"yedek parça\") and support (warranty, service) terms; warranty and service searches return installation services and part cards instead of the support page. Searches with sizes (\"80 cm banyo dolabı\") and part names (\"klozet kapağı menteşesi\") return \"No product found\" in instant results. Connecting the results page to the same engine as instant results and routing rules for spare-part and support terms can increase the contribution of search to conversion.")
+         % (SAY["U"], len(SA), SAY["P"], SAY["T"], f"{KAT['banyo dolabı']['sonuc']:,}", f"{_SA['banyo dolabı']['sonuc']:,}"), "D40"),
  x("Sepet ve ödeme: üyeliksiz alışverişte ek adımlar", "Cart and checkout: extra steps in guest checkout"),
  EKRAN,
  AKIS,

@@ -284,8 +284,12 @@ TIP_TR = {"kategori": "Kategori sayfası", "pazaryeri arama/liste": "Pazaryeri a
 
 def arama_sonuclari():
     import serp_ozet as S
-    GS = json.load(open(os.path.join(veri.V, "ham/derin/serp/gsc_109.json"), encoding="utf-8"))
-    cev = {v[0]: v[1] for v in TEMA.values()}
+    from b_serp import TEMA_EN
+    tr_ = lambda t: ".".join(reversed(t.split("-")))
+    TRH = tr_(S.TARIH)
+    GRP = {g: "%s · %s" % (g, S.GRUP_AD[g][0]) for g in "ABC"}
+    cev = {t: e for t, e in TEMA_EN.items() if t != e}
+    cev.update({"%s · %s" % (g, S.GRUP_AD[g][0]): "%s · %s" % (g, S.GRUP_AD[g][1]) for g in "ABC"})
     cev.update({TIP_TR[k]: TIP[k] for k in TIP})
     AI = {"yok": ("Çıkmadı", "Did not appear"), "var": ("Çıktı, VitrA kaynak değil", "Appeared, VitrA not cited"), "vitra": ("Çıktı, VitrA kaynak", "Appeared, VitrA cited"),
           "icerik_yok": ("Çıktı, içerik alınamadı", "Appeared, content not retrieved")}
@@ -295,18 +299,18 @@ def arama_sonuclari():
         if not r.get("ai"): return AI["icerik_yok"][0]
         return AI["vitra"][0] if "vitra.com.tr" in (r["ai"].get("ref_alanlar") or []) else AI["var"][0]
     K, ILK, AIK = [], [], []
-    for r in sorted(S.SK, key=lambda r: -r["hacim"]):
+    for r in sorted(S.TUM, key=lambda r: (r["grup"], -r["hacim"])):
         top = sorted(r["top10"], key=lambda z: z["sira"])
-        g = GS.get(r["kelime"]) or {}
-        K.append([r["kelime"], TEMA[r["tema"]][0], r["hacim"], r.get("vitra_sira"), g.get("sira"), g.get("tik"),
+        g = r.get("gsc") or {}
+        K.append([r["kelime"], GRP[r["grup"]], r["tema"], r["hacim"], r.get("vitra_sira"), g.get("sira"), g.get("tik"),
                   top[0]["alan"] if top else None, " · ".join(z["alan"] for z in top[:3]), ai_d(r), len(r.get("paa") or []), 1 if (r.get("vitra_sira") or 99) <= 3 else 0])
         for z in top:
-            ILK.append([r["kelime"], TEMA[r["tema"]][0], z["sira"], z["alan"], TIP_TR.get(z["tip"], z["tip"]), [z["url"].replace("https://", "").replace("http://", "")[:90], z["url"]], 1 if z["alan"] == "vitra.com.tr" else 0])
+            ILK.append([r["kelime"], r["tema"], z["sira"], z["alan"], TIP_TR.get(z["tip"], z["tip"]), [z["url"].replace("https://", "").replace("http://", "")[:90], z["url"]], 1 if z["alan"] == "vitra.com.tr" else 0])
         if r.get("ai"):
             for d in dict.fromkeys(r["ai"].get("ref_alanlar") or []):
-                AIK.append([r["kelime"], TEMA[r["tema"]][0], d, r.get("vitra_sira"), 1 if d == "vitra.com.tr" else 0])
+                AIK.append([r["kelime"], r["tema"], d, r.get("vitra_sira"), 1 if d == "vitra.com.tr" else 0])
     PQ = collections.defaultdict(list)
-    for r in S.SK:
+    for r in S.TUM:
         for q in r.get("paa") or []: PQ[q].append(r["kelime"])
     PT = {"fiyat": ("Fiyat", "Price"), "bilgi": ("Nedir / nasıl", "What / how"), "vitra": ("VitrA adıyla", "Naming VitrA"), "diger": ("Diğer", "Other")}
     cev.update({a: b for a, b in PT.values()})
@@ -319,19 +323,20 @@ def arama_sonuclari():
     PAA.sort(key=lambda r: (-r[3], r[0]))
     tb = {
         "kelime": {"c": [kolon("kelime", "Kelime", "Keyword", "Google'da aranan ifade; kullanıcının yazdığı biçimde korunmuştur.", "The search term on Google, kept as the user types it.", "kw"),
-                         kolon("tema", "Tema", "Theme", "Kelimenin ait olduğu tema; kelimeler VitrA'nın kategori ağacını ve fırsat alanlarını temsil edecek biçimde dokuz temadan seçilmiştir.", "The theme of the keyword; keywords were chosen from nine themes to represent VitrA's category tree and opportunity areas.", "kat", True),
+                         kolon("grup", "Grup", "Group", "A · VitrA gamı (VitrA'nın sattığı kategoriler), B · yakın kategori fırsatları (VitrA'nın satmadığı ya da kısmen sattığı ürünler), C · marka ve karşılaştırma aramaları.", "A · VitrA range (categories VitrA sells), B · adjacent category opportunities (products VitrA does not sell or sells partly), C · brand and comparison searches.", "kat", True),
+                         kolon("tema", "Kategori / tema", "Category / theme", "Kelimenin kategorisi (A), teması (B) ya da marka arama türü (C).", "Category (A), theme (B) or brand search type (C) of the keyword.", "kat", True),
                          kolon("hacim", "Aylık hacim", "Monthly volume", "Google Keyword Planner ortalama aylık arama hacmi, Eyl 2025 - Ağu 2026.", "Google Keyword Planner average monthly search volume, Sep 2025 - Aug 2026.", "sayi"),
-                         kolon("vsira", "VitrA sırası", "VitrA position", "vitra.com.tr'nin 29.09.2026 tek günlük mobil arama sonucundaki sırası (ilk 20); boş: ilk 20'de yok.", "vitra.com.tr's position in the single-day mobile results of 29.09.2026 (top 20); blank: not in the top 20.", "sayi"),
-                         kolon("gsira", "Search Console sırası", "Search Console position", "Search Console ortalama sırası, 26.06 - 25.09.2026, tüm cihazlar.", "Search Console average position, 26.06 - 25.09.2026, all devices.", "sayi", o=1),
+                         kolon("vsira", "VitrA sırası", "VitrA position", "vitra.com.tr'nin mobil sırası (ilk 20): SEOmonitor günlük takibi 03.10.2026; takip dışı kelimelerde %s SERP gözlemi; boş: ilk 20'de yok." % TRH, "vitra.com.tr mobile position (top 20): SEOmonitor daily tracking 03.10.2026; SERP observation of %s for untracked keywords; blank: not in the top 20." % TRH, "sayi"),
+                         kolon("gsira", "Search Console sırası", "Search Console position", "Search Console ortalama sırası, 1 Tem - 30 Eyl 2026, tüm cihazlar.", "Search Console average position, 1 Jul - 30 Sep 2026, all devices.", "sayi", o=1),
                          kolon("gtik", "Search Console click", "Search Console clicks", "Aynı dönemde bu sorgudan vitra.com.tr'ye gelen click.", "Clicks from this query to vitra.com.tr in the same period.", "sayi"),
                          kolon("bir", "1. sıradaki alan adı", "Domain in 1st place", "Mobil arama sonucunda ilk sıradaki organik sonucun alan adı.", "Domain of the first organic result in the mobile results.", "metin", True),
                          kolon("ilk3", "İlk 3 alan adı", "Top 3 domains", "İlk üç organik sonucun alan adları, sırasıyla.", "Domains of the first three organic results, in order.", "metin", uz=True),
                          kolon("ai", "AI Overview", "AI Overview", "Kelimede Google AI Overview çıkıp çıkmadığı ve vitra.com.tr'nin kaynak gösterilip gösterilmediği.", "Whether a Google AI Overview appeared and whether vitra.com.tr was cited.", "kat", True),
                          kolon("paa", "Diğer sorular", "People also ask", "Sonuç sayfasındaki \"Diğer sorular\" kutusunda listelenen soru sayısı.", "Number of questions in the \"People also ask\" box on the results page.", "sayi")],
-                   "r": [r[:10] for r in K], "s": [2, "d"]},
+                   "r": [r[:11] for r in K], "s": None},
         "ilk10": {"c": [kolon("kelime", "Kelime", "Keyword", "Google'da aranan ifade.", "The search term on Google.", "kw"),
                         kolon("tema", "Tema", "Theme", "Kelimenin teması.", "The keyword's theme.", "kat", True),
-                        kolon("sira", "Sıra", "Position", "Organik sonuç sırası (1-10), 29.09.2026 mobil.", "Organic result position (1-10), mobile, 29.09.2026.", "sayi"),
+                        kolon("sira", "Sıra", "Position", "Organik sonuç sırası (1-10), %s mobil." % TRH, "Organic result position (1-10), mobile, %s." % TRH, "sayi"),
                         kolon("alan", "Alan adı", "Domain", "Sonucun alan adı.", "Domain of the result.", "metin", True),
                         kolon("tip", "Sayfa tipi", "Page type", "Sonuç sayfasının türü: kategori, pazaryeri arama veya liste, ürün, rehber, video, sosyal ve diğerleri.", "Type of the result page: category, marketplace search or listing, product, guide, video, social and others.", "kat", True),
                         kolon("url", "Adres", "URL", "Sonucun tam adresi; bağlantı sayfayı yeni sekmede açar.", "Full URL of the result; the link opens the page in a new tab.", "link", uz=True)],
@@ -352,18 +357,17 @@ def arama_sonuclari():
         vgi = len(tb[k]["c"])
         for r_, src in zip(tb[k]["r"], L): r_.append(src[-1])
         tb[k]["vg"] = vgi
-    vd = sum(1 for r in K if r[3] and r[3] <= 10)
     sayfa("arama-sonuclari.html", ("VitrA | Arama Sonuçları Seti", "VitrA | Search Results Set"),
           ("VitrA TÜRKİYE · GOOGLE ARAMA SONUÇLARI", "VitrA TURKEY · GOOGLE SEARCH RESULTS"),
-          ("Arama Sonuçları Seti: %d Kelime, İlk 10 Sonuç, AI Overview ve Diğer Sorular" % S.N, "Search Results Set: %d Keywords, Top 10 Results, AI Overview and People Also Ask" % S.N),
-          ("Google Türkiye mobil arama sonuçlarında %d kelimenin ilk 10 organik sonucu, AI Overview kaynakları ve \"Diğer sorular\" kutusu; gözlem tarihi 29.09.2026. Kelimeler dokuz temadan seçilmiş, Google Keyword Planner'da arama hacmi olmayan kelimeler çıkarılmıştır. Search Console sütunları vitra.com.tr'nin aynı kelimelerdeki ortalama sırasını ve click'ini gösterir. vitra.com.tr satırları vurgulanmıştır." % S.N,
-           "The top 10 organic results, AI Overview sources and the \"People also ask\" box for %d keywords in Google Turkey mobile results; observed on 29.09.2026. Keywords were chosen from nine themes, and keywords with no search volume in Google Keyword Planner were removed. The Search Console columns show vitra.com.tr's average position and clicks for the same keywords. vitra.com.tr rows are highlighted." % S.N),
-          [(N(S.N), ("kelime · dokuz tema", "keywords · nine themes")), (N(len(ILK)), ("ilk 10 organik sonuç satırı", "top-10 organic result rows")),
-           (T("%d / %d" % (vd, S.N), "%d / %d" % (vd, S.N)), ("VitrA'nın ilk 10'da olduğu kelime (tek günlük gözlem)", "keywords with VitrA in the top 10 (single-day observation)")),
+          ("Arama Sonuçları Seti: %d Kelime, İlk 10 Sonuç, AI Overview ve Diğer Sorular" % S.NT, "Search Results Set: %d Keywords, Top 10 Results, AI Overview and People Also Ask" % S.NT),
+          ("Google Türkiye mobil arama sonuçlarında %d kelimenin ilk 10 organik sonucu, AI Overview kaynakları ve \"Diğer sorular\" kutusu; gözlem tarihi %s. Kelimeler üç grupta toplanmıştır: A · VitrA gamı (VitrA'nın sattığı her alt kategoriden en az bir baş kelime), B · yakın kategori fırsatları ve C · marka ve karşılaştırma aramaları. Google Keyword Planner'da arama hacmi olmayan kelimeler alınmamıştır. Search Console sütunları vitra.com.tr'nin aynı kelimelerdeki ortalama sırasını ve click'ini gösterir. vitra.com.tr'nin ilk 3'te olduğu satırlar vurgulanmıştır." % (S.NT, TRH),
+           "The top 10 organic results, AI Overview sources and the \"People also ask\" box for %d keywords in Google Turkey mobile results; observed on %s. Keywords are grouped into three: A · VitrA range (at least one head keyword from each subcategory VitrA sells), B · adjacent category opportunities and C · brand and comparison searches. Keywords with no search volume in Google Keyword Planner were not included. The Search Console columns show vitra.com.tr's average position and clicks for the same keywords. Rows where vitra.com.tr is in the top 3 are highlighted." % (S.NT, TRH)),
+          [(N(S.NT), ("kelime · A %d · B %d · C %d" % tuple(len(S.GRUP[g]) for g in "ABC"), "keywords · A %d · B %d · C %d" % tuple(len(S.GRUP[g]) for g in "ABC"))), (N(len(ILK)), ("ilk 10 organik sonuç satırı", "top-10 organic result rows")),
+           (T("%d / %d" % (S.VITRA["ilk10"], S.N), "%d / %d" % (S.VITRA["ilk10"], S.N)), ("VitrA'nın ilk 10'da olduğu kelime (A grubu)", "keywords with VitrA in the top 10 (group A)")),
            (N(len(S.PAA_SORU)), ("benzersiz \"Diğer sorular\" sorusu", "unique \"People also ask\" questions")),
            (T("%d / %d" % (len(S.AI_VITRA), len(S.AI_ICERIK)), "%d / %d" % (len(S.AI_VITRA), len(S.AI_ICERIK))), ("VitrA'nın kaynak gösterildiği AI Overview", "AI Overviews citing VitrA"))],
           [("kelimeler", ("Kelimeler: hacim, VitrA sırası ve ilk 3 alan adı", "Keywords: volume, VitrA position and top 3 domains"),
-            ("Her satır bir kelimedir. Tema ve AI Overview süzgeçleriyle daraltılabilir, sütun başlığına tıklanarak sıralanabilir; vitra.com.tr'nin ilk 3'te olduğu kelimeler vurgulanmıştır.", "Each row is a keyword. Narrow with the theme and AI Overview filters, sort by clicking a column header; keywords where vitra.com.tr is in the top 3 are highlighted."), "kelime", None),
+            ("Her satır bir kelimedir. Grup, kategori ve AI Overview süzgeçleriyle daraltılabilir, sütun başlığına tıklanarak sıralanabilir; vitra.com.tr'nin ilk 3'te olduğu kelimeler vurgulanmıştır.", "Each row is a keyword. Narrow with the group, category and AI Overview filters, sort by clicking a column header; keywords where vitra.com.tr is in the top 3 are highlighted."), "kelime", None),
            ("ilk10", ("İlk 10 organik sonuç", "Top 10 organic results"),
             ("Her kelimenin ilk 10 organik sonucu; alan adı ve sayfa tipine göre süzülebilir, adres sayfayı yeni sekmede açar.", "The top 10 organic results for each keyword; filter by domain and page type, the URL opens the page in a new tab."), "ilk10", None),
            ("aio", ("AI Overview kaynakları", "AI Overview sources"),
@@ -371,10 +375,10 @@ def arama_sonuclari():
            ("paa", ("\"Diğer sorular\" kutusundaki sorular", "Questions in the \"People also ask\" box"),
             ("%d kelimede derlenen %d benzersiz soru; soru tipi süzgeci fiyat, bilgi ve VitrA adı içeren soruları ayırır." % (S.PAA_KELIME, len(S.PAA_SORU)), "%d unique questions collected across %d keywords; the question type filter separates price, information and VitrA questions." % (len(S.PAA_SORU), S.PAA_KELIME)), "paa", None)],
           tb, cev,
-          ("Sonuçlar Google Türkiye, Türkçe, mobil (Android) için tek günlük gözlemdir ve gün içinde değişebilir. Sayfa tipi adres yapısından atanmıştır. Keyword Planner'da hacmi olmayan 2 kelime (\"boy dolabı\", \"gömme rezervuar mı dış rezervuar mı\") çıkarılmıştır.",
-           "Results are a single-day observation for Google Turkey, Turkish, mobile (Android) and may change within the day. Page type is assigned from the URL structure. 2 keywords with no Keyword Planner volume (\"boy dolabı\", \"gömme rezervuar mı dış rezervuar mı\") were removed."),
-          ("Kaynak: Google arama sonuçları, Türkiye, mobil · 29.09.2026 · Google Search Console sc-domain:vitra.com.tr, 26.06 - 25.09.2026 · Google Keyword Planner, Eyl 2025 - Ağu 2026",
-           "Source: Google search results, Turkey, mobile · 29.09.2026 · Google Search Console sc-domain:vitra.com.tr, 26.06 - 25.09.2026 · Google Keyword Planner, Sep 2025 - Aug 2026"))
+          ("Sonuçlar Google Türkiye, Türkçe, mobil (Android) için tek günlük gözlemdir ve gün içinde değişebilir. Sayfa tipi adres yapısından atanmıştır. Keyword Planner'da hacmi olmayan %d aday kelime alınmamıştır." % len(S.CIKAN),
+           "Results are a single-day observation for Google Turkey, Turkish, mobile (Android) and may change within the day. Page type is assigned from the URL structure. %d candidate keywords with no Keyword Planner volume were not included." % len(S.CIKAN)),
+          ("Kaynak: Google arama sonuçları, Türkiye, mobil · %s · Google Search Console sc-domain:vitra.com.tr, 1 Tem - 30 Eyl 2026 · Google Keyword Planner, Eyl 2025 - Ağu 2026" % TRH,
+           "Source: Google search results, Turkey, mobile · %s · Google Search Console sc-domain:vitra.com.tr, 1 Jul - 30 Sep 2026 · Google Keyword Planner, Sep 2025 - Aug 2026" % TRH))
 
 
 # ====================================================================== 2. kelime evreni

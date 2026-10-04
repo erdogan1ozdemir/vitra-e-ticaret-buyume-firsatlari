@@ -1,0 +1,1214 @@
+{
+ "donem": [
+  "2026-07-01",
+  "2026-09-30"
+ ],
+ "kelime": {
+  "klozet": {
+   "tik": 3032,
+   "gosterim": 86862,
+   "sira": 2.8
+  },
+  "klozet fiyatları": {
+   "tik": 4090,
+   "gosterim": 128705,
+   "sira": 4.1
+  },
+  "asma klozet": {
+   "tik": 299,
+   "gosterim": 12000,
+   "sira": 3.6
+  },
+  "akıllı klozet": {
+   "tik": 532,
+   "gosterim": 4075,
+   "sira": 1.9
+  },
+  "klozet kapağı": {
+   "tik": 321,
+   "gosterim": 52557,
+   "sira": 7.8
+  },
+  "klozet iç takımı": {
+   "tik": 38,
+   "gosterim": 6164,
+   "sira": 5.3
+  },
+  "gömme rezervuar": {
+   "tik": 850,
+   "gosterim": 36509,
+   "sira": 3.9
+  },
+  "gömme rezervuar iç takımı": {
+   "tik": 7,
+   "gosterim": 519,
+   "sira": 12.8
+  },
+  "lavabo": {
+   "tik": 1362,
+   "gosterim": 65164,
+   "sira": 3.0
+  },
+  "çanak lavabo": {
+   "tik": 493,
+   "gosterim": 12327,
+   "sira": 3.5
+  },
+  "lavabo modelleri": {
+   "tik": 631,
+   "gosterim": 21834,
+   "sira": 3.5
+  },
+  "pisuvar": {
+   "tik": 65,
+   "gosterim": 16584,
+   "sira": 7.1
+  },
+  "bide": {
+   "tik": 99,
+   "gosterim": 54757,
+   "sira": 4.5
+  },
+  "tuvalet taşı": {
+   "tik": 160,
+   "gosterim": 13700,
+   "sira": 6.4
+  },
+  "kanalsız klozet": {
+   "tik": 85,
+   "gosterim": 3968,
+   "sira": 5.8
+  },
+  "klozet takımı": {
+   "tik": 540,
+   "gosterim": 23023,
+   "sira": 3.6
+  },
+  "banyo dolabı": {
+   "tik": 2988,
+   "gosterim": 74623,
+   "sira": 6.1
+  },
+  "banyo dolabı modelleri": {
+   "tik": 640,
+   "gosterim": 18748,
+   "sira": 6.5
+  },
+  "lavabo dolabı": {
+   "tik": 286,
+   "gosterim": 8491,
+   "sira": 4.7
+  },
+  "lavabolu banyo dolabı": {
+   "tik": 459,
+   "gosterim": 8820,
+   "sira": 4.8
+  },
+  "aynalı banyo dolabı": {
+   "tik": 177,
+   "gosterim": 7005,
+   "sira": 5.6
+  },
+  "banyo aynası": {
+   "tik": 469,
+   "gosterim": 12324,
+   "sira": 4.1
+  },
+  "ledli ayna": {
+   "tik": 38,
+   "gosterim": 2266,
+   "sira": 9.2
+  },
+  "çamaşır makinesi dolabı": {
+   "tik": 352,
+   "gosterim": 22243,
+   "sira": 6.5
+  },
+  "kurutma makinesi dolabı": {
+   "tik": 126,
+   "gosterim": 7151,
+   "sira": 6.4
+  },
+  "banyo tezgahı": {
+   "tik": 168,
+   "gosterim": 2478,
+   "sira": 2.6
+  },
+  "suya dayanıklı banyo dolabı": {
+   "tik": 2,
+   "gosterim": 186,
+   "sira": 5.8
+  },
+  "80 cm banyo dolabı": {
+   "tik": 5,
+   "gosterim": 195,
+   "sira": 9.4
+  },
+  "banyo rafı": {
+   "tik": 14,
+   "gosterim": 531,
+   "sira": 13.8
+  },
+  "dolap kulpu": null,
+  "banyo bataryası": {
+   "tik": 1132,
+   "gosterim": 61706,
+   "sira": 4.3
+  },
+  "lavabo bataryası": {
+   "tik": 724,
+   "gosterim": 35098,
+   "sira": 4.3
+  },
+  "eviye bataryası": {
+   "tik": 140,
+   "gosterim": 2714,
+   "sira": 2.6
+  },
+  "termostatik batarya": {
+   "tik": 19,
+   "gosterim": 920,
+   "sira": 6.0
+  },
+  "ankastre batarya": {
+   "tik": 46,
+   "gosterim": 1480,
+   "sira": 4.6
+  },
+  "taharet musluğu": {
+   "tik": 5,
+   "gosterim": 253,
+   "sira": 20.7
+  },
+  "duş seti": {
+   "tik": 451,
+   "gosterim": 19098,
+   "sira": 6.9
+  },
+  "duş başlığı": {
+   "tik": 1245,
+   "gosterim": 57934,
+   "sira": 5.5
+  },
+  "robot duş seti": {
+   "tik": 2,
+   "gosterim": 15,
+   "sira": 18.3
+  },
+  "ara musluk": {
+   "tik": 18,
+   "gosterim": 2279,
+   "sira": 6.6
+  },
+  "sifon": {
+   "tik": 24,
+   "gosterim": 10546,
+   "sira": 7.2
+  },
+  "kartuş": null,
+  "musluk başlığı": {
+   "tik": 1,
+   "gosterim": 6,
+   "sira": 14.5
+  },
+  "duşakabin": {
+   "tik": 3257,
+   "gosterim": 100790,
+   "sira": 7.0
+  },
+  "duşakabin fiyatları": {
+   "tik": 1206,
+   "gosterim": 46627,
+   "sira": 7.8
+  },
+  "küvet": {
+   "tik": 1244,
+   "gosterim": 24746,
+   "sira": 2.6
+  },
+  "jakuzi": {
+   "tik": 300,
+   "gosterim": 36883,
+   "sira": 9.3
+  },
+  "duş teknesi": {
+   "tik": 610,
+   "gosterim": 10882,
+   "sira": 2.1
+  },
+  "duş kanalı": {
+   "tik": 75,
+   "gosterim": 2085,
+   "sira": 3.7
+  },
+  "klozet adaptörü": null,
+  "engelli klozet": {
+   "tik": 1,
+   "gosterim": 15,
+   "sira": 10.9
+  },
+  "tutunma barı": {
+   "tik": 16,
+   "gosterim": 1763,
+   "sira": 8.2
+  },
+  "yer süzgeci": {
+   "tik": 21,
+   "gosterim": 1805,
+   "sira": 7.9
+  },
+  "taharet aparatı": {
+   "tik": 1,
+   "gosterim": 81,
+   "sira": 6.9
+  },
+  "ısıtmalı klozet kapağı": {
+   "tik": 1,
+   "gosterim": 233,
+   "sira": 12.1
+  },
+  "şamandıra": null,
+  "klozet kapağı menteşesi": {
+   "tik": 0,
+   "gosterim": 33,
+   "sira": 20.0
+  },
+  "banyo tadilatı": {
+   "tik": 13,
+   "gosterim": 839,
+   "sira": 12.8
+  },
+  "banyo tadilat fiyatları": {
+   "tik": 0,
+   "gosterim": 63,
+   "sira": 2.1
+  },
+  "banyo yenileme": {
+   "tik": 66,
+   "gosterim": 2587,
+   "sira": 10.2
+  },
+  "banyo tasarım": {
+   "tik": 27,
+   "gosterim": 1216,
+   "sira": 6.0
+  },
+  "küçük banyo tasarımı": {
+   "tik": 0,
+   "gosterim": 19,
+   "sira": 8.7
+  },
+  "banyo modelleri": {
+   "tik": 464,
+   "gosterim": 36444,
+   "sira": 5.6
+  },
+  "küçük banyo modelleri": {
+   "tik": 33,
+   "gosterim": 4134,
+   "sira": 6.9
+  },
+  "banyo dekorasyonu": {
+   "tik": 19,
+   "gosterim": 3097,
+   "sira": 7.8
+  },
+  "banyo seti": {
+   "tik": 120,
+   "gosterim": 1662,
+   "sira": 17.2
+  },
+  "komple banyo": {
+   "tik": 2,
+   "gosterim": 7,
+   "sira": 6.1
+  },
+  "klozet montajı": {
+   "tik": 13,
+   "gosterim": 1051,
+   "sira": 6.7
+  },
+  "klozet montaj ücreti": {
+   "tik": 5,
+   "gosterim": 149,
+   "sira": 6.0
+  },
+  "gömme rezervuar montajı": {
+   "tik": 25,
+   "gosterim": 2398,
+   "sira": 4.1
+  },
+  "fayans": {
+   "tik": 1446,
+   "gosterim": 38591,
+   "sira": 5.8
+  },
+  "fayans fiyatları": {
+   "tik": 75,
+   "gosterim": 3225,
+   "sira": 10.9
+  },
+  "seramik": {
+   "tik": 1788,
+   "gosterim": 45227,
+   "sira": 4.5
+  },
+  "porselen karo": {
+   "tik": 95,
+   "gosterim": 1465,
+   "sira": 6.9
+  },
+  "banyo fayans modelleri": {
+   "tik": 796,
+   "gosterim": 27142,
+   "sira": 3.7
+  },
+  "klozet ölçüleri": {
+   "tik": 138,
+   "gosterim": 6485,
+   "sira": 3.1
+  },
+  "banyo dolabı ölçüleri": {
+   "tik": 31,
+   "gosterim": 1874,
+   "sira": 4.0
+  },
+  "en iyi klozet markası": {
+   "tik": 49,
+   "gosterim": 1491,
+   "sira": 2.7
+  },
+  "hangi klozet alınmalı": {
+   "tik": 6,
+   "gosterim": 26,
+   "sira": 2.7
+  },
+  "akıllı klozet nedir": {
+   "tik": 7,
+   "gosterim": 59,
+   "sira": 4.4
+  },
+  "klozet su kaçırıyor": null,
+  "çamaşır ve kurutma makinesi dolabı": {
+   "tik": 235,
+   "gosterim": 8819,
+   "sira": 5.4
+  },
+  "duşakabin modelleri": {
+   "tik": 1364,
+   "gosterim": 49195,
+   "sira": 6.2
+  },
+  "duşakabin tekeri": null,
+  "duşakabin camı": {
+   "tik": 51,
+   "gosterim": 2623,
+   "sira": 8.9
+  },
+  "banyo duşakabin": {
+   "tik": 102,
+   "gosterim": 3840,
+   "sira": 6.3
+  },
+  "en ucuz duşakabin fiyatları": {
+   "tik": 0,
+   "gosterim": 110,
+   "sira": 15.9
+  },
+  "siyah duşakabin": {
+   "tik": 11,
+   "gosterim": 1554,
+   "sira": 6.2
+  },
+  "banyo lavabo": {
+   "tik": 295,
+   "gosterim": 5284,
+   "sira": 3.4
+  },
+  "banyo lavabo modelleri": {
+   "tik": 800,
+   "gosterim": 16933,
+   "sira": 3.4
+  },
+  "hilton lavabo": {
+   "tik": 465,
+   "gosterim": 16420,
+   "sira": 3.1
+  },
+  "ayak lavabosu": {
+   "tik": 4,
+   "gosterim": 265,
+   "sira": 8.5
+  },
+  "lavabo fiyat": {
+   "tik": 3,
+   "gosterim": 146,
+   "sira": 5.3
+  },
+  "mutfak bataryası": {
+   "tik": 1487,
+   "gosterim": 45386,
+   "sira": 4.8
+  },
+  "mutfak musluğu": {
+   "tik": 251,
+   "gosterim": 13331,
+   "sira": 5.8
+  },
+  "mutfak batarya fiyatları": {
+   "tik": 54,
+   "gosterim": 4338,
+   "sira": 5.9
+  },
+  "arıtmalı mutfak bataryası": {
+   "tik": 28,
+   "gosterim": 94,
+   "sira": 14.9
+  },
+  "evye batarya": {
+   "tik": 9,
+   "gosterim": 411,
+   "sira": 8.8
+  },
+  "sıcak su musluğu": null,
+  "mutfak çeşmeleri": {
+   "tik": 5,
+   "gosterim": 367,
+   "sira": 3.1
+  },
+  "musluk": {
+   "tik": 412,
+   "gosterim": 57252,
+   "sira": 7.1
+  },
+  "taharet musluğu ucu": null,
+  "klozet taharet musluğu": {
+   "tik": 1,
+   "gosterim": 55,
+   "sira": 21.8
+  },
+  "musluk çeşitleri": {
+   "tik": 36,
+   "gosterim": 4115,
+   "sira": 5.5
+  },
+  "taharet musluğu seti": {
+   "tik": 0,
+   "gosterim": 16,
+   "sira": 18.4
+  },
+  "taharet musluğu fiyatları": {
+   "tik": 3,
+   "gosterim": 22,
+   "sira": 14.0
+  },
+  "musluk batarya": {
+   "tik": 299,
+   "gosterim": 16428,
+   "sira": 4.5
+  },
+  "lavabo musluğu": {
+   "tik": 50,
+   "gosterim": 5637,
+   "sira": 6.5
+  },
+  "banyo lavabo batarya": {
+   "tik": 7,
+   "gosterim": 314,
+   "sira": 6.4
+  },
+  "aç kapa musluk": {
+   "tik": 1,
+   "gosterim": 2,
+   "sira": 18
+  },
+  "lavabo bataryaları fiyatları": {
+   "tik": 1,
+   "gosterim": 183,
+   "sira": 10.6
+  },
+  "banyo batarya fiyatları": {
+   "tik": 95,
+   "gosterim": 5889,
+   "sira": 5.5
+  },
+  "banyo musluğu": {
+   "tik": 96,
+   "gosterim": 8954,
+   "sira": 5.1
+  },
+  "duş batarya": {
+   "tik": 15,
+   "gosterim": 580,
+   "sira": 3.8
+  },
+  "jakuzi fiyatları": {
+   "tik": 23,
+   "gosterim": 901,
+   "sira": 12.6
+  },
+  "küvet fiyatları": {
+   "tik": 473,
+   "gosterim": 8810,
+   "sira": 3.8
+  },
+  "banyo küvet": {
+   "tik": 35,
+   "gosterim": 667,
+   "sira": 3.1
+  },
+  "duş başlığı seti": {
+   "tik": 765,
+   "gosterim": 37260,
+   "sira": 5.7
+  },
+  "banyo duş seti": {
+   "tik": 156,
+   "gosterim": 7038,
+   "sira": 6.4
+  },
+  "ankastre duş seti": {
+   "tik": 256,
+   "gosterim": 7547,
+   "sira": 3.9
+  },
+  "klozet kapağı fiyat": {
+   "tik": 2,
+   "gosterim": 419,
+   "sira": 5.8
+  },
+  "tepe duş başlığı": {
+   "tik": 113,
+   "gosterim": 4820,
+   "sira": 6.1
+  },
+  "banyo fıskiye": {
+   "tik": 5,
+   "gosterim": 459,
+   "sira": 5.9
+  },
+  "duş başlığı tutucu": null,
+  "dolap kulp modelleri": {
+   "tik": 3,
+   "gosterim": 33,
+   "sira": 21.3
+  },
+  "kulp modelleri": {
+   "tik": 1,
+   "gosterim": 5,
+   "sira": 19.2
+  },
+  "porselen tezgah": null,
+  "tezgâh": null,
+  "mermer tezgah": {
+   "tik": 2,
+   "gosterim": 50,
+   "sira": 9.3
+  },
+  "banyo lavabo dolabı": {
+   "tik": 278,
+   "gosterim": 5771,
+   "sira": 4.5
+  },
+  "lavabo alt dolabı": {
+   "tik": 1,
+   "gosterim": 136,
+   "sira": 8.0
+  },
+  "banyo ayna modelleri": {
+   "tik": 57,
+   "gosterim": 3744,
+   "sira": 4.3
+  },
+  "lavabo sifonu": {
+   "tik": 156,
+   "gosterim": 11313,
+   "sira": 5.5
+  },
+  "rezervuar": {
+   "tik": 104,
+   "gosterim": 14296,
+   "sira": 4.0
+  },
+  "sıvı sabunluk": {
+   "tik": 33,
+   "gosterim": 810,
+   "sira": 15.7
+  },
+  "sabunluk": {
+   "tik": 55,
+   "gosterim": 2266,
+   "sira": 9.3
+  },
+  "banyo sabunluk seti": {
+   "tik": 1,
+   "gosterim": 23,
+   "sira": 33.9
+  },
+  "etajer": {
+   "tik": 2,
+   "gosterim": 622,
+   "sira": 8.4
+  },
+  "etejer": null,
+  "batarya": {
+   "tik": 171,
+   "gosterim": 14770,
+   "sira": 6.1
+  },
+  "batarya musluk": {
+   "tik": 158,
+   "gosterim": 13932,
+   "sira": 6.2
+  },
+  "çöp kovası": {
+   "tik": 34,
+   "gosterim": 739,
+   "sira": 8.4
+  },
+  "banyo çöp kovaları": {
+   "tik": 1,
+   "gosterim": 40,
+   "sira": 7.2
+  },
+  "banyo takımı": {
+   "tik": 24,
+   "gosterim": 670,
+   "sira": 14.1
+  },
+  "tekneli duşakabin": {
+   "tik": 96,
+   "gosterim": 3278,
+   "sira": 7.5
+  },
+  "tuvalet kağıdı askılığı": {
+   "tik": 16,
+   "gosterim": 601,
+   "sira": 4.8
+  },
+  "tuvalet fırçası": {
+   "tik": 57,
+   "gosterim": 2406,
+   "sira": 10.2
+  },
+  "havluluk": {
+   "tik": 183,
+   "gosterim": 7045,
+   "sira": 3.3
+  },
+  "banyo aksesuarları": {
+   "tik": 710,
+   "gosterim": 15071,
+   "sira": 4.0
+  },
+  "banyo dolabı seti": {
+   "tik": 243,
+   "gosterim": 3576,
+   "sira": 4.6
+  },
+  "duş": {
+   "tik": 46,
+   "gosterim": 9911,
+   "sira": 6.4
+  },
+  "duşakabin rafı": {
+   "tik": 6,
+   "gosterim": 117,
+   "sira": 13.7
+  },
+  "banyo askılığı": {
+   "tik": 6,
+   "gosterim": 518,
+   "sira": 5.7
+  },
+  "sifon kapağı": {
+   "tik": 12,
+   "gosterim": 1982,
+   "sira": 4.0
+  },
+  "duş paneli": {
+   "tik": 42,
+   "gosterim": 1592,
+   "sira": 7.5
+  },
+  "vitrifiye": {
+   "tik": 194,
+   "gosterim": 6385,
+   "sira": 3.1
+  },
+  "diş fırçalık": {
+   "tik": 10,
+   "gosterim": 672,
+   "sira": 12.2
+  },
+  "yer sifonu": {
+   "tik": 5,
+   "gosterim": 1750,
+   "sira": 7.4
+  },
+  "tepe duş": {
+   "tik": 4,
+   "gosterim": 395,
+   "sira": 8.8
+  },
+  "rezervuar takımı": {
+   "tik": 10,
+   "gosterim": 724,
+   "sira": 5.5
+  },
+  "klozet montaj aparatı": {
+   "tik": 1,
+   "gosterim": 83,
+   "sira": 13.0
+  },
+  "duş kolonları": {
+   "tik": 7,
+   "gosterim": 73,
+   "sira": 12.9
+  },
+  "el duşu": {
+   "tik": 36,
+   "gosterim": 1276,
+   "sira": 3.4
+  },
+  "seramik tabure": {
+   "tik": 0,
+   "gosterim": 20,
+   "sira": 22.1
+  },
+  "duş bataryası fiyatları": {
+   "tik": 20,
+   "gosterim": 980,
+   "sira": 7.0
+  },
+  "yıkanma": {
+   "tik": 1,
+   "gosterim": 109,
+   "sira": 11.9
+  },
+  "gömme rezervuar montaj ölçüleri": {
+   "tik": 12,
+   "gosterim": 879,
+   "sira": 8.4
+  },
+  "duş sürgüsü": {
+   "tik": 2,
+   "gosterim": 227,
+   "sira": 7.4
+  },
+  "duş üniteleri": {
+   "tik": 2,
+   "gosterim": 134,
+   "sira": 21.5
+  },
+  "bide musluğu": {
+   "tik": 5,
+   "gosterim": 387,
+   "sira": 6.5
+  },
+  "su arıtma cihazı": null,
+  "su arıtma": null,
+  "arıtma cihazı": null,
+  "su arıtma cihazlarının fiyatı": null,
+  "su arıtma filtresi": null,
+  "arıtma musluğu": null,
+  "termosifon": {
+   "tik": 0,
+   "gosterim": 99,
+   "sira": 9.5
+  },
+  "şofben": null,
+  "şofben fiyatları": null,
+  "elektrik şofben": null,
+  "termosifon fiyatları": null,
+  "elektrik şofben fiyatı": null,
+  "banyo paspası": null,
+  "bornoz": null,
+  "bornoz takımı": {
+   "tik": 0,
+   "gosterim": 6,
+   "sira": 85.5
+  },
+  "banyo havluları": null,
+  "banyo paspas takımı": null,
+  "çocuk bornoz": null,
+  "mutfak tezgahı": null,
+  "mutfak tezgahı fiyatları": null,
+  "mutfak tezgahı modelleri": null,
+  "granit tezgah": null,
+  "kuvars tezgah": null,
+  "mutfak tezgahı çeşitleri": null,
+  "evye": {
+   "tik": 224,
+   "gosterim": 21737,
+   "sira": 8.5
+  },
+  "evye modelleri": {
+   "tik": 312,
+   "gosterim": 25525,
+   "sira": 8.2
+  },
+  "mutfak evye": {
+   "tik": 75,
+   "gosterim": 3379,
+   "sira": 8.6
+  },
+  "mutfak lavaboları": {
+   "tik": 1,
+   "gosterim": 117,
+   "sira": 6.0
+  },
+  "mutfak evye modelleri": {
+   "tik": 120,
+   "gosterim": 6721,
+   "sira": 9.2
+  },
+  "granit evye": {
+   "tik": 1,
+   "gosterim": 1,
+   "sira": 9
+  },
+  "kirli sepet": null,
+  "çamaşır sepeti": null,
+  "kirli çamaşır sepeti": null,
+  "ecza dolabı": null,
+  "katlanır çamaşır sepeti": null,
+  "banyo taburesi": null,
+  "derz dolgu": null,
+  "fayans yapıştırıcısı": null,
+  "derz": null,
+  "seramik yapıştırıcı": null,
+  "hidrofor": null,
+  "hidrofor fiyatları": null,
+  "hidrofor pompası": null,
+  "basınç düşürücü": null,
+  "havlupan fiyatları": {
+   "tik": 2,
+   "gosterim": 345,
+   "sira": 15.6
+  },
+  "havlupan petek": {
+   "tik": 4,
+   "gosterim": 100,
+   "sira": 16.4
+  },
+  "elektrikli havlupan": {
+   "tik": 0,
+   "gosterim": 12,
+   "sira": 38.2
+  },
+  "fayans boyası": null,
+  "fayans boyası fiyatları": null,
+  "fayans üstü kaplama": null,
+  "en iyi fayans boyası": null,
+  "bebek küvet": null,
+  "cocuk klozet kapak": {
+   "tik": 0,
+   "gosterim": 3,
+   "sira": 21
+  },
+  "cocuk klozet": null,
+  "bebek yıkama küveti": null,
+  "klozet yükseltici": null,
+  "engelli tuvaleti": {
+   "tik": 0,
+   "gosterim": 76,
+   "sira": 16.4
+  },
+  "engelli tutunma barı": {
+   "tik": 23,
+   "gosterim": 2727,
+   "sira": 6.3
+  },
+  "sauna": null,
+  "sauna sobası": null,
+  "buhar odası": null,
+  "dispenser peçetelik": null,
+  "el kurutma makinesi": null,
+  "sensörlü sabunluk": null,
+  "çamaşır makinesi musluğu": null,
+  "çamaşır musluğu": {
+   "tik": 6,
+   "gosterim": 650,
+   "sira": 6.6
+  },
+  "çamaşır makinesi musluğu 2 li": null,
+  "bahçe musluğu": null,
+  "bahçe duşu": null,
+  "çift çıkışlı bahçe musluğu": null,
+  "su yumuşatıcı cihaz": null,
+  "su yumuşatma": null,
+  "hazır banyo dolabı": {
+   "tik": 88,
+   "gosterim": 2375,
+   "sira": 5.1
+  },
+  "banyo kabini": {
+   "tik": 16,
+   "gosterim": 909,
+   "sira": 5.7
+  },
+  "arıtmalı batarya": {
+   "tik": 2,
+   "gosterim": 3,
+   "sira": 12.3
+  },
+  "arıtmalı musluk bataryası": null,
+  "çöp öğütücü": {
+   "tik": 0,
+   "gosterim": 3,
+   "sira": 26.7
+  },
+  "çöp öğütme makinası": null,
+  "banyo ısıtıcı": null,
+  "elektrikli banyo ısıtıcı": null,
+  "elektrikli klozet kapağı": {
+   "tik": 3,
+   "gosterim": 3,
+   "sira": 10.3
+  },
+  "klozet taharet aparatı": null,
+  "banyo tartısı": null,
+  "banyo lambası": null,
+  "vitra klozet": {
+   "tik": 3878,
+   "gosterim": 26070,
+   "sira": 1.7
+  },
+  "vitra gömme rezervuar": {
+   "tik": 2943,
+   "gosterim": 29595,
+   "sira": 1.5
+  },
+  "vitra klozet kapağı": {
+   "tik": 658,
+   "gosterim": 8510,
+   "sira": 2.2
+  },
+  "vitra banyo dolabı": {
+   "tik": 2026,
+   "gosterim": 9702,
+   "sira": 1.9
+  },
+  "vitra gömme rezervuar iç takımı": {
+   "tik": 351,
+   "gosterim": 7292,
+   "sira": 3.2
+  },
+  "vitra lavabo": {
+   "tik": 1209,
+   "gosterim": 6595,
+   "sira": 2.5
+  },
+  "vitra duş seti": {
+   "tik": 729,
+   "gosterim": 4697,
+   "sira": 1.8
+  },
+  "vitra asma klozet": {
+   "tik": 494,
+   "gosterim": 4166,
+   "sira": 2.9
+  },
+  "vitra gömme rezervuar seti": {
+   "tik": 370,
+   "gosterim": 3237,
+   "sira": 2.8
+  },
+  "vitra rezervuar iç takımı": {
+   "tik": 263,
+   "gosterim": 2787,
+   "sira": 2.1
+  },
+  "vitra mutfak bataryası": {
+   "tik": 531,
+   "gosterim": 2411,
+   "sira": 1.7
+  },
+  "vitra ankastre duş seti": {
+   "tik": 432,
+   "gosterim": 2804,
+   "sira": 1.9
+  },
+  "vitra çanak lavabo": {
+   "tik": 386,
+   "gosterim": 2182,
+   "sira": 3.5
+  },
+  "vitra s50 asma klozet": {
+   "tik": 386,
+   "gosterim": 2311,
+   "sira": 1.5
+  },
+  "vitra klozet iç takımı": {
+   "tik": 162,
+   "gosterim": 2361,
+   "sira": 2.1
+  },
+  "vitra batarya": {
+   "tik": 310,
+   "gosterim": 2251,
+   "sira": 4.5
+  },
+  "artema mutfak bataryası": {
+   "tik": 23,
+   "gosterim": 674,
+   "sira": 7.0
+  },
+  "artema banyo bataryası": {
+   "tik": 3,
+   "gosterim": 447,
+   "sira": 8.3
+  },
+  "artema duş seti": {
+   "tik": 160,
+   "gosterim": 4792,
+   "sira": 6.3
+  },
+  "artema duş başlığı": {
+   "tik": 25,
+   "gosterim": 1458,
+   "sira": 7.7
+  },
+  "artema ankastre duş seti": {
+   "tik": 60,
+   "gosterim": 1353,
+   "sira": 4.9
+  },
+  "eca mutfak bataryası": {
+   "tik": 1,
+   "gosterim": 4,
+   "sira": 8.2
+  },
+  "eca batarya": null,
+  "eca duş seti": null,
+  "kale klozet kapağı": null,
+  "kale klozet": null,
+  "kale banyo dolabı": null,
+  "serel gömme rezervuar": null,
+  "serel klozet kapağı": null,
+  "serel klozet": null,
+  "creavit klozet": null,
+  "creavit klozet kapağı": null,
+  "creavit banyo dolabı": null,
+  "visam gömme rezervuar iç takımı": null,
+  "visam gömme rezervuar": null,
+  "visam rezervuar iç takım": null,
+  "turkuaz klozet": null,
+  "turkuaz lavabo": null,
+  "turkuaz bella klozet": null,
+  "grohe duş seti": null,
+  "grohe mutfak bataryası": {
+   "tik": 1,
+   "gosterim": 1,
+   "sira": 48
+  },
+  "grohe gömme rezervuar": null,
+  "geberit gömme rezervuar": null,
+  "geberit klozet": {
+   "tik": 0,
+   "gosterim": 3,
+   "sira": 4
+  },
+  "geberit gömme rezervuar iç takımı": null,
+  "bien klozet": null,
+  "bien klozet kapağı": null,
+  "bien gömme rezervuar": null,
+  "orka banyo dolabı": {
+   "tik": 0,
+   "gosterim": 4,
+   "sira": 30
+  },
+  "orka lavabo": null,
+  "orka banyo dolabı 80 cm": null,
+  "bocchi klozet": null,
+  "bocchi lavabo": null,
+  "bocchi klozet kapağı": null,
+  "duravit klozet kapağı": null,
+  "duravit klozet": null,
+  "duravit lavabo": null,
+  "ikea banyo dolabı": null,
+  "ikea lavabolu banyo dolabı": null,
+  "koçtaş banyo dolabı": null,
+  "koçtaş klozet": null,
+  "vitra mı eca mı": {
+   "tik": 1,
+   "gosterim": 1,
+   "sira": 2
+  },
+  "vitra mı artema mı": null,
+  "kale mi vitra mı": null,
+  "vitra ve artema aynı mı": {
+   "tik": 1,
+   "gosterim": 51,
+   "sira": 2.5
+  },
+  "artema mı eca mı": null,
+  "en iyi asma klozet markası": {
+   "tik": 4,
+   "gosterim": 86,
+   "sira": 6.8
+  },
+  "en iyi klozet kapağı markası": {
+   "tik": 2,
+   "gosterim": 14,
+   "sira": 1.9
+  },
+  "en iyi banyo dolabı markaları": {
+   "tik": 14,
+   "gosterim": 123,
+   "sira": 2.4
+  },
+  "en iyi banyo batarya markası": null,
+  "en iyi musluk batarya markası": {
+   "tik": 0,
+   "gosterim": 2,
+   "sira": 1
+  },
+  "en iyi gömme rezervuar markaları": {
+   "tik": 1,
+   "gosterim": 1,
+   "sira": 2
+  },
+  "en iyi vitrifiye markaları": {
+   "tik": 0,
+   "gosterim": 19,
+   "sira": 3.8
+  },
+  "klozet markaları": {
+   "tik": 77,
+   "gosterim": 2124,
+   "sira": 1.6
+  },
+  "kaliteli klozet markaları": {
+   "tik": 6,
+   "gosterim": 150,
+   "sira": 2.6
+  },
+  "banyo batarya markaları": {
+   "tik": 0,
+   "gosterim": 80,
+   "sira": 4.7
+  },
+  "banyo dolabı markaları": {
+   "tik": 21,
+   "gosterim": 191,
+   "sira": 3.7
+  },
+  "vitrifiye markaları": {
+   "tik": 3,
+   "gosterim": 622,
+   "sira": 18.3
+  },
+  "vitra artema yedek parça": {
+   "tik": 1,
+   "gosterim": 263,
+   "sira": 4.8
+  },
+  "vitra artema yetkili servis": {
+   "tik": 97,
+   "gosterim": 688,
+   "sira": 1.8
+  }
+ }
+}

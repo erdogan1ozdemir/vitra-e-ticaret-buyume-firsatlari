@@ -2,10 +2,11 @@
 """SSG ve BM derin talep: 48 aylik cekirdek set (k2/k3) + genisletilmis evrende ozellik (modifier) analizi."""
 import json, os, re, collections
 import veri
-K48 = json.load(open(os.path.join(veri.V, "ham", "kp_sezon_2022-09_2026-08.json"), encoding="utf-8"))["kelimeler"]
+K48 = veri.k48(); _CAN = veri.kanonik()
 import aykiri; K48 = {k_: (dict(v_, seri=aykiri.seri(k_, v_.get("seri"))) if isinstance(v_, dict) else v_) for k_, v_ in K48.items()}   # Dunya Kupasi 2026 'wc' duzeltmesi
 s = open(os.path.join(veri.V, "kaynak", "sezon_dashboard.js"), encoding="utf-8").read(); d = json.loads(s[s.index("{"):s.rindex("}") + 1])
 kat = {k["kw"].strip().lower(): (k["k1"], k["k2"], k["k3"]) for k in d["keywords"]}
+for k in json.load(open(os.path.join(veri.V, "kaynak", "ek_kelimeler.json"), encoding="utf-8")): kat[k["kw"]] = (k["k1"], k["k2"], k["k3"])
 def ay(y1, m1, y2, m2):
     out = []; y, m = y1, m1
     while (y, m) <= (y2, m2):
@@ -24,7 +25,7 @@ for kw, v in sorted(K48.items(), key=lambda i: -(i[1].get("hacim") or 0)):
     k1, k2, k3 = kat[kw]; sg = tuple(v["seri"].get(x) for x in AY48)
     if (k3, sg) in gor: continue
     gor.add((k3, sg))
-    rows.append({"kw": kw, "k1": k1, "k2": k2, "k3": k3, "seg": "SSG" if k1 in SSG else ("BM" if k1 in BM else "Diğer"),
+    rows.append({"kw": _CAN.get(kw, kw), "k1": k1, "k2": k2, "k3": k3, "seg": "SSG" if k1 in SSG else ("BM" if k1 in BM else "Diğer"),
                  **{p: ort(v["seri"], a) for p, a in (("p0", P0), ("p1", P1), ("p2", P2), ("p3", P3), ("a25", A25), ("a26", A26))},
                  "seri": [v["seri"].get(x) for x in AY48]})
 def top(key):

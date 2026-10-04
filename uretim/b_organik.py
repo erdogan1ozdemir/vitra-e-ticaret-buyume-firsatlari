@@ -29,7 +29,7 @@ tbl2 = tablo([th("Kategori", "Category", "Kategori, ürün, koleksiyon ve eski o
               th("Sayfa", "Pages", "Kategoriye eşlenen tekil sayfa sayısı; sayfalama ve filtre parametreli adresler tek sayılmıştır.", "Number of unique pages mapped to the category; paginated and filtered addresses are counted once.", True),
               th("Click", "Clicks", "1 Haz 2025 - 25 Eyl 2026 toplam click.", "Total clicks, 1 Jun 2025 - 25 Sep 2026.", True),
               th("Click payı", "Click share", "Kategoriye eşlenen sayfaların (kategori, ürün, koleksiyon, teknik föy ve eski online.vitra.com.tr adresleri) toplam click'i içindeki pay.", "Share of total clicks of pages mapped to a category (category, product, collection, technical sheet and old online.vitra.com.tr addresses).", True),
-              th("Talep payı", "Demand share", "Kategorinin Oca-Ağu 2026 arama talebindeki payı (Bölüm 03, 2.342 kelime).", "The category's share of Jan-Aug 2026 search demand (Section 03, 2,342 keywords).", True),
+              th("Talep payı", "Demand share", "Kategorinin Oca-Ağu 2026 arama talebindeki payı (Bölüm 03, 2.349 kelime).", "The category's share of Jan-Aug 2026 search demand (Section 03, 2,349 keywords).", True),
               th("Gösterim", "Impressions", "Aynı dönemde gösterim.", "Impressions in the same period.", True),
               th("CTR", "CTR", "Tık / gösterim.", "Clicks / impressions.", True)], rows2, "dar")
 def seri(k): return [GM[k][GA.index(m)][0] for m in aylar]

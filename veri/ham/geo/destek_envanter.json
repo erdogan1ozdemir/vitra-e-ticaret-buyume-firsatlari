@@ -1,0 +1,381 @@
+{
+ "tarih": "2026-10-04",
+ "kaynak": "vitra.com.tr /support/faq/* (curl + Chrome) · GSC 1 Eki 2025 - 30 Eyl 2026",
+ "sayfalar": [
+  {
+   "slug": "1001",
+   "url": "https://www.vitra.com.tr/support/faq/1001",
+   "title": "Bataryalar ve Musluklar - Sık Sorulan Sorular | VitrA Online",
+   "h1": "Bataryalar ve Musluklar ile ilgili Sıkça Sorulan Sorular",
+   "soru": 9,
+   "faqpage": true,
+   "bozuk_title": false,
+   "gsc_click": 50,
+   "gsc_gosterim": 1432,
+   "ornek": [
+    "Kireç kırıcılı silikon nozullar teknolojisi nedir?",
+    "BluEco teknolojisi nedir?",
+    "V-Box bakımında dikkat edilmesi gerekenler nelerdir?"
+   ]
+  },
+  {
+   "slug": "1002",
+   "url": "https://www.vitra.com.tr/support/faq/1002",
+   "title": "Lavabolar Sık Sorulan Sorular (SSS) | VitrA Online",
+   "h1": "Lavabolar ile ilgili Sıkça Sorulan Sorular",
+   "soru": 3,
+   "faqpage": true,
+   "bozuk_title": false,
+   "gsc_click": 6,
+   "gsc_gosterim": 64,
+   "ornek": [
+    "VitrA Clean teknolojisi nedir?",
+    "VitrA Hygiene teknolojisi nedir?",
+    "Lavabodaki su taşma deliği nedir?"
+   ]
+  },
+  {
+   "slug": "1003",
+   "url": "https://www.vitra.com.tr/support/faq/1003",
+   "title": "Klozetler ve Rezervuarlar - Sık Sorulan Sorular | VitrA Online",
+   "h1": "Klozetler ve Rezervuarlar ile ilgili Sıkça Sorulan Sorular",
+   "soru": 72,
+   "faqpage": true,
+   "bozuk_title": false,
+   "gsc_click": 329,
+   "gsc_gosterim": 12078,
+   "ornek": [
+    "VitrA Temassız Taharet kullanımında nelere dikkat edilmelidir?",
+    "VitrA Temassız Taharet bakımında nelere dikkat edilmelidir?",
+    "V-Care Akıllı Panel'de ağ bağlantısının aktif olmadığı durumlarda çalışan özellikler nelerdir?"
+   ]
+  },
+  {
+   "slug": "1005",
+   "url": "https://www.vitra.com.tr/support/faq/1005",
+   "title": "Banyo Mobilyaları Sık Sorulan Sorular (SSS) | VitrA Online",
+   "h1": "Banyo Mobilyaları ile ilgili Sıkça Sorulan Sorular",
+   "soru": 4,
+   "faqpage": true,
+   "bozuk_title": false,
+   "gsc_click": 3,
+   "gsc_gosterim": 34,
+   "ornek": [
+    "LEDli lavaboların enerji tüketimi yüksek midir?",
+    "MDF nedir?",
+    "MDF-Lam nedir?"
+   ]
+  },
+  {
+   "slug": "1006",
+   "url": "https://www.vitra.com.tr/support/faq/1006",
+   "title": "Yıkanma Alanları Sık Sorulan Sorular (SSS) | VitrA Online",
+   "h1": "Yıkanma Alanları ile ilgili Sıkça Sorulan Sorular",
+   "soru": 2,
+   "faqpage": true,
+   "bozuk_title": false,
+   "gsc_click": 2,
+   "gsc_gosterim": 20,
+   "ornek": [
+    "Termostatik bataryalar neden 38 dereceye ayarlıdır?",
+    "Tüm el duşları her banyo bataryası ile uyumlu mudur?"
+   ]
+  },
+  {
+   "slug": "1007",
+   "url": "https://www.vitra.com.tr/support/faq/1007",
+   "title": "Banyo Aksesuarları - Sık Sorulan Sorular (SSS) | VitrA Online",
+   "h1": "Banyo Aksesuarları ile ilgili Sıkça Sorulan Sorular",
+   "soru": 3,
+   "faqpage": true,
+   "bozuk_title": false,
+   "gsc_click": 2,
+   "gsc_gosterim": 55,
+   "ornek": [
+    "Tüm sifon modelleri her lavabo ile uyumlu mudur?",
+    "VitrA Temassız Sıvı Sabunluk nedir?",
+    "VitrA Temassız Sıvı Sabunluk kullanımında nelere dikkat edilmelidir?"
+   ]
+  },
+  {
+   "slug": "1008",
+   "url": "https://www.vitra.com.tr/support/faq/1008",
+   "title": "Karo Seramikler - Sık Sorulan Sorular (SSS) | VitrA Online",
+   "h1": "Karo Seramikler ile ilgili Sıkça Sorulan Sorular",
+   "soru": 69,
+   "faqpage": true,
+   "bozuk_title": false,
+   "gsc_click": 0,
+   "gsc_gosterim": 0,
+   "ornek": [
+    "Fullbody Porselen nedir?",
+    "Duvar Karosu özellikleri nelerdir?",
+    "20x120 ebatlı karolarda kamburlaşma olur mu?"
+   ]
+  },
+  {
+   "slug": "10080001",
+   "url": "https://www.vitra.com.tr/support/faq/10080001",
+   "title": "Montaj Hizmeti ile ilgili Sıkça Sorulan Sorular | VitrA",
+   "h1": "Montaj Hizmeti ile ilgili Sıkça Sorulan Sorular",
+   "soru": 77,
+   "faqpage": true,
+   "bozuk_title": false,
+   "gsc_click": 63,
+   "gsc_gosterim": 3807,
+   "ornek": [
+    "Aynamın kenarlarında kararmalar başladı, neden kaynaklanmış olabilir?",
+    "Bazen klozete yapışan partikülü sifon götürmüyor? Bu üründe hata mı var?",
+    "İstanbul ledli kapaklar doğrudan elektrikle çalışır mı?"
+   ]
+  },
+  {
+   "slug": "1009",
+   "url": "https://www.vitra.com.tr/support/faq/1009",
+   "title": "Accelerator Title",
+   "h1": "Karo Seramik Uygulama Ürünleri ile ilgili Sıkça Sorulan Sorular",
+   "soru": 0,
+   "faqpage": false,
+   "bozuk_title": true,
+   "gsc_click": 0,
+   "gsc_gosterim": 0,
+   "ornek": []
+  },
+  {
+   "slug": "1011",
+   "url": "https://www.vitra.com.tr/support/faq/1011",
+   "title": "Armatürler ile ilgili Sıkça Sorulan Sorular | VitrA",
+   "h1": "Armatürler ile ilgili Sıkça Sorulan Sorular",
+   "soru": 17,
+   "faqpage": true,
+   "bozuk_title": false,
+   "gsc_click": 3,
+   "gsc_gosterim": 107,
+   "ornek": [
+    "Armatür Nedir?",
+    "Armatürlerin Avantajları Nelerdir?",
+    "Armatürler Nerelerde Kullanılır?"
+   ]
+  },
+  {
+   "slug": "1012",
+   "url": "https://www.vitra.com.tr/support/faq/1012",
+   "title": "Accelerator Title",
+   "h1": "Duş Sistemleri ile ilgili Sıkça Sorulan Sorular",
+   "soru": 9,
+   "faqpage": false,
+   "bozuk_title": true,
+   "gsc_click": 0,
+   "gsc_gosterim": 0,
+   "ornek": [
+    "Duşlar Nedir?",
+    "Duş Modelleri Nelerdir?",
+    "Duş Fiyatları Ne Kadar?"
+   ]
+  },
+  {
+   "slug": "1013",
+   "url": "https://www.vitra.com.tr/support/faq/1013",
+   "title": "Rezervuarlar ile ilgili Sıkça Sorulan Sorular | VitrA",
+   "h1": "Rezervuarlar ile ilgili Sıkça Sorulan Sorular",
+   "soru": 34,
+   "faqpage": true,
+   "bozuk_title": false,
+   "gsc_click": 17,
+   "gsc_gosterim": 849,
+   "ornek": [
+    "Rezervuarlar Özellikleri Nelerdir?",
+    "Rezervuarlar Nerelerde Kullanılır?",
+    "Rezervuar Seçerken Nelere Dikkat Edilmelidir?"
+   ]
+  },
+  {
+   "slug": "1014",
+   "url": "https://www.vitra.com.tr/support/faq/1014",
+   "title": "Accelerator Title",
+   "h1": "Vitrifiyeler ile ilgili Sıkça Sorulan Sorular",
+   "soru": 10,
+   "faqpage": false,
+   "bozuk_title": true,
+   "gsc_click": 0,
+   "gsc_gosterim": 0,
+   "ornek": [
+    "Vitrifiyeler Nedir Ve Hangi Ürünleri Kapsar?",
+    "Vitrifiyeler Modelleri Ve Çeşitleri Nelerdir?",
+    "Vitrifiyeler Hangi Alanlarda Kullanılır?"
+   ]
+  },
+  {
+   "slug": "1014001",
+   "url": "https://www.vitra.com.tr/support/faq/1014001",
+   "title": "Lavabolar ile ilgili Sıkça Sorulan Sorular | VitrA",
+   "h1": "Lavabolar ile ilgili Sıkça Sorulan Sorular",
+   "soru": 10,
+   "faqpage": true,
+   "bozuk_title": false,
+   "gsc_click": 2,
+   "gsc_gosterim": 13,
+   "ornek": [
+    "Lavaboların Özellikleri Nelerdir?",
+    "Lavabo Fiyatları Ne Kadar?",
+    "Lavabo seçerken nelere dikkat edilmeli?"
+   ]
+  },
+  {
+   "slug": "1014004",
+   "url": "https://www.vitra.com.tr/support/faq/1014004",
+   "title": "Klozetler ile ilgili Sıkça Sorulan Sorular | VitrA",
+   "h1": "Klozetler ile ilgili Sıkça Sorulan Sorular",
+   "soru": 53,
+   "faqpage": true,
+   "bozuk_title": false,
+   "gsc_click": 58,
+   "gsc_gosterim": 2155,
+   "ornek": [
+    "Klozet Özellikleri Nelerdir?",
+    "Klozet Modelleri Nelerdir?",
+    "Klozet Fiyatları Ne Kadar?"
+   ]
+  },
+  {
+   "slug": "1015",
+   "url": "https://www.vitra.com.tr/support/faq/1015",
+   "title": "Banyo Mobilyaları ile ilgili Sıkça Sorulan Sorular | VitrA",
+   "h1": "Banyo Mobilyaları ile ilgili Sıkça Sorulan Sorular",
+   "soru": 13,
+   "faqpage": true,
+   "bozuk_title": false,
+   "gsc_click": 1,
+   "gsc_gosterim": 14,
+   "ornek": [
+    "Banyo Mobilyaları Nedir, Nelerdir?",
+    "Banyo Mobilyalarının Özellikleri Nelerdir?",
+    "Banyo Mobilyası Fiyatları Ne Kadar?"
+   ]
+  },
+  {
+   "slug": "1016",
+   "url": "https://www.vitra.com.tr/support/faq/1016",
+   "title": "Yıkanma Alanları ile ilgili Sıkça Sorulan Sorular | VitrA",
+   "h1": "Yıkanma Alanları ile ilgili Sıkça Sorulan Sorular",
+   "soru": 11,
+   "faqpage": true,
+   "bozuk_title": false,
+   "gsc_click": 2,
+   "gsc_gosterim": 9,
+   "ornek": [
+    "Yıkanma Alanları Nedir?",
+    "Yıkanma Alanları Tamamlayıcı Ürünleri Nelerdir?",
+    "Yıkanma Alanları Fiyatları Ne Kadar?"
+   ]
+  },
+  {
+   "slug": "1017",
+   "url": "https://www.vitra.com.tr/support/faq/1017",
+   "title": "Banyo Aksesuarları ile ilgili Sıkça Sorulan Sorular | VitrA",
+   "h1": "Banyo Aksesuarları ile ilgili Sıkça Sorulan Sorular",
+   "soru": 12,
+   "faqpage": true,
+   "bozuk_title": false,
+   "gsc_click": 1,
+   "gsc_gosterim": 1,
+   "ornek": [
+    "Banyo Aksesuarları Özellikleri Nelerdir?",
+    "Banyo Aksesuarları Fiyatları Ne Kadar?",
+    "Banyo Aksesuarları Nerelerde Kullanılır?"
+   ]
+  },
+  {
+   "slug": "1018",
+   "url": "https://www.vitra.com.tr/support/faq/1018",
+   "title": "Accelerator Title",
+   "h1": "Karo Seramik Ürünleri ile ilgili Sıkça Sorulan Sorular",
+   "soru": 10,
+   "faqpage": false,
+   "bozuk_title": true,
+   "gsc_click": 0,
+   "gsc_gosterim": 0,
+   "ornek": [
+    "Seramik Karo Ürünleri Özellikleri Nelerdir?",
+    "Seramik Karo Ürünleri Modelleri Nelerdir?",
+    "Seramik Karo Ürünlerinde En Popüler Trendler Nelerdir?"
+   ]
+  },
+  {
+   "slug": "garantikapsam",
+   "url": "https://www.vitra.com.tr/support/faq/garantikapsam",
+   "title": "Garanti Kapsam ile ilgili Sıkça Sorulan Sorular | VitrA",
+   "h1": "Garanti Kapsam ile ilgili Sıkça Sorulan Sorular",
+   "soru": 5,
+   "faqpage": true,
+   "bozuk_title": false,
+   "gsc_click": 416,
+   "gsc_gosterim": 13862,
+   "ornek": [
+    "Aydınlatmalı aynaların floresanları garantikapsamnda mıdır?",
+    "VitrA Seramik Sağlık Gereçleri'nin garanti süresi 10 yıl. Fakat Norm, Selena ve Sea markaları için 5 yıl garanti veriliyor. Sebebi nedir?",
+    "İç takımların contaları neden 2 yıl garantilidir?"
+   ]
+  },
+  {
+   "slug": "siparisasamasi",
+   "url": "https://www.vitra.com.tr/support/faq/siparisasamasi",
+   "title": "Sipariş Aşaması ile ilgili Sıkça Sorulan Sorular | VitrA",
+   "h1": "Sipariş Aşaması ile ilgili Sıkça Sorulan Sorular",
+   "soru": 6,
+   "faqpage": true,
+   "bozuk_title": false,
+   "gsc_click": 1,
+   "gsc_gosterim": 164,
+   "ornek": [
+    "Fileli olarak üretilen ürünlerin uygulamasında nelere dikkat edilmeli?",
+    "Renk tonu sınıfı nedir? Siparişlerde ton farklılığı nasıl önlenir?",
+    "Renk tonu ne demek?"
+   ]
+  },
+  {
+   "slug": "teslimatasamasi",
+   "url": "https://www.vitra.com.tr/support/faq/teslimatasamasi",
+   "title": "Teslimat Aşaması ile ilgili Sıkça Sorulan Sorular | VitrA",
+   "h1": "Teslimat Aşaması ile ilgili Sıkça Sorulan Sorular",
+   "soru": 4,
+   "faqpage": true,
+   "bozuk_title": false,
+   "gsc_click": 8,
+   "gsc_gosterim": 143,
+   "ornek": [
+    "Kampanya broşürlerindeki ürünler neden hemen teslim olamıyor?",
+    "Aldığım ürün kutu içinden kırık çıktı. Ne yapmalıyım?",
+    "Ürünümü ambalajı kapalı teslim aldığımda ne yapmalıyım? Hangi durumlarda garantikapsam dışına çıkarım?"
+   ]
+  },
+  {
+   "slug": "urunsecimi",
+   "url": "https://www.vitra.com.tr/support/faq/urunsecimi",
+   "title": "Ürün Seçimi ile ilgili Sıkça Sorulan Sorular | VitrA",
+   "h1": "Ürün Seçimi ile ilgili Sıkça Sorulan Sorular",
+   "soru": 101,
+   "faqpage": true,
+   "bozuk_title": false,
+   "gsc_click": 35,
+   "gsc_gosterim": 1647,
+   "ornek": [
+    "Rotocolor nedir?",
+    "Çekme Karolar nedir?",
+    "Küvet ve duş tekneleriniz neden akrilik?"
+   ]
+  }
+ ],
+ "eski_domain_gosterim": {
+  "online.vitra.com.tr/tr/support/faq/1008": 11243,
+  "online.vitra.com.tr/tr/support/faq/1003": 11538,
+  "online.vitra.com.tr/tr/support/faq": 5620,
+  "online.vitra.com.tr/tr/support/faq/1001": 984
+ },
+ "garanti_adresleri": [
+  "https://www.vitra.com.tr/garanti-hizmetleri",
+  "https://www.vitra.com.tr/garanti-talep-formu",
+  "https://www.vitra.com.tr/support/faq/garantikapsam"
+ ],
+ "sitemap_destek_adres": 5
+}

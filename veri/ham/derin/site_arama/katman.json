@@ -1,0 +1,298 @@
+{
+ "tarih": "2026-10-04",
+ "yontem": "Chrome, vitra.com.tr üst bardaki arama kutusuna yazılarak açılan anlık sonuç katmanı (Insider arama); sonuç sayısı ve ilk 3 kart",
+ "sonuc": {
+  "şamandıra": {
+   "sonuc": 10,
+   "ilk": [
+    "İç Takım",
+    "İç Takım",
+    "İç Takım"
+   ]
+  },
+  "klozet": {
+   "sonuc": 332,
+   "ilk": [
+    "Metropole Round QuantumFlush Asma klozet",
+    "Metropole Square QuantumFlush Asma klozet",
+    "Metropole Round QuantumFlush Asma klozet"
+   ]
+  },
+  "asma klozet": {
+   "sonuc": 181,
+   "ilk": [
+    "İstanbul Asma Klozet",
+    "Plural Asma Klozet",
+    "Plural Asma Klozet"
+   ]
+  },
+  "lavabo": {
+   "sonuc": 2002,
+   "ilk": [
+    "Metropole Infinit Etajerli",
+    "Memoria Infinit Çanak",
+    "S20 Lavabo"
+   ]
+  },
+  "banyo dolabı": {
+   "sonuc": 657,
+   "ilk": [
+    "Shift T20 Çamaşır ve Kurutma Makinesi Dolabı",
+    "Base Lite Asimetrik Aynalı Banyo Dolabı",
+    "Base Lite Asimetrik Aynalı Banyo Dolabı"
+   ]
+  },
+  "duşakabin": {
+   "sonuc": 301,
+   "ilk": [
+    "Universal Sürgülü Oval Panel",
+    "Universal Sürgülü Köşe Panel",
+    "Universal Sürgülü Oval Panel"
+   ]
+  },
+  "banyo bataryası": {
+   "sonuc": 199,
+   "ilk": [
+    "Aquaheat Banyo Bataryası",
+    "AquaHeat Banyo Bataryası",
+    "Aquaheat Banyo Bataryası"
+   ]
+  },
+  "gömme rezervuar": {
+   "sonuc": 112,
+   "ilk": [
+    "V12 Gömme Rezervuar",
+    "VUni Gömme Rezervuar",
+    "VUni Gömme Rezervuar"
+   ]
+  },
+  "havlupan": {
+   "sonuc": 868,
+   "ilk": [
+    "Artepan Havlupan",
+    "Masterline Eviye Bataryası",
+    "Yönlendirici"
+   ]
+  },
+  "evye": {
+   "sonuc": 1020,
+   "ilk": [
+    "Verona Eviye Bataryası",
+    "Verona Eviye Bataryası",
+    "IdeaLine Eviye Bataryası"
+   ]
+  },
+  "duş seti": {
+   "sonuc": 364,
+   "ilk": [
+    "Origin Duş Seti",
+    "Liquid Ankastre Duş Seti",
+    "Origin Classic Duş Seti"
+   ]
+  },
+  "klozet kapağı": {
+   "sonuc": 122,
+   "ilk": [
+    "Universal Klozet Kapağı",
+    "Universal Klozet Kapağı",
+    "Universal Klozet Kapağı"
+   ]
+  },
+  "iç takım": {
+   "sonuc": 54,
+   "ilk": [
+    "İç Takım",
+    "İç Takım",
+    "İç Takım"
+   ]
+  },
+  "rezervuar iç takımı": {
+   "sonuc": 91,
+   "ilk": [
+    "İç Takım",
+    "10x20, Uni, Trim, Gri",
+    "10x20, Uni, Trim, Gri"
+   ]
+  },
+  "klozet kapağı menteşesi": {
+   "sonuc": 0,
+   "ilk": []
+  },
+  "kartuş": {
+   "sonuc": 16,
+   "ilk": [
+    "60x60, Cardostone, Fon, Beyaz, R11C",
+    "60x60, Cardostone, Fon, Antrasit, R11C",
+    "60x60, Cardostone, Fon, Antrasit, R11C"
+   ]
+  },
+  "conta": {
+   "sonuc": 473,
+   "ilk": [
+    "Eternity Çöp Kovası",
+    "Arkitekta Çöp Kovası",
+    "Arkitekta Çöp Kovası"
+   ]
+  },
+  "kumanda paneli": {
+   "sonuc": 47,
+   "ilk": [
+    "Origin Kumanda Paneli",
+    "Origin Kumanda Paneli",
+    "Liquid Kumanda Paneli"
+   ]
+  },
+  "taharet musluğu": {
+   "sonuc": 61,
+   "ilk": [
+    "Ara Musluk",
+    "Ara Musluk",
+    "Ara Musluk"
+   ]
+  },
+  "lavabo sifonu": {
+   "sonuc": 65,
+   "ilk": [
+    "Lavabo Sifonu",
+    "Lavabo Sifonu",
+    "Lavabo Sifonu"
+   ]
+  },
+  "klozet kapagi": {
+   "sonuc": 121,
+   "ilk": [
+    "Klozet Kapağı",
+    "Universal Klozet Kapağı",
+    "Universal Klozet Kapağı"
+   ]
+  },
+  "dusakabin": {
+   "sonuc": 301,
+   "ilk": [
+    "Universal Sürgülü Oval Panel",
+    "Universal Sürgülü Köşe Panel",
+    "Universal Sürgülü Oval Panel"
+   ]
+  },
+  "banyo dolabi": {
+   "sonuc": 657,
+   "ilk": [
+    "Base Lite Asimetrik Aynalı Banyo Dolabı",
+    "Base Lite Asimetrik Aynalı Banyo Dolabı",
+    "Sento Kirli Sepetli Boy Dolabı"
+   ]
+  },
+  "rezarvuar": {
+   "sonuc": 217,
+   "ilk": [
+    "V-Fix Prime 8cm Helataşları için Gömme Rezervuar",
+    "V-Fix Prime 8cm Asma Klozetler için Gömme Rezervuar",
+    "V-Fix Prime 8cm Asma Klozetler için Gömme Rezervuar"
+   ]
+  },
+  "klozed": {
+   "sonuc": 332,
+   "ilk": [
+    "Sento Asma Klozet",
+    "Sento Asma Klozet",
+    "Sento Asma Klozet"
+   ]
+  },
+  "batarya": {
+   "sonuc": 1020,
+   "ilk": [
+    "Origin Lavabo Bataryası",
+    "Minimax Square Çanak Lavabo Bataryası",
+    "Origin Ankastre Banyo Bataryası"
+   ]
+  },
+  "80 cm banyo dolabı": {
+   "sonuc": 0,
+   "ilk": []
+  },
+  "kanalsız klozet": {
+   "sonuc": 180,
+   "ilk": [
+    "Plural Asma klozet",
+    "Plural Asma Klozet",
+    "Plural Asma Klozet"
+   ]
+  },
+  "akıllı klozet": {
+   "sonuc": 80,
+   "ilk": [
+    "V-Care Comfort Akıllı Asma Klozet",
+    "V-Care Basic Akıllı Asma Klozet",
+    "Akıllı Klozet Montaj Hizmeti"
+   ]
+  },
+  "siyah klozet": {
+   "sonuc": 28,
+   "ilk": [
+    "Plural Klozet Kapağı",
+    "Memoria Klozet Kapağı",
+    "Sento Asma Klozet"
+   ]
+  },
+  "metropole": {
+   "sonuc": 336,
+   "ilk": [
+    "Metropole Pure Lavabo Dolabı",
+    "Metropole Pure Boy Dolabı",
+    "Metropole Pure Lavabo Dolabı"
+   ]
+  },
+  "sento": {
+   "sonuc": 219,
+   "ilk": [
+    "Sento Klozet Kapağı",
+    "Sento Asma Klozet",
+    "Sento Asma Klozet"
+   ]
+  },
+  "integra": {
+   "sonuc": 396,
+   "ilk": [
+    "Integra Etajerli Lavabo",
+    "Integra Yarım Ayak",
+    "Integra Etajerli Lavabo"
+   ]
+  },
+  "7906B483-0090": {
+   "sonuc": 1,
+   "ilk": [
+    "Metropole Square QuantumFlush Asma klozet"
+   ]
+  },
+  "montaj": {
+   "sonuc": 161,
+   "ilk": [
+    "Büyük Montaj Hizmeti",
+    "Küçük Montaj Hizmeti",
+    "Klozet Montaj Hizmeti"
+   ]
+  },
+  "yedek parça": {
+   "sonuc": 181,
+   "ilk": [
+    "Uzatma",
+    "Uzatma",
+    "Uzatma"
+   ]
+  },
+  "garanti": {
+   "sonuc": 5,
+   "ilk": [
+    "Büyük Montaj Hizmeti"
+   ]
+  },
+  "servis": {
+   "sonuc": 6,
+   "ilk": [
+    "Serisiz Rim-ex rozet seti",
+    "Serisiz Rim-ex rozet seti",
+    "İç Takım"
+   ]
+  }
+ }
+}

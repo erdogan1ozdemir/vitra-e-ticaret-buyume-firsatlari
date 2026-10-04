@@ -64,10 +64,12 @@ def doldur():
         ekle(url_, amac_, bilgi_, bolum=["geo"], yontem="web araştırması (sayfa okuma)", tarih="02.10.2026", kod=["D35"], kodbolum=False, tur="marka sitesi")
     ekle("https://www.similarweb.com/website/vitra.com.tr/", "Similarweb site trafiği ve kanal kırılımı", "31 alan adı; aylık ziyaret, kanal payları, etkileşim; Haz - Ağu 2026",
          bolum=["rakip"], yontem="API (Similarweb verisi)", tarih="03.10.2026", kod=["D37"], kodbolum=False, tur="API")
-    ekle("https://www.vitra.com.tr/search?q=klozet+kapa%C4%9F%C4%B1", "vitra.com.tr site içi arama testi (38 arama)", "Sonuç sayısı, ilk 20 ürün kartı; 6 aramada sonuç yok; ilk kartlarda montaj hizmeti",
-         bolum=["yolculuk"], yontem="curl (herkese açık arama sayfası, istekler arası 2 sn)", tarih="04.10.2026", kod=["D40"], adet=38, kodbolum=False, tur="marka sitesi")
+    ekle("https://www.vitra.com.tr/search?text=klozet%20kapa%C4%9F%C4%B1", "vitra.com.tr site içi arama testi (38 arama)", "Anlık sonuç katmanı (Chrome) ve Enter sonrası sonuç sayfası; 8 aramada sonuç sayfası boş ya da ilgisiz",
+         bolum=["yolculuk"], yontem="Chrome (arama kutusuna yazma) ve curl (sonuç sayfası, istekler arası 2 sn)", tarih="04.10.2026", kod=["D40"], adet=38, kodbolum=False, tur="marka sitesi")
     ekle("https://www.vitra.com.tr/sepetim", "vitra.com.tr sepet, giriş ve üyeliksiz alışveriş ekranları", "Sepeti Onayla → giriş paneli → e-posta ekranı → adres; montaj ve öneri karuselleri sepetin altında",
          bolum=["yolculuk"], yontem="ekran görüntüsü (kullanıcı tarafından iletildi)", tarih="04.10.2026", kod=["D41"], kodbolum=False, tur="marka sitesi")
+    ekle("https://app.seomonitor.com", "SEOmonitor vitra.com.tr kampanyası: takip edilen kelimeler, AI Overview durumu, click payı", "2.140 ana kelime; mobil sıra, SERP özellikleri, AI Overview'da VitrA kaynağı; 19 Eyl - 3 Eki 2026 ve 2025 aynı dönem click payı",
+         bolum=["geo", "rakip", "serp"], yontem="API (SEOmonitor)", tarih="04.10.2026", kod=["D42"], kodbolum=False, tur="API")
     Y4 = "yapay zeka yanıt takibi (tekrarlı koşu)"
     for url_, ad_ in [("https://chatgpt.com", "ChatGPT"), ("https://gemini.google.com", "Gemini"), ("https://www.google.com.tr", "Google AI Overview")]:
         ekle(url_ + "#ai-yanit", "%s yanıtları: 125 soruda VitrA ve rakip markaların adı geçme oranı, kaynak gösterilen alan adları" % ad_,

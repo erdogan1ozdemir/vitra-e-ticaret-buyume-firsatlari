@@ -3,12 +3,11 @@
 import json, os, re, collections
 import veri, tema, aykiri
 U = json.load(open(os.path.join(veri.V, "ham", "kfk_evren.json"), encoding="utf-8"))["kelimeler"]
-KP48 = os.path.join(veri.V, "ham", "kp_sezon_2022-09_2026-08.json")
-if os.path.exists(KP48):
-    for k, v in json.load(open(KP48, encoding="utf-8"))["kelimeler"].items():
+if True:
+    for k, v in veri.k48().items():
         if k not in U and v.get("seri"):
             U[k] = {"grup": ["cekirdek"], "hacim": v["hacim"], "cpc": v["cpc"], "rekabet": v["rekabet"], "seri": v["seri"]}
-CEK = {r["kw"] for r in veri.KELIME}
+CEK = {v_ for r in veri.KELIME for v_ in [r["kw"]] + list(r.get("varyant") or [])}; _CAN = veri.kanonik()
 def ay(y1, m1, y2, m2):
     out = []; y, m = y1, m1
     while (y, m) <= (y2, m2):
@@ -25,11 +24,11 @@ for kw, v in U.items():
     if len(s) < 40: continue
     t = tema.sinif(kw)
     if not t: continue
-    rows.append({"kw": kw, "tema": t, "v12": ort(s, P3), "v0": ort(s, P0), "a25": ort(s, A25), "a26": ort(s, A26), "cpc": v.get("cpc"),
+    rows.append({"kw": _CAN.get(kw, kw), "tema": t, "v12": ort(s, P3), "v0": ort(s, P0), "a25": ort(s, A25), "a26": ort(s, A26), "cpc": v.get("cpc"),
                  "cekirdek": kw in CEK, "imza": tuple(s.get(x) for x in sorted(s))})
 # varyant tekillestirme
 gor = set(); tek = []
-for r in sorted(rows, key=lambda r: (-r["v12"], len(r["kw"]))):
+for r in sorted(rows, key=lambda r: (-r["v12"], not r["cekirdek"], -sum(c in "çğıöşü" for c in r["kw"]), r["kw"].count(" ") * 0, -len(r["kw"]) if r["cekirdek"] else len(r["kw"]))):
     if r["imza"] in gor: continue
     gor.add(r["imza"]); tek.append(r)
 for r in tek: r.pop("imza")

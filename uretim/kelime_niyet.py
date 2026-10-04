@@ -7,6 +7,10 @@ s = open(os.path.join(P, "veri/kaynak/sezon_dashboard.js"), encoding="utf-8").re
 kp = json.load(open(os.path.join(P, "veri/ham/kp_sezon_2024-09_2026-08.json")))["kelimeler"]
 import aykiri; kp = {k_: (dict(v_, seri=aykiri.seri(k_, v_.get("seri"))) if isinstance(v_, dict) else v_) for k_, v_ in kp.items()}   # Dunya Kupasi 2026 'wc' duzeltmesi
 kat = {k["kw"].strip().lower(): (k["k1"], k["k2"], k["k3"]) for k in d["keywords"]}
+# sezon listesinde bulunmayan kategori bas kelimeleri (04.10.2026): ek liste ve ayri Keyword Planner cekimi
+for k in json.load(open(os.path.join(P, "veri/kaynak/ek_kelimeler.json"), encoding="utf-8")):
+    kat[k["kw"]] = (k["k1"], k["k2"], k["k3"])
+kp.update(json.load(open(os.path.join(P, "veri/ham/kp_ek_2024-09_2026-08.json")))["kelimeler"])
 MARKA = r"vitra|artema|creavit|kale|ece\b|serel|duravit|geberit|grohe|hansgrohe|roca|ideal standard|bien|kütahya|kutahya|çanakkale|canakkale|ege seramik|yurtbay|turkuaz|bocchi|newarc|isvea|toto|eca\b|nsk|ferro|penta|fixet|orka|nemo|dilara|tema\b|koçtaş|koctas|bauhaus|ikea|tekzen|trendyol|hepsiburada|n11|amazon"
 NIYET = [
  ("Fiyat", r"fiyat|ucuz|uygun|indirim|kampanya|outlet|kaç para|ne kadar|tl\b"),
@@ -31,12 +35,31 @@ for kw, v in kp.items():
     k1,k2,k3 = kat[kw]; m = bool(re.search(MARKA, kw)); n = niyet(kw)
     rows.append({"kw": kw, "k1": k1, "k2": k2, "k3": k3, "markali": m, "niyet": n, "hacim": v["hacim"], "a25": ort(v["seri"],A25), "a26": ort(v["seri"],A26), "seri": v["seri"], "cpc": v.get("cpc")})
 # Keyword Planner yakin varyantlara (cogul, yazim farki) ayni aylik seriyi verir; ayni seri tek kelime sayilir
-_ilk = {}; _tekil = []
+# Gorunen ad: SERP setinde ya da SEOmonitor takibinde gecen yazim, sonra Turkce karakterli ve tam yazim tercih edilir (banyo batarya -> banyo bataryası)
+_TR = str.maketrans("çğıöşüÇĞİÖŞÜ", "cgiosuCGIOSU")
+import serp_kelimeler as _SKL
+_SERPK = {k for k, _ in _SKL.LISTE}
+_SEOMV = {k_["keyword"]: (k_.get("search_data") or {}).get("search_volume") or 0 for k_ in json.load(open(os.path.join(P, "veri/ham/seomonitor/kelimeler_2026-10-03.json"), encoding="utf-8"))}
+_SEOM = set(_SEOMV)
+_ASC = {}
+for k_ in _SERPK | _SEOM: _ASC.setdefault(k_.translate(_TR), set()).add(k_)
+def _puan(k_): return (k_ in _SERPK, sum(c in "çğıöşü" for c in k_), k_ in _SEOM, _SEOMV.get(k_, 0), -k_.count(" "), len(k_))
+_grup = {}; _sira = []
 for r in rows:
     anahtar = tuple(sorted((k_, v_) for k_, v_ in r["seri"].items() if v_ is not None))
-    if anahtar and sum(v_ for _, v_ in anahtar) > 0 and anahtar in _ilk:
-        _ilk[anahtar].setdefault("varyant", []).append(r["kw"]); continue
-    _ilk[anahtar] = r; _tekil.append(r)
+    if not (anahtar and sum(v_ for _, v_ in anahtar) > 0): anahtar = ("tek", r["kw"])
+    if anahtar not in _grup: _grup[anahtar] = []; _sira.append(anahtar)
+    _grup[anahtar].append(r)
+_tekil = []
+for a_ in _sira:
+    L = _grup[a_]
+    aday = {r["kw"] for r in L} | {t_ for r in L for t_ in _ASC.get(r["kw"].translate(_TR), ())}
+    ad = max(aday, key=_puan)
+    temel = next((r for r in L if r["kw"] == ad), L[0])
+    r = dict(temel, kw=ad)
+    var = sorted({x_["kw"] for x_ in L} - {ad})
+    if var: r["varyant"] = var
+    _tekil.append(r)
 print("varyant tekillestirme:", len(rows), "->", len(_tekil))
 rows = _tekil
 json.dump(rows, open(os.path.join(P, "veri/islenmis/kelime_seti.json"), "w", encoding="utf-8"), ensure_ascii=False)

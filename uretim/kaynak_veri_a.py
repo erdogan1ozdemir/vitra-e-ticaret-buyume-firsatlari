@@ -30,16 +30,16 @@ def doldur():
     # ------------------------------------------------------------ Google (autocomplete + SERP)
     ekle("https://www.google.com.tr",
          "Marka autocomplete önerileri ve kategori arama sonuçları (marka aramaları, SERP ve AI Overview incelemesi)",
-         "\"vitra\" ile başlayan 49 kök ifade için autocomplete önerileri (masaüstü Chrome, Türkiye, Türkçe; 28.09.2026); 107 kategori kelimesi için mobil SERP (ilk 20 organik sonuç, AI Overview, PAA; 29.09.2026)",
-         yontem="API (DataForSEO SERP)", tarih=[D28, D29], kod=["D3", "D19"], adet=156, tur="arama motoru")
+         "\"vitra\" ile başlayan 49 kök ifade için autocomplete önerileri (masaüstü Chrome, Türkiye, Türkçe; 28.09.2026); 334 kelime için mobil SERP (ilk 20 organik sonuç, AI Overview, PAA; 04.10.2026, aynı gün üç gözlem)",
+         yontem="API (DataForSEO SERP)", tarih=[D28, "04.10.2026"], kod=["D3", "D19"], adet=383, tur="arama motoru")
     ekle("https://api.dataforseo.com/v3/serp/google/autocomplete/live/advanced",
          "Marka autocomplete önerileri: \"vitra\" ile başlayan kök ifadeler",
          "49 kök ifade, Türkiye, Türkçe, client=chrome; ilk çekimde 46'sı boş dönen kök ifadeler cursor_pointer ile tek tek yeniden çekildi (49/49 dolu); önerilerin %18'i tamir ve yedek parça, %10'u montaj niyetli",
          yontem="API (DataForSEO)", tarih=D28, kod=["D3"], tur="API")
     ekle("https://api.dataforseo.com/v3/serp/google/organic/live/advanced",
-         "Google mobil SERP: 107 kategori kelimesi; ayrıca Shopping/ürün bloğu kontrolü ve sosyal profil sayıları için SERP özetleri",
-         "109 kelime çekildi, Keyword Planner'da hacmi olmayan 2 kelime çıkarılarak 107 kelime analiz edildi; Türkiye, Türkçe, mobil Android, depth 20 (ilk 20 organik sonuç), AI Overview (30 blokta görüldü, 23'ünde içerik alındı), PAA; Trendyol 84 kelimede, VitrA 53 kelimede ilk 10'da. Kanal politikaları için 18 kelime × mobil ve masaüstü Shopping blok kontrolü (0 blok) ve Instagram/TikTok sayı özetleri",
-         bolum=["serp", "trafik", "politika"], yontem="API (DataForSEO)", tarih=[D29], kod=["D19", "D23"], tur="API")
+         "Google mobil SERP: 334 kelime (VitrA gamı, yakın kategoriler, marka ve karşılaştırma); ayrıca Shopping/ürün bloğu kontrolü ve sosyal profil sayıları için SERP özetleri",
+         "351 aday kelimeden Keyword Planner'da hacmi olan 334 kelime (A 170, B 84, C 80); Türkiye, Türkçe, mobil Android, depth 20 (ilk 20 organik sonuç), aynı gün üç gözlem, sıra için ortanca; AI Overview içerik çekimi; PAA; ilk gözlem 29.09.2026'da 109 kelimeyle yapılmıştır. Kanal politikaları için 18 kelime × mobil ve masaüstü Shopping blok kontrolü (0 blok) ve Instagram/TikTok sayı özetleri",
+         bolum=["serp", "trafik", "politika"], yontem="API (DataForSEO)", tarih=[D29, "04.10.2026"], kod=["D19", "D23"], tur="API")
     ekle("https://api.dataforseo.com/v3/serp/google/organic/live/regular",
          "Google SERP özetleri: site:sikayetvar.com sorguları ve Akakçe/Cimri erişilemediğinde yedek okuma",
          "Şikayetvar için 15 site: sorgusu (3'ü boş döndü; marka sayfası adreslerini doğrulama ve vitra-karo sayfasının varlığı); Akakçe ve Cimri için kategori ve VitrA ürün kodu sorguları (başlık, en düşük fiyat, seçenek sayısı)",

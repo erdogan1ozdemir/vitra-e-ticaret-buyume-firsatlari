@@ -21,7 +21,7 @@ Q = [("Kategori", "klozet", r"klozet"), ("Kategori", "asma klozet", r"asma kloze
 
 
 def cek(q):
-    url = "https://www.vitra.com.tr/search?q=" + urllib.parse.quote_plus(q)
+    url = "https://www.vitra.com.tr/search?text=" + urllib.parse.quote(q)   # arama kutusunda Enter ile acilan sonuc sayfasi
     r = subprocess.run(["curl", "-sL", "-A", UA, "--max-time", "40", url], capture_output=True)
     s = r.stdout.decode("utf-8", "ignore")
     m = re.search(r'data-prd-count="(\d+)"', s)
@@ -41,7 +41,7 @@ def main():
     for g, q, rx in Q:
         r = cek(q); r.update({"grup": g, "sorgu": q, "beklenen": rx}); out.append(r)
         print(q, r["sonuc"], [u["ad"] for u in r["urunler"][:3]]); time.sleep(2)
-    json.dump({"tarih": "2026-10-04", "kaynak": "vitra.com.tr /search?q= (herkese açık arama sayfası)", "sorgular": out},
+    json.dump({"tarih": "2026-10-04", "kaynak": "vitra.com.tr /search?text= (arama kutusunda Enter sonrası açılan sonuç sayfası)", "sorgular": out},
               open(os.path.join(veri.V, "ham/derin/site_arama/sonuc.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
 

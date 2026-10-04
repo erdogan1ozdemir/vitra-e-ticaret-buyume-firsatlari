@@ -7,10 +7,11 @@ from rapor_parca1 import VITRA, INBOUND, GLOSSARY
 from rapor_css import CSS
 from css_ek import CSS_EK
 from rapor_js import JS, KAYNAKCA_CSS, TEMA, IKON
-import t2_ortak, kaynakca, ceviri, dil
+import t2_ortak, kaynakca, ceviri, dil, ortak
 from t2_ortak import x, R
 from ortak import logo_css, logo_alan_adlari, lg
 import h3_not
+import b_seomonitor
 import b_ozet, b_geo, b_makro, b_talep, b_ssgbm, b_niyet, b_organik, b_marka, b_youtube, b_katalog, b_yeni, b_set, b_rakip, b_benchmark, b_model, b_adimlar, b_yontem, b_serp, b_rakip_sw, b_kategori_trafik, b_pazaryeri, b_politika, b_sikayet, b_fiyat, b_derin, b_panel, b_yorum
 
 AD = "VitrA_E-Ticaret_Buyume_Firsatlari"
@@ -36,7 +37,7 @@ P.append(bolum("sikayet", "Şikayetvar: Satış Sonrası Deneyim", "Şikayetvar:
 P.append(bolum("katalog", "Katalog ve Talep Eşleşmesi", "Catalogue and Demand Fit", b_katalog.HTML))
 P.append(bolum("yeni", "Yeni Kategori ve Segment Fırsatları", "New Category and Segment Opportunities", b_yeni.HTML))
 P.append(bolum("set", "Set, Komple Banyo ve Ürün + Hizmet", "Sets, Complete Bathrooms and Product + Service", b_set.HTML))
-P.append(bolum("rakip", "Rakip Görünürlüğü ve Kanal Ölçeği", "Competitor Visibility and Channel Scale", b_rakip.HTML + b_rakip_sw.HTML))
+P.append(bolum("rakip", "Rakip Görünürlüğü ve Kanal Ölçeği", "Competitor Visibility and Channel Scale", b_rakip.HTML + b_seomonitor.HTML_SOC + b_rakip_sw.HTML))
 P.append(bolum("trafik", "Marka ve Uzman Sitelerde Kategori Trafiği", "Category Traffic on Brand and Specialist Sites", b_kategori_trafik.HTML))
 P.append(bolum("pazaryeri", "Pazaryerleri: Kategori Yapısı ve Çok Satanlar", "Marketplaces: Category Structure and Best Sellers", b_pazaryeri.HTML))
 P.append(bolum("derin", "Pazaryeri Alt Kategori Derinliği: Çok Satanlar ve Rakip Mağazalar", "Marketplace Sub-Category Depth: Best Sellers and Competitor Stores", b_derin.HTML))
@@ -44,7 +45,7 @@ P.append(bolum("panel", "VitrA Resmi Mağaza: Pazaryeri Panel Verisi", "VitrA Of
 P.append(bolum("yorum", "Pazaryeri Yorumları ve Soru-Cevap: Sentiment ve Pain Point Analizi", "Marketplace Reviews and Q&A: Sentiment and Pain Point Analysis", b_yorum.HTML))
 P.append(bolum("fiyat", "Fiyat ve Satıcı Manzarası: Shopping, Trendyol, Hepsiburada", "Price and Seller Landscape: Shopping, Trendyol, Hepsiburada", b_fiyat.HTML))
 P.append(bolum("politika", "Kanal Politikaları ve Keşif Kanalları", "Channel Policies and Discovery Channels", b_politika.HTML))
-import b_yolculuk
+import b_yolculuk, b_seomonitor
 P.append(bolum("yolculuk", "vitra.com.tr Satın Alma Yolculuğu: Site İçi Arama, Sepet ve Ödeme", "vitra.com.tr Purchase Journey: Site Search, Cart and Checkout", b_yolculuk.HTML))
 P.append(bolum("benchmark", "Benchmark: E-Ticaret Modelleri ve Dijital Deneyim", "Benchmark: E-Commerce Models and Digital Experience", b_benchmark.HTML))
 P.append(bolum("model", "Kanal Rolleri ve Etkileşim Modeli", "Channel Roles and Engagement Model", b_model.HTML))
@@ -65,10 +66,10 @@ import serp_ozet as _SO
 from ortak import kopru as _kopru
 # alt basliktan ilgili veri seti alt sayfasina dugme (basligin aciklama notunun hemen altinda)
 H3_ALT = {
- "Kim sıralanıyor?": ("%d kelimenin ilk 10 sonucu, AI Overview kaynakları ve \"Diğer sorular\" kutusu süzülebilir tablolar halinde ayrı sayfadadır." % _SO.N,
-                      "The top 10 results, AI Overview sources and \"People also ask\" box for the %d keywords are in filterable tables on a separate page." % _SO.N, "arama-sonuclari.html", "Arama Sonuçları sayfasını görüntüle", "View the Search Results page", ""),
+ "Kim sıralanıyor?": ("Üç gruptaki %d kelimenin ilk 10 sonucu, AI Overview kaynakları ve \"Diğer sorular\" kutusu süzülebilir tablolar halinde ayrı sayfadadır." % _SO.NT,
+                      "The top 10 results, AI Overview sources and \"People also ask\" box for the %d keywords in all three groups are in filterable tables on a separate page." % _SO.NT, "arama-sonuclari.html", "Arama Sonuçları sayfasını görüntüle", "View the Search Results page", ""),
  "Kullanıcının Google'da sorduğu sorular": ("%d sorunun tamamı, çıktığı kelimelerle birlikte:" % len(_SO.PAA_SORU), "All %d questions with the keywords where they appeared:" % len(_SO.PAA_SORU), "arama-sonuclari.html", "Soruları görüntüle", "View the questions", "#paa"),
- "Ana kategori düzeyinde değişim": ("Talep bölümlerindeki 2.342 kelimenin tamamı, kategori, niyet ve iki dönemin arama hacmiyle:", "All 2,342 keywords in the demand sections, with category, intent and search volume for both periods:", "kelime-evreni.html", "Kelime Evreni sayfasını görüntüle", "View the Keyword Universe page", ""),
+ "Ana kategori düzeyinde değişim": ("Talep bölümlerindeki 2.349 kelimenin tamamı, kategori, niyet ve iki dönemin arama hacmiyle:", "All 2,349 keywords in the demand sections, with category, intent and search volume for both periods:", "kelime-evreni.html", "Kelime Evreni sayfasını görüntüle", "View the Keyword Universe page", ""),
  "Autocomplete önerilerinin tema oranı": ("Tüm otomatik tamamlama önerileri, kök ifade ve grupla:", "All autocomplete suggestions, with seed term and group:", "kelime-evreni.html", "Önerileri görüntüle", "View the suggestions", "#oneriler"),
  "Alt kesitler: vitra.com.tr, pazaryeri ve fiyat karşılaştırma siteleri": ("Taramadaki 11.982 ürün kartının tamamı (kanal, marka, satıcı, fiyat, puan):", "All 11,982 product cards from the scan (channel, brand, seller, price, rating):", "pazaryeri-taramasi.html", "Pazaryeri Taraması sayfasını görüntüle", "View the Marketplace Scan page", ""),
  "Genişletilmiş tarama: 68 arama, altı niyet grubu": ("68 aramanın tüm video sonuçları ve kanal özeti:", "All video results of the 68 searches and the channel summary:", "youtube-videolari.html", "YouTube Videoları sayfasını görüntüle", "View the YouTube Videos page", ""),
@@ -107,6 +108,8 @@ _LG = re.compile(r'(<(?:td|span class="rl")>|<a class="(?:u|dis)"[^>]*>)((?:www\
 govde = _LG.sub(lambda m: m.group(1) + lg(m.group(3)) + m.group(2), govde)
 _BNO = {b_: "%02d" % (i + 1) for i, (b_, _) in enumerate(BOLUMLER)}
 def _btok(t):
+    # Bölüm numarasından sonra gelen bulunma eki numaraya göre yeniden kurulur (20'de, 08'de, 06'da)
+    t = re.sub(r"\[\[b:([a-z]+)\]\]'(?:da|de|ta|te)\b", lambda m: (_BNO.get(m.group(1), "??") + "'" + ortak.ek(int(_BNO[m.group(1)]), "de").split("'")[1]) if m.group(1) in _BNO else "??", t)
     return re.sub(r"\[\[b:([a-z]+)\]\]", lambda m: _BNO.get(m.group(1), "??"), t)
 govde = _btok(govde)
 t2_ortak.EK = {_btok(k_): _btok(v_) for k_, v_ in t2_ortak.EK.items()}
