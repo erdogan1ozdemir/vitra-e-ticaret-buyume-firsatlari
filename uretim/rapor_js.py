@@ -141,6 +141,12 @@ document.documentElement.classList.add('js');
     th.removeAttribute('title');
   });
 
+  /* isi haritasi hucreleri: hacim, degisim ve kategori payi */
+  [].forEach.call(document.querySelectorAll('td[data-t]'),function(td){
+    function ac(){ var r=td.getBoundingClientRect(); goster(kac(td.getAttribute('data-t')), r.left+r.width/2, r.top); }
+    td.addEventListener('mouseenter',ac); td.addEventListener('mouseleave',gizle);
+  });
+
   /* tablo kaynak logolari: kaynak, kapsam ve veri donemi */
   [].forEach.call(document.querySelectorAll('.tk[data-t]'),function(tk){
     function ac(){

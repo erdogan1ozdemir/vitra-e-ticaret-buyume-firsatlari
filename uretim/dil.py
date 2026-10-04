@@ -22,6 +22,7 @@ TAM_HUCRE = {"td", "th", "dt", "b", "span", "li", "figcaption"}
 
 # --- sayi bicimi (TR -> EN) -------------------------------------------------
 _YUZDE = re.compile(r'([+\-−])?%(\d+(?:[.,]\d+)*)')
+_ARALIK = re.compile(r'([+\-−])?%(\d+(?:,\d+)?)-(\d+(?:,\d+)?)(?![\d.,%])')   # %52-74 -> 52-74%
 _ONDALIK = re.compile(r'(?<=\d),(?=\d)')
 _BINLIK = re.compile(r'(?<![\d,])\d{1,3}(?:\.\d{3})+(?![\d.])')
 
@@ -40,6 +41,7 @@ def sayi_en(t):
     m = _SIRA.match(t)
     if m:
         return m.group(1) + _ek(int(m.group(1)))
+    t = _ARALIK.sub(lambda m: (m.group(1) or "") + m.group(2) + "-" + m.group(3) + "%", t)
     t = _YUZDE.sub(lambda m: (m.group(1) or "") + m.group(2) + "%", t)
     t = _ONDALIK.sub(".", t)
     t = _BINLIK.sub(lambda m: m.group(0).replace(".", ","), t)

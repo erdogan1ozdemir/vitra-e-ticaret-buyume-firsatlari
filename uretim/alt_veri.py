@@ -382,7 +382,7 @@ def arama_sonuclari():
 
 
 # ====================================================================== 2. kelime evreni
-NIYET = {"Jenerik ürün": "Generic product", "Tasarım ve fikir": "Design and ideas", "Fiyat": "Price", "Ölçü ve teknik": "Size and technical", "Tamir ve bakım": "Repair and maintenance",
+NIYET = {"Jenerik ürün": "Generic product", "Tasarım ve fikir": "Design and ideas", "Fiyat": "Price", "Ölçü ve teknik": "Dimensions and technical", "Tamir ve bakım": "Repair and maintenance",
          "Montaj": "Installation", "Seçim ve karşılaştırma": "Selection and comparison"}
 AC_GRUP = {"Kategori": "Category", "Montaj ve tamir": "Installation and repair", "Yenileme ve tasarım": "Renovation and design", "Fiyat ve ödeme": "Price and payment",
            "Rakip marka": "Competitor brand", "Perakendeci": "Retailer", "VitrA ile başlayan": "Starting with VitrA"}
@@ -427,22 +427,39 @@ def kelime_evreni(EK):
                        kolon("sira", "Sıra", "Rank", "Önerinin listedeki sırası.", "Position of the suggestion in the list.", "sayi"),
                        kolon("oneri", "Öneri", "Suggestion", "Google'ın otomatik tamamlama önerisi; olduğu gibi korunmuştur.", "Google's autocomplete suggestion, kept as is.", "kw")],
                  "r": AC, "s": None}}
+    MKJ = json.load(open(os.path.join(veri.V, "islenmis", "marka_kategori.json"), encoding="utf-8"))
+    def _d(a_, b_): return round(100 * (a_ - b_) / b_, 1) if b_ else None
+    MR = [[r_["marka"], r_["kw"], r_["k1"], r_["niyet"], r_["o2026"], _d(r_["o2026"], r_["o2025"]), _d(r_["o2026"], r_["o2023"])] for r_ in sorted(MKJ["satir"], key=lambda r_: -r_["o2026"])]
+    for r_ in MR:
+        for a_ in (r_[2], r_[3]):
+            if a_ not in cev and a_ in EK: cev[a_] = EK[a_]
+    cev.update({r_[0]: r_[0] for r_ in MR})   # marka adları iki dilde aynıdır
+    tb["mk"] = {"c": [kolon("marka", "Marka", "Brand", "Aramadaki üretici marka.", "The manufacturer brand in the search.", "kat", True),
+                      kolon("kw", "Arama", "Search", "Google'a yazılan ifade; olduğu gibi korunmuştur.", "The phrase typed into Google, kept as is.", "kw"),
+                      kolon("k1", "Ana kategori", "Main category", "Kategori ifadesinin VitrA kategori ağacındaki karşılığı.", "The category phrase's main category in VitrA's category tree.", "cev", True),
+                      kolon("niyet", "Niyet", "Intent", "Kelime evreniyle aynı kurallarla belirlenen ihtiyaç sınıfı.", "Need class set with the same rules as the keyword universe.", "cev", True),
+                      kolon("o26", "Ort. hacim Oca-Ağu 2026", "Avg. volume Jan-Aug 2026", "Ocak - Ağustos 2026 aylık ortalama arama hacmi.", "Average monthly search volume, January - August 2026.", "sayi"),
+                      kolon("yoy", "YoY", "YoY", "Ocak - Ağustos 2026 ortalamasının 2025'in aynı aylarına göre değişimi.", "Change of the January - August 2026 average against the same months of 2025.", "yuzde"),
+                      kolon("uc", "2023'ten bu yana", "Since 2023", "Ocak - Ağustos 2026 ortalamasının Ocak - Ağustos 2023 ortalamasına göre değişimi.", "Change of the January - August 2026 average against January - August 2023.", "yuzde")],
+                "r": MR, "s": [4, "d"]}
     sayfa("kelime-evreni.html", ("VitrA | Kelime Evreni", "VitrA | Keyword Universe"),
           ("VitrA TÜRKİYE · ARAMA TALEBİ", "VitrA TURKEY · SEARCH DEMAND"),
-          ("Kelime Evreni: %s Kelime ve Google Önerileri" % tr_s(len(R)), "Keyword Universe: %s Keywords and Google Suggestions" % en_s(len(R))),
-          ("Raporun talep bölümlerinde kullanılan kelime evreni: VitrA'nın kategori ağacına eşlenen %s kelime, niyet sınıfı ve iki 12 aylık dönemin ortalama arama hacmi. İkinci tablo, kategori, montaj, fiyat, rakip ve VitrA ile başlayan kök ifadeler için Google'ın otomatik tamamlama önerilerini listeler." % tr_s(len(R)),
-           "The keyword universe used in the report's demand sections: %s keywords mapped to VitrA's category tree, intent class and average search volume for two 12-month periods. The second table lists Google's autocomplete suggestions for category, installation, price, competitor and VitrA-led seed terms." % en_s(len(R))),
+          ("Kelime Evreni: %s Kelime, Marka Aramaları ve Google Önerileri" % tr_s(len(R)), "Keyword Universe: %s Keywords, Brand Searches and Google Suggestions" % en_s(len(R))),
+          ("Raporun talep bölümlerinde kullanılan kelime evreninde VitrA'nın kategori ağacına eşlenen %s kelime, niyet sınıfı ve Ocak - Ağustos 2025 ve 2026 ortalama arama hacmiyle yer almaktadır. İkinci tablo VitrA ve 25 rakip markanın kategori ifadeleriyle yapılan aramalarını, üçüncü tablo ise kategori, montaj, fiyat, rakip ve VitrA ile başlayan kök ifadeler için Google'ın otomatik tamamlama önerilerini listelemektedir." % tr_s(len(R)),
+           "The keyword universe used in the report's demand sections contains %s keywords mapped to VitrA's category tree, with intent class and average search volume for January - August 2025 and 2026. The second table lists searches made with category phrases for VitrA and 25 competitor brands, and the third lists Google's autocomplete suggestions for category, installation, price, competitor and VitrA-led seed terms." % en_s(len(R))),
           [(N(len(R)), ("kelime · 8 ana kategori", "keywords · 8 main categories")), (N(a26), ("toplam ort. aylık hacim, Oca - Ağu 2026", "total avg. monthly volume, Jan - Aug 2026")),
            (T(("+" if a26 >= a25 else "-") + "%" + tr_s(abs(100 * (a26 - a25) / a25), 1), ("+" if a26 >= a25 else "-") + en_s(abs(100 * (a26 - a25) / a25), 1) + "%"), ("Oca - Ağu 2025'e göre değişim", "change vs Jan - Aug 2025")),
            (N(len(AC)), ("Google otomatik tamamlama önerisi", "Google autocomplete suggestions"))],
           [("kelimeler", ("Kelimeler: kategori, niyet ve arama hacmi", "Keywords: category, intent and search volume"),
             ("Ana kategori, alt kategori ve niyet süzgeçleriyle daraltılabilir; değişim, Ocak - Ağustos 2026 ve 2025 ortalamaları arasındadır.", "Narrow with the main category, subcategory and intent filters; change is between the January - August 2026 and 2025 averages."), "kel", None),
+           ("marka-aramalari", ("Marka aramaları: marka + kategori", "Brand searches: brand + category"),
+            ("VitrA ve 25 rakip markanın kategori ifadeleriyle yapılan aramaları; marka, ana kategori ve niyet süzgeçleriyle daraltılabilir. Yakın yazım varyantları tek sayılmıştır.", "Searches made with category phrases for VitrA and 25 competitor brands; narrow with the brand, main category and intent filters. Close spelling variants are counted once."), "mk", None),
            ("oneriler", ("Google otomatik tamamlama önerileri", "Google autocomplete suggestions"),
             ("Kök ifade yazıldığında Google'ın gösterdiği öneriler, sırasıyla; grup süzgeci montaj, fiyat, rakip ve VitrA ile başlayan ifadeleri ayırır.", "Suggestions Google shows when the seed term is typed, in order; the group filter separates installation, price, competitor and VitrA-led terms."), "ac", None)],
           tb, cev,
           ("Hacimler Google Keyword Planner'dan alınmıştır (Türkiye, Türkçe). Kelimeler VitrA kategori kelime araştırmasından (8 ana, 64 alt kategori) alınmış, yakın yazım varyantları tek kelime sayılmış, 19 baş kelime eklenmiş ve niyet sınıfı atanmıştır; mutfak ve genel tezgah aramaları, Google sonuçlarında banyo dışı ürünlere yönelen genel ifadeler ve marka adı geçen aramalar evrenden çıkarılmıştır. Otomatik tamamlama önerileri masaüstü Chrome, Türkiye, Türkçe için 28.09.2026 tarihinde alınmıştır.",
            "Volumes are from Google Keyword Planner (Turkey, Turkish). Keywords were taken from the VitrA category keyword research (8 main, 64 sub-categories), close spelling variants were counted once, 19 head keywords were added and an intent class was assigned; kitchen and general countertop searches, general terms for which Google shows non-bathroom products and searches containing a brand name were removed. Autocomplete suggestions were collected for desktop Chrome, Turkey, Turkish on 28.09.2026."),
-          ("Kaynak: Google Keyword Planner, Eyl 2024 - Ağu 2026 · Google otomatik tamamlama, 28.09.2026", "Source: Google Keyword Planner, Sep 2024 - Aug 2026 · Google autocomplete, 28.09.2026"))
+          ("Kaynak: Google Keyword Planner, Eyl 2024 - Ağu 2026 · marka aramaları Google Keyword Planner, Eyl 2022 - Ağu 2026 (04.10.2026) · Google otomatik tamamlama, 28.09.2026", "Source: Google Keyword Planner, Sep 2024 - Aug 2026 · brand searches Google Keyword Planner, Sep 2022 - Aug 2026 (04.10.2026) · Google autocomplete, 28.09.2026"))
 
 
 # ====================================================================== 3. pazaryeri taramasi

@@ -69,8 +69,12 @@ def _gq(q_, alan, en=False):
     if alan == 2: return k(v_).replace(",", ".") if en else k(v_)
     if alan == 3: return ("%.1f%%" % v_) if en else yzd(v_)
     return ("%.1f" % v_) if en else ("%.1f" % v_).replace(".", ",")
+from b_marka2 import BLOK as _MB, DIALOG as _MD
+assert (N_KOK, len(TOHUM), N_EK, len(_ONERI)) == (66, 14, 52, 617), "07 öneri sayıları değişti (h3_not notu güncellenmeli)"
 HTML = """
 <p class="lede">%s</p>
+%s
+<h3>%s</h3>
 <div class="metrics">%s%s%s%s</div>
 <h3>%s</h3>
 %s
@@ -82,8 +86,10 @@ HTML = """
 %s
 %s
 """ % (
- x("Google'ın arama kutusunda önerdiği tamamlamalar, gerçek kullanıcı aramalarından türetildiği için markadan ne beklendiğini en doğrudan gösteren kaynaklardan biridir. %d kök ifade için Türkiye, Türkçe, masaüstü Chrome önerileri alınmıştır; bunların %d'i \"vitra\" ile başlayan kök ifadeler (28 Eylül 2026), %d'si kategori, hizmet, fiyat, rakip marka ve perakendeci kök ifadeleridir (30 Eylül 2026). Üstteki dört gösterge ve tema dağılımı bu iki setteki %d öneriye dayanmaktadır; yazım hatalı ve toplama konumuna bağlı (il adı, yurt dışı) öneriler çıkarılmıştır." % (N_KOK, len(TOHUM), N_EK, len(_ONERI)),
-   "The completions Google suggests in the search box are derived from real user searches, which makes them one of the most direct sources for what is expected of the brand. Suggestions were collected for %d seed phrases for Turkey, Turkish, desktop Chrome: %d seed phrases starting with \"vitra\" (28 September 2026) and %d seed phrases for categories, services, price, competitor brands and retailers (30 September 2026). The four indicators above and the theme distribution are based on the %d suggestions in these two sets; misspelt suggestions and those tied to the collection location (city names, abroad) were removed." % (N_KOK, len(TOHUM), N_EK, len(_ONERI))),
+ x("Marka talebi iki veriyle ölçülmüştür. Birincisi, marka adıyla ve marka + kategori ifadeleriyle yapılan aramaların aylık hacmidir (Google Ads Keyword Planner; 26 üretici marka ve 10 perakendeci; Eyl 2022 - Ağu 2026); \"vitra\" için kelime evrenindeki ifadelerin markalı biçimleri, rakipler için bu ifadelerden VitrA'da arama hacmi olanlar kullanılmıştır. İkincisi, Google'ın arama kutusunda önerdiği tamamlamalardır; öneriler gerçek kullanıcı aramalarından türetildiği için markadan ne beklendiğini doğrudan göstermektedir.",
+   "Brand demand was measured with two data sets. The first is the monthly volume of searches made with the brand name and with brand + category phrases (Google Ads Keyword Planner; 26 manufacturer brands and 10 retailers; Sep 2022 - Aug 2026); for \"vitra\" the branded forms of the phrases in the keyword universe were used, and for competitors those of these phrases that have search volume for VitrA. The second is the completions Google suggests in the search box; as suggestions are derived from real user searches, they show directly what is expected of the brand."),
+ _MB,
+ x("Google önerileri: markadan ne bekleniyor?", "Google suggestions: what is expected of the brand?"),
  metric("Tamir ve bakım önerileri", "Repair and maintenance suggestions", yzd(100 * AT["Tamir ve bakım"] / attot), "Tüm önerilerin payı; \"iç takımı\", \"şamandıra\", \"su kaçırıyor\", \"menteşe\"", "Share of all suggestions; \"iç takımı\", \"şamandıra\", \"su kaçırıyor\", \"menteşe\""),
  metric("Fiyat önerileri", "Price suggestions", yzd(100 * AT["Fiyat"] / attot), "\"fiyat\", \"indirim\", \"kampanya\" ve \"ne kadar\" içeren öneriler; paylar kök ifade seçimini de yansıtır", "Suggestions containing \"price\", \"discount\", \"campaign\" and \"how much\"; shares also reflect the choice of seed phrases"),
  metric("Montaj önerileri", "Installation suggestions", yzd(100 * AT["Montaj"] / attot), "\"montajı\", \"montaj aparatı\", \"montaj ücreti\", \"taktırma\"", "\"montajı\", \"montaj aparatı\", \"montaj ücreti\", \"taktırma\""),
@@ -102,4 +108,4 @@ HTML = """
          "In Search Console the queries bringing the most clicks are the brand and category names. \"lavabo\" produces only %s CTR on %s impressions at an average position of %s, and \"vitra gömme rezervuar\" stays at %s CTR at an average position of %s: in these queries AI Overview and other meanings of the word (\"lavabo\" is also searched in the sense of toilet and as \"lavabo açıcı\", drain opener) limit the click share; testing titles and descriptions can be considered." % (_gq("lavabo", 3, True), _gq("lavabo", 2, True), _gq("lavabo", 4, True), _gq("vitra gömme rezervuar", 3, True), _gq("vitra gömme rezervuar", 4, True)), "D2"),
  kaynak("Google Autocomplete · \"vitra\" ile başlayan %d kök ifade (%s) ve %d kategori, hizmet, fiyat, rakip marka ve perakendeci kök ifadesi (30 Eyl 2026) · Türkiye, Türkçe, masaüstü Chrome · Google Ads hacim · Google Search Console sorgu raporu" % (len(TOHUM), veri.TARIH, N_EK),
         "Google Autocomplete · %d seed phrases starting with \"vitra\" (%s) and %d category, service, price, competitor brand and retailer seed phrases (30 Sep 2026) · Turkey, Turkish, desktop Chrome · Google Ads volume · Google Search Console query report" % (len(TOHUM), veri.TARIH, N_EK), "D3", "D2"),
-)
+) + _MD

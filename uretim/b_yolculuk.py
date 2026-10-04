@@ -77,7 +77,7 @@ ADIM = [
   ("\"klozet nereden alınır en uygun fiyata\" sorusunda pazaryeri kaynakları %d yanıtın %s yer alıyor; iade ve değişim sorusunda VitrA %d yanıtın %s geçiyor; montaj dahil satış sorusunda ise vitra.com.tr %d yanıtın %s kaynak" % (_q1["yanit"], ek(_q1["pazaryeri_kaynak"], "inde"), _q3[3], ek(_q3[4], "inde"), _q5["yanit"], ek(_q5["vitra_kaynak"], "inde")),
    "For \"klozet nereden alınır en uygun fiyata\" marketplace sources appear in %d of %d answers; for the returns question VitrA is named in %d of %d answers; for the question on sales including installation vitra.com.tr is cited in %d of %d answers" % (_q1["pazaryeri_kaynak"], _q1["yanit"], _q3[4], _q3[3], _q5["vitra_kaynak"], _q5["yanit"])),
   ("Satın almaya yakın sorularda yanıt çoğunlukla pazaryerlerini kaynak gösteriyor; montaj sorusu VitrA lehine", "In questions close to purchase the answer mostly cites marketplaces; the installation question favours VitrA"),
-  ("Teslimat, iade, kurulum ve satın alma koşullarının vitra.com.tr'de soru-cevap biçiminde yer alması", "Presenting delivery, returns, installation and purchase terms on vitra.com.tr as questions and answers"), "Satın alma ve montaj sorularında VitrA ve vitra.com.tr"),
+  ("Teslimat, iade, kurulum ve satın alma koşullarının vitra.com.tr'de soru-cevap biçiminde yer alması", "Presenting delivery, returns, installation and purchase terms on vitra.com.tr as questions and answers"), "Yapay zeka yanıt takibi · 29 satın alma ve montaj sorusunda VitrA ve vitra.com.tr"),
  (("Kategori sayfası", "Category page"),
   ("%s varyant kartının %s stoklu süzgecinin dışında; %d alt kesitte stoklu ürün yok" % (bin(_D2.top_kart), yzd(_stok), len(_D2.sifir)),
    "%s of %s variant cards are outside the in-stock filter; %d sub-segments have no in-stock product" % (("%.1f" % _stok) + "%", f"{_D2.top_kart:,}", len(_D2.sifir))),
@@ -118,7 +118,7 @@ T_YOL = tablo([th("Adım", "Step", "Kullanıcının keşiften satış sonrasına
                th("Gözlem", "Observation", "Adımda ölçülen ya da gözlenen durum; ok simgesi ayrıntının yer aldığı alt başlığa gider.", "The measured or observed situation at the step; the arrow goes to the sub-heading with the detail."),
                th("Kullanıcıya etkisi", "Effect on the user", "Gözlemin satın alma yolculuğuna olası etkisi.", "Possible effect of the observation on the purchase journey."),
                th("Önerilen düzenleme", "Recommended change", "Adımdaki bariyeri azaltabilecek düzenleme.", "A change that may reduce the barrier at the step.")],
-              [["<b>%s</b>" % x(*a), x(*g) + git(h), x(*e), x(*o)] for a, g, e, o, h in ADIM], "uzun")
+              [["<b>%s</b>" % x(*a), '<span class="mtx">%s</span>' % x(*g) + git(h), x(*e), x(*o)] for a, g, e, o, h in ADIM], "uzun")
 
 # ---------------------------------------------------------------- sepet ve odeme ekranlari
 x("Sepet ekranı", "Cart screen"); x("Giriş ekranı", "Sign-in screen"); x("Üyeliksiz alışveriş ekranı", "Guest checkout screen")

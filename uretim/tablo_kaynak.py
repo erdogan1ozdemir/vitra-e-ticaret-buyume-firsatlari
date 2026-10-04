@@ -66,11 +66,11 @@ ATAMA = [
  ("set", "Rakip ve benzer modeller", ["web"]),
  ("derin", "Aynı model kodunda", ["trendyol", "hepsiburada", "akakce", "cimri", "vitra"]),
  ("yolculuk", "Sepet ve ödeme", ["vitra"]), ("yolculuk", "Dönüşüm fırsatları", ["vitra"]), ("yolculuk", "Site içi arama", ["vitra", "kp"]), ("yolculuk", "Yolculuk adımları", ["google", "vitra"]),
- ("geo", "Yapay zeka yanıtlarında", ["chatgpt", "gemini", "google"]), ("geo", "Satın alma ve montaj sorularında", ["chatgpt", "gemini", "google"]),
- ("geo", "AI ile alışveriş", ["gsc"]), ("geo", "SEOmonitor takibindeki", ["seomonitor"]),
+ ("geo", "Ölçüm setleri", ["chatgpt", "gemini", "google", "seomonitor", "gsc"]), ("geo", "Yapay zeka yanıt takibi", ["chatgpt", "gemini", "google"]),
+ ("geo", "SEOmonitor takibi", ["seomonitor"]), ("geo", "Rapor hedef kelimeleri", ["google"]), ("geo", "Sitenin hazırlığı", ["gsc"]),
  ("politika", "Ödeme ve taksit", ["web"]), ("politika", "Kargo, teslimat", ["web"]), ("politika", "Garanti, yedek parça", ["web"]),
  ("katalog", "", ["vitra", "kp"]), ("yeni", "", ["kp", "vitra", "web"]), ("makro", "Yıllık banyo yenileme", ["tuik", "web"]), ("rakip", "Site trafiği", ["similarweb"]),
- ("adimlar", "", []),
+ ("adimlar", "", []), ("marka", "Marka adıyla", ["kp"]), ("marka", "Marka + kategori", ["kp"]), ("marka", "\"vitra\" +", ["kp"]), ("marka", "\"vitra\" ile birlikte", ["kp"]),
 ]
 # Resmi mağaza paneli: aynı logo, farklı kapsam
 PANEL = {
@@ -114,54 +114,73 @@ def _metin_anahtarlari(t, sadece_arac=False):
     return [k for k in SIRA if (K[k][7] or not sadece_arac) and re.search(K[k][3], t)]
 
 
+_FIG = re.compile(r'''<figure class="fig[^"]*"(?:\s+[a-z-]+=(?:"[^"]*"|'[^']*'))*\s*>''')
+_TAB = re.compile(r'<div class="tw(?: [^"]*)?"[^>]*>.*?</table></div>', re.S)
+
+
 def uygula(govde, EK, x):
-    """govde: bölüm HTML'i ([[ref]] çözülmeden önce); EK: TR -> EN çeviri sözlüğü; x: kayıt fonksiyonu."""
+    """govde: bölüm HTML'i ([[ref]] çözülmeden önce); EK: TR -> EN çeviri sözlüğü; x: kayıt fonksiyonu.
+    Tablolarda logolar "Tabloyu kopyala" çubuğuna (JS), grafiklerde başlık satırının sağına yerleşir."""
     rapor = []
-    def bolum(m):
-        sid, ic = m.group(1), m.group(2)
-        if sid == "ek": return m.group(0)
+    def ikonlar(sid, ic, pos, metin, tur):
         notlar = []   # (konum, {k: parça_tr}, {k: parça_en})
         for n in re.finditer(r'<p class="src">(.*?)</p>', ic, re.S):
             tr = _duz(n.group(1)); en = EK.get(tr, "")
             notlar.append((n.start(), _parcala(tr), _parcala(en, True) if en else {}))
         basliklar = [h.start() for h in re.finditer(r"<h3", ic)]
-        def blok(pos):
-            onc = [b for b in basliklar if b < pos]; son = [b for b in basliklar if b > pos]
-            return (onc[-1] if onc else 0, son[0] if son else len(ic))
+        onc = [b for b in basliklar if b < pos]; son = [b for b in basliklar if b > pos]
+        a, b = (onc[-1] if onc else 0, son[0] if son else len(ic))
+        ilgili = [nn for nn in notlar if a < nn[0] < b and nn[0] > pos] or [nn for nn in notlar if a < nn[0] < b] or \
+                 [nn for nn in notlar if nn[0] > pos][:1] or notlar[-1:]
+        aday_tr, aday_en = {}, {}
+        for _, ptr, pen in ilgili:
+            for k_, v_ in ptr.items(): aday_tr.setdefault(k_, v_)
+            for k_, v_ in pen.items(): aday_en.setdefault(k_, v_)
+        if sid not in VITRA_BOLUM: aday_tr.pop("vitra", None); aday_en.pop("vitra", None)
+        secim = [k_ for k_ in SIRA if k_ in aday_tr and re.search(K[k_][3], metin)]
+        secim += [k_ for k_ in _metin_anahtarlari(metin, True) if k_ not in secim]
+        if not secim: secim = [k_ for k_ in SIRA if k_ in aday_tr]
+        h3 = re.search(r"<h3[^>]*>(.*?)</h3>", ic[a:b], re.S)
+        h3t = _duz(h3.group(1)) if h3 else ""
+        atama = next((L_ for s_, b_, L_ in ATAMA if s_ == sid and (h3t.startswith(b_) if b_ else not h3t)), None)
+        if atama is not None: secim = atama
+        ikon = []
+        for k_ in [k_ for k_ in SIRA if k_ in secim]:
+            ad_tr, ad_en, kap_tr, kap_en = K[k_][1], K[k_][2], aday_tr.get(k_, ""), aday_en.get(k_, "")
+            if sid == "panel" and k_ in PANEL:
+                ad_tr, ad_en, kap_tr, kap_en = PANEL[k_]
+            elif not kap_tr or not kap_en:
+                kap_tr, kap_en = K[k_][5], K[k_][6]
+            elif not _TARIH.search(kap_tr):
+                kap_tr, kap_en = kap_tr + " · " + K[k_][5], kap_en + " · " + K[k_][6]
+            kap_tr = re.sub(r"^" + re.escape(ad_tr) + r"\s*[·:]\s*", "", kap_tr) or K[k_][5]
+            kap_en = re.sub(r"^" + re.escape(ad_en) + r"\s*[·:]\s*", "", kap_en) or K[k_][6]
+            x(kap_tr, kap_en); x(ad_tr, ad_en)
+            ikon.append('<span class="tk" tabindex="0" role="img" aria-label="%s" data-t="%s"><i class="lg lg-%s"></i></span>'
+                        % (_h.escape(ad_tr, quote=True), _h.escape(kap_tr, quote=True), K[k_][0].replace(".", "_")))
+        rapor.append((sid, tur, h3t, secim))
+        return "".join(ikon)
+    def bolum(m):
+        sid, ic = m.group(1), m.group(2)
+        if sid == "ek": return m.group(0)
+        # 1) grafikler: logolar başlık satırının sağına (başlık yoksa grafiğin üstüne ayrı satır)
         parcalar = []; konum = 0
-        for t in re.finditer(r'<div class="tw(?: [^"]*)?"[^>]*>.*?</table></div>', ic, re.S):
-            a, b = blok(t.start())
-            ilgili = [nn for nn in notlar if a < nn[0] < b and nn[0] > t.start()] or [nn for nn in notlar if a < nn[0] < b] or \
-                     [nn for nn in notlar if nn[0] > t.start()][:1] or notlar[-1:]
-            aday_tr, aday_en = {}, {}
-            for _, ptr, pen in ilgili:
-                for k_, v_ in ptr.items(): aday_tr.setdefault(k_, v_)
-                for k_, v_ in pen.items(): aday_en.setdefault(k_, v_)
-            tablo_metin = " ".join(_h.unescape(v) for v in re.findall(r'data-t="([^"]*)"', t.group(0))) + " " + _duz(" ".join(re.findall(r"<th[^>]*>(.*?)</th>", t.group(0), re.S)))
-            if sid not in VITRA_BOLUM: aday_tr.pop("vitra", None); aday_en.pop("vitra", None)
-            secim = [k_ for k_ in SIRA if k_ in aday_tr and re.search(K[k_][3], tablo_metin)]
-            secim += [k_ for k_ in _metin_anahtarlari(tablo_metin, True) if k_ not in secim]
-            if not secim: secim = [k_ for k_ in SIRA if k_ in aday_tr]
-            h3 = re.search(r"<h3[^>]*>(.*?)</h3>", ic[a:b], re.S)
-            h3t = _duz(h3.group(1)) if h3 else ""
-            atama = next((L_ for s_, b_, L_ in ATAMA if s_ == sid and (h3t.startswith(b_) if b_ else not h3t)), None)
-            if atama is not None: secim = atama
-            ikon = []
-            for k_ in [k_ for k_ in SIRA if k_ in secim]:
-                ad_tr, ad_en, kap_tr, kap_en = K[k_][1], K[k_][2], aday_tr.get(k_, ""), aday_en.get(k_, "")
-                if sid == "panel" and k_ in PANEL:
-                    ad_tr, ad_en, kap_tr, kap_en = PANEL[k_]
-                elif not kap_tr or not kap_en:
-                    kap_tr, kap_en = K[k_][5], K[k_][6]
-                elif not _TARIH.search(kap_tr):
-                    kap_tr, kap_en = kap_tr + " · " + K[k_][5], kap_en + " · " + K[k_][6]
-                kap_tr = re.sub(r"^" + re.escape(ad_tr) + r"\s*[·:]\s*", "", kap_tr) or K[k_][5]
-                kap_en = re.sub(r"^" + re.escape(ad_en) + r"\s*[·:]\s*", "", kap_en) or K[k_][6]
-                x(kap_tr, kap_en); x(ad_tr, ad_en)
-                ikon.append('<span class="tk" tabindex="0" role="img" aria-label="%s" data-t="%s"><i class="lg lg-%s"></i></span>'
-                            % (_h.escape(ad_tr, quote=True), _h.escape(kap_tr, quote=True), K[k_][0].replace(".", "_")))
-            rapor.append((sid, h3t, secim))
-            parcalar.append(ic[konum:t.start()]); parcalar.append('<div class="tkay">%s</div>' % "".join(ikon) if ikon else ""); parcalar.append(t.group(0)); konum = t.end()
+        for f in _FIG.finditer(ic):
+            cap = re.match(r'<figcaption class="figcap">(.*?)</figcaption>', ic[f.end():], re.S)
+            metin = _duz(cap.group(1)) if cap else ""
+            ik = ikonlar(sid, ic, f.start(), metin, "grafik")
+            parcalar.append(ic[konum:f.end()])
+            if ik and cap:
+                parcalar.append('<figcaption class="figcap"><span class="tkay fkay">%s</span>%s</figcaption>' % (ik, cap.group(1))); konum = f.end() + cap.end()
+            else:
+                parcalar.append('<div class="tkay fkay fk-satir">%s</div>' % ik if ik else ""); konum = f.end()
+        parcalar.append(ic[konum:]); ic = "".join(parcalar)
+        # 2) tablolar: logolar tablodan önce; JS "Tabloyu kopyala" çubuğuna taşır
+        parcalar = []; konum = 0
+        for t in _TAB.finditer(ic):
+            metin = " ".join(_h.unescape(v) for v in re.findall(r'data-t="([^"]*)"', t.group(0))) + " " + _duz(" ".join(re.findall(r"<th[^>]*>(.*?)</th>", t.group(0), re.S)))
+            ik = ikonlar(sid, ic, t.start(), metin, "tablo")
+            parcalar.append(ic[konum:t.start()]); parcalar.append('<div class="tkay">%s</div>' % ik if ik else ""); parcalar.append(t.group(0)); konum = t.end()
         parcalar.append(ic[konum:])
         return '<section id="%s">%s</section>' % (sid, "".join(parcalar))
     govde = re.sub(r'<section id="([^"]+)">(.*?)</section>', bolum, govde, flags=re.S)

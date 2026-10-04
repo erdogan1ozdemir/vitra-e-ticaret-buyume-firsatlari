@@ -126,7 +126,7 @@ govde = _bk(govde); t2_ortak.EK = {_bk(k_): _bk(v_) for k_, v_ in t2_ortak.EK.it
 # Tablo kaynak logoları: "Tabloyu kopyala" düğmesinin solunda kaynak logosu ve hover'da kaynak, kapsam, veri dönemi (tablo_kaynak.py)
 import tablo_kaynak
 govde, _TKR = tablo_kaynak.uygula(govde, t2_ortak.EK, x)
-open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "tablo_kaynak_rapor.txt"), "w", encoding="utf-8").write("\n".join("%s | %s | %s" % (a_, b_, ", ".join(c_)) for a_, b_, c_ in _TKR))
+open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "tablo_kaynak_rapor.txt"), "w", encoding="utf-8").write("\n".join("%s | %s | %s | %s" % (a_, t_, b_, ", ".join(c_)) for a_, t_, b_, c_ in _TKR))
 govde, sira = kaynakca.coz(govde)
 _KAY = kaynakca.bolum_html(sira, x)
 GL_EN = {
@@ -254,6 +254,20 @@ b.mb{font-weight:650;color:var(--ink)}
 .lg-web{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2310332F%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%229%22/%3E%3Cpath%20d%3D%22M3%2012h18M12%203c2.6%202.6%203.9%205.6%203.9%209s-1.3%206.4-3.9%209c-2.6-2.6-3.9-5.6-3.9-9S9.4%205.6%2012%203z%22/%3E%3C/svg%3E");background-color:#fff}
 .tk:hover{border-color:var(--ink-2)}
 .tk:focus-visible{outline:2px solid var(--coral);outline-offset:1px}
+.figcap .fkay{float:right;margin:0 0 4px 12px}
+.fkay.fk-satir{display:flex;justify-content:flex-end;margin:0 0 6px}
+:root{--isi-h:#10332F;--isi-a:#2E7D32;--isi-d:#D32F2F;--isi-kt:#FFFFFF}
+:root[data-theme="dark"]{--isi-h:#7FB3A8;--isi-a:#66BB6A;--isi-d:#EF5350;--isi-kt:#0B1513}
+.isi-t td.isi-k{color:var(--isi-kt);font-weight:600}
+.tw.tw.isi-t table{width:100%;min-width:100%}
+.tw.tw.isi-t th{white-space:normal;vertical-align:bottom}
+.tw.tw.isi-t th,.tw.tw.isi-t td{padding-left:8px;padding-right:8px;min-width:0}
+.tw.tw.isi-t th:first-child,.tw.tw.isi-t td:first-child{min-width:96px}
+.isi-t td.isi{white-space:nowrap;font-variant-numeric:tabular-nums}
+.isi-t td.isi[data-t]{cursor:help}
+.isi-t td.isi-h{background:color-mix(in srgb,var(--isi-h) calc(var(--a) * 100%),transparent)}
+.isi-t td.isi-a{background:color-mix(in srgb,var(--isi-a) calc(var(--a) * 100%),transparent)}
+.isi-t td.isi-d{background:color-mix(in srgb,var(--isi-d) calc(var(--a) * 100%),transparent)}
 .tcopy{display:inline-flex;align-items:center;gap:5px;font:inherit;font-size:11px;color:var(--muted);background:transparent;border:1px solid var(--line);border-radius:5px;padding:2px 8px;cursor:pointer;line-height:1.4}
 .tcopy:hover,.tcopy:focus-visible{color:var(--ink);border-color:var(--ink-2)}
 .tcopy.ok{color:var(--green);border-color:var(--green)}

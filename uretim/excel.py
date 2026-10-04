@@ -130,7 +130,9 @@ AD_DUZ = {"02.3 Banyo yenileme · Karşılığı": "02.3 Banyo yenileme senaryos
           "18.3 Çok satanlar · Kategori": "18.3 Çok satanlar · Adet", "18.4 Çok · Ciroya en çok": "18.4 Çok satanlar · Ciro payı", "18.5 Çok · Fiyat bandına": "18.5 Çok satanlar · Fiyat bandı",
           "18.10 Değerlendi · Yorum teması": "18.10 Değerlendirme · Yorum", "18.11 Değerlendir · Soru teması": "18.11 Değerlendirme · Soru", "18.12 Değerlendi · Yanıt kalıbı": "18.12 Değerlendirme · Yanıt",
           "18.13 Hepsibur · Trendyol resmi": "18.13 Hepsiburada · Kıyas", "18.14 Hepsiburada satış · Kod": "18.14 Hepsiburada · Ürün satış",
-          "09.3 30 YouTube arama ifadesi": "09.3 YouTube ifade listesi"}
+          "09.3 30 YouTube arama ifadesi": "09.3 YouTube ifade listesi",
+          "07.1 Marka · Üretici markalar": "07.1 Marka adı · Üretici", "07.2 Marka adı · Perakendeci": "07.2 Marka adı · Perakende",
+          "07.3 Marka x · Aylık arama": "07.3 Marka x kat. · Hacim", "07.4 Marka x · YoY değişim": "07.4 Marka x kat. · YoY", "07.5 Marka x · 2023'ten bu yana": "07.5 Marka x kat. · 2023'ten"}
 
 _GENEL = {"Oyuncu", "Gösterge", "Ürün", "Kategori", "Tema", "Marka", "Alan adı", "Yıllık yenileme oranı"}
 KISA = {"Yıllık banyo yenileme ve yeni konut banyosu tahmini": "Banyo yenileme tahmini", "Kullanıcı hangi özellikle arıyor? SSG": "Özellik araması SSG",
@@ -152,9 +154,17 @@ KISA = {"Yıllık banyo yenileme ve yeni konut banyosu tahmini": "Banyo yenileme
         "Akakçe ve Cimri: 29 VitrA ürününde satıcı sayısı ve en düşük fiyat": "Akakçe ve Cimri 29 ürün", "Fiyat karşılaştırma sitelerinde kategori görünümü": "Fiyat karşılaştırma kategorileri",
         "Site içi arama: kullanıcının yazdığı ifadeler ne döndürüyor?": "Site içi arama", "Sepet ve ödeme: üyeliksiz alışverişte ek adımlar": "Sepet ve ödeme",
         "Yolculuk adımları: gözlem, etki ve öneri": "Yolculuk adımları", "Hacimli ve ölçüye bağlı ürünlerde etkileşim modeli": "Hacimli ürünlerde etkileşim",
-        "Bu bölümdeki veri kaynakları: arama gözlemi, Search Console, yapay zeka yanıt takibi ve SEOmonitor": "GEO veri kaynakları",
-        "Yapay zeka yanıtlarında VitrA: ChatGPT, Gemini ve Google AI Overview": "AI yanıtlarında VitrA", "Yapay zeka yanıtlarında en çok kaynak gösterilen alan adları": "AI yanıt kaynakları",
-        "Satın alma ve montaj sorularında VitrA ve vitra.com.tr": "Satın alma ve montaj soruları", "SEOmonitor takibindeki kelimelerde AI Overview": "SEOmonitor AI Overview",
+        "Ölçüm setleri: dört veri seti ve örneklemleri": "GEO ölçüm setleri",
+        "Yapay zeka yanıt takibi · 111 markasız soruda markaların anılma payı": "AI yanıtlarında markalar",
+        "Yapay zeka yanıt takibi · 111 markasız soruda kaynak gösterilen alan adları": "AI yanıt kaynakları",
+        "Yapay zeka yanıt takibi · 29 satın alma ve montaj sorusunda VitrA ve vitra.com.tr": "Satın alma ve montaj soruları",
+        "SEOmonitor takibi · 2.140 kelimede AI Overview ve VitrA": "SEOmonitor AI Overview",
+        "Rapor hedef kelimeleri · 322 kelimede AI Overview ve kaynak siteler": "Hedef kelimelerde AIO",
+        "Sitenin hazırlığı · Search Console'da rehber sayfaları ve 21 soru sorgusu": "GSC rehber ve soru sorguları",
+        "Marka adıyla yapılan aramalar: üreticiler ve perakendeciler": "Marka adı",
+        "Marka + kategori aramaları: markaların kategori bazında aranma hacmi": "Marka x kategori",
+        "\"vitra\" + kategori aramaları: yıllar ve kategoriler": "vitra + kategori yıllar",
+        "\"vitra\" ile birlikte aranan ifadeler: ihtiyaç sınıfları": "vitra ihtiyaç sınıfları",
         "Google'da click payı: vitra.com.tr ve rakipler": "Google click payı", "Marka siteleri arasında organik ziyaret": "Marka siteleri ziyaret",
         "Kart harcamaları: banyo ile ilişkili sektörler": "Kart harcamaları", "Konut hareketliliği ve kredi koşulları": "Konut ve kredi",
         "Soru sorguları: gösterim, tık ve sıra": "Soru sorguları", "Marka sayfası göstergeleri ve rakipler": "Şikayetvar marka göstergeleri",
@@ -189,7 +199,7 @@ def _ayirt(t, wrap):
     pan = t.find_parent("div", attrs={"role": "tabpanel"})
     if pan is not None and pan.get("id"):
         btn = S.find(attrs={"aria-controls": pan["id"]})
-        if btn is not None: return metin(btn)
+        if btn is not None: return " ".join(btn.get_text(" ").split())   # metin() düğmeleri sildiği için sekme adı doğrudan okunur
     tb = wrap.find_previous("p", class_="tbas")
     if tb is not None and _h3_bolge(tb, wrap.find_parent("section")) is _h3_bolge(wrap, wrap.find_parent("section")): return metin(tb)
     ths = [metin(x_) for x_ in t.select("thead th")]
@@ -199,7 +209,8 @@ for sec in S.select("main section"):
     sid = sec.get("id"); h2 = sec.find("h2")
     no_ = metin(h2.select_one(".no")) if h2 and h2.select_one(".no") else ""
     bas = metin(h2).split(" ", 1)[1] if h2 else sid
-    gizli = lambda t_: t_.find_parent("div", attrs={"role": "tabpanel"}) is not None and t_.find_parent("div", attrs={"role": "tabpanel"}).has_attr("hidden")
+    # gizli sekmedeki tablo aktarılmaz; "xl" sınıflı sarmalayıcıdaki tablolar (ör. marka aramalarının perakendeci ve değişim sekmeleri) her sekmeyle ayrı sayfaya yazılır
+    gizli = lambda t_: t_.find_parent("div", attrs={"role": "tabpanel"}) is not None and t_.find_parent("div", attrs={"role": "tabpanel"}).has_attr("hidden") and "xl" not in (t_.find_parent("div").get("class") or [])
     ogeler = [t_ for t_ in sec.select("div.tw table, ol.rank")
               if not gizli(t_) and not (t_.find_parent("dialog") and sid in ("talep", "serp"))]
     if not ogeler: continue
