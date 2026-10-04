@@ -25,17 +25,7 @@ _TRH = ".".join(reversed(_SO.TARIH.split("-")))
 ILHAM = "https://www.vitra.com.tr/ilham-veren-fikirler/"
 
 # ---------------------------------------------------------------- rehber icerik gruplari
-GRUP = [("tamir", "Tamir, temizlik ve bakım", "Repair, cleaning and maintenance"), ("montaj", "Montaj ve kurulum", "Installation and fitting"),
-        ("secim", "Seçim, ölçü ve \"nedir\" rehberleri", "Selection, size and \"what is\" guides"), ("plan", "Planlama ve tadilat", "Planning and renovation"),
-        ("dekor", "Dekorasyon, trend ve karo modelleri", "Decoration, trends and tile designs"), ("surd", "Sürdürülebilirlik ve kurumsal", "Sustainability and corporate")]
-GAD = {a: (b, c) for a, b, c in GRUP}
-def grup(s_):
-    if any(k_ in s_ for k_ in ("surdurul", "yesil-", "dongusel", "geri-donus", "cevre", "dunya-", "kuresel", "inovasyon-gunu", "temas-yoluyla", "herkes-icin")): return "surd"
-    if any(k_ in s_ for k_ in ("temizl", "tamir", "hijyen")): return "tamir"
-    if any(k_ in s_ for k_ in ("montaj", "takilir", "dosenir")): return "montaj"
-    if any(k_ in s_ for k_ in ("tadilat", "yenile", "planlama", "mimari", "engelli")): return "plan"
-    if any(k_ in s_ for k_ in ("secim", "secil", "secerken", "nedir", "nelerdir", "olculeri", "kullanisli", "saglikli", "quantumflush", "satin-alma", "kuvet-mi")): return "secim"
-    return "dekor"
+from rehber_grup import GRUP, GAD, grup
 GS = {g: [0, 0, 0, None] for g, _, _ in GRUP}   # sayfa, tik, gosterim, en iyi sayfa
 for s_, c, i, p_ in IL:
     g = GS[grup(s_)]; g[0] += 1; g[1] += c; g[2] += i
@@ -50,10 +40,10 @@ def _baslik(s_):
 x("Sayfa sayısı payı", "Share of pages"); x("Tık payı", "Click share")
 GR = gruplu([(x(b, c), [100 * GS[a][0] / TOP_N, 100 * GS[a][1] / TOP_T]) for a, b, c in GRUP],
             [(x("Sayfa sayısı payı", "Share of pages"), "#9AA8A5"), (x("Tık payı", "Click share"), "#10332F")],
-            x("Rehber içerik gruplarının sayfa sayısı ve organik tık payı · /ilham-veren-fikirler/, 1 Eki 2025 - 25 Eyl 2026", "Share of pages and organic clicks by guide content group · /ilham-veren-fikirler/, 1 Oct 2025 - 25 Sep 2026"))
+            x("Rehber içerik gruplarının sayfa sayısı ve organik tık payı · /ilham-veren-fikirler/, 1 Eki 2025 - 30 Eyl 2026", "Share of pages and organic clicks by guide content group · /ilham-veren-fikirler/, 1 Oct 2025 - 30 Sep 2026"))
 T_GR = tablo([th("İçerik grubu", "Content group", "Sayfa adresindeki konuya göre yapılan gruplama.", "Grouping by the topic in the page address."),
               th("Sayfa", "Pages", "Dönemde en az 5 tık alan sayfa sayısı.", "Number of pages with at least 5 clicks in the period.", True),
-              th("Click", "Clicks", "1 Eki 2025 - 25 Eyl 2026 organik click.", "Organic clicks, 1 Oct 2025 - 25 Sep 2026.", True),
+              th("Click", "Clicks", "1 Eki 2025 - 30 Eyl 2026 organik click.", "Organic clicks, 1 Oct 2025 - 30 Sep 2026.", True),
               th("Click payı", "Click share", "Rehber içeriklerin toplam click'i içindeki pay.", "Share of the total clicks of guide content.", True),
               th("Gösterim", "Impressions", "Aynı dönemde gösterim.", "Impressions in the same period.", True),
               th("CTR", "CTR", "Tık / gösterim.", "Clicks / impressions.", True),
@@ -64,7 +54,7 @@ T_GR = tablo([th("İçerik grubu", "Content group", "Sayfa adresindeki konuya g�
 so_i = sum(i for _, _, i, _ in SO); so_c = sum(c for _, c, _, _ in SO)
 so_p = sum(p_ * i for _, _, i, p_ in SO) / so_i
 T_SO = tablo([th("Sorgu", "Query", "Search Console'da vitra.com.tr'nin gösterim aldığı soru biçimli sorgu; \"nasıl\" ve \"su kaçır\" içeren sorgulardan gösterime göre seçilmiştir.", "Question-type query for which vitra.com.tr received impressions; selected by impressions from queries containing \"nasıl\" (how) and \"su kaçır\" (leaking)."),
-              th("Gösterim", "Impressions", "1 Eki 2025 - 25 Eyl 2026 gösterim.", "Impressions, 1 Oct 2025 - 25 Sep 2026.", True),
+              th("Gösterim", "Impressions", "1 Eki 2025 - 30 Eyl 2026 gösterim.", "Impressions, 1 Oct 2025 - 30 Sep 2026.", True),
               th("Click", "Clicks", "Aynı dönemde click.", "Clicks in the same period.", True),
               th("CTR", "CTR", "Tık / gösterim.", "Clicks / impressions.", True),
               th("Ort. sıra", "Avg. position", "Gösterim ağırlıklı ortalama sıra, tüm cihazlar.", "Impression-weighted average position, all devices.", True)],
@@ -237,7 +227,7 @@ T_VK = tablo([th("Veri seti", "Data set", "Bölümde kullanılan dört ölçüm;
               [x("Search Console (vitra.com.tr)", "Search Console (vitra.com.tr)"),
                x("Rehber sayfaları (/ilham-veren-fikirler/, en az 5 tık alan %d sayfa) ve \"nasıl\", \"su kaçır\" içeren %d soru biçimli arama" % (TOP_N, _soN), "Guide pages (/ilham-veren-fikirler/, %d pages with at least 5 clicks) and %d question-style searches containing \"nasıl\" (how) or \"su kaçır\" (leaking)" % (TOP_N, _soN)),
                x("Sitenin bu sayfalarda ve sorularda aldığı gösterim, tık ve ortalama sıra", "The impressions, clicks and average position the site gets on these pages and questions"),
-               x("1 Eki 2025 - 25 Eyl 2026", "1 Oct 2025 - 25 Sep 2026"),
+               x("1 Eki 2025 - 30 Eyl 2026", "1 Oct 2025 - 30 Sep 2026"),
                x("Soru biçimli aramalarda ortalama sıra %s, CTR %s" % (("%.1f" % so_p).replace(".", ","), yzd(100 * so_c / so_i, 2)), "Average position %s and CTR %s on question-style searches" % ("%.1f" % so_p, ("%.2f" % (100 * so_c / so_i)) + "%"))]])
 # rapor hedef kelimeleri: grup bazında AI Overview
 import collections as _col
@@ -322,8 +312,8 @@ HTML = """
 %s
 %s
 """ % (
- x("Google AI Overview, Gemini ve ChatGPT gibi yapay zeka yanıtları kullanıcının sorusunu birden fazla kaynaktan derlenen tek bir cevapla karşılamaktadır; bu cevaplarda kaynak gösterilmek, soruyu doğrudan cevaplayan sayfaya, markanın tutarlı tanımlanmasına ve markadan site dışında söz edilmesine bağlıdır. VitrA'nın bu yanıtlardaki yeri 125 soruluk yapay zeka yanıt takibi (4 Eyl - 3 Eki 2026), SEOmonitor'de takip edilen 2.140 kelime (03.10.2026), bu rapor için seçilen 322 hedef kelime (" + _TRH + ") ve vitra.com.tr'nin Search Console verisi (1 Eki 2025 - 25 Eyl 2026) ile ölçülmüştür.",
-   "AI answers such as Google AI Overview, Gemini and ChatGPT meet the user's question with a single answer compiled from several sources; being cited in these answers depends on a page that answers the question directly, consistent identification of the brand and mentions of the brand off the site. VitrA's place in these answers was measured with 125-question AI answer tracking (4 Sep - 3 Oct 2026), the 2,140 keywords tracked in SEOmonitor (03.10.2026), the 322 target keywords selected for this report (" + _TRH + ") and vitra.com.tr's Search Console data (1 Oct 2025 - 25 Sep 2026)."),
+ x("Google AI Overview, Gemini ve ChatGPT gibi yapay zeka yanıtları kullanıcının sorusunu birden fazla kaynaktan derlenen tek bir cevapla karşılamaktadır; bu cevaplarda kaynak gösterilmek, soruyu doğrudan cevaplayan sayfaya, markanın tutarlı tanımlanmasına ve markadan site dışında söz edilmesine bağlıdır. VitrA'nın bu yanıtlardaki yeri 125 soruluk yapay zeka yanıt takibi (4 Eyl - 3 Eki 2026), SEOmonitor'de takip edilen 2.140 kelime (03.10.2026), bu rapor için seçilen 322 hedef kelime (" + _TRH + ") ve vitra.com.tr'nin Search Console verisi (1 Eki 2025 - 30 Eyl 2026) ile ölçülmüştür.",
+   "AI answers such as Google AI Overview, Gemini and ChatGPT meet the user's question with a single answer compiled from several sources; being cited in these answers depends on a page that answers the question directly, consistent identification of the brand and mentions of the brand off the site. VitrA's place in these answers was measured with 125-question AI answer tracking (4 Sep - 3 Oct 2026), the 2,140 keywords tracked in SEOmonitor (03.10.2026), the 322 target keywords selected for this report (" + _TRH + ") and vitra.com.tr's Search Console data (1 Oct 2025 - 30 Sep 2026)."),
  kpi_kart("%s-%s" % (yzd(AIV["chatgpt"], 0), ("%.0f" % AIV["gemini"])), "Yapay zeka yanıt takibi · 111 markasız soruda VitrA'nın adıyla geçtiği yanıt payı, ChatGPT ile Gemini arası · 4 Eyl - 3 Eki 2026", "AI answer tracking · share of answers naming VitrA in 111 questions without a brand name, ChatGPT to Gemini · 4 Sep - 3 Oct 2026", "hi"),
  kpi_kart(yzd(100 * _BS.TOP["vitra"] / _BS.TOP["aio"], 0), "SEOmonitor takibi · 2.140 kelimeden AI Overview çıkan %s kelimede VitrA'nın kaynak gösterildiği pay · 03.10.2026" % bin(_BS.TOP["aio"]),
           "SEOmonitor tracking · share of the %s keywords with an AI Overview (out of 2,140) where VitrA is cited · 03.10.2026" % f"{_BS.TOP['aio']:,}"),
@@ -357,8 +347,8 @@ HTML = """
  T_HK + insight("%d rapor hedef kelimesinin %d'%s AI Overview çıkmıştır. VitrA gamında içeriği alınan %d AI Overview'un %s vitra.com.tr kaynak gösterilmektedir; marka ve karşılaştırma aramalarında oran %d / %d, VitrA'nın satmadığı yakın kategorilerde %d / %d'dir. Üç grupta en sık kaynak gösterilen alan adları %s olarak görülmektedir; satın almaya yakın kısa aramalarda pazaryerleri ve rehber siteleri kaynak olarak öne çıkmaktadır." % (_SO.NT, len(_SO.AI_GORULEN), ek(len(_SO.AI_GORULEN), "inde").split("'")[1], _SO.ai_grup("A")["icerik"], ek(_SO.ai_grup("A")["vitra"], "inde"), _SO.ai_grup("C")["vitra"], _SO.ai_grup("C")["icerik"], _SO.ai_grup("B")["vitra"], _SO.ai_grup("B")["icerik"], ", ".join(veri_m(d_) for d_, _ in _hk_alan(_SO.TUM))),
          "AI Overviews appeared for %d of the %d report target keywords. vitra.com.tr is cited in %d of the %d AI Overviews retrieved in the VitrA range; in brand and comparison searches the rate is %d / %d and in adjacent categories VitrA does not sell %d / %d. The domains cited most across the three groups are %s; in short searches close to purchase, marketplaces and guide sites stand out as sources." % (len(_SO.AI_GORULEN), _SO.NT, _SO.ai_grup("A")["vitra"], _SO.ai_grup("A")["icerik"], _SO.ai_grup("C")["vitra"], _SO.ai_grup("C")["icerik"], _SO.ai_grup("B")["vitra"], _SO.ai_grup("B")["icerik"], ", ".join(veri_m(d_) for d_, _ in _hk_alan(_SO.TUM))), "D19"),
  x("Sitenin hazırlığı · Search Console'da rehber sayfaları ve 21 soru sorgusu", "Site readiness · guide pages and 21 question queries in Search Console"),
- kpi_kart(yzd(prat_t), "Rehber içerik tıklarının montaj, tamir ve temizlik yazılarından gelen payı · sayfaların %s'i, 1 Eki 2025 - 25 Eyl 2026" % yzd(prat_n), "Share of guide content clicks from installation, repair and cleaning articles · %s of pages, 1 Oct 2025 - 25 Sep 2026" % (("%.1f" % prat_n) + "%"), "hi"),
- kpi_kart(yzd(100 * so_c / so_i, 2), "Soru sorgularında CTR · ortalama sıra %s, 1 Eki 2025 - 25 Eyl 2026" % ("%.1f" % so_p).replace(".", ","), "CTR on question queries · average position %s, 1 Oct 2025 - 25 Sep 2026" % ("%.1f" % so_p), "dn"),
+ kpi_kart(yzd(prat_t), "Rehber içerik tıklarının montaj, tamir ve temizlik yazılarından gelen payı · sayfaların %s'i, 1 Eki 2025 - 30 Eyl 2026" % yzd(prat_n), "Share of guide content clicks from installation, repair and cleaning articles · %s of pages, 1 Oct 2025 - 30 Sep 2026" % (("%.1f" % prat_n) + "%"), "hi"),
+ kpi_kart(yzd(100 * so_c / so_i, 2), "Soru sorgularında CTR · ortalama sıra %s, 1 Eki 2025 - 30 Eyl 2026" % ("%.1f" % so_p).replace(".", ","), "CTR on question queries · average position %s, 1 Oct 2025 - 30 Sep 2026" % ("%.1f" % so_p), "dn"),
  _POPSO,
  GR,
  insight("vitra.com.tr'nin rehber sayfaları dönemde %s organik tık almıştır. Montaj, tamir ve temizlik yazıları sayfaların %s'ini oluşturup tıkların %s'ini almakta, dekorasyon, trend ve sürdürülebilirlik yazıları ise sayfaların %s'ini oluşturup tıkların %s'ini almaktadır; tamir konusunda tek yazı bulunmaktadır. Soru biçimli sorgularda site ilk sayfadadır ancak CTR %s'te kalmaktadır: cevabın sonuç sayfasında verildiği bu sorgularda AI Overview'da kaynak gösterilmek görünürlüğün ana biçimi haline gelmektedir." % (
@@ -370,6 +360,6 @@ HTML = """
  FIRSAT,
  insight("Fırsatların ortak noktası, kullanıcının bir sorunu çözmek ya da karar vermek için sorduğu sorulardır. Talep, satış sonrası şikayetler ve arama sonuçları aynı konularda (tamir, montaj, uyumluluk, ölçü) yoğunlaşmaktadır; bu konularda VitrA'nın üretici bilgisiyle kaynak olması, hem AI yanıtlarındaki görünürlüğü hem de satış sonrası deneyimi destekleyebilir.",
          "What the opportunities share is the questions users ask to solve a problem or make a decision. Demand, after-sales complaints and search results concentrate on the same topics (repair, installation, compatibility, size); VitrA being the source on these topics with manufacturer knowledge can support both visibility in AI answers and the after-sales experience.", "D24", "D19"),
- kaynak("Google Search Console · /ilham-veren-fikirler/ sayfaları ve soru sorguları, 1 Eki 2025 - 25 Eyl 2026 · Google arama sonuçları ve AI Overview, %d kelime, %s · Yapay zeka yanıt takibi, 125 soru, ChatGPT, Gemini ve Google AI Overview, 4 Eyl - 3 Eki 2026 · Wikidata ve Wikipedia, 02.10.2026 · vitra.com.tr llms.txt ve site haritaları, 02.10.2026 · Şikayetvar, YouTube ve Google Shopping verileri ilgili bölümlerdeki kaynaklardandır" % (_SO.NT, _TRH),
-        "Google Search Console · /ilham-veren-fikirler/ pages and question queries, 1 Oct 2025 - 25 Sep 2026 · Google search results and AI Overview, %d keywords, %s · AI answer tracking, 125 questions, ChatGPT, Gemini and Google AI Overview, 4 Sep - 3 Oct 2026 · Wikidata and Wikipedia, 02.10.2026 · vitra.com.tr llms.txt and sitemaps, 02.10.2026 · Şikayetvar, YouTube and Google Shopping data come from the sources of the related sections" % (_SO.NT, _TRH), "D33", "D19", "D39", "D34", "D35", "D24", "D20", "D25"),
+ kaynak("Google Search Console · /ilham-veren-fikirler/ sayfaları ve soru sorguları, 1 Eki 2025 - 30 Eyl 2026 · Google arama sonuçları ve AI Overview, %d kelime, %s · Yapay zeka yanıt takibi, 125 soru, ChatGPT, Gemini ve Google AI Overview, 4 Eyl - 3 Eki 2026 · Wikidata ve Wikipedia, 02.10.2026 · vitra.com.tr llms.txt ve site haritaları, 02.10.2026 · Şikayetvar, YouTube ve Google Shopping verileri ilgili bölümlerdeki kaynaklardandır" % (_SO.NT, _TRH),
+        "Google Search Console · /ilham-veren-fikirler/ pages and question queries, 1 Oct 2025 - 30 Sep 2026 · Google search results and AI Overview, %d keywords, %s · AI answer tracking, 125 questions, ChatGPT, Gemini and Google AI Overview, 4 Sep - 3 Oct 2026 · Wikidata and Wikipedia, 02.10.2026 · vitra.com.tr llms.txt and sitemaps, 02.10.2026 · Şikayetvar, YouTube and Google Shopping data come from the sources of the related sections" % (_SO.NT, _TRH), "D33", "D19", "D39", "D34", "D35", "D24", "D20", "D25"),
 ) + _DIASO

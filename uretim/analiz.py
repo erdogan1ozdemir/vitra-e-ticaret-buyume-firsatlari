@@ -28,26 +28,17 @@ for n in set(r["niyet"] for r in K):
 O["k2_yukselen"] = sorted([(k, v["a26"], v["yoy"]) for k,v in O["k2"].items() if v["a25"]>=3000 and v["yoy"] is not None], key=lambda t:-t[2])[:12]
 O["k2_dusen"] = sorted([(k, v["a26"], v["yoy"]) for k,v in O["k2"].items() if v["a25"]>=3000 and v["yoy"] is not None], key=lambda t:t[2])[:12]
 O["kw_top"] = [(r["kw"], r["k1"], round(r["a26"]), round((r["a26"]/r["a25"]-1)*100,1) if r["a25"] else None) for r in sorted(K, key=lambda r:-r["a26"])[:25]]
-# --- 2. GSC ---
-G = veri.GSC
-aylar_g = sorted({m for v in G["aylik"].values() for m in v})
-O["gsc_aylar"] = aylar_g
-O["gsc_aylik"] = {k: [G["aylik"][k].get(m,[0,0]) for m in aylar_g] for k in G["aylik"]}
-O["gsc_tur"] = G["sayfa_turu"]; O["gsc_kat"] = G["kategori"]
-cih = veri.J("ham","gsc","gunluk_cihaz.json")["rows"]
-c = defaultdict(lambda:[0,0])
-for r in cih: c[r["keys"][1]][0]+=r["clicks"]; c[r["keys"][1]][1]+=r["impressions"]
-O["gsc_cihaz"] = dict(c)
-# aylik toplam (cihaz tablosundan, tam)
-mt = defaultdict(lambda:[0,0])
-for r in cih: mt[r["keys"][0][:7]][0]+=r["clicks"]; mt[r["keys"][0][:7]][1]+=r["impressions"]
-O["gsc_ay_toplam"] = {m: v for m,v in sorted(mt.items())}
-ul = veri.J("ham","gsc","ulke.json")["rows"]; tot = sum(r["clicks"] for r in ul)
-O["gsc_ulke"] = [(r["keys"][0], r["clicks"], round(100*r["clicks"]/tot,1)) for r in ul[:6]]
-so = veri.J("ham","gsc","sorgu_16ay.json")["rows"]
+# --- 2. GSC (2. çekim, 04.10.2026: toplamlar 1 Eki 2025 - 30 Eyl 2026; sayfa türü ve kategori 1 Oca - 30 Eyl 2026) ---
+G2 = veri.J("islenmis", "gsc2.json")
+O["gsc_aylar"] = sorted(G2["ay"])
+O["gsc_ay_toplam"] = G2["ay"]
+O["gsc_tur"] = G2["tur"]; O["gsc_kat"] = G2["kat2"]
+O["gsc_cihaz"] = G2["cihaz"]
+O["gsc_ulke"] = [tuple(r) for r in G2["ulke"]]
+so = veri.J("ham", "gsc2", "sorgu_12ay.json")
 from niyet_kurallari import NIY, niyet
 qs = defaultdict(lambda:[0,0,0]); ex = defaultdict(list)
-brand = [0,0]; 
+brand = [0,0]
 for r in so:
     q = r["keys"][0]; m = "vitra" in q or "artema" in q
     brand[0 if m else 1] += r["clicks"]
@@ -57,17 +48,6 @@ for r in so:
 O["gsc_sorgu_niyet"] = {k: v for k,v in sorted(qs.items(), key=lambda x:-x[1][0])}; O["gsc_sorgu_ornek"] = dict(ex)
 O["gsc_marka"] = {"markali": brand[0], "markasiz": brand[1], "toplam_sorgu": sum(r["clicks"] for r in so)}
 O["gsc_top_sorgu"] = [(r["keys"][0], r["clicks"], r["impressions"], round(r["ctr"]*100,1), round(r["position"],1)) for r in so[:30]]
-# online.vitra.com.tr aylik
-sa = veri.J("ham","gsc","sayfa_ay.json")["rows"]; on = defaultdict(int); yeni = defaultdict(int)
-for r in sa:
-    (on if r["keys"][0].startswith("https://online.") else yeni)[r["keys"][1][:7]] += r["clicks"]
-O["online_aylik"] = {m: [on.get(m,0), yeni.get(m,0)] for m in aylar_g}
-# en cok tiklanan kategori sayfalari (son 3 ay Tem-Eyl 2026)
-sp = defaultdict(int)
-def _tekil(u): return u.split("#")[0].split("?")[0].rstrip("/").lower()
-for r in sa:
-    if r["keys"][1] >= "2026-07-01": sp[_tekil(r["keys"][0])] += r["clicks"]
-O["top_sayfa_3ay"] = sorted(sp.items(), key=lambda x:-x[1])[:30]
 # --- 3. autocomplete ---
 ac = veri.AY["autocomplete"]
 O["auto"] = {k: [s for s in v if not s.startswith("vitray")] for k,v in ac.items()}
@@ -114,8 +94,6 @@ print("\nGSC cihaz", O["gsc_cihaz"]); print("GSC ulke", O["gsc_ulke"]); print("G
 print("GSC ay toplam"); [print("  ", m, v) for m,v in O["gsc_ay_toplam"].items()]
 print("GSC sorgu niyet"); [print(f"  {k:28} {v}") for k,v in O["gsc_sorgu_niyet"].items()]
 for k,v in O["gsc_sorgu_ornek"].items(): print("   ", k, v[:4])
-print("online aylik"); [print("  ", m, v) for m,v in O["online_aylik"].items()]
-print("top sayfa 3 ay"); [print("  ", u.replace("https://www.vitra.com.tr",""), c) for u,c in O["top_sayfa_3ay"][:20]]
 print("\nAUTO tema", O["auto_tema"])
 for k in ["vitra","vitra klozet","vitra lavabo","vitra banyo dolabı","vitra gömme rezervuar","vitra batarya","vitra akıllı klozet"]: print("  ", k, O["auto"].get(k))
 print("\nYT"); [print(f"  {q:38} n={v['n']:2} g={v['toplam_g']:9} vitra={v['vitra']}  1:{v['top'][0][1]} {v['top'][0][2]}") for q,v in O["yt"].items()]

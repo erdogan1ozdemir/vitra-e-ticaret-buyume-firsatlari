@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """Bolum: Benchmark - e-ticaret modelleri ve urun kesfi / dijital deneyim ornekleri."""
 from ortak import *
+import gsc12 as _G12
 def dr(d): return '<span class="badge %s">%s</span>' % ({"Var": "b-var", "Kısmi": "b-kis", "Yok": "b-yok"}[d], x(d, {"Var": "Available", "Kısmi": "Partial", "Yok": "Not available"}[d]))
 MOD = tablo([th("Oyuncu", "Player", "İncelenen site.", "Site examined."),
              th("Tip", "Type", "İş modeli.", "Business model."),
@@ -46,7 +47,7 @@ DIJ = tablo([th("Araç", "Tool", "Ürün keşfi ya da dijital deneyim aracı.", 
      [x("Finansman", "Financing"), veri_m("IKEA, Victorian Plumbing, Home Depot"), x("Uzun vadeli kredi, %0 faizli taksit, proje kredisi", "Long-term credit, 0% instalments, project loans"), dr("Kısmi"),
       x("Üst bantta vade farksız 6 ay, Banyo Asistanı kampanya sayfasında 9 taksit, ürün sayfasında 12 taksite kadar; tek bir taksit mesajında birleştirilebilir", "6 months interest-free in the top banner, 9 instalments on the Bathroom Assistant campaign page, up to 12 on the product page; can be unified into a single instalment message")],
      [x("Montaj rehberi ve video", "Installation guides and videos"), veri_m("Grohe, Hansgrohe, Koçtaş"), x("Ürün bazında montaj kılavuzu ve video", "Product-level installation guides and videos"), dr("Kısmi"),
-      x("Montaj rehberi sayfası 1 Haziran 2025 - 25 Eylül 2026 döneminde yaklaşık 4.100 tık almıştır; ürün sayfasında montaj kılavuzu PDF'i bulunmaktadır. Tamir videoları henüz bulunmamaktadır (Bölüm [[b:youtube]])", "The installation guide page received about 4,100 clicks in 1 June 2025 - 25 September 2026; the product page carries an installation manual PDF. Repair videos do not yet exist (Section [[b:youtube]])")]], "uzun")
+      x("Montaj rehberi sayfası 1 Ekim 2025 - 30 Eylül 2026 döneminde yaklaşık %s tık almıştır;" % bin(round(_G12.sayfa("/montaj-rehberi")[0], -2)) + " ürün sayfasında montaj kılavuzu PDF'i bulunmaktadır. Tamir videoları henüz bulunmamaktadır (Bölüm [[b:youtube]])", "The installation guide page received about %s clicks in 1 October 2025 - 30 September 2026;" % f"{round(_G12.sayfa('/montaj-rehberi')[0], -2):,}" + " the product page carries an installation manual PDF. Repair videos do not yet exist (Section [[b:youtube]])")]], "uzun")
 HTML = """
 <p class="lede">%s</p>
 <h3>%s</h3>

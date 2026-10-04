@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """Bolum: Kanal rolleri, etkilesim modeli, set ve tamamlayici urun, satis sonrasi."""
 from ortak import *
+import gsc12 as _G12
 from b_marka import AT as _MAT
 from b_marka import AT as _AT
 from rapor_parca1 import T
@@ -32,7 +33,7 @@ ETK = tablo([th("Bileşen", "Component", "Hacimli ve ölçüye bağlı üründe 
       x("Duşakabin, küvet ve mobilya sayfalarından keşfe bağlantı; keşfin ürün alımına bağlı ücretsiz sunulması (Home Depot ücretsiz evde keşif sunuyor)", "Linking to the survey from shower enclosure, bathtub and furniture pages; offering the survey free with a product purchase (Home Depot offers a free in-home consultation)")],
      [x("Montaj", "Installation"), x("11 montaj kalemi, ürün sayfasında montaj seçeneği, söküm ve imha dahil, 1 yıl garanti; ücretsiz montaj listesinde 89 ürün", "11 installation items, installation option on the product page, removal and disposal included, 1-year warranty; 89 products on the free-installation list"), dr("Kısmi"),
       x("Duşakabin, küvet ve duş teknesi için montaj kalemi; il bazında hizmet kapsamının ürün sayfasında gösterilmesi", "An installation item for shower enclosures, bathtubs and shower trays; showing service coverage by province on the product page")],
-     [x("Lokal bayi ve stok", "Local dealer and stock"), x("Servisler ve satış noktaları sayfası 1 Haziran 2025 - 25 Eylül 2026 döneminde %s tık almıştır" % bin(37859), "The services and sales points page received %s clicks in 1 June 2025 - 25 September 2026" % f"{37859:,}"), dr("Kısmi"),
+     [x("Lokal bayi ve stok", "Local dealer and stock"), x("Servisler ve satış noktaları sayfası 1 Ekim 2025 - 30 Eylül 2026 döneminde %s tık almıştır" % bin(_G12.sayfa("/servisler-ve-satis-noktalari")[0]), "The services and sales points page received %s clicks in 1 October 2025 - 30 September 2026" % f"{_G12.sayfa("/servisler-ve-satis-noktalari")[0]:,}"), dr("Kısmi"),
       x("Siparişin kullanıcıya yakın bayi stoğundan karşılanması ve bayide teslim seçeneği", "Fulfilling orders from stock at a dealer near the user and a pick-up at dealer option")],
      [x("Eksik ürün kontrolü", "Missing item check"), x("\"Birlikte Satın Alınanlar\" alanında iç takım, klozet kapağı, ara musluk; uyumlu rezervuar kodu ürün sayfasında", "\"Frequently bought together\" shows inner mechanism, WC seat, stop valve; compatible cistern code on the product page"), dr("Var"),
       x("Montaj parçalarının (esnek hortum, taharet musluğu, bağlantı borusu) tek pakette sunulması; Trendyol'da İDEVİT seti örneği", "Offering fitting parts (flexible hose, bidet valve, connection pipe) in a single pack; the İDEVİT set on Trendyol as an example")],

@@ -142,9 +142,10 @@ document.documentElement.classList.add('js');
   });
 
   /* isi haritasi hucreleri: hacim, degisim ve kategori payi */
-  [].forEach.call(document.querySelectorAll('td[data-t]'),function(td){
+  [].forEach.call(document.querySelectorAll('td[data-t], .ac[data-t]'),function(td){
     function ac(){ var r=td.getBoundingClientRect(); goster(kac(td.getAttribute('data-t')), r.left+r.width/2, r.top); }
     td.addEventListener('mouseenter',ac); td.addEventListener('mouseleave',gizle);
+    td.addEventListener('focus',ac); td.addEventListener('blur',gizle);
   });
 
   /* tablo kaynak logolari: kaynak, kapsam ve veri donemi */

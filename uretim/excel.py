@@ -131,8 +131,12 @@ AD_DUZ = {"02.3 Banyo yenileme · Karşılığı": "02.3 Banyo yenileme senaryos
           "18.10 Değerlendi · Yorum teması": "18.10 Değerlendirme · Yorum", "18.11 Değerlendir · Soru teması": "18.11 Değerlendirme · Soru", "18.12 Değerlendi · Yanıt kalıbı": "18.12 Değerlendirme · Yanıt",
           "18.13 Hepsibur · Trendyol resmi": "18.13 Hepsiburada · Kıyas", "18.14 Hepsiburada satış · Kod": "18.14 Hepsiburada · Ürün satış",
           "09.3 30 YouTube arama ifadesi": "09.3 YouTube ifade listesi",
-          "07.1 Marka · Üretici markalar": "07.1 Marka adı · Üretici", "07.2 Marka adı · Perakendeci": "07.2 Marka adı · Perakende",
-          "07.3 Marka x · Aylık arama": "07.3 Marka x kat. · Hacim", "07.4 Marka x · YoY değişim": "07.4 Marka x kat. · YoY", "07.5 Marka x · 2023'ten bu yana": "07.5 Marka x kat. · 2023'ten"}
+          }
+# numaradan bağımsız düzeltme: sekme adının "NN.k " sonrası
+AD_SON = {"Marka · Üretici markalar": "Marka adı · Üretici", "Marka adı · Perakendeci": "Marka adı · Perakende",
+          "Marka x · Aylık arama": "Marka x kat. · Hacim", "Marka x · YoY değişim": "Marka x kat. · YoY", "Marka x · 2023'ten bu yana": "Marka x kat. · 2023'ten",
+          "YZ payına · Tüm yazılar": "YZ payı ve tık · Tümü", "YZ · Sırası ±1 içinde": "YZ payı ve tık · Sıra ±1",
+          "AI Overview · Arama grubu": "AIO · Arama grupları", "AI · Arama ifadesi": "AIO · Örnek aramalar"}
 
 _GENEL = {"Oyuncu", "Gösterge", "Ürün", "Kategori", "Tema", "Marka", "Alan adı", "Yıllık yenileme oranı"}
 KISA = {"Yıllık banyo yenileme ve yeni konut banyosu tahmini": "Banyo yenileme tahmini", "Kullanıcı hangi özellikle arıyor? SSG": "Özellik araması SSG",
@@ -155,6 +159,11 @@ KISA = {"Yıllık banyo yenileme ve yeni konut banyosu tahmini": "Banyo yenileme
         "Site içi arama: kullanıcının yazdığı ifadeler ne döndürüyor?": "Site içi arama", "Sepet ve ödeme: üyeliksiz alışverişte ek adımlar": "Sepet ve ödeme",
         "Yolculuk adımları: gözlem, etki ve öneri": "Yolculuk adımları", "Hacimli ve ölçüye bağlı ürünlerde etkileşim modeli": "Hacimli ürünlerde etkileşim",
         "Ölçüm setleri: dört veri seti ve örneklemleri": "GEO ölçüm setleri",
+        "Aylık organik performans: 2025 ve 2026": "Aylık organik 2025-2026", "Trafik hangi sayfa türlerine geliyor? · Oca-Eyl 2026": "Sayfa türleri 2026",
+        "Kategori bazında organik trafik · Oca-Eyl 2026": "Kategori tıkları 2026", "En çok tık alan sayfalar · Oca-Eyl 2026": "En çok tık alan sayfalar",
+        "Blog (İlham Veren Fikirler): aylık tık, konu grupları ve yazılar": "Blog", "Cihaz ve ülke · 12 ay": "Cihaz ve ülke",
+        "Yapay zeka özelliklerinde gösterim ve blog gösterimindeki payı": "Yapay zeka gösterim payı", "Yapay zeka gösterim payına göre blog yazılarında tık değişimi": "YZ payına göre",
+        "Yapay zeka özelliklerinde en çok gösterilen blog yazıları": "YZ'de en çok gösterilen yazı", "AI Overview çıkan ve çıkmayan blog aramalarında tık ve sıra": "AI Overview",
         "Yapay zeka yanıt takibi · 111 markasız soruda markaların anılma payı": "AI yanıtlarında markalar",
         "Yapay zeka yanıt takibi · 111 markasız soruda kaynak gösterilen alan adları": "AI yanıt kaynakları",
         "Yapay zeka yanıt takibi · 29 satın alma ve montaj sorusunda VitrA ve vitra.com.tr": "Satın alma ve montaj soruları",
@@ -252,7 +261,8 @@ for sec in S.select("main section"):
         else:
             ad = on + kisalt(etiket, 31 - len(on)); baslik = "%s · %s" % (bas, etiket)
         ad = kisalt(ad, 31)
-        ad = AD_DUZ.get(ad, ad)
+        _on, _, _son = ad.partition(" ")
+        ad = AD_DUZ.get(ad) or ((_on + " " + AD_SON[_son]) if _son in AD_SON else ad)
         sekme(ad, baslik, notlar, thead, rows, renkler=renkler)
         TOC.append((ad, "%s %s" % (no_, bas), alt or "-", len(rows)))
 # kaynakca

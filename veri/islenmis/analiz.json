@@ -1103,38 +1103,38 @@
 }
 },
 "niyet_ornek": {
-"Jenerik ürün": [
+"Ölçü ve teknik": [
 [
-"banyo dolabı",
-95375
+"klozet ölçüleri",
+2912
 ],
 [
-"duşakabin",
-92938
+"80 cm banyo dolabı",
+2150
 ],
 [
-"klozet",
-49500
+"duşakabin ölçüleri",
+1875
 ],
 [
-"wc",
-47975
+"gömme rezervuar ölçü",
+1638
 ],
 [
-"duş başlığı",
-40700
+"60 cm banyo dolabı",
+1412
 ],
 [
-"banyo bataryası",
-38650
+"lavabo ölçüleri",
+1322
 ],
 [
-"taharet musluğu",
-37725
+"65 cm banyo dolabı",
+1262
 ],
 [
-"klozet kapağı",
-35875
+"banyo dolabı ölçüleri",
+1225
 ]
 ],
 "Fiyat": [
@@ -1171,74 +1171,6 @@
 6788
 ]
 ],
-"Tasarım ve fikir": [
-[
-"duşakabin modelleri",
-43875
-],
-[
-"banyo dolabı modelleri",
-35875
-],
-[
-"banyo modelleri",
-20350
-],
-[
-"fayans modelleri",
-18475
-],
-[
-"banyo fayans modelleri",
-15775
-],
-[
-"evye modelleri",
-14875
-],
-[
-"lavabo modelleri",
-9538
-],
-[
-"banyo lavabo modelleri",
-8550
-]
-],
-"Ölçü ve teknik": [
-[
-"klozet ölçüleri",
-2912
-],
-[
-"80 cm banyo dolabı",
-2150
-],
-[
-"duşakabin ölçüleri",
-1875
-],
-[
-"gömme rezervuar ölçü",
-1638
-],
-[
-"60 cm banyo dolabı",
-1412
-],
-[
-"lavabo ölçüleri",
-1322
-],
-[
-"65 cm banyo dolabı",
-1262
-],
-[
-"banyo dolabı ölçüleri",
-1225
-]
-],
 "Seçim ve karşılaştırma": [
 [
 "en iyi duş başlığı",
@@ -1273,40 +1205,6 @@
 84
 ]
 ],
-"Tamir ve bakım": [
-[
-"duşakabin tekeri",
-9725
-],
-[
-"klozet iç takımı",
-9450
-],
-[
-"klozet şamandırası",
-7350
-],
-[
-"rezervuar iç takım",
-5700
-],
-[
-"gömme rezervuar iç takımı",
-4650
-],
-[
-"klozet kapağı menteşesi",
-4525
-],
-[
-"batarya kartuşu",
-2975
-],
-[
-"klozet rezervuar iç takımı",
-1262
-]
-],
 "Montaj": [
 [
 "klozet montajı",
@@ -1339,6 +1237,108 @@
 [
 "duş başlığı takma aparatı",
 355
+]
+],
+"Tasarım ve fikir": [
+[
+"duşakabin modelleri",
+43875
+],
+[
+"banyo dolabı modelleri",
+35875
+],
+[
+"banyo modelleri",
+20350
+],
+[
+"fayans modelleri",
+18475
+],
+[
+"banyo fayans modelleri",
+15775
+],
+[
+"evye modelleri",
+14875
+],
+[
+"lavabo modelleri",
+9538
+],
+[
+"banyo lavabo modelleri",
+8550
+]
+],
+"Jenerik ürün": [
+[
+"banyo dolabı",
+95375
+],
+[
+"duşakabin",
+92938
+],
+[
+"klozet",
+49500
+],
+[
+"wc",
+47975
+],
+[
+"duş başlığı",
+40700
+],
+[
+"banyo bataryası",
+38650
+],
+[
+"taharet musluğu",
+37725
+],
+[
+"klozet kapağı",
+35875
+]
+],
+"Tamir ve bakım": [
+[
+"duşakabin tekeri",
+9725
+],
+[
+"klozet iç takımı",
+9450
+],
+[
+"klozet şamandırası",
+7350
+],
+[
+"rezervuar iç takım",
+5700
+],
+[
+"gömme rezervuar iç takımı",
+4650
+],
+[
+"klozet kapağı menteşesi",
+4525
+],
+[
+"batarya kartuşu",
+2975
+],
+[
+"klozet rezervuar iç takımı",
+1262
 ]
 ]
 },
@@ -1636,2103 +1636,1150 @@
 "2026-08",
 "2026-09"
 ],
-"gsc_aylik": {
-"Ana sayfa": [
-[
-11111,
-314454
-],
-[
-13626,
-370872
-],
-[
-12451,
-330575
-],
-[
-11864,
-205823
-],
-[
-13229,
-188302
-],
-[
-14105,
-192776
-],
-[
-12751,
-226110
-],
-[
-8866,
-228626
-],
-[
-8192,
-289475
-],
-[
-8573,
-172783
-],
-[
-8776,
-198776
-],
-[
-7535,
-164674
-],
-[
-17631,
-440766
-],
-[
-18168,
-1335927
-],
-[
-8522,
-830038
-],
-[
-6054,
-157934
-]
-],
-"Vitrifiyeler": [
-[
-27485,
-1854409
-],
-[
-34639,
-2572697
-],
-[
-35377,
-3102805
-],
-[
-33675,
-2994574
-],
-[
-36286,
-2973917
-],
-[
-34605,
-2713662
-],
-[
-35140,
-2504558
-],
-[
-31082,
-1117217
-],
-[
-26051,
-829762
-],
-[
-28557,
-891993
-],
-[
-32239,
-942104
-],
-[
-26415,
-823946
-],
-[
-30035,
-869906
-],
-[
-29839,
-861569
-],
-[
-29295,
-796360
-],
-[
-23470,
-674717
-]
-],
-"Karo Seramik": [
-[
-12532,
-659960
-],
-[
-14567,
-715814
-],
-[
-14962,
-756620
-],
-[
-14935,
-811036
-],
-[
-15779,
-882976
-],
-[
-14646,
-861764
-],
-[
-16244,
-741961
-],
-[
-18673,
-483900
-],
-[
-15715,
-397620
-],
-[
-16300,
-427477
-],
-[
-16608,
-511988
-],
-[
-13795,
-440130
-],
-[
-14404,
-430899
-],
-[
-14049,
-417781
-],
-[
-12055,
-359200
-],
-[
-9105,
-295746
-]
-],
-"Banyo Mobilyaları": [
-[
-9794,
-748750
-],
-[
-12281,
-984096
-],
-[
-14196,
-997178
-],
-[
-13934,
-982399
-],
-[
-17046,
-1094225
-],
-[
-15113,
-1164955
-],
-[
-14698,
-1001211
-],
-[
-12883,
-446652
-],
-[
-11461,
-397392
-],
-[
-12943,
-408183
-],
-[
-15863,
-500960
-],
-[
-12134,
-380360
-],
-[
-12021,
-356800
-],
-[
-11831,
-349590
-],
-[
-10173,
-293880
-],
-[
-8621,
-289210
-]
-],
-"Yıkanma Alanları": [
-[
-8219,
-279075
-],
-[
-10569,
-370579
-],
-[
-10469,
-390226
-],
-[
-9320,
-383512
-],
-[
-11265,
-404997
-],
-[
-11328,
-413392
-],
-[
-9596,
-323989
-],
-[
-8856,
-286622
-],
-[
-8507,
-258541
-],
-[
-11395,
-316922
-],
-[
-12531,
-361251
-],
-[
-10541,
-314421
-],
-[
-10956,
-311727
-],
-[
-10837,
-322789
-],
-[
-10598,
-303588
-],
-[
-7414,
-230793
-]
-],
-"Diğer": [
-[
-10340,
-406444
-],
-[
-13170,
-606122
-],
-[
-13281,
-618017
-],
-[
-12562,
-555623
-],
-[
-13765,
-556812
-],
-[
-11949,
-491498
-],
-[
-8523,
-312720
-],
-[
-6457,
-163399
-],
-[
-5839,
-358762
-],
-[
-6305,
-157501
-],
-[
-8011,
-197671
-],
-[
-6340,
-165105
-],
-[
-8975,
-203287
-],
-[
-8953,
-196900
-],
-[
-7585,
-174695
-],
-[
-6295,
-155098
-]
-],
-"Armatürler": [
-[
-13192,
-796758
-],
-[
-18241,
-1051197
-],
-[
-18805,
-1128662
-],
-[
-19193,
-1087869
-],
-[
-22272,
-1244507
-],
-[
-21252,
-1247055
-],
-[
-18170,
-992953
-],
-[
-15888,
-559910
-],
-[
-14293,
-426477
-],
-[
-15689,
-488503
-],
-[
-19549,
-528498
-],
-[
-14405,
-427854
-],
-[
-16185,
-428622
-],
-[
-17102,
-459748
-],
-[
-15998,
-460707
-],
-[
-12204,
-370992
-]
-],
-"Servis ve bayi": [
-[
-2557,
-103692
-],
-[
-3449,
-130131
-],
-[
-3857,
-124902
-],
-[
-2980,
-112000
-],
-[
-3055,
-107512
-],
-[
-2847,
-107446
-],
-[
-2852,
-105552
-],
-[
-2227,
-79426
-],
-[
-1658,
-314970
-],
-[
-1797,
-73796
-],
-[
-2164,
-94134
-],
-[
-1745,
-82305
-],
-[
-2676,
-90161
-],
-[
-2757,
-76215
-],
-[
-2720,
-86021
-],
-[
-2371,
-92675
-]
-],
-"Rezervuarlar": [
-[
-4909,
-243877
-],
-[
-5806,
-288878
-],
-[
-6460,
-360491
-],
-[
-6215,
-357519
-],
-[
-6981,
-378762
-],
-[
-6542,
-365211
-],
-[
-5008,
-188485
-],
-[
-4050,
-117544
-],
-[
-3800,
-111178
-],
-[
-4100,
-114780
-],
-[
-4551,
-119527
-],
-[
-3641,
-114934
-],
-[
-4484,
-122544
-],
-[
-4696,
-134026
-],
-[
-4440,
-127038
-],
-[
-3682,
-109484
-]
-],
-"Duşlar": [
-[
-1894,
-59734
-],
-[
-2586,
-78059
-],
-[
-2557,
-83384
-],
-[
-2396,
-85134
-],
-[
-2730,
-92221
-],
-[
-2477,
-85188
-],
-[
-4763,
-188555
-],
-[
-4281,
-113328
-],
-[
-3144,
-76237
-],
-[
-3093,
-97478
-],
-[
-3786,
-110517
-],
-[
-3061,
-93720
-],
-[
-3629,
-86238
-],
-[
-3596,
-83566
-],
-[
-3336,
-83935
-],
-[
-2764,
-82178
-]
-],
-"İçerik": [
-[
-5712,
-287021
-],
-[
-7250,
-382049
-],
-[
-7407,
-384558
-],
-[
-6952,
-359938
-],
-[
-7277,
-394672
-],
-[
-6144,
-316198
-],
-[
-5697,
-329769
-],
-[
-4930,
-322773
-],
-[
-4300,
-312750
-],
-[
-3642,
-330810
-],
-[
-5556,
-441052
-],
-[
-5286,
-398149
-],
-[
-4981,
-383501
-],
-[
-5245,
-400659
-],
-[
-4246,
-332430
-],
-[
-3512,
-265640
-]
-],
-"Banyo Aksesuarları": [
-[
-3202,
-131545
-],
-[
-4373,
-175170
-],
-[
-4994,
-198362
-],
-[
-5345,
-209478
-],
-[
-6162,
-240152
-],
-[
-5693,
-250254
-],
-[
-5792,
-230402
-],
-[
-5567,
-175279
-],
-[
-4562,
-145378
-],
-[
-5216,
-167472
-],
-[
-4954,
-177870
-],
-[
-4429,
-146121
-],
-[
-4334,
-119729
-],
-[
-4641,
-120141
-],
-[
-4367,
-114197
-],
-[
-3331,
-102753
-]
+"gsc_ay_toplam": {
+"2025-06": [
+158759,
+4036695,
+8.77
+],
+"2025-07": [
+196319,
+4890967,
+8.12
+],
+"2025-08": [
+198791,
+5028135,
+7.48
+],
+"2025-09": [
+195642,
+4751826,
+5.55
+],
+"2025-10": [
+215204,
+4934458,
+4.81
+],
+"2025-11": [
+205388,
+4873529,
+5.29
+],
+"2025-12": [
+201317,
+4322406,
+7.05
+],
+"2026-01": [
+181298,
+3924003,
+6.8
+],
+"2026-02": [
+161363,
+3706835,
+5.82
+],
+"2026-03": [
+173530,
+3711917,
+5.55
+],
+"2026-04": [
+196001,
+4208365,
+5.93
+],
+"2026-05": [
+161297,
+3670468,
+5.89
+],
+"2026-06": [
+192548,
+3897517,
+5.68
+],
+"2026-07": [
+192988,
+4736707,
+5.79
+],
+"2026-08": [
+172076,
+3950212,
+6.17
+],
+"2026-09": [
+166588,
+3461389,
+6.19
 ]
 },
 "gsc_tur": {
 "anasayfa": [
-181454,
-5647911,
+93806,
+3848051,
 1
 ],
 "kategori": [
-1157986,
-55378318,
-352
+752857,
+27685178,
+381
 ],
 "servis-bayi": [
-71118,
-3955742,
-254
-],
-"eski-online": [
-399074,
-34108271,
-2472
+46734,
+2673357,
+266
 ],
 "icerik": [
-113572,
-8709218,
-106
+57895,
+5210295,
+153
 ],
 "katalog": [
-23441,
-773671,
+13797,
+319559,
 29
 ],
 "koleksiyon": [
-122830,
-3399611,
-264
+72057,
+1427695,
+257
 ],
 "urun": [
-953023,
-23254440,
-15868
-],
-"kurumsal": [
-24988,
-1495042,
-421
+601589,
+4687011,
+11108
 ],
 "diger": [
-40754,
-2032012,
-599
+17091,
+619381,
+1975
+],
+"kurumsal": [
+11882,
+619456,
+250
+],
+"eski-online": [
+254,
+14614,
+240
 ],
 "urun-teknik": [
-13382,
-216995,
-2019
+15173,
+260358,
+5396
 ]
 },
 "gsc_kat": {
 "Vitrifiyeler|Klozetler": [
-301242,
-16215024,
-803
-],
-"Yıkanma Alanları|Duşakabin": [
-68933,
-2542521,
-127
+157313,
+4353582,
+414
 ],
 "Vitrifiyeler|Lavabolar": [
-273431,
-19874580,
-1654
-],
-"Banyo Mobilyaları|Genel": [
-97082,
-4029730,
-545
+143556,
+3413650,
+1019
 ],
 "Karo Seramik|Karo Seramik": [
-448101,
-15245479,
-3798
-],
-"Armatürler|Eviye Bataryaları": [
-80265,
-3271808,
-171
+251522,
+5293555,
+2443
 ],
 "Banyo Mobilyaları|Banyo Dolapları": [
-66983,
-3870707,
-993
+41603,
+1030094,
+907
+],
+"Armatürler|Eviye Bataryaları": [
+44438,
+890314,
+74
+],
+"Yıkanma Alanları|Duşakabin": [
+45537,
+1487528,
+210
+],
+"Banyo Mobilyaları|Genel": [
+36677,
+1218149,
+61
 ],
 "Rezervuarlar|Gömme Rezervuarlar": [
-61778,
-2357278,
-104
-],
-"Armatürler|Duş Setleri": [
-42845,
-1520879,
-10
+32499,
+1020021,
+74
 ],
 "Banyo Mobilyaları|Lavabo Dolapları": [
-84789,
-3609403,
-2745
-],
-"Yıkanma Alanları|Küvetler": [
-46270,
-1385231,
-403
-],
-"Yıkanma Alanları|Duş Tekneleri": [
-39311,
-1619011,
-634
-],
-"Armatürler|Banyo Bataryaları": [
-79041,
-2671854,
-890
-],
-"Armatürler|Genel": [
-21952,
-1316766,
-20
-],
-"Armatürler|Lavabo Bataryaları": [
-126951,
-3606634,
-1065
-],
-"Duşlar|Genel": [
-13210,
-417702,
-2
-],
-"Armatürler|Musluklar": [
-35129,
-2529180,
-77
-],
-"Vitrifiyeler|Akıllı Klozet": [
-24799,
-996693,
-42
-],
-"Vitrifiyeler|Klozet Kapakları": [
-51342,
-2272551,
-242
-],
-"Yıkanma Alanları|Duş Kanalları": [
-32376,
-1462567,
-357
+49125,
+919899,
+1956
 ],
 "Vitrifiyeler|Genel": [
-16709,
-656323,
-35
+10062,
+396797,
+29
 ],
-"Diğer|Diğer": [
-203458,
-8676964,
-2971
+"Armatürler|Duş Setleri": [
+17897,
+560952,
+6
 ],
-"Banyo Aksesuarları|Genel": [
-23566,
-813947,
-44
+"Duşlar|Genel": [
+11078,
+355928,
+2
 ],
-"Rezervuarlar|İç Takımlar": [
-10709,
-1032662,
-31
+"Yıkanma Alanları|Duş Tekneleri": [
+21894,
+463149,
+500
 ],
-"Yıkanma Alanları|Duş Üniteleri": [
-12706,
-868237,
-133
+"Vitrifiyeler|Akıllı Klozet": [
+13771,
+225180,
+21
 ],
-"Duşlar|Duş Başlıkları": [
-22913,
-638821,
-116
+"Armatürler|Lavabo Bataryaları": [
+73479,
+1132611,
+576
 ],
-"Duşlar|Duş Sistemleri": [
-43020,
-1844523,
-426
+"Armatürler|Banyo Bataryaları": [
+41990,
+946610,
+494
 ],
-"Banyo Mobilyaları|Banyo Aynaları": [
-27560,
-2040276,
-183
-],
-"Rezervuarlar|Kumanda Panelleri": [
-31236,
-1025026,
-236
-],
-"Banyo Aksesuarları|Tuvalet Kağıtlıkları": [
-16972,
-645585,
-95
-],
-"Banyo Mobilyaları|Çamaşır Makinesi Dolapları": [
-9220,
-375946,
-46
-],
-"Banyo Aksesuarları|Havluluklar": [
-24938,
-655489,
-198
-],
-"Vitrifiyeler|Tamamlayıcı": [
-9526,
-398752,
-65
-],
-"Armatürler|Eviyeler": [
-4779,
-88809,
+"Armatürler|Genel": [
+14195,
+844447,
 14
 ],
+"Yıkanma Alanları|Küvetler": [
+27843,
+654512,
+272
+],
+"Vitrifiyeler|Klozet Kapakları": [
+28540,
+729594,
+180
+],
+"Yıkanma Alanları|Duş Kanalları": [
+15877,
+402641,
+231
+],
+"Banyo Aksesuarları|Genel": [
+10774,
+298865,
+22
+],
+"Banyo Mobilyaları|Banyo Aynaları": [
+17156,
+465359,
+123
+],
+"Rezervuarlar|Kumanda Panelleri": [
+18635,
+334247,
+135
+],
+"Duşlar|Duş Başlıkları": [
+17273,
+447434,
+80
+],
+"Banyo Aksesuarları|Tuvalet Kağıtlıkları": [
+11725,
+283506,
+63
+],
+"Armatürler|Musluklar": [
+10541,
+339658,
+33
+],
+"Banyo Aksesuarları|Havluluklar": [
+13034,
+251193,
+93
+],
+"Koleksiyon sayfaları|Koleksiyon": [
+70351,
+1326701,
+254
+],
 "Vitrifiyeler|Pisuvarlar": [
-20113,
-847304,
-109
-],
-"Banyo Mobilyaları|Tezgahlar": [
-5085,
-207246,
-126
-],
-"Banyo Aksesuarları|Tuvalet Fırçaları": [
-16932,
-396507,
-230
-],
-"Armatürler|Tamamlayıcı": [
-27329,
-758171,
-153
+10531,
+218048,
+61
 ],
 "Banyo Aksesuarları|Sabunluklar": [
-15264,
-509469,
-163
+8105,
+131939,
+80
 ],
 "Banyo Aksesuarları|Tutunma Barları": [
-8817,
-388239,
-15
+4883,
+151901,
+7
+],
+"Banyo Aksesuarları|Tuvalet Fırçaları": [
+9566,
+168966,
+130
+],
+"Yıkanma Alanları|Duş Üniteleri": [
+3368,
+110085,
+117
+],
+"Armatürler|Tamamlayıcı": [
+15809,
+283370,
+66
+],
+"Banyo Mobilyaları|Tezgahlar": [
+4598,
+123118,
+147
+],
+"Banyo Mobilyaları|Çamaşır Makinesi Dolapları": [
+7848,
+315241,
+56
 ],
 "Banyo Aksesuarları|Diğer": [
-14839,
-326515,
-142
+9713,
+227546,
+65
 ],
 "Banyo Aksesuarları|Çöp Kovaları": [
-10620,
-326514,
-37
+5515,
+80165,
+15
 ],
-"Banyo Mobilyaları|Set Modülleri": [
-9356,
-347382,
-76
+"Genel ürün listeleri ve kampanyalar|Genel liste": [
+33536,
+1132022,
+5615
+],
+"Duşlar|Duş Sistemleri": [
+16829,
+183873,
+141
 ],
 "Vitrifiyeler|Tuvalet Taşları": [
-5772,
-127058,
-8
+4524,
+118460,
+7
 ],
 "Armatürler|Ankastre": [
-29403,
-832243,
-301
+19843,
+230163,
+191
 ],
 "Duşlar|El Duşları": [
-19539,
-282365,
-190
+13802,
+99827,
+136
 ],
-"Duşlar|Duş Kolonları": [
-7252,
-69759,
+"Rezervuarlar|İç Takımlar": [
+1245,
+14220,
+16
+],
+"Banyo Mobilyaları|Set Modülleri": [
+8688,
+146151,
+74
+],
+"Vitrifiyeler|Tamamlayıcı": [
+2870,
+58460,
 34
 ],
+"Duşlar|Duş Kolonları": [
+6834,
+43604,
+29
+],
 "Vitrifiyeler|Bideler": [
-2135,
-332743,
-64
+1074,
+64920,
+58
 ],
 "Armatürler|Bide Bataryaları": [
-697,
-29162,
-56
+382,
+17511,
+46
+],
+"Armatürler|Eviyeler": [
+3982,
+69090,
+5
 ]
 },
 "gsc_cihaz": {
 "MOBILE": [
-1543832,
-52176689
+1149389,
+38614091
 ],
 "DESKTOP": [
-1376284,
-14664641
+1055899,
+10370519
 ],
 "TABLET": [
-19373,
-674147
-]
-},
-"gsc_ay_toplam": {
-"2025-06": [
-158759,
-4036695
-],
-"2025-07": [
-196319,
-4890967
-],
-"2025-08": [
-198791,
-5028135
-],
-"2025-09": [
-195642,
-4751826
-],
-"2025-10": [
-215204,
-4934458
-],
-"2025-11": [
-205388,
-4873529
-],
-"2025-12": [
-201317,
-4322406
-],
-"2026-01": [
-181298,
-3924003
-],
-"2026-02": [
-161363,
-3706835
-],
-"2026-03": [
-173530,
-3711917
-],
-"2026-04": [
-196001,
-4208365
-],
-"2026-05": [
-161297,
-3670468
-],
-"2026-06": [
-192548,
-3897517
-],
-"2026-07": [
-192988,
-4736707
-],
-"2026-08": [
-172076,
-3950212
-],
-"2026-09": [
-136968,
-2871437
+14310,
+413196
 ]
 },
 "gsc_ulke": [
 [
 "tur",
-2830295,
-96.3
+2142248,
+96.5
 ],
 [
 "deu",
-19384,
-0.7
+13957,
+0.6
 ],
 [
 "cyp",
-12566,
+9120,
 0.4
 ],
 [
 "aze",
-9013,
+6013,
 0.3
 ],
 [
 "nld",
-6376,
+4479,
 0.2
 ],
 [
 "gbr",
-4730,
+3510,
 0.2
 ]
 ],
 "gsc_sorgu_niyet": {
 "Markasız · Jenerik ürün": [
-763493,
-24279301,
-15550
+595677,
+18813876,
+33803
 ],
 "Markalı · Jenerik ürün": [
-517809,
-2482712,
-3232
+383079,
+1835247,
+3743
 ],
 "Markasız · Tasarım ve fikir": [
-99642,
-4355059,
-2063
+75504,
+3292875,
+4015
 ],
 "Markasız · Fiyat": [
-79140,
-2828704,
-1418
+60570,
+2173282,
+2808
 ],
 "Markalı · Fiyat": [
-26742,
-153683,
-210
-],
-"Markalı · Tamir ve bakım": [
-21937,
-543616,
-332
+19777,
+115727,
+223
 ],
 "Markalı · Tasarım ve fikir": [
-21265,
-78885,
-96
+16114,
+61809,
+104
+],
+"Markalı · Tamir ve bakım": [
+15580,
+463034,
+395
 ],
 "Markasız · Ölçü ve teknik": [
-14967,
-508688,
-726
+10953,
+394789,
+1299
 ],
 "Markasız · Seçim ve karşılaştırma": [
-12712,
-401440,
-341
+8539,
+300280,
+904
 ],
 "Markasız · Tamir ve bakım": [
-10271,
-749424,
-402
+7295,
+582255,
+1306
 ],
 "Markalı · Yer ve kanal": [
-8966,
-80880,
-140
+6723,
+62742,
+167
 ],
 "Markalı · Ölçü ve teknik": [
-5012,
-22279,
-93
+3462,
+17097,
+98
 ],
 "Markasız · Montaj": [
-3613,
-378411,
-277
+2916,
+306825,
+827
 ],
 "Markalı · Montaj": [
-1654,
-39268,
-77
+1314,
+31814,
+96
 ],
 "Markasız · Yer ve kanal": [
-457,
-20658,
-41
+379,
+12246,
+208
 ],
 "Markalı · Seçim ve karşılaştırma": [
-19,
-767,
-2
+15,
+658,
+4
 ]
 },
 "gsc_sorgu_ornek": {
 "Markalı · Jenerik ürün": [
 [
 "vitra",
-142588
+103814
 ],
 [
 "vitra klozet",
-21785
+16551
 ],
 [
 "vitra gömme rezervuar",
-14545
+11399
 ],
 [
 "vitra seramik",
-13445
+9447
 ],
 [
 "vitra banyo dolabı",
-11398
+8881
 ],
 [
 "vitra lavabo",
-7783
+5899
 ]
 ],
 "Markasız · Jenerik ürün": [
 [
 "banyo dolabı",
-27041
+20657
 ],
 [
 "klozet",
-17558
+13476
 ],
 [
 "duşakabin",
-14246
-],
-[
-"lavabo",
-12239
+11847
 ],
 [
 "seramik",
-8888
+7538
+],
+[
+"lavabo",
+7375
 ],
 [
 "mutfak bataryası",
-7876
+6386
 ]
 ],
 "Markasız · Fiyat": [
 [
 "klozet fiyatları",
-22321
+16500
 ],
 [
 "duşakabin fiyatları",
-6868
+5525
 ],
 [
 "küvet fiyatları",
-2990
-],
-[
-"lavabo fiyatları",
-1946
+2260
 ],
 [
 "banyo dolabı fiyatları",
-1814
+1309
+],
+[
+"lavabo fiyatları",
+1281
 ],
 [
 "banyo bataryası fiyatları",
-1053
+753
 ]
 ],
 "Markasız · Tasarım ve fikir": [
 [
 "duşakabin modelleri",
-8167
+6477
 ],
 [
 "banyo dolabı modelleri",
-7775
+5823
 ],
 [
 "banyo fayans modelleri",
-5297
+3737
 ],
 [
 "banyo lavabo modelleri",
-4200
+3278
 ],
 [
 "banyo modelleri",
-3905
+2460
 ],
 [
 "lavabo modelleri",
-2742
+2081
 ]
 ],
 "Markalı · Fiyat": [
 [
 "vitra klozet fiyatları",
-4995
+3532
 ],
 [
 "vitra fiyat listesi",
-1567
+1134
 ],
 [
 "vitra gömme rezervuar fiyatları",
-1243
+993
 ],
 [
 "vitra duşakabin fiyatları",
-1112
-],
-[
-"vitra lavabo modelleri ve fiyatları",
-854
+943
 ],
 [
 "vitra duşakabin modelleri ve fiyatları",
-722
+505
+],
+[
+"vitra seramik fiyatları",
+496
 ]
 ],
 "Markalı · Tasarım ve fikir": [
 [
 "vitra katalog",
-3093
-],
-[
-"vitra banyo dolap modelleri",
-2302
+2263
 ],
 [
 "vitra lavabo modelleri",
-1669
+1383
+],
+[
+"vitra banyo dolap modelleri",
+1320
 ],
 [
 "vitra banyo modelleri",
-1659
+1219
 ],
 [
 "vitra klozet modelleri",
-1456
+1132
 ],
 [
 "vitra duşakabin modelleri",
-1431
+1073
 ]
 ],
 "Markalı · Tamir ve bakım": [
 [
 "vitra servis",
-2826
+1910
 ],
 [
 "vitra gömme rezervuar iç takımı",
-1512
+1143
 ],
 [
 "vitra rezervuar iç takımı",
-1370
+955
 ],
 [
 "vitra yetkili servis",
-1309
+827
 ],
 [
 "vitra yedek parça",
-1089
+709
 ],
 [
 "vitra klozet iç takımı",
-803
+586
 ]
 ],
 "Markasız · Tamir ve bakım": [
 [
 "duşakabin temizliği",
-2214
+1360
 ],
 [
 "gömme klozet su kaçırıyorsa çok basit tamiri",
-552
+410
 ],
 [
 "klozet iç takım",
-356
+262
 ],
 [
 "rezervuar iç takımı",
-336
-],
-[
-"dusa kabin temizligi",
-255
+262
 ],
 [
 "klozet iç takımı",
-255
+180
+],
+[
+"duşakabin temizligi",
+163
 ]
 ],
 "Markalı · Yer ve kanal": [
 [
 "vitra müşteri hizmetleri",
-1341
+909
 ],
 [
 "vitra bayileri",
-797
+557
 ],
 [
 "vitra fabrika satış mağazası",
-510
+329
 ],
 [
 "vitra satış noktaları",
-366
-],
-[
-"vitra iletişim",
-322
+252
 ],
 [
 "vitra mağazaları",
-322
-]
-],
-"Markasız · Ölçü ve teknik": [
-[
-"klozet ölçüleri",
-1007
+242
 ],
 [
-"küvet ölçüleri",
-702
-],
-[
-"gömme rezervuar ölçüleri",
-540
-],
-[
-"lavabo ölçüleri",
-512
-],
-[
-"asma klozet ölçüleri",
-395
-],
-[
-"duş teknesi ölçüleri",
-333
+"vitra ankara mağaza",
+207
 ]
 ],
 "Markasız · Seçim ve karşılaştırma": [
 [
 "bide nedir",
-981
+804
 ],
 [
 "vitrifiye nedir",
-802
+691
 ],
 [
 "armatür nedir",
-715
-],
-[
-"en kullanışlı evye hangisi",
-561
+448
 ],
 [
 "bidet nedir",
-532
+324
 ],
 [
-"en iyi duş başlığı",
-421
+"en iyi duşakabin markaları",
+247
+],
+[
+"en kullanışlı evye hangisi",
+235
+]
+],
+"Markasız · Ölçü ve teknik": [
+[
+"klozet ölçüleri",
+735
+],
+[
+"küvet ölçüleri",
+565
+],
+[
+"lavabo ölçüleri",
+362
+],
+[
+"gömme rezervuar ölçüleri",
+314
+],
+[
+"asma klozet ölçüleri",
+281
+],
+[
+"duş teknesi ölçüleri",
+244
 ]
 ],
 "Markalı · Ölçü ve teknik": [
 [
 "vitra mia 80 cm",
-315
-],
-[
-"vitra gömme rezervuar ölçüleri",
-257
+213
 ],
 [
 "vitra mia 60 cm",
-257
+180
 ],
 [
-"vitra ora 80 cm banyo dolabı",
-165
+"vitra gömme rezervuar ölçüleri",
+155
 ],
 [
 "vitra etajerli lavabo 80 cm",
-164
+123
+],
+[
+"vitra klozet ölçüleri",
+113
 ],
 [
 "vitra etajerli lavabo 100 cm",
-162
+111
 ]
 ],
 "Markasız · Montaj": [
 [
 "klozet kapağı nasıl takılır",
-247
-],
-[
-"duşakabin montajı",
-166
+199
 ],
 [
 "fayans üstü duşakabin montajı",
-154
+119
 ],
 [
 "gömme rezervuar montajı",
-130
+93
+],
+[
+"duşakabin montajı",
+90
 ],
 [
 "gömme rezervuar montaj ölçüleri",
-118
+75
 ],
 [
 "duşakabin montajı nasıl yapılır",
-86
+68
 ]
 ],
 "Markalı · Montaj": [
 [
 "vitra gömme rezervuar montajı",
-146
+104
 ],
 [
 "vitra montaj",
-93
-],
-[
-"vitra gömme rezervuar montaj ölçüleri",
-79
+68
 ],
 [
 "vitra 330b1314 montaj",
-73
+59
+],
+[
+"vitra gömme rezervuar montaj ölçüleri",
+52
 ],
 [
 "vitra klozet montajı",
-64
+51
 ],
 [
-"vitra duvara sıfır klozet montajı",
-53
+"vitra asma klozet montaj seti",
+49
 ]
 ],
 "Markasız · Yer ve kanal": [
 [
 "banyo dolabı nereden alınır",
-59
+51
 ],
 [
 "klozet nereden alınır",
-41
+34
 ],
 [
 "edirne banyo mağazaları",
-35
+22
 ],
 [
 "intema suadiye mağaza",
-25
+19
 ],
 [
-"klozet kapağı nerede satılır",
-25
+"duşakabin nereden alınır",
+15
 ],
 [
-"banyo showroom",
-18
+"klozet kapağı nereden alınır",
+14
 ]
 ],
 "Markalı · Seçim ve karşılaştırma": [
 [
 "vitra nedir",
-12
+9
 ],
 [
 "vitra kanalsız klozet yorumlar",
-7
+6
+],
+[
+"artema a33040yp nedir",
+0
+],
+[
+"artema nedir",
+0
 ]
 ]
 },
 "gsc_marka": {
-"markali": 603404,
-"markasiz": 984295,
-"toplam_sorgu": 1587699
+"markali": 446064,
+"markasiz": 761833,
+"toplam_sorgu": 1207897
 },
 "gsc_top_sorgu": [
 [
 "vitra",
-142588,
-464630,
-30.7,
-2.8
-],
-[
-"banyo dolabı",
-27041,
-701852,
-3.9,
-4.3
-],
-[
-"klozet fiyatları",
-22321,
-633515,
-3.5,
-3.5
-],
-[
-"vitra klozet",
-21785,
-127711,
-17.1,
-1.7
-],
-[
-"klozet",
-17558,
-486611,
-3.6,
-2.6
-],
-[
-"vitra gömme rezervuar",
-14545,
-139150,
-10.5,
-1.6
-],
-[
-"duşakabin",
-14246,
-489828,
-2.9,
-7.3
-],
-[
-"vitra seramik",
-13445,
-71705,
-18.8,
-1.5
-],
-[
-"lavabo",
-12239,
-884861,
-1.4,
-3.0
-],
-[
-"vitra banyo dolabı",
-11398,
-53022,
-21.5,
+103814,
+348675,
+29.8,
 2.3
 ],
 [
+"banyo dolabı",
+20657,
+494344,
+4.2,
+4.3
+],
+[
+"vitra klozet",
+16551,
+98035,
+16.9,
+1.9
+],
+[
+"klozet fiyatları",
+16500,
+466933,
+3.5,
+3.7
+],
+[
+"klozet",
+13476,
+362099,
+3.7,
+2.6
+],
+[
+"duşakabin",
+11847,
+381762,
+3.1,
+6.9
+],
+[
+"vitra gömme rezervuar",
+11399,
+107315,
+10.6,
+1.7
+],
+[
+"vitra seramik",
+9447,
+51214,
+18.4,
+1.6
+],
+[
+"vitra banyo dolabı",
+8881,
+40447,
+22.0,
+2.7
+],
+[
 "seramik",
-8888,
-260501,
-3.4,
-6.0
+7538,
+208308,
+3.6,
+5.3
+],
+[
+"lavabo",
+7375,
+468285,
+1.6,
+3.3
 ],
 [
 "duşakabin modelleri",
-8167,
-310386,
-2.6,
-5.0
+6477,
+222870,
+2.9,
+4.7
 ],
 [
 "mutfak bataryası",
-7876,
-265495,
-3.0,
+6386,
+193961,
+3.3,
 4.2
 ],
 [
 "vitra lavabo",
-7783,
-38531,
+5899,
+29166,
 20.2,
-3.1
+3.7
 ],
 [
 "banyo dolabı modelleri",
-7775,
-240741,
-3.2,
-5.3
+5823,
+175795,
+3.3,
+5.4
 ],
 [
 "duşakabin fiyatları",
-6868,
-272037,
-2.5,
-7.1
-],
-[
-"duş başlığı",
-6707,
-331955,
-2.0,
-5.0
+5525,
+211497,
+2.6,
+7.2
 ],
 [
 "küvet",
-6418,
-145669,
-4.4,
-2.9
+5221,
+108183,
+4.8,
+3.1
 ],
 [
 "banyo bataryası",
-6138,
-323135,
-1.9,
-4.1
-],
-[
-"vitra duşakabin",
-5873,
-15810,
-37.1,
+5020,
+240414,
+2.1,
 3.9
 ],
 [
-"banyo fayans modelleri",
-5297,
-168239,
-3.1,
-5.0
-],
-[
-"vitra klozet fiyatları",
-4995,
-34918,
-14.3,
-2.1
-],
-[
-"vitra banyo",
-4904,
-25536,
-19.2,
-3.3
+"duş başlığı",
+4803,
+233061,
+2.1,
+5.1
 ],
 [
 "fayans",
-4846,
-150716,
-3.2,
-7.0
+4672,
+134682,
+3.5,
+6.6
 ],
 [
-"duş başlığı seti",
-4835,
-189892,
-2.5,
-4.6
-],
-[
-"lavabo bataryası",
-4732,
-197683,
-2.4,
-3.5
-],
-[
-"gömme rezervuar",
-4578,
-183946,
-2.5,
-3.6
-],
-[
-"banyo lavabosu",
-4418,
-78535,
-5.6,
-2.9
-],
-[
-"duş seti",
-4315,
-137365,
-3.1,
+"vitra duşakabin",
+4193,
+11980,
+35.0,
 4.7
 ],
 [
+"lavabo bataryası",
+3815,
+149864,
+2.5,
+3.5
+],
+[
+"banyo fayans modelleri",
+3737,
+118353,
+3.2,
+4.6
+],
+[
+"vitra banyo",
+3663,
+21241,
+17.2,
+3.7
+],
+[
+"vitra klozet fiyatları",
+3532,
+24742,
+14.3,
+2.4
+],
+[
+"banyo lavabosu",
+3368,
+57413,
+5.9,
+3.2
+],
+[
+"gömme rezervuar",
+3302,
+138859,
+2.4,
+4.0
+],
+[
+"banyo lavabo modelleri",
+3278,
+71622,
+4.6,
+3.4
+],
+[
+"duş başlığı seti",
+3242,
+134930,
+2.4,
+5.0
+],
+[
 "vitra duş seti",
-4315,
-24312,
+3234,
+18260,
 17.7,
-2.1
-]
-],
-"online_aylik": {
-"2025-06": [
-33873,
-77074
-],
-"2025-07": [
-43767,
-96790
-],
-"2025-08": [
-48604,
-96212
-],
-"2025-09": [
-48160,
-91211
-],
-"2025-10": [
-52415,
-103432
-],
-"2025-11": [
-48320,
-98381
-],
-"2025-12": [
-10020,
-129214
-],
-"2026-01": [
-0,
-123760
-],
-"2026-02": [
-0,
-107522
-],
-"2026-03": [
-0,
-117610
-],
-"2026-04": [
-0,
-134588
-],
-"2026-05": [
-0,
-109327
-],
-"2026-06": [
-0,
-130311
-],
-"2026-07": [
-0,
-131714
-],
-"2026-08": [
-0,
-113335
-],
-"2026-09": [
-0,
-88823
-]
-},
-"top_sayfa_3ay": [
-[
-"https://www.vitra.com.tr",
-32744
-],
-[
-"https://www.vitra.com.tr/c-klozetler",
-17697
-],
-[
-"https://www.vitra.com.tr/c-dusakabin",
-14104
-],
-[
-"https://www.vitra.com.tr/c-lavabolar",
-11704
-],
-[
-"https://www.vitra.com.tr/c-banyo-mobilyalari",
-9975
-],
-[
-"https://www.vitra.com.tr/c-banyo-karo-seramikleri",
-7240
-],
-[
-"https://www.vitra.com.tr/c-gomme-rezervuarlar",
-7121
-],
-[
-"https://www.vitra.com.tr/c-karo-seramik-urunleri",
-7078
-],
-[
-"https://www.vitra.com.tr/c-eviye-bataryalari",
-6779
-],
-[
-"https://www.vitra.com.tr/servisler-ve-satis-noktalari",
-5953
-],
-[
-"https://www.vitra.com.tr/c-ev-ici-zemin-karo-seramikleri",
-5781
-],
-[
-"https://www.vitra.com.tr/c-dus-setleri",
-5631
-],
-[
-"https://www.vitra.com.tr/c-lavabo-dolaplari",
-5339
-],
-[
-"https://www.vitra.com.tr/c-dus-tekneleri",
-5066
-],
-[
-"https://www.vitra.com.tr/c-armaturler",
-4846
-],
-[
-"https://www.vitra.com.tr/c-kuvetler",
-4458
-],
-[
-"https://www.vitra.com.tr/c-banyo-bataryalari",
-4333
-],
-[
-"https://www.vitra.com.tr/c-banyo-dolaplari",
-3839
-],
-[
-"https://www.vitra.com.tr/c-rezervuar-ve-klozet-ic-takimlari",
-3279
-],
-[
-"https://www.vitra.com.tr/c-lavabo-bataryalari",
-3216
-],
-[
-"https://www.vitra.com.tr/c-akilli-klozet-seti",
-3132
-],
-[
-"https://www.vitra.com.tr/c-dus-kanallari",
-2882
-],
-[
-"https://www.vitra.com.tr/c-klozet-kapaklari",
-2808
-],
-[
-"https://www.vitra.com.tr/ilham-veren-fikirler/en-kullanisli-evye-hangisi",
-2773
-],
-[
-"https://www.vitra.com.tr/c-takim-klozetler",
-2763
-],
-[
-"https://www.vitra.com.tr/c-asma-klozetler",
-2757
-],
-[
-"https://www.vitra.com.tr/c-tezgahalti-lavabolar",
-2702
-],
-[
-"https://www.vitra.com.tr/c-dus-basliklari",
-2611
-],
-[
-"https://www.vitra.com.tr/c-duslar",
-2404
-],
-[
-"https://www.vitra.com.tr/c-mutfak-karo-seramikleri",
-2136
+2.5
 ]
 ],
 "auto": {

@@ -359,9 +359,10 @@ def sacilim(noktalar, x_ad, y_ad, renkler, cap="", genislik=880, yukseklik=380, 
 
 
 # ---------------------------------------------------------------- halka (pay dagilimi)
-def halka(dilimler, cap="", merkez=None, genislik=880, bicim=None, deger_bicim=None, r_dis=96, r_ic=58):
+def halka(dilimler, cap="", merkez=None, genislik=880, bicim=None, deger_bicim=None, r_dis=96, r_ic=58, alt=None):
     """dilimler: [(etiket, deger, renk)] ; paylar toplamdan hesaplanir. Solda halka, sagda etiket + pay + deger listesi.
-    merkez: (ust_yazi, alt_yazi) halkanin ortasina; bicim: pay bicimi (varsayilan f_pay, 1 ondalik)."""
+    merkez: (ust_yazi, alt_yazi) halkanin ortasina; bicim: pay bicimi (varsayilan f_pay, 1 ondalik).
+    alt: her dilim icin [(ad, deger_metni)] alt kirilim; balonda pay ve degerin altinda listelenir."""
     bicim = bicim or (lambda v: f_pay(v, 1))
     top = float(sum(v for _, v, _ in dilimler)) or 1.0
     n_ = len(dilimler); satir_h = 26
@@ -391,6 +392,7 @@ def halka(dilimler, cap="", merkez=None, genislik=880, bicim=None, deger_bicim=N
         bantlar.append('<rect class="hz" data-i="%d" x="%.1f" y="%.1f" width="%.1f" height="%d"/>' % (i, lx - 6, y - satir_h / 2 - 1, genislik - lx, satir_h))
         s_ = [{"a": x("Pay", "Share"), "r": renk, "v": bicim(pay)}]
         if deger_bicim: s_.append({"a": x("Değer", "Value"), "r": "", "v": deger_bicim(v)})
+        for a_, v_ in ((alt or [None] * n_)[i] or []): s_.append({"a": a_, "r": "", "v": v_})
         nok.append({"b": et, "s": s_})
         a0 = a1
     p[1:1] = yollar

@@ -17,12 +17,11 @@ def bolum_linkleri(sid):
 
 def doldur():
     # ------------------------------------------------------------ Search Console: organik bolumundeki VitrA sayfalari
-    g = json.load(open(os.path.join(HAM, "gsc", "sayfa_16ay.json"), encoding="utf-8"))["rows"]
-    gsc = {r["keys"][0]: r for r in g}
+    import gsc12
     for u, t in bolum_linkleri("organik"):
-        r = gsc.get(u) or gsc.get(u.rstrip("/")) or gsc.get(u.rstrip("/") + "/")
-        if r:
-            bilgi = "1 Haz 2025 - 25 Eyl 2026: %s tıklama, %s gösterim, ortalama sıra %s" % (fs(r["clicks"]), fs(r["impressions"]), fs(round(r["position"], 1)))
+        c_, i_, p_ = gsc12.sayfa(gsc12.yol(u))
+        if c_ or i_:
+            bilgi = "1 Eki 2025 - 30 Eyl 2026: %s tıklama, %s gösterim, ortalama sıra %s" % (fs(c_), fs(i_), fs(p_))
         else:
             bilgi = "Sayfa raporunda yer aldı"
         ekle(u, "vitra.com.tr organik kanal performansı: sayfa bazında tıklama ve gösterim (%s)" % (t if t != "/ (ana sayfa)" else "ana sayfa"), bilgi,

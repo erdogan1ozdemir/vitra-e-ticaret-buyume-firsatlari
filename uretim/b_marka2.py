@@ -9,7 +9,9 @@ from b_talep import sekmeler, AYA, YRENK, KAT_EN
 import veri
 
 O = json.load(open(os.path.join(veri.V, "islenmis", "marka_kategori.json"), encoding="utf-8"))
-M, MK, K1, YAL = O["marka"], O["marka_k1"], O["k1"], O["yalin"]
+M, MK, K1, YAL, SV = O["marka"], O["marka_k1"], O["k1"], O["yalin"], O["servis"]
+SV_T = {p: sum(v_[p] for v_ in SV.values()) for p in ("o2026", "o2025", "o2023")}
+SVC = "Servis"   # ısı haritasının son sütunu: marka adıyla servis, yedek parça, bayi ve mağaza aramaları (marka + kategori toplamına dahil değildir)
 K1_SIRA = sorted(K1, key=lambda k_: -K1[k_]["o2026"])
 M_SIRA = sorted(M, key=lambda m_: -M[m_]["o2026"])
 TOP26 = sum(M[m_]["o2026"] for m_ in M)
@@ -62,21 +64,24 @@ def _isi(metrik):
     for k1 in K1_SIRA + ["Toplam"]:
         ad_tr, ad_en = (k1, KAT_EN.get(k1, k1)) if k1 != "Toplam" else ("Toplam", "Total")
         bas.append(th(ad_tr, ad_en, ("%s kategorisi · " % ad_tr if k1 != "Toplam" else "Tüm kategoriler · ") + ac[0], ("%s category · " % ad_en if k1 != "Toplam" else "All categories · ") + ac[1], True))
+    bas.append(th("Servis, yedek parça, satış noktası", "Service, spare parts, sales points", "Marka adıyla yapılan servis, yedek parça, bayi, mağaza ve iletişim aramaları; marka + kategori toplamına dahil değildir. E.C.A. için alınmamıştır, çünkü bu aramalar kombi servisinden ayrıştırılamamaktadır. · " + ac[0],
+                  "Service, spare parts, dealer, store and contact searches with the brand name; not included in the brand + category total. Not taken for E.C.A., as these searches cannot be separated from boiler service. · " + ac[1], True))
     mx = {k1: max([MK[m_ + "|" + k1]["o2026"] for m_ in M if m_ + "|" + k1 in MK] or [1]) for k1 in K1_SIRA}
-    mx["Toplam"] = max(M[m_]["o2026"] for m_ in M)
+    mx["Toplam"] = max(M[m_]["o2026"] for m_ in M); mx[SVC] = max([v_["o2026"] for v_ in SV.values()] or [1])
     govde = []
     for m_ in M_SIRA + ["Toplam"]:
         hucre = ['<td>%s</td>' % (("<b>%s</b>" % x(m_, m_)) if m_ in ("VitrA", "Toplam") else x(m_, m_)) if m_ != "Toplam" else '<td><b>%s</b></td>' % x("Toplam", "Total")]
-        for k1 in K1_SIRA + ["Toplam"]:
-            if m_ == "Toplam": t_ = K1[k1] if k1 != "Toplam" else {"o2026": TOP26, "o2025": sum(M[a]["o2025"] for a in M), "o2023": sum(M[a]["o2023"] for a in M)}
+        for k1 in K1_SIRA + ["Toplam", SVC]:
+            if k1 == SVC: t_ = SV_T if m_ == "Toplam" else SV.get(m_)
+            elif m_ == "Toplam": t_ = K1[k1] if k1 != "Toplam" else {"o2026": TOP26, "o2025": sum(M[a]["o2025"] for a in M), "o2023": sum(M[a]["o2023"] for a in M)}
             elif k1 == "Toplam": t_ = M[m_]
             else: t_ = MK.get(m_ + "|" + k1)
             if not t_ or not t_["o2026"]:
                 hucre.append('<td class="n isi">-</td>'); continue
             yoy = (t_["o2026"] / t_["o2025"] - 1) * 100 if t_["o2025"] >= ESIK else None
             uc = (t_["o2026"] / t_["o2023"] - 1) * 100 if t_["o2023"] >= ESIK else None
-            pay = (_pay(m_, k1) if (m_ not in ("Toplam",) and k1 != "Toplam") else (100 * t_["o2026"] / TOP26 if k1 == "Toplam" and m_ != "Toplam" else None))
-            ad_k = k1 if k1 != "Toplam" else "tüm kategoriler"; ad_ke = KAT_EN.get(k1, k1) if k1 != "Toplam" else "all categories"
+            pay = None if k1 == SVC else (_pay(m_, k1) if (m_ not in ("Toplam",) and k1 != "Toplam") else (100 * t_["o2026"] / TOP26 if k1 == "Toplam" and m_ != "Toplam" else None))
+            ad_k = {"Toplam": "tüm kategoriler", SVC: "servis, yedek parça ve satış noktası aramaları"}.get(k1, k1); ad_ke = {"Toplam": "all categories", SVC: "service, spare parts and sales point searches"}.get(k1, KAT_EN.get(k1, k1))
             mt = "Toplam" if m_ == "Toplam" else m_
             ac_tr = "%s · %s: aylık %s arama (Oca-Ağu 2026); YoY %s; 2023'ten bu yana %s%s" % (mt, ad_k, bin(t_["o2026"]), yzd(yoy).replace("%", "+%") if yoy and yoy > 0 else (yzd(yoy).replace("%-", "-%") if yoy is not None else "-"),
                      yzd(uc).replace("%", "+%") if uc and uc > 0 else (yzd(uc).replace("%-", "-%") if uc is not None else "-"), ("; kategori içindeki pay %s" % yzd(pay)) if pay is not None else "")

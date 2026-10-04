@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """Bolum: Sonraki adimlar (oncelik tablosu). Excel ile ortak kaynak."""
 from ortak import *
+import gsc12 as _G12
 import serp_ozet as _SO
 import b_panel as _BP
 TM = YK["tema"]; OS = SB["oz_ssg"]; OB = SB["oz_bm"]
@@ -92,7 +93,7 @@ ADIMLAR = [
   ("Şikayetvar puanı 18; en çok izlenen 14 tamir ve kurulum konusunda VitrA kanal videosu yok; AI Overview kaynakları arasında markadan bağımsız rehber siteleri var", "Şikayetvar score 18; no VitrA channel video in the 14 most-watched repair and installation topics; AI Overview sources include brand-independent guide sites"),
   ("Markanın site dışında anılması ve AI yanıtlarında kaynak çeşitliliği", "Off-site brand mentions and source diversity in AI answers"), ("D24", "D20", "D19")),
  ("Öncelik 2", ("Banyo Asistanı'nın bayi ağına genişletilmesi ve adımlarının Google Analytics 4'te (GA4) ölçülmesi", "Extending the Bathroom Assistant to the dealer network and measuring its steps in GA4"),
-  ("Mağaza seçeneğinde 5 VitrA mağazası listeleniyor; servisler ve satış noktaları sayfası 1 Haziran 2025 - 25 Eylül 2026 döneminde %s tık almıştır" % bin(37859), "5 VitrA stores are listed in the store option; the services and sales points page received %s clicks in 1 June 2025 - 25 September 2026" % f"{37859:,}"),
+  ("Mağaza seçeneğinde 5 VitrA mağazası listeleniyor; servisler ve satış noktaları sayfası 1 Ekim 2025 - 30 Eylül 2026 döneminde %s tık almıştır" % bin(_G12.sayfa("/servisler-ve-satis-noktalari")[0]), "5 VitrA stores are listed in the store option; the services and sales points page received %s clicks in 1 October 2025 - 30 September 2026" % f"{_G12.sayfa("/servisler-ve-satis-noktalari")[0]:,}"),
   ("Lead'in satışa dönmesi", "Turning leads into sales"), ("D13", "D2")),
  ("Öncelik 2", ("Tamamlayıcı ürünlerde üçüncü taraf satıcı modelinin montaj malzemesi ve yapı kimyasalında test edilmesi", "Testing a third-party seller model for complementary products in fitting materials and building chemicals"),
   ("Yapıştırıcı, derz ve su yalıtımı aramaları bir yılda %s; rakip site incelemesinde montaj parçaları yapı market ve pazaryerlerinde listeleniyor" % yz(TM["yapi_kimya"]["yoy"]), "Adhesive, grout and waterproofing searches YoY %s; in the competitor site review fitting parts are listed at DIY stores and marketplaces" % yz(TM["yapi_kimya"]["yoy"])),

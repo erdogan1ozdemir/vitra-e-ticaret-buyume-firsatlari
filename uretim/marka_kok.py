@@ -11,9 +11,9 @@ KAT_A = {}
 for k, v in KAT.items(): KAT_A.setdefault(k.translate(_TR), v)
 KURAL = [(r"duşakabin|duşa kabin|duş kabin|duş tekne|teknesi|tekneli|teknesiz|küvet|kuvet|jakuzi|yer süzgeci|süzgeç|duş kanal|gider", "Yıkanma Alanları"),
          (r"rezervuar|rezarvuar|kumanda paneli|iç takım|şamandıra|sifon", "Rezervuarlar"),
+         (r"batarya|musluk|armatür|çeşme|ara musluk|stop val|vana", "Armatürler"),   # "lavabo bataryası", "eviye bataryası" armatürdür; vitrifiyeden önce bakılır
          (r"klozet|lavabo|pisuvar|pisuar|pisivar|bide|tuvalet taşı|hela|wc|evye|eviye|vitrifiye", "Vitrifiyeler"),
          (r"duş seti|duş başlı|el duşu|tepe duş|duş kolon|duş paneli|yağmur", "Duşlar"),
-         (r"batarya|musluk|armatür|çeşme|ara musluk|stop val|vana", "Armatürler"),
          (r"banyo dolab|dolap|ayna|mobilya|tezgah|etajer|konsol|kulp", "Banyo Mobilyaları"),
          (r"fayans|fanyas|seramik|karo|granit|porselen|süpürgelik|mozaik", "Karo Seramik Ürünleri"),
          (r"havlu|sabunluk|kağıtlık|fırça|askı|raf|çöp|peçete|aksesuar|tutunma|tutamak", "Banyo Aksesuarları")]

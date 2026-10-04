@@ -59,7 +59,7 @@ tbl3 = tablo([th("Öneri teması", "Suggestion theme", "Önerinin ifade kalıbı
               th("Pay", "Share", "Toplam öneri içindeki pay.", "Share of total suggestions.", True)], tema_rows, "dar")
 rows4 = [[veri_m(q), cell(c), cell(i), n(yzd(ctr)), n(("%.1f" % pos).replace(".", ","))] for q, c, i, ctr, pos in TQ[:20]]
 tbl4 = tablo([th("Sorgu", "Query", "Kullanıcının Google'a yazdığı ifade.", "Phrase the user typed into Google."),
-              th("Click", "Clicks", "1 Haz 2025 - 25 Eyl 2026.", "1 Jun 2025 - 25 Sep 2026.", True),
+              th("Click", "Clicks", "1 Eki 2025 - 30 Eyl 2026.", "1 Oct 2025 - 30 Sep 2026.", True),
               th("Gösterim", "Impressions", "Aynı dönem.", "Same period.", True),
               th("CTR", "CTR", "Tık / gösterim.", "Clicks / impressions.", True),
               th("Sıra", "Position", "Ortalama sıra.", "Average position.", True)], rows4, "uzun")
@@ -69,7 +69,7 @@ def _gq(q_, alan, en=False):
     if alan == 2: return k(v_).replace(",", ".") if en else k(v_)
     if alan == 3: return ("%.1f%%" % v_) if en else yzd(v_)
     return ("%.1f" % v_) if en else ("%.1f" % v_).replace(".", ",")
-from b_marka2 import BLOK as _MB, DIALOG as _MD
+from b_marka2 import BLOK as _MB, DIALOG as _MD, O as _MO
 assert (N_KOK, len(TOHUM), N_EK, len(_ONERI)) == (66, 14, 52, 617), "07 öneri sayıları değişti (h3_not notu güncellenmeli)"
 HTML = """
 <p class="lede">%s</p>
@@ -86,8 +86,8 @@ HTML = """
 %s
 %s
 """ % (
- x("Marka talebi iki veriyle ölçülmüştür. Birincisi, marka adıyla ve marka + kategori ifadeleriyle yapılan aramaların aylık hacmidir (Google Ads Keyword Planner; 26 üretici marka ve 10 perakendeci; Eyl 2022 - Ağu 2026); \"vitra\" için kelime evrenindeki ifadelerin markalı biçimleri, rakipler için bu ifadelerden VitrA'da arama hacmi olanlar kullanılmıştır. İkincisi, Google'ın arama kutusunda önerdiği tamamlamalardır; öneriler gerçek kullanıcı aramalarından türetildiği için markadan ne beklendiğini doğrudan göstermektedir.",
-   "Brand demand was measured with two data sets. The first is the monthly volume of searches made with the brand name and with brand + category phrases (Google Ads Keyword Planner; 26 manufacturer brands and 10 retailers; Sep 2022 - Aug 2026); for \"vitra\" the branded forms of the phrases in the keyword universe were used, and for competitors those of these phrases that have search volume for VitrA. The second is the completions Google suggests in the search box; as suggestions are derived from real user searches, they show directly what is expected of the brand."),
+ x("Marka talebi iki veriyle ölçülmüştür. Birincisi, marka adıyla ve marka + kategori ifadeleriyle yapılan aramaların aylık hacmidir (Google Ads Keyword Planner; 26 üretici marka ve 10 perakendeci; Eyl 2022 - Ağu 2026); \"vitra\" için kelime evrenindeki ifadelerin markalı biçimleri, rakipler için bu ifadelerden VitrA'da arama hacmi olanlar, ayrıca Ahrefs'te rakip marka siteleri ile Trendyol, Hepsiburada ve Koçtaş'ın sıralandığı %s marka ifadesi kullanılmıştır. İkincisi, Google'ın arama kutusunda önerdiği tamamlamalardır; öneriler gerçek kullanıcı aramalarından türetildiği için markadan ne beklendiğini doğrudan göstermektedir." % bin(_MO["kelime_sayisi"]["ahrefs"]),
+   "Brand demand was measured with two data sets. The first is the monthly volume of searches made with the brand name and with brand + category phrases (Google Ads Keyword Planner; 26 manufacturer brands and 10 retailers; Sep 2022 - Aug 2026); for \"vitra\" the branded forms of the phrases in the keyword universe were used, and for competitors those of these phrases that have search volume for VitrA, plus %s brand phrases for which competitor brand sites and Trendyol, Hepsiburada and Koçtaş rank in Ahrefs. The second is the completions Google suggests in the search box; as suggestions are derived from real user searches, they show directly what is expected of the brand." % f"{_MO['kelime_sayisi']['ahrefs']:,}"),
  _MB,
  x("Google önerileri: markadan ne bekleniyor?", "Google suggestions: what is expected of the brand?"),
  metric("Tamir ve bakım önerileri", "Repair and maintenance suggestions", yzd(100 * AT["Tamir ve bakım"] / attot), "Tüm önerilerin payı; \"iç takımı\", \"şamandıra\", \"su kaçırıyor\", \"menteşe\"", "Share of all suggestions; \"iç takımı\", \"şamandıra\", \"su kaçırıyor\", \"menteşe\""),

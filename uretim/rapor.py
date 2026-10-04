@@ -30,6 +30,8 @@ P.append(bolum("talep", "Kategori Talebi ve Dönemsel Değişim", "Category Dema
 P.append(bolum("ssgbm", "SSG ve BM: Derin Talep İncelemesi", "SSG and BM: In-Depth Demand Review", b_ssgbm.HTML))
 P.append(bolum("ihtiyac", "İhtiyaç Dili: Kullanıcı Ne Arıyor?", "Need Language: What Is the User Searching For?", b_niyet.HTML))
 P.append(bolum("organik", "Organik Kanal Performansı", "Organic Channel Performance", b_organik.HTML))
+import b_genai
+P.append(bolum("yapayzeka", "Google Yapay Zeka Özellikleri ve Organik Tık", "Google AI Features and Organic Clicks", b_genai.HTML))
 P.append(bolum("marka", "Marka Aramaları ve Autocomplete", "Brand Searches and Autocomplete", b_marka.HTML))
 P.append(bolum("serp", "Google Arama Sonuçları ve AI Overview", "Google Search Results and AI Overview", b_serp.HTML))
 P.append(bolum("youtube", "YouTube: Montaj, Tamir ve Karar Videoları", "YouTube: Installation, Repair and Decision Videos", b_youtube.HTML))
@@ -51,7 +53,7 @@ P.append(bolum("benchmark", "Benchmark: E-Ticaret Modelleri ve Dijital Deneyim",
 P.append(bolum("model", "Kanal Rolleri ve Etkileşim Modeli", "Channel Roles and Engagement Model", b_model.HTML))
 P.append(bolum("geo", "AI Arama ve GEO Fırsatları", "AI Search and GEO Opportunities", b_geo.HTML))
 P.append(bolum("adimlar", "Sonraki Adımlar", "Next Steps", b_adimlar.HTML))
-P.append(bolum("ek", "Yöntem, Kapsam, Kaynakça ve Sözlük", "Method, Scope, References and Glossary", "<h3>%s</h3>" % x("Yöntem ve Kapsam", "Method and Scope") + b_yontem.HTML + "<!--EK-SON-->"))
+P.append(bolum("ek", "Terim Sözlüğü, Kaynakça, Yöntem ve Kapsam", "Glossary, References, Method and Scope", "<!--EK-BAS-->" + "<h3>%s</h3>" % x("Yöntem ve Kapsam", "Method and Scope") + b_yontem.HTML))
 
 govde = "\n".join(P)
 # --- son islemler: alt baslik aciklamasi, uzun tablo, logo
@@ -80,6 +82,7 @@ def _h3_not(m):
     if t in h3_not.N:
         tr, en = h3_not.N[t]; return '<h3 id="%s">%s</h3><p class="h3n">%s</p>%s' % (_h3_id(t), t, x(*_kalin_cift(tr, en)), ek_)
     return '<h3 id="%s">%s</h3>%s' % (_h3_id(t), t, ek_)
+_eksik_h3 = sorted({m for m in re.findall(r'(?<!</span>)<h3>([^<]+)</h3>', govde) if m not in h3_not.N and m != "Öne çıkan bulgular"})   # not eşleşmesinden önce bakılır (sonra tüm başlıklar id alır)
 govde = re.sub(r'<h3>([^<]+)</h3>', _h3_not, govde)
 _yok = [t for t in H3_ALT if 'id="%s"' % _hid(t) not in govde]
 if _yok: raise SystemExit('alt sayfa dugmesi icin baslik bulunamadi: %s' % _yok)
@@ -96,7 +99,6 @@ govde = _VR.sub(lambda m: m.group(0).replace("<tr><td>", '<tr class="vsat"><td>'
 _hedef = set(re.findall(r'id="([^"]+)"', govde))
 _kayip = sorted(set(re.findall(r'<a class="git" href="#([^"]+)"', govde)) - _hedef)
 if _kayip: raise SystemExit("Ok bağlantısının hedefi bulunamadı: %s" % _kayip)
-_eksik_h3 = sorted({m for m in re.findall(r'(?<!</span>)<h3>([^<]+)</h3>', govde) if m not in h3_not.N and m != "Öne çıkan bulgular"})
 def _uzun(m):
     blok = m.group(0)
     if 'uzun' in m.group(1): return blok
@@ -177,12 +179,13 @@ GL_EN = {
 GL_TERM_EN = {"SSS": "FAQ", "Click payı": "Click share", "TÜİK": "TurkStat", "KDV": "VAT", "Yerel paket": "Local pack", "Desi": "Desi (volumetric weight)", "Medyan": "Median", "Organik trafik": "Organic traffic", "Paid trafik": "Paid traffic", "Kartlı Ödeme Endeksi": "Card Payment Index", "Net yüzde": "Net percentage", "SSG": "SSG", "BM": "BM", "3P": "3P", "TCMB": "CBRT", "EVDS": "EVDS"}
 _TRS = str.maketrans("çğıöşüÇĞİÖŞÜ", "cgiosuCGIOSU")
 sozluk = '<dl class="gl sozluk">%s</dl>' % "".join('<dt>%s</dt><dd>%s</dd>' % (x(t, GL_TERM_EN.get(t, t)), x(GLOSSARY[t], GL_EN[t])) for t in sorted(GLOSSARY, key=lambda t_: t_.translate(_TRS).lower()))
-# Ek bölümü: Yöntem ve Kapsam tablosunun ardına Kaynakça ve Terim Sözlüğü alt başlıkları
-govde = govde.replace("<!--EK-SON-->", '<h3 id="kaynakca">%s</h3>%s<h3 id="sozluk">%s</h3><p class="h3n">%s</p>%s' % (
-    x("Kaynakça", "References"), _KAY, x("Terim Sözlüğü", "Glossary"),
+# Ek bölümü: sırasıyla Terim Sözlüğü, Kaynakça, Yöntem ve Kapsam
+govde = govde.replace("<!--EK-BAS-->", '<h3 id="sozluk">%s</h3><p class="h3n">%s</p>%s<h3 id="kaynakca">%s</h3>%s' % (
+    x("Terim Sözlüğü", "Glossary"),
     x("Raporda geçen kısaltma ve terimlerin kısa tanımları; metinde noktalı alt çizgili terimlerin üzerine gelindiğinde aynı tanım açılır.",
-      "Short definitions of the abbreviations and terms used in the report; hovering over a dotted-underlined term in the text opens the same definition."), sozluk), 1)
-if "<!--EK-SON-->" in govde: raise SystemExit("Ek bölümü yer tutucusu bulunamadı")
+      "Short definitions of the abbreviations and terms used in the report; hovering over a dotted-underlined term in the text opens the same definition."), sozluk,
+    x("Kaynakça", "References"), _KAY), 1)
+if "<!--EK-BAS-->" in govde: raise SystemExit("Ek bölümü yer tutucusu bulunamadı")
 
 CSS_SON = """
 sup.ref{margin-left:.18em}
@@ -265,6 +268,8 @@ b.mb{font-weight:650;color:var(--ink)}
 .tw.tw.isi-t th:first-child,.tw.tw.isi-t td:first-child{min-width:96px}
 .isi-t td.isi{white-space:nowrap;font-variant-numeric:tabular-nums}
 .isi-t td.isi[data-t]{cursor:help}
+.ac[data-t]{cursor:help;border-bottom:1px dotted currentColor}
+.ac[data-t]:focus-visible{outline:2px solid var(--acc,#E85F36);outline-offset:2px}
 .isi-t td.isi-h{background:color-mix(in srgb,var(--isi-h) calc(var(--a) * 100%),transparent)}
 .isi-t td.isi-a{background:color-mix(in srgb,var(--isi-a) calc(var(--a) * 100%),transparent)}
 .isi-t td.isi-d{background:color-mix(in srgb,var(--isi-d) calc(var(--a) * 100%),transparent)}
@@ -335,10 +340,10 @@ h3[id]{scroll-margin-top:calc(var(--apph, 64px) + 24px)}
 .tw.genis td:first-child{white-space:nowrap}
 """
 # ---------------------------------------------------------------- icindekiler
-KISA = {"ek": ("Yöntem, Kapsam, Kaynakça ve Sözlük", "Method, Scope, References and Glossary"), "yolculuk": ("Satın Alma Yolculuğu", "Purchase Journey"), "yorum": ("Yorumlar ve Soru-Cevap", "Reviews and Q&A"), "ihtiyac": ("İhtiyaç Dili", "Need Language"), "youtube": ("YouTube: Montaj ve Tamir", "YouTube: Installation and Repair"), "rakip": ("Rakip Görünürlüğü ve Ölçek", "Competitor Visibility and Scale"),
+KISA = {"ek": ("Sözlük, Kaynakça, Yöntem", "Glossary, References, Method"), "yapayzeka": ("Yapay Zeka Özellikleri ve Tık", "AI Features and Clicks"), "yolculuk": ("Satın Alma Yolculuğu", "Purchase Journey"), "yorum": ("Yorumlar ve Soru-Cevap", "Reviews and Q&A"), "ihtiyac": ("İhtiyaç Dili", "Need Language"), "youtube": ("YouTube: Montaj ve Tamir", "YouTube: Installation and Repair"), "rakip": ("Rakip Görünürlüğü ve Ölçek", "Competitor Visibility and Scale"),
         "model": ("Kanal Rolleri ve Model", "Channel Roles and Model"), "panel": ("Resmi Mağaza Paneli", "Official Store Panel"), "makro": ("Ekonomik Ortam", "Economic Environment"), "talep": ("Kategori Talebi", "Category Demand"), "organik": ("Organik Kanal", "Organic Channel"),
         "marka": ("Marka Aramaları", "Brand Searches"), "ssgbm": ("SSG ve BM Derin Talep", "SSG and BM In Depth"), "katalog": ("Katalog ve Talep", "Catalogue and Demand"), "yeni": ("Yeni Kategori ve Segment", "New Categories and Segments"), "set": ("Set ve Ürün + Hizmet", "Sets and Product + Service"), "benchmark": ("Benchmark ve Dijital Deneyim", "Benchmark and Digital Experience"), "serp": ("Google SERP ve AI Overview", "Google SERP and AI Overview"), "trafik": ("Marka Sitelerinde Trafik", "Traffic on Brand Sites"), "pazaryeri": ("Pazaryeri ve Çok Satanlar", "Marketplaces and Best Sellers"), "politika": ("Kanal Politikaları", "Channel Policies"), "sikayet": ("Şikayetvar: Satış Sonrası", "Şikayetvar: After-Sales"), "fiyat": ("Fiyat ve Satıcı Manzarası", "Price and Seller Landscape"), "derin": ("Alt Kategori Derinliği", "Sub-Category Depth"), "geo": ("AI Arama ve GEO Fırsatları", "AI Search and GEO Opportunities")}
-KUMELER = [("DURUM", "STATUS", ["ozet", "makro"]), ("TALEP", "DEMAND", ["talep", "ssgbm", "ihtiyac", "organik", "marka", "serp", "youtube", "sikayet"]), ("FIRSAT", "OPPORTUNITY", ["katalog", "yeni", "set"]), ("REKABET VE MODEL", "COMPETITION AND MODEL", ["rakip", "trafik", "pazaryeri", "derin", "panel", "yorum", "fiyat", "politika", "yolculuk", "benchmark", "model"]),
+KUMELER = [("DURUM", "STATUS", ["ozet", "makro"]), ("TALEP", "DEMAND", ["talep", "ssgbm", "ihtiyac", "organik", "yapayzeka", "marka", "serp", "youtube", "sikayet"]), ("FIRSAT", "OPPORTUNITY", ["katalog", "yeni", "set"]), ("REKABET VE MODEL", "COMPETITION AND MODEL", ["rakip", "trafik", "pazaryeri", "derin", "panel", "yorum", "fiyat", "politika", "yolculuk", "benchmark", "model"]),
            ("PLAN", "PLAN", ["geo", "adimlar"]), ("EK", "APPENDIX", ["ek"])]
 _bas = dict(BOLUMLER); _sira = {b: i + 1 for i, (b, _) in enumerate(BOLUMLER)}
 _kumede = [b for _, _, ids in KUMELER for b in ids]

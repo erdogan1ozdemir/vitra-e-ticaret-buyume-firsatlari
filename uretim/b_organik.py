@@ -1,110 +1,269 @@
 # -*- coding: utf-8 -*-
-"""Bolum: Organik kanal performansi (Search Console)."""
+"""Bolum: Organik kanal performansi (Search Console, 2. çekim 04.10.2026).
+Dönemler: toplamlar, cihaz, ülke ve blog listesi 1 Eki 2025 - 30 Eyl 2026 (12 ay); aylık seri Haz 2025 - Eyl 2026;
+sayfa türü, kategori ve en çok tık alan sayfalar 1 Oca - 30 Eyl 2026 (Aralık 2025'te online.vitra.com.tr adresleri www.vitra.com.tr'ye taşındığı için)."""
 from ortak import *
-from rapor_parca1 import T, cizgi
-from b_talep import kat, KAT_EN
-GA = A["gsc_aylar"]; GM = A["gsc_aylik"]; GT = A["gsc_tur"]; GK = A["gsc_kat"]; GC = A["gsc_cihaz"]; GU = A["gsc_ulke"]; ON = A["online_aylik"]; MT = A["gsc_ay_toplam"]; TS = A["top_sayfa_3ay"]
-aylar = [m for m in GA if m <= "2026-08"]
-tur_en = {"kategori": "Category pages", "urun": "Product pages", "eski-online": "Old online.vitra.com.tr addresses (before the December 2025 merger)", "anasayfa": "Home page", "icerik": "Content and inspiration", "diger": "Other", "servis-bayi": "Service and dealer", "koleksiyon": "Collection pages", "kurumsal": "Corporate", "katalog": "Catalogue", "urun-teknik": "Product technical sheets"}
-tur_tr = {"kategori": "Kategori sayfaları", "urun": "Ürün sayfaları", "eski-online": "Eski online.vitra.com.tr adresleri (Aralık 2025 birleşmesi öncesi)", "anasayfa": "Ana sayfa", "icerik": "İçerik ve ilham", "diger": "Diğer", "servis-bayi": "Servis ve bayi", "koleksiyon": "Koleksiyon sayfaları", "kurumsal": "Kurumsal", "katalog": "Katalog", "urun-teknik": "Ürün teknik föyleri"}
+import json as _json, os as _os, html as _h
+from rapor_parca1 import cizgi
+from b_talep import kat, KAT_EN, sekmeler, AYA, YRENK
+from grafik2 import halka as _halka, f_k as _fk, gruplu as _gr
+import gsc12 as _G12
+import rehber_grup as _RG
+G2 = _json.load(open(_os.path.join(veri.V, "islenmis", "gsc2.json"), encoding="utf-8"))
+AY = G2["ay"]; GT = G2["tur"]; GK = G2["kat"]; GA = G2["kat_alt"]; GTA = G2["tur_alt"]; GC = G2["cihaz"]; GU = G2["ulke"]
+D12, D26 = _G12.D12, _G12.D26
+def _pay_tr(v): return yzd(v)
+def _pay_en(v): return ("%.1f" % v) + "%"
+def _isr(v): return ("+" if round(v, 1) > 0 else ("-" if round(v, 1) < 0 else "")) + "%" + ("%.1f" % abs(v)).replace(".", ",")
+def _isr_en(v): return ("+" if round(v, 1) > 0 else ("-" if round(v, 1) < 0 else "")) + ("%.1f" % abs(v)) + "%"
+def _ay(m): return AY.get(m)
+x("Oca", "Jan"); x("Şub", "Feb"); x("Mar", "Mar"); x("Nis", "Apr"); x("May", "May"); x("Haz", "Jun"); x("Tem", "Jul"); x("Ağu", "Aug"); x("Eyl", "Sep"); x("Eki", "Oct"); x("Kas", "Nov"); x("Ara", "Dec")
+AD = [a for a, _ in AYA]
+def _yil(y, i): return [(_ay("%d-%02d" % (y, m)) or [None, None])[i] for m in range(1, 13)]
+HE = ["06", "07", "08", "09"]
+def _top(y, i, aylar=HE): return sum(AY["%d-%s" % (y, m)][i] for m in aylar)
+c25, c26 = _top(2025, 0), _top(2026, 0); i25, i26 = _top(2025, 1), _top(2026, 1)
+he_c = (c26 / c25 - 1) * 100; he_i = (i26 / i25 - 1) * 100
+y12c, y12i = G2["y12"]["click"], G2["y12"]["gosterim"]
+cih_t = sum(v[0] for v in GC.values()); cih_i = sum(v[1] for v in GC.values())
+mob = 100 * GC["MOBILE"][0] / cih_t; mob_i = 100 * GC["MOBILE"][1] / cih_i
+ctr_m = 100 * GC["MOBILE"][0] / GC["MOBILE"][1]; ctr_d = 100 * GC["DESKTOP"][0] / GC["DESKTOP"][1]
+
+# ---------------------------------------------------------------- 1 · aylık seri 2025 ve 2026
+x("Aylık organik tık · vitra.com.tr, 2025 ve 2026 üst üste (Search Console 16 ayı sakladığı için 2025 Haziran'da başlar)", "Monthly organic clicks · vitra.com.tr, 2025 and 2026 overlaid (as Search Console keeps 16 months, 2025 starts in June)")
+G_AY = sekmeler([("Click", "Clicks", cizgi([("2025", YRENK["2025"], _yil(2025, 0)), ("2026", YRENK["2026"], _yil(2026, 0))],
+                                         y_etiket=x("Aylık organik tık · vitra.com.tr, 2025 ve 2026 üst üste (Search Console 16 ayı sakladığı için 2025 Haziran'da başlar)", "Monthly organic clicks · vitra.com.tr, 2025 and 2026 overlaid (as Search Console keeps 16 months, 2025 starts in June)"),
+                                         aylar=AD, x_etiket=AD, kalin={1: 3.2})),
+                 ("Gösterim", "Impressions", cizgi([("2025", YRENK["2025"], _yil(2025, 1)), ("2026", YRENK["2026"], _yil(2026, 1))],
+                                         y_etiket=x("Aylık gösterim · vitra.com.tr, 2025 ve 2026 üst üste", "Monthly impressions · vitra.com.tr, 2025 and 2026 overlaid"),
+                                         aylar=AD, x_etiket=AD, kalin={1: 3.2}))], "gtabs")
+def _d(a, b): return n(yz((b / a - 1) * 100)) if a and b else n("-")
+def _c(v): return cellk(v) if v else n("-")
+def _ctr(r): return n(yzd(100 * r[0] / r[1], 2)) if r else n("-")
+def _sira(r): return n(("%.1f" % r[2]).replace(".", ",")) if r and r[2] else n("-")
+_AYS = []
+for m in range(1, 13):
+    a5, a6 = _ay("2025-%02d" % m), _ay("2026-%02d" % m)
+    if not (a5 or a6): continue
+    _AYS.append([x(*AYA[m - 1]), _c(a5[0] if a5 else 0), _c(a6[0] if a6 else 0), _d(a5[0] if a5 else 0, a6[0] if a6 else 0), _c(a5[1] if a5 else 0), _c(a6[1] if a6 else 0),
+                 _d(a5[1] if a5 else 0, a6[1] if a6 else 0), _ctr(a5), _ctr(a6), _sira(a5), _sira(a6)])
+T_AY = tablo([th("Ay", "Month", "Takvim ayı; 2025 Ocak - Mayıs Search Console'un saklama süresi dışında kaldığı için boştur, 2026 Ekim - Aralık henüz gelmemiştir.", "Calendar month; January - May 2025 is outside Search Console's retention period and October - December 2026 has not yet come."),
+              th("Click 2025", "Clicks 2025", "Ayın organik tıkı, 2025.", "Organic clicks in the month, 2025.", True), th("Click 2026", "Clicks 2026", "Ayın organik tıkı, 2026; Eylül'ün son günleri Search Console ön verisidir.", "Organic clicks in the month, 2026; the last days of September are Search Console preliminary data.", True),
+              th("YoY", "YoY", "2026 tıkının 2025'in aynı ayına göre değişimi.", "Change of 2026 clicks against the same month of 2025.", True),
+              th("Gösterim 2025", "Impressions 2025", "Ayın gösterimi, 2025.", "Impressions in the month, 2025.", True), th("Gösterim 2026", "Impressions 2026", "Ayın gösterimi, 2026.", "Impressions in the month, 2026.", True),
+              th("Gösterim YoY", "Impressions YoY", "2026 gösteriminin 2025'in aynı ayına göre değişimi.", "Change of 2026 impressions against the same month of 2025.", True),
+              th("CTR 2025", "CTR 2025", "Tık / gösterim, 2025.", "Clicks / impressions, 2025.", True), th("CTR 2026", "CTR 2026", "Tık / gösterim, 2026.", "Clicks / impressions, 2026.", True),
+              th("Ort. sıra 2025", "Avg. position 2025", "Gösterimle ağırlıklı ortalama Google sırası, 2025.", "Impression-weighted average Google position, 2025.", True), th("Ort. sıra 2026", "Avg. position 2026", "Gösterimle ağırlıklı ortalama Google sırası, 2026.", "Impression-weighted average Google position, 2026.", True)], _AYS, "dar")
+_yy = {m: (AY["2026-" + m][0] / AY["2025-" + m][0] - 1) * 100 for m in HE}
+_yi = {m: (AY["2026-" + m][1] / AY["2025-" + m][1] - 1) * 100 for m in HE}
+INS_AY = insight("Search Console'un sakladığı dönemde iki yılın kıyaslanabildiği Haziran - Eylül aylarında organik tık %s, gösterim %s değişmiştir. Haziran'da tık %s artarken Temmuz'da yatay (%s) seyretmiş, Ağustos (%s) ve Eylül'de (%s) gerilemiştir; aynı aylarda gösterim Ağustos'ta %s, Eylül'de %s daralmıştır. Gösterimdeki daralma tıktan daha belirgindir; kategori talebindeki gerileme (Bölüm [[b:talep]]) ve blog sayfalarında yapay zeka özelliklerinin artan payı (Bölüm [[b:yapayzeka]]) bu dönemle ilişkilendirilebilir."
+                 % (yz(he_c), yz(he_i), yz(_yy["06"]), yz(_yy["07"]), yz(_yy["08"]), yz(_yy["09"]), yz(_yi["08"]), yz(_yi["09"])),
+                 "In June - September, the months that can be compared across the two years within Search Console's retention period, organic clicks changed %s and impressions %s. Clicks rose %s in June, were flat in July (%s) and declined in August (%s) and September (%s); in the same months impressions contracted %s in August and %s in September. The contraction is clearer in impressions than in clicks; the decline in category demand (Section [[b:talep]]) and the growing share of AI features on blog pages (Section [[b:yapayzeka]]) can be associated with this period."
+                 % (yz(he_c), yz(he_i), yz(_yy["06"]), yz(_yy["07"]), yz(_yy["08"]), yz(_yy["09"]), yz(_yi["08"]), yz(_yi["09"])), "D2")
+
+# ---------------------------------------------------------------- 2 · sayfa türü (Oca - Eyl 2026), alt kırılım hover
+tur_en = {"kategori": "Category pages", "urun": "Product pages", "eski-online": "Old online.vitra.com.tr addresses", "anasayfa": "Home page", "icerik": "Content and inspiration (blog)", "diger": "Other", "servis-bayi": "Service and dealer", "koleksiyon": "Collection pages", "kurumsal": "Corporate", "katalog": "Catalogue", "urun-teknik": "Product technical sheets"}
+tur_tr = {"kategori": "Kategori sayfaları", "urun": "Ürün sayfaları", "eski-online": "Eski online.vitra.com.tr adresleri", "anasayfa": "Ana sayfa", "icerik": "İçerik ve ilham (blog)", "diger": "Diğer", "servis-bayi": "Servis ve bayi", "koleksiyon": "Koleksiyon sayfaları", "kurumsal": "Kurumsal", "katalog": "Katalog", "urun-teknik": "Ürün teknik föyleri"}
+KAT_EN2 = dict(KAT_EN); KAT_EN2.update({"Karo Seramik": "Ceramic Tiles", "Koleksiyon sayfaları": "Collection pages", "Genel ürün listeleri ve kampanyalar": "General product lists and campaigns"})
+K2_EN = {"Klozetler": "WCs", "Lavabolar": "Washbasins", "Klozet Kapakları": "WC seats", "Akıllı Klozet": "Smart WCs", "Pisuvarlar": "Urinals", "Bideler": "Bidets", "Tamamlayıcı": "Complementary products",
+         "Ana kategori ve genel listeler": "Main category and general lists", "İç Takımlar": "Inner mechanisms", "Gömme Rezervuarlar": "Concealed cisterns", "Kumanda Panelleri": "Flush plates",
+         "Banyo Dolapları": "Bathroom cabinets", "Lavabo Dolapları": "Washbasin cabinets", "Çamaşır Makinesi Dolapları": "Washing machine cabinets", "Banyo Aynaları": "Bathroom mirrors", "Tezgahlar": "Countertops",
+         "Set Modülleri": "Set modules", "Eviye Bataryaları": "Kitchen mixers", "Eviyeler": "Kitchen sinks", "Banyo Bataryaları": "Bath mixers", "Lavabo Bataryaları": "Basin mixers", "Musluklar": "Taps",
+         "Ankastre": "Concealed mixers", "Bide Bataryaları": "Bidet mixers", "Duş Setleri": "Shower sets", "Duş Başlıkları": "Shower heads", "Duş Sistemleri": "Shower systems", "El Duşları": "Hand showers",
+         "Duş Kolonları": "Shower columns", "Duşakabin": "Shower enclosures", "Duş Tekneleri": "Shower trays", "Küvetler": "Bathtubs", "Duş Kanalları": "Shower channels", "Duş Üniteleri": "Shower units",
+         "Tuvalet Kağıtlıkları": "Toilet roll holders", "Havluluklar": "Towel holders", "Tuvalet Fırçaları": "Toilet brushes", "Sabunluklar": "Soap dishes", "Çöp Kovaları": "Waste bins", "Tutunma Barları": "Grab bars",
+         "Diğer": "Other", "Ürün sayfaları": "Product pages", "Diğer karo listeleri": "Other tile lists", "Banyo karoları": "Bathroom tiles", "Zemin karoları": "Floor tiles", "Mutfak karoları": "Kitchen tiles",
+         "Dış mekan karoları": "Outdoor tiles", "Servisler ve satış noktaları listesi": "Services and sales points list", "Tek mağaza, bayi ve servis sayfaları": "Individual store, dealer and service pages", "Duvar karoları": "Wall tiles", "Dizin sayfası": "Index page"}
+for a_, b_, c_ in _RG.GRUP: K2_EN[b_] = c_
+for k_, v_ in KAT_EN2.items(): K2_EN.setdefault(k_, v_)
+def _alt_ac(baslik_tr, baslik_en, L, toplam):
+    """Alt kırılım balonu: ilk altı kalem ve tık payı."""
+    tr_ = "; ".join("%s %s" % (a_ if a_.startswith("/") else a_, _pay_tr(100 * v_ / toplam)) for a_, v_ in L)
+    en_ = "; ".join("%s %s" % (a_ if a_.startswith("/") else K2_EN.get(a_, a_), _pay_en(100 * v_ / toplam)) for a_, v_ in L)
+    t_tr = "%s · alt kırılım, tık payı (%s): %s" % (baslik_tr, D26[0], tr_); t_en = "%s · breakdown, click share (%s): %s" % (baslik_en, D26[1], en_)
+    x(t_tr, t_en); return t_tr
+def _ac_span(et_tr, et_en, t_tr):
+    return '<span class="ac" tabindex="0" data-t="%s">%s</span>' % (_h.escape(t_tr, quote=True), x(et_tr, et_en))
 ttot = sum(v[0] for v in GT.values())
-rows = [[x(tur_tr[t], tur_en[t]), cell(v[2]), cellk(v[0]), n(yzd(100 * v[0] / ttot)), cellk(v[1]), n(yzd(100 * v[0] / v[1]) if v[1] else "-")] for t, v in sorted(GT.items(), key=lambda i: -i[1][0])]
-tbl = tablo([th("Sayfa türü", "Page type", "Adres yapısına göre sayfa sınıfı; /c- ve kategori dizinleri kategori, -p- ve -sku- kodlu adresler (eski adres yapısı dahil) ürün sayfasıdır.", "Page class by URL structure; /c- and category directories are category pages, addresses coded -p- and -sku- (including the old URL structure) are product pages."),
-             th("Sayfa", "Pages", "Dönemde en az bir gösterim almış tekil sayfa sayısı (ilk 25.000 adres); sayfalama ve filtre parametreli adresler kendi temel adresiyle tek sayfa sayılmıştır.", "Number of unique pages with at least one impression in the period (top 25,000 addresses); paginated and filtered addresses are counted as one page with their base page.", True),
-             th("Click", "Clicks", "1 Haz 2025 - 25 Eyl 2026 toplam click.", "Total clicks, 1 Jun 2025 - 25 Sep 2026.", True),
+_GTs = sorted(GT.items(), key=lambda i: -i[1][0])
+rows = []
+for t, v in _GTs:
+    ac_ = _alt_ac(tur_tr[t], tur_en[t], GTA.get(t, []), v[0]) if GTA.get(t) and t not in ("anasayfa",) else None
+    rows.append([_ac_span(tur_tr[t], tur_en[t], ac_) if ac_ else x(tur_tr[t], tur_en[t]), cell(v[2]), cellk(v[0]), n(yzd(100 * v[0] / ttot)), cellk(v[1]), n(yzd(100 * v[0] / v[1]) if v[1] else "-")])
+tbl = tablo([th("Sayfa türü", "Page type", "Adres yapısına göre sayfa sınıfı; /c- ve kategori dizinleri kategori, -p- ve -sku- kodlu adresler ürün sayfasıdır. Noktalı alt çizgili türün üzerine gelindiğinde alt kırılımı açılır.", "Page class by URL structure; /c- and category directories are category pages, addresses coded -p- and -sku- are product pages. Hovering over an underlined type opens its breakdown."),
+             th("Sayfa", "Pages", "Dönemde en az bir gösterim almış tekil sayfa sayısı; sayfalama ve filtre parametreli adresler kendi temel adresiyle tek sayfa sayılmıştır.", "Number of unique pages with at least one impression in the period; paginated and filtered addresses are counted as one page with their base page.", True),
+             th("Click", "Clicks", "%s toplam click." % D26[0], "Total clicks, %s." % D26[1], True),
              th("Pay", "Share", "Sayfa türünün toplam tık içindeki payı.", "Page type's share of total clicks.", True),
              th("Gösterim", "Impressions", "Aynı dönemde gösterim.", "Impressions in the same period.", True),
              th("CTR", "CTR", "Tık / gösterim.", "Clicks / impressions.", True)], rows)
-from grafik2 import halka as _halka, f_k as _fk
 _HR = ["#10332F", "#2E7D32", "#E85F36", "#F5A623", "#7A8C89", "#C9D3D1"]
-_GTs = sorted(GT.items(), key=lambda i: -i[1][0])
-_HAD = {"eski-online": ("Eski online.vitra.com.tr adresleri", "Old online.vitra.com.tr addresses")}
-HALKA_TUR = _halka([(x(*_HAD.get(t, (tur_tr[t], tur_en[t]))), v[0], _HR[i]) for i, (t, v) in enumerate(_GTs[:5])] + [(x("Diğer sayfa türleri", "Other page types"), sum(v[0] for _, v in _GTs[5:]), _HR[5])],
-                   x("Organik tıkların sayfa türlerine dağılımı · 1 Haz 2025 - 25 Eyl 2026", "Organic clicks by page type · 1 Jun 2025 - 25 Sep 2026"),
-                   merkez=(_fk(ttot), x("tık · sayfa düzeyi", "clicks · page level")), deger_bicim=_fk)
-ktot = sum(v[0] for v in GK.values())
-k1s = {}
-for key, v in GK.items():
-    k1 = key.split("|")[0]; k1s.setdefault(k1, [0, 0, 0]); k1s[k1][0] += v[0]; k1s[k1][1] += v[1]; k1s[k1][2] += v[2]
-KAT_EN2 = dict(KAT_EN); KAT_EN2["Karo Seramik"] = "Ceramic Tiles"; KAT_EN2["Diğer"] = "Other"
+def _alt_liste(t, toplam):
+    return [(x(a_, a_) if a_.startswith("/") else x(a_, K2_EN.get(a_, a_)), x(_pay_tr(100 * v_ / toplam), _pay_en(100 * v_ / toplam))) for a_, v_ in GTA.get(t, [])[:5]] if t != "anasayfa" else []
+_diger = _GTs[5:]
+HALKA_TUR = _halka([(x(tur_tr[t], tur_en[t]), v[0], _HR[i]) for i, (t, v) in enumerate(_GTs[:5])] + [(x("Diğer sayfa türleri", "Other page types"), sum(v[0] for _, v in _diger), _HR[5])],
+                   x("Organik tıkların sayfa türlerine dağılımı · %s" % D26[0], "Organic clicks by page type · %s" % D26[1]),
+                   merkez=(_fk(ttot), x("tık · sayfa düzeyi", "clicks · page level")), deger_bicim=_fk,
+                   alt=[_alt_liste(t, v[0]) for t, v in _GTs[:5]] + [[(x(tur_tr[t], tur_en[t]), x(_pay_tr(100 * v[0] / sum(w[0] for _, w in _diger)), _pay_en(100 * v[0] / sum(w[0] for _, w in _diger)))) for t, v in _diger[:5]]])
+INS_TUR = insight("%s döneminde organik tıkların %s'i kategori sayfalarına, %s'i ürün sayfalarına gelmektedir; kategori sayfası başına ortalama tık ürün sayfasının ~%sx'idir. Ürün sayfaları %s gösterimle %s CTR üretirken kategori sayfaları %s CTR ile çalışmaktadır: bu fark, kullanıcının jenerik aramada kategori sayfasına, model aramasında ürün sayfasına ulaştığına işaret etmektedir. İçerik ve ilham (blog) sayfaları tıkların %s'ini almaktadır."
+                  % (_G12.D26U[0], yzd(100 * GT["kategori"][0] / ttot), yzd(100 * GT["urun"][0] / ttot), "%.0f" % ((GT["kategori"][0] / GT["kategori"][2]) / (GT["urun"][0] / GT["urun"][2])), k(GT["urun"][1]),
+                     yzd(100 * GT["urun"][0] / GT["urun"][1]), yzd(100 * GT["kategori"][0] / GT["kategori"][1]), yzd(100 * GT["icerik"][0] / ttot)),
+                  "In %s, %s of organic clicks land on category pages and %s on product pages; the average click per category page is ~%sx that of a product page. Product pages, with %s impressions, produce %s CTR while category pages work at %s CTR: this gap indicates that users reach the category page in generic searches and the product page in model searches. Content and inspiration (blog) pages take %s of clicks."
+                  % (_G12.D26U[1], yzd(100 * GT["kategori"][0] / ttot), yzd(100 * GT["urun"][0] / ttot), "%.0f" % ((GT["kategori"][0] / GT["kategori"][2]) / (GT["urun"][0] / GT["urun"][2])), k(GT["urun"][1]),
+                     yzd(100 * GT["urun"][0] / GT["urun"][1]), yzd(100 * GT["kategori"][0] / GT["kategori"][1]), yzd(100 * GT["icerik"][0] / ttot)), "D2")
+
+# ---------------------------------------------------------------- 3 · kategori kırılımı (Oca - Eyl 2026)
+EK_GRUP = ("Koleksiyon sayfaları", "Genel ürün listeleri ve kampanyalar")
+K8 = sorted([k_ for k_ in GK if k_ not in EK_GRUP], key=lambda k_: -GK[k_][0])
+k8tot = sum(GK[k_][0] for k_ in K8); ktot = sum(v[0] for v in GK.values())
 _TK = {"Karo Seramik": "Karo Seramik Ürünleri"}
-def _talep_pay(k1):
-    kk = _TK.get(k1, k1)
-    return n(yzd(100 * A["k1"][kk]["a26"] / A["toplam"]["a26"])) if kk in A["k1"] else n("-")
-rows2 = [[x(k1, KAT_EN2.get(k1, k1)), cell(v[2]), cellk(v[0]), n(yzd(100 * v[0] / ktot)), _talep_pay(k1), cellk(v[1]), n(yzd(100 * v[0] / v[1]))] for k1, v in sorted(k1s.items(), key=lambda i: -i[1][0])]
-tbl2 = tablo([th("Kategori", "Category", "Kategori, ürün, koleksiyon ve eski online.vitra.com.tr sayfalarının adres yapısından türetilen ana kategori.", "Main category derived from the URL structure of category, product, collection and old online.vitra.com.tr pages."),
+def _tp(k1): return 100 * A["k1"][_TK.get(k1, k1)]["a26"] / A["toplam"]["a26"]
+rows2 = []
+for k1 in K8 + list(EK_GRUP):
+    v = GK[k1]; ac_ = _alt_ac(k1, KAT_EN2.get(k1, k1), GA.get(k1, []), v[0])
+    rows2.append([_ac_span(k1, KAT_EN2.get(k1, k1), ac_), cell(v[2]), cellk(v[0]), n(yzd(100 * v[0] / k8tot)) if k1 in K8 else n("-"), n(yzd(_tp(k1))) if k1 in K8 else n("-"), cellk(v[1]), n(yzd(100 * v[0] / v[1]))])
+tbl2 = tablo([th("Kategori", "Category", "Kategori, ürün, koleksiyon ve teknik föy sayfalarının adres yapısından türetilen ana kategori; son iki satır kategoriye eşlenmeyen koleksiyon sayfaları ile genel ürün listeleri ve kampanya sayfalarıdır. Kategori adının üzerine gelindiğinde alt kırılım açılır.", "Main category derived from the URL structure of category, product, collection and technical sheet pages; the last two rows are collection pages and general product list and campaign pages not mapped to a category. Hovering over a category name opens its breakdown."),
               th("Sayfa", "Pages", "Kategoriye eşlenen tekil sayfa sayısı; sayfalama ve filtre parametreli adresler tek sayılmıştır.", "Number of unique pages mapped to the category; paginated and filtered addresses are counted once.", True),
-              th("Click", "Clicks", "1 Haz 2025 - 25 Eyl 2026 toplam click.", "Total clicks, 1 Jun 2025 - 25 Sep 2026.", True),
-              th("Click payı", "Click share", "Kategoriye eşlenen sayfaların (kategori, ürün, koleksiyon ve eski online.vitra.com.tr adresleri) toplam click'i içindeki pay; Diğer: kategoriye eşlenemeyen koleksiyon, kampanya ve teknik föy sayfaları.", "Share of total clicks of pages mapped to a category (category, product, collection, technical sheet and old online.vitra.com.tr addresses).", True),
-              th("Talep payı", "Demand share", "Kategorinin Oca-Ağu 2026 arama talebindeki payı (Bölüm [[b:talep]], 2.299 kelime); tık payı 16 aylık döneme aittir ve paydasında Diğer de yer alır.", "The category's share of Jan-Aug 2026 search demand (Section [[b:talep]], 2,299 keywords).", True),
+              th("Click", "Clicks", "%s toplam click." % D26[0], "Total clicks, %s." % D26[1], True),
+              th("Click payı", "Click share", "Sekiz ana kategorinin toplam click'i içindeki pay; talep payıyla aynı tabandadır, ek satırlar için yoktur.", "Share of the total clicks of the eight main categories; on the same base as demand share, not applicable to the additional rows.", True),
+              th("Talep payı", "Demand share", "Kategorinin Oca-Ağu 2026 arama talebindeki payı (Bölüm [[b:talep]], 2.299 kelime); ek satırlar için yoktur.", "The category's share of Jan-Aug 2026 search demand (Section [[b:talep]], 2,299 keywords); not applicable to the additional rows.", True),
               th("Gösterim", "Impressions", "Aynı dönemde gösterim.", "Impressions in the same period.", True),
               th("CTR", "CTR", "Tık / gösterim.", "Clicks / impressions.", True)], rows2, "dar")
-def seri(k): return [GM[k][GA.index(m)][0] for m in aylar]
-GRAFIK = cizgi([(kat("Vitrifiyeler"), "#10332F", seri("Vitrifiyeler")), (x("Karo Seramik", "Ceramic Tiles"), "#7A8C89", seri("Karo Seramik")), (kat("Armatürler"), "#2E7D32", seri("Armatürler")),
-                (kat("Banyo Mobilyaları"), "#E85F36", seri("Banyo Mobilyaları")), (kat("Yıkanma Alanları"), "#F5A623", seri("Yıkanma Alanları"))],
-               y_etiket=x("Aylık organik tık · kategori ve ürün sayfaları · sayfa×gün verisinin en az 5 tık alan satırları; eğilimi gösterir, tablo toplamlarının %52-81'ini kapsar", "Monthly organic clicks · category and product pages · page×day rows with at least 5 clicks; shows the trend and covers 52-81% of the table totals"), aylar=aylar)
-from grafik2 import gruplu as _gr
-_GP = [(k1, 100 * A["k1"][_TK.get(k1, k1)]["a26"] / A["toplam"]["a26"], 100 * v[0] / ktot) for k1, v in sorted(k1s.items(), key=lambda i: -i[1][0]) if _TK.get(k1, k1) in A["k1"]]
-GPAY = _gr([(x(k1, KAT_EN2.get(k1, k1)), [tp, cp]) for k1, tp, cp in sorted(_GP, key=lambda r: -r[1])],
-           [(x("Arama talebi payı · Oca-Ağu 2026", "Search demand share · Jan-Aug 2026"), "#9AA8A5"), (x("Organik tık payı · 1 Haz 2025 - 25 Eyl 2026", "Organic click share · 1 Jun 2025 - 25 Sep 2026"), "#10332F")],
-           x("Kategori bazında arama talebi payı ve vitra.com.tr organik tık payı", "Search demand share and vitra.com.tr organic click share by category"))
-mob = 100 * GC["MOBILE"][0] / sum(v[0] for v in GC.values()); mob_i = 100 * GC["MOBILE"][1] / sum(v[1] for v in GC.values())
-ctr_m = 100 * GC["MOBILE"][0] / GC["MOBILE"][1]; ctr_d = 100 * GC["DESKTOP"][0] / GC["DESKTOP"][1]
-son12 = sum(MT[m][0] for m in aylar[-12:]); son12i = sum(MT[m][1] for m in aylar[-12:])
-x("/ (ana sayfa)", "/ (home page)")
-rows3 = [[u("https://www.vitra.com.tr" + (p_ or "/"), p_ if p_ not in ("", "/") else "/ (ana sayfa)"), cellk(c)] for p_, c in [(uu.replace("https://www.vitra.com.tr", ""), cc) for uu, cc in TS[:15]]]
-tbl3 = tablo([th("Sayfa adresi", "Page address", "Sayfa adresi; bağlantı canlı sayfaya gider.", "Page address; the link opens the live page."),
-              th("Click · Tem-Eyl 2026", "Clicks · Jul-Sep 2026", "1 Temmuz - 25 Eylül 2026 organik click.", "Organic clicks, 1 July - 25 September 2026.", True)], rows3, "dar")
-kloz = GK.get("Vitrifiyeler|Klozetler", [0,0,0]); lav = GK.get("Vitrifiyeler|Lavabolar", [0,0,0]); karo = k1s["Karo Seramik"]
-# talep ve tık payı; en geniş iki açık Banyo Mobilyaları ve Yıkanma Alanları olmalıdır (metin buna göre yazılmıştır)
-def _tp(k1): return yzd(100 * A["k1"][_TK.get(k1, k1)]["a26"] / A["toplam"]["a26"])
-def _kp(k1): return yzd(100 * k1s[k1][0] / ktot)
-_ACIK = sorted([(100 * k1s[k1][0] / ktot - 100 * A["k1"][_TK.get(k1, k1)]["a26"] / A["toplam"]["a26"], k1) for k1 in k1s if _TK.get(k1, k1) in A["k1"]])
+GPAY = _gr([(x(k1, KAT_EN2.get(k1, k1)), [_tp(k1), 100 * GK[k1][0] / k8tot]) for k1 in sorted(K8, key=lambda k_: -_tp(k_))],
+           [(x("Arama talebi payı · Oca-Ağu 2026", "Search demand share · Jan-Aug 2026"), "#9AA8A5"), (x("Organik tık payı · %s" % D26[0], "Organic click share · %s" % D26[1]), "#10332F")],
+           x("Kategori bazında arama talebi payı ve vitra.com.tr organik tık payı (8 ana kategori)", "Search demand share and vitra.com.tr organic click share by category (8 main categories)"))
+_RK = ["#10332F", "#7A8C89", "#2E7D32", "#E85F36", "#F5A623", "#5B7FA6", "#B5838D", "#9C6644", "#C9D3D1", "#6D597A"]
+_AY26 = ["Oca", "Şub", "Mar", "Nis", "May", "Haz", "Tem", "Ağu", "Eyl"]
+GRAFIK = cizgi([(x(k1, KAT_EN2.get(k1, k1)), _RK[i], G2["kat_ay"][k1]) for i, k1 in enumerate(K8 + list(EK_GRUP))],
+               y_etiket=x("Aylık organik tık · kategori bazında, Oca - Eyl 2026 (lejanttan kategori açılıp kapatılabilir)", "Monthly organic clicks · by category, Jan - Sep 2026 (categories can be switched on and off in the legend)"),
+               aylar=_AY26, x_etiket=_AY26, gizli=tuple(range(5, len(K8) + 2)), olcek=True)
+_ACIK = sorted([(100 * GK[k1][0] / k8tot - _tp(k1), k1) for k1 in K8])
 if {_ACIK[0][1], _ACIK[1][1]} != {"Banyo Mobilyaları", "Yıkanma Alanları"}: raise SystemExit("organik: en geniş talep-tık açığı değişti: %s" % _ACIK[:3])
 _bm_sira = [k1 for k1, _ in sorted(A["k1"].items(), key=lambda i: -i[1]["a26"])].index("Banyo Mobilyaları") + 1
 _SIRA_TR = {1: "en", 2: "ikinci", 3: "üçüncü", 4: "dördüncü"}; _SIRA_EN = {1: "largest", 2: "second-largest", 3: "third-largest", 4: "fourth-largest"}
+_kl = dict(GA["Vitrifiyeler"])
+INS_KAT = insight("Sekiz ana kategoriye gelen tıkların %s'i Vitrifiyeler (Klozetler %s, Lavabolar %s) ve %s'i Karo Seramik sayfalarındadır. Arama talebinde %s büyük kategori olan Banyo Mobilyaları (talep payı %s) organik tıkta %s pay almaktadır; Yıkanma Alanları da talep payı %s iken tık payında %s'de kalmaktadır. Talebin büyüklüğü ile sitenin bu talepten aldığı pay arasındaki en geniş açık bu iki kategoridedir. Kategoriye eşlenmeyen koleksiyon sayfaları %s tık almaktadır."
+                  % (yzd(100 * GK["Vitrifiyeler"][0] / k8tot), yzd(100 * _kl["Klozetler"] / k8tot), yzd(100 * _kl["Lavabolar"] / k8tot), yzd(100 * GK["Karo Seramik"][0] / k8tot), _SIRA_TR[_bm_sira],
+                     yzd(_tp("Banyo Mobilyaları")), yzd(100 * GK["Banyo Mobilyaları"][0] / k8tot), yzd(_tp("Yıkanma Alanları")), yzd(100 * GK["Yıkanma Alanları"][0] / k8tot), k(GK["Koleksiyon sayfaları"][0])),
+                  "%s of the clicks landing on the eight main categories are on Sanitaryware (WCs %s, Washbasins %s) and %s on Ceramic Tiles pages. Bathroom Furniture, the %s category in search demand (demand share %s), takes %s of organic clicks; Bathing Areas also stays at %s of clicks against a demand share of %s. The widest gaps between the size of demand and the share the site captures are in these two categories. Collection pages not mapped to a category receive %s clicks."
+                  % (yzd(100 * GK["Vitrifiyeler"][0] / k8tot), yzd(100 * _kl["Klozetler"] / k8tot), yzd(100 * _kl["Lavabolar"] / k8tot), yzd(100 * GK["Karo Seramik"][0] / k8tot), _SIRA_EN[_bm_sira],
+                     yzd(_tp("Banyo Mobilyaları")), yzd(100 * GK["Banyo Mobilyaları"][0] / k8tot), yzd(_tp("Yıkanma Alanları")), yzd(100 * GK["Yıkanma Alanları"][0] / k8tot), k(GK["Koleksiyon sayfaları"][0])), "D2", "D1")
+
+# ---------------------------------------------------------------- 4 · en çok tık alan sayfalar (Oca - Eyl 2026)
+x("/ (ana sayfa)", "/ (home page)")
+TS = G2["top_sayfa"][:15]
+rows3 = []
+for uu, c, i, p in TS:
+    p_ = _G12.yol(uu)
+    rows3.append([u("https://www.vitra.com.tr" + (p_ if p_ != "/" else "/"), p_ if p_ != "/" else "/ (ana sayfa)"), cellk(c), cellk(i), n(yzd(100 * c / i)), n(("%.1f" % p).replace(".", ","))])
+tbl3 = tablo([th("Sayfa adresi", "Page address", "Sayfa adresi; bağlantı canlı sayfaya gider.", "Page address; the link opens the live page."),
+              th("Click", "Clicks", "%s organik click." % D26[0], "Organic clicks, %s." % D26[1], True),
+              th("Gösterim", "Impressions", "Aynı dönemde gösterim.", "Impressions in the same period.", True),
+              th("CTR", "CTR", "Tık / gösterim.", "Clicks / impressions.", True),
+              th("Ort. sıra", "Avg. position", "Gösterimle ağırlıklı ortalama Google sırası.", "Impression-weighted average Google position.", True)], rows3, "dar")
+
+# ---------------------------------------------------------------- 5 · blog (İlham Veren Fikirler)
+BA = G2["blog_ay"]; SAS = G2["site_ay_sayfa"]
+def _bl(y, i): return [(BA.get("%d-%02d" % (y, m)) or [None, None])[i] for m in range(1, 13)]
+G_BLOG = sekmeler([("Click", "Clicks", cizgi([("2025", YRENK["2025"], _bl(2025, 0)), ("2026", YRENK["2026"], _bl(2026, 0))],
+                                         y_etiket=x("Blog sayfalarının aylık organik tıkı · /ilham-veren-fikirler/, tüm alt alan adları, 2025 ve 2026 üst üste", "Monthly organic clicks of blog pages · /ilham-veren-fikirler/, all subdomains, 2025 and 2026 overlaid"),
+                                         aylar=AD, x_etiket=AD, kalin={1: 3.2})),
+                   ("Gösterim", "Impressions", cizgi([("2025", YRENK["2025"], _bl(2025, 1)), ("2026", YRENK["2026"], _bl(2026, 1))],
+                                         y_etiket=x("Blog sayfalarının aylık gösterimi · /ilham-veren-fikirler/, 2025 ve 2026 üst üste", "Monthly impressions of blog pages · /ilham-veren-fikirler/, 2025 and 2026 overlaid"),
+                                         aylar=AD, x_etiket=AD, kalin={1: 3.2}))], "gtabs")
+b12c = sum(BA[m][0] for m in _G12.Y12); b12i = sum(BA[m][1] for m in _G12.Y12); s12 = sum(SAS[m] for m in _G12.Y12)
+bc25, bc26 = sum(BA["2025-" + m][0] for m in HE), sum(BA["2026-" + m][0] for m in HE); bi25, bi26 = sum(BA["2025-" + m][1] for m in HE), sum(BA["2026-" + m][1] for m in HE)
+B26, B25 = G2["blog_hazeyl"]["2026"], G2["blog_hazeyl"]["2025"]
+def _tekil(p): return p[:-4] if p.endswith("-old") else p
+BL = {}
+for p, c, i, ps in G2["blog_12ay"]:
+    q = _tekil(p); a = BL.setdefault(q, [0, 0, 0.0]); a[0] += c; a[1] += i; a[2] += (ps or 0) * i
+def _he(p, d):
+    c_ = 0
+    for k_ in (p, p + "-old"):
+        if k_ in d: c_ += d[k_][0]
+    return c_
+_BG = {}
+for p, (c, i, ps) in BL.items():
+    s_ = p.rstrip("/").split("/")[-1]
+    if s_ == "ilham-veren-fikirler": continue
+    g = _BG.setdefault(_RG.grup(s_), [0, 0, 0, 0, 0]); g[0] += 1 if c >= 5 else 0; g[1] += c; g[2] += i; g[3] += _he(p, B25); g[4] += _he(p, B26)
+_bgt = sum(g[1] for g in _BG.values())
+rows_bg = [[x(b_, c_), cell(_BG[a_][0]), cellk(_BG[a_][1]), n(yzd(100 * _BG[a_][1] / _bgt)), cellk(_BG[a_][2]), n(yzd(100 * _BG[a_][1] / _BG[a_][2], 2)), _d(_BG[a_][3], _BG[a_][4])] for a_, b_, c_ in _RG.GRUP if a_ in _BG]
+T_BG = tablo([th("Konu grubu", "Topic group", "Blog yazılarının adresteki konuya göre gruplanması (Bölüm [[b:geo]] ile aynı gruplar).", "Grouping of blog articles by the topic in the address (same groups as Section [[b:geo]])."),
+              th("Sayfa", "Pages", "12 ayda en az 5 tık alan yazı sayısı.", "Number of articles with at least 5 clicks in 12 months.", True),
+              th("Click", "Clicks", "%s organik click." % D12[0], "Organic clicks, %s." % D12[1], True),
+              th("Pay", "Share", "Blog tıkları içindeki pay.", "Share of blog clicks.", True),
+              th("Gösterim", "Impressions", "Aynı dönemde gösterim.", "Impressions in the same period.", True),
+              th("CTR", "CTR", "Tık / gösterim.", "Clicks / impressions.", True),
+              th("Click değişimi Haz-Eyl", "Click change Jun-Sep", "1 Haz - 29 Eyl 2026 tıkının 2025'in aynı günlerine göre değişimi.", "Change of clicks in 1 Jun - 29 Sep 2026 against the same days of 2025.", True)], rows_bg, "dar")
+rows_bp = []
+for p, (c, i, ps) in sorted(BL.items(), key=lambda r: -r[1][0])[:15]:
+    rows_bp.append([u("https://www.vitra.com.tr" + p + "/", p.replace("/ilham-veren-fikirler", "") or "/ilham-veren-fikirler/"), cellk(c), cellk(i), n(yzd(100 * c / i, 2)), n(("%.1f" % (ps / i)).replace(".", ",")), _d(_he(p, B25), _he(p, B26))])
+x("/ilham-veren-fikirler/", "/ilham-veren-fikirler/")
+T_BP = tablo([th("Yazı", "Article", "Blog yazısının adresi (/ilham-veren-fikirler/ sonrası); bağlantı canlı sayfaya gider.", "The blog article's address (after /ilham-veren-fikirler/); the link opens the live page."),
+              th("Click", "Clicks", "%s organik click; yazının eski (-old) adresi dahil." % D12[0], "Organic clicks, %s; including the article's old (-old) address." % D12[1], True),
+              th("Gösterim", "Impressions", "Aynı dönemde gösterim.", "Impressions in the same period.", True),
+              th("CTR", "CTR", "Tık / gösterim.", "Clicks / impressions.", True),
+              th("Ort. sıra", "Avg. position", "Gösterimle ağırlıklı ortalama Google sırası.", "Impression-weighted average Google position.", True),
+              th("Click değişimi Haz-Eyl", "Click change Jun-Sep", "1 Haz - 29 Eyl 2026 tıkının 2025'in aynı günlerine göre değişimi.", "Change of clicks in 1 Jun - 29 Sep 2026 against the same days of 2025.", True)], rows_bp, "dar")
+INS_BLOG = insight("Blog (/ilham-veren-fikirler/) sayfaları %s döneminde %s organik tık ve %s gösterim almıştır; bu, sitenin sayfa düzeyindeki tıklarının %s'idir. Haziran - Eylül'de blog tıkları 2025'e göre %s değişirken gösterimler %s değişmiştir: sayfalar aramalarda daha çok görünmekte, ancak daha az tıklanmaktadır. Tıkın en çok gerilediği yazılar, Google'ın yapay zeka özelliklerinde en çok gösterilen yazılardır (Bölüm [[b:yapayzeka]])."
+                   % (_G12.D12U[0], k(b12c), k(b12i), yzd(100 * b12c / s12), yz((bc26 / bc25 - 1) * 100), yz((bi26 / bi25 - 1) * 100)),
+                   "Blog (/ilham-veren-fikirler/) pages received %s organic clicks and %s impressions in %s; this is %s of the site's page-level clicks. In June - September, blog clicks changed %s against 2025 while impressions changed %s: the pages appear more in searches but are clicked less. The articles with the steepest decline in clicks are those shown most in Google's AI features (Section [[b:yapayzeka]])."
+                   % (k(b12c), k(b12i), _G12.D12U[1], yzd(100 * b12c / s12), yz((bc26 / bc25 - 1) * 100), yz((bi26 / bi25 - 1) * 100)), "D2")
+
+# ---------------------------------------------------------------- 6 · cihaz ve ülke (12 ay)
+T_CU = tablo([th("Kırılım", "Breakdown", "Search Console cihaz ve ülke boyutu.", "Search Console device and country dimension."),
+              th("Click", "Clicks", "%s toplam." % D12[0], "Total, %s." % D12[1], True),
+              th("Pay", "Share", "Toplam tık içindeki pay.", "Share of total clicks.", True),
+              th("CTR", "CTR", "Tık / gösterim.", "Clicks / impressions.", True)],
+             [[x("Mobil", "Mobile"), cellk(GC["MOBILE"][0]), n(yzd(mob)), n(yzd(ctr_m))],
+              [x("Masaüstü", "Desktop"), cellk(GC["DESKTOP"][0]), n(yzd(100 * GC["DESKTOP"][0] / cih_t)), n(yzd(ctr_d))],
+              [x("Tablet", "Tablet"), cellk(GC["TABLET"][0]), n(yzd(100 * GC["TABLET"][0] / cih_t)), n(yzd(100 * GC["TABLET"][0] / GC["TABLET"][1]))],
+              [x("Türkiye", "Turkey"), cellk(GU[0][1]), n(yzd(GU[0][2])), n("-")], [x("Almanya", "Germany"), cellk(GU[1][1]), n(yzd(GU[1][2])), n("-")], [x("Kıbrıs", "Cyprus"), cellk(GU[2][1]), n(yzd(GU[2][2])), n("-")]], "dar")
+INS_SON = insight("Oca - Eyl 2026'da en çok tık alan sayfa ana sayfadır (%s); ilk 15 sayfanın %d'i kategori sayfasıdır. Cihaz kırılımında mobil, gösterimlerin %s'ini almasına karşın tıkların %s'ini üretmektedir; CTR masaüstünde %s, mobilde %s seviyesindedir (%s)."
+                  % (bin(TS[0][1]), sum(1 for uu, *_ in TS if "/c-" in uu), yzd(mob_i), yzd(mob), yzd(ctr_d), yzd(ctr_m), D12[0]),
+                  "In Jan - Sep 2026 the page with the most clicks is the home page (%s); %d of the top 15 pages are category pages. By device, mobile takes %s of impressions but produces %s of clicks; CTR is %s on desktop and %s on mobile (%s)."
+                  % (f"{TS[0][1]:,}", sum(1 for uu, *_ in TS if "/c-" in uu), yzd(mob_i), yzd(mob), yzd(ctr_d), yzd(ctr_m), D12[1]), "D2")
+
 HTML = """
 <p class="lede">%s</p>
 <div class="kpis">%s%s%s%s</div>
 <h3>%s</h3>
 %s
 %s
+%s
+<h3>%s</h3>
+%s
+%s
 <h3>%s</h3>
 %s
 %s
 %s
-<div class="two">
-<div><h3>%s</h3>%s</div>
-<div><h3>%s</h3>%s</div>
-</div>
+%s
+<h3>%s</h3>
+%s
+<h3>%s</h3>
+%s
+%s
+%s
+%s
+<h3>%s</h3>
+%s
+%s
 %s
 """ % (
- x("Search Console verisi, vitra.com.tr'nin Google'dan aldığı trafiğin hangi sayfa türlerine ve kategorilere geldiğini göstermektedir. Dönem 1 Haziran 2025 - 25 Eylül 2026'dır. Veri alan adı düzeyindeki mülkten (sc-domain:vitra.com.tr) alınmıştır; vitra.com.tr'nin tüm alt alan adları ve adresleri tek toplam olarak kapsanmaktadır.",
-   "Search Console data shows which page types and categories the traffic vitra.com.tr receives from Google lands on. The period is 1 June 2025 - 25 September 2026. Data comes from the domain-level property (sc-domain:vitra.com.tr); all subdomains and addresses of vitra.com.tr are covered as a single total."),
- kpi_kart(k(son12), "Organik tık · son 12 ay (Eyl 2025 - Ağu 2026)", "Organic clicks · last 12 months (Sep 2025 - Aug 2026)"),
- kpi_kart(yzd(100 * son12 / son12i), "Ortalama CTR · son 12 ay", "Average CTR · last 12 months"),
- kpi_kart(yzd(mob), "Mobil tık payı · gösterim payı %s" % yzd(mob_i), "Mobile click share · impression share %s" % (yzd(mob_i).replace("%", "") + "%")),
- kpi_kart(yzd(GU[0][2]), "Türkiye payı · ikinci sırada Almanya %s" % yzd(GU[1][2]), "Turkey share · Germany second at %s" % (yzd(GU[1][2]).replace("%", "") + "%")),
- x("Trafik hangi sayfa türlerine geliyor?", "Which page types does the traffic land on?"),
- HALKA_TUR + tbl,
- insight("Organik tıkların %s'i kategori sayfalarına, %s'i ürün sayfalarına gelmektedir; kategori sayfası başına ortalama tık ürün sayfasının ~%sx'idir. Ürün sayfaları %s gösterimle %s CTR üretirken kategori sayfaları %s CTR ile çalışmaktadır: bu fark, kullanıcının jenerik aramada kategori sayfasına, model aramasında ürün sayfasına ulaştığına işaret etmektedir." % (yzd(100 * GT["kategori"][0] / ttot), yzd(100 * GT["urun"][0] / ttot), ("%.0f" % ((GT["kategori"][0] / GT["kategori"][2]) / (GT["urun"][0] / GT["urun"][2]))), k(GT["urun"][1]), yzd(100 * GT["urun"][0] / GT["urun"][1]), yzd(100 * GT["kategori"][0] / GT["kategori"][1])),
-         "%s of organic clicks land on category pages and %s on product pages; the average click per category page is ~%sx that of a product page. Product pages, with %s impressions, produce %s CTR while category pages work at %s CTR: this gap indicates that users reach the category page in generic searches and the product page in model searches." % (yzd(100 * GT["kategori"][0] / ttot), yzd(100 * GT["urun"][0] / ttot), ("%.0f" % ((GT["kategori"][0] / GT["kategori"][2]) / (GT["urun"][0] / GT["urun"][2]))), k(GT["urun"][1]), yzd(100 * GT["urun"][0] / GT["urun"][1]), yzd(100 * GT["kategori"][0] / GT["kategori"][1])), "D2"),
- x("Kategori bazında organik trafik", "Organic traffic by category"),
- tbl2 + GPAY, GRAFIK,
- insight("Kategoriye eşlenen sayfalara gelen tıkların %s'i Vitrifiyeler (Lavabolar %s, Klozetler %s) ve %s'i Karo Seramik sayfalarındadır. Arama talebinde %s büyük kategori olan Banyo Mobilyaları (talep payı %s) organik tıkta yalnızca %s pay almaktadır; Yıkanma Alanları da talep payı %s iken tık payında %s'de kalmaktadır. Talebin büyüklüğü ile sitenin bu talepten aldığı pay arasındaki en geniş açık bu iki kategoridedir. Karo Seramik ise tersine dönen bir örüntü göstermektedir; talep payı %s iken tık payı %s'e ulaşmaktadır." % (yzd(100 * k1s["Vitrifiyeler"][0] / ktot), k(lav[0]), k(kloz[0]), yzd(100 * karo[0] / ktot), _SIRA_TR[_bm_sira], _tp("Banyo Mobilyaları"), _kp("Banyo Mobilyaları"), _tp("Yıkanma Alanları"), _kp("Yıkanma Alanları"), yzd(100 * A["k1"]["Karo Seramik Ürünleri"]["a26"] / A["toplam"]["a26"]), yzd(100 * karo[0] / ktot)),
-         "%s of clicks landing on pages mapped to a category are in Sanitaryware (Washbasins %s, WCs %s) and %s in Ceramic Tiles. Bathroom Furniture, the %s category in search demand (demand share %s), takes only %s of organic clicks; Bathing Areas also stays at %s of clicks against a demand share of %s. The widest gaps between the size of demand and the share the site captures are in these two categories. Ceramic Tiles shows the reverse pattern; its demand share is %s while its click share reaches %s." % (yzd(100 * k1s["Vitrifiyeler"][0] / ktot), k(lav[0]), k(kloz[0]), yzd(100 * karo[0] / ktot), _SIRA_EN[_bm_sira], _tp("Banyo Mobilyaları"), _kp("Banyo Mobilyaları"), _kp("Yıkanma Alanları"), _tp("Yıkanma Alanları"), yzd(100 * A["k1"]["Karo Seramik Ürünleri"]["a26"] / A["toplam"]["a26"]), yzd(100 * karo[0] / ktot)), "D2", "D1"),
- x("En çok tık alan sayfalar · Tem-Eyl 2026", "Pages with most clicks · Jul-Sep 2026"), tbl3,
- x("Cihaz ve ülke", "Device and country"),
- tablo([th("Kırılım", "Breakdown", "Search Console cihaz ve ülke boyutu.", "Search Console device and country dimension."),
-        th("Click", "Clicks", "1 Haz 2025 - 25 Eyl 2026 toplam.", "Total, 1 Jun 2025 - 25 Sep 2026.", True),
-        th("Pay", "Share", "Toplam tık içindeki pay.", "Share of total clicks.", True),
-        th("CTR", "CTR", "Tık / gösterim.", "Clicks / impressions.", True)],
-       [[x("Mobil", "Mobile"), cellk(GC["MOBILE"][0]), n(yzd(mob)), n(yzd(ctr_m))],
-        [x("Masaüstü", "Desktop"), cellk(GC["DESKTOP"][0]), n(yzd(100 * GC["DESKTOP"][0] / sum(v[0] for v in GC.values()))), n(yzd(ctr_d))],
-        [x("Tablet", "Tablet"), cellk(GC["TABLET"][0]), n(yzd(100 * GC["TABLET"][0] / sum(v[0] for v in GC.values()))), n(yzd(100 * GC["TABLET"][0] / GC["TABLET"][1]))],
-        [x("Türkiye", "Turkey"), cellk(GU[0][1]), n(yzd(GU[0][2])), n("-")], [x("Almanya", "Germany"), cellk(GU[1][1]), n(yzd(GU[1][2])), n("-")], [x("Kıbrıs", "Cyprus"), cellk(GU[2][1]), n(yzd(GU[2][2])), n("-")]], "dar"),
- insight("Temmuz - Eylül 2026'da en çok tık alan sayfa ana sayfadır (%s); ilk 15 sayfanın %d'i kategori sayfasıdır ve listede ürün sayfası bulunmamaktadır. Cihaz kırılımında mobil, gösterimlerin %s'ini almasına karşın tıkların %s'ini üretmektedir; CTR masaüstünde %s, mobilde %s seviyesindedir." % (bin(TS[0][1]), sum(1 for uu, _ in TS[:15] if "/c-" in uu), yzd(mob_i), yzd(mob), yzd(ctr_d), yzd(ctr_m)),
-         "In July - September 2026 the page with the most clicks is the home page (%s); %d of the top 15 pages are category pages and the list has no product page. By device, mobile takes %s of impressions but produces %s of clicks; CTR is %s on desktop and %s on mobile." % (bin(TS[0][1]), sum(1 for uu, _ in TS[:15] if "/c-" in uu), yzd(mob_i).replace("%", "") + "%", yzd(mob).replace("%", "") + "%", yzd(ctr_d).replace("%", "") + "%", yzd(ctr_m).replace("%", "") + "%"), "D2") +
- kaynak("Google Search Console · sc-domain:vitra.com.tr · 1 Haz 2025 - 25 Eyl 2026 · sayfa, sayfa×gün, cihaz×gün ve ülke boyutları · %s" % veri.TARIH,
-        "Google Search Console · sc-domain:vitra.com.tr · 1 Jun 2025 - 25 Sep 2026 · page, page×day, device×day and country dimensions · %s" % veri.TARIH, "D2"),
+ x("Search Console verisi, vitra.com.tr'nin Google'dan aldığı trafiğin aylık seyrini, hangi sayfa türlerine ve kategorilere geldiğini göstermektedir. Veri alan adı düzeyindeki mülkten (sc-domain:vitra.com.tr) alınmıştır; tüm alt alan adları tek toplam olarak kapsanmaktadır. Toplamlar, blog, cihaz ve ülke kırılımı 1 Ekim 2025 - 30 Eylül 2026 (12 ay) dönemine aittir. Aralık 2025'te online.vitra.com.tr adresleri www.vitra.com.tr'ye taşındığı için sayfa türü, kategori ve en çok tık alan sayfalar 1 Ocak - 30 Eylül 2026 verisiyle verilmiştir.",
+   "Search Console data shows the monthly trend of the traffic vitra.com.tr receives from Google and which page types and categories it lands on. Data comes from the domain-level property (sc-domain:vitra.com.tr); all subdomains are covered as a single total. Totals, blog, device and country breakdowns cover 1 October 2025 - 30 September 2026 (12 months). As online.vitra.com.tr addresses moved to www.vitra.com.tr in December 2025, page types, categories and the pages with most clicks are given with 1 January - 30 September 2026 data."),
+ kpi_kart(k(y12c), "Organik tık · %s (12 ay); gösterim %s" % (D12[0], k(y12i)), "Organic clicks · %s (12 months); impressions %s" % (D12[1], k(y12i).replace(",", "."))),
+ kpi_kart(yzd(100 * y12c / y12i), "Ortalama CTR · %s" % D12[0], "Average CTR · %s" % D12[1]),
+ kpi_kart(yz(he_c), "Organik tık değişimi · Haz-Eyl 2026 / Haz-Eyl 2025; gösterim %s" % _isr(he_i), "Organic click change · Jun-Sep 2026 / Jun-Sep 2025; impressions %s" % _isr_en(he_i), "dn" if he_c < 0 else ""),
+ kpi_kart(yzd(mob), "Mobil tık payı · %s; gösterim payı %s" % (D12[0], yzd(mob_i)), "Mobile click share · %s; impression share %s" % (D12[1], _pay_en(mob_i))),
+ x("Aylık organik performans: 2025 ve 2026", "Monthly organic performance: 2025 and 2026"), G_AY, T_AY, INS_AY,
+ x("Trafik hangi sayfa türlerine geliyor? · Oca-Eyl 2026", "Which page types does the traffic land on? · Jan-Sep 2026"), HALKA_TUR + tbl, INS_TUR,
+ x("Kategori bazında organik trafik · Oca-Eyl 2026", "Organic traffic by category · Jan-Sep 2026"), tbl2, GPAY, GRAFIK, INS_KAT,
+ x("En çok tık alan sayfalar · Oca-Eyl 2026", "Pages with most clicks · Jan-Sep 2026"), tbl3,
+ x("Blog (İlham Veren Fikirler): aylık tık, konu grupları ve yazılar", "Blog (İlham Veren Fikirler): monthly clicks, topic groups and articles"), G_BLOG, T_BG, T_BP, INS_BLOG,
+ x("Cihaz ve ülke · 12 ay", "Device and country · 12 months"), T_CU, INS_SON,
+ kaynak("Google Search Console · sc-domain:vitra.com.tr · toplamlar, blog, cihaz ve ülke %s; sayfa türü, kategori ve sayfalar %s; aylık seri Haz 2025 - Eyl 2026 · aylık sayfa, gün×cihaz ve ülke boyutları · %s" % (D12[0], D26[0], veri.TARIH),
+        "Google Search Console · sc-domain:vitra.com.tr · totals, blog, device and country %s; page types, categories and pages %s; monthly series Jun 2025 - Sep 2026 · monthly page, day×device and country dimensions · %s" % (D12[1], D26[1], veri.TARIH), "D2"),
 )

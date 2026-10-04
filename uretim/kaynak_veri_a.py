@@ -24,7 +24,7 @@ def doldur():
     # ------------------------------------------------------------ Search Console
     ekle("https://search.google.com/search-console",
          "vitra.com.tr organik performansı: sayfa, sorgu, cihaz ve ülke kırılımı (organik kanal, marka aramaları, YouTube ve katalog karşılaştırmaları)",
-         "sc-domain:vitra.com.tr, 1 Haz 2025 - 25 Eyl 2026; sayfa raporu (ilk 25.000 satır), sorgu raporu (ilk 25.000), sorgu × sayfa, gün × cihaz, ülke; kategori sayfalarına giden tıkların payı ve markalı sorgu payı",
+         "sc-domain:vitra.com.tr, 1 Eki 2025 - 30 Eyl 2026 (sayfa türü ve kategori 1 Oca - 30 Eyl 2026, aylık seri Haz 2025 - Eyl 2026); aylık sayfa raporu (tüm sayfalar), sorgu raporu (ilk 50.000), gün × cihaz, ülke; blog sayfaları ve sorguları 1 Haz - 29 Eyl 2025 ve 2026; kategori sayfalarına giden tıkların payı ve markalı sorgu payı",
          yontem="API (Search Console, OAuth kullanıcı hesabı)", tarih=D28, kod=["D2"], tur="API")
 
     # ------------------------------------------------------------ Google (autocomplete + SERP)

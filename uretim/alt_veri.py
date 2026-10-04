@@ -434,6 +434,7 @@ def kelime_evreni(EK):
         for a_ in (r_[2], r_[3]):
             if a_ not in cev and a_ in EK: cev[a_] = EK[a_]
     cev.update({r_[0]: r_[0] for r_ in MR})   # marka adları iki dilde aynıdır
+    cev["Servis, yedek parça ve satış noktası"] = "Service, spare parts and sales points"
     tb["mk"] = {"c": [kolon("marka", "Marka", "Brand", "Aramadaki üretici marka.", "The manufacturer brand in the search.", "kat", True),
                       kolon("kw", "Arama", "Search", "Google'a yazılan ifade; olduğu gibi korunmuştur.", "The phrase typed into Google, kept as is.", "kw"),
                       kolon("k1", "Ana kategori", "Main category", "Kategori ifadesinin VitrA kategori ağacındaki karşılığı.", "The category phrase's main category in VitrA's category tree.", "cev", True),
