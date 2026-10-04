@@ -31,6 +31,7 @@ for k in _M:
     if _vk(k): t["vitra"] += 1; t["vit_h"] += v
 AIO = _c.OrderedDict(sorted(AIO.items(), key=lambda i: -i[1]["aio"]))
 TOP = {k_: sum(t[k_] for t in AIO.values()) for k_ in ("n", "aio", "vitra", "hacim", "aio_h", "vit_h")}
+N_TUM = len(_K)   # kampanyadaki tum takipli kelimeler (marka aramalari dahil)
 def _p(a, b): return 100 * a / b if b else 0
 T_AIO = tablo([th("Kategori", "Category", "SEOmonitor'de VitrA kategori ağacına göre gruplanmış ana kategori.", "Main category in SEOmonitor, grouped by VitrA's category tree."),
                th("Takip edilen kelime", "Tracked keywords", "Kategoride SEOmonitor'de takip edilen ana kelime sayısı (yakın varyantlar hariç).", "Main keywords tracked in SEOmonitor in the category (close variants excluded).", True),
@@ -42,10 +43,10 @@ T_AIO = tablo([th("Kategori", "Category", "SEOmonitor'de VitrA kategori ağacın
               [[x(c, _EN[c]), cell(t["n"]), cell(t["aio"]), n(yzd(_p(t["aio"], t["n"]), 0)), cell(t["vitra"]), n(yzd(_p(t["vitra"], t["aio"]), 0)), n(yzd(_p(t["vit_h"], t["aio_h"]), 0))] for c, t in AIO.items()]
               + [["<b>%s</b>" % x("Toplam", "Total"), cell(TOP["n"]), cell(TOP["aio"]), n(yzd(_p(TOP["aio"], TOP["n"]), 0)), cell(TOP["vitra"]), n(yzd(_p(TOP["vitra"], TOP["aio"]), 0)), n(yzd(_p(TOP["vit_h"], TOP["aio_h"]), 0))]])
 _sir = sorted([(c, _p(t["vitra"], t["aio"])) for c, t in AIO.items() if t["aio"] >= 20], key=lambda i: -i[1])
-INS_AIO = insight(("**SEOmonitor'de takip edilen %s kelimenin %s mobilde AI Overview çıkmaktadır ve VitrA bu kelimelerin %s kaynak gösterilmektedir**. AI Overview en sık armatür ve vitrifiye kelimelerinde çıkmaktadır. VitrA'nın AI Overview içindeki payı %s; en sınırlı kaldığı kategoriler %s. Bu kategorilerde soruya doğrudan yanıt veren kategori ve rehber içeriği, kaynak gösterilme payını artırabilir.")
+INS_AIO = insight(("**SEOmonitor'de takip edilen %s kelimenin %s mobilde AI Overview çıkmaktadır ve VitrA bu kelimelerin %s kaynak gösterilmektedir**. AI Overview sayı olarak en çok armatür ve vitrifiye kelimelerinde, oran olarak en çok duş ve rezervuar kelimelerinde çıkmaktadır. VitrA'nın AI Overview içindeki payı %s; en sınırlı kaldığı kategoriler %s. Bu kategorilerde soruya doğrudan yanıt veren kategori ve rehber içeriği, kaynak gösterilme payını artırabilir.")
                   % (bin(TOP["n"]), ek(TOP["aio"], "inde"), yzd(_p(TOP["vitra"], TOP["aio"]), 0) + "'" + ek(round(_p(TOP["vitra"], TOP["aio"])), "inde").split("'")[1],
                      ", ".join("%s %s" % (c.lower(), yzd(v, 0)) for c, v in _sir[:2]) + " ile en yüksek", ", ".join("%s (%s)" % (c.lower(), yzd(v, 0)) for c, v in _sir[-2:])),
-                  ("**%s of the %s keywords tracked in SEOmonitor show an AI Overview on mobile, and VitrA is cited in %s of them**. AI Overviews appear most often on tap and sanitaryware keywords. VitrA's share within AI Overviews is highest in %s; the most limited categories are %s. In these categories, category and guide content that answers the question directly can increase the citation share.")
+                  ("**%s of the %s keywords tracked in SEOmonitor show an AI Overview on mobile, and VitrA is cited in %s of them**. By count AI Overviews appear most on tap and sanitaryware keywords, by rate on shower and cistern keywords. VitrA's share within AI Overviews is highest in %s; the most limited categories are %s. In these categories, category and guide content that answers the question directly can increase the citation share.")
                   % (f"{TOP['aio']:,}", f"{TOP['n']:,}", ("%.0f" % _p(TOP["vitra"], TOP["aio"])) + "%", ", ".join("%s %s" % (_EN[c].lower(), ("%.0f" % v) + "%") for c, v in _sir[:2]),
                      ", ".join("%s (%s)" % (_EN[c].lower(), ("%.0f" % v) + "%") for c, v in _sir[-2:])), "D42")
 # ---------------------------------------------------------------- Google click payi (share of clicks), mobil, son 15 gun ortalamasi
@@ -67,7 +68,7 @@ _SIRA = ["Tümü", "Vitrifiyeler", "Banyo Mobilyaları", "Armatürler", "Duşlar
 def _vs(d): return d.get("vitra.com.tr", 0)
 def _sira(d):
     L = sorted(d.items(), key=lambda i: -i[1]); return next((i + 1 for i, (k_, _) in enumerate(L) if k_ == "vitra.com.tr"), None)
-T_SOC = tablo([th("Kategori", "Category", "SEOmonitor'de takip edilen kelime grubu; Marka, VitrA ve Artema adıyla yapılan aramalardır.", "Keyword group tracked in SEOmonitor; Brand covers searches with the VitrA and Artema names."),
+T_SOC = tablo([th("Kategori", "Category", "SEOmonitor'de takip edilen kelime grubu. Tümü: marka aramaları dahil takipteki %s kelime; Marka: VitrA ve Artema adıyla yapılan aramalar; Duşlar: duş başlığı, tepe duşu, duş sistemi ve duş paneli (duş setleri Armatürler'dedir)." % bin(N_TUM), "Keyword group tracked in SEOmonitor. All: the %s tracked keywords including brand searches; Brand: searches with the VitrA and Artema names; Showers: shower heads, overhead showers, shower systems and panels (shower sets are under Taps and Mixers)." % f"{N_TUM:,}"),
                th("vitra.com.tr click payı", "vitra.com.tr click share", "Gruptaki kelimelerden gelen tahmini organik click'lerin vitra.com.tr'ye düşen payı; mobil, 19 Eyl - 3 Eki 2026 günlük ortalaması.", "Share of estimated organic clicks from the group's keywords going to vitra.com.tr; mobile, daily average 19 Sep - 3 Oct 2026.", True),
                th("VitrA'nın sırası", "VitrA's rank", "vitra.com.tr'nin click payına göre alan adları arasındaki sırası.", "vitra.com.tr's rank among domains by click share.", True),
                th("En yüksek payı alan üç rakip", "Top three competitors by share", "vitra.com.tr dışında en yüksek click payını alan üç alan adı ve payları.", "The three domains other than vitra.com.tr with the highest click share, with their shares.")],
@@ -75,11 +76,22 @@ T_SOC = tablo([th("Kategori", "Category", "SEOmonitor'de takip edilen kelime gru
 _v0 = SOC0.get("vitra.com.tr", 0) + SOC0.get("online.vitra.com.tr", 0)
 _KZ = sorted([(g, _vs(SOC[g])) for g in _SIRA[1:-1] if g in SOC], key=lambda i: -i[1])
 INS_SOC = insight(("**vitra.com.tr, takip edilen tüm kelimelerde mobil click'lerin %s almaktadır ve Trendyol'dan (%s) sonra ikinci sıradadır**; Koçtaş %s, Hepsiburada %s ile izlemektedir. Geçen yılın aynı döneminde vitra.com.tr ve online.vitra.com.tr birlikte %s almaktaydı; alan adı birleşmesinden sonra pay yükselmiştir. Kategorilerde VitrA'nın payı %s en yüksek, %s en düşüktür; karoda Kale ve Koçtaş, aksesuar ve armatürde Trendyol öndedir.")
-                  % (yzd(_vs(SOC["Tümü"]), 1) + "'" + ek(round(_vs(SOC["Tümü"])), "i").split("'")[1], yzd(SOC["Tümü"].get("trendyol.com", 0), 1), yzd(SOC["Tümü"].get("koctas.com.tr", 0), 1), yzd(SOC["Tümü"].get("hepsiburada.com", 0), 1),
-                     yzd(_v0, 1) + "'" + ek(round(_v0), "i").split("'")[1], " ve ".join("%s (%s)" % (g.lower(), yzd(v, 1)) for g, v in _KZ[:2]) + " kategorilerinde", " ve ".join("%s (%s)" % (g.lower(), yzd(v, 1)) for g, v in _KZ[-2:])),
+                  % (yzd_ek(_vs(SOC["Tümü"]), 1, "ini"), yzd(SOC["Tümü"].get("trendyol.com", 0), 1), yzd(SOC["Tümü"].get("koctas.com.tr", 0), 1), yzd(SOC["Tümü"].get("hepsiburada.com", 0), 1),
+                     yzd_ek(_v0, 1, "ini"), " ve ".join("%s (%s)" % (g.lower(), yzd(v, 1)) for g, v in _KZ[:2]) + " kategorilerinde", " ve ".join("%s (%s)" % (g.lower(), yzd(v, 1)) for g, v in _KZ[-2:])),
                   ("**vitra.com.tr takes %s of mobile clicks across all tracked keywords and ranks second after Trendyol (%s)**; Koçtaş follows with %s and Hepsiburada with %s. In the same period last year vitra.com.tr and online.vitra.com.tr together took %s; the share has risen after the domain merger. By category VitrA's share is highest in %s and lowest in %s; Kale and Koçtaş lead in tiles, and Trendyol in accessories and taps.")
                   % (("%.1f" % _vs(SOC["Tümü"])) + "%", ("%.1f" % SOC["Tümü"].get("trendyol.com", 0)) + "%", ("%.1f" % SOC["Tümü"].get("koctas.com.tr", 0)) + "%", ("%.1f" % SOC["Tümü"].get("hepsiburada.com", 0)) + "%",
                      ("%.1f" % _v0) + "%", " and ".join("%s (%s)" % (_EN[g].lower(), ("%.1f" % v) + "%") for g, v in _KZ[:2]), " and ".join("%s (%s)" % (_EN[g].lower(), ("%.1f" % v) + "%") for g, v in _KZ[-2:])), "D42")
-HTML_SOC = '<h3>%s</h3>%s%s%s' % (x("Google'da click payı: vitra.com.tr ve rakipler", "Click share on Google: vitra.com.tr and competitors"), T_SOC, INS_SOC,
-                                  kaynak("SEOmonitor · vitra.com.tr kampanyası, takip edilen %s kelime · mobil tahmini click payı, 19 Eyl - 3 Eki 2026 günlük ortalama; geçen yıl 19 Eyl - 3 Eki 2025" % bin(TOP["n"]),
-                                         "SEOmonitor · vitra.com.tr campaign, %s tracked keywords · mobile estimated click share, daily average 19 Sep - 3 Oct 2026; last year 19 Sep - 3 Oct 2025" % f"{TOP['n']:,}", "D42"))
+from grafik2 import halka as _halka
+_T5 = sorted(SOC["Tümü"].items(), key=lambda i: -i[1])[:5]
+_HR = {"vitra.com.tr": "#10332F", "trendyol.com": "#E85F36", "koctas.com.tr": "#F5A623", "hepsiburada.com": "#7A8C89"}; _HD = ["#9AA8A5", "#B9C4C1", "#C9D3D1", "#9AA8A5", "#9AA8A5"]
+HALKA_SOC = _halka([(_KISA.get(d_, d_) if d_ != "vitra.com.tr" else "vitra.com.tr", v_, _HR.get(d_) or _HD[i]) for i, (d_, v_) in enumerate(_T5)] + [(x("Diğer alan adları", "Other domains"), 100 - sum(v_ for _, v_ in _T5), "#D9DFDD")],
+                   x("Takip edilen tüm kelimelerde mobil click payı · 19 Eyl - 3 Eki 2026 günlük ortalama", "Mobile click share across all tracked keywords · daily average 19 Sep - 3 Oct 2026"),
+                   merkez=(x(yzd(_vs(SOC["Tümü"]), 1), ("%.1f" % _vs(SOC["Tümü"])) + "%"), x("vitra.com.tr payı", "vitra.com.tr share")))
+from grafik2 import yigin as _yigin
+_SER = [("vitra.com.tr", "#10332F"), ("Trendyol", "#E85F36"), ("Koçtaş", "#F5A623"), ("Hepsiburada", "#7A8C89"), (x("Diğer alan adları", "Other domains"), "#D9DFDD")]
+_DOM = ["vitra.com.tr", "trendyol.com", "koctas.com.tr", "hepsiburada.com"]
+YIGIN_SOC = _yigin([(x(g, _EN.get(g, g)), [SOC[g].get(d_, 0) for d_ in _DOM] + [max(0, 100 - sum(SOC[g].get(d_, 0) for d_ in _DOM))]) for g in _SIRA if g in SOC and g != "Tümü"],
+                   _SER, x("Kategori bazında mobil click payı · vitra.com.tr ve üç büyük kanal · 19 Eyl - 3 Eki 2026 günlük ortalama", "Mobile click share by category · vitra.com.tr and three major channels · daily average 19 Sep - 3 Oct 2026"), sol=170, esik=5)
+HTML_SOC = '<h3>%s</h3>%s%s%s' % (x("Google'da click payı: vitra.com.tr ve rakipler", "Click share on Google: vitra.com.tr and competitors"), HALKA_SOC + T_SOC + YIGIN_SOC, INS_SOC,
+                                  kaynak("SEOmonitor · vitra.com.tr kampanyası, takip edilen %s kelime (marka aramaları dahil) · mobil tahmini click payı, 19 Eyl - 3 Eki 2026 günlük ortalama; geçen yıl 19 Eyl - 3 Eki 2025" % bin(N_TUM),
+                                         "SEOmonitor · vitra.com.tr campaign, %s tracked keywords (including brand searches) · mobile estimated click share, daily average 19 Sep - 3 Oct 2026; last year 19 Sep - 3 Oct 2025" % f"{N_TUM:,}", "D42"))

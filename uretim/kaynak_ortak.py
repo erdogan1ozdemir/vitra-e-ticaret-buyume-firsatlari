@@ -23,18 +23,13 @@ def bolum_adi(sid):
     return "%02d %s" % (no, ad)
 
 # ---------------------------------------------------------------- kaynakca kodu -> bolumler (rapordaki ust simge atiflarindan)
+_KAYLI = [(re.search(r'id="kay-(\d+)"', t_).group(1), re.search(r'data-kod="([^"]+)"', t_).group(1)) for t_ in re.findall(r'<li\b[^>]*\bid="kay-\d+"[^>]*>', H)]   # (no, kod); nitelik sirasindan bagimsiz
 def _kod_bolum():
-    lis = re.findall(r'<li id="kay-(\d+)">(.*?)</li>', H, re.S)
-    no2kod = {}
-    for n, body in lis:
-        txt = html.unescape(re.sub(r"<[^>]+>", "", body))
-        hit = [c for c, (tr, en, u) in kaynakca.K.items() if tr.lower() in txt.lower()]
-        if len(hit) != 1:
-            raise SystemExit("Kaynakca numarasi koda eslenemedi: %s %s" % (n, hit))
-        no2kod[int(n)] = hit[0]
+    no2kod = {int(n): kod for n, kod in _KAYLI}
+    if not no2kod: raise SystemExit("Kaynakca data-kod nitelikleri bulunamadi")
     sonuc = {c: [] for c in kaynakca.K}
     for sid, no, body in re.findall(r'<section id="([^"]+)"><h2>(?:<span class="h2i">)?<span class="no">(\d+)</span>(.*?)</section>', H, re.S):
-        if sid in ("kaynakca", "sozluk"):
+        if sid in ("kaynakca", "sozluk", "ek"):
             continue
         nums = set()
         for m in re.finditer(r'<sup class="ref">(.*?)</sup>', body):
@@ -45,6 +40,7 @@ def _kod_bolum():
                 sonuc[c].append(sid)
     return sonuc
 KOD_BOLUM = _kod_bolum()
+KOD_NO = {kod: n for n, kod in _KAYLI}   # kaynakca kodu -> rapordaki kaynakca numarasi
 
 # ---------------------------------------------------------------- alan adi
 _IKI = {"com", "co", "gov", "org", "net", "edu"}

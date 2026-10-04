@@ -42,7 +42,7 @@ def _p(v): return n(yzd(v)) if v is not None else n("-")
 def satir(r):
     m = r["modellenmis"]
     kanal = [n("-")] * 7 if m else [_p(v) for v in dagilim(r)]
-    return [u("https://www." + r["alan"], r["alan"]), etk(*GRUP[r["grup"]]), cellk(r["ort_ziyaret"]), _p(r["tr_pay"])] + kanal + [
+    return [u("https://www." + r["alan"], r["alan"]), etk(*GRUP[r["grup"]]), cellk(r["ort_ziyaret"]), n("-") if m else _p(r["tr_pay"])] + kanal + [
         _p(r["hemen_cikma"]), n(f1(r["sayfa_ziyaret"]) if r["sayfa_ziyaret"] is not None else "-"), n(sure(r["sure_sn"]))]
 BAS = [th("Alan adı", "Domain", "Similarweb ile ölçülen site; yeni sekmede açılır.", "Site measured with Similarweb; opens in a new tab."),
        th("Grup", "Group", "Sitenin iş modeline göre grubu.", "Group of the site by business model."),
@@ -84,23 +84,23 @@ HTML = """
  kpi_kart(yzd(sosyal(V)), "Sosyal medya payı · Banyomarka %s, Kale %s" % (yzd(sosyal(BM)), yzd(sosyal(K))), "Social media share · Banyomarka %s, Kale %s" % (yzd(sosyal(BM)), yzd(sosyal(K)))),
  GRAFIK,
  TABLO,
- insight("vitra.com.tr'ye Haz - Ağu 2026 döneminde aylık ortalama %s ziyaret gelmiştir; ziyaretlerin %s'i organik aramadan, %s'i doğrudan girişten gelmektedir. Kale'de doğrudan giriş (%s) ve e-posta (%s) payı öne çıkarken VitrA'da organik arama ağırlığı belirgindir. "
+ insight("Similarweb tahminine göre vitra.com.tr Haz - Ağu 2026 döneminde aylık ortalama %s ziyaret almaktadır; ziyaretlerin %s'i organik aramadan, %s'i doğrudan girişten gelmektedir. Kale'de doğrudan giriş (%s) ve e-posta (%s) payı öne çıkarken VitrA'da organik arama ağırlığı belirgindir. "
          "Ücretli arama payı VitrA'da %s'tür; Creavit (%s) ve Geberit (%s) bu kanalı oransal olarak daha yoğun kullanmaktadır. Sosyal medyadan gelen ziyaret payı VitrA'da %s ile sınırlı kalmaktadır; Banyomarka'da bu oran %s, Kale'de %s'tür. "
-         "Satış kanallarında display reklam payı n11'de %s, Hepsiburada'da %s, Koçtaş'ta %s'dir; Koçtaş ayrıca ziyaretlerinin %s'ini ücretli aramadan almaktadır. "
-         "Sosyal medya ve ücretli arama kanallarında VitrA'nın oransal payının rakiplerin altında kalması, kampanya ve lansman dönemlerinde bu kanalların test edilmesi için alan bırakmaktadır."
+         "Satış kanallarında e-posta, display ve affiliate toplam payı n11'de %s, Hepsiburada'da %s, Koçtaş'ta %s'dir; Koçtaş ayrıca ziyaretlerinin %s'ini ücretli aramadan almaktadır. "
+         "Ücretli aramada Creavit ve Geberit'in, sosyal medyada Kale'nin altında kalınması, kampanya ve lansman dönemlerinde bu kanalların test edilmesi için alan bırakmaktadır."
          % (k(V["ort_ziyaret"]), yzd(kn(V, "organik")), yzd(kn(V, "direct")), yzd(kn(K, "direct")), yzd(kn(K, "eposta")), yzd(kn(V, "ucretli")), yzd(kn(CR, "ucretli")), yzd(kn(GB, "ucretli")),
-            yzd(sosyal(V)), yzd(sosyal(BM)), yzd(sosyal(K)), yzd(kn(N11, "display")), yzd(kn(HB, "display")), yzd(kn(KC, "display")), yzd(kn(KC, "ucretli"))),
-         "vitra.com.tr received an average of %s visits a month in Jun - Aug 2026; %s of visits come from organic search and %s from direct entry. Kale stands out with direct entry (%s) and email (%s), while organic search clearly carries the weight at VitrA. "
+            yzd(sosyal(V)), yzd(sosyal(BM)), yzd(sosyal(K)), yzd(diger(N11)), yzd(diger(HB)), yzd(diger(KC)), yzd(kn(KC, "ucretli"))),
+         "According to Similarweb estimates, vitra.com.tr receives an average of %s visits a month in Jun - Aug 2026; %s of visits come from organic search and %s from direct entry. Kale stands out with direct entry (%s) and email (%s), while organic search clearly carries the weight at VitrA. "
          "VitrA's paid search share is %s; Creavit (%s) and Geberit (%s) use this channel proportionally more intensively. The share of visits from social media is limited to %s at VitrA; it is %s at Banyomarka and %s at Kale. "
-         "Among sales channels, the display advertising share is %s at n11, %s at Hepsiburada and %s at Koçtaş; Koçtaş also gets %s of its visits from paid search. "
-         "VitrA's proportional share in social media and paid search being below competitors leaves room to test these channels during campaign and launch periods."
+         "Among sales channels, the combined email, display and affiliate share is %s at n11, %s at Hepsiburada and %s at Koçtaş; Koçtaş also gets %s of its visits from paid search. "
+         "Being below Creavit and Geberit in paid search and below Kale in social media leaves room to test these channels during campaign and launch periods."
          % (k(V["ort_ziyaret"]), yzd(kn(V, "organik")), yzd(kn(V, "direct")), yzd(kn(K, "direct")), yzd(kn(K, "eposta")), yzd(kn(V, "ucretli")), yzd(kn(CR, "ucretli")), yzd(kn(GB, "ucretli")),
-            yzd(sosyal(V)), yzd(sosyal(BM)), yzd(sosyal(K)), yzd(kn(N11, "display")), yzd(kn(HB, "display")), yzd(kn(KC, "display")), yzd(kn(KC, "ucretli"))), "D37"),
+            yzd(sosyal(V)), yzd(sosyal(BM)), yzd(sosyal(K)), yzd(diger(N11)), yzd(diger(HB)), yzd(diger(KC)), yzd(kn(KC, "ucretli"))), "D37"),
  note("YÖNTEM", "METHOD", ul_b([
      ("Kapsam:", "Scope:", "Ziyaret değerleri tüm ülkeleri kapsayan Similarweb tahminleridir. vitra.com.tr ziyaretlerinin %s'i Türkiye'den, %s'i Rusya'dan gelmektedir; Türkiye kaynaklı ziyaret aylık ~%s düzeyindedir." % (yzd(V["tr_pay"]), yzd(_ru), k(V["ort_ziyaret"] * V["tr_pay"] / 100)),
       "Visit values are Similarweb estimates covering all countries. %s of vitra.com.tr visits come from Turkey and %s from Russia; visits from Turkey are around %s a month." % (yzd(V["tr_pay"]), yzd(_ru), k(V["ort_ziyaret"] * V["tr_pay"] / 100))),
-     ("Düşük trafikli siteler:", "Low-traffic sites:", "Aylık ziyareti ~35 binin altında kalan %d sitede (%s) kanal dağılımı benzer sitelerden modellendiği için kanal sütunları boş bırakılmış, grafikte yer verilmemiştir." % (len(_mod), ", ".join(_mod)),
-      "For the %d sites below ~35 thousand monthly visits (%s), the channel distribution is modelled from similar sites, so the channel columns are left blank and the sites are not charted." % (len(_mod), ", ".join(_mod))),
+     ("Düşük trafikli siteler:", "Low-traffic sites:", "Similarweb'in kanal dağılımını benzer sitelerden modellediği %d düşük trafikli sitede (%s) kanal ve Türkiye payı sütunları boş bırakılmış, grafikte yer verilmemiştir. Ahrefs ve Similarweb değerleri farklı yöntemlerle hesaplanan tahminlerdir; vitra.com.tr'nin Search Console verisinde Haz - Ağu 2026 Google organik tıkı aylık ~186K'dır (Bölüm [[b:organik]]). Karşılaştırmalar aynı kaynak içinde okunmalıdır." % (len(_mod), ", ".join(_mod)),
+      "For the %d low-traffic sites whose channel distribution Similarweb models from similar sites (%s), the channel and Turkey-share columns are left blank and the sites are not charted. Ahrefs and Similarweb values are estimates calculated with different methods; in vitra.com.tr's Search Console data, Google organic clicks average ~186K a month in Jun - Aug 2026 (Section [[b:organik]]). Comparisons should be read within the same source." % (len(_mod), ", ".join(_mod))),
      ("Etkileşim:", "Engagement:", "vitra.com.tr'de ziyaret başına %s sayfa görüntülenmekte, ortalama süre %s, hemen çıkma oranı %s'dir (Ağu 2026)." % (f1(V["sayfa_ziyaret"]), "%d dk %02d sn" % divmod(V["sure_sn"], 60), yzd(V["hemen_cikma"])),
       "vitra.com.tr shows %s pages per visit, an average duration of %s and a bounce rate of %s (Aug 2026)." % (f1(V["sayfa_ziyaret"]), "%d min %02d s" % divmod(V["sure_sn"], 60), yzd(V["hemen_cikma"]))),
  ])),

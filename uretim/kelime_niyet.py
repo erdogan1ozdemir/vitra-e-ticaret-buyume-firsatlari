@@ -61,6 +61,17 @@ for a_ in _sira:
     if var: r["varyant"] = var
     _tekil.append(r)
 print("varyant tekillestirme:", len(rows), "->", len(_tekil))
+# "Banyo Tezgahları" altına kaynak listeden gelen mutfak ve genel tezgah aramaları (banyo/lavabo içermeyen, büyük ölçüde mutfak
+# tezgahı ve porselen levha talebi) banyo mobilyası evreninden çıkarılır; ayrı tutulup raporun yöntem notunda belirtilir.
+HARIC_TEZGAH = sorted(r["kw"] for r in _tekil if r["k2"] == "Banyo Tezgahları" and not re.search(r"banyo|lavabo", r["kw"]))
+json.dump({"aciklama": "Banyo Tezgahları alt kategorisinden çıkarılan, banyo veya lavabo içermeyen mutfak ve genel tezgah aramaları", "kelimeler": HARIC_TEZGAH,
+           "a26_toplam": sum(r["a26"] for r in _tekil if r["kw"] in HARIC_TEZGAH)}, open(os.path.join(P, "veri/islenmis/kelime_haric.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+_tekil = [r for r in _tekil if r["kw"] not in set(HARIC_TEZGAH)]
+# Türkçe karakter: varyant grubunda karakterli yazımı bulunmayan iki kanonik ad
+_AD_TR = {"cocuk klozet": "çocuk klozet", "cocuk klozet kapak": "çocuk klozet kapak"}
+for r in _tekil:
+    if r["kw"] in _AD_TR: r["varyant"] = sorted(set(r.get("varyant") or []) | {r["kw"]}); r["kw"] = _AD_TR[r["kw"]]
+print("tezgah dışlaması:", len(HARIC_TEZGAH), "kelime ->", len(_tekil))
 rows = _tekil
 json.dump(rows, open(os.path.join(P, "veri/islenmis/kelime_seti.json"), "w", encoding="utf-8"), ensure_ascii=False)
 T = defaultdict(lambda: [0,0,0])

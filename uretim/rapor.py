@@ -51,7 +51,7 @@ P.append(bolum("benchmark", "Benchmark: E-Ticaret Modelleri ve Dijital Deneyim",
 P.append(bolum("model", "Kanal Rolleri ve Etkileşim Modeli", "Channel Roles and Engagement Model", b_model.HTML))
 P.append(bolum("geo", "AI Arama ve GEO Fırsatları", "AI Search and GEO Opportunities", b_geo.HTML))
 P.append(bolum("adimlar", "Sonraki Adımlar", "Next Steps", b_adimlar.HTML))
-P.append(bolum("yontem", "Yöntem ve Kapsam", "Method and Scope", b_yontem.HTML))
+P.append(bolum("ek", "Yöntem, Kapsam, Kaynakça ve Sözlük", "Method, Scope, References and Glossary", "<h3>%s</h3>" % x("Yöntem ve Kapsam", "Method and Scope") + b_yontem.HTML + "<!--EK-SON-->"))
 
 govde = "\n".join(P)
 # --- son islemler: alt baslik aciklamasi, uzun tablo, logo
@@ -66,10 +66,10 @@ import serp_ozet as _SO
 from ortak import kopru as _kopru
 # alt basliktan ilgili veri seti alt sayfasina dugme (basligin aciklama notunun hemen altinda)
 H3_ALT = {
- "Kim sıralanıyor?": ("Üç gruptaki %d kelimenin ilk 10 sonucu, AI Overview kaynakları ve \"Diğer sorular\" kutusu süzülebilir tablolar halinde ayrı sayfadadır." % _SO.NT,
+ "A · Kim sıralanıyor?": ("Üç gruptaki %d kelimenin ilk 10 sonucu, AI Overview kaynakları ve \"Diğer sorular\" kutusu süzülebilir tablolar halinde ayrı sayfadadır." % _SO.NT,
                       "The top 10 results, AI Overview sources and \"People also ask\" box for the %d keywords in all three groups are in filterable tables on a separate page." % _SO.NT, "arama-sonuclari.html", "Arama Sonuçları sayfasını görüntüle", "View the Search Results page", ""),
  "Kullanıcının Google'da sorduğu sorular": ("%d sorunun tamamı, çıktığı kelimelerle birlikte:" % len(_SO.PAA_SORU), "All %d questions with the keywords where they appeared:" % len(_SO.PAA_SORU), "arama-sonuclari.html", "Soruları görüntüle", "View the questions", "#paa"),
- "Ana kategori düzeyinde değişim": ("Talep bölümlerindeki 2.349 kelimenin tamamı, kategori, niyet ve iki dönemin arama hacmiyle:", "All 2,349 keywords in the demand sections, with category, intent and search volume for both periods:", "kelime-evreni.html", "Kelime Evreni sayfasını görüntüle", "View the Keyword Universe page", ""),
+ "Ana kategori düzeyinde değişim": ("Talep bölümlerindeki 2.328 kelimenin tamamı, kategori, niyet ve iki dönemin arama hacmiyle:", "All 2,328 keywords in the demand sections, with category, intent and search volume for both periods:", "kelime-evreni.html", "Kelime Evreni sayfasını görüntüle", "View the Keyword Universe page", ""),
  "Autocomplete önerilerinin tema oranı": ("Tüm otomatik tamamlama önerileri, kök ifade ve grupla:", "All autocomplete suggestions, with seed term and group:", "kelime-evreni.html", "Önerileri görüntüle", "View the suggestions", "#oneriler"),
  "Alt kesitler: vitra.com.tr, pazaryeri ve fiyat karşılaştırma siteleri": ("Taramadaki 11.982 ürün kartının tamamı (kanal, marka, satıcı, fiyat, puan):", "All 11,982 product cards from the scan (channel, brand, seller, price, rating):", "pazaryeri-taramasi.html", "Pazaryeri Taraması sayfasını görüntüle", "View the Marketplace Scan page", ""),
  "Genişletilmiş tarama: 68 arama, altı niyet grubu": ("68 aramanın tüm video sonuçları ve kanal özeti:", "All video results of the 68 searches and the channel summary:", "youtube-videolari.html", "YouTube Videoları sayfasını görüntüle", "View the YouTube Videos page", ""),
@@ -114,17 +114,36 @@ def _btok(t):
 govde = _btok(govde)
 t2_ortak.EK = {_btok(k_): _btok(v_) for k_, v_ in t2_ortak.EK.items()}
 if "??" in govde: raise SystemExit("Bölüm atfı çözülemedi")
+# Yontem tablosundaki "Kullanildigi bolum" hucreleri: kaynakca kodlarinin raporda atif aldigi bolum numaralari
+_KB = {}
+for _m in re.finditer(r'<section id="([^"]+)">(.*?)</section>', govde, re.S):
+    if _m.group(1) == "ek": continue
+    for _r in re.findall(r"\[\[ref:([^\]]+)\]\]", _m.group(2)):
+        for _c in _r.split(","): _KB.setdefault(_c.strip(), set()).add(_BNO[_m.group(1)])
+def _bk(t):
+    return re.sub(r"\[\[bk:([^\]]+)\]\]", lambda m: ", ".join(sorted({n_ for c_ in m.group(1).split(",") for n_ in _KB.get(c_.strip(), ())})) or "-", t)
+govde = _bk(govde); t2_ortak.EK = {_bk(k_): _bk(v_) for k_, v_ in t2_ortak.EK.items()}
 govde, sira = kaynakca.coz(govde)
-P.append(bolum("kaynakca", "Kaynakça", "References", kaynakca.bolum_html(sira, x)))
+_KAY = kaynakca.bolum_html(sira, x)
 GL_EN = {
  "CTR": "Click-through rate; the share of impressions that turn into clicks.",
- "DR": "Domain Rating; Ahrefs' link strength score for a domain, on a 0-100 scale.", "Organik trafik": "Ahrefs' estimate of monthly free search visits from ranking keywords.",
+ "SSS": "Frequently asked questions; the Q&A pages in the support section.",
+ "Search Console": "Google's measurement tool for site owners; shows the site's impressions, clicks and average position in Google search.",
+ "Keyword Planner": "The Google Ads keyword tool; gives the average monthly search volume of keywords.",
+ "SEOmonitor": "A measurement tool tracking the daily Google positions of the site and competitors, SERP features and estimated click share for selected keywords.",
+ "Similarweb": "A market measurement tool estimating sites' total visits and traffic channels.",
+ "Click payı": "The distribution of estimated organic clicks from tracked keywords across domains (share of clicks).",
+ "Prompt": "A question or instruction given to an AI tool.",
+ "AI Mode": "Google's conversational AI search mode.",
+ "TÜİK": "Turkish Statistical Institute.",
+ "KDV": "Value added tax (VAT).",
+ "DR": "Domain Rating; Ahrefs' link strength score for a domain, on a 0-100 scale.", "Organik trafik": "Free visits from search engines; in the report given as Search Console clicks, an Ahrefs estimate or a Similarweb estimate depending on the source.",
  "Paid trafik": "Ahrefs' estimate of monthly visits from Google Ads.",
  "Autocomplete": "Completion phrases suggested while typing in the Google search box; derived from real user searches.",
  "Pure player": "A retailer without physical stores that sells online only.",
  "Retargeting": "A reminder ad shown later to a user who visited the site.", "Kartlı Ödeme Endeksi": "An index the CBRT derives from bank and credit card spending; the real series is inflation-adjusted.",
  "Net yüzde": "A survey indicator obtained by subtracting the share of negative answers from the share of positive answers.",
- "SSG": "Sanitaryware; vitreous china products such as WCs, washbasins, bidets, urinals and cisterns.",
+ "SSG": "Sanitaryware; vitreous china products such as WCs, washbasins, bidets and urinals; cisterns are also included in this group in the report.",
  "BM": "Bathroom furniture; basin units, tall cabinets, mirror cabinets, mirrors, countertops and complements.",
  "3P": "Third-party seller; a seller other than the brand itself that sells the product on a marketplace or the brand site.",
  "GA4": "Google Analytics 4; the analytics tool measuring the site's visits, conversions and product performance.",
@@ -151,11 +170,15 @@ GL_EN = {
  "Medyan": "The middle value of ordered values; less affected by extreme prices than the average.",
  "MDF": "Medium-density fibreboard; a common body material in bathroom furniture.",
 }
-GL_TERM_EN = {"Yerel paket": "Local pack", "Desi": "Desi (volumetric weight)", "Medyan": "Median", "Organik trafik": "Organic traffic", "Paid trafik": "Paid traffic", "Kartlı Ödeme Endeksi": "Card Payment Index", "Net yüzde": "Net percentage", "SSG": "SSG", "BM": "BM", "3P": "3P", "TCMB": "CBRT", "EVDS": "EVDS"}
+GL_TERM_EN = {"SSS": "FAQ", "Click payı": "Click share", "TÜİK": "TurkStat", "KDV": "VAT", "Yerel paket": "Local pack", "Desi": "Desi (volumetric weight)", "Medyan": "Median", "Organik trafik": "Organic traffic", "Paid trafik": "Paid traffic", "Kartlı Ödeme Endeksi": "Card Payment Index", "Net yüzde": "Net percentage", "SSG": "SSG", "BM": "BM", "3P": "3P", "TCMB": "CBRT", "EVDS": "EVDS"}
 _TRS = str.maketrans("çğıöşüÇĞİÖŞÜ", "cgiosuCGIOSU")
-sozluk = '<dl class="gl">%s</dl>' % "".join('<dt>%s</dt><dd>%s</dd>' % (x(t, GL_TERM_EN.get(t, t)), x(GLOSSARY[t], GL_EN[t])) for t in sorted(GLOSSARY, key=lambda t_: t_.translate(_TRS).lower()))
-P.append(bolum("sozluk", "Terim Sözlüğü", "Glossary", sozluk))
-govde = "\n".join(P[:-2]) if False else govde + "\n" + "\n".join(P[-2:])
+sozluk = '<dl class="gl sozluk">%s</dl>' % "".join('<dt>%s</dt><dd>%s</dd>' % (x(t, GL_TERM_EN.get(t, t)), x(GLOSSARY[t], GL_EN[t])) for t in sorted(GLOSSARY, key=lambda t_: t_.translate(_TRS).lower()))
+# Ek bölümü: Yöntem ve Kapsam tablosunun ardına Kaynakça ve Terim Sözlüğü alt başlıkları
+govde = govde.replace("<!--EK-SON-->", '<h3 id="kaynakca">%s</h3>%s<h3 id="sozluk">%s</h3><p class="h3n">%s</p>%s' % (
+    x("Kaynakça", "References"), _KAY, x("Terim Sözlüğü", "Glossary"),
+    x("Raporda geçen kısaltma ve terimlerin kısa tanımları; metinde noktalı alt çizgili terimlerin üzerine gelindiğinde aynı tanım açılır.",
+      "Short definitions of the abbreviations and terms used in the report; hovering over a dotted-underlined term in the text opens the same definition."), sozluk), 1)
+if "<!--EK-SON-->" in govde: raise SystemExit("Ek bölümü yer tutucusu bulunamadı")
 
 CSS_SON = """
 sup.ref{margin-left:.18em}
@@ -288,11 +311,11 @@ h3[id]{scroll-margin-top:calc(var(--apph, 64px) + 24px)}
 .tw.genis td:first-child{white-space:nowrap}
 """
 # ---------------------------------------------------------------- icindekiler
-KISA = {"yolculuk": ("Satın Alma Yolculuğu", "Purchase Journey"), "yorum": ("Yorumlar ve Soru-Cevap", "Reviews and Q&A"), "ihtiyac": ("İhtiyaç Dili", "Need Language"), "youtube": ("YouTube: Montaj ve Tamir", "YouTube: Installation and Repair"), "rakip": ("Rakip Görünürlüğü ve Ölçek", "Competitor Visibility and Scale"),
+KISA = {"ek": ("Yöntem, Kapsam, Kaynakça ve Sözlük", "Method, Scope, References and Glossary"), "yolculuk": ("Satın Alma Yolculuğu", "Purchase Journey"), "yorum": ("Yorumlar ve Soru-Cevap", "Reviews and Q&A"), "ihtiyac": ("İhtiyaç Dili", "Need Language"), "youtube": ("YouTube: Montaj ve Tamir", "YouTube: Installation and Repair"), "rakip": ("Rakip Görünürlüğü ve Ölçek", "Competitor Visibility and Scale"),
         "model": ("Kanal Rolleri ve Model", "Channel Roles and Model"), "panel": ("Resmi Mağaza Paneli", "Official Store Panel"), "makro": ("Ekonomik Ortam", "Economic Environment"), "talep": ("Kategori Talebi", "Category Demand"), "organik": ("Organik Kanal", "Organic Channel"),
         "marka": ("Marka Aramaları", "Brand Searches"), "ssgbm": ("SSG ve BM Derin Talep", "SSG and BM In Depth"), "katalog": ("Katalog ve Talep", "Catalogue and Demand"), "yeni": ("Yeni Kategori ve Segment", "New Categories and Segments"), "set": ("Set ve Ürün + Hizmet", "Sets and Product + Service"), "benchmark": ("Benchmark ve Dijital Deneyim", "Benchmark and Digital Experience"), "serp": ("Google SERP ve AI Overview", "Google SERP and AI Overview"), "trafik": ("Marka Sitelerinde Trafik", "Traffic on Brand Sites"), "pazaryeri": ("Pazaryeri ve Çok Satanlar", "Marketplaces and Best Sellers"), "politika": ("Kanal Politikaları", "Channel Policies"), "sikayet": ("Şikayetvar: Satış Sonrası", "Şikayetvar: After-Sales"), "fiyat": ("Fiyat ve Satıcı Manzarası", "Price and Seller Landscape"), "derin": ("Alt Kategori Derinliği", "Sub-Category Depth"), "geo": ("AI Arama ve GEO Fırsatları", "AI Search and GEO Opportunities")}
 KUMELER = [("DURUM", "STATUS", ["ozet", "makro"]), ("TALEP", "DEMAND", ["talep", "ssgbm", "ihtiyac", "organik", "marka", "serp", "youtube", "sikayet"]), ("FIRSAT", "OPPORTUNITY", ["katalog", "yeni", "set"]), ("REKABET VE MODEL", "COMPETITION AND MODEL", ["rakip", "trafik", "pazaryeri", "derin", "panel", "yorum", "fiyat", "politika", "yolculuk", "benchmark", "model"]),
-           ("PLAN", "PLAN", ["geo", "adimlar"]), ("EK", "APPENDIX", ["yontem", "kaynakca", "sozluk"])]
+           ("PLAN", "PLAN", ["geo", "adimlar"]), ("EK", "APPENDIX", ["ek"])]
 _bas = dict(BOLUMLER); _sira = {b: i + 1 for i, (b, _) in enumerate(BOLUMLER)}
 _kumede = [b for _, _, ids in KUMELER for b in ids]
 if _kumede != [b for b, _ in BOLUMLER]:
@@ -376,6 +399,9 @@ if t2_ortak._CAKISMA: print("uyarı · farklı çeviri:", t2_ortak._CAKISMA)
 dil.TERIMLER = {t: (GLOSSARY[t], GL_TERM_EN.get(t, t), GL_EN[t]) for t in GLOSSARY}
 DOC, _n, _de = dil.uygula(DOC, "VitrA Turkey | E-Commerce Growth Opportunities")
 yol = os.path.join(veri.KOK, AD + ".html")
+DOC, _ekd = ortak.yuzde_ek_duzelt(DOC)   # %X,Y'ek: ek, okunan son sayiya gore
+DOC = DOC.replace("\u2013", "-")   # urun adlarindaki en dash
+print("yüzde eki düzeltmesi:", _ekd)
 open(yol, "w", encoding="utf-8").write(DOC)
 if _eksik_h3: print("uyarı · açıklaması olmayan alt başlık:", _eksik_h3)
 print("kaydedildi:", yol, len(DOC), "karakter,", len(BOLUMLER), "bölüm,", _n, "ifade çevrildi")

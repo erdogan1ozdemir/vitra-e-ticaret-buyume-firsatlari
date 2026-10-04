@@ -50,7 +50,7 @@ T = [
  ("gomme_rez", "Gömme rezervuar ve kumanda paneli", "Concealed cistern and flush plate", "SSG", "Var", r"gömme rezervuar|gomme rezervuar|kumanda panel|gömme sifon"),
  ("rezervuar", "Rezervuar (dış)", "Cistern", "SSG", "Var", r"rezervuar"),
  ("pisuvar", "Pisuvar", "Urinal", "SSG", "Var", r"pisuvar|urinal"),
- ("hela", "Hela taşı", "Squat toilet", "SSG", "Var", r"hela taşı|helataşı|tuvalet taşı|alaturka"),
+ ("hela", "Hela taşı", "Squat toilet", "SSG", "Kısmi", r"hela taşı|helataşı|tuvalet taşı|alaturka"),
  ("bide", "Bide", "Bidet", "SSG", "Var", r"\bbide\b"),
  ("klozet", "Klozet", "WC", "SSG", "Var", r"klozet|klozed|alafranga tuvalet|tuvalet takımı|\bwc\b"),
  ("lavabo_dolap", "Lavabo dolabı", "Washbasin unit", "BM", "Var", r"lavabo dola[bp]|lavabolu dolap|lavabolu banyo dola[bp]|dolaplı lavabo"),

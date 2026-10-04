@@ -18,10 +18,11 @@ A25, A26 = ay(2025, 1, 2025, 8), ay(2026, 1, 2026, 8)
 def ort(s, a):
     v = [s.get(x) for x in a if s.get(x) is not None]; return sum(v) / len(v) if v else 0
 SSG = {"Vitrifiyeler", "Rezervuarlar"}; BM = {"Banyo Mobilyaları"}
+_HARIC = set(json.load(open(os.path.join(veri.V, "islenmis", "kelime_haric.json"), encoding="utf-8"))["kelimeler"])   # mutfak ve genel tezgah aramalari
 # ayni seri tekillestirme (Google Ads birlesik hacim) - k3 duzeyinde
 rows = []; gor = set()
 for kw, v in sorted(K48.items(), key=lambda i: -(i[1].get("hacim") or 0)):
-    if kw not in kat or not v.get("seri"): continue
+    if kw not in kat or not v.get("seri") or kw in _HARIC or _CAN.get(kw, kw) in _HARIC: continue
     k1, k2, k3 = kat[kw]; sg = tuple(v["seri"].get(x) for x in AY48)
     if (k3, sg) in gor: continue
     gor.add((k3, sg))

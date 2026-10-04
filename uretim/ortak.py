@@ -22,7 +22,9 @@ def yz(v, isaret=True, ond=1):
     """+%12,5 biciminde yuzde; renk sinifi ile"""
     if v is None: return "-"
     s = ("%+." + str(ond) + "f") % v if isaret else ("%." + str(ond) + "f") % v
-    s = s.replace(".", ",")
+    tam, _, kes = s.partition(".")
+    if len(tam.lstrip("+-")) > 3: tam = tam[0] + "{:,}".format(int(tam[1:])).replace(",", ".") if tam[0] in "+-" else "{:,}".format(int(tam)).replace(",", ".")   # binlik ayrac: +%2.693
+    s = tam + ("," + kes if kes else "")
     if isaret: s = s[0] + "%" + s[1:]
     else: s = "%" + s
     cls = "up" if v > 0 else ("dn" if v < 0 else "")
@@ -166,7 +168,8 @@ _SERT = {1: 0, 2: 0, 3: 1, 4: 1, 5: 1, 6: 0, 7: 0, 8: 0, 9: 0}
 def ek(n, tip):
     """Sayiya Turkce ek: tip 'i' (iyelik: 84'u, 6'si), 'in' (6'nin, 14'un), 'de' (19'unda degil -> 19'da), 'e' (3'e, 6'ya)."""
     n = int(n); s = str(n)
-    if n % 1000 == 0 and n: unl, sesli, sert = "i", 0, 0
+    if n == 0: unl, sesli, sert = "ı", 0, 0   # sıfır
+    elif n % 1000 == 0 and n: unl, sesli, sert = "i", 0, 0
     elif n % 100 == 0 and n: unl, sesli, sert = "ü", 0, 0
     elif n % 10 == 0 and n: unl, sesli = _ONL[(n // 10) % 10]; sert = (n // 10) % 10 in (4, 6, 7)
     else: unl, sesli = _SON.get(n % 10, ("ı", 1)); sert = _SERT.get(n % 10, 0)
@@ -188,3 +191,36 @@ def alt_btn(dosya, tr, en, hedef=""):
 def kopru(tr, en, dosya, b_tr, b_en, hedef=""):
     """Kisa aciklama + alt sayfa dugmesi (bolum icinde, ilgili tablonun yaninda)."""
     return '<p class="kopru">%s %s</p>' % (x(tr, en), alt_btn(dosya, b_tr, b_en, hedef))
+def yzd_ek(v, ond=1, hal="i"):
+    """Yuzde + Turkce ek, okunan son sayiya gore: hal 'i' iyelik (%14,1'i), 'ini' iyelik + belirtme (%14,1'ini)."""
+    s_ = yzd(v, ond); son = s_.split(",")[-1] if "," in s_ else s_.lstrip("%+-").replace(".", "")
+    suf = ek(int(son), "inde" if hal == "inde" else "i").split("'")[1]
+    if hal == "ini": suf = suf + "n" + suf[-1]
+    return s_ + "'" + suf
+
+
+import re as _re
+# ---------------------------------------------------------------- yuzde eki denetimi: "%14,1'i" bicimindeki eklerin okunusa gore duzeltilmesi
+_EK_GRUP = {"i": {"i", "ı", "u", "ü", "si", "sı", "su", "sü"}, "ini": {"ini", "ını", "unu", "ünü", "sini", "sını", "sunu", "sünü"},
+            "inde": {"inde", "ında", "unda", "ünde", "sinde", "sında", "sunda", "sünde"}, "de": {"de", "da", "te", "ta"}, "e": {"e", "a", "ye", "ya"},
+            "den": {"den", "dan", "ten", "tan"}, "dir": {"dir", "dır", "dur", "dür", "tir", "tır", "tur", "tür"}}
+def _ek_bekle(n, grup):
+    if grup in ("i", "inde", "de", "e"): return ek(n, grup).split("'")[1]
+    p = ek(n, "i").split("'")[1]; d = ek(n, "de").split("'")[1]
+    if grup == "ini": return p + "n" + p[-1]
+    if grup == "den": return d + "n"
+    if grup == "dir": return d[0] + p[-1] + "r"
+def yuzde_ek_duzelt(metin):
+    """Metindeki %X,Y'ek ifadelerinde eki, okunan son sayiya (ondalik varsa ondalik kisma) gore yeniden kurar; degisiklik sayisini da dondurur."""
+    say = [0]
+    def _r(m):
+        sayi, etk, suf = m.group(1), m.group(2), m.group(3)
+        grup = next((g for g, L in _EK_GRUP.items() if suf in L), None)
+        if grup is None: return m.group(0)
+        son = sayi.split(",")[-1] if "," in sayi else sayi.lstrip("%+-").replace(".", "")
+        try: yeni = _ek_bekle(int(son), grup)
+        except Exception: return m.group(0)
+        if yeni != suf: say[0] += 1
+        return sayi + etk + "'" + yeni
+    out = _re.sub(r"(%[+\-]?\d{1,3}(?:\.\d{3})*(?:,\d+)?)((?:</[a-z]+>)*)'([a-zçğıöşü]+)(?![a-zçğıöşü])", _r, metin)
+    return out, say[0]

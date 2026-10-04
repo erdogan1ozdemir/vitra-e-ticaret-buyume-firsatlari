@@ -43,7 +43,8 @@ _t("API", "dataforseo.com", "ahrefs.com", "apify.com")
 _t("sosyal", "youtube.com", "pinterest.com", "instagram.com", "tiktok.com", "sikayetvar.com")
 _t("kamu verisi", "tcmb.gov.tr")
 _t("marka sitesi", "seramiksan.com.tr")
-_t("API", "similarweb.com", "seomonitor.com")
+_t("pazar ölçümü", "similarweb.com")
+_t("API", "seomonitor.com")
 _t("yapay zeka", "chatgpt.com")
 _t("açık bilgi kaynağı", "wikidata.org", "wikipedia.org")
 _t("dahili (Inbound)", "github.com")
@@ -65,9 +66,9 @@ NOT = {
     "ahrefs.com": "Ahrefs MCP; Türkiye; değerler Ahrefs tahminidir",
     "dataforseo.com": "Canlı (live) uç noktalar; Türkiye (2792), Türkçe",
     "tcmb.gov.tr": "EVDS API; anahtar HTTP başlığıyla gönderildi",
-    "google.com": "Search Console API (OAuth), Google Maps ve Shopping sonuçları DataForSEO ile",
-    "google.com.tr": "Autocomplete ve SERP DataForSEO ile; sıralamalar tek günlük gözlemdir",
-    "apify.com": "Trendyol scraper 14 çalıştırma; rag-web-browser 16 çağrı; Hepsiburada aktörü kredi yetersizliği nedeniyle çalıştırılmadı",
+    "google.com": "Search Console API (OAuth), Google Maps ve Shopping sonuçları DataForSEO ile; Gemini ve AI Overview yanıtları yapay zeka yanıt takibiyle",
+    "google.com.tr": "Autocomplete ve SERP DataForSEO ile; 04.10.2026 SERP aynı gün üç gözlem, takipteki kelimelerde sıra SEOmonitor; AI Overview yanıtları ayrıca yapay zeka yanıt takibiyle",
+    "apify.com": "Trendyol scraper 14 çalıştırma; rag-web-browser 16 çağrı; 03.10.2026'da pazaryeri yorum ve soru aktörleri",
 }
 
 def tarih_sirala(L):
@@ -86,6 +87,8 @@ for kod, (tr, en, urls) in kaynakca.K.items():
             eksik.append((kod, u)); continue
         if kod not in r["kod"]:
             r["kod"].append(kod)
+        for s_ in O.KOD_BOLUM.get(kod, []):   # kodun rapordaki atif bolumleri satira da islenir
+            if s_ not in r["bolum"]: r["bolum"].append(s_)
 if eksik:
     raise SystemExit("Kaynakcada olup satirda bulunmayan adresler: %s" % eksik)
 
@@ -116,7 +119,8 @@ def temizle(t):
 def satir_degerleri(r):
     secs = sorted(r["bolum"], key=lambda s: O.BOLUM[s][0])
     return [r["url"], O.alan_adi(r["url"]), temizle(" | ".join(r["amac"])), " · ".join(O.bolum_adi(s) for s in secs), temizle(" | ".join(r["bilgi"])),
-            " · ".join(tarih_sirala(r["tarih"])), " · ".join(r["yontem"]), " · ".join(kod_sirala(r["kod"])) if r["kod"] else "-"]
+            " · ".join(tarih_sirala(r["tarih"])), " · ".join(r["yontem"]), " · ".join(kod_sirala(r["kod"])) if r["kod"] else "-",
+            " · ".join(O.KOD_NO.get(c, "-") for c in kod_sirala(r["kod"])) if r["kod"] else "-"]
 
 # ---------------------------------------------------------------- Excel yardimcilari
 def not_hucresi(ws, notlar, ncol):
@@ -214,22 +218,22 @@ def uret():
     nkal = sum(1 for r in SATIRLAR if r["adet"] > 1)
     n1 = [
         ("Okuma", "Bir satır bir URL'yi ya da API kaynağının taban adresini gösterir; toplu okunan sayfalarda (ürün sayfaları, arama sorguları, listeler) kalıp adres ve adet tek satırdadır, adet 'Hangi bilgiler alındı' alanında yazılıdır. Süslü parantezli adresler kalıp adrestir; köprü, kalıba uyan gerçek bir örnek sayfaya gider."),
-        ("Kapsam", "Rapor HTML'indeki 44 kaynakça girdisinin tüm adresleri, rapordaki bağlantılar, alt ajan araştırmalarında okunan sayfalar ve API kaynakları; politika, garanti ve servis sayfalarının her biri ayrı satırdadır."),
+        ("Kapsam", "Rapor HTML'indeki %d kaynakça girdisinin tüm adresleri, rapordaki bağlantılar, derin araştırma turlarında okunan sayfalar ve API kaynakları; politika, garanti ve servis sayfalarının her biri ayrı satırdadır." % len(O.KOD_NO)),
         ("Sıralama", "Bölüm sırasına göre, aynı bölüm içinde alan adına göre; birden fazla bölüme kaynak sağlayan adresler ilk bölümde durur, bölümler '·' ile birleştirilmiştir."),
-        ("Kaynakça kodu", "Rapor kaynakçasındaki (D, Y, B) kod; kaynakçada yer almayan destek sayfaları '-' ile işaretlidir."),
-        ("Tarih", "Erişim tarihi GG.AA.YYYY: 28.09.2026 (Ahrefs, Search Console, Keyword Planner, EVDS, autocomplete), 29.09.2026 (derin araştırma turu), 30.09.2026 (tarayıcı doğrulaması)."),
+        ("Kaynakça kodu", "Kaynakça girdisinin iç kodu (D, Y, B); 'Rapordaki kaynakça no' sütunu aynı girdinin rapordaki üst simge numarasıdır. Kaynakçada yer almayan destek sayfaları '-' ile işaretlidir."),
+        ("Tarih", "Erişim (veri çekim) tarihi GG.AA.YYYY; raporun kaynakçasında erişim tarihi yer almaz, bu dökümde tutulur: 27.09.2026 (Ahrefs organik rakipler), 28.09.2026 (Ahrefs, Search Console, Keyword Planner, EVDS, autocomplete), 29.09.2026 (derin araştırma turu), 30.09.2026 (tarayıcı doğrulaması, ek autocomplete), 02.10.2026 (Wikidata, site haritaları, rehber içerik), 03.10.2026 (Similarweb, SEOmonitor, pazaryeri yorumları), 04.10.2026 (Google arama sonuçları, ek Keyword Planner kelimeleri, site içi arama, sepet, destek SSS envanteri)."),
     ]
-    ws = sayfa(wb, "01 Kaynaklar", "VitrA e-ticaret büyüme fırsatları · kaynak siteler ve sayfalar (%d satır, %d alan adı)" % (len(SATIRLAR), len(alanlar)), n1,
-               ["URL", "Alan adı", "Ne için bakıldı", "Raporun hangi bölümüne kaynak sağladı", "Hangi bilgiler alındı", "Erişim tarihi", "Yöntem (tarayıcı / API / curl / MCP)", "Kaynakça kodu"],
-               S1, [58, 24, 52, 40, 72, 15, 26, 13], merkez=(5, 7), link_sutun=0, hrefs=satirlar_href)
+    ws = sayfa(wb, "01 Kaynaklar", "VitrA e-ticaret büyüme fırsatları · kaynak siteler ve sayfalar (%d satır, %d alan adı) · iç kullanım: veri toplama yöntemi ve araç ayrıntıları içerir" % (len(SATIRLAR), len(alanlar)), n1,
+               ["URL", "Alan adı", "Ne için bakıldı", "Raporun hangi bölümüne kaynak sağladı", "Hangi bilgiler alındı", "Erişim tarihi", "Yöntem (tarayıcı / API / curl / MCP)", "Kaynakça kodu", "Rapordaki kaynakça no"],
+               S1, [58, 24, 52, 40, 72, 15, 26, 13, 13], merkez=(5, 7, 8), link_sutun=0, hrefs=satirlar_href)
     n2 = [
         ("Okuma", "Alan adı, 01 Kaynaklar sayfasındaki satırların kayıtlı alan adıdır (alt alan adları kök alan adına indirilmiştir)."),
         ("Sayfa/sorgu sayısı", "Alan adına ait satırların adet toplamıdır; kalıp adres satırlarında adet dahildir. Ahrefs ve DataForSEO kayıt sayıları (top pages satırları, sorgu sonuçları) toplama katılmaz, ilgili satırda yazılıdır."),
         ("Kullanıldığı bölümler", "Alan adının kaynak sağladığı bölümler; altıdan fazla bölüm bulunan alan adlarında yalnızca bölüm numaraları verilmiştir."),
-        ("Kaynak türü", "pazaryeri, perakendeci (yapı market ve mobilya), marka sitesi, fiyat karşılaştırma, arama motoru, API, sosyal (video, sosyal ağ ve şikayet platformu), kamu verisi, dahili (Inbound önceki çalışması)."),
+        ("Kaynak türü", "pazaryeri, perakendeci (yapı market ve mobilya), marka sitesi, fiyat karşılaştırma, arama motoru, API, pazar ölçümü, yapay zeka, açık bilgi kaynağı, haber ve sektör kaynağı, sosyal (video, sosyal ağ ve şikayet platformu), kamu verisi, dahili (Inbound önceki çalışması)."),
     ]
     sayfa(wb, "02 Alan adı özeti", "Alan adı özeti (%d alan adı)" % len(alanlar), n2,
-          ["Alan adı", "Sayfa/sorgu sayısı", "Kullanıldığı bölümler", "Kaynak türü (pazaryeri / marka sitesi / fiyat karşılaştırma / arama motoru / API / sosyal / kamu verisi)", "Not"],
+          ["Alan adı", "Sayfa/sorgu sayısı", "Kullanıldığı bölümler", "Kaynak türü (pazaryeri / perakendeci / marka sitesi / fiyat karşılaştırma / arama motoru / API / pazar ölçümü / yapay zeka / açık bilgi / sosyal / kamu verisi)", "Not"],
           S2, [30, 16, 62, 26, 72], merkez=(3,), sayisal=(1,))
     n3 = [
         ("Okuma", "Her satır bir madde; hangi araçla ne okunduğu, erişim tarihleri ve bot koruması nedeniyle alınamayan ya da kısmen alınan kalemler."),

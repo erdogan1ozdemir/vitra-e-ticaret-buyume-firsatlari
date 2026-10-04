@@ -9,6 +9,9 @@ SET = json.load(open(os.path.join(S, "set_v2.json"), encoding="utf-8"))
 GSC = json.load(open(os.path.join(S, "gsc_v2.json"), encoding="utf-8"))["kelime"]
 # VitrA sirasi icin birincil kaynak: SEOmonitor gunluk mobil takip (03.10.2026); takipte olmayan kelimelerde SERP gozlemlerinin ortancasi
 SM = {k_["keyword"]: k_ for k_ in json.load(open(os.path.join(S, "..", "..", "seomonitor", "kelimeler_2026-10-03.json"), encoding="utf-8"))}
+# Takipteki kelimelerde tum siralar (VitrA ve rakipler) SEOmonitor'un ayni gunku mobil ilk 20 sonucundan alinir: iki kaynagin
+# karistirilmasi ayni kelimede iki alan adinin birden 1. sirada sayilmasina yol aciyordu. SERP ozellikleri gozlemlerden gelir.
+SMT = {r["keyword"]: r["top_100_results"] for r in json.load(open(os.path.join(S, "..", "..", "seomonitor", "top_results_2026-10-03.json"), encoding="utf-8"))["kelimeler"]}
 kayit, eksik = [], []
 for s in SET["kelimeler"]:
     kw = s["kw"]
@@ -39,9 +42,18 @@ for s in SET["kelimeler"]:
         vkay = "seomonitor"; vmed = sm["rank"] if sm["rank"] and sm["rank"] <= 20 else None
         alan_med.pop("vitra.com.tr", None)
         if vmed and vmed <= 10: alan_med["vitra.com.tr"] = vmed
+    skay = "gozlem"
+    if SMT.get(kw):
+        skay = vkay = "seomonitor"; L_ = sorted(SMT[kw], key=lambda x: x["rank"])
+        top = [{"sira": x["rank"], "alan": kok(x["domain"]), "url": x["landing_page"], "tip": tip(x["domain"], x["landing_page"] or "", x.get("title")), "baslik": x.get("title")} for x in L_ if x["rank"] <= 10]
+        t20 = [{"sira": x["rank"], "alan": kok(x["domain"]), "url": x["landing_page"], "tip": tip(x["domain"], x["landing_page"] or "", x.get("title"))} for x in L_]
+        alan_med = {}
+        for x in t20: alan_med[x["alan"]] = min(alan_med.get(x["alan"], 99), x["sira"])
+        vmed = alan_med.get("vitra.com.tr")
+    else:
+        top = [{"sira": i["rank_group"], "alan": kok(i["domain"]), "url": i["url"], "tip": tip(i["domain"], i["url"], i.get("title")), "baslik": i.get("title")} for i in org if i["rank_group"] <= 10]
+        t20 = [{"sira": i["rank_group"], "alan": kok(i["domain"]), "url": i["url"], "tip": tip(i["domain"], i["url"], i.get("title"))} for i in org]
     amed = alan_med.get("artema.com.tr"); amed = amed if amed and amed <= 20 else None
-    top = [{"sira": i["rank_group"], "alan": kok(i["domain"]), "url": i["url"], "tip": tip(i["domain"], i["url"], i.get("title")), "baslik": i.get("title")} for i in org if i["rank_group"] <= 10]
-    t20 = [{"sira": i["rank_group"], "alan": kok(i["domain"]), "url": i["url"], "tip": tip(i["domain"], i["url"], i.get("title"))} for i in org]
     vit = [x for x in t20 if x["alan"] == "vitra.com.tr"]; art = [x for x in t20 if x["alan"] == "artema.com.tr"]
     tur = collections.Counter(i["type"] for i in it)
     paa = [e["title"] for i in it if i["type"] == "people_also_ask" for e in (i.get("items") or []) if e.get("title")]
@@ -60,7 +72,7 @@ for s in SET["kelimeler"]:
             ai = {"ref_alanlar": [kok(x.get("domain")) for x in refs], "ref_url": [x.get("url") for x in refs],
                   "vitra_ref": any(kok(x.get("domain")) == "vitra.com.tr" for x in refs), "vitra_metin": bool(re.search(r"vitra", md, re.I)), "metin_uzun": len(md)}
     kayit.append({"kelime": kw, "grup": s["grup"], "tema": s["tema"], "alt": s.get("alt"), "hacim": s["hacim"], "top10": top,
-                  "vitra_sira": vmed, "vitra_kaynak": vkay, "vitra_url": vit[0]["url"] if vit else None, "vitra_tip": vit[0]["tip"] if vit else None,
+                  "vitra_sira": vmed, "vitra_kaynak": vkay, "sira_kaynak": skay, "vitra_url": vit[0]["url"] if vit else None, "vitra_tip": vit[0]["tip"] if vit else None,
                   "artema_sira": amed, "alan_med": {d_: v_ for d_, v_ in alan_med.items() if v_ <= 10}, "gozlem": len(gz), "tam_gozlem": len([1 for _, o_ in gz if len(o_) >= 10]),
                   "vitra_gozlem": [next((i["rank_group"] for i in o_ if kok(i["domain"]) == "vitra.com.tr"), None) for _, o_ in gz], "ai_ilk_cekim": ai_var, "ai": ai, "paa": paa, "video": vids, "short_video": sv,
                   "local_pack": lp, "compare_sites": cs, "ozellik_sayim": dict(tur), "gsc": GSC.get(kw)})

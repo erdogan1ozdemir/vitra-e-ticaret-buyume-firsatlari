@@ -44,7 +44,7 @@ def doldur():
             if c not in MAGURL or not o or not o.get("okunan"): continue
             ad, tpl, sira = MAGURL[c]
             ekle(tpl % quote(q), "%s \"%s\" araması (%s, %s)" % (ad, q, a, sira), "%d ürün okundu, %d eşleşen; %s; VitrA/Artema %s ürün; marka dağılımı: %s" % (o["okunan"], o.get("eslesen") or 0, _f(o), _v(o) if _v(o) is not None else "-", (o.get("marka_str") or "-")[:90]), bolum=["derin"], yontem=Y, tarih=D30, kod=["D30"], kodbolum=False)
-    Y2 = "satıcı paneli dışa aktarımı (kullanıcı tarafından iletildi)"
+    Y2 = "VitrA satıcı paneli dışa aktarımı"
     ekle("https://partner.trendyol.com", "Trendyol satıcı paneli (VitrA resmi mağazası): satış, sipariş dağılımı, mağaza, operasyon, favori-görüntüleme, ürün ve satıcı değerlendirmeleri, ürün ve sipariş soruları, Trendyol'un Enleri",
          "Çeyreklik net adet, iptal, iade, indirim ve komisyon oranları; müşteri profili; ürün görüntülenme ve dönüşüm; 1.023 ürün ve 149 satıcı değerlendirmesi; 352 ürün sorusu; 9 kategori × 5 liste Enleri (Eylül 2026). Ciro tutarı rapora alınmadı",
          bolum=["panel"], yontem=Y2, tarih=D30, kod=["D31"], kodbolum=False)
@@ -60,16 +60,23 @@ def doldur():
     for url_, amac_, bilgi_ in [
         ("https://www.vitra.com.tr/llms.txt", "vitra.com.tr llms.txt", "Dosyadaki bölüm ve bağlantılar; destek ve rehber içeriğinin kapsamı"),
         ("https://www.vitra.com.tr/sitemaps/sitemap-ilham.xml", "vitra.com.tr ilham site haritası", "Rehber ve ilham sayfalarının listesi"),
-        ("https://www.vitra.com.tr/sitemaps/sitemap-support.xml", "vitra.com.tr destek site haritası", "Destek bölümündeki sayfa sayısı (5)")]:
+        ("https://www.vitra.com.tr/sitemaps/sitemap-support.xml", "vitra.com.tr destek site haritası", "Site haritasındaki destek adresi sayısı (5); destek bölümünde 23 SSS sayfası bulunmaktadır (04.10.2026 envanteri)")]:
         ekle(url_, amac_, bilgi_, bolum=["geo"], yontem="web araştırması (sayfa okuma)", tarih="02.10.2026", kod=["D35"], kodbolum=False, tur="marka sitesi")
     ekle("https://www.similarweb.com/website/vitra.com.tr/", "Similarweb site trafiği ve kanal kırılımı", "31 alan adı; aylık ziyaret, kanal payları, etkileşim; Haz - Ağu 2026",
-         bolum=["rakip"], yontem="API (Similarweb verisi)", tarih="03.10.2026", kod=["D37"], kodbolum=False, tur="API")
-    ekle("https://www.vitra.com.tr/search?text=klozet%20kapa%C4%9F%C4%B1", "vitra.com.tr site içi arama testi (38 arama)", "Anlık sonuç katmanı (Chrome) ve Enter sonrası sonuç sayfası; 8 aramada sonuç sayfası boş ya da ilgisiz",
+         bolum=["rakip"], yontem="herkese açık site sayfaları (tarayıcı)", tarih="03.10.2026", kod=["D37"], adet=31, kodbolum=False, tur="pazar ölçümü")
+    ekle("https://www.vitra.com.tr/search?text={arama}", "vitra.com.tr site içi arama testi (38 arama)", "Anlık sonuç katmanı (Chrome) ve Enter sonrası sonuç sayfası; 12 aramada iki yol uyumlu, 9 aramada sonuç sayfası boş ya da ilgisiz, 3 aramada anlık sonuç boş ya da ilgisiz",
          bolum=["yolculuk"], yontem="Chrome (arama kutusuna yazma) ve curl (sonuç sayfası, istekler arası 2 sn)", tarih="04.10.2026", kod=["D40"], adet=38, kodbolum=False, tur="marka sitesi")
     ekle("https://www.vitra.com.tr/sepetim", "vitra.com.tr sepet, giriş ve üyeliksiz alışveriş ekranları", "Sepeti Onayla → giriş paneli → e-posta ekranı → adres; montaj ve öneri karuselleri sepetin altında",
-         bolum=["yolculuk"], yontem="ekran görüntüsü (kullanıcı tarafından iletildi)", tarih="04.10.2026", kod=["D41"], kodbolum=False, tur="marka sitesi")
-    ekle("https://app.seomonitor.com", "SEOmonitor vitra.com.tr kampanyası: takip edilen kelimeler, AI Overview durumu, click payı", "2.140 ana kelime; mobil sıra, SERP özellikleri, AI Overview'da VitrA kaynağı; 19 Eyl - 3 Eki 2026 ve 2025 aynı dönem click payı",
-         bolum=["geo", "rakip", "serp"], yontem="API (SEOmonitor)", tarih="04.10.2026", kod=["D42"], kodbolum=False, tur="API")
+         bolum=["yolculuk"], yontem="ekran görüntüsü (masaüstü)", tarih="04.10.2026", kod=["D41"], kodbolum=False, tur="marka sitesi")
+    ekle("https://app.seomonitor.com", "SEOmonitor vitra.com.tr kampanyası: takip edilen kelimeler, AI Overview durumu, click payı", "2.269 takipli kelime (8 kategoride 2.140 ana kelime ve marka aramaları); mobil sıra, SERP özellikleri, AI Overview'da VitrA kaynağı; 19 Eyl - 3 Eki 2026 ve 2025 aynı dönem click payı",
+         bolum=["geo", "rakip", "serp"], yontem="API (SEOmonitor)", tarih="03.10.2026", kod=["D42"], kodbolum=False, tur="API")
+    _YT = json.load(open(os.path.join(KOK, "veri", "islenmis", "yorum_analiz.json"), encoding="utf-8"))["toplam"]
+    ekle("https://www.trendyol.com/{marka}/{urun}-p-{id}/yorumlar", "Trendyol ürün değerlendirme ve soru-cevap sayfaları: VitrA, Artema ve rakip markalar (pazaryeri yorumları ve satın alma yolculuğu)",
+         "%s değerlendirme ve %s soru-cevap; iki kanalda toplam %s ürün sayfası; yorumcu ve soru soran adları kayda alınmamıştır" % ("{:,}".format(_YT["kanal"]["Trendyol"]).replace(",", "."), "{:,}".format(_YT["soru_kanal"]["Trendyol"]).replace(",", "."), _YT["urun"]),
+         bolum=["yorum", "yolculuk"], yontem="tarama servisi (herkese açık sayfalar)", tarih="03.10.2026", kod=["D38"], kodbolum=False, tur="pazaryeri")
+    ekle("https://www.hepsiburada.com/{urun}-p-{id}-yorumlari", "Hepsiburada ürün değerlendirme ve soru-cevap sayfaları: VitrA, Artema ve rakip markalar (pazaryeri yorumları ve satın alma yolculuğu)",
+         "%s değerlendirme ve %s soru-cevap; yorumcu ve soru soran adları kayda alınmamıştır" % ("{:,}".format(_YT["kanal"]["Hepsiburada"]).replace(",", "."), "{:,}".format(_YT["soru_kanal"]["Hepsiburada"]).replace(",", ".")),
+         bolum=["yorum", "yolculuk"], yontem="tarama servisi (herkese açık sayfalar)", tarih="03.10.2026", kod=["D38"], kodbolum=False, tur="pazaryeri")
     Y4 = "yapay zeka yanıt takibi (tekrarlı koşu)"
     for url_, ad_ in [("https://chatgpt.com", "ChatGPT"), ("https://gemini.google.com", "Gemini"), ("https://www.google.com.tr", "Google AI Overview")]:
         ekle(url_ + "#ai-yanit", "%s yanıtları: 125 soruda VitrA ve rakip markaların adı geçme oranı, kaynak gösterilen alan adları" % ad_,

@@ -10,7 +10,7 @@ def doldur():
     # ------------------------------------------------------------ Keyword Planner (DataForSEO Google Ads uc noktalari)
     ekle("https://ads.google.com/home/tools/keyword-planner/",
          "Kategori kelimelerinin aylık arama hacmi ve kelime evreni (kategori talebi, SSG ve BM incelemesi, yeni kategori fırsatları)",
-         "2.420 kategori kelimesi için aylık hacim (Eyl 2022 - Ağu 2026 ve Eyl 2024 - Ağu 2026 pencereleri); 10 kök ifade grubundan 52.973 kelimelik evren, 48 aylık seri; hacimler Türkiye, Türkçe",
+         "2.420 aday kategori kelimesi için aylık hacim (Eyl 2022 - Ağu 2026 ve Eyl 2024 - Ağu 2026 pencereleri; tekilleştirme, 19 baş kelime eklemesi ve 21 mutfak tezgahı aramasının çıkarılmasıyla raporda 2.328 kelime); 10 kök ifade grubundan 52.973 kelimelik evren, 48 aylık seri; hacimler Türkiye, Türkçe",
          yontem="API (DataForSEO, Google Ads uç noktaları)", tarih=[D28, D29], kod=["D1", "D12"], tur="API")
     ekle("https://api.dataforseo.com/v3/keywords_data/google_ads/search_volume/live",
          "Sezon reposundaki 2.420 kelime için Keyword Planner aylık hacmi (talep, ihtiyaç dili ve organik kanal bölümlerinin hacim tabanı)",
@@ -30,15 +30,15 @@ def doldur():
     # ------------------------------------------------------------ Google (autocomplete + SERP)
     ekle("https://www.google.com.tr",
          "Marka autocomplete önerileri ve kategori arama sonuçları (marka aramaları, SERP ve AI Overview incelemesi)",
-         "\"vitra\" ile başlayan 49 kök ifade için autocomplete önerileri (masaüstü Chrome, Türkiye, Türkçe; 28.09.2026); 334 kelime için mobil SERP (ilk 20 organik sonuç, AI Overview, PAA; 04.10.2026, aynı gün üç gözlem)",
-         yontem="API (DataForSEO SERP)", tarih=[D28, "04.10.2026"], kod=["D3", "D19"], adet=383, tur="arama motoru")
+         "\"vitra\" ile başlayan 49 kök ifade için autocomplete önerileri (masaüstü Chrome, Türkiye, Türkçe; 28.09.2026; raporda 14'ü kullanılmıştır) ve kategori, hizmet, fiyat, rakip marka ve perakendeci için 52 kök ifade (30.09.2026); 327 kelime için mobil SERP (ilk 20 organik sonuç, AI Overview, PAA; 04.10.2026, aynı gün üç gözlem)",
+         yontem="API (DataForSEO SERP)", tarih=[D28, "30.09.2026", "04.10.2026"], kod=["D3", "D19"], adet=428, tur="arama motoru")
     ekle("https://api.dataforseo.com/v3/serp/google/autocomplete/live/advanced",
          "Marka autocomplete önerileri: \"vitra\" ile başlayan kök ifadeler",
-         "49 kök ifade, Türkiye, Türkçe, client=chrome; ilk çekimde 46'sı boş dönen kök ifadeler cursor_pointer ile tek tek yeniden çekildi (49/49 dolu); önerilerin %18'i tamir ve yedek parça, %10'u montaj niyetli",
+         "49 kök ifade, Türkiye, Türkçe, client=chrome; ilk çekimde 46'sı boş dönen kök ifadeler cursor_pointer ile tek tek yeniden çekildi (49/49 dolu); raporda iki setin önerilerinde tamir ve bakım payı %21,4, montaj payı %9,7",
          yontem="API (DataForSEO)", tarih=D28, kod=["D3"], tur="API")
     ekle("https://api.dataforseo.com/v3/serp/google/organic/live/advanced",
          "Google mobil SERP: 334 kelime (VitrA gamı, yakın kategoriler, marka ve karşılaştırma); ayrıca Shopping/ürün bloğu kontrolü ve sosyal profil sayıları için SERP özetleri",
-         "351 aday kelimeden Keyword Planner'da hacmi olan 334 kelime (A 170, B 84, C 80); Türkiye, Türkçe, mobil Android, depth 20 (ilk 20 organik sonuç), aynı gün üç gözlem, sıra için ortanca; AI Overview içerik çekimi; PAA; ilk gözlem 29.09.2026'da 109 kelimeyle yapılmıştır. Kanal politikaları için 18 kelime × mobil ve masaüstü Shopping blok kontrolü (0 blok) ve Instagram/TikTok sayı özetleri",
+         "351 aday kelimeden Keyword Planner'da hacmi olan 334 kelime çekilmiş, niyeti VitrA gamı dışına kayan ve mutfak tezgahı olan 7 kelime çıkarılarak 327 kelime analiz edilmiştir (A 163, B 84, C 80); Türkiye, Türkçe, mobil Android, depth 20 (ilk 20 organik sonuç), aynı gün üç gözlem, sıra için medyan, takipteki 158 kelimede SEOmonitor sırası; AI Overview içerik çekimi; PAA; ilk gözlem 29.09.2026'da 109 kelimeyle yapılmıştır. Kanal politikaları için 15 kategori ve 10 kontrol kelimesi × mobil ve masaüstü Shopping blok kontrolü (0 blok) ve Instagram/TikTok sayı özetleri",
          bolum=["serp", "trafik", "politika"], yontem="API (DataForSEO)", tarih=[D29, "04.10.2026"], kod=["D19", "D23"], tur="API")
     ekle("https://api.dataforseo.com/v3/serp/google/organic/live/regular",
          "Google SERP özetleri: site:sikayetvar.com sorguları ve Akakçe/Cimri erişilemediğinde yedek okuma",

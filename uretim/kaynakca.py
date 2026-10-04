@@ -5,8 +5,8 @@ from urllib.parse import urlsplit, unquote
 TARIH = "28.09.2026"
 # kod: (baslik_tr, baslik_en, [url], tarih)
 K = {
- "D1": ("Google Ads Keyword Planner · 2.342 kategori kelimesi · Türkiye, Türkçe · Oca 2023 - Ağu 2026",
-        "Google Ads Keyword Planner · 2,342 category keywords · Turkey, Turkish · Jan 2023 - Aug 2026",
+ "D1": ("Google Ads Keyword Planner · 2.328 kategori kelimesi · Türkiye, Türkçe · Oca 2023 - Ağu 2026",
+        "Google Ads Keyword Planner · 2,328 category keywords · Turkey, Turkish · Jan 2023 - Aug 2026",
         ["https://ads.google.com/home/tools/keyword-planner/"]),
  "D2": ("Google Search Console · sc-domain:vitra.com.tr · sayfa, sorgu, cihaz ve ülke kırılımı · 1 Haz 2025 - 25 Eyl 2026",
         "Google Search Console · sc-domain:vitra.com.tr · page, query, device and country breakdown · 1 Jun 2025 - 25 Sep 2026",
@@ -35,14 +35,14 @@ K = {
  "D10": ("TCMB EVDS · Kartlı Ödeme Endeksi (nominal ve reel)",
          "CBRT EVDS · Card Payment Index (nominal and real)",
          ["https://evds3.tcmb.gov.tr"]),
- "D11": ("VitrA kategori kelime araştırması · 2.420 kelime, 8 ana / 64 alt kategori · Inbound, 2025",
-         "VitrA category keyword research · 2,420 keywords, 8 main / 64 sub categories · Inbound, 2025",
+ "D11": ("VitrA kategori kelime araştırması · kategori eşlemesinin alındığı ilk liste, 2.420 aday kelime, 8 ana / 64 alt kategori · Inbound, 2025",
+         "VitrA category keyword research · the original list for the category mapping, 2,420 candidate keywords, 8 main / 64 sub categories · Inbound, 2025",
          []),
  "Y1": ("Macit Tesisat · \"VitrA gömme klozet tamiri çok basit\" · YouTube",
         "Macit Tesisat · \"VitrA concealed WC repair is very simple\" · YouTube",
         ["https://www.youtube.com/watch?v=a1i0pneZhdw"]),
- "D12": ("Google Ads keyword ideas (keywords for keywords) · 10 kök ifade grubu, 52.973 kelime · Türkiye, Türkçe · Eyl 2022 - Ağu 2026",
-         "Google Ads keyword ideas (keywords for keywords) · 10 seed groups, 52,973 keywords · Turkey, Turkish · Sep 2022 - Aug 2026",
+ "D12": ("Google Ads anahtar kelime önerileri · 10 kök ifade grubu, 52.973 kelime · Türkiye, Türkçe · Eyl 2022 - Ağu 2026",
+         "Google Ads keyword ideas · 10 seed groups, 52,973 keywords · Turkey, Turkish · Sep 2022 - Aug 2026",
          ["https://ads.google.com/home/tools/keyword-planner/"]),
  "D13": ("vitra.com.tr ürün sitemap'i (7.804 adres), kategori, hizmet ve ürün sayfaları, Banyo Asistanı akışı",
          "vitra.com.tr product sitemap (7,804 URLs), category, service and product pages, Bathroom Assistant flow",
@@ -62,8 +62,8 @@ K = {
  "D18": ("Ahrefs Site Explorer ve Keywords Explorer · 24 marka ve uzman e-ticaret sitesi top pages, 69 baş kelime, 18 marka araması · Türkiye · 28.09.2026",
          "Ahrefs Site Explorer and Keywords Explorer · top pages of 24 brand and specialist e-commerce sites, 69 head keywords, 18 brand searches · Turkey · 28.09.2026",
          ["https://ahrefs.com/site-explorer", "https://ahrefs.com/keywords-explorer"]),
- "D19": ("Google arama sonuçları · 334 kelime (A VitrA gamı 170, B yakın kategoriler 84, C marka ve karşılaştırma 80), ilk 20 organik sonuç, AI Overview ve SERP özellikleri, aynı gün üç gözlem · Türkiye, Türkçe, mobil · 04.10.2026",
-         "Google search results · 334 keywords (A VitrA range 170, B adjacent categories 84, C brand and comparison 80), top 20 organic results, AI Overview and SERP features, three observations on the same day · Turkey, Turkish, mobile · 04.10.2026",
+ "D19": ("Google arama sonuçları · 327 kelime (A VitrA gamı 163, B yakın kategoriler 84, C marka ve karşılaştırma 80), ilk 20 organik sonuç, AI Overview ve SERP özellikleri, aynı gün üç gözlem; takipteki 158 kelimede sıralar SEOmonitor 03.10.2026 · Türkiye, Türkçe, mobil · 04.10.2026",
+         "Google search results · 327 keywords (A VitrA range 163, B adjacent categories 84, C brand and comparison 80), top 20 organic results, AI Overview and SERP features, three observations on the same day; positions for the 158 tracked keywords from SEOmonitor 03.10.2026 · Turkey, Turkish, mobile · 04.10.2026",
          ["https://www.google.com.tr"]),
  "D20": ("YouTube arama sonuçları ve yorumlar · 68 arama ifadesi, 560 kanal, 2.218 yorum · Türkiye · 29.09.2026",
          "YouTube search results and comments · 68 search phrases, 560 channels, 2,218 comments · Turkey · 29.09.2026",
@@ -121,11 +121,11 @@ K = {
  "D39": ("Yapay zeka yanıt takibi · 125 banyo ve satın alma sorusu (14'ü VitrA adıyla) · ChatGPT, Gemini ve Google AI Overview yanıtları, adı geçen markalar ve kaynak gösterilen alan adları · 4 Eyl - 3 Eki 2026",
          "AI answer tracking · 125 bathroom and purchase questions (14 naming VitrA) · ChatGPT, Gemini and Google AI Overview answers, brands named and domains cited · 4 Sep - 3 Oct 2026", ["https://chatgpt.com", "https://gemini.google.com", "https://www.google.com.tr"]),
  "D40": ("vitra.com.tr site içi arama · 38 arama, yazarken açılan anlık sonuçlar ve Enter sonrası sonuç sayfası · 04.10.2026",
-         "vitra.com.tr site search · 38 searches, instant results while typing and the results page after Enter · 04.10.2026", ["https://www.vitra.com.tr/search?text=klozet%20kapa%C4%9F%C4%B1"]),
+         "vitra.com.tr site search · 38 searches, instant results while typing and the results page after Enter · 04.10.2026", ["https://www.vitra.com.tr/search?text={arama}"]),
  "D41": ("vitra.com.tr sepet, giriş ve üyeliksiz alışveriş ekranları · masaüstü · 04.10.2026",
          "vitra.com.tr cart, sign-in and guest checkout screens · desktop · 04.10.2026", ["https://www.vitra.com.tr/sepetim"]),
- "D42": ("SEOmonitor · vitra.com.tr kampanyası · takip edilen 2.140 kelimenin mobil sırası, SERP özellikleri, AI Overview durumu ve rakiplerle tahmini click payı · 03.10.2026",
-         "SEOmonitor · vitra.com.tr campaign · mobile ranks, SERP features, AI Overview status and estimated click share against competitors for 2,140 tracked keywords · 03.10.2026", ["https://app.seomonitor.com"]),
+ "D42": ("SEOmonitor · vitra.com.tr kampanyası · 2.269 takipli kelime (8 kategoride 2.140 ana kelime ve marka aramaları) · mobil sıra, SERP özellikleri, AI Overview durumu 03.10.2026 · rakiplerle tahmini click payı 19 Eyl - 3 Eki 2026",
+         "SEOmonitor · vitra.com.tr campaign · 2,269 tracked keywords (2,140 main keywords in 8 categories plus brand searches) · mobile ranks, SERP features, AI Overview status 03.10.2026 · estimated click share against competitors 19 Sep - 3 Oct 2026", ["https://app.seomonitor.com"]),
  "B1": ("Koçtaş · Banyo Tadilatı sayfası", "Koçtaş · Bathroom Renovation page", ["https://www.koctas.com.tr/banyo-tadilati"]),
  "B2": ("Koçtaş · Montaj hizmetleri ve banyo kampanyası koşulları", "Koçtaş · Installation services and bathroom campaign terms", ["https://www.koctas.com.tr/hizmetlerimiz", "https://www.koctas.com.tr/banyo-kampanyasi"]),
  "B3": ("IKEA Türkiye · Banyo, montaj hizmeti ve taksit bilgisi", "IKEA Turkey · Bathroom, installation service and instalment information", ["https://www.ikea.com.tr/odalar/banyo", "https://www.ikea.com.tr/montaj-hizmeti"]),
@@ -169,9 +169,9 @@ def bolum_html(sira, x):
     satir = []
     for i, kod in enumerate(sira, 1):
         tr, en, urls, tarih = girdi(kod)
-        link = " &middot; ".join(_link(u, x(_h.escape(_gorunen(u)), _h.escape(_gorunen(u)))) for u in urls)
-        satir.append('<li id="kay-%d"><span class="kn">%d</span><div><span class="kb">%s</span> %s<span class="kt">%s</span></div></li>'
-                     % (i, i, x(tr, en), link, x("Erişim " + tarih, "Accessed " + tarih)))
-    return '<p class="lede">%s</p><ol class="kaynakca">%s</ol>' % (
+        link = " &middot; ".join((_link(u, x(_h.escape(_gorunen(u)), _h.escape(_gorunen(u)))) if "{" not in u else '<span class="kt">%s</span>' % x(_h.escape(_gorunen(u)), _h.escape(_gorunen(u)))) for u in urls)
+        satir.append('<li id="kay-%d" data-kod="%s"><span class="kn">%d</span><div><span class="kb">%s</span> %s</div></li>'
+                     % (i, kod, i, x(tr, en), link))
+    return '<p class="h3n">%s</p><ol class="kaynakca">%s</ol>' % (
         x("Metindeki üst simge numaraları bu listeye bağlanmaktadır; bağlantılar yeni sekmede açılır.",
           "Superscript numbers in the text link to this list; links open in a new tab."), "".join(satir))

@@ -10,11 +10,18 @@ tur_tr = {"kategori": "Kategori sayfaları", "urun": "Ürün sayfaları", "eski-
 ttot = sum(v[0] for v in GT.values())
 rows = [[x(tur_tr[t], tur_en[t]), cell(v[2]), cellk(v[0]), n(yzd(100 * v[0] / ttot)), cellk(v[1]), n(yzd(100 * v[0] / v[1]) if v[1] else "-")] for t, v in sorted(GT.items(), key=lambda i: -i[1][0])]
 tbl = tablo([th("Sayfa türü", "Page type", "Adres yapısına göre sayfa sınıfı; /c- ve kategori dizinleri kategori, -p- ve -sku- kodlu adresler (eski adres yapısı dahil) ürün sayfasıdır.", "Page class by URL structure; /c- and category directories are category pages, addresses coded -p- and -sku- (including the old URL structure) are product pages."),
-             th("Sayfa", "Pages", "Dönemde en az bir gösterim almış tekil sayfa sayısı (ilk 25.000 adres); sayfalama ve filtre parametreli adresler ana sayfayla tek sayfa sayılmıştır.", "Number of unique pages with at least one impression in the period (top 25,000 addresses); paginated and filtered addresses are counted as one page with their base page.", True),
+             th("Sayfa", "Pages", "Dönemde en az bir gösterim almış tekil sayfa sayısı (ilk 25.000 adres); sayfalama ve filtre parametreli adresler kendi temel adresiyle tek sayfa sayılmıştır.", "Number of unique pages with at least one impression in the period (top 25,000 addresses); paginated and filtered addresses are counted as one page with their base page.", True),
              th("Click", "Clicks", "1 Haz 2025 - 25 Eyl 2026 toplam click.", "Total clicks, 1 Jun 2025 - 25 Sep 2026.", True),
              th("Pay", "Share", "Sayfa türünün toplam tık içindeki payı.", "Page type's share of total clicks.", True),
              th("Gösterim", "Impressions", "Aynı dönemde gösterim.", "Impressions in the same period.", True),
              th("CTR", "CTR", "Tık / gösterim.", "Clicks / impressions.", True)], rows)
+from grafik2 import halka as _halka, f_k as _fk
+_HR = ["#10332F", "#2E7D32", "#E85F36", "#F5A623", "#7A8C89", "#C9D3D1"]
+_GTs = sorted(GT.items(), key=lambda i: -i[1][0])
+_HAD = {"eski-online": ("Eski online.vitra.com.tr adresleri", "Old online.vitra.com.tr addresses")}
+HALKA_TUR = _halka([(x(*_HAD.get(t, (tur_tr[t], tur_en[t]))), v[0], _HR[i]) for i, (t, v) in enumerate(_GTs[:5])] + [(x("Diğer sayfa türleri", "Other page types"), sum(v[0] for _, v in _GTs[5:]), _HR[5])],
+                   x("Organik tıkların sayfa türlerine dağılımı · 1 Haz 2025 - 25 Eyl 2026", "Organic clicks by page type · 1 Jun 2025 - 25 Sep 2026"),
+                   merkez=(_fk(ttot), x("tık · sayfa düzeyi", "clicks · page level")), deger_bicim=_fk)
 ktot = sum(v[0] for v in GK.values())
 k1s = {}
 for key, v in GK.items():
@@ -28,8 +35,8 @@ rows2 = [[x(k1, KAT_EN2.get(k1, k1)), cell(v[2]), cellk(v[0]), n(yzd(100 * v[0] 
 tbl2 = tablo([th("Kategori", "Category", "Kategori, ürün, koleksiyon ve eski online.vitra.com.tr sayfalarının adres yapısından türetilen ana kategori.", "Main category derived from the URL structure of category, product, collection and old online.vitra.com.tr pages."),
               th("Sayfa", "Pages", "Kategoriye eşlenen tekil sayfa sayısı; sayfalama ve filtre parametreli adresler tek sayılmıştır.", "Number of unique pages mapped to the category; paginated and filtered addresses are counted once.", True),
               th("Click", "Clicks", "1 Haz 2025 - 25 Eyl 2026 toplam click.", "Total clicks, 1 Jun 2025 - 25 Sep 2026.", True),
-              th("Click payı", "Click share", "Kategoriye eşlenen sayfaların (kategori, ürün, koleksiyon, teknik föy ve eski online.vitra.com.tr adresleri) toplam click'i içindeki pay.", "Share of total clicks of pages mapped to a category (category, product, collection, technical sheet and old online.vitra.com.tr addresses).", True),
-              th("Talep payı", "Demand share", "Kategorinin Oca-Ağu 2026 arama talebindeki payı (Bölüm 03, 2.349 kelime).", "The category's share of Jan-Aug 2026 search demand (Section 03, 2,349 keywords).", True),
+              th("Click payı", "Click share", "Kategoriye eşlenen sayfaların (kategori, ürün, koleksiyon ve eski online.vitra.com.tr adresleri) toplam click'i içindeki pay; Diğer: kategoriye eşlenemeyen koleksiyon, kampanya ve teknik föy sayfaları.", "Share of total clicks of pages mapped to a category (category, product, collection, technical sheet and old online.vitra.com.tr addresses).", True),
+              th("Talep payı", "Demand share", "Kategorinin Oca-Ağu 2026 arama talebindeki payı (Bölüm [[b:talep]], 2.328 kelime); tık payı 16 aylık döneme aittir ve paydasında Diğer de yer alır.", "The category's share of Jan-Aug 2026 search demand (Section [[b:talep]], 2,328 keywords).", True),
               th("Gösterim", "Impressions", "Aynı dönemde gösterim.", "Impressions in the same period.", True),
               th("CTR", "CTR", "Tık / gösterim.", "Clicks / impressions.", True)], rows2, "dar")
 def seri(k): return [GM[k][GA.index(m)][0] for m in aylar]
@@ -72,7 +79,7 @@ HTML = """
  kpi_kart(yzd(mob), "Mobil tık payı · gösterim payı %s" % yzd(mob_i), "Mobile click share · impression share %s" % (yzd(mob_i).replace("%", "") + "%")),
  kpi_kart(yzd(GU[0][2]), "Türkiye payı · ikinci sırada Almanya %s" % yzd(GU[1][2]), "Turkey share · Germany second at %s" % (yzd(GU[1][2]).replace("%", "") + "%")),
  x("Trafik hangi sayfa türlerine geliyor?", "Which page types does the traffic land on?"),
- tbl,
+ HALKA_TUR + tbl,
  insight("Organik tıkların %s'i kategori sayfalarına, %s'i ürün sayfalarına gelmektedir; kategori sayfası başına ortalama tık ürün sayfasının ~%sx'idir. Ürün sayfaları %s gösterimle %s CTR üretirken kategori sayfaları %s CTR ile çalışmaktadır: bu fark, kullanıcının jenerik aramada kategori sayfasına, model aramasında ürün sayfasına ulaştığına işaret etmektedir." % (yzd(100 * GT["kategori"][0] / ttot), yzd(100 * GT["urun"][0] / ttot), ("%.0f" % ((GT["kategori"][0] / GT["kategori"][2]) / (GT["urun"][0] / GT["urun"][2]))), k(GT["urun"][1]), yzd(100 * GT["urun"][0] / GT["urun"][1]), yzd(100 * GT["kategori"][0] / GT["kategori"][1])),
          "%s of organic clicks land on category pages and %s on product pages; the average click per category page is ~%sx that of a product page. Product pages, with %s impressions, produce %s CTR while category pages work at %s CTR: this gap indicates that users reach the category page in generic searches and the product page in model searches." % (yzd(100 * GT["kategori"][0] / ttot), yzd(100 * GT["urun"][0] / ttot), ("%.0f" % ((GT["kategori"][0] / GT["kategori"][2]) / (GT["urun"][0] / GT["urun"][2]))), k(GT["urun"][1]), yzd(100 * GT["urun"][0] / GT["urun"][1]), yzd(100 * GT["kategori"][0] / GT["kategori"][1])), "D2"),
  x("Kategori bazında organik trafik", "Organic traffic by category"),
@@ -88,7 +95,7 @@ HTML = """
        [[x("Mobil", "Mobile"), cellk(GC["MOBILE"][0]), n(yzd(mob)), n(yzd(ctr_m))],
         [x("Masaüstü", "Desktop"), cellk(GC["DESKTOP"][0]), n(yzd(100 * GC["DESKTOP"][0] / sum(v[0] for v in GC.values()))), n(yzd(ctr_d))],
         [x("Tablet", "Tablet"), cellk(GC["TABLET"][0]), n(yzd(100 * GC["TABLET"][0] / sum(v[0] for v in GC.values()))), n(yzd(100 * GC["TABLET"][0] / GC["TABLET"][1]))],
-        [x("Türkiye", "Turkey"), cellk(GU[0][1]), n(yzd(GU[0][2])), n("-")], [x("Almanya", "Germany"), cellk(GU[1][1]), n(yzd(GU[1][2])), n("-")], [x("KKTC", "Northern Cyprus"), cellk(GU[2][1]), n(yzd(GU[2][2])), n("-")]], "dar"),
+        [x("Türkiye", "Turkey"), cellk(GU[0][1]), n(yzd(GU[0][2])), n("-")], [x("Almanya", "Germany"), cellk(GU[1][1]), n(yzd(GU[1][2])), n("-")], [x("Kıbrıs", "Cyprus"), cellk(GU[2][1]), n(yzd(GU[2][2])), n("-")]], "dar"),
  insight("Temmuz - Eylül 2026'da en çok tık alan sayfa ana sayfadır (%s); ilk 15 sayfanın %d'i kategori sayfasıdır ve listede ürün sayfası bulunmamaktadır. Cihaz kırılımında mobil, gösterimlerin %s'ini almasına karşın tıkların %s'ini üretmektedir; CTR masaüstünde %s, mobilde %s seviyesindedir." % (bin(TS[0][1]), sum(1 for uu, _ in TS[:15] if "/c-" in uu), yzd(mob_i), yzd(mob), yzd(ctr_d), yzd(ctr_m)),
          "In July - September 2026 the page with the most clicks is the home page (%s); %d of the top 15 pages are category pages and the list has no product page. By device, mobile takes %s of impressions but produces %s of clicks; CTR is %s on desktop and %s on mobile." % (bin(TS[0][1]), sum(1 for uu, _ in TS[:15] if "/c-" in uu), yzd(mob_i).replace("%", "") + "%", yzd(mob).replace("%", "") + "%", yzd(ctr_d).replace("%", "") + "%", yzd(ctr_m).replace("%", "") + "%"), "D2") +
  kaynak("Google Search Console · sc-domain:vitra.com.tr · 1 Haz 2025 - 25 Eyl 2026 · sayfa, sayfa×gün, cihaz×gün ve ülke boyutları · %s" % veri.TARIH,

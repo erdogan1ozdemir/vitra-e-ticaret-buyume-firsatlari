@@ -356,3 +356,48 @@ def sacilim(noktalar, x_ad, y_ad, renkler, cap="", genislik=880, yukseklik=380, 
         nok.append({"b": et, "s": s})
     p.append("</svg>")
     return _fig("".join(p), nok, _lej([(a, r, "nokta") for _, a, r in renkler]), cap)
+
+
+# ---------------------------------------------------------------- halka (pay dagilimi)
+def halka(dilimler, cap="", merkez=None, genislik=880, bicim=None, deger_bicim=None, r_dis=96, r_ic=58):
+    """dilimler: [(etiket, deger, renk)] ; paylar toplamdan hesaplanir. Solda halka, sagda etiket + pay + deger listesi.
+    merkez: (ust_yazi, alt_yazi) halkanin ortasina; bicim: pay bicimi (varsayilan f_pay, 1 ondalik)."""
+    bicim = bicim or (lambda v: f_pay(v, 1))
+    top = float(sum(v for _, v, _ in dilimler)) or 1.0
+    n_ = len(dilimler); satir_h = 26
+    yukseklik = max(2 * r_dis + 24, n_ * satir_h + 20)
+    cx, cy = r_dis + 14, yukseklik / 2
+    p = [_svg(genislik, yukseklik)]
+    nok = []; a0 = -math.pi / 2
+    def _nokta(r, a): return cx + r * math.cos(a), cy + r * math.sin(a)
+    def _yay(a1, a2):
+        if a2 - a1 >= 2 * math.pi - 1e-6: a2 = a1 + 2 * math.pi - 1e-4
+        b = 1 if (a2 - a1) > math.pi else 0
+        x1, y1 = _nokta(r_dis, a1); x2, y2 = _nokta(r_dis, a2); x3, y3 = _nokta(r_ic, a2); x4, y4 = _nokta(r_ic, a1)
+        return "M%.2f %.2f A%d %d 0 %d 1 %.2f %.2f L%.2f %.2f A%d %d 0 %d 0 %.2f %.2f Z" % (x1, y1, r_dis, r_dis, b, x2, y2, x3, y3, r_ic, r_ic, b, x4, y4)
+    yollar, bantlar, yay_bant = [], [], []
+    lx = cx + r_dis + 46; y0 = cy - n_ * satir_h / 2 + satir_h / 2
+    for i, (et, v, renk) in enumerate(dilimler):
+        pay = 100.0 * v / top; a1 = a0 + 2 * math.pi * v / top
+        d_ = _yay(a0, a1)
+        yollar.append('<path d="%s" fill="%s" stroke="var(--card)" stroke-width="1.5"/>' % (d_, renk))
+        yay_bant.append('<path class="hz" data-i="%d" d="%s"/>' % (i, d_))
+        y = y0 + i * satir_h
+        p.append('<rect x="%.1f" y="%.1f" width="12" height="12" rx="2" fill="%s"/>' % (lx, y - 9, renk))
+        p.append('<text class="bl" x="%.1f" y="%.1f">%s</text>' % (lx + 20, y + 1.5, et))
+        p.append('<text class="bv" x="%.1f" y="%.1f" text-anchor="end" style="font-weight:700">%s</text>' % (genislik - 120, y + 1.5, bicim(pay)))
+        if deger_bicim:
+            p.append('<text class="bl" x="%.1f" y="%.1f" text-anchor="end">%s</text>' % (genislik - 8, y + 1.5, deger_bicim(v)))
+        bantlar.append('<rect class="hz" data-i="%d" x="%.1f" y="%.1f" width="%.1f" height="%d"/>' % (i, lx - 6, y - satir_h / 2 - 1, genislik - lx, satir_h))
+        s_ = [{"a": x("Pay", "Share"), "r": renk, "v": bicim(pay)}]
+        if deger_bicim: s_.append({"a": x("Değer", "Value"), "r": "", "v": deger_bicim(v)})
+        nok.append({"b": et, "s": s_})
+        a0 = a1
+    p[1:1] = yollar
+    if merkez:
+        p.append('<text x="%.1f" y="%.1f" text-anchor="middle" style="font-size:20px;font-weight:700;fill:var(--ink);pointer-events:none">%s</text>' % (cx, cy + 2, merkez[0]))
+        if len(merkez) > 1 and merkez[1]:
+            p.append('<text class="bl" x="%.1f" y="%.1f" text-anchor="middle" style="font-size:11px;pointer-events:none">%s</text>' % (cx, cy + 19, merkez[1]))
+    p += bantlar + yay_bant   # once lejant satirlari (dikdortgen), sonra halka dilimleri
+    p.append("</svg>")
+    return _fig("".join(p), nok, "", cap)

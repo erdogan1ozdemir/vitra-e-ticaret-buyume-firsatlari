@@ -32,7 +32,7 @@ bt = {b[0]: b for b in BT}
 _ST = json.load(open(os.path.join(veri.V, "ham", "derin", "ahrefs_markalar", "site_toplam.json"), encoding="utf-8"))["siteler"]
 _ST = dict(_ST) if isinstance(_ST, list) else _ST
 _r2 = []
-for d in [d_ for d_ in SIRA if d_ in bt and d_ not in ("serel.com.tr", "ecebanyo.com")]:
+for d in [d_ for d_ in SIRA if d_ in bt and d_ not in ("serel.com.tr", "ecebanyo.com") and (bt[d_][4] or bt[d_][6])]:   # Ahrefs'te trafik donmeyen alan adlari (idealstandard.com.tr) tablodan cikarilir
     b = bt[d]
     _r2.append((b[4], [u("https://www." + d, d), tip(d), cell(b[1]), cellk(b[2]), cellk(b[3]), cellk(b[4]), cellk(b[5]), cellk(b[6])]))
 for d in ("serelseramik.com.tr", "eca.com.tr"):
@@ -45,7 +45,7 @@ tbl2 = tablo([th("Alan adı", "Domain", "Ahrefs Batch Analysis, Türkiye, alt al
               th("Organik kelime", "Organic keywords", "Türkiye'de sıralanan kelime sayısı.", "Number of ranking keywords in Turkey.", True),
               th("İlk 3", "Top 3", "İlk üç sırada yer alan kelime sayısı.", "Number of keywords ranking in the top three.", True),
               th("Organik trafik", "Organic traffic", "Tahmini aylık organik ziyaret.", "Estimated monthly organic visits.", True),
-              th("Paid trafik", "Paid traffic", "Tahmini aylık Google Ads ziyareti.", "Estimated monthly Google Ads visits.", True),
+              th("Paid trafik", "Paid traffic", "Tahmini aylık Google Ads ziyareti; \"-\": ayrı Ahrefs çekiminden eklenen serelseramik.com.tr ve eca.com.tr için alınmamıştır.", "Estimated monthly Google Ads visits; \"-\": not collected for serelseramik.com.tr and eca.com.tr, which were added from a separate Ahrefs pull.", True),
               th("Paid kelime", "Paid keywords", "Reklam verilen kelime sayısı.", "Number of advertised keywords.", True)], rows2, "uzun")
 az = max(b[4] for b in BT)
 marka = [b for b in BT if b[4] > 0 and b[0] in ("vitra.com.tr", "kale.com.tr", "creavit.com.tr", "artema.com.tr", "roca.com.tr", "duravit.com.tr", "geberit.com.tr", "idealstandard.com.tr", "bien.com.tr")]
@@ -69,8 +69,8 @@ HTML = """
 %s
 %s
 """ % (
- x("Benchmark seti üç halkadan oluşmaktadır: vitra.com.tr ile aynı aramalarda görünen organik rakipler, banyo sektörünün marka siteleri ve ürünün satıldığı pazaryeri ile yapı market kanalları. Ölçüm Ahrefs Türkiye verisiyle yapılmıştır; organik trafik değerleri tahmindir.",
-   "The benchmark set consists of three rings: organic competitors that appear in the same searches as vitra.com.tr, the bathroom sector's brand sites, and the marketplace and DIY channels where the product is sold. Measurement uses Ahrefs Turkey data; organic traffic values are estimates."),
+ x("Benchmark seti üç halkadan oluşmaktadır: vitra.com.tr ile aynı aramalarda görünen organik rakipler, banyo sektörünün marka siteleri ve ürünün satıldığı pazaryeri ile yapı market kanalları. Ölçüm Ahrefs (organik görünürlük, Türkiye), SEOmonitor (Google click payı, mobil) ve Similarweb (site trafiği, tüm ülkeler) tahminleriyle yapılmıştır; değerler kaynağa göre farklı yöntemle hesaplandığından karşılaştırmalar aynı kaynak içinde okunmalıdır.",
+   "The benchmark set consists of three rings: organic competitors that appear in the same searches as vitra.com.tr, the bathroom sector's brand sites, and the marketplace and DIY channels where the product is sold. Measurement uses Ahrefs (organic visibility, Turkey), SEOmonitor (Google click share, mobile) and Similarweb (site traffic, all countries) estimates; as each source uses a different method, comparisons should be read within the same source."),
  kpi_kart(k(vit[4]), "vitra.com.tr tahmini aylık organik ziyaret · DR %d" % vit[1], "vitra.com.tr estimated monthly organic visits · DR %d" % vit[1]),
  kpi_kart(k(koc[4]), "koctas.com.tr organik ziyareti vitra.com.tr'nin ~%dx'i" % round(koc[4] / vit[4]), "koctas.com.tr organic visits are ~%dx vitra.com.tr's" % round(koc[4] / vit[4])),
  kpi_kart(bin(OR[0][1]), "Koçtaş ile ortak kelime · VitrA kelimelerinin %s" % yzd(100 * OR[0][1] / vit[2]), "Keywords shared with Koçtaş · %s of VitrA keywords" % (yzd(100 * OR[0][1] / vit[2]).replace("%", "") + "%")),
