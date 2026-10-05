@@ -69,11 +69,11 @@ for r in R:
     if r and r[0] == "add_payment_info" and r[1]: od.append((r[1], sayi(r[2])))
     if r and r[0] == "add_shipping_info" and r[1]: kg.append((r[1], sayi(r[2])))
 O["odeme"] = od; O["teslimat"] = kg
-# ------------------------------------------------------------------ satın alma dışı olaylar (ay sütununda yıl yok: 10-12 = 2025, 1-9 = 2026)
+# ------------------------------------------------------------------ satın alma dışı olaylar (ay sütununda yıl yok: 10-12 = 2025, 5-8 = 2026, 9 = Eyl 2025 + Eyl 2026)
 ld = defaultdict(dict)
 for r in tablo("8 - Lead (Mayıs 2026)", "Month"):
     if not isinstance(r[0], (int, float)) or not isinstance(r[1], str): continue
-    m = int(r[0]); ld[r[1]]["%d-%02d" % (2025 if m >= 10 else 2026, m)] = [sayi(r[2]), sayi(r[3])]
+    m = int(r[0]); ld[r[1]]["eyl" if m == 9 else "%d-%02d" % (2025 if m >= 10 else 2026, m)] = [sayi(r[2])]   # dışa aktarım 1 Eyl 2025 - 30 Eyl 2026, ay sütununda yıl yok: 9 iki Eylül'ün toplamıdır
 O["olay"] = {k: dict(sorted(v.items())) for k, v in ld.items()}
 # ------------------------------------------------------------------ blog ve koleksiyon sayfaları (görüntüleme, kullanıcı, anahtar olay)
 O["blog"] = [[r[0], sayi(r[1]), sayi(r[2]), sayi(r[3])] for r in satirlar("9 - Tablo 1 ve Blog") if r and r[0] and str(r[0]).startswith("/")]

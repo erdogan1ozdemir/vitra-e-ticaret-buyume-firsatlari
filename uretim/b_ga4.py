@@ -177,10 +177,10 @@ _DEGL = {a_.lower(): b_ for a_, b_ in _DEGK.items()}
 rows_a = []
 for q, c, u_, s in AR[:30]:
     d_ = _DEGL.get(q)
-    rows_a.append([kw(q), cell(c), cell(u_), cell(s), x(*SAD[sinif(q)]), x(*_DEG[d_]) if d_ else "-"])
+    rows_a.append([kw(q), cell(c), cell(s), x(*SAD[sinif(q)]), x(*_DEG[d_]) if d_ else "-"])
 T_ARAMA = tablo([th("Arama terimi", "Search term", "vitra.com.tr arama kutusuna yazılan terim (view_search_results olayı); küçük harfe çevrilip boşluklar tekilleştirilmiştir.", "The term typed into the vitra.com.tr search box (view_search_results event); lower-cased with spaces normalised."),
                  th("Arama", "Searches", "1 Nis - 5 Eki 2026 view_search_results olay sayısı; GA4 keşif raporu örneklendiği için yön gösterir.", "Number of view_search_results events, 1 Apr - 5 Oct 2026; indicative as the GA4 exploration is sampled.", True),
-                 th("Kullanıcı", "Users", "Aynı dönemde arayan kullanıcı.", "Users who searched in the same period.", True), th("Oturum", "Sessions", "Aramanın yapıldığı oturum.", "Sessions with the search.", True),
+                 th("Oturum", "Sessions", "Aramanın yapıldığı oturum.", "Sessions with the search.", True),
                  th("Tür", "Type", "Terimin türü: ürün tipi, seri ve koleksiyon adı, yedek parça ve tamamlayıcı, ölçü ve özellik, hizmet ve destek.", "Type of the term: product type, series and collection name, spare parts and complementary, size and feature, service and support."),
                  th("Arama testi (04.10.2026)", "Search test (04.10.2026)", "Terim Bölüm [[b:yolculuk]]'daki site içi arama testinde denendiyse sonucu.", "The result if the term was tried in the site search test in Section [[b:yolculuk]].")], rows_a, "dar")
 rows_s = [[x(*SAD[a_]), n(yzd(100 * _sc.get(a_, 0) / ART))] for a_ in ["urun", "seri", "parca", "olcu", "hizmet", "diger"]]
@@ -211,16 +211,16 @@ INS_ODEME = insight("1 Eylül 2025 - 30 Eylül 2026'da ödeme adımına %s, tesl
 
 # ---------------------------------------------------------------- 5 · satın alma dışı talep olayları
 OL = G["olay"]
-_OLAY_EN = {"servisler_ve_satis_noktalari": "servisler_ve_satis_noktalari (services and sales points)"}
-_aylar_ol = sorted({m for d in OL.values() for m in d})
-_AO = ["%s %s" % (AYA[int(m[5:]) - 1][0], m[:4]) for m in _aylar_ol]
-_AOE = ["%s %s" % (AYA[int(m[5:]) - 1][1], m[:4]) for m in _aylar_ol]
-T_OLAY = tablo([th("Olay", "Event", "GA4 olay adı.", "GA4 event name.")] + [th(e, _AOE[i], "%s olay sayısı." % e, "Event count, %s." % _AOE[i], True) for i, e in enumerate(_AO)] + [th("Toplam", "Total", "Dönem toplamı.", "Period total.", True)],
+_OLAY_EN = {"servisler_ve_satis_noktalari": "servisler_ve_satis_noktalari (services and sales points button)"}
+_aylar_ol = sorted({m for d in OL.values() for m in d if m != "eyl"}) + ["eyl"]
+_AO = ["%s %s" % (AYA[int(m[5:]) - 1][0], m[:4]) if m != "eyl" else "Eyl 2025 + Eyl 2026" for m in _aylar_ol]
+_AOE = ["%s %s" % (AYA[int(m[5:]) - 1][1], m[:4]) if m != "eyl" else "Sep 2025 + Sep 2026" for m in _aylar_ol]
+T_OLAY = tablo([th("Olay", "Event", "GA4 olay adı; servisler ve satış noktaları düğmesine tıklamayı ölçer.", "GA4 event name; measures clicks on the services and sales points button.")] + [th(e, _AOE[i], ("%s tıklama sayısı." % e) if "+" not in e else "Dışa aktarımda ay sütunu yıl taşımadığı için Eylül 2025 ve Eylül 2026 tıklamaları birlikte verilmiştir.", ("Click count, %s." % _AOE[i]) if "+" not in e else "As the export's month column carries no year, September 2025 and September 2026 clicks are given together.", True) for i, e in enumerate(_AO)] + [th("Toplam", "Total", "Dönem toplamı.", "Period total.", True)],
                [[x(k_, _OLAY_EN.get(k_, k_))] + [cell(d.get(m, [0])[0] or 0) if m in d else n("-") for m in _aylar_ol] + [cell(sum(v[0] for v in d.values()))] for k_, d in OL.items()], "dar")
 _ol_top = sum(v[0] for d in OL.values() for v in d.values())
-INS_OLAY = insight("GA4'te satın alma dışındaki talep olaylarından yalnız servisler ve satış noktaları olayı izlenmektedir (%s olay); olay Ekim - Aralık 2025'te ve Mayıs 2026'dan itibaren kayıtlıdır, Ocak - Nisan 2026 arasında veri yoktur. **Banyo Asistanı'nın açılış, adım ve form gönderimi, WhatsApp ve telefon tıklaması GA4'te ayrı olay olarak görünmemektedir**; bu nedenle ürün + hizmet akışının kaç talep ürettiği ve bu taleplerin satışa dönüşümü ölçülememektedir (Bölüm [[b:set]], [[b:adimlar]])."
+INS_OLAY = insight("GA4'te satın alma dışındaki talep olaylarından yalnız servisler ve satış noktaları düğmesine tıklama izlenmektedir (1 Eyl 2025 - 30 Eyl 2026'da %s tıklama); Ocak - Nisan 2026 için veri bulunmamaktadır. **Banyo Asistanı'nın açılış, adım ve form gönderimi, WhatsApp ve telefon tıklaması GA4'te ayrı olay olarak görünmemektedir**; bu nedenle ürün + hizmet akışının kaç talep ürettiği ve bu taleplerin satışa dönüşümü ölçülememektedir (Bölüm [[b:set]], [[b:adimlar]])."
                    % bin(_ol_top),
-                   "Among non-purchase request events, only the services and sales points event is tracked in GA4 (%s events); the event is recorded in October - December 2025 and from May 2026, with no data in January - April 2026. **The Bathroom Assistant's opening, steps and form submission, WhatsApp and phone clicks do not appear as separate events in GA4**; therefore how many requests the product + service flow generates and how these requests convert to sales cannot be measured (Sections [[b:set]], [[b:adimlar]])."
+                   "Among non-purchase request events, only clicks on the services and sales points button are tracked in GA4 (%s clicks in 1 Sep 2025 - 30 Sep 2026); no data is available for January - April 2026. **The Bathroom Assistant's opening, steps and form submission, WhatsApp and phone clicks do not appear as separate events in GA4**; therefore how many requests the product + service flow generates and how these requests convert to sales cannot be measured (Sections [[b:set]], [[b:adimlar]])."
                    % f"{int(_ol_top):,}", "D45")
 
 # ---------------------------------------------------------------- 6 · blog ve koleksiyon sayfaları
@@ -229,10 +229,10 @@ bv = sum(r[1] for r in BL); bu_ = sum(r[2] for r in BL); bk = sum(r[3] or 0 for 
 rows_b = []
 for p, v, us, ke in sorted(BL, key=lambda r: -r[1])[:15]:
     pp = p.split("?")[0].rstrip("/"); gc = _G12.sayfa(pp)[0]
-    rows_b.append([u("https://www.vitra.com.tr" + pp + "/", pp.replace("/ilham-veren-fikirler", "") or "/ilham-veren-fikirler/"), cellk(v), cellk(us), cell(ke or 0), cellk(gc) if gc else n("-"), n(("%.1f" % (v / gc)).replace(".", ",")) if gc else n("-")])
+    rows_b.append([u("https://www.vitra.com.tr" + pp + "/", pp.replace("/ilham-veren-fikirler", "") or "/ilham-veren-fikirler/"), cellk(v), cell(ke or 0), cellk(gc) if gc else n("-"), n(("%.1f" % (v / gc)).replace(".", ",")) if gc else n("-")])
 x("/ilham-veren-fikirler/", "/ilham-veren-fikirler/")
 T_BLOG = tablo([th("Yazı", "Article", "Blog yazısının adresi (/ilham-veren-fikirler/ sonrası); bağlantı canlı sayfaya gider.", "The blog article's address (after /ilham-veren-fikirler/); the link opens the live page."),
-                th("Görüntüleme", "Views", "%s sayfa görüntüleme (GA4)." % D_12[0], "Page views, %s (GA4)." % D_12[1], True), th("Kullanıcı", "Users", "Aynı dönemde kullanıcı.", "Users in the same period.", True),
+                th("Görüntüleme", "Views", "%s sayfa görüntüleme (GA4)." % D_12[0], "Page views, %s (GA4)." % D_12[1], True),
                 th("Anahtar olay", "Key events", "Sayfada gerçekleşen anahtar olay (key event) sayısı; satın alma sipariş onay sayfasında gerçekleştiği için blog yazısına atanmaz.", "Number of key events occurring on the page; purchases occur on the order confirmation page and are not attributed to the blog article.", True),
                 th("Organik click", "Organic clicks", "Search Console, %s organik click." % _G12.D12[0], "Search Console organic clicks, %s." % _G12.D12[1], True),
                 th("Görüntüleme / click", "Views / click", "GA4 görüntülemesinin Search Console organik click'ine oranı; dönemler bir ay farklıdır, yön gösterir.", "GA4 views as a ratio of Search Console organic clicks; periods differ by one month, indicative.", True)], rows_b, "dar")
@@ -241,14 +241,14 @@ def _kol(p):
     p = p.split("?")[0]
     if p in _OLU: return x(p, p)
     return u("https://www.vitra.com.tr" + (p[3:] if p.startswith("/tr/") else p), p)   # eski /tr/ adresi yeni adrese yönlenir; bağlantı yeni adrese verilir
-rows_kl = [[_kol(p), cellk(v), cellk(us), cell(ke or 0)] for p, v, us, ke in sorted(KL, key=lambda r: -r[1])[:8]]
+rows_kl = [[_kol(p), cellk(v), cell(ke or 0)] for p, v, us, ke in sorted(KL, key=lambda r: -r[1])[:8]]
 T_KOL = tablo([th("Koleksiyon ve katalog sayfası", "Collection and catalogue page", "Sayfa adresi; bağlantı canlı sayfaya gider.", "Page address; the link opens the live page."),
-               th("Görüntüleme", "Views", "%s sayfa görüntüleme." % D_12[0], "Page views, %s." % D_12[1], True), th("Kullanıcı", "Users", "Aynı dönemde kullanıcı.", "Users in the same period.", True),
+               th("Görüntüleme", "Views", "%s sayfa görüntüleme." % D_12[0], "Page views, %s." % D_12[1], True),
                th("Anahtar olay", "Key events", "Sayfada gerçekleşen anahtar olay sayısı; katalog sayfalarında katalog indirme gibi olayları kapsayabilir.", "Number of key events on the page; on catalogue pages it may include events such as catalogue downloads.", True)], rows_kl, "dar")
-INS_BLOG = insight("Blog yazıları (/ilham-veren-fikirler/) %s döneminde %s görüntüleme ve %s kullanıcı almıştır; en çok görüntülenen sayfalar blog ana sayfası ve montaj rehberi hub'ıdır. Blog sayfalarında gerçekleşen anahtar olay sayısı %s'dir: satın alma sipariş onay sayfasında gerçekleştiği için GA4 sayfa raporu blog yazısının satışa katkısını göstermez; bu katkı ancak yol analiziyle (blogdan sonraki üç sayfa) ölçülebilir. Koleksiyon listesi sayfası (/v-/koleksiyonlar) tek başına %s görüntüleme almıştır."
-                   % (D_12[0], k(bv), k(bu_), bin(bk), k(KL[0][1])),
-                   "Blog articles (/ilham-veren-fikirler/) received %s views and %s users in %s; the most viewed pages are the blog home page and the installation guide hub. The number of key events occurring on blog pages is %s: as purchases occur on the order confirmation page, the GA4 page report does not show a blog article's contribution to sales; this contribution can only be measured with path analysis (the three pages after the blog). The collection list page (/v-/koleksiyonlar) alone received %s views."
-                   % (k(bv).replace(",", "."), k(bu_).replace(",", "."), D_12[1], f"{int(bk):,}", k(KL[0][1]).replace(",", ".")), "D45", "D2")
+INS_BLOG = insight("Blog yazıları (/ilham-veren-fikirler/) %s döneminde %s görüntüleme almıştır; en çok görüntülenen sayfalar blog ana sayfası ve montaj rehberi hub'ıdır. Blog sayfalarında gerçekleşen anahtar olay sayısı %s'dir: satın alma sipariş onay sayfasında gerçekleştiği için GA4 sayfa raporu blog yazısının satışa katkısını göstermez; bu katkı ancak yol analiziyle (blogdan sonraki üç sayfa) ölçülebilir. Koleksiyon listesi sayfası (/v-/koleksiyonlar) tek başına %s görüntüleme almıştır."
+                   % (D_12[0], k(bv), bin(bk), k(KL[0][1])),
+                   "Blog articles (/ilham-veren-fikirler/) received %s views in %s; the most viewed pages are the blog home page and the installation guide hub. The number of key events occurring on blog pages is %s: as purchases occur on the order confirmation page, the GA4 page report does not show a blog article's contribution to sales; this contribution can only be measured with path analysis (the three pages after the blog). The collection list page (/v-/koleksiyonlar) alone received %s views."
+                   % (k(bv).replace(",", "."), D_12[1], f"{int(bk):,}", k(KL[0][1]).replace(",", ".")), "D45", "D2")
 
 # ---------------------------------------------------------------- 7 · promosyon ve kupon
 PR = [r for r in G["promosyon"] if r["gor"]]
