@@ -9,7 +9,7 @@ SET = json.load(open(os.path.join(S, "set_v2.json"), encoding="utf-8"))
 GSC = json.load(open(os.path.join(S, "gsc_v2.json"), encoding="utf-8"))["kelime"]
 # VitrA sirasi icin birincil kaynak: SEOmonitor gunluk mobil takip (03.10.2026); takipte olmayan kelimelerde SERP gozlemlerinin ortancasi
 SM = {k_["keyword"]: k_ for k_ in json.load(open(os.path.join(S, "..", "..", "seomonitor", "kelimeler_2026-10-03.json"), encoding="utf-8"))}
-# Takipteki kelimelerde tum siralar (VitrA ve rakipler) SEOmonitor'un ayni gunku mobil ilk 20 sonucundan alinir: iki kaynagin
+# Takipteki kelimelerde tum siralar (VitrA ve rakipler) SEOmonitor'ün ayni gunku mobil ilk 20 sonucundan alinir: iki kaynagin
 # karistirilmasi ayni kelimede iki alan adinin birden 1. sirada sayilmasina yol aciyordu. SERP ozellikleri gozlemlerden gelir.
 SMT = {r["keyword"]: r["top_100_results"] for r in json.load(open(os.path.join(S, "..", "..", "seomonitor", "top_results_2026-10-03.json"), encoding="utf-8"))["kelimeler"]}
 kayit, eksik = [], []

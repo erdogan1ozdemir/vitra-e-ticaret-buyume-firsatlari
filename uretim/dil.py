@@ -11,7 +11,7 @@ import re, json, html as _h
 from bs4 import BeautifulSoup, NavigableString, Comment, Tag
 
 import almanca
-import ceviri
+import ceviri, t2_ortak
 
 ATLA_ETIKET = {"script", "style"}
 NITELIK = ("data-t", "data-term", "title", "aria-label", "alt")
@@ -438,8 +438,16 @@ def _sar(corba):
 
         on = ham[:len(ham) - len(ham.lstrip())]
         arka = ham[len(ham.rstrip()):]
-        kabuk = ('%s<span class="t" data-en="%s">%s</span>%s'
-                 % (on, _h.escape(en_html, quote=True), tr_html, arka))
+        bs = t2_ortak.BOSLUK.get(duz)
+        if bs is None and duz[:1] in "'’" and hedef[:1].isalnum() and not on:
+            bs = (True, bool(arka))   # kayit sonrasi degisen parca (bolum baglantisi vb.): Turkce ek ile baslayan parca Ingilizcede bosluk ister
+        if bs and (bool(on) != bs[0] or bool(arka) != bs[1]):
+            # Turkce ve Ingilizce parcanin bosluklari farkli (ör. "%44,7'si" / "44.7% of"): bosluk span icine alinir, her dil kendi boslugunu tasir
+            en_b = (" " if bs[0] else "") + en_html + (" " if bs[1] else "")
+            kabuk = '<span class="t" data-en="%s">%s%s%s</span>' % (_h.escape(en_b, quote=True), on, tr_html, arka)
+        else:
+            kabuk = ('%s<span class="t" data-en="%s">%s</span>%s'
+                     % (on, _h.escape(en_html, quote=True), tr_html, arka))
         dugum.replace_with(BeautifulSoup(kabuk, "html.parser"))
         sarilan += 1
     return sarilan, hatalar

@@ -32,6 +32,8 @@ P.append(bolum("ihtiyac", "İhtiyaç Dili: Kullanıcı Ne Arıyor?", "Need Langu
 P.append(bolum("organik", "GSC - Organik Kanal", "GSC - Organic Channel", b_organik.HTML))
 import b_genai
 P.append(bolum("yapayzeka", "Google Yapay Zeka Özellikleri ve Organik Tık", "Google AI Features and Organic Clicks", b_genai.HTML))
+import b_ga4
+P.append(bolum("ga4", "GA4 - Site ve E-Ticaret Performansı", "GA4 - Site and E-Commerce Performance", b_ga4.HTML))
 P.append(bolum("marka", "Marka Aramaları ve Autocomplete", "Brand Searches and Autocomplete", b_marka.HTML))
 P.append(bolum("serp", "Google Arama Sonuçları ve AI Overview", "Google Search Results and AI Overview", b_serp.HTML))
 P.append(bolum("youtube", "YouTube: Montaj, Tamir ve Karar Videoları", "YouTube: Installation, Repair and Decision Videos", b_youtube.HTML))
@@ -364,12 +366,13 @@ tr.vsat td:first-child{font-weight:650}
 /* ara tablo basliklari ve urun tablolari */
 p.tbas{margin:30px 0 8px;font-size:14.5px}
 .fnote p.fac{margin:0 0 8px;color:var(--muted);font-size:12.8px;line-height:1.5}
-.tw.cok table{min-width:max(100%, calc(var(--nc) * 118px + 140px))}
-.tw.cok td,.tw.cok th{min-width:96px}
-.tw.cok td:first-child,.tw.cok th:first-child{min-width:230px}
+/* cok sutunlu tablolar: tablo kapsayiciyi doldurur, genislik icerikten gelir; kaydirma yalniz icerik sigmadiginda olusur */
+.tw.cok table{min-width:100%}
+.tw.cok td,.tw.cok th{min-width:84px}
+.tw.cok td:first-child,.tw.cok th:first-child{min-width:120px}
 .tw.cok td{vertical-align:middle}
-.tw.urunt table{min-width:1180px}
-.tw.urunt td:first-child,.tw.urunt th:first-child{min-width:300px;max-width:380px;white-space:normal}
+.tw.urunt table{min-width:100%}
+.tw.urunt td:first-child,.tw.urunt th:first-child{min-width:220px;white-space:normal}
 h3[id]{scroll-margin-top:calc(var(--apph, 64px) + 24px)}
 .ekranlar{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:12px 0 14px}
 .ekranlar figure{margin:0;position:relative;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px}
@@ -384,10 +387,10 @@ h3[id]{scroll-margin-top:calc(var(--apph, 64px) + 24px)}
 .tw.genis td:first-child{white-space:nowrap}
 """
 # ---------------------------------------------------------------- icindekiler
-KISA = {"ek": ("Sözlük, Kaynakça, Yöntem", "Glossary, References, Method"), "yapayzeka": ("Yapay Zeka Özellikleri ve Tık", "AI Features and Clicks"), "yolculuk": ("Satın Alma Yolculuğu", "Purchase Journey"), "yorum": ("Yorumlar ve Soru-Cevap", "Reviews and Q&A"), "ihtiyac": ("İhtiyaç Dili", "Need Language"), "youtube": ("YouTube: Montaj ve Tamir", "YouTube: Installation and Repair"), "rakip": ("Rakip Görünürlüğü ve Ölçek", "Competitor Visibility and Scale"),
+KISA = {"ek": ("Sözlük, Kaynakça, Yöntem", "Glossary, References, Method"), "yapayzeka": ("Yapay Zeka Özellikleri ve Tık", "AI Features and Clicks"), "ga4": ("GA4 - Site ve E-Ticaret", "GA4 - Site and E-Commerce"), "yolculuk": ("Satın Alma Yolculuğu", "Purchase Journey"), "yorum": ("Yorumlar ve Soru-Cevap", "Reviews and Q&A"), "ihtiyac": ("İhtiyaç Dili", "Need Language"), "youtube": ("YouTube: Montaj ve Tamir", "YouTube: Installation and Repair"), "rakip": ("Rakip Görünürlüğü ve Ölçek", "Competitor Visibility and Scale"),
         "model": ("Kanal Rolleri ve Model", "Channel Roles and Model"), "panel": ("Resmi Mağaza Paneli", "Official Store Panel"), "makro": ("Ekonomik Ortam", "Economic Environment"), "talep": ("Kategori Talebi", "Category Demand"), "organik": ("GSC - Organik Kanal", "GSC - Organic Channel"),
         "marka": ("Marka Aramaları", "Brand Searches"), "ssgbm": ("SSG ve BM Derin Talep", "SSG and BM In Depth"), "katalog": ("Katalog ve Talep", "Catalogue and Demand"), "yeni": ("Yeni Kategori ve Segment", "New Categories and Segments"), "set": ("Set ve Ürün + Hizmet", "Sets and Product + Service"), "benchmark": ("Benchmark ve Dijital Deneyim", "Benchmark and Digital Experience"), "serp": ("Google SERP ve AI Overview", "Google SERP and AI Overview"), "trafik": ("Marka Sitelerinde Trafik", "Traffic on Brand Sites"), "pazaryeri": ("Pazaryeri ve Çok Satanlar", "Marketplaces and Best Sellers"), "politika": ("Kanal Politikaları", "Channel Policies"), "sikayet": ("Şikayetvar: Satış Sonrası", "Şikayetvar: After-Sales"), "fiyat": ("Fiyat ve Satıcı Manzarası", "Price and Seller Landscape"), "derin": ("Alt Kategori Derinliği", "Sub-Category Depth"), "geo": ("AI Arama ve GEO Fırsatları", "AI Search and GEO Opportunities")}
-KUMELER = [("DURUM", "STATUS", ["ozet", "makro"]), ("TALEP", "DEMAND", ["talep", "ssgbm", "ihtiyac", "organik", "yapayzeka", "marka", "serp", "youtube", "sikayet"]), ("FIRSAT", "OPPORTUNITY", ["katalog", "yeni", "set"]), ("REKABET VE MODEL", "COMPETITION AND MODEL", ["rakip", "trafik", "pazaryeri", "derin", "panel", "yorum", "fiyat", "politika", "yolculuk", "benchmark", "model"]),
+KUMELER = [("DURUM", "STATUS", ["ozet", "makro"]), ("TALEP", "DEMAND", ["talep", "ssgbm", "ihtiyac", "organik", "yapayzeka", "ga4", "marka", "serp", "youtube", "sikayet"]), ("FIRSAT", "OPPORTUNITY", ["katalog", "yeni", "set"]), ("REKABET VE MODEL", "COMPETITION AND MODEL", ["rakip", "trafik", "pazaryeri", "derin", "panel", "yorum", "fiyat", "politika", "yolculuk", "benchmark", "model"]),
            ("PLAN", "PLAN", ["geo", "adimlar"]), ("EK", "APPENDIX", ["ek"])]
 _bas = dict(BOLUMLER); _sira = {b: i + 1 for i, (b, _) in enumerate(BOLUMLER)}
 _kumede = [b for _, _, ids in KUMELER for b in ids]

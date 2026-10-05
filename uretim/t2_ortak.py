@@ -31,6 +31,7 @@ def sayi(v):
 
 EK = {}
 _CAKISMA = []
+BOSLUK = {}   # parca kaydi: Ingilizce parcanin basinda / sonunda bosluk var mi (Turkce ek alan sayilardan sonra bosluk kaybolmasin)
 
 
 def _duz(t):
@@ -57,6 +58,7 @@ def x(tr, en):
         pk, pv = _ETIKET.split(k), _ETIKET.split(v)
         if len(pk) == len(pv):
             for a, b in zip(pk, pv):
+                if a.strip(): BOSLUK.setdefault(a.strip(), (b[:1] == " ", b[-1:] == " "))
                 a, b = a.strip(), b.strip()
                 if a and not _SAYISAL.match(a):
                     if _MARKA.fullmatch(a) or _MARKA.fullmatch(b):

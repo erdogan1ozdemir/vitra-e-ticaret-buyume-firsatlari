@@ -267,3 +267,13 @@ _e("VitrA'nın armatür marka aramalarındaki payı", "Armatür kategorisinde (b
    "VitrA's share of the total searches made with a brand name in the taps and mixers category (mixers, taps, bidet taps, etc.); the most searched brands in this category are E.C.A. and Artema (Jan - Aug 2026, Google Ads Keyword Planner).")
 _e("\"vitra\" yalın marka araması", "Google'da yalnızca \"vitra\" yazılarak yapılan aramaların Ocak - Ağustos 2026 aylık ortalamasıdır; değişim Ocak - Ağustos 2023 ortalamasına göredir (Google Ads Keyword Planner).",
    "The January - August 2026 monthly average of Google searches for \"vitra\" alone; the change is against the January - August 2023 average (Google Ads Keyword Planner).")
+
+# --- GA4 ---
+_e("E-ticaret geliri · Oca-Eyl 2026", "vitra.com.tr'nin Ocak - Eylül 2026 toplam e-ticaret geliridir (GA4 Total revenue, TL); değişim 2025'in aynı aylarına göredir. Mağaza her iki dönemde de aynı GA4 mülkünde olduğu için gelir kıyaslanabilir.",
+   "vitra.com.tr's total e-commerce revenue for January - September 2026 (GA4 Total revenue, TL); the change is against the same months of 2025. As the shop was in the same GA4 property in both periods, revenue is comparable.")
+_e("E-ticaret satın alma · Oca-Eyl 2026", "Ocak - Eylül 2026'da tamamlanan e-ticaret satın alma sayısıdır (GA4 Ecommerce purchases); değişim 2025'in aynı aylarına göredir.",
+   "The number of e-commerce purchases completed in January - September 2026 (GA4 Ecommerce purchases); the change is against the same months of 2025.")
+_e("Ortalama sipariş tutarı · Oca-Eyl 2026", "Ocak - Eylül 2026 gelirinin satın alma sayısına bölümüdür (TL); 2025 değeri aynı aylardan hesaplanmıştır (GA4).",
+   "January - September 2026 revenue divided by the number of purchases (TL); the 2025 value is calculated from the same months (GA4).")
+_e("Organik aramanın gelir payı · Oca-Eyl 2026", "GA4'te Organic Search kanalının Ocak - Eylül 2026 toplam e-ticaret gelirindeki payıdır; 2025 değeri aynı aylardan hesaplanmıştır. Aralık 2025'ten itibaren www.vitra.com.tr'ye gelen organik trafik mağazayla aynı sitededir.",
+   "The Organic Search channel's share of total e-commerce revenue for January - September 2026 in GA4; the 2025 value is calculated from the same months. From December 2025 the organic traffic to www.vitra.com.tr is on the same site as the shop.")

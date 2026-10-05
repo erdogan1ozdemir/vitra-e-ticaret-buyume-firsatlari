@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """Bolum: Sonraki adimlar (oncelik tablosu). Excel ile ortak kaynak."""
 from ortak import *
+import b_ga4 as _GA
 import gsc12 as _G12
 import serp_ozet as _SO
 import b_panel as _BP
@@ -95,6 +96,10 @@ ADIMLAR = [
  ("Öncelik 2", ("Banyo Asistanı'nın bayi ağına genişletilmesi ve adımlarının Google Analytics 4'te (GA4) ölçülmesi", "Extending the Bathroom Assistant to the dealer network and measuring its steps in GA4"),
   ("Mağaza seçeneğinde 5 VitrA mağazası listeleniyor; servisler ve satış noktaları sayfası 1 Ekim 2025 - 30 Eylül 2026 döneminde %s tık almıştır" % bin(_G12.sayfa("/servisler-ve-satis-noktalari")[0]), "5 VitrA stores are listed in the store option; the services and sales points page received %s clicks in 1 October 2025 - 30 September 2026" % f"{_G12.sayfa("/servisler-ve-satis-noktalari")[0]:,}"),
   ("Lead'in satışa dönmesi", "Turning leads into sales"), ("D13", "D2")),
+ ("Öncelik 1", ("GA4 ölçüm kurgusu: ödeme adımında oturumun yenilenmesinin incelenmesi; Banyo Asistanı, WhatsApp ve telefon taleplerinin ayrı olay olarak izlenmesi; promosyon tıklaması, ödeme ve teslimat türünün satın almaya bağlanması", "GA4 measurement setup: reviewing why the session restarts at the payment step; tracking Bathroom Assistant, WhatsApp and phone requests as separate events; linking promotion clicks and payment and shipping types to purchases"),
+  ("Oca-Eyl 2026 gelirinin %s'i sepet, giriş ve ödeme sayfalarında başlayan oturumlarda; satın alma dışında yalnız servisler ve satış noktaları olayı izleniyor; promosyon adı taşıyan alanlara satın alma atanmıyor; ödeme olaylarının %s'inde tür boş" % (yzd(100 * _GA._lt("odeme", 2026, 1) / _GA._lg26), yzd(100 * _GA._ns_o / _GA.odt)),
+   "%s of Jan-Sep 2026 revenue is in sessions starting on cart, sign-in and checkout pages; apart from purchases only the services and sales points event is tracked; no purchase is attributed to slots with a promotion name; the type is empty in %s of payment events" % (yzd(100 * _GA._lt("odeme", 2026, 1) / _GA._lg26), yzd(100 * _GA._ns_o / _GA.odt))),
+  ("Kanal, içerik, kampanya ve hizmet akışının satışa etkisinin ölçülmesi", "Measuring the effect of channels, content, campaigns and the service flow on sales"), ("D45",)),
  ("Öncelik 2", ("Tamamlayıcı ürünlerde üçüncü taraf satıcı modelinin montaj malzemesi ve yapı kimyasalında test edilmesi", "Testing a third-party seller model for complementary products in fitting materials and building chemicals"),
   ("Yapıştırıcı, derz ve su yalıtımı aramaları bir yılda %s; rakip site incelemesinde montaj parçaları yapı market ve pazaryerlerinde listeleniyor" % yz(TM["yapi_kimya"]["yoy"]), "Adhesive, grout and waterproofing searches YoY %s; in the competitor site review fitting parts are listed at DIY stores and marketplaces" % yz(TM["yapi_kimya"]["yoy"])),
   ("Sepet bütünlüğü", "Basket integrity"), ("D3", "D12")),

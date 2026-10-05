@@ -136,7 +136,9 @@ AD_DUZ = {"02.3 Banyo yenileme · Karşılığı": "02.3 Banyo yenileme senaryos
 AD_SON = {"Marka · Üretici markalar": "Marka adı · Üretici", "Marka adı · Perakendeci": "Marka adı · Perakende",
           "Marka x · Aylık arama": "Marka x kat. · Hacim", "Marka x · YoY değişim": "Marka x kat. · YoY", "Marka x · 2023'ten bu yana": "Marka x kat. · 2023'ten",
           "YZ payına · Tüm yazılar": "YZ payı · Tümü", "YZ payına · Sıralaması": "YZ payı · Sıra korunan",
-          "AI Overview · Arama grubu": "AIO · Arama grupları", "AI · Arama ifadesi": "AIO · Örnek aramalar"}
+          "AI Overview · Arama grubu": "AIO · Arama grupları", "AI · Arama ifadesi": "AIO · Örnek aramalar",
+          "GA4 aylık görünüm · Oturum": "GA4 aylık · Oturum", "GA4 · Gelire göre ilk": "GA4 giriş · İlk 15 gelir", "GA4 · Oturuma göre ilk": "GA4 giriş · İlk 15 oturum",
+          "GA4 giriş · Giriş sayfası": "GA4 giriş · Sayfa türü", "GA4 site · Arama terimi": "GA4 arama · Terim", "GA4 site içi · Terim türü": "GA4 arama · Terim türü"}
 
 _GENEL = {"Oyuncu", "Gösterge", "Ürün", "Kategori", "Tema", "Marka", "Alan adı", "Yıllık yenileme oranı"}
 KISA = {"Yıllık banyo yenileme ve yeni konut banyosu tahmini": "Banyo yenileme tahmini", "Kullanıcı hangi özellikle arıyor? SSG": "Özellik araması SSG",
@@ -164,6 +166,9 @@ KISA = {"Yıllık banyo yenileme ve yeni konut banyosu tahmini": "Banyo yenileme
         "Blog (İlham Veren Fikirler): aylık click, konu grupları ve yazılar": "Blog",
         "Yapay zeka özelliklerinde gösterim: site geneli ve blog": "Yapay zeka gösterim payı", "Sayfa türüne göre yapay zeka gösterimi": "YZ sayfa türü", "Yapay zeka özelliklerinde en çok gösterilen sayfalar · site geneli": "YZ en çok gösterilen sayfa", "Yapay zeka gösterim payına göre blog yazılarında click değişimi": "YZ payına göre",
         "Yapay zeka özelliklerinde gösterim alan sayfalar ve click değişimi": "YZ gösterimi alan sayfalar", "AI Overview çıkan ve çıkmayan blog aramalarında click ve sıra": "AI Overview",
+        "Aylık genel görünüm: gelir, satın alma ve oturum": "GA4 aylık görünüm", "Kanal performansı: oturum, satın alma ve gelir": "GA4 kanal",
+        "Site içi arama terimleri": "GA4 site içi arama", "Giriş sayfası (landing page) türüne göre gelir": "GA4 giriş sayfası", "Ödeme ve teslimat adımı": "GA4 ödeme ve teslimat", "Satın alma dışı talep olayları": "GA4 talep olayları",
+        "Blog ve koleksiyon sayfaları: görüntüleme": "GA4 blog ve koleksiyon", "Promosyon ve kupon": "GA4 promosyon",
         "Yapay zeka yanıt takibi · 111 markasız soruda markaların anılma payı": "AI yanıtlarında markalar",
         "Yapay zeka yanıt takibi · 111 markasız soruda kaynak gösterilen alan adları": "AI yanıt kaynakları",
         "Yapay zeka yanıt takibi · 29 satın alma ve montaj sorusunda VitrA ve vitra.com.tr": "Satın alma ve montaj soruları",
