@@ -29,7 +29,7 @@ P.append(bolum("makro", "Ekonomik Ortam: Harcama, Güven ve Konut Piyasası", "E
 P.append(bolum("talep", "Kategori Talebi ve Dönemsel Değişim", "Category Demand and Period Change", b_talep.HTML))
 P.append(bolum("ssgbm", "SSG ve BM: Derin Talep İncelemesi", "SSG and BM: In-Depth Demand Review", b_ssgbm.HTML))
 P.append(bolum("ihtiyac", "İhtiyaç Dili: Kullanıcı Ne Arıyor?", "Need Language: What Is the User Searching For?", b_niyet.HTML))
-P.append(bolum("organik", "Organik Kanal Performansı", "Organic Channel Performance", b_organik.HTML))
+P.append(bolum("organik", "GSC - Organik Kanal", "GSC - Organic Channel", b_organik.HTML))
 import b_genai
 P.append(bolum("yapayzeka", "Google Yapay Zeka Özellikleri ve Organik Tık", "Google AI Features and Organic Clicks", b_genai.HTML))
 P.append(bolum("marka", "Marka Aramaları ve Autocomplete", "Brand Searches and Autocomplete", b_marka.HTML))
@@ -284,12 +284,28 @@ b.mb{font-weight:650;color:var(--ink)}
 .tcol-p[hidden]{display:none}
 .tcol-p label{display:flex;gap:8px;align-items:center;cursor:pointer;line-height:1.3}
 .tcol-p .tcol-all{justify-self:start;margin-top:4px;font:inherit;font-size:11.5px;color:var(--coral-deep);background:transparent;border:0;padding:2px 0;cursor:pointer}
+.tfilt{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 8px}
+.tfilt button{font:inherit;font-size:12px;border:1px solid var(--line);background:var(--card);color:var(--ink-2);padding:4px 12px;border-radius:999px;cursor:pointer}
+.tfilt button[aria-pressed="true"]{background:var(--teal);color:#fff;border-color:var(--teal)}
 .gcift{position:relative}
 .gcift-b{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:2px;margin:0 0 8px;background:var(--card)}
 .gcift-b button{font:inherit;font-size:11.5px;border:0;background:transparent;color:var(--muted);padding:3px 12px;border-radius:999px;cursor:pointer}
 .gcift-b button[aria-pressed="true"]{background:var(--teal);color:#fff}
 .gcift-p[hidden]{display:none}
 .legend i.kesik{width:16px;height:0;border-top:2.5px dashed;background:transparent}
+.fig .dl{display:none}
+.fig.dl-acik .dl{display:inline}
+.fig .dl,.fig .dlt{font-size:10px;font-weight:600;paint-order:stroke;stroke:var(--card);stroke-width:3px;stroke-linejoin:round;pointer-events:none}
+.fig .dlb{fill:var(--ink-2)}
+.fig text.dl.dlb{fill:var(--ink-2)}
+.fig text.dl.dli{fill:#fff;stroke:none;font-size:9.5px}
+button.dlb{float:right;display:inline-flex;align-items:center;gap:4px;margin:0 0 4px 8px;font:inherit;font-size:11px;color:var(--muted);background:transparent;border:1px solid var(--line);border-radius:5px;padding:2px 8px;cursor:pointer;line-height:1.4}
+button.dlb:hover,button.dlb:focus-visible{color:var(--ink);border-color:var(--ink-2)}
+button.dlb[aria-pressed="true"]{color:var(--ink);border-color:var(--ink-2);background:var(--coral-tint)}
+.dl-satir{display:flex;justify-content:flex-end;margin:0 0 4px}
+.dl-satir button.dlb{float:none}
+.fig svg.chart.genis{max-width:none}
+.fig:has(svg.chart.genis){overflow-x:auto}
 .tw.tw.yatay table{width:100%;min-width:100%}
 .tw.tw.yatay th,.tw.tw.yatay td{min-width:0;padding-left:7px;padding-right:7px;white-space:nowrap}
 .tw.tw.yatay th:first-child,.tw.tw.yatay td:first-child{min-width:74px}
@@ -369,7 +385,7 @@ h3[id]{scroll-margin-top:calc(var(--apph, 64px) + 24px)}
 """
 # ---------------------------------------------------------------- icindekiler
 KISA = {"ek": ("Sözlük, Kaynakça, Yöntem", "Glossary, References, Method"), "yapayzeka": ("Yapay Zeka Özellikleri ve Tık", "AI Features and Clicks"), "yolculuk": ("Satın Alma Yolculuğu", "Purchase Journey"), "yorum": ("Yorumlar ve Soru-Cevap", "Reviews and Q&A"), "ihtiyac": ("İhtiyaç Dili", "Need Language"), "youtube": ("YouTube: Montaj ve Tamir", "YouTube: Installation and Repair"), "rakip": ("Rakip Görünürlüğü ve Ölçek", "Competitor Visibility and Scale"),
-        "model": ("Kanal Rolleri ve Model", "Channel Roles and Model"), "panel": ("Resmi Mağaza Paneli", "Official Store Panel"), "makro": ("Ekonomik Ortam", "Economic Environment"), "talep": ("Kategori Talebi", "Category Demand"), "organik": ("Organik Kanal", "Organic Channel"),
+        "model": ("Kanal Rolleri ve Model", "Channel Roles and Model"), "panel": ("Resmi Mağaza Paneli", "Official Store Panel"), "makro": ("Ekonomik Ortam", "Economic Environment"), "talep": ("Kategori Talebi", "Category Demand"), "organik": ("GSC - Organik Kanal", "GSC - Organic Channel"),
         "marka": ("Marka Aramaları", "Brand Searches"), "ssgbm": ("SSG ve BM Derin Talep", "SSG and BM In Depth"), "katalog": ("Katalog ve Talep", "Catalogue and Demand"), "yeni": ("Yeni Kategori ve Segment", "New Categories and Segments"), "set": ("Set ve Ürün + Hizmet", "Sets and Product + Service"), "benchmark": ("Benchmark ve Dijital Deneyim", "Benchmark and Digital Experience"), "serp": ("Google SERP ve AI Overview", "Google SERP and AI Overview"), "trafik": ("Marka Sitelerinde Trafik", "Traffic on Brand Sites"), "pazaryeri": ("Pazaryeri ve Çok Satanlar", "Marketplaces and Best Sellers"), "politika": ("Kanal Politikaları", "Channel Policies"), "sikayet": ("Şikayetvar: Satış Sonrası", "Şikayetvar: After-Sales"), "fiyat": ("Fiyat ve Satıcı Manzarası", "Price and Seller Landscape"), "derin": ("Alt Kategori Derinliği", "Sub-Category Depth"), "geo": ("AI Arama ve GEO Fırsatları", "AI Search and GEO Opportunities")}
 KUMELER = [("DURUM", "STATUS", ["ozet", "makro"]), ("TALEP", "DEMAND", ["talep", "ssgbm", "ihtiyac", "organik", "yapayzeka", "marka", "serp", "youtube", "sikayet"]), ("FIRSAT", "OPPORTUNITY", ["katalog", "yeni", "set"]), ("REKABET VE MODEL", "COMPETITION AND MODEL", ["rakip", "trafik", "pazaryeri", "derin", "panel", "yorum", "fiyat", "politika", "yolculuk", "benchmark", "model"]),
            ("PLAN", "PLAN", ["geo", "adimlar"]), ("EK", "APPENDIX", ["ek"])]

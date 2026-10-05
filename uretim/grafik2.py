@@ -405,15 +405,26 @@ def halka(dilimler, cap="", merkez=None, genislik=880, bicim=None, deger_bicim=N
     return _fig("".join(p), nok, "", cap)
 
 
+def _koyu(renk):
+    try:
+        r, g, b = int(renk[1:3], 16), int(renk[3:5], 16), int(renk[5:7], 16)
+        return 0.299 * r + 0.587 * g + 0.114 * b < 150
+    except Exception:
+        return False
+
+
 # ---------------------------------------------------------------- kombo2: gruplu cubuk + cizgi + kesikli cizgi, uc eksen
-def kombo2(etiketler, seriler, cap="", genislik=880, yukseklik=300, etiket_goster=False):
+def kombo2(etiketler, seriler, cap="", genislik=880, yukseklik=300, etiket_goster=False, ust_etiket=None, dondur=False, ek_satir=None, min_gen=None):
     """etiketler: [str] (x ile kayitli). seriler: [dict(ad, renk, deger=[v|None], tip='cubuk'|'cizgi'|'kesik', eksen='sol'|'sag'|'sag2',
     bicim=fn, ters=False, eksen_ad=str)]. Ayni eksendeki cubuklar yan yana gruplanir; None degerler bosluk birakir.
-    ters=True eksende kucuk deger ustte cizilir (ortalama sira icin)."""
+    ters=True eksende kucuk deger ustte cizilir (ortalama sira icin). ortu=True olan cubuk bir onceki cubugun uzerine, ayni yerde ve tabandan cizilir
+    (toplamin icindeki pay). ust_etiket: her x icin cubuk grubunun ustune her zaman yazilan metin. dondur: x etiketleri egik yazilir (cok sayida x).
+    ek_satir: her x icin balona eklenecek [(ad, metin)]. min_gen: genis grafiklerde asgari piksel genisligi (kendi icinde kaydirilir).
+    Tum degerler 'dl' sinifli gizli etiket olarak cizilir; grafik ustundeki Degerler dugmesi bunlari acar."""
     eksenler = []
     for s_ in seriler:
         if s_.get("eksen", "sol") not in eksenler: eksenler.append(s_.get("eksen", "sol"))
-    sol, ust, alt = 62, 30, 34
+    sol, ust, alt = (62 + (70 if dondur else 0)), 30 + (14 if ust_etiket else 0), (96 if dondur else 34)
     sag = 20 + (52 if "sag" in eksenler else 0) + (52 if "sag2" in eksenler else 0)
     iw = genislik - sol - sag; ih = yukseklik - ust - alt
     n_ = len(etiketler); bw = iw / n_
@@ -450,16 +461,34 @@ def kombo2(etiketler, seriler, cap="", genislik=880, yukseklik=300, etiket_goste
             else: ax_, an_ = ex[e], "start"
             p.append('<text class="ax" x="%d" y="%d" text-anchor="%s" style="font-weight:600"%s>%s</text>' % (ax_, ust - 12, an_, "" if e == "sol" else ' fill="%s"' % renk, ad_))
     cubuklar = [s_ for s_ in seriler if s_.get("tip", "cizgi") == "cubuk"]
-    nb = len(cubuklar); gw = bw * (0.72 if nb > 1 else 0.52); w1 = gw / max(1, nb)
+    grup = [s_ for s_ in cubuklar if not s_.get("ortu")]
+    nb = len(grup); gw = bw * (0.72 if nb > 1 else 0.52); w1 = gw / max(1, nb)
     for i, et in enumerate(etiketler):
-        cx = sol + bw * i + bw / 2
-        for j, s_ in enumerate(cubuklar):
+        cx = sol + bw * i + bw / 2; ust_y = None; j = -1
+        for s_ in cubuklar:
             v = s_["deger"][i]
+            if not s_.get("ortu"): j += 1
             if v is None: continue
-            e = s_.get("eksen", "sol"); x0 = cx - gw / 2 + j * w1
-            p.append('<rect x="%.1f" y="%.1f" width="%.1f" height="%.1f" rx="2.5" fill="%s"/>' % (x0 + 1, Y(e, v), max(1, w1 - 2), max(0, ust + ih - Y(e, v)), s_["renk"]))
+            e = s_.get("eksen", "sol"); x0 = cx - gw / 2 + max(0, j) * w1
+            k_ = seriler.index(s_)
+            p.append('<rect class="sr" data-k="%d" x="%.1f" y="%.1f" width="%.1f" height="%.1f" rx="2.5" fill="%s"/>' % (k_, x0 + 1, Y(e, v), max(1, w1 - 2), max(0, ust + ih - Y(e, v)), s_["renk"]))
+            if not s_.get("ortu"): ust_y = Y(e, v) if ust_y is None else min(ust_y, Y(e, v))
+            if s_.get("dl", True):   # cubuk degeri cubugun icinde, tabana yakin (cizgi etiketleriyle cakismaz); koyu cubukta beyaz yazi
+                yy = ust + ih - 6
+                if ust + ih - Y(e, v) < 16: yy = Y(e, v) - 4
+                koyu = _koyu(s_["renk"]) and ust + ih - Y(e, v) >= 16
+                if w1 < 36 and ust + ih - Y(e, v) >= 34:   # dar cubuk: deger cubugun icinde dikey yazilir
+                    xx = x0 + w1 / 2 + 3.5; yb = ust + ih - 5
+                    p.append('<text class="dl %s" data-k="%d" x="%.1f" y="%.1f" transform="rotate(-90 %.1f %.1f)" text-anchor="start">%s</text>' % ("dli" if _koyu(s_["renk"]) else "dlb", k_, xx, yb, xx, yb, s_["bicim"](v)))
+                else:
+                    p.append('<text class="dl %s" data-k="%d" x="%.1f" y="%.1f" text-anchor="middle">%s</text>' % ("dli" if koyu else "dlb", k_, x0 + w1 / 2, yy, s_["bicim"](v)))
             if etiket_goster: p.append('<text class="bv" x="%.1f" y="%.1f" text-anchor="middle" style="font-size:10px">%s</text>' % (x0 + w1 / 2, Y(e, v) - 4, s_["bicim"](v)))
-        p.append('<text class="ax" x="%.1f" y="%d" text-anchor="middle">%s</text>' % (cx, yukseklik - 12, et))
+        if ust_etiket and ust_etiket[i] and ust_y is not None:
+            p.append('<text class="bv" x="%.1f" y="%.1f" text-anchor="middle" style="font-size:10.5px;font-weight:700">%s</text>' % (cx, ust_y - 6, ust_etiket[i]))
+        if dondur:
+            p.append('<text class="ax" x="%.1f" y="%d" text-anchor="end" transform="rotate(-55 %.1f %d)" style="font-size:9.5px">%s</text>' % (cx + 3, ust + ih + 12, cx + 3, ust + ih + 12, et))
+        else:
+            p.append('<text class="ax" x="%.1f" y="%d" text-anchor="middle">%s</text>' % (cx, yukseklik - 12, et))
     for s_ in seriler:
         if s_.get("tip", "cizgi") == "cubuk": continue
         e = s_.get("eksen", "sol"); seg = []; yol_ = []
@@ -470,18 +499,33 @@ def kombo2(etiketler, seriler, cap="", genislik=880, yukseklik=300, etiket_goste
             seg.append((sol + bw * i + bw / 2, Y(e, v)))
         if seg: yol_.append(seg)
         das = ' stroke-dasharray="6 4"' if s_.get("tip") == "kesik" else ""
+        k_ = seriler.index(s_)
         for sg in yol_:
-            p.append('<path d="%s" fill="none" stroke="%s" stroke-width="2.4" stroke-linejoin="round"%s/>' % (" ".join(("M" if k == 0 else "L") + "%.1f %.1f" % q for k, q in enumerate(sg)), s_["renk"], das))
-            for q in sg: p.append('<circle cx="%.1f" cy="%.1f" r="3" fill="%s"/>' % (q[0], q[1], s_["renk"]))
+            p.append('<path class="sr" data-k="%d" d="%s" fill="none" stroke="%s" stroke-width="2.4" stroke-linejoin="round"%s/>' % (k_, " ".join(("M" if k == 0 else "L") + "%.1f %.1f" % q for k, q in enumerate(sg)), s_["renk"], das))
+            for q in sg: p.append('<circle class="sr" data-k="%d" cx="%.1f" cy="%.1f" r="3" fill="%s"/>' % (k_, q[0], q[1], s_["renk"]))
+        if s_.get("dl", True):
+            alt_ = s_.get("tip") == "kesik"
+            for i, v in enumerate(s_["deger"]):
+                if v is None: continue
+                p.append('<text class="dl dll" data-k="%d" x="%.1f" y="%.1f" text-anchor="middle" fill="%s">%s</text>' % (k_, sol + bw * i + bw / 2, Y(e, v) + (15 if alt_ else -8), s_["renk"], s_["bicim"](v)))
     nok = []
     for i, et in enumerate(etiketler):
         p.append('<rect class="hz" data-i="%d" x="%.1f" y="%d" width="%.1f" height="%d"/>' % (i, sol + bw * i, ust, bw, ih))
-        nok.append({"b": et, "s": [{"a": s_["ad"], "r": s_["renk"], "v": s_["bicim"](s_["deger"][i]) if s_["deger"][i] is not None else "-"} for s_ in seriler]})
+        nok.append({"b": et, "s": [{"a": s_["ad"], "r": s_["renk"], "v": s_["bicim"](s_["deger"][i]) if s_["deger"][i] is not None else "-"} for s_ in seriler]
+                    + [{"a": a_, "r": "", "v": v_} for a_, v_ in ((ek_satir or [None] * n_)[i] or [])]})
     p.append("</svg>")
+    gz = [k_ for k_, s_ in enumerate(seriler) if s_.get("gizli")]
     lej = '<div class="legend">' + "".join(
-        ('<span class="lg-s"><i class="%s" style="%s"></i>%s</span>' % ("kesik" if s_.get("tip") == "kesik" else ("kare" if s_.get("tip") == "cubuk" else "cizgi"),
-                                                                     ("border-top-color:%s" % s_["renk"]) if s_.get("tip") == "kesik" else ("background:%s" % s_["renk"]), s_["ad"])) for s_ in seriler) + '</div>'
-    return _fig("".join(p), nok, lej, cap)
+        ('<span class="lg-t lg-s%s" data-k="%d" role="button" tabindex="0" aria-pressed="%s"><i class="%s" style="%s"></i>%s</span>' % (
+            " off" if k_ in gz else "", k_, "false" if k_ in gz else "true", "kesik" if s_.get("tip") == "kesik" else ("kare" if s_.get("tip") == "cubuk" else "cizgi"),
+            ("border-top-color:%s" % s_["renk"]) if s_.get("tip") == "kesik" else ("background:%s" % s_["renk"]), s_["ad"])) for k_, s_ in enumerate(seriler)) + '</div>'
+    svg_ = "".join(p)
+    if min_gen: svg_ = svg_.replace('<svg class="chart"', '<svg class="chart genis" style="min-width:%dpx"' % min_gen, 1)
+    if gz:   # baslangicta kapali seriler
+        for k_ in gz: svg_ = svg_.replace('data-k="%d"' % k_, 'data-k="%d" style="display:none"' % k_)
+    fig = _fig(svg_, nok, lej, cap)
+    if gz: fig = fig.replace('"tip": "genel"', '"tip": "genel", "gizli": %s' % json.dumps(gz), 1)
+    return fig
 
 
 def cift(cizgi_html, cubuk_html):
