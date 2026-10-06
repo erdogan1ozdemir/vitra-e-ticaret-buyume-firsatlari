@@ -4,8 +4,8 @@ Mülk: ECZ_EYAP_Online Vitra_TR_GA4_Genel (vitra.com.tr). Aralık 2025'te www.vi
 Aralık 2025 öncesi ve sonrası arasında kıyaslanmaz; satın alma ve gelir (mağaza her iki dönemde de bu mülkteydi) kıyaslanabilir.
 Sayfalar: 11 = genel bakış (aylık, Oca 2025 - Eyl 2026), 4 = kanal (aylık) ve kaynak / ortam (toplam), 7 = ödeme ve teslimat türü,
 9 = blog ve koleksiyon sayfaları, 10 = promosyon ve kupon. Site içi arama (sayfa 3 örneklenmiş olduğu için) ve servis düğmesi tıklaması (sayfa 8 ay sütununda yıl
-taşımadığı için) VitrA ekibinin sonradan ilettiği CSV dışa aktarımlarından okunur. Anahtar olay (key event) sütunları tüm olayları kapsadığından kullanılmaz;
-genel bakıştaki oran satın alma oranıdır.
+taşımadığı için) VitrA ekibinin sonradan ilettiği CSV dışa aktarımlarından okunur. Anahtar olay (key event) satın alma dışında sepete ekleme, ödeme adımları, dosya indirme, favori ve üyelik olaylarını
+da kapsadığından kullanılmaz; genel bakıştaki oran satın alma oranıdır.
 Landing page sayfası (5) belirsiz bir süzgeçle alındığı için (13 ayda 60K oturum, gelir 0, ay sütununda yıl yok) kullanılmamıştır; yerine VitrA ekibinin
 aylık landing page dışa aktarımları kullanılmıştır (landing_2025.csv: 1 Oca - 31 Ara 2025, landing_2026.csv: 1 Oca - 5 Eki 2026). Bu dosyalarda aylık gelir
 genel bakışla birebir aynıdır; sayfa bazındaki oturumların toplamı ise genel bakıştaki oturumdan yüksektir, bu yüzden oturum yalnız pay olarak kullanılır."""
@@ -105,6 +105,7 @@ def lp_tur(p):
     if p0 == "(not set)": return "diger"
     if p0 == "/tr" or p0.startswith("/tr/"): p0 = p0[3:] or "/"
     if p0 in ("/", ""): return "anasayfa"
+    if p0.startswith("/checkout/orderconfirmation"): return "siparis"   # sipariş onay sayfası: oturum satın alma tamamlandıktan sonra başlıyor
     if re.match(r"^/(cart|checkout|login|misafir|register|my-account|sepet|odeme)", p0): return "odeme"
     if p0.startswith(("/search", "/arama")): return "arama"
     if p0.startswith(("/ilham-veren-fikirler", "/blog")): return "blog"
@@ -123,12 +124,15 @@ def lp_oku(ad):
 LP = {2025: lp_oku("landing_2025.csv"), 2026: lp_oku("landing_2026.csv")}
 lt = defaultdict(lambda: defaultdict(lambda: [0, 0.0, 0.0, 0.0]))   # tür -> yıl -> [oturum, gelir, anahtar olay, etkileşimli oturum] · Oca-Eyl
 lp26 = defaultdict(lambda: [0, 0.0, 0.0, 0.0])
-lay = defaultdict(lambda: [0.0, 0.0])                               # ay -> [ödeme adımında başlayan oturumların geliri, toplam gelir]
+lay = defaultdict(lambda: [0.0, 0.0, 0.0])                          # ay -> [sepet, giriş ve ödeme adımında başlayan oturumların geliri, toplam gelir, sipariş onay sayfasında başlayanların geliri]
+sip_no = defaultdict(set)                                           # yıl -> Oca-Eyl'de giriş sayfası olan farklı sipariş onay adresleri (sipariş numarası)
 for y, R in LP.items():
     for r in R:
         m = int(r[1]); t = lp_tur(r[0]); o, g, ke, er = int(r[2]), float(r[7]), float(r[6]), float(r[10])
         lay["%d-%02d" % (y, m)][1] += g
         if t == "odeme": lay["%d-%02d" % (y, m)][0] += g
+        if t == "siparis": lay["%d-%02d" % (y, m)][2] += g
+        if t == "siparis" and m <= 9: sip_no[y].add(r[0].split("?")[0].lower())
         if m > 9: continue
         a = lt[t][y]; a[0] += o; a[1] += g; a[2] += ke; a[3] += o * er
         if y == 2026: b = lp26[r[0]]; b[0] += o; b[1] += g; b[2] += ke; b[3] += o * er
@@ -139,6 +143,32 @@ for y in (2025, 2026):   # gelir genel bakışla birebir olmalıdır
 O["lp_tur"] = {t: {str(y): v for y, v in d.items()} for t, d in lt.items()}
 O["lp_odeme_ay"] = {k: v for k, v in sorted(lay.items()) if k in O["genel"]}
 O["lp_oturum_top"] = {str(y): sum(v[y][0] for v in lt.values()) for y in (2025, 2026)}
+O["lp_siparis_no"] = {str(y): len(v) for y, v in sip_no.items()}
+# sepet ve giriş sayfasında başlayan oturumlar (keşif, 1 Oca - 30 Eyl 2026): yalnız /cart, /login, /my-account (keşif süzgeci tam eşleşme)
+h, R, top = csv_oku("odeme_giris_2026.csv")
+O["odeme_giris"] = {r[0]: {"oturum": int(r[1]), "gelir": float(r[2]), "islem": int(r[3])} for r in R}
+h, R, top = csv_oku("odeme_giris_kaynak_2026.csv")
+kg = defaultdict(float)
+for r in R: kg[r[1]] += float(r[3])
+O["odeme_giris_kaynak"] = dict(sorted(kg.items(), key=lambda x: -x[1]))
+# aynı sayfalarda session_start olayının sayfa yönlendireni (aylık dışa aktarımlar, Oca - Eyl 2026)
+from urllib.parse import urlparse
+ref_tur = defaultdict(int); ref_dis = defaultdict(int)
+for ad in sorted(os.listdir(os.path.join(P, "veri/kaynak/ga4/session_start_ref"))):
+    h, R, top = csv_oku(os.path.join("session_start_ref", ad))
+    for r in R:
+        if r[2] != "session_start": continue
+        u = urlparse(r[1]); c = int(r[5])
+        if u.netloc in ("www.vitra.com.tr", "vitra.com.tr", "online.vitra.com.tr"):
+            pp = u.path.lower()
+            ref_tur["cart" if pp.startswith("/cart") else "checkout" if pp.startswith("/checkout") else "login" if pp.startswith("/login") else "hesap" if pp.startswith("/my-account")
+                    else "urun" if re.search(r"-p-|/p-", pp) else "kategori" if pp.startswith("/c-") else "anasayfa" if pp in ("", "/") else "arama" if pp.startswith("/search") else "diger"] += c
+        else:
+            ref_dis["(boş)" if not r[1] else ("Google" if "google" in u.netloc or "googlequicksearchbox" in r[1] else "diğer dış site")] += c
+O["oturum_yenilenme"] = {"site_ici": dict(ref_tur), "dis": dict(ref_dis)}
+# blog sayfalarında olaylar (keşif, 1 Eyl 2025 - 30 Eyl 2026)
+h, R, top = csv_oku("blog_olaylar_2025-09_2026-09.csv")
+O["blog_olay"] = {r[0]: int(r[1]) for r in R}
 O["lp_2026"] = sorted([[p_, lp_tur(p_)] + v for p_, v in lp26.items() if v[1] > 0 or v[0] >= 5000], key=lambda r: -r[3])[:400]
 json.dump(O, open(os.path.join(P, "veri/islenmis/ga4.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=0)
 if __name__ == "__main__":

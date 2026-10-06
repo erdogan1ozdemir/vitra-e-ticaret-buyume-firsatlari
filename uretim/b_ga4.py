@@ -107,7 +107,7 @@ T_KAYNAK = tablo([th("Kaynak / ortam", "Source / medium", "GA4 oturum kaynağı 
 
 # ---------------------------------------------------------------- 2b · giriş sayfası (landing page)
 LT = G["lp_tur"]; LS = G["lp_oturum_top"]
-LAD = {"odeme": ("Sepet, giriş ve ödeme adımları", "Cart, sign-in and checkout steps"), "anasayfa": ("Ana sayfa", "Home page"), "urun": ("Ürün sayfaları", "Product pages"),
+LAD = {"siparis": ("Sipariş onay sayfası", "Order confirmation page"), "odeme": ("Sepet, giriş ve ödeme adımları", "Cart, sign-in and checkout steps"), "anasayfa": ("Ana sayfa", "Home page"), "urun": ("Ürün sayfaları", "Product pages"),
        "kategori": ("Kategori sayfaları", "Category pages"), "koleksiyon": ("Koleksiyon, seri ve kampanya sayfaları", "Collection, series and campaign pages"),
        "arama": ("Site içi arama sonuçları", "Site search results"), "destek": ("Servis, destek ve satış noktaları", "Service, support and sales points"),
        "kurumsal": ("Kurumsal, proje ve katalog", "Corporate, projects and catalogues"), "blog": ("Blog (İlham Veren Fikirler)", "Blog (İlham Veren Fikirler)"), "diger": ("Diğer ve (not set)", "Other and (not set)")}
@@ -117,7 +117,7 @@ _LSIRA = sorted(LT, key=lambda t: (t == "diger", -_lt(t, 2026, 1)))
 rows_lp = []
 for t in _LSIRA:
     g5, g6, o6 = _lt(t, 2025, 1), _lt(t, 2026, 1), _lt(t, 2026, 0)
-    rows_lp.append([x(*LAD[t]), n(yzd(100 * o6 / LS["2026"])), n(tl(g5) if g5 >= 1000 else "-"), n(tl(g6) if g6 >= 1000 else "-"), n(yz(_deg(g5, g6)) if g5 >= 50000 else "-"),
+    rows_lp.append([x(*LAD[t]), n(yzd(100 * o6 / LS["2026"], 2 if 100 * o6 / LS["2026"] < 0.1 else 1)), n(tl(g5) if g5 >= 1000 else "-"), n(tl(g6) if g6 >= 1000 else "-"), n(yz(_deg(g5, g6)) if g5 >= 50000 else "-"),
                     n(yzd(100 * g6 / _lg26)), n(yzd(100 * _lt(t, 2026, 3) / o6) if o6 else "-")])
 T_LP = tablo([th("Giriş sayfası türü", "Landing page type", "Oturumun başladığı sayfanın türü; eski mağaza (/tr/...) ve yeni site adresleri aynı türlere eşlenmiştir.", "Type of the page where the session started; old shop (/tr/...) and new site addresses are mapped to the same types."),
               th("Oturum payı 2026", "Share of sessions 2026", "Türün Oca-Eyl 2026 landing page raporundaki oturumlar içindeki payı.", "The type's share of sessions in the landing page report, Jan-Sep 2026.", True),
@@ -129,10 +129,10 @@ T_LP = tablo([th("Giriş sayfası türü", "Landing page type", "Oturumun başla
 LO = G["lp_odeme_ay"]; _LOA = [m for m in _AY21 if m in LO]
 G_LP = _kombo2([_ET21[_AY21.index(m)] for m in _LOA],
                [{"ad": x("Toplam gelir", "Total revenue"), "renk": "#C9D3D1", "deger": [LO[m][1] for m in _LOA], "tip": "cubuk", "bicim": _tlk, "eksen_ad": x("Gelir", "Revenue")},
-                {"ad": x("Sepet, giriş ve ödeme adımlarında başlayan oturumların geliri", "Revenue of sessions starting at cart, sign-in and checkout steps"), "renk": "#E85F36", "deger": [LO[m][0] for m in _LOA], "tip": "cubuk", "ortu": True, "bicim": _tlk}],
-               cap=x("Aylık gelir (gri çubuk) ve içinde sepet, giriş ve ödeme sayfalarında başlayan oturumların geliri (turuncu); çubuk üstündeki oran bu oturumların gelir payıdır · Oca 2025 - Eyl 2026",
-                     "Monthly revenue (grey bar) with the revenue of sessions starting on cart, sign-in and checkout pages inside it (orange); the figure above the bar is these sessions' share of revenue · Jan 2025 - Sep 2026"),
-               ust_etiket=[x(yzd(100 * LO[m][0] / LO[m][1]), _pe(100 * LO[m][0] / LO[m][1])) for m in _LOA])
+                {"ad": x("Sipariş onay sayfasında başlayan oturumların geliri", "Revenue of sessions starting on the order confirmation page"), "renk": "#E85F36", "deger": [LO[m][2] for m in _LOA], "tip": "cubuk", "ortu": True, "bicim": _tlk}],
+               cap=x("Aylık gelir (gri çubuk) ve içinde doğrudan sipariş onay sayfasında başlayan oturumların geliri (turuncu); çubuk üstündeki oran bu oturumların gelir payıdır · Oca 2025 - Eyl 2026",
+                     "Monthly revenue (grey bar) with the revenue of sessions starting directly on the order confirmation page inside it (orange); the figure above the bar is these sessions' share of revenue · Jan 2025 - Sep 2026"),
+               ust_etiket=[x(yzd(100 * LO[m][2] / LO[m][1]), _pe(100 * LO[m][2] / LO[m][1])) for m in _LOA])
 LP26 = G["lp_2026"]
 def _lprow(r):
     p_, t, o, g, ke, eo = r
@@ -143,18 +143,32 @@ _LPH = [th("Giriş sayfası", "Landing page", "Oturumun başladığı sayfa; ba�
         th("Gelir payı", "Revenue share", "Oca-Eyl 2026 toplam gelirindeki pay.", "Share of total Jan-Sep 2026 revenue.", True),
         th("Oturum payı", "Share of sessions", "Oca-Eyl 2026 landing page raporundaki oturumlar içindeki pay.", "Share of sessions in the landing page report, Jan-Sep 2026.", True),
         th("Etkileşim oranı", "Engagement rate", "Etkileşimli oturumların oranı (Engagement rate).", "Share of engaged sessions (Engagement rate).", True)]
-_LPG = [r for r in LP26 if r[1] != "odeme"][:15]
-_LPO = sorted([r for r in LP26 if r[1] != "odeme" and r[0] != "(not set)"], key=lambda r: -r[2])[:15]
+_LPG = [r for r in LP26 if r[1] not in ("odeme", "siparis")][:15]
+_LPO = sorted([r for r in LP26 if r[1] not in ("odeme", "siparis") and r[0] != "(not set)"], key=lambda r: -r[2])[:15]
 T_LPS = sekmeler([("Gelire göre ilk 15", "Top 15 by revenue", tablo(_LPH, [_lprow(r) for r in _LPG], "dar xl")),
                   ("Oturuma göre ilk 15", "Top 15 by sessions", tablo(_LPH, [_lprow(r) for r in _LPO], "dar xl"))], "ttabs")
+# sepet ve giriş sayfasında yeniden başlayan oturumlarda önceki sayfa (session_start olayının sayfa yönlendireni, Oca - Eyl 2026)
+OY = G["oturum_yenilenme"]; _oyi, _oyd = OY["site_ici"], OY["dis"]; _oyt = sum(_oyi.values()) + sum(_oyd.values())
+OYAD = [("urun", "Ürün sayfası", "Product page"), ("cart", "Sepet (aynı sayfa yeniden)", "Cart (same page again)"), ("kategori", "Kategori sayfası", "Category page"), ("anasayfa", "Ana sayfa", "Home page"),
+        ("hesap", "Hesabım", "My account"), ("login", "Giriş", "Sign-in"), ("arama", "Site içi arama", "Site search"), ("checkout", "Ödeme adımı", "Checkout step"), ("diger", "Diğer site sayfaları", "Other site pages")]
+OYDAD = [("(boş)", "Yönlendiren yok", "No referrer"), ("Google", "Google", "Google"), ("diğer dış site", "Diğer dış siteler", "Other external sites")]
+rows_oy = [[x("vitra.com.tr · " + b_, "vitra.com.tr · " + c_), cell(_oyi.get(a_, 0)), n(yzd(100 * _oyi.get(a_, 0) / _oyt))] for a_, b_, c_ in OYAD] + \
+          [[x("Dış kaynak · " + b_, "External · " + c_), cell(_oyd.get(a_, 0)), n(yzd(100 * _oyd.get(a_, 0) / _oyt))] for a_, b_, c_ in OYDAD]
+T_OY = tablo([th("Önceki sayfa", "Previous page", "Sepet, giriş ve hesap sayfasında yeni oturum başladığında (session_start) sayfa yönlendireni (Page referrer); vitra.com.tr satırları oturumun site içinde gezinirken yenilendiğini gösterir.", "The page referrer when a new session starts (session_start) on the cart, sign-in and account pages; vitra.com.tr rows show the session restarting while browsing within the site."),
+              th("Yeni oturum", "New sessions", "session_start olay sayısı, 1 Oca - 30 Eyl 2026 (aylık dışa aktarımların toplamı).", "session_start event count, 1 Jan - 30 Sep 2026 (sum of monthly exports).", True),
+              th("Pay", "Share", "Toplam içindeki pay.", "Share of the total.", True)], rows_oy, "dar")
 _qf = next(r for r in LP26 if r[0] == "/v/vitra-quantumflush-i")
 _bl6 = _lt("blog", 2026, 1)
-INS_LP = insight("Ocak - Eylül 2026 gelirinin %s'i sepet, giriş ve ödeme sayfalarında başlayan oturumlarda görünmektedir (2025'in aynı aylarında %s); bu sayfalar oturumların yalnız %s'ini oluşturmaktadır. **Kullanıcı ödeme adımında siteye yeni bir oturumla girmiş sayılmakta ve satın almayı başlatan giriş sayfası bu oturumda görünmemektedir**; örüntü ödeme sırasında banka doğrulaması gibi site dışı bir adımdan dönüşle ya da oturum zaman aşımıyla ilişkilendirilebilir. Kalan gelirde ana sayfa (%s), ürün sayfaları (%s) ve kategori sayfaları (%s) öne çıkmaktadır. QuantumFlush tanıtım sayfası 2026'da giriş sayfası oturumlarının %s'ini almış, gelirin %s'ini getirmiştir; blog yazılarıyla başlayan oturumların geliri %s'dir. Ödeme adımında oturumun neden yenilendiğinin incelenmesi, giriş sayfası ve kanal bazında gelirin eksiksiz okunmasını sağlayabilir."
-                 % (yzd(100 * _lt("odeme", 2026, 1) / _lg26), yzd(100 * _lt("odeme", 2025, 1) / _lg25), yzd(100 * _lt("odeme", 2026, 0) / LS["2026"]), yzd(100 * _lt("anasayfa", 2026, 1) / _lg26), yzd(100 * _lt("urun", 2026, 1) / _lg26), yzd(100 * _lt("kategori", 2026, 1) / _lg26),
-                    yzd(100 * _qf[2] / LS["2026"]), yzd(100 * _qf[3] / _lg26), tl(_bl6)),
-                 "%s of January - September 2026 revenue appears in sessions starting on cart, sign-in and checkout pages (%s in the same months of 2025); these pages account for only %s of sessions. **The user is counted as entering the site with a new session at the payment step, and the landing page that started the purchase does not appear in that session**; the pattern can be associated with returning from an off-site step such as bank verification during payment, or with a session timeout. In the remaining revenue, the home page (%s), product pages (%s) and category pages (%s) stand out. The QuantumFlush promotion page took %s of landing page sessions in 2026 and brought %s of revenue; sessions starting on blog articles produced %s of revenue. Reviewing why the session restarts at the payment step can make it possible to read revenue by landing page and channel in full."
-                 % (yzd(100 * _lt("odeme", 2026, 1) / _lg26), yzd(100 * _lt("odeme", 2025, 1) / _lg25), yzd(100 * _lt("odeme", 2026, 0) / LS["2026"]), yzd(100 * _lt("anasayfa", 2026, 1) / _lg26), yzd(100 * _lt("urun", 2026, 1) / _lg26), yzd(100 * _lt("kategori", 2026, 1) / _lg26),
-                    yzd(100 * _qf[2] / LS["2026"]), yzd(100 * _qf[3] / _lg26), tl(_bl6)), "D45")
+_sp26, _sp25 = 100 * _lt("siparis", 2026, 1) / _lg26, 100 * _lt("siparis", 2025, 1) / _lg25
+_sn26, _sn25 = G["lp_siparis_no"]["2026"], G["lp_siparis_no"]["2025"]
+_oyic = 100 * sum(_oyi.values()) / _oyt; _oyur = 100 * _oyi.get("urun", 0) / _oyt
+_KY = G["odeme_giris_kaynak"]; _kyg = 100 * (_KY.get("google / organic", 0) + _KY.get("google / cpc", 0)) / sum(_KY.values())
+INS_LP = insight("Ocak - Eylül 2026 gelirinin %s'i doğrudan sipariş onay sayfasında başlayan oturumlarda görünmektedir (2025'in aynı aylarında %s); giriş sayfası sipariş onay olan %s farklı sipariş, aynı dönemdeki %s satın almanın %s'ine karşılık gelmektedir. **Satın alma tamamlandığında kullanıcı siteye yeni bir oturumla girmiş sayılmakta ve satın almayı başlatan giriş sayfası bu oturumda görünmemektedir**; sepet, giriş ve ödeme sayfalarında başlayan oturumlar da gelirin %s'ini taşımaktadır. Sepet, giriş ve hesap sayfalarında yeniden başlayan oturumların %s'inde önceki sayfa vitra.com.tr'nin kendi sayfasıdır (%s'inde ürün sayfası): oturum dış bir siteden dönüşte değil, site içinde gezinirken yenilenmektedir. Bu oturumların gelirinin %s'i Google organik ve ücretli aramaya atandığı için kanal kırılımı büyük ölçüde korunmakta, kaybolan bilgi giriş sayfası ve içeriğin katkısı olmaktadır. Kalan gelirde ana sayfa (%s), ürün sayfaları (%s) ve kategori sayfaları (%s) öne çıkmaktadır; QuantumFlush tanıtım sayfası giriş sayfası oturumlarının %s'ini almış, gelirin %s'ini getirmiştir. Ürün sayfasından sepete geçişte ve sipariş onayında oturumun neden yenilendiğinin (çerez ve etiket ayarları) incelenmesi, giriş sayfası bazında gelirin eksiksiz okunmasını sağlayabilir."
+                 % (yzd(_sp26), yzd(_sp25), bin(_sn26), bin(p26), yzd(100 * _sn26 / p26), yzd(100 * _lt("odeme", 2026, 1) / _lg26), yzd(_oyic), yzd(_oyur), yzd(_kyg),
+                    yzd(100 * _lt("anasayfa", 2026, 1) / _lg26), yzd(100 * _lt("urun", 2026, 1) / _lg26), yzd(100 * _lt("kategori", 2026, 1) / _lg26), yzd(100 * _qf[2] / LS["2026"]), yzd(100 * _qf[3] / _lg26)),
+                 "%s of January - September 2026 revenue appears in sessions starting directly on the order confirmation page (%s in the same months of 2025); the %s distinct orders whose landing page is the order confirmation correspond to %s of the %s purchases in the same period. **When the purchase is completed, the user is counted as entering the site with a new session, and the landing page that started the purchase does not appear in that session**; sessions starting on cart, sign-in and checkout pages also carry %s of revenue. In %s of the sessions restarting on the cart, sign-in and account pages the previous page is a vitra.com.tr page (a product page in %s): the session restarts while browsing within the site, not on return from an external site. As %s of these sessions' revenue is attributed to Google organic and paid search, the channel split is largely preserved; what is lost is the contribution of the landing page and the content. In the remaining revenue, the home page (%s), product pages (%s) and category pages (%s) stand out; the QuantumFlush promotion page took %s of landing page sessions and brought %s of revenue. Reviewing why the session restarts on the move from product page to cart and on the order confirmation (cookie and tag settings) can make it possible to read revenue by landing page in full."
+                 % (yzd(_sp26), yzd(_sp25), bin(_sn26), yzd(100 * _sn26 / p26), bin(p26), yzd(100 * _lt("odeme", 2026, 1) / _lg26), yzd(_oyic), yzd(_oyur), yzd(_kyg),
+                    yzd(100 * _lt("anasayfa", 2026, 1) / _lg26), yzd(100 * _lt("urun", 2026, 1) / _lg26), yzd(100 * _lt("kategori", 2026, 1) / _lg26), yzd(100 * _qf[2] / LS["2026"]), yzd(100 * _qf[3] / _lg26)), "D45")
 
 # ---------------------------------------------------------------- 3 · site içi arama
 from site_arama_deg import DEGK as _DEGK, DEG as _DEG
@@ -225,6 +239,7 @@ INS_OLAY = insight("GA4'te satın alma dışındaki talep olaylarından yalnız 
 
 # ---------------------------------------------------------------- 6 · blog ve koleksiyon sayfaları
 BL, KL = G["blog"], G["koleksiyon"]
+BO = G["blog_olay"]   # blog sayfalarında olay sayıları (keşif, 1 Eyl 2025 - 30 Eyl 2026)
 bv = sum(r[1] for r in BL); bu_ = sum(r[2] for r in BL); bk = sum(r[3] or 0 for r in BL)
 rows_b = []
 for p, v, us, ke in sorted(BL, key=lambda r: -r[1])[:15]:
@@ -243,10 +258,10 @@ def _kol(p):
 rows_kl = [[_kol(p), cellk(v)] for p, v, us, ke in sorted(KL, key=lambda r: -r[1])[:8]]
 T_KOL = tablo([th("Koleksiyon ve katalog sayfası", "Collection and catalogue page", "Sayfa adresi; bağlantı canlı sayfaya gider.", "Page address; the link opens the live page."),
                th("Görüntüleme", "Views", "%s sayfa görüntüleme." % D_12[0], "Page views, %s." % D_12[1], True)], rows_kl, "dar")
-INS_BLOG = insight("Blog yazıları (/ilham-veren-fikirler/) %s döneminde %s görüntüleme almıştır; en çok görüntülenen sayfalar blog ana sayfası ve montaj rehberi hub'ıdır. GA4 sayfa raporu blog yazısının satışa katkısını göstermemektedir: blogla başlayan oturumların Ocak - Eylül 2026 geliri %s'dir ve blog okuyan oturumların sonrasında ürün görüntüleme, sepete ekleme ve satın almaya geçişi ayrı bir oturum segmentiyle ölçülebilir. Koleksiyon listesi sayfası (/v-/koleksiyonlar) tek başına %s görüntüleme almıştır."
-                   % (D_12[0], k(bv), tl(_bl6), k(KL[0][1])),
-                   "Blog articles (/ilham-veren-fikirler/) received %s views in %s; the most viewed pages are the blog home page and the installation guide hub. The GA4 page report does not show a blog article's contribution to sales: sessions starting on the blog produced %s of revenue in January - September 2026, and how sessions that read the blog go on to view products, add to cart and purchase can be measured with a separate session segment. The collection list page (/v-/koleksiyonlar) alone received %s views."
-                   % (k(bv).replace(",", "."), D_12[1], tl(_bl6), k(KL[0][1]).replace(",", ".")), "D45", "D2")
+INS_BLOG = insight("Blog yazıları (/ilham-veren-fikirler/) %s döneminde %s görüntüleme almıştır; en çok görüntülenen sayfalar blog ana sayfası ve montaj rehberi hub'ıdır. Blog sayfalarındaki ürün listeleri aynı dönemde %s kez görüntülenmiş (view_item_list), bu listelerden ürüne %s tıklama (select_item) ve doğrudan %s sepete ekleme (add_to_cart) gerçekleşmiştir. Blogla başlayan oturumların Ocak - Eylül 2026 geliri %s'dir; blog okuyan oturumların sonrasında ürün görüntüleme, sepete ekleme ve satın almaya geçişi ayrı bir oturum segmentiyle ölçülebilir. Koleksiyon listesi sayfası (/v-/koleksiyonlar) tek başına %s görüntüleme almıştır."
+                   % (D_12[0], k(bv), k(BO["view_item_list"]), bin(BO["select_item"]), bin(BO["add_to_cart"]), tl(_bl6), k(KL[0][1])),
+                   "Blog articles (/ilham-veren-fikirler/) received %s views in %s; the most viewed pages are the blog home page and the installation guide hub. Product lists on blog pages were viewed %s times in the same period (view_item_list), with %s clicks from these lists to products (select_item) and %s direct add-to-carts (add_to_cart). Sessions starting on the blog produced %s of revenue in January - September 2026; how sessions that read the blog go on to view products, add to cart and purchase can be measured with a separate session segment. The collection list page (/v-/koleksiyonlar) alone received %s views."
+                   % (k(bv).replace(",", "."), D_12[1], k(BO["view_item_list"]), bin(BO["select_item"]), bin(BO["add_to_cart"]), tl(_bl6), k(KL[0][1]).replace(",", ".")), "D45", "D2")
 
 # ---------------------------------------------------------------- 7 · promosyon ve kupon
 PR = [r for r in G["promosyon"] if r["gor"]]
@@ -287,6 +302,7 @@ HTML = """
 %s
 %s
 %s
+%s
 <h3>%s</h3>
 %s
 %s
@@ -314,12 +330,12 @@ HTML = """
  kpi_kart(yzd(100 * _o(_os_, 2026, "gelir") / _tg26), "Organik aramanın gelir payı · Oca-Eyl 2026; 2025'te %s" % yzd(100 * _o(_os_, 2025, "gelir") / _tg25), "Organic search share of revenue · Jan-Sep 2026; %s in 2025" % _pe(100 * _o(_os_, 2025, "gelir") / _tg25)),
  x("Aylık genel görünüm: gelir, satın alma ve oturum", "Monthly overview: revenue, purchases and sessions"), G_AYLIK, T_AYLIK, INS_AYLIK,
  x("Kanal performansı: oturum, satın alma ve gelir", "Channel performance: sessions, purchases and revenue"), G_KANAL, T_KANAL, G_KAY, INS_KANAL, T_KAYNAK,
- x("Giriş sayfası (landing page) türüne göre gelir", "Revenue by landing page type"), T_LP, G_LP, T_LPS, INS_LP,
+ x("Giriş sayfası (landing page) türüne göre gelir", "Revenue by landing page type"), T_LP, G_LP, T_OY, T_LPS, INS_LP,
  x("Site içi arama terimleri", "Site search terms"), T_ARAMA, T_SINIF, INS_ARAMA,
  x("Ödeme ve teslimat adımı", "Payment and shipping step"), T_ODEME, INS_ODEME,
  x("Satın alma dışı talep olayları", "Non-purchase request events"), T_OLAY, INS_OLAY,
  x("Blog ve koleksiyon sayfaları: görüntüleme", "Blog and collection pages: views"), T_BLOG, T_KOL, INS_BLOG,
  x("Promosyon ve kupon", "Promotions and coupons"), T_PROMO, INS_PROMO,
- kaynak("Google Analytics 4, VitrA ekibi dışa aktarımı (05.10.2026): genel bakış Oca 2025 - Eyl 2026, kanal ve kaynak / ortam 2025 ve 1 Oca - 5 Eki 2026; site içi arama 1 May - 30 Eyl 2026, ödeme, teslimat, olay, sayfa ve promosyon 1 Eyl 2025 - 30 Eyl 2026 · Google Search Console, 1 Eki 2025 - 30 Eyl 2026",
-        "Google Analytics 4, VitrA team export (05.10.2026): overview Jan 2025 - Sep 2026, channel and source / medium 2025 and 1 Jan - 5 Oct 2026, site search 1 May - 30 Sep 2026; payment, shipping, events, pages and promotions 1 Sep 2025 - 30 Sep 2026 · Google Search Console, 1 Oct 2025 - 30 Sep 2026", "D45", "D2"),
+ kaynak("Google Analytics 4, VitrA ekibi dışa aktarımı (05.10.2026): genel bakış Oca 2025 - Eyl 2026, kanal ve kaynak / ortam 2025 ve 1 Oca - 5 Eki 2026; site içi arama 1 May - 30 Eyl 2026, sepet ve giriş sayfası oturumları Oca - Eyl 2026, ödeme, teslimat, olay, sayfa ve promosyon 1 Eyl 2025 - 30 Eyl 2026 · Google Search Console, 1 Eki 2025 - 30 Eyl 2026",
+        "Google Analytics 4, VitrA team export (05.10.2026): overview Jan 2025 - Sep 2026, channel and source / medium 2025 and 1 Jan - 5 Oct 2026, site search 1 May - 30 Sep 2026, cart and sign-in page sessions Jan - Sep 2026; payment, shipping, events, pages and promotions 1 Sep 2025 - 30 Sep 2026 · Google Search Console, 1 Oct 2025 - 30 Sep 2026", "D45", "D2"),
 )
