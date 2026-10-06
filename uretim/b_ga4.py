@@ -396,8 +396,8 @@ def _hn():
             if i:
                 o_, o25 = _gc(t_, i), _gc(_h25, i)
                 yon = "" if y_ == 0 else (" up" if o_ > o25 + 0.05 else (" dn" if o_ < o25 - 0.05 else ""))
-                not_tr = "%s / %s geçişi, Oca-Eyl %d%s." % (HAD[i][1], HAD[i - 1][1].lower(), yil, "" if y_ == 0 else "; 2025'te %s" % yzd(o25))
-                not_en = "%s / %s step rate, Jan-Sep %d%s." % (HAD[i][2], HAD[i - 1][2].lower(), yil, "" if y_ == 0 else "; %s in 2025" % yzd(o25))
+                not_tr = "%s adımından %s adımına geçiş, Oca-Eyl %d%s." % (HAD[i - 1][1], HAD[i][1].lower(), yil, "" if y_ == 0 else "; 2025'te %s" % yzd(o25))
+                not_en = "Step rate from %s to %s, Jan-Sep %d%s." % (HAD[i - 1][2].lower(), HAD[i][2].lower(), yil, "" if y_ == 0 else "; %s in 2025" % yzd(o25))
                 x(not_tr, not_en)
                 p_.append('<div class="hn-o hn-a%d hn-y%d%s" tabindex="0" data-t="%s"><b>%s</b><i aria-hidden="true">→</i></div>' % (i, y_, yon, _hh.escape(not_tr, quote=True), yzd(o_)))
             not_tr = "GA4 olay sayısı (Event count), 1 Oca - 30 Eyl %d%s." % (yil, "; Eylül 2026'da bu olayda hatalı tetiklenme bulunmaktadır" if (yil == 2026 and a_ == "add_to_cart") else "")

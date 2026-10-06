@@ -196,7 +196,13 @@ KISA = {"Yıllık banyo yenileme ve yeni konut banyosu tahmini": "Banyo yenileme
         "Çeyreklik satış, fiyat ve karışım": "Çeyreklik satış", "Müşteri profili ve sipariş yapısı": "Müşteri profili", "Rakip perakendeci ve marka mağazaları": "Rakip mağazalar",
         "Alt kesitlerde rakip mağazalar": "Alt kesit rakip mağazalar", "Aynı aramalarda görünen siteler": "Organik rakipler", "Site trafiği ve kanal kırılımı": "Similarweb trafik",
         "Tema bazında VitrA ve en yüksek rakip": "Tema bazında rakip", "Marka arama talebi": "Marka arama talebi", "Video fırsatları": "Video fırsatları"}
-_RANK_BAS = {"serp": ("Alan adı", "Kaynak gösterildiği kelime"), "rakip": ("Alan adı", "Tahmini aylık organik ziyaret")}
+# rapor metninde metrik adları İngilizce (metrik_ad.py); sekme adı eşlemeleri aynı dönüşümle anahtarlanır
+import metrik_ad as _MA
+AD_DUZ = {_MA.donustur(k): _MA.donustur(v) for k, v in AD_DUZ.items()}
+AD_SON = {_MA.donustur(k): _MA.donustur(v) for k, v in AD_SON.items()}
+KISA = {_MA.donustur(k): _MA.donustur(v) for k, v in KISA.items()}
+AD_SON.update({"GA4 · Revenue'ya göre": "GA4 giriş · İlk 15 revenue", "GA4 · Session'a göre": "GA4 giriş · İlk 15 session"})
+_RANK_BAS = {"serp": ("Alan adı", "Kaynak gösterildiği kelime"), "rakip": ("Alan adı", _MA.donustur("Tahmini aylık organik ziyaret"))}
 def _h3_bolge(el, sec):
     h3 = el.find_previous("h3")
     return h3 if h3 is not None and h3.find_parent("section") is sec else None

@@ -22,8 +22,9 @@ SETLER = [
 ]
 
 
+import metrik_ad as _MA   # metrik adları ana raporla aynı biçimde İngilizce; tablo verisi (arama ifadesi, prompt, ürün adı) değişmez
 def T(tr, en):
-    return '<span data-l="tr">%s</span><span data-l="en">%s</span>' % (tr, en)
+    return '<span data-l="tr">%s</span><span data-l="en">%s</span>' % (_MA.donustur(tr), en)
 
 
 def tr_s(v, ond=0):
@@ -215,7 +216,7 @@ def setnav(aktif):
 
 def kolon(k, tr, en, a_tr, a_en, tip="metin", f=False, uz=False, o=0):
     """Tablo sutunu: k anahtar, tip metin|kw|sayi|para|yuzde|link|kat|cev|once; f suzgec; uz genis metin."""
-    return {"k": k, "t": [tr, en], "a": [a_tr, a_en], "tip": tip, "f": 1 if f else 0, "n": 1 if tip in ("sayi", "para", "yuzde", "oran", "once") else 0, "uz": 1 if uz else 0, "o": o}
+    return {"k": k, "t": [_MA.donustur(tr), en], "a": [_MA.donustur(a_tr), a_en], "tip": tip, "f": 1 if f else 0, "n": 1 if tip in ("sayi", "para", "yuzde", "oran", "once") else 0, "uz": 1 if uz else 0, "o": o}
 
 
 def tablo_html(anah):

@@ -659,6 +659,68 @@ document.documentElement.classList.add('js');
     wrap.appendChild(b); wrap.appendChild(pnl); return wrap;
   }
   var IK='<svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="5.5" y="5.5" width="8" height="8" rx="1.5"/><path d="M10.5 5.5V3.5a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2"/></svg>';
+  /* isi haritasi: mevcut isi tablolari (yatay, isi-t, hm) acik gelir, digerlerinde sayisal sutunlar istenirse renklenir.
+     Ayni metrik rapor genelinde ayni renk ailesini alir; degisim sutunlari yesil / kirmizi; sira sutunlarinda kucuk deger koyu.
+     Renk soluk tutulur (en fazla %26), yazi rengi degismez. */
+  var IH='<svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="2.5" width="12" height="11" rx="1.5"/><path d="M2 6.2h12M2 9.8h12M6 2.5v11M10 2.5v11"/><rect x="6.6" y="6.8" width="2.8" height="2.4" fill="currentColor" stroke="none"/><rect x="10.6" y="10.4" width="2.8" height="2.4" fill="currentColor" stroke="none" opacity=".5"/></svg>';
+  var METRIK=[
+    ['deg', /yoy|değişim|degisim|change|fark|\bdiff|artış|growth|büyüme|mom\b|qoq/i],
+    ['sira', /\bsıra|\bsira|position|\brank|konum/i],
+    ['oran', /oran|rate|ctr|\bpay\b|payı|share|%|yüzde|percent/i],
+    ['click', /click|tıklama|tiklama/i],
+    ['imp', /gösterim|impression|görüntül|view/i],
+    ['ses', /oturum|session|ziyaret|visit|trafik|traffic|kullanıcı|user/i],
+    ['gelir', /gelir|revenue|ciro|\btl\b|₺|fiyat|price|tutar|aov|value/i],
+    ['satin', /satın alma|satin alma|purchase|sipariş|siparis|order|satış|satis|sales|transaction|işlem|dönüşüm|conversion/i],
+    ['hacim', /hacim|volume|arama|search|talep|demand|kelime|keyword|query|sorgu/i]
+  ];
+  function metrikTur(t){ for(var i=0;i<METRIK.length;i++) if(METRIK[i][1].test(t)) return METRIK[i][0]; return 'diger'; }
+  function mevcutIsi(tw){ return tw.classList.contains('yatay') || tw.classList.contains('isi-t') || !!tw.querySelector('td.hm, td.yh, td.isi-h, td.isi-a, td.isi-d'); }
+  function isiKur(tw){
+    var tbl=tw.querySelector('table'); if(!tbl||!tbl.tHead||!tbl.tBodies[0]) return false;
+    var ths=[].slice.call(tbl.tHead.rows[0].cells), rows=[].slice.call(tbl.tBodies[0].rows).filter(function(r){
+      if(r.classList.contains('deg')) return false;
+      var c0=r.cells[0]; return !(c0 && /^(toplam|total|genel toplam|grand total|ortalama|average)\b/i.test((c0.innerText||c0.textContent||'').trim()));
+    });
+    var var_=false;
+    ths.forEach(function(th,i){
+      if(i===0) return;
+      var hucre=rows.map(function(r){return r.cells[i];}).filter(Boolean);
+      var dolu=hucre.filter(function(td){var t=metin(td); return t && t!=='-' && t!=='–';});
+      /* ayni sutunda yuzde ve sayi karisiksa (satirlari farkli metrik olan tablolar) yalniz baskin bicimdeki hucreler olceklenir */
+      var yz=dolu.filter(function(td){return /%/.test(metin(td));});
+      if(yz.length && yz.length<dolu.length) dolu=(yz.length*2>=dolu.length)?yz:dolu.filter(function(td){return !/%/.test(metin(td));});
+      if(dolu.length<3) return;
+      var vals=dolu.map(function(td){return sayi(metin(td));});
+      var nums=vals.filter(function(v){return v!==null;});
+      if(nums.length<Math.max(3,dolu.length*0.7)) return;
+      var tur=metrikTur((th.innerText||th.textContent||'')+' '+(th.getAttribute('data-t')||''));
+      var isaretli=dolu.filter(function(td){return /^[+\-−]/.test(metin(td).trim());}).length;
+      if(tur!=='deg' && isaretli>=dolu.length*0.5 && nums.some(function(v){return v<0;})) tur='deg';
+      var lo=Math.min.apply(null,nums), hi=Math.max.apply(null,nums), mx=Math.max(Math.abs(lo),Math.abs(hi));
+      if(hi===lo && tur!=='deg') return;
+      dolu.forEach(function(td,j){
+        var v=vals[j]; if(v===null) return;
+        var renk, a;
+        if(tur==='deg'){ if(!v||!mx) return; renk=v>0?'var(--isi-a)':'var(--isi-d)'; a=0.05+0.21*Math.min(1,Math.abs(v)/mx); }
+        else { var t=(v-lo)/(hi-lo); if(tur==='sira') t=1-t; renk='var(--hm-'+tur+')'; a=0.03+0.23*t; }
+        td.classList.add('jh'); td.style.setProperty('--hc',renk); td.style.setProperty('--ha',a.toFixed(3));
+      });
+      var_=true;
+    });
+    return var_;
+  }
+  function isiDugme(tw){
+    var mevcut=mevcutIsi(tw), kuruldu=false;
+    if(!mevcut){ if(!isiKur(tw)) return null; kuruldu=true; }
+    var b=document.createElement('button'); b.type='button'; b.className='theat';
+    var acik=mevcut;
+    function yaz(){ b.innerHTML=IH+'<span>'+(en()?'Heat map':'Isı haritası')+'</span>'; b.title=en()?(acik?'Hide the heat map colours':'Colour the numeric columns as a heat map'):(acik?'Isı haritası renklerini kapat':'Sayısal sütunları ısı haritası olarak renklendir'); b.setAttribute('aria-pressed',String(acik)); }
+    function uygula(){ if(mevcut) tw.classList.toggle('isi-kapali',!acik); else tw.classList.toggle('isi-js',acik); yaz(); }
+    b.addEventListener('click',function(){ acik=!acik; uygula(); });
+    document.addEventListener('dilchange',yaz);
+    uygula(); return b;
+  }
   [].forEach.call(document.querySelectorAll('.tw'),function(tw){
     var box=document.createElement('div'); box.className='tbox';
     var bar=document.createElement('div'); bar.className='tbar';
@@ -677,6 +739,7 @@ document.documentElement.classList.add('js');
     });
     var kay=tw.previousElementSibling;
     if(kay && kay.classList.contains('tkay')) bar.appendChild(kay);
+    var hb=isiDugme(tw); if(hb) bar.appendChild(hb);
     var sc=sutunlar(tw); if(sc) bar.appendChild(sc);
     bar.appendChild(b); tw.parentNode.insertBefore(box,tw); box.appendChild(bar); box.appendChild(tw);
   });

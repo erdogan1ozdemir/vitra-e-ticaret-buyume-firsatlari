@@ -278,6 +278,17 @@ b.mb{font-weight:650;color:var(--ink)}
 .tcopy{display:inline-flex;align-items:center;gap:5px;font:inherit;font-size:11px;color:var(--muted);background:transparent;border:1px solid var(--line);border-radius:5px;padding:2px 8px;cursor:pointer;line-height:1.4}
 .tcopy:hover,.tcopy:focus-visible{color:var(--ink);border-color:var(--ink-2)}
 .tcopy.ok{color:var(--green);border-color:var(--green)}
+.theat{display:inline-flex;align-items:center;gap:5px;font:inherit;font-size:11px;color:var(--muted);background:transparent;border:1px solid var(--line);border-radius:5px;padding:2px 8px;cursor:pointer;line-height:1.4}
+.theat:hover,.theat:focus-visible{color:var(--ink);border-color:var(--ink-2)}
+.theat[aria-pressed="true"]{color:var(--ink);border-color:var(--ink-2);background:var(--coral-tint)}
+/* isi haritasi: metrik renk aileleri (rapor genelinde ayni metrik ayni renk); acik ve koyu tema */
+:root{--hm-click:#1F7A6B;--hm-imp:#6F63B0;--hm-ses:#3F7FB8;--hm-gelir:#C08A1E;--hm-satin:#E0663A;--hm-hacim:#2E8B9A;--hm-oran:#9A6B3F;--hm-sira:#5E7F7A;--hm-diger:#6E8784}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--hm-click:#5FC2B0;--hm-imp:#A89BEA;--hm-ses:#79B4E8;--hm-gelir:#E6B655;--hm-satin:#FF9A72;--hm-hacim:#6CC9D6;--hm-oran:#D4A578;--hm-sira:#9FC2BC;--hm-diger:#A9C0BC}}
+:root[data-theme="dark"]{--hm-click:#5FC2B0;--hm-imp:#A89BEA;--hm-ses:#79B4E8;--hm-gelir:#E6B655;--hm-satin:#FF9A72;--hm-hacim:#6CC9D6;--hm-oran:#D4A578;--hm-sira:#9FC2BC;--hm-diger:#A9C0BC}
+.tw.isi-js td.jh{background:color-mix(in srgb,var(--hc) calc(var(--ha) * 100%),transparent)}
+.tw.isi-kapali td.yh,.tw.isi-kapali td.isi-h,.tw.isi-kapali td.isi-a,.tw.isi-kapali td.isi-d,.tw.isi-kapali td.hm{background:none!important}
+.tw.isi-kapali td.isi-k{color:inherit;font-weight:inherit}
+@media print{.theat{display:none}}
 .tcolw{position:relative;display:inline-flex}
 .tcol{display:inline-flex;align-items:center;gap:5px;font:inherit;font-size:11px;color:var(--muted);background:transparent;border:1px solid var(--line);border-radius:5px;padding:2px 8px;cursor:pointer;line-height:1.4}
 .tcol:hover,.tcol:focus-visible,.tcol[aria-expanded="true"]{color:var(--ink);border-color:var(--ink-2)}
@@ -506,6 +517,13 @@ x("Açık ve koyu tema arasında geçiş yap", "Switch between light and dark th
 ceviri.EN.update(t2_ortak.EK)
 if t2_ortak._CAKISMA: print("uyarı · farklı çeviri:", t2_ortak._CAKISMA)
 dil.TERIMLER = {t: (GLOSSARY[t], GL_TERM_EN.get(t, t), GL_EN[t]) for t in GLOSSARY}
+# metrik adları rapor genelinde İngilizce (session, impression, click, revenue ...): Türkçe metin ve çeviri sözlüğü aynı dönüşümden geçer
+import metrik_ad
+DOC = metrik_ad.html_donustur(DOC)
+_en2, _mc = metrik_ad.sozluk_donustur(ceviri.EN); ceviri.EN.clear(); ceviri.EN.update(_en2)
+_bs2, _ = metrik_ad.sozluk_donustur(t2_ortak.BOSLUK); t2_ortak.BOSLUK.clear(); t2_ortak.BOSLUK.update(_bs2)
+dil.TERIMLER = {metrik_ad.donustur(t): (metrik_ad.donustur(v[0]), v[1], v[2]) for t, v in dil.TERIMLER.items()}
+if _mc: print("uyarı · metrik adı dönüşümünde farklı çeviri:", len(_mc), _mc[:5])
 DOC, _n, _de = dil.uygula(DOC, "VitrA Turkey | E-Commerce Growth Opportunities")
 yol = os.path.join(veri.KOK, AD + ".html")
 DOC, _ekd = ortak.yuzde_ek_duzelt(DOC)   # %X,Y'ek: ek, okunan son sayiya gore

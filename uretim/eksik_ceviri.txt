@@ -1,12 +1,1 @@
-add_
-begin_
-cart
-checkout
-info
-item
-item_
-list
-payment_
-shipping_
-to_
-view_
+Satın alma
