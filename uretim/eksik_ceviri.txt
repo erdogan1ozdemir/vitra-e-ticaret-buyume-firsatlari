@@ -1,17 +1,12 @@
-- → 13,0
-- → 3,8
-- → 5,3
-- → 5,5
-- → 5,9
-- → 6,3
-- → 6,8
-- → 7,6
-- → 8,2
-- → 8,9
-- → 9,3
-Blog (71)
-Diğer (87)
-Kategori (144)
-Koleksiyon (96)
-Tümü (703)
-Ürün (305)
+add_
+begin_
+cart
+checkout
+info
+item
+item_
+list
+payment_
+shipping_
+to_
+view_

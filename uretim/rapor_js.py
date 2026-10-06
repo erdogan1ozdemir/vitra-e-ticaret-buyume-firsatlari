@@ -159,9 +159,9 @@ document.documentElement.classList.add('js');
   });
 
   /* karolar (KPI ve metrik kartlari): neyi olctugu, birimi, donemi ve kaynagi */
-  [].forEach.call(document.querySelectorAll('.kpi[data-t], .metric[data-t]'),function(kr){
+  [].forEach.call(document.querySelectorAll('.kpi[data-t], .metric[data-t], .hn-k[data-t], .hn-o[data-t]'),function(kr){
     function ac(){
-      var r=kr.getBoundingClientRect(), bas=kr.querySelector('.k, .mk');
+      var r=kr.getBoundingClientRect(), bas=kr.querySelector('.k, .mk, .hn-a');
       goster('<span class="tt-b">'+kac(bas?bas.textContent.trim():'')+'</span>'+kac(kr.getAttribute('data-t')), r.left+r.width/2, r.top);
     }
     kr.addEventListener('mouseenter',ac); kr.addEventListener('focus',ac);

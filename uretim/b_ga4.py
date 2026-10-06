@@ -383,6 +383,33 @@ T_HUNI = tablo([th("Huni adımı", "Funnel step", "GA4 e-ticaret olayı; adımla
                 th("Oca-Eyl 2026", "Jan-Sep 2026", "Aylık olay sayısının (Event count) Ocak - Eylül 2026 toplamı; Eylül 2026'da sepete ekleme olayında hatalı tetiklenme bulunmaktadır.", "January - September 2026 total of the monthly event count; the add-to-cart event fired erroneously in September 2026.", True),
                 th("Geçiş 2025", "Step rate 2025", "Olay sayısının bir önceki adıma oranı, Oca-Eyl 2025.", "The step value as a share of the previous step, Jan-Sep 2025.", True),
                 th("Geçiş 2026", "Step rate 2026", "Olay sayısının bir önceki adıma oranı, Oca-Eyl 2026.", "The step value as a share of the previous step, Jan-Sep 2026.", True)], rows_h, "dar")
+# huni görseli: adım kartları ve aralarında geçiş oranı (masaüstünde yatay, dar ekranda dikey); 2026 oranı 2025'e göre renklenir
+import html as _hh
+def _hn():
+    p_ = ['<div class="hn-g">']
+    for y_, (yl_tr, yl_en) in enumerate((("Oca-Eyl 2025", "Jan-Sep 2025"), ("Oca-Eyl 2026", "Jan-Sep 2026"))):
+        p_.append('<div class="hn-y hn-y%d"><i></i>%s</div>' % (y_, x(yl_tr, yl_en)))
+    for i, (a_, b_, c_) in enumerate(HAD):
+        x(a_, a_)
+        for _pc in a_.replace("_", "_\n").split("\n"): x(_pc, _pc)   # <wbr> olay adini metin parcalarina boler; parcalar iki dilde aynidir
+        for y_, (yil, t_) in enumerate(((2025, _h25), (2026, _h26))):
+            if i:
+                o_, o25 = _gc(t_, i), _gc(_h25, i)
+                yon = "" if y_ == 0 else (" up" if o_ > o25 + 0.05 else (" dn" if o_ < o25 - 0.05 else ""))
+                not_tr = "%s / %s geçişi, Oca-Eyl %d%s." % (HAD[i][1], HAD[i - 1][1].lower(), yil, "" if y_ == 0 else "; 2025'te %s" % yzd(o25))
+                not_en = "%s / %s step rate, Jan-Sep %d%s." % (HAD[i][2], HAD[i - 1][2].lower(), yil, "" if y_ == 0 else "; %s in 2025" % yzd(o25))
+                x(not_tr, not_en)
+                p_.append('<div class="hn-o hn-a%d hn-y%d%s" tabindex="0" data-t="%s"><b>%s</b><i aria-hidden="true">→</i></div>' % (i, y_, yon, _hh.escape(not_tr, quote=True), yzd(o_)))
+            not_tr = "GA4 olay sayısı (Event count), 1 Oca - 30 Eyl %d%s." % (yil, "; Eylül 2026'da bu olayda hatalı tetiklenme bulunmaktadır" if (yil == 2026 and a_ == "add_to_cart") else "")
+            not_en = "GA4 event count, 1 Jan - 30 Sep %d%s." % (yil, "; the event fired erroneously in September 2026" if (yil == 2026 and a_ == "add_to_cart") else "")
+            x(not_tr, not_en)
+            p_.append('<div class="hn-k hn-a%d hn-y%d" tabindex="0" data-t="%s"><span class="hn-a">%s</span><b>%s</b><small>%s</small></div>'
+                      % (i, y_, _hh.escape(not_tr, quote=True), x(b_, {"Satın alma": "Purchases"}.get(b_, c_)), bin(t_[i]), a_.replace("_", "_<wbr>")))
+    p_.append("</div>")
+    cap = x("Satın alma hunisi · GA4 olay sayısı, Oca - Eyl 2025 (koyu) ve 2026 (turuncu); oklardaki oran bir önceki adıma geçiştir, 2026 oranı 2025'ten yüksekse yeşil, düşükse kırmızıdır",
+            "Purchase funnel · GA4 event count, Jan - Sep 2025 (dark) and 2026 (orange); the rate on each arrow is the step rate from the previous step, the 2026 rate is green when higher than 2025 and red when lower")
+    return '<figure class="fig hn"><figcaption class="figcap">%s</figcaption>%s</figure>' % (cap, "".join(p_))
+V_HUNI = _hn()
 INS_HUNI = insight("Ocak - Eylül 2026'da sepete eklemeden ödemeye başlamaya geçiş oranı %s'e inmiştir (2025'in aynı aylarında %s); Sepete ekleme olayının hatalı tetiklendiği Eylül 2026 hariç tutulduğunda da oran %s'dir. Ödemeye başlayanların teslimat bilgisine ilerleme oranı ise %s'den %s'e, ödeme bilgisinden satın almaya geçiş %s'ten %s'e yükselmiştir. **Kayıp ödeme adımında değil, sepet ile ödemeye başlama arasında yoğunlaşmaktadır**; bu, sepet sonrasındaki giriş ve üyelik ekranlarıyla (Bölüm [[b:yolculuk]]) ilişkilendirilebilir."
                    % (yzd(_gc(_h26, 3)), yzd(_gc(_h25, 3)), yzd(_gc(_h26a, 3)), yzd(_gc(_h25, 4)), yzd(_gc(_h26, 4)), yzd(_gc(_h25, 6)), yzd(_gc(_h26, 6))),
                    "In January - September 2026, the rate from add to cart to begin checkout fell to %s (%s in the same months of 2025); it is %s when September 2026, when the add-to-cart event fired erroneously, is excluded. The rate from begin checkout to shipping info rose from %s to %s, and from payment info to purchase from %s to %s. **The loss is concentrated between the cart and beginning checkout, not in the payment step**; this can be associated with the sign-in and account screens after the cart (Section [[b:yolculuk]])."
@@ -453,7 +480,7 @@ HTML = "\n".join([
  '<p class="lede">%s</p>' % x("Google Analytics 4 (GA4) verisi, vitra.com.tr'nin oturum, satın alma ve gelir performansını kanal, site içi arama, ödeme adımı, içerik ve promosyon kırılımında göstermektedir. Veri VitrA ekibinin GA4 dışa aktarımından alınmıştır (05.10.2026); tabloların dönemleri başlık ve sütun açıklamalarında verilmiştir. Aralık 2025'te www.vitra.com.tr trafiği aynı GA4 mülküne katıldığı için oturum ve oturum başına dönüşüm oranı Aralık öncesi ve sonrası arasında kıyaslanmaz; satın alma ve gelir iki dönemde de kıyaslanabilir.", "Google Analytics 4 (GA4) data shows vitra.com.tr's sessions, purchases and revenue by channel, site search, payment step, content and promotion. The data comes from the VitrA team's GA4 export (05.10.2026); each table's period is given in its heading and column descriptions. As www.vitra.com.tr traffic joined the same GA4 property in December 2025, sessions and the conversion rate per session are not compared before and after December; purchases and revenue are comparable in both periods."),
  '<div class="kpis">%s%s%s%s</div>' % (kpi_kart(tl(r26), "E-ticaret geliri · Oca-Eyl 2026; Oca-Eyl 2025'e göre %s" % _isr(_deg(r25, r26)), "E-commerce revenue · Jan-Sep 2026; %s against Jan-Sep 2025" % _isr_en(_deg(r25, r26))), kpi_kart(bin(p26), "E-ticaret satın alma · Oca-Eyl 2026; Oca-Eyl 2025'e göre %s" % _isr(_deg(p25, p26)), "E-commerce purchases · Jan-Sep 2026; %s against Jan-Sep 2025" % _isr_en(_deg(p25, p26))), kpi_kart(tl(aov26), "Ortalama sipariş tutarı · Oca-Eyl 2026; 2025'te %s" % tl(aov25), "Average order value · Jan-Sep 2026; %s in 2025" % tl(aov25)), kpi_kart(yzd(100 * _o(_os_, 2026, "gelir") / _tg26), "Organik aramanın gelir payı · Oca-Eyl 2026; 2025'te %s" % yzd(100 * _o(_os_, 2025, "gelir") / _tg25), "Organic search share of revenue · Jan-Sep 2026; %s in 2025" % _pe(100 * _o(_os_, 2025, "gelir") / _tg25))),
  _blok("Aylık genel görünüm: gelir, satın alma ve oturum", "Monthly overview: revenue, purchases and sessions", G_AYLIK, T_AYLIK, INS_AYLIK),
- _blok("Satın alma hunisi: ürün listesinden satın almaya", "Purchase funnel: from product list to purchase", T_HUNI, INS_HUNI),
+ _blok("Satın alma hunisi: ürün listesinden satın almaya", "Purchase funnel: from product list to purchase", V_HUNI, T_HUNI, INS_HUNI),
  _blok("Kanal performansı: oturum, satın alma ve gelir", "Channel performance: sessions, purchases and revenue", G_KANAL, T_KANAL, G_KAY, INS_KANAL, T_KAYNAK),
  _blok("Giriş sayfası (landing page) türüne göre gelir", "Revenue by landing page type", T_LP, G_LP, T_OY, T_LPS, INS_LP, T_SR, T_SK, INS_SO),
  _blok("Ürün ve kategori performansı", "Item and category performance", T_UK, T_UURN, INS_UK),
