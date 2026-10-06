@@ -77,10 +77,10 @@ O["arama"] = sorted([[q] + v for q, v in ara.items()], key=lambda r: -r[1])
 O["arama_donem"] = ara_don
 O["arama_ornek8"] = round(sum(1 for q, v in ara.items() if v[0] % 8 == 0) / len(ara), 3)
 # ------------------------------------------------------------------ ödeme ve teslimat türü
-R = satirlar("7 - Tablo 1 ve 2"); od = []; kg = []
-for r in R:
-    if r and r[0] == "add_payment_info" and r[1]: od.append((r[1], sayi(r[2])))
-    if r and r[0] == "add_shipping_info" and r[1]: kg.append((r[1], sayi(r[2])))
+od = []; kg = []   # son 12 ay (1 Eki 2025 - 30 Eyl 2026), VitrA ekibi dışa aktarımı 06.10.2026
+for ad, liste in (("odeme_turu_2025-10_2026-09.csv", od), ("teslimat_turu_2025-10_2026-09.csv", kg)):
+    h, R, _ = csv_oku(ad)
+    for r in R: liste.append((r[1], int(r[2])))
 O["odeme"] = od; O["teslimat"] = kg
 # ------------------------------------------------------------------ satın alma dışı olaylar (yıl içeren dışa aktarım, 1 Eyl 2025 - 30 Eyl 2026; yalnız servisler ve satış noktaları düğme tıklaması)
 ld = defaultdict(dict)
@@ -92,6 +92,18 @@ O["olay"] = {k: dict(sorted(v.items())) for k, v in ld.items()}
 O["blog"] = [[r[0], sayi(r[1]), sayi(r[2]), sayi(r[3])] for r in satirlar("9 - Tablo 1 ve Blog") if r and r[0] and str(r[0]).startswith("/")]
 O["koleksiyon"] = [[r[0], sayi(r[1]), sayi(r[2]), sayi(r[3])] for r in satirlar("9 - Koleksiyon") if r and r[0] and str(r[0]).startswith("/")]
 # ------------------------------------------------------------------ promosyon ve kupon
+def _pad(t):
+    t = str(t).replace("\u200b", "").strip()
+    if "Ã" in t:
+        try: t = t.encode("latin-1").decode("utf-8")
+        except Exception: pass
+    return " ".join(t.split())
+pa = defaultdict(lambda: [0, 0])
+for ad in sorted(os.listdir(os.path.join(P, "veri/kaynak/ga4/promosyon_aylik"))):
+    h, R, _ = csv_oku(os.path.join("promosyon_aylik", ad))
+    for r in R:
+        a = pa[_pad(r[0])]; a[0] += int(r[2]); a[1] += int(r[3])
+O["promosyon_12ay"] = sorted([[k, v[0], v[1]] for k, v in pa.items()], key=lambda x: -x[1])
 O["promosyon"] = [{"ad": r[0], "kupon": r[1], "gor": sayi(r[2]), "tik": sayi(r[3]), "sepet": sayi(r[5]), "odeme": sayi(r[6]), "satin": sayi(r[7]), "gelir": sayi(r[8])}
                   for r in tablo("10 - Promotion", "Item promotion name")]
 # ------------------------------------------------------------------ giriş sayfası (landing page) · aylık dışa aktarımlar
@@ -169,6 +181,12 @@ O["oturum_yenilenme"] = {"site_ici": dict(ref_tur), "dis": dict(ref_dis)}
 # blog sayfalarında olaylar (keşif, 1 Eyl 2025 - 30 Eyl 2026)
 h, R, top = csv_oku("blog_olaylar_2025-09_2026-09.csv")
 O["blog_olay"] = {r[0]: int(r[1]) for r in R}
+h, R, top = csv_oku("blog_oturum_kanal_2025-10_2026-09.csv")
+bk = defaultdict(int); bl = defaultdict(int)
+for r in R:
+    o = int(r[h.index("Sessions")]); bk[r[h.index("Session default channel group")]] += o
+    p_ = r[h.index("Landing page")].split("?")[0]; bl["blog" if p_.startswith("/ilham-veren-fikirler") else "diger"] += o
+O["blog_kanal"] = dict(sorted(bk.items(), key=lambda x: -x[1])); O["blog_giris"] = dict(bl); O["blog_oturum_top"] = int(top[h.index("Sessions")])
 O["lp_2026"] = sorted([[p_, lp_tur(p_)] + v for p_, v in lp26.items() if v[1] > 0 or v[0] >= 5000], key=lambda r: -r[3])[:400]
 # ------------------------------------------------------------------ satın alma hunisi, alıcı tipi, yeni ve geri dönen kullanıcı (VitrA ekibi, 06.10.2026)
 _hw = openpyxl.load_workbook(os.path.join(P, "veri/kaynak/ga4/huni_alici_yeni_donen.xlsx"), read_only=True, data_only=True)
@@ -185,7 +203,8 @@ O["yeni_donen"] = dict(sorted(yd.items()))
 _iw = openpyxl.load_workbook(os.path.join(P, "veri/kaynak/ga4/urun_performansi_2025-01_2026-09.xlsx"), read_only=True, data_only=True)
 _it = _iw.worksheets[0].iter_rows(values_only=True); _h = next(_it)
 def _n(v): return v if isinstance(v, (int, float)) else 0
-kat_u = defaultdict(lambda: defaultdict(lambda: [0, 0, 0, 0.0]))      # yıl -> ana kategori -> [görüntülenen, ödemeye geçen, satın alınan, ürün geliri] · Oca-Eyl
+kat_u = defaultdict(lambda: defaultdict(lambda: [0, 0, 0, 0.0, 0, 0]))   # yıl -> ana kategori -> [görüntülenen, ödemeye geçen, satın alınan, ürün geliri, sepete eklenen (Oca-Ağu), görüntülenen (Oca-Ağu)] · Oca-Eyl
+SEPET_HATALI = {"7910B476-0090", "121-003-909", "ETIC_MTJ(KUCUK)", "ETIC_MTJ(BUYUK)", "ETIC_MTJ(ARMATUR)"}   # VitrA ekibi: sepete eklenen adet hatalı (06.10.2026)
 urn = defaultdict(lambda: [None, None, None, 0, 0, 0.0])               # 2026 Oca-Eyl: ürün kodu -> [ad, kategori, marka, görüntülenen, satın alınan, ürün geliri]
 mrk = defaultdict(lambda: defaultdict(float))
 for r in _it:
@@ -194,6 +213,7 @@ for r in _it:
     ana = c2 if c1 == "Banyo" and c2 else c1   # 2026 ağacında ana kategori ikinci seviyede
     v, co, pu, rv = _n(r[7]), _n(r[10]), _n(r[11]), _n(r[13])
     a = kat_u[y][ana or "(boş)"]; a[0] += v; a[1] += co; a[2] += pu; a[3] += rv
+    if int(str(r[0])[5:7]) <= 8 and str(r[1]) not in SEPET_HATALI: a[4] += _n(r[8]); a[5] += v   # Eylül 2026 add_to_cart hatalı tetiklenme nedeniyle dışarıda
     mrk[y][r[6] or "(boş)"] += rv
     if y == "2026":
         b = urn[str(r[1])]; b[0] = b[0] or r[2]; b[1] = b[1] or ana; b[2] = b[2] or r[6]; b[3] += v; b[4] += pu; b[5] += rv

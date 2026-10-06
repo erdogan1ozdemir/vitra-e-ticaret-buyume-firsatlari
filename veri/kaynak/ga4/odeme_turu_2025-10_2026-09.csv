@@ -1,0 +1,13 @@
+# ----------------------------------------
+# ECZ_EYAP_Online Vitra_TR_GA4_Genel_288016049
+# Copy of Free form-Add payment
+# 20251001-20260930
+# ----------------------------------------
+
+Event name,Payment Type,Event count
+,,6256,Grand total
+add_payment_info,Kredi Kartı / Banka Kartı,4286
+add_payment_info,(not set),1762
+add_payment_info,EFT / Havale,104
+add_payment_info,İyzico İle Öde,104
+

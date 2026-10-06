@@ -1,0 +1,12 @@
+# ----------------------------------------
+# ECZ_EYAP_Online Vitra_TR_GA4_Genel_288016049
+# Copy of Free form-Add shipping
+# 20251001-20260930
+# ----------------------------------------
+
+Event name,Shipping tier,Event count
+,,6026,Grand total
+add_shipping_info,(not set),3301
+add_shipping_info,standard-net,1503
+add_shipping_info,Kargo ile Teslimat,1222
+
