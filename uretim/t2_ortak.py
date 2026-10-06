@@ -15,11 +15,22 @@ _BINLIK = _re.compile(r'(?<![\d,])\d{1,3}(?:\.\d{3})+(?![\d.])')
 
 _FIIL_EKSI = _re.compile(r"\b(contracted|fell|declined|dropped|decreased|shrank|down|lost|a contraction of|a decline of|a drop of)( (?:<[^>]+>)*)[-−](?=\d)")
 _FIIL_ARTI = _re.compile(r"\b(grew|rose|increased|climbed|gained|up|only|growth of|an increase of|a rise of)( (?:<[^>]+>)*)\+(?=\d)")
+_SAYI_PARCA = _re.compile(r'(?<![\w.,])\d[\d.,]*\d(?!\d)')
+_TR_SAYI = _re.compile(r'\d{1,3}(?:\.\d{3})+(?:,\d+)?|\d+,\d+')
+_EN_BINLIK = _re.compile(r'[1-9]\d{0,2}(?:,\d{3})+(?:\.\d+)?')
+def sayi_tok(t, en_koru=False):
+    """Sayiyi tek parca olarak cevirir: Turkce binlik nokta / ondalik virgul -> Ingilizce binlik virgul / ondalik nokta (1.545,7 -> 1,545.7).
+    en_koru: Ingilizce metinde zaten Ingilizce binlik bicimindeki sayi (25,760) korunur. Tarih ve surum gibi kaliba uymayan diziler degismez."""
+    def _c(m):
+        s_ = m.group(0)
+        if en_koru and _EN_BINLIK.fullmatch(s_): return s_
+        if _TR_SAYI.fullmatch(s_): return s_.replace(".", "\0").replace(",", ".").replace("\0", ",")
+        return s_
+    return _SAYI_PARCA.sub(_c, t)
 def _sayi_en(t):
     t = _YUZDE.sub(lambda m: (m.group(1) or "") + m.group(2) + "%", t)
     t = _FIIL_EKSI.sub(r"\1\2", t); t = _FIIL_ARTI.sub(r"\1\2", t)
-    t = _ONDALIK.sub(".", t)
-    return _BINLIK.sub(lambda m: m.group(0).replace(".", ","), t)
+    return sayi_tok(t, en_koru=True)
 
 
 def sayi(v):

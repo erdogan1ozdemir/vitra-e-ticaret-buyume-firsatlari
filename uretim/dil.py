@@ -43,9 +43,7 @@ def sayi_en(t):
         return m.group(1) + _ek(int(m.group(1)))
     t = _ARALIK.sub(lambda m: (m.group(1) or "") + m.group(2) + "-" + m.group(3) + "%", t)
     t = _YUZDE.sub(lambda m: (m.group(1) or "") + m.group(2) + "%", t)
-    t = _ONDALIK.sub(".", t)
-    t = _BINLIK.sub(lambda m: m.group(0).replace(".", ","), t)
-    return t
+    return t2_ortak.sayi_tok(t, en_koru=True)   # 25,760 gibi Ingilizce binlikli diziler eski davranistaki gibi korunur
 
 
 # ------------------------------------------------------------------ Almanca

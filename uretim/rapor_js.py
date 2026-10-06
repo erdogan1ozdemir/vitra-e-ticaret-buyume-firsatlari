@@ -75,9 +75,15 @@ document.documentElement.classList.add('js');
   document.body.appendChild(tt);
   function kac(t){return String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
   function ingilizce(){return document.documentElement.getAttribute('data-dil')==='en';}
+  /* balon sayilari: binlik ayraci yalniz tam sayi kismina uygulanir; kurus ve kesirler yuvarlanir (100 ve uzeri tam sayi, 1-100 bir, 1'in alti iki ondalik) */
   function say(n){
-    if(n===null||n===undefined) return '-';
-    return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ingilizce() ? ',' : '.');
+    if(n===null||n===undefined||n==='') return '-';
+    var v=Number(n); if(typeof n==='string' && isNaN(v)) return n;
+    var en=ingilizce(), a=Math.abs(v), ond=(v===Math.round(v)||a>=100)?0:(a>=1?1:2);
+    var p=v.toFixed(ond).split('.');
+    p[0]=p[0].replace(/\B(?=(\d{3})+(?!\d))/g, en?',':'.');
+    if(p.length>1) p[1]=p[1].replace(/0+$/,'');
+    return (p.length>1 && p[1]) ? p[0]+(en?'.':',')+p[1] : p[0];
   }
   function goster(icerik,x,y){
     tt.innerHTML=icerik; tt.hidden=false; tt.style.left='0px'; tt.style.top='0px';
