@@ -115619,5 +115619,5977 @@
 1.0,
 1.0
 ]
+],
+"huni": {
+"2025-01": [
+39968.0,
+31411.0,
+1652.0,
+398.0,
+205.0,
+141.0,
+125.0
+],
+"2025-02": [
+53113.0,
+43485.0,
+2327.0,
+577.0,
+342.0,
+250.0,
+214.0
+],
+"2025-03": [
+57856.0,
+47464.0,
+2294.0,
+433.0,
+274.0,
+188.0,
+169.0
+],
+"2025-04": [
+88857.0,
+62736.0,
+2900.0,
+656.0,
+398.0,
+287.0,
+256.0
+],
+"2025-05": [
+85239.0,
+63906.0,
+2511.0,
+433.0,
+241.0,
+147.0,
+131.0
+],
+"2025-06": [
+69394.0,
+46923.0,
+1768.0,
+376.0,
+182.0,
+132.0,
+108.0
+],
+"2025-07": [
+85277.0,
+56237.0,
+2289.0,
+427.0,
+274.0,
+188.0,
+171.0
+],
+"2025-08": [
+89399.0,
+55886.0,
+2650.0,
+454.0,
+275.0,
+195.0,
+168.0
+],
+"2025-09": [
+87505.0,
+62241.0,
+2466.0,
+483.0,
+299.0,
+226.0,
+206.0
+],
+"2025-10": [
+94420.0,
+81462.0,
+3622.0,
+620.0,
+392.0,
+294.0,
+263.0
+],
+"2025-11": [
+93377.0,
+91327.0,
+4416.0,
+718.0,
+411.0,
+323.0,
+292.0
+],
+"2025-12": [
+160493.0,
+147776.0,
+2452.0,
+267.0,
+271.0,
+168.0,
+146.0
+],
+"2026-01": [
+154125.0,
+136874.0,
+2097.0,
+268.0,
+243.0,
+153.0,
+143.0
+],
+"2026-02": [
+143874.0,
+120771.0,
+2682.0,
+279.0,
+264.0,
+178.0,
+166.0
+],
+"2026-03": [
+180010.0,
+144550.0,
+4393.0,
+356.0,
+296.0,
+187.0,
+175.0
+],
+"2026-04": [
+178518.0,
+148506.0,
+4046.0,
+454.0,
+454.0,
+299.0,
+293.0
+],
+"2026-05": [
+151639.0,
+135314.0,
+3564.0,
+331.0,
+364.0,
+247.0,
+201.0
+],
+"2026-06": [
+204473.0,
+167690.0,
+5912.0,
+529.0,
+480.0,
+328.0,
+308.0
+],
+"2026-07": [
+192560.0,
+188185.0,
+5211.0,
+557.0,
+405.0,
+397.0,
+369.0
+],
+"2026-08": [
+168884.0,
+149295.0,
+4124.0,
+481.0,
+363.0,
+348.0,
+317.0
+],
+"2026-09": [
+283799.0,
+268999.0,
+9305.0,
+721.0,
+472.0,
+462.0,
+397.0
 ]
+},
+"alici": {
+"2025-01": {
+"toplam": 115.0,
+"ilk": 87.0,
+"satin": 127.0
+},
+"2025-02": {
+"toplam": 189.0,
+"ilk": 146.0,
+"satin": 223.0
+},
+"2025-03": {
+"toplam": 155.0,
+"ilk": 118.0,
+"satin": 173.0
+},
+"2025-04": {
+"toplam": 227.0,
+"ilk": 182.0,
+"satin": 265.0
+},
+"2025-05": {
+"toplam": 117.0,
+"ilk": 86.0,
+"satin": 135.0
+},
+"2025-06": {
+"toplam": 101.0,
+"ilk": 84.0,
+"satin": 109.0
+},
+"2025-07": {
+"toplam": 162.0,
+"ilk": 126.0,
+"satin": 174.0
+},
+"2025-08": {
+"toplam": 156.0,
+"ilk": 128.0,
+"satin": 181.0
+},
+"2025-09": {
+"toplam": 184.0,
+"ilk": 148.0,
+"satin": 217.0
+},
+"2025-10": {
+"toplam": 240.0,
+"ilk": 203.0,
+"satin": 270.0
+},
+"2025-11": {
+"toplam": 254.0,
+"ilk": 220.0,
+"satin": 312.0
+},
+"2025-12": {
+"toplam": 117.0,
+"ilk": 77.0,
+"satin": 151.0
+},
+"2026-01": {
+"toplam": 118.0,
+"ilk": 75.0,
+"satin": 145.0
+},
+"2026-02": {
+"toplam": 142.0,
+"ilk": 96.0,
+"satin": 169.0
+},
+"2026-03": {
+"toplam": 144.0,
+"ilk": 94.0,
+"satin": 188.0
+},
+"2026-04": {
+"toplam": 225.0,
+"ilk": 141.0,
+"satin": 302.0
+},
+"2026-05": {
+"toplam": 164.0,
+"ilk": 95.0,
+"satin": 218.0
+},
+"2026-06": {
+"toplam": 270.0,
+"ilk": 165.0,
+"satin": 334.0
+},
+"2026-07": {
+"toplam": 297.0,
+"ilk": 159.0,
+"satin": 388.0
+},
+"2026-08": {
+"toplam": 247.0,
+"ilk": 113.0,
+"satin": 322.0
+},
+"2026-09": {
+"toplam": 338.0,
+"ilk": 197.0,
+"satin": 407.0
+}
+},
+"yeni_donen": {
+"2025-01": {
+"new": {
+"oturum": 42121.0,
+"islem": 67.0,
+"gelir": 399762.4599
+},
+"(not set)": {
+"oturum": 22560.0,
+"islem": 45.0,
+"gelir": 372571.45
+},
+"returning": {
+"oturum": 19055.0,
+"islem": 15.0,
+"gelir": 189600.35
+}
+},
+"2025-02": {
+"new": {
+"oturum": 54236.0,
+"islem": 118.0,
+"gelir": 851857.18
+},
+"(not set)": {
+"oturum": 27094.0,
+"islem": 60.0,
+"gelir": 530460.5802
+},
+"returning": {
+"oturum": 22739.0,
+"islem": 45.0,
+"gelir": 395132.4
+}
+},
+"2025-03": {
+"new": {
+"oturum": 59519.0,
+"islem": 96.0,
+"gelir": 960736.6401
+},
+"(not set)": {
+"oturum": 28355.0,
+"islem": 51.0,
+"gelir": 512829.13
+},
+"returning": {
+"oturum": 22587.0,
+"islem": 26.0,
+"gelir": 320233.0201
+}
+},
+"2025-04": {
+"new": {
+"oturum": 73708.0,
+"islem": 127.0,
+"gelir": 1146623.63
+},
+"(not set)": {
+"oturum": 38156.0,
+"islem": 101.0,
+"gelir": 1321817.85
+},
+"returning": {
+"oturum": 29663.0,
+"islem": 37.0,
+"gelir": 465699.1901
+}
+},
+"2025-05": {
+"new": {
+"oturum": 75013.0,
+"islem": 74.0,
+"gelir": 571858.64
+},
+"(not set)": {
+"oturum": 36059.0,
+"islem": 41.0,
+"gelir": 335820.5202
+},
+"returning": {
+"oturum": 29037.0,
+"islem": 20.0,
+"gelir": 106564.07
+}
+},
+"2025-06": {
+"new": {
+"oturum": 58872.0,
+"islem": 55.0,
+"gelir": 659358.4
+},
+"(not set)": {
+"oturum": 28609.0,
+"islem": 31.0,
+"gelir": 237690.1701
+},
+"returning": {
+"oturum": 23775.0,
+"islem": 23.0,
+"gelir": 243774.83
+}
+},
+"2025-07": {
+"new": {
+"oturum": 74713.0,
+"islem": 91.0,
+"gelir": 724968.7701
+},
+"(not set)": {
+"oturum": 35228.0,
+"islem": 58.0,
+"gelir": 830125.5101
+},
+"returning": {
+"oturum": 26992.0,
+"islem": 25.0,
+"gelir": 217708.51
+}
+},
+"2025-08": {
+"new": {
+"oturum": 81772.0,
+"islem": 102.0,
+"gelir": 1094161.81
+},
+"(not set)": {
+"oturum": 35877.0,
+"islem": 53.0,
+"gelir": 429020.25
+},
+"returning": {
+"oturum": 28492.0,
+"islem": 26.0,
+"gelir": 252409.7501
+}
+},
+"2025-09": {
+"new": {
+"oturum": 82417.0,
+"islem": 123.0,
+"gelir": 1052876.8
+},
+"returning": {
+"oturum": 32537.0,
+"islem": 41.0,
+"gelir": 487173.2501
+},
+"(not set)": {
+"oturum": 28687.0,
+"islem": 53.0,
+"gelir": 578513.77
+}
+},
+"2025-10": {
+"new": {
+"oturum": 110554.0,
+"islem": 171.0,
+"gelir": 1453124.5
+},
+"returning": {
+"oturum": 50652.0,
+"islem": 98.0,
+"gelir": 961827.0
+},
+"(not set)": {
+"oturum": 10705.0,
+"islem": 1.0,
+"gelir": 1422.049987
+}
+},
+"2025-11": {
+"new": {
+"oturum": 114377.0,
+"islem": 187.0,
+"gelir": 1935620.91
+},
+"returning": {
+"oturum": 59052.0,
+"islem": 125.0,
+"gelir": 1404047.23
+},
+"(not set)": {
+"oturum": 14096.0,
+"islem": 0.0,
+"gelir": 0.0
+}
+},
+"2025-12": {
+"new": {
+"oturum": 250979.0,
+"islem": 64.0,
+"gelir": 572683.4501
+},
+"returning": {
+"oturum": 194318.0,
+"islem": 85.0,
+"gelir": 911114.5001
+},
+"(not set)": {
+"oturum": 47881.0,
+"islem": 2.0,
+"gelir": 3449.999985
+}
+},
+"2026-01": {
+"new": {
+"oturum": 148316.0,
+"islem": 63.0,
+"gelir": 475488.7001
+},
+"returning": {
+"oturum": 129929.0,
+"islem": 77.0,
+"gelir": 704127.6601
+},
+"(not set)": {
+"oturum": 21032.0,
+"islem": 5.0,
+"gelir": 68550.99997
+}
+},
+"2026-02": {
+"new": {
+"oturum": 136329.0,
+"islem": 69.0,
+"gelir": 465271.7201
+},
+"returning": {
+"oturum": 118766.0,
+"islem": 96.0,
+"gelir": 739332.8
+},
+"(not set)": {
+"oturum": 18884.0,
+"islem": 4.0,
+"gelir": 25114.00004
+}
+},
+"2026-03": {
+"new": {
+"oturum": 167666.0,
+"islem": 82.0,
+"gelir": 771156.5
+},
+"returning": {
+"oturum": 137053.0,
+"islem": 99.0,
+"gelir": 1074410.12
+},
+"(not set)": {
+"oturum": 34172.0,
+"islem": 7.0,
+"gelir": 70708.39998
+}
+},
+"2026-04": {
+"new": {
+"oturum": 202490.0,
+"islem": 151.0,
+"gelir": 1554204.52
+},
+"returning": {
+"oturum": 155718.0,
+"islem": 139.0,
+"gelir": 1410600.45
+},
+"(not set)": {
+"oturum": 40481.0,
+"islem": 12.0,
+"gelir": 118770.35
+}
+},
+"2026-05": {
+"new": {
+"oturum": 426098.0,
+"islem": 105.0,
+"gelir": 874917.1301
+},
+"returning": {
+"oturum": 245199.0,
+"islem": 105.0,
+"gelir": 1099119.52
+},
+"(not set)": {
+"oturum": 55545.0,
+"islem": 5.0,
+"gelir": 33812.99997
+}
+},
+"2026-06": {
+"new": {
+"oturum": 406429.0,
+"islem": 151.0,
+"gelir": 1840831.69
+},
+"returning": {
+"oturum": 190292.0,
+"islem": 162.0,
+"gelir": 2217960.78
+},
+"(not set)": {
+"oturum": 40904.0,
+"islem": 11.0,
+"gelir": 100145.23
+}
+},
+"2026-07": {
+"new": {
+"oturum": 252502.0,
+"islem": 160.0,
+"gelir": 2170722.87
+},
+"returning": {
+"oturum": 189670.0,
+"islem": 199.0,
+"gelir": 2917005.39
+},
+"(not set)": {
+"oturum": 51681.0,
+"islem": 20.0,
+"gelir": 365150.1999
+}
+},
+"2026-08": {
+"new": {
+"oturum": 172865.0,
+"islem": 142.0,
+"gelir": 1705571.75
+},
+"returning": {
+"oturum": 170944.0,
+"islem": 159.0,
+"gelir": 2552623.51
+},
+"(not set)": {
+"oturum": 33207.0,
+"islem": 21.0,
+"gelir": 265857.9
+}
+},
+"2026-09": {
+"new": {
+"oturum": 547286.0,
+"islem": 195.0,
+"gelir": 2096972.56
+},
+"returning": {
+"oturum": 232569.0,
+"islem": 188.0,
+"gelir": 2606273.31
+},
+"(not set)": {
+"oturum": 74721.0,
+"islem": 21.0,
+"gelir": 331359.27
+}
+},
+"2026-10": {
+"new": {
+"oturum": 63589.0,
+"islem": 27.0,
+"gelir": 382942.5
+},
+"returning": {
+"oturum": 41262.0,
+"islem": 37.0,
+"gelir": 375270.04
+},
+"(not set)": {
+"oturum": 11010.0,
+"islem": 6.0,
+"gelir": 59998.0
+}
+}
+},
+"urun_kat": {
+"2026": {
+"Duş Sistemleri": [
+127673.0,
+253.0,
+83.0,
+753519.999848
+],
+"Yıkanma Alanları": [
+439889.0,
+872.0,
+381.0,
+3402777.000152
+],
+"Banyo Mobilyaları": [
+609370.0,
+1206.0,
+428.0,
+6326635.999940004
+],
+"Vitrifiyeler": [
+132632.0,
+503.0,
+223.0,
+1807002.9998049992
+],
+"Klozetler ve Rezervuarlar": [
+569630.0,
+2640.0,
+884.0,
+6019689.9998440035
+],
+"Bataryalar ve Musluklar": [
+534344.0,
+3189.0,
+892.0,
+5093817.000164992
+],
+"Armatürler": [
+89627.0,
+425.0,
+144.0,
+837135.9997040002
+],
+"Banyo Aksesuarları": [
+256024.0,
+9599.0,
+1476.0,
+3819671.999366002
+],
+"Lavabolar": [
+357801.0,
+664.0,
+288.0,
+2607406.9994119997
+],
+"Keşif Hizmeti": [
+6545.0,
+20.0,
+11.0,
+10450.000044999999
+],
+"Karo": [
+574654.0,
+0.0,
+0.0,
+0.0
+],
+"Rezervuarlar": [
+13157.0,
+146.0,
+21.0,
+69131.999862
+],
+"liquid": [
+10707.0,
+9.0,
+2.0,
+108226.00003
+],
+"45diger": [
+2440.0,
+18.0,
+9.0,
+22998.999976
+],
+"ARTEMA SET SINIFI": [
+2511.0,
+0.0,
+0.0,
+0.0
+],
+"Banyo": [
+40215.0,
+165.0,
+68.0,
+156967.00019
+],
+"40diger": [
+13129.0,
+18.0,
+6.0,
+58828.999951000005
+],
+"(not set)": [
+734.0,
+2.0,
+0.0,
+0.0
+],
+"35dagitim_taksit": [
+1986.0,
+0.0,
+0.0,
+0.0
+],
+"Montaj Hizmeti": [
+5345.0,
+1573.0,
+790.0,
+1302697.5001770004
+],
+"coklualkazan_origin": [
+2136.0,
+0.0,
+0.0,
+0.0
+],
+"Duşakabin": [
+125.0,
+0.0,
+0.0,
+0.0
+],
+"Washing Areas": [
+18.0,
+0.0,
+0.0,
+0.0
+],
+"Batteries and Faucets": [
+1.0,
+0.0,
+0.0,
+0.0
+],
+"Bathroom": [
+1.0,
+0.0,
+0.0,
+0.0
+],
+"(boş)": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"All Bathrooms": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Armatür Tamamlayıcı Ürünleri": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Banyo Bataryaları": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Banyo ve Duş Bataryaları": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Eviye Bataryaları": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Lavabo Bataryaları": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Gömme Rezervuarlar": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Rezervuar Kumanda Panelleri": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Akıllı Klozetler": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"All Bäder": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Asma Klozet Takımları": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Asma Klozetler": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Banyo Dolapları": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Bathroom Accessories": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Bathroom Furniture": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Bideler": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Duşlar": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Küvetler": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Lavabo Dolapları": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Mekanik Kumanda Panelleri": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Pisuvarlar": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Rezervuar ve Klozet İç Takımları": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Takım Klozetler": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Temassız Kumanda Panelleri": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Vitrifiye Tamamlayıcıları": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Yerden Tek Klozetler": [
+0.0,
+0.0,
+0.0,
+0.0
+]
+},
+"2025": {
+"Banyo Mobilyaları": [
+199293.0,
+1738.0,
+318.0,
+5025656.720105997
+],
+"Klozetler ve Rezervuarlar": [
+220643.0,
+2259.0,
+635.0,
+6547972.109545996
+],
+"Lavabolar": [
+151751.0,
+766.0,
+197.0,
+2416227.000165999
+],
+"Bataryalar ve Musluklar": [
+210927.0,
+3455.0,
+795.0,
+6616521.960625008
+],
+"Yıkanma Alanları": [
+103166.0,
+967.0,
+282.0,
+2884121.4001319995
+],
+"Banyo Aksesuarları": [
+95032.0,
+2006.0,
+782.0,
+4326738.399127003
+],
+"Vitrifiyeler": [
+6288.0,
+4.0,
+1.0,
+29154.999986
+],
+"Montaj Hizmeti": [
+4038.0,
+2065.0,
+391.0,
+515739.99991299986
+],
+"magaza haric bırakılan urunler": [
+281.0,
+4.0,
+1.0,
+1039.999998
+],
+"(boş)": [
+1220.0,
+44.0,
+2.0,
+2039.0000009999999
+],
+"liquid": [
+268.0,
+2.0,
+0.0,
+0.0
+],
+"diger-1": [
+1055.0,
+39.0,
+20.0,
+78989.999942
+],
+"Karo Seramik Uygulama Ürünleri": [
+101.0,
+0.0,
+0.0,
+0.0
+],
+"Aksesuar Setleri": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Akıllı Klozetler": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Ankastre Bataryalar": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Asma Klozetler": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Ayaklı Lavabolar": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Aynalı Dolaplar": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Banyo Aynaları": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Banyo Bataryaları": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Banyo Dolapları": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Boy Dolapları": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Diğer Mobilyalar": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Diş Fırçalık": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Duş Kabinleri": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Duş Kanalı": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Duş Setleri": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Duş Tekneleri": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Duşakabinler": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Etajerli Lavabolar": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Gömme Rezervuarlar": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Havluluk ve Askılık": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Klozet Kapakları": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Lavabo Bataryaları": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Lavabo Dolapları": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Musluklar": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Mutfak Eviye Bataryaları": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Mutfak Eviyeleri": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Pisuvarlar": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Rezervuarlar ve İç Takımlar": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Sabunluk": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Tamamlayıcı Aksesuarlar": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Tezgah Altı Lavabolar": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Tezgah Üstü Lavabolar": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Toiletbrillen": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Tuvalet Fırçası": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Tuvalet Kağıtlığı": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Yerden Tek Klozetler": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Çanak Lavabolar": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Çöp Kovaları": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"(not set)": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Bathing Areas": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Faucets & Faucets": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Kitchen Sink Faucets": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Akıllı Banyo Ürünleri": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Bathroom Accessories": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Bathroom Cabinets": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Bathroom Faucets": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Kampanyalı Ürünler": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Karo Seramikler": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Shower Cabins": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Sinks": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Takım Klozetler": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Temassız Ürünler": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Vitra": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"Öne Çıkanlar": [
+0.0,
+0.0,
+0.0,
+0.0
+],
+"أثاث الحمام": [
+0.0,
+0.0,
+0.0,
+0.0
+]
+}
+},
+"urun_marka": {
+"2026": {
+"VitrA": 26648560.497938998,
+"Artema": 5719130.000582993,
+"Null": 29267.999944999996,
+"(not set)": 0.0,
+"Sea": 0.0,
+"Vitrafix": 0.0,
+"Norm": 0.0
+},
+"2025": {
+"VitrA": 21974755.469105028,
+"Artema": 6186678.120485006,
+"Punto": 192778.00002699997,
+"MARKASIZ": 34012.999928,
+"Null": 0.0,
+"Sea": 47876.999999,
+"Vitra": 100.00001,
+"Vitale": 7999.999988,
+"(boş)": 0.0,
+"(not set)": 0.0
+}
+},
+"urun_2026": [
+[
+"A45200",
+"Filtreli Ara Musluk",
+"Bataryalar ve Musluklar",
+"Artema",
+6642.0,
+190.0,
+76666.000392
+],
+[
+"ETIC_MTJ(ARMATUR)",
+"Armatür ve Duş Sistemleri Montaj Hizmeti",
+"Montaj Hizmeti",
+"VitrA",
+1128.0,
+169.0,
+259949.999417
+],
+[
+"ETIC_MTJ(DIGERBM)",
+"Diğer Banyo Mobilyaları Montaj Hizmeti",
+"Montaj Hizmeti",
+"VitrA",
+403.0,
+168.0,
+258450.000318
+],
+[
+"ETIC_MTJ(KUCUK)",
+"Küçük Montaj Hizmeti",
+"Montaj Hizmeti",
+"VitrA",
+443.0,
+165.0,
+166160.000114
+],
+[
+"ETIC_MTJ(KLOZET)",
+"Klozet Montaj Hizmeti",
+"Montaj Hizmeti",
+"VitrA",
+1512.0,
+152.0,
+272920.000217
+],
+[
+"130-003R009",
+"Sento Klozet Kapağı",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+7135.0,
+94.0,
+331822.99975400005
+],
+[
+"A41458",
+"Ankastre Stop Valf",
+"Bataryalar ve Musluklar",
+"VitrA",
+8908.0,
+71.0,
+59432.999953
+],
+[
+"A4480536",
+"Root Tuvalet Kağıtlığı",
+"Banyo Aksesuarları",
+"VitrA",
+1386.0,
+71.0,
+118233.99964000001
+],
+[
+"121-003-909",
+"Universal Klozet Kapağı",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+10204.0,
+69.0,
+109544.000165
+],
+[
+"A44787",
+"Minimax Askı",
+"Banyo Aksesuarları",
+"VitrA",
+2027.0,
+66.0,
+61027.00016199999
+],
+[
+"108-003-009",
+"S50 Klozet Kapağı",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+5211.0,
+63.0,
+154961.999908
+],
+[
+"85-003-009",
+"Universal Klozet Kapağı",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+3691.0,
+62.0,
+151978.000111
+],
+[
+"A44783",
+"Minimax Halka Havluluk",
+"Banyo Aksesuarları",
+"VitrA",
+2218.0,
+59.0,
+76848.00000200002
+],
+[
+"330B2016",
+"İç Takım",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+2931.0,
+54.0,
+58053.99994
+],
+[
+"ETIC_MTJ(BMSET)",
+"Banyo Mobilyası Seti Montaj Hizmeti",
+"Montaj Hizmeti",
+"VitrA",
+423.0,
+53.0,
+175050.00007
+],
+[
+"A44887",
+"Origin Tuvalet Kağıtlığı",
+"Banyo Aksesuarları",
+"VitrA",
+5155.0,
+51.0,
+131019.000052
+],
+[
+"A44789",
+"Minimax Yedek Tuvalet Kağıtlığı",
+"Banyo Aksesuarları",
+"VitrA",
+2594.0,
+45.0,
+55670.000244
+],
+[
+"A44796",
+"Minimax Tuvalet Kağıtlığı",
+"Banyo Aksesuarları",
+"VitrA",
+1984.0,
+43.0,
+45265.000047
+],
+[
+"A44051",
+"Arkitekta Köşe Malzemelik",
+"Banyo Aksesuarları",
+"VitrA",
+2601.0,
+41.0,
+146880.99998199998
+],
+[
+"A44155",
+"Arkitekta Tuvalet Fırçalığı",
+"Banyo Aksesuarları",
+"VitrA",
+1924.0,
+41.0,
+123852.00033799997
+],
+[
+"ETIC_MTJ(LAVABO)",
+"Lavabo Montaj Hizmeti",
+"Montaj Hizmeti",
+"VitrA",
+169.0,
+41.0,
+71580.000113
+],
+[
+"A44012",
+"Arkitekta Çöp Kovası",
+"Banyo Aksesuarları",
+"VitrA",
+3744.0,
+38.0,
+87820.00005100001
+],
+[
+"A45149",
+"Lavabo Yuvarlak Süzgeci Universal",
+"Banyo Aksesuarları",
+"VitrA",
+3799.0,
+38.0,
+45474.000057000005
+],
+[
+"A45228",
+"Filtreli Çamaşır Musluğu",
+"Bataryalar ve Musluklar",
+"Artema",
+2654.0,
+38.0,
+15883.00003
+],
+[
+"A41441",
+" Ankastre Stop Valf",
+"Bataryalar ve Musluklar",
+"VitrA",
+4184.0,
+37.0,
+22854.999729
+],
+[
+"7748B003-0559",
+"Sento Asma Klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+30892.0,
+36.0,
+531611.999959
+],
+[
+"81019",
+"Shift T20 Çamaşır ve Kurutma Makinesi Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+13868.0,
+36.0,
+184733.000162
+],
+[
+"330B1314",
+"İç Takım",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+6567.0,
+36.0,
+30886.000011
+],
+[
+"A4480236",
+"Root Havluluk",
+"Banyo Aksesuarları",
+"VitrA",
+471.0,
+36.0,
+70335.99994
+],
+[
+"81018",
+"Shift T20 Çamaşır ve Kurutma Makinesi Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+13952.0,
+34.0,
+174483.999998
+],
+[
+"59980061000",
+"DK800 Kare Style Duş Kanalı",
+"Yıkanma Alanları",
+"VitrA",
+2837.0,
+34.0,
+21599.99986
+],
+[
+"A44884",
+"Origin Askı",
+"Banyo Aksesuarları",
+"VitrA",
+2686.0,
+33.0,
+62799.000101
+],
+[
+"A4480136",
+"Root Askı",
+"Banyo Aksesuarları",
+"VitrA",
+687.0,
+33.0,
+48564.999889000006
+],
+[
+"A44893",
+"Origin Tuvalet Fırçalığı",
+"Banyo Aksesuarları",
+"VitrA",
+3201.0,
+32.0,
+183580.000087
+],
+[
+"7910B403-0090",
+"Metropole Round QuantumFlush Asma klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+14223.0,
+31.0,
+550537.999883
+],
+[
+"5987B003-0092",
+"Sento Klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+17949.0,
+31.0,
+319956.99984099995
+],
+[
+"768-1851-01",
+"V-Fix Prime 8cm Asma Klozetler için Gömme Rezervuar",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+11020.0,
+30.0,
+159183.999978
+],
+[
+"A44947",
+"Marin Askı",
+"Banyo Aksesuarları",
+"VitrA",
+1110.0,
+29.0,
+11434.999923000001
+],
+[
+"191-003R009",
+"Integra Square Klozet Kapağı",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+2625.0,
+28.0,
+79112.999983
+],
+[
+"5639B003-0108",
+"Sento Rezervuar",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+2730.0,
+27.0,
+96686.99998600001
+],
+[
+"A44784",
+"Minimax Uzun Havluluk",
+"Banyo Aksesuarları",
+"VitrA",
+2040.0,
+27.0,
+48040.999702
+],
+[
+"A42706",
+"Root Round Lavabo Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+10893.0,
+26.0,
+186086.99998400002
+],
+[
+"7462L003-0001",
+"Mia Etajerli Lavabo",
+"Lavabolar",
+"VitrA",
+6466.0,
+26.0,
+163413.000063
+],
+[
+"A43715",
+"Shift T10 Lavabo Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+2351.0,
+26.0,
+120006.000009
+],
+[
+"A44788",
+"Minimax Tuvalet Kağıtlığı",
+"Banyo Aksesuarları",
+"VitrA",
+2029.0,
+26.0,
+39830.999922999996
+],
+[
+"131-003R009",
+"Integra Klozet Kapağı",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+3673.0,
+25.0,
+71411.99997
+],
+[
+"A4488434",
+"Origin Askı",
+"Banyo Aksesuarları",
+"VitrA",
+1824.0,
+25.0,
+78524.999941
+],
+[
+"A44946",
+"Marin Tuvalet Kağıtlığı",
+"Banyo Aksesuarları",
+"VitrA",
+692.0,
+25.0,
+21013.999944
+],
+[
+"A42146",
+"Masterline Pull-Out Eviye Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+12776.0,
+24.0,
+270910.99991400004
+],
+[
+"A44948",
+"Marin Tuvalet Fırçalığı",
+"Banyo Aksesuarları",
+"VitrA",
+1264.0,
+24.0,
+32942.000097
+],
+[
+"A42556",
+"Origin Lavabo Bataryası",
+"Bataryalar ve Musluklar",
+"VitrA",
+10697.0,
+23.0,
+255793.000024
+],
+[
+"7475B003-0618",
+"S20 Tezgahaltı Lavabo",
+"Lavabolar",
+"VitrA",
+10868.0,
+23.0,
+128457.99999299999
+],
+[
+"A44801",
+"Root Askı",
+"Banyo Aksesuarları",
+"VitrA",
+1319.0,
+23.0,
+24034.999931000002
+],
+[
+"7461L003-0002",
+"Mia Etajerli Lavabo",
+"Lavabolar",
+"VitrA",
+6385.0,
+22.0,
+113403.999914
+],
+[
+"109-003-909",
+"Universal Klozet Kapağı",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+3173.0,
+22.0,
+35698.000003
+],
+[
+"A44944",
+"Marin Uzun Havluluk",
+"Banyo Aksesuarları",
+"VitrA",
+1932.0,
+22.0,
+17831.999786
+],
+[
+"6069B003-0012",
+"S20 Tezgahaltı Lavabo",
+"Lavabolar",
+"VitrA",
+8667.0,
+21.0,
+109449.999838
+],
+[
+"A44943",
+"Marin Halka Havluluk",
+"Banyo Aksesuarları",
+"VitrA",
+752.0,
+21.0,
+12245.000101
+],
+[
+"A43532",
+"Minimax Round Lavabo Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+3749.0,
+20.0,
+135947.000008
+],
+[
+"740-2280",
+"Root Round Kumanda Paneli",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+4352.0,
+20.0,
+25295.999942999995
+],
+[
+"A45148",
+"Lavabo Yuvarlak Süzgeci Universal",
+"Banyo Aksesuarları",
+"VitrA",
+3120.0,
+20.0,
+22642.999847
+],
+[
+"A45214",
+"Origin Ara Musluk",
+"Bataryalar ve Musluklar",
+"VitrA",
+4657.0,
+19.0,
+30418.999927
+],
+[
+"208-003R009",
+"Universal Klozet kapağı",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+1518.0,
+19.0,
+58837.99995900001
+],
+[
+"166-003-109",
+"İstanbul Klozet Kapağı",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+1216.0,
+19.0,
+108463.000006
+],
+[
+"A45926",
+"Prime Stick Elduşu Takımı",
+"Duş Sistemleri",
+"VitrA",
+2038.0,
+18.0,
+53729.999905
+],
+[
+"A44521",
+"Origin Classic Tuvalet Fırçalığı",
+"Banyo Aksesuarları",
+"VitrA",
+970.0,
+18.0,
+78203.999926
+],
+[
+"5339B003-0012",
+"S20 Tezgahaltı Lavabo",
+"Lavabolar",
+"VitrA",
+15364.0,
+17.0,
+95508.00003299999
+],
+[
+"A45652",
+"Duş Dirseği",
+"Duş Sistemleri",
+"VitrA",
+4133.0,
+17.0,
+23827.999855
+],
+[
+"A43519",
+"Mastro Lite Eviye Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+3178.0,
+17.0,
+122804.00008700001
+],
+[
+"A42230",
+"Minibox Ankastre Lavabo Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+3853.0,
+17.0,
+43826.999824
+],
+[
+"86-003R009",
+"Sento Klozet Kapağı",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+2264.0,
+17.0,
+54106.000078000005
+],
+[
+"A44945",
+"Marin Tuvalet Kağıtlığı",
+"Banyo Aksesuarları",
+"VitrA",
+1037.0,
+17.0,
+17964.999966
+],
+[
+"66911",
+"Core Aynalı Banyo Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+4542.0,
+16.0,
+165077.999976
+],
+[
+"A4145836WTC",
+"Ankastre Stop Valf",
+"Armatürler",
+"VitrA",
+2477.0,
+16.0,
+29317.999989
+],
+[
+"A44054",
+"Arkitekta Çöp Kovası",
+"Banyo Aksesuarları",
+"VitrA",
+1640.0,
+16.0,
+27823.000024
+],
+[
+"7086B003-0092",
+"Integra Square Takım Klozet",
+"Vitrifiyeler",
+"VitrA",
+3202.0,
+15.0,
+138975.000093
+],
+[
+"A4488734",
+"Origin Tuvalet Kağıtlığı",
+"Banyo Aksesuarları",
+"VitrA",
+3204.0,
+15.0,
+63585.000009999996
+],
+[
+"84-003-009",
+"Universal Klozet Kapağı",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+2144.0,
+15.0,
+37989.999992
+],
+[
+"59980103000",
+"DK800 Kare-Yalıtımlı Style Duş Kanalı",
+"Yıkanma Alanları",
+"VitrA",
+707.0,
+15.0,
+16274.999995999999
+],
+[
+"A47303",
+"Base Round Duş Sistemi",
+"Yıkanma Alanları",
+"Artema",
+16110.0,
+14.0,
+285589.00009100005
+],
+[
+"7906B403-0090",
+"Metropole Square QuantumFlush Asma klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+8291.0,
+14.0,
+278495.00003500003
+],
+[
+"7535B403-1083",
+"Metropole Tezgahaltı lavabo",
+"Vitrifiyeler",
+"VitrA",
+5159.0,
+14.0,
+148736.000041
+],
+[
+"A45123",
+"Origin Lavabo Sifonu",
+"Banyo Aksesuarları",
+"VitrA",
+5832.0,
+14.0,
+39796.999897
+],
+[
+"A44886",
+"Origin Havluluk",
+"Banyo Aksesuarları",
+"VitrA",
+2543.0,
+14.0,
+52919.999934
+],
+[
+"A4145834",
+"Ankastre Stop Valf",
+"Bataryalar ve Musluklar",
+"VitrA",
+2875.0,
+14.0,
+27550.000018000002
+],
+[
+"A44894",
+"Origin Tuvalet Fırçalığı",
+"Banyo Aksesuarları",
+"VitrA",
+2717.0,
+14.0,
+85484.000076
+],
+[
+"A44304",
+"Eternity Kısa Havluluk",
+"Banyo Aksesuarları",
+"VitrA",
+1120.0,
+14.0,
+56056.00014900001
+],
+[
+"A42145",
+"Masterline Pull-Down Eviye Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+5921.0,
+13.0,
+151056.999973
+],
+[
+"66167",
+"Mia Boy Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+5292.0,
+13.0,
+129895.999948
+],
+[
+"210-003R009",
+"Universal Klozet kapağı",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+1324.0,
+13.0,
+35843.000091999995
+],
+[
+"A4488729",
+"Origin Tuvalet Kağıtlığı",
+"Banyo Aksesuarları",
+"VitrA",
+1342.0,
+13.0,
+55106.99995700001
+],
+[
+"A4488436",
+"Origin Askı",
+"Banyo Aksesuarları",
+"VitrA",
+1104.0,
+13.0,
+37114.999913
+],
+[
+"ETIC_MTJ(ORTA)",
+"Orta Montaj Hizmeti",
+"Montaj Hizmeti",
+"VitrA",
+184.0,
+13.0,
+24749.999980999997
+],
+[
+"5994B403-0016",
+"Outline Çanak Lavabo",
+"Lavabolar",
+"VitrA",
+6433.0,
+12.0,
+140627.999792
+],
+[
+"A43670",
+"Shift T20 Banyo Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+1963.0,
+12.0,
+80581.99997099998
+],
+[
+"7427B003-0016",
+"Geo Çanak Lavabo",
+"Lavabolar",
+"VitrA",
+4230.0,
+12.0,
+78412.00003200001
+],
+[
+"67042",
+"Prime Yuvarlak Ayna",
+"Banyo Mobilyaları",
+"VitrA",
+3252.0,
+12.0,
+127160.999942
+],
+[
+"A4145829",
+"Origin Ankastre Stop Valf",
+"Bataryalar ve Musluklar",
+"VitrA",
+1498.0,
+12.0,
+24606.000018
+],
+[
+"740-2225",
+"Root Round Kumanda Paneli",
+"Banyo",
+"VitrA",
+1856.0,
+12.0,
+41862.999972
+],
+[
+"A4488736",
+"Origin Tuvalet Kağıtlığı",
+"Banyo Aksesuarları",
+"VitrA",
+1833.0,
+12.0,
+46236.00004
+],
+[
+"A44375",
+"Arkitekta Küvet Tutamağı",
+"Banyo Aksesuarları",
+"VitrA",
+1140.0,
+12.0,
+21506.999953
+],
+[
+"A44053",
+"Arkitekta Malzemelik",
+"Banyo Aksesuarları",
+"VitrA",
+1131.0,
+12.0,
+39783.999946
+],
+[
+"ETIC_MTJ(BUYUK)",
+"Büyük Montaj Hizmeti",
+"Montaj Hizmeti",
+"VitrA",
+345.0,
+12.0,
+42900.000002
+],
+[
+"ETIC_KESIF",
+"Keşif Hizmeti",
+"Keşif Hizmeti",
+"VitrA",
+6545.0,
+11.0,
+10450.000044999999
+],
+[
+"740-2380",
+"Root Square Kumanda Paneli",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+3684.0,
+11.0,
+13563.000077
+],
+[
+"7747B003-0559",
+"Sento Asma Klozet",
+"Vitrifiyeler",
+"VitrA",
+2576.0,
+11.0,
+162436.999862
+],
+[
+"A45925",
+"Prime Square Elduşu Takımı",
+"Duş Sistemleri",
+"VitrA",
+1424.0,
+11.0,
+37842.000011
+],
+[
+"A43652",
+"Shift T10 Yüksek Lavabo Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+2340.0,
+11.0,
+52782.000021
+],
+[
+"A4521434",
+"Origin Ara Musluk",
+"Bataryalar ve Musluklar",
+"VitrA",
+1451.0,
+11.0,
+32563.999874
+],
+[
+"740-2350",
+"Root Square Kumanda Paneli",
+"Banyo",
+"VitrA",
+779.0,
+11.0,
+16819.000112
+],
+[
+"A44042",
+"Arkitekta Malzemelik",
+"Banyo Aksesuarları",
+"VitrA",
+825.0,
+11.0,
+20900.999952000002
+],
+[
+"A44940",
+"Marin Etajer",
+"Banyo Aksesuarları",
+"VitrA",
+610.0,
+11.0,
+14840.000065999999
+],
+[
+"A45906",
+"Base Round Elduşu Takımı",
+"Yıkanma Alanları",
+"Artema",
+10700.0,
+10.0,
+21584.999982
+],
+[
+"A42616",
+"Suit Lavabo Bataryası",
+"Bataryalar ve Musluklar",
+"VitrA",
+9754.0,
+10.0,
+134799.999947
+],
+[
+"7082B003-0090",
+"Integra Square Asma Klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+3297.0,
+10.0,
+123680.00000100001
+],
+[
+"A45747",
+"Taharet Duşu",
+"Bataryalar ve Musluklar",
+"VitrA",
+2740.0,
+10.0,
+28814.999966000003
+],
+[
+"A44010",
+"Arkitekta Ledli Makyaj Aynası",
+"Banyo Aksesuarları",
+"VitrA",
+1989.0,
+10.0,
+68181.999979
+],
+[
+"740-2480",
+"Origin Kumanda Paneli",
+"45diger",
+"VitrA",
+2313.0,
+10.0,
+13197.999955000001
+],
+[
+"66225",
+"Root Flat Boy Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+1073.0,
+10.0,
+158520.00001800002
+],
+[
+"740-2200",
+"Root Round Kumanda Paneli",
+"Banyo",
+"VitrA",
+1234.0,
+10.0,
+10729.000062
+],
+[
+"130-401R009",
+"Sento Klozet Kapağı",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+616.0,
+10.0,
+48010.000094
+],
+[
+"A44892",
+"Origin Sıvı Sabunluk Tutacağı",
+"Banyo Aksesuarları",
+"VitrA",
+540.0,
+10.0,
+21079.999892
+],
+[
+"A45919",
+"Core Square Duş Kolonu",
+"Duş Sistemleri",
+"Artema",
+7549.0,
+9.0,
+113614.999997
+],
+[
+"A47304",
+"Base Square Duş Sistemi",
+"Duş Sistemleri",
+"Artema",
+5730.0,
+9.0,
+211823.999994
+],
+[
+"5995B403-0016",
+"Outline Çanak Lavabo",
+"Lavabolar",
+"VitrA",
+12340.0,
+9.0,
+118691.999976
+],
+[
+"A42144",
+"Split Dual Flow Eviye Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+10272.0,
+9.0,
+108482.99997600002
+],
+[
+"5473B003-0618",
+"S20 Tezgahaltı Lavabo",
+"Lavabolar",
+"VitrA",
+6853.0,
+9.0,
+44216.999951
+],
+[
+"5991B403-0016",
+"Outline Çanak Lavabo",
+"Lavabolar",
+"VitrA",
+5500.0,
+9.0,
+118691.999971
+],
+[
+"740-1602",
+"Origin Kumanda Paneli,  Cam",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+3327.0,
+9.0,
+42696.000042
+],
+[
+"A44351",
+"Arkitekta Kağıt Dıspenser",
+"Banyo Aksesuarları",
+"VitrA",
+3164.0,
+9.0,
+42209.999897
+],
+[
+"A45924",
+"Prime Round Elduşu Takımı",
+"Yıkanma Alanları",
+"VitrA",
+1756.0,
+9.0,
+27320.999963000002
+],
+[
+"A42707",
+"Root Round Lavabo Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+2475.0,
+9.0,
+79612.000048
+],
+[
+"207-003R009",
+"Universal Klozet kapağı",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+1231.0,
+9.0,
+27654.000013
+],
+[
+"A41584",
+"Uzun Musluk",
+"Bataryalar ve Musluklar",
+"Artema",
+1640.0,
+9.0,
+9842.999965
+],
+[
+"740-2211",
+"Root Round Kumanda Paneli",
+"Banyo",
+"VitrA",
+1686.0,
+9.0,
+12571.000026
+],
+[
+"A44444",
+"Arkitekta Etajerli Tuvalet Kağıtlığı",
+"Banyo Aksesuarları",
+"VitrA",
+1277.0,
+9.0,
+13446.000078000001
+],
+[
+"A4432257",
+"Eternity Tuvalet Fırçalığı",
+"Banyo Aksesuarları",
+"VitrA",
+1128.0,
+9.0,
+33425.999935
+],
+[
+"A45232",
+"Ara Musluk",
+"Bataryalar ve Musluklar",
+"Artema",
+1301.0,
+9.0,
+8853.000059
+],
+[
+"A4489336",
+"Origin Tuvalet Fırçalığı",
+"Banyo Aksesuarları",
+"VitrA",
+1335.0,
+9.0,
+74690.999945
+],
+[
+"A45912",
+"Core Round Duş Başlığı",
+"Duş Sistemleri",
+"Artema",
+1091.0,
+9.0,
+30527.000065
+],
+[
+"A4514934",
+"Lavabo Yuvarlak Süzgeci Universal",
+"Banyo Aksesuarları",
+"VitrA",
+840.0,
+9.0,
+17362.999917999998
+],
+[
+"ETIC_MTJ(AKLOZET)",
+"Akıllı Klozet Montaj Hizmeti",
+"Montaj Hizmeti",
+"VitrA",
+86.0,
+9.0,
+19912.499936
+],
+[
+"69567",
+"Ardea Banyo Dolabı Seti",
+"Banyo Mobilyaları",
+"VitrA",
+4986.0,
+8.0,
+98471.999966
+],
+[
+"6039B003-0012",
+"S20 Tezgahaltı Lavabo",
+"Lavabolar",
+"VitrA",
+5015.0,
+8.0,
+34512.999901999996
+],
+[
+"A47295",
+"Joy Duş Sistemi",
+"Duş Sistemleri",
+"Artema",
+2973.0,
+8.0,
+146098.000015
+],
+[
+"75102",
+"Mia Banyo Dolabı Seti",
+"Banyo Mobilyaları",
+"VitrA",
+4065.0,
+8.0,
+97326.00001799999
+],
+[
+"A44845",
+"Artepan Havlupan",
+"Banyo Aksesuarları",
+"VitrA",
+2232.0,
+8.0,
+49996.00005899999
+],
+[
+"7421B003-0016",
+"Geo Çanak Lavabo",
+"Lavabolar",
+"VitrA",
+2613.0,
+8.0,
+42337.999939999994
+],
+[
+"740-2240",
+"Root Round Kumanda Paneli",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+1746.0,
+8.0,
+32215.999959999997
+],
+[
+"69576",
+"Mia Banyo Dolabı Seti",
+"Banyo Mobilyaları",
+"VitrA",
+1868.0,
+8.0,
+68708.99997700001
+],
+[
+"124-003R009",
+"Valarte Klozet Kapağı",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+1809.0,
+8.0,
+26176.999992999998
+],
+[
+"A4488629",
+"Origin Havluluk",
+"Banyo Aksesuarları",
+"VitrA",
+905.0,
+8.0,
+49895.999963
+],
+[
+"A44565",
+"Liquid Tuvalet Kağıtlığı",
+"Banyo Aksesuarları",
+"VitrA",
+1330.0,
+8.0,
+24655.999981
+],
+[
+"A44380",
+"Arkitekta Köşe Malzemelik",
+"Banyo Aksesuarları",
+"VitrA",
+862.0,
+8.0,
+7738.999960000001
+],
+[
+"A44523",
+"Origin Classic  Askı İkili",
+"Banyo Aksesuarları",
+"VitrA",
+683.0,
+8.0,
+14456.000050999999
+],
+[
+"7041B003-0090",
+"Integra Asma klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+11566.0,
+7.0,
+84189.00006399999
+],
+[
+"75100",
+"Mia Banyo Dolabı Seti",
+"Banyo Mobilyaları",
+"VitrA",
+8068.0,
+7.0,
+97167.00002400001
+],
+[
+"A42152",
+"Maestro Pro Eviye Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+7332.0,
+7.0,
+90216.999983
+],
+[
+"A44896",
+"Origin Diş Fırçalığı",
+"Banyo Aksesuarları",
+"VitrA",
+2850.0,
+7.0,
+12550.999978
+],
+[
+"69566",
+"Ardea Banyo Dolabı Seti",
+"Banyo Mobilyaları",
+"VitrA",
+4484.0,
+7.0,
+76853.000009
+],
+[
+"A4215433",
+"Verona Eviye Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+3864.0,
+7.0,
+72480.999995
+],
+[
+"5952L003-0054",
+"Helataşı",
+"Vitrifiyeler",
+"VitrA",
+4851.0,
+7.0,
+35107.999928
+],
+[
+"5992B403-0016",
+"Outline Çanak Lavabo",
+"Lavabolar",
+"VitrA",
+4726.0,
+7.0,
+82033.000027
+],
+[
+"5696B403-0041",
+"Frame Tezgahüstü Lavabo",
+"Lavabolar",
+"VitrA",
+4834.0,
+7.0,
+66549.00005100001
+],
+[
+"A42625",
+"Ankastre El Duşu Çıkışı",
+"Duş Sistemleri",
+"VitrA",
+1926.0,
+7.0,
+15038.000044
+],
+[
+"59980480000",
+"DK100 Eco-Flow Duş Kanalı",
+"Yıkanma Alanları",
+"VitrA",
+3274.0,
+7.0,
+21598.999937
+],
+[
+"7803B403-0001",
+"Valarte Etajerli Lavabo",
+"Lavabolar",
+"VitrA",
+3344.0,
+7.0,
+140966.000015
+],
+[
+"A42558",
+"Origin Lavabo Bataryası",
+"Bataryalar ve Musluklar",
+"VitrA",
+3209.0,
+7.0,
+109362.99996500001
+],
+[
+"A4255834",
+"Origin Lavabo Bataryası",
+"Bataryalar ve Musluklar",
+"VitrA",
+2787.0,
+7.0,
+191345.00007600003
+],
+[
+"A45691",
+"Master Slot 3F Sürgülü El Duşu Takımı",
+"Duş Sistemleri",
+"Artema",
+1751.0,
+7.0,
+24344.000018
+],
+[
+"A44805",
+"Root Tuvalet Kağıtlığı",
+"Banyo Aksesuarları",
+"VitrA",
+1611.0,
+7.0,
+7982.999945
+],
+[
+"A43689",
+"Shift T30 Yüksek Lavabo Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+1779.0,
+7.0,
+40162.000048
+],
+[
+"66909",
+"Core Aynalı Banyo Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+943.0,
+7.0,
+63217.999960999994
+],
+[
+"A45915",
+"Core Square Elduşu Takımı",
+"Duş Sistemleri",
+"Artema",
+674.0,
+7.0,
+21335.99994
+],
+[
+"230-003R009",
+"Nest Klozet Kapağı",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+713.0,
+7.0,
+26116.999962
+],
+[
+"A4480936",
+"Root Havluluk",
+"Banyo Aksesuarları",
+"VitrA",
+764.0,
+7.0,
+22874.000046
+],
+[
+"A44522",
+"Origin Classic Tuvalet Kağıtlığı",
+"Banyo Aksesuarları",
+"VitrA",
+929.0,
+7.0,
+18129.999978
+],
+[
+"A44942",
+"Marin Diş Fırçalığı",
+"Banyo Aksesuarları",
+"VitrA",
+358.0,
+7.0,
+4127.000048
+],
+[
+"A45907",
+"Base Round Elduşu Takımı",
+"Yıkanma Alanları",
+"Artema",
+6037.0,
+6.0,
+11543.999988
+],
+[
+"A4563836WTC",
+"Origin Duş Başlığı",
+"Duş Sistemleri",
+"VitrA",
+5991.0,
+6.0,
+74321.00005
+],
+[
+"7093B003-0092",
+"Integra Klozet",
+"Vitrifiyeler",
+"VitrA",
+11946.0,
+6.0,
+56247.999965
+],
+[
+"5885B422-0559",
+"Memoria Asma klozet",
+"Vitrifiyeler",
+"VitrA",
+2387.0,
+6.0,
+198185.999957
+],
+[
+"7906B483-0090",
+"Metropole Square QuantumFlush Asma klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+4967.0,
+6.0,
+153914.999957
+],
+[
+"A47309",
+"Core Round Duş Sistemi",
+"Yıkanma Alanları",
+"Artema",
+2643.0,
+6.0,
+175822.000059
+],
+[
+"7870B403-0090",
+"Nest Asma Klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+4480.0,
+6.0,
+116118.00002800001
+],
+[
+"5993B403-0016",
+"Outline Çanak Lavabo",
+"Lavabolar",
+"VitrA",
+5698.0,
+6.0,
+79128.00000900001
+],
+[
+"A4258136WTC",
+"Origin Ankastre Lavabo Bataryası",
+"Bataryalar ve Musluklar",
+"VitrA",
+5346.0,
+6.0,
+92589.000103
+],
+[
+"A43654",
+"Shift T10 C Tipi Eviye Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+2250.0,
+6.0,
+35620.00004
+],
+[
+"7786B003-6383",
+"Shift T10 Asma Klozet Seti",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+4277.0,
+6.0,
+65058.000013
+],
+[
+"A4592634",
+"Prime Stick Elduşu Takımı",
+"Duş Sistemleri",
+"VitrA",
+1556.0,
+6.0,
+28877.999966999996
+],
+[
+"A41949",
+"Minibox Ankastre Banyo Bataryası",
+"Bataryalar ve Musluklar",
+"Null",
+4223.0,
+6.0,
+17639.999939999998
+],
+[
+"A42136",
+"IdeaLine Eviye Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+2800.0,
+6.0,
+48619.999996
+],
+[
+"81005",
+"Shift T20 Aynalı Banyo Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+1680.0,
+6.0,
+32019.0
+],
+[
+"A43722",
+"Minimax Square Lavabo Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+2201.0,
+6.0,
+49995.999978
+],
+[
+"A44449",
+"Arkitekta Tutunma barı",
+"Banyo Aksesuarları",
+"VitrA",
+2496.0,
+6.0,
+25182.000013
+],
+[
+"A41864",
+"Harmony Eviye Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+2728.0,
+6.0,
+41848.999972000005
+],
+[
+"A45692",
+"Master 1F El Duşu Takımı",
+"Duş Sistemleri",
+"Artema",
+1406.0,
+6.0,
+11292.999993
+],
+[
+"A4565236WTC",
+"Origin Duş Dirseği",
+"Duş Sistemleri",
+"VitrA",
+1114.0,
+6.0,
+12736.000025
+],
+[
+"740-2325",
+"Root Square Kumanda Paneli",
+"Banyo",
+"VitrA",
+1612.0,
+6.0,
+21323.999978
+],
+[
+"7425B003-0016",
+"Geo Çanak Lavabo",
+"Lavabolar",
+"VitrA",
+2240.0,
+6.0,
+43765.999995
+],
+[
+"7748B403-0559",
+"Sento Rim-Ex Asma Klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+560.0,
+6.0,
+95903.999979
+],
+[
+"768-1700-01",
+"V-Fix Prime 8cm Helataşları için Gömme Rezervuar",
+"Rezervuarlar",
+"VitrA",
+1936.0,
+6.0,
+22610.999874
+],
+[
+"80443",
+"Prime Oval Ayna",
+"Banyo Mobilyaları",
+"VitrA",
+1744.0,
+6.0,
+60548.99999899999
+],
+[
+"A45206",
+"Ara Musluk",
+"Bataryalar ve Musluklar",
+"Artema",
+1373.0,
+6.0,
+6667.0000310000005
+],
+[
+"A42147",
+"Masterline Xl Pull-Out Eviye Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+1863.0,
+6.0,
+49503.000015
+],
+[
+"A44941",
+"Marin Katı Sabunluk",
+"Banyo Aksesuarları",
+"VitrA",
+532.0,
+6.0,
+3516.000002
+],
+[
+"130-422R009",
+"Sento Klozet kapağı",
+"Vitrifiyeler",
+"VitrA",
+596.0,
+6.0,
+28806.000008000003
+],
+[
+"66905",
+"Base Düz Ayna",
+"Banyo Mobilyaları",
+"VitrA",
+1313.0,
+6.0,
+22062.00009
+],
+[
+"A4489434",
+"Origin Tuvalet Fırçalığı",
+"Banyo Aksesuarları",
+"VitrA",
+1236.0,
+6.0,
+55188.000014
+],
+[
+"A45743",
+"Bliss 3F Sürgülü El Duşu Takımı",
+"Yıkanma Alanları",
+"Artema",
+741.0,
+6.0,
+26219.999992
+],
+[
+"59980062000",
+"DK800 Kare Style Duş Kanalı",
+"Yıkanma Alanları",
+"VitrA",
+864.0,
+6.0,
+4703.0000310000005
+],
+[
+"A4488429",
+"Origin Askı",
+"Banyo Aksesuarları",
+"VitrA",
+780.0,
+6.0,
+18846.000027000002
+],
+[
+"212-003R009",
+"Universal Klozet kapağı",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+682.0,
+6.0,
+17385.000005
+],
+[
+"A42806",
+"V-Box",
+"Bataryalar ve Musluklar",
+"VitrA",
+1073.0,
+6.0,
+30303.999974000002
+],
+[
+"A44323",
+"Eternity Tuvalet Kağıtlığı",
+"Banyo Aksesuarları",
+"VitrA",
+826.0,
+6.0,
+16325.999953999999
+],
+[
+"A45118",
+"Lavabo Sifonu",
+"Banyo Aksesuarları",
+"Artema",
+815.0,
+6.0,
+11463.000065
+],
+[
+"A4514825",
+"Lavabo Süzgeci",
+"Banyo Aksesuarları",
+"VitrA",
+504.0,
+6.0,
+11004.999957
+],
+[
+"A44248",
+"Arkitekta Süngerlik",
+"Banyo Aksesuarları",
+"VitrA",
+447.0,
+6.0,
+24067.999932
+],
+[
+"A44780",
+"Minimax Diş Fırçalığı",
+"Banyo Aksesuarları",
+"VitrA",
+411.0,
+6.0,
+7785.000007000001
+],
+[
+"A44710",
+"Flow Askı",
+"Banyo Aksesuarları",
+"VitrA",
+151.0,
+6.0,
+3960.000092
+],
+[
+"ETIC_MTJ(APANEL)",
+"Akıllı Panel Montaj Hizmeti",
+"Montaj Hizmeti",
+"VitrA",
+66.0,
+6.0,
+5625.000002
+],
+[
+"A4720536",
+"AquaHeat Bliss 240 2F Duş Sistemi",
+"Duş Sistemleri",
+"VitrA",
+13684.0,
+5.0,
+180285.00001899997
+],
+[
+"A4720534",
+"AquaHeat Bliss 240 2F Duş Sistemi",
+"Duş Sistemleri",
+"VitrA",
+8599.0,
+5.0,
+180284.999997
+],
+[
+"7910B401-0090",
+"Metropole Round QuantumFlush Asma klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+5360.0,
+5.0,
+112510.999984
+],
+[
+"7041L003-0090",
+"Integra Asma Klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+7469.0,
+5.0,
+60135.000011000004
+],
+[
+"A45638",
+"Duş Başlığı",
+"Duş Sistemleri",
+"VitrA",
+3626.0,
+5.0,
+40424.00000100001
+],
+[
+"7906B422-0090",
+"Metropole Square QuantumFlush Asma klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+4125.0,
+5.0,
+136252.00003300002
+],
+[
+"A44924",
+"Marin Aksesaur Seti",
+"Banyo Aksesuarları",
+"VitrA",
+4374.0,
+5.0,
+23758.99998
+],
+[
+"A4563834",
+"Duş Başlığı",
+"Duş Sistemleri",
+"VitrA",
+3718.0,
+5.0,
+66049.000055
+],
+[
+"5653B403-0016",
+"Frame Tezgahüstü Lavabo",
+"Lavabolar",
+"VitrA",
+5322.0,
+5.0,
+47534.999975
+],
+[
+"A43688",
+"Shift T30 Lavabo Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+3103.0,
+5.0,
+21996.000023
+],
+[
+"A4516634",
+"Taşma Yüzüğü",
+"Bataryalar ve Musluklar",
+"VitrA",
+1332.0,
+5.0,
+3439.999963
+],
+[
+"A42557",
+"Origin Lavabo Bataryası",
+"Bataryalar ve Musluklar",
+"VitrA",
+4071.0,
+5.0,
+65724.00002800001
+],
+[
+"A43518",
+"Masterline Eviye Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+1678.0,
+5.0,
+45144.000023
+],
+[
+"A45914",
+"Core Round Elduşu Takımı",
+"Duş Sistemleri",
+"Artema",
+1831.0,
+5.0,
+13127.99999
+],
+[
+"5995B422-0016",
+"Outline Çanak lavabo",
+"Lavabolar",
+"VitrA",
+1608.0,
+5.0,
+89025.000026
+],
+[
+"7426B003-0001",
+"Geo Çanak Lavabo",
+"Vitrifiyeler",
+"VitrA",
+2065.0,
+5.0,
+40669.999982
+],
+[
+"740-1600",
+"Origin Kumanda Paneli,  Cam",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+3148.0,
+5.0,
+22589.999933
+],
+[
+"A42782",
+"Suit Ankastre Lavabo Bataryası",
+"Bataryalar ve Musluklar",
+"VitrA",
+3529.0,
+5.0,
+55205.000029
+],
+[
+"60896",
+"Sento Aynalı Banyo Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+2766.0,
+5.0,
+106097.999988
+],
+[
+"67043",
+"Prime Yuvarlak Ayna",
+"Banyo Mobilyaları",
+"VitrA",
+2082.0,
+5.0,
+79502.999952
+],
+[
+"A42151",
+"V3 Pull-Out Eviye Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+2522.0,
+5.0,
+46659.999993
+],
+[
+"A45928",
+"Prime Square Sürgülü El Duşu",
+"Duş Sistemleri",
+"VitrA",
+1099.0,
+5.0,
+25585.000006
+],
+[
+"5479B003-0001",
+"S50 Etajerli Lavabo",
+"Lavabolar",
+"VitrA",
+1126.0,
+5.0,
+50174.99995700001
+],
+[
+"231-003R009",
+"Universal Klozet kapağı",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+828.0,
+5.0,
+14443.000007
+],
+[
+"106-003R009",
+"Memoria Klozet Kapağı",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+1726.0,
+5.0,
+16155.000014
+],
+[
+"A43656",
+"Shift T20 Lavabo Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+883.0,
+5.0,
+25404.999951
+],
+[
+"5408B003-0001",
+"S50 Etajerli Lavabo",
+"Lavabolar",
+"VitrA",
+737.0,
+5.0,
+32620.000051
+],
+[
+"A42814",
+"Suit Lavabo Bataryası",
+"Bataryalar ve Musluklar",
+"VitrA",
+1468.0,
+5.0,
+93758.00004300001
+],
+[
+"66913",
+"Core Aynalı Banyo Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+704.0,
+5.0,
+77950.999996
+],
+[
+"A42620",
+"Origin Ankastre Banyo Bataryası",
+"Bataryalar ve Musluklar",
+"VitrA",
+1339.0,
+5.0,
+25589.999998
+],
+[
+"A4565234",
+"Duş Dirseği",
+"Yıkanma Alanları",
+"VitrA",
+1203.0,
+5.0,
+11329.99997
+],
+[
+"740-2311",
+"Root Square Kumanda Paneli",
+"Banyo",
+"VitrA",
+1506.0,
+5.0,
+7952.000037
+],
+[
+"69086",
+"Root Groove Boy Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+1131.0,
+5.0,
+92015.00003
+],
+[
+"66916",
+"Core Düz Ayna",
+"40diger",
+"VitrA",
+1072.0,
+5.0,
+37888.999964
+],
+[
+"A4521436WTC",
+"Origin Ara Musluk",
+"Bataryalar ve Musluklar",
+"VitrA",
+1064.0,
+5.0,
+14321.999955
+],
+[
+"A45794",
+"Origin Classic Duş Başlığı",
+"Yıkanma Alanları",
+"VitrA",
+945.0,
+5.0,
+43396.999995
+],
+[
+"90-003R009",
+"Metropole Klozet Kapağı",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+769.0,
+5.0,
+15831.999941
+],
+[
+"137-003R009",
+"Liquid Klozet Kapağı",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+796.0,
+5.0,
+17431.999952
+],
+[
+"80512",
+"Core Aynalı Banyo Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+573.0,
+5.0,
+54006.99996
+],
+[
+"A4514834",
+"Lavabo Yuvarlak Süzgeci Universal",
+"Banyo Aksesuarları",
+"VitrA",
+735.0,
+5.0,
+9382.000027
+],
+[
+"A44267",
+"Projekta Cama Monte Havluluk Arka Kapak",
+"Banyo Aksesuarları",
+"VitrA",
+643.0,
+5.0,
+7339.999911
+],
+[
+"A4278474",
+"Suit 3 Delikli Lavabo Bataryası",
+"Bataryalar ve Musluklar",
+"VitrA",
+591.0,
+5.0,
+136419.000005
+],
+[
+"A4480836",
+"Root Yedek Tuvalet Kağıtlığı",
+"Banyo Aksesuarları",
+"VitrA",
+430.0,
+5.0,
+8746.999944
+],
+[
+"A44568",
+"Liquid Kanca Askı",
+"Banyo Aksesuarları",
+"VitrA",
+344.0,
+5.0,
+11745.000071999999
+],
+[
+"A47313",
+"Prime Round Duş Sistemi",
+"Yıkanma Alanları",
+"VitrA",
+15102.0,
+4.0,
+160376.00004800002
+],
+[
+"7231B403-6216",
+"V-Care Prime Akıllı Asma Klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+8831.0,
+4.0,
+384660.000044
+],
+[
+"7510B003-6345",
+"Mia Round Asma klozet seti",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+3596.0,
+4.0,
+58799.999981
+],
+[
+"7234B003-6222",
+"V-Care Ultra Akıllı Asma Klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+6301.0,
+4.0,
+293479.999985
+],
+[
+"7041B003-6382",
+"Shift T30 Asma Klozet Seti",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+7465.0,
+4.0,
+58807.999935
+],
+[
+"75024",
+"Mia Banyo Dolabı Seti",
+"Banyo Mobilyaları",
+"VitrA",
+4759.0,
+4.0,
+54862.999994
+],
+[
+"81011",
+"Shift T20 Lavabo Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+2364.0,
+4.0,
+38445.000007
+],
+[
+"A47297",
+"Joy Duş Sistemi",
+"Duş Sistemleri",
+"Artema",
+1647.0,
+4.0,
+71183.999954
+],
+[
+"60824",
+"Sento Lavabo Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+4256.0,
+4.0,
+152910.000024
+],
+[
+"69561",
+"Ardea Banyo Dolabı Seti",
+"Banyo Mobilyaları",
+"VitrA",
+3941.0,
+4.0,
+45014.000008999996
+],
+[
+"A47310",
+"Core Square Duş Sistemi",
+"Yıkanma Alanları",
+"Artema",
+2382.0,
+4.0,
+127400.999965
+],
+[
+"A42816",
+"Suit Lavabo Bataryası",
+"Bataryalar ve Musluklar",
+"VitrA",
+3745.0,
+4.0,
+51563.99996
+],
+[
+"66166",
+"Mia Boy Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+2797.0,
+4.0,
+39968.000028
+],
+[
+"A43661",
+"Shift T20 Yüksek Lavabo Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+1563.0,
+4.0,
+18360.000031
+],
+[
+"7682B003-0001",
+"S20 Round Etajerli lavabo",
+"Lavabolar",
+"VitrA",
+2369.0,
+4.0,
+44117.999982
+],
+[
+"A4430039",
+"Eternity Çöp Kovası",
+"Banyo Aksesuarları",
+"VitrA",
+2428.0,
+4.0,
+50695.999993
+],
+[
+"7321B403-0090",
+"Liquid Asma Klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+2415.0,
+4.0,
+113956.00007
+],
+[
+"7428B003-0041",
+"Geo Çanak Lavabo",
+"Vitrifiyeler",
+"VitrA",
+1674.0,
+4.0,
+26595.999988
+],
+[
+"A43534",
+"Minimax Round Çanak Lavabo Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+2192.0,
+4.0,
+35037.000065
+],
+[
+"5994B422-0016",
+"Outline Çanak lavabo",
+"Vitrifiyeler",
+"VitrA",
+751.0,
+4.0,
+63280.000062
+],
+[
+"7681B003-0001",
+"S20 Round Etajerli lavabo",
+"Lavabolar",
+"VitrA",
+2231.0,
+4.0,
+31420.999945
+],
+[
+"7683B003-0001",
+"S20 Round Etajerli lavabo",
+"Lavabolar",
+"VitrA",
+2627.0,
+4.0,
+52389.999986
+],
+[
+"7406B003-0294",
+"Archiplan Lavabo",
+"Lavabolar",
+"VitrA",
+743.0,
+4.0,
+28799.999998
+],
+[
+"A4591434",
+"Core Round Elduşu Takımı",
+"Yıkanma Alanları",
+"Artema",
+1101.0,
+4.0,
+17091.999988999996
+],
+[
+"81006",
+"Shift T20 Aynalı Banyo Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+1106.0,
+4.0,
+26132.00002
+],
+[
+"66113",
+"Mia Aynalı Banyo Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+2005.0,
+4.0,
+24675.999996000002
+],
+[
+"81007",
+"Shift T20 Aynalı Banyo Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+1395.0,
+4.0,
+26131.999974000002
+],
+[
+"80515",
+"Core Aynalı Banyo Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+1107.0,
+4.0,
+51551.999985
+],
+[
+"A4262136WTC",
+"Origin Ankastre Duş Bataryası",
+"Bataryalar ve Musluklar",
+"VitrA",
+1876.0,
+4.0,
+33592.000067
+],
+[
+"A4430057",
+"Eternity Çöp Kovası",
+"Banyo Aksesuarları",
+"VitrA",
+1599.0,
+4.0,
+30723.999981999998
+],
+[
+"81004",
+"Shift T20 Aynalı Banyo Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+1368.0,
+4.0,
+22045.999991
+],
+[
+"66915",
+"Core Düz Ayna",
+"Banyo Mobilyaları",
+"VitrA",
+1264.0,
+4.0,
+26140.999977
+],
+[
+"A42622",
+"Origin Çıkış Ucu",
+"Bataryalar ve Musluklar",
+"VitrA",
+1327.0,
+4.0,
+17955.999946
+],
+[
+"59980555000",
+"DK100 Eco-Flow Duş Kanalı",
+"Yıkanma Alanları",
+"VitrA",
+993.0,
+4.0,
+21283.999997
+],
+[
+"A42718",
+"Aquaheat Ankastre Termostatik Banyo Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+969.0,
+4.0,
+73195.999992
+],
+[
+"A4374936",
+"Shift Pull-Down Eviye Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+901.0,
+4.0,
+37883.999995
+],
+[
+"132-003R009",
+"Metropole Klozet Kapağı",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+998.0,
+4.0,
+13551.999991
+],
+[
+"A4488636",
+"Origin Havluluk",
+"Banyo Aksesuarları",
+"VitrA",
+1006.0,
+4.0,
+22679.999948
+],
+[
+"119-003R009",
+"Equal Klozet Kapağı",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+1059.0,
+4.0,
+14773.000038999999
+],
+[
+"A4489329",
+"Origin Tuvalet Fırçası",
+"Banyo Aksesuarları",
+"VitrA",
+515.0,
+4.0,
+38176.000027
+],
+[
+"A44056",
+"Arkitekta Çöp Kovası",
+"Banyo Aksesuarları",
+"VitrA",
+847.0,
+4.0,
+12459.99996
+],
+[
+"A4480736",
+"Root Sıvı Sabunluk",
+"Banyo Aksesuarları",
+"VitrA",
+376.0,
+4.0,
+7764.000033
+],
+[
+"A4565225",
+"Universal Duş Dirseği",
+"Duş Sistemleri",
+"VitrA",
+467.0,
+4.0,
+9436.000009
+],
+[
+"A45917",
+"Core Square Sürgülü El Duşu",
+"Yıkanma Alanları",
+"Artema",
+616.0,
+4.0,
+17901.000021
+],
+[
+"62231",
+"Valarte Aynalı Banyo Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+572.0,
+4.0,
+113552.000026
+],
+[
+"A44802",
+"Root Havluluk",
+"Banyo Aksesuarları",
+"VitrA",
+558.0,
+4.0,
+5254.000006
+],
+[
+"67673",
+"Mia Ayna",
+"Banyo Mobilyaları",
+"VitrA",
+426.0,
+4.0,
+17240.000031000003
+],
+[
+"A4480436",
+"Root Tuvalet Kağıtlığı",
+"Banyo Aksesuarları",
+"VitrA",
+413.0,
+4.0,
+8892.000038999999
+],
+[
+"A4514836WTC",
+"Origin Sabit Lavabo Süzgeci",
+"Banyo Aksesuarları",
+"VitrA",
+592.0,
+4.0,
+6711.999967
+],
+[
+"A4489636",
+"Origin Diş Fırçalığı",
+"Banyo Aksesuarları",
+"VitrA",
+490.0,
+4.0,
+10755.999988
+],
+[
+"207-422R009",
+"Universal Klozet kapağı",
+"Vitrifiyeler",
+"VitrA",
+299.0,
+4.0,
+17078.999998
+],
+[
+"66521",
+"-",
+"Banyo Mobilyaları",
+"VitrA",
+49.0,
+4.0,
+1136.000061
+],
+[
+"59980235000",
+"DK100 Elegant Duş Kanalı",
+"Yıkanma Alanları",
+"VitrA",
+7123.0,
+3.0,
+22610.999977
+],
+[
+"A44473",
+"Arkitekta Duş Oturağı",
+"Banyo Aksesuarları",
+"VitrA",
+4047.0,
+3.0,
+47313.999942
+],
+[
+"67214",
+"Metropole Pure Lavabo Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+3767.0,
+3.0,
+124710.000004
+],
+[
+"7748B083-0559",
+"Sento Asma Klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+5258.0,
+3.0,
+59808.000031
+],
+[
+"A45690",
+"Master Slot 3F El Duşu Takımı",
+"Duş Sistemleri",
+"Artema",
+1641.0,
+3.0,
+8510.999995
+],
+[
+"A49325",
+"Minimax Square Ankastre Banyo Seti",
+"Armatürler",
+"Artema",
+3547.0,
+3.0,
+62504.999998
+],
+[
+"69562",
+"Ardea Banyo Dolabı Seti",
+"Banyo Mobilyaları",
+"VitrA",
+3951.0,
+3.0,
+36926.999976
+],
+[
+"A45795",
+"Origin Classic El Duşu Takımı",
+"Duş Sistemleri",
+"VitrA",
+2173.0,
+3.0,
+19051.000047
+],
+[
+"A4456539",
+"Liquid Tuvalet Kağıtlığı",
+"Banyo Aksesuarları",
+"VitrA",
+2311.0,
+3.0,
+15254.999992000001
+],
+[
+"A45811",
+"Move Masajlı Duş Sistemi",
+"Duş Sistemleri",
+"VitrA",
+3637.0,
+3.0,
+55925.999992
+],
+[
+"4334B403-1361",
+"Water Jewels Çanak Lavabo",
+"Lavabolar",
+"VitrA",
+4230.0,
+3.0,
+24790.999948999997
+],
+[
+"A4258134",
+"Origin Ankastre Lavabo Bataryası",
+"Bataryalar ve Musluklar",
+"VitrA",
+5262.0,
+3.0,
+49719.999988
+],
+[
+"A45910",
+"Base Round Duş Kolonu",
+"Duş Sistemleri",
+"Artema",
+2354.0,
+3.0,
+30929.999984000002
+],
+[
+"A45918",
+"Core Round Duş Kolonu",
+"Yıkanma Alanları",
+"Artema",
+4506.0,
+3.0,
+33889.999976
+],
+[
+"67041",
+"Prime Yuvarlak Ayna",
+"Banyo Mobilyaları",
+"VitrA",
+2535.0,
+3.0,
+25896.000024
+],
+[
+"81010",
+"Shift T20 Lavabo Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+3546.0,
+3.0,
+29945.999999000003
+],
+[
+"7748B003-1684",
+"Sento Asma Klozet",
+"Vitrifiyeler",
+"VitrA",
+2922.0,
+3.0,
+54705.00006
+],
+[
+"7436B003-1082",
+"Nuo Tezgahaltı Lavabo",
+"Lavabolar",
+"VitrA",
+3628.0,
+3.0,
+22481.999952
+],
+[
+"7748B003-7211",
+"Sento Asma Klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+2805.0,
+3.0,
+57924.000013
+],
+[
+"A45812",
+"Move Masajlı Duş Sistemi",
+"Yıkanma Alanları",
+"VitrA",
+3745.0,
+3.0,
+55926.00003
+],
+[
+"66912",
+"Core Aynalı Banyo Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+3415.0,
+3.0,
+36319.999993
+],
+[
+"A42091",
+"Mınımax S Eviye Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+3101.0,
+3.0,
+18060.000004
+],
+[
+"5994B401-0016",
+"Outline Çanak Lavabo",
+"Lavabolar",
+"VitrA",
+2217.0,
+3.0,
+47460.00002
+],
+[
+"5995B401-0016",
+"Outline Çanak Lavabo",
+"Lavabolar",
+"VitrA",
+2722.0,
+3.0,
+53414.999985999995
+],
+[
+"80285",
+"Integra Square Lavabo Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+1902.0,
+3.0,
+58158.000015
+],
+[
+"A43740",
+"Inox Pull-Down Eviye Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+1574.0,
+3.0,
+36846.000022
+],
+[
+"64082",
+"Equal Lavabo Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+2325.0,
+3.0,
+57744.0
+],
+[
+"740-2295",
+"Root Round Kumanda Paneli",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+1869.0,
+3.0,
+10752.999994
+],
+[
+"A42213",
+"Minibox Ankastre Duş Bataryası",
+"Bataryalar ve Musluklar",
+"Null",
+2685.0,
+3.0,
+6977.000018
+],
+[
+"740-1601",
+"Origin Kumamda Paneli,  Cam",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+2911.0,
+3.0,
+15587.999987
+],
+[
+"69436",
+"Root Groove Lavabo Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+1088.0,
+3.0,
+78707.999952
+],
+[
+"740-2395",
+"Root Square Kumanda Paneli",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+2452.0,
+3.0,
+10909.999981
+],
+[
+"A41994",
+"Mınımax S Banyo Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+1883.0,
+3.0,
+17721.000003
+],
+[
+"7812B422-0016",
+"Plural Çanak lavabo",
+"Vitrifiyeler",
+"VitrA",
+608.0,
+3.0,
+71526.000022
+],
+[
+"6392L003-0159",
+"Seramik Sifon Üst Grubu",
+"Banyo Aksesuarları",
+"VitrA",
+1660.0,
+3.0,
+5879.0000039999995
+],
+[
+"A45117",
+"Lavabo ve Eviye Sifonu",
+"Banyo Aksesuarları",
+"VitrA",
+1752.0,
+3.0,
+4466.999951
+],
+[
+"740-2224",
+"Root Round Kumanda Paneli",
+"Banyo",
+"VitrA",
+1880.0,
+3.0,
+9188.000003000001
+],
+[
+"A4516629",
+"Taşma Yüzüğü",
+"Bataryalar ve Musluklar",
+"VitrA",
+460.0,
+3.0,
+2303.999985
+],
+[
+"A43653",
+"Shift T10 Banyo Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+918.0,
+3.0,
+20408.999978
+],
+[
+"740-2400",
+"Origin Kumanda Paneli",
+"Rezervuarlar",
+"VitrA",
+1206.0,
+3.0,
+3474.000005
+],
+[
+"67337",
+"Metropole Pure Lavabo Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+1230.0,
+3.0,
+124709.99998700002
+],
+[
+"A4579536",
+"Origin Classic El Duşu Takımı",
+"Yıkanma Alanları",
+"VitrA",
+509.0,
+3.0,
+29879.999977
+],
+[
+"A43520",
+"Minimax Square Banyo Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+1420.0,
+3.0,
+28011.000008
+],
+[
+"A4488634",
+"Origin Havluluk",
+"Banyo Aksesuarları",
+"VitrA",
+1705.0,
+3.0,
+18710.999995
+],
+[
+"64084",
+"Equal Lavabo Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+1170.0,
+3.0,
+66202.999953
+],
+[
+"A4209136",
+"Minimax S Eviye Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+1006.0,
+3.0,
+29802.000008
+],
+[
+"A44891",
+"Origin Sıvı Sabunluk",
+"Banyo Aksesuarları",
+"VitrA",
+1236.0,
+3.0,
+9362.999990999999
+],
+[
+"80275",
+"Integra Square Lavabo Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+982.0,
+3.0,
+56395.000019
+],
+[
+"210-401R009",
+"Universal Klozet kapağı",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+422.0,
+3.0,
+10830.000009
+],
+[
+"A4353734",
+"Minimax Round Ankastre Lavabo Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+864.0,
+3.0,
+35700.000007
+],
+[
+"69564",
+"Ardea Banyo Dolabı Seti",
+"Banyo Mobilyaları",
+"VitrA",
+569.0,
+3.0,
+24984.00001
+],
+[
+"A45796",
+"Origin Classic Sürgülü Elduşu Takımı",
+"Duş Sistemleri",
+"VitrA",
+833.0,
+3.0,
+27349.000044
+],
+[
+"A48001",
+"Istanbul Tuvalet Kağıtlığı",
+"Banyo Aksesuarları",
+"VitrA",
+929.0,
+3.0,
+13764.999984
+],
+[
+"A42858",
+"Origin Ankastre 3 Yollu Yönlendirici",
+"Yıkanma Alanları",
+"VitrA",
+1143.0,
+3.0,
+9972.999996
+],
+[
+"A45913",
+"Core Round Duş Başlığı",
+"Yıkanma Alanları",
+"Artema",
+838.0,
+3.0,
+11072.999993
+],
+[
+"A44284",
+"Arkitekta Kağıt Havluluk",
+"Banyo Aksesuarları",
+"VitrA",
+900.0,
+3.0,
+5949.000002000001
+],
+[
+"A4489234",
+"Origin Sıvı Sabunluk Tutacağı",
+"Banyo Aksesuarları",
+"VitrA",
+754.0,
+3.0,
+10433.999960000001
+],
+[
+"A44808",
+"Root Yedek Tuvalet Kağıtlığı",
+"Banyo Aksesuarları",
+"VitrA",
+591.0,
+3.0,
+3469.999997
+],
+[
+"A45122",
+"Lavabo/Eviye Sifonu",
+"Banyo Aksesuarları",
+"VitrA",
+948.0,
+3.0,
+5369.000018000001
+],
+[
+"A44548",
+"Origin Classic Kısa Havluluk",
+"Banyo Aksesuarları",
+"VitrA",
+695.0,
+3.0,
+10245.00002
+],
+[
+"A4514929",
+"Lavabo Süzgeci",
+"Banyo Aksesuarları",
+"VitrA",
+584.0,
+3.0,
+6106.000012
+],
+[
+"A4514925",
+"Lavabo Süzgeci",
+"Banyo Aksesuarları",
+"VitrA",
+571.0,
+3.0,
+5724.000013999999
+],
+[
+"62234",
+"Valarte Aynalı Banyo Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+587.0,
+3.0,
+86994.999964
+],
+[
+"A4525925",
+"Origin Classic Ara Musluk",
+"Bataryalar ve Musluklar",
+"VitrA",
+480.0,
+3.0,
+13045.000017
+],
+[
+"5654B483-0016",
+"Frame Tezgahüstü lavabo",
+"Lavabolar",
+"VitrA",
+300.0,
+3.0,
+11267.999934
+],
+[
+"A44777",
+"Minimax Katı Sabunluk",
+"Banyo Aksesuarları",
+"VitrA",
+411.0,
+3.0,
+4136.999959
+],
+[
+"A4481136",
+"Root Tuvalet Fırçalığı",
+"Banyo Aksesuarları",
+"VitrA",
+430.0,
+3.0,
+7146.000007
+],
+[
+"A4086823",
+"Juno Banyo Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+492.0,
+3.0,
+39602.999958
+],
+[
+"212-422R009",
+"Universal Klozet kapağı",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+240.0,
+3.0,
+11915.999984
+],
+[
+"A4488725",
+"Origin Tuvalet Kağıtlığı",
+"Banyo Aksesuarları",
+"VitrA",
+103.0,
+3.0,
+12717.000056
+],
+[
+"A4512325",
+"Lavabo Sifonu",
+"Banyo Aksesuarları",
+"VitrA",
+483.0,
+3.0,
+13356.000046000001
+],
+[
+"67615",
+"Core Aynalı Banyo Dolabı",
+"40diger",
+"VitrA",
+242.0,
+3.0,
+30569.999967
+],
+[
+"106-401R009",
+"Memoria Klozet Kapağı",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+502.0,
+3.0,
+13945.999993000001
+],
+[
+"67805",
+"Mia Düz Ayna",
+"Banyo Mobilyaları",
+"VitrA",
+200.0,
+3.0,
+10845.000049
+],
+[
+"A4432239",
+"Eternity Tuvalet Fırçalığı",
+"Banyo Aksesuarları",
+"VitrA",
+433.0,
+3.0,
+20793.000016
+],
+[
+"106-422R009",
+"Memoria Klozet kapağı",
+"Vitrifiyeler",
+"VitrA",
+165.0,
+3.0,
+14381.999959
+],
+[
+"A4454836",
+"Origin Classic Kısa Havluluk",
+"Banyo Aksesuarları",
+"VitrA",
+397.0,
+3.0,
+15365.999996
+],
+[
+"A44125",
+"Base 400 Tuvalet Fırçalığı",
+"Banyo Aksesuarları",
+"VitrA",
+388.0,
+3.0,
+12366.000019
+],
+[
+"A4369036",
+"Shift T30 Banyo Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+288.0,
+3.0,
+26613.00001
+],
+[
+"A44306",
+"Eternity Kanca Askı",
+"Banyo Aksesuarları",
+"VitrA",
+312.0,
+3.0,
+5667.0
+],
+[
+"A4452236",
+"Origin Classic Tuvalet Kağıtlığı",
+"Banyo Aksesuarları",
+"VitrA",
+316.0,
+3.0,
+11655.000035
+],
+[
+"A4452036",
+"Origin Classic Katı Sabunluk ",
+"Banyo Aksesuarları",
+"VitrA",
+200.0,
+3.0,
+14514.000012
+],
+[
+"61069",
+"Sento Ayak",
+"Banyo Mobilyaları",
+"VitrA",
+239.0,
+3.0,
+5337.999952
+],
+[
+"A4522374",
+"El Duşu Çıkışı",
+"Yıkanma Alanları",
+"VitrA",
+59.0,
+3.0,
+8370.000055
+],
+[
+"5428L003-0107",
+"Integra Rezervuar",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+5389.0,
+2.0,
+5788.000008
+],
+[
+"A45909",
+"Base Round Sürgülü El Duşu",
+"Yıkanma Alanları",
+"Artema",
+4147.0,
+2.0,
+5560.000033
+],
+[
+"A4590836",
+"Base Round Sürgülü El Duşu",
+"Yıkanma Alanları",
+"Artema",
+3216.0,
+2.0,
+10514.000021
+],
+[
+"A43674",
+"Shift T20 C Tipi Eviye Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+3498.0,
+2.0,
+13319.999995999999
+],
+[
+"5885B420-0559",
+"Memoria Asma Klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+3917.0,
+2.0,
+66061.999987
+],
+[
+"5885B403-0559",
+"Memoria Asma Klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+7079.0,
+2.0,
+48935.999985
+],
+[
+"7043L003-0092",
+"Integra Takım Klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+6445.0,
+2.0,
+17591.999992
+],
+[
+"768-4800-01",
+"V-Fix Prime 8cm Asma Klozetler için Gömme Rezervuar",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+4836.0,
+2.0,
+26154.00004
+],
+[
+"768-5800-01",
+"V-Fix Prime 8cm Asma Klozetler için Gömme Rezervuar",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+7127.0,
+2.0,
+23790.000031
+],
+[
+"81008",
+"Shift T20 Lavabo Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+3481.0,
+2.0,
+21785.00001
+],
+[
+"A49273",
+"Minimax S Ankastre Set",
+"Yıkanma Alanları",
+"Artema",
+5532.0,
+2.0,
+53921.999998
+],
+[
+"A42581",
+"Origin Ankastre Lavabo Bataryası",
+"Bataryalar ve Musluklar",
+"VitrA",
+6418.0,
+2.0,
+19131.999981
+],
+[
+"A43678",
+"Shift T20 C Tipi Pull-Down Eviye Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+3448.0,
+2.0,
+19921.999965
+],
+[
+"7910B422-0090",
+"Metropole Round QuantumFlush Asma klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+3528.0,
+2.0,
+48172.0
+],
+[
+"7748B076-0559",
+"Sento Asma Klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+4258.0,
+2.0,
+39871.999954
+],
+[
+"A42725",
+"Root Round Banyo Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+4771.0,
+2.0,
+18543.99999
+],
+[
+"5885B401-0559",
+"Memoria Asma Klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+3331.0,
+2.0,
+66062.00002800001
+],
+[
+"66168",
+"Mia Boy Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+3769.0,
+2.0,
+19984.000021
+],
+[
+"7484B003-6344",
+"Mia Square Asma klozet seti",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+3003.0,
+2.0,
+24858.000028
+],
+[
+"A45793",
+"Origin Classic Duş Kolonu",
+"Duş Sistemleri",
+"VitrA",
+21797.0,
+1.0,
+31914.99999
+],
+[
+"7948B403-6262",
+"Sento Asma Klozet Seti",
+"Vitrifiyeler",
+"VitrA",
+16237.0,
+1.0,
+40354.000014
+],
+[
+"A4591534",
+"Core Square Elduşu Takımı",
+"Duş Sistemleri",
+"Artema",
+4812.0,
+1.0,
+5029.000014
+],
+[
+"A4591934",
+"Core Square Duş Kolonu",
+"Duş Sistemleri",
+"Artema",
+5499.0,
+1.0,
+19526.999992
+],
+[
+"65650002282",
+"Universal Sürgülü Oval Panel",
+"Yıkanma Alanları",
+"VitrA",
+5428.0,
+1.0,
+33315.999983
+],
+[
+"A4285936WTC",
+"Origin Ankastre Yönlendirici",
+"Duş Sistemleri",
+"VitrA",
+4829.0,
+1.0,
+3107.000015
+],
+[
+"A47055EXPS",
+"AquaHeat Termostatik Duş Bataryası",
+"Armatürler",
+"VitrA",
+4122.0,
+1.0,
+13892.000013
+],
+[
+"A45908",
+"Base Round Sürgülü El Duşu",
+"Yıkanma Alanları",
+"Artema",
+3459.0,
+1.0,
+3503.999987
+],
+[
+"4518B403-0090",
+"İstanbul Asma Klozet",
+"Vitrifiyeler",
+"VitrA",
+8237.0,
+1.0,
+30528.999984
+],
+[
+"59980238000",
+"DK100 Elegant Duş Kanalı",
+"Yıkanma Alanları",
+"VitrA",
+4474.0,
+1.0,
+9552.999998
+],
+[
+"7748B022-0559",
+"Sento Asma klozet",
+"Vitrifiyeler",
+"VitrA",
+3053.0,
+1.0,
+19936.000021
+],
+[
+"60869",
+"Sento Çamaşır Makinesi Ünitesi",
+"Banyo Mobilyaları",
+"VitrA",
+5007.0,
+1.0,
+29378.999994
+],
+[
+"A4255634",
+"Origin Lavabo Bataryası",
+"Bataryalar ve Musluklar",
+"VitrA",
+4793.0,
+1.0,
+20182.000001
+],
+[
+"62157",
+"Valarte Lavabo Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+3366.0,
+1.0,
+48846.000017
+],
+[
+"69560",
+"Ardea Banyo Dolabı Seti",
+"Banyo Mobilyaları",
+"VitrA",
+3335.0,
+1.0,
+12308.999981
+],
+[
+"A4730934",
+"Core Round Duş Sistemi",
+"Yıkanma Alanları",
+"Artema",
+3134.0,
+1.0,
+46048.999983
+],
+[
+"5289B003-0001",
+"S20 Lavabo",
+"Lavabolar",
+"VitrA",
+4777.0,
+1.0,
+5920.999987
+],
+[
+"A47205",
+"AquaHeat Bliss 240 2F Duş Sistemi",
+"Duş Sistemleri",
+"VitrA",
+4206.0,
+1.0,
+21852.999979
+],
+[
+"7810B403-0016",
+"Plural Çanak Lavabo",
+"Lavabolar",
+"VitrA",
+3857.0,
+1.0,
+17660.000018
+],
+[
+"5652B403-0016",
+"Frame Tezgahüstü Lavabo",
+"Lavabolar",
+"VitrA",
+3976.0,
+1.0,
+9507.000004
+],
+[
+"A47122",
+"Root Round Temassız Lavabo Bataryası",
+"Bataryalar ve Musluklar",
+"Artema",
+4094.0,
+1.0,
+21520.000019
+],
+[
+"A4255836WTC",
+"Origin Çanak Lavabo Bataryası",
+"Bataryalar ve Musluklar",
+"VitrA",
+3021.0,
+1.0,
+22004.999978
+],
+[
+"4442B403-1361",
+"Water Jewels Çanak Lavabo",
+"Lavabolar",
+"VitrA",
+3010.0,
+1.0,
+9798.999979
+],
+[
+"A48023",
+"Istanbul Duş Başlığı",
+"Duş Sistemleri",
+"VitrA",
+29341.0,
+0.0,
+0.0
+],
+[
+"69974",
+"Integra Round Lavabo Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+12540.0,
+0.0,
+0.0
+],
+[
+"A4275126",
+"Root Square Ankastre Duş Bataryası",
+"Armatürler",
+"Artema",
+3794.0,
+0.0,
+0.0
+],
+[
+"A4269526",
+"Root Round Ankastre Termostatik Duş Bataryası",
+"Armatürler",
+"Artema",
+3370.0,
+0.0,
+0.0
+],
+[
+"A4591036",
+"Base Round Duş Kolonu",
+"Yıkanma Alanları",
+"Artema",
+3118.0,
+0.0,
+0.0
+],
+[
+"A4579329",
+"Origin Classic Duş Kolonu",
+"Duş Sistemleri",
+"VitrA",
+3513.0,
+0.0,
+0.0
+],
+[
+"A4721939",
+"Liquid Tom Dixon Termostatik Duş Sistemi",
+"Duş Sistemleri",
+"VitrA",
+3584.0,
+0.0,
+0.0
+],
+[
+"7748B003-6248",
+"Sento Asma Klozet ve Klozet Kapağı Seti",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+11589.0,
+0.0,
+0.0
+],
+[
+"7910B403-7211",
+"Metropole Round QuantumFlush Asma klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+3057.0,
+0.0,
+0.0
+],
+[
+"5618L003-0850",
+"S50 Asma Klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+9457.0,
+0.0,
+0.0
+],
+[
+"9888B003-7201",
+"S55 Takım klozet seti ",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+6923.0,
+0.0,
+0.0
+],
+[
+"K952053R0001VTE0",
+"60x60, Lightstone, Fon, Traverten Beyaz, R10A",
+"Karo",
+"VitrA",
+4863.0,
+0.0,
+0.0
+],
+[
+"7910B483-0090",
+"Metropole Round QuantumFlush Asma klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+3694.0,
+0.0,
+0.0
+],
+[
+"7748B001-0559",
+"Sento Asma Klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+6874.0,
+0.0,
+0.0
+],
+[
+"5674B403-6194",
+"V-Care Comfort Akıllı Asma Klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+6303.0,
+0.0,
+0.0
+],
+[
+"7510L003-0090",
+"S60 Asma Klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+7630.0,
+0.0,
+0.0
+],
+[
+"770-1771-01",
+"Vitrus Duvar Önü Cam Rezervuar",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+3521.0,
+0.0,
+0.0
+],
+[
+"67156",
+"Metropole Edge Lavabo Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+3631.0,
+0.0,
+0.0
+],
+[
+"7360B003-0090",
+"Sento Kids Asma Klozet",
+"Vitrifiyeler",
+"VitrA",
+4957.0,
+0.0,
+0.0
+],
+[
+"7245B403-0090",
+"Equal Asma Klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+5496.0,
+0.0,
+0.0
+],
+[
+"67157",
+"Metropole Edge Lavabo Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+4371.0,
+0.0,
+0.0
+],
+[
+"5987B403-0092",
+"Sento Rim-ex Duvara Tam Dayalı Takım Klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+5404.0,
+0.0,
+0.0
+],
+[
+"5987B003-0610",
+"Sento Takım Klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+4871.0,
+0.0,
+0.0
+],
+[
+"7948B403-6263",
+"Sento Asma Klozet Seti",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+4645.0,
+0.0,
+0.0
+],
+[
+"K952054R0001VTSP",
+"60x120, Lightstone, Fon, Traverten Beyaz, R10A",
+"Karo",
+"VitrA",
+4965.0,
+0.0,
+0.0
+],
+[
+"K95077400001VTET",
+"30x60, Set6.0, Dekor, Kitkat Beyaz",
+"Karo",
+"VitrA",
+4694.0,
+0.0,
+0.0
+],
+[
+"60836",
+"Sento Lavabo Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+3194.0,
+0.0,
+0.0
+],
+[
+"A49321",
+"Flow Round Ankastre Banyo Seti",
+"Armatürler",
+"Artema",
+4012.0,
+0.0,
+0.0
+],
+[
+"7777B403-6399",
+"V-Care 3 Prime Akıllı Asma Klozet",
+"Vitrifiyeler",
+"VitrA",
+3223.0,
+0.0,
+0.0
+],
+[
+"5474B003-0618",
+"S20 Tezgahaltı Lavabo",
+"Lavabolar",
+"VitrA",
+5160.0,
+0.0,
+0.0
+],
+[
+"K947638LPR01VTSP",
+"60x120, Ultra 2.0, Fon, Beyaz, R9",
+"Karo",
+"VitrA",
+4000.0,
+0.0,
+0.0
+],
+[
+"K950794R0001VTE0",
+"60x60, Set6.0, Fon, Terrazzo Koyu Gri, R10A",
+"Karo",
+"VitrA",
+4426.0,
+0.0,
+0.0
+],
+[
+"7948B403-6592",
+"Sento Asma Klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+3040.0,
+0.0,
+0.0
+],
+[
+"K947278R0001VTET",
+"40x80, Cardostone, Fon, Bej, R10A",
+"Karo",
+"VitrA",
+3124.0,
+0.0,
+0.0
+],
+[
+"A49322",
+"Flow Square Ankastre Banyo Seti",
+"Yıkanma Alanları",
+"Artema",
+4394.0,
+0.0,
+0.0
+],
+[
+"K946243R0001VTEC",
+"Aspenwood 20x120 Kızıl Porselen Karo",
+"Karo",
+"VitrA",
+4171.0,
+0.0,
+0.0
+],
+[
+"A49323",
+"Flow Soft Ankastre Banyo Seti",
+"Armatürler",
+"Artema",
+4199.0,
+0.0,
+0.0
+],
+[
+"68895",
+"Root Classic Lavabo Dolabı",
+"Banyo Mobilyaları",
+"VitrA",
+4258.0,
+0.0,
+0.0
+],
+[
+"5512L003-0092",
+"S20 Takım Klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+3145.0,
+0.0,
+0.0
+],
+[
+"A4932936",
+"Origin Duş Seti",
+"Yıkanma Alanları",
+"VitrA",
+3336.0,
+0.0,
+0.0
+],
+[
+"K952057R0001VTSP",
+"60x120, Lightstone, Fon, Terre Crude Beyaz, R10A",
+"Karo",
+"VitrA",
+3242.0,
+0.0,
+0.0
+],
+[
+"A44468",
+"Arkitekta Katlanabilir Tutunma Barı",
+"Banyo Aksesuarları",
+"VitrA",
+3277.0,
+0.0,
+0.0
+],
+[
+"7985B003-0090",
+"Sento Yerden Klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+3063.0,
+0.0,
+0.0
+],
+[
+"5674B403-6193",
+"V-Care Basic Akıllı Asma Klozet",
+"Klozetler ve Rezervuarlar",
+"VitrA",
+3083.0,
+0.0,
+0.0
+],
+[
+"A44699",
+"Origin Temassız Sıvı Sabunluk",
+"Banyo Aksesuarları",
+"VitrA",
+3034.0,
+0.0,
+0.0
+],
+[
+"A41461",
+"Ankastre Stop Valf",
+"Bataryalar ve Musluklar",
+"Artema",
+3043.0,
+0.0,
+0.0
+]
+],
+"icerik_urun": {
+"2026-01": {
+"blog": {
+"add_to_cart": 146,
+"begin_checkout": 10,
+"purchase": 4,
+"page_view": 84387,
+"view_item": 17250
+},
+"diger": {
+"add_to_cart": 3782,
+"begin_checkout": 554,
+"purchase": 145,
+"page_view": 1197117,
+"view_item": 380673
+}
+},
+"2026-02": {
+"blog": {
+"add_to_cart": 271,
+"begin_checkout": 5,
+"purchase": 3,
+"page_view": 78900,
+"view_item": 14321
+},
+"diger": {
+"add_to_cart": 5233,
+"begin_checkout": 530,
+"purchase": 169,
+"page_view": 1098628,
+"view_item": 325563
+}
+},
+"2026-03": {
+"blog": {
+"add_to_cart": 411,
+"begin_checkout": 21,
+"purchase": 4,
+"page_view": 111379,
+"view_item": 20810
+},
+"diger": {
+"add_to_cart": 9112,
+"begin_checkout": 690,
+"purchase": 190,
+"page_view": 1332515,
+"view_item": 378976
+}
+},
+"2026-04": {
+"blog": {
+"add_to_cart": 507,
+"begin_checkout": 25,
+"purchase": 9,
+"page_view": 126377,
+"view_item": 24739
+},
+"diger": {
+"add_to_cart": 8474,
+"begin_checkout": 896,
+"purchase": 305,
+"page_view": 1416878,
+"view_item": 390008
+}
+},
+"2026-05": {
+"blog": {
+"add_to_cart": 418,
+"begin_checkout": 24,
+"purchase": 10,
+"page_view": 110963,
+"view_item": 27125
+},
+"diger": {
+"add_to_cart": 7168,
+"begin_checkout": 686,
+"purchase": 225,
+"page_view": 1669405,
+"view_item": 364464
+}
+},
+"2026-06": {
+"blog": {
+"add_to_cart": 618,
+"begin_checkout": 18,
+"purchase": 13,
+"page_view": 118073,
+"view_item": 28797
+},
+"diger": {
+"add_to_cart": 12717,
+"begin_checkout": 707,
+"purchase": 319,
+"page_view": 1750044,
+"view_item": 451356
+}
+},
+"2026-07": {
+"blog": {
+"add_to_cart": 652,
+"begin_checkout": 20,
+"purchase": 17,
+"page_view": 101097,
+"view_item": 25049
+},
+"diger": {
+"add_to_cart": 12964,
+"begin_checkout": 655,
+"purchase": 391,
+"page_view": 1513351,
+"view_item": 487066
+}
+},
+"2026-08": {
+"blog": {
+"add_to_cart": 348,
+"begin_checkout": 18,
+"purchase": 9,
+"page_view": 84034,
+"view_item": 20934
+},
+"diger": {
+"add_to_cart": 11874,
+"begin_checkout": 574,
+"purchase": 324,
+"page_view": 1296748,
+"view_item": 436922
+}
+},
+"2026-09": {
+"blog": {
+"add_to_cart": 786,
+"begin_checkout": 27,
+"purchase": 20,
+"page_view": 90400,
+"view_item": 19126
+},
+"diger": {
+"add_to_cart": 55558,
+"begin_checkout": 855,
+"purchase": 398,
+"page_view": 2132823,
+"view_item": 582694
+}
+}
+}
 }

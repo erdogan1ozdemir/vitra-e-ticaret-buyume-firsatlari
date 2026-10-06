@@ -16,6 +16,7 @@ def _deg(a, b): return (b / a - 1) * 100 if a else None
 def tl(v):
     t = (k(v) if v >= 1000 else bin(v)) + " TL"; x(t, t.replace(",", ".")); return t
 def _pe(v): return ("%.1f" % v) + "%"
+def _p1k(v): return ("%.2f" % v).replace(".", ",")
 def _isr(v): return ("+" if round(v, 1) > 0 else ("-" if round(v, 1) < 0 else "")) + "%" + ("%.1f" % abs(v)).replace(".", ",")
 def _isr_en(v): return ("+" if round(v, 1) > 0 else ("-" if round(v, 1) < 0 else "")) + ("%.1f" % abs(v)) + "%"
 r25, r26 = _top(2025, "gelir"), _top(2026, "gelir"); p25, p26 = _top(2025, "satin"), _top(2026, "satin"); o25, o26 = _top(2025, "oturum"), _top(2026, "oturum")
@@ -258,10 +259,24 @@ def _kol(p):
 rows_kl = [[_kol(p), cellk(v)] for p, v, us, ke in sorted(KL, key=lambda r: -r[1])[:8]]
 T_KOL = tablo([th("Koleksiyon ve katalog sayfası", "Collection and catalogue page", "Sayfa adresi; bağlantı canlı sayfaya gider.", "Page address; the link opens the live page."),
                th("Görüntüleme", "Views", "%s sayfa görüntüleme." % D_12[0], "Page views, %s." % D_12[1], True)], rows_kl, "dar")
-INS_BLOG = insight("Blog yazıları (/ilham-veren-fikirler/) %s döneminde %s görüntüleme almıştır; en çok görüntülenen sayfalar blog ana sayfası ve montaj rehberi hub'ıdır. Blog sayfalarındaki ürün listeleri aynı dönemde %s kez görüntülenmiş (view_item_list), bu listelerden ürüne %s tıklama (select_item) ve doğrudan %s sepete ekleme (add_to_cart) gerçekleşmiştir. Blogla başlayan oturumların Ocak - Eylül 2026 geliri %s'dir; blog okuyan oturumların sonrasında ürün görüntüleme, sepete ekleme ve satın almaya geçişi ayrı bir oturum segmentiyle ölçülebilir. Koleksiyon listesi sayfası (/v-/koleksiyonlar) tek başına %s görüntüleme almıştır."
-                   % (D_12[0], k(bv), k(BO["view_item_list"]), bin(BO["select_item"]), bin(BO["add_to_cart"]), tl(_bl6), k(KL[0][1])),
-                   "Blog articles (/ilham-veren-fikirler/) received %s views in %s; the most viewed pages are the blog home page and the installation guide hub. Product lists on blog pages were viewed %s times in the same period (view_item_list), with %s clicks from these lists to products (select_item) and %s direct add-to-carts (add_to_cart). Sessions starting on the blog produced %s of revenue in January - September 2026; how sessions that read the blog go on to view products, add to cart and purchase can be measured with a separate session segment. The collection list page (/v-/koleksiyonlar) alone received %s views."
-                   % (k(bv).replace(",", "."), D_12[1], k(BO["view_item_list"]), bin(BO["select_item"]), bin(BO["add_to_cart"]), tl(_bl6), k(KL[0][1]).replace(",", ".")), "D45", "D2")
+# ---------------------------------------------------------------- 11 · içerikten ürüne: blog oturumları
+IU = G["icerik_urun"]
+def _iu(seg, e): return sum(d[seg].get(e, 0) for d in IU.values())
+IUAD = [("page_view", "Sayfa görüntüleme", "Page view"), ("view_item", "Ürün görüntüleme", "Product view"), ("add_to_cart", "Sepete ekleme", "Add to cart"), ("begin_checkout", "Ödemeye başlama", "Begin checkout"), ("purchase", "Satın alma", "Purchase")]
+def _bin1k(seg, e): return 1000 * _iu(seg, e) / _iu(seg, "page_view")
+rows_iu = [[x("%s (%s)" % (b_, a_), "%s (%s)" % (c_, a_)), cellk(_iu("blog", a_)), cellk(_iu("diger", a_)), n(yzd(100 * _iu("blog", a_) / (_iu("blog", a_) + _iu("diger", a_)))),
+            n(x(_p1k(_bin1k("blog", a_)), "%.2f" % _bin1k("blog", a_)) if a_ != "page_view" else "-"), n(x(_p1k(_bin1k("diger", a_)), "%.2f" % _bin1k("diger", a_)) if a_ != "page_view" else "-")] for a_, b_, c_ in IUAD]
+T_IU = tablo([th("Olay", "Event", "GA4 olayı.", "GA4 event."),
+              th("Blog görüntülenen oturumlar", "Sessions with a blog view", "Oturumda /ilham-veren-fikirler sayfası görüntülenen oturum segmentinde olay sayısı, Oca-Eyl 2026 (aylık dışa aktarımların toplamı).", "Event count in the segment of sessions with a /ilham-veren-fikirler page view, Jan-Sep 2026 (sum of monthly exports).", True),
+              th("Diğer oturumlar", "Other sessions", "Blog sayfası görüntülenmeyen oturumlarda olay sayısı, Oca-Eyl 2026.", "Event count in sessions without a blog page view, Jan-Sep 2026.", True),
+              th("Blog oturumlarının payı", "Blog sessions' share", "Olayın blog görüntülenen oturumlardaki payı.", "The event's share in sessions with a blog view.", True),
+              th("1.000 sayfa görüntülemede · blog", "Per 1,000 page views · blog", "Olay sayısı / sayfa görüntüleme × 1.000, blog görüntülenen oturumlar.", "Event count / page views × 1,000, sessions with a blog view.", True),
+              th("1.000 sayfa görüntülemede · diğer", "Per 1,000 page views · other", "Olay sayısı / sayfa görüntüleme × 1.000, diğer oturumlar.", "Event count / page views × 1,000, other sessions.", True)], rows_iu, "dar")
+
+INS_BLOG = insight("Blog yazıları (/ilham-veren-fikirler/) %s döneminde %s görüntüleme almıştır; en çok görüntülenen sayfalar blog ana sayfası ve montaj rehberi hub'ıdır. Blog sayfalarındaki ürün listeleri aynı dönemde %s kez görüntülenmiş (view_item_list), bu listelerden ürüne %s tıklama (select_item) ve doğrudan %s sepete ekleme (add_to_cart) gerçekleşmiştir. Blog yazısı görüntülenen oturumlarda Ocak - Eylül 2026'da %s satın alma ve %s sepete ekleme gerçekleşmiştir (satın alma olaylarının %s'i); 1.000 sayfa görüntülemeye düşen satın alma blog görüntülenen oturumlarda %s, diğer oturumlarda %s'dir. Blogla başlayan oturumların doğrudan geliri %s'dir. Koleksiyon listesi sayfası (/v-/koleksiyonlar) tek başına %s görüntüleme almıştır."
+                   % (D_12[0], k(bv), k(BO["view_item_list"]), bin(BO["select_item"]), bin(BO["add_to_cart"]), bin(_iu("blog", "purchase")), bin(_iu("blog", "add_to_cart")), yzd(100 * _iu("blog", "purchase") / (_iu("blog", "purchase") + _iu("diger", "purchase"))), _p1k(_bin1k("blog", "purchase")), _p1k(_bin1k("diger", "purchase")), tl(_bl6), k(KL[0][1])),
+                   "Blog articles (/ilham-veren-fikirler/) received %s views in %s; the most viewed pages are the blog home page and the installation guide hub. Product lists on blog pages were viewed %s times in the same period (view_item_list), with %s clicks from these lists to products (select_item) and %s direct add-to-carts (add_to_cart). Sessions with a blog article view had %s purchases and %s add-to-carts in January - September 2026 (%s of purchase events); purchases per 1,000 page views are %s in sessions with a blog view and %s in other sessions. Sessions starting on the blog produced %s of revenue directly. The collection list page (/v-/koleksiyonlar) alone received %s views."
+                   % (k(bv).replace(",", "."), D_12[1], k(BO["view_item_list"]), bin(BO["select_item"]), bin(BO["add_to_cart"]), bin(_iu("blog", "purchase")), bin(_iu("blog", "add_to_cart")), yzd(100 * _iu("blog", "purchase") / (_iu("blog", "purchase") + _iu("diger", "purchase"))), "%.2f" % _bin1k("blog", "purchase"), "%.2f" % _bin1k("diger", "purchase"), tl(_bl6), k(KL[0][1]).replace(",", ".")), "D45", "D2")
 
 # ---------------------------------------------------------------- 7 · promosyon ve kupon
 PR = [r for r in G["promosyon"] if r["gor"]]
@@ -284,58 +299,97 @@ INS_PROMO = insight("Sitedeki promosyon alanları %s döneminde %s ürün görü
                     "The promotion slots on the site received %s item views and %s clicks in %s; among promotions with 10 thousand views or more, the highest click-through rates are %s. **No add-to-cart or purchase is attributed to any slot with a promotion name**: all purchased items appear with an empty (not set) promotion name; a coupon code is recorded only for %s (%s items, %s). Carrying the promotion click through to the purchase can make it possible to measure campaigns' effect on revenue."
                     % (k(prt).replace(",", "."), k(prk).replace(",", "."), D_12[1], _CTR_EN, _ku["kupon"] if _ku else "-", f"{int(_ku['satin']):,}" if _ku else "-", tl(_ku["gelir"]) if _ku else "-"), "D45")
 
-HTML = """
-<p class="lede">%s</p>
-<div class="kpis">%s%s%s%s</div>
-<h3>%s</h3>
-%s
-%s
-%s
-<h3>%s</h3>
-%s
-%s
-%s
-%s
-%s
-<h3>%s</h3>
-%s
-%s
-%s
-%s
-%s
-<h3>%s</h3>
-%s
-%s
-%s
-<h3>%s</h3>
-%s
-%s
-<h3>%s</h3>
-%s
-%s
-<h3>%s</h3>
-%s
-%s
-%s
-<h3>%s</h3>
-%s
-%s
-%s
-""" % (
- x("Google Analytics 4 (GA4) verisi, vitra.com.tr'nin oturum, satın alma ve gelir performansını kanal, site içi arama, ödeme adımı, içerik ve promosyon kırılımında göstermektedir. Veri VitrA ekibinin GA4 dışa aktarımından alınmıştır (05.10.2026); tabloların dönemleri başlık ve sütun açıklamalarında verilmiştir. Aralık 2025'te www.vitra.com.tr trafiği aynı GA4 mülküne katıldığı için oturum ve oturum başına dönüşüm oranı Aralık öncesi ve sonrası arasında kıyaslanmaz; satın alma ve gelir iki dönemde de kıyaslanabilir.",
-   "Google Analytics 4 (GA4) data shows vitra.com.tr's sessions, purchases and revenue by channel, site search, payment step, content and promotion. The data comes from the VitrA team's GA4 export (05.10.2026); each table's period is given in its heading and column descriptions. As www.vitra.com.tr traffic joined the same GA4 property in December 2025, sessions and the conversion rate per session are not compared before and after December; purchases and revenue are comparable in both periods."),
- kpi_kart(tl(r26), "E-ticaret geliri · Oca-Eyl 2026; Oca-Eyl 2025'e göre %s" % _isr(_deg(r25, r26)), "E-commerce revenue · Jan-Sep 2026; %s against Jan-Sep 2025" % _isr_en(_deg(r25, r26))),
- kpi_kart(bin(p26), "E-ticaret satın alma · Oca-Eyl 2026; Oca-Eyl 2025'e göre %s" % _isr(_deg(p25, p26)), "E-commerce purchases · Jan-Sep 2026; %s against Jan-Sep 2025" % _isr_en(_deg(p25, p26))),
- kpi_kart(tl(aov26), "Ortalama sipariş tutarı · Oca-Eyl 2026; 2025'te %s" % tl(aov25), "Average order value · Jan-Sep 2026; %s in 2025" % tl(aov25)),
- kpi_kart(yzd(100 * _o(_os_, 2026, "gelir") / _tg26), "Organik aramanın gelir payı · Oca-Eyl 2026; 2025'te %s" % yzd(100 * _o(_os_, 2025, "gelir") / _tg25), "Organic search share of revenue · Jan-Sep 2026; %s in 2025" % _pe(100 * _o(_os_, 2025, "gelir") / _tg25)),
- x("Aylık genel görünüm: gelir, satın alma ve oturum", "Monthly overview: revenue, purchases and sessions"), G_AYLIK, T_AYLIK, INS_AYLIK,
- x("Kanal performansı: oturum, satın alma ve gelir", "Channel performance: sessions, purchases and revenue"), G_KANAL, T_KANAL, G_KAY, INS_KANAL, T_KAYNAK,
- x("Giriş sayfası (landing page) türüne göre gelir", "Revenue by landing page type"), T_LP, G_LP, T_OY, T_LPS, INS_LP,
- x("Site içi arama terimleri", "Site search terms"), T_ARAMA, T_SINIF, INS_ARAMA,
- x("Ödeme ve teslimat adımı", "Payment and shipping step"), T_ODEME, INS_ODEME,
- x("Satın alma dışı talep olayları", "Non-purchase request events"), T_OLAY, INS_OLAY,
- x("Blog ve koleksiyon sayfaları: görüntüleme", "Blog and collection pages: views"), T_BLOG, T_KOL, INS_BLOG,
- x("Promosyon ve kupon", "Promotions and coupons"), T_PROMO, INS_PROMO,
+# ---------------------------------------------------------------- 8 · satın alma hunisi
+HU = G["huni"]
+def _hu(y, m2=9): return [sum((HU.get("%d-%02d" % (y, m)) or [0] * 7)[i] for m in range(1, m2 + 1)) for i in range(7)]
+_h25, _h26, _h26a = _hu(2025), _hu(2026), _hu(2026, 8)
+def _gc(t, i): return 100 * t[i] / t[i - 1] if t[i - 1] else None
+HAD = [("view_item_list", "Ürün listesi görüntüleme", "Product list view"), ("view_item", "Ürün görüntüleme", "Product view"), ("add_to_cart", "Sepete ekleme", "Add to cart"),
+       ("begin_checkout", "Ödemeye başlama", "Begin checkout"), ("add_shipping_info", "Teslimat bilgisi", "Shipping info"), ("add_payment_info", "Ödeme bilgisi", "Payment info"), ("purchase", "Satın alma", "Purchase")]
+rows_h = [[x("%s (%s)" % (b_, a_), "%s (%s)" % (c_, a_)), cellk(_h25[i]), cellk(_h26[i]), n(yzd(_gc(_h25, i)) if i else "-"), n(yzd(_gc(_h26, i)) if i else "-")] for i, (a_, b_, c_) in enumerate(HAD)]
+T_HUNI = tablo([th("Huni adımı", "Funnel step", "GA4 e-ticaret olayı; adımlar ürün listesinden satın almaya sıralıdır.", "GA4 e-commerce event; steps are ordered from product list to purchase."),
+                th("Oca-Eyl 2025", "Jan-Sep 2025", "Huni dışa aktarımındaki aylık adım değerlerinin Ocak - Eylül 2025 toplamı.", "January - September 2025 total of the monthly step values in the funnel export.", True),
+                th("Oca-Eyl 2026", "Jan-Sep 2026", "Huni dışa aktarımındaki aylık adım değerlerinin Ocak - Eylül 2026 toplamı.", "January - September 2026 total of the monthly step values in the funnel export.", True),
+                th("Geçiş 2025", "Step rate 2025", "Adım değerinin bir önceki adıma oranı, Oca-Eyl 2025.", "The step value as a share of the previous step, Jan-Sep 2025.", True),
+                th("Geçiş 2026", "Step rate 2026", "Adım değerinin bir önceki adıma oranı, Oca-Eyl 2026.", "The step value as a share of the previous step, Jan-Sep 2026.", True)], rows_h, "dar")
+INS_HUNI = insight("Ocak - Eylül 2026'da sepete eklemeden ödemeye başlamaya geçiş oranı %s'e inmiştir (2025'in aynı aylarında %s); Eylül 2026'daki sepete ekleme artışı hariç tutulduğunda da oran %s'dir. Ödemeye başlayanların teslimat bilgisine ilerleme oranı ise %s'den %s'e, ödeme bilgisinden satın almaya geçiş %s'ten %s'e yükselmiştir. **Kayıp ödeme adımında değil, sepet ile ödemeye başlama arasında yoğunlaşmaktadır**; bu, sepet sonrasındaki giriş ve üyelik ekranlarıyla (Bölüm [[b:yolculuk]]) ilişkilendirilebilir."
+                   % (yzd(_gc(_h26, 3)), yzd(_gc(_h25, 3)), yzd(_gc(_h26a, 3)), yzd(_gc(_h25, 4)), yzd(_gc(_h26, 4)), yzd(_gc(_h25, 6)), yzd(_gc(_h26, 6))),
+                   "In January - September 2026, the rate from add to cart to begin checkout fell to %s (%s in the same months of 2025); it is %s when the September 2026 rise in add-to-carts is excluded. The rate from begin checkout to shipping info rose from %s to %s, and from payment info to purchase from %s to %s. **The loss is concentrated between the cart and beginning checkout, not in the payment step**; this can be associated with the sign-in and account screens after the cart (Section [[b:yolculuk]])."
+                   % (yzd(_gc(_h26, 3)), yzd(_gc(_h25, 3)), yzd(_gc(_h26a, 3)), yzd(_gc(_h25, 4)), yzd(_gc(_h26, 4)), yzd(_gc(_h25, 6)), yzd(_gc(_h26, 6))), "D45")
+
+# ---------------------------------------------------------------- 9 · yeni ve geri dönen kullanıcılar, tekrar alım
+YD, AL = G["yeni_donen"], G["alici"]
+def _yd(y, tur, a): return sum((YD.get("%d-%02d" % (y, m)) or {}).get(tur, {}).get(a) or 0 for m in range(1, 10))
+def _ydp(y, tur, a):
+    t = sum(_yd(y, k_, a) for k_ in ("new", "returning", "(not set)")); return 100 * _yd(y, tur, a) / t if t else None
+def _al(y, a): return sum((AL.get("%d-%02d" % (y, m)) or {}).get(a) or 0 for m in range(1, 10))
+def _tekrar(y): return 100 * (1 - _al(y, "ilk") / _al(y, "toplam"))
+rows_yd = [[x(e, e_en)] + [n(yzd(_ydp(y, "returning", a))) for a in ("oturum", "islem", "gelir")] + [n(yzd(_ydp(y, "(not set)", "islem"))), n(yzd(_tekrar(y)))] for e, e_en, y in (("Oca-Eyl 2025", "Jan-Sep 2025", 2025), ("Oca-Eyl 2026", "Jan-Sep 2026", 2026))]
+T_YD = tablo([th("Dönem", "Period", "Ocak - Eylül toplamı.", "January - September total."),
+              th("Geri dönen · oturum payı", "Returning · share of sessions", "Geri dönen kullanıcı (returning) oturumlarının tüm oturumlar içindeki payı.", "Returning users' sessions as a share of all sessions.", True),
+              th("Geri dönen · işlem payı", "Returning · share of transactions", "Geri dönen kullanıcıların işlem (transaction) payı.", "Returning users' share of transactions.", True),
+              th("Geri dönen · gelir payı", "Returning · share of revenue", "Geri dönen kullanıcıların gelir payı.", "Returning users' share of revenue.", True),
+              th("(not set) · işlem payı", "(not set) · share of transactions", "Yeni ya da geri dönen olarak sınıflanamayan işlemlerin payı; 2025'te yüksek olduğu için yıllar arası kıyas yön gösterir.", "Share of transactions not classified as new or returning; as it is high in 2025, the comparison between years is indicative.", True),
+              th("Tekrar alan alıcı payı", "Repeat purchaser share", "Alıcılar içinde ilk kez satın almayanların payı (1 - First time purchasers / Total purchasers).", "Share of purchasers who are not first-time purchasers (1 - First time purchasers / Total purchasers).", True)], rows_yd, "dar")
+INS_YD = insight("Ocak - Eylül 2026'da gelirin %s'i geri dönen kullanıcılardan gelmektedir (2025'in aynı aylarında %s); alıcıların %s'i daha önce de satın almış kullanıcılardır (2025'te %s). Geri dönen kullanıcı oturumlarının payının %s'den %s'e çıkmasında Aralık 2025'te www.vitra.com.tr ziyaretçilerinin aynı GA4 mülküne katılmasının da etkisi bulunmaktadır. **Tekrar alan alıcı payının iki katına çıkması**, ilk alımdan sonra sitenin yeniden tercih edildiğini göstermektedir; bu alıcılar yedek parça, aksesuar ve montaj gibi tamamlayıcı ürünlerin hedef kitlesidir (Bölüm [[b:set]])."
+                 % (yzd(_ydp(2026, "returning", "gelir")), yzd(_ydp(2025, "returning", "gelir")), yzd(_tekrar(2026)), yzd(_tekrar(2025)), yzd(_ydp(2025, "returning", "oturum")), yzd(_ydp(2026, "returning", "oturum"))),
+                 "In January - September 2026, %s of revenue comes from returning users (%s in the same months of 2025); %s of purchasers had purchased before (%s in 2025). The rise in returning users' share of sessions from %s to %s is also affected by www.vitra.com.tr visitors joining the same GA4 property in December 2025. **The repeat purchaser share doubling** shows the site being chosen again after the first purchase; these purchasers are the target audience for complementary products such as spare parts, accessories and installation (Section [[b:set]])."
+                 % (yzd(_ydp(2026, "returning", "gelir")), yzd(_ydp(2025, "returning", "gelir")), yzd(_tekrar(2026)), yzd(_tekrar(2025)), yzd(_ydp(2025, "returning", "oturum")), yzd(_ydp(2026, "returning", "oturum"))), "D45")
+
+# ---------------------------------------------------------------- 10 · ürün ve kategori performansı (item)
+UK, UM, U26 = G["urun_kat"], G["urun_marka"], G["urun_2026"]
+_uk26 = UK["2026"]; _ukt = [sum(v[i] for v in _uk26.values()) for i in range(4)]
+UKAD = {"Banyo Mobilyaları": "Bathroom Furniture", "Klozetler ve Rezervuarlar": "WCs and cisterns", "Bataryalar ve Musluklar": "Taps and valves", "Banyo Aksesuarları": "Bathroom Accessories",
+        "Yıkanma Alanları": "Bathing Areas", "Lavabolar": "Washbasins", "Vitrifiyeler": "Sanitaryware", "Montaj Hizmeti": "Installation service", "Armatürler": "Taps and Mixers", "Duş Sistemleri": "Shower systems"}   # rapordaki mevcut karşılıklarla aynı
+for a_, b_ in UKAD.items(): x(a_, b_)
+x("Diğer", "Other")
+_ukana = [k_ for k_ in sorted(_uk26, key=lambda k_: -_uk26[k_][3]) if k_ in UKAD]
+_ukdig = [sum(v[i] for k_, v in _uk26.items() if k_ not in UKAD) for i in range(4)]
+rows_uk = [[x(k_, UKAD[k_]), cellk(_uk26[k_][0]), cell(_uk26[k_][2]), n(x(_p1k(1000 * _uk26[k_][2] / _uk26[k_][0]), "%.2f" % (1000 * _uk26[k_][2] / _uk26[k_][0]))), n(yzd(100 * _uk26[k_][3] / _ukt[3]))] for k_ in _ukana] + \
+          [[x("Diğer", "Other"), cellk(_ukdig[0]), cell(_ukdig[2]), n("-"), n(yzd(100 * _ukdig[3] / _ukt[3]))]]
+T_UK = tablo([th("Ana kategori", "Main category", "GA4 ürün kategorisi (2026 ağacında ikinci seviye).", "GA4 item category (second level in the 2026 tree)."),
+              th("Görüntülenen ürün", "Items viewed", "Items viewed, Oca-Eyl 2026.", "Items viewed, Jan-Sep 2026.", True),
+              th("Satın alınan ürün", "Items purchased", "Items purchased (adet), Oca-Eyl 2026.", "Items purchased (units), Jan-Sep 2026.", True),
+              th("1.000 görüntülemede satın alma", "Purchases per 1,000 views", "Satın alınan ürün / görüntülenen ürün × 1.000.", "Items purchased / items viewed × 1,000.", True),
+              th("Ürün geliri payı", "Share of item revenue", "Kategorinin Oca-Eyl 2026 ürün geliri (item revenue) içindeki payı; ürün geliri genel bakıştaki gelirden farklı hesaplandığı için pay olarak verilmiştir.", "The category's share of Jan-Sep 2026 item revenue; given as a share because item revenue is calculated differently from the overview revenue.", True)], rows_uk, "dar")
+_UH = [th("Ürün", "Product", "GA4 ürün adı (Item name) ve ürün kodu.", "GA4 item name and item ID."), th("Kategori", "Category", "Ana kategori.", "Main category."), th("Marka", "Brand", "Item brand.", "Item brand."),
+       th("Görüntülenen", "Viewed", "Items viewed, Oca-Eyl 2026.", "Items viewed, Jan-Sep 2026.", True), th("Satın alınan", "Purchased", "Items purchased, Oca-Eyl 2026.", "Items purchased, Jan-Sep 2026.", True),
+       th("1.000 görüntülemede satın alma", "Purchases per 1,000 views", "Satın alınan / görüntülenen × 1.000.", "Purchased / viewed × 1,000.", True), th("Ürün geliri payı", "Share of item revenue", "Oca-Eyl 2026 ürün geliri içindeki pay.", "Share of Jan-Sep 2026 item revenue.", True)]
+def _urow(r):
+    k_, ad, kat, mr, v, pu, rv = r
+    x(mr or "-", mr or "-")
+    return [x("%s · %s" % (ad, k_), "%s · %s" % (ad, k_)), x(kat, UKAD.get(kat, kat)) if kat in UKAD else x(kat or "-", kat or "-"), x(mr or "-", mr or "-"), cellk(v), cell(pu),
+            n(x(_p1k(1000 * pu / v), "%.2f" % (1000 * pu / v)) if v else "-"), n(yzd(100 * rv / _ukt[3], 2))]
+_U_SAT = sorted([r for r in U26 if r[2] != "Montaj Hizmeti"], key=lambda r: -r[5])[:15]
+_U_DUS = sorted([r for r in U26 if r[2] != "Montaj Hizmeti" and r[4] >= 8000], key=lambda r: r[5] / r[4])[:15]
+_U_MTJ = sorted([r for r in U26 if r[2] == "Montaj Hizmeti"], key=lambda r: -r[5])[:10]
+T_UURN = sekmeler([("En çok satın alınan 15 ürün", "Top 15 items purchased", tablo(_UH, [_urow(r) for r in _U_SAT], "dar xl")),
+                   ("Çok görüntülenip az satın alınan ürünler", "Most viewed, least purchased items", tablo(_UH, [_urow(r) for r in _U_DUS], "dar xl")),
+                   ("Montaj hizmeti kalemleri", "Installation service items", tablo(_UH, [_urow(r) for r in _U_MTJ], "dar xl"))], "ttabs")
+_mt25, _mt26 = UK["2025"].get("Montaj Hizmeti", [0, 0, 0, 0]), _uk26.get("Montaj Hizmeti", [0, 0, 0, 0])
+def _mpay(y): d = UM[y]; return 100 * d.get("Artema", 0) / sum(d.values())
+def _kr(k_): return 1000 * _uk26[k_][2] / _uk26[k_][0]
+INS_UK = insight("Ocak - Eylül 2026'da 1.000 ürün görüntülemesine düşen satın alma banyo aksesuarlarında %s ile en yüksektir; banyo mobilyasında %s, duş sistemlerinde %s, lavabolarda %s seviyesindedir. Adet olarak en çok satın alınan ürünler filtreli ara musluk, klozet kapakları, ankastre stop valf ve aksesuarlar gibi tamamlayıcı ürünlerdir; çok görüntülenen duş başlığı, duş kolonu, lavabo dolabı ve asma klozet modellerinde satın alma sınırlı kalmaktadır. **Montaj hizmeti kalemi %s adet satın alınmıştır (2025'in aynı aylarında %s)**; bu, aynı dönemdeki %s siparişe oranla her üç siparişe yaklaşık bir montaj kalemi düştüğünü göstermektedir. Artema'nın ürün geliri içindeki payı %s'dir (2025'te %s)."
+                 % (_p1k(_kr("Banyo Aksesuarları")), _p1k(_kr("Banyo Mobilyaları")), _p1k(_kr("Duş Sistemleri")), _p1k(_kr("Lavabolar")), bin(_mt26[2]), bin(_mt25[2]), bin(p26), yzd(_mpay("2026")), yzd(_mpay("2025"))),
+                 "In January - September 2026, purchases per 1,000 item views are highest in bathroom accessories at %s; they are %s in bathroom furniture, %s in shower systems and %s in washbasins. By units, the most purchased items are complementary products such as the filtered angle valve, toilet seats, concealed stop valve and accessories; purchases stay limited for widely viewed shower head, shower column, basin cabinet and wall-hung WC models. **%s installation service items were purchased (%s in the same months of 2025)**; against the %s orders in the same period, this means roughly one installation item for every three orders. Artema's share of item revenue is %s (%s in 2025)."
+                 % ("%.2f" % _kr("Banyo Aksesuarları"), "%.2f" % _kr("Banyo Mobilyaları"), "%.2f" % _kr("Duş Sistemleri"), "%.2f" % _kr("Lavabolar"), bin(_mt26[2]), bin(_mt25[2]), bin(p26), yzd(_mpay("2026")), yzd(_mpay("2025"))), "D45")
+
+def _blok(h3_tr, h3_en, *parcalar):
+    return "<h3>%s</h3>\n%s" % (x(h3_tr, h3_en), "\n".join(parcalar))
+HTML = "\n".join([
+ '<p class="lede">%s</p>' % x("Google Analytics 4 (GA4) verisi, vitra.com.tr'nin oturum, satın alma ve gelir performansını kanal, site içi arama, ödeme adımı, içerik ve promosyon kırılımında göstermektedir. Veri VitrA ekibinin GA4 dışa aktarımından alınmıştır (05.10.2026); tabloların dönemleri başlık ve sütun açıklamalarında verilmiştir. Aralık 2025'te www.vitra.com.tr trafiği aynı GA4 mülküne katıldığı için oturum ve oturum başına dönüşüm oranı Aralık öncesi ve sonrası arasında kıyaslanmaz; satın alma ve gelir iki dönemde de kıyaslanabilir.", "Google Analytics 4 (GA4) data shows vitra.com.tr's sessions, purchases and revenue by channel, site search, payment step, content and promotion. The data comes from the VitrA team's GA4 export (05.10.2026); each table's period is given in its heading and column descriptions. As www.vitra.com.tr traffic joined the same GA4 property in December 2025, sessions and the conversion rate per session are not compared before and after December; purchases and revenue are comparable in both periods."),
+ '<div class="kpis">%s%s%s%s</div>' % (kpi_kart(tl(r26), "E-ticaret geliri · Oca-Eyl 2026; Oca-Eyl 2025'e göre %s" % _isr(_deg(r25, r26)), "E-commerce revenue · Jan-Sep 2026; %s against Jan-Sep 2025" % _isr_en(_deg(r25, r26))), kpi_kart(bin(p26), "E-ticaret satın alma · Oca-Eyl 2026; Oca-Eyl 2025'e göre %s" % _isr(_deg(p25, p26)), "E-commerce purchases · Jan-Sep 2026; %s against Jan-Sep 2025" % _isr_en(_deg(p25, p26))), kpi_kart(tl(aov26), "Ortalama sipariş tutarı · Oca-Eyl 2026; 2025'te %s" % tl(aov25), "Average order value · Jan-Sep 2026; %s in 2025" % tl(aov25)), kpi_kart(yzd(100 * _o(_os_, 2026, "gelir") / _tg26), "Organik aramanın gelir payı · Oca-Eyl 2026; 2025'te %s" % yzd(100 * _o(_os_, 2025, "gelir") / _tg25), "Organic search share of revenue · Jan-Sep 2026; %s in 2025" % _pe(100 * _o(_os_, 2025, "gelir") / _tg25))),
+ _blok("Aylık genel görünüm: gelir, satın alma ve oturum", "Monthly overview: revenue, purchases and sessions", G_AYLIK, T_AYLIK, INS_AYLIK),
+ _blok("Satın alma hunisi: ürün listesinden satın almaya", "Purchase funnel: from product list to purchase", T_HUNI, INS_HUNI),
+ _blok("Yeni ve geri dönen kullanıcılar, tekrar alım", "New and returning users, repeat purchases", T_YD, INS_YD),
+ _blok("Kanal performansı: oturum, satın alma ve gelir", "Channel performance: sessions, purchases and revenue", G_KANAL, T_KANAL, G_KAY, INS_KANAL, T_KAYNAK),
+ _blok("Giriş sayfası (landing page) türüne göre gelir", "Revenue by landing page type", T_LP, G_LP, T_OY, T_LPS, INS_LP),
+ _blok("Ürün ve kategori performansı", "Item and category performance", T_UK, T_UURN, INS_UK),
+ _blok("Site içi arama terimleri", "Site search terms", T_ARAMA, T_SINIF, INS_ARAMA),
+ _blok("Ödeme ve teslimat adımı", "Payment and shipping step", T_ODEME, INS_ODEME),
+ _blok("Satın alma dışı talep olayları", "Non-purchase request events", T_OLAY, INS_OLAY),
+ _blok("Blog ve koleksiyon sayfaları: görüntüleme ve ürüne geçiş", "Blog and collection pages: views and move to products", T_BLOG, T_IU, T_KOL, INS_BLOG),
+ _blok("Promosyon ve kupon", "Promotions and coupons", T_PROMO, INS_PROMO),
  kaynak("Google Analytics 4, VitrA ekibi dışa aktarımı (05.10.2026): genel bakış Oca 2025 - Eyl 2026, kanal ve kaynak / ortam 2025 ve 1 Oca - 5 Eki 2026; site içi arama 1 May - 30 Eyl 2026, sepet ve giriş sayfası oturumları Oca - Eyl 2026, ödeme, teslimat, olay, sayfa ve promosyon 1 Eyl 2025 - 30 Eyl 2026 · Google Search Console, 1 Eki 2025 - 30 Eyl 2026",
         "Google Analytics 4, VitrA team export (05.10.2026): overview Jan 2025 - Sep 2026, channel and source / medium 2025 and 1 Jan - 5 Oct 2026, site search 1 May - 30 Sep 2026, cart and sign-in page sessions Jan - Sep 2026; payment, shipping, events, pages and promotions 1 Sep 2025 - 30 Sep 2026 · Google Search Console, 1 Oct 2025 - 30 Sep 2026", "D45", "D2"),
-)
+])

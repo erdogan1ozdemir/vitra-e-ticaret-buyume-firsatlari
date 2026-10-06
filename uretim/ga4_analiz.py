@@ -170,6 +170,47 @@ O["oturum_yenilenme"] = {"site_ici": dict(ref_tur), "dis": dict(ref_dis)}
 h, R, top = csv_oku("blog_olaylar_2025-09_2026-09.csv")
 O["blog_olay"] = {r[0]: int(r[1]) for r in R}
 O["lp_2026"] = sorted([[p_, lp_tur(p_)] + v for p_, v in lp26.items() if v[1] > 0 or v[0] >= 5000], key=lambda r: -r[3])[:400]
+# ------------------------------------------------------------------ satın alma hunisi, alıcı tipi, yeni ve geri dönen kullanıcı (VitrA ekibi, 06.10.2026)
+_hw = openpyxl.load_workbook(os.path.join(P, "veri/kaynak/ga4/huni_alici_yeni_donen.xlsx"), read_only=True, data_only=True)
+def _ym(v): return v.strftime("%Y-%m") if hasattr(v, "strftime") else str(v)[:7]
+HUNI_ADIM = ["view_item_list", "view_item", "add_to_cart", "begin_checkout", "add_shipping_info", "add_payment_info", "purchase"]
+O["huni"] = {_ym(r[0]): [r[i] or 0 for i in range(1, 8)] for r in list(_hw["Funnel"].iter_rows(values_only=True))[1:] if r[0]}
+O["alici"] = {_ym(r[0]): {"toplam": r[1], "ilk": r[2], "satin": r[3]} for r in list(_hw["Purchaser Type"].iter_rows(values_only=True))[1:] if r[0]}
+yd = defaultdict(dict)
+for r in list(_hw["New  Returning User"].iter_rows(values_only=True))[1:]:
+    if r[0]: yd[_ym(r[0])][r[1]] = {"oturum": r[2], "islem": r[3], "gelir": r[4]}
+O["yeni_donen"] = dict(sorted(yd.items()))
+# ------------------------------------------------------------------ ürün performansı (item, ay × ürün). Items added to cart bazı aylarda bozuk değer taşıdığı için kullanılmaz;
+# item revenue genel bakıştaki gelirden yüksek (2025 ~1,9x, 2026 ~1,13x) olduğu için yalnız pay olarak kullanılır
+_iw = openpyxl.load_workbook(os.path.join(P, "veri/kaynak/ga4/urun_performansi_2025-01_2026-09.xlsx"), read_only=True, data_only=True)
+_it = _iw.worksheets[0].iter_rows(values_only=True); _h = next(_it)
+def _n(v): return v if isinstance(v, (int, float)) else 0
+kat_u = defaultdict(lambda: defaultdict(lambda: [0, 0, 0, 0.0]))      # yıl -> ana kategori -> [görüntülenen, ödemeye geçen, satın alınan, ürün geliri] · Oca-Eyl
+urn = defaultdict(lambda: [None, None, None, 0, 0, 0.0])               # 2026 Oca-Eyl: ürün kodu -> [ad, kategori, marka, görüntülenen, satın alınan, ürün geliri]
+mrk = defaultdict(lambda: defaultdict(float))
+for r in _it:
+    if not r or not r[0] or int(str(r[0])[5:7]) > 9: continue
+    y = str(r[0])[:4]; c1, c2 = (r[3] or "").strip(), (r[4] or "").strip()
+    ana = c2 if c1 == "Banyo" and c2 else c1   # 2026 ağacında ana kategori ikinci seviyede
+    v, co, pu, rv = _n(r[7]), _n(r[10]), _n(r[11]), _n(r[13])
+    a = kat_u[y][ana or "(boş)"]; a[0] += v; a[1] += co; a[2] += pu; a[3] += rv
+    mrk[y][r[6] or "(boş)"] += rv
+    if y == "2026":
+        b = urn[str(r[1])]; b[0] = b[0] or r[2]; b[1] = b[1] or ana; b[2] = b[2] or r[6]; b[3] += v; b[4] += pu; b[5] += rv
+O["urun_kat"] = {y: dict(d) for y, d in kat_u.items()}
+O["urun_marka"] = {y: dict(d) for y, d in mrk.items()}
+O["urun_2026"] = sorted([[k] + v for k, v in urn.items() if v[3] >= 3000 or v[4] >= 3], key=lambda x: -x[5])   # satın alınan adede göre
+# ------------------------------------------------------------------ içerikten ürüne: blog sayfası görüntülenen ve görüntülenmeyen oturumlarda olay sayıları (aylık, Oca - Eyl 2026)
+iu = {}
+for ad in sorted(os.listdir(os.path.join(P, "veri/kaynak/ga4/icerik_urun_yol1"))):
+    R = [r for r in csv.reader(l for l in open(os.path.join(P, "veri/kaynak/ga4/icerik_urun_yol1", ad), encoding="utf-8") if not l.startswith("#")) if r and any(r)]
+    seg, bas = R[0], R[1]
+    ay_ = "%s-%s" % (ad[:4], ad[4:6]); iu[ay_] = {"blog": {}, "diger": {}}
+    for r in R[2:]:
+        if r[-1] == "Grand total" or not r[0]: continue
+        for j in range(1, len(seg)):
+            if bas[j] == "Event count": iu[ay_]["blog" if seg[j].lower().startswith("blog") else "diger"][r[0]] = int(r[j])
+O["icerik_urun"] = iu
 json.dump(O, open(os.path.join(P, "veri/islenmis/ga4.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=0)
 if __name__ == "__main__":
     def top(y, a, m1=1, m2=9): return sum(O["genel"]["%d-%02d" % (y, m)][a] for m in range(m1, m2 + 1))

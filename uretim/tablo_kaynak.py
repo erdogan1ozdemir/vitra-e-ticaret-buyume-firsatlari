@@ -71,7 +71,7 @@ ATAMA = [
  ("geo", "Ölçüm setleri", ["chatgpt", "gemini", "google", "seomonitor", "gsc"]), ("geo", "Yapay zeka yanıt takibi", ["chatgpt", "gemini", "google"]),
  ("yapayzeka", "Yapay zeka özelliklerinde gösterim", ["gsc"]), ("yapayzeka", "Yapay zeka gösterim payına göre", ["gsc"]), ("yapayzeka", "Yapay zeka özelliklerinde en çok", ["gsc"]), ("yapayzeka", "Sayfa türüne göre yapay zeka", ["gsc"]),
  ("yapayzeka", "AI Overview çıkan ve çıkmayan", ["gsc", "ahrefs"]),
- ("ga4", "Blog ve koleksiyon", ["ga4", "gsc"]), ("ga4", "Aylık genel görünüm", ["ga4"]), ("ga4", "Kanal performansı", ["ga4"]), ("ga4", "Site içi arama terimleri", ["ga4"]), ("ga4", "Giriş sayfası", ["ga4"]),
+ ("ga4", "Blog ve koleksiyon", ["ga4", "gsc"]), ("ga4", "Aylık genel görünüm", ["ga4"]), ("ga4", "Kanal performansı", ["ga4"]), ("ga4", "Site içi arama terimleri", ["ga4"]), ("ga4", "Giriş sayfası", ["ga4"]), ("ga4", "Satın alma hunisi", ["ga4"]), ("ga4", "Yeni ve geri dönen", ["ga4"]), ("ga4", "Ürün ve kategori", ["ga4"]),
  ("ga4", "Ödeme ve teslimat", ["ga4"]), ("ga4", "Satın alma dışı talep", ["ga4"]), ("ga4", "Promosyon ve kupon", ["ga4"]),
  ("geo", "SEOmonitor takibi", ["seomonitor"]), ("geo", "Rapor hedef kelimeleri", ["google"]), ("geo", "Sitenin hazırlığı", ["gsc"]),
  ("politika", "Ödeme ve taksit", ["web"]), ("politika", "Kargo, teslimat", ["web"]), ("politika", "Garanti, yedek parça", ["web"]),
