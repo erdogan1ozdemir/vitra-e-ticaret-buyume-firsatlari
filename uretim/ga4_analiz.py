@@ -231,6 +231,15 @@ for ad in sorted(os.listdir(os.path.join(P, "veri/kaynak/ga4/icerik_urun_yol1"))
         for j in range(1, len(seg)):
             if bas[j] == "Event count": iu[ay_]["blog" if seg[j].lower().startswith("blog") else "diger"][r[0]] = int(r[j])
 O["icerik_urun"] = iu
+# içerikten ürüne: blog görüntülenen ve görüntülenmeyen oturumlarda oturum, satın alma ve gelir (aylık, 1 Eki 2025 - 30 Eyl 2026; ilk üç değer blog dışı, son üç değer blog segmenti)
+ig = {}
+for ad in sorted(os.listdir(os.path.join(P, "veri/kaynak/ga4/icerik_urun_gelir"))):
+    R = [r for r in csv.reader(l for l in open(os.path.join(P, "veri/kaynak/ga4/icerik_urun_gelir", ad), encoding="utf-8") if not l.startswith("#")) if r and any(r)]
+    seg, bas = R[0], R[1]
+    if any(seg[2:]): assert seg[2].lower().startswith("non") and seg[5].lower().startswith("blog"), ("segment sırası", ad, seg)
+    r = next(x for x in R[2:] if x[-1] != "Grand total" and x[0])
+    ig["%s-%s" % (r[1], r[0].zfill(2))] = {"diger": {"oturum": int(r[2]), "gelir": float(r[3]), "satin": int(r[4])}, "blog": {"oturum": int(r[5]), "gelir": float(r[6]), "satin": int(r[7])}}
+O["icerik_gelir"] = dict(sorted(ig.items()))
 json.dump(O, open(os.path.join(P, "veri/islenmis/ga4.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=0)
 if __name__ == "__main__":
     def top(y, a, m1=1, m2=9): return sum(O["genel"]["%d-%02d" % (y, m)][a] for m in range(m1, m2 + 1))
