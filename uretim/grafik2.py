@@ -442,7 +442,7 @@ def kombo2(etiketler, seriler, cap="", genislik=880, yukseklik=300, etiket_goste
         lo, hi, t = olc[e]
         f = (v - lo) / (hi - lo) if hi > lo else 0
         return ust + ih * f if t else ust + ih - ih * f
-    p = [_svg(genislik, yukseklik)]
+    p = [_svg(genislik, yukseklik)]; dlp = []   # deger etiketleri en sonda cizilir: cubuk ve cizgilerin ustunde kalir
     # eksenler
     ex = {"sol": sol - 8, "sag": genislik - sag + 8, "sag2": genislik - sag + 60}
     for e in eksenler:
@@ -488,11 +488,14 @@ def kombo2(etiketler, seriler, cap="", genislik=880, yukseklik=300, etiket_goste
                 koyu = _koyu(s_["renk"]) and (s_.get("ortu") or ov_y is None)
                 if w1 < 36 and hv >= max(34, uz):   # dar cubuk: deger cubugun icinde dikey yazilir
                     xx = x0 + w1 / 2 + 3.5; yb = taban - 5
-                    p.append('<text class="dl %s%s" data-k="%d" x="%.1f" y="%.1f" transform="rotate(-90 %.1f %.1f)" text-anchor="start">%s</text>' % ("dli" if koyu else "dlb", ek, k_, xx, yb, xx, yb, s_["bicim"](v)))
+                    dlp.append('<text class="dl %s%s" data-k="%d" x="%.1f" y="%.1f" transform="rotate(-90 %.1f %.1f)" text-anchor="start">%s</text>' % ("dli" if koyu else "dlb", ek, k_, xx, yb, xx, yb, s_["bicim"](v)))
                 elif uz <= w1 + 2 and hv >= 16:   # yazi cubuga sigiyor: cubugun icinde, tabana yakin
-                    p.append('<text class="dl %s%s" data-k="%d" x="%.1f" y="%.1f" text-anchor="middle">%s</text>' % ("dli" if koyu else "dlb", ek, k_, x0 + w1 / 2, taban - 6, s_["bicim"](v)))
+                    dlp.append('<text class="dl %s%s" data-k="%d" x="%.1f" y="%.1f" text-anchor="middle">%s</text>' % ("dli" if koyu else "dlb", ek, k_, x0 + w1 / 2, taban - 6, s_["bicim"](v)))
+                elif w1 < 36 and not s_.get("ortu"):   # dar cubukta sigmiyor: cubugun ustunde dikey, kendi sutununda kalir
+                    xx = x0 + w1 / 2 + 3.5; yb = Y(e, v) - 4
+                    dlp.append('<text class="dl dlb dlu%s" data-k="%d" x="%.1f" y="%.1f" transform="rotate(-90 %.1f %.1f)" text-anchor="start">%s</text>' % (ek, k_, xx, yb, xx, yb, s_["bicim"](v)))
                 else:   # sigmiyor: cubugun ustunde, koyu yazi
-                    p.append('<text class="dl dlb%s" data-k="%d" x="%.1f" y="%.1f" text-anchor="middle">%s</text>' % (ek, k_, x0 + w1 / 2, Y(e, v) - 4, s_["bicim"](v)))
+                    dlp.append('<text class="dl dlb dlu%s" data-k="%d" x="%.1f" y="%.1f" text-anchor="middle">%s</text>' % (ek, k_, x0 + w1 / 2, Y(e, v) - 4, s_["bicim"](v)))
             if etiket_goster: p.append('<text class="bv" x="%.1f" y="%.1f" text-anchor="middle" style="font-size:10px">%s</text>' % (x0 + w1 / 2, Y(e, v) - 4, s_["bicim"](v)))
         if ust_etiket and ust_etiket[i] and ust_y is not None:
             p.append('<text class="bv" x="%.1f" y="%.1f" text-anchor="middle" style="font-size:10.5px;font-weight:700">%s</text>' % (cx, ust_y - 6, ust_etiket[i]))
@@ -523,7 +526,8 @@ def kombo2(etiketler, seriler, cap="", genislik=880, yukseklik=300, etiket_goste
             alt_ = s_.get("tip") == "kesik"
             for i, v in enumerate(s_["deger"]):
                 if v is None: continue
-                p.append('<text class="dl dll" data-k="%d"%s x="%.1f" y="%.1f" text-anchor="middle" fill="%s">%s</text>' % (k_, ' data-alt="1"' if alt_ else "", sol + bw * i + bw / 2, Y(e, v) + (15 if alt_ else -8), s_["renk"], s_["bicim"](v)))
+                dlp.append('<text class="dl dll" data-k="%d"%s x="%.1f" y="%.1f" text-anchor="middle" fill="%s">%s</text>' % (k_, ' data-alt="1"' if alt_ else "", sol + bw * i + bw / 2, Y(e, v) + (15 if alt_ else -8), s_["renk"], s_["bicim"](v)))
+    p += dlp
     nok = []
     for i, et in enumerate(etiketler):
         p.append('<rect class="hz" data-i="%d" x="%.1f" y="%d" width="%.1f" height="%d"/>' % (i, sol + bw * i, ust, bw, ih))

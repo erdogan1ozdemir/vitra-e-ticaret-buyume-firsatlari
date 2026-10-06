@@ -277,19 +277,21 @@ document.documentElement.classList.add('js');
       svg.appendChild(g);
       ayir();
     }
-    /* ust uste binen deger etiketleri: once cubuk etiketleri, sonra cizgi etiketleri soldan saga yerlestirilir. Her etiket icin sirayla birkac yer denenir
-       (cubukta cubuk boyunca yukari, cizgide noktanin alti / ustu); eksen yazilari, peak / base notlari ve daha once yerlesen etiketlerle cakismayan ilk yer
-       secilir. Hicbir yere sigmayan etiket gizlenir (deger balonda okunur). Konumlar SVG birimiyle hesaplanir, ekran genisligine bagli degildir. */
+    /* ust uste binen deger etiketleri: once cubugun icindeki etiketler, sonra cubuk ustu, en son cizgi etiketleri soldan saga yerlestirilir. Her etiket icin
+       sirayla birkac yer denenir (cubukta cubuk boyunca yukari, cizgide noktanin ustu / alti / yanlari). Eksen yazilari, peak / base notlari, daha once yerlesen
+       etiketler, cizgi parcalari, noktalar ve baska cubuklarla cakismayan ilk yer secilir; hicbir yere sigmayan etiket gizlenir (deger balonda okunur).
+       Konumlar SVG birimiyle hesaplanir, ekran genisligine bagli degildir. */
     function ayir(){
       if(!dlAcik) return;
       var sr=svg.getBoundingClientRect(); if(!sr.width || !sr.height) return;
       var L=[].slice.call(svg.querySelectorAll('.dl, .dlt'));
       L.forEach(function(t){
         t.classList.remove('dl-x');
-        if(!t.hasAttribute('data-y0')){ t.setAttribute('data-y0',t.getAttribute('y')); if(t.hasAttribute('transform')) t.setAttribute('data-tr0',t.getAttribute('transform')); }
-        else { t.setAttribute('y',t.getAttribute('data-y0')); if(t.hasAttribute('data-tr0')) t.setAttribute('transform',t.getAttribute('data-tr0')); }
+        if(!t.hasAttribute('data-y0')){ t.setAttribute('data-y0',t.getAttribute('y')); t.setAttribute('data-x0',t.getAttribute('x')); if(t.hasAttribute('transform')) t.setAttribute('data-tr0',t.getAttribute('transform')); }
+        else { t.setAttribute('y',t.getAttribute('data-y0')); t.setAttribute('x',t.getAttribute('data-x0')); if(t.hasAttribute('data-tr0')) t.setAttribute('transform',t.getAttribute('data-tr0')); }
       });
-      L=L.filter(function(t){return t.style.display!=='none' && getComputedStyle(t).display!=='none' && t.textContent.trim();});
+      function gorunur(el){ return el.style.display!=='none' && getComputedStyle(el).display!=='none' && !el.closest('[style*="display: none"],[style*="display:none"]'); }
+      L=L.filter(function(t){return gorunur(t) && t.textContent.trim();});
       var M=svg.getScreenCTM(); if(!M) return; M=M.inverse();
       var vb=svg.viewBox.baseVal, pt=svg.createSVGPoint();
       function nok(x,y){ pt.x=x; pt.y=y; return pt.matrixTransform(M); }
@@ -299,26 +301,66 @@ document.documentElement.classList.add('js');
         return {x0:Math.min(a.x,b.x),x1:Math.max(a.x,b.x),y0:Math.min(a.y,b.y),y1:Math.max(a.y,b.y)};
       }
       function cak(p,q){ return p.x0<q.x1+2 && q.x0<p.x1+2 && p.y0<q.y1-0.5 && q.y0<p.y1-0.5; }   /* yatayda 2 birim bosluk: bitisik yazilar okunur kalsin */
+      function ortus(p,q){ return p.x0<q.x1-0.5 && q.x0<p.x1-0.5 && p.y0<q.y1-0.5 && q.y0<p.y1-0.5; }
+      /* engeller: diger yazilar, cubuklar, cizgi parcalari ve noktalar */
       var yer=[].slice.call(svg.querySelectorAll('text')).filter(function(t){
-        return L.indexOf(t)<0 && !t.classList.contains('dl') && !t.classList.contains('dlt') && t.textContent.trim() && getComputedStyle(t).display!=='none' && !t.closest('[style*="display: none"],[style*="display:none"]');
+        return L.indexOf(t)<0 && !t.classList.contains('dl') && !t.classList.contains('dlt') && t.textContent.trim() && gorunur(t);
       }).map(kutu).filter(Boolean);
-      function cubukMu(t){ return t.classList.contains('dl') && !t.classList.contains('dll'); }
-      var K=L.map(function(t){ return {t:t, k:kutu(t), don:/rotate/.test(t.getAttribute('transform')||''), cb:cubukMu(t), o:t.classList.contains('dlo')}; }).filter(function(e){return e.k;});
-      K.sort(function(p,q){ return (q.cb-p.cb) || (q.o-p.o) || (p.k.x0-q.k.x0); });
-      function tasi(t,dy){
+      var cubuk=[].slice.call(svg.querySelectorAll('rect.sr')).filter(gorunur).map(function(r){
+        var x=+r.getAttribute('x'), y=+r.getAttribute('y'), w=+r.getAttribute('width'), h=+r.getAttribute('height');
+        return {x0:x,x1:x+w,y0:y,y1:y+h};
+      }).filter(function(r){return r.y1-r.y0>0.5;});
+      var parca=[];
+      [].forEach.call(svg.querySelectorAll('path.sr'),function(pth){
+        var f=pth.getAttribute('fill'); if((f && f!=='none') || !gorunur(pth)) return;
+        var re=/([ML])\s*(-?[\d.]+)[\s,]+(-?[\d.]+)/g, m, onc=null, dd=pth.getAttribute('d')||'';
+        while((m=re.exec(dd))){ var q={x:+m[2],y:+m[3]}; if(m[1]==='L' && onc) parca.push([onc,q]); onc=q; }
+      });
+      var nokta=[].slice.call(svg.querySelectorAll('circle')).filter(function(c){return +c.getAttribute('r')>=2 && gorunur(c);}).map(function(c){
+        var x=+c.getAttribute('cx'), y=+c.getAttribute('cy'), r=+c.getAttribute('r'); return {x0:x-r,x1:x+r,y0:y-r,y1:y+r};
+      });
+      function kesis(a,b,c){   /* cizgi parcasi kutuyu kesiyor mu (Liang-Barsky) */
+        var t0=0,t1=1,dx=b.x-a.x,dy=b.y-a.y,P=[-dx,dx,-dy,dy],Q=[a.x-c.x0-1,c.x1-1-a.x,a.y-c.y0-1,c.y1-1-a.y];
+        for(var i=0;i<4;i++){
+          if(P[i]===0){ if(Q[i]<0) return false; continue; }
+          var r=Q[i]/P[i];
+          if(P[i]<0){ if(r>t1) return false; if(r>t0) t0=r; } else { if(r<t0) return false; if(r<t1) t1=r; }
+        }
+        return true;
+      }
+      function icCubuk(t){ return t.classList.contains('dl') && !t.classList.contains('dll') && !t.classList.contains('dlu'); }
+      function bos(c,e){
+        if(c.y0<vb.y || c.y1>vb.y+vb.height || c.x0<vb.x-1 || c.x1>vb.x+vb.width+1) return false;
+        for(var i=0;i<yer.length;i++) if(cak(c,yer[i])) return false;
+        for(i=0;i<cubuk.length;i++){
+          var r=cubuk[i]; if(!ortus(c,r)) continue;
+          if(e.sira<2 && (c.x0+c.x1)/2>=r.x0-1 && (c.x0+c.x1)/2<=r.x1+1) continue;   /* cubuk etiketinin kendi sutunundaki cubuk (kendisi ya da ustune bindigi toplam cubugu) engel sayilmaz */
+          return false;
+        }
+        for(i=0;i<nokta.length;i++) if(ortus(c,nokta[i])) return false;
+        for(i=0;i<parca.length;i++) if(kesis(parca[i][0],parca[i][1],c)) return false;
+        return true;
+      }
+      var K=L.map(function(t){ var ic=icCubuk(t); return {t:t, k:kutu(t), don:/rotate/.test(t.getAttribute('transform')||''), ic:ic, sira:ic?0:(t.classList.contains('dlu')?1:2), o:t.classList.contains('dlo')}; }).filter(function(e){return e.k;});
+      K.sort(function(p,q){ return (p.sira-q.sira) || (q.o-p.o) || (p.k.x0-q.k.x0); });
+      function tasi(t,dx,dy){
         t.setAttribute('y',(parseFloat(t.getAttribute('data-y0'))+dy).toFixed(1));
+        if(dx) t.setAttribute('x',(parseFloat(t.getAttribute('data-x0'))+dx).toFixed(1));
         var tr=t.getAttribute('data-tr0');
         if(tr) t.setAttribute('transform',tr.replace(/rotate\(\s*([-\d.]+)[\s,]+([-\d.]+)[\s,]+([-\d.]+)\s*\)/,function(m,a,cx,cy){return 'rotate('+a+' '+cx+' '+(parseFloat(cy)+dy).toFixed(1)+')';}));
       }
       K.forEach(function(e){
-        var k=e.k, h=k.y1-k.y0, ad=[0], s;
-        if(e.don){ for(s=1;s<=14;s++) ad.push(-6*s); }
-        else if(e.cb){ for(s=1;s<=4;s++) ad.push(-(h+1)*s); }
-        else { var alt=e.t.getAttribute('data-alt')==='1', ters=alt?-(h+10):(h+10); ad=[0,ters,alt?h+2:-(h+2),ters+(alt?-(h+2):(h+2))]; }
+        var k=e.k, h=k.y1-k.y0, w=k.x1-k.x0, ad=[[0,0]], s;
+        if(e.don){ for(s=1;s<=16;s++) ad.push([0,-6*s]); }
+        else if(e.ic){ for(s=1;s<=4;s++) ad.push([0,-(h+1)*s]); }
+        else if(e.sira===1){ for(s=1;s<=8;s++) ad.push([0,-(h+1)*s]); }
+        else {
+          var alt=e.t.getAttribute('data-alt')==='1', ters=alt?-(h+10):(h+10), yan=w/2+5;
+          ad=[[0,0],[0,ters],[yan,0],[-yan,0],[yan,ters],[-yan,ters],[0,alt?h+2:-(h+2)],[0,ters+(alt?-(h+2):(h+2))]];
+        }
         for(var i=0;i<ad.length;i++){
-          var c={x0:k.x0,x1:k.x1,y0:k.y0+ad[i],y1:k.y1+ad[i]};
-          if(c.y0<vb.y || c.y1>vb.y+vb.height || c.x0<vb.x-1 || c.x1>vb.x+vb.width+1) continue;
-          if(!yer.some(function(q){return cak(c,q);})){ yer.push(c); if(ad[i]) tasi(e.t,ad[i]); return; }
+          var c={x0:k.x0+ad[i][0],x1:k.x1+ad[i][0],y0:k.y0+ad[i][1],y1:k.y1+ad[i][1]};
+          if(bos(c,e)){ yer.push(c); if(ad[i][0] || ad[i][1]) tasi(e.t,ad[i][0],ad[i][1]); return; }
         }
         e.t.classList.add('dl-x');
       });
