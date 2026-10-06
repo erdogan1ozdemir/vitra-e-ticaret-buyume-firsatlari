@@ -178,6 +178,44 @@ for ad in sorted(os.listdir(os.path.join(P, "veri/kaynak/ga4/session_start_ref")
         else:
             ref_dis["(boş)" if not r[1] else ("Google" if "google" in u.netloc or "googlequicksearchbox" in r[1] else "diğer dış site")] += c
 O["oturum_yenilenme"] = {"site_ici": dict(ref_tur), "dis": dict(ref_dis)}
+# sipariş onay sayfası (VitrA ekibi, 06.10.2026, aylık keşif dışa aktarımları, 1 Eki 2025 - 30 Eyl 2026)
+# Tablo C (siparis_onay_ref): sipariş onay sayfasında session_start olayının sayfa yönlendireni (Page referrer)
+# Tablo D (siparis_onay_kaynak): sipariş onay sayfasındaki purchase olayının kaynak / ortamı (Source / medium; GA4 atama modeliyle, bir siparişin geliri birden çok kaynağa paylaştırılabilir)
+# Bazı aylarda keşif örneklenmiştir (Eylül 2026'da tüm değerler ölçeklenmiş, çift sayı); bu yüzden yalnız paylar kullanılır.
+def _sip(p_): return p_.split("?")[0].lower().replace("/tr/checkout/", "/checkout/")
+def _ref_tur(r_):
+    u_ = urlparse(r_); n_ = u_.netloc; pp = u_.path.lower()
+    if not r_: return "bos"
+    if "iyzipay" in n_ or "iyzico" in n_: return "iyzico_3ds" if "callback3ds" in pp else ("iyzico_cpp" if n_.startswith("cpp.") else ("iyzico_ode" if "iyzico" in n_ else "iyzico_api"))
+    if "vitra.com.tr" in n_: return "siparis" if "orderconfirmation" in pp else ("odeme" if "payment-method" in pp else ("giris" if "login" in pp else "vitra_diger"))
+    return "dis"
+sr_ay = defaultdict(lambda: defaultdict(int)); yeniden = set()
+for ad in sorted(a_ for a_ in os.listdir(os.path.join(P, "veri/kaynak/ga4/siparis_onay_ref")) if re.match(r"^\d{6}\.csv$", a_)):
+    h, R, top = csv_oku(os.path.join("siparis_onay_ref", ad))
+    for r in R:
+        if r[2] != "session_start": continue
+        sr_ay["%s-%s" % (ad[:4], ad[4:6])][_ref_tur(r[0])] += int(r[3]); yeniden.add(_sip(r[1]))
+O["siparis_ref"] = {k: dict(v) for k, v in sorted(sr_ay.items())}
+def _kgrup(sm):
+    if sm == "(direct) / (none)": return "direct"
+    src, _, med = [t.strip() for t in sm.partition("/")]
+    if med == "organic": return "organik"
+    if med in ("cpc", "ppc") and src in ("google", "bing", "yandex"): return "ucretli"
+    return "diger"
+sk = {"yeniden": defaultdict(float), "ayni": defaultdict(float)}; sk_n = {"yeniden": set(), "ayni": set()}; sk_ref = defaultdict(float); sk_ay = {}
+for ad in sorted(a_ for a_ in os.listdir(os.path.join(P, "veri/kaynak/ga4/siparis_onay_kaynak")) if re.match(r"^\d{6}\.csv$", a_)):
+    h, R, top = csv_oku(os.path.join("siparis_onay_kaynak", ad))
+    m_ = "%s-%s" % (ad[:4], ad[4:6]); gy = 0.0; gt = 0.0
+    for r in R:
+        if r[2] != "purchase": continue
+        g_ = float(r[5]); s_ = _sip(r[1]); grp = "yeniden" if s_ in yeniden else "ayni"
+        sk[grp][_kgrup(r[3])] += g_; sk_n[grp].add(s_); sk_ref[_ref_tur(r[0])] += g_
+        gt += g_; gy += g_ if grp == "yeniden" else 0
+    sk_ay[m_] = round(gy / gt, 4) if gt else None
+O["siparis_kaynak"] = {g: dict(v) for g, v in sk.items()}
+O["siparis_kaynak_n"] = {g: len(v) for g, v in sk_n.items()}
+O["siparis_kaynak_ref"] = dict(sk_ref)
+O["siparis_yeniden_ay"] = sk_ay   # ay -> oturumu sipariş onay sayfasında yeniden başlayan siparişlerin gelir payı
 # blog sayfalarında olaylar (keşif, 1 Eyl 2025 - 30 Eyl 2026)
 h, R, top = csv_oku("blog_olaylar_2025-09_2026-09.csv")
 O["blog_olay"] = {r[0]: int(r[1]) for r in R}

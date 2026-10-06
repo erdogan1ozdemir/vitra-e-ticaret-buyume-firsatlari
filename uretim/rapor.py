@@ -297,6 +297,7 @@ b.mb{font-weight:650;color:var(--ink)}
 .legend i.kesik{width:16px;height:0;border-top:2.5px dashed;background:transparent}
 .fig .dl{display:none}
 .fig.dl-acik .dl{display:inline}
+.fig .dl-x{display:none!important}
 .fig .dl,.fig .dlt{font-size:10px;font-weight:600;paint-order:stroke;stroke:var(--card);stroke-width:3px;stroke-linejoin:round;pointer-events:none}
 .fig .dlb{fill:var(--ink-2)}
 .fig text.dl.dlb{fill:var(--ink-2)}

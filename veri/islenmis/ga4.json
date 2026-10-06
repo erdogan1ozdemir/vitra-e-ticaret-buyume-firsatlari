@@ -112679,6 +112679,129 @@
 "diğer dış site": 36
 }
 },
+"siparis_ref": {
+"2025-10": {
+"bos": 2,
+"iyzico_api": 111,
+"iyzico_cpp": 6,
+"iyzico_ode": 2
+},
+"2025-11": {
+"iyzico_api": 126,
+"iyzico_3ds": 1,
+"iyzico_cpp": 3,
+"iyzico_ode": 1,
+"siparis": 8,
+"giris": 1
+},
+"2025-12": {
+"bos": 17,
+"iyzico_api": 52,
+"iyzico_cpp": 3,
+"iyzico_ode": 1,
+"odeme": 5
+},
+"2026-01": {
+"iyzico_api": 62,
+"iyzico_3ds": 1,
+"iyzico_ode": 2,
+"odeme": 2
+},
+"2026-02": {
+"iyzico_api": 70,
+"iyzico_ode": 2
+},
+"2026-03": {
+"bos": 3,
+"iyzico_api": 80,
+"iyzico_3ds": 2,
+"giris": 4
+},
+"2026-04": {
+"bos": 1,
+"iyzico_api": 126,
+"iyzico_ode": 1,
+"siparis": 20,
+"giris": 7
+},
+"2026-05": {
+"iyzico_api": 80,
+"iyzico_3ds": 1,
+"iyzico_cpp": 1,
+"odeme": 9,
+"giris": 2
+},
+"2026-06": {
+"iyzico_api": 122,
+"odeme": 1,
+"siparis": 3,
+"giris": 1
+},
+"2026-07": {
+"bos": 4,
+"iyzico_api": 183,
+"iyzico_cpp": 3,
+"iyzico_ode": 2,
+"odeme": 2,
+"giris": 1
+},
+"2026-08": {
+"bos": 1,
+"iyzico_api": 235,
+"iyzico_3ds": 2,
+"iyzico_ode": 1,
+"odeme": 3,
+"siparis": 1,
+"giris": 3
+},
+"2026-09": {
+"iyzico_api": 220,
+"siparis": 4,
+"giris": 8
+}
+},
+"siparis_kaynak": {
+"yeniden": {
+"direct": 16765860.392438991,
+"organik": 644486.9553120651,
+"diger": 174876.57823356477,
+"ucretli": 893180.2214087865
+},
+"ayni": {
+"organik": 6430141.005555942,
+"diger": 793730.6790816915,
+"ucretli": 6621706.379275649,
+"direct": 3410038.3994118613
+}
+},
+"siparis_kaynak_n": {
+"yeniden": 1307,
+"ayni": 1353
+},
+"siparis_kaynak_ref": {
+"bos": 144210.81005819747,
+"iyzico_api": 33910218.064206325,
+"iyzico_3ds": 192066.49175741422,
+"iyzico_cpp": 601595.6443165463,
+"iyzico_ode": 238851.13962599853,
+"odeme": 355811.63816551014,
+"siparis": 158205.7736353793,
+"giris": 133061.04895319018
+},
+"siparis_yeniden_ay": {
+"2025-10": 0.481,
+"2025-11": 0.4168,
+"2025-12": 0.4476,
+"2026-01": 0.456,
+"2026-02": 0.4103,
+"2026-03": 0.4284,
+"2026-04": 0.4727,
+"2026-05": 0.4586,
+"2026-06": 0.532,
+"2026-07": 0.5477,
+"2026-08": 0.7024,
+"2026-09": 0.5414
+},
 "blog_olay": {
 "add_to_cart": 106,
 "INSIDER": 294313,

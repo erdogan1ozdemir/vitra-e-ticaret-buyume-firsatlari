@@ -260,41 +260,74 @@ document.documentElement.classList.add('js');
       var eski=svg.querySelector('g.dlg'); if(eski) eski.parentNode.removeChild(eski);
       if(!dlAcik) return;
       var ns='http://www.w3.org/2000/svg', g=document.createElementNS(ns,'g'); g.setAttribute('class','dlg');
+      var acikSay=d.seriler.filter(function(se,k){return !gizli[k];}).length, son=d.px.length-1;
       d.seriler.forEach(function(se,k){
         if(gizli[k]) return;
         se.deger.forEach(function(v,i){
           if(v===null||v===undefined) return;
+          if(v===0 && acikSay>1) return;   /* cok serili grafikte sifir degerleri eksen cizgisinde okunur, etiket yazilmaz */
+          var an=svg.querySelector('.an[data-k="'+k+'"][data-i="'+i+'"]');
+          if(an && an.style.display!=='none') return;   /* peak / base notu degeri zaten gosteriyor */
           var py=pyO?pyO[k][i]:se.py[i]; if(py===null) return;
-          var t=document.createElementNS(ns,'text'); t.setAttribute('x',d.px[i]); t.setAttribute('y',(py-7).toFixed(1));
-          t.setAttribute('text-anchor','middle'); t.setAttribute('class','dlt'); t.setAttribute('fill',se.renk); t.textContent=kisa(v); g.appendChild(t);
+          var t=document.createElementNS(ns,'text');
+          t.setAttribute('x',d.px[i]+(i===0?-4:(i===son?4:0))); t.setAttribute('y',(py-7).toFixed(1));
+          t.setAttribute('text-anchor',i===0?'start':(i===son?'end':'middle')); t.setAttribute('class','dlt'); t.setAttribute('fill',se.renk); t.textContent=kisa(v); g.appendChild(t);
         });
       });
       svg.appendChild(g);
       ayir();
     }
-    /* ust uste binen deger etiketleri: x sirasiyla taranir, cakisan etiket noktasinin altina ya da asagi kaydirilir */
+    /* ust uste binen deger etiketleri: once cubuk etiketleri, sonra cizgi etiketleri soldan saga yerlestirilir. Her etiket icin sirayla birkac yer denenir
+       (cubukta cubuk boyunca yukari, cizgide noktanin alti / ustu); eksen yazilari, peak / base notlari ve daha once yerlesen etiketlerle cakismayan ilk yer
+       secilir. Hicbir yere sigmayan etiket gizlenir (deger balonda okunur). Konumlar SVG birimiyle hesaplanir, ekran genisligine bagli degildir. */
     function ayir(){
       if(!dlAcik) return;
-      var L=[].slice.call(svg.querySelectorAll('.dl, .dlt')).filter(function(t){return t.style.display!=='none' && getComputedStyle(t).display!=='none';});
-      L.forEach(function(t){ if(t.hasAttribute('data-y0')) t.setAttribute('y',t.getAttribute('data-y0')); else t.setAttribute('data-y0',t.getAttribute('y')); });
-      var K=L.map(function(t){var bb=t.getBBox(); return {t:t,x0:bb.x,x1:bb.x+bb.width,y:bb.y,h:bb.height};}).sort(function(p,q){return p.x0-q.x0 || p.y-q.y;});
-      for(var i=0;i<K.length;i++){
-        for(var tur=0;tur<5;tur++){
-          var cak=false;
-          for(var j=0;j<i;j++){
-            var p=K[i], q=K[j];
-            if(p.x0<q.x1-1 && q.x0<p.x1-1 && p.y<q.y+q.h-1 && q.y<p.y+p.h-1){
-              var dy=q.y+q.h+1-p.y; p.y+=dy; p.t.setAttribute('y',(parseFloat(p.t.getAttribute('y'))+dy).toFixed(1)); cak=true;
-            }
-          }
-          if(!cak) break;
-        }
+      var sr=svg.getBoundingClientRect(); if(!sr.width || !sr.height) return;
+      var L=[].slice.call(svg.querySelectorAll('.dl, .dlt'));
+      L.forEach(function(t){
+        t.classList.remove('dl-x');
+        if(!t.hasAttribute('data-y0')){ t.setAttribute('data-y0',t.getAttribute('y')); if(t.hasAttribute('transform')) t.setAttribute('data-tr0',t.getAttribute('transform')); }
+        else { t.setAttribute('y',t.getAttribute('data-y0')); if(t.hasAttribute('data-tr0')) t.setAttribute('transform',t.getAttribute('data-tr0')); }
+      });
+      L=L.filter(function(t){return t.style.display!=='none' && getComputedStyle(t).display!=='none' && t.textContent.trim();});
+      var M=svg.getScreenCTM(); if(!M) return; M=M.inverse();
+      var vb=svg.viewBox.baseVal, pt=svg.createSVGPoint();
+      function nok(x,y){ pt.x=x; pt.y=y; return pt.matrixTransform(M); }
+      function kutu(el){
+        var r=el.getBoundingClientRect(); if(!r.width && !r.height) return null;
+        var a=nok(r.left,r.top), b=nok(r.right,r.bottom);
+        return {x0:Math.min(a.x,b.x),x1:Math.max(a.x,b.x),y0:Math.min(a.y,b.y),y1:Math.max(a.y,b.y)};
       }
+      function cak(p,q){ return p.x0<q.x1+2 && q.x0<p.x1+2 && p.y0<q.y1-0.5 && q.y0<p.y1-0.5; }   /* yatayda 2 birim bosluk: bitisik yazilar okunur kalsin */
+      var yer=[].slice.call(svg.querySelectorAll('text')).filter(function(t){
+        return L.indexOf(t)<0 && !t.classList.contains('dl') && !t.classList.contains('dlt') && t.textContent.trim() && getComputedStyle(t).display!=='none' && !t.closest('[style*="display: none"],[style*="display:none"]');
+      }).map(kutu).filter(Boolean);
+      function cubukMu(t){ return t.classList.contains('dl') && !t.classList.contains('dll'); }
+      var K=L.map(function(t){ return {t:t, k:kutu(t), don:/rotate/.test(t.getAttribute('transform')||''), cb:cubukMu(t), o:t.classList.contains('dlo')}; }).filter(function(e){return e.k;});
+      K.sort(function(p,q){ return (q.cb-p.cb) || (q.o-p.o) || (p.k.x0-q.k.x0); });
+      function tasi(t,dy){
+        t.setAttribute('y',(parseFloat(t.getAttribute('data-y0'))+dy).toFixed(1));
+        var tr=t.getAttribute('data-tr0');
+        if(tr) t.setAttribute('transform',tr.replace(/rotate\(\s*([-\d.]+)[\s,]+([-\d.]+)[\s,]+([-\d.]+)\s*\)/,function(m,a,cx,cy){return 'rotate('+a+' '+cx+' '+(parseFloat(cy)+dy).toFixed(1)+')';}));
+      }
+      K.forEach(function(e){
+        var k=e.k, h=k.y1-k.y0, ad=[0], s;
+        if(e.don){ for(s=1;s<=14;s++) ad.push(-6*s); }
+        else if(e.cb){ for(s=1;s<=4;s++) ad.push(-(h+1)*s); }
+        else { var alt=e.t.getAttribute('data-alt')==='1', ters=alt?-(h+10):(h+10); ad=[0,ters,alt?h+2:-(h+2),ters+(alt?-(h+2):(h+2))]; }
+        for(var i=0;i<ad.length;i++){
+          var c={x0:k.x0,x1:k.x1,y0:k.y0+ad[i],y1:k.y1+ad[i]};
+          if(c.y0<vb.y || c.y1>vb.y+vb.height || c.x0<vb.x-1 || c.x1>vb.x+vb.width+1) continue;
+          if(!yer.some(function(q){return cak(c,q);})){ yer.push(c); if(ad[i]) tasi(e.t,ad[i]); return; }
+        }
+        e.t.classList.add('dl-x');
+      });
     }
     if(cizgiTip || svg.querySelector('.dl')){
       var db=document.createElement('button'); db.type='button'; db.className='dlb'; db.setAttribute('aria-pressed','false');
       function dbYaz(){ db.innerHTML='<svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 13h12M4 10V6M8 10V3M12 10V7"/></svg><span>'+(ingilizce()?'Values':'Değerler')+'</span>'; db.title=ingilizce()?'Show values on the chart':'Değerleri grafikte göster'; }
-      dbYaz(); document.addEventListener('dilchange',function(){ dbYaz(); etiketCiz(); });
+      dbYaz(); document.addEventListener('dilchange',function(){ dbYaz(); etiketCiz(); if(!cizgiTip) ayir(); });
+      if(window.ResizeObserver){ var rw=0; new ResizeObserver(function(en){ var w=en[0].contentRect.width; if(dlAcik && w && !rw){ etiketCiz(); if(!cizgiTip) ayir(); } rw=w; }).observe(svg); }
       db.addEventListener('click',function(){ dlAcik=!dlAcik; db.setAttribute('aria-pressed',String(dlAcik)); fig.classList.toggle('dl-acik',dlAcik); etiketCiz(); if(!cizgiTip) ayir(); });
       var cap=fig.querySelector('figcaption');
       if(cap){ cap.appendChild(db); } else { var sat=document.createElement('div'); sat.className='dl-satir'; sat.appendChild(db); fig.insertBefore(sat, fig.firstChild); }

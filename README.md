@@ -3,7 +3,7 @@
 VitrA'nın Türkiye e-ticaret kanalları (vitra.com.tr, Trendyol, Hepsiburada) için büyüme fırsatları çalışması. Rapor tek HTML dosyasıdır; Türkçe ve İngilizce sürüm aynı dosyada, üst bardaki EN / TR düğmesiyle değişir. Excel veri dosyası rapora gömülüdür ve üst bardan indirilebilir.
 
 - Rapor: `VitrA_E-Ticaret_Buyume_Firsatlari.html`
-- Veri dosyası: `VitrA_E-Ticaret_Buyume_Firsatlari.xlsx` (174 sekme)
+- Veri dosyası: `VitrA_E-Ticaret_Buyume_Firsatlari.xlsx` (176 sekme)
 - Kaynak siteler dökümü: `VitrA_E-Ticaret_Kaynak_Siteler.xlsx` (1.307 satır, 75 alan adı; URL, ne için bakıldı, hangi bölüme kaynak sağladı, hangi bilgiler alındı, erişim tarihi, rapordaki kaynakça numarası; ayrıca alan adı özeti ve raporun Yöntem ve Kapsam tablosu)
 
 ## Kapsam (Sürüm 6 · 30.09.2026)

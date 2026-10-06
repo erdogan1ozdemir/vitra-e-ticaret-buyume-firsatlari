@@ -3,7 +3,8 @@
 %100 yigilmis cubuk ve tablo isi haritasi. Balonlar rapor_js 'genel' tipiyle basilir:
 her hover bandi kendi basligini ve satirlarini tasir."""
 import json, re, math
-from t2_ortak import x
+from t2_ortak import x, EK
+_AY_TR = ['Oca', 'Şub', 'Mar', 'Nis', 'May', 'Haz', 'Tem', 'Ağu', 'Eyl', 'Eki', 'Kas', 'Ara']; _AY_EN = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
 SOL_ET = 250
 
@@ -465,6 +466,13 @@ def kombo2(etiketler, seriler, cap="", genislik=880, yukseklik=300, etiket_goste
     nb = len(grup); gw = bw * (0.72 if nb > 1 else 0.52); w1 = gw / max(1, nb)
     for i, et in enumerate(etiketler):
         cx = sol + bw * i + bw / 2; ust_y = None; j = -1
+        # ortu cubugu (toplamin icindeki pay): etiketinin kapladigi yerin ustu hesaplanir; taban cubugun etiketi bunun ustunden baslar
+        ov_y = None
+        for s_ in cubuklar:
+            if not s_.get("ortu") or s_["deger"][i] is None or not s_.get("dl", True): continue
+            yv = Y(s_.get("eksen", "sol"), s_["deger"][i]); hv = ust + ih - yv; uz = 5.8 * len(s_["bicim"](s_["deger"][i])) + 4
+            yo = (yv - 4) if (w1 < 36 and hv >= max(34, uz)) or (uz <= w1 + 2 and hv >= 16) else (yv - 18)
+            ov_y = yo if ov_y is None else min(ov_y, yo)
         for s_ in cubuklar:
             v = s_["deger"][i]
             if not s_.get("ortu"): j += 1
@@ -474,19 +482,27 @@ def kombo2(etiketler, seriler, cap="", genislik=880, yukseklik=300, etiket_goste
             p.append('<rect class="sr" data-k="%d" x="%.1f" y="%.1f" width="%.1f" height="%.1f" rx="2.5" fill="%s"/>' % (k_, x0 + 1, Y(e, v), max(1, w1 - 2), max(0, ust + ih - Y(e, v)), s_["renk"]))
             if not s_.get("ortu"): ust_y = Y(e, v) if ust_y is None else min(ust_y, Y(e, v))
             if s_.get("dl", True):   # cubuk degeri cubugun icinde, tabana yakin (cizgi etiketleriyle cakismaz); koyu cubukta beyaz yazi
-                yy = ust + ih - 6
-                if ust + ih - Y(e, v) < 16: yy = Y(e, v) - 4
-                koyu = _koyu(s_["renk"]) and ust + ih - Y(e, v) >= 16
-                if w1 < 36 and ust + ih - Y(e, v) >= 34:   # dar cubuk: deger cubugun icinde dikey yazilir
-                    xx = x0 + w1 / 2 + 3.5; yb = ust + ih - 5
-                    p.append('<text class="dl %s" data-k="%d" x="%.1f" y="%.1f" transform="rotate(-90 %.1f %.1f)" text-anchor="start">%s</text>' % ("dli" if _koyu(s_["renk"]) else "dlb", k_, xx, yb, xx, yb, s_["bicim"](v)))
-                else:
-                    p.append('<text class="dl %s" data-k="%d" x="%.1f" y="%.1f" text-anchor="middle">%s</text>' % ("dli" if koyu else "dlb", k_, x0 + w1 / 2, yy, s_["bicim"](v)))
+                ek = " dlo" if s_.get("ortu") else ""
+                taban = ust + ih if (s_.get("ortu") or ov_y is None) else min(ust + ih, ov_y + 5)   # ustune ortu binen cubukta etiket ortu etiketinin ustunden baslar
+                hv = taban - Y(e, v); uz = 5.8 * len(s_["bicim"](v)) + 4
+                koyu = _koyu(s_["renk"]) and (s_.get("ortu") or ov_y is None)
+                if w1 < 36 and hv >= max(34, uz):   # dar cubuk: deger cubugun icinde dikey yazilir
+                    xx = x0 + w1 / 2 + 3.5; yb = taban - 5
+                    p.append('<text class="dl %s%s" data-k="%d" x="%.1f" y="%.1f" transform="rotate(-90 %.1f %.1f)" text-anchor="start">%s</text>' % ("dli" if koyu else "dlb", ek, k_, xx, yb, xx, yb, s_["bicim"](v)))
+                elif uz <= w1 + 2 and hv >= 16:   # yazi cubuga sigiyor: cubugun icinde, tabana yakin
+                    p.append('<text class="dl %s%s" data-k="%d" x="%.1f" y="%.1f" text-anchor="middle">%s</text>' % ("dli" if koyu else "dlb", ek, k_, x0 + w1 / 2, taban - 6, s_["bicim"](v)))
+                else:   # sigmiyor: cubugun ustunde, koyu yazi
+                    p.append('<text class="dl dlb%s" data-k="%d" x="%.1f" y="%.1f" text-anchor="middle">%s</text>' % (ek, k_, x0 + w1 / 2, Y(e, v) - 4, s_["bicim"](v)))
             if etiket_goster: p.append('<text class="bv" x="%.1f" y="%.1f" text-anchor="middle" style="font-size:10px">%s</text>' % (x0 + w1 / 2, Y(e, v) - 4, s_["bicim"](v)))
         if ust_etiket and ust_etiket[i] and ust_y is not None:
             p.append('<text class="bv" x="%.1f" y="%.1f" text-anchor="middle" style="font-size:10.5px;font-weight:700">%s</text>' % (cx, ust_y - 6, ust_etiket[i]))
         if dondur:
             p.append('<text class="ax" x="%.1f" y="%d" text-anchor="end" transform="rotate(-55 %.1f %d)" style="font-size:9.5px">%s</text>' % (cx + 3, ust + ih + 12, cx + 3, ust + ih + 12, et))
+        elif " " in et and 6.0 * len(et) > bw - 4:   # sigmayan "Oca 25" tipi etiket iki satira bolunur (ay / yil); parcalar ceviri kaydina eklenir
+            a_, _, b_ = et.partition(" "); en_ = EK.get(" ".join(et.split()), "")
+            if " " in en_: EK.setdefault(a_, en_.partition(" ")[0]); EK.setdefault(b_, en_.partition(" ")[2])
+            elif a_ in _AY_TR: EK.setdefault(a_, _AY_EN[_AY_TR.index(a_)])
+            p.append('<text class="ax" x="%.1f" y="%d" text-anchor="middle"><tspan>%s</tspan><tspan x="%.1f" dy="12">%s</tspan></text>' % (cx, yukseklik - 19, a_, cx, b_))
         else:
             p.append('<text class="ax" x="%.1f" y="%d" text-anchor="middle">%s</text>' % (cx, yukseklik - 12, et))
     for s_ in seriler:
@@ -507,7 +523,7 @@ def kombo2(etiketler, seriler, cap="", genislik=880, yukseklik=300, etiket_goste
             alt_ = s_.get("tip") == "kesik"
             for i, v in enumerate(s_["deger"]):
                 if v is None: continue
-                p.append('<text class="dl dll" data-k="%d" x="%.1f" y="%.1f" text-anchor="middle" fill="%s">%s</text>' % (k_, sol + bw * i + bw / 2, Y(e, v) + (15 if alt_ else -8), s_["renk"], s_["bicim"](v)))
+                p.append('<text class="dl dll" data-k="%d"%s x="%.1f" y="%.1f" text-anchor="middle" fill="%s">%s</text>' % (k_, ' data-alt="1"' if alt_ else "", sol + bw * i + bw / 2, Y(e, v) + (15 if alt_ else -8), s_["renk"], s_["bicim"](v)))
     nok = []
     for i, et in enumerate(etiketler):
         p.append('<rect class="hz" data-i="%d" x="%.1f" y="%d" width="%.1f" height="%d"/>' % (i, sol + bw * i, ust, bw, ih))

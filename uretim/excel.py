@@ -138,7 +138,7 @@ AD_SON = {"Marka · Üretici markalar": "Marka adı · Üretici", "Marka adı ·
           "YZ payına · Tüm yazılar": "YZ payı · Tümü", "YZ payına · Sıralaması": "YZ payı · Sıra korunan",
           "AI Overview · Arama grubu": "AIO · Arama grupları", "AI · Arama ifadesi": "AIO · Örnek aramalar",
           "GA4 aylık görünüm · Oturum": "GA4 aylık · Oturum", "GA4 · Gelire göre ilk": "GA4 giriş · İlk 15 gelir", "GA4 · Oturuma göre ilk": "GA4 giriş · İlk 15 oturum",
-          "GA4 giriş · Giriş sayfası": "GA4 giriş · Sayfa türü", "GA4 giriş · Önceki sayfa": "GA4 giriş · Önceki sayfa", "GA4 site · Arama terimi": "GA4 arama · Terim", "GA4 site içi · Terim türü": "GA4 arama · Terim türü"}
+          "GA4 giriş · Giriş sayfası": "GA4 giriş · Sayfa türü", "GA4 giriş · Önceki sayfa": "GA4 giriş · Önceki sayfa", "GA4 giriş · Sipariş onayında": "GA4 sipariş onay · Önceki sayfa", "GA4 · Sipariş onayında": "GA4 sipariş onay · Önceki sayfa", "GA4 giriş · Kaynak grubu": "GA4 sipariş onay · Kaynak", "GA4 site · Arama terimi": "GA4 arama · Terim", "GA4 site içi · Terim türü": "GA4 arama · Terim türü"}
 
 _GENEL = {"Oyuncu", "Gösterge", "Ürün", "Kategori", "Tema", "Marka", "Alan adı", "Yıllık yenileme oranı"}
 KISA = {"Yıllık banyo yenileme ve yeni konut banyosu tahmini": "Banyo yenileme tahmini", "Kullanıcı hangi özellikle arıyor? SSG": "Özellik araması SSG",

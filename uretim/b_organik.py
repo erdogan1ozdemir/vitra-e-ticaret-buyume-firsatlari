@@ -230,10 +230,22 @@ def _blog_cubuk(i, ad_tr, ad_en, et_tr, et_en):
                         {"ad": "2026", "renk": YRENK["2026"], "deger": _bl(2026, i), "tip": "cubuk", "bicim": _fk2, "eksen_ad": x(ad_tr, ad_en)}], cap=x(et_tr, et_en))
 _EBC = ("Blog sayfalarının aylık organik click'i · /ilham-veren-fikirler/, tüm alt alan adları, 2025 ve 2026 üst üste", "Monthly organic clicks of blog pages · /ilham-veren-fikirler/, all subdomains, 2025 and 2026 overlaid")
 _EBG = ("Blog sayfalarının aylık gösterimi · /ilham-veren-fikirler/, 2025 ve 2026 üst üste", "Monthly impressions of blog pages · /ilham-veren-fikirler/, 2025 and 2026 overlaid")
+# click ve gösterim tek grafikte: Search Console'un sakladığı tüm aylar (16 ay; Haz 2025 öncesi blog verisi API'de yok)
+_BAY = sorted(BA)
+if _BAY[0] != "2025-06": raise SystemExit("organik: blog aylık serisi Haz 2025'te başlamıyor: %s" % _BAY[0])
+_BET = ["%s %s" % (AYA[int(m[5:]) - 1][0], m[2:4]) for m in _BAY]
+for _m, _e in zip(_BAY, _BET): x(_e, "%s %s" % (AYA[int(_m[5:]) - 1][1], _m[2:4]))
+def _ctr(c, i): return x("%" + ("%.2f" % (100 * c / i)).replace(".", ","), "%.2f%%" % (100 * c / i))
+_BLOG_CG = _kombo2(_BET, [{"ad": "Click", "renk": "#10332F", "deger": [BA[m][0] for m in _BAY], "tip": "cubuk", "bicim": _fk2, "eksen_ad": "Click"},
+                          {"ad": x("Gösterim", "Impressions"), "renk": "#E85F36", "deger": [BA[m][1] for m in _BAY], "tip": "cizgi", "eksen": "sag", "bicim": _fk2, "eksen_ad": x("Gösterim", "Impressions")}],
+                   cap=x("Blog sayfalarının aylık organik click'i (çubuk, sol eksen) ve gösterimi (çizgi, sağ eksen) · /ilham-veren-fikirler/, tüm alt alan adları, Haz 2025 - Eyl 2026 (Search Console'da bulunan tüm aylar)",
+                         "Monthly organic clicks (bars, left axis) and impressions (line, right axis) of blog pages · /ilham-veren-fikirler/, all subdomains, Jun 2025 - Sep 2026 (all months available in Search Console)"),
+                   ek_satir=[[("CTR", _ctr(BA[m][0], BA[m][1]))] for m in _BAY])
 G_BLOG = sekmeler([("Click", "Clicks", _cift(cizgi([("2025", YRENK["2025"], _bl(2025, 0)), ("2026", YRENK["2026"], _bl(2026, 0))], y_etiket=x(*_EBC), aylar=AD, x_etiket=AD, kalin={1: 3.2}),
                                           _blog_cubuk(0, "Click", "Clicks", *_EBC))),
                    ("Gösterim", "Impressions", _cift(cizgi([("2025", YRENK["2025"], _bl(2025, 1)), ("2026", YRENK["2026"], _bl(2026, 1))], y_etiket=x(*_EBG), aylar=AD, x_etiket=AD, kalin={1: 3.2}),
-                                          _blog_cubuk(1, "Gösterim", "Impressions", *_EBG)))], "gtabs")
+                                          _blog_cubuk(1, "Gösterim", "Impressions", *_EBG))),
+                   ("Click + Gösterim", "Clicks + Impressions", _BLOG_CG)], "gtabs")
 b12c = sum(BA[m][0] for m in _G12.Y12); b12i = sum(BA[m][1] for m in _G12.Y12); s12 = sum(SAS[m] for m in _G12.Y12)
 bc25, bc26 = sum(BA["2025-" + m][0] for m in HE), sum(BA["2026-" + m][0] for m in HE); bi25, bi26 = sum(BA["2025-" + m][1] for m in HE), sum(BA["2026-" + m][1] for m in HE)
 B26, B25 = G2["blog_hazeyl"]["2026"], G2["blog_hazeyl"]["2025"]

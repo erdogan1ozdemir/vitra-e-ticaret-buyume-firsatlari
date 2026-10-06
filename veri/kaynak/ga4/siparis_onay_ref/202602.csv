@@ -1,0 +1,76 @@
+# ----------------------------------------
+# ECZ_EYAP_Online Vitra_TR_GA4_Genel_288016049
+# Copy of Free form-Free form 9
+# 20260201-20260228
+# ----------------------------------------
+
+Page referrer,Page path + query string,Event name,Event count
+,,,72,Grand total
+https://api.iyzipay.com/,/checkout/orderConfirmation/0a58887a-f534-48c1-a1d3-b202b3c9c72a,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/0bc84e0b-2da7-42f8-903f-5a09942b7dca,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/0e848e39-ed3b-431c-b1ae-a2cc42d888ff,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/1128f999-ccf2-41ae-8ab4-ad8ce8b38dcb,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/129b8815-cdb8-41dc-8d54-35922ed2d305,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/15caa474-27fd-4099-ae1e-fa7ae9d7b8ff,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/1a516c97-557d-4807-9a93-ba4cb0a11c9c,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/254b0a94-4950-47e1-aa97-bec04d2fbb11,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000583124,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000583153,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000583287,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000583325,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000583341,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000583372,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000583453,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000583526,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000583569,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000583622,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000583723,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000583816,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000583928,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000583967,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000583987,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000584036,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000584094,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000584209,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000584312,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000584493,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000584519,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000584535,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000584739,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000584791,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000585035,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000585205,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000585309,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000585393,session_start,3
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000585455,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000585541,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000585580,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000585586,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000585615,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000585643,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000585693,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000585695,session_start,2
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000585734,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000585812,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000585815,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000585849,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/3000585860,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/34465eba-ba42-4968-89a3-57cb86b32f92,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/4f2a1e09-5e9a-40e3-bb65-033a4a82a482,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/58bfb5ae-dac3-4d64-b68e-14ef0fa24545,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/7db78393-95ee-47b7-b90a-94437a47a32d,session_start,2
+https://api.iyzipay.com/,/checkout/orderConfirmation/8cbbb22e-81bb-48c0-9ac4-e427eea9c5cb,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/a45c47d1-bcaa-49d9-9ed1-165c5874b9c9,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/a8070c99-ce2b-4921-a511-f29d77dc9223,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/adf89ab2-3bd1-4ed2-845e-2eafb1c32743,session_start,2
+https://api.iyzipay.com/,/checkout/orderConfirmation/b14c3930-05b3-4453-afbf-7b29032f9fc2,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/c4a28c97-0c99-4074-b102-84d2dcbe99ce,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/c9f38d14-5bff-4ae3-b726-5fcbe6c3d738,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/cc898da1-0bfa-4790-8de5-a2b4a412e571,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/d183ceb9-7c40-4226-afc3-6574f95410b0,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/dde99fb9-42cd-4367-a330-2fe0d075f561,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/efa047cd-bc71-49b4-82e9-d7165623d772,session_start,1
+https://api.iyzipay.com/,/checkout/orderConfirmation/f33ed252-2fa6-43ef-9edd-2f5c5c83d38f,session_start,1
+https://ode.iyzico.com/,/checkout/orderConfirmation/3000584453,session_start,1
+https://ode.iyzico.com/,/checkout/orderConfirmation/3000585288,session_start,1
+
