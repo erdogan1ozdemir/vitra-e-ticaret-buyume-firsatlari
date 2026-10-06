@@ -2,8 +2,10 @@
 """GA4 dışa aktarımı (VitrA ekibi, 05.10.2026; veri/kaynak/ga4/Reports_2026-10-05.xlsx) -> veri/islenmis/ga4.json
 Mülk: ECZ_EYAP_Online Vitra_TR_GA4_Genel (vitra.com.tr). Aralık 2025'te www.vitra.com.tr trafiği bu mülke katıldığı için oturum ve dönüşüm oranı
 Aralık 2025 öncesi ve sonrası arasında kıyaslanmaz; satın alma ve gelir (mağaza her iki dönemde de bu mülkteydi) kıyaslanabilir.
-Sayfalar: 11 = genel bakış (aylık, Oca 2025 - Eyl 2026), 4 = kanal (aylık) ve kaynak / ortam (toplam), 3 = site içi arama (Nis - 5 Eki 2026, keşif raporu,
-örneklenmiş), 7 = ödeme ve teslimat türü, 8 = satın alma dışı olaylar, 9 = blog ve koleksiyon sayfaları, 10 = promosyon ve kupon.
+Sayfalar: 11 = genel bakış (aylık, Oca 2025 - Eyl 2026), 4 = kanal (aylık) ve kaynak / ortam (toplam), 7 = ödeme ve teslimat türü,
+9 = blog ve koleksiyon sayfaları, 10 = promosyon ve kupon. Site içi arama (sayfa 3 örneklenmiş olduğu için) ve servis düğmesi tıklaması (sayfa 8 ay sütununda yıl
+taşımadığı için) VitrA ekibinin sonradan ilettiği CSV dışa aktarımlarından okunur. Anahtar olay (key event) sütunları tüm olayları kapsadığından kullanılmaz;
+genel bakıştaki oran satın alma oranıdır.
 Landing page sayfası (5) belirsiz bir süzgeçle alındığı için (13 ayda 60K oturum, gelir 0, ay sütununda yıl yok) kullanılmamıştır; yerine VitrA ekibinin
 aylık landing page dışa aktarımları kullanılmıştır (landing_2025.csv: 1 Oca - 31 Ara 2025, landing_2026.csv: 1 Oca - 5 Eki 2026). Bu dosyalarda aylık gelir
 genel bakışla birebir aynıdır; sayfa bazındaki oturumların toplamı ise genel bakıştaki oturumdan yüksektir, bu yüzden oturum yalnız pay olarak kullanılır."""
@@ -55,13 +57,24 @@ def terim(v):
     if isinstance(v, float) and v.is_integer(): v = int(v)
     t = unquote(str(v)).split("&")[0].lower().replace("\u0307", "")
     return " ".join(t.split())
-ara = defaultdict(lambda: [0, 0, 0]); ara_ay = defaultdict(int)
-for r in tablo("3 - Tablo 1 (Nisan 2026)", "Year"):
-    if not isinstance(r[0], (int, float)) or not r[3]: continue
-    q = terim(r[3]); a = ara[q]; a[0] += sayi(r[4]) or 0; a[1] += sayi(r[5]) or 0; a[2] += sayi(r[6]) or 0
-    ara_ay["%d-%02d" % (int(r[0]), int(r[1]))] += sayi(r[4]) or 0
+import csv as _csv
+def csv_oku(ad):
+    """Keşif dışa aktarımı (CSV): # başlıklı satırlar ve Grand total satırı atlanır; ilk anlamlı satır başlıktır."""
+    R = [r for r in _csv.reader(l for l in open(os.path.join(P, "veri/kaynak/ga4", ad), encoding="utf-8") if not l.startswith("#")) if r and any(r)]
+    toplam = next((r for r in R if r[-1] == "Grand total"), None)
+    return R[0], [r for r in R[1:] if r[-1] != "Grand total"], toplam
+# site içi arama: VitrA ekibinin iki ayrı keşif dışa aktarımı (1 May - 31 Tem 2026, 1 Ağu - 30 Eyl 2026), örnekleme yok; olay sayısı ve oturum
+ARA_DOSYA = {"2026-05/07": "arama_2026-05_07.csv", "2026-08/09": "arama_2026-08_09.csv"}
+ara = defaultdict(lambda: [0, 0]); ara_don = {}
+for don, ad in ARA_DOSYA.items():
+    h, R, top = csv_oku(ad)
+    i_e, i_q, i_c, i_s = h.index("Event name"), h.index("Search Term"), h.index("Event count"), h.index("Sessions")
+    for r in R:
+        if r[i_e] != "view_search_results" or not r[i_q].strip(): continue
+        q = terim(r[i_q]); a = ara[q]; a[0] += int(r[i_c]); a[1] += int(r[i_s])
+    ara_don[don] = {"olay": int(top[i_c]), "oturum": int(top[i_s])}   # Grand total: oturum tekil sayılır
 O["arama"] = sorted([[q] + v for q, v in ara.items()], key=lambda r: -r[1])
-O["arama_ay"] = dict(sorted(ara_ay.items()))
+O["arama_donem"] = ara_don
 O["arama_ornek8"] = round(sum(1 for q, v in ara.items() if v[0] % 8 == 0) / len(ara), 3)
 # ------------------------------------------------------------------ ödeme ve teslimat türü
 R = satirlar("7 - Tablo 1 ve 2"); od = []; kg = []
@@ -69,11 +82,11 @@ for r in R:
     if r and r[0] == "add_payment_info" and r[1]: od.append((r[1], sayi(r[2])))
     if r and r[0] == "add_shipping_info" and r[1]: kg.append((r[1], sayi(r[2])))
 O["odeme"] = od; O["teslimat"] = kg
-# ------------------------------------------------------------------ satın alma dışı olaylar (ay sütununda yıl yok: 10-12 = 2025, 5-8 = 2026, 9 = Eyl 2025 + Eyl 2026)
+# ------------------------------------------------------------------ satın alma dışı olaylar (yıl içeren dışa aktarım, 1 Eyl 2025 - 30 Eyl 2026; yalnız servisler ve satış noktaları düğme tıklaması)
 ld = defaultdict(dict)
-for r in tablo("8 - Lead (Mayıs 2026)", "Month"):
-    if not isinstance(r[0], (int, float)) or not isinstance(r[1], str): continue
-    m = int(r[0]); ld[r[1]]["eyl" if m == 9 else "%d-%02d" % (2025 if m >= 10 else 2026, m)] = [sayi(r[2])]   # dışa aktarım 1 Eyl 2025 - 30 Eyl 2026, ay sütununda yıl yok: 9 iki Eylül'ün toplamıdır
+h, R, _ = csv_oku("servis_satis_noktalari_2025-09_2026-09.csv")
+for r in R:
+    ld[r[h.index("Event name")]]["%s-%s" % (r[h.index("Year")], r[h.index("Month")].zfill(2))] = [int(r[h.index("Event count")])]
 O["olay"] = {k: dict(sorted(v.items())) for k, v in ld.items()}
 # ------------------------------------------------------------------ blog ve koleksiyon sayfaları (görüntüleme, kullanıcı, anahtar olay)
 O["blog"] = [[r[0], sayi(r[1]), sayi(r[2]), sayi(r[3])] for r in satirlar("9 - Tablo 1 ve Blog") if r and r[0] and str(r[0]).startswith("/")]
@@ -135,7 +148,7 @@ if __name__ == "__main__":
     def kt(y, a): return {k: sum(v.get("%d-%02d" % (y, m), {}).get(a) or 0 for m in range(1, 10)) for k, v in O["kanal"].items()}
     g5, g6 = kt(2025, "gelir"), kt(2026, "gelir"); s5, s6 = kt(2025, "satin"), kt(2026, "satin"); o5, o6 = kt(2025, "oturum"), kt(2026, "oturum")
     for k in sorted(g6, key=lambda k: -g6[k]): print("  %-26s gelir %10.0f -> %10.0f  satın %4.0f -> %4.0f  oturum %8.0f -> %8.0f" % (k, g5.get(k, 0), g6[k], s5.get(k, 0), s6[k], o5.get(k, 0), o6[k]))
-    print("arama", len(O["arama"]), sum(r[1] for r in O["arama"]), O["arama_ay"], "8 katı", O["arama_ornek8"])
+    print("arama", len(O["arama"]), sum(r[1] for r in O["arama"]), O["arama_donem"], "8 katı", O["arama_ornek8"])
     print("blog", len(O["blog"]), sum(r[1] for r in O["blog"]), "koleksiyon", len(O["koleksiyon"]))
     print("olay", {k: sum(v[0] for v in d.values()) for k, d in O["olay"].items()})
     for t, d in sorted(O["lp_tur"].items(), key=lambda x: -x[1].get("2026", [0, 0])[1]):

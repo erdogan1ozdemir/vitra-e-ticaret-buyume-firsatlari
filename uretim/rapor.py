@@ -91,7 +91,7 @@ if _yok: raise SystemExit('alt sayfa dugmesi icin baslik bulunamadi: %s' % _yok)
 # cok sutunlu tablolar: sutun sayisina gore asgari genislik, ilk (metin) sutununa asgari genislik
 def _genislik(m):
     blok = m.group(0); nc = blok[:blok.find("</tr>")].count("<th")
-    if nc < 6 or "genis" in m.group(1) or "urunt" in m.group(1): return blok
+    if nc < 6 or "genis" in m.group(1) or "urunt" in m.group(1) or "kompakt" in m.group(1): return blok
     return blok.replace('<div class="tw %s">' % m.group(1), '<div class="tw %s cok" style="--nc:%d">' % (m.group(1), nc), 1) if m.group(1) else blok.replace('<div class="tw">', '<div class="tw cok" style="--nc:%d">' % nc, 1)
 govde = re.sub(r'<div class="tw ?([^"]*)">.*?</table></div>', _genislik, govde, flags=re.S)
 # tablolarda VitrA satiri: ilk hucresi VitrA / vitra.com.tr olan satirlar hafif zeminle vurgulanir
@@ -371,6 +371,7 @@ p.tbas{margin:30px 0 8px;font-size:14.5px}
 .tw.cok td,.tw.cok th{min-width:84px}
 .tw.cok td:first-child,.tw.cok th:first-child{min-width:120px}
 .tw.cok td{vertical-align:middle}
+.tw.kompakt th,.tw.kompakt td{min-width:0;padding-left:9px;padding-right:9px}
 .tw.urunt table{min-width:100%}
 .tw.urunt td:first-child,.tw.urunt th:first-child{min-width:220px;white-space:normal}
 h3[id]{scroll-margin-top:calc(var(--apph, 64px) + 24px)}
