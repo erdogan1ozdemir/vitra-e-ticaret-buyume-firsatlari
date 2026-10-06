@@ -4,6 +4,7 @@
 her hover bandi kendi basligini ve satirlarini tasir."""
 import json, re, math
 from t2_ortak import x, EK
+from metrik_ad import para as _para   # etiket uzunluğu ₺ biçimiyle hesaplanır
 _AY_TR = ['Oca', 'Şub', 'Mar', 'Nis', 'May', 'Haz', 'Tem', 'Ağu', 'Eyl', 'Eki', 'Kas', 'Ara']; _AY_EN = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
 SOL_ET = 250
@@ -470,8 +471,8 @@ def kombo2(etiketler, seriler, cap="", genislik=880, yukseklik=300, etiket_goste
         ov_y = None
         for s_ in cubuklar:
             if not s_.get("ortu") or s_["deger"][i] is None or not s_.get("dl", True): continue
-            yv = Y(s_.get("eksen", "sol"), s_["deger"][i]); hv = ust + ih - yv; uz = 5.8 * len(s_["bicim"](s_["deger"][i])) + 4
-            yo = (yv - 4) if (w1 < 36 and hv >= max(34, uz)) or (uz <= w1 + 2 and hv >= 16) else (yv - 18)
+            yv = Y(s_.get("eksen", "sol"), s_["deger"][i]); hv = ust + ih - yv; uz = 5.8 * len(_para(s_["bicim"](s_["deger"][i]))) + 4
+            yo = (yv - 4) if (w1 < 36 and hv >= max(22, uz + 2)) or (uz <= w1 + 2 and hv >= 16) else (yv - 18)
             ov_y = yo if ov_y is None else min(ov_y, yo)
         for s_ in cubuklar:
             v = s_["deger"][i]
@@ -484,9 +485,9 @@ def kombo2(etiketler, seriler, cap="", genislik=880, yukseklik=300, etiket_goste
             if s_.get("dl", True):   # cubuk degeri cubugun icinde, tabana yakin (cizgi etiketleriyle cakismaz); koyu cubukta beyaz yazi
                 ek = " dlo" if s_.get("ortu") else ""
                 taban = ust + ih if (s_.get("ortu") or ov_y is None) else min(ust + ih, ov_y + 5)   # ustune ortu binen cubukta etiket ortu etiketinin ustunden baslar
-                hv = taban - Y(e, v); uz = 5.8 * len(s_["bicim"](v)) + 4
+                hv = taban - Y(e, v); uz = 5.8 * len(_para(s_["bicim"](v))) + 4
                 koyu = _koyu(s_["renk"]) and (s_.get("ortu") or ov_y is None)
-                if w1 < 36 and hv >= max(34, uz):   # dar cubuk: deger cubugun icinde dikey yazilir
+                if w1 < 36 and hv >= max(22, uz + 2):   # dar cubuk: deger cubugun icinde, tabandan dikey yazilir (sigdigi surece cubugun icinde kalir)
                     xx = x0 + w1 / 2 + 3.5; yb = taban - 5
                     dlp.append('<text class="dl %s%s" data-k="%d" x="%.1f" y="%.1f" transform="rotate(-90 %.1f %.1f)" text-anchor="start">%s</text>' % ("dli" if koyu else "dlb", ek, k_, xx, yb, xx, yb, s_["bicim"](v)))
                 elif uz <= w1 + 2 and hv >= 16:   # yazi cubuga sigiyor: cubugun icinde, tabana yakin

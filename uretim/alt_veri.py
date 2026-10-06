@@ -143,7 +143,7 @@ function hucre(c,v){
  if(v==null||v===''){return '<td class="'+(c.n?'n ':'')+'bos">-</td>'}
  switch(c.tip){
   case 'sayi':return '<td class="n">'+sayi(v,c.o||0)+'</td>';
-  case 'para':return '<td class="n">'+(dil()==='en'?'TRY ':'')+sayi(v,0)+(dil()==='en'?'':' TL')+'</td>';
+  case 'para':return '<td class="n">₺'+sayi(v,0)+'</td>';
   case 'yuzde':return '<td class="n">'+yuzde(v,c.o)+'</td>';
   case 'oran':return '<td class="n">'+(dil()==='en'?sayi(v,c.o==null?1:c.o)+'%':'%'+sayi(v,c.o==null?1:c.o))+'</td>';
   case 'uzun':var k=String(v),o=k.replace(/\s+/g,' ').slice(0,170);return '<td class="uz2"><details><summary>'+esc(o)+(k.length>170?'…':'')+'</summary><div class="ym">'+esc(k)+'</div></details></td>';
@@ -493,7 +493,7 @@ def pazaryeri_taramasi(EK):
                          kolon("marka", "Marka", "Brand", "Ürün kartında yazan marka.", "Brand shown on the product card.", "metin", True),
                          kolon("ad", "Ürün", "Product", "Ürün kartındaki ad; bağlantı ürün sayfasını yeni sekmede açar.", "Name on the product card; the link opens the product page in a new tab.", "link", uz=True),
                          kolon("satici", "Satıcı", "Seller", "Listede görünen satıcı (işletme adı).", "Seller shown in the list (business name).", "metin", True),
-                         kolon("fiyat", "Fiyat", "Price", "Listede görünen satış fiyatı, TL, tarama günü.", "Selling price shown in the list, TRY, on the scan day.", "para"),
+                         kolon("fiyat", "Fiyat", "Price", "Listede görünen satış fiyatı (₺), tarama günü.", "Selling price shown in the list (₺), on the scan day.", "para"),
                          kolon("eski", "Üstü çizili fiyat", "Strikethrough price", "İndirim öncesi gösterilen fiyat, varsa.", "Price shown before discount, if any.", "para"),
                          kolon("puan", "Puan", "Rating", "Ürün puanı (5 üzerinden), varsa.", "Product rating (out of 5), if any.", "sayi", o=1),
                          kolon("yorum", "Değerlendirme", "Reviews", "Ürünün değerlendirme sayısı, varsa.", "Number of reviews on the product, if any.", "sayi"),

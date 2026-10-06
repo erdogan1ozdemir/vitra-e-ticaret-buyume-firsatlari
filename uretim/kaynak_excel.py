@@ -11,6 +11,7 @@ from openpyxl.cell.rich_text import CellRichText, TextBlock
 from openpyxl.cell.text import InlineFont
 
 import kaynak_ortak as O
+import metrik_ad as _MA
 import kaynakca
 import kaynak_veri_a, kaynak_veri_b, kaynak_veri_c, kaynak_veri_d, kaynak_veri_e, kaynak_veri_f, kaynak_veri_g, kaynak_veri_h
 
@@ -117,9 +118,17 @@ def temizle(t):
     t = re.sub(r"[ \t]{2,}", " ", t)
     return t.strip()
 
+def para_metin(t):
+    """TL -> ₺ (raporla ayni yazim); sikayet basligi gibi birebir alintilar oldugu gibi kalir."""
+    out = []
+    for p in t.split(" | "):
+        m = re.match(r"(.*?(?:şikayet metni|başlığı|başlık):)(.*)$", p, re.S | re.I)
+        out.append(_MA.para(m.group(1)) + m.group(2) if m else _MA.para(p))
+    return " | ".join(out)
+
 def satir_degerleri(r):
     secs = sorted(r["bolum"], key=lambda s: O.BOLUM[s][0])
-    return [r["url"], O.alan_adi(r["url"]), temizle(" | ".join(r["amac"])), " · ".join(O.bolum_adi(s) for s in secs), temizle(" | ".join(r["bilgi"])),
+    return [r["url"], O.alan_adi(r["url"]), para_metin(temizle(" | ".join(r["amac"]))), " · ".join(O.bolum_adi(s) for s in secs), para_metin(temizle(" | ".join(r["bilgi"]))),
             " · ".join(tarih_sirala(r["tarih"])), " · ".join(r["yontem"]), " · ".join(kod_sirala(r["kod"])) if r["kod"] else "-",
             " · ".join(O.KOD_NO.get(c, "-") for c in kod_sirala(r["kod"])) if r["kod"] else "-"]
 

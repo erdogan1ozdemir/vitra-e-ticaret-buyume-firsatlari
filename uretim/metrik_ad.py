@@ -127,8 +127,56 @@ _SATIN = [
 ]
 
 
+# ---- para birimi: TL yerine ₺, sayının önünde (içerik rehberi: ₺1.49M); ek sayının okunuşuna göre yeniden kurulur ("1.000 TL'ye" -> "₺1.000'e")
+_TL_SAYI = re.compile(r"(?<![\w₺.,])([+\-−]?)(\d[\d.,]*\d|\d)(\s?[KMB](?![a-zçğıöşü])|\s(?:bin|milyon|milyar))?\s?TL\b(?:'([a-zçğıöşü]+))?")
+_TL_SAYI_EN = re.compile(r"(?<![\w₺.,])([+\-−]?)(\d[\d.,]*\d|\d)(\s?(?:K|M|B|bn)(?![a-z])|\s(?:thousand|million|billion))?\s?TL\b")
+_EK_TUR = {"e": ("e", "a", "ye", "ya"), "de": ("de", "da", "te", "ta"), "den": ("den", "dan", "ten", "tan"), "lik": ("lik", "lık", "luk", "lük"),
+           "dir": ("dir", "dır", "dur", "dür", "tir", "tır", "tur", "tür"), "i": ("i", "ı", "u", "ü", "yi", "yı", "yu", "yü")}
+_KELIME_EK = {"bin": {"e": "e", "de": "de", "den": "den", "lik": "lik", "dir": "dir", "i": "i"},
+              "milyon": {"e": "a", "de": "da", "den": "dan", "lik": "luk", "dir": "dur", "i": "u"},
+              "milyar": {"e": "a", "de": "da", "den": "dan", "lik": "lık", "dir": "dır", "i": "ı"}}
+def _para_ek(sayi, birim, suf):
+    grup = next((g for g, L in _EK_TUR.items() if suf in L), None)
+    if grup is None: return suf
+    b = (birim or "").strip()
+    kel = {"K": "bin", "M": "milyon", "B": "milyar"}.get(b, b)
+    if kel in _KELIME_EK: return _KELIME_EK[kel][grup]
+    import ortak
+    son = sayi.split(",")[-1] if "," in sayi else sayi.replace(".", "")
+    try:
+        n = int(son)
+        if grup == "lik": return "l" + ortak.ek(n, "i").split("'")[1][-1] + "k"
+        if grup == "i":
+            v = ortak.ek(n, "i").split("'")[1]
+            return v
+        return ortak._ek_bekle(n, grup)
+    except Exception:
+        return suf
+def para(s):
+    if "TL" not in s: return s
+    def f(m):
+        isaret, sayi, birim, suf = m.group(1), m.group(2), m.group(3) or "", m.group(4)
+        b = birim.strip(); b = b if b in ("K", "M", "B") else (" " + b if b else "")
+        yeni = isaret + "₺" + sayi + b + ("'" + _para_ek(sayi, birim, suf) if suf else "")
+        DEGISIM[("TL", "₺")] += 1
+        return yeni
+    s = _TL_SAYI.sub(f, s)
+    s = _ARALIK.sub(r"₺\1\2", s)
+    return re.sub(r"(?<![\w₺])TL(?![\w])", "₺", s)
+_ARALIK = re.compile(r"(?<![\w₺.,])(\d[\d.,]*\d|\d)([-–])₺")   # 750-₺15.000 -> ₺750-15.000
+def para_en(s):
+    if not isinstance(s, str) or "TL" not in s: return s
+    def f(m):
+        b = (m.group(3) or "").strip(); b = b if b in ("K", "M", "B", "bn") else (" " + b if b else "")
+        return m.group(1) + "₺" + m.group(2) + b
+    s = _TL_SAYI_EN.sub(f, s)
+    s = _ARALIK.sub(r"₺\1\2", s)
+    return re.sub(r"(?<![\w₺])TL(?![\w])", "₺", s)
+
+
 def donustur(s):
     if not s or not isinstance(s, str): return s
+    s = para(s)
     if not re.search(r"[Oo]turum|[Gg]österim|[Tt]ık|[Ii]zlenme|[Hh]emen çıkma|[Oo]lay sayı|süre|[Aa]ylık arama|[Gg]örüntülenen ürün|[Ss]atın alınan ürün|[Gg]elir|[Cc]iro|[Ss]ıra|[Hh]ac[im]|[Zz]iyaret|[Tt]rafi|[Gg]örüntüle|[Dd]önüşüm|[Ee]tkileşim|sipariş tutar|[Ss]atın alma", s):
         return s
     korunan = []

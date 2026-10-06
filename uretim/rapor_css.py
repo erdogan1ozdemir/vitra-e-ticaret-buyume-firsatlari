@@ -183,6 +183,14 @@ footer{border-top:1px solid var(--line);margin-top:20px;padding:22px 0 60px;
   .tocsheet__tut{grid-column:1 / -1;grid-row:1;margin:2px auto 4px}
   .tocsheet ul.tocg li,.tocsheet .grp,.tocsheet .grp:first-of-type{max-height:none;min-height:0}
 }
+/* Tablet: panel tam ekran yerine sag altta, dugmenin ustunde yuzen kart olur */
+@media (min-width:700px) and (min-height:541px){
+  .tocsheet{align-items:flex-end;justify-content:flex-end}
+  .tocsheet__in{--tu:calc((min(100vh - 104px, 820px) - 40px) / 37.5);--tu:calc((min(100dvh - 104px, 820px) - 40px) / 37.5);
+    width:420px;height:min(calc(100vh - 104px), 820px);height:min(calc(100dvh - 104px), 820px);
+    margin:0 16px 80px 0;border-radius:18px;box-shadow:0 18px 50px rgba(0,0,0,.3)}
+  .tocsheet__tut{display:none}
+  .tocsheet__in > .grp:first-of-type{margin-top:8px}
 }
 .tocsheet a:hover,.tocsheet a:focus{background:var(--neutral);color:var(--ink);text-decoration:none}
 .tocsheet a.on{background:var(--coral-tint);color:var(--ink)}
@@ -299,11 +307,15 @@ th[data-t] span.q{border-bottom:1px dotted rgba(255,255,255,.55);padding-bottom:
   .wrap{gap:26px}
   .sidenav a{font-size:min(clamp(8px, calc(var(--tu) * .56), 12.5px), 1.14vw)}
 }
-@media(max-width:940px){
-  .wrap{grid-template-columns:1fr;gap:0;padding:0 16px}
+/* 1100 px altinda icindekiler yuzen dugme ve alt sayfaya doner: 1024 px dizustu ve yatay tablette icerik tam genislik kullanir */
+@media(max-width:1100px){
+  .wrap{grid-template-columns:1fr;gap:0}
   .sidenav{display:none}
   .tocfab{display:grid}
   main{padding:18px 0 84px}
+}
+@media(max-width:940px){
+  .wrap{grid-template-columns:1fr;gap:0;padding:0 16px}
   .two{grid-template-columns:1fr}
   h1{font-size:23px}
   .hero{padding:2px 0 16px;margin-bottom:22px}
@@ -326,14 +338,23 @@ th[data-t] span.q{border-bottom:1px dotted rgba(255,255,255,.55);padding-bottom:
   .tabs{gap:6px}
   .tabs button{font-size:12px;padding:5px 11px}
   .fig{padding:12px 12px 8px;overflow-x:auto}
-  .fig .chart{min-width:520px}
-  .fig .legend{min-width:520px}
+  .fig .chart{min-width:600px}
+  .fig .legend{min-width:0}
+  .chart .ax{font-size:11.5px}
   .gl{grid-template-columns:1fr;gap:2px 0}
   .gl dt{margin-top:10px}
   .appbar .in{padding:10px 16px;gap:10px}
   .logo-card img,.ib img{height:19px}
 }
 @media(max-width:720px){
+  /* telefonda grafik yazilari: grafik 640 px tabanla kendi icinde kayar, yazilar buyutulur (ekranda ~9-10 px) */
+  .fig .chart{min-width:640px}
+  .chart .ax{font-size:12.5px}
+  .chart .bv{font-size:13px}
+  .chart .bl{font-size:13.5px}
+  .fig .dl,.fig .dlt{font-size:12px}
+  .fig text.dl.dli{font-size:11.5px}
+  .chart .anl{font-size:12.5px}
   .dl .dl-alt{display:none}
   .brandbit .lbl{display:none}
   .appbar .in{gap:8px}
@@ -361,6 +382,14 @@ th[data-t] span.q{border-bottom:1px dotted rgba(255,255,255,.55);padding-bottom:
   .appbar .dl > .t{display:none}
   .tema{width:28px;height:28px}
   .dilbtn{height:28px;padding:0 6px}
+}
+/* dokunmatik ekranda tiklanan ogeler en az 32 px */
+@media (pointer:coarse){
+  button.dlb,.theat,.tcol,.tcopy,.tabs button,.gcift-b button{min-height:32px;padding-top:5px;padding-bottom:5px}
+  .legend .lg-t{min-height:30px;display:inline-flex;align-items:center}
+  .tk{min-width:30px;min-height:30px}
+  a.git{position:relative}
+  a.git::after{content:"";position:absolute;inset:-6px;border-radius:50%}   /* gorunum ayni, dokunma alani 32 px */
 }
 @media (prefers-reduced-motion:reduce){
   *{scroll-behavior:auto!important;transition-duration:.01ms!important}

@@ -118,7 +118,7 @@ function hucre(c,v){
  if(v==null||v===''){return '<td class="'+(c.n?'n ':'')+'bos">-</td>'}
  switch(c.tip){
   case 'sayi':return '<td class="n">'+sayi(v,c.o||0)+'</td>';
-  case 'para':return '<td class="n">'+(dil()==='en'?'TRY ':'')+sayi(v,0)+(dil()==='en'?'':' TL')+'</td>';
+  case 'para':return '<td class="n">₺'+sayi(v,0)+'</td>';
   case 'yuzde':return '<td class="n">'+yuzde(v,c.o)+'</td>';
   case 'oran':return '<td class="n">'+(dil()==='en'?sayi(v,c.o==null?1:c.o)+'%':'%'+sayi(v,c.o==null?1:c.o))+'</td>';
   case 'uzun':var k=String(v),o=k.replace(/\s+/g,' ').slice(0,170);return '<td class="uz2"><details><summary>'+esc(o)+(k.length>170?'…':'')+'</summary><div class="ym">'+esc(k)+'</div></details></td>';

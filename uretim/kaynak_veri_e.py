@@ -4,6 +4,7 @@ import os, json, csv
 from kaynak_ortak import *
 from kaynak_veri_a import D28, D29, D30
 from kaynak_veri_c import fs
+from ortak import ek as _ek
 
 CHR = "tarayıcı (Chrome, kullanıcı oturumu)"
 
@@ -50,8 +51,8 @@ def doldur():
             continue
         toplam = ("Kategoride %s ürün; " % fs(r["toplam"])) if r.get("toplam") else ""
         ekle(r["url"], "Akakçe %s kategori sayfası: ilk %d ürünün fiyat bandı ve marka dağılımı" % (KAT.get(r["kat"], r["kat"]), r["n"]),
-             "%silk %d ürünün fiyatı en düşük %s, medyan %s, en yüksek %s TL; VitrA ilk %d ürünün %d'inde; markalar: %s" % (
-                 toplam, r["n"], fs(round(r["min"])), fs(round(r["medyan"])), fs(round(r["maks"])), r["n"], r.get("vitra_n", 0), ", ".join(r.get("markalar", [])[:5])),
+             "%silk %d ürünün fiyatı en düşük %s, medyan %s, en yüksek %s TL; VitrA ilk %d ürünün %s; markalar: %s" % (
+                 toplam, r["n"], fs(round(r["min"])), fs(round(r["medyan"])), fs(round(r["maks"])), r["n"], _ek(r.get("vitra_n", 0), "inde"), ", ".join(r.get("markalar", [])[:5])),
              bolum=["fiyat"], yontem=CHR, tarih=D30, kod=["D27"])
 
     # ------------------------------------------------------------ Cimri

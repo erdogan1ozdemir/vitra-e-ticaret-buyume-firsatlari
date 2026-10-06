@@ -137,8 +137,8 @@ AD_SON = {"Marka · Üretici markalar": "Marka adı · Üretici", "Marka adı ·
           "Marka x · Aylık arama": "Marka x kat. · Hacim", "Marka x · YoY değişim": "Marka x kat. · YoY", "Marka x · 2023'ten bu yana": "Marka x kat. · 2023'ten",
           "YZ payına · Tüm yazılar": "YZ payı · Tümü", "YZ payına · Sıralaması": "YZ payı · Sıra korunan",
           "AI Overview · Arama grubu": "AIO · Arama grupları", "AI · Arama ifadesi": "AIO · Örnek aramalar",
-          "GA4 aylık görünüm · Oturum": "GA4 aylık · Oturum", "GA4 · Gelire göre ilk": "GA4 giriş · İlk 15 gelir", "GA4 · Oturuma göre ilk": "GA4 giriş · İlk 15 oturum",
-          "GA4 giriş · Giriş sayfası": "GA4 giriş · Sayfa türü", "GA4 giriş · Önceki sayfa": "GA4 giriş · Önceki sayfa", "GA4 giriş · Sipariş onayında": "GA4 sipariş onay · Önceki sayfa", "GA4 · Sipariş onayında": "GA4 sipariş onay · Önceki sayfa", "GA4 giriş · Kaynak grubu": "GA4 sipariş onay · Kaynak", "GA4 site · Arama terimi": "GA4 arama · Terim", "GA4 site içi · Terim türü": "GA4 arama · Terim türü"}
+          "GA4 aylık görünüm · Oturum": "GA4 aylık · Oturum", "GA4 · Gelire göre ilk": "Giriş · İlk 15 gelir", "GA4 · Oturuma göre ilk": "Giriş · İlk 15 oturum",
+          "GA4 giriş · Giriş sayfası": "GA4 giriş · Sayfa türü", "GA4 giriş · Önceki sayfa": "GA4 giriş · Önceki sayfa", "GA4 giriş · Sipariş onayında": "Sipariş onayı · Önceki", "GA4 · Sipariş onayında": "Sipariş onayı · Önceki", "GA4 giriş · Kaynak grubu": "Sipariş onayı · Kaynak", "GA4 site · Arama terimi": "GA4 arama · Terim", "GA4 site içi · Terim türü": "GA4 arama · Terim türü"}
 
 _GENEL = {"Oyuncu", "Gösterge", "Ürün", "Kategori", "Tema", "Marka", "Alan adı", "Yıllık yenileme oranı"}
 KISA = {"Yıllık banyo yenileme ve yeni konut banyosu tahmini": "Banyo yenileme tahmini", "Kullanıcı hangi özellikle arıyor? SSG": "Özellik araması SSG",
@@ -201,7 +201,7 @@ import metrik_ad as _MA
 AD_DUZ = {_MA.donustur(k): _MA.donustur(v) for k, v in AD_DUZ.items()}
 AD_SON = {_MA.donustur(k): _MA.donustur(v) for k, v in AD_SON.items()}
 KISA = {_MA.donustur(k): _MA.donustur(v) for k, v in KISA.items()}
-AD_SON.update({"GA4 · Revenue'ya göre": "GA4 giriş · İlk 15 revenue", "GA4 · Session'a göre": "GA4 giriş · İlk 15 session"})
+AD_SON.update({"GA4 · Revenue'ya göre": "Giriş · İlk 15 revenue", "GA4 · Session'a göre": "Giriş · İlk 15 session"})
 _RANK_BAS = {"serp": ("Alan adı", "Kaynak gösterildiği kelime"), "rakip": ("Alan adı", _MA.donustur("Tahmini aylık organik ziyaret"))}
 def _h3_bolge(el, sec):
     h3 = el.find_previous("h3")
@@ -226,6 +226,20 @@ def _ayirt(t, wrap):
     ths = [metin(x_) for x_ in t.select("thead th")]
     if ths and ths[0] in _GENEL and len(ths) > 1: return ths[1]
     return ths[0] if ths else ""
+# kesilen sekme adlarinin okunur karsiliklari (son ad uzerinden)
+AD_OKUNUR = {
+ "07.3 YZ impression'ı alan": "07.3 YZ impression · Sayfalar", "08.3 GA4 aylık görünüm · AOV": "08.3 GA4 aylık · AOV",
+ "08.15 GA4 ürün · En çok satın": "08.15 GA4 ürün · En çok satılan", "08.16 GA4 ürün · Çok": "08.16 GA4 ürün · Az satılan",
+ "09.3 Marka x · Aylık search": "09.3 Marka + kat. · Aylık", "09.4 Marka x kat. · YoY": "09.4 Marka + kat. · YoY",
+ "09.5 Marka x kat. · 2023'ten": "09.5 Marka + kat. · 2023'ten", '09.12 "vitra" ile en çok': '09.12 "vitra" · İlk 60 arama',
+ "11.6 Yorumlarda öne çıkan": "11.6 Yorum konuları", "15.1 VitrA'nın mevcut hizmet": "15.1 VitrA hizmet kalemleri",
+ "15.2 Rakip · Set paket": "15.2 Rakip · Hizmet matrisi", "15.3 Rakip · Set ve paket": "15.3 Rakip · Set ve hizmet",
+ "20.4 Çok satanlar · Revenue'ya": "20.4 Çok satanlar · Revenue", "20.5 Çok · Fiyat bandına": "20.5 Çok satanlar · Fiyat bandı",
+ "20.10 Değerlendi · Yorum teması": "20.10 Yorum temaları", "20.11 Değerlendir · Soru teması": "20.11 Soru temaları",
+ "20.12 Değerlendi · Yanıt kalıbı": "20.12 Yanıt kalıpları", "20.13 Hepsibur · Trendyol resmi": "20.13 Hepsiburada · Trendyol",
+ "20.14 Hepsiburada satış · Kod": "20.14 Hepsiburada · Ürünler", "22.4 Aynı ürünün · Ürün listesi": "22.4 Aynı ürün · Ürün listesi",
+ "22.5 Aynı ürünün · Mecra": "22.5 Aynı ürün · Mecra", "26.2 Hacimli ürünlerde": "26.2 Hacimli ürün modeli",
+}
 for sec in S.select("main section"):
     sid = sec.get("id"); h2 = sec.find("h2")
     no_ = metin(h2.select_one(".no")) if h2 and h2.select_one(".no") else ""
@@ -275,6 +289,8 @@ for sec in S.select("main section"):
         ad = kisalt(ad, 31)
         _on, _, _son = ad.partition(" ")
         ad = AD_DUZ.get(ad) or ((_on + " " + AD_SON[_son]) if _son in AD_SON else ad)
+        ad = AD_OKUNUR.get(ad, ad)
+        if len(ad) > 31: raise SystemExit("Sekme adı 31 karakteri aşıyor: %s (%d)" % (ad, len(ad)))   # Excel 31 karakterden uzun adı açarken onarır
         sekme(ad, baslik, notlar, thead, rows, renkler=renkler)
         TOC.append((ad, "%s %s" % (no_, bas), alt or "-", len(rows)))
 # kaynakca

@@ -520,7 +520,7 @@ dil.TERIMLER = {t: (GLOSSARY[t], GL_TERM_EN.get(t, t), GL_EN[t]) for t in GLOSSA
 # metrik adları rapor genelinde İngilizce (session, impression, click, revenue ...): Türkçe metin ve çeviri sözlüğü aynı dönüşümden geçer
 import metrik_ad
 DOC = metrik_ad.html_donustur(DOC)
-_en2, _mc = metrik_ad.sozluk_donustur(ceviri.EN); ceviri.EN.clear(); ceviri.EN.update(_en2)
+_en2, _mc = metrik_ad.sozluk_donustur(ceviri.EN); ceviri.EN.clear(); ceviri.EN.update({k: metrik_ad.para_en(v) for k, v in _en2.items()})
 _bs2, _ = metrik_ad.sozluk_donustur(t2_ortak.BOSLUK); t2_ortak.BOSLUK.clear(); t2_ortak.BOSLUK.update(_bs2)
 dil.TERIMLER = {metrik_ad.donustur(t): (metrik_ad.donustur(v[0]), v[1], v[2]) for t, v in dil.TERIMLER.items()}
 if _mc: print("uyarı · metrik adı dönüşümünde farklı çeviri:", len(_mc), _mc[:5])
