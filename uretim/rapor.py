@@ -393,7 +393,7 @@ a.altm{display:flex;align-items:center;gap:9px;padding:9px 10px;border-radius:7p
 a.altm:hover,a.altm:focus-visible{background:var(--neutral);text-decoration:none}
 a.altm svg{width:16px;height:16px;flex:0 0 auto;color:var(--coral-deep)}
 @media(max-width:1400px){.altset{display:none}.altmenu{display:block}}
-@media(max-width:720px){.altmenu .altlink .t{display:none}.altmenu .altlink{padding:0 8px}.altmenu__p{position:fixed;left:12px;right:12px;top:60px;min-width:0}}
+@media(max-width:720px){.altmenu .altlink .lb{display:none}.altmenu .altlink{padding:0 8px}.altmenu__p{position:fixed;left:12px;right:12px;top:60px;min-width:0}}
 a.popb.altb{text-decoration:none;display:inline-block;margin-left:0}
 .fnote h4.kh4{margin:2px 0 8px;font-size:16px}
 .kopru{margin:14px 0 4px;color:var(--ink-2);font-size:13.5px}
@@ -469,7 +469,7 @@ def dl_buton(sinif=""):
     b64 = base64.b64encode(open(XLS, "rb").read()).decode(); kb = round(os.path.getsize(XLS) / 1024)
     with zipfile.ZipFile(XLS) as z: sekme = sum(1 for nm in z.namelist() if nm.startswith("xl/worksheets/sheet"))
     x("Veri dosyasını indir · %d sekme · %s KB" % (sekme, kb), "Download the data file · %d sheets · %s KB" % (sekme, kb))
-    return ('<a class="dl %s" href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,%s" download="%s" title="Veri dosyasını indir · %d sekme · %s KB">%s<span class="t">%s</span> </a>'
+    return ('<a class="dl %s" href="data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,%s" download="%s" title="Veri dosyasını indir · %d sekme · %s KB">%s<span class="lb">%s</span> </a>'
             % (sinif, b64, os.path.basename(XLS), sekme, kb, IKON, x("Veri dosyası", "Data file")))
 
 # ---------------------------------------------------------------- alt sayfa baglantisi (ust bar, dil dugmesinin solu)
@@ -477,10 +477,10 @@ from alt_veri import SETLER as _SETLER
 def _altlink(f, tr, en, ikon, sinif="altlink"):
     return ('<a class="%s" href="%s" target="_blank" rel="noopener" title="%s">'
             '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">%s</svg>'
-            '<span class="t">%s</span></a>') % (sinif, f, x("%s sayfasını yeni sekmede aç" % tr, "Open the %s page in a new tab" % en), ikon, x(tr, en))
+            '<span class="lb">%s</span></a>') % (sinif, f, x("%s sayfasını yeni sekmede aç" % tr, "Open the %s page in a new tab" % en), ikon, x(tr, en))
 ALTLINK = ('<div class="altset">%s</div><div class="altmenu"><button class="altlink" type="button" id="altmenu-b" aria-expanded="false" aria-controls="altmenu-p" title="%s">'
            '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg>'
-           '<span class="t">%s</span></button><div class="altmenu__p" id="altmenu-p" hidden>%s</div></div>') % (
+           '<span class="lb">%s</span></button><div class="altmenu__p" id="altmenu-p" hidden>%s</div></div>') % (
     "".join(_altlink(*s_) for s_ in _SETLER), x("Veri setlerini göster", "Show the data sets"), x("Veri setleri", "Data sets"),
     "".join(_altlink(*s_, sinif="altm") for s_ in _SETLER))
 

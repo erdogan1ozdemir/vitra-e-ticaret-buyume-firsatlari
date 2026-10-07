@@ -381,7 +381,7 @@ th[data-t] span.q{border-bottom:1px dotted rgba(255,255,255,.55);padding-bottom:
   .logo-card{padding:4px 7px}
   .logo-card img,.ib img{height:17px}
   .appbar .dl{padding:6px 8px;gap:0}
-  .appbar .dl > .t{display:none}
+  .appbar .dl > .lb{display:none}
   .tema{width:28px;height:28px}
   .dilbtn{height:28px;padding:0 6px}
 }
