@@ -140,6 +140,7 @@ td.n,th.n{text-align:center}
 .chart .ax{fill:var(--muted);font-size:10.5px;font-family:inherit}
 .chart .bl{fill:var(--ink);font-size:12px;font-family:inherit}
 .chart .bv{fill:var(--muted);font-size:11.5px;font-family:inherit}
+.chart .anc{stroke-width:1;opacity:.75;pointer-events:none}
 .chart .anl{font-size:10.5px;font-weight:700;font-family:inherit;paint-order:stroke;stroke:var(--card);stroke-width:3px;stroke-linejoin:round}
 .legend{display:flex;flex-wrap:wrap;gap:14px;font-size:11.5px;color:var(--muted);padding:4px 2px 2px}
 .legend i{display:inline-block;width:11px;height:3px;border-radius:2px;margin-right:6px;vertical-align:middle}
@@ -1669,10 +1670,23 @@ document.documentElement.classList.add('js');
       var noktalar=A.map(function(a){ var c=a.querySelector('circle'), x=+c.getAttribute('cx'), y=+c.getAttribute('cy'); return {x0:x-3.5,x1:x+3.5,y0:y-3.5,y1:y+3.5}; });
       var K=A.map(function(a){
         var t=a.querySelector('text'), c=a.querySelector('circle'), i=+a.getAttribute('data-i');
+        [].forEach.call(a.querySelectorAll('line.anc'),function(l){ l.parentNode.removeChild(l); });
         if(!t.hasAttribute('data-x0')){ t.setAttribute('data-x0',t.getAttribute('x')); t.setAttribute('data-an0',t.getAttribute('text-anchor')||'middle'); }
         t.setAttribute('x',t.getAttribute('data-x0')); t.setAttribute('text-anchor',t.getAttribute('data-an0')); t.setAttribute('y',(a.getAttribute('data-yer')==='ust'?+c.getAttribute('cy')-9:+c.getAttribute('cy')+17).toFixed(1));
-        var bb=t.getBBox(); return {t:t, px:+c.getAttribute('cx'), py:+c.getAttribute('cy'), i:i, w:bb.width, h:bb.height, ofs:bb.y-parseFloat(t.getAttribute('y')), ust:a.getAttribute('data-yer')==='ust'};
-      }).sort(function(p,q){return p.px-q.px;});
+        var bb=t.getBBox(); return {a:a, t:t, k:+a.getAttribute('data-k'), renk:c.getAttribute('fill'), px:+c.getAttribute('cx'), py:+c.getAttribute('cy'), i:i, w:bb.width, h:bb.height, ofs:bb.y-parseFloat(t.getAttribute('y')), ust:a.getAttribute('data-yer')==='ust'};
+      });
+      /* once disa bakan notlar (ust serinin peak'i, alt serinin base'i) acik alanda yerlesir; iki seri arasina sikisan notlar en son */
+      K.forEach(function(e){
+        e.ic=0;
+        if(!d.seriler) return;
+        d.seriler.forEach(function(se,k2){
+          if(k2===e.k || gizli[k2]) return;
+          var py2=pyO?pyO[k2][e.i]:(se.py?se.py[e.i]:null); if(py2===null || py2===undefined) return;
+          var dy=py2-e.py;
+          if((e.ust && dy<0 && -dy<3*e.h) || (!e.ust && dy>0 && dy<3*e.h)) e.ic=1;
+        });
+      });
+      K.sort(function(p,q){return (p.ic-q.ic) || (p.px-q.px);});
       var yer=[];
       K.forEach(function(e){
         var ilk=e.i===0, sonu=e.i===son, x0=e.px+(ilk?-4:(sonu?4:0)), an0=ilk?'start':(sonu?'end':'middle');
@@ -1682,7 +1696,6 @@ document.documentElement.classList.add('js');
         if(!ilk) ad.push([e.px-7, e.py+e.h*0.35, 'end']);
         (e.ust?alt:ust).forEach(function(y){ ad.push([x0,y,an0]); });
         function kutu(c){ var x=c[2]==='start'?c[0]:(c[2]==='end'?c[0]-e.w:c[0]-e.w/2), y=c[1]+e.ofs; return {x0:x,x1:x+e.w,y0:y,y1:y+e.h}; }
-        ad.push([x0, e.ust?e.py-9-2*e.h:e.py+17+2*e.h, an0]);
         /* puan: notlarla ya da cerceve disina tasma elenir; kalan adaylarda cizgi, nokta ve eksen yazisi cakismasi sayilir, en az cakisan secilir */
         function puan(k){
           if(k.y0<vb.y || k.y1>vb.y+vb.height || k.x0<vb.x || k.x1>vb.x+vb.width) return -1;
@@ -1693,10 +1706,31 @@ document.documentElement.classList.add('js');
           for(j=0;j<parca.length;j++) if(kesis(parca[j][0],parca[j][1],k)) p++;
           return p;
         }
-        var sec=null, en=1e9;
-        for(var i=0;i<ad.length && en>0;i++){ var pu=puan(kutu(ad[i])); if(pu>=0 && pu<en){ en=pu; sec=ad[i]; } }
+        /* noktaya yakin bos yer yoksa: biraz uzakta, cizgi ve noktalardan tamamen bos bir yer aranir; not noktaya ince bir baglanti cizgisiyle baglanir */
+        var uz=[], ad_=e.h+2, kay=e.w/2+10, yon=e.ust?-1:1, y0=e.ust?e.py-9:e.py+17;
+        [2,3,4,5].forEach(function(k){ [0,kay,-kay].forEach(function(dx){ uz.push([e.px+dx, y0+yon*k*ad_, 'middle']); }); });
+        [1,2,3,4].forEach(function(k){ var y1=(e.ust?e.py+17:e.py-9)-yon*(k*ad_); [0,kay,-kay].forEach(function(dx){ uz.push([e.px+dx, y1, 'middle']); }); });
+        function bag(k){   /* noktadan yazi kutusunun yakin kenarina */
+          var cx=(k.x0+k.x1)/2, ust_=k.y1<e.py; return {x1:e.px, y1:e.py+(ust_?-3.5:3.5), x2:Math.max(k.x0+4,Math.min(k.x1-4,cx)), y2:ust_?k.y1+1:k.y0-1};
+        }
+        var sec=null, en=1e9, i, baglanti=null;
+        for(i=0;i<ad.length;i++){ if(puan(kutu(ad[i]))===0){ sec=ad[i]; en=0; break; } }
+        if(!sec){
+          for(i=0;i<uz.length && !sec;i++){
+            var k_=kutu(uz[i]); if(puan(k_)!==0) continue;
+            var b_=bag(k_), engel=false;
+            for(var j=0;j<yer.length && !engel;j++) if(kesis({x:b_.x1,y:b_.y1},{x:b_.x2,y:b_.y2},yer[j])) engel=true;
+            if(!engel){ sec=uz[i]; baglanti=b_; }
+          }
+        }
+        if(!sec){ for(i=0;i<ad.length && en>0;i++){ var pu=puan(kutu(ad[i])); if(pu>=0 && pu<en){ en=pu; sec=ad[i]; } } }
         if(!sec) sec=ad[0];
         e.t.setAttribute('x',sec[0].toFixed(1)); e.t.setAttribute('y',sec[1].toFixed(1)); e.t.setAttribute('text-anchor',sec[2]);
+        if(baglanti){
+          var ln=document.createElementNS('http://www.w3.org/2000/svg','line'); ln.setAttribute('class','anc');
+          ln.setAttribute('x1',baglanti.x1.toFixed(1)); ln.setAttribute('y1',baglanti.y1.toFixed(1)); ln.setAttribute('x2',baglanti.x2.toFixed(1)); ln.setAttribute('y2',baglanti.y2.toFixed(1));
+          ln.setAttribute('stroke',e.renk); e.a.insertBefore(ln,e.t);
+        }
         yer.push(kutu(sec));
       });
     }
@@ -1806,6 +1840,7 @@ document.documentElement.classList.add('js');
         var re=/([ML])\s*(-?[\d.]+)[\s,]+(-?[\d.]+)/g, m, onc=null, dd=pth.getAttribute('d')||'';
         while((m=re.exec(dd))){ var q={x:+m[2],y:+m[3]}; if(m[1]==='L' && onc) parca.push([onc,q]); onc=q; }
       });
+      [].forEach.call(svg.querySelectorAll('line.anc'),function(l){ if(!gorunur(l)) return; parca.push([{x:+l.getAttribute('x1'),y:+l.getAttribute('y1')},{x:+l.getAttribute('x2'),y:+l.getAttribute('y2')}]); });   /* peak / base baglanti cizgileri */
       var nokta=[].slice.call(svg.querySelectorAll('circle')).filter(function(c){return +c.getAttribute('r')>=2 && gorunur(c);}).map(function(c){
         var x=+c.getAttribute('cx'), y=+c.getAttribute('cy'), r=+c.getAttribute('r'); return {x0:x-r,x1:x+r,y0:y-r,y1:y+r};
       });
@@ -2395,7 +2430,7 @@ document.documentElement.classList.add('js');
   }
 })();
 </script>
-<script type="application/json" id="dil-veri" data-src="v/dil-veri-787a6971c4.json"></script>
+<script type="application/json" id="dil-veri" data-src="v/dil-veri-a2571a5db1.json"></script>
 <script>
 /* --- Rapor dili (TR / EN) ------------------------------------------------- */
 /* Rapor Turkce acilir ve acilista dil katmani calismaz. Ceviri verisi (#dil-veri) yalniz EN secilince okunur
