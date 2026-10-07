@@ -64,7 +64,7 @@ def ana():
     m = re.search(r'<script type="application/json" id="dil-veri">(.*?)</script>', s, re.S)
     if not m: raise SystemExit("Ana raporda #dil-veri bloğu bulunamadı.")
     veri = json.loads(m.group(1))
-    yol = dosya("dil-veri", "json", json.dumps(veri, ensure_ascii=False, separators=(",", ":")))
+    yol = dosya("dil-veri", "json", json.dumps(veri, ensure_ascii=False, separators=(",", ":"), sort_keys=True))   # sirali: icerik degismedikce dosya adi da degismez
     s = s[:m.start()] + '<script type="application/json" id="dil-veri" data-src="%s"></script>' % yol + s[m.end():]
     open(os.path.join(REPO, ANA), "w", encoding="utf-8").write(s)
     print("%s: %.2f MB -> %.2f MB (Excel %d bağlantı)" % (ANA, n0 / 1e6, len(s) / 1e6, adet))
