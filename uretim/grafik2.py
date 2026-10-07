@@ -465,6 +465,8 @@ def kombo2(etiketler, seriler, cap="", genislik=880, yukseklik=300, etiket_goste
     cubuklar = [s_ for s_ in seriler if s_.get("tip", "cizgi") == "cubuk"]
     grup = [s_ for s_ in cubuklar if not s_.get("ortu")]
     nb = len(grup); gw = bw * (0.72 if nb > 1 else 0.52); w1 = gw / max(1, nb)
+    # x etiketleri: biri bile sigmiyorsa bosluklu etiketlerin hepsi iki satir yazilir (dar ekranda sikisan tek satirlilar tarayicida capraz yazilir)
+    iki_satir = not dondur and any(" " in et and 6.0 * len(et) > bw - 4 for et in etiketler)
     for i, et in enumerate(etiketler):
         cx = sol + bw * i + bw / 2; ust_y = None; j = -1
         # ortu cubugu (toplamin icindeki pay): etiketinin kapladigi yerin ustu hesaplanir; taban cubugun etiketi bunun ustunden baslar
@@ -474,12 +476,22 @@ def kombo2(etiketler, seriler, cap="", genislik=880, yukseklik=300, etiket_goste
             yv = Y(s_.get("eksen", "sol"), s_["deger"][i]); hv = ust + ih - yv; uz = 5.8 * len(_para(s_["bicim"](s_["deger"][i]))) + 4
             yo = (yv - 4) if (w1 < 36 and hv >= max(22, uz + 2)) or (uz <= w1 + 2 and hv >= 16) else (yv - 18)
             ov_y = yo if ov_y is None else min(ov_y, yo)
+        # ortu cubugunun ustu (ortulen toplam cubugun gorunen kismi bunun ustunde kalir)
+        ort_ust = {}; jj = -1
+        for s_ in cubuklar:
+            if not s_.get("ortu"): jj += 1; continue
+            if s_["deger"][i] is None: continue
+            ort_ust[max(0, jj)] = min(ort_ust.get(max(0, jj), 1e9), Y(s_.get("eksen", "sol"), s_["deger"][i]))
         for s_ in cubuklar:
             v = s_["deger"][i]
             if not s_.get("ortu"): j += 1
             if v is None: continue
             e = s_.get("eksen", "sol"); x0 = cx - gw / 2 + max(0, j) * w1
             k_ = seriler.index(s_)
+            # cubuk olculeri (sol, sag, ust, gorunen alt, ortulu mu, koyu mu): etiket yeri tarayicida gercek yazi genisligiyle secilir
+            _ortulu = (not s_.get("ortu")) and max(0, j) in ort_ust and ort_ust[max(0, j)] > Y(e, v) + 1
+            _alt = ort_ust[max(0, j)] if _ortulu else ust + ih
+            db = ' data-b="%.1f,%.1f,%.1f,%.1f,%d,%d"' % (x0 + 1, x0 + 1 + max(1, w1 - 2), Y(e, v), _alt, 1 if _ortulu else 0, 1 if _koyu(s_["renk"]) else 0)
             p.append('<rect class="sr" data-k="%d" x="%.1f" y="%.1f" width="%.1f" height="%.1f" rx="2.5" fill="%s"/>' % (k_, x0 + 1, Y(e, v), max(1, w1 - 2), max(0, ust + ih - Y(e, v)), s_["renk"]))
             if not s_.get("ortu"): ust_y = Y(e, v) if ust_y is None else min(ust_y, Y(e, v))
             if s_.get("dl", True):   # cubuk degeri cubugun icinde, tabana yakin (cizgi etiketleriyle cakismaz); koyu cubukta beyaz yazi
@@ -489,20 +501,20 @@ def kombo2(etiketler, seriler, cap="", genislik=880, yukseklik=300, etiket_goste
                 koyu = _koyu(s_["renk"]) and (s_.get("ortu") or ov_y is None)
                 if w1 < 36 and hv >= max(22, uz + 2):   # dar cubuk: deger cubugun icinde, tabandan dikey yazilir (sigdigi surece cubugun icinde kalir)
                     xx = x0 + w1 / 2 + 3.5; yb = taban - 5
-                    dlp.append('<text class="dl %s%s" data-k="%d" x="%.1f" y="%.1f" transform="rotate(-90 %.1f %.1f)" text-anchor="start">%s</text>' % ("dli" if koyu else "dlb", ek, k_, xx, yb, xx, yb, s_["bicim"](v)))
+                    dlp.append('<text class="dl %s%s" data-k="%d"%s x="%.1f" y="%.1f" transform="rotate(-90 %.1f %.1f)" text-anchor="start">%s</text>' % ("dli" if koyu else "dlb", ek, k_, db, xx, yb, xx, yb, s_["bicim"](v)))
                 elif uz <= w1 + 2 and hv >= 16:   # yazi cubuga sigiyor: cubugun icinde, tabana yakin
-                    dlp.append('<text class="dl %s%s" data-k="%d" x="%.1f" y="%.1f" text-anchor="middle">%s</text>' % ("dli" if koyu else "dlb", ek, k_, x0 + w1 / 2, taban - 6, s_["bicim"](v)))
+                    dlp.append('<text class="dl %s%s" data-k="%d"%s x="%.1f" y="%.1f" text-anchor="middle">%s</text>' % ("dli" if koyu else "dlb", ek, k_, db, x0 + w1 / 2, taban - 6, s_["bicim"](v)))
                 elif w1 < 36 and not s_.get("ortu"):   # dar cubukta sigmiyor: cubugun ustunde dikey, kendi sutununda kalir
                     xx = x0 + w1 / 2 + 3.5; yb = Y(e, v) - 4
-                    dlp.append('<text class="dl dlb dlu%s" data-k="%d" x="%.1f" y="%.1f" transform="rotate(-90 %.1f %.1f)" text-anchor="start">%s</text>' % (ek, k_, xx, yb, xx, yb, s_["bicim"](v)))
+                    dlp.append('<text class="dl dlb dlu%s" data-k="%d"%s x="%.1f" y="%.1f" transform="rotate(-90 %.1f %.1f)" text-anchor="start">%s</text>' % (ek, k_, db, xx, yb, xx, yb, s_["bicim"](v)))
                 else:   # sigmiyor: cubugun ustunde, koyu yazi
-                    dlp.append('<text class="dl dlb dlu%s" data-k="%d" x="%.1f" y="%.1f" text-anchor="middle">%s</text>' % (ek, k_, x0 + w1 / 2, Y(e, v) - 4, s_["bicim"](v)))
+                    dlp.append('<text class="dl dlb dlu%s" data-k="%d"%s x="%.1f" y="%.1f" text-anchor="middle">%s</text>' % (ek, k_, db, x0 + w1 / 2, Y(e, v) - 4, s_["bicim"](v)))
             if etiket_goster: p.append('<text class="bv" x="%.1f" y="%.1f" text-anchor="middle" style="font-size:10px">%s</text>' % (x0 + w1 / 2, Y(e, v) - 4, s_["bicim"](v)))
         if ust_etiket and ust_etiket[i] and ust_y is not None:
             p.append('<text class="bv" x="%.1f" y="%.1f" text-anchor="middle" style="font-size:10.5px;font-weight:700">%s</text>' % (cx, ust_y - 6, ust_etiket[i]))
         if dondur:
             p.append('<text class="ax" x="%.1f" y="%d" text-anchor="end" transform="rotate(-55 %.1f %d)" style="font-size:9.5px">%s</text>' % (cx + 3, ust + ih + 12, cx + 3, ust + ih + 12, et))
-        elif " " in et and 6.0 * len(et) > bw - 4:   # sigmayan "Oca 25" tipi etiket iki satira bolunur (ay / yil); parcalar ceviri kaydina eklenir
+        elif " " in et and iki_satir:   # sigmayan "Oca 25" tipi etiket iki satira bolunur (ay / yil); parcalar ceviri kaydina eklenir
             a_, _, b_ = et.partition(" "); en_ = EK.get(" ".join(et.split()), "")
             if " " in en_: EK.setdefault(a_, en_.partition(" ")[0]); EK.setdefault(b_, en_.partition(" ")[2])
             elif a_ in _AY_TR: EK.setdefault(a_, _AY_EN[_AY_TR.index(a_)])

@@ -152,8 +152,19 @@ def _para_ek(sayi, birim, suf):
         return ortak._ek_bekle(n, grup)
     except Exception:
         return suf
+# kalin yazilan sayidan sonra gelen TL: "<b>28,7M</b> TL'ye" -> "<b>₺28,7M</b>'ya" (ek sayinin okunusuna gore)
+_TL_ETIKET = re.compile(r"(<(b|strong)>)([+\-−]?)(\d[\d.,]*\d|\d)(\s?[KMB])?(</\2>)\s?TL\b(?:'([a-zçğıöşü]+))?")
+def tl_etiket(s, en=False):
+    if not isinstance(s, str) or "TL" not in s: return s
+    def f(m):
+        suf = m.group(7); b_ = (m.group(5) or "").strip()
+        ek = ("'" + (suf if en else _para_ek(m.group(4), m.group(5) or "", suf))) if suf else ""
+        DEGISIM[("TL", "₺")] += 1
+        return m.group(1) + m.group(3) + "₺" + m.group(4) + b_ + m.group(6) + ek
+    return _TL_ETIKET.sub(f, s)
 def para(s):
     if "TL" not in s: return s
+    s = tl_etiket(s)
     def f(m):
         isaret, sayi, birim, suf = m.group(1), m.group(2), m.group(3) or "", m.group(4)
         b = birim.strip(); b = b if b in ("K", "M", "B") else (" " + b if b else "")
@@ -166,6 +177,7 @@ def para(s):
 _ARALIK = re.compile(r"(?<![\w₺.,])(\d[\d.,]*\d|\d)([-–])₺")   # 750-₺15.000 -> ₺750-15.000
 def para_en(s):
     if not isinstance(s, str) or "TL" not in s: return s
+    s = tl_etiket(s, en=True)
     def f(m):
         b = (m.group(3) or "").strip(); b = b if b in ("K", "M", "B", "bn") else (" " + b if b else "")
         return m.group(1) + "₺" + m.group(2) + b
@@ -208,6 +220,7 @@ ATLA_ETIKET = {"script", "style", "code"}
 def html_donustur(doc):
     """Türkçe HTML: metin düğümleri, açıklama nitelikleri ve grafik verisi. Anahtar kelime, Almanca ifade ve bağlantı adresleri değişmez."""
     from bs4 import BeautifulSoup, Comment
+    if isinstance(doc, str): doc = tl_etiket(doc)
     c = BeautifulSoup(doc, "html.parser")
     for d in list(c.find_all(string=True)):
         if isinstance(d, Comment) or d.parent is None: continue
@@ -242,4 +255,9 @@ def sozluk_donustur(d):
     for k, v in EN_DUZELT.items():
         if k in yeni: yeni[k] = v
     for k, v in d.items(): yeni.setdefault(k, v)   # dönüşümden muaf tutulan düğümler (huni adım adları) özgün anahtarla eşleşir
+    # kalin sayidan sonra gelen ve "TL" ile baslayan metin parcasi: TL sayinin icine tasindigi icin parca TL'siz de eslesir
+    for k, v in list(d.items()):
+        m = re.match(r"^\s?TL(?=[^\w'])(.*)$", k, re.S)
+        if m and isinstance(v, str):
+            yeni.setdefault(donustur(m.group(1)), re.sub(r"^\s?(?:TL|₺)(?=[^\w'])", "", v))
     return yeni, cakisma

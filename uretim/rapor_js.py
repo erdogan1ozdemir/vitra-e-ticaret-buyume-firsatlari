@@ -336,8 +336,9 @@ document.documentElement.classList.add('js');
       L.forEach(function(t){
         if(t.hasAttribute('data-c0')){ t.setAttribute('class',t.getAttribute('data-c0')); t.removeAttribute('data-c0'); }
         t.classList.remove('dl-x');
-        if(!t.hasAttribute('data-y0')){ t.setAttribute('data-y0',t.getAttribute('y')); t.setAttribute('data-x0',t.getAttribute('x')); if(t.hasAttribute('transform')) t.setAttribute('data-tr0',t.getAttribute('transform')); }
-        else { t.setAttribute('y',t.getAttribute('data-y0')); t.setAttribute('x',t.getAttribute('data-x0')); if(t.hasAttribute('data-tr0')) t.setAttribute('transform',t.getAttribute('data-tr0')); }
+        if(!t.hasAttribute('data-y0')){ t.setAttribute('data-y0',t.getAttribute('y')); t.setAttribute('data-x0',t.getAttribute('x')); t.setAttribute('data-an0',t.getAttribute('text-anchor')||'middle'); if(t.hasAttribute('transform')) t.setAttribute('data-tr0',t.getAttribute('transform')); }
+        else { t.setAttribute('y',t.getAttribute('data-y0')); t.setAttribute('x',t.getAttribute('data-x0')); t.setAttribute('text-anchor',t.getAttribute('data-an0')); if(t.hasAttribute('data-tr0')) t.setAttribute('transform',t.getAttribute('data-tr0')); else t.removeAttribute('transform'); }
+        t.style.fontSize='';
       });
       function gorunur(el){ return el.style.display!=='none' && getComputedStyle(el).display!=='none' && !el.closest('[style*="display: none"],[style*="display:none"]'); }
       L=L.filter(function(t){return gorunur(t) && t.textContent.trim();});
@@ -391,8 +392,80 @@ document.documentElement.classList.add('js');
         for(i=0;i<parca.length;i++) if(kesis(parca[i][0],parca[i][1],c)) return false;
         return true;
       }
-      var K=L.map(function(t){ var ic=icCubuk(t); return {t:t, k:kutu(t), don:/rotate/.test(t.getAttribute('transform')||''), ic:ic, sira:ic?0:(t.classList.contains('dlu')?1:2), o:t.classList.contains('dlo')}; }).filter(function(e){return e.k;});
+      /* cubuk etiketi (data-b: cubugun sol, sag, ust, gorunen alt kenari, ortulu mu, koyu mu). Sirayla denenir: cubugun icinde yatay (once kendi
+         puntosu, sigmazsa 1 punto kucuk), icinde dikey, ayni adaylar cizgi gecse de, en son cubugun hemen ustu (yatay, sonra dikey). Ortulu toplam
+         cubugunda (ustune pay cubugu binen) deger gorunen kismin ortasina, diger cubuklarda tabana yakin yazilir. Acik renkli cubukta yatay yazi,
+         komsu cubuk ve etiketlere degmedigi surece cubuk genisligini biraz asabilir; koyu cubuktaki beyaz yazi cubugun icinde kalir. */
+      function olcum(e){
+        var t=e.t, b=e.b, c0=t.getAttribute('class'), y0=parseFloat(t.getAttribute('y'));
+        e.bx0=b[0]; e.bx1=b[1]; e.bt=b[2]; e.bb=b[3]; e.orta=b[4]===1; e.koyu=b[5]===1; e.W=b[1]-b[0]; e.H=b[3]-b[2]; e.c0=c0;
+        function sinif(s_){ t.classList.remove('dli','dlb'); t.classList.add(s_); }
+        function olc(fs){ t.style.fontSize=fs+'px'; var g=t.getBBox(); return {fs:fs, w:g.width, h:g.height, oy:g.y-y0}; }
+        e.icS=e.koyu?'dli':'dlb';
+        sinif(e.icS); e.fsI=parseFloat(getComputedStyle(t).fontSize)||10; e.mI=[olc(e.fsI), olc(e.fsI-1)]; t.style.fontSize='';
+        sinif('dlb'); e.fsO=parseFloat(getComputedStyle(t).fontSize)||10; e.mO=olc(e.fsO); t.style.fontSize='';
+        t.setAttribute('class',c0);
+      }
+      function komsu(e,yari){   /* yazinin tasacagi aralikta baska sutunun cubugu var mi */
+        var cx=(e.bx0+e.bx1)/2;
+        return cubuk.some(function(r){ var rc=(r.x0+r.x1)/2; return !(cx>=r.x0-1 && cx<=r.x1+1) && r.x1>cx-yari && r.x0<cx+yari && Math.abs(rc-cx)>0.5; });
+      }
+      function yatSigar(e,m){ return m.w<=e.W-4 || (!e.koyu && m.w<=e.W*1.35+2 && !komsu(e,m.w/2+6)); }   /* icinde iki yanda 2 birim bosluk; acik cubukta komsu cubuk yoksa biraz tasabilir */
+      function cubukYerles(e){
+        var t=e.t, W=e.W, H=e.H, bt=e.bt, bb=e.bb, cx=(e.bx0+e.bx1)/2, mid=(bt+bb)/2;
+        var yat=[], dik=[], dis=[];
+        function yatEkle(m){
+          if(m.h>H-2 || !yatSigar(e,m)) return;
+          var ys, ad_=m.h+1;
+          if(e.orta){ var y_=mid-(m.oy+m.h/2); ys=[y_, y_-ad_, y_+ad_, y_-2*ad_, y_+2*ad_]; }   /* gorunen kismin ortasi, sigmazsa bir iki satir yukari / asagi */
+          else ys=[0,1,2].map(function(s_){return bb-3-m.h-m.oy-6*s_;});
+          ys.forEach(function(y){ var c={x0:cx-m.w/2,x1:cx+m.w/2,y0:y+m.oy,y1:y+m.oy+m.h}; if(c.y0>=bt+1 && c.y1<=bb-1) yat.push({yat:1,m:m,x:cx,y:y,c:c,ic:1,pay:m.w<=W-4?0:4}); });
+        }
+        function dikEkle(m){
+          if(m.w>H-4 || m.h*0.72>W+1) return;
+          var xx=cx-m.oy-m.h/2, ys=e.orta?[mid+m.w/2]:[0,1,2].map(function(s_){return bb-4-6*s_;});
+          ys.forEach(function(yb){ if(yb-m.w>=bt+1) dik.push({yat:0,m:m,x:xx,y:yb,c:{x0:xx+m.oy,x1:xx+m.oy+m.h,y0:yb-m.w,y1:yb},ic:1}); });
+        }
+        if(e.mod.yat) yatEkle(e.mI[e.mod.f]); else { yatEkle(e.mI[0]); yatEkle(e.mI[1]); }
+        dikEkle(e.mI[0]); dikEkle(e.mI[1]);
+        var m=e.mO, xo=cx-m.oy-m.h/2;   /* cubugun ustu: once yatay, sonra dikey; cubuktan en fazla birkac adim uzaklasir */
+        function ustY(s_){ var y=bt-3-m.h-m.oy-(m.h+1)*s_; dis.push({yat:1,m:m,x:cx,y:y,c:{x0:cx-m.w/2,x1:cx+m.w/2,y0:y+m.oy,y1:y+m.oy+m.h},ic:0}); }
+        function ustD(){ [0,1,2,3].forEach(function(s_){ var yb=bt-3-6*s_; dis.push({yat:0,m:m,x:xo,y:yb,c:{x0:xo+m.oy,x1:xo+m.oy+m.h,y0:yb-m.w,y1:yb},ic:0}); }); }
+        if(e.mod.ustYat){ ustY(0); ustD(); } else { ustD(); ustY(0); }   /* ustteki yazi: seride komsu cubuklar yatay yaziya yer birakiyorsa yatay, birakmiyorsa dikey */
+        ustY(1);
+        function gen(a){ return a.pay?{x0:a.c.x0-a.pay,x1:a.c.x1+a.pay,y0:a.c.y0,y1:a.c.y1}:a.c; }   /* cubugu asan yatay yazi komsusundan en az 6 birim uzak kalir */
+        /* serinin yonu once: yatay seride yatay (cizgi gecse de) sonra dikey; dikey seride dikey sonra yatay; en son cubugun ustu */
+        var A=e.mod.yat?[yat,dik]:[dik,yat], sec=null, i, j;
+        for(j=0;j<2 && !sec;j++){
+          for(i=0;i<A[j].length && !sec;i++) if(bos(gen(A[j][i]),e)) sec=A[j][i];
+          for(i=0;i<A[j].length && !sec;i++) if(bos(gen(A[j][i]),e,true)) sec=A[j][i];
+        }
+        for(i=0;i<dis.length && !sec;i++) if(bos(dis[i].c,e)) sec=dis[i];
+        if(!sec) return false;
+        yer.push(sec.c);
+        t.setAttribute('x',sec.x.toFixed(1)); t.setAttribute('y',sec.y.toFixed(1));
+        if(sec.yat){ t.removeAttribute('transform'); t.setAttribute('text-anchor','middle'); }
+        else { t.setAttribute('transform','rotate(-90 '+sec.x.toFixed(1)+' '+sec.y.toFixed(1)+')'); t.setAttribute('text-anchor','start'); }
+        var hedef=sec.ic?e.icS:'dlb';
+        if(!t.classList.contains(hedef)){ t.setAttribute('data-c0',e.c0); t.classList.remove('dli','dlb'); t.classList.add(hedef); }
+        if(sec.m.fs!==(sec.ic?e.fsI:e.fsO)) t.style.fontSize=sec.m.fs+'px';
+        return true;
+      }
+      var K=L.map(function(t){ var ic=icCubuk(t), b=t.getAttribute('data-b'); b=b?b.split(',').map(Number):null;
+        return {t:t, k:kutu(t), b:b, don:/rotate/.test(t.getAttribute('transform')||''), ic:ic, sira:(b||ic)?0:(t.classList.contains('dlu')?1:2), o:t.classList.contains('dlo')}; }).filter(function(e){return e.k;});
       K.sort(function(p,q){ return (p.sira-q.sira) || (q.o-p.o) || (p.k.x0-q.k.x0); });
+      /* seri bazinda tek yon ve tek punto: serideki tum degerler yatay sigiyorsa (gerekirse 1 punto kucuk) hepsi yatay, sigmiyorsa dikey */
+      var grp={};
+      K.forEach(function(e){ if(!e.b) return; olcum(e); var g=e.t.getAttribute('data-k')+(e.o?'o':''); (grp[g]=grp[g]||[]).push(e); });
+      Object.keys(grp).forEach(function(g){
+        var S=grp[g], mod={yat:0,f:0};
+        for(var f=0;f<2;f++){
+          var aday=S.filter(function(e){return e.mI[f].h<=e.H-2;});
+          if(aday.length && aday.every(function(e){return yatSigar(e,e.mI[f]);})){ mod={yat:1,f:f}; break; }
+        }
+        mod.ustYat=S.every(function(e){ return !komsu(e,e.mO.w/2+3); });
+        S.forEach(function(e){ e.mod=mod; });
+      });
       function tasi(t,dx,dy){
         t.setAttribute('y',(parseFloat(t.getAttribute('data-y0'))+dy).toFixed(1));
         if(dx) t.setAttribute('x',(parseFloat(t.getAttribute('data-x0'))+dx).toFixed(1));
@@ -400,6 +473,7 @@ document.documentElement.classList.add('js');
         if(tr) t.setAttribute('transform',tr.replace(/rotate\(\s*([-\d.]+)[\s,]+([-\d.]+)[\s,]+([-\d.]+)\s*\)/,function(m,a,cx,cy){return 'rotate('+a+' '+cx+' '+(parseFloat(cy)+dy).toFixed(1)+')';}));
       }
       K.forEach(function(e){
+        if(e.b){ if(!cubukYerles(e)) e.t.classList.add('dl-x'); return; }
         var k=e.k, h=k.y1-k.y0, w=k.x1-k.x0, ad=[[0,0]], s;
         if(e.ic){ ad=[[0,0],[0,-6],[0,-12]]; }   /* cubuk degeri tabana yakin kalir: en fazla iki kucuk adim, yer yoksa tabanda (cizgilerin ustunde) */
         else if(e.don){ for(s=1;s<=4;s++) ad.push([0,-6*s]); }   /* cubuk ustundeki dikey etiket cubuktan uzaklasmaz */
@@ -800,6 +874,43 @@ document.documentElement.classList.add('js');
     var sc=sutunlar(tw); if(sc) bar.appendChild(sc);
     bar.appendChild(b); tw.parentNode.insertBefore(box,tw); box.appendChild(bar); box.appendChild(tw);
   });
+})();
+/* x ekseni etiketleri: ekranda birbirine degiyorsa (dar ekran, cok sayida donem) capraz yazilir, grafigin altina gereken kadar yer acilir.
+   Yalniz tek satirli, ortalanmis alt eksen yazilari; iki satirli ve zaten egik etiketler dokunulmaz. Genislik ve dil degisince yeniden denetlenir. */
+(function(){
+  function capraz(svg){
+    var r=svg.getBoundingClientRect(); if(!r.width || !r.height) return;
+    if(!svg.hasAttribute('data-vb0')) svg.setAttribute('data-vb0',svg.getAttribute('viewBox'));
+    var vb0=svg.getAttribute('data-vb0').split(/[\s,]+/).map(Number);
+    var X=[].slice.call(svg.querySelectorAll('text.ax')).filter(function(t){
+      return !t.children.length && (t.getAttribute('data-cap')==='1' || (t.getAttribute('text-anchor')==='middle' && !t.hasAttribute('transform')));
+    });
+    X.forEach(function(t){ if(t.getAttribute('data-cap')==='1'){ t.removeAttribute('transform'); t.setAttribute('text-anchor','middle'); t.setAttribute('y',t.getAttribute('data-capy')); t.removeAttribute('data-cap'); } });
+    svg.setAttribute('viewBox',vb0.join(' '));
+    if(!X.length) return;
+    var ymax=Math.max.apply(null,X.map(function(t){return +t.getAttribute('y');}));
+    X=X.filter(function(t){ return Math.abs(+t.getAttribute('y')-ymax)<1 && t.textContent.trim() && getComputedStyle(t).display!=='none'; });
+    if(X.length<3) return;
+    var R=X.map(function(t){ var b=t.getBoundingClientRect(); return {x0:b.left,x1:b.right}; }).filter(function(a){return a.x1>a.x0;}).sort(function(a,b){return a.x0-b.x0;});
+    var sik=false; for(var i=1;i<R.length;i++) if(R[i].x0<R[i-1].x1+3){ sik=true; break; }
+    if(!sik) return;
+    X.forEach(function(t){
+      var x=+t.getAttribute('x'), y=+t.getAttribute('y'), y2=(y-8).toFixed(1);
+      t.setAttribute('data-capy',y); t.setAttribute('data-cap','1'); t.setAttribute('text-anchor','end'); t.setAttribute('y',y2);
+      t.setAttribute('transform','rotate(-35 '+x+' '+y2+')');
+    });
+    var M=svg.getScreenCTM(); if(!M) return; M=M.inverse(); var pt=svg.createSVGPoint(), alt=0;
+    X.forEach(function(t){ var b=t.getBoundingClientRect(); pt.x=b.left; pt.y=b.bottom; alt=Math.max(alt,pt.matrixTransform(M).y); });
+    if(alt+4>vb0[1]+vb0[3]) svg.setAttribute('viewBox',[vb0[0],vb0[1],vb0[2],Math.ceil(alt+4-vb0[1])].join(' '));
+  }
+  function hepsi(){ [].forEach.call(document.querySelectorAll('svg.chart'),capraz); }
+  hepsi();
+  document.addEventListener('dilchange',function(){ setTimeout(hepsi,0); });
+  if(window.ResizeObserver){
+    [].forEach.call(document.querySelectorAll('svg.chart'),function(svg){
+      var gw=0; new ResizeObserver(function(en){ var w=Math.round(en[0].contentRect.width); if(w && w!==gw){ gw=w; capraz(svg); } }).observe(svg);
+    });
+  }
 })();
 """
 
