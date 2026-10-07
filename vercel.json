@@ -1,8 +1,28 @@
 {
   "rewrites": [
-    { "source": "/", "destination": "/VitrA_E-Ticaret_Buyume_Firsatlari.html" }
+    {
+      "source": "/",
+      "destination": "/VitrA_E-Ticaret_Buyume_Firsatlari.html"
+    }
   ],
   "headers": [
-    { "source": "/(.*)", "headers": [ { "key": "X-Robots-Tag", "value": "noindex, nofollow" } ] }
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    },
+    {
+      "source": "/v/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
   ]
 }

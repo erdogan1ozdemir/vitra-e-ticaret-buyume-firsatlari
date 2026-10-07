@@ -617,7 +617,27 @@ document.documentElement.classList.add('js');
       if(Math.abs(konum()-basla)<2 && Math.abs(y-basla)>2) tasi(y);
       isaretle();
       setTimeout(isaretle,420);
+      yerles(el);
     }, yumusak?70:0);
+  }
+  /* cizilmemis tablolarin yuksekligi tahminidir; kaydirma bitince hedef yeniden olculur ve gerekirse duzeltilir.
+     Kullanici bu sirada kendisi kaydirirsa duzeltme birakilir. */
+  var yerlesNo=0;
+  function yerles(el){
+    var no=++yerlesNo, son=-1, sabit=0, tur=0, birak=false;
+    function dur(){ birak=true; }
+    ['wheel','touchstart','keydown'].forEach(function(t){ window.addEventListener(t,dur,{once:true,passive:true}); });
+    (function bak(){
+      if(birak || no!==yerlesNo) return;
+      var k=konum(); tur++;
+      if(Math.abs(k-son)<1) sabit++; else sabit=0;
+      son=k;
+      if(sabit<2 && tur<50){ setTimeout(bak,100); return; }
+      var hedef=Math.max(0,el.getBoundingClientRect().top+k-(bar()+24));
+      var dip=(document.documentElement.scrollHeight-window.innerHeight);
+      if(Math.abs(hedef-k)>3 && !(k>=dip-1 && hedef>k) && tur<80){ tasi(hedef); sabit=0; setTimeout(bak,100); return; }
+      isaretle();
+    })();
   }
   links.concat(mobil, [].slice.call(document.querySelectorAll('a.git[href^="#"]'))).forEach(function(a){
     a.addEventListener('click',function(e){e.preventDefault();git(a.getAttribute('href').slice(1));});
@@ -733,6 +753,8 @@ document.documentElement.classList.add('js');
     return (neg?-v:v)*k;
   }
   function metin(td){var dv=td.querySelector&&td.querySelector('[data-v]'); if(dv && td.querySelectorAll('[data-v]').length===1 && td.innerText.trim()===dv.innerText.trim()) return dv.getAttribute('data-v'); return (td.innerText||td.textContent||'').replace(/\s+/g,' ').trim();}
+  /* isi haritasi hesabi icin metin: textContent stil hesabi istemez (innerText her okumada tum sayfanin stilini yeniden hesaplatir) */
+  function metinH(td){var dv=td.querySelector&&td.querySelector('[data-v]'); if(dv && td.querySelectorAll('[data-v]').length===1 && td.textContent.trim()===dv.textContent.trim()) return dv.getAttribute('data-v'); return (td.textContent||'').replace(/\s+/g,' ').trim();}
   function sirala(tbl,idx,yon){
     var tb=tbl.tBodies[0]; if(!tb)return;
     var rows=[].slice.call(tb.rows);
@@ -807,29 +829,30 @@ document.documentElement.classList.add('js');
   ];
   function metrikTur(t){ for(var i=0;i<METRIK.length;i++) if(METRIK[i][1].test(t)) return METRIK[i][0]; return 'diger'; }
   function mevcutIsi(tw){ return tw.classList.contains('yatay') || tw.classList.contains('isi-t') || !!tw.querySelector('td.hm, td.yh, td.isi-h, td.isi-a, td.isi-d'); }
-  function isiKur(tw){
+  function isiKur(tw,yaz){   /* yaz=false: yalniz uygun sayisal sutun var mi bakilir, hucreye dokunulmaz */
     var tbl=tw.querySelector('table'); if(!tbl||!tbl.tHead||!tbl.tBodies[0]) return false;
     var ths=[].slice.call(tbl.tHead.rows[0].cells), rows=[].slice.call(tbl.tBodies[0].rows).filter(function(r){
       if(r.classList.contains('deg')) return false;
-      var c0=r.cells[0]; return !(c0 && /^(toplam|total|genel toplam|grand total|ortalama|average)\b/i.test((c0.innerText||c0.textContent||'').trim()));
+      var c0=r.cells[0]; return !(c0 && /^(toplam|total|genel toplam|grand total|ortalama|average)\b/i.test((c0.textContent||'').trim()));
     });
     var var_=false;
     ths.forEach(function(th,i){
       if(i===0) return;
       var hucre=rows.map(function(r){return r.cells[i];}).filter(Boolean);
-      var dolu=hucre.filter(function(td){var t=metin(td); return t && t!=='-' && t!=='–';});
+      var dolu=hucre.filter(function(td){var t=metinH(td); return t && t!=='-' && t!=='–';});
       /* ayni sutunda yuzde ve sayi karisiksa (satirlari farkli metrik olan tablolar) yalniz baskin bicimdeki hucreler olceklenir */
-      var yz=dolu.filter(function(td){return /%/.test(metin(td));});
-      if(yz.length && yz.length<dolu.length) dolu=(yz.length*2>=dolu.length)?yz:dolu.filter(function(td){return !/%/.test(metin(td));});
+      var yz=dolu.filter(function(td){return /%/.test(metinH(td));});
+      if(yz.length && yz.length<dolu.length) dolu=(yz.length*2>=dolu.length)?yz:dolu.filter(function(td){return !/%/.test(metinH(td));});
       if(dolu.length<3) return;
-      var vals=dolu.map(function(td){return sayi(metin(td));});
+      var vals=dolu.map(function(td){return sayi(metinH(td));});
       var nums=vals.filter(function(v){return v!==null;});
       if(nums.length<Math.max(3,dolu.length*0.7)) return;
-      var tur=metrikTur((th.innerText||th.textContent||'')+' '+(th.getAttribute('data-t')||''));
-      var isaretli=dolu.filter(function(td){return /^[+\-−]/.test(metin(td).trim());}).length;
+      var tur=metrikTur((th.textContent||'')+' '+(th.getAttribute('data-t')||''));
+      var isaretli=dolu.filter(function(td){return /^[+\-−]/.test(metinH(td).trim());}).length;
       if(tur!=='deg' && isaretli>=dolu.length*0.5 && nums.some(function(v){return v<0;})) tur='deg';
       var lo=Math.min.apply(null,nums), hi=Math.max.apply(null,nums), mx=Math.max(Math.abs(lo),Math.abs(hi));
       if(hi===lo && tur!=='deg') return;
+      if(!yaz){ var_=true; return; }
       dolu.forEach(function(td,j){
         var v=vals[j]; if(v===null) return;
         var renk, a;
@@ -843,12 +866,12 @@ document.documentElement.classList.add('js');
   }
   function isiDugme(tw){
     var mevcut=mevcutIsi(tw), kuruldu=false;
-    if(!mevcut){ if(!isiKur(tw)) return null; kuruldu=true; }
+    if(!mevcut && !isiKur(tw,false)) return null;   /* renkler acilista degil, dugmeye ilk basista hesaplanir */
     var b=document.createElement('button'); b.type='button'; b.className='theat';
     var acik=mevcut;
     function yaz(){ b.innerHTML=IH+'<span>'+(en()?'Heat map':'Isı haritası')+'</span>'; b.title=en()?(acik?'Hide the heat map colours':'Colour the numeric columns as a heat map'):(acik?'Isı haritası renklerini kapat':'Sayısal sütunları ısı haritası olarak renklendir'); b.setAttribute('aria-pressed',String(acik)); }
     function uygula(){ if(mevcut) tw.classList.toggle('isi-kapali',!acik); else tw.classList.toggle('isi-js',acik); yaz(); }
-    b.addEventListener('click',function(){ acik=!acik; uygula(); });
+    b.addEventListener('click',function(){ acik=!acik; if(acik && !mevcut && !kuruldu){ isiKur(tw,true); kuruldu=true; } uygula(); });
     document.addEventListener('dilchange',yaz);
     uygula(); return b;
   }
@@ -878,38 +901,57 @@ document.documentElement.classList.add('js');
 /* x ekseni etiketleri: ekranda birbirine degiyorsa (dar ekran, cok sayida donem) capraz yazilir, grafigin altina gereken kadar yer acilir.
    Yalniz tek satirli, ortalanmis alt eksen yazilari; iki satirli ve zaten egik etiketler dokunulmaz. Genislik ve dil degisince yeniden denetlenir. */
 (function(){
-  function capraz(svg){
-    var r=svg.getBoundingClientRect(); if(!r.width || !r.height) return;
-    if(!svg.hasAttribute('data-vb0')) svg.setAttribute('data-vb0',svg.getAttribute('viewBox'));
-    var vb0=svg.getAttribute('data-vb0').split(/[\s,]+/).map(Number);
-    var X=[].slice.call(svg.querySelectorAll('text.ax')).filter(function(t){
+  /* toplu calisir: once tum grafikler sifirlanir (yazma), sonra hepsi birlikte olculur (okuma), sonra cevrilir; boylece
+     her grafik icin ayri yerlesim hesabi yapilmaz */
+  function eksenX(svg){
+    return [].slice.call(svg.querySelectorAll('text.ax')).filter(function(t){
       return !t.children.length && (t.getAttribute('data-cap')==='1' || (t.getAttribute('text-anchor')==='middle' && !t.hasAttribute('transform')));
     });
-    X.forEach(function(t){ if(t.getAttribute('data-cap')==='1'){ t.removeAttribute('transform'); t.setAttribute('text-anchor','middle'); t.setAttribute('y',t.getAttribute('data-capy')); t.removeAttribute('data-cap'); } });
-    svg.setAttribute('viewBox',vb0.join(' '));
-    if(!X.length) return;
-    var ymax=Math.max.apply(null,X.map(function(t){return +t.getAttribute('y');}));
-    X=X.filter(function(t){ return Math.abs(+t.getAttribute('y')-ymax)<1 && t.textContent.trim() && getComputedStyle(t).display!=='none'; });
-    if(X.length<3) return;
-    var R=X.map(function(t){ var b=t.getBoundingClientRect(); return {x0:b.left,x1:b.right}; }).filter(function(a){return a.x1>a.x0;}).sort(function(a,b){return a.x0-b.x0;});
-    var sik=false; for(var i=1;i<R.length;i++) if(R[i].x0<R[i-1].x1+3){ sik=true; break; }
-    if(!sik) return;
-    X.forEach(function(t){
-      var x=+t.getAttribute('x'), y=+t.getAttribute('y'), y2=(y-8).toFixed(1);
-      t.setAttribute('data-capy',y); t.setAttribute('data-cap','1'); t.setAttribute('text-anchor','end'); t.setAttribute('y',y2);
-      t.setAttribute('transform','rotate(-35 '+x+' '+y2+')');
-    });
-    var M=svg.getScreenCTM(); if(!M) return; M=M.inverse(); var pt=svg.createSVGPoint(), alt=0;
-    X.forEach(function(t){ var b=t.getBoundingClientRect(); pt.x=b.left; pt.y=b.bottom; alt=Math.max(alt,pt.matrixTransform(M).y); });
-    if(alt+4>vb0[1]+vb0[3]) svg.setAttribute('viewBox',[vb0[0],vb0[1],vb0[2],Math.ceil(alt+4-vb0[1])].join(' '));
   }
-  function hepsi(){ [].forEach.call(document.querySelectorAll('svg.chart'),capraz); }
+  function toplu(L){
+    var I=[];
+    L.forEach(function(svg){   /* 1) sifirla */
+      if(!svg.hasAttribute('data-vb0')) svg.setAttribute('data-vb0',svg.getAttribute('viewBox'));
+      var vb0=svg.getAttribute('data-vb0').split(/[\s,]+/).map(Number), X=eksenX(svg);
+      X.forEach(function(t){ if(t.getAttribute('data-cap')==='1'){ t.removeAttribute('transform'); t.setAttribute('text-anchor','middle'); t.setAttribute('y',t.getAttribute('data-capy')); t.removeAttribute('data-cap'); } });
+      if(svg.getAttribute('viewBox')!==vb0.join(' ')) svg.setAttribute('viewBox',vb0.join(' '));
+      if(!X.length) return;
+      var ymax=Math.max.apply(null,X.map(function(t){return +t.getAttribute('y');}));
+      X=X.filter(function(t){ return Math.abs(+t.getAttribute('y')-ymax)<1 && t.textContent.trim(); });
+      if(X.length>=3) I.push({svg:svg, vb0:vb0, X:X});
+    });
+    I.forEach(function(o){   /* 2) olc: yalniz gorunur grafikler; komsu etiketler birbirine degiyor mu */
+      var r=o.svg.getBoundingClientRect(); if(!r.width || !r.height){ o.sik=false; return; }
+      var R=o.X.map(function(t){ var b=t.getBoundingClientRect(); return {x0:b.left,x1:b.right}; }).filter(function(a){return a.x1>a.x0;}).sort(function(a,b){return a.x0-b.x0;});
+      o.sik=false; for(var i=1;i<R.length;i++) if(R[i].x0<R[i-1].x1+3){ o.sik=true; break; }
+    });
+    I=I.filter(function(o){return o.sik;});
+    I.forEach(function(o){   /* 3) capraz yaz */
+      o.X.forEach(function(t){
+        var x=+t.getAttribute('x'), y=+t.getAttribute('y'), y2=(y-8).toFixed(1);
+        t.setAttribute('data-capy',y); t.setAttribute('data-cap','1'); t.setAttribute('text-anchor','end'); t.setAttribute('y',y2);
+        t.setAttribute('transform','rotate(-35 '+x+' '+y2+')');
+      });
+    });
+    I.forEach(function(o){   /* 4) grafigin altinda gereken yer */
+      var M=o.svg.getScreenCTM(); if(!M){ o.alt=0; return; } M=M.inverse(); var pt=o.svg.createSVGPoint(), alt=0;
+      o.X.forEach(function(t){ var b=t.getBoundingClientRect(); pt.x=b.left; pt.y=b.bottom; alt=Math.max(alt,pt.matrixTransform(M).y); });
+      o.alt=alt;
+    });
+    I.forEach(function(o){ if(o.alt+4>o.vb0[1]+o.vb0[3]) o.svg.setAttribute('viewBox',[o.vb0[0],o.vb0[1],o.vb0[2],Math.ceil(o.alt+4-o.vb0[1])].join(' ')); });
+  }
+  function hepsi(){ toplu([].slice.call(document.querySelectorAll('svg.chart'))); }
   hepsi();
   document.addEventListener('dilchange',function(){ setTimeout(hepsi,0); });
   if(window.ResizeObserver){
-    [].forEach.call(document.querySelectorAll('svg.chart'),function(svg){
-      var gw=0; new ResizeObserver(function(en){ var w=Math.round(en[0].contentRect.width); if(w && w!==gw){ gw=w; capraz(svg); } }).observe(svg);
+    /* tek gozlemci: genisligi degisen (ya da gizli sekmeden gorunur olan) grafikler tek seferde yeniden denetlenir; acilistaki ilk bildirim, genislik ayni oldugu icin atlanir */
+    var gw=new WeakMap();
+    var ro=new ResizeObserver(function(en){
+      var L=[];
+      en.forEach(function(e){ var w=Math.round(e.contentRect.width), o=gw.get(e.target); gw.set(e.target,w); if(w && w!==o) L.push(e.target); });
+      if(L.length) toplu(L);
     });
+    [].forEach.call(document.querySelectorAll('svg.chart'),function(svg){ var r=svg.getBoundingClientRect(); gw.set(svg,Math.round(r.width)); ro.observe(svg); });
   }
 })();
 """

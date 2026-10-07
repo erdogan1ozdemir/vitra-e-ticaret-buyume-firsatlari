@@ -301,7 +301,13 @@ function yFiltre(){
   if(p&&r[0]!==p)return false;if(m&&r[2]!==m)return false;if(g&&r[3]!==g)return false;if(t&&r[11].indexOf(t)<0)return false;
   if(d){var u=r[8]==null?'':(r[8]>=4?'p':(r[8]<=2?'n':'o'));if(u!==d)return false}
   if(q&&(r[10]+' '+r[4]).toLocaleLowerCase('tr').indexOf(q)<0)return false;return true})}
+/* ---- yayin surumunde yorum ve soru verisi ayri dosyadadir (V.y / V.s = {src}); bolum ekrana yaklasinca yuklenir */
+var YUK={};
+function hazir(a){return Array.isArray(V[a])}
+function yukle(a,cb){if(hazir(a)){cb();return}if(YUK[a])return;YUK[a]=1;fetch(V[a].src).then(function(r){return r.json()}).then(function(j){V[a]=j;cb()}).catch(function(){YUK[a]=0;document.getElementById(a+'Say').textContent=T('Liste yüklenemedi; sayfayı yenileyin.','The list could not be loaded; reload the page.')})}
+function bekliyor(a){if(hazir(a))return false;document.getElementById(a+'Say').textContent=T('Liste yükleniyor…','Loading the list…');document.getElementById(a+'Daha').hidden=true;return true}
 function yCiz(){
+ if(bekliyor('y'))return;
  var L=yFiltre(),h=L.slice(0,yS).map(function(r){
   var neg=r[8]!=null&&r[8]<=2;
   var urun=r[5]?'<a href="'+esc(r[5])+'" target="_blank" rel="noopener">'+esc(r[4])+'</a>':esc(r[4]);
@@ -317,6 +323,7 @@ function sFiltre(){
  return V.s.filter(function(r){if(p&&r[0]!==p)return false;if(m&&r[2]!==m)return false;if(g&&r[3]!==g)return false;if(t&&r[12].indexOf(t)<0)return false;
   if(q&&(r[6]+' '+r[8]+' '+r[4]).toLocaleLowerCase('tr').indexOf(q)<0)return false;return true})}
 function sCiz(){
+ if(bekliyor('s'))return;
  var L=sFiltre(),h=L.slice(0,sS).map(function(r){
   var urun=r[5]?'<a href="'+esc(r[5])+'" target="_blank" rel="noopener">'+esc(r[4])+'</a>':esc(r[4]);
   var kim=r[10]?'<span class="res">'+T('VitrA resmi mağaza','VitrA official store')+'</span>':(r[9]?esc(r[9]):'');
@@ -364,6 +371,9 @@ document.getElementById('dil').addEventListener('click',function(){var l=dil()==
 document.getElementById('tema').addEventListener('click',function(){kok.setAttribute('data-theme',kok.getAttribute('data-theme')==='dark'?'light':'dark')});
 var l0='tr';try{l0=localStorage.getItem('vitra-dil')||'tr'}catch(e){}
 dilKur(l0==='en'?'en':'tr');
+[['y','yListe',function(){yCiz()}],['s','sListe',function(){sCiz()}]].forEach(function(x){
+ if(hazir(x[0]))return;var el=document.getElementById(x[1]);
+ if('IntersectionObserver' in window){var io=new IntersectionObserver(function(en){if(en.some(function(e){return e.isIntersecting})){io.disconnect();yukle(x[0],x[2])}},{rootMargin:'900px 0px'});io.observe(el)}else yukle(x[0],x[2])});
 })();
 """
     TEMA_BTN = ('<button class="btn" type="button" id="tema" aria-label="Tema değiştir" title="Tema değiştir"><svg class="gunes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/>'

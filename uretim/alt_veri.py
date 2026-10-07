@@ -185,7 +185,14 @@ function Tablo(el){
   var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([s],{type:'text/csv;charset=utf-8'}));a.download=el.dataset.t+'.csv';document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove()},500)});
  this.dil=function(){ara.placeholder=T('Tabloda ara','Search the table');basliklar();secDoldur();ciz()};
 }
-var TB=[].map.call(document.querySelectorAll('.vt'),function(el){return new Tablo(el)});
+/* veri ayri dosyadaysa (yayin surumu: V.t[k].src) tablo ekrana yaklasinca yuklenir; sayfa icindeki veride hemen kurulur */
+var TB=[].map.call(document.querySelectorAll('.vt'),function(el){
+ var k=el.dataset.t,t=V.t[k];if(!t||!t.src)return new Tablo(el);
+ var o={ic:null,yuk:false,dil:function(){if(o.ic)o.ic.dil()}},say=el.querySelector('.sayac');
+ el.classList.add('bekliyor');if(say)say.textContent=T('Tablo yükleniyor…','Loading the table…');el.querySelector('.dahafazla').hidden=true;
+ function yukle(){if(o.yuk)return;o.yuk=true;fetch(t.src).then(function(r){return r.json()}).then(function(j){V.t[k]=j;o.ic=new Tablo(el);o.ic.dil();el.classList.remove('bekliyor')}).catch(function(){o.yuk=false;if(say)say.textContent=T('Tablo yüklenemedi; sayfayı yenileyin.','The table could not be loaded; reload the page.')})}
+ if('IntersectionObserver' in window){var io=new IntersectionObserver(function(en){if(en.some(function(e){return e.isIntersecting})){io.disconnect();yukle()}},{rootMargin:'900px 0px'});io.observe(el)}else yukle();
+ return o});
 /* sutun aciklama balonu */
 var tt=document.getElementById('tt');
 function goster(el){var s=el.getAttribute('data-tt');if(!s)return;tt.textContent=s;tt.classList.add('on');var r=el.getBoundingClientRect(),w=tt.offsetWidth,h=tt.offsetHeight;

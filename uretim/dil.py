@@ -311,7 +311,7 @@ def sayilar(corba):
 
 # ------------------------------------------------------------------ katman
 DIL_BUTON = (
- '<button class="dilbtn" type="button" id="dil" aria-label="Rapor dilini değiştir" '
+ '<button class="dilbtn" type="button" id="dil" aria-label="Switch to English" '
  'title="Switch to English" data-tr="Switch to English" data-en="Switch to Turkish">'
  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" '
  'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
@@ -321,47 +321,62 @@ DIL_BUTON = (
 
 RUNTIME = r"""
 /* --- Rapor dili (TR / EN) ------------------------------------------------- */
+/* Rapor Turkce acilir ve acilista dil katmani calismaz. Ceviri verisi (#dil-veri) yalniz EN secilince okunur
+   (sayfa icindeki JSON ya da data-src ile ayri dosya); span.t ogeleri belge sirasiyla verideki "s" listesine eslenir. */
 (function(){
-  var veri = window.__DIL__; if(!veri) return;
-  var btn = document.getElementById('dil'); if(!btn) return;
+  var kaynak = document.getElementById('dil-veri');
+  var btn = document.getElementById('dil'); if(!kaynak || !btn) return;
   var kok = document.documentElement;
   var NITELIK = ['data-t','data-term','title','aria-label','alt'];
-  var kabuklar = [], nitelikler = [], grafikler = [], svgMetin = [];
+  var veri = null, hazir = false, kabuklar = [], nitelikler = [], grafikler = [], svgMetin = [], aktif = 'tr', bekliyor = false;
 
-  /* Govde metni: her span.t iki dilin isaretlenmis halini tasir */
-  [].forEach.call(document.querySelectorAll('span.t'), function(e){
-    kabuklar.push([e, e.innerHTML, e.getAttribute('data-en')]);
-  });
-
-  [].forEach.call(document.querySelectorAll('*'), function(e){
-    NITELIK.forEach(function(a){
-      var v = e.getAttribute(a);
-      if(v && veri.m[v.trim()] !== undefined) nitelikler.push([e, a, v, veri.m[v.trim()]]);
-    });
-    if(e.hasAttribute('data-grafik')) grafikler.push([e, e.getAttribute('data-grafik')]);
-  });
-
-  /* SVG icindeki eksen ve gosterge etiketleri span alamaz; dogrudan cevrilir */
-  [].forEach.call(document.querySelectorAll('svg text, svg tspan'), function(e){
-    if(e.children.length) return;
-    var t = e.textContent.trim();
-    if(t && veri.m[t] !== undefined && veri.m[t] !== t){
-      svgMetin.push([e, e.textContent, e.textContent.replace(t, veri.m[t])]);
+  function yukle(cb){
+    if(veri){ cb(); return; }
+    var src = kaynak.getAttribute('data-src');
+    if(src){
+      if(bekliyor) return; bekliyor = true; btn.setAttribute('aria-busy','true');
+      fetch(src).then(function(r){ return r.json(); }).then(function(j){ veri = j; bekliyor = false; btn.removeAttribute('aria-busy'); cb(); })
+        .catch(function(){ bekliyor = false; btn.removeAttribute('aria-busy'); });
+    } else {
+      try{ veri = JSON.parse(kaynak.textContent); }catch(e){ return; }
+      cb();
     }
-  });
+  }
 
-  grafikler.forEach(function(g){
-    var o; try{ o = JSON.parse(g[1]); }catch(err){ return; }
-    (o.seriler||[]).forEach(function(s){ if(veri.m[s.ad] !== undefined) s.ad = veri.m[s.ad]; });
-    (o.satirlar||[]).forEach(function(s){ if(veri.m[s.ad] !== undefined) s.ad = veri.m[s.ad]; });
-    (o.noktalar||[]).forEach(function(nk){ if(veri.m[nk.b] !== undefined) nk.b = veri.m[nk.b]; nk.s.forEach(function(r){ if(veri.m[r.a] !== undefined) r.a = veri.m[r.a]; if(veri.m[r.v] !== undefined) r.v = veri.m[r.v]; }); });
-    if(o.birim && veri.m[o.birim] !== undefined) o.birim = veri.m[o.birim];
-    if(o.olcu && veri.m[o.olcu] !== undefined) o.olcu = veri.m[o.olcu];
-    if(o.aylar) o.aylar = o.aylar.map(function(a){ return veri.m[a] !== undefined ? veri.m[a] : a; });
-    g.push(JSON.stringify(o));
-  });
+  function hazirla(){
+    if(hazir) return true;
+    var S = document.querySelectorAll('span.t');
+    if(S.length !== veri.s.length){ if(window.console) console.error('dil: span.t sayisi ceviri verisiyle uyusmuyor', S.length, veri.s.length); return false; }
+    /* Govde metni: her span.t icin Turkce (o anki) ve Ingilizce isaretli hal */
+    [].forEach.call(S, function(e, i){ kabuklar.push([e, e.innerHTML, veri.s[i]]); });
+    [].forEach.call(document.querySelectorAll('*'), function(e){
+      NITELIK.forEach(function(a){
+        var v = e.getAttribute(a);
+        if(v && veri.m[v.trim()] !== undefined) nitelikler.push([e, a, v, veri.m[v.trim()]]);
+      });
+      if(e.hasAttribute('data-grafik')) grafikler.push([e, e.getAttribute('data-grafik')]);
+    });
+    /* SVG icindeki eksen ve gosterge etiketleri span alamaz; dogrudan cevrilir */
+    [].forEach.call(document.querySelectorAll('svg text, svg tspan'), function(e){
+      if(e.children.length) return;
+      var t = e.textContent.trim();
+      if(t && veri.m[t] !== undefined && veri.m[t] !== t){
+        svgMetin.push([e, e.textContent, e.textContent.replace(t, veri.m[t])]);
+      }
+    });
+    grafikler.forEach(function(g){
+      var o; try{ o = JSON.parse(g[1]); }catch(err){ return; }
+      (o.seriler||[]).forEach(function(s){ if(veri.m[s.ad] !== undefined) s.ad = veri.m[s.ad]; });
+      (o.satirlar||[]).forEach(function(s){ if(veri.m[s.ad] !== undefined) s.ad = veri.m[s.ad]; });
+      (o.noktalar||[]).forEach(function(nk){ if(veri.m[nk.b] !== undefined) nk.b = veri.m[nk.b]; nk.s.forEach(function(r){ if(veri.m[r.a] !== undefined) r.a = veri.m[r.a]; if(veri.m[r.v] !== undefined) r.v = veri.m[r.v]; }); });
+      if(o.birim && veri.m[o.birim] !== undefined) o.birim = veri.m[o.birim];
+      if(o.olcu && veri.m[o.olcu] !== undefined) o.olcu = veri.m[o.olcu];
+      if(o.aylar) o.aylar = o.aylar.map(function(a){ return veri.m[a] !== undefined ? veri.m[a] : a; });
+      g.push(JSON.stringify(o));
+    });
+    hazir = true; return true;
+  }
 
-  var aktif = 'tr';
   function uygula(dil){
     var en = (dil === 'en');
     kabuklar.forEach(function(x){ x[0].innerHTML = en ? x[2] : x[1]; });
@@ -377,13 +392,17 @@ RUNTIME = r"""
     aktif = dil;
     document.dispatchEvent(new CustomEvent('dilchange'));
   }
+  function gec(dil){
+    if(dil === aktif) return;
+    yukle(function(){ if(hazirla()) uygula(dil); });
+  }
 
   var kayit = null;
   try{ kayit = localStorage.getItem('vitra-dil'); }catch(e){}
-  uygula(kayit || 'tr');
+  if(kayit === 'en') gec('en');
   btn.addEventListener('click', function(){
     var y = (aktif === 'en') ? 'tr' : 'en';
-    uygula(y);
+    gec(y);
     try{ localStorage.setItem('vitra-dil', y); }catch(e){}
   });
 })();
@@ -491,9 +510,15 @@ def uygula(doc, baslik_en):
         raise SystemExit("Sarmalama sirasinda cevirisi bulunamayan %d ifade:\n  - %s"
                          % (len(hatalar), "\n  - ".join(hatalar[:40])))
 
-    baslik_tr = corba.title.string if corba.title else ""
-    yuk = json.dumps({"m": harita, "baslik_tr": baslik_tr, "baslik_en": baslik_en},
-                     ensure_ascii=False)
+    baslik_tr = corba.title.get_text() if corba.title else ""
+    if corba.title: corba.title.string = baslik_tr   # <title> duz metin kalir (tarayici icindeki etiketi yazi olarak gosterir)
+    # govde cevirileri ogelerin uzerinde degil, belge sirasiyla tek listede tasinir (yalniz EN secilince okunur)
+    s_liste = []
+    for el in corba.select("span.t"):
+        s_liste.append(el.get("data-en", ""))
+        if el.has_attr("data-en"): del el["data-en"]
+    yuk = json.dumps({"m": harita, "s": s_liste, "baslik_tr": baslik_tr, "baslik_en": baslik_en},
+                     ensure_ascii=False).replace("</", "<\\/")
 
     # dil dugmesini tema dugmesinin soluna yerlestir
     tema = corba.find("button", id="tema")
@@ -504,5 +529,5 @@ def uygula(doc, baslik_en):
     cikti = str(corba)
     cikti = cikti.replace(
         "</body>",
-        "<script>window.__DIL__=%s;</script>\n<script>%s</script>\n</body>" % (yuk, RUNTIME))
+        '<script type="application/json" id="dil-veri">%s</script>\n<script>%s</script>\n</body>' % (yuk, RUNTIME))
     return cikti, sarilan + _blok, dict(_sayac)

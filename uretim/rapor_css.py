@@ -110,6 +110,8 @@ a .term,th .term{border-bottom:0;cursor:inherit}
   margin:0 0 16px;max-height:none}
 .tw.uzun{max-height:min(560px,72vh)}
 .tw.uzun thead th{position:sticky;top:0;z-index:2}
+/* ekran disindaki tablolar cizilmez (acilis hizi); yer tutucu yukseklik satir sayisindan (--ih), ilk cizimden sonra gercek yukseklik hatirlanir */
+.tw{content-visibility:auto;contain-intrinsic-block-size:auto var(--ih,320px)}
 .tw::-webkit-scrollbar{width:10px;height:10px}
 .tw::-webkit-scrollbar-thumb{background:var(--line);border-radius:5px}
 .tw::-webkit-scrollbar-thumb:hover{background:var(--muted)}
@@ -395,6 +397,7 @@ th[data-t] span.q{border-bottom:1px dotted rgba(255,255,255,.55);padding-bottom:
   *{scroll-behavior:auto!important;transition-duration:.01ms!important}
 }
 @media print{
+  .tw{content-visibility:visible}
   .appbar,.sidenav,.tocfab,.tocsheet,.dl,.tema,.dilbtn{display:none!important}
   .wrap{grid-template-columns:1fr;max-width:none;padding:0}
   section{break-inside:avoid;padding:14px 0}

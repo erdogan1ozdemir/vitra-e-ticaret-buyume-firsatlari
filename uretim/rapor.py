@@ -107,6 +107,15 @@ def _uzun(m):
     n_ = blok.count('<tr>') - 1
     return blok.replace('<div class="tw %s">' % m.group(1), '<div class="tw %s uzun">' % m.group(1), 1) if n_ > 9 else blok
 govde = re.sub(r'<div class="tw ([^"]*)">.*?</table></div>', _uzun, govde, flags=re.S)
+# ekran disindaki tablolar cizilmez (content-visibility); henuz cizilmemis tablonun yeri satir sayisindan tahmin edilir (--ih)
+def _ih(m):
+    acilis, stil, ic = m.group(1), m.group(2) or "", m.group(3)
+    n_ = max(1, ic.count("<tr") - ic.count("<thead"))
+    h_ = 46 + 37 * n_
+    if " uzun" in acilis: h_ = min(h_, 560)
+    stil = (stil[:-1] + ';--ih:%dpx"' % h_) if stil else ' style="--ih:%dpx"' % h_
+    return acilis + stil + ">" + ic + "</div>"
+govde = re.sub(r'(<div class="tw(?: [^"]*)?")((?: style="[^"]*")?)>(.*?</table>)</div>', _ih, govde, flags=re.S)
 _LOGO = sorted(logo_alan_adlari(), key=len, reverse=True)
 _LG = re.compile(r'(<(?:td|span class="rl")>|<a class="(?:u|dis)"[^>]*>)((?:www\.)?(' + "|".join(re.escape(d) for d in _LOGO) + r'))(?=</)')
 govde = _LG.sub(lambda m: m.group(1) + lg(m.group(3)) + m.group(2), govde)
