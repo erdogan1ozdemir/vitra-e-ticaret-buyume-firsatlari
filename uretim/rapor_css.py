@@ -397,6 +397,31 @@ th[data-t] span.q{border-bottom:1px dotted rgba(255,255,255,.55);padding-bottom:
 @media (prefers-reduced-motion:reduce){
   *{scroll-behavior:auto!important;transition-duration:.01ms!important}
 }
+/* Ozet katlanir (JS #ozet.katli ekler; JS yoksa ve yazdirmada hepsi acik) */
+#ozet.katli .box ul.marks > li{cursor:pointer;padding-right:30px}
+#ozet.katli .box ul.marks > li:not(.acik) .dty{display:none}
+#ozet.katli .box ul.marks > li:not(.acik) .mtx .t::after{content:" …";color:var(--muted)}
+#ozet .ozac-b{display:none}
+#ozet.katli .box ul.marks > li > .ozac-b{display:grid;place-items:center;position:absolute;right:0;top:1px;width:24px;height:24px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--muted);cursor:pointer;padding:0}
+#ozet.katli .ozac-b svg{transition:transform .15s}
+#ozet.katli .acik > .ozac-b svg,#ozet.katli .acik .fdet svg{transform:rotate(180deg)}
+#ozet.katli .box ul.marks > li:hover > .ozac-b,#ozet .ozac-b:focus-visible{color:var(--ink);border-color:var(--ink-2)}
+#ozet.katli article.fnote:not(.acik) .fac,#ozet.katli article.fnote:not(.acik) ul{display:none}
+#ozet.katli article.fnote > .fdet{display:inline-flex;align-items:center;gap:5px;position:static;width:auto;height:auto;margin:2px 0 0;padding:3px 9px;border:1px solid var(--line);border-radius:6px;background:transparent;color:var(--ink-2);font:inherit;font-size:12px;cursor:pointer}
+#ozet.katli article.fnote > .fdet:hover{color:var(--ink);border-color:var(--ink-2)}
+#ozet .ozbox{position:relative}
+#ozet .ozac-t{font:inherit;font-size:11.5px;color:var(--ink-2);background:transparent;border:1px solid var(--line);border-radius:6px;padding:3px 10px;cursor:pointer;letter-spacing:0;text-transform:none}
+#ozet .ozac-t:hover,#ozet .ozac-t:focus-visible{color:var(--ink);border-color:var(--ink-2)}
+#ozet .ozbox > .ozac-t{position:absolute;top:13px;right:16px}
+#ozet .ozh3{display:flex;align-items:center;justify-content:space-between;gap:12px}
+#ozet .ozh3 > .ozac-t{font-weight:400;flex:0 0 auto}
+@media print{
+  #ozet .dty{display:inline!important}
+  #ozet article.fnote .fac{display:block!important}
+  #ozet article.fnote ul{display:block!important}
+  #ozet .mtx .t::after{content:none!important}
+  #ozet .ozac-b,#ozet .ozac-t{display:none!important}
+}
 @media print{
   .tw{content-visibility:visible}
   .appbar,.sidenav,.tocfab,.tocsheet,.dl,.tema,.dilbtn{display:none!important}

@@ -988,6 +988,54 @@ document.documentElement.classList.add('js');
     [].forEach.call(document.querySelectorAll('svg.chart'),function(svg){ var r=svg.getBoundingClientRect(); gw.set(svg,Math.round(r.width)); ro.observe(svg); });
   }
 })();
+/* Ozet katlanir: kritik tespit maddelerinde yalniz kalin baslik cumlesi, bulgu kartlarinda yalniz baslik gorunur; tiklayinca ayrinti acilir.
+   Varsayilan kapali; JavaScript calismazsa ve yazdirmada hepsi acik. Baslik sonrasi metin .dty icine alinir, dil degisince yeniden ayrilir. */
+(function(){
+  var oz=document.getElementById('ozet'); if(!oz) return;
+  function en(){return document.documentElement.getAttribute('data-dil')==='en';}
+  var CHV='<svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg>';
+  var maddeler=[].slice.call(oz.querySelectorAll('.box ul.marks > li')), kartlar=[].slice.call(oz.querySelectorAll('article.fnote'));
+  function ayir(li){
+    var t=li.querySelector('.mtx .t')||li.querySelector('.mtx'); if(!t || t.querySelector('.dty')) return;
+    var b=t.querySelector('b.vk'); if(!b) return;
+    var n=b; while(n.parentNode && n.parentNode!==t) n=n.parentNode;
+    var kalan=[]; for(var x=n.nextSibling; x; x=x.nextSibling) kalan.push(x);
+    if(!kalan.length) return;
+    var d=document.createElement('span'); d.className='dty'; kalan.forEach(function(k){ d.appendChild(k); }); t.appendChild(d);
+  }
+  function durum(el,acik){ el.classList.toggle('acik',acik); var b=el.querySelector('.ozac-b'); if(b) b.setAttribute('aria-expanded',String(acik)); }
+  maddeler.forEach(function(li){
+    ayir(li);
+    var b=document.createElement('button'); b.type='button'; b.className='ozac-b'; b.innerHTML=CHV; b.setAttribute('aria-expanded','false');
+    li.appendChild(b);
+    li.addEventListener('click',function(e){ if(e.target.closest('a, .term, .de')) return; durum(li,!li.classList.contains('acik')); });
+  });
+  kartlar.forEach(function(k){
+    var b=document.createElement('button'); b.type='button'; b.className='ozac-b fdet'; b.setAttribute('aria-expanded','false');
+    k.appendChild(b);
+    b.addEventListener('click',function(){ durum(k,!k.classList.contains('acik')); yaz(); });
+  });
+  function tumu(L,btn){
+    var b=document.createElement('button'); b.type='button'; b.className='ozac-t';
+    b.addEventListener('click',function(){ var ac=!L.every(function(e){return e.classList.contains('acik');}); L.forEach(function(e){ durum(e,ac); }); yaz(); });
+    btn(b); return b;
+  }
+  var box=oz.querySelector('.box'), h3=[].slice.call(oz.querySelectorAll('h3')).find(function(h){return h.nextElementSibling && h.nextElementSibling.classList.contains('fnotes');});
+  var t1=box?tumu(maddeler,function(b){ box.classList.add('ozbox'); box.appendChild(b); }):null;
+  var t2=h3?tumu(kartlar,function(b){ h3.classList.add('ozh3'); h3.appendChild(b); }):null;
+  function yaz(){
+    maddeler.forEach(function(li){ var b=li.querySelector('.ozac-b'); if(b) b.setAttribute('aria-label',li.classList.contains('acik')?(en()?'Hide detail':'Ayrıntıyı gizle'):(en()?'Show detail':'Ayrıntıyı göster')); });
+    kartlar.forEach(function(k){ var b=k.querySelector('.fdet'), n=k.querySelectorAll('ul > li').length, ac=k.classList.contains('acik');
+      if(b) b.innerHTML='<span>'+(ac?(en()?'Hide details':'Ayrıntıları gizle'):(en()?'Show details':'Ayrıntıları göster')+' ('+n+')')+'</span>'+CHV; });
+    [[t1,maddeler],[t2,kartlar]].forEach(function(x){ if(!x[0]) return; var hep=x[1].every(function(e){return e.classList.contains('acik');}); x[0].textContent=hep?(en()?'Collapse all':'Tümünü kapat'):(en()?'Expand all':'Tümünü aç'); });
+  }
+  maddeler.forEach(function(li){ li.addEventListener('click',function(){ setTimeout(yaz,0); }); });
+  oz.classList.add('katli'); yaz();
+  document.addEventListener('dilchange',function(){ maddeler.forEach(ayir); yaz(); });
+  /* baska bir yerden Ozet'teki bir basliga gelinirse ilgili kart acilir */
+  function hedefAc(){ var h=location.hash.slice(1); if(!h) return; var el=document.getElementById(h); var k=el && el.closest('article.fnote'); if(k){ durum(k,true); yaz(); } }
+  window.addEventListener('hashchange',hedefAc); hedefAc();
+})();
 """
 
 KAYNAKCA_CSS = """
