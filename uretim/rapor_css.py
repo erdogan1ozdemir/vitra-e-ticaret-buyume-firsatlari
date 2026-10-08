@@ -108,10 +108,11 @@ a .term,th .term{border-bottom:0;cursor:inherit}
 .insight p:last-child{margin-bottom:0}
 .tw{overflow:auto;border:1px solid var(--line);border-radius:9px;background:var(--card);
   margin:0 0 16px;max-height:none}
-.tw.uzun{max-height:min(560px,72vh)}
-.tw.uzun thead th{position:sticky;top:0;z-index:2}
+/* tablolar ekranin %75'ini gecmez; uzun tablo kendi icinde kayar, baslik satiri sabit kalir */
+.tw{max-height:75vh;max-height:75dvh}
+.tw thead th{position:sticky;top:0;z-index:2}
 /* ekran disindaki tablolar cizilmez (acilis hizi); yer tutucu yukseklik satir sayisindan (--ih), ilk cizimden sonra gercek yukseklik hatirlanir */
-.tw{content-visibility:auto;contain-intrinsic-block-size:auto var(--ih,320px)}
+.tw{content-visibility:auto;contain-intrinsic-block-size:auto min(var(--ih,320px),75vh)}
 .tw::-webkit-scrollbar{width:10px;height:10px}
 .tw::-webkit-scrollbar-thumb{background:var(--line);border-radius:5px}
 .tw::-webkit-scrollbar-thumb:hover{background:var(--muted)}
@@ -337,7 +338,6 @@ th[data-t] span.q{border-bottom:1px dotted rgba(255,255,255,.55);padding-bottom:
   table{font-size:12.5px;min-width:560px}
   th{padding:9px 10px;font-size:11px}
   td{padding:9px 10px}
-  .tw.uzun{max-height:min(460px,64vh)}
   .tabs{gap:6px}
   .tabs button{font-size:12px;padding:5px 11px}
   .fig{padding:12px 12px 8px;overflow-x:auto}
@@ -402,7 +402,7 @@ th[data-t] span.q{border-bottom:1px dotted rgba(255,255,255,.55);padding-bottom:
   .appbar,.sidenav,.tocfab,.tocsheet,.dl,.tema,.dilbtn{display:none!important}
   .wrap{grid-template-columns:1fr;max-width:none;padding:0}
   section{break-inside:avoid;padding:14px 0}
-  .tw.uzun{max-height:none}
+  .tw{max-height:none!important}
   a.dis::after{content:" (" attr(href) ")";font-size:.75em;color:#555}
 }
 """

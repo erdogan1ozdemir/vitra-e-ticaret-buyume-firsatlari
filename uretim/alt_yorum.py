@@ -213,7 +213,7 @@ h2::after{content:"";position:absolute;left:0;bottom:-1px;width:72px;height:3px;
 .tabs button,.chip{font:inherit;font-size:12.5px;padding:5px 12px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink-2);cursor:pointer}
 .tabs button[aria-selected="true"],.chip.on{background:var(--teal);border-color:var(--teal);color:#fff}
 :root[data-theme="dark"] .tabs button[aria-selected="true"],:root[data-theme="dark"] .chip.on{background:var(--coral-deep);border-color:var(--coral-deep)}
-.tw{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:10px}
+.tw{overflow:auto;max-height:75vh;max-height:75dvh;background:var(--card);border:1px solid var(--line);border-radius:10px}
 .tb{width:100%;border-collapse:collapse;font-size:13px;min-width:880px}
 .tb th{position:sticky;top:0;background:var(--teal);color:#fff;font-weight:600;font-size:12px;text-align:left;padding:9px 10px;white-space:nowrap}
 .tb td{padding:8px 10px;border-top:1px solid var(--line);vertical-align:top}
@@ -266,7 +266,7 @@ footer{max-width:1240px;margin:0 auto;padding:10px 22px 40px;font-size:12px;colo
 @media(max-width:720px){.lbl,.ib{display:none}.appbar .in{padding:10px 16px;gap:8px}main{padding:18px 16px 50px}.filtre input{min-width:0}}
 @media(max-width:520px){.geri .uzun{display:none}.kpi .v{font-size:20px}}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
-@media print{.appbar,.filtre,.dahafazla,.tabs{display:none}.tw{overflow:visible}}
+@media print{.appbar,.filtre,.dahafazla,.tabs{display:none}.tw{overflow:visible;max-height:none}}
 """
     JS = r"""
 (function(){

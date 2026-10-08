@@ -229,7 +229,7 @@ dialog.popd::backdrop{background:rgba(16,51,47,.45)}
 .pophd{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 16px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--card);z-index:3}
 .popx{font:inherit;font-size:20px;line-height:1;background:none;border:0;color:var(--muted);cursor:pointer;padding:0 4px}
 .popbd{padding:12px 16px 16px;overflow:auto;max-height:calc(86vh - 52px)}
-.popbd .tw.uzun{max-height:none}
+.popbd .tw{max-height:calc(86vh - 170px);max-height:calc(86dvh - 170px)}
 .legend .lg-t{cursor:pointer;user-select:none;border-radius:4px;padding:1px 4px}
 .legend .lg-t:hover{color:var(--ink)}
 .legend .lg-t:focus-visible{outline:2px solid var(--coral);outline-offset:1px}
