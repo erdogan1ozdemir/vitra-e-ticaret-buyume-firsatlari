@@ -83,7 +83,6 @@ OZEL = {
    "Not": "Kanalın kategoriyle ilişkisine dair gözlem.",
  },
  "adimlar": {
-   "Öncelik": "Aksiyonun ele alınma sırası. Öncelik 1 ilk fazda başlatılabilecekleri gösterir.",
    "Aksiyon": "Önerilen çalışma.",
    "Dayanak": "Aksiyonu destekleyen bulgu ve veri.",
    "Beklenen çıktı": "Aksiyonun tamamlanmasıyla ulaşılabilecek sonuç.",

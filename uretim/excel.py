@@ -238,7 +238,7 @@ AD_OKUNUR = {
  "20.10 Değerlendi · Yorum teması": "20.10 Yorum temaları", "20.11 Değerlendir · Soru teması": "20.11 Soru temaları",
  "20.12 Değerlendi · Yanıt kalıbı": "20.12 Yanıt kalıpları", "20.13 Hepsibur · Trendyol resmi": "20.13 Hepsiburada · Trendyol",
  "20.14 Hepsiburada satış · Kod": "20.14 Hepsiburada · Ürünler", "22.4 Aynı ürünün · Ürün listesi": "22.4 Aynı ürün · Ürün listesi",
- "22.5 Aynı ürünün · Mecra": "22.5 Aynı ürün · Mecra", "26.2 Hacimli ürünlerde": "26.2 Hacimli ürün modeli",
+ "22.5 Aynı ürünün · Mecra": "22.5 Aynı ürün · Mecra", "26.2 Hacimli ürünlerde": "26.2 Hacimli ürün modeli", "28.1 Sonraki Adımlar İçin": "28.1 Sonraki Adım Önerileri",
 }
 for sec in S.select("main section"):
     sid = sec.get("id"); h2 = sec.find("h2")

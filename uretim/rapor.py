@@ -54,7 +54,7 @@ P.append(bolum("yolculuk", "vitra.com.tr Satın Alma Yolculuğu: Site İçi Aram
 P.append(bolum("benchmark", "Benchmark: E-Ticaret Modelleri ve Dijital Deneyim", "Benchmark: E-Commerce Models and Digital Experience", b_benchmark.HTML))
 P.append(bolum("model", "Kanal Rolleri ve Etkileşim Modeli", "Channel Roles and Engagement Model", b_model.HTML))
 P.append(bolum("geo", "AI Arama ve GEO Fırsatları", "AI Search and GEO Opportunities", b_geo.HTML))
-P.append(bolum("adimlar", "Sonraki Adımlar", "Next Steps", b_adimlar.HTML))
+P.append(bolum("adimlar", "Sonraki Adımlar İçin Öneriler", "Recommendations for Next Steps", b_adimlar.HTML))
 P.append(bolum("ek", "Terim Sözlüğü, Kaynakça, Yöntem ve Kapsam", "Glossary, References, Method and Scope", "<!--EK-BAS-->" + "<h3>%s</h3>" % x("Yöntem ve Kapsam", "Method and Scope") + b_yontem.HTML))
 
 govde = "\n".join(P)
