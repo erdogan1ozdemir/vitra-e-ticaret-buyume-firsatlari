@@ -856,7 +856,7 @@ document.documentElement.classList.add('js');
     ['oran', /oran|rate|ctr|\bpay\b|payı|share|%|yüzde|percent/i],
     ['click', /click|tıklama|tiklama/i],
     ['imp', /gösterim|impression|görüntül|view/i],
-    ['ses', /oturum|session|ziyaret|visit|trafik|traffic|kullanıcı|user/i],
+    ['ses', /oturum|session|ziyaret|visit|trafi[kğ]|traffic|kullanıcı|user/i],
     ['gelir', /gelir|revenue|ciro|\btl\b|₺|fiyat|price|tutar|aov|value/i],
     ['satin', /satın alma|satin alma|purchase|sipariş|siparis|order|satış|satis|sales|transaction|işlem|dönüşüm|conversion/i],
     ['hacim', /hacim|volume|arama|search|talep|demand|kelime|keyword|query|sorgu/i]

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Metrik adlarının rapor genelinde tekilleştirilmesi: Türkçe metinde GA4, Search Console ve SEO araçlarının metrikleri İngilizce adıyla yazılır
 (oturum -> session, gösterim -> impression, tıklama -> click, gelir / ciro -> revenue, ortalama sıra -> average position, arama hacmi -> search volume,
-ziyaret -> visit, trafik -> traffic, görüntülenme -> view, dönüşüm oranı -> conversion rate, etkileşim oranı -> engagement rate,
+ziyaret -> visit, görüntülenme -> view (trafik Türkçe kalır), dönüşüm oranı -> conversion rate, etkileşim oranı -> engagement rate,
 ortalama sipariş tutarı -> AOV, satın alma (metrik olarak) -> purchase). Türkçe ekler kesme işaretiyle ve İngilizce okunuşa uygun ünlüyle eklenir.
 
 Dönüşüm çeviri katmanından hemen önce, Türkçe HTML'in metin düğümlerine, açıklama niteliklerine ve grafik verisine uygulanır; aynı fonksiyon
@@ -85,7 +85,7 @@ KURALLAR = [
     _kural(r"(?P<b>[Hh]acim)(?P<ek>[a-zçğıöşü]*)", {"": "", "leri": "'ları", "ler": "'lar", "lerin": "'ların", "li": "'lu", "de": "'da", "den": "'dan", "dir": "'dur"}, "search volume",
            on_dislama=r"(?:satış|ıslak|islak|depo|su|hazne|rezervuar|tank|büyük|küçük)", sonra_dislama=r"\s+(?:ürün|ve ölçüye|paket|kargo|mobilya)"),
     _kural(r"(?P<b>[Zz]iyaret)(?P<ek>[a-zçğıöşü]*)", _ZIYARET, "visit", on_dislama=r"(?:mağaza|mağazayı|showroom|bayi|ev|servis)"),
-    _kural(r"(?P<b>[Tt]rafi)(?P<ek>[kğ][a-zçğıöşü]*)", _TRAFIK, "traffic"),
+    # trafik Turkce kalir (08.10.2026 kullanici karari: "Banyo trafiği hangi sitelerde?")
     _kural(r"(?P<b>[Gg]örüntülenme)(?P<ek>[a-zçğıöşü]*)", _VIEW, "view"),
     _kural(r"(?P<b>[Ii]zlenme)(?P<ek>[a-zçğıöşü]*)", {"": "", "si": "'ı", "ye": "'a", "nin": "'ın", "ler": "'lar", "leri": "'ları", "lerin": "'ların", "de": "'da", "den": "'dan", "sine": "'ına"}, "view"),
     _kural(r"(?P<b>[Tt]ık)(?P<ek>[a-zçğıöşü]*)", {"": "", "lar": "'ler", "ları": "'leri", "ların": "'lerin", "larının": "'lerinin", "ı": "'i", "ın": "'in", "a": "'e", "ta": "'te",

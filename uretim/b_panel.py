@@ -190,6 +190,8 @@ EK = """
 %s
 <h3>%s</h3>
 %s
+%s
+%s
 <div class="two"><div>%s</div><div>%s</div></div>
 %s
 <h3>%s</h3>
@@ -231,7 +233,8 @@ EK = """
          ondalik(kat_d["Banyo Dolabı Seti"]["ciro_pay"]) + "%", ondalik(kat_d["Banyo Dolabı Seti"]["adet_pay"]) + "%", ondalik(kat_d["Lavabo Bataryası"]["ciro_pay"]) + "%", ondalik(kat_d["Lavabo Bataryası"]["adet_pay"]) + "%", ondalik(kat_d["Klozet"]["ciro_pay"]) + "%", ondalik(kat_d["Klozet"]["adet_pay"]) + "%", ondalik(kat_d["Ara Musluk"]["adet_pay"]) + "%", ondalik(kat_d["Ara Musluk"]["ciro_pay"]) + "%",
          ondalik(kat_d["Banyo Dolabı Seti"]["puan"]), ondalik(kat_d["Banyo Dolabı Seti"]["dusuk"]) + "%", ondalik(kat_d["Klozet"]["puan"]), ondalik(kat_d["Klozet"]["dusuk"]) + "%", "%d%%" % round(abs((kat_d["Lavabo Bataryası"]["q3"] / kat_d["Lavabo Bataryası"]["q4"] - 1) * 100))), "D31"),
  x("Çok satan ürünler: adet ve ciro katkısı", "Best-selling products: unit and revenue contribution"), T3,
- '<p class="tbas"><b>%s</b></p>' % x("Ciroya en çok katkı veren 15 ürün", "The 15 products contributing most to revenue") + T3b, '<p class="tbas"><b>%s</b></p>' % x("Fiyat bandına göre adet ve ciro payı", "Unit and revenue share by price band") + GFB + FB,
+ '<p class="tbas"><b>%s</b></p>' % x("Ciroya en çok katkı veren 15 ürün", "The 15 products contributing most to revenue") + T3b,   # 15 urun tablosu tam genislikte; fiyat bandi grafigi ve tablosu altinda yan yana
+ '<p class="tbas"><b>%s</b></p>' % x("Fiyat bandına göre adet ve ciro payı", "Unit and revenue share by price band"), GFB, FB,
  marks([("at", "Adedin %%50'si %d üründen, %%80'i %d üründen gelmektedir; cironun %%50'si %d, %%80'i %d üründedir (satılan %d model kodu)" % (PA["adet50"], PA["adet80"], PA["ciro50"], PA["ciro80"], PA["urun"]),
          "%d products make up 50%% of units and %d make up 80%%; 50%% of revenue comes from %d and 80%% from %d products (%d model codes sold)" % (PA["adet50"], PA["adet80"], PA["ciro50"], PA["ciro80"], PA["urun"])),
         ("at", "2026 Q3'te satılan %d ürünün %d'inde güncel stok 0; bu ürünler Q3 adedinin %s'i, cirosunun %s'idir (çamaşır musluğu A45228, Master Slot el duşu, Integra klozet kapağı, Punto evye bataryası, Aquaheat Bliss 240)" % (ST["q3_urun"], ST["stok0"], yzd(ST["adet_pay"]), yzd(ST["ciro_pay"])),
