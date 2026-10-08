@@ -1,0 +1,240 @@
+# -*- coding: utf-8 -*-
+"""Bolum: Google arama sonuclari (SERP) ve AI Overview · uc grup: A VitrA gami, B yakin kategori firsatlari, C marka ve karsilastirma (04.10.2026)."""
+from ortak import *
+import serp_ozet as S
+import json as _json, os as _os, collections as _col
+_Y = _json.load(open(_os.path.join(veri.V, "islenmis", "yeni_kategori.json"), encoding="utf-8"))["tema"]
+TEMA_EN = {"Vitrifiyeler": "Sanitaryware", "Banyo Mobilyaları": "Bathroom Furniture", "Armatürler": "Taps and Mixers", "Duşlar": "Showers", "Yıkanma Alanları": "Bathing Areas",
+           "Rezervuarlar": "Cisterns", "Banyo Aksesuarları": "Bathroom Accessories", "Karo Seramik Ürünleri": "Ceramic Tiles", "Soru ve karar": "Questions and decisions",
+           "Hizmet ve ilham": "Services and inspiration", "VitrA ve Artema": "VitrA and Artema", "Rakip marka": "Competitor brand", "Perakendeci adıyla": "With retailer name",
+           "Karşılaştırma ve marka seçimi": "Comparison and brand choice"}
+TEMA_EN.update({t["tr"]: t["en"] for t in _Y.values()})
+def TA(t): return x(t, TEMA_EN.get(t, t))
+def _ilk3(r):
+    ds = []
+    for t_ in sorted(r.get("top10") or [], key=lambda z: z["sira"]):
+        if t_["alan"] not in ds: ds.append(t_["alan"])
+    return " · ".join(ds[:3])
+def _bir(r):
+    t_ = sorted(r.get("top10") or [], key=lambda z: z["sira"]); return t_[0]["alan"] if t_ else None
+def _sira(v): return n(("%.1f" % v).replace(".", ",")) if v is not None else n("-")
+def _kw_tablo(lst):
+    rows_ = []
+    for r in sorted(lst, key=lambda z: -(z["hacim"] or 0)):
+        g = r.get("gsc")
+        rows_.append([kw(r["kelime"]), TA(r["tema"]), cell(r["hacim"]), n(str(r["vitra_sira"]) if r.get("vitra_sira") else "-"),
+                      _sira(g["sira"]) if g else n("-"), cell(g["tik"]) if g else n("-"), veri_m(_ilk3(r) or "-")])
+    return tablo([th("Arama kelimesi", "Search keyword", "Arama kelimesi.", "Search keyword."), th("Tema", "Theme", "Kelimenin ait olduğu kategori ya da tema.", "Category or theme of the keyword."),
+                  th("Aylık hacim", "Monthly volume", "Google Keyword Planner, Eylül 2025 - Ağustos 2026 aylık ortalama arama hacmi.", "Google Keyword Planner, average monthly search volume, September 2025 - August 2026.", True),
+                  th("VitrA sırası (SERP)", "VitrA position (SERP)", "%s Google TR mobil gözlemde vitra.com.tr'nin sırası; \"-\" ilk 20'de yok." % _tr(S.TARIH), "Position of vitra.com.tr in the Google TR mobile observation of %s; \"-\" not in the top 20." % _tr(S.TARIH), True),
+                  th("Search Console ort. sıra", "Search Console avg. position", "1 Tem - 30 Eyl 2026 ortalama sıra, tüm cihazlar; \"-\" gösterim yok.", "Average position 1 Jul - 30 Sep 2026, all devices; \"-\" no impressions.", True),
+                  th("Search Console click", "Search Console clicks", "Aynı dönemde bu kelimeden vitra.com.tr'ye gelen click.", "Clicks from this keyword to vitra.com.tr in the same period.", True),
+                  th("İlk 3 alan adı", "Top 3 domains", "SERP gözleminde ilk üç organik sonucun alan adı.", "Domains of the first three organic results in the SERP observation.")], rows_, "uzun")
+def _tr(t): y, m, d = t.split("-"); return "%s.%s.%s" % (d, m, y)
+_DIALAR = []
+def _pop_kw(lst, tr_, en_, ikon=True, etk_tr=None, etk_en=None):
+    b_, d_ = pop(tr_, en_, _kw_tablo(lst), etk_tr, etk_en, ikon=ikon); _DIALAR.append(d_); return b_
+# ---------------------------------------------------------------- A: kategori tablosu
+A = S.SK; ATEMA = [t for t, _ in _col.Counter(r["tema"] for r in A).most_common()]
+ATEMA.sort(key=lambda t: -sum(r["hacim"] for r in A if r["tema"] == t))
+KAT = []
+for t in ATEMA:
+    L = [r for r in A if r["tema"] == t]; v = S.vitra(L)
+    bir = _col.Counter(_bir(r) for r in L if _bir(r)).most_common(1)
+    KAT.append((t, L, v, bir[0] if bir else ("-", 0)))
+T_KAT = tablo([th("Kategori", "Category", "VitrA kategori ağacındaki ana kategori; ok simgesi kategorideki kelimeleri ve metriklerini açar.", "Main category in VitrA's category tree; the arrow opens the category's keywords and metrics."),
+               th("Kelime", "Keywords", "Kategoriden seçilen kelime sayısı; her alt kategoriden en az bir baş kelime alınmıştır.", "Keywords chosen from the category; at least one head keyword was taken from each subcategory.", True),
+               th("Aylık hacim", "Monthly volume", "Kelimelerin toplam aylık ortalama arama hacmi, Keyword Planner, Eyl 2025 - Ağu 2026.", "Total average monthly search volume of the keywords, Keyword Planner, Sep 2025 - Aug 2026.", True),
+               th("VitrA ilk 3", "VitrA top 3", "vitra.com.tr'nin ilk 3'te olduğu kelime sayısı.", "Keywords where vitra.com.tr is in the top 3.", True),
+               th("VitrA ilk 10", "VitrA top 10", "vitra.com.tr'nin ilk 10'da olduğu kelime sayısı.", "Keywords where vitra.com.tr is in the top 10.", True),
+               th("Hacim ağırlıklı ilk 10 payı", "Volume-weighted top-10 share", "VitrA'nın ilk 10'da olduğu kelimelerin kategori arama hacmi içindeki payı; büyük kelimelerdeki görünürlüğü öne çıkarır.", "Share of the category's search volume coming from keywords where VitrA is in the top 10; highlights visibility in large keywords.", True),
+               th("Search Console ilk 10", "Search Console top 10", "Search Console'da 1 Tem - 30 Eyl 2026 ortalama sırası 10 ve altında olan kelime sayısı.", "Keywords with an average Search Console position of 10 or better, 1 Jul - 30 Sep 2026.", True),
+               th("1. sırada en sık", "Most often in 1st place", "Kategorideki kelimelerde 1. sırada en sık görülen alan adı ve kelime sayısı.", "Domain most often in 1st place in the category's keywords, and its keyword count.")],
+              [[TA(t) + _pop_kw(L, "%s: kelimeler ve metrikler" % t, "%s: keywords and metrics" % TEMA_EN.get(t, t)), cell(len(L)), cellk(sum(r["hacim"] for r in L)), cell(v["ilk3"]), cell(v["ilk10"]),
+                n(yzd(v["hacim10"], 0)), cell(v["gsc10"]), veri_m("%s (%d)" % b)] for t, L, v, b in KAT])
+_kg = [(t, v) for t, L, v, b in KAT if t not in ("Soru ve karar", "Hizmet ve ilham") and len(L) >= 4]
+_iyi = sorted(_kg, key=lambda i: -i[1]["hacim10"])[:3]; _zay = sorted(_kg, key=lambda i: i[1]["hacim10"])[:3]
+# ---------------------------------------------------------------- A: alan adlari
+DOM = []
+for a_, _ in S.D10.most_common(15):
+    tm = S.TEMA_D[a_].most_common(3)
+    DOM.append((a_, S.D10[a_], S.D3[a_], S.D1[a_], f1(S.ort_sira(a_)), ", ".join("%s %d" % (t_, c_) for t_, c_ in tm), ", ".join("%s %d" % (TEMA_EN.get(t_, t_), c_) for t_, c_ in tm)))
+T_DOM = tablo([th("Alan adı", "Domain", "VitrA gamındaki aramalarda Google TR mobil ilk 10 organik sonuçta görünen alan adı.", "Domain appearing in Google TR mobile top 10 organic results for searches in VitrA's range."),
+               th("İlk 10 (kelime)", "Top 10 (keywords)", "%d kelimeden kaçında ilk 10'da." % S.N, "In how many of %d keywords it is in the top 10." % S.N, True),
+               th("İlk 3 (kelime)", "Top 3 (keywords)", "Kaç kelimede ilk 3'te.", "In how many keywords it is in the top 3.", True),
+               th("1. sıra", "1st place", "Kaç kelimede 1. sırada.", "In how many keywords it is in 1st place.", True),
+               th("Ort. sıra", "Avg. position", "Görüldüğü kelimelerdeki en iyi sıranın ortalaması.", "Average of the best position in the keywords where it appears.", True),
+               th("En çok görüldüğü kategoriler", "Categories where seen most", "İlk 10'da en çok görüldüğü üç kategori ve kelime sayısı.", "The three categories where it is most often in the top 10, with keyword counts.")],
+              [[veri_m(a), cell(b), cell(c), cell(d), n(e), x(f, g)] for a, b, c, d, e, f, g in DOM])
+_T3, _P3 = S.ILK3["yuva"], S.ILK3["pz"]
+# ---------------------------------------------------------------- A: VitrA'nin ilk 20'de olmadigi kelimeler
+BOS = sorted([r for r in A if not r.get("vitra_sira")], key=lambda r: -r["hacim"])
+T_BOS = tablo([th("Arama kelimesi", "Search keyword", "VitrA gamındaki, %s gözleminde vitra.com.tr'nin ilk 20'de görünmediği kelime." % _tr(S.TARIH), "Keyword in VitrA's range where vitra.com.tr did not appear in the top 20 in the observation of %s." % _tr(S.TARIH)),
+               th("Kategori", "Category", "Kelimenin kategorisi.", "Category of the keyword."),
+               th("Aylık hacim", "Monthly volume", "Keyword Planner, Eyl 2025 - Ağu 2026 aylık ortalama.", "Keyword Planner, monthly average Sep 2025 - Aug 2026.", True),
+               th("Search Console ort. sıra", "Search Console avg. position", "vitra.com.tr'nin bu sorgudaki 1 Tem - 30 Eyl 2026 ortalama sırası (tüm cihazlar); \"-\" sorgu raporda yok.", "vitra.com.tr average position for this query, 1 Jul - 30 Sep 2026 (all devices); \"-\" query not in the report.", True),
+               th("Search Console click", "Search Console clicks", "Aynı dönemde bu sorgudan gelen click.", "Clicks from this query in the same period.", True),
+               th("İlk 3 alan adı", "Top 3 domains", "Mobil gözlemde ilk üç organik sonucun alan adı.", "Domains of the first three organic results in the mobile observation.")],
+              [[kw(r["kelime"]), TA(r["tema"]), cell(r["hacim"]), _sira(r["gsc"]["sira"]) if r.get("gsc") else n("-"), cell(r["gsc"]["tik"]) if r.get("gsc") else n("-"), veri_m(_ilk3(r) or "-")] for r in BOS[:25]], "uzun")
+_BOS_GSC = [r for r in BOS if r.get("gsc") and r["gsc"]["sira"] <= 10]
+# ---------------------------------------------------------------- B: yakin kategori firsatlari
+B = S.GRUP["B"]
+BT = []
+for t in sorted({r["tema"] for r in B}, key=lambda t: -sum(r["hacim"] for r in B if r["tema"] == t)):
+    L = [r for r in B if r["tema"] == t]; slot = [z for r in L for z in r["top10"]]
+    pz = 100 * sum(1 for z in slot if z["alan"] in S.PZ) / (len(slot) or 1)
+    rh = 100 * sum(1 for z in slot if z["tip"] in ("blog/rehber", "video", "sosyal/görsel", "forum/şikayet")) / (len(slot) or 1)
+    bir = _col.Counter(_bir(r) for r in L if _bir(r)).most_common(1)
+    BT.append((t, L, pz, rh, bir[0] if bir else ("-", 0), sum(1 for r in L if r.get("vitra_sira")), sum(1 for r in L if r.get("ai_ilk_cekim"))))
+T_B = tablo([th("Tema", "Theme", "VitrA gamında bulunmayan ya da kısmen bulunan, banyo yenilemede birlikte aranan ürün ve hizmet teması; ok simgesi kelimeleri açar.", "Product or service theme searched together with bathroom renovation that VitrA does not carry or carries only partly; the arrow opens the keywords."),
+             th("Kelime", "Keywords", "Temadan seçilen kelime sayısı.", "Keywords chosen from the theme.", True),
+             th("Aylık hacim", "Monthly volume", "Kelimelerin toplam aylık ortalama arama hacmi, Keyword Planner.", "Total average monthly search volume of the keywords, Keyword Planner.", True),
+             th("İlk 10'da pazaryeri payı", "Marketplace share of top 10", "İlk 10 organik sonucun pazaryeri, yapı market ve fiyat karşılaştırma sitelerine ait payı.", "Share of top-10 organic results held by marketplaces, DIY retailers and price comparison sites.", True),
+             th("İlk 10'da içerik payı", "Content share of top 10", "İlk 10 sonucun rehber, video, sosyal ve forum sayfalarına ait payı; bilgi arayan kullanıcıyı gösterir.", "Share of top-10 results held by guide, video, social and forum pages; indicates users looking for information.", True),
+             th("1. sırada en sık", "Most often in 1st place", "Temadaki kelimelerde 1. sırada en sık görülen alan adı.", "Domain most often in 1st place in the theme's keywords."),
+             th("VitrA ilk 20'de", "VitrA in top 20", "vitra.com.tr'nin ilk 20'de göründüğü kelime sayısı.", "Keywords where vitra.com.tr appears in the top 20.", True),
+             th("AI Overview", "AI Overview", "AI Overview çıkan kelime sayısı.", "Keywords with an AI Overview.", True)],
+            [[TA(t) + _pop_kw(L, "%s: kelimeler" % t, "%s: keywords" % TEMA_EN.get(t, t)), cell(len(L)), cellk(sum(r["hacim"] for r in L)), n(yzd(pz, 0)), n(yzd(rh, 0)), veri_m("%s (%d)" % b), cell(v), cell(ai)]
+             for t, L, pz, rh, b, v, ai in BT])
+_Bh = sum(r["hacim"] for r in B); _Bpz = 100 * sum(1 for r in B for z in r["top10"] if z["alan"] in S.PZ) / (sum(len(r["top10"]) for r in B) or 1)
+_Bv = sum(1 for r in B if r.get("vitra_sira"))
+# ---------------------------------------------------------------- C: marka ve karsilastirma
+C = S.GRUP["C"]
+SITE = {"VitrA": "vitra.com.tr", "Artema": "artema.com.tr", "E.C.A.": "eca.com.tr", "Kale": "kale.com.tr", "Serel": "serel.com.tr", "Creavit": "creavit.com.tr", "Visam": "visam.com.tr",
+        "Turkuaz": "turkuazseramik.com", "Grohe": "grohe.com.tr", "Geberit": "geberit.com.tr", "Bien": "bien.com.tr", "Orka": "orkabanyo.com", "Bocchi": "bocchi.com.tr", "Duravit": "duravit.com.tr"}
+def _kendi(r, m):
+    s_ = SITE.get(m); b_ = _bir(r) or ""
+    return bool(s_) and (b_ == s_ or b_.endswith("." + s_) or (m == "Creavit" and "creavit" in b_) or (m == "Grohe" and "grohe" in b_) or (m == "Turkuaz" and "turkuaz" in b_) or (m == "Orka" and "orka" in b_))
+CT = []
+for alt in ["VitrA", "Artema"] + [m for m in SITE if m not in ("VitrA", "Artema")] + ["IKEA", "Koçtaş", None]:
+    L = [r for r in C if r.get("alt") == alt] if alt else [r for r in C if r["tema"] == "Karşılaştırma ve marka seçimi"]
+    if not L: continue
+    ad_ = alt or "Karşılaştırma ve marka seçimi"
+    bir = _col.Counter(_bir(r) for r in L if _bir(r)).most_common(1)
+    CT.append((ad_, L, sum(1 for r in L if _kendi(r, alt)) if alt in SITE else None, sum(1 for r in L if (r.get("vitra_sira") or 99) <= 10), bir[0] if bir else ("-", 0), sum(1 for r in L if r.get("ai_ilk_cekim"))))
+T_C = tablo([th("Marka / arama türü", "Brand / search type", "Aramada geçen marka ya da karşılaştırma araması; ok simgesi kelimeleri açar.", "Brand in the search or comparison search; the arrow opens the keywords."),
+             th("Kelime", "Keywords", "Kelime sayısı.", "Number of keywords.", True),
+             th("Aylık hacim", "Monthly volume", "Toplam aylık ortalama arama hacmi, Keyword Planner.", "Total average monthly search volume, Keyword Planner.", True),
+             th("Markanın sitesi 1. sırada", "Brand's own site in 1st place", "Markanın kendi sitesinin 1. sırada olduğu kelime sayısı.", "Keywords where the brand's own site is in 1st place.", True),
+             th("vitra.com.tr ilk 10'da", "vitra.com.tr in top 10", "vitra.com.tr'nin ilk 10'da olduğu kelime sayısı.", "Keywords where vitra.com.tr is in the top 10.", True),
+             th("1. sırada en sık", "Most often in 1st place", "Bu aramalarda 1. sırada en sık görülen alan adı.", "Domain most often in 1st place in these searches."),
+             th("AI Overview", "AI Overview", "AI Overview çıkan kelime sayısı.", "Keywords with an AI Overview.", True)],
+            [[x(a, TEMA_EN.get(a, a)) + _pop_kw(L, "%s: kelimeler" % a, "%s: keywords" % TEMA_EN.get(a, a)), cell(len(L)), cellk(sum(r["hacim"] for r in L)), cell(k_) if k_ is not None else n("-"), cell(v), veri_m("%s (%d)" % b), cell(ai)]
+             for a, L, k_, v, b, ai in CT])
+_CV = [r for r in C if r.get("alt") == "VitrA"]; _CVk = sum(1 for r in _CV if _kendi(r, "VitrA"))
+_CVar = _col.Counter(_bir(r) for r in _CV if not _kendi(r, "VitrA"))
+_CR = [r for r in C if r["tema"] == "Rakip marka"]; _CRv = sum(1 for r in _CR if (r.get("vitra_sira") or 99) <= 10); _CRk = sum(1 for r in _CR if _kendi(r, r["alt"]))
+_CK = [r for r in C if r["tema"] == "Karşılaştırma ve marka seçimi"]; _CKv = sum(1 for r in _CK if (r.get("vitra_sira") or 99) <= 10)
+_CKt = _col.Counter(z["tip"] for r in _CK for z in r["top10"]); _CKtt = sum(_CKt.values()) or 1
+# ---------------------------------------------------------------- SERP ozellikleri (gruplara gore)
+def _oz(k_, tr_, en_):
+    hs = []
+    for g in "ABC":
+        L = S.GRUP[g]; n_, _ = S.ozellik(k_, L); hs.append("%d (%s)" % (n_, yzd(100 * n_ / len(L), 0)))
+    tn, _ = S.ozellik(k_, S.TUM)
+    return [x(tr_, en_), n(hs[0]), n(hs[1]), n(hs[2]), n("%d (%s)" % (tn, yzd(100 * tn / S.NT, 0)))]
+T_OZ = tablo([th("SERP özelliği", "SERP feature", "Arama sonuç sayfasında organik sonuç dışındaki blok.", "Block on the results page other than organic results."),
+              th("A · VitrA gamı", "A · VitrA range", "%d kelimeden kaçında görüldüğü." % len(S.GRUP["A"]), "In how many of %d keywords it appeared." % len(S.GRUP["A"]), True),
+              th("B · Yakın kategoriler", "B · Adjacent categories", "%d kelimeden kaçında görüldüğü." % len(S.GRUP["B"]), "In how many of %d keywords it appeared." % len(S.GRUP["B"]), True),
+              th("C · Marka ve karşılaştırma", "C · Brand and comparison", "%d kelimeden kaçında görüldüğü." % len(S.GRUP["C"]), "In how many of %d keywords it appeared." % len(S.GRUP["C"]), True),
+              th("Toplam", "Total", "%d kelimenin tamamında." % S.NT, "Across all %d keywords." % S.NT, True)],
+             [_oz("ai", "AI Overview", "AI Overview"), _oz("paa", "People Also Ask", "People Also Ask"), _oz("video", "Video / Shorts", "Video / Shorts"),
+              _oz("yerel", "Yerel sonuçlar (Local pack)", "Local results (Local pack)"), _oz("ilan", "İlan ve hizmet platformları", "Listing and service platforms")])
+_AIG = {g: S.ai_grup(g) for g in "ABC"}
+_AIV = [r for r in S.TUM if r["kelime"] in S.AI_VITRA]
+_AI1 = sum(1 for r in _AIV if r.get("vitra_sira") == 1)
+AI = sorted(S.AI_ALAN.items(), key=lambda t_: (-t_[1], t_[0]))[:12]
+RANK_AI = rank_list([(veri_m(a), b) for a, b in AI], max(b_ for _, b_ in AI), you=lambda e: "vitra" in e, fmt=lambda v: bin(v))
+PAA = [("Fiyat", "Price", ["Klozet yaptırmak kaç TL?", "Klozet iç takım değişimi ne kadar?", "Banyo dolabı fiyatları ne kadar?", "Bir banyo tadilatı ne kadara mal olur?", "Arıtma taktırmak kaç TL?"]),
+       ("Ölçü ve seçim", "Size and selection", ["Klozet kapakları standart mı?", "Banyo dolabı yüksekliği kaç santim olmalı?", "Kanallı klozet mi iyi kanalsız mı?", "Gömme rezervuar mantıklı mı?", "MDF banyo dolabı suya dayanıklı mı?"]),
+       ("Montaj ve tamir", "Installation and repair", ["Klozet montajı kaç TL?", "Klozet değişimini kim yapar?", "Klozet suyu neden durmuyor?", "Taharet musluğu değişimi kaç TL?", "Banyo fayansları kırılmadan nasıl yenilenir?"]),
+       ("VitrA ve marka", "VitrA and brand", ["VitrA iyi marka mı?", "VitrA ve Artema aynı marka mı?", "VitrA gömme rezervuar neden su doldurmuyor?", "Bataryada E.C.A. mı Artema mı?", "Artema hangi ülkenin markası?"])]
+PAA_H = '<div class="fnotes">%s</div>' % "".join('<article class="fnote"><span class="fc">%s</span><ul>%s</ul></article>' % (x(a, b), "".join("<li>%s</li>" % veri_m(q) for q in qs)) for a, b, qs in PAA)
+_vs = sorted(_AIV, key=lambda r: -r["hacim"])[:8]
+HTML = """
+<p class="lede">%s</p>
+<div class="kpis">%s%s%s%s</div>
+<h3>%s</h3>
+<p class="popl">%s</p>
+%s
+%s
+<h3>%s</h3>
+%s
+%s
+<h3>%s</h3>
+%s
+%s
+<h3>%s</h3>
+%s
+%s
+<h3>%s</h3>
+%s
+%s
+<h3>%s</h3>
+%s
+%s
+<h3>%s</h3>
+%s
+%s
+<h3>%s</h3>
+%s
+%s
+%s
+""" % (
+ x("Bu bölüm, kullanıcının Google'da bir banyo ürününü aradığında kime gittiğini ve VitrA'nın bu ilk temasta nerede durduğunu göstermektedir. %s tarihinde Google Türkiye mobil sonuçlarında %d kelimenin ilk 20 organik sonucu ve SERP özellikleri incelenmiştir. Kelimeler üç grupta toplanmıştır: **A · VitrA gamı** (%d kelime; VitrA'nın sattığı 53 alt kategorinin her birinden en az bir baş kelime, büyük kategorilerde birkaç kelime, karo sınırlı tutulmuştur), **B · yakın kategori fırsatları** (%d kelime; VitrA'nın satmadığı ya da kısmen sattığı, banyo yenilemede birlikte aranan ürünler) ve **C · marka ve karşılaştırma** (%d kelime; VitrA, Artema, en çok aranan rakip markalar ve \"vitra mı eca mı\" gibi karşılaştırma aramaları). Bölümün göstergeleri A grubundan hesaplanmıştır; Google Keyword Planner'da arama hacmi olmayan kelimeler alınmamıştır." % (_tr(S.TARIH), S.NT, len(S.GRUP["A"]), len(S.GRUP["B"]), len(S.GRUP["C"])),
+   "This section shows who users go to when they search for a bathroom product on Google and where VitrA stands at this first touchpoint. On %s, the top 20 organic results and SERP features of Google Turkey mobile results were examined for %d keywords. The keywords are grouped into three: **A · VitrA range** (%d keywords; at least one head keyword from each of the 53 subcategories VitrA sells, several in large categories, with tiles kept limited), **B · adjacent category opportunities** (%d keywords; products searched together with bathroom renovation that VitrA does not sell or sells only partly) and **C · brand and comparison** (%d keywords; VitrA, Artema, the most searched competitor brands and comparison searches such as \"vitra mı eca mı\"). The section's indicators are calculated from group A; keywords with no search volume in Google Keyword Planner were not included." % (_tr(S.TARIH), S.NT, len(S.GRUP["A"]), len(S.GRUP["B"]), len(S.GRUP["C"]))),
+ kpi_kart(yzd(S.VITRA["hacim10"], 0), "VitrA gamındaki arama hacminin VitrA'nın ilk 10'da olduğu kelimelerden gelen payı · %d / %d kelimede ilk 10" % (S.VITRA["ilk10"], S.N), "Share of search volume in VitrA's range from keywords where VitrA is in the top 10 · top 10 in %d / %d keywords" % (S.VITRA["ilk10"], S.N), "hi"),
+ kpi_kart(yzd(100 * S.D10["trendyol.com"] / S.N, 0), "Trendyol'un ilk 10'da olduğu kelime payı (A) · %d kelimede 1. sıra" % S.D1["trendyol.com"], "Share of keywords with Trendyol in the top 10 (A) · first place in %d keywords" % S.D1["trendyol.com"]),
+ kpi_kart(yzd(100 * _P3 / _T3, 0), "Pazaryeri, yapı market ve fiyat karşılaştırma sitelerinin ilk 3 sıralardaki payı (A, %d yuvanın %s)" % (_T3, ek(_P3, "i")), "Share of top-3 slots held by marketplaces, DIY retailers and price comparison sites (A, %d of %d slots)" % (_P3, _T3)),
+ kpi_kart("%d / %d" % (len(S.AI_VITRA), len(S.AI_ICERIK)), "VitrA'nın kaynak gösterildiği AI Overview (içeriği alınan %d blok, üç grup)" % len(S.AI_ICERIK), "AI Overviews citing VitrA (of %d blocks with content, all three groups)" % len(S.AI_ICERIK)),
+ x("A · VitrA gamı: kategori bazında VitrA nerede?", "A · VitrA range: where is VitrA by category?"), _pop_kw(A, "A grubu: %d kelime" % S.N, "Group A: %d keywords" % S.N, False, "%d kelimeyi gör" % S.N, "See the %d keywords" % S.N),
+ T_KAT,
+ insight(("**VitrA kendi gamındaki aramaların hacim ağırlıklı %s ilk 10'da yer almaktadır**: %d kelimenin %s ilk 10'da, %s ilk 3'te ve %s 1. sıradadır. En güçlü olduğu kategoriler %s, en sınırlı kaldığı kategoriler %s. Search Console ortalamasına göre VitrA %d kelimede ilk 10'dadır; tek günlük gözlem ile ortalama sıra arasındaki fark, gün içi değişimden ve kişiselleştirmeden kaynaklanabilir.")
+         % (yzd(S.VITRA["hacim10"], 0) + "'" + ek(round(S.VITRA["hacim10"]), "i").split("'")[1], S.N, ek(S.VITRA["ilk10"], "inde"), ek(S.VITRA["ilk3"], "inde"), ek(S.VITRA["bir"], "inde"),
+            ", ".join("%s (%s)" % (t.lower() if t != "Banyo Mobilyaları" else "banyo mobilyası", yzd(v["hacim10"], 0)) for t, v in _iyi), ", ".join("%s (%s)" % (t.lower(), yzd(v["hacim10"], 0)) for t, v in _zay) + " olarak öne çıkmaktadır", S.VITRA["gsc10"]),
+         ("**VitrA is in the top 10 for a volume-weighted %s of searches in its own range**: in the top 10 for %d of %d keywords, top 3 for %d and first for %d. Its strongest categories are %s, and the most limited are %s. By Search Console average, VitrA is in the top 10 for %d keywords; the gap between the single-day observation and the average position may come from intraday change and personalisation.")
+         % (("%.0f" % S.VITRA["hacim10"]) + "%", S.VITRA["ilk10"], S.N, S.VITRA["ilk3"], S.VITRA["bir"], ", ".join("%s (%s)" % (TEMA_EN.get(t, t).lower(), ("%.0f" % v["hacim10"]) + "%") for t, v in _iyi),
+            ", ".join("%s (%s)" % (TEMA_EN.get(t, t).lower(), ("%.0f" % v["hacim10"]) + "%") for t, v in _zay), S.VITRA["gsc10"]), "D19"),
+ x("Kim sıralanıyor?", "Who ranks?"),
+ T_DOM,
+ insight(("**VitrA gamındaki aramalarda pazaryerleri ve perakendeciler belirleyicidir**: Trendyol %d kelimenin %s ilk 10'da ve %s 1. sıradadır; Koçtaş (%d), Hepsiburada (%d), vitra.com.tr (%d) ve Akakçe (%d) onu izlemektedir. İlk 3 sıradaki %d yuvanın %s pazaryeri, yapı market ve fiyat karşılaştırma sitelerindedir. İlk 10 sonucun %s kategori, %s pazaryeri arama ve liste sayfasıdır.")
+         % (S.N, ek(S.D10["trendyol.com"], "inde"), ek(S.D1["trendyol.com"], "inde"), S.D10["koctas.com.tr"], S.D10["hepsiburada.com"], S.D10["vitra.com.tr"], S.D10["akakce.com"], _T3, yzd(100 * _P3 / _T3, 0) + "'" + ek(round(100 * _P3 / _T3), "i").split("'")[1],
+            yzd(S.TIP_PAY.get("kategori", 0), 0) + "'" + ek(round(S.TIP_PAY.get("kategori", 0)), "i").split("'")[1], yzd(S.TIP_PAY.get("pazaryeri arama/liste", 0), 0) + "'" + ek(round(S.TIP_PAY.get("pazaryeri arama/liste", 0)), "i").split("'")[1]),
+         ("**Marketplaces and retailers are decisive in searches in VitrA's range**: Trendyol is in the top 10 for %d of %d keywords and first for %d; Koçtaş (%d), Hepsiburada (%d), vitra.com.tr (%d) and Akakçe (%d) follow. %s of the %d top-3 slots are held by marketplaces, DIY retailers and price comparison sites. %s of top-10 results are category pages and %s marketplace search and listing pages.")
+         % (S.D10["trendyol.com"], S.N, S.D1["trendyol.com"], S.D10["koctas.com.tr"], S.D10["hepsiburada.com"], S.D10["vitra.com.tr"], S.D10["akakce.com"], ("%.0f" % (100 * _P3 / _T3)) + "%", _T3,
+            ("%.0f" % S.TIP_PAY.get("kategori", 0)) + "%", ("%.0f" % S.TIP_PAY.get("pazaryeri arama/liste", 0)) + "%"), "D19"),
+ x("A · VitrA'nın ilk 20'de görünmediği kelimeler", "A · Keywords where VitrA is not in the top 20"),
+ T_BOS,
+ insight(("VitrA gamındaki %d kelimenin %s vitra.com.tr ilk 20'de görünmemektedir; bunların toplam aylık hacmi %s'dir. En büyükleri %s. Bu kelimelerin %s Search Console ortalamasında VitrA ilk 10'dadır; bu kelimelerde görünürlük gün ve cihaza göre değişmektedir.")
+         % (S.N, ek(len(BOS), "inde"), k(sum(r["hacim"] for r in BOS)), ", ".join('"%s" (%s)' % (r["kelime"], k(r["hacim"])) for r in BOS[:4]), ek(len(_BOS_GSC), "inde")),
+         ("For %d of the %d keywords in VitrA's range, vitra.com.tr does not appear in the top 20; their total monthly volume is %s. The largest are %s. For %d of these keywords VitrA is in the top 10 by Search Console average; visibility in these keywords varies by day and device.")
+         % (len(BOS), S.N, k(sum(r["hacim"] for r in BOS)).replace(",", "."), ", ".join('"%s" (%s)' % (r["kelime"], k(r["hacim"]).replace(",", ".")) for r in BOS[:4]), len(_BOS_GSC)), "D19"),
+ x("B · Yakın kategori fırsatları: aramayı kim kazanıyor?", "B · Adjacent category opportunities: who wins the search?"),
+ T_B,
+ insight(("**VitrA'nın satmadığı ya da kısmen sattığı yakın kategorilerde aylık %s arama bulunmaktadır** (%d kelime); bu aramaların ilk 10 sonucunun %s pazaryeri, yapı market ve fiyat karşılaştırma sitelerindedir. vitra.com.tr bu kelimelerin %s ilk 20'de görünmektedir. Talebin en büyük olduğu temalar %s. Pazaryerinin baskın olduğu temalar kanal üzerinden, içerik payının yüksek olduğu temalar ise rehber içerikle girilebilecek alanlardır; tema bazında talep ve VitrA'ya uyum Bölüm [[b:yeni]]'de değerlendirilmiştir.")
+         % (k(_Bh), len(B), yzd(_Bpz, 0) + "'" + ek(round(_Bpz), "i").split("'")[1], ek(_Bv, "inde"), ", ".join("%s (%s)" % (t.lower(), k(sum(r["hacim"] for r in L))) for t, L, *_ in BT[:4])),
+         ("**There are %s monthly searches in adjacent categories that VitrA does not sell or sells only partly** (%d keywords); %s of the top-10 results for these searches are marketplaces, DIY retailers and price comparison sites. vitra.com.tr appears in the top 20 for %d of these keywords. The largest themes by demand are %s. Themes dominated by marketplaces can be entered through channels, while themes with a high content share are areas that can be entered with guide content; demand by theme and fit with VitrA are assessed in Section [[b:yeni]].")
+         % (k(_Bh).replace(",", "."), len(B), ("%.0f" % _Bpz) + "%", _Bv, ", ".join("%s (%s)" % (TEMA_EN.get(t, t).lower(), k(sum(r["hacim"] for r in L)).replace(",", ".")) for t, L, *_ in BT[:4])), "D19"),
+ x("C · Marka ve karşılaştırma aramaları", "C · Brand and comparison searches"),
+ T_C,
+ insight(("**VitrA adıyla yapılan %d aramanın %s vitra.com.tr 1. sıradadır**; kalanlarda 1. sırayı %s almaktadır. **Rakip marka adıyla yapılan %d aramada vitra.com.tr %d kelimede ilk 10'dadır**; rakip markanın kendi sitesi bu aramaların %s 1. sıradadır, diğerlerinde pazaryerleri öne çıkmaktadır. \"vitra mı eca mı\", \"en iyi klozet markası\" gibi %d karşılaştırma ve marka seçimi aramasında vitra.com.tr %d kelimede ilk 10'dadır; bu aramalarda ilk 10 sonucun %s rehber, forum, video ve sosyal içeriktir. Karşılaştırma sorularına markanın kendi sayfasında yanıt verilmesi, kullanıcının karar anında VitrA'nın kendi anlatımıyla karşılaşmasını destekleyebilir.")
+         % (len(_CV), ek(_CVk, "inde"), ", ".join("%s (%d)" % (a, c) for a, c in _CVar.most_common(3)) or "-", len(_CR), _CRv, ek(_CRk, "inde"), len(_CK), _CKv,
+            yzd(100 * sum(_CKt[t] for t in ("blog/rehber", "forum/şikayet", "video", "sosyal/görsel")) / _CKtt, 0) + "'" + ek(round(100 * sum(_CKt[t] for t in ("blog/rehber", "forum/şikayet", "video", "sosyal/görsel")) / _CKtt), "i").split("'")[1]),
+         ("**vitra.com.tr is first for %d of %d searches with the VitrA name**; in the rest first place goes to %s. **In %d searches with a competitor brand name, vitra.com.tr is in the top 10 for %d keywords**; the competitor's own site is first in %d of these searches, and marketplaces lead in the others. In %d comparison and brand choice searches such as \"vitra mı eca mı\" and \"en iyi klozet markası\", vitra.com.tr is in the top 10 for %d keywords; %s of the top-10 results in these searches are guide, forum, video and social content. Answering comparison questions on the brand's own pages can help users meet VitrA's own account at the moment of decision.")
+         % (_CVk, len(_CV), ", ".join("%s (%d)" % (a, c) for a, c in _CVar.most_common(3)) or "-", len(_CR), _CRv, _CRk, len(_CK), _CKv,
+            ("%.0f" % (100 * sum(_CKt[t] for t in ("blog/rehber", "forum/şikayet", "video", "sosyal/görsel")) / _CKtt)) + "%"), "D19"),
+ x("SERP özellikleri ve AI Overview", "SERP features and AI Overview"),
+ T_OZ,
+ insight(("AI Overview %d kelimenin %s çıkmıştır: A grubunda %d, B grubunda %d, C grubunda %d. İçeriği alınabilen %d bloğun %s VitrA kaynak gösterilmektedir; en büyük örnekler %s. Bu kelimelerin %s VitrA organik olarak da 1. sıradadır. Bu gözlemde organik sonuç sayfasında Shopping bloğu yer almamış, ürün listeleri organik sonuç olarak pazaryeri ve karşılaştırma sayfalarında görünmüştür; Shopping sekmesindeki ilanlar Bölüm [[b:fiyat]]'da ayrıca incelenmiştir.")
+         % (S.NT, ek(len(S.AI_GORULEN), "inde"), _AIG["A"]["gorulen"], _AIG["B"]["gorulen"], _AIG["C"]["gorulen"], len(S.AI_ICERIK), ek(len(S.AI_VITRA), "inde"), ", ".join('"%s"' % r["kelime"] for r in _vs), ek(_AI1, "inde")),
+         ("AI Overview appeared for %d of %d keywords: %d in group A, %d in group B and %d in group C. VitrA is cited in %d of the %d blocks whose content could be retrieved; the largest examples are %s. VitrA also ranks first organically for %d of these keywords. In this observation no Shopping block appeared on the organic results page, and product lists appeared as organic results on marketplace and comparison pages; listings on the Shopping tab are examined separately in Section [[b:fiyat]].")
+         % (len(S.AI_GORULEN), S.NT, _AIG["A"]["gorulen"], _AIG["B"]["gorulen"], _AIG["C"]["gorulen"], len(S.AI_VITRA), len(S.AI_ICERIK), ", ".join('"%s"' % r["kelime"] for r in _vs), _AI1), "D19"),
+ x("AI Overview'da en çok kaynak gösterilen alan adları", "Domains cited most in AI Overview"), RANK_AI,
+ box("PEOPLE ALSO ASK", "PEOPLE ALSO ASK", "<p>%s</p>" % x("%d kelimede toplam %d benzersiz soru derlenmiştir; %s fiyat, %s \"nedir / nasıl\" niyeti taşımakta, %s VitrA'yı adıyla sormaktadır." % (S.PAA_KELIME, S.PAA_OZ["soru"], ek(S.PAA_OZ["fiyat"], "i"), ek(S.PAA_OZ["bilgi"], "i"), ek(S.PAA_OZ["vitra"], "i")), "%d unique questions were returned across %d keywords; %d carry price intent, %d \"what / how\" intent, and %d ask about VitrA by name." % (S.PAA_OZ["soru"], S.PAA_KELIME, S.PAA_OZ["fiyat"], S.PAA_OZ["bilgi"], S.PAA_OZ["vitra"]))),
+ x("Kullanıcının Google'da sorduğu sorular", "Questions users ask on Google"),
+ PAA_H,
+ insight("Sorular dört ihtiyaç grubunda toplanmaktadır: işçilik dahil toplam maliyet (\"klozet yaptırmak kaç TL\", \"iç takım değişimi ne kadar\"), ölçü ve uyumluluk (\"klozet kapakları standart mı\", \"banyo dolabı yüksekliği\"), montaj ve tamir (\"klozet değişimini kim yapar\", \"klozet suyu neden durmuyor\") ve marka güveni (\"VitrA iyi marka mı\", \"VitrA ve Artema aynı marka mı\"). Bu soruların cevaplarının kategori ve ürün sayfalarında kısa soru-cevap bloklarıyla verilmesi hem organik sıralamayı hem de AI Overview'da kaynak gösterilme olasılığını destekleyebilir.",
+         "The questions fall into four need groups: total cost including labour (\"klozet yaptırmak kaç TL\" - how much to have a WC fitted, \"iç takım değişimi ne kadar\" - cost of replacing an inner mechanism), size and compatibility (\"klozet kapakları standart mı\" - are toilet seats standard, \"banyo dolabı yüksekliği\" - bathroom cabinet height), installation and repair (\"klozet değişimini kim yapar\" - who replaces a WC, \"klozet suyu neden durmuyor\" - why the WC keeps running) and brand trust (\"VitrA iyi marka mı\" - is VitrA a good brand, \"VitrA ve Artema aynı marka mı\" - are VitrA and Artema the same brand). Answering these questions with short Q&A blocks on category and product pages can support both organic rankings and the likelihood of being cited in AI Overview.", "D19"),
+ kaynak("Google TR mobil sonuç sayfası · %d kelime (A %d · B %d · C %d) · ilk 20 organik sonuç · %s · Search Console sc-domain:vitra.com.tr, 1 Tem - 30 Eyl 2026 · hacim Keyword Planner, Eyl 2025 - Ağu 2026" % (S.NT, len(S.GRUP["A"]), len(S.GRUP["B"]), len(S.GRUP["C"]), _tr(S.TARIH)),
+        "Google TR mobile results page · %d keywords (A %d · B %d · C %d) · top 20 organic results · %s · Search Console sc-domain:vitra.com.tr, 1 Jul - 30 Sep 2026 · volume Keyword Planner, Sep 2025 - Aug 2026" % (S.NT, len(S.GRUP["A"]), len(S.GRUP["B"]), len(S.GRUP["C"]), _tr(S.TARIH)), "D19", "D12", "D2"),
+) + "".join(_DIALAR)

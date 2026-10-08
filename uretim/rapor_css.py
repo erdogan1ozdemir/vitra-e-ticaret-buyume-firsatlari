@@ -413,8 +413,8 @@ th[data-t] span.q{border-bottom:1px dotted rgba(255,255,255,.55);padding-bottom:
 #ozet .ozac-t{font:inherit;font-size:11.5px;color:var(--ink-2);background:transparent;border:1px solid var(--line);border-radius:6px;padding:3px 10px;cursor:pointer;letter-spacing:0;text-transform:none}
 #ozet .ozac-t:hover,#ozet .ozac-t:focus-visible{color:var(--ink);border-color:var(--ink-2)}
 #ozet .ozbox > .ozac-t{position:absolute;top:13px;right:16px}
-#ozet .ozh3{display:flex;align-items:center;justify-content:space-between;gap:12px}
-#ozet .ozh3 > .ozac-t{font-weight:400;flex:0 0 auto}
+#ozet .ozbas{display:flex;align-items:center;justify-content:space-between;gap:12px}
+#ozet .ozbas > .ozac-t{flex:0 0 auto}
 @media print{
   #ozet .dty{display:inline!important}
   #ozet article.fnote .fac{display:block!important}

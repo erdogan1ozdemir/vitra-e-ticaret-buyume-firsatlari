@@ -1,0 +1,333 @@
+makro | grafik | Kart harcamaları: banyo ile ilişkili sektörler | tcmb
+makro | grafik | Tüketici eğilimi ve yenileme niyeti | tcmb
+makro | tablo | Kart harcamaları: banyo ile ilişkili sektörler | tcmb
+makro | tablo | Konut hareketliliği ve kredi koşulları | tcmb
+makro | tablo | Yıllık banyo yenileme ve yeni konut banyosu tahmini | tuik, web
+makro | tablo | Yıllık banyo yenileme ve yeni konut banyosu tahmini | tuik, web
+talep | grafik |  | kp
+talep | grafik |  | kp
+talep | grafik | Ana kategori düzeyinde değişim | kp
+talep | grafik | Kategorilerin aylık seyri | kp
+talep | grafik | Kategorilerin aylık seyri | kp
+talep | grafik | Kategorilerin aylık seyri | kp
+talep | grafik | Kategorilerin aylık seyri | kp
+talep | grafik | Kategorilerin aylık seyri | kp
+talep | grafik | Kategorilerin aylık seyri | kp
+talep | grafik | Kategorilerin aylık seyri | kp
+talep | grafik | Kategorilerin aylık seyri | kp
+talep | grafik | Kategorilerin aylık seyri | kp
+talep | grafik | Daralan alt kategoriler | kp
+talep | tablo | Ana kategori düzeyinde değişim | kp
+talep | tablo | Büyüyen alt kategoriler | kp
+talep | tablo | Daralan alt kategoriler | kp
+talep | tablo | Daralan alt kategoriler | kp
+talep | tablo | Daralan alt kategoriler | kp
+talep | tablo | Daralan alt kategoriler | kp
+talep | tablo | Daralan alt kategoriler | kp
+talep | tablo | Daralan alt kategoriler | kp
+talep | tablo | Daralan alt kategoriler | kp
+talep | tablo | Daralan alt kategoriler | kp
+talep | tablo | Daralan alt kategoriler | kp
+talep | tablo | Daralan alt kategoriler | kp
+talep | tablo | Daralan alt kategoriler | kp
+talep | tablo | Daralan alt kategoriler | kp
+talep | tablo | Daralan alt kategoriler | kp
+talep | tablo | Daralan alt kategoriler | kp
+talep | tablo | Daralan alt kategoriler | kp
+talep | tablo | Daralan alt kategoriler | kp
+talep | tablo | Daralan alt kategoriler | kp
+talep | tablo | Daralan alt kategoriler | kp
+talep | tablo | Daralan alt kategoriler | kp
+talep | tablo | Daralan alt kategoriler | kp
+talep | tablo | Daralan alt kategoriler | kp
+talep | tablo | Daralan alt kategoriler | kp
+talep | tablo | Daralan alt kategoriler | kp
+talep | tablo | Daralan alt kategoriler | kp
+talep | tablo | Daralan alt kategoriler | kp
+talep | tablo | Daralan alt kategoriler | kp
+talep | tablo | Daralan alt kategoriler | kp
+talep | tablo | Daralan alt kategoriler | kp
+talep | tablo | Daralan alt kategoriler | kp
+talep | tablo | Daralan alt kategoriler | kp
+talep | tablo | Daralan alt kategoriler | kp
+talep | tablo | Daralan alt kategoriler | kp
+talep | tablo | Daralan alt kategoriler | kp
+ssgbm | grafik |  | kp
+ssgbm | grafik | SSG: ürün tipi düzeyinde değişim | kp
+ssgbm | grafik | SSG: ürün tipi düzeyinde değişim | kp
+ssgbm | grafik | BM: ürün tipi düzeyinde değişim | kp
+ssgbm | grafik | BM: ürün tipi düzeyinde değişim | kp
+ssgbm | tablo | SSG: ürün tipi düzeyinde değişim | kp
+ssgbm | tablo | BM: ürün tipi düzeyinde değişim | kp
+ssgbm | tablo | Kullanıcı hangi özellikle arıyor? SSG | kp
+ssgbm | tablo | Kullanıcı hangi özellikle arıyor? BM | kp
+ihtiyac | grafik |  | kp
+ihtiyac | tablo |  | kp
+ihtiyac | tablo | Kategori bazında ihtiyaç dağılımı | kp
+ihtiyac | tablo | Sitenin fiilen aldığı trafik: Search Console sorguları | gsc
+organik | grafik | Aylık organik performans: 2025 ve 2026 | gsc
+organik | grafik | Aylık organik performans: 2025 ve 2026 | gsc
+organik | grafik | Aylık organik performans: 2025 ve 2026 | gsc
+organik | grafik | Aylık organik performans: 2025 ve 2026 | gsc
+organik | grafik | Aylık organik performans: 2025 ve 2026 | gsc
+organik | grafik | Aylık organik performans: 2025 ve 2026 | gsc
+organik | grafik | Trafik hangi sayfa türlerine geliyor? · Oca-Eyl 2026 | gsc
+organik | grafik | Kategori bazında organik click · Oca-Eyl 2026 | gsc
+organik | grafik | Kategori bazında organik click · Oca-Eyl 2026 | gsc
+organik | grafik | Blog (İlham Veren Fikirler): aylık click, konu grupları ve yazılar | gsc
+organik | grafik | Blog (İlham Veren Fikirler): aylık click, konu grupları ve yazılar | gsc
+organik | grafik | Blog (İlham Veren Fikirler): aylık click, konu grupları ve yazılar | gsc
+organik | grafik | Blog (İlham Veren Fikirler): aylık click, konu grupları ve yazılar | gsc
+organik | grafik | Blog (İlham Veren Fikirler): aylık click, konu grupları ve yazılar | gsc
+organik | tablo | Aylık organik performans: 2025 ve 2026 | gsc
+organik | tablo | Aylık organik performans: 2025 ve 2026 | gsc
+organik | tablo | Aylık organik performans: 2025 ve 2026 | gsc
+organik | tablo | Aylık organik performans: 2025 ve 2026 | gsc
+organik | tablo | Trafik hangi sayfa türlerine geliyor? · Oca-Eyl 2026 | gsc
+organik | tablo | Kategori bazında organik click · Oca-Eyl 2026 | gsc
+organik | tablo | En çok click alan sayfalar · Oca-Eyl 2026 | gsc
+organik | tablo | Blog (İlham Veren Fikirler): aylık click, konu grupları ve yazılar | gsc
+organik | tablo | Blog (İlham Veren Fikirler): aylık click, konu grupları ve yazılar | gsc
+yapayzeka | grafik | Yapay zeka özelliklerinde gösterim: site geneli ve blog | gsc
+yapayzeka | grafik | Yapay zeka özelliklerinde gösterim: site geneli ve blog | gsc
+yapayzeka | grafik | Yapay zeka özelliklerinde gösterim alan sayfalar ve click değişimi | gsc
+yapayzeka | tablo | Yapay zeka özelliklerinde gösterim: site geneli ve blog | gsc
+yapayzeka | tablo | Sayfa türüne göre yapay zeka gösterimi | gsc
+yapayzeka | tablo | Yapay zeka özelliklerinde gösterim alan sayfalar ve click değişimi | gsc
+yapayzeka | tablo | Yapay zeka gösterim payına göre blog yazılarında click değişimi | gsc
+yapayzeka | tablo | Yapay zeka gösterim payına göre blog yazılarında click değişimi | gsc
+yapayzeka | tablo | AI Overview çıkan ve çıkmayan blog aramalarında click ve sıra | gsc, ahrefs
+yapayzeka | tablo | AI Overview çıkan ve çıkmayan blog aramalarında click ve sıra | gsc, ahrefs
+ga4 | grafik | Aylık genel görünüm: gelir, satın alma ve oturum | ga4
+ga4 | grafik | Aylık genel görünüm: gelir, satın alma ve oturum | ga4
+ga4 | grafik | Satın alma hunisi: ürün listesinden satın almaya | ga4
+ga4 | grafik | Kanal performansı: oturum, satın alma ve gelir | ga4
+ga4 | grafik | Kanal performansı: oturum, satın alma ve gelir | ga4
+ga4 | grafik | Giriş sayfası (landing page) türüne göre gelir | ga4
+ga4 | tablo | Aylık genel görünüm: gelir, satın alma ve oturum | ga4
+ga4 | tablo | Aylık genel görünüm: gelir, satın alma ve oturum | ga4
+ga4 | tablo | Aylık genel görünüm: gelir, satın alma ve oturum | ga4
+ga4 | tablo | Aylık genel görünüm: gelir, satın alma ve oturum | ga4
+ga4 | tablo | Satın alma hunisi: ürün listesinden satın almaya | ga4
+ga4 | tablo | Kanal performansı: oturum, satın alma ve gelir | ga4
+ga4 | tablo | Kanal performansı: oturum, satın alma ve gelir | ga4
+ga4 | tablo | Giriş sayfası (landing page) türüne göre gelir | ga4
+ga4 | tablo | Giriş sayfası (landing page) türüne göre gelir | ga4
+ga4 | tablo | Giriş sayfası (landing page) türüne göre gelir | ga4
+ga4 | tablo | Giriş sayfası (landing page) türüne göre gelir | ga4
+ga4 | tablo | Giriş sayfası (landing page) türüne göre gelir | ga4
+ga4 | tablo | Giriş sayfası (landing page) türüne göre gelir | ga4
+ga4 | tablo | Ürün ve kategori performansı | ga4
+ga4 | tablo | Ürün ve kategori performansı | ga4
+ga4 | tablo | Ürün ve kategori performansı | ga4
+ga4 | tablo | Ürün ve kategori performansı | ga4
+ga4 | tablo | Site içi arama terimleri | ga4
+ga4 | tablo | Site içi arama terimleri | ga4
+ga4 | tablo | Ödeme ve teslimat adımı | ga4
+ga4 | tablo | Ödeme ve teslimat adımı | ga4
+ga4 | tablo | Satın alma dışı talep olayları | ga4
+ga4 | tablo | Blog ve koleksiyon sayfaları: görüntüleme ve ürüne geçiş | ga4, gsc
+ga4 | tablo | Blog ve koleksiyon sayfaları: görüntüleme ve ürüne geçiş | ga4, gsc
+ga4 | tablo | Blog ve koleksiyon sayfaları: görüntüleme ve ürüne geçiş | ga4, gsc
+ga4 | tablo | Blog ve koleksiyon sayfaları: görüntüleme ve ürüne geçiş | ga4, gsc
+ga4 | tablo | Blog ve koleksiyon sayfaları: görüntüleme ve ürüne geçiş | ga4, gsc
+ga4 | tablo | Promosyon ve kupon | ga4
+marka | grafik | "vitra" + kategori aramaları: yıllar ve kategoriler | kp
+marka | grafik | "vitra" + kategori aramaları: yıllar ve kategoriler | kp
+marka | grafik | Autocomplete önerilerinin tema oranı | google
+marka | tablo | Marka adıyla yapılan aramalar: üreticiler ve perakendeciler | kp
+marka | tablo | Marka adıyla yapılan aramalar: üreticiler ve perakendeciler | kp
+marka | tablo | Marka + kategori aramaları: markaların kategori bazında aranma hacmi | kp
+marka | tablo | Marka + kategori aramaları: markaların kategori bazında aranma hacmi | kp
+marka | tablo | Marka + kategori aramaları: markaların kategori bazında aranma hacmi | kp
+marka | tablo | "vitra" + kategori aramaları: yıllar ve kategoriler | kp
+marka | tablo | "vitra" ile birlikte aranan ifadeler: ihtiyaç sınıfları | kp
+marka | tablo | "vitra" ile başlayan aramalar | kp, google
+marka | tablo | Kategori ve rakip marka aramaları | kp, google
+marka | tablo | Autocomplete önerilerinin tema oranı | google
+marka | tablo | En çok tık getiren sorgular · Search Console | gsc
+marka | tablo | En çok tık getiren sorgular · Search Console | gsc
+serp | tablo | A · VitrA gamı: kategori bazında VitrA nerede? | kp, gsc, google, seomonitor
+serp | tablo | A · Kim sıralanıyor? | google, seomonitor
+serp | tablo | A · VitrA'nın ilk 20'de görünmediği kelimeler | kp, gsc, google, seomonitor
+serp | tablo | B · Yakın kategori fırsatları: aramayı kim kazanıyor? | kp, google
+serp | tablo | C · Marka ve karşılaştırma aramaları | kp, google
+serp | tablo | SERP özellikleri ve AI Overview | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+serp | tablo | Kullanıcının Google'da sorduğu sorular | google
+youtube | tablo |  | youtube
+youtube | tablo | Kimler görünür? | youtube
+youtube | tablo | Macit Tesisat örneği | youtube, kp
+youtube | tablo | Genişletilmiş tarama: 68 arama, altı niyet grubu | youtube
+youtube | tablo | Kanal türleri | youtube
+youtube | tablo | Yorumlarda öne çıkan konular | youtube
+youtube | tablo | Video fırsatları | youtube
+sikayet | grafik | Aylık şikayet serisi | sikayetvar
+sikayet | grafik | Aylık şikayet serisi | sikayetvar
+sikayet | tablo | Marka sayfası göstergeleri ve rakipler | sikayetvar
+sikayet | tablo | Şikayet temaları ve örnek alıntılar | sikayetvar
+sikayet | tablo | Altı aylık dönemlerde tema geçişi | sikayetvar
+sikayet | tablo | Satın alma kanalı | sikayetvar
+sikayet | tablo | Yedek parça: hangi parçalar? | sikayetvar
+sikayet | tablo | Ücret, garanti ve güven ifadeleri | sikayetvar
+katalog | tablo |  | vitra, kp
+katalog | tablo | Pazaryerindeki görünüm: Trendyol | trendyol
+yeni | tablo |  | kp, vitra, web
+set | tablo | VitrA'nın mevcut hizmet kalemleri | vitra
+set | tablo | Rakip ve benzer modeller | web
+set | tablo | Rakip ve benzer modeller | web
+rakip | grafik | Google'da click payı: vitra.com.tr ve rakipler | seomonitor
+rakip | grafik | Google'da click payı: vitra.com.tr ve rakipler | seomonitor
+rakip | grafik | Site trafiği ve kanal kırılımı | similarweb
+rakip | grafik | Site trafiği ve kanal kırılımı | similarweb
+rakip | tablo | Aynı aramalarda görünen siteler | ahrefs
+rakip | tablo | Kanal ölçeği: pazaryeri, yapı market, pure player ve marka siteleri | ahrefs, kp
+rakip | tablo | Google'da click payı: vitra.com.tr ve rakipler | seomonitor
+rakip | tablo | Site trafiği ve kanal kırılımı | similarweb
+rakip | tablo | Site trafiği ve kanal kırılımı | similarweb
+rakip | tablo | Site trafiği ve kanal kırılımı | similarweb
+rakip | tablo | Site trafiği ve kanal kırılımı | similarweb
+rakip | tablo | Site trafiği ve kanal kırılımı | similarweb
+trafik | grafik | Tema bazında VitrA ve en yüksek rakip | ahrefs
+trafik | tablo | Tema bazında VitrA ve en yüksek rakip | ahrefs
+trafik | tablo | Kategori baş kelimeleri: hacim, potansiyel ve VitrA sırası | kp, google, ahrefs, seomonitor
+trafik | tablo | Rehber içerik: rakiplerin trafik aldığı konular | ahrefs
+trafik | tablo | Marka arama talebi | kp, seomonitor
+pazaryeri | grafik | Satıcı yapısı, hizmet ve arama önerileri | hepsiburada
+pazaryeri | tablo | Banyo trafiği hangi sitelerde? | ahrefs
+pazaryeri | tablo | Alt kategori trafiği: Trendyol ve Hepsiburada | ahrefs, trendyol, hepsiburada, kp
+pazaryeri | tablo | Kategori yapısı ve VitrA'nın listeleme payı | trendyol, hepsiburada
+pazaryeri | tablo | Çok satanlarda kim önde? | trendyol, hepsiburada
+pazaryeri | tablo | Fiyat konumu | trendyol, hepsiburada
+pazaryeri | tablo | Satıcı yapısı, hizmet ve arama önerileri | trendyol, hepsiburada
+pazaryeri | tablo | Düşük fiyatlı, yüksek trafikli kategoriler | ahrefs, trendyol, hepsiburada
+derin | grafik | Hedef dışı kesitler: hacim, marka yoğunluğu ve VitrA'ya uyum | trendyol
+derin | grafik | vitra.com.tr kategori sayfaları: ürün, fiyat aralığı ve stok | vitra
+derin | tablo | Hedef kategoriler: fiyat bandı ve VitrA'nın yeri | akakce, cimri, trendyol, hepsiburada
+derin | tablo | Hedef dışı kesitler: hacim, marka yoğunluğu ve VitrA'ya uyum | trendyol, hepsiburada
+derin | tablo | En çok değerlendirilen ürünler | akakce, cimri, trendyol, hepsiburada, koctas, web
+derin | tablo | Rakip perakendeci ve marka mağazaları | koctas, web
+derin | tablo | Alt kesitler: vitra.com.tr, pazaryeri ve fiyat karşılaştırma siteleri | akakce, cimri, trendyol, hepsiburada, vitra
+derin | tablo | Alt kesitler: vitra.com.tr, pazaryeri ve fiyat karşılaştırma siteleri | akakce, cimri, trendyol, hepsiburada, vitra
+derin | tablo | Alt kesitler: vitra.com.tr, pazaryeri ve fiyat karşılaştırma siteleri | akakce, cimri, trendyol, hepsiburada, vitra
+derin | tablo | Alt kesitler: vitra.com.tr, pazaryeri ve fiyat karşılaştırma siteleri | akakce, cimri, trendyol, hepsiburada, vitra
+derin | tablo | Alt kesitler: vitra.com.tr, pazaryeri ve fiyat karşılaştırma siteleri | akakce, cimri, trendyol, hepsiburada, vitra
+derin | tablo | Alt kesitler: vitra.com.tr, pazaryeri ve fiyat karşılaştırma siteleri | akakce, cimri, trendyol, hepsiburada, vitra
+derin | tablo | Alt kesitler: vitra.com.tr, pazaryeri ve fiyat karşılaştırma siteleri | akakce, cimri, trendyol, hepsiburada, vitra
+derin | tablo | Alt kesitler: vitra.com.tr, pazaryeri ve fiyat karşılaştırma siteleri | akakce, cimri, trendyol, hepsiburada, vitra
+derin | tablo | Alt kesitler: vitra.com.tr, pazaryeri ve fiyat karşılaştırma siteleri | akakce, cimri, trendyol, hepsiburada, vitra
+derin | tablo | Alt kesitler: vitra.com.tr, pazaryeri ve fiyat karşılaştırma siteleri | akakce, cimri, trendyol, hepsiburada, vitra
+derin | tablo | vitra.com.tr kategori sayfaları: ürün, fiyat aralığı ve stok | vitra
+derin | tablo | Alt kesitlerde rakip mağazalar | koctas, web
+derin | tablo | Aynı model kodunda vitra.com.tr ve pazaryeri fiyatı | trendyol, hepsiburada, akakce, cimri, vitra
+derin | tablo | Aynı model kodunda vitra.com.tr ve pazaryeri fiyatı | trendyol, hepsiburada, akakce, cimri, vitra
+panel | grafik | Çeyreklik satış, fiyat ve karışım | trendyol
+panel | grafik | Kategori bazında adet, ciro payı ve memnuniyet | trendyol
+panel | grafik | Çok satan ürünler: adet ve ciro katkısı | trendyol, hepsiburada
+panel | grafik | Hepsiburada: son 12 ay satış ve Trendyol ile karşılaştırma | hepsiburada
+panel | tablo | Çeyreklik satış, fiyat ve karışım | trendyol
+panel | tablo | Kategori bazında adet, ciro payı ve memnuniyet | trendyol
+panel | tablo | Çok satan ürünler: adet ve ciro katkısı | trendyol
+panel | tablo | Çok satan ürünler: adet ve ciro katkısı | trendyol
+panel | tablo | Çok satan ürünler: adet ve ciro katkısı | trendyol, hepsiburada
+panel | tablo | Görüntülenmeden satışa: ürün dönüşümü | trendyol, hepsiburada
+panel | tablo | Görüntülenmeden satışa: ürün dönüşümü | trendyol, hepsiburada
+panel | tablo | Müşteri profili ve sipariş yapısı | trendyol
+panel | tablo | Trendyol'un Enleri: kategori listelerinde VitrA (Eylül 2026) | trendyol
+panel | tablo | Değerlendirmeler ve sorular: memnuniyet ve şikayet temaları | trendyol, hepsiburada
+panel | tablo | Değerlendirmeler ve sorular: memnuniyet ve şikayet temaları | trendyol, hepsiburada
+panel | tablo | Değerlendirmeler ve sorular: memnuniyet ve şikayet temaları | trendyol, hepsiburada
+panel | tablo | Hepsiburada: son 12 ay satış ve Trendyol ile karşılaştırma | trendyol, hepsiburada
+panel | tablo | Hepsiburada: son 12 ay satış ve Trendyol ile karşılaştırma | hepsiburada
+yorum | grafik | Duygu dağılımı: marka bazında | trendyol, hepsiburada
+yorum | tablo | Duygu dağılımı: marka bazında | trendyol, hepsiburada
+yorum | tablo | Pain point profili: kategori geneli mi, markaya özgü mü? | trendyol, hepsiburada
+yorum | tablo | Ürün grubu karşılaştırması | trendyol, hepsiburada
+yorum | tablo | Soru-cevap kümeleri | trendyol, hepsiburada
+fiyat | grafik | Marka payı | shopping
+fiyat | tablo | Ürün tipi ve mecra bazında fiyat bandı | shopping
+fiyat | tablo | En ucuz ve en pahalı mecra | shopping, akakce, cimri
+fiyat | tablo | VitrA ve Artema ilanlarında mecra farkı | shopping
+fiyat | tablo | Aynı ürünün satıcıları: 24 VitrA ve Artema listesi | shopping
+fiyat | tablo | Aynı ürünün satıcıları: 24 VitrA ve Artema listesi | shopping, akakce, cimri
+fiyat | tablo | Marka payı | shopping, akakce, cimri
+fiyat | tablo | VitrA sitesinin göründüğü kelimeler | shopping
+fiyat | tablo | Trendyol ve Hepsiburada çok satan listeleri: 14 kategori | trendyol, hepsiburada
+fiyat | tablo | VitrA ürünlerinde kanal fiyat farkı: 29 ürün | trendyol, hepsiburada, koctas, vitra
+fiyat | tablo | Ürün grubuna göre fark medyanı | vitra
+fiyat | tablo | Akakçe ve Cimri: 29 VitrA ürününde satıcı sayısı ve en düşük fiyat | akakce, cimri
+fiyat | tablo | Fiyat karşılaştırma sitelerinde kategori görünümü | akakce, cimri
+politika | tablo | Ödeme ve taksit koşulları | web
+politika | tablo | Kargo, teslimat, iade ve montaj | web
+politika | tablo | Garanti, yedek parça ve servis iletişimi | web
+politika | tablo | Sosyal ve keşif kanalları | google, youtube
+politika | tablo | Google Business Profile: mağaza ve servis noktaları | google
+yolculuk | grafik | Site içi arama: kullanıcının yazdığı ifadeler ne döndürüyor? | vitra, kp
+yolculuk | tablo | Yolculuk adımları: gözlem, etki ve öneri | google, vitra
+yolculuk | tablo | Site içi arama: kullanıcının yazdığı ifadeler ne döndürüyor? | vitra, kp
+yolculuk | tablo | Sepet ve ödeme: üyeliksiz alışverişte ek adımlar | vitra
+yolculuk | tablo | Dönüşüm fırsatları | vitra
+benchmark | tablo | E-ticaret modelleri | web
+benchmark | tablo | Ürün keşfi ve dijital deneyim örnekleri | web
+model | tablo | Kanal rolleri | kp, gsc, google, trendyol, vitra
+model | tablo | Hacimli ve ölçüye bağlı ürünlerde etkileşim modeli | vitra
+model | tablo | Tamamlayıcı ürün kurgusu | gsc, vitra
+geo | grafik | Sitenin hazırlığı · Search Console'da rehber sayfaları ve 21 soru sorgusu | gsc
+geo | tablo | Ölçüm setleri: dört veri seti ve örneklemleri | chatgpt, gemini, google, seomonitor, gsc
+geo | tablo | Yapay zeka yanıt takibi · 111 markasız soruda markaların anılma payı | chatgpt, gemini, google
+geo | tablo | Yapay zeka yanıt takibi · 111 markasız soruda kaynak gösterilen alan adları | chatgpt, gemini, google
+geo | tablo | Yapay zeka yanıt takibi · 29 satın alma ve montaj sorusunda VitrA ve vitra.com.tr | chatgpt, gemini, google
+geo | tablo | SEOmonitor takibi · 2.140 kelimede AI Overview ve VitrA | seomonitor
+geo | tablo | Rapor hedef kelimeleri · 322 kelimede AI Overview ve kaynak siteler | google
+geo | tablo | AI ile alışveriş | gsc, vitra
+adimlar | tablo |  | 

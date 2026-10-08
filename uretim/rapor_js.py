@@ -1022,7 +1022,7 @@ document.documentElement.classList.add('js');
   }
   var box=oz.querySelector('.box'), h3=[].slice.call(oz.querySelectorAll('h3')).find(function(h){return h.nextElementSibling && h.nextElementSibling.classList.contains('fnotes');});
   var t1=box?tumu(maddeler,function(b){ box.classList.add('ozbox'); box.appendChild(b); }):null;
-  var t2=h3?tumu(kartlar,function(b){ h3.classList.add('ozh3'); h3.appendChild(b); }):null;
+  var t2=h3?tumu(kartlar,function(b){ var w=document.createElement('div'); w.className='ozbas'; h3.parentNode.insertBefore(w,h3); w.appendChild(h3); w.appendChild(b); }):null;   /* baslik kendi genisliginde kalir (vurgu bandi uzamasin) */
   function yaz(){
     maddeler.forEach(function(li){ var b=li.querySelector('.ozac-b'); if(b) b.setAttribute('aria-label',li.classList.contains('acik')?(en()?'Hide detail':'Ayrıntıyı gizle'):(en()?'Show detail':'Ayrıntıyı göster')); });
     kartlar.forEach(function(k){ var b=k.querySelector('.fdet'), n=k.querySelectorAll('ul > li').length, ac=k.classList.contains('acik');
