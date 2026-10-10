@@ -11,15 +11,15 @@ def P(url, amac, bilgi, yontem, tarih, kod=("D23",), bolum=("politika",)):
 def doldur():
     # ------------------------------------------------------------ vitra.com.tr
     V = "https://www.vitra.com.tr"
-    P(V, "VitrA ana sayfa: şerit mesajları ve Banyo Asistanı akışı (taksit, kargo ve hizmet mesajı)",
-      "Şeritte 'tüm ürünlerde vade farksız 6 ay taksit' ve 'tüm ürünlerde ücretsiz kargo'; Banyo Asistanı (Banyomu Yenilemek İstiyorum) 4 adımlı lead akışı: telefon, mağaza veya görüntülü görüşme seçimi, slot, WhatsApp teyidi; %40'a varan indirim, 9 taksit, ücretsiz mimari projelendirme",
-      [CURL, "tarayıcı"], D29, kod=["D23", "D13"], bolum=["politika", "set", "benchmark", "organik"])
+    P(V, "VitrA ana sayfa: şerit mesajları (taksit ve kargo)",
+      "Şeritte 'tüm ürünlerde vade farksız 9 ay taksit' ve 'tüm ürünlerde ücretsiz kargo'",
+      [CURL, "tarayıcı"], "10.10.2026", kod=["D23", "D13"], bolum=["politika", "set", "benchmark", "organik"])
     P(V + "/odeme-rehberi", "VitrA ödeme yöntemleri ve taksit koşulları",
       "Yalnızca kredi kartı (iyzico altyapısı, 3D Secure); kapıda ödeme yok; havale/EFT rehberde geçmiyor; sepette kurumsal fatura bilgisi eklenebiliyor; Banyo ve Karo ürünleri taşıma koşulları nedeniyle ayrı sepette", CURL, D29)
     P(V + "/kampanyalar", "VitrA kampanya ve taksit koşulları",
       "21 Eylül - 30 Kasım 2026: seçili renkli ürünlerde %40 indirim, 9 aya varan taksit, 40.000 TL ve üzeri alışverişte ücretsiz montaj", CURL, D29)
     P(V + "/dusakabin/universal-surgulu-on-panel-mat-siyah-p-65650002270", "VitrA ürün sayfası örneği (duşakabin): taksit tablosu, kargo tarihi, montaj seçeneği ve iade ifadesi",
-      "Ürün tablosunda 12 taksite kadar seçenek (8, 9 ve 12 taksit çoğu kartta vade farklı, 2-3-4-6 taksit eşit tutar); tahmini kargoya teslim tarihi; 30 güne kadar ücretsiz iade ifadesi; montaj hizmeti seçeneği (+5.300 TL)", CURL, D29)
+      "Ürün tablosunda vade farkıyla 12 taksite kadar seçenek; tahmini kargoya teslim tarihi; 30 güne kadar ücretsiz iade ifadesi; montaj hizmeti seçeneği (+5.300 TL)", CURL, D29)
     P(V + "/teslimat-rehberi", "VitrA teslimat koşulları (kargo, büyük ürün, kat teslimi)",
       "Sipariş en fazla 3 iş günü içinde paket boyutu ve adrese göre kargo veya lojistik firmasına teslim edilir; ürün sayfasında tahmini kargoya teslim tarihi; 'kapınıza kadar' teslim, kat teslimi belirtilmemiş; ücretsiz kargo eşiksiz", CURL, D29)
     P(V + "/degisim-iade-rehberi", "VitrA değişim ve iade koşulları",

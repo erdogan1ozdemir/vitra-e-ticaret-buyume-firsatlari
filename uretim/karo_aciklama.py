@@ -225,8 +225,8 @@ _e("Gözlem anında vitra.com.tr ürün sayfasında stokta olmayan ürün", "Kar
 # --- Kanal politikaları ---
 _e("Google TR mobil sonuçlarında Shopping veya ürün bloğu çıkan kategori kelimesi", "Google Türkiye mobil arama sonuçlarında incelenen 15 kategori kelimesinden kaçında Shopping reklamı ya da ürün bloğu çıktığını gösterir (29.09.2026).",
    "In how many of the 15 category keywords reviewed in Google Türkiye mobile results a Shopping ad or product block appears (29.09.2026).")
-_e("vitra.com.tr'de taksit bilgisinin farklı biçimde yer aldığı yüzey", "vitra.com.tr'de taksit bilgisinin birbirinden farklı yazıldığı yüzey sayısıdır; parantezde her yüzeyde gösterilen taksit sayısı verilmiştir (29.09.2026).",
-   "The number of places on vitra.com.tr where instalment information is written differently; the brackets show the instalment count on each (29.09.2026).")
+_e("vitra.com.tr'de vade farksız azami taksit sayısı", "vitra.com.tr üst bandında ve kampanya görselinde gösterilen vade farksız azami taksit sayısıdır; ürün sayfasındaki taksit tablosunda vade farkıyla 12 taksite kadar seçenek bulunur (10.10.2026).",
+   "The maximum number of interest-free instalments shown in the vitra.com.tr top banner and campaign visual; the product page instalment table offers up to 12 instalments with interest (10.10.2026).")
 _e("Google Maps'te VitrA etiketli satış noktası profili", "Google Maps'te adında ya da kategorisinde VitrA geçen satış noktası ve bayi profili sayısıdır; profillerdeki toplam yorum ve ortalama puan ayrıca verilmiştir (29.09.2026).",
    "The number of shop and dealer profiles on Google Maps with VitrA in their name or category; total reviews and the average rating of these profiles are shown alongside (29.09.2026).")
 _e("VitrA Türkiye YouTube abonesi", "VitrA Türkiye YouTube kanalının abone sayısıdır; incelenen rakip marka kanallarının toplam abonesinden yüksektir (29.09.2026).",
