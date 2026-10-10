@@ -47,7 +47,7 @@ T_GR = tablo([th("İçerik grubu", "Content group", "Sayfa adresindeki konuya g�
               th("Click payı", "Click share", "Rehber içeriklerin toplam click'i içindeki pay.", "Share of the total clicks of guide content.", True),
               th("Gösterim", "Impressions", "Aynı dönemde gösterim.", "Impressions in the same period.", True),
               th("CTR", "CTR", "Tık / gösterim.", "Clicks / impressions.", True),
-              th("En çok click alan sayfa", "Page with most clicks", "Grubun en çok click alan sayfası; bağlantı canlı sayfayı açar.", "The group's page with the most clicks; the link opens the live page.")],
+              th("En çok click alan sayfa", "Page with most clicks", "Grubun en çok click alan sayfası; bağlantı web sitesindeki sayfayı açar.", "The group's page with the most clicks; the link opens the page on the website.")],
              [[x(b, c), cell(GS[a][0]), cellk(GS[a][1]), n(yzd(100 * GS[a][1] / TOP_T)), cellk(GS[a][2]), n(yzd(100 * GS[a][1] / GS[a][2])), u(ILHAM + GS[a][3][0] + ("" if GS[a][3][0].endswith("rehberi") else "/"), _baslik(GS[a][3][0])) + " (%s)" % bin(GS[a][3][1])] for a, b, c in GRUP])
 
 # ---------------------------------------------------------------- soru sorgulari

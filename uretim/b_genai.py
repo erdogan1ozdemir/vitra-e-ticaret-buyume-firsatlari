@@ -161,7 +161,7 @@ for p_, g, i_, c_, ps, t in sorted(SATIR.values(), key=lambda r: -r[1]):
     def _nh(v): return '<td class="n">%s</td>' % v
     gov.append('<tr data-f="%s"><td>%s</td><td>%s</td>%s%s%s%s%s%s%s</tr>' % (fg, hucre[0], hucre[1], _nh(cellk(g)[1:]), _nh(cellk(i_ or 0)[1:] if i_ else "-"), _nh(yzd(100 * g / i_) if i_ else "-"),
                _nh(cellk(c_)[1:] if c_ else "-"), _nh(yzd(100 * c_ / i_, 2) if (c_ and i_) else "-"), _nh(_s(ps) if ps else "-"), _nh(yz(yy) if yy is not None else "-")))
-_BAS_S = [th("Sayfa adresi", "Page address", "Sayfa adresi; bağlantı canlı sayfaya gider.", "Page address; the link opens the live page."),
+_BAS_S = [th("Sayfa adresi", "Page address", "Sayfa adresi; bağlantı web sitesindeki sayfayı açar.", "Page address; the link opens the page on the website."),
           th("Sayfa türü", "Page type", "Adres yapısına göre sayfa sınıfı; tablonun üstündeki düğmelerle süzülebilir.", "Page class by URL structure; can be filtered with the buttons above the table."),
           th("Yapay zeka gösterimi", "AI feature impressions", "18 May - 29 Eyl 2026 yapay zeka özelliklerinde gösterim; 100 ve üzeri olan sayfalar.", "Impressions in AI features, 18 May - 29 Sep 2026; pages with 100 and above.", True),
           th("Toplam gösterim", "Total impressions", "Aynı dönemde web aramasında toplam gösterim.", "Total web search impressions in the same period.", True),

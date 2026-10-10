@@ -138,7 +138,7 @@ LP26 = G["lp_2026"]
 def _lprow(r):
     p_, t, o, g, ke, eo = r
     return [u("https://www.vitra.com.tr" + p_, p_) if p_ != "(not set)" else x("(not set)", "(not set)"), x(*LAD[t]), n(tl(g) if g >= 1000 else "-"), n(yzd(100 * g / _lg26, 2)), n(yzd(100 * o / LS["2026"], 2)), n(yzd(100 * eo / o) if o else "-")]
-_LPH = [th("Giriş sayfası", "Landing page", "Oturumun başladığı sayfa; bağlantı canlı sayfaya gider.", "The page where the session started; the link opens the live page."),
+_LPH = [th("Giriş sayfası", "Landing page", "Oturumun başladığı sayfa; bağlantı web sitesindeki sayfayı açar.", "The page where the session started; the link opens the page on the website."),
         th("Tür", "Type", "Giriş sayfası türü.", "Landing page type."),
         th("Gelir", "Revenue", "Bu sayfayla başlayan oturumların Oca-Eyl 2026 geliri (TL).", "Jan-Sep 2026 revenue of sessions starting on this page (TL).", True),
         th("Gelir payı", "Revenue share", "Oca-Eyl 2026 toplam gelirindeki pay.", "Share of total Jan-Sep 2026 revenue.", True),
@@ -296,7 +296,7 @@ for p, v, us, ke in sorted(BL, key=lambda r: -r[1])[:15]:
     pp = p.split("?")[0].rstrip("/"); gc = _GSC_ARA.get(pp.lower(), 0)
     rows_b.append([u("https://www.vitra.com.tr" + pp + "/", pp.replace("/ilham-veren-fikirler", "") or "/ilham-veren-fikirler/"), cellk(v), cellk(gc) if gc else n("-"), n(("%.1f" % (v / gc)).replace(".", ",")) if gc else n("-")])
 x("/ilham-veren-fikirler/", "/ilham-veren-fikirler/")
-T_BLOG = tablo([th("Yazı", "Article", "Blog yazısının adresi (/ilham-veren-fikirler/ sonrası); bağlantı canlı sayfaya gider.", "The blog article's address (after /ilham-veren-fikirler/); the link opens the live page."),
+T_BLOG = tablo([th("Yazı", "Article", "Blog yazısının adresi (/ilham-veren-fikirler/ sonrası); bağlantı web sitesindeki sayfayı açar.", "The blog article's address (after /ilham-veren-fikirler/); the link opens the page on the website."),
                 th("Görüntüleme", "Views", "GA4 sayfa görüntüleme; www.vitra.com.tr sayfaları bu mülkte Aralık 2025'ten itibaren ölçüldüğü için değer 1 Ara 2025 - 30 Eyl 2026 dönemini kapsar.", "GA4 page views; as www.vitra.com.tr pages are measured in this property from December 2025, the value covers 1 Dec 2025 - 30 Sep 2026.", True),
                 th("Organik click", "Organic clicks", "Search Console organik click, 1 Ara 2025 - 30 Eyl 2026 (GA4 görüntülemesiyle aynı dönem).", "Search Console organic clicks, 1 Dec 2025 - 30 Sep 2026 (same period as the GA4 views).", True),
                 th("Görüntüleme / click", "Views / click", "GA4 görüntülemesinin Search Console organik click'ine oranı, 1 Ara 2025 - 30 Eyl 2026.", "GA4 views as a ratio of Search Console organic clicks; periods differ by one month, indicative.", True)], rows_b, "dar")
@@ -306,7 +306,7 @@ def _kol(p):
     if p in _OLU: return x(p, p)
     return u("https://www.vitra.com.tr" + (p[3:] if p.startswith("/tr/") else p), p)   # eski /tr/ adresi yeni adrese yönlenir; bağlantı yeni adrese verilir
 rows_kl = [[_kol(p), cellk(v)] for p, v, us, ke in sorted(KL, key=lambda r: -r[1])[:8]]
-T_KOL = tablo([th("Koleksiyon ve katalog sayfası", "Collection and catalogue page", "Sayfa adresi; bağlantı canlı sayfaya gider.", "Page address; the link opens the live page."),
+T_KOL = tablo([th("Koleksiyon ve katalog sayfası", "Collection and catalogue page", "Sayfa adresi; bağlantı web sitesindeki sayfayı açar.", "Page address; the link opens the page on the website."),
                th("Görüntüleme", "Views", "GA4 sayfa görüntüleme; www.vitra.com.tr sayfaları Aralık 2025'ten itibaren ölçüldüğü için 1 Ara 2025 - 30 Eyl 2026.", "GA4 page views; as www.vitra.com.tr pages are measured from December 2025, 1 Dec 2025 - 30 Sep 2026.", True)], rows_kl, "dar")
 # ---------------------------------------------------------------- 11 · içerikten ürüne: blog oturumları
 IU = G["icerik_urun"]

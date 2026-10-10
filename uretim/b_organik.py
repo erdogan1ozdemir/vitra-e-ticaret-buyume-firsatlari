@@ -216,7 +216,7 @@ rows3 = []
 for uu, c, i, p in TS:
     p_ = _G12.yol(uu)
     rows3.append([u("https://www.vitra.com.tr" + (p_ if p_ != "/" else "/"), p_ if p_ != "/" else "/ (ana sayfa)"), cellk(c), cellk(i), n(yzd(100 * c / i)), n(("%.1f" % p).replace(".", ","))])
-tbl3 = tablo([th("Sayfa adresi", "Page address", "Sayfa adresi; bağlantı canlı sayfaya gider.", "Page address; the link opens the live page."),
+tbl3 = tablo([th("Sayfa adresi", "Page address", "Sayfa adresi; bağlantı web sitesindeki sayfayı açar.", "Page address; the link opens the page on the website."),
               th("Click", "Clicks", "%s organik click." % D26[0], "Organic clicks, %s." % D26[1], True),
               th("Gösterim", "Impressions", "Aynı dönemde gösterim.", "Impressions in the same period.", True),
               th("CTR", "CTR", "Click / gösterim.", "Clicks / impressions.", True),
@@ -276,7 +276,7 @@ rows_bp = []
 for p, (c, i, ps) in sorted(BL.items(), key=lambda r: -r[1][0])[:15]:
     rows_bp.append([u("https://www.vitra.com.tr" + p + "/", p.replace("/ilham-veren-fikirler", "") or "/ilham-veren-fikirler/"), cellk(c), cellk(i), n(yzd(100 * c / i, 2)), n(("%.1f" % (ps / i)).replace(".", ",")), _d(_he(p, B25), _he(p, B26))])
 x("/ilham-veren-fikirler/", "/ilham-veren-fikirler/")
-T_BP = tablo([th("Yazı", "Article", "Blog yazısının adresi (/ilham-veren-fikirler/ sonrası); bağlantı canlı sayfaya gider.", "The blog article's address (after /ilham-veren-fikirler/); the link opens the live page."),
+T_BP = tablo([th("Yazı", "Article", "Blog yazısının adresi (/ilham-veren-fikirler/ sonrası); bağlantı web sitesindeki sayfayı açar.", "The blog article's address (after /ilham-veren-fikirler/); the link opens the page on the website."),
               th("Click", "Clicks", "%s organik click; yazının eski (-old) adresi dahil." % D12[0], "Organic clicks, %s; including the article's old (-old) address." % D12[1], True),
               th("Gösterim", "Impressions", "Aynı dönemde gösterim.", "Impressions in the same period.", True),
               th("CTR", "CTR", "Click / gösterim.", "Clicks / impressions.", True),
